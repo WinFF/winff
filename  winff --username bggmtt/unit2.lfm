@@ -1,0 +1,186 @@
+object Form2: TForm2
+  Left = 346
+  Height = 429
+  Top = 286
+  Width = 388
+  HorzScrollBar.Page = 387
+  VertScrollBar.Page = 428
+  ActiveControl = Edit1
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Edit Presets'
+  ClientHeight = 429
+  ClientWidth = 388
+  OnResize = FormResize
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object Label1: TLabel
+    Left = 8
+    Height = 16
+    Top = 8
+    Width = 37
+    Caption = 'Preset'
+    Font.CharSet = 17
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 16
+    Top = 120
+    Width = 284
+    Caption = 'Preset Name   (one word, only letters and numbers)'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 16
+    Top = 168
+    Width = 71
+    Caption = 'Preset Label'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 16
+    Top = 216
+    Width = 299
+    Caption = 'Preset Command Line Parameters (no -i or output file)'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 16
+    Top = 264
+    Width = 238
+    Caption = 'Output File Extension (do not include the ''.'' )'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 9
+    Height = 16
+    Top = 312
+    Width = 50
+    Caption = 'Category'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 136
+    Width = 256
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 23
+    Top = 184
+    Width = 256
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 8
+    Height = 23
+    Top = 232
+    Width = 344
+    TabOrder = 2
+  end
+  object ListBox1: TListBox
+    Left = 9
+    Height = 80
+    Top = 33
+    Width = 368
+    OnClick = ListBox1Click
+    OnSelectionChange = ListBox1SelectionChange
+    TabOrder = 3
+  end
+  object addpresetbtn: TButton
+    Left = 8
+    Height = 25
+    Top = 360
+    Width = 107
+    BorderSpacing.InnerBorder = 4
+    Caption = ' Add / Update'
+    OnClick = addpresetbtnClick
+    TabOrder = 4
+  end
+  object DeleteBtn: TButton
+    Left = 128
+    Height = 25
+    Top = 360
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Delete'
+    OnClick = DeleteBtnClick
+    TabOrder = 5
+  end
+  object OKbtn: TButton
+    Left = 216
+    Height = 25
+    Top = 392
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Save'
+    OnClick = OKbtnClick
+    TabOrder = 6
+  end
+  object CancelBtn: TButton
+    Left = 304
+    Height = 25
+    Top = 392
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Close'
+    OnClick = CancelBtnClick
+    TabOrder = 7
+  end
+  object Edit4: TEdit
+    Left = 8
+    Height = 23
+    Top = 280
+    Width = 56
+    MaxLength = 3
+    TabOrder = 8
+  end
+  object import: TButton
+    Left = 216
+    Height = 25
+    Top = 360
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Import'
+    OnClick = importClick
+    TabOrder = 9
+  end
+  object export: TButton
+    Left = 304
+    Height = 25
+    Top = 360
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Export'
+    OnClick = exportClick
+    TabOrder = 10
+  end
+  object Edit5: TEdit
+    Left = 9
+    Height = 23
+    Top = 328
+    Width = 120
+    TabOrder = 11
+  end
+  object OpenDialog1: TOpenDialog
+    Title = 'Import a Preset'
+    DefaultExt = '.wff'
+    Filter = 'WinFF Presets|*.wff'
+    FilterIndex = 0
+    left = 138
+    top = 398
+  end
+  object SaveDialog1: TSaveDialog
+    Title = 'Export a Preset'
+    FilterIndex = 0
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    left = 176
+    top = 400
+  end
+end

@@ -1,0 +1,98 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TForm3','FORMDATA',[
+  'TPF0'#6'TForm3'#5'Form3'#4'Left'#3'='#1#6'Height'#3'#'#1#3'Top'#3#23#1#5'Wid'
+  +'th'#3'T'#1#18'HorzScrollBar.Page'#3'S'#1#18'VertScrollBar.Page'#3'"'#1#13'A'
+  +'ctiveControl'#7#7'Button1'#7'Caption'#6#11'About WinFF'#12'ClientHeight'#3
+  +'#'#1#11'ClientWidth'#3'T'#1#5'Color'#7#6'clForm'#8'OnCreate'#7#10'FormCreat'
+  +'e'#8'Position'#7#16'poMainFormCenter'#0#7'TButton'#7'Button1'#4'Left'#3#133
+  +#0#6'Height'#2#25#3'Top'#3#248#0#5'Width'#2'K'#25'BorderSpacing.InnerBorder'
+  +#2#4#7'Caption'#6#2'OK'#7'OnClick'#7#12'Button1Click'#8'TabOrder'#2#0#0#0#9
+  +'TNotebook'#9'Notebook1'#6'Height'#3#240#0#5'Width'#3'X'#1#14'OnChangeBounds'
+  +#7#21'Notebook1ChangeBounds'#9'PageIndex'#2#0#8'TabOrder'#2#1#0#5'TPage'#5'P'
+  +'age1'#7'Caption'#6#5'WinFF'#11'ClientWidth'#3'P'#1#12'ClientHeight'#3#214#0
+  +#0#6'TLabel'#6'Label1'#4'Left'#2'<'#6'Height'#2#16#3'Top'#2#10#5'Width'#2'8'
+  +#7'Caption'#6#9'WinFF 0.4'#11'ParentColor'#8#0#0#6'TImage'#6'Image1'#4'Left'
+  +#2#4#6'Height'#2'0'#3'Top'#2#10#5'Width'#2'0'#12'Picture.Data'#10'S'#11#0#0#7
+  +'TPixmapG'#11#0#0'/* XPM */'#13#10'static char * winff_xpm[] = {'#13#10'"48 '
+  +'48 18 1",'#13#10'" '#9'c None",'#13#10'".'#9'c #B64C18",'#13#10'"+'#9'c #1C'
+  +'18B6",'#13#10'"@'#9'c #73355D",'#13#10'"#'#9'c #5A2D77",'#13#10'"$'#9'c #A1'
+  +'452D",'#13#10'"%'#9'c #552B7C",'#13#10'"&'#9'c #5E2E72",'#13#10'"*'#9'c #69'
+  +'3267",'#13#10'"='#9'c #572C79",'#13#10'"-'#9'c #783757",'#13#10'";'#9'c #78'
+  +'3758",'#13#10'">'#9'c #6C3364",'#13#10'",'#9'c #44268C",'#13#10'"'''#9'c #4'
+  +'5268C",'#13#10'")'#9'c #64306C",'#13#10'"!'#9'c #33209E",'#13#10'"~'#9'c #4'
+  +'12490",'#13#10'"                                                ",'#13#10'"'
+  +'                                                ",'#13#10'"                '
+  +'             ..                 ",'#13#10'".......  .......     ......  ...'
+  +'                ",'#13#10'" ....     .....        ...   ..                 '
+  +'",'#13#10'"  ...      ...         ..                       ",'#13#10'"  ...'
+  +'       ...        .                        ",'#13#10'"   ..       ...      '
+  +'  .                        ",'#13#10'"   ...      ...       ..             '
+  +'           ",'#13#10'"   ...       ...      .       ..     ..   ...   ",'#13
+  +#10'"    ...     ....      .     ....   .... ......  ",'#13#10'"    ...     '
+  +'....     ..    .....  .......   ... ",'#13#10'"    ...     . ...    .      '
+  +' ...    ...     ... ",'#13#10'"     ...   .  ...    .       ...    ...     '
+  +'... ",'#13#10'"     ...   .  ...   ..       ...    ...     ... ",'#13#10'" '
+  +'    ...   .   ...  .        ...    ...     ... ",'#13#10'"      ... .    ..'
+  +'.  .        ...    ...     ... ",'#13#10'"  ++++++++++++++++++++    +++++++'
+  +'+++++++++++++@ ",'#13#10'"     +++++++++++++++++       +++++++++++++++++@ "'
+  +','#13#10'"     ++++#      ..$%++       &++++  ...    +++* ",'#13#10'"      '
+  +'+++=       ..  +       -++++  ...     ;+> ",'#13#10'"      +++,       ..  +'
+  +'+      -++++  ...     .'') ",'#13#10'"      +++!       ..   +    ..-+++~...'
+  +'.... ...-#.",'#13#10'"      ++++                    ++++              ",'#13
+  +#10'"      ++++                    ++++              ",'#13#10'"      ++++  '
+  +'      +           ++++        +     ",'#13#10'"      ++++        +         '
+  +'  ++++        +     ",'#13#10'"      ++++        +           ++++        + '
+  +'    ",'#13#10'"      ++++       ++           ++++       ++     ",'#13#10'" '
+  +'     +++++++++++++           +++++++++++++     ",'#13#10'"      +++++++++++'
+  +'++           +++++++++++++     ",'#13#10'"      ++++       ++           +++'
+  +'+       ++     ",'#13#10'"      ++++        +           ++++        +     "'
+  +','#13#10'"      ++++        +           ++++        +     ",'#13#10'"      '
+  +'++++        +           ++++        +     ",'#13#10'"      ++++            '
+  +'        ++++              ",'#13#10'"      ++++                    ++++    '
+  +'          ",'#13#10'"      ++++                    ++++              ",'#13
+  +#10'"      ++++                    ++++              ",'#13#10'"      ++++  '
+  +'                  ++++              ",'#13#10'"      ++++                  '
+  +'  ++++              ",'#13#10'"      ++++                    ++++          '
+  +'    ",'#13#10'"     +++++                   +++++              ",'#13#10'" '
+  +'    ++++++                  ++++++             ",'#13#10'"  ++++++++++++   '
+  +'         ++++++++++++          ",'#13#10'"                                 '
+  +'               ",'#13#10'"                                                "'
+  +','#13#10'"                                                "};'#13#10#11'Tra'
+  +'nsparent'#8#0#0#6'TLabel'#6'Label2'#4'Left'#2#4#6'Height'#2#16#3'Top'#2'B'#5
+  +'Width'#3#160#0#7'Caption'#6#26'Copyright 2006-2008 GPL V3'#11'ParentColor'#8
+  +#0#0#6'TLabel'#6'Label3'#4'Left'#2#4#6'Height'#2#16#3'Top'#2'Z'#5'Width'#2't'
+  +#7'Caption'#6#19'Matthew Weatherford'#11'ParentColor'#8#0#0#6'TLabel'#6'Labe'
+  +'l4'#4'Left'#2#4#6'Height'#2#16#3'Top'#2'r'#5'Width'#2'j'#7'Caption'#6#20'ht'
+  +'tp://www.winff.org'#11'ParentColor'#8#0#0#0#5'TPage'#5'Page2'#7'Caption'#6#6
+  ,'FFmpeg'#0#6'TLabel'#6'Label5'#4'Left'#2#4#6'Height'#2#16#3'Top'#2#10#5'Widt'
+  +'h'#2'/'#7'Caption'#6#6'FFmpeg'#11'ParentColor'#8#0#0#6'TLabel'#6'Label6'#4
+  +'Left'#2#4#6'Height'#2#16#3'Top'#2'"'#5'Width'#3#150#0#7'Caption'#6#26'Trade'
+  +'mark Fabrice Belllard'#11'ParentColor'#8#0#0#6'TLabel'#6'Label7'#4'Left'#2#4
+  +#6'Height'#2#17#3'Top'#2'2'#5'Width'#3#155#0#7'Caption'#6#26'http://ffmpeg.m'
+  +'playerhq.hu'#11'Font.Height'#2#243#11'ParentColor'#8#0#0#6'TLabel'#6'Label8'
+  +#4'Left'#2#4#6'Height'#2#16#3'Top'#2'R'#5'Width'#3#154#0#7'Caption'#6#24'FFm'
+  +'peg Windows Builds by'#11'ParentColor'#8#0#0#6'TLabel'#6'Label9'#4'Left'#2#4
+  +#6'Height'#2#16#3'Top'#2'b'#5'Width'#2'I'#7'Caption'#6#12'Ramiro Polla'#11'P'
+  +'arentColor'#8#0#0#6'TLabel'#7'Label10'#4'Left'#2#4#6'Height'#2#16#3'Top'#2
+  +'r'#5'Width'#3#167#0#7'Caption'#6' http://arrozcru.no-ip.org/ffmpeg'#11'Pare'
+  +'ntColor'#8#0#0#0#5'TPage'#5'Page3'#7'Caption'#6#6'Thanks'#11'ClientWidth'#3
+  +'P'#1#12'ClientHeight'#3#214#0#0#6'TLabel'#7'Label11'#4'Left'#2#4#6'Height'#2
+  +#16#3'Top'#2#18#5'Width'#3#175#0#7'Caption'#6#30'Gmaq for his presets and id'
+  +'eas'#11'ParentColor'#8#0#0#6'TLabel'#7'Label12'#4'Left'#2#4#6'Height'#2#16#3
+  +'Top'#2'@'#5'Width'#3#13#1#7'Caption'#6'.Iconsdesigns.com for their NuoveXT '
+  +'2 GPL icons'#11'ParentColor'#8#0#0#6'TLabel'#7'Label13'#4'Left'#2#4#6'Heigh'
+  +'t'#2#16#3'Top'#2'('#5'Width'#3#185#0#7'Caption'#6'!Chris Bidmead for script'
+  +'ing ideas'#11'ParentColor'#8#0#0#6'TLabel'#7'Label14'#4'Left'#2#4#6'Height'
+  +#2#16#3'Top'#2'Z'#5'Width'#3#233#0#7'Caption'#6'+Neil Hinton for 95/98/ME co'
+  +'mpatibility work'#11'ParentColor'#8#0#0#6'TLabel'#7'Label15'#4'Left'#2#4#6
+  +'Height'#2#16#3'Top'#2'r'#5'Width'#3#180#0#7'Caption'#6' German translation '
+  +'by Kai Evers '#11'ParentColor'#8#0#0#6'TLabel'#7'Label16'#4'Left'#2#4#6'Hei'
+  +'ght'#2#16#3'Top'#3#138#0#5'Width'#3#221#0#7'Caption'#6'2Bulgarian translati'
+  +'on by '#208#161#208#184#208#188#208#181#208#190#208#189' '#208#163#208#183
+  +#209#131#208#189#208#190#208#178#11'ParentColor'#8#0#0#6'TLabel'#7'Label17'#4
+  +'Left'#2#4#6'Height'#2#16#3'Top'#3#162#0#5'Width'#3#221#0#7'Caption'#6'(Ital'
+  +'ian translation by Roberto Calamante'#11'ParentColor'#8#0#0#6'TLabel'#7'Lab'
+  +'el18'#4'Left'#2#4#6'Height'#2#16#3'Top'#3#186#0#5'Width'#3#186#0#7'Caption'
+  +#6'!Turkish translation by Emre Erkan'#11'ParentColor'#8#0#0#0#0#0
+]);

@@ -1,0 +1,376 @@
+﻿#: unit1:rsaddbtn
+msgid "Add"
+msgstr "Hinzu"
+
+#: unit1:rslabel10
+msgid "AC'"
+msgstr "AC"
+
+#: unit1:rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr "Kommandozeile anzeigen"
+
+#: unit1:rspauseonfinish
+msgid "Pause on Finish"
+msgstr "Pause nach Beenden"
+
+#: unit1:rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr "Herunterfahren nach Beenden"
+
+#: unit1:rsoptionsbtn
+msgid "Options"
+msgstr "Einstellungen"
+
+#: unit1:rsstartbtn
+msgid "Convert"
+msgstr "Konvertieren"
+
+#: unit1:rsplay
+msgid "Play"
+msgstr "Abspielen"
+
+#: unit1:rsclearbtn
+msgid "Clear"
+msgstr "Löschen"
+
+#: unit1:rsremovebtn
+msgid "Remove"
+msgstr "Entfernen"
+
+#: unit1:rscheckbox2
+msgid "Deinterlace"
+msgstr "Deinterlace"
+
+#: unit1:rspass2
+msgid "2 pass"
+msgstr "2 Pass"
+
+#: unit1:rsmenuitem1
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: unit1:rsmenuitem2
+msgid "About"
+msgstr "Über"
+
+#: unit1:rsmenuitem3
+msgid "Exit"
+msgstr "Beenden"
+
+#: unit1:rsmenuitem4
+msgid "Presets"
+msgstr "Profile"
+
+#: unit1:rsmenuitem5
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: unit1:rsimportmenu
+msgid "Import Preset"
+msgstr "Profil importieren"
+
+#: unit1:rsshowoptions
+msgid "Additional Options"
+msgstr "Erweiterte Einstellungen"
+
+#: unit1:rsoptions
+msgid "Options"
+msgstr "Einstellungen"
+
+#: unit1:rsfilemenu
+msgid "File"
+msgstr "Datei"
+
+#: unit1:rsgroupbox2
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr "Zusätzliche Kommandozeilen-Parameter (erweitert)"
+
+#: unit1:rslabel5
+msgid "Video Size"
+msgstr "Video-Größe"
+
+#: unit1:rslabel6
+msgid "Aspect Ratio"
+msgstr "Seitenverhältnis"
+
+#: unit1:rslabel7
+msgid "Audio Bitrate"
+msgstr "Audio-Bitrate"
+
+#: unit1:rslabel8
+msgid "Sample Rate"
+msgstr "Sample-Rate"
+
+#: unit1:rslabel4
+msgid "Frame Rate"
+msgstr "Frame-Rate"
+
+#: unit1:rslabel3
+msgid "Video Bitrate"
+msgstr "Video-Bitrate"
+
+#: unit1:rsgroupbox1
+msgid "Additional Options"
+msgstr "Erweiterte Einstellungen"
+
+#: unit1:rslabel1
+msgid "Output Folder"
+msgstr "Ausgabeverzeichnis"
+
+#: unit1:rslabel2
+msgid "Convert To ..."
+msgstr "Konvertieren nach..."
+
+#: unit1:rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Profil kann nicht gefunden werden."
+
+#: unit1:rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "FFmpeg kann nicht gefunden werden."
+
+#: unit1:rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "FFPlay kann nicht gefunden werden."
+
+#: unit1:rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Auswahl Videodateien"
+
+#: unit1:rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Auswahl Profil"
+
+#: unit1:rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "Bitte ein Profil auswählen"
+
+#: unit1:rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Bitte mindestens eine Datei zum Konvertieren auswählen"
+
+#: unit1:rsconverting
+msgid "Converting"
+msgstr "Konvertieren"
+
+#: unit1:rspressenter
+msgid "Press Enter to Continue"
+msgstr "Eingabetaste drücken, um fortzufahren"
+
+#: unit1:rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Datei kann nicht gefunden werden"
+
+#: unit1:rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Ungültiges Profil"
+
+#: unit1:rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "Profil: %s%s%s existiert bereits"
+
+#: unit1:rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Das zu importierende Profil hat keine Bezeichnung"
+
+#: unit1:rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Das Profil enthält ungültige Zeichen"
+
+#: unit1:rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "Profil mit der Bezeichnung: %s%s%s existiert bereits"
+
+#: unit1:rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Das zu importierende Profil hat keine Dateiendung"
+
+#: unit1:rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "Name muß alphanumerisch sein (a-z,A-Z,0-9)"
+
+#: unit1:rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Dateiendung darf keinen Punkt enthalten"
+
+#: unit1:rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "Datei nicht gefunden"
+
+#: unit1:rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Bitte zu exportierendes Profil wählen"
+
+#: unit2:rsLabel6
+msgid "Category"
+msgstr "Kategorie"
+
+#: unit2:rsform2
+msgid "Edit Presets"
+msgstr "Profile bearbeiten"
+
+#: unit2:rsaddpresetbtn
+msgid "Add / Update"
+msgstr "Hinzu / Aktualisieren"
+
+#: unit2:rsexport
+msgid "Export"
+msgstr "Exportieren"
+
+#: unit2:rsimport
+msgid "Import"
+msgstr "Importieren"
+
+#: unit2:rscancelbtn
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: unit2:rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr "Dateiendung für zu speichernde Datei (kein \".\")"
+
+#: unit2:rsokbtn
+msgid "Save"
+msgstr "Speichern"
+
+#: unit2:rsdeletebtn
+msgid "Delete"
+msgstr "Löschen"
+
+#: unit2:rslabel1
+msgid "Presets"
+msgstr "Profile"
+
+#: unit2:rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr "Profilname (ein Wort, nur A-z,0-9)"
+
+#: unit2:rslabel3
+msgid "Preset Label"
+msgstr "Profilbezeichnung"
+
+#: unit2:rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr "Kommandozeile für das Profil (kein -i oder keine Ausgabedatei)"
+
+#: unit2:rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Bitte Name eingeben."
+
+#: unit2:rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Bitte Bezeichnung eingeben."
+
+#: unit2:rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Bitte Dateiendung eingeben."
+
+#: unit2:rsupdatepreset
+msgid "Update Preset:"
+msgstr "Profil aktualisieren:"
+
+#: unit2:rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Bezeichnung darf nur einmal vorhanden sein."
+
+#: unit2:rscreatepreset
+msgid "Create Preset:"
+msgstr "Profil erstellen:"
+
+#: unit2:rsremovepreset
+msgid "Remove Preset:"
+msgstr "Profil entfernen:"
+
+#: unit3:rsbutton1
+msgid "OK"
+msgstr "OK"
+
+#: unit3:rspage1
+msgid "WinFF"
+msgstr "WinFF"
+
+#: unit3:rspage2
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: unit3:rspage3
+msgid "Thanks"
+msgstr "Danke"
+
+#: unit3:rsform3
+msgid "About WinFF"
+msgstr "Über WinFF"
+
+#: unit3:rslabel8
+msgid "FFmpeg builds by"
+msgstr "FFmpeg-Builds von"
+
+#: unit4:rsform4
+msgid "WinFF Preferences"
+msgstr "WinFF Einstellungen"
+
+#: unit4:rsbutton1
+msgid "OK"
+msgstr "OK"
+
+#: unit4:rsbutton2
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: unit4:rscheckbox1
+msgid "Remember Last Directory Used"
+msgstr "Zuletzt benutztes Verzeichnis merken"
+
+#: unit4:rscheckbox3
+msgid "Multithreading for Dual Core Processors"
+msgstr "Multithreading für Dual-Core-Prozessoren"
+
+#: unit4:rslabel1
+msgid "Default Destination Directory"
+msgstr "Standard-Ausgabeverzeichnis"
+
+#: unit4:rslabel2
+msgid "Path to FFmpeg.exe"
+msgstr "Pfad zu FFmpeg"
+
+#: unit4:rslabel3
+msgid "Path to FFPlay.exe"
+msgstr "Pfad zu FFPlay"
+
+#: unit4:rslabel4
+msgid "Path to FFmpeg Executable"
+msgstr "Pfad zu FFmpeg"
+
+#: unit4:rslabel5
+msgid "Path to FFPlay Executable"
+msgstr "Pfad zu FFPlay"
+
+#: unit4:rslabel6
+msgid "Terminal to run FFmpeg"
+msgstr "Terminal, in dem FFmpeg ausgeführt werden soll"
+
+#: unit4:rslabel7
+msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgstr "Terminal-Einstellungen (-e für Xterm , -x für Gnome Terminal)"
+
+#: unit4:rspage1
+msgid "General"
+msgstr "Allgemein"
+
+#: unit4:rspage2
+msgid "Ms Windows"
+msgstr "Windows"
+
+#: unit4:rspage3
+msgid "Linux"
+msgstr "Linux"
+
+#: unit5:rsform5
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg-Kommandozeile"
+
+#: unit5:rsbutton1
+msgid "OK"
+msgstr "OK"
+
