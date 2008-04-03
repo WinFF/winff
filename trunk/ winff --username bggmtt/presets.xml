@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<presets>
+  <iPodXviDWSAna>
+    <label>XviD for Ipod (16:9 Anamorphic)</label>
+    <params>-r 29.97 -croptop 58 -cropbottom 62 -vcodec xvid -s 640x272 -aspect 2.35 -maxrate 1500k -b 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 80k -ac 2</params>
+    <extension>mp4</extension>
+    <category>Ipod</category>
+  </iPodXviDWSAna>
+  <iPodXviDWS>
+    <label>XviD for Ipod (16:9)</label>
+    <params>-r 29.97 -vcodec xvid -s 704x384 -aspect 16:9 -maxrate 1500k -b 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 80k -ac 2</params>
+    <extension>mp4</extension>
+    <category>Ipod</category>
+  </iPodXviDWS>
+  <iPodXviDFS>
+    <label>XviD for Ipod (4:3)</label>
+    <params>-r 29.97 -vcodec xvid -s 640x480 -aspect 4:3 -maxrate 1500k -b 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 80k -ac 2</params>
+    <extension>mp4</extension>
+    <category>Ipod</category>
+  </iPodXviDFS>
+  <XviDAVIWSAna>
+    <label>XviD in AVI (16:9 Anamorphic)</label>
+    <params>-r 29.97 -croptop 58 -cropbottom 62 -vcodec xvid -vtag XVID -s 640x272 -aspect 2.35 -maxrate 1800k -b 1500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec mp3 -ar 48000 -ab 128k -ac 2</params>
+    <extension>avi</extension>
+    <category>AVI</category>
+  </XviDAVIWSAna>
+  <XviDAVIWS>
+    <label>XviD in AVI (16:9)</label>
+    <params>-r 29.97 -vcodec xvid -vtag XVID -s 704x384 -aspect 16:9 -maxrate 1800k -b 1500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec mp3 -ar 48000 -ab 128k -ac 2</params>
+    <extension>avi</extension>
+    <category>AVI</category>
+  </XviDAVIWS>
+  <XviDAVIFS>
+    <label>XviD in AVI (4:3)</label>
+    <params>-r 29.97 -vcodec xvid -vtag XVID -s 640x480 -aspect 4:3 -maxrate 1800k -b 1500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec mp3 -ar 48000 -ab 128k -ac 2</params>
+    <extension>avi</extension>
+    <category>AVI</category>
+  </XviDAVIFS>
+  <x264HQWS>
+    <label>H.264 in MP4 (16:9)</label>
+    <params>-r 29.97 -vcodec h264 -s 704x384 -aspect 16:9 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -b 1250k -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -acodec aac -ab 112k -ar 48000 -ac 2</params>
+    <extension>mp4</extension>
+    <category>MP4</category>
+  </x264HQWS>
+  <x264HQFS>
+    <label>H.264 in MP4(4:3)</label>
+    <params>-r 29.97 -vcodec h264 -s 640x480 -aspect 4:3 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -b 1250k -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -acodec aac -ab 112k -ar 48000 -ac 2</params>
+    <extension>mp4</extension>
+    <category>MP4</category>
+  </x264HQFS>
+  <palvcdhq>
+    <label>PAL VCD (HQ)</label>
+    <params>-target pal-vcd -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>VCD</category>
+  </palvcdhq>
+  <paldvdhqWS>
+    <label>PAL DVD HQ (16:9)</label>
+    <params>-target pal-dvd -aspect 16:9 -b 8000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </paldvdhqWS>
+  <paldvdhqFS>
+    <label>PAL DVD HQ (4:3)</label>
+    <params>-target pal-dvd -aspect 4:3 -b 8000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </paldvdhqFS>
+  <paldvdgoodqWS>
+    <label>PAL DVD (16:9)</label>
+    <params>-vcodec mpeg2video -r 25.00 -s 352x576 -aspect 16:9 -b 4000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2 -acodec mp2 -ab 192k -ar 48000 -ac 2</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </paldvdgoodqWS>
+  <paldvdgoodqFS>
+    <label>PAL DVD (4:3)</label>
+    <params>-vcodec mpeg2video -r 25.00 -s 352x576  -aspect 4:3 -b 4000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2 -acodec mp2 -ab 192k -ar 48000 -ac 2</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </paldvdgoodqFS>
+  <ntscvcdhq>
+    <label>NTSC VCD (HQ)</label>
+    <params>-target ntsc-vcd -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>VCD</category>
+  </ntscvcdhq>
+  <ntscdvdhqWS>
+    <label>NTSC DVD HQ (16:9)</label>
+    <params>-target ntsc-dvd -r 29.97 -s 720x480 -aspect 16:9 -b 8000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </ntscdvdhqWS>
+  <ntscdvdhqFS>
+    <label>NTSC DVD HQ (4:3)</label>
+    <params>-target ntsc-dvd -r 29.97 -s 720x480 -aspect 4:3 -b 8000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </ntscdvdhqFS>
+  <ntscdvdgoodqWS>
+    <label>NTSC DVD (16:9)</label>
+    <params>-vcodec mpeg2video -r 29.97 -s 352x480 -aspect 16:9 -b 4000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2 -acodec mp2 -ab 192k -ar 48000 -ac 2</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </ntscdvdgoodqWS>
+  <ntscdvdgoodqFS>
+    <label>NTSC DVD (4:3)</label>
+    <params>-vcodec mpeg2video -r 29.97 -s 352x480 -aspect 4:3 -b 4000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2 -acodec mp2 -ab 192k -ar 48000 -ac 2</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </ntscdvdgoodqFS>
+  <mp3>
+    <label>MP3</label>
+    <params>-acodec mp3 -ab 160k -ac 2 -ar 44100</params>
+    <extension>mp3</extension>
+    <category>Audio</category>
+  </mp3>
+  <mp3>
+    <label>MP3 (Mono)</label>
+    <params>-acodec mp3 -ab 32k -ac 1 -ar 22050</params>
+    <extension>mp3</extension>
+    <category>Mobile Phones</category>
+  </mp3>
+  <M4a>
+    <label>M4a</label>
+    <params>-vn -acodec aac -ab 112k -ac 2</params>
+    <extension>m4a</extension>
+    <category>Audio</category>
+  </M4a>
+  <iPodx264WSAna>
+    <label>H.264 for Ipod *Linux* (16:9 Anamorphic)</label>
+    <params>-r 29.97 -croptop 58 -cropbottom 62 -vcodec h264 -s 640x272 -aspect 2.35 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -b 1000k -maxrate 1250k -bufsize 4M -bt 256k -refs 1 -coder 0 -me umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -acodec aac -ab 64 -ar 48000 -ac 2</params>
+    <extension>mp4</extension>
+    <category>Ipod</category>
+  </iPodx264WSAna>
+  <iPodx264WS>
+    <label>H.264 for Ipod *Linux* (16:9)</label>
+    <params>-r 29.97 -vcodec h264 -s 640x352 -aspect 16:9 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -b 1000k -maxrate 1250k -bufsize 4M -bt 256k -refs 1 -coder 0 -me umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -acodec aac -ab 80k -ar 48000 -ac 2</params>
+    <extension>mp4</extension>
+    <category>Ipod</category>
+  </iPodx264WS>
+  <iPodx264FS>
+    <label>H.264 for Ipod *Linux* (4:3)</label>
+    <params>-r 29.97 -vcodec h264 -s 640x480 -aspect 4:3 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -b 1000k -maxrate 1250k -bufsize 4M -bt 256k -refs 1 -coder 0 -me umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -acodec aac -ab 80k -ar 48000 -ac 2</params>
+    <extension>mp4</extension>
+    <category>Ipod</category>
+  </iPodx264FS>
+  <flvwebWS>
+    <label>Flash: Video (flv) for Web use (16:9)</label>
+    <params>-vcodec flv -f flv -r 29.97 -s 320x180 -aspect 16:9 -b 300kb -g 160 -cmp 2 -subcmp 2 -mbd 2 -flags +aic+cbp+mv0+mv4+trell -ac 1 -ar 22050 -ab 56k</params>
+    <extension>flv</extension>
+    <category>Websites</category>
+  </flvwebWS>
+  <flvwebFS>
+    <label>Flash: Video (flv) for Web use (4:3)</label>
+    <params>-vcodec flv -f flv -r 29.97 -s 320x240 -aspect 4:3 -b 300kb -g 160 -cmp 2  -subcmp 2  -mbd 2 -flags +aic+cbp+mv0+mv4+trell -ac 1 -ar 22050 -ab 56k</params>
+    <extension>flv</extension>
+    <category>Websites</category>
+  </flvwebFS>
+  <CDWavStereo>
+    <label>Wav for CD</label>
+    <params>-vn -ar 44100</params>
+    <extension>wav</extension>
+    <category>Audio</category>
+  </CDWavStereo>
+  <ntscdvdlq>
+    <label>NTSC DVD Fast (LQ)</label>
+    <params>-target ntsc-dvd -b 5000kb -r 29.97 -s 720x480 -ar 48000 -ab 384kb</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </ntscdvdlq>
+  <paldvdlq>
+    <label>PAL DVD Fast (LQ)</label>
+    <params>-target pal-dvd -b 5000kb -r 25 -s 720x576 -ar 48000 -ab 384kb</params>
+    <extension>mpg</extension>
+    <category>DVD</category>
+  </paldvdlq>
+  <threegp>
+    <label>3gp</label>
+    <params>-acodec libamr_nb  -ac 1  -vcodec h263 -s qcif -ar 8000 -r 25 -ab 12.2k</params>
+    <extension>3gp</extension>
+    <category>Mobile Phones</category>
+  </threegp>
+  <amraudio>
+    <label>AMR Audio</label>
+    <params>-acodec libamr_nb -ar 8000 -ac 1 -ab 32</params>
+    <extension>amr</extension>
+    <category>Mobile Phones</category>
+  </amraudio>
+  <threeg2>
+    <label>3g2</label>
+    <params>-acodec aac  -ac 2  -vcodec mpeg4 -s qcif -b 128kb -r 14.985</params>
+    <extension>3g2</extension>
+    <category>Mobile Phones</category>
+  </threeg2>
+  <divx>
+    <label>MS Compatible AVI</label>
+    <params>-f avi -acodec mp3 -vcodec msmpeg4 -ab 192</params>
+    <extension>avi</extension>
+    <category>AVI</category>
+  </divx>
+  <wmv>
+    <label>WMV2</label>
+    <params>-vcodec wmv2  -acodec wmav2</params>
+    <extension>wmv</extension>
+    <category>WMV</category>
+  </wmv>
+  <wma>
+    <label>WMA</label>
+    <params>-vn  -acodec wmav2</params>
+    <extension>wma</extension>
+    <category>Audio</category>
+  </wma>
+  <qmov>
+    <label>Quicktime MOV</label>
+    <params>-acodec mp3 -ab 192</params>
+    <extension>mov</extension>
+    <category>Quicktime</category>
+  </qmov>
+  <swf>
+    <label>Shockwave Flash</label>
+    <params>-ar 44100 -ab 192</params>
+    <extension>swf</extension>
+    <category>Websites</category>
+  </swf>
+  <x264HQPSP43>
+    <label>H.264 for PSP (4:3)</label>
+    <params>-r 29.97 -vcodec h264 -s 640x480 -aspect 4:3 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -b 1250k -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -acodec aac -ab 112k -ar 48000 -ac 2 -s 480x272 -aspect 4:3</params>
+    <extension>mp4</extension>
+    <category>PSP</category>
+  </x264HQPSP43>
+  <XviDPSP43>
+    <label>XviD for PSP (4:3)</label>
+    <params>-r 29.97 -vcodec xvid -s 640x480 -aspect 4:3 -maxrate 1500k -b 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 80k -ac 2 -s 320x240</params>
+    <extension>mp4</extension>
+    <category>PSP</category>
+  </XviDPSP43>
+  <x264HQPSP169>
+    <label>H.264 for PSP (16:9)</label>
+    <params>-r 29.97 -vcodec h264 -s 640x480 -aspect 16:9 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -b 1250k -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -acodec aac -ab 112k -ar 48000 -ac 2 -s 480x272 -aspect 4:3</params>
+    <extension>mp4</extension>
+    <category>PSP</category>
+  </x264HQPSP169>
+  <XviDPSP169>
+    <label>XviD for PSP (16:9)</label>
+    <params>-r 29.97 -vcodec xvid -s 640x480 -aspect 16:9 -maxrate 1500k -b 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 80k -ac 2 -s 320x240</params>
+    <extension>mp4</extension>
+    <category>PSP</category>
+  </XviDPSP169>
+  <NeurosOSDTVSFNTSC>
+    <label>Neuros Small File NTSC (4:3)</label>
+    <params>-b 800k -r 29.97 -s 320x240 -aspect 4:3 -vcodec xvid -ar 48000 -ab 80k -ac 2 -acodec aac</params>
+    <extension>mp4</extension>
+    <category>Neuros OSD</category>
+  </NeurosOSDTVSFNTSC>
+  <NeurosOSDTVWSSFNTSC>
+    <label>Neuros Small File NTSC (16:9)</label>
+    <params>-b 800k -r 29.97 -s 352x240 -aspect 16:9 -vcodec xvid -ar 48000 -ab 80k -ac 2 -acodec aac</params>
+    <extension>mp4</extension>
+    <category>Neuros OSD</category>
+  </NeurosOSDTVWSSFNTSC>
+  <NeurosOSDTVHQNTSC>
+    <label>Neuros High Quality NTSC (4:3)</label>
+    <params>-r 29.97 -vcodec xvid -s 640x480 -aspect 4:3 -maxrate 2500k -b 2000k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 128k -ac 2</params>
+    <extension>mp4</extension>
+    <category>Neuros OSD</category>
+  </NeurosOSDTVHQNTSC>
+  <NeurosOSDTVWSHQNTSC>
+    <label>Neuros High Quality NTSC (16:9)</label>
+    <params>-r 29.97 -vcodec xvid -s 704x384 -aspect 16:9 -maxrate 3000k -b 2500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 128k -ac 2</params>
+    <extension>mp4</extension>
+    <category>Neuros OSD</category>
+  </NeurosOSDTVWSHQNTSC>
+  <NeurosOSDTVSFPAL>
+    <label>Neuros Small File PAL (4:3)</label>
+    <params>-b 800k -r 25 -s 320x240 -aspect 4:3 -vcodec xvid -ar 48000 -ab 80k -ac 2 -acodec aac</params>
+    <extension>mp4</extension>
+    <category>Neuros OSD</category>
+  </NeurosOSDTVSFPAL>
+  <NeurosOSDTVWSSFPAL>
+    <label>Neuros Small File PAL (16:9)</label>
+    <params>-b 800k -r 25 -s 352x240 -aspect 16:9 -vcodec xvid -ar 48000 -ab 80k -ac 2 -acodec aac</params>
+    <extension>mp4</extension>
+    <category>Neuros OSD</category>
+  </NeurosOSDTVWSSFPAL>
+  <NeurosOSDTVHQPAL>
+    <label>Neuros High Quality PAL (4:3)</label>
+    <params>-r 25 -vcodec xvid -s 640x480 -aspect 4:3 -maxrate 2500k -b 2000k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 128k -ac 2</params>
+    <extension>mp4</extension>
+    <category>Neuros OSD</category>
+  </NeurosOSDTVHQPAL>
+  <NeurosOSDTVWSHQPAL>
+    <label>Neuros High Quality PAL (16:9)</label>
+    <params>-r 25 -vcodec xvid -s 704x384 -aspect 16:9 -maxrate 3000k -b 2500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 128k -ac 2</params>
+    <extension>mp4</extension>
+    <category>Neuros OSD</category>
+  </NeurosOSDTVWSHQPAL>
+  <H105FS>
+    <label>RB iRiver H10 5/6GB 4:3</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 128x96 -b 224kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </H105FS>
+  <H105WS>
+    <label>RB iRiver H10 5/6GB 16:9</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 128x80 -b 224kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </H105WS>
+  <H1020FS>
+    <label>RB iRiver H10 20GB 4:3</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 160x128 -b 224kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </H1020FS>
+  <H1020WS>
+    <label>RB iRiver H10 20GB 16:9</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 160x96 -b 224kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </H1020WS>
+  <X5FS>
+    <label>RB Cowon iAudio X5 4:3</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 160x128 -b 176kb -r 15 -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </X5FS>
+  <X5WS>
+    <label>RB Cowon iAudio X5 16:9</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 160x96 -b 224kb -r 24 -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </X5WS>
+  <nanoFS>
+    <label>RB Apple iPod Nano 4:3</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 176x128 -b 256kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </nanoFS>
+  <nanoWS>
+    <label>RB Apple iPod Nano 16:9</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 176x128 -b 256kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </nanoWS>
+  <e200FS>
+    <label>RB Sandisk Sansa e200 4:3</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 224x176 -b 320kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </e200FS>
+  <e200WS>
+    <label>RB Sandisk Sansa e200 16:9</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 224x128 -b 320kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </e200WS>
+  <PhotoFS>
+    <label>RB Apple iPod Photo/Color 4:3</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 224x176 -b 320kb -r 15 -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </PhotoFS>
+  <PhotoWS>
+    <label>RB Apple iPod Photo/Color 16:9</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 224x128 -b 320kb -r 24 -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </PhotoWS>
+  <H300FS>
+    <label>RB iRiver H300 4:3</label>
+    <params>-acodec mp3 -ab 96 -ar 44100 -vcodec mpeg2video -s 224x176 -b 224kb -r 10 -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </H300FS>
+  <H300WS>
+    <label>RB iRiver H300 16:9</label>
+    <params>-acodec mp3 -ab 96 -ar 44100 -vcodec mpeg2video -s 224x128 -b 256kb -r 15 -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </H300WS>
+  <GigabeatFS>
+    <label>RB Toshiba Gigabeat F/X 4:3</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 320x240 -b 600kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </GigabeatFS>
+  <GigabeatWS>
+    <label>RB Toshiba Gigabeat F/X 16:9</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 320x176 -b 600kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </GigabeatWS>
+  <I5GFS>
+    <label>RB Apple iPod Video 4:3</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 320x240 -b 400kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </I5GFS>
+  <I5GWS>
+    <label>RB Apple iPod Video 16:9</label>
+    <params>-acodec mp3 -ab 128 -ar 44100 -vcodec mpeg2video -s 320x176 -b 400kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Rockbox</category>
+  </I5GWS>
+  <PalmXviDWS>
+    <label>XviD for Palm (3:2)</label>
+    <params>-r 29.97 -vcodec xvid -s 480x320 -aspect 3:2 -maxrate 450k -b 430k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 44100 -ab 80k -ac 2</params>
+    <extension>mp4</extension>
+    <category>Palm</category>
+  </PalmXviDWS>
+  <PalmXviDFS>
+    <label>Xvid for Palm (4:3)</label>
+    <params>-r 29.97 -vcodec xvid -s 428x320 -aspect 4:3 -maxrate 550k -b 500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 44100 -ab 80k -ac 2</params>
+    <extension>mp4</extension>
+    <category>Palm</category>
+  </PalmXviDFS>
+  <dvntsc>
+    <label>Raw DV for NTSC 4:3</label>
+    <params>-target ntsc-dv -aspect 4:3</params>
+    <extension>dv</extension>
+    <category>DV</category>
+  </dvntsc>
+  <dvpal>
+    <label>Raw DV for PAL 4:3</label>
+    <params>-target pal-dv -aspect 4:3</params>
+    <extension>dv</extension>
+    <category>DV</category>
+  </dvpal>
+  <ac3dvd192>
+    <label>Ac3 DVD - 192kbps Stereo</label>
+    <params>-acodec ac3 -ab 192k -ar 48000 -ac 2</params>
+    <extension>ac3</extension>
+    <category>Audio</category>
+  </ac3dvd192>
+  <ac3dvd384>
+    <label>Ac3 DVD - 384kbps Stereo</label>
+    <params>-acodec ac3 -ab 384k -ar 48000 -ac 2</params>
+    <extension>ac3</extension>
+    <category>Audio</category>
+  </ac3dvd384>
+</presets>
