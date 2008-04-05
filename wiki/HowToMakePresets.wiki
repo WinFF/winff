@@ -1,4 +1,6 @@
+#summary How to Make Presets For WinFF
 #labels Featured
+
 = How to make a preset for WinFF =
 
 Making presets for WinFF is not difficult, it's learning the ffmpeg command line. All in all the ffmpeg command line really isn't that complicated considering what's being done.
