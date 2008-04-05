@@ -85,10 +85,6 @@ msgstr ""
 msgid "Additional Options"
 msgstr ""
 
-#: unit1:rsoptions
-msgid "Options"
-msgstr ""
-
 #: unit1:rsfilemenu
 msgid "File"
 msgstr ""
@@ -119,10 +115,6 @@ msgstr ""
 
 #: unit1:rslabel3
 msgid "Video Bitrate"
-msgstr ""
-
-#: unit1:rsgroupbox1
-msgid "Additional Options"
 msgstr ""
 
 #: unit1:rslabel1
@@ -249,10 +241,6 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: unit2:rslabel1
-msgid "Presets"
-msgstr ""
-
 #: unit2:rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
 msgstr ""
@@ -321,14 +309,6 @@ msgstr ""
 msgid "WinFF Preferences"
 msgstr ""
 
-#: unit4:rsbutton1
-msgid "OK"
-msgstr ""
-
-#: unit4:rsbutton2
-msgid "Cancel"
-msgstr ""
-
 #: unit4:rscheckbox1
 msgid "Remember Last Directory Used"
 msgstr ""
@@ -379,9 +359,5 @@ msgstr ""
 
 #: unit5:rsform5
 msgid "FFmpeg Command Line"
-msgstr ""
-
-#: unit5:rsbutton1
-msgid "OK"
 msgstr ""
 
