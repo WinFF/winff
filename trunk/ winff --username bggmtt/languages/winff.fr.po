@@ -1,4 +1,4 @@
-﻿msgid ""
+msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
@@ -95,7 +95,7 @@ msgstr "Fichier"
 
 #: unit1:rsgroupbox2
 msgid "Additional Command Line Parameters (Advanced)"
-msgstr "Paramètres de Ligne de Commande Supplémentaire (expert)"
+msgstr "Paramètres de ligne de commande supplémentaire (expert)"
 
 #: unit1:rslabel5
 msgid "Video Size"
@@ -115,7 +115,7 @@ msgstr "Fréquence"
 
 #: unit1:rslabel4
 msgid "Frame Rate"
-msgstr "Images par Seconde"
+msgstr "Images/Seconde"
 
 #: unit1:rslabel3
 msgid "Video Bitrate"
@@ -127,7 +127,7 @@ msgstr "Options supplémentaires"
 
 #: unit1:rslabel1
 msgid "Output Folder"
-msgstr "Dossier de Destination"
+msgstr "Dossier de sortie"
 
 #: unit1:rslabel2
 msgid "Convert To ..."
@@ -255,11 +255,11 @@ msgstr "Modèles"
 
 #: unit2:rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "Nom du Modèle (Un seul mot alphanumerique)"
+msgstr "Nom du modèle (Un seul mot alphanumerique)"
 
 #: unit2:rslabel3
 msgid "Preset Label"
-msgstr "Label du Modèle"
+msgstr "Label du modèle"
 
 #: unit2:rslabel4
 msgid "Preset Command Line (no -i or output file)"
@@ -331,15 +331,15 @@ msgstr "Annuler"
 
 #: unit4:rscheckbox1
 msgid "Remember Last Directory Used"
-msgstr "Mémoriser le Dernier Répertoire Utilisé"
+msgstr "Mémoriser le dernier répertoire utilisé"
 
 #: unit4:rscheckbox3
 msgid "Multithreading for Dual Core Processors"
-msgstr "Multithreading pour les Processeurs Doubles Coeurs"
+msgstr "Multithreading pour les processeurs doubles coeurs"
 
 #: unit4:rslabel1
 msgid "Default Destination Directory"
-msgstr "Répertoire de Destination par Défaut"
+msgstr "Répertoire de destination par défaut"
 
 #: unit4:rslabel2
 msgid "Path to FFmpeg.exe"
@@ -363,7 +363,7 @@ msgstr "Terminal dans lequel lancer FFmpeg"
 
 #: unit4:rslabel7
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
-msgstr "Paramètres du Terminal (-e pour Xterm, -x pour le terminal de Gnome...)"
+msgstr "Paramètres du terminal (-e pour Xterm, -x pour le terminal de Gnome...)"
 
 #: unit4:rspage1
 msgid "General"
