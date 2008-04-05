@@ -152,10 +152,6 @@ begin
         edit3.Text:= presets.FindNode(pn).FindNode('params').FindNode('#text').NodeValue
      else
         edit3.Text:='';
-     if presets.FindNode(pn).FindNode('category').HasChildNodes then
-        edit3.Text:= presets.FindNode(pn).FindNode('category').FindNode('#text').NodeValue
-     else
-        edit3.Text:='';
      edit4.Text:= presets.FindNode(pn).FindNode('extension').FindNode('#text').NodeValue;
      if presets.FindNode(pn).FindNode('category').HasChildNodes then
         edit5.Text:= presets.FindNode(pn).FindNode('category').FindNode('#text').NodeValue
