@@ -8,7 +8,7 @@
       <IconPath Value=".\"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
-      <ActiveEditorIndexAtStart Value="3"/>
+      <ActiveEditorIndexAtStart Value="5"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
@@ -65,8 +65,8 @@
         <IsPartOfProject Value="True"/>
         <ResourceFilename Value="unit2.lrs"/>
         <UnitName Value="Unit2"/>
-        <CursorPos X="29" Y="115"/>
-        <TopLine Value="45"/>
+        <CursorPos X="24" Y="154"/>
+        <TopLine Value="131"/>
         <EditorIndex Value="5"/>
         <UsageCount Value="210"/>
         <Loaded Value="True"/>
@@ -78,7 +78,7 @@
         <ResourceFilename Value="unit3.lrs"/>
         <UnitName Value="Unit3"/>
         <CursorPos X="21" Y="35"/>
-        <TopLine Value="24"/>
+        <TopLine Value="44"/>
         <EditorIndex Value="3"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
