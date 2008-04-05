@@ -1,0 +1,48 @@
+#summary Tips on Translating The WinFF PO File
+#labels Featured,Phase-Implementation
+= Tips on Translating The WinFF PO File =
+
+The winff.po can be translated using a text editor or programs such as a kbabel for linux, poedit for windows and linux. I'm going to cover using a text editor.
+
+get the file here: http://winff.org/files/winff.po.zip
+
+once you have the file, open it in your text editor. The Gnome editor is great. If your using windows i don't recommend notepad, but it should work theoretically.
+
+
+Once in the file you will see a bunch of lines like:
+
+ 
+
+    #: unit1:rsdisplaycmdline
+    msgid "Display CMD Line"
+    msgstr "" 
+
+ 
+
+The First line is the english line, and should must remain as it is. The second line is where the translation should go. For example from Kai Evers German translation:
+
+ 
+
+    #: unit1:rsdisplaycmdline
+    msgid "Display CMD Line"
+    msgstr "Kommandozeile anzeigen" 
+
+ 
+
+Continue to complete the entire file.
+
+The file should be named with the two character abbreviation for your language. For example, use winff.ru.po for Russian and winff.es.po for Spanish. Once you completed, you can try out the file. For windows it should be put in "C:\program files\winff\languages" folder. For linux it should go in "/usr/share/winff/languages"
+
+ 
+
+Some pointers:
+
+    * Do not use the single quote - ' -
+    * AC is audio channel.
+    * Some translation maybe to long to fit in the space above or next to the button. I had to do this in english also. Unfortunetly it is unavoidable. To make matters worse: different linux distros and different users, use different default fonts.
+
+Once you are happy with your translation, contact me and I'll tell you where to send it.
+
+New translations will be posted on winff.org, and will come out with next release.
+
+Thanks in advance for translating. 
