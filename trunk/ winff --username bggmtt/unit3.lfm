@@ -26,7 +26,7 @@ object Form3: TForm3
     Height = 240
     Width = 344
     OnChangeBounds = Notebook1ChangeBounds
-    PageIndex = 0
+    PageIndex = 2
     TabOrder = 1
     object Page1: TPage
       Caption = 'WinFF'
@@ -221,69 +221,13 @@ object Form3: TForm3
       Caption = 'Thanks'
       ClientWidth = 336
       ClientHeight = 214
-      object Label11: TLabel
+      object ListBox1: TListBox
         Left = 4
-        Height = 16
-        Top = 18
-        Width = 175
-        Caption = 'Gmaq for his presets and ideas'
-        ParentColor = False
-      end
-      object Label12: TLabel
-        Left = 4
-        Height = 16
-        Top = 64
-        Width = 269
-        Caption = 'Iconsdesigns.com for their NuoveXT 2 GPL icons'
-        ParentColor = False
-      end
-      object Label13: TLabel
-        Left = 4
-        Height = 16
-        Top = 40
-        Width = 185
-        Caption = 'Chris Bidmead for scripting ideas'
-        ParentColor = False
-      end
-      object Label14: TLabel
-        Left = 4
-        Height = 16
-        Top = 90
-        Width = 233
-        Caption = 'Neil Hinton for 95/98/ME compatibility work'
-        ParentColor = False
-      end
-      object Label15: TLabel
-        Left = 4
-        Height = 16
-        Top = 114
-        Width = 180
-        Caption = 'German translation by Kai Evers '
-        ParentColor = False
-      end
-      object Label16: TLabel
-        Left = 4
-        Height = 16
-        Top = 138
-        Width = 221
-        Caption = 'Bulgarian translation by Симеон Узунов'
-        ParentColor = False
-      end
-      object Label17: TLabel
-        Left = 4
-        Height = 16
-        Top = 162
-        Width = 221
-        Caption = 'Italian translation by Roberto Calamante'
-        ParentColor = False
-      end
-      object Label18: TLabel
-        Left = 4
-        Height = 16
-        Top = 186
-        Width = 186
-        Caption = 'Turkish translation by Emre Erkan'
-        ParentColor = False
+        Height = 192
+        Top = 10
+        Width = 320
+        ClickOnSelChange = False
+        TabOrder = 0
       end
     end
   end
