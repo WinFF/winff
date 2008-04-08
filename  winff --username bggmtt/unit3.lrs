@@ -9,7 +9,7 @@ LazarusResources.Add('TForm3','FORMDATA',[
   +#0#6'Height'#2#25#3'Top'#3#248#0#5'Width'#2'K'#25'BorderSpacing.InnerBorder'
   +#2#4#7'Caption'#6#2'OK'#7'OnClick'#7#12'Button1Click'#8'TabOrder'#2#0#0#0#9
   +'TNotebook'#9'Notebook1'#6'Height'#3#240#0#5'Width'#3'X'#1#14'OnChangeBounds'
-  +#7#21'Notebook1ChangeBounds'#9'PageIndex'#2#0#8'TabOrder'#2#1#0#5'TPage'#5'P'
+  +#7#21'Notebook1ChangeBounds'#9'PageIndex'#2#2#8'TabOrder'#2#1#0#5'TPage'#5'P'
   +'age1'#7'Caption'#6#5'WinFF'#11'ClientWidth'#3'P'#1#12'ClientHeight'#3#214#0
   +#0#6'TLabel'#6'Label1'#4'Left'#2'<'#6'Height'#2#16#3'Top'#2#10#5'Width'#2'8'
   +#7'Caption'#6#9'WinFF 0.4'#11'ParentColor'#8#0#0#6'TImage'#6'Image1'#4'Left'
@@ -77,22 +77,7 @@ LazarusResources.Add('TForm3','FORMDATA',[
   +'arentColor'#8#0#0#6'TLabel'#7'Label10'#4'Left'#2#4#6'Height'#2#16#3'Top'#2
   +'r'#5'Width'#3#167#0#7'Caption'#6' http://arrozcru.no-ip.org/ffmpeg'#11'Pare'
   +'ntColor'#8#0#0#0#5'TPage'#5'Page3'#7'Caption'#6#6'Thanks'#11'ClientWidth'#3
-  +'P'#1#12'ClientHeight'#3#214#0#0#6'TLabel'#7'Label11'#4'Left'#2#4#6'Height'#2
-  +#16#3'Top'#2#18#5'Width'#3#175#0#7'Caption'#6#30'Gmaq for his presets and id'
-  +'eas'#11'ParentColor'#8#0#0#6'TLabel'#7'Label12'#4'Left'#2#4#6'Height'#2#16#3
-  +'Top'#2'@'#5'Width'#3#13#1#7'Caption'#6'.Iconsdesigns.com for their NuoveXT '
-  +'2 GPL icons'#11'ParentColor'#8#0#0#6'TLabel'#7'Label13'#4'Left'#2#4#6'Heigh'
-  +'t'#2#16#3'Top'#2'('#5'Width'#3#185#0#7'Caption'#6'!Chris Bidmead for script'
-  +'ing ideas'#11'ParentColor'#8#0#0#6'TLabel'#7'Label14'#4'Left'#2#4#6'Height'
-  +#2#16#3'Top'#2'Z'#5'Width'#3#233#0#7'Caption'#6'+Neil Hinton for 95/98/ME co'
-  +'mpatibility work'#11'ParentColor'#8#0#0#6'TLabel'#7'Label15'#4'Left'#2#4#6
-  +'Height'#2#16#3'Top'#2'r'#5'Width'#3#180#0#7'Caption'#6' German translation '
-  +'by Kai Evers '#11'ParentColor'#8#0#0#6'TLabel'#7'Label16'#4'Left'#2#4#6'Hei'
-  +'ght'#2#16#3'Top'#3#138#0#5'Width'#3#221#0#7'Caption'#6'2Bulgarian translati'
-  +'on by '#208#161#208#184#208#188#208#181#208#190#208#189' '#208#163#208#183
-  +#209#131#208#189#208#190#208#178#11'ParentColor'#8#0#0#6'TLabel'#7'Label17'#4
-  +'Left'#2#4#6'Height'#2#16#3'Top'#3#162#0#5'Width'#3#221#0#7'Caption'#6'(Ital'
-  +'ian translation by Roberto Calamante'#11'ParentColor'#8#0#0#6'TLabel'#7'Lab'
-  +'el18'#4'Left'#2#4#6'Height'#2#16#3'Top'#3#186#0#5'Width'#3#186#0#7'Caption'
-  +#6'!Turkish translation by Emre Erkan'#11'ParentColor'#8#0#0#0#0#0
+  +'P'#1#12'ClientHeight'#3#214#0#0#8'TListBox'#8'ListBox1'#4'Left'#2#4#6'Heigh'
+  +'t'#3#192#0#3'Top'#2#10#5'Width'#3'@'#1#16'ClickOnSelChange'#8#8'TabOrder'#2
+  +#0#0#0#0#0#0
 ]);
