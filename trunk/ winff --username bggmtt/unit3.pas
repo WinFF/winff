@@ -25,14 +25,6 @@ type
     Image1: TImage;
     Label1: TLabel;
     Label10: TLabel;
-    Label11: TLabel;
-    Label12: TLabel;
-    Label13: TLabel;
-    Label14: TLabel;
-    Label15: TLabel;
-    Label16: TLabel;
-    Label17: TLabel;
-    Label18: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
@@ -41,6 +33,7 @@ type
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
+    ListBox1: TListBox;
     Notebook1: TNotebook;
     Page1: TPage;
     Page2: TPage;
@@ -51,6 +44,7 @@ type
     procedure Label4Click(Sender: TObject);
     procedure Label5Click(Sender: TObject);
     procedure Label7Click(Sender: TObject);
+    procedure Memo1Change(Sender: TObject);
     procedure Notebook1ChangeBounds(Sender: TObject);
   private
     { private declarations }
@@ -75,7 +69,7 @@ uses unit1;
 { TForm3 }
 
 procedure TForm3.FormCreate(Sender: TObject);
-begin
+begin                  // do translations
     TranslateUnitResourceStrings('unit3', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
     button1.caption:=rsButton1;
     page1.caption:=rsPage1;
@@ -83,6 +77,19 @@ begin
     page3.caption:=rsPage3;
     form3.caption:=rsform3;
     label8.caption:=rslabel8;
+    
+                     // fill thank you memo
+    listbox1.items.Add('Gmaq for his presets, ideas, and support.');
+    listbox1.items.Add('Chris Bidmead for scripting ideas.');
+    listbox1.items.Add('Neil Hinton for 95/98/ME Compatibility');
+    listbox1.items.Add('German translation by Kai Evers');
+    listbox1.items.Add('Bulgarian translation by Simeon Uzunov');
+    listbox1.items.Add('Italian translation by Roberto Calamante');
+    listbox1.items.Add('Turkish translation by Emre Erkan');
+    listbox1.items.Add('Polish translation by Marcin Trybus');
+    listbox1.items.Add('');
+    listbox1.items.Add('Thanks to all the users and bug reporters');
+
 
 end;
 
@@ -115,6 +122,11 @@ begin
   {$ifdef win32}
   ShellExecute(form3.handle,'open','http://arrozcru.no-ip.org/ffmpeg',nil,nil, SW_SHOWNORMAL);
   {$endif}
+end;
+
+procedure TForm3.Memo1Change(Sender: TObject);
+begin
+
 end;
 
 procedure TForm3.Notebook1ChangeBounds(Sender: TObject);
