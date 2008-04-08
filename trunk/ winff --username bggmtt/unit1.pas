@@ -625,8 +625,40 @@ end;
 
 // change category
 procedure TForm1.categoryboxChange(Sender: TObject);
+var
+i,j:integer;
+node,subnode, catnode,catsubnode : tdomnode;
+selectedcategory, category,presetcategory: string;
+categorylist: tstrings;
 begin
-   populatepresetbox(categorybox.items[categorybox.ItemIndex]);
+   selectedcategory:=categorybox.Text;
+
+   presetbox.Clear;
+   if selectedcategory='------' then
+      category:=''
+   else
+      category:=trim(categorybox.Text);
+
+  for i:= 0 to presets.ChildNodes.Count -1  do
+   begin
+      node:= presets.ChildNodes.item[i];
+      subnode:= node.FindNode('label');
+      try
+        catnode:= presets.ChildNodes.item[i];
+        catsubnode:= catnode.FindNode('category');
+        presetcategory:=catsubnode.FindNode('#text').NodeValue;
+      except
+        presetcategory:='';
+      end;
+      if category = '' then
+         presetbox.items.add(subnode.findnode('#text').NodeValue)
+      else
+         if (presetcategory = category) then
+            presetbox.items.add(subnode.findnode('#text').NodeValue);
+   end;
+   presetbox.sorted:=true;
+   presetbox.sorted:=false;
+
 end;
 
 
