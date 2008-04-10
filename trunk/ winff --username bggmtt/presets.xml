@@ -50,19 +50,19 @@
   </x264HQFS>
   <palvcdhq>
     <label>PAL VCD (HQ)</label>
-    <params>-target pal-vcd -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <params>-target pal-vcd -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
     <extension>mpg</extension>
     <category>VCD</category>
   </palvcdhq>
   <paldvdhqWS>
     <label>PAL DVD HQ (16:9)</label>
-    <params>-target pal-dvd -aspect 16:9 -b 8000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <params>-target pal-dvd -aspect 16:9 -b 8000k -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
     <extension>mpg</extension>
     <category>DVD</category>
   </paldvdhqWS>
   <paldvdhqFS>
     <label>PAL DVD HQ (4:3)</label>
-    <params>-target pal-dvd -aspect 4:3 -b 8000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <params>-target pal-dvd -aspect 4:3 -b 8000k -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
     <extension>mpg</extension>
     <category>DVD</category>
   </paldvdhqFS>
@@ -80,19 +80,19 @@
   </paldvdgoodqFS>
   <ntscvcdhq>
     <label>NTSC VCD (HQ)</label>
-    <params>-target ntsc-vcd -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <params>-target ntsc-vcd -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
     <extension>mpg</extension>
     <category>VCD</category>
   </ntscvcdhq>
   <ntscdvdhqWS>
     <label>NTSC DVD HQ (16:9)</label>
-    <params>-target ntsc-dvd -r 29.97 -s 720x480 -aspect 16:9 -b 8000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <params>-target ntsc-dvd -r 29.97 -s 720x480 -aspect 16:9 -b 8000k -g 12 -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
     <extension>mpg</extension>
     <category>DVD</category>
   </ntscdvdhqWS>
   <ntscdvdhqFS>
     <label>NTSC DVD HQ (4:3)</label>
-    <params>-target ntsc-dvd -r 29.97 -s 720x480 -aspect 4:3 -b 8000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2</params>
+    <params>-target ntsc-dvd -r 29.97 -s 720x480 -aspect 4:3 -b 8000k -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
     <extension>mpg</extension>
     <category>DVD</category>
   </ntscdvdhqFS>
