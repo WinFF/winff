@@ -26,7 +26,7 @@ object Form3: TForm3
     Height = 240
     Width = 344
     OnChangeBounds = Notebook1ChangeBounds
-    PageIndex = 2
+    PageIndex = 0
     TabOrder = 1
     object Page1: TPage
       Caption = 'WinFF'
@@ -36,8 +36,8 @@ object Form3: TForm3
         Left = 60
         Height = 16
         Top = 10
-        Width = 56
-        Caption = 'WinFF 0.4'
+        Width = 63
+        Caption = 'WinFF 0.41'
         ParentColor = False
       end
       object Image1: TImage
@@ -167,6 +167,8 @@ object Form3: TForm3
     end
     object Page2: TPage
       Caption = 'FFmpeg'
+      ClientWidth = 336
+      ClientHeight = 214
       object Label5: TLabel
         Left = 4
         Height = 16
