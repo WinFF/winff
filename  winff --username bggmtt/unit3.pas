@@ -87,8 +87,9 @@ begin                  // do translations
     listbox1.items.Add('Italian translation by Roberto Calamante');
     listbox1.items.Add('Turkish translation by Emre Erkan');
     listbox1.items.Add('Polish translation by Marcin Trybus');
+    listbox1.items.Add('Iconsdesigns.com for their NeuvoXT 2 GPL Icons');
     listbox1.items.Add('');
-    listbox1.items.Add('Thanks to all the users and bug reporters');
+    listbox1.items.Add('Thanks to all the users');
 
 
 end;
