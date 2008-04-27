@@ -1128,7 +1128,7 @@ begin                                     // get setup
          end;
 
        command := '';
-       {$ifdef win32}titlestring:='title' + rsConverting + ' ' + extractfilename(filename) +
+       {$ifdef win32}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + extractfilename(filename)+
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
