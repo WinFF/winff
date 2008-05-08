@@ -1214,8 +1214,10 @@ begin
             end;
      delete(commandline,startpos,endpos-startpos);
      commandline:=leftstr(commandline,startpos)+replacement+' '+rightstr(commandline,length(commandline)-startpos);
-   end;
-   result:=commandline;
+   end
+ else
+     commandline+= ' ' + replacement;
+     result:=commandline;
 end;
 
 // import a preset from a file
