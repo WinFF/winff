@@ -53,8 +53,8 @@
         <IsPartOfProject Value="True"/>
         <ResourceFilename Value="unit1.lrs"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="42" Y="1131"/>
-        <TopLine Value="1104"/>
+        <CursorPos X="2" Y="1218"/>
+        <TopLine Value="1196"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Loaded Value="True"/>
@@ -180,7 +180,12 @@
         <UsageCount Value="19"/>
       </Unit16>
     </Units>
-    <JumpHistory Count="0" HistoryIndex="-1"/>
+    <JumpHistory Count="1" HistoryIndex="0">
+      <Position1>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1218" Column="38" TopLine="1197"/>
+      </Position1>
+    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="5"/>
