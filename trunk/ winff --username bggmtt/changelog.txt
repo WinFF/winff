@@ -1,6 +1,27 @@
 WinFF Copyright 2008 Matthew Weatherford
 http://www.winff.org
 
+v0.42
+-----
+Brazilian Portuguese 
+Portuguese
+Dutch
+fixed options not being inserted into commandline when they don't exist already
+fixed space needed between title command in win32 script
+Spanish
+updated Italian
+Traditional Chinese
+
+v0.41
+-----
+fixed access violation in newer gtk2 releases
+fixed category name appearing in parameters in the preset editor
+fixed Add button not translating
+French, Polish translations
+translated windows installer
+Fixed Duplicate Messages in winff.po
+Updated dvd presets
+
 v0.4
 ----
 better command line processing
