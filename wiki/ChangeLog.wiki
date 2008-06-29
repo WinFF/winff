@@ -1,4 +1,4 @@
-# Complete list of changes
+#summary Complete list of changes
 
 = WinFF =
 
