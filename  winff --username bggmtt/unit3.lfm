@@ -37,7 +37,7 @@ object Form3: TForm3
         Height = 16
         Top = 10
         Width = 63
-        Caption = 'WinFF 0.41'
+        Caption = 'WinFF 0.42'
         ParentColor = False
       end
       object Image1: TImage
