@@ -1,5 +1,3 @@
-{ This is an automatically generated lazarus resource file }
-
 LazarusResources.Add('TForm3','FORMDATA',[
   'TPF0'#6'TForm3'#5'Form3'#4'Left'#3'='#1#6'Height'#3'#'#1#3'Top'#3#23#1#5'Wid'
   +'th'#3'T'#1#18'HorzScrollBar.Page'#3'S'#1#18'VertScrollBar.Page'#3'"'#1#13'A'
@@ -12,7 +10,7 @@ LazarusResources.Add('TForm3','FORMDATA',[
   +#7#21'Notebook1ChangeBounds'#9'PageIndex'#2#0#8'TabOrder'#2#1#0#5'TPage'#5'P'
   +'age1'#7'Caption'#6#5'WinFF'#11'ClientWidth'#3'P'#1#12'ClientHeight'#3#214#0
   +#0#6'TLabel'#6'Label1'#4'Left'#2'<'#6'Height'#2#16#3'Top'#2#10#5'Width'#2'?'
-  +#7'Caption'#6#10'WinFF 0.41'#11'ParentColor'#8#0#0#6'TImage'#6'Image1'#4'Lef'
+  +#7'Caption'#6#10'WinFF 0.42'#11'ParentColor'#8#0#0#6'TImage'#6'Image1'#4'Lef'
   +'t'#2#4#6'Height'#2'0'#3'Top'#2#10#5'Width'#2'0'#12'Picture.Data'#10'S'#11#0
   +#0#7'TPixmapG'#11#0#0'/* XPM */'#13#10'static char * winff_xpm[] = {'#13#10
   +'"48 48 18 1",'#13#10'" '#9'c None",'#13#10'".'#9'c #B64C18",'#13#10'"+'#9'c'
