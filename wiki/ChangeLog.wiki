@@ -1,6 +1,6 @@
 #Change Log
 
-= WinF =
+= WinFF =
 
 WinFF Copyright 2008 Matthew Weatherford
 http://www.winff.org
