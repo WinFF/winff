@@ -1,4 +1,4 @@
-#Change Log
+# Complete list of changes
 
 = WinFF =
 
