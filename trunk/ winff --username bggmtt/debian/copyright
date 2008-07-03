@@ -1,0 +1,44 @@
+Format-Specification: http://wiki.debian.org/Proposals/CopyrightFormat
+Packaged-By: Paul Gevers <paul@climbing.nl>
+Packaged-Date: Fr, 27 Jun 2008 20:23:00 +0200.
+Original-Source-Location:
+ http://winff.googlecode.com/files/winff041-source.zip
+Upstream-Author: Matthew Weatherford <matt@biggmatt.com>
+
+Files: *
+Copyright: © 2006-2008 Matthew Weatherford <matt@biggmatt.com>
+License: GPL-3
+  WinFF is published under the GNU Public License v3 without any
+  warranty implied or otherwise, with no suitability for any purpose.
+  Use this software at your own risk.
+  .
+  On Debian systems, the complete text of the GNU General Public
+  License, version 3, can be found in 
+  /usr/share/common-licenses/GPL-3.
+
+Files: *.pas, winff.lpr
+Copyright: © 2006-2008 Matthew Weatherford <matt@biggmatt.com>
+License: GPL-3+
+  Licensed under the GPL v3 or any later version
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL.
+
+Files: debian/*
+Copyright: © 2008 Paul Gevers <paul@climbing.nl>
+License: GPL-3+
+  The Debian packaging is © 2008, Paul Gevers <paul@climbing.nl> and
+  is licensed under the GPL version 3 or later, see
+  `/usr/share/common-licenses/GPL'.
+
+Files: winff-icons/*
+Copyright: © 2007 Alexandre Moore <alexandre.moore@gmail.com>
+License: LGPL-3
+  The Icons are from Iconsdesigns.com's NuoveXT 2 where they are
+  licensed under the GNU Lesser General Public License version 3.
+  They were modified from their original state by scaling to 24x24 and
+  converting to xpm.
+  .
+  On Debian systems, the complete text of the GNU Lesser General
+  Public License, version 3, can be found in 
+  /usr/share/common-licenses/LGPL-3.
