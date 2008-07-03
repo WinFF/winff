@@ -1,0 +1,5 @@
+winff (0.42-1) unstable; urgency=low
+
+  * Initial release (Closes: #485481)
+
+ -- Paul Gevers <paul@climbing.nl>  Sat, 28 Jun 2008 22:57:44 +0200

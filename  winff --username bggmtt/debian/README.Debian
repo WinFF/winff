@@ -1,0 +1,6 @@
+Not all the original presets that come with WinFF work with the Debian
+version of ffmpeg. Therefore, a filtered version is provided as a
+standard. The original presets are still provided in 
+/usr/share/winff/presets-orig.xml and can be loaded into the program.
+
+Paul Gevers, June 14, 2008
