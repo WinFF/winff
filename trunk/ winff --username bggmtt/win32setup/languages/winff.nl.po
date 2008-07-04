@@ -1,0 +1,363 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WinFF 0.4\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Matt Weatherford <matt@biggmatt.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: unit1:rsaddbtn
+msgid "Add"
+msgstr "Toevoegen"
+
+#: unit1:rslabel10
+msgid "AC'"
+msgstr "AC"
+
+#: unit1:rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr "Toon comandoregel"
+
+#: unit1:rspauseonfinish
+msgid "Pause on Finish"
+msgstr "Pause na beëindigen"
+
+#: unit1:rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr "Afsluiten na beëindigen"
+
+#: unit1:rsoptionsbtn
+msgid "Options"
+msgstr "Opties"
+
+#: unit1:rsstartbtn
+msgid "Convert"
+msgstr "Converteer"
+
+#: unit1:rsplay
+msgid "Play"
+msgstr "Afspelen"
+
+#: unit1:rsclearbtn
+msgid "Clear"
+msgstr "Verwijderen"
+
+#: unit1:rsremovebtn
+msgid "Remove"
+msgstr "Wissen"
+
+#: unit1:rscheckbox2
+msgid "Deinterlace"
+msgstr "Deinterlace"
+
+#: unit1:rspass2
+msgid "2 pass"
+msgstr "2 passen"
+
+#: unit1:rsmenuitem1
+msgid "Edit"
+msgstr "Bewerken"
+
+#: unit1:rsmenuitem2
+msgid "About"
+msgstr "Over"
+
+#: unit1:rsmenuitem3
+msgid "Exit"
+msgstr "Sluiten"
+
+#: unit1:rsmenuitem4
+msgid "Presets"
+msgstr "Preselectie"
+
+#: unit1:rsmenuitem5
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: unit1:rsimportmenu
+msgid "Import Preset"
+msgstr "Importeer preselectie"
+
+#: unit1:rsshowoptions
+msgid "Additional Options"
+msgstr "Extra opties"
+
+#: unit1:rsfilemenu
+msgid "File"
+msgstr "Bestand"
+
+#: unit1:rsgroupbox2
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr "Extra commandoregel parameters (gevorderden)"
+
+#: unit1:rslabel5
+msgid "Video Size"
+msgstr "Videoformaat"
+
+#: unit1:rslabel6
+msgid "Aspect Ratio"
+msgstr "Aspectverhouding"
+
+#: unit1:rslabel7
+msgid "Audio Bitrate"
+msgstr "Audio bitsnelheid"
+
+#: unit1:rslabel8
+msgid "Sample Rate"
+msgstr "Audio freq."
+
+#: unit1:rslabel4
+msgid "Frame Rate"
+msgstr "Video freq."
+
+#: unit1:rslabel3
+msgid "Video Bitrate"
+msgstr "Video bitsnelheid"
+
+#: unit1:rslabel1
+msgid "Output Folder"
+msgstr "Doelmap"
+
+#: unit1:rslabel2
+msgid "Convert To ..."
+msgstr "Converteer naar"
+
+#: unit1:rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Kan preselectiebestand niet vinden."
+
+#: unit1:rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "Kan FFmpeg niet vinden."
+
+#: unit1:rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "Kan FFPlay niet vinden."
+
+#: unit1:rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Selecteer videobestanden"
+
+#: unit1:rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Selecteer preselectiebestand"
+
+#: unit1:rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "Selecteer een preselectiebestand"
+
+#: unit1:rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Voeg ten minste 1 bestand toe om te converteren "
+
+#: unit1:rsconverting
+msgid "Converting"
+msgstr "Bezig met converteren"
+
+#: unit1:rspressenter
+msgid "Press Enter to Continue"
+msgstr "Druk enter om verder te gaan"
+
+#: unit1:rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Kan bestand niet vinden"
+
+#: unit1:rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Ongeldig preselectiebestand"
+
+#: unit1:rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "Preselectie: %s%s%s bestaat reeds"
+
+#: unit1:rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "De te importeren preselectie heeft geen label"
+
+#: unit1:rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Preselectie bevat illegale caracters"
+
+#: unit1:rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "Preselectie met label: %s%s%s bestaat reeds"
+
+#: unit1:rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "De te importeren preselectie heeft geen extentie"
+
+#: unit1:rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "Naam moet alfanummeric zijn (a-z,A-Z,0-9)"
+
+#: unit1:rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Extentie kan geen periode bevatten"
+
+#: unit1:rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "Bestand bestaat niet"
+
+#: unit1:rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Selecteer een preselectie om te exporteren"
+
+#: unit2:rsLabel6
+msgid "Category"
+msgstr "Categorie"
+
+#: unit2:rsform2
+msgid "Edit Presets"
+msgstr "Bewerk preselecties"
+
+#: unit2:rsaddpresetbtn
+msgid "Add / Update"
+msgstr "Toevoegen"
+
+#: unit2:rsexport
+msgid "Export"
+msgstr "Exporteer"
+
+#: unit2:rsimport
+msgid "Import"
+msgstr "Importeer"
+
+#: unit2:rscancelbtn
+msgid "Cancel"
+msgstr "Annuleer"
+
+#: unit2:rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr "Extentie doelbestand (no \".\")"
+
+#: unit2:rsokbtn
+msgid "Save"
+msgstr "Opslaan"
+
+#: unit2:rsdeletebtn
+msgid "Delete"
+msgstr "Verwijder"
+
+#: unit2:rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr "Naam preselectie (Eén word , Alleen A-z 0-9)"
+
+#: unit2:rslabel3
+msgid "Preset Label"
+msgstr "Label preselectie"
+
+#: unit2:rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr "Commandoregel preselectie (geen -i of doelbestand)"
+
+#: unit2:rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Enter een naam."
+
+#: unit2:rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Enter een label."
+
+#: unit2:rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Enter een extentie."
+
+#: unit2:rsupdatepreset
+msgid "Update Preset:"
+msgstr "Update preselectie:"
+
+#: unit2:rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Label moet uniek zijn."
+
+#: unit2:rscreatepreset
+msgid "Create Preset:"
+msgstr "Creëer preseletie:"
+
+#: unit2:rsremovepreset
+msgid "Remove Preset:"
+msgstr "Verwijder preselectie:"
+
+#: unit3:rsbutton1
+msgid "OK"
+msgstr "OK"
+
+#: unit3:rspage1
+msgid "WinFF"
+msgstr "WinFF"
+
+#: unit3:rspage2
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: unit3:rspage3
+msgid "Thanks"
+msgstr "Met dank aan"
+
+#: unit3:rsform3
+msgid "About WinFF"
+msgstr "Over WinFF"
+
+#: unit3:rslabel8
+msgid "FFmpeg builds by"
+msgstr "FFmpeg gemaakt door"
+
+#: unit4:rsform4
+msgid "WinFF Preferences"
+msgstr "WinFF Voorkeuren"
+
+#: unit4:rscheckbox1
+msgid "Remember Last Directory Used"
+msgstr "Herinner laatst gebruikte map"
+
+#: unit4:rscheckbox3
+msgid "Multithreading for Dual Core Processors"
+msgstr "Multithreading voor Dual Core Processors"
+
+#: unit4:rslabel1
+msgid "Default Destination Directory"
+msgstr "Standaard doelmap"
+
+#: unit4:rslabel2
+msgid "Path to FFmpeg.exe"
+msgstr "Path naar FFmpeg.exe"
+
+#: unit4:rslabel3
+msgid "Path to FFPlay.exe"
+msgstr "Path naar FFPlay.exe"
+
+#: unit4:rslabel4
+msgid "Path to FFmpeg Executable"
+msgstr "Path naar uitvoerbaar bestand FFmpeg"
+
+#: unit4:rslabel5
+msgid "Path to FFPlay Executable"
+msgstr "Path naar uitvoerbaar bestand FFPlay"
+
+#: unit4:rslabel6
+msgid "Terminal to run FFmpeg"
+msgstr "Terminal voor het uitvoeren van FFmpeg"
+
+#: unit4:rslabel7
+msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgstr "Terminal opties (-e for Xterm , -x voor Gnome Terminal"
+
+#: unit4:rspage1
+msgid "General"
+msgstr "Algemeen"
+
+#: unit4:rspage2
+msgid "Ms Windows"
+msgstr "Ms Windows"
+
+#: unit4:rspage3
+msgid "Linux"
+msgstr "Linux"
+
+#: unit5:rsform5
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg commandoregel"
+

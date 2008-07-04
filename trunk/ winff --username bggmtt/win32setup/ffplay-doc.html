@@ -1,0 +1,190 @@
+<HTML>
+<HEAD>
+<!-- Created by texi2html 1.56k from /usrc/ffmpeg/doc/ffplay-doc.texi on 13 May 2007 -->
+
+<TITLE>FFplay Documentation</TITLE>
+</HEAD>
+<BODY>
+<H1>FFplay Documentation</H1>
+<P>
+<P><HR><P>
+<H1>Table of Contents</H1>
+<UL>
+<LI><A NAME="TOC1" HREF="ffplay-doc.html#SEC1">1. Introduction</A>
+<LI><A NAME="TOC2" HREF="ffplay-doc.html#SEC2">2. Invocation</A>
+<UL>
+<LI><A NAME="TOC3" HREF="ffplay-doc.html#SEC3">2.1 Syntax</A>
+<LI><A NAME="TOC4" HREF="ffplay-doc.html#SEC4">2.2 Main options</A>
+<LI><A NAME="TOC5" HREF="ffplay-doc.html#SEC5">2.3 Advanced options</A>
+<LI><A NAME="TOC6" HREF="ffplay-doc.html#SEC6">2.4 While playing</A>
+</UL>
+</UL>
+<P><HR><P>
+<P>
+
+FFplay Documentation
+
+
+
+
+<H1><A NAME="SEC1" HREF="ffplay-doc.html#TOC1">1. Introduction</A></H1>
+<P>
+
+FFplay is a very simple and portable media player using the FFmpeg
+libraries and the SDL library. It is mostly used as a testbed for the
+various FFmpeg APIs.
+
+
+
+<H1><A NAME="SEC2" HREF="ffplay-doc.html#TOC2">2. Invocation</A></H1>
+<P>
+
+
+
+<H2><A NAME="SEC3" HREF="ffplay-doc.html#TOC3">2.1 Syntax</A></H2>
+
+<PRE>
+ffplay [options] <TT>`input_file'</TT>
+</PRE>
+
+<P>
+
+
+
+<H2><A NAME="SEC4" HREF="ffplay-doc.html#TOC4">2.2 Main options</A></H2>
+<P>
+
+<DL COMPACT>
+
+<DT>@option{-h}
+<DD>
+show help
+<DT>@option{-x width}
+<DD>
+force displayed width
+<DT>@option{-y height}
+<DD>
+force displayed height
+<DT>@option{-s size}
+<DD>
+Set frame size (WxH or abbreviation), needed for videos which don't
+contain a header with the framesize like raw YUV.
+<DT>@option{-an}
+<DD>
+disable audio
+<DT>@option{-vn}
+<DD>
+disable video
+<DT>@option{-ss pos}
+<DD>
+seek to a given position in seconds
+<DT>@option{-bytes}
+<DD>
+seek by bytes
+<DT>@option{-nodisp}
+<DD>
+disable graphical display
+<DT>@option{-f fmt}
+<DD>
+force format
+</DL>
+<P>
+
+
+
+<H2><A NAME="SEC5" HREF="ffplay-doc.html#TOC5">2.3 Advanced options</A></H2>
+<DL COMPACT>
+
+<DT>@option{-pix_fmt format}
+<DD>
+set pixel format
+<DT>@option{-stats}
+<DD>
+Show the stream duration, the codec parameters, the current position in
+the stream and the audio/video synchronisation drift.
+<DT>@option{-debug}
+<DD>
+print specific debug info
+<DT>@option{-bug}
+<DD>
+work around bugs
+<DT>@option{-vismv}
+<DD>
+visualize motion vectors
+<DT>@option{-fast}
+<DD>
+non-spec-compliant optimizations
+<DT>@option{-genpts}
+<DD>
+generate pts
+<DT>@option{-rtp_tcp}
+<DD>
+Force RTP/TCP protocol usage instead of RTP/UDP. It is only meaningful
+if you are streaming with the RTSP protocol.
+<DT>@option{-sync type}
+<DD>
+Set the master clock to audio (<CODE>type=audio</CODE>), video
+(<CODE>type=video</CODE>) or external (<CODE>type=ext</CODE>). Default is audio. The
+master clock is used to control audio-video synchronization. Most media
+players use audio as master clock, but in some cases (streaming or high
+quality broadcast) it is necessary to change that. This option is mainly
+used for debugging purposes.
+<DT>@option{-threads count}
+<DD>
+thread count
+</DL>
+<P>
+
+
+
+<H2><A NAME="SEC6" HREF="ffplay-doc.html#TOC6">2.4 While playing</A></H2>
+<P>
+
+<DL COMPACT>
+
+<DT><KBD>q, ESC</KBD>
+<DD>
+quit
+
+<DT><KBD>f</KBD>
+<DD>
+toggle full screen
+
+<DT><KBD>p, SPC</KBD>
+<DD>
+pause
+
+<DT><KBD>a</KBD>
+<DD>
+cycle audio channel
+
+<DT><KBD>v</KBD>
+<DD>
+cycle video channel
+
+<DT><KBD>w</KBD>
+<DD>
+show audio waves
+
+<DT><KBD>left/right</KBD>
+<DD>
+seek backward/forward 10 seconds
+
+<DT><KBD>down/up</KBD>
+<DD>
+seek backward/forward 1 minute
+
+<DT><KBD>mouse click</KBD>
+<DD>
+seek to percentage in file corresponding to fraction of width
+
+</DL>
+<P>
+
+
+
+<P><HR><P>
+This document was generated on 13 May 2007 using
+<A HREF="http://wwwinfo.cern.ch/dis/texi2html/">texi2html</A>&nbsp;1.56k.
+</BODY>
+</HTML>
