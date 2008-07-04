@@ -1,0 +1,391 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-04-03 11:44+0100\n"
+"Last-Translator: Marcin Trybus <mtrybus@o2.pl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-Basepath: c:\\po\\winff\\\n"
+"X-Poedit-SearchPath-0: c:\\po\\winff\n"
+
+#: unit1:rsaddbtn
+msgid "Add"
+msgstr "Dodaj"
+
+#: unit1:rslabel10
+msgid "AC'"
+msgstr "Kanały audio"
+
+#: unit1:rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr "Wyświetl wiersz poleceń"
+
+#: unit1:rspauseonfinish
+msgid "Pause on Finish"
+msgstr "Pauza po zakończeniu"
+
+#: unit1:rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr "Wyłącz po zakończeniu"
+
+#: unit1:rsoptionsbtn
+msgid "Options"
+msgstr "Opcje"
+
+#: unit1:rsstartbtn
+msgid "Convert"
+msgstr "Konwertuj"
+
+#: unit1:rsplay
+msgid "Play"
+msgstr "Odtwarzaj"
+
+#: unit1:rsclearbtn
+msgid "Clear"
+msgstr "Wyczyść"
+
+#: unit1:rsremovebtn
+msgid "Remove"
+msgstr "Usuń"
+
+#: unit1:rscheckbox2
+msgid "Deinterlace"
+msgstr "Usuń przeplot"
+
+#: unit1:rspass2
+msgid "2 pass"
+msgstr "2 przejścia"
+
+#: unit1:rsmenuitem1
+msgid "Edit"
+msgstr "Edycja"
+
+#: unit1:rsmenuitem2
+msgid "About"
+msgstr "O WinFF..."
+
+#: unit1:rsmenuitem3
+msgid "Exit"
+msgstr "Zakończ"
+
+#: unit1:rsmenuitem4
+msgid "Presets"
+msgstr "Szablony"
+
+#: unit1:rsmenuitem5
+msgid "Preferences"
+msgstr "Ustawienia"
+
+#: unit1:rsimportmenu
+msgid "Import Preset"
+msgstr "Importuj szablony"
+
+#: unit1:rsshowoptions
+msgid "Additional Options"
+msgstr "Dodatkowe opcje"
+
+#: unit1:rsoptions
+msgid "Options"
+msgstr "Opcje"
+
+#: unit1:rsfilemenu
+msgid "File"
+msgstr "Plik"
+
+#: unit1:rsgroupbox2
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr "Parametry wiersza poleceń (zaawansowane)"
+
+#: unit1:rslabel5
+msgid "Video Size"
+msgstr "Wymiary wideo"
+
+#: unit1:rslabel6
+msgid "Aspect Ratio"
+msgstr "Proporcje obrazu"
+
+#: unit1:rslabel7
+msgid "Audio Bitrate"
+msgstr "Bitrate dźwięku"
+
+#: unit1:rslabel8
+msgid "Sample Rate"
+msgstr "Próbkowanie"
+
+#: unit1:rslabel4
+msgid "Frame Rate"
+msgstr "Klatek na sek."
+
+#: unit1:rslabel3
+msgid "Video Bitrate"
+msgstr "Bitrate wideo"
+
+#: unit1:rsgroupbox1
+msgid "Additional Options"
+msgstr "Dodatkowe opcje"
+
+#: unit1:rslabel1
+msgid "Output Folder"
+msgstr "Folder docelowy"
+
+#: unit1:rslabel2
+msgid "Convert To ..."
+msgstr "Konwertuj do..."
+
+#: unit1:rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Nie odnaleziono pliku z szablonami."
+
+#: unit1:rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "Nie odnaleziono FFmpeg."
+
+#: unit1:rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "Nie odnaleziono FFplay."
+
+#: unit1:rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Wybierz plik wideo"
+
+#: unit1:rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Wybierz plik z szablonami"
+
+#: unit1:rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "Wybierz szablon"
+
+#: unit1:rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Nie wybrano żadnego pliku do konwersji"
+
+#: unit1:rsconverting
+msgid "Converting"
+msgstr "Konwertowanie"
+
+#: unit1:rspressenter
+msgid "Press Enter to Continue"
+msgstr "Naciśnij Enter by kontynuować"
+
+#: unit1:rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Nie odnaleziono pliku"
+
+#: unit1:rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Niepoprawny plik z szablonami"
+
+#: unit1:rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "Szablon: %s%s%s już istnieje"
+
+#: unit1:rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Szablon do importu nie posiada opisu"
+
+#: unit1:rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Szablon zawiera niedozwolone znaki"
+
+#: unit1:rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "Szablon o opisie: %s%s%s już istnieje"
+
+#: unit1:rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Importowany szablon nie określa rozszerzenia"
+
+#: unit1:rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "Nazwa może zawierać wyłącznie litery i cyfry"
+
+#: unit1:rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Rozszerzenie nie może zawierać kropek"
+
+#: unit1:rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "plik nie istnieje"
+
+#: unit1:rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Wybierz szablon do eksportu"
+
+#: unit2:rsLabel6
+msgid "Category"
+msgstr "Kategoria"
+
+#: unit2:rsform2
+msgid "Edit Presets"
+msgstr "Edytuj szablony"
+
+#: unit2:rsaddpresetbtn
+msgid "Add / Update"
+msgstr "Dodaj / Zmień"
+
+#: unit2:rsexport
+msgid "Export"
+msgstr "Eksport"
+
+#: unit2:rsimport
+msgid "Import"
+msgstr "Import"
+
+#: unit2:rscancelbtn
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: unit2:rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr "Rozszerzenie pliku (bez kropki)"
+
+#: unit2:rsokbtn
+msgid "Save"
+msgstr "Zapisz"
+
+#: unit2:rsdeletebtn
+msgid "Delete"
+msgstr "Usuń"
+
+#: unit2:rslabel1
+msgid "Presets"
+msgstr "Szablony"
+
+#: unit2:rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr "Nazwa szablonu (wylacznie litery i cyfry)"
+
+#: unit2:rslabel3
+msgid "Preset Label"
+msgstr "Opis szablonu"
+
+#: unit2:rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr "Domyślne opcje wiersza poleceń (bez -i ani pliku wynikowego)"
+
+#: unit2:rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Podaj nazwę szablonu"
+
+#: unit2:rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Podaj opis szablonu"
+
+#: unit2:rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Podaj rozszerzenie pliku"
+
+#: unit2:rsupdatepreset
+msgid "Update Preset:"
+msgstr "Zmień szablon:"
+
+#: unit2:rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Opis musi byc unikalny."
+
+#: unit2:rscreatepreset
+msgid "Create Preset:"
+msgstr "Stwórz szablon:"
+
+#: unit2:rsremovepreset
+msgid "Remove Preset:"
+msgstr "Usuń szablon:"
+
+#: unit3:rsbutton1
+msgid "OK"
+msgstr "OK"
+
+#: unit3:rspage1
+msgid "WinFF"
+msgstr "WinFF"
+
+#: unit3:rspage2
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: unit3:rspage3
+msgid "Thanks"
+msgstr "Podziękowania"
+
+#: unit3:rsform3
+msgid "About WinFF"
+msgstr "O WinFF"
+
+#: unit3:rslabel8
+msgid "FFmpeg builds by"
+msgstr "FFmpeg zbudowany przez"
+
+#: unit4:rsform4
+msgid "WinFF Preferences"
+msgstr "Opcje WinFF"
+
+#: unit4:rsbutton1
+msgid "OK"
+msgstr "OK"
+
+#: unit4:rsbutton2
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: unit4:rscheckbox1
+msgid "Remember Last Directory Used"
+msgstr "Pamiętaj ostatnio użyty folder"
+
+#: unit4:rscheckbox3
+msgid "Multithreading for Dual Core Processors"
+msgstr "Wielowątkowość dla procesora dwurdzeniowego"
+
+#: unit4:rslabel1
+msgid "Default Destination Directory"
+msgstr "Domyślny folder docelowy"
+
+#: unit4:rslabel2
+msgid "Path to FFmpeg.exe"
+msgstr "Ścieżka do FFmpeg.exe"
+
+#: unit4:rslabel3
+msgid "Path to FFPlay.exe"
+msgstr "Ścieżka do FFPlay.exe"
+
+#: unit4:rslabel4
+msgid "Path to FFmpeg Executable"
+msgstr "Ścieżka do programu FFmpeg"
+
+#: unit4:rslabel5
+msgid "Path to FFPlay Executable"
+msgstr "Ścieżka do programu FFPlay"
+
+#: unit4:rslabel6
+msgid "Terminal to run FFmpeg"
+msgstr "Terminal do uruchomienia FFmpeg"
+
+#: unit4:rslabel7
+msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgstr "Opcje terminala (-e dla Xterm, -x dla Gnome Terminal)"
+
+#: unit4:rspage1
+msgid "General"
+msgstr "Ogólne"
+
+#: unit4:rspage2
+msgid "Ms Windows"
+msgstr "MS Windows"
+
+#: unit4:rspage3
+msgid "Linux"
+msgstr "Linux"
+
+#: unit5:rsform5
+msgid "FFmpeg Command Line"
+msgstr "Wiersz poleceń FFmpeg"
+
+#: unit5:rsbutton1
+msgid "OK"
+msgstr "OK"
+
