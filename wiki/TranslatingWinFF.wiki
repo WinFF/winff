@@ -12,21 +12,21 @@ once you have the file, open it in your text editor. The Gnome editor is great. 
 Once in the file you will see a bunch of lines like:
 
  
-
+{{{
     #: unit1:rsdisplaycmdline
     msgid "Display CMD Line"
     msgstr "" 
-
+}}}
  
 
 The First line is the english line, and should must remain as it is. The second line is where the translation should go. For example from Kai Evers German translation:
 
  
-
+{{{
     #: unit1:rsdisplaycmdline
     msgid "Display CMD Line"
     msgstr "Kommandozeile anzeigen" 
-
+}}}
  
 
 Continue to complete the entire file.
