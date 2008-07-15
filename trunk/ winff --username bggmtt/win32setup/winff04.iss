@@ -66,6 +66,7 @@ Source: "languages\winff.pt.po"; DestDir: "{app}\languages"; Flags: ignoreversio
 Source: "languages\winff.pb.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.nl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.zh.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.fr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
