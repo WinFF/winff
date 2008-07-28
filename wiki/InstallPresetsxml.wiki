@@ -4,6 +4,7 @@
 = Linux =
 
 For a user unzip and copy presets.xml to /home/user/.winff
+
 For the system unzip and copy presets.xml to /usr/share/winff
 
 if you install to the system each user must delete /home/user/.winff/presets.xml
@@ -11,6 +12,7 @@ if you install to the system each user must delete /home/user/.winff/presets.xml
 = Windows =
 
 For a user unzip and copy presets.xml to c:\documents and settings\application data\winff
+
 For the system unzip and copy presets.xml c:\program files\winff
 
 if you install to the system each user must c:\documents and settings\application data\winff
