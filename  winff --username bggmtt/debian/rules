@@ -52,7 +52,7 @@ binary-arch: build install
 	dh_installmenu
 	dh_installman debian/winff.1
 	dh_desktop
-	dh_link
+#	dh_link
 	dh_strip
 	dh_compress
 	dh_fixperms

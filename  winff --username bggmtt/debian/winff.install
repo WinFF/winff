@@ -1,5 +1,4 @@
 winff usr/bin/
-WinFF.pdf usr/share/doc/winff/
 presets-orig.xml usr/share/winff/
 languages/* usr/share/winff/languages/
 debian/winff.desktop usr/share/applications/
