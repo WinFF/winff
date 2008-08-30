@@ -1,0 +1,142 @@
+Format-Specification: http://wiki.debian.org/Proposals/CopyrightFormat
+Packaged-By: Paul Gevers <paul@climbing.nl>
+Packaged-Date: Fr, 27 Jun 2008 20:23:00 +0200.
+Original-Source-Location:
+ http://winff.googlecode.com/files/winff0.42-source.tar.gz
+Upstream-Author: Matthew Weatherford <matt@biggmatt.com>
+
+Files: *
+Copyright: © 2006-2008 Matthew Weatherford <matt@biggmatt.com>
+License: GPL-3
+  WinFF is published under the GNU Public License v3 without any
+  warranty implied or otherwise, with no suitability for any purpose.
+  Use this software at your own risk.
+  .
+  On Debian systems, the complete text of the GNU General Public
+  License, version 3, can be found in 
+  /usr/share/common-licenses/GPL-3.
+
+Files: *.pas, winff.lpr
+Copyright: © 2006-2008 Matthew Weatherford <matt@biggmatt.com>
+License: GPL-3+
+  Licensed under the GPL v3 or any later version
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL.
+
+Files: debian/*
+Copyright: © 2008 Paul Gevers <paul@climbing.nl>
+License: GPL-3+
+  The Debian packaging is © 2008, Paul Gevers <paul@climbing.nl> and
+  is licensed under the GPL version 3 or later, see
+  `/usr/share/common-licenses/GPL'.
+
+Files: winff-icons/*
+Copyright: © 2007 Alexandre Moore <alexandre.moore@gmail.com>
+License: LGPL-3
+  The Icons are from Iconsdesigns.com's NuoveXT 2 where they are
+  licensed under the GNU Lesser General Public License version 3.
+  They were modified from their original state by scaling to 24x24 and
+  converting to xpm.
+  .
+  On Debian systems, the complete text of the GNU Lesser General
+  Public License, version 3, can be found in 
+  /usr/share/common-licenses/LGPL-3.
+
+Files:
+  debian/winff.xpm,
+  debian/presets.xml,
+  winff-icons/winff.xpm
+Copyright: © 2006-2008 Matthew Weatherford <matt@biggmatt.com>
+License: GPL-3
+  WinFF is published under the GNU Public License v3 without any
+  warranty implied or otherwise, with no suitability for any purpose.
+  Use this software at your own risk.
+
+Files: languages/winff.bg.po
+Copyright: © 2008 Simeon Uzunov
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.de.po
+Copyright: © 2008 Kai Evers
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.es.po
+Copyright: © 2008 Victor Paese
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.fr.po
+Copyright: © 2008 Choplair <chopinou-NOSP@M-choplair.org>
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.it.po
+Copyright: © 2008 bovirus <roberto.boriotti@canon-europe.com>
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.nl.po
+Copyright: © 2008 Roger Gabriels
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.pb.po
+Copyright: © 2008 Arlindo Saraiva Pereira Junior <nighto@nighto.net>
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.pl.po
+Copyright: © 2008 Marcin Trybus <mtrybus@o2.pl>
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.pt.po
+Copyright: © 2008 Luís Torrao <luistorrao@gmail.com>
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.tr.po
+Copyright: © 2008 Emre Erkan <kara@karalamalar.net>
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
+
+Files: languages/winff.zh.po
+Copyright: © 2008 Chung Yu
+License: GPL-3
+  Licensed under the GPL v3
+  .
+  On Debian systems, the complete text of the GNU General Public can
+  be found in /usr/share/common-licenses/GPL-3.
