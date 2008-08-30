@@ -1,0 +1,5 @@
+winff (0.42-0ubuntu1) intrepid; urgency=low
+
+  * Initial release (Closes: LP#172804)
+
+ -- Paul Gevers <paul@climbing.nl>  Sat, 23 Aug 2008 15:32:35 +0200
