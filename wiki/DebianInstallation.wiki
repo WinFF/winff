@@ -1,4 +1,5 @@
 #summary Debian and Ubuntu style installation
+#labels Featured
 
 = Introduction =
 
