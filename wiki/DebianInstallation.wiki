@@ -1,0 +1,23 @@
+#summary Debian and Ubuntu style installation
+
+= Introduction =
+
+Until the packages are completely accepted (and after that for faster updates) Ubuntu packages are available at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
+
+= Details =
+
+If you are running Debian or Ubuntu you can easily install WinFF by entering the line (1) (hardy or stable) or (2) (intrepid, testing or unstable) in /etc/apt/sources.list.d/winff.list. You will have to create that file, or just add the line to /etc/apt/sources.list .
+
+After you update using your favorite package manager (3)(4) and you can just choose winff from the list. If you have a winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages are unsigned at the moment so you will have to accept the warning given by your package manager.
+
+If you don't run the standard Ubuntu ffmpeg please read the README.debian (5) after installation.
+
+(1) deb http://ppa.launchpad.net/paul-climbing/ubuntu hardy main
+
+(2) deb http://ppa.launchpad.net/paul-climbing/ubuntu intrepid main
+
+(3) for instance "apt-get update" or
+
+(4) in synaptic pressing "update"
+
+(5) /usr/share/doc/winff/README.Debian
