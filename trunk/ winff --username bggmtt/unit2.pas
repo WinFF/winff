@@ -40,6 +40,7 @@ type
     procedure addpresetbtnClick(Sender: TObject);
     procedure CancelBtnClick(Sender: TObject);
     procedure DeleteBtnClick(Sender: TObject);
+    procedure Edit4Change(Sender: TObject);
     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
     procedure FormResize(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -307,6 +308,11 @@ begin
       subnode:= node.FindNode('label');
       listbox1.items.add(subnode.findnode('#text').NodeValue);
     end;
+
+end;
+
+procedure TForm2.Edit4Change(Sender: TObject);
+begin
 
 end;
 

@@ -14,7 +14,7 @@ uses
   {$IFDEF WIN32} windows, shellapi, dos,{$endif}
   {$IFDEF unix} baseunix, unix, {$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
-  unit4, unit5, gettext, translations
+  unit4, unit5, gettext, translations, process
   {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF};
 
 type
@@ -141,6 +141,7 @@ var
   {$IFDEF WIN32}
   PIDL : PItemIDList;
   ansicodepage: longint;
+  usechcp: string;
   {$ENDIF}
   extraspath: string;
   lastpreset: string;
@@ -301,6 +302,14 @@ begin
       else
         terminal:='cmd.exe';
   termoptions := '/c';
+  
+  usechcp:= getconfigvalue('win32/chcp');
+  if usechcp = '' then
+     begin
+       usechcp := 'true';
+       setconfigvalue('win32/chcp','true');
+     end;
+
   {$endif}
 
   {$IFDEF UNIX}
@@ -822,9 +831,11 @@ procedure tform1.AddBtnClick(Sender: TObject);
 begin
    Opendialog1.Title:=rsSelectVideoFiles;
    Opendialog1.InitialDir := getconfigvalue('general/addfilesfolder');
-   OpenDialog1.Execute;
-   setconfigvalue('general/addfilesfolder',opendialog1.InitialDir);
-   filelist.items.AddStrings(OpenDialog1.Files);
+   if OpenDialog1.Execute then
+      begin
+       setconfigvalue('general/addfilesfolder',opendialog1.InitialDir);
+       filelist.items.AddStrings(OpenDialog1.Files);
+      end;
 end;
 
 // remove a file from the list
@@ -1039,10 +1050,11 @@ pn, extension, params, commandline, command, filename,batfile, passlogfile, base
 qterm, ffmpegfilename, usethreads, deinterlace, nullfile, titlestring, vxs,vys:string;
 script: tstringlist;
 thetime: tdatetime;
-
+scriptprocess:tprocess;
 begin                                     // get setup
+   scriptprocess:= TProcess.Create(nil);
    script:= TStringList.Create;
-   {$ifdef win32}script.Add('chcp ' + inttostr(ansicodepage) + ' | PROMPT');{$endif}
+   {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
    {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
    {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
 
@@ -1182,11 +1194,16 @@ begin                                     // get setup
      fpchmod(presetspath + batfile,&777);
      {$endif}
 
-     {$ifdef win32}qterm := '"' + terminal + '"';{$endif}
+     {$ifdef win32}
+     qterm := '"' + terminal + '"';
+     {$endif}
+
      {$ifdef unix}qterm := terminal;{$endif}
                                                         // do it
-     {$ifdef win32}winexec(pchar( qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"'), SW_SHOWNORMAL);{$endif}
-     {$ifdef unix}shell(qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'); {$endif}
+     {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
+     {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
+
+     scriptprocess.execute;
     end
    else
     begin

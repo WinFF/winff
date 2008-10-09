@@ -137,8 +137,9 @@ object Form2: TForm2
     Left = 8
     Height = 23
     Top = 280
-    Width = 56
-    MaxLength = 3
+    Width = 80
+    MaxLength = 20
+    OnChange = Edit4Change
     TabOrder = 8
   end
   object import: TButton
