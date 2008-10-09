@@ -53,8 +53,8 @@
         <IsPartOfProject Value="True"/>
         <ResourceFilename Value="unit1.lrs"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="2" Y="1218"/>
-        <TopLine Value="1196"/>
+        <CursorPos X="36" Y="1198"/>
+        <TopLine Value="1179"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Loaded Value="True"/>
@@ -65,8 +65,8 @@
         <IsPartOfProject Value="True"/>
         <ResourceFilename Value="unit2.lrs"/>
         <UnitName Value="Unit2"/>
-        <CursorPos X="24" Y="154"/>
-        <TopLine Value="131"/>
+        <CursorPos X="3" Y="316"/>
+        <TopLine Value="314"/>
         <EditorIndex Value="5"/>
         <UsageCount Value="210"/>
         <Loaded Value="True"/>
@@ -121,8 +121,8 @@
         <IsPartOfProject Value="True"/>
         <ResourceFilename Value="unit4.lrs"/>
         <UnitName Value="Unit4"/>
-        <CursorPos X="63" Y="96"/>
-        <TopLine Value="74"/>
+        <CursorPos X="3" Y="193"/>
+        <TopLine Value="1"/>
         <EditorIndex Value="4"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
@@ -136,7 +136,7 @@
         <CursorPos X="59" Y="46"/>
         <TopLine Value="14"/>
         <EditorIndex Value="2"/>
-        <UsageCount Value="186"/>
+        <UsageCount Value="190"/>
         <Loaded Value="True"/>
       </Unit10>
       <Unit11>
@@ -180,7 +180,20 @@
         <UsageCount Value="19"/>
       </Unit16>
     </Units>
-    <JumpHistory Count="0" HistoryIndex="-1"/>
+    <JumpHistory Count="3" HistoryIndex="2">
+      <Position1>
+        <Filename Value="unit4.pas"/>
+        <Caret Line="173" Column="37" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit4.pas"/>
+        <Caret Line="169" Column="18" TopLine="148"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="306" Column="12" TopLine="276"/>
+      </Position3>
+    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="5"/>
@@ -203,4 +216,12 @@
       <CompilerPath Value="$(CompPath)"/>
     </Other>
   </CompilerOptions>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Source Value="unit4.pas"/>
+        <Line Value="96"/>
+      </Item1>
+    </BreakPoints>
+  </Debugging>
 </CONFIG>

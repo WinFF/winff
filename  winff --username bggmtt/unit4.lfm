@@ -79,6 +79,8 @@ object Form4: TForm4
     end
     object Page2: TPage
       Caption = 'MS Windows'
+      ClientWidth = 376
+      ClientHeight = 238
       object Label2: TLabel
         Left = 4
         Height = 16
@@ -128,6 +130,14 @@ object Form4: TForm4
         Caption = '...'
         OnClick = Button5Click
         TabOrder = 3
+      end
+      object CheckBox2: TCheckBox
+        Left = 4
+        Height = 21
+        Top = 130
+        Width = 207
+        Caption = 'Use CHCP for international characters'
+        TabOrder = 4
       end
     end
     object Page3: TPage

@@ -26,6 +26,7 @@ type
     Button7: TButton;
     Button8: TButton;
     CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
     CheckBox3: TCheckBox;
     Edit1: TEdit;
     Edit2: TEdit;
@@ -72,6 +73,7 @@ resourcestring
     rsButton1='OK';
     rsButton2='Cancel';
     rsCheckBox1='Remember Last Directory Used';
+    rsCheckBox2='Use CHCP for international characters';
     rsCheckBox3='Multithreading for Dual Core Processors';
     rsLabel1='Default Destination Directory';
     rsLabel2='Path to FFmpeg.exe';
@@ -98,6 +100,7 @@ begin
     button1.caption:=rsButton1;
     button2.caption:=rsButton2;
     checkbox1.caption:=rsCheckBox1;
+    checkbox2.caption:=rsCheckBox2;
     checkbox3.caption:=rsCheckBox3;
     label1.caption:=rsLabel1;
     label2.caption:=rsLabel2;
@@ -113,6 +116,10 @@ begin
   {$ifdef win32}
    edit2.Text:= form1.getconfigvalue('win32/ffmpeg');
    edit3.Text:= form1.getconfigvalue('win32/ffplay');
+   if form1.getconfigvalue('win32/chcp') = 'true' then
+     checkbox2.Checked := true
+  else
+     checkbox2.Checked := false;
   {$endif}
   {$ifdef unix}
 
@@ -186,6 +193,17 @@ begin
   unit1.ffplay := edit3.text;
   form1.setconfigvalue('win32/ffmpeg',edit2.text);
   form1.setconfigvalue('win32/ffplay',edit3.text);
+  
+  if checkbox2.Checked then
+   begin
+    form1.setconfigvalue('win32/chcp','true');
+    unit1.usechcp:='true';
+   end
+  else
+   begin
+    form1.setconfigvalue('win32/chcp','false');
+    unit1.usechcp:='false';
+   end;
   {$endif}
 
   {$ifdef unix}
