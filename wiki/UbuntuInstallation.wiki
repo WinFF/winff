@@ -1,0 +1,26 @@
+#summary Ubuntu style installation
+#labels Featured,Phase-Deploy
+
+= Introduction =
+
+Until the packages are completely accepted (and after that for faster updates) Ubuntu packages are available at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
+
+= Details =
+
+If you are running Ubuntu you can easily install WinFF by entering the line (1) (hardy) or (2) (intrepid) in /etc/apt/sources.list.d/winff.list. You will have to create that file, or just add the line to /etc/apt/sources.list .
+
+After you update using your favorite package manager (3)(4) and you can just choose winff from the list. If you have winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages are unsigned at the moment so you will have to accept the warning given by your package manager.
+
+If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (5) after installation.
+
+In order to use the preset file supplied with the package you might need to remove the old preset file in ~/.winff/presets.xml , but by doing that you will also remove self-made presets. So if you made or edited the presets, you want to compare the files manually.
+
+(1) deb http://ppa.launchpad.net/paul-climbing/ubuntu hardy main
+
+(2) deb http://ppa.launchpad.net/paul-climbing/ubuntu intrepid main
+
+(3) for instance "apt-get update" or
+
+(4) in synaptic pressing "update"
+
+(5) /usr/share/doc/winff/README.Debian
