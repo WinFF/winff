@@ -1,17 +1,19 @@
-#summary Debian and Ubuntu style installation
-#labels Featured
+#summary Debian style installation
+#labels Phase-Deploy
 
 = Introduction =
 
-Until the packages are completely accepted (and after that for faster updates) Ubuntu packages are available at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
+Until the packages are completely accepted (and after that for faster updates) Debian packages build for Ubuntu are available at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
 
 = Details =
 
-If you are running Debian or Ubuntu you can easily install WinFF by entering the line (1) (hardy or stable) or (2) (intrepid, testing or unstable) in /etc/apt/sources.list.d/winff.list. You will have to create that file, or just add the line to /etc/apt/sources.list .
+If you are running Debian you can easily install WinFF by entering the line (1) (stable) or (2) (testing or unstable) in /etc/apt/sources.list.d/winff.list. You will have to create that file, or just add the line to /etc/apt/sources.list .
 
-After you update using your favorite package manager (3)(4) and you can just choose winff from the list. If you have a winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages are unsigned at the moment so you will have to accept the warning given by your package manager.
+After you update using your favorite package manager (3)(4) and you can just choose winff from the list. If you have winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages are unsigned at the moment so you will have to accept the warning given by your package manager.
 
-If you don't run the standard Ubuntu ffmpeg please read the README.debian (5) after installation.
+If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (5) after installation.
+
+In order to use the preset file supplied with the package you might need to remove the old preset file in ~/.winff/presets.xml , but by doing that you will also remove self-made presets. So if you made or edited the presets, you want to compare the files manually. 
 
 (1) deb http://ppa.launchpad.net/paul-climbing/ubuntu hardy main
 
