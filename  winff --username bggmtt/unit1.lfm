@@ -41,6 +41,7 @@ object Form1: TForm1
     Width = 496
     MultiSelect = True
     OnDblClick = PlayClick
+    OnKeyPress = filelistKeyPress
     TabOrder = 0
   end
   object PresetBox: TComboBox
