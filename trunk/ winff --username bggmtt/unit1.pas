@@ -79,6 +79,7 @@ type
     procedure ClearBtnClick(Sender: TObject);
     procedure displaycmdlineClick(Sender: TObject);
     procedure ExitmenuClick(Sender: TObject);
+    procedure filelistKeyPress(Sender: TObject; var Key: char);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
@@ -861,6 +862,24 @@ end;
 
 procedure TForm1.ExitmenuClick(Sender: TObject);
 begin
+
+end;
+
+// filelist key press
+procedure TForm1.filelistKeyPress(Sender: TObject; var Key: char);
+var
+i:integer;
+begin
+
+  if key = char(8) then
+   begin
+    i:=0;
+   while i< filelist.Items.Count do
+    if filelist.Selected[i] then
+      filelist.Items.Delete(i)
+    else
+       i+=1;
+   end;
 
 end;
 
