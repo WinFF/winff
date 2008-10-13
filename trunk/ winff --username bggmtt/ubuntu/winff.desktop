@@ -1,6 +1,5 @@
 [Desktop Entry]
 Version=1.0
-Encoding=UTF-8
 Name=Video converter (WinFF)
 Comment=GUI for FFMPEG
 Exec=/usr/bin/winff

@@ -4,8 +4,8 @@ Priority: extra
 Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
 XSBC-Original-Maintainer: Paul Gevers <paul@climbing.nl>
 Build-Depends: debhelper (>= 5),
-               lazarus-ide,
-               fpc
+               lazarus-ide (>= 0.9.24-0-12~),
+               fpc (>= 2.2.2~)
 Standards-Version: 3.8.0
 Homepage: http://www.winff.org/
 
