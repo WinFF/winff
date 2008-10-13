@@ -3,4 +3,5 @@ presets-orig.xml usr/share/winff/
 languages/* usr/share/winff/languages/
 debian/winff.desktop usr/share/applications/
 debian/presets.xml usr/share/winff/
+debian/presets_new-style.xml usr/share/winff/
 debian/winff.xpm usr/share/icons/hicolor/32x32/apps/
