@@ -1,5 +1,5 @@
 #summary Debian style installation
-#labels Phase-Deploy
+#labels Phase-Deploy,Featured
 
 = Introduction =
 
