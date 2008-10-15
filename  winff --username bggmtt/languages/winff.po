@@ -315,8 +315,8 @@ msgid "Remember Last Directory Used"
 msgstr ""
 
 #: unit4:rsCheckBox2
-msgid="Use CHCP for international characters"
-msgstr=""
+msgid "Use CHCP for international characters"
+msgstr ""
 
 #: unit4:rscheckbox3
 msgid "Multithreading for Dual Core Processors"
