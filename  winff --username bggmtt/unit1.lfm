@@ -42,6 +42,7 @@ object Form1: TForm1
     MultiSelect = True
     OnDblClick = PlayClick
     OnKeyPress = filelistKeyPress
+    OnKeyUp = filelistKeyUp
     TabOrder = 0
   end
   object PresetBox: TComboBox
