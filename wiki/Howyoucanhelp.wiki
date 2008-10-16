@@ -1,0 +1,17 @@
+#summary How you can help with the WinFF project
+
+== There are a number of of ways to contribute to the WinFF ==
+
+= Coding =
+
+Looking for Delphi programmers. No Lazarus is nowhere near what delphi is, but WinFF really doesn't need a fancy language.
+
+= ffmpeg command line users =
+
+Write a great preset and never have to type the same command line again. 
+
+= Packaging =
+
+Everything from every Linux distribution to windows.
+
+
