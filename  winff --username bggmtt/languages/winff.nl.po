@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff_0.42_nl\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2008-10-06 23:47-0600\n"
+"PO-Revision-Date: 2008-10-15 21:58-0600\n"
 "Last-Translator: Paul Gevers <paul@climbing.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -319,6 +319,10 @@ msgstr "WinFF voorkeuren"
 #: unit4:rscheckbox1
 msgid "Remember Last Directory Used"
 msgstr "Onthoudt de laatst gebruikte map"
+
+#: unit4:rsCheckBox2
+msgid "Use CHCP for international characters"
+msgstr "Gebruik CHCP voor internationale karakters"
 
 #: unit4:rscheckbox3
 msgid "Multithreading for Dual Core Processors"
