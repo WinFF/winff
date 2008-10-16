@@ -1,7 +1,7 @@
 #summary Tips on Translating The WinFF PO File
 #labels Featured,Phase-Implementation
 
-
+=Translating WinFF=
 The winff.po can be translated using a text editor or programs such as a kbabel for linux, poedit for windows and linux. I'm going to cover using a text editor.
 
 get the file here: http://winff.org/files/winff.po.zip
@@ -39,10 +39,19 @@ Some pointers:
 
     * Do not use the single quote - ' -
     * AC is audio channel.
-    * Some translation maybe to long to fit in the space above or next to the button. I had to do this in english also. Unfortunetly it is unavoidable. To make matters worse: different linux distros and different users, use different default fonts.
+    * Some translation maybe to long to fit in the space above or next to the button. I had to do this in English also. Unfortunately it is unavoidable. To make matters worse: different linux distros and different users, use different default fonts.
 
 Once you are happy with your translation, contact me and I'll tell you where to send it.
 
 New translations will be posted on winff.org, and will come out with next release.
 
-Thanks in advance for translating. 
+Thanks in advance for translating.
+
+=How to update the po file from the newest winff.po file using poedit=
+
+  #. Get the latest version of winff.po and the language file winff.XX.po you want to correct. (see [http://code.google.com/p/winff/source/browse/#svn/trunk/%20winff%20--username%20bggmtt/languages svn])
+  #. Open the language PO file with poEdit.
+  #. In menu bar, go to Catalog-> Update from POT file... Select winff.po and open. (You will have to make sure you can select from all files. An alternative is renaming winff.po to winff.pot first).
+  #. A pop up window will appear showing 'New strings' and 'Obsolete strings'. Press OK.
+  #. The important part. You have to UPDATE all review strings marked as "fuzzy" (yellow).
+  #. If you've done updating, send us your new file (or post it on the forum).
