@@ -4,7 +4,7 @@
 =Translating WinFF=
 The winff.po can be translated using a text editor or programs such as a kbabel for linux, poedit for windows and linux. I'm going to cover using a text editor.
 
-get the file here: http://winff.org/files/winff.po.zip
+get the latest file from [http://code.google.com/p/winff/source/checkout svn]
 
 once you have the file, open it in your text editor. The Gnome editor is great. If your using windows i don't recommend notepad, but it should work theoretically.
 
