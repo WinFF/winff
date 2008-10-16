@@ -1,4 +1,5 @@
 #summary How you can help with the WinFF project
+#labels Featured
 
 == There are a number of of ways to contribute to the WinFF project ==
 
@@ -13,6 +14,10 @@ Write a great preset and never have to type the same command line again.
 = Packaging =
 
 Everything from every Linux distribution to windows.
+
+= Helping Other Users =
+
+Helping other users with problems in the forums.
 
 
 Get started in the [http://www.biggmatt.com/forums Forums]
