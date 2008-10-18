@@ -9,7 +9,7 @@ Looking for Delphi programmers. No Lazarus is nowhere near what Delphi is, but W
 
 = ffmpeg command line users =
 
-Write a great preset and never have to type the same command line again. 
+Write a great preset and never have to type the same command line again. Do you have a preset that you already tweaked for a specific device or format? Please Post it to the [http://www.biggmatt.com/forums forums].
 
 = Packaging =
 
@@ -22,6 +22,6 @@ Helping other users with problems in the forums.
 
 = Specifics =
 
-There are no specific request at this time
+Looking for help with Red Hat packages and tutorials.
 
 = Get started in the [http://www.biggmatt.com/forums Forums] =
