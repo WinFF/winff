@@ -1,5 +1,7 @@
 WinFF Presets Notes:
 
+All WinFF presets are licensed under the GNU GPL version 3.
+
 Thanks: BiggMatt, Robert Swain, 45Tripp, ss_j2 goha, Ramiro Polla.
 
 
