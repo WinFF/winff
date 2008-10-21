@@ -1,6 +1,17 @@
 WinFF Copyright 2008 Matthew Weatherford
 http://www.winff.org
 
+v0.43
+-----
+Add files dialog return value fixed.
+Uses tprocess instead of shell and winexec to launch command line.
+3 character file extension limit removed.
+CHCP in windows script made optional
+Delete and Backspace keys delete files from the file list
+Updated license readmes
+Preset for ffmpeg revision 13712
+
+
 v0.42
 -----
 Brazilian Portuguese 
