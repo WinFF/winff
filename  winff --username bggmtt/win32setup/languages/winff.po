@@ -2,12 +2,13 @@
 msgstr ""
 "Project-Id-Version: WinFF 0.4\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Matt Weatherford <matt@biggmatt.com>\n"
+"PO-Revision-Date: 2008-10-15\n"
+"Last-Translator: Matthew Weatherford <matt@biggmatt.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"License: GPL version 3\n"
 
 #: unit1:rsaddbtn
 msgid "Add"
@@ -311,6 +312,10 @@ msgstr ""
 
 #: unit4:rscheckbox1
 msgid "Remember Last Directory Used"
+msgstr ""
+
+#: unit4:rsCheckBox2
+msgid "Use CHCP for international characters"
 msgstr ""
 
 #: unit4:rscheckbox3
