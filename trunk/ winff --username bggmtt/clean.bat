@@ -6,4 +6,6 @@ del *.bak
 del winff.exe
 del winff
 del *.lrt
+del backup/*.*
+rm backup
 rm magnifier
