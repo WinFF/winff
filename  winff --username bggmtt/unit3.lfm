@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 317
+  Left = 295
   Height = 291
-  Top = 279
+  Top = 323
   Width = 340
   HorzScrollBar.Page = 339
   VertScrollBar.Page = 290
@@ -37,7 +37,7 @@ object Form3: TForm3
         Height = 16
         Top = 10
         Width = 63
-        Caption = 'WinFF 0.42'
+        Caption = 'WinFF 0.43'
         ParentColor = False
       end
       object Image1: TImage
@@ -164,6 +164,22 @@ object Form3: TForm3
         Caption = 'http://www.winff.org'
         ParentColor = False
       end
+      object Label11: TLabel
+        Left = 4
+        Height = 16
+        Top = 146
+        Width = 172
+        Caption = 'Debian and Ubuntu Packaging:'
+        ParentColor = False
+      end
+      object Label12: TLabel
+        Left = 4
+        Height = 16
+        Top = 170
+        Width = 68
+        Caption = 'Paul Gevers'
+        ParentColor = False
+      end
     end
     object Page2: TPage
       Caption = 'FFmpeg'
@@ -214,8 +230,8 @@ object Form3: TForm3
         Left = 4
         Height = 16
         Top = 114
-        Width = 167
-        Caption = 'http://arrozcru.no-ip.org/ffmpeg'
+        Width = 139
+        Caption = 'http://ffmpeg.arrozcru.org/'
         ParentColor = False
       end
     end
