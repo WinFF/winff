@@ -1,5 +1,5 @@
 #summary Tips on Translating The WinFF PO File
-#labels Featured,Phase-Implementation
+#labels Phase-Implementation
 
 =Translating WinFF=
 The winff.po can be translated using a text editor or programs such as a kbabel for linux, poedit for windows and linux. I'm going to cover using a text editor.
