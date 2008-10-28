@@ -1,0 +1,20 @@
+#summary How to build a WinFF win32 installer for your product
+
+= Introduction =
+This document will show you the basic of building a custom version of WinFF for your product. For example if you wish to create a version of winff with just your presets or for a custom version of ffmpeg
+
+= Getting Started =
+
+The First thing you will need is the WIN32Setup folder from svn. I use [http://tortoisesvn.tigris.org/ Tortoise svn], but you can use what ever you like.
+
+The next thing you will need is Jordan Russell's [http://www.innosetup.com/isinfo.php Inno Setup]
+
+Once you have Innosetup installed you need to get the following language files for it on the [http://www.innosetup.com/files/istrans/ unofficial language page]:
+ * Bulgarian
+ * Turkish
+ * Chinese Traditional
+
+Then put the language files in "C:\Program Files\Inno Setup 5\Languages" with the following names:
+ * Bulgarian.isl
+ * Turkish.isl
+ * Chinesetrad.isl
