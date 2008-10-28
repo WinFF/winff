@@ -31,7 +31,7 @@ WinFF setup will now be built and put in the output folder as setup.exe.
 = Customizing =
 
 == Presets ==
-The presets.xml located in the win32setup folder can be replaced with any preset file you like. For how to make a new preset please see [Howtomakepresets]. You can replace the preset file with your own set of presets or just add some to it.
+The presets.xml located in the win32setup folder can be replaced with any preset file you like. For how to make a new preset please see [HowToMakePresets]. You can replace the preset file with your own set of presets or just add some to it.
 
 the preset file format looks like:
 {{{
