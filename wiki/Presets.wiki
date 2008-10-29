@@ -3,7 +3,7 @@
 
 = Presets =
 
-==How to import a preset==.
+==How to import a preset==
   * Download it
   * Unzip or Untar
   * Go to File>Import in the WinFF Menus
