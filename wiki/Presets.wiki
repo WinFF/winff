@@ -3,6 +3,12 @@
 
 = Presets =
 
+How to import a preset.
+  * Download it
+  * Unzip or Untar
+  * Go to File>Import in the WinFF Menus
+  * Select the Preset
+
 How to create a new preset [HowToMakePresets]
 
 How to install a newer preset file [InstallPresetsxml]
