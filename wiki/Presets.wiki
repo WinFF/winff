@@ -3,15 +3,15 @@
 
 = Presets =
 
-How to import a preset.
+==How to import a preset==.
   * Download it
   * Unzip or Untar
   * Go to File>Import in the WinFF Menus
   * Select the Preset
 
-How to create a new preset [HowToMakePresets]
+==How to create a new preset [HowToMakePresets]==
 
-How to install a newer preset file [InstallPresetsxml]
+==How to install a newer preset file [InstallPresetsxml]==
 
 ==Preset for FFmpeg 13712==
 [http://winff.googlecode.com/files/presets-r13712.zip Presets for FFmpeg revision 13712] are included here for upgrading. The 0.43 windows installer already comes with these presets. Debian and Ubuntu versions come with presets that work with the included ffmpeg. If you get a newer version you might want these.
