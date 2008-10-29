@@ -1,5 +1,5 @@
 #summary How to install a newer preset file
-#labels Phase-Deploy,Phase-Design
+#labels Phase-Deploy,Phase-Design,Featured
 
 = Linux =
 
