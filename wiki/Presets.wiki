@@ -18,7 +18,8 @@ How to install a newer preset file [InstallPresetsxml]
 
 == Blackberry Curve ==
 
-
+[http://www.biggmatt.com/forums/index.php?action=dlattach;topic=171.0;attach=89 Blackberry Curve Presets]
+Known to work with BB Curve 8130
 
 == Creative Zen==
 [http://www.biggmatt.com/forums/index.php?action=dlattach;topic=187.0;attach=63 Cretive Zen]
