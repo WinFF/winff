@@ -1,4 +1,5 @@
 #summary Various Preset Conversion for WinFF
+#labels Featured
 
 = Presets =
 
@@ -13,7 +14,11 @@ How to install a newer preset file [InstallPresetsxml]
 [http://www.biggmatt.com/forums/index.php?action=dlattach;topic=253.0;attach=88 FFMpeg 15000 Flash Presets]
 
 == LG Chocolate ==
-Preset for the LG chocolate
+[http://www.biggmatt.com/forums/index.php?action=dlattach;topic=244.0;attach=82 Preset for the LG chocolate]
+
+== Blackberry Curve ==
+
+
 
 == Creative Zen==
 [http://www.biggmatt.com/forums/index.php?action=dlattach;topic=187.0;attach=63 Cretive Zen]
