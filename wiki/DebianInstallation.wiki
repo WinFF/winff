@@ -5,7 +5,9 @@
 
 Until the packages are completely accepted (and after that for faster updates) Debian packages build for Ubuntu are available at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
 
-= Details =
+Also a fuller featured ffmpeg is available via [http://www.debian-multimedia.org/].
+
+= Details Winff =
 
 If you are running Debian you can easily install WinFF by entering the line (1) (stable) or (2) (testing or unstable) in /etc/apt/sources.list.d/winff.list. You will have to create that file, or just add the line to /etc/apt/sources.list .
 
@@ -24,3 +26,31 @@ In order to use the preset file supplied with the package you might need to remo
 (4) in synaptic pressing "update"
 
 (5) /usr/share/doc/winff/README.Debian
+
+= Details ffmpeg =
+
+Because of legal and copyright issues not all codec are standard available in ffmpeg from Debian. If you don't mind these issues you can install the fuller featured ffmpeg from [http://debian-multimedia.org/]. The full explanation is available at [http://debian-multimedia.org/]. In short the procedure is as follows:
+
+  * Add the GPG Key under root via:
+  {{{
+  wget http://debian-multimedia.org/gpgkey.pub -O - | apt-key add - && apt-get install debian-multimedia-keyring
+  }}}
+
+  * Then add the debian-multimedia repository to your sources, either in /etc/apt/sources.list or /etc/apt/sources.list.d/debian-multimedia:
+  {{{
+  deb http://www.debian-multimedia.org etch main
+  }}}
+  or
+  {{{
+  deb ftp://ftp.debian-multimedia.org etch main
+  }}}
+  or
+  {{{
+  deb http://www.debian-multimedia.org stable main
+  }}}
+  or
+  {{{
+  deb ftp://ftp.debian-multimedia.org stable main  
+  }}}
+
+Now you are ready to install the debian-multimedia version of ffmpeg.
