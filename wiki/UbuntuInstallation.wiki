@@ -44,3 +44,5 @@ Because of legal and copyright issues not all codec are standard available in ff
   You may be asked to accept this package even though it cannot be authenticated. This is normal; typing "Yes" means you trust Medibuntu.
 
 Now you are ready to install the medibuntu version of ffmpeg.
+
+Beware, because the medibuntu version of ffmpeg is usually newer, the presets that come with winff might not always work. Please take a look at the [http://www.biggmatt.com/forums/index.php?board=3.0 forum].
