@@ -29,13 +29,15 @@ In order to use the preset file supplied with the package you might need to remo
 
 = Details ffmpeg =
 
+(Intrepid contains a pretty complete ffmpeg already.)
+
 Because of legal and copyright issues not all codec are standard available in ffmpeg from Ubuntu. If you don't mind these issues (see the [https://help.ubuntu.com/community/Medibuntu Medibuntu wiki]) you can install the fuller featured ffmpeg from [http://www.medibuntu.org/ Medibuntu]. The full explanation is available at [https://help.ubuntu.com/community/Medibuntu]. In short the procedure is as follows:
 
   * add the medibuntu repository to your sources, for instance using the following command:
   {{{
-  sudo wget http://www.medibuntu.org/sources.list.d/intrepid.list -O /etc/apt/sources.list.d/medibuntu.list
+  sudo wget http://www.medibuntu.org/sources.list.d/hardy.list -O /etc/apt/sources.list.d/medibuntu.list
   }}}
-  If you are running Hardy or Gutsy or... replace the string "intrepid" by that version of ubuntu.
+  If you are running Gutsy or... replace the string "hardy" by that version of ubuntu.
 
   * After that you should add the GPG Key via:
   {{{
