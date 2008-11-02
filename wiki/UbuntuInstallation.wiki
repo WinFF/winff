@@ -23,9 +23,23 @@ In order to use the preset file supplied with the package you might need to remo
 
 (3) for instance "apt-get update" or
 
-(4) in synaptic pressing "update"
+(4) in synaptic pressing "Reload"
 
 (5) /usr/share/doc/winff/README.Debian
+
+= Experimental repository at winff.org =
+
+We also provide our own *signed* repository. Instead of (1) or (2) above, you can use (6) or (7). In order for that to work you need to accept the key [http://winff.org/ubuntu/AAFE086A.gpg AAFE086A]. To get that installed you could run:
+
+{{{
+wget --quiet --output-document=- "http://winff.org/ubuntu/AAFE086A.gpg" | sudo apt-key add -
+}}}
+
+(6) deb http://winff.org/ubuntu hardy universe
+
+or
+
+(7) deb http://winff.org/ubuntu intrepid universe
 
 = Details ffmpeg =
 
