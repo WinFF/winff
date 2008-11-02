@@ -8,7 +8,7 @@
       <IconPath Value=".\"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
-      <ActiveEditorIndexAtStart Value="3"/>
+      <ActiveEditorIndexAtStart Value="0"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
@@ -51,10 +51,11 @@
         <Filename Value="unit1.pas"/>
         <ComponentName Value="Form1"/>
         <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit1.lrs"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="11" Y="891"/>
-        <TopLine Value="872"/>
+        <CursorPos X="84" Y="1151"/>
+        <TopLine Value="1136"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Loaded Value="True"/>
@@ -63,6 +64,7 @@
         <Filename Value="unit2.pas"/>
         <ComponentName Value="Form2"/>
         <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit2.lrs"/>
         <UnitName Value="Unit2"/>
         <CursorPos X="3" Y="316"/>
@@ -75,6 +77,7 @@
         <Filename Value="unit3.pas"/>
         <ComponentName Value="Form3"/>
         <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit3.lrs"/>
         <UnitName Value="Unit3"/>
         <CursorPos X="21" Y="29"/>
@@ -119,6 +122,7 @@
         <Filename Value="unit4.pas"/>
         <ComponentName Value="Form4"/>
         <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit4.lrs"/>
         <UnitName Value="Unit4"/>
         <CursorPos X="3" Y="193"/>
@@ -131,6 +135,7 @@
         <Filename Value="unit5.pas"/>
         <ComponentName Value="Form5"/>
         <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit5.lrs"/>
         <UnitName Value="Unit5"/>
         <CursorPos X="59" Y="46"/>
@@ -183,15 +188,12 @@
     <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectOptions>
   <CompilerOptions>
-    <Version Value="5"/>
+    <Version Value="8"/>
     <PathDelim Value="\"/>
     <SearchPaths>
       <OtherUnitFiles Value="$(LazarusDir)\components\codetools\units\$(TargetCPU)-$(TargetOS)\"/>
       <SrcPath Value="$(LazarusDir)\lcl\;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)\"/>
     </SearchPaths>
-    <CodeGeneration>
-      <Generate Value="Faster"/>
-    </CodeGeneration>
     <Linking>
       <Options>
         <Win32>
