@@ -1148,7 +1148,7 @@ begin                                     // get setup
    if aspectratio.Text <> '' then
            commandline:=replaceparam(commandline,'-aspect','-aspect ' + aspectratio.Text);
    if audbitrate.Text <> '' then
-           commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'k');
+           commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'kb');
    if audsamplingrate.Text <> '' then
            commandline:=replaceparam(commandline,'-ar','-ar ' + audsamplingrate.Text);
    if audchannels.Text <> '' then
