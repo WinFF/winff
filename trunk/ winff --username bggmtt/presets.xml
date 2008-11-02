@@ -116,12 +116,12 @@
     <extension>mp3</extension>
     <category>Audio</category>
   </mp3>
-  <mp3>
+  <mp3m>
     <label>MP3 (Mono)</label>
     <params>-acodec mp3 -ab 32k -ac 1 -ar 22050</params>
     <extension>mp3</extension>
     <category>Mobile Phones</category>
-  </mp3>
+  </mp3m>
   <M4a>
     <label>M4a</label>
     <params>-vn -acodec aac -ab 112k -ac 2</params>
