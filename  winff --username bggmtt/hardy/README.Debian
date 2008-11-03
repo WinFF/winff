@@ -8,4 +8,4 @@ with the new style of LIBRARY names versus the old CODEC name for ffmpeg.
 For you convenience it is provided in /usr/share/winff/presets_new-style.xml
 and should replace or be merged with your ~/.winff/presets.xml
 
-Paul Gevers, November 2, 2008
+Paul Gevers, October 12, 2008

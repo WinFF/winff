@@ -1,113 +1,11 @@
 <?xml version="1.0"?>
 <presets>
-  <palvcdhq>
-    <label>PAL VCD (HQ)</label>
-    <params>-target pal-vcd -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
-    <extension>mpg</extension>
-    <category>VCD</category>
-  </palvcdhq>
-  <paldvdhqWS>
-    <label>PAL DVD HQ (16:9)</label>
-    <params>-target pal-dvd -aspect 16:9 -b 8000k -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
-    <extension>mpg</extension>
-    <category>DVD</category>
-  </paldvdhqWS>
-  <paldvdhqFS>
-    <label>PAL DVD HQ (4:3)</label>
-    <params>-target pal-dvd -aspect 4:3 -b 8000k -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
-    <extension>mpg</extension>
-    <category>DVD</category>
-  </paldvdhqFS>
-  <ntscvcdhq>
-    <label>NTSC VCD (HQ)</label>
-    <params>-target ntsc-vcd -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
-    <extension>mpg</extension>
-    <category>VCD</category>
-  </ntscvcdhq>
-  <ntscdvdhqWS>
-    <label>NTSC DVD HQ (16:9)</label>
-    <params>-target ntsc-dvd -r 29.97 -s 720x480 -aspect 16:9 -b 8000k -g 12 -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
-    <extension>mpg</extension>
-    <category>DVD</category>
-  </ntscdvdhqWS>
-  <ntscdvdhqFS>
-    <label>NTSC DVD HQ (4:3)</label>
-    <params>-target ntsc-dvd -r 29.97 -s 720x480 -aspect 4:3 -b 8000k -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
-    <extension>mpg</extension>
-    <category>DVD</category>
-  </ntscdvdhqFS>
-  <ntscdvdgoodqWS>
-    <label>NTSC DVD (16:9)</label>
-    <params>-vcodec mpeg2video -r 29.97 -s 352x480 -aspect 16:9 -b 4000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2 -acodec mp2 -ab 192k -ar 48000 -ac 2</params>
-    <extension>mpg</extension>
-    <category>DVD</category>
-  </ntscdvdgoodqWS>
-  <ntscdvdgoodqFS>
-    <label>NTSC DVD (4:3)</label>
-    <params>-vcodec mpeg2video -r 29.97 -s 352x480 -aspect 4:3 -b 4000k -mbd rd -flags +trell -mv0 -cgop -cmp 2 -subcmp 2 -acodec mp2 -ab 192k -ar 48000 -ac 2</params>
-    <extension>mpg</extension>
-    <category>DVD</category>
-  </ntscdvdgoodqFS>
-  <flvwebWS>
-    <label>Flash: Video (flv) for Web use (16:9)</label>
-    <params>-vcodec flv -f flv -r 29.97 -s 320x180 -aspect 16:9 -b 300kb -g 160 -cmp 2 -subcmp 2 -mbd 2 -flags +aic+cbp+mv0+mv4+trell -ac 1 -ar 22050 -ab 56k</params>
-    <extension>flv</extension>
-    <category>Websites</category>
-  </flvwebWS>
-  <flvwebFS>
-    <label>Flash: Video (flv) for Web use (4:3)</label>
-    <params>-vcodec flv -f flv -r 29.97 -s 320x240 -aspect 4:3 -b 300kb -g 160 -cmp 2  -subcmp 2  -mbd 2 -flags +aic+cbp+mv0+mv4+trell -ac 1 -ar 22050 -ab 56k</params>
-    <extension>flv</extension>
-    <category>Websites</category>
-  </flvwebFS>
   <CDWavStereo>
     <label>Wav for CD</label>
     <params>-vn -ar 44100</params>
     <extension>wav</extension>
     <category>Audio</category>
   </CDWavStereo>
-  <ntscdvdlq>
-    <label>NTSC DVD Fast (LQ)</label>
-    <params>-target ntsc-dvd -b 5000kb -r 29.97 -s 720x480 -ar 48000 -ab 384kb</params>
-    <extension>mpg</extension>
-    <category>DVD</category>
-  </ntscdvdlq>
-  <paldvdlq>
-    <label>PAL DVD Fast (LQ)</label>
-    <params>-target pal-dvd -b 5000kb -r 25 -s 720x576 -ar 48000 -ab 384kb</params>
-    <extension>mpg</extension>
-    <category>DVD</category>
-  </paldvdlq>
-  <wmv>
-    <label>WMV2</label>
-    <params>-vcodec wmv2  -acodec wmav2</params>
-    <extension>wmv</extension>
-    <category>WMV</category>
-  </wmv>
-  <wma>
-    <label>WMA</label>
-    <params>-vn  -acodec wmav2</params>
-    <extension>wma</extension>
-    <category>Audio</category>
-  </wma>
-  <swf>
-    <label>Shockwave Flash</label>
-    <params>-ar 44100 -ab 192</params>
-    <extension>swf</extension>
-    <category>Websites</category>
-  </swf>
-  <dvntsc>
-    <label>Raw DV for NTSC 4:3</label>
-    <params>-target ntsc-dv -aspect 4:3</params>
-    <extension>dv</extension>
-    <category>DV</category>
-  </dvntsc>
-  <dvpal>
-    <label>Raw DV for PAL 4:3</label>
-    <params>-target pal-dv -aspect 4:3</params>
-    <extension>dv</extension>
-    <category>DV</category>
-  </dvpal>
   <ac3dvd192>
     <label>Ac3 DVD - 192kbps Stereo</label>
     <params>-acodec ac3 -ab 192k -ar 48000 -ac 2</params>
@@ -120,4 +18,52 @@
     <extension>ac3</extension>
     <category>Audio</category>
   </ac3dvd384>
+  <dvntsc>
+    <label>Raw DV for NTSC 4:3</label>
+    <params>-target ntsc-dv -aspect 4:3</params>
+    <extension>dv</extension>
+    <category>DV</category>
+  </dvntsc>
+  <dvpal>
+    <label>Raw DV for PAL 4:3</label>
+    <params>-target pal-dv -aspect 4:3</params>
+    <extension>dv</extension>
+    <category>DV</category>
+  </dvpal>
+  <flvwebFS>
+    <label>Flash: Video (flv) for Web use (4:3)</label>
+    <params>-vcodec flv -f flv -r 29.97 -s 320x240 -aspect 4:3 -b 300kb -g 160 -cmp 2  -subcmp 2  -mbd 2 -flags +aic+cbp+mv0+mv4+trell -ac 1 -ar 22050 -ab 56k</params>
+    <extension>flv</extension>
+    <category>Websites</category>
+  </flvwebFS>
+  <flvwebWS>
+    <label>Flash: Video (flv) for Web use (16:9)</label>
+    <params>-vcodec flv -f flv -r 29.97 -s 320x180 -aspect 16:9 -b 300kb -g 160 -cmp 2 -subcmp 2 -mbd 2 -flags +aic+cbp+mv0+mv4+trell -ac 1 -ar 22050 -ab 56k</params>
+    <extension>flv</extension>
+    <category>Websites</category>
+  </flvwebWS>
+  <ntscvcdhq>
+    <label>NTSC VCD (HQ)</label>
+    <params>-target ntsc-vcd -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>VCD</category>
+  </ntscvcdhq>
+  <palvcdhq>
+    <label>PAL VCD (HQ)</label>
+    <params>-target pal-vcd -mbd rd -flags +trell -mv0 -cmp -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>VCD</category>
+  </palvcdhq>
+  <wma>
+    <label>WMA</label>
+    <params>-vn  -acodec wmav2</params>
+    <extension>wma</extension>
+    <category>Audio</category>
+  </wma>
+  <wmv>
+    <label>WMV2</label>
+    <params>-vcodec wmv2  -acodec wmav2</params>
+    <extension>wmv</extension>
+    <category>WMV</category>
+  </wmv>
 </presets>
