@@ -1,3 +1,11 @@
+winff (0.43-2) unstable; urgency=low
+
+  * Added line to debian/rules to fix file permissions in
+    /urs/share/winff/
+  * Changed title in debian/winff.doc-base
+
+ -- Paul Gevers <paul@climbing.nl>  Mon, 03 Nov 2008 20:11:27 -0600
+
 winff (0.43-1) unstable; urgency=low
 
   * New upstream release
