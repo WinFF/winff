@@ -55,6 +55,7 @@ binary-arch: build install
 	dh_strip
 	dh_compress
 	dh_fixperms
+	find $(CURDIR)/debian/winff/usr/share/winff -type f | xargs chmod a-x
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol
