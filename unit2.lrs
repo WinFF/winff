@@ -2,17 +2,17 @@
 
 LazarusResources.Add('TForm2','FORMDATA',[
   'TPF0'#6'TForm2'#5'Form2'#4'Left'#3'Z'#1#6'Height'#3#173#1#3'Top'#3#30#1#5'Wi'
-  +'dth'#3#132#1#18'HorzScrollBar.Page'#3#131#1#18'VertScrollBar.Page'#3#172#1
-  +#13'ActiveControl'#7#5'Edit1'#11'BorderIcons'#11#12'biSystemMenu'#10'biMinim'
-  +'ize'#0#11'BorderStyle'#7#8'bsSingle'#7'Caption'#6#12'Edit Presets'#12'Clien'
-  +'tHeight'#3#173#1#11'ClientWidth'#3#132#1#8'OnResize'#7#10'FormResize'#6'OnS'
-  +'how'#7#8'FormShow'#8'Position'#7#16'poMainFormCenter'#0#6'TLabel'#6'Label1'
-  +#4'Left'#2#8#6'Height'#2#16#3'Top'#2#8#5'Width'#2'%'#7'Caption'#6#6'Preset'
-  +#12'Font.CharSet'#2#17#11'ParentColor'#8#0#0#6'TLabel'#6'Label2'#4'Left'#2#8
-  +#6'Height'#2#16#3'Top'#2'x'#5'Width'#3#28#1#7'Caption'#6'2Preset Name   (one'
-  +' word, only letters and numbers)'#11'ParentColor'#8#0#0#6'TLabel'#6'Label3'
-  +#4'Left'#2#8#6'Height'#2#16#3'Top'#3#168#0#5'Width'#2'G'#7'Caption'#6#12'Pre'
-  +'set Label'#11'ParentColor'#8#0#0#6'TLabel'#6'Label4'#4'Left'#2#8#6'Height'#2
+  +'dth'#3#132#1#13'ActiveControl'#7#5'Edit1'#11'BorderIcons'#11#12'biSystemMen'
+  +'u'#10'biMinimize'#0#11'BorderStyle'#7#8'bsSingle'#7'Caption'#6#12'Edit Pres'
+  +'ets'#12'ClientHeight'#3#173#1#11'ClientWidth'#3#132#1#8'OnResize'#7#10'Form'
+  +'Resize'#6'OnShow'#7#8'FormShow'#10'ParentFont'#8#8'Position'#7#16'poMainFor'
+  +'mCenter'#10'LCLVersion'#6#6'0.9.26'#0#6'TLabel'#6'Label1'#4'Left'#2#8#6'Hei'
+  +'ght'#2#16#3'Top'#2#8#5'Width'#2'%'#7'Caption'#6#6'Preset'#12'Font.CharSet'#2
+  +#17#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label2'#4'Left'#2#8#6
+  +'Height'#2#16#3'Top'#2'x'#5'Width'#3#28#1#7'Caption'#6'2Preset Name   (one w'
+  +'ord, only letters and numbers)'#11'ParentColor'#8#0#0#6'TLabel'#6'Label3'#4
+  +'Left'#2#8#6'Height'#2#16#3'Top'#3#168#0#5'Width'#2'G'#7'Caption'#6#12'Prese'
+  +'t Label'#11'ParentColor'#8#0#0#6'TLabel'#6'Label4'#4'Left'#2#8#6'Height'#2
   +#16#3'Top'#3#216#0#5'Width'#3'+'#1#7'Caption'#6'5Preset Command Line Paramet'
   +'ers (no -i or output file)'#11'ParentColor'#8#0#0#6'TLabel'#6'Label5'#4'Lef'
   +'t'#2#8#6'Height'#2#16#3'Top'#3#8#1#5'Width'#3#238#0#7'Caption'#6'/Output Fi'
@@ -35,7 +35,7 @@ LazarusResources.Add('TForm2','FORMDATA',[
   +'TabOrder'#2#6#0#0#7'TButton'#9'CancelBtn'#4'Left'#3'0'#1#6'Height'#2#25#3'T'
   +'op'#3#136#1#5'Width'#2'K'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#5
   +'Close'#7'OnClick'#7#14'CancelBtnClick'#8'TabOrder'#2#7#0#0#5'TEdit'#5'Edit4'
-  +#4'Left'#2#8#6'Height'#2#23#3'Top'#3#24#1#5'Width'#2'P'#9'MaxLength'#2#20#8
+  +#4'Left'#2#9#6'Height'#2#23#3'Top'#3#24#1#5'Width'#2'P'#9'MaxLength'#2#20#8
   +'OnChange'#7#11'Edit4Change'#8'TabOrder'#2#8#0#0#7'TButton'#6'import'#4'Left'
   +#3#216#0#6'Height'#2#25#3'Top'#3'h'#1#5'Width'#2'K'#25'BorderSpacing.InnerBo'
   +'rder'#2#4#7'Caption'#6#6'Import'#7'OnClick'#7#11'importClick'#8'TabOrder'#2
