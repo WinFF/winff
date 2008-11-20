@@ -3,8 +3,6 @@ object Form2: TForm2
   Height = 429
   Top = 286
   Width = 388
-  HorzScrollBar.Page = 387
-  VertScrollBar.Page = 428
   ActiveControl = Edit1
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
@@ -13,7 +11,9 @@ object Form2: TForm2
   ClientWidth = 388
   OnResize = FormResize
   OnShow = FormShow
+  ParentFont = False
   Position = poMainFormCenter
+  LCLVersion = '0.9.26'
   object Label1: TLabel
     Left = 8
     Height = 16
@@ -22,6 +22,7 @@ object Form2: TForm2
     Caption = 'Preset'
     Font.CharSet = 17
     ParentColor = False
+    ParentFont = False
   end
   object Label2: TLabel
     Left = 8
@@ -134,7 +135,7 @@ object Form2: TForm2
     TabOrder = 7
   end
   object Edit4: TEdit
-    Left = 8
+    Left = 9
     Height = 23
     Top = 280
     Width = 80

@@ -3,9 +3,7 @@ object Form4: TForm4
   Height = 322
   Top = 288
   Width = 400
-  HorzScrollBar.Page = 399
-  VertScrollBar.Page = 321
-  ActiveControl = Button1
+  ActiveControl = Notebook1
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'WinFF Preferences'
@@ -13,7 +11,9 @@ object Form4: TForm4
   ClientWidth = 400
   OnClose = FormClose
   OnCreate = FormCreate
+  ParentFont = False
   Position = poMainFormCenter
+  LCLVersion = '0.9.26'
   object Button1: TButton
     Left = 224
     Height = 25
@@ -33,13 +33,13 @@ object Form4: TForm4
     TabOrder = 1
     object Page1: TPage
       Caption = 'General'
-      ClientWidth = 376
-      ClientHeight = 238
+      ClientWidth = 380
+      ClientHeight = 234
       object Label1: TLabel
         Left = 4
-        Height = 16
+        Height = 13
         Top = 8
-        Width = 157
+        Width = 161
         Caption = 'Default Destination Directory'
         ParentColor = False
       end
@@ -62,38 +62,38 @@ object Form4: TForm4
       end
       object CheckBox1: TCheckBox
         Left = 4
-        Height = 21
+        Height = 20
         Top = 64
-        Width = 175
+        Width = 196
         Caption = 'Remember Last Used Directory'
         TabOrder = 2
       end
       object CheckBox3: TCheckBox
         Left = 4
-        Height = 21
+        Height = 20
         Top = 90
-        Width = 214
+        Width = 248
         Caption = 'Mutlithreading for Dual Core Processors'
         TabOrder = 3
       end
     end
     object Page2: TPage
       Caption = 'MS Windows'
-      ClientWidth = 376
-      ClientHeight = 238
+      ClientWidth = 384
+      ClientHeight = 264
       object Label2: TLabel
         Left = 4
-        Height = 16
+        Height = 13
         Top = 8
-        Width = 151
+        Width = 156
         Caption = 'Path to FFmpeg Executable'
         ParentColor = False
       end
       object Label3: TLabel
         Left = 4
-        Height = 16
+        Height = 13
         Top = 64
-        Width = 141
+        Width = 150
         Caption = 'Path to FFplay Executable'
         ParentColor = False
       end
@@ -133,44 +133,46 @@ object Form4: TForm4
       end
       object CheckBox2: TCheckBox
         Left = 4
-        Height = 21
+        Height = 20
         Top = 130
-        Width = 207
+        Width = 237
         Caption = 'Use CHCP for international characters'
         TabOrder = 4
       end
     end
     object Page3: TPage
       Caption = 'Linux'
+      ClientWidth = 380
+      ClientHeight = 234
       object Label4: TLabel
         Left = 4
-        Height = 16
+        Height = 13
         Top = 8
-        Width = 151
+        Width = 156
         Caption = 'Path to FFmpeg Executable'
         ParentColor = False
       end
       object Label5: TLabel
         Left = 4
-        Height = 16
+        Height = 13
         Top = 64
-        Width = 141
+        Width = 150
         Caption = 'Path to FFplay Executable'
         ParentColor = False
       end
       object Label6: TLabel
         Left = 4
-        Height = 16
+        Height = 13
         Top = 120
-        Width = 146
+        Width = 148
         Caption = 'Terminal to run FFmpeg in'
         ParentColor = False
       end
       object Label7: TLabel
         Left = 4
-        Height = 16
+        Height = 13
         Top = 176
-        Width = 298
+        Width = 307
         Caption = 'Terminal Options (''-e'' for xterm, ''-x'' for gnome terminal)'
         ParentColor = False
       end
@@ -245,12 +247,10 @@ object Form4: TForm4
     TabOrder = 2
   end
   object OpenDialog1: TOpenDialog
-    Title = 'Open existing file'
     FilterIndex = 0
     top = 352
   end
   object SelectDirectoryDialog1: TSelectDirectoryDialog
-    Title = 'Select Directory'
     FilterIndex = 0
     top = 308
   end

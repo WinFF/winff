@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
 <presets>
-<!-- Presets for FFmpeg Revision 13712 -->
-<!-- Presets for WinFF are licensed unde the GPL V3 -->  
   <iPodXviDWSAna>
     <label>XviD for Ipod (16:9 Anamorphic)</label>
     <params>-r 29.97 -croptop 58 -cropbottom 62 -vcodec xvid -s 640x272 -aspect 2.35 -maxrate 1500k -b 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -g 300 -acodec aac -ar 48000 -ab 80k -ac 2</params>

@@ -25,8 +25,6 @@ type
     Image1: TImage;
     Label1: TLabel;
     Label10: TLabel;
-    Label11: TLabel;
-    Label12: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
@@ -82,7 +80,6 @@ begin                  // do translations
     
                      // fill thank you memo
     listbox1.items.Add('Gmaq for his presets, ideas, and support.');
-    listbox1.items.Add('Iconsdesigns.com for their NeuvoXT 2 GPL Icons');
     listbox1.items.Add('Chris Bidmead for scripting ideas.');
     listbox1.items.Add('Neil Hinton for 95/98/ME Compatibility');
     listbox1.items.Add('German translation by Kai Evers');
@@ -90,6 +87,7 @@ begin                  // do translations
     listbox1.items.Add('Italian translation by Roberto Calamante');
     listbox1.items.Add('Turkish translation by Emre Erkan');
     listbox1.items.Add('Polish translation by Marcin Trybus');
+    listbox1.items.Add('Iconsdesigns.com for their NeuvoXT 2 GPL Icons');
     listbox1.items.Add('Dutch translation by Roger Gabriels');
     listbox1.items.Add('Portuguese translation by Louis Torrao');
     listbox1.items.Add('Brazilan Portuguese translation by Nighto');
