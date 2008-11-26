@@ -43,7 +43,7 @@ _(or if you prefer the PPA:)_
 
 = Details ffmpeg =
 
-Intrepid contains a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed.
+Intrepid contains a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed which should pull in the 'unstripped' versions of several libraries. You can also look for them directly: libavcodec-unstripped-51, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
 
 Because of legal and copyright issues not all codec are standard available in ffmpeg from Ubuntu. If you don't mind these issues (see the [https://help.ubuntu.com/community/Medibuntu Medibuntu wiki]) you can install the fuller featured ffmpeg from [http://www.medibuntu.org/ Medibuntu]. The full explanation is available at [https://help.ubuntu.com/community/Medibuntu]. In short the procedure is as follows:
 
