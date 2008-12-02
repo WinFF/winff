@@ -23,7 +23,12 @@ echo "deb http://winff.org/ubuntu intrepid universe" | sudo tee /etc/apt/sources
 }}}
 (Of course change intrepid to hardy if you need that). You can also just add the line to /etc/apt/sources.list .
 
-After you update using your favorite package manager (3) and you can just choose winff from the list. If you have winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages are unsigned at the moment so you will have to accept the warning given by your package manager.
+After you update using your favorite package manager (3) and you can just choose winff from the list. If you have winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages in the PPA are unsigned at the moment so you will have to accept the warning given by your package manager if you use those.
+
+You can install WinFF directly now by running:
+{{{
+sudo apt-get update && sudo apt-get install winff
+}}}
 
 If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (4) after installation.
 
