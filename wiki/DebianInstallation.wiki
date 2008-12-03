@@ -3,31 +3,58 @@
 
 = Introduction =
 
-Until the packages are completely accepted (and after that for faster updates) Debian packages build for Ubuntu are available at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
+Until the packages are completely accepted (and after that for faster updates) Debian packages build for Ubuntu are available at [http://winff.org winff.org] and at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
 
 Also a fuller featured ffmpeg is available via [http://www.debian-multimedia.org/].
 
 = Details Winff =
 
-If you are running Debian unstable, WinFF is available just like any other program. 
+If you are running Debian unstable, WinFF is available just like any other program (maybe you want to read the README.Debian).
 
-If you are running an other version of Debian you can easily install WinFF by entering the line (1) (stable) or (2) (testing) in /etc/apt/sources.list.d/winff.list. You will have to create that file, or just add the line to /etc/apt/sources.list .
+If you are running an other version of Debian you can easily install WinFF by using our Ubuntu repositories. The repositories come in two flavors. We provide our *signed* repository at [http://winff.org] or you can use the *unsigned* repository at [https://launchpad.net/~paul-climbing/+archive Launchpad]. We have not received any complains about our prive repo, so that is recommended, but for redundancy we mention Launchpad as well.
 
-After you update using your favorite package manager (3)(4) and you can just choose WinFF from the list. If you have WinFF installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages are unsigned at the moment so you will have to accept the warning given by your package manager.
+If you use the signed repository you need to accept the key [http://winff.org/ubuntu/AAFE086A.gpg AAFE086A]. To get that installed you can run:
 
-If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (5) after installation.
+{{{
+wget --quiet --output-document=- "http://winff.org/ubuntu/AAFE086A.gpg" | sudo apt-key add -
+}}}
 
-In order to use the preset file supplied with the package you might need to remove the old preset file in ~/.winff/presets.xml , but by doing that you will also remove self-made presets. So if you made or edited the presets, you want to compare the files manually. 
+After that you need to add the repository to apt. You can do that by entering the line (1) in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
+{{{
+echo "deb http://winff.org/ubuntu intrepid universe" | sudo tee /etc/apt/sources.list.d/winff.list
+}}}
+(Change intrepid to hardy for debian stable). You can also just add the line to /etc/apt/sources.list .
 
-(1) deb http://ppa.launchpad.net/paul-climbing/ubuntu hardy main
+After you update using your favorite package manager (2) you can just choose winff from the list. If you have winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages in the PPA are unsigned at the moment so you will have to accept the warning given by your package manager if you use those.
 
-(2) deb http://ppa.launchpad.net/paul-climbing/ubuntu intrepid main
+You can install WinFF directly now by running:
+{{{
+sudo apt-get update && sudo apt-get install winff
+}}}
 
-(3) for instance "apt-get update" or
+If you don't run the standard ffmpeg and want to make use of the more extended original set of presets, which you can download in the [http://code.google.com/p/winff/downloads/list download] section.
 
-(4) in synaptic pressing "update"
+In order to use the preset file supplied with the package you might need to remove the old preset file in ~/.winff/presets.xml , but by doing that you will also remove self-made presets. So if you made or edited the presets, you want to compare the files manually.
 
-(5) /usr/share/doc/winff/README.Debian
+----
+*If you are having problems* with the described procedure, please file a bug in our [http://code.google.com/p/winff/issues/list bug tracker]. Please include in the bug the output of 
+{{{
+cat /etc/apt/sources.list.d/winff.list
+}}}
+and
+{{{
+sudo apt-get update && sudo apt-get install winff
+}}}
+----
+
+(1) `deb http://winff.org/ubuntu intrepid universe`
+_(or if you prefer the PPA:)_ 
+`deb http://ppa.launchpad.net/paul-climbing/ubuntu intrepid main`
+(replace intrepid with hardy if you run debian stable)
+
+(2) for instance `sudo apt-get update` or while in synaptic pressing "Reload"
+
+(3) /usr/share/doc/winff/README.Debian
 
 = Details ffmpeg =
 
