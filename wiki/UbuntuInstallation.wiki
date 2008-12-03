@@ -5,7 +5,7 @@
 
 Until the packages are completely accepted (and after that for faster updates) Ubuntu packages are available at [http://winff.org/] and at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
 
-Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibuntu].
+Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibuntu] for Hardy users.
 
 = Details Winff =
 
@@ -17,38 +17,48 @@ If you use the signed repository you need to accept the key [http://winff.org/ub
 wget --quiet --output-document=- "http://winff.org/ubuntu/AAFE086A.gpg" | sudo apt-key add -
 }}}
 
-After that you need to add the repository to apt. You can do that by entering the line (1) (hardy) or (2) (intrepid) in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
+After that you need to add the repository to apt. You can do that by entering the line (1) in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
 {{{
 echo "deb http://winff.org/ubuntu intrepid universe" | sudo tee /etc/apt/sources.list.d/winff.list
 }}}
-(Of course change intrepid to hardy if you need that). You can also just add the line to /etc/apt/sources.list .
+(Of course change intrepid to hardy or jaunty if you need that). You can also just add the line to /etc/apt/sources.list .
 
-After you update using your favorite package manager (3) and you can just choose winff from the list. If you have winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages in the PPA are unsigned at the moment so you will have to accept the warning given by your package manager if you use those.
+After you update using your favorite package manager (2) you can just choose winff from the list. If you have winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages in the PPA are unsigned at the moment so you will have to accept the warning given by your package manager if you use those.
 
 You can install WinFF directly now by running:
 {{{
 sudo apt-get update && sudo apt-get install winff
 }}}
 
-If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (4) after installation.
+If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (3) after installation.
 
 In order to use the preset file supplied with the package you might need to remove the old preset file in ~/.winff/presets.xml , but by doing that you will also remove self-made presets. So if you made or edited the presets, you want to compare the files manually.
 
-(1) `deb http://winff.org/ubuntu hardy universe`
-_(or if you prefer the PPA:)_
-`deb http://ppa.launchpad.net/paul-climbing/ubuntu hardy main`
+----
+*If you are having problems* with the described procedure, please file a bug in our [http://code.google.com/p/winff/issues/list bug tracker]. Please include in the bug the output of 
+{{{
+cat /etc/apt/sources.list.d/winff.list
+}}}
+and
+{{{
+sudo apt-get update && sudo apt-get install winff
+}}}
+----
 
-(2) `deb http://winff.org/ubuntu intrepid universe`
+(1) `deb http://winff.org/ubuntu intrepid universe`
 _(or if you prefer the PPA:)_ 
 `deb http://ppa.launchpad.net/paul-climbing/ubuntu intrepid main`
+(replace intrepid with your release)
 
-(3) for instance `sudo apt-get update` or while in synaptic pressing "Reload"
+(2) for instance `sudo apt-get update` or while in synaptic pressing "Reload"
 
-(4) /usr/share/doc/winff/README.Debian
+(3) /usr/share/doc/winff/README.Debian
 
-= Details ffmpeg =
+= Details ffmpeg for Interpid (Jaunty) =
 
 Intrepid contains a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed which should pull in the 'unstripped' versions of several libraries. You can also look for them directly: libavcodec-unstripped-51, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
+
+= Details ffmpeg for Hardy =
 
 Because of legal and copyright issues not all codec are standard available in ffmpeg from Ubuntu. If you don't mind these issues (see the [https://help.ubuntu.com/community/Medibuntu Medibuntu wiki]) you can install the fuller featured ffmpeg from [http://www.medibuntu.org/ Medibuntu]. The full explanation is available at [https://help.ubuntu.com/community/Medibuntu]. In short the procedure is as follows:
 
@@ -62,7 +72,7 @@ Because of legal and copyright issues not all codec are standard available in ff
   {{{
   sudo apt-get update && sudo apt-get install medibuntu-keyring && sudo apt-get update
   }}}
-  You may be asked to accept this package even though it cannot be authenticated. This is normal; typing "Yes" means you trust Medibuntu.
+  You may be asked to accept this package even though it cannot be authenticated. This is normal; typing "Yes" means you trust Medibuntu. If you want to import the gpg key of medibuntu directly, it has number: 0C5A2783 The contains you can find for instance at [http://wwwkeys.pgp.net:11371/pks/lookup?op=get&search=0x2EBC26B60C5A2783 pgp.net].
 
 Now you are ready to install the medibuntu version of ffmpeg.
 
