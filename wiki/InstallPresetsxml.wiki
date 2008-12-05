@@ -1,18 +1,17 @@
-#summary How to install a newer preset file
+#summary How to install a newer presets file
 #labels Phase-Deploy,Phase-Design,Featured
 
+Unfortunately different versions of ffmpeg have different parameters. Therefore you can find several versions of the presets.xml file in the [http://code.google.com/p/winff/downloads/list download section]. Here is what to do with the new file.
+
+Be aware that the procedure described here deletes your customized presets, so if you have added or edited the presets, you have to merge the new file manually.
 = Linux =
 
-For a user unzip and copy presets.xml to /home/user/.winff
+If you just want to install for the current user, unzip/untar the downloaded file and copy the new presets.xml file to `/home/user/.winff/`
 
-For the system unzip and copy presets.xml to /usr/share/winff
-
-if you install to the system each user must delete /home/user/.winff/presets.xml
+If you want to change the system wide presets.xml file, unzip/untar the downloaded file and copy the new presets.xml to /usr/share/winff/presets.xml. If you install to the system each user must delete `/home/user/.winff/presets.xml` for the new presets to take effect. This last procedure might prevent successful updates of later if you are using standard Debian/Ubuntu updates.
 
 = Windows =
 
-For a user unzip and copy presets.xml to c:\documents and settings\USERNAME\application data\winff
+If you just want to install for the current user, unzip/untar the downloaded file and copy the new presets.xml file to "`c:\documents and settings\USERNAME\application data\winff\`"
 
-For the system unzip and copy presets.xml c:\program files\winff
-
-if you install to the system each user must c:\documents and settings\USERNAME\application data\winff
+If you want to change the system wide presets.xml file, unzip/untar the downloaded file and copy the new presets.xml to "`c:\program files\winff\`". If you install to the system each user must c:\documents and settings\USERNAME\application data\winff
