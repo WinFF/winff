@@ -31,6 +31,15 @@ You can now install WinFF directly by running:
 sudo apt-get update && sudo apt-get install winff
 }}}
 
+interpid users also want to run:
+{{{
+sudo apt-get install libavcodec-unstripped-51 
+}}}
+
+jaunty users also want to run:
+{{{
+sudo apt-get install libavcodec-unstripped-52 
+}}}
 ----
 *If you are having problems* with the described procedure, please file a bug in our [http://code.google.com/p/winff/issues/list bug tracker]. Please include in the bug the output of 
 {{{
