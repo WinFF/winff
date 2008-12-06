@@ -9,8 +9,11 @@ Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibu
 
 = Details Winff =
 
-The Ubuntu repositories come in two flavors. We provide our *signed* repository at [http://winff.org] or you can use the *unsigned* repository at [https://launchpad.net/~paul-climbing/+archive Launchpad]. We have not received any complains about our prive repo, so that is recommended, but for redundance we mention Launchpad as well.
+The Ubuntu repositories come in two flavors. We provide our *signed* repository at [http://winff.org] or you can use the *unsigned* repository at [https://launchpad.net/~paul-climbing/+archive Launchpad]. We have not received any complains about our prive repo, so that is recommended, but for redundancy we mention Launchpad as well.
 
+I describe to procedures, one using the command line, the other using synaptic. First the command line.
+
+== Command line ==
 If you use the signed repository you need to accept the key [http://winff.org/ubuntu/AAFE086A.gpg AAFE086A]. To get that installed you can run:
 
 {{{
@@ -21,26 +24,18 @@ After that you need to add the repository to apt. You can do that by entering th
 {{{
 echo "deb http://winff.org/ubuntu intrepid universe" | sudo tee /etc/apt/sources.list.d/winff.list
 }}}
-(Of course change intrepid to hardy or jaunty if you need that). You can also just add the line to /etc/apt/sources.list .
+Of course you need to change intrepid to hardy or jaunty if you have that. (You can also just add the line to /etc/apt/sources.list .)
 
-After you update using your favorite package manager (2) you can just choose winff from the list. If you have winff installed from Matt's package file, you might need to uninstall that first. Unfortunately the packages in the PPA are unsigned at the moment so you will have to accept the warning given by your package manager if you use those.
-
-You can install WinFF directly now by running:
+You can now install WinFF directly by running:
 {{{
 sudo apt-get update && sudo apt-get install winff
 }}}
-
-If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (3) after installation.
-
-In order to use the preset file supplied with the package you might need to remove the old preset file in ~/.winff/presets.xml , but by doing that you will also remove self-made presets. So if you made or edited the presets, you want to compare the files manually.
 
 ----
 *If you are having problems* with the described procedure, please file a bug in our [http://code.google.com/p/winff/issues/list bug tracker]. Please include in the bug the output of 
 {{{
 cat /etc/apt/sources.list.d/winff.list
-}}}
-and
-{{{
+# and
 sudo apt-get update && sudo apt-get install winff
 }}}
 ----
@@ -48,9 +43,32 @@ sudo apt-get update && sudo apt-get install winff
 (1) `deb http://winff.org/ubuntu intrepid universe`
 _(or if you prefer the PPA:)_ 
 `deb http://ppa.launchpad.net/paul-climbing/ubuntu intrepid main`
-(replace intrepid with your release)
+(replace intrepid with your release)  Unfortunately the packages in the PPA are unsigned at the moment so you will have to accept the warning given by your package manager if you use those.
 
-(2) for instance `sudo apt-get update` or while in synaptic pressing "Reload"
+== Synaptic ==
+
+If you are using synaptic to install packages you have to download and save the [http://winff.org/ubuntu/AAFE086A.gpg key (right click here)]. Then go in the synaptic menu to Setting -> Repositories.
+
+http://winff.org/images/screenshots/synaptic_setting_repo.png
+
+Now go to the tab "Authentication", press "Import Key File" and select the just downloaded [http://winff.org/ubuntu/AAFE086A.gpg file].
+
+http://winff.org/images/screenshots/synaptic_add_key.png
+
+Now go to the "Third-party Software" tab and select "add"
+
+http://winff.org/images/screenshots/synaptic_add_repo-win.png
+
+In the next field type (or copy/paste) `deb http://winff.org/ubuntu intrepid universe` (change intrepid to *your* release) and press "Add source".
+
+http://winff.org/images/screenshots/synaptic_add_repo-field.png
+
+Now, after you press "Reload" you can just choose winff from the list. If you have winff installed from Matt's package file, you should uninstall that first.
+
+= Warning non standard ffmpeg =
+If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (3) after installation. If you find that your presets don't work, try the other presets files that are available [http://code.google.com/p/winff/downloads/list here].
+
+In order to use an other presets file than supplied with the package you might need to remove the old preset file in ~/.winff/presets.xml , but by doing that you will also remove self-made presets. So if you made or edited the presets, you want to compare the files manually.
 
 (3) /usr/share/doc/winff/README.Debian
 
