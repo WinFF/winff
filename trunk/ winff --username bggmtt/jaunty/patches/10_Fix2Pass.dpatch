@@ -1,0 +1,23 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 10_Fix2Pass.dpatch by Paul Gevers <paul@climbing.nl>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Fix 2pass options, add "no audio" on first pass and add format
+
+@DPATCH@
+diff -urNad winff-0.43~/unit1.pas winff-0.43/unit1.pas
+--- winff-0.43~/unit1.pas	2008-10-21 12:05:56.000000000 -0500
++++ winff-0.43/unit1.pas	2008-12-04 22:20:28.000000000 -0600
+@@ -1194,10 +1194,10 @@
+        else if pass2.Checked = true then
+           begin
+            command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline  + ' -passlogfile "'
+-                 + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
++                 + passlogfile + '"' + ' -an -pass 1 -f ' +  extension + ' -y ' + nullfile ;
+            script.Add(command);
+            command := ffmpegfilename + usethreads + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
+-                 + passlogfile + '"' + ' -pass 2 ' + ' "' + destfolder.Text + DirectorySeparator + basename +'.'
++                 + passlogfile + '"' + ' -pass 2 -f ' + extension + ' "' + destfolder.Text + DirectorySeparator + basename +'.'
+                  + extension+ '"';
+            script.add(command);
+           end;

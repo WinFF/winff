@@ -1,0 +1,59 @@
+winff (0.43-2ubuntu2~ppa3j) jaunty; urgency=low
+
+  * Updated debian/winff.desktop to use the GenericName properly.
+  * Changed 10_Fix2Pass for improved support of 2 pass.
+
+ -- Paul Gevers <paul@climbing.nl>  Sat, 06 Dec 2008 17:21:24 -0600
+
+winff (0.43-2ubuntu2~ppa2j) jaunty; urgency=low
+
+  * debian/README.source added
+  * Fixed typo in patch FTBFS.
+
+ -- Paul Gevers <paul@climbing.nl>  Thu, 04 Dec 2008 23:54:05 -0600
+
+winff (0.43-2ubuntu2~ppa1j) jaunty; urgency=low
+
+  * Added patch system
+  * patch 10_Fix2Pass added to improved/fixed 2pass options for new
+    ffmpeg types by using patch 10_Fix2Pass (winff-bug #26)
+
+ -- Paul Gevers <paul@climbing.nl>  Thu, 04 Dec 2008 22:22:21 -0600
+
+winff (0.43-2ubuntu1) jaunty; urgency=low
+
+  * Changed debian/preset.xml file to be in line with ffmpeg in jaunty.
+  * Removed debian/presets_new.xml because already included in the 
+    debian/presets.xml
+  * Updated debian/README.debian
+  * Removed absolute path and extension from debian/desktop 
+  * Added recommends on (k|x|)ubuntu-restricted-extras to control file to
+    support presets.
+
+ -- Paul Gevers <paul@climbing.nl>  Mon, 01 Dec 2008 20:38:05 -0600
+
+winff (0.43-2) unstable; urgency=low
+
+  * Added line to debian/rules to fix file permissions in
+    /urs/share/winff/
+  * Changed title in debian/winff.doc-base
+
+ -- Paul Gevers <paul@climbing.nl>  Mon, 03 Nov 2008 20:11:27 -0600
+
+winff (0.43-1) unstable; urgency=low
+
+  * New upstream release
+  * Changes description to include "graphical".
+  * Updated debian/copyright to reflect changes in Dutch files.
+  * Added presets_new-style.xml for ffmpeg versions that use the
+    library name instead of the codec name.
+  * Updated README.Debian
+  * Rechecked debian/presets.xml against current ffmpeg.
+
+ -- Paul Gevers <paul@climbing.nl>  Sun, 02 Nov 2008 19:04:27 -0600
+
+winff (0.42-2) unstable; urgency=low
+
+  * Initial release (Closes: #485481)
+
+ -- Paul Gevers <paul@climbing.nl>  Thu, 04 Sep 2008 21:04:07 -0500
