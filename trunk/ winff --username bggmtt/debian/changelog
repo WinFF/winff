@@ -1,3 +1,9 @@
+winff (0.43-3) unstable; urgency=low
+
+  * Removed absolute path and extension from debian/desktop
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 05 Dec 2008 00:07:40 -0600
+
 winff (0.43-2) unstable; urgency=low
 
   * Added line to debian/rules to fix file permissions in
