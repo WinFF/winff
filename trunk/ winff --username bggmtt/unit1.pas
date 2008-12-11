@@ -1194,7 +1194,7 @@ begin                                     // get setup
        else if pass2.Checked = true then
           begin
            command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline  + ' -passlogfile "'
-                 + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
+                 + passlogfile + '"' + ' -an -pass 1 ' +  ' -y ' + nullfile ;
            script.Add(command);
            command := ffmpegfilename + usethreads + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
                  + passlogfile + '"' + ' -pass 2 ' + ' "' + destfolder.Text + DirectorySeparator + basename +'.'
