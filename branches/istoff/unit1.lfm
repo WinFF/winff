@@ -1,14 +1,14 @@
 object Form1: TForm1
-  Left = 254
+  Left = 379
   Height = 480
-  Top = 193
+  Top = 292
   Width = 613
   ActiveControl = Notebook1
   AllowDropFiles = True
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'WinFF'
-  ClientHeight = 460
+  ClientHeight = 456
   ClientWidth = 613
   Constraints.MinHeight = 480
   Constraints.MinWidth = 540
@@ -22,35 +22,36 @@ object Form1: TForm1
   Position = poDesktopCenter
   LCLVersion = '0.9.26'
   object Label2: TLabel
-    Height = 16
-    Width = 1
+    Height = 26
+    Width = 74
     ParentColor = False
   end
   object pnlMain: TPanel
-    Height = 266
+    Height = 262
     Top = 54
     Width = 613
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 266
+    ClientHeight = 262
     ClientWidth = 613
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
-      Height = 126
+      Height = 122
       Width = 613
       Align = alClient
       MultiSelect = True
       OnDblClick = PlayClick
       OnKeyPress = filelistKeyPress
       TabOrder = 0
+      TopIndex = -1
     end
     object pnlbottom: TPanel
       Height = 140
-      Top = 126
+      Top = 122
       Width = 613
       Align = alBottom
       ClientHeight = 140
@@ -68,8 +69,8 @@ object Form1: TForm1
         TabOrder = 0
         object tabPage1: TTabSheet
           Caption = 'tabPage1'
-          ClientHeight = 112
-          ClientWidth = 603
+          ClientHeight = 108
+          ClientWidth = 607
           object Label1: TLabel
             Left = 13
             Height = 13
@@ -96,10 +97,9 @@ object Form1: TForm1
           end
           object PresetBox: TComboBox
             Left = 101
-            Height = 21
+            Height = 28
             Top = 35
             Width = 392
-            ItemHeight = 13
             MaxLength = 65535
             Style = csDropDownList
             TabOrder = 0
@@ -124,10 +124,9 @@ object Form1: TForm1
           end
           object categorybox: TComboBox
             Left = 101
-            Height = 21
+            Height = 28
             Top = 4
             Width = 392
-            ItemHeight = 13
             MaxLength = 65535
             OnChange = categoryboxChange
             Sorted = True
@@ -404,7 +403,7 @@ object Form1: TForm1
       TabOrder = 2
     end
     object Play: TBitBtn
-      Left = 224
+      Left = 200
       Height = 53
       Width = 70
       Caption = 'Play'
@@ -490,7 +489,7 @@ object Form1: TForm1
       TabOrder = 3
     end
     object StartBtn: TBitBtn
-      Left = 304
+      Left = 272
       Height = 53
       Width = 70
       Caption = 'Convert'
@@ -576,7 +575,7 @@ object Form1: TForm1
       TabOrder = 4
     end
     object optionsbtn: TBitBtn
-      Left = 400
+      Left = 472
       Height = 53
       Width = 60
       Caption = 'Options'
@@ -662,7 +661,7 @@ object Form1: TForm1
       TabOrder = 5
     end
     object closebtn: TBitBtn
-      Left = 464
+      Left = 536
       Height = 53
       Width = 60
       Caption = '&Close'
@@ -750,7 +749,7 @@ object Form1: TForm1
   end
   object pnlbottom2: TPanel
     Height = 140
-    Top = 320
+    Top = 316
     Width = 613
     Align = alBottom
     ClientHeight = 140
@@ -765,46 +764,46 @@ object Form1: TForm1
       Width = 611
       Align = alClient
       Caption = 'GroupBox1'
-      ClientHeight = 120
+      ClientHeight = 121
       ClientWidth = 607
       TabOrder = 0
       object Notebook1: TNotebook
-        Height = 120
+        Height = 121
         Width = 607
         Align = alClient
-        PageIndex = 0
+        PageIndex = 2
         TabOrder = 0
         object tabPage2: TPage
           Caption = 'Video Settings'
-          ClientWidth = 599
-          ClientHeight = 94
+          ClientWidth = 607
+          ClientHeight = 121
           object Label3: TLabel
             Left = 6
-            Height = 16
+            Height = 13
             Top = 5
-            Width = 78
+            Width = 81
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
           object Label5: TLabel
             Left = 219
-            Height = 16
+            Height = 13
             Top = 5
-            Width = 58
+            Width = 62
             Caption = 'Video Size'
             ParentColor = False
           end
           object Label6: TLabel
             Left = 307
-            Height = 16
+            Height = 13
             Top = 5
-            Width = 70
+            Width = 72
             Caption = 'Aspect Ratio'
             ParentColor = False
           end
           object Label9: TLabel
             Left = 253
-            Height = 14
+            Height = 11
             Top = 25
             Width = 8
             Caption = 'X'
@@ -814,9 +813,9 @@ object Form1: TForm1
           end
           object Label4: TLabel
             Left = 124
-            Height = 16
+            Height = 13
             Top = 5
-            Width = 66
+            Width = 65
             Caption = 'Frame Rate'
             ParentColor = False
           end
@@ -859,18 +858,18 @@ object Form1: TForm1
           end
           object pass2: TCheckBox
             Left = 6
-            Height = 21
+            Height = 20
             Top = 64
-            Width = 66
+            Width = 61
             Caption = '2 pass'
             ParentColor = False
             TabOrder = 5
           end
           object CheckBox2: TCheckBox
             Left = 123
-            Height = 21
+            Height = 20
             Top = 64
-            Width = 91
+            Width = 88
             Caption = 'Deinterlace'
             ParentColor = False
             TabOrder = 6
@@ -928,8 +927,8 @@ object Form1: TForm1
         end
         object tabPage4: TPage
           Caption = 'tabPage4'
-          ClientWidth = 607
-          ClientHeight = 121
+          ClientWidth = 603
+          ClientHeight = 91
           object commandlineparams: TEdit
             Left = 1
             Height = 24
@@ -964,6 +963,7 @@ object Form1: TForm1
       end
       object MenuItem2: TMenuItem
         Caption = 'About'
+        Visible = False
         OnClick = MenuItem2Click
       end
       object MenuItem3: TMenuItem
@@ -999,6 +999,24 @@ object Form1: TForm1
       object shutdownonfinish: TMenuItem
         Caption = 'Shutdown on Finish'
         OnClick = shutdownonfinishClick
+      end
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'Help'
+      object mitWinff: TMenuItem
+        Caption = 'WinFF Website'
+        OnClick = mitWinffClick
+      end
+      object mitForums: TMenuItem
+        Caption = 'Forums'
+        OnClick = mitForumsClick
+      end
+      object MenuItem9: TMenuItem
+        Caption = '-'
+      end
+      object mitAbout: TMenuItem
+        Caption = 'About'
+        OnClick = mitAboutClick
       end
     end
   end
