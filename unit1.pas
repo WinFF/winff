@@ -12,7 +12,7 @@ interface
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
   {$IFDEF WIN32} windows, shellapi, dos,{$endif}
-  {$IFDEF unix} baseunix, unix, {$endif}
+  {$IFDEF unix} baseunix, unix, dos,{$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
   {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls;
@@ -48,6 +48,11 @@ type
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
+    mitAbout: TMenuItem;
+    MenuItem6: TMenuItem;
+    mitWinff: TMenuItem;
+    mitForums: TMenuItem;
+    MenuItem9: TMenuItem;
     Notebook1: TNotebook;
     optionsbtn: TBitBtn;
     closebtn: TBitBtn;
@@ -99,10 +104,13 @@ type
     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
     procedure FormResize(Sender: TObject);
     procedure importmenuClick(Sender: TObject);
+    procedure mitAboutClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
+    procedure mitForumsClick(Sender: TObject);
+    procedure mitWinffClick(Sender: TObject);
     procedure pauseonfinishClick(Sender: TObject);
     procedure PlayClick(Sender: TObject);
     procedure RemoveBtnClick(Sender: TObject);
@@ -197,6 +205,9 @@ var
   rsMenuItem3='Exit';
   rsMenuItem4='Presets';
   rsMenuItem5='Preferences';
+  rsMenuItem6='WinFF Website';
+  rsMenuItem7='WinFF Forums';
+
   rsimportmenu='Import Preset';
   rsshowoptions='Additional Options';
   rsOptions='Options';
@@ -280,6 +291,8 @@ begin
     MenuItem3.Caption:=rsmenuitem3;
     MenuItem4.Caption:=rsmenuitem4;
     MenuItem5.Caption:=rsmenuitem5;
+    mitWinff.Caption := rsmenuitem6;
+    mitForums.Caption := rsmenuitem7;
     importmenu.Caption:=rsimportmenu;
     showoptions.Caption:=rsshowoptions;
     Options.Caption:=rsoptions;
@@ -927,6 +940,32 @@ begin
 form4.show;
 end;
 
+procedure TForm1.mitForumsClick(Sender: TObject);
+var s : string;
+begin
+  // code modified from CactusJukebox /
+  s := 'http://www.biggmatt.com/forums/';
+  {$ifdef linux}
+  exec('/usr/bin/firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/konqueror', s);
+  If Dosexitcode<>0 Then Showmessage('More information can be found at ' + s);
+  {$endif}
+end;
+
+procedure TForm1.mitWinffClick(Sender: TObject);
+var s : string;
+begin
+  // code modified from CactusJukebox /
+  s := 'http://code.google.com/p/winff/';
+  {$ifdef linux}
+  exec('/usr/bin/firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/konqueror', s);
+  If Dosexitcode<>0 Then Showmessage('More information can be found at ' + s);
+  {$endif}
+end;
+
 
 // menu: about
 procedure TForm1.MenuItem2Click(Sender: TObject);
@@ -947,6 +986,11 @@ begin
   if OpenDialog1.Execute then
       importpresetfromfile(opendialog1.FileName);
 
+end;
+
+procedure TForm1.mitAboutClick(Sender: TObject);
+begin
+  form3.Show;
 end;
 
 // menu: show / hide additional options
@@ -1036,7 +1080,6 @@ end;
 procedure TForm1.displaycmdlineClick(Sender: TObject);
 begin
      displaycmdline.Checked:= not displaycmdline.Checked;
-     tabPage4.visible := displaycmdline.Checked;
 end;
 
 // play the selected file
@@ -1177,7 +1220,7 @@ begin                                     // get setup
    if aspectratio.Text <> '' then
            commandline:=replaceparam(commandline,'-aspect','-aspect ' + aspectratio.Text);
    if audbitrate.Text <> '' then
-           commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'kb');
+           commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'k');
    if audsamplingrate.Text <> '' then
            commandline:=replaceparam(commandline,'-ar','-ar ' + audsamplingrate.Text);
    if audchannels.Text <> '' then

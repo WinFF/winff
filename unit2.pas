@@ -10,7 +10,8 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
-  StdCtrls, Buttons, dom, xmlwrite, xmlread, gettext, translations;
+  StdCtrls, Buttons, dom, xmlwrite, xmlread, gettext, translations, ExtCtrls,
+  ComCtrls, XMLCfg;
 
 type
 
@@ -18,25 +19,31 @@ type
 
   TForm2 = class(TForm)
     addpresetbtn: TButton;
-    Edit5: TEdit;
-    export: TButton;
-    import: TButton;
     CancelBtn: TButton;
-    Edit4: TEdit;
-    Label5: TLabel;
-    Label6: TLabel;
-    OKbtn: TButton;
     DeleteBtn: TButton;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    export: TButton;
+    import: TButton;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    lbCategory: TListBox;
     ListBox1: TListBox;
+    OKbtn: TButton;
     OpenDialog1: TOpenDialog;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    pnlBottom: TPanel;
     SaveDialog1: TSaveDialog;
+    Splitter1: TSplitter;
+    XMLConfig1: TXMLConfig;
     procedure addpresetbtnClick(Sender: TObject);
     procedure CancelBtnClick(Sender: TObject);
     procedure DeleteBtnClick(Sender: TObject);
@@ -46,9 +53,13 @@ type
     procedure FormShow(Sender: TObject);
     procedure exportClick(Sender: TObject);
     procedure importClick(Sender: TObject);
+    procedure lbCategoryClick(Sender: TObject);
     procedure ListBox1Click(Sender: TObject);
     procedure ListBox1SelectionChange(Sender: TObject; User: Boolean);
     procedure OKbtnClick(Sender: TObject);
+    procedure ValidateFields(Var isOkay : Boolean);
+    procedure RefreshPresetsBox;
+
   private
     { private declarations }
   public
@@ -115,13 +126,17 @@ begin
    label5.caption:=rsLabel5;
    label6.caption:=rsLabel6;
 
-   listbox1.Clear;
+
+   lbCategory.Clear;
+   lbCategory.Items.AddStrings(form1.categorybox.Items);
+   {
    for i:= 0 to presets.ChildNodes.Count -1  do
    begin
     node:= presets.ChildNodes.item[i];
     subnode:= node.FindNode('label');
     listbox1.items.add(subnode.findnode('#text').NodeValue);
    end;
+   }
 
 end;
 
@@ -166,8 +181,12 @@ procedure TForm2.addpresetbtnClick(Sender: TObject);
 var
 s,labeltext: string;
 i:integer;
+
 newnode,labelnode,paramsnode,extensionnode,categorynode,
   textl,textp,texte, textc, node,subnode: tdomnode;
+
+isOkay : Boolean;
+
 begin
   if pn = '' then pn := presets.FirstChild.NodeName;
   edit1.Text:=trim(edit1.text);
@@ -176,48 +195,10 @@ begin
   edit4.Text:=trim(edit4.text);
   edit4.Text:=trim(edit4.text);
   
-  if edit1.text='' then                    // make sure no blanks
-   begin
-    showmessage(rsYouMustEnterNmae);
-    exit;
-   end;
-  if edit2.text='' then
-   begin
-    showmessage(rsYouMustEnterLabel);
-    exit;
-   end;
- // if edit3.text='' then
- //  begin
- //   showmessage('You must enter the parameters.');
- //   exit;
- //  end;
-  if edit4.text='' then
-   begin
-    showmessage(rsYouMustEnterExtension);
-    exit;
-   end;
+  ValidateFields(isOkay);             //
 
-  s:=edit1.text;                          // make sure preset name OK
-  for i:=1 to length(s) do
-   begin
-    if  not (  ( ( (ord(s[i])>64) and (ord(s[i])<91) )  or
-                 ( (ord(s[i])>96) and (ord(s[i])<123) )     ) or
-                 ( ( (ord(s[i])>47) and (ord(s[i])<58) )          )
-             )
-    then
-      begin
-        showmessage(rsNameMustBeAllpha);
-        exit;
-      end;
-   end;
+  if not (isOkay) then exit;
 
-
-  s:=edit4.text;                        // make sure no period in extension
-  if s[1] = '.' then
-   begin
-     showmessage(rsExtensionnoperiod);
-     exit;
-   end;
 
   if presets.FindNode(pn).NodeName = edit1.text then // update or add
        begin                                       // update preset
@@ -274,7 +255,9 @@ begin
          categorynode.AppendChild(textc);
          end;
      end;
-     
+
+  RefreshPresetsBox;
+{
   listbox1.Clear;                             // reload the listbox
   for i:= 0 to presets.ChildNodes.Count -1  do
     begin
@@ -282,7 +265,7 @@ begin
       subnode:= node.FindNode('label');
       listbox1.items.add(subnode.findnode('#text').NodeValue);
     end;
-
+}
 end;
 
 // delete a preset
@@ -301,6 +284,8 @@ begin
        presets.RemoveChild(node2delete);
      end;
 
+  RefreshPresetsBox;
+{
   listbox1.Clear;
   for i:= 0 to presets.ChildNodes.Count -1  do
     begin
@@ -308,12 +293,11 @@ begin
       subnode:= node.FindNode('label');
       listbox1.items.add(subnode.findnode('#text').NodeValue);
     end;
-
+}
 end;
 
 procedure TForm2.Edit4Change(Sender: TObject);
 begin
-
 end;
 
 procedure TForm2.FormDropFiles(Sender: TObject; const FileNames: array of String
@@ -324,8 +308,8 @@ end;
 
 procedure TForm2.FormResize(Sender: TObject);
 begin
-  form2.Height:=429;
-  form2.Width:=388;
+{  form2.Height:=429;
+  form2.Width:=388;        }
 end;
 
 
@@ -446,6 +430,9 @@ begin
  end;
  categorynode.AppendChild(textc);
 
+ RefreshPresetsBox;
+
+{
  listbox1.Clear;                             // reload the listbox
   for i:= 0 to presets.ChildNodes.Count -1  do
     begin
@@ -453,8 +440,44 @@ begin
       subnode:= node.FindNode('label');
       listbox1.items.add(subnode.findnode('#text').NodeValue);
     end;
-
+}
 end;
+
+procedure TForm2.lbCategoryClick(Sender: TObject);
+var i : integer;
+    s , cat, pre, ocat : string;
+    node, subnode : tdomnode;
+begin
+  RefreshPresetsBox;
+end;
+
+procedure TForm2.RefreshPresetsBox;
+var i : integer;
+    s , cat, pre, ocat : string;
+    node, subnode : tdomnode;
+begin
+
+   if lbCategory.SelCount < 1 then exit;
+   try
+     listbox1.Clear;                             // reload the listbox
+     for i:= 0 to presets.ChildNodes.Count -1  do
+     begin
+          node:= presets.ChildNodes.item[i];
+          subnode:= node.FindNode('category');
+          cat := subnode.findnode('#text').NodeValue;
+
+          ocat := lbCategory.Items[lbCategory.ItemIndex];
+          if cat = ocat then                    // filter presets listbox to match category
+          begin;
+                subnode:= node.FindNode('label');
+                pre := subnode.findnode('#text').NodeValue;
+                listbox1.items.add(pre);
+          end;
+     end;
+   except;
+   end;
+end;
+
 
 //export a preset
 procedure TForm2.exportClick(Sender: TObject);
@@ -532,6 +555,64 @@ begin
   form1.populatepresetbox('');
   form2.close;
 end;
+
+procedure TForm2.ValidateFields(var IsOkay: Boolean);
+var i : integer;
+    s : string;
+begin
+  isOkay := False;
+  if edit1.text='' then                    // make sure no blanks
+   begin
+    showmessage(rsYouMustEnterNmae);
+    exit;
+   end;
+  if edit2.text='' then
+   begin
+    showmessage(rsYouMustEnterLabel);
+    exit;
+   end;
+ // if edit3.text='' then
+ //  begin
+ //   showmessage('You must enter the parameters.');
+ //   exit;
+ //  end;
+  if edit4.text='' then
+   begin
+    showmessage(rsYouMustEnterExtension);
+    exit;
+   end;
+
+  s:=edit1.text;                          // make sure preset name OK
+  for i:=1 to length(s) do
+   begin
+    if  not (  ( ( (ord(s[i])>64) and (ord(s[i])<91) )  or
+                 ( (ord(s[i])>96) and (ord(s[i])<123) )     ) or
+                 ( ( (ord(s[i])>47) and (ord(s[i])<58) )          )
+             )
+    then
+      begin
+        showmessage(rsNameMustBeAllpha);
+        exit;
+      end;
+   end;
+
+
+  s:=edit4.text;                        // make sure no period in extension
+
+  if pos('.',s) > 0 then                // check for '.' anywhere in extension
+                                        //
+  //if s[1] = '.' then
+   begin
+     showmessage(rsExtensionnoperiod);
+     exit;
+   end;
+
+
+   isOkay := True;
+end;
+
+
+
 
 initialization
   {$I unit2.lrs}

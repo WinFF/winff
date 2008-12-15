@@ -13,8 +13,8 @@ uses
   {$ifdef win32}
   windows,
   {$endif}
-  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Buttons, ExtCtrls, gettext,translations;
+  Dos,Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  Buttons, ExtCtrls, gettext,translations, XMLPropStorage;
 
 type
 
@@ -38,14 +38,16 @@ type
     Page1: TPage;
     Page2: TPage;
     Page3: TPage;
+    Panel1: TPanel;
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Label10Click(Sender: TObject);
     procedure Label1Click(Sender: TObject);
     procedure Label4Click(Sender: TObject);
     procedure Label5Click(Sender: TObject);
     procedure Label7Click(Sender: TObject);
-    procedure Memo1Change(Sender: TObject);
-    procedure Notebook1ChangeBounds(Sender: TObject);
+    procedure LaunchUrl(s: string);
+
   private
     { private declarations }
   public
@@ -99,6 +101,11 @@ begin                  // do translations
 
 end;
 
+procedure TForm3.Label10Click(Sender: TObject);
+begin
+  LaunchUrl('http://arrozcru.no-ip.org/ffmpeg');
+end;
+
 procedure TForm3.Button1Click(Sender: TObject);
 begin
   form3.close;
@@ -111,34 +118,34 @@ end;
 
 procedure TForm3.Label4Click(Sender: TObject);
 begin
-  {$ifdef win32}
-  ShellExecute(form3.handle,'open','http://ffmpeg.mplayerhq.hu/',nil,nil, SW_SHOWNORMAL);
-  {$endif}
+  LaunchUrl('http://www.biggmatt.com');
 end;
 
 procedure TForm3.Label5Click(Sender: TObject);
 begin
-  {$ifdef win32}
-  ShellExecute(form3.handle,'open','http://www.biggmatt.com',nil,nil, SW_SHOWNORMAL);
-  {$endif}
 end;
 
 procedure TForm3.Label7Click(Sender: TObject);
 begin
+  LaunchUrl('http://ffmpeg.mplayerhq.hu/');
+end;
+
+procedure TForm3.LaunchUrl(s: string);
+begin
+  // code taken & modified from CactusJukebox /
+  {$ifdef linux}
+  exec('/usr/bin/firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/konqueror', s);
+  If Dosexitcode<>0 Then Showmessage('More information can be found at ' + s);
+  {$endif}
+
   {$ifdef win32}
   ShellExecute(form3.handle,'open','http://arrozcru.no-ip.org/ffmpeg',nil,nil, SW_SHOWNORMAL);
   {$endif}
-end;
-
-procedure TForm3.Memo1Change(Sender: TObject);
-begin
 
 end;
 
-procedure TForm3.Notebook1ChangeBounds(Sender: TObject);
-begin
-
-end;
 
 initialization
   {$I unit3.lrs}

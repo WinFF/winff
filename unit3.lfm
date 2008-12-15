@@ -1,38 +1,27 @@
 object Form3: TForm3
-  Left = 692
-  Height = 282
-  Top = 375
+  Left = 483
+  Height = 318
+  Top = 263
   Width = 384
   ActiveControl = Notebook1
   Caption = 'About WinFF'
-  ClientHeight = 282
+  ClientHeight = 318
   ClientWidth = 384
   Color = clForm
   OnCreate = FormCreate
   ParentFont = False
   Position = poMainFormCenter
   LCLVersion = '0.9.26'
-  object Button1: TButton
-    Left = 168
-    Height = 25
-    Top = 256
-    Width = 75
-    BorderSpacing.InnerBorder = 4
-    Caption = 'OK'
-    OnClick = Button1Click
-    TabOrder = 0
-  end
   object Notebook1: TNotebook
-    Height = 240
+    Height = 268
     Width = 384
-    Align = alTop
-    OnChangeBounds = Notebook1ChangeBounds
-    PageIndex = 0
-    TabOrder = 1
+    Align = alClient
+    PageIndex = 1
+    TabOrder = 0
     object Page1: TPage
       Caption = 'WinFF'
       ClientWidth = 380
-      ClientHeight = 210
+      ClientHeight = 238
       object Label1: TLabel
         Left = 60
         Height = 13
@@ -157,18 +146,20 @@ object Form3: TForm3
         ParentColor = False
       end
       object Label4: TLabel
+        Cursor = crHandPoint
         Left = 4
         Height = 13
         Top = 114
         Width = 108
         Caption = 'http://www.winff.org'
         ParentColor = False
+        OnClick = Label4Click
       end
     end
     object Page2: TPage
       Caption = 'FFmpeg'
       ClientWidth = 380
-      ClientHeight = 210
+      ClientHeight = 238
       object Label5: TLabel
         Left = 4
         Height = 13
@@ -186,7 +177,8 @@ object Form3: TForm3
         ParentColor = False
       end
       object Label7: TLabel
-        Left = 4
+        Cursor = crHandPoint
+        Left = 6
         Height = 14
         Top = 50
         Width = 158
@@ -194,6 +186,7 @@ object Form3: TForm3
         Font.Height = -13
         ParentColor = False
         ParentFont = False
+        OnClick = Label7Click
       end
       object Label8: TLabel
         Left = 4
@@ -212,26 +205,47 @@ object Form3: TForm3
         ParentColor = False
       end
       object Label10: TLabel
+        Cursor = crHandPoint
         Left = 4
         Height = 13
         Top = 114
         Width = 171
         Caption = 'http://arrozcru.no-ip.org/ffmpeg'
         ParentColor = False
+        OnClick = Label10Click
       end
     end
     object Page3: TPage
       Caption = 'Thanks'
       ClientWidth = 380
-      ClientHeight = 210
+      ClientHeight = 238
       object ListBox1: TListBox
-        Height = 210
+        Height = 238
         Width = 380
         Align = alClient
         ClickOnSelChange = False
         TabOrder = 0
         TopIndex = -1
       end
+    end
+  end
+  object Panel1: TPanel
+    Height = 50
+    Top = 268
+    Width = 384
+    Align = alBottom
+    ClientHeight = 50
+    ClientWidth = 384
+    TabOrder = 1
+    object Button1: TButton
+      Left = 152
+      Height = 25
+      Top = 12
+      Width = 75
+      BorderSpacing.InnerBorder = 4
+      Caption = 'OK'
+      OnClick = Button1Click
+      TabOrder = 0
     end
   end
 end
