@@ -48,6 +48,7 @@ type
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
+    mitDocs: TMenuItem;
     mitAbout: TMenuItem;
     MenuItem6: TMenuItem;
     mitWinff: TMenuItem;
@@ -108,6 +109,7 @@ type
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
+    procedure mitDocsClick(Sender: TObject);
     procedure mitForumsClick(Sender: TObject);
     procedure mitWinffClick(Sender: TObject);
     procedure pauseonfinishClick(Sender: TObject);
@@ -938,16 +940,37 @@ begin
 form4.show;
 end;
 
+procedure TForm1.mitDocsClick(Sender: TObject);
+var s : string;
+begin
+  // code modified from CactusJukebox /
+  {$ifdef linux}
+  s := '/usr/share/docs/winff/WinFF.pdf.gz'
+  exec('/usr/bin/evince', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/kpdf', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/xpdf', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/acroread', s);
+  If Dosexitcode<>0 Then Showmessage('More information can be found at http://www.winff.org');
+  {$endif}
+  {$ifdef win32}
+  s := extraspath + 'WinFF.pdf';
+  ShellExecute(self.Handle,'open',PChar(s),nil,nil, SW_SHOWNORMAL);
+  {$endif}
+end;
+
 procedure TForm1.mitForumsClick(Sender: TObject);
 var s : string;
 begin
   // code modified from CactusJukebox /
-  s := 'http://www.biggmatt.com/forums/';
+  s := 'http://www.winff.org/forums/';
   {$ifdef linux}
   exec('/usr/bin/firefox', s);
   If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', s);
   If Dosexitcode<>0 Then exec('/usr/bin/konqueror', s);
   If Dosexitcode<>0 Then Showmessage('More information can be found at ' + s);
+  {$endif}
+  {$ifdef win32}
+  ShellExecute(self.Handle,'open',PChar(s),nil,nil, SW_SHOWNORMAL);
   {$endif}
 end;
 
@@ -955,13 +978,17 @@ procedure TForm1.mitWinffClick(Sender: TObject);
 var s : string;
 begin
   // code modified from CactusJukebox /
-  s := 'http://code.google.com/p/winff/';
+  s := 'http://www.winff.org/';
   {$ifdef linux}
   exec('/usr/bin/firefox', s);
   If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', s);
   If Dosexitcode<>0 Then exec('/usr/bin/konqueror', s);
   If Dosexitcode<>0 Then Showmessage('More information can be found at ' + s);
   {$endif}
+  {$ifdef win32}
+  ShellExecute(self.Handle,'open',PChar(s),nil,nil, SW_SHOWNORMAL);
+  {$endif}
+
 end;
 
 
