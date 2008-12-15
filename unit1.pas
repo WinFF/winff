@@ -55,7 +55,6 @@ type
     MenuItem9: TMenuItem;
     Notebook1: TNotebook;
     optionsbtn: TBitBtn;
-    closebtn: TBitBtn;
     PageControl1: TPageControl;
     Panel1: TPanel;
     pass2: TCheckBox;
@@ -296,7 +295,6 @@ begin
     importmenu.Caption:=rsimportmenu;
     showoptions.Caption:=rsshowoptions;
     Options.Caption:=rsoptions;
-    Closebtn.Caption:=rsclose;
     filemenu.Caption:=rsfilemenu;
     //GroupBox2.Caption:=rsgroupbox2;
     Label5.Caption:=rslabel5;

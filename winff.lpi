@@ -8,6 +8,7 @@
       <IconPath Value="./"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
+      <ActiveEditorIndexAtStart Value="0"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
@@ -54,9 +55,11 @@
         <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit1.lrs"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="1" Y="572"/>
-        <TopLine Value="553"/>
+        <CursorPos X="1" Y="298"/>
+        <TopLine Value="279"/>
+        <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
+        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="unit2.pas"/>
@@ -258,7 +261,16 @@
         <UsageCount Value="13"/>
       </Unit28>
     </Units>
-    <JumpHistory Count="0" HistoryIndex="-1"/>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="572" Column="1" TopLine="553"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="57" Column="25" TopLine="57"/>
+      </Position2>
+    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="8"/>
