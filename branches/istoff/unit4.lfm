@@ -33,8 +33,8 @@ object Form4: TForm4
     TabOrder = 1
     object Page1: TPage
       Caption = 'General'
-      ClientWidth = 380
-      ClientHeight = 234
+      ClientWidth = 384
+      ClientHeight = 264
       object Label1: TLabel
         Left = 4
         Height = 13
@@ -142,8 +142,8 @@ object Form4: TForm4
     end
     object Page3: TPage
       Caption = 'Linux'
-      ClientWidth = 380
-      ClientHeight = 234
+      ClientWidth = 384
+      ClientHeight = 264
       object Label4: TLabel
         Left = 4
         Height = 13

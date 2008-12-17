@@ -1,5 +1,3 @@
-{ This is an automatically generated lazarus resource file }
-
 LazarusResources.Add('TForm4','FORMDATA',[
   'TPF0'#6'TForm4'#5'Form4'#4'Left'#3'j'#1#6'Height'#3'B'#1#3'Top'#3' '#1#5'Wid'
   +'th'#3#144#1#13'ActiveControl'#7#9'Notebook1'#11'BorderIcons'#11#12'biSystem'
@@ -11,11 +9,11 @@ LazarusResources.Add('TForm4','FORMDATA',[
   +'rder'#2#4#7'Caption'#6#2'OK'#7'OnClick'#7#12'Button1Click'#8'TabOrder'#2#0#0
   +#0#9'TNotebook'#9'Notebook1'#4'Left'#2#8#6'Height'#3#8#1#3'Top'#2#8#5'Width'
   +#3#128#1#9'PageIndex'#2#0#8'TabOrder'#2#1#0#5'TPage'#5'Page1'#7'Caption'#6#7
-  +'General'#11'ClientWidth'#3'|'#1#12'ClientHeight'#3#234#0#0#6'TLabel'#6'Labe'
-  +'l1'#4'Left'#2#4#6'Height'#2#13#3'Top'#2#8#5'Width'#3#161#0#7'Caption'#6#29
-  +'Default Destination Directory'#11'ParentColor'#8#0#0#5'TEdit'#5'Edit1'#4'Le'
-  +'ft'#2#4#6'Height'#2#23#3'Top'#2' '#5'Width'#3'8'#1#8'TabOrder'#2#0#0#0#7'TB'
-  +'utton'#7'Button3'#4'Left'#3'D'#1#6'Height'#2#25#3'Top'#2' '#5'Width'#2'#'#25
+  +'General'#11'ClientWidth'#3#128#1#12'ClientHeight'#3#8#1#0#6'TLabel'#6'Label'
+  +'1'#4'Left'#2#4#6'Height'#2#13#3'Top'#2#8#5'Width'#3#161#0#7'Caption'#6#29'D'
+  +'efault Destination Directory'#11'ParentColor'#8#0#0#5'TEdit'#5'Edit1'#4'Lef'
+  +'t'#2#4#6'Height'#2#23#3'Top'#2' '#5'Width'#3'8'#1#8'TabOrder'#2#0#0#0#7'TBu'
+  +'tton'#7'Button3'#4'Left'#3'D'#1#6'Height'#2#25#3'Top'#2' '#5'Width'#2'#'#25
   +'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#3'...'#7'OnClick'#7#12'Button3C'
   +'lick'#8'TabOrder'#2#1#0#0#9'TCheckBox'#9'CheckBox1'#4'Left'#2#4#6'Height'#2
   +#20#3'Top'#2'@'#5'Width'#3#196#0#7'Caption'#6#28'Remember Last Used Director'
@@ -36,10 +34,10 @@ LazarusResources.Add('TForm4','FORMDATA',[
   +#7'OnClick'#7#12'Button5Click'#8'TabOrder'#2#3#0#0#9'TCheckBox'#9'CheckBox2'
   +#4'Left'#2#4#6'Height'#2#20#3'Top'#3#130#0#5'Width'#3#237#0#7'Caption'#6'%Us'
   +'e CHCP for international characters'#8'TabOrder'#2#4#0#0#0#5'TPage'#5'Page3'
-  +#7'Caption'#6#5'Linux'#11'ClientWidth'#3'|'#1#12'ClientHeight'#3#234#0#0#6'T'
-  +'Label'#6'Label4'#4'Left'#2#4#6'Height'#2#13#3'Top'#2#8#5'Width'#3#156#0#7'C'
-  +'aption'#6#25'Path to FFmpeg Executable'#11'ParentColor'#8#0#0#6'TLabel'#6'L'
-  +'abel5'#4'Left'#2#4#6'Height'#2#13#3'Top'#2'@'#5'Width'#3#150#0#7'Caption'#6
+  +#7'Caption'#6#5'Linux'#11'ClientWidth'#3#128#1#12'ClientHeight'#3#8#1#0#6'TL'
+  +'abel'#6'Label4'#4'Left'#2#4#6'Height'#2#13#3'Top'#2#8#5'Width'#3#156#0#7'Ca'
+  +'ption'#6#25'Path to FFmpeg Executable'#11'ParentColor'#8#0#0#6'TLabel'#6'La'
+  +'bel5'#4'Left'#2#4#6'Height'#2#13#3'Top'#2'@'#5'Width'#3#150#0#7'Caption'#6
   +#25'Path to FFplay Executable'#11'ParentColor'#8#0#0#6'TLabel'#6'Label6'#4'L'
   +'eft'#2#4#6'Height'#2#13#3'Top'#2'x'#5'Width'#3#148#0#7'Caption'#6#25'Termin'
   +'al to run FFmpeg in'#11'ParentColor'#8#0#0#6'TLabel'#6'Label7'#4'Left'#2#4#6
