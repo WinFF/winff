@@ -263,6 +263,8 @@ var
 f1,f2:textfile;
 ch: char;
 i:integer;
+formheight,formwidth,formtop,formleft:integer;
+sformheight,sformwidth,sformtop,sformleft:string;
 importfromcmdline: string;
 currentpreset: string;
 
@@ -465,21 +467,42 @@ begin
         break;
         end;
     end;
-                                          // check menu's
+                                          // set window size and position
   showopts:=getconfigvalue('general/showoptions');
+  sformheight:=getconfigvalue('window/height');
+  sformwidth:=getconfigvalue('window/width');
+  sformtop:=getconfigvalue('window/top');
+  sformleft:=getconfigvalue('window/left');
+
+  if sformtop <> '' then formtop:=strtoint(sformtop);
+  if formtop > 0 then form1.Top := formtop;
+
+  if sformleft <> '' then formleft:=strtoint(sformleft);
+  if formleft >0 then form1.Left := formleft;
+
+  if sformheight = '' then formheight:=400
+  else formheight := strtoint(sformheight);
+
+  if sformwidth = '' then formwidth:=400
+  else formwidth := strtoint(sformwidth);
+
+  if formheight<400 then formheight:=400;
+  if formwidth<400 then formheight:=400;
   if showopts='' then showopts:='false';
   if showopts='true' then
         begin
         showoptions.Checked:=true;
         pnlBottom2.Visible :=true;
-        form1.height := 500;
+        form1.height := formheight;
+        form1.width := formwidth;
         form1.invalidate;
         end
   else
         begin
         showoptions.Checked:=false;
         pnlBottom2.Visible :=false;
-        form1.height := 350;
+        form1.height := formheight;
+        form1.width := formwidth;
         form1.invalidate;
         end;
 
@@ -534,6 +557,12 @@ begin
      setconfigvalue('general/pass2','true')
   else
      setconfigvalue('general/pass2','false');
+
+     // save window position and size
+  setconfigvalue('window/height',inttostr(form1.height));
+  setconfigvalue('window/width',inttostr(form1.width));
+  setconfigvalue('window/top',inttostr(form1.Top));
+  setconfigvalue('window/left',inttostr(form1.Left));
 
   presetsfile.Free;           // cleanup
 
@@ -943,6 +972,7 @@ begin
 form4.show;
 end;
 
+//menu: help documentation
 procedure TForm1.mitDocsClick(Sender: TObject);
 var s : string;
 begin
@@ -967,6 +997,7 @@ begin
   {$endif}
 end;
 
+//menu: Help Forums
 procedure TForm1.mitForumsClick(Sender: TObject);
 var s : string;
 begin
@@ -983,6 +1014,7 @@ begin
   {$endif}
 end;
 
+//menu: Help Forums
 procedure TForm1.mitWinffClick(Sender: TObject);
 var s : string;
 begin
@@ -999,6 +1031,7 @@ begin
   {$endif}
 
 end;
+
 
 
 // menu: about
@@ -1042,7 +1075,7 @@ procedure TForm1.showoptionsClick(Sender: TObject);
         //tabPage3.Visible:=  true;
         //tabPage4.visible := displaycmdline.Checked;
         //pnlbottom.visible := true;
-        //form1.Height:=form1.Height + pnlBottom.Height; // This should be fine, not sure if you want to limit height
+        form1.Height:=form1.Height + pnlBottom.Height +25; // This should be fine, not sure if you want to limit height
 
         if form1.height < 400 then form1.height := 550;
 
@@ -1058,13 +1091,14 @@ procedure TForm1.showoptionsClick(Sender: TObject);
         //groupbox2.top:=264;
         //groupbox2.Visible:=false;
 
-        {if form1.Height - pnlBottom2.Height > 400 then
-        begin
-          form1.Height:=form1.Height-pnlBottom.Height;
-        end else
-        begin
-          form1.Height := 400;/// Ensure they don't make it too small.
-        end;}
+        if form1.Height - pnlBottom2.Height > 400 then
+          begin
+            form1.Height:=form1.Height-pnlBottom.Height-25;
+          end
+        else
+          begin
+            form1.Height := 400;/// Ensure they don't make it too small.
+          end;
         pnlbottom2.visible := false;
         showoptions.Checked:=false;
 
