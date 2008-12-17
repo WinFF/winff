@@ -58,6 +58,7 @@ type
     optionsbtn: TBitBtn;
     PageControl1: TPageControl;
     Panel1: TPanel;
+    Panel2: TPanel;
     pass2: TCheckBox;
     Play: TBitBtn;
     pnlbottom: TPanel;
@@ -471,12 +472,14 @@ begin
         begin
         showoptions.Checked:=true;
         pnlBottom2.Visible :=true;
+        form1.height := 500;
         form1.invalidate;
         end
   else
         begin
         showoptions.Checked:=false;
         pnlBottom2.Visible :=false;
+        form1.height := 350;
         form1.invalidate;
         end;
 
@@ -1040,6 +1043,8 @@ procedure TForm1.showoptionsClick(Sender: TObject);
         //tabPage4.visible := displaycmdline.Checked;
         //pnlbottom.visible := true;
         //form1.Height:=form1.Height + pnlBottom.Height; // This should be fine, not sure if you want to limit height
+
+        if form1.height < 400 then form1.height := 550;
 
         pnlBottom2.Visible := True;
         showoptions.Checked:=true;
