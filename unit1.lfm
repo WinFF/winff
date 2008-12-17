@@ -1,13 +1,13 @@
 object Form1: TForm1
-  Left = 514
-  Height = 692
-  Top = 172
-  Width = 590
+  Left = 296
+  Height = 544
+  Top = 194
+  Width = 614
   ActiveControl = Notebook1
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 668
-  ClientWidth = 590
+  ClientHeight = 524
+  ClientWidth = 614
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
   Icon.Data = {
@@ -325,76 +325,75 @@ object Form1: TForm1
   Position = poDefault
   LCLVersion = '0.9.26'
   object Label2: TLabel
-    Height = 18
-    Width = 3
+    Height = 16
+    Width = 1
     ParentColor = False
   end
   object pnlMain: TPanel
-    Height = 451
+    Height = 307
     Top = 54
-    Width = 590
+    Width = 614
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 451
-    ClientWidth = 590
+    ClientHeight = 307
+    ClientWidth = 614
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
-      Height = 311
-      Width = 590
+      Height = 167
+      Width = 614
       Align = alClient
       MultiSelect = True
       OnDblClick = PlayClick
       OnKeyPress = filelistKeyPress
       TabOrder = 0
-      TopIndex = -1
     end
     object pnlbottom: TPanel
       Height = 140
-      Top = 311
-      Width = 590
+      Top = 167
+      Width = 614
       Align = alBottom
       ClientHeight = 140
-      ClientWidth = 590
+      ClientWidth = 614
       ParentColor = False
       TabOrder = 1
       object PageControl1: TPageControl
         Left = 1
         Height = 138
         Top = 1
-        Width = 588
+        Width = 612
         ActivePage = tabPage1
         Align = alClient
         TabIndex = 0
         TabOrder = 0
         object tabPage1: TTabSheet
           Caption = 'tabPage1'
-          ClientHeight = 108
-          ClientWidth = 584
+          ClientHeight = 112
+          ClientWidth = 604
           object Label1: TLabel
             Left = 13
-            Height = 13
+            Height = 16
             Top = 11
-            Width = 71
+            Width = 68
             Caption = 'Convert to....'
             ParentColor = False
           end
           object Label11: TLabel
             Left = 14
-            Height = 13
+            Height = 16
             Top = 82
-            Width = 73
+            Width = 71
             Caption = 'Output folder'
             ParentColor = False
           end
           object Label19: TLabel
             Left = 13
-            Height = 13
+            Height = 16
             Top = 43
-            Width = 71
+            Width = 68
             Caption = 'Convert to....'
             ParentColor = False
           end
@@ -403,6 +402,7 @@ object Form1: TForm1
             Height = 21
             Top = 35
             Width = 392
+            ItemHeight = 13
             MaxLength = 65535
             Style = csDropDownList
             TabOrder = 0
@@ -430,6 +430,7 @@ object Form1: TForm1
             Height = 21
             Top = 4
             Width = 392
+            ItemHeight = 13
             MaxLength = 65535
             OnChange = categoryboxChange
             Sorted = True
@@ -442,10 +443,10 @@ object Form1: TForm1
   end
   object Panel1: TPanel
     Height = 54
-    Width = 590
+    Width = 614
     Align = alTop
     ClientHeight = 54
-    ClientWidth = 590
+    ClientWidth = 614
     TabOrder = 1
     object AddBtn: TBitBtn
       Left = 1
@@ -878,7 +879,7 @@ object Form1: TForm1
       TabOrder = 4
     end
     object Panel2: TPanel
-      Left = 464
+      Left = 488
       Height = 52
       Top = 1
       Width = 125
@@ -971,17 +972,18 @@ object Form1: TForm1
         }
         Layout = blGlyphTop
         NumGlyphs = 0
+        OnClick = showoptionsClick
         TabOrder = 0
       end
     end
   end
   object pnlbottom2: TPanel
     Height = 163
-    Top = 505
-    Width = 590
+    Top = 361
+    Width = 614
     Align = alBottom
     ClientHeight = 163
-    ClientWidth = 590
+    ClientWidth = 614
     ParentColor = False
     TabOrder = 2
     Visible = False
@@ -989,49 +991,49 @@ object Form1: TForm1
       Left = 1
       Height = 161
       Top = 1
-      Width = 588
+      Width = 612
       Align = alClient
       Caption = 'GroupBox1'
-      ClientHeight = 144
-      ClientWidth = 584
+      ClientHeight = 143
+      ClientWidth = 608
       TabOrder = 0
       object Notebook1: TNotebook
-        Height = 144
-        Width = 584
+        Height = 143
+        Width = 608
         Align = alClient
         PageIndex = 0
         TabOrder = 0
         object tabPage2: TPage
           Caption = 'Video Settings'
-          ClientWidth = 580
-          ClientHeight = 114
+          ClientWidth = 600
+          ClientHeight = 117
           object Label3: TLabel
             Left = 6
-            Height = 13
+            Height = 16
             Top = 5
-            Width = 81
+            Width = 78
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
           object Label5: TLabel
             Left = 219
-            Height = 13
+            Height = 16
             Top = 5
-            Width = 62
+            Width = 58
             Caption = 'Video Size'
             ParentColor = False
           end
           object Label6: TLabel
             Left = 307
-            Height = 13
+            Height = 16
             Top = 5
-            Width = 72
+            Width = 70
             Caption = 'Aspect Ratio'
             ParentColor = False
           end
           object Label9: TLabel
             Left = 253
-            Height = 11
+            Height = 14
             Top = 25
             Width = 8
             Caption = 'X'
@@ -1041,9 +1043,9 @@ object Form1: TForm1
           end
           object Label4: TLabel
             Left = 124
-            Height = 13
+            Height = 16
             Top = 5
-            Width = 65
+            Width = 66
             Caption = 'Frame Rate'
             ParentColor = False
           end
@@ -1086,19 +1088,21 @@ object Form1: TForm1
           end
           object pass2: TCheckBox
             Left = 6
-            Height = 20
+            Height = 21
             Top = 64
-            Width = 61
+            Width = 66
             Caption = '2 pass'
+            Color = clForm
             ParentColor = False
             TabOrder = 5
           end
           object CheckBox2: TCheckBox
             Left = 123
-            Height = 20
+            Height = 21
             Top = 64
-            Width = 88
+            Width = 91
             Caption = 'Deinterlace'
+            Color = clForm
             ParentColor = False
             TabOrder = 6
           end
