@@ -943,9 +943,15 @@ end;
 procedure TForm1.mitDocsClick(Sender: TObject);
 var s : string;
 begin
-  // code modified from CactusJukebox /
+
   {$ifdef linux}
-  s := '/usr/share/docs/winff/WinFF.pdf.gz'
+  s := '/usr/share/docs/winff/WinFF.pdf.gz';
+  if fileexists('/usr/share/docs/winff/WinFF.pdf') then s:='/usr/share/docs/winff/WinFF.pdf';
+  if fileexists('/usr/share/winff/WinFF.pdf') then s:='/usr/share/winff/WinFF.pdf';
+  if fileexists('/usr/share/winff/WinFF.pdf.gz') then s:='/usr/share/winff/WinFF.pdf.gz';
+  if fileexists('/usr/share/doc/packages/winff/WinFF.pdf.gz') then s:='/usr/share/doc/packages/winff/WinFF.pdf.gz';
+  if fileexists('/usr/share/doc/packages/winff/WinFF.pdf') then s:='/usr/share/doc/packages/winff/WinFF.pdf';
+  // code modified from CactusJukebox /
   exec('/usr/bin/evince', s);
   If Dosexitcode<>0 Then exec('/usr/bin/kpdf', s);
   If Dosexitcode<>0 Then exec('/usr/bin/xpdf', s);
@@ -1245,7 +1251,7 @@ begin                                     // get setup
    if aspectratio.Text <> '' then
            commandline:=replaceparam(commandline,'-aspect','-aspect ' + aspectratio.Text);
    if audbitrate.Text <> '' then
-           commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'k');
+           commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'kb');
    if audsamplingrate.Text <> '' then
            commandline:=replaceparam(commandline,'-ar','-ar ' + audsamplingrate.Text);
    if audchannels.Text <> '' then
@@ -1290,8 +1296,8 @@ begin                                     // get setup
           end
        else if pass2.Checked = true then
           begin
-           command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline  + ' -passlogfile "'
-                 + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
+           command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline + ' -an'
+                 + ' -passlogfile "' + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
            script.Add(command);
            command := ffmpegfilename + usethreads + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
                  + passlogfile + '"' + ' -pass 2 ' + ' "' + destfolder.Text + DirectorySeparator + basename +'.'
