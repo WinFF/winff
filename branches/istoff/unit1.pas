@@ -1075,7 +1075,7 @@ procedure TForm1.showoptionsClick(Sender: TObject);
         //tabPage3.Visible:=  true;
         //tabPage4.visible := displaycmdline.Checked;
         //pnlbottom.visible := true;
-        form1.Height:=form1.Height + pnlBottom.Height +25; // This should be fine, not sure if you want to limit height
+        form1.Height:=form1.Height + pnlBottom.Height ; // This should be fine, not sure if you want to limit height
 
         if form1.height < 400 then form1.height := 550;
 
@@ -1093,7 +1093,7 @@ procedure TForm1.showoptionsClick(Sender: TObject);
 
         if form1.Height - pnlBottom2.Height > 400 then
           begin
-            form1.Height:=form1.Height-pnlBottom.Height-25;
+            form1.Height:=form1.Height-pnlBottom.Height;
           end
         else
           begin
