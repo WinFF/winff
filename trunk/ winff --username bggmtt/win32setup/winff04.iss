@@ -4,14 +4,14 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 0.43
+AppVerName=WinFF 0.44
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://biggmatt.com/forums
 AppUpdatesURL=http://www.winff.org/
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=0.4.3.0
+VersionInfoVersion=0.4.4.0
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
@@ -34,7 +34,7 @@ Name: "spanish"; MessagesFile: "compiler:languages\Spanish.isl"
 Name: "portuguese"; MessagesFile: "compiler:languages\Portuguese.isl"
 Name: "dutch"; MessagesFile: "compiler:languages\Dutch.isl"
 Name: "chinesetrad"; MessagesFile: "compiler:languages\chinesetrad.isl"
-
+Name: "serbian"; MessagesFile: "compiler:languages\serbian.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
