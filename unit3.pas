@@ -25,6 +25,8 @@ type
     Image1: TImage;
     Label1: TLabel;
     Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
@@ -95,6 +97,7 @@ begin                  // do translations
     listbox1.items.Add('Brazilan Portuguese translation by Nighto');
     listbox1.items.Add('Spanish translation by Victor Paese');
     listbox1.items.Add('Traditional Chinese translation by Chung Yu');
+    listbox1.items.Add('Serbian translation by Predrag Tomasevic');
     listbox1.items.Add('');
     listbox1.items.Add('Thanks to all the users');
 
