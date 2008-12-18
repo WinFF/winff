@@ -1,22 +1,40 @@
 object Form5: TForm5
-  Left = 319
+  Left = 327
   Height = 378
-  Top = 276
+  Top = 302
   Width = 386
-  HorzScrollBar.Page = 385
-  VertScrollBar.Page = 377
+  HelpContext = 0
   ActiveControl = Memo1
+  Align = alNone
   Caption = 'FFmpeg Command Line'
+  ChildSizing.LeftRightSpacing = 0
+  ChildSizing.TopBottomSpacing = 0
+  ChildSizing.HorizontalSpacing = 0
+  ChildSizing.VerticalSpacing = 0
+  ChildSizing.ControlsPerLine = 0
   ClientHeight = 378
   ClientWidth = 386
+  Font.Height = 0
+  Font.Style = []
   OnCreate = FormCreate
   OnResize = FormResize
+  ParentFont = False
   Position = poMainFormCenter
+  LCLVersion = '0.9.26'
   object Memo1: TMemo
     Left = 8
     Height = 322
     Top = 8
     Width = 368
+    HelpContext = 0
+    Align = alNone
+    BorderSpacing.Left = 0
+    BorderSpacing.Top = 0
+    BorderSpacing.Right = 0
+    BorderSpacing.Bottom = 0
+    BorderSpacing.Around = 0
+    BorderSpacing.CellAlignHorizontal = ccaFill
+    BorderSpacing.CellAlignVertical = ccaFill
     Lines.Strings = (
       ''
     )
@@ -29,7 +47,16 @@ object Form5: TForm5
     Height = 25
     Top = 336
     Width = 75
+    HelpContext = 0
+    Align = alNone
+    BorderSpacing.Left = 0
+    BorderSpacing.Top = 0
+    BorderSpacing.Right = 0
+    BorderSpacing.Bottom = 0
+    BorderSpacing.Around = 0
     BorderSpacing.InnerBorder = 4
+    BorderSpacing.CellAlignHorizontal = ccaFill
+    BorderSpacing.CellAlignVertical = ccaFill
     Caption = 'OK'
     OnClick = Button1Click
     TabOrder = 1
