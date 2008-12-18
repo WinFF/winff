@@ -12,10 +12,10 @@ interface
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
   {$IFDEF WIN32} windows, shellapi, dos,{$endif}
-  {$IFDEF unix} baseunix, unix, {$endif}
+  {$IFDEF unix} baseunix, unix, dos,{$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
-  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF};
+  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls;
 
 type
 
@@ -23,20 +23,51 @@ type
 
   TForm1 = class(TForm)
     AddBtn: TBitBtn;
+    Aspectratio: TEdit;
+    audbitrate: TEdit;
     audchannels: TEdit;
+    audsamplingrate: TEdit;
     categorybox: TComboBox;
-    Label10: TLabel;
-    displaycmdline: TMenuItem;
-    pauseonfinish: TMenuItem;
-    shutdownonfinish: TMenuItem;
-    optionsbtn: TBitBtn;
-    StartBtn: TBitBtn;
-    Play: TBitBtn;
-    ClearBtn: TBitBtn;
-    RemoveBtn: TBitBtn;
     CheckBox2: TCheckBox;
-    pass2: TCheckBox;
+    ChooseFolderBtn: TButton;
+    ClearBtn: TBitBtn;
+    commandlineparams: TEdit;
+    DestFolder: TEdit;
+    displaycmdline: TMenuItem;
+    filelist: TListBox;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label19: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
     Label9: TLabel;
+    mitDocs: TMenuItem;
+    mitAbout: TMenuItem;
+    MenuItem6: TMenuItem;
+    mitWinff: TMenuItem;
+    mitForums: TMenuItem;
+    MenuItem9: TMenuItem;
+    Notebook1: TNotebook;
+    optionsbtn: TBitBtn;
+    PageControl1: TPageControl;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    pass2: TCheckBox;
+    Play: TBitBtn;
+    pnlbottom: TPanel;
+    pnlbottom2: TPanel;
+    pnlMain: TPanel;
+    pauseonfinish: TMenuItem;
+    PresetBox: TComboBox;
+    RemoveBtn: TBitBtn;
+    shutdownonfinish: TMenuItem;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
@@ -46,51 +77,42 @@ type
     showoptions: TMenuItem;
     Options: TMenuItem;
     filemenu: TMenuItem;
-    ChooseFolderBtn: TButton;
-    DestFolder: TEdit;
-    Aspectratio: TEdit;
-    audbitrate: TEdit;
-    audsamplingrate: TEdit;
-    commandlineparams: TEdit;
-    GroupBox2: TGroupBox;
-    Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
     MainMenu1: TMainMenu;
     OpenDialog1: TOpenDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
-    VidsizeX: TEdit;
-    Label4: TLabel;
-    Vidframerate: TEdit;
-    Label3: TLabel;
+    StartBtn: TBitBtn;
+    tabPage1: TTabSheet;
+    tabPage2: TPage;
+    tabPage3: TPage;
+    tabPage4: TPage;
     Vidbitrate: TEdit;
-    GroupBox1: TGroupBox;
-    Label1: TLabel;
-    Label2: TLabel;
-    PresetBox: TComboBox;
-    filelist: TListBox;
+    Vidframerate: TEdit;
+    VidsizeX: TEdit;
     VidsizeY: TEdit;
     procedure AspectratioChange(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
+    procedure categoryboxCloseUp(Sender: TObject);
     procedure ChooseFolderBtnClick(Sender: TObject);
     procedure AddBtnClick(Sender: TObject);
     procedure ClearBtnClick(Sender: TObject);
     procedure displaycmdlineClick(Sender: TObject);
     procedure ExitmenuClick(Sender: TObject);
     procedure filelistKeyPress(Sender: TObject; var Key: char);
-    procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormActivate(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
     procedure FormResize(Sender: TObject);
     procedure importmenuClick(Sender: TObject);
+    procedure mitAboutClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
-    procedure MenuItem7Click(Sender: TObject);
+    procedure mitDocsClick(Sender: TObject);
+    procedure mitForumsClick(Sender: TObject);
+    procedure mitWinffClick(Sender: TObject);
     procedure pauseonfinishClick(Sender: TObject);
     procedure PlayClick(Sender: TObject);
     procedure RemoveBtnClick(Sender: TObject);
@@ -109,6 +131,7 @@ type
     procedure importpresetfromfile(presetfilename: string);
     function GetappdataPath() : string ;
     function replaceparam(commandline:string;param:string;replacement:string):string;
+    procedure VidbitrateChange(Sender: TObject);
     {$IFDEF WIN32}function GetWin32System(): Integer;{$endif}
 
   private
@@ -167,11 +190,12 @@ var
   Resourcestring
   // captions
   rsAddBtn='Add';
-  rsLabel10='AC''';
+  rsLabel10='Audio Channels';
   rsdisplaycmdline='Display CMD Line';
   rspauseonfinish='Pause on Finish';
   rsshutdownonfinish='Shutdown on Finish';
   rsoptionsbtn='Options';
+  rsclosebtn='Options';
   rsStartBtn='Convert';
   rsPlay='Play';
   rsClearBtn='Clear';
@@ -183,11 +207,16 @@ var
   rsMenuItem3='Exit';
   rsMenuItem4='Presets';
   rsMenuItem5='Preferences';
+  rsMenuItem6='WinFF Website';
+  rsMenuItem7='WinFF Forums';
+
   rsimportmenu='Import Preset';
   rsshowoptions='Additional Options';
   rsOptions='Options';
+  rsClose='Close';
   rsfilemenu='File';
-  rsGroupBox2='Additional Command Line Parameters (Advanced)';
+  //rsGroupBox2='Additional Command Line Parameters (Advanced)';
+
   rsLabel5='Video Size';
   rsLabel6='Aspect Ratio';
   rsLabel7='Audio Bitrate';
@@ -197,6 +226,11 @@ var
   rsGroupBox1='Additional Options';
   rsLabel2='Output Folder';
   rsLabel1='Convert To ...';
+  rsLabel19='Device Preset';
+  tabPage1caption='Output Details';
+  tabPage2caption='Video Settings';
+  tabPage3caption='Audio Settings';
+  tabPage4caption='Additional Command Line Parameters (Advanced)';
 
   //messages
   rsCouldNotFindPresetFile = 'Could not find presets file.';
@@ -229,6 +263,8 @@ var
 f1,f2:textfile;
 ch: char;
 i:integer;
+formheight,formwidth,formtop,formleft:integer;
+sformheight,sformwidth,sformtop,sformleft:string;
 importfromcmdline: string;
 currentpreset: string;
 
@@ -259,21 +295,27 @@ begin
     MenuItem3.Caption:=rsmenuitem3;
     MenuItem4.Caption:=rsmenuitem4;
     MenuItem5.Caption:=rsmenuitem5;
+    mitWinff.Caption := rsmenuitem6;
+    mitForums.Caption := rsmenuitem7;
     importmenu.Caption:=rsimportmenu;
     showoptions.Caption:=rsshowoptions;
     Options.Caption:=rsoptions;
     filemenu.Caption:=rsfilemenu;
-    GroupBox2.Caption:=rsgroupbox2;
+    //GroupBox2.Caption:=rsgroupbox2;
     Label5.Caption:=rslabel5;
     Label6.Caption:=rslabel6;
     Label7.Caption:=rslabel7;
     Label8.Caption:=rslabel8;
     Label4.Caption:=rslabel4;
     Label3.Caption:=rslabel3;
+    Label19.Caption:=rslabel19;
     GroupBox1.Caption:=rsgroupbox1;
     Label1.Caption:=rslabel1;
     Label2.Caption:=rslabel2;
-
+    tabPage1.Caption:=tabPage1caption;
+    tabPage2.Caption:=tabPage2caption;
+    tabPage3.Caption:=tabPage3caption;
+    tabPage4.Caption:=tabPage4caption;
 
 
                     // start setup
@@ -425,30 +467,46 @@ begin
         break;
         end;
     end;
-                                          // check menu's
+                                          // set window size and position
   showopts:=getconfigvalue('general/showoptions');
+  sformheight:=getconfigvalue('window/height');
+  sformwidth:=getconfigvalue('window/width');
+  sformtop:=getconfigvalue('window/top');
+  sformleft:=getconfigvalue('window/left');
+
+  if sformtop <> '' then formtop:=strtoint(sformtop);
+  if formtop > 0 then form1.Top := formtop;
+
+  if sformleft <> '' then formleft:=strtoint(sformleft);
+  if formleft >0 then form1.Left := formleft;
+
+  if sformheight = '' then formheight:=400
+  else formheight := strtoint(sformheight);
+
+  if sformwidth = '' then formwidth:=400
+  else formwidth := strtoint(sformwidth);
+
+  if formheight<400 then formheight:=400;
+  if formwidth<400 then formheight:=400;
   if showopts='' then showopts:='false';
   if showopts='true' then
         begin
-        form1.Height:=461;
-        groupbox1.Top:=264;
-        groupbox1.Visible:=true;
-        groupbox2.top:=376;
-        groupbox2.Visible:=true;
         showoptions.Checked:=true;
+        pnlBottom2.Visible :=true;
+        form1.height := formheight;
+        form1.width := formwidth;
         form1.invalidate;
         end
   else
         begin
-        form1.Height:=290;
-        groupbox1.Top:=264;
-        groupbox1.Visible:=false;
-        groupbox2.top:=264;
-        groupbox2.Visible:=false;
         showoptions.Checked:=false;
+        pnlBottom2.Visible :=false;
+        form1.height := formheight;
+        form1.width := formwidth;
         form1.invalidate;
         end;
-                                       // check 2 pass encoding
+
+                                         // check 2 pass encoding
   pass2encoding:=getconfigvalue('general/pass2');
   if pass2encoding='' then pass2.checked:=false;
   if pass2encoding='true' then pass2.checked:=true;
@@ -500,6 +558,12 @@ begin
   else
      setconfigvalue('general/pass2','false');
 
+     // save window position and size
+  setconfigvalue('window/height',inttostr(form1.height));
+  setconfigvalue('window/width',inttostr(form1.width));
+  setconfigvalue('window/top',inttostr(form1.Top));
+  setconfigvalue('window/left',inttostr(form1.Left));
+
   presetsfile.Free;           // cleanup
 
 end;
@@ -507,7 +571,9 @@ end;
 // keep width on resize
 procedure TForm1.FormResize(Sender: TObject);
 begin
-  form1.Width:=515;
+  // Affects Panel Resizing.
+  // Changed to use Form Minimum / Height / Width using the GUI Property Settings
+
 end;
 
 // get the params from the preset
@@ -669,6 +735,11 @@ begin
    end;
    presetbox.sorted:=true;
    presetbox.sorted:=false;
+
+end;
+
+procedure TForm1.categoryboxCloseUp(Sender: TObject);
+begin
 
 end;
 
@@ -884,21 +955,8 @@ begin
 
 end;
 
-  // filelist onkey down
-procedure TForm1.filelistKeyUp(Sender: TObject; var Key: Word;
-  Shift: TShiftState);
-var
-i:integer;
+procedure TForm1.FormActivate(Sender: TObject);
 begin
-     if key = 46 then
-   begin
-    i:=0;
-   while i< filelist.Items.Count do
-    if filelist.Selected[i] then
-      filelist.Items.Delete(i)
-    else
-       i+=1;
-   end;
 end;
 
 
@@ -914,10 +972,67 @@ begin
 form4.show;
 end;
 
-procedure TForm1.MenuItem7Click(Sender: TObject);
+//menu: help documentation
+procedure TForm1.mitDocsClick(Sender: TObject);
+var s : string;
 begin
 
+  {$ifdef linux}
+  s := '/usr/share/docs/winff/WinFF.pdf.gz';
+  if fileexists('/usr/share/docs/winff/WinFF.pdf') then s:='/usr/share/docs/winff/WinFF.pdf';
+  if fileexists('/usr/share/winff/WinFF.pdf') then s:='/usr/share/winff/WinFF.pdf';
+  if fileexists('/usr/share/winff/WinFF.pdf.gz') then s:='/usr/share/winff/WinFF.pdf.gz';
+  if fileexists('/usr/share/doc/packages/winff/WinFF.pdf.gz') then s:='/usr/share/doc/packages/winff/WinFF.pdf.gz';
+  if fileexists('/usr/share/doc/packages/winff/WinFF.pdf') then s:='/usr/share/doc/packages/winff/WinFF.pdf';
+  // code modified from CactusJukebox /
+  exec('/usr/bin/evince', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/kpdf', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/xpdf', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/acroread', s);
+  If Dosexitcode<>0 Then Showmessage('More information can be found at http://www.winff.org');
+  {$endif}
+  {$ifdef win32}
+  s := extraspath + 'WinFF.pdf';
+  ShellExecute(self.Handle,'open',PChar(s),nil,nil, SW_SHOWNORMAL);
+  {$endif}
 end;
+
+//menu: Help Forums
+procedure TForm1.mitForumsClick(Sender: TObject);
+var s : string;
+begin
+  // code modified from CactusJukebox /
+  s := 'http://www.winff.org/forums/';
+  {$ifdef linux}
+  exec('/usr/bin/firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/konqueror', s);
+  If Dosexitcode<>0 Then Showmessage('More information can be found at ' + s);
+  {$endif}
+  {$ifdef win32}
+  ShellExecute(self.Handle,'open',PChar(s),nil,nil, SW_SHOWNORMAL);
+  {$endif}
+end;
+
+//menu: Help Forums
+procedure TForm1.mitWinffClick(Sender: TObject);
+var s : string;
+begin
+  // code modified from CactusJukebox /
+  s := 'http://www.winff.org/';
+  {$ifdef linux}
+  exec('/usr/bin/firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', s);
+  If Dosexitcode<>0 Then exec('/usr/bin/konqueror', s);
+  If Dosexitcode<>0 Then Showmessage('More information can be found at ' + s);
+  {$endif}
+  {$ifdef win32}
+  ShellExecute(self.Handle,'open',PChar(s),nil,nil, SW_SHOWNORMAL);
+  {$endif}
+
+end;
+
+
 
 // menu: about
 procedure TForm1.MenuItem2Click(Sender: TObject);
@@ -940,28 +1055,54 @@ begin
 
 end;
 
+procedure TForm1.mitAboutClick(Sender: TObject);
+begin
+  form3.Show;
+end;
+
 // menu: show / hide additional options
 procedure TForm1.showoptionsClick(Sender: TObject);
  begin
    if not showoptions.Checked then
         begin
-        form1.Height:=461;
-        groupbox1.Top:=264;
-        groupbox1.Visible:=true;
-        groupbox2.top:=376;
-        groupbox2.Visible:=true;
+        //form1.Height:=461;
+        //groupbox1.Top:=264;
+        //groupbox1.Visible:=true;
+        //groupbox2.top:=376;
+        //groupbox2.Visible:=true;
+        //
+        //tabPage2.Visible:=  true;
+        //tabPage3.Visible:=  true;
+        //tabPage4.visible := displaycmdline.Checked;
+        //pnlbottom.visible := true;
+        form1.Height:=form1.Height + pnlBottom.Height ; // This should be fine, not sure if you want to limit height
+
+        if form1.height < 400 then form1.height := 550;
+
+        pnlBottom2.Visible := True;
         showoptions.Checked:=true;
-        form1.invalidate;
+        //form1.invalidate;
         end
   else
         begin
-        form1.Height:=290;
-        groupbox1.Top:=264;
-        groupbox1.Visible:=false;
-        groupbox2.top:=264;
-        groupbox2.Visible:=false;
+        //form1.Height:=290;
+        //groupbox1.Top:=264;
+        //groupbox1.Visible:=false;
+        //groupbox2.top:=264;
+        //groupbox2.Visible:=false;
+
+        if form1.Height - pnlBottom2.Height > 400 then
+          begin
+            form1.Height:=form1.Height-pnlBottom.Height;
+          end
+        else
+          begin
+            form1.Height := 400;/// Ensure they don't make it too small.
+          end;
+        pnlbottom2.visible := false;
         showoptions.Checked:=false;
-        form1.invalidate;
+
+        //form1.invalidate;
         vidbitrate.Clear;
         vidframerate.clear;
         aspectratio.Clear;
@@ -972,6 +1113,7 @@ procedure TForm1.showoptionsClick(Sender: TObject);
         displaycmdline.Checked:=false;
         commandlineparams.Clear;
         end;
+  Application.ProcessMessages; // Should repaint the form like invalidate
 end;
 // menu: shutdown on finish
 procedure TForm1.shutdownonfinishClick(Sender: TObject);
@@ -1007,7 +1149,7 @@ end;
 // menu: display commandline
 procedure TForm1.displaycmdlineClick(Sender: TObject);
 begin
-displaycmdline.Checked:= not displaycmdline.Checked;
+     displaycmdline.Checked:= not displaycmdline.Checked;
 end;
 
 // play the selected file
@@ -1193,8 +1335,8 @@ begin                                     // get setup
           end
        else if pass2.Checked = true then
           begin
-           command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline  + ' -passlogfile "'
-                 + passlogfile + '"' + ' -an -pass 1 ' +  ' -y ' + nullfile ;
+           command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline + ' -an'
+                 + ' -passlogfile "' + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
            script.Add(command);
            command := ffmpegfilename + usethreads + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
                  + passlogfile + '"' + ' -pass 2 ' + ' "' + destfolder.Text + DirectorySeparator + basename +'.'
@@ -1272,6 +1414,11 @@ begin
  else
      commandline+= ' ' + replacement;
      result:=commandline;
+end;
+
+procedure TForm1.VidbitrateChange(Sender: TObject);
+begin
+
 end;
 
 // import a preset from a file

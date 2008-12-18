@@ -1,43 +1,69 @@
 object Form3: TForm3
-  Left = 295
-  Height = 291
-  Top = 323
-  Width = 340
-  HorzScrollBar.Page = 339
-  VertScrollBar.Page = 290
-  ActiveControl = Button1
+  Left = 491
+  Height = 318
+  Top = 289
+  Width = 384
+  HelpContext = 0
+  ActiveControl = Notebook1
+  Align = alNone
   Caption = 'About WinFF'
-  ClientHeight = 291
-  ClientWidth = 340
+  ChildSizing.LeftRightSpacing = 0
+  ChildSizing.TopBottomSpacing = 0
+  ChildSizing.HorizontalSpacing = 0
+  ChildSizing.VerticalSpacing = 0
+  ChildSizing.ControlsPerLine = 0
+  ClientHeight = 318
+  ClientWidth = 384
   Color = clForm
+  Font.Height = 0
+  Font.Style = []
   OnCreate = FormCreate
+  ParentFont = False
   Position = poMainFormCenter
-  object Button1: TButton
-    Left = 133
-    Height = 25
-    Top = 248
-    Width = 75
-    BorderSpacing.InnerBorder = 4
-    Caption = 'OK'
-    OnClick = Button1Click
-    TabOrder = 0
-  end
+  LCLVersion = '0.9.26'
   object Notebook1: TNotebook
-    Height = 240
-    Width = 344
-    OnChangeBounds = Notebook1ChangeBounds
+    Left = 0
+    Height = 268
+    Top = 0
+    Width = 384
+    HelpContext = 0
+    Align = alClient
+    BorderSpacing.Left = 0
+    BorderSpacing.Top = 0
+    BorderSpacing.Right = 0
+    BorderSpacing.Bottom = 0
+    BorderSpacing.Around = 0
+    BorderSpacing.CellAlignHorizontal = ccaFill
+    BorderSpacing.CellAlignVertical = ccaFill
+    Options = []
     PageIndex = 0
-    TabOrder = 1
+    TabOrder = 0
     object Page1: TPage
+      HelpContext = 0
       Caption = 'WinFF'
-      ClientWidth = 336
-      ClientHeight = 214
+      ChildSizing.LeftRightSpacing = 0
+      ChildSizing.TopBottomSpacing = 0
+      ChildSizing.HorizontalSpacing = 0
+      ChildSizing.VerticalSpacing = 0
+      ChildSizing.ControlsPerLine = 0
+      ClientWidth = 380
+      ClientHeight = 230
       object Label1: TLabel
         Left = 60
-        Height = 16
+        Height = 17
         Top = 10
-        Width = 63
-        Caption = 'WinFF 0.43'
+        Width = 88
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
+        Caption = 'WinFF 0.44'
         ParentColor = False
       end
       object Image1: TImage
@@ -45,6 +71,16 @@ object Form3: TForm3
         Height = 48
         Top = 10
         Width = 48
+        HelpContext = 0
+        Align = alNone
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
+        Center = False
         Picture.Data = {
           07545069786D6170470B00002F2A2058504D202A2F0D0A737461746963206368
           6172202A2077696E66665F78706D5B5D203D207B0D0A22343820343820313820
@@ -138,115 +174,301 @@ object Form3: TForm3
           2020202020202020202020202020202020202020202020202020202020202020
           2020202020202020202020202020227D3B0D0A
         }
-        Transparent = False
       end
       object Label2: TLabel
         Left = 4
-        Height = 16
+        Height = 17
         Top = 66
-        Width = 160
+        Width = 217
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
         Caption = 'Copyright 2006-2008 GPL V3'
         ParentColor = False
       end
       object Label3: TLabel
         Left = 4
-        Height = 16
+        Height = 17
         Top = 90
-        Width = 116
+        Width = 157
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
         Caption = 'Matthew Weatherford'
         ParentColor = False
       end
       object Label4: TLabel
+        Cursor = crHandPoint
         Left = 4
-        Height = 16
+        Height = 17
         Top = 114
-        Width = 106
+        Width = 143
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
         Caption = 'http://www.winff.org'
         ParentColor = False
+        OnClick = Label4Click
       end
       object Label11: TLabel
         Left = 4
-        Height = 16
-        Top = 146
-        Width = 172
-        Caption = 'Debian and Ubuntu Packaging:'
+        Height = 17
+        Top = 156
+        Width = 307
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
+        Caption = 'Debian/Ubuntu Packaging by Paul Gevers'
         ParentColor = False
       end
       object Label12: TLabel
         Left = 4
-        Height = 16
-        Top = 170
-        Width = 68
-        Caption = 'Paul Gevers'
+        Height = 17
+        Top = 180
+        Width = 298
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
+        Caption = 'Additional Programming by Ian Stoffberg'
         ParentColor = False
       end
     end
     object Page2: TPage
+      HelpContext = 0
       Caption = 'FFmpeg'
-      ClientWidth = 336
-      ClientHeight = 214
+      ChildSizing.LeftRightSpacing = 0
+      ChildSizing.TopBottomSpacing = 0
+      ChildSizing.HorizontalSpacing = 0
+      ChildSizing.VerticalSpacing = 0
+      ChildSizing.ControlsPerLine = 0
+      ClientWidth = 380
+      ClientHeight = 230
       object Label5: TLabel
         Left = 4
-        Height = 16
+        Height = 17
         Top = 10
-        Width = 47
+        Width = 61
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
         Caption = 'FFmpeg'
         ParentColor = False
       end
       object Label6: TLabel
         Left = 4
-        Height = 16
+        Height = 17
         Top = 34
-        Width = 150
+        Width = 198
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
         Caption = 'Trademark Fabrice Belllard'
         ParentColor = False
       end
       object Label7: TLabel
-        Left = 4
-        Height = 17
+        Cursor = crHandPoint
+        Left = 6
+        Height = 14
         Top = 50
         Width = 155
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
         Caption = 'http://ffmpeg.mplayerhq.hu'
         Font.Height = -13
+        Font.Style = []
         ParentColor = False
+        ParentFont = False
+        OnClick = Label7Click
       end
       object Label8: TLabel
         Left = 4
-        Height = 16
+        Height = 17
         Top = 82
-        Width = 154
+        Width = 205
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
         Caption = 'FFmpeg Windows Builds by'
         ParentColor = False
       end
       object Label9: TLabel
         Left = 4
-        Height = 16
+        Height = 17
         Top = 98
-        Width = 73
+        Width = 93
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
         Caption = 'Ramiro Polla'
         ParentColor = False
       end
       object Label10: TLabel
+        Cursor = crHandPoint
         Left = 4
-        Height = 16
+        Height = 17
         Top = 114
-        Width = 139
-        Caption = 'http://ffmpeg.arrozcru.org/'
+        Width = 230
+        HelpContext = 0
+        Align = alNone
+        Alignment = taLeftJustify
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
+        Caption = 'http://arrozcru.no-ip.org/ffmpeg'
         ParentColor = False
+        OnClick = Label10Click
       end
     end
     object Page3: TPage
+      HelpContext = 0
       Caption = 'Thanks'
-      ClientWidth = 336
-      ClientHeight = 214
+      ChildSizing.LeftRightSpacing = 0
+      ChildSizing.TopBottomSpacing = 0
+      ChildSizing.HorizontalSpacing = 0
+      ChildSizing.VerticalSpacing = 0
+      ChildSizing.ControlsPerLine = 0
+      ClientWidth = 380
+      ClientHeight = 230
       object ListBox1: TListBox
-        Left = 4
-        Height = 192
-        Top = 10
-        Width = 320
+        Left = 0
+        Height = 230
+        Top = 0
+        Width = 380
+        HelpContext = 0
+        Align = alClient
+        BorderSpacing.Left = 0
+        BorderSpacing.Top = 0
+        BorderSpacing.Right = 0
+        BorderSpacing.Bottom = 0
+        BorderSpacing.Around = 0
+        BorderSpacing.CellAlignHorizontal = ccaFill
+        BorderSpacing.CellAlignVertical = ccaFill
         ClickOnSelChange = False
+        IntegralHeight = False
+        ItemHeight = 0
+        MultiSelect = False
+        Sorted = False
+        Style = lbStandard
         TabOrder = 0
+        TopIndex = -1
       end
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 268
+    Width = 384
+    HelpContext = 0
+    Align = alBottom
+    BorderSpacing.Left = 0
+    BorderSpacing.Top = 0
+    BorderSpacing.Right = 0
+    BorderSpacing.Bottom = 0
+    BorderSpacing.Around = 0
+    BorderSpacing.CellAlignHorizontal = ccaFill
+    BorderSpacing.CellAlignVertical = ccaFill
+    ChildSizing.LeftRightSpacing = 0
+    ChildSizing.TopBottomSpacing = 0
+    ChildSizing.HorizontalSpacing = 0
+    ChildSizing.VerticalSpacing = 0
+    ChildSizing.ControlsPerLine = 0
+    ClientHeight = 50
+    ClientWidth = 384
+    TabOrder = 1
+    object Button1: TButton
+      Left = 152
+      Height = 25
+      Top = 12
+      Width = 75
+      HelpContext = 0
+      Align = alNone
+      BorderSpacing.Left = 0
+      BorderSpacing.Top = 0
+      BorderSpacing.Right = 0
+      BorderSpacing.Bottom = 0
+      BorderSpacing.Around = 0
+      BorderSpacing.InnerBorder = 4
+      BorderSpacing.CellAlignHorizontal = ccaFill
+      BorderSpacing.CellAlignVertical = ccaFill
+      Caption = 'OK'
+      OnClick = Button1Click
+      TabOrder = 0
     end
   end
 end
