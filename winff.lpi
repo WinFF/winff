@@ -8,7 +8,7 @@
       <IconPath Value=".\"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
-      <ActiveEditorIndexAtStart Value="0"/>
+      <ActiveEditorIndexAtStart Value="1"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
@@ -58,8 +58,8 @@
         <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit1.lrs"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="55" Y="1078"/>
-        <TopLine Value="1072"/>
+        <CursorPos X="32" Y="1542"/>
+        <TopLine Value="1512"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Loaded Value="True"/>
@@ -71,12 +71,12 @@
         <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit2.lrs"/>
         <UnitName Value="Unit2"/>
-        <CursorPos X="16" Y="38"/>
-        <TopLine Value="27"/>
+        <CursorPos X="3" Y="353"/>
+        <TopLine Value="341"/>
         <EditorIndex Value="1"/>
         <UsageCount Value="210"/>
         <Bookmarks Count="1">
-          <Item0 X="3" Y="452" ID="1"/>
+          <Item0 X="3" Y="457" ID="1"/>
         </Bookmarks>
         <Loaded Value="True"/>
       </Unit2>
@@ -353,7 +353,7 @@
     <PathDelim Value="\"/>
     <SearchPaths>
       <OtherUnitFiles Value="$(LazarusDir)\components\codetools\units\$(TargetCPU)-$(TargetOS)\"/>
-      <LCLWidgetType Value="gtk2"/>
+      <LCLWidgetType Value="win32"/>
       <SrcPath Value="$(LazarusDir)\lcl\;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)\"/>
     </SearchPaths>
     <Parsing>
