@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = 247
-  Height = 692
-  Top = 186
+  Left = 176
+  Height = 688
+  Top = 232
   Width = 952
   ActiveControl = Notebook1
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 672
+  ClientHeight = 668
   ClientWidth = 952
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
@@ -325,25 +325,25 @@ object Form1: TForm1
   Position = poDefault
   LCLVersion = '0.9.26'
   object Label2: TLabel
-    Height = 16
+    Height = 14
     Width = 1
     ParentColor = False
   end
   object pnlMain: TPanel
-    Height = 455
+    Height = 451
     Top = 54
     Width = 952
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 455
+    ClientHeight = 451
     ClientWidth = 952
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
-      Height = 315
+      Height = 311
       Width = 952
       Align = alClient
       MultiSelect = True
@@ -353,7 +353,7 @@ object Form1: TForm1
     end
     object pnlbottom: TPanel
       Height = 140
-      Top = 315
+      Top = 311
       Width = 952
       Align = alBottom
       ClientHeight = 140
@@ -980,7 +980,7 @@ object Form1: TForm1
   end
   object pnlbottom2: TPanel
     Height = 163
-    Top = 509
+    Top = 505
     Width = 952
     Align = alBottom
     ClientHeight = 163
@@ -1010,33 +1010,33 @@ object Form1: TForm1
           ClientHeight = 117
           object Label3: TLabel
             Left = 6
-            Height = 16
+            Height = 14
             Top = 5
-            Width = 78
+            Width = 68
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
           object Label5: TLabel
             Left = 219
-            Height = 16
+            Height = 14
             Top = 5
-            Width = 58
+            Width = 49
             Caption = 'Video Size'
             ParentColor = False
           end
           object Label6: TLabel
             Left = 307
-            Height = 16
+            Height = 14
             Top = 5
-            Width = 70
+            Width = 62
             Caption = 'Aspect Ratio'
             ParentColor = False
           end
           object Label9: TLabel
             Left = 253
-            Height = 14
+            Height = 13
             Top = 25
-            Width = 8
+            Width = 7
             Caption = 'X'
             Font.Height = -10
             ParentColor = False
@@ -1044,9 +1044,9 @@ object Form1: TForm1
           end
           object Label4: TLabel
             Left = 124
-            Height = 16
+            Height = 14
             Top = 5
-            Width = 66
+            Width = 57
             Caption = 'Frame Rate'
             ParentColor = False
           end
@@ -1089,9 +1089,9 @@ object Form1: TForm1
           end
           object pass2: TCheckBox
             Left = 6
-            Height = 21
+            Height = 19
             Top = 64
-            Width = 66
+            Width = 57
             Caption = '2 pass'
             Color = clForm
             ParentColor = False
@@ -1099,9 +1099,9 @@ object Form1: TForm1
           end
           object CheckBox2: TCheckBox
             Left = 123
-            Height = 21
+            Height = 19
             Top = 64
-            Width = 91
+            Width = 80
             Caption = 'Deinterlace'
             Color = clForm
             ParentColor = False
