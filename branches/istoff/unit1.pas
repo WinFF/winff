@@ -1426,7 +1426,7 @@ procedure tform1.importpresetfromfile(presetfilename: string);
 var
  importfile: txmldocument;
  importedpreset: tdomelement;
- i:integer;
+ i,j:integer;
  newnode,labelnode,paramsnode,extensionnode,categorynode,
   textl,textp,texte,textc, node,subnode: tdomnode;
  nodename,nodelabel,nodeparams,nodeext,nodecat, testchars:string;
@@ -1452,89 +1452,94 @@ begin
 
  if importedpreset.ChildNodes.Count = 0 then exit;
 
- node:= importedpreset.FirstChild;
+ for j:= 0 to importedpreset.ChildNodes.Count -1 do
+ begin
 
- nodename:= node.NodeName;
+   node:= importedpreset.ChildNodes.Item[j];
 
- for i:= 0 to presets.ChildNodes.Count -1 do
-   if presets.ChildNodes.Item[i].NodeName = nodename then
-      begin
-       showmessage(Format(rsPresetAlreadyExist, ['"', nodename, '"']));
+   nodename:= node.NodeName;
+
+   for i:= 0 to presets.ChildNodes.Count -1 do
+     if presets.ChildNodes.Item[i].NodeName = nodename then
+        begin
+         showmessage(Format(rsPresetAlreadyExist, ['"', nodename, '"']));
+         exit;
+        end;
+
+   try
+     nodelabel := node.FindNode('label').FindNode('#text').NodeValue;
+   except
+     begin
+       showmessage(rsPresetHasNoExt);
        exit;
-      end;
-
- try
-   nodelabel := node.FindNode('label').FindNode('#text').NodeValue;
- except
-   begin
-     showmessage(rsPresetHasNoExt);
-     exit;
-   end;
- end;
-
- try
-   testchars := node.FindNode('params').FindNode('#text').NodeValue;
- except
- end;
- for i:= 0 to length(testchars)-1 do
-   begin
-     if (testchars[i] = #124) or (testchars[i] = #60) or (testchars[i] = #62) or
-        (testchars[i] = #59) or (testchars[i] = #38) then
-       begin
-        showmessage(rsThePresetHasIllegalChars);
-        exit;
-       end;
+     end;
    end;
 
+   try
+     testchars := node.FindNode('params').FindNode('#text').NodeValue;
+   except
+   end;
+   for i:= 0 to length(testchars)-1 do
+     begin
+       if (testchars[i] = #124) or (testchars[i] = #60) or (testchars[i] = #62) or
+          (testchars[i] = #59) or (testchars[i] = #38) then
+         begin
+          showmessage(rsThePresetHasIllegalChars);
+          exit;
+         end;
+     end;
 
- for i:= 0 to presets.ChildNodes.Count -1 do
-   if presets.ChildNodes.Item[i].findnode('label').FindNode('#text').NodeValue = nodelabel then
-      begin
-       showmessage(Format(rsPresetWithLabelExists, ['"', nodelabel, '"']));
+
+   for i:= 0 to presets.ChildNodes.Count -1 do
+     if presets.ChildNodes.Item[i].findnode('label').FindNode('#text').NodeValue = nodelabel then
+        begin
+         showmessage(Format(rsPresetWithLabelExists, ['"', nodelabel, '"']));
+         exit;
+        end;
+
+
+   try
+     nodeext := node.FindNode('extension').FindNode('#text').NodeValue;
+   except
+     begin
+       showmessage(rsPresethasnolabel);
        exit;
-      end;
-
-
- try
-   nodeext := node.FindNode('extension').FindNode('#text').NodeValue;
- except
-   begin
-     showmessage(rsPresethasnolabel);
-     exit;
+     end;
    end;
- end;
 
- newnode:=presetsfile.CreateElement(nodename);
- presets.AppendChild(newnode);
- labelnode:=presetsfile.CreateElement('label');
- newnode.AppendChild(labelnode);
- paramsnode:=presetsfile.CreateElement('params');
- newnode.AppendChild(paramsnode);
- extensionnode:=presetsfile.CreateElement('extension');
- newnode.AppendChild(extensionnode);
- categorynode:=presetsfile.CreateElement('category');
- newnode.AppendChild(categorynode);
+   newnode:=presetsfile.CreateElement(nodename);
+   presets.AppendChild(newnode);
+   labelnode:=presetsfile.CreateElement('label');
+   newnode.AppendChild(labelnode);
+   paramsnode:=presetsfile.CreateElement('params');
+   newnode.AppendChild(paramsnode);
+   extensionnode:=presetsfile.CreateElement('extension');
+   newnode.AppendChild(extensionnode);
+   categorynode:=presetsfile.CreateElement('category');
+   newnode.AppendChild(categorynode);
 
- textl:=presetsfile.CreateTextNode(nodelabel);
- labelnode.AppendChild(textl);
+   textl:=presetsfile.CreateTextNode(nodelabel);
+   labelnode.AppendChild(textl);
 
- try
- textp:=presetsfile.CreateTextNode(node.FindNode('params').FindNode('#text').NodeValue);
- except
- textp:=presetsfile.CreateTextNode('');
- end;
- paramsnode.AppendChild(textp);
 
- texte:=presetsfile.CreateTextNode(nodeext);
- extensionnode.AppendChild(texte);
+   try
+     textp:=presetsfile.CreateTextNode(node.FindNode('params').FindNode('#text').NodeValue);
+   except
+     textp:=presetsfile.CreateTextNode('');
+   end;
+   paramsnode.AppendChild(textp);
 
- try
- textc:=presetsfile.CreateTextNode(node.FindNode('category').FindNode('#text').NodeValue);
- except
- textc:=presetsfile.CreateTextNode('');
- end;
- categorynode.AppendChild(textc);
+   texte:=presetsfile.CreateTextNode(nodeext);
+   extensionnode.AppendChild(texte);
 
+   try
+     textc:=presetsfile.CreateTextNode(node.FindNode('category').FindNode('#text').NodeValue);
+   except
+     textc:=presetsfile.CreateTextNode('');
+   end;
+   categorynode.AppendChild(textc);
+
+end; //for j 1 to childnodes-1
 
 writexmlfile(presetsfile, presetspath + 'presets.xml');  // save the imported preset
 
