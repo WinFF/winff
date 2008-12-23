@@ -1,7 +1,7 @@
 object Form5: TForm5
-  Left = 327
+  Left = 335
   Height = 378
-  Top = 302
+  Top = 328
   Width = 386
   HelpContext = 0
   ActiveControl = Memo1
