@@ -1,7 +1,7 @@
 object Form4: TForm4
-  Left = 370
+  Left = 378
   Height = 322
-  Top = 314
+  Top = 340
   Width = 400
   HelpContext = 0
   ActiveControl = Notebook1

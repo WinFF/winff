@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 491
+  Left = 499
   Height = 318
-  Top = 289
+  Top = 315
   Width = 384
   HelpContext = 0
   ActiveControl = Notebook1
@@ -276,8 +276,8 @@ object Form3: TForm3
       ChildSizing.HorizontalSpacing = 0
       ChildSizing.VerticalSpacing = 0
       ChildSizing.ControlsPerLine = 0
-      ClientWidth = 380
-      ClientHeight = 230
+      ClientWidth = 384
+      ClientHeight = 268
       object Label5: TLabel
         Left = 4
         Height = 17
@@ -402,13 +402,13 @@ object Form3: TForm3
       ChildSizing.HorizontalSpacing = 0
       ChildSizing.VerticalSpacing = 0
       ChildSizing.ControlsPerLine = 0
-      ClientWidth = 380
-      ClientHeight = 230
+      ClientWidth = 384
+      ClientHeight = 268
       object ListBox1: TListBox
         Left = 0
-        Height = 230
+        Height = 268
         Top = 0
-        Width = 380
+        Width = 384
         HelpContext = 0
         Align = alClient
         BorderSpacing.Left = 0

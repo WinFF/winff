@@ -99,7 +99,7 @@ resourcestring
 
 implementation
 
-uses unit1;
+uses unit1,unit6;
 
 { TForm2 }
 
@@ -483,7 +483,13 @@ begin
    end;
 end;
 
+procedure TForm2.exportClick(Sender: TObject);
 
+begin
+unit6.form6.show;
+end;
+
+{
 //export a preset
 procedure TForm2.exportClick(Sender: TObject);
 var
@@ -540,6 +546,7 @@ writexmlfile(exportfile,savedialog1.FileName);
 
 
 end;
+}
 
 procedure TForm2.ListBox1SelectionChange(Sender: TObject; User: Boolean);
 begin
