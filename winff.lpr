@@ -12,7 +12,8 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms
-  { add your units here }, Unit1, Unit2, Unit3, Unit4, Unit5,defaulttranslator;
+  { add your units here }, Unit1, Unit2, Unit3, Unit4, Unit5,defaulttranslator,
+  unit6;
    {$ifdef win32}
    {$R resources.rc}
    {$endif}
@@ -27,6 +28,7 @@ begin
   Application.CreateForm(TForm3, Form3);
   Application.CreateForm(TForm4, Form4);
   Application.CreateForm(TForm5, Form5);
+  Application.CreateForm(TForm6, Form6);
   Application.Run;
 end.
 
