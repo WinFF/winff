@@ -20,6 +20,8 @@ uses
 
 
 
+{$IFDEF WINDOWS}{$R winff.rc}{$ENDIF}
+
 begin
   Application.Title:='WinFF';
   Application.Initialize;

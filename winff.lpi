@@ -8,15 +8,16 @@
       <IconPath Value=".\"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
-      <ActiveEditorIndexAtStart Value="5"/>
+      <ActiveEditorIndexAtStart Value="2"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
     </i18n>
     <VersionInfo>
-      <CurrentMajorRevNr Value="2"/>
-      <CurrentMinorRevNr Value="8"/>
-      <LegalCopyright Value="Copyright 2007, GPL v2 by Matthew Weatherford"/>
+      <UseVersionInfo Value="True"/>
+      <CurrentMajorRevNr Value="4"/>
+      <CurrentMinorRevNr Value="5"/>
+      <LegalCopyright Value="Copyright 2008, GPL v3 by Matthew Weatherford"/>
     </VersionInfo>
     <PublishOptions>
       <Version Value="2"/>
@@ -45,7 +46,7 @@
         <Filename Value="winff.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="winff"/>
-        <CursorPos X="11" Y="11"/>
+        <CursorPos X="1" Y="25"/>
         <TopLine Value="1"/>
         <EditorIndex Value="6"/>
         <UsageCount Value="214"/>
@@ -88,7 +89,7 @@
         <ResourceFilename Value="unit3.lrs"/>
         <UnitName Value="Unit3"/>
         <CursorPos X="20" Y="63"/>
-        <TopLine Value="27"/>
+        <TopLine Value="78"/>
         <EditorIndex Value="2"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
@@ -193,7 +194,7 @@
         <ResourceFilename Value="unit6.lrs"/>
         <UnitName Value="unit6"/>
         <CursorPos X="36" Y="148"/>
-        <TopLine Value="107"/>
+        <TopLine Value="1"/>
         <EditorIndex Value="5"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
