@@ -44,12 +44,10 @@ Source: "winff.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "WinFF.pdf"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ffmpeg.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ffplay.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "pthreadGC2.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "SDL.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "License.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "presets.xml"; DestDir: "{app}"; Flags: ignoreversion
 Source: "presets.xml"; DestDir: "{userappdata}\WinFF"; Flags: ignoreversion
-Source: "pthreadGC2.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "README.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "README-FFmpeg.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "README-Presets.txt"; DestDir: "{app}"; Flags: ignoreversion
