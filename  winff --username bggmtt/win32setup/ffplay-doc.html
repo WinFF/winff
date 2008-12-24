@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<!-- Created by texi2html 1.56k from /usrc/ffmpeg/doc/ffplay-doc.texi on 13 May 2007 -->
+<!-- Created by texi2html 1.56k from /home/ramiro/code/ffmpeg/ffmpeg-15986/doc/ffplay-doc.texi on 3 December 2008 -->
 
 <TITLE>FFplay Documentation</TITLE>
 </HEAD>
@@ -56,37 +56,46 @@ ffplay [options] <TT>`input_file'</TT>
 
 <DL COMPACT>
 
-<DT>@option{-h}
+<DT><SAMP>`-h'</SAMP>
 <DD>
-show help
-<DT>@option{-x width}
+Show help.
+<DT><SAMP>`-version'</SAMP>
 <DD>
-force displayed width
-<DT>@option{-y height}
+Show version.
+<DT><SAMP>`-L'</SAMP>
 <DD>
-force displayed height
-<DT>@option{-s size}
+Show license.
+<DT><SAMP>`-formats'</SAMP>
+<DD>
+Show available formats, codecs, protocols, ...
+<DT><SAMP>`-x <VAR>width</VAR>'</SAMP>
+<DD>
+Force displayed width.
+<DT><SAMP>`-y <VAR>height</VAR>'</SAMP>
+<DD>
+Force displayed height.
+<DT><SAMP>`-s <VAR>size</VAR>'</SAMP>
 <DD>
 Set frame size (WxH or abbreviation), needed for videos which don't
-contain a header with the framesize like raw YUV.
-<DT>@option{-an}
+contain a header with the frame size like raw YUV.
+<DT><SAMP>`-an'</SAMP>
 <DD>
-disable audio
-<DT>@option{-vn}
+Disable audio.
+<DT><SAMP>`-vn'</SAMP>
 <DD>
-disable video
-<DT>@option{-ss pos}
+Disable video.
+<DT><SAMP>`-ss <VAR>pos</VAR>'</SAMP>
 <DD>
-seek to a given position in seconds
-<DT>@option{-bytes}
+Seek to a given position in seconds.
+<DT><SAMP>`-bytes'</SAMP>
 <DD>
-seek by bytes
-<DT>@option{-nodisp}
+Seek by bytes.
+<DT><SAMP>`-nodisp'</SAMP>
 <DD>
-disable graphical display
-<DT>@option{-f fmt}
+Disable graphical display.
+<DT><SAMP>`-f <VAR>fmt</VAR>'</SAMP>
 <DD>
-force format
+Force format.
 </DL>
 <P>
 
@@ -95,33 +104,33 @@ force format
 <H2><A NAME="SEC5" HREF="ffplay-doc.html#TOC5">2.3 Advanced options</A></H2>
 <DL COMPACT>
 
-<DT>@option{-pix_fmt format}
+<DT><SAMP>`-pix_fmt <VAR>format</VAR>'</SAMP>
 <DD>
-set pixel format
-<DT>@option{-stats}
+Set pixel format.
+<DT><SAMP>`-stats'</SAMP>
 <DD>
 Show the stream duration, the codec parameters, the current position in
 the stream and the audio/video synchronisation drift.
-<DT>@option{-debug}
+<DT><SAMP>`-debug'</SAMP>
 <DD>
-print specific debug info
-<DT>@option{-bug}
+Print specific debug info.
+<DT><SAMP>`-bug'</SAMP>
 <DD>
-work around bugs
-<DT>@option{-vismv}
+Work around bugs.
+<DT><SAMP>`-vismv'</SAMP>
 <DD>
-visualize motion vectors
-<DT>@option{-fast}
+Visualize motion vectors.
+<DT><SAMP>`-fast'</SAMP>
 <DD>
-non-spec-compliant optimizations
-<DT>@option{-genpts}
+Non-spec-compliant optimizations.
+<DT><SAMP>`-genpts'</SAMP>
 <DD>
-generate pts
-<DT>@option{-rtp_tcp}
+Generate pts.
+<DT><SAMP>`-rtp_tcp'</SAMP>
 <DD>
 Force RTP/TCP protocol usage instead of RTP/UDP. It is only meaningful
 if you are streaming with the RTSP protocol.
-<DT>@option{-sync type}
+<DT><SAMP>`-sync <VAR>type</VAR>'</SAMP>
 <DD>
 Set the master clock to audio (<CODE>type=audio</CODE>), video
 (<CODE>type=video</CODE>) or external (<CODE>type=ext</CODE>). Default is audio. The
@@ -129,9 +138,9 @@ master clock is used to control audio-video synchronization. Most media
 players use audio as master clock, but in some cases (streaming or high
 quality broadcast) it is necessary to change that. This option is mainly
 used for debugging purposes.
-<DT>@option{-threads count}
+<DT><SAMP>`-threads <VAR>count</VAR>'</SAMP>
 <DD>
-thread count
+Set the thread count.
 </DL>
 <P>
 
@@ -144,39 +153,39 @@ thread count
 
 <DT><KBD>q, ESC</KBD>
 <DD>
-quit
+Quit.
 
 <DT><KBD>f</KBD>
 <DD>
-toggle full screen
+Toggle full screen.
 
 <DT><KBD>p, SPC</KBD>
 <DD>
-pause
+Pause.
 
 <DT><KBD>a</KBD>
 <DD>
-cycle audio channel
+Cycle audio channel.
 
 <DT><KBD>v</KBD>
 <DD>
-cycle video channel
+Cycle video channel.
 
 <DT><KBD>w</KBD>
 <DD>
-show audio waves
+Show audio waves.
 
 <DT><KBD>left/right</KBD>
 <DD>
-seek backward/forward 10 seconds
+Seek backward/forward 10 seconds.
 
 <DT><KBD>down/up</KBD>
 <DD>
-seek backward/forward 1 minute
+Seek backward/forward 1 minute.
 
 <DT><KBD>mouse click</KBD>
 <DD>
-seek to percentage in file corresponding to fraction of width
+Seek to percentage in file corresponding to fraction of width.
 
 </DL>
 <P>
@@ -184,7 +193,7 @@ seek to percentage in file corresponding to fraction of width
 
 
 <P><HR><P>
-This document was generated on 13 May 2007 using
+This document was generated on 3 December 2008 using
 <A HREF="http://wwwinfo.cern.ch/dis/texi2html/">texi2html</A>&nbsp;1.56k.
 </BODY>
 </HTML>
