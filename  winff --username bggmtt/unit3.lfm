@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 499
+  Left = 351
   Height = 318
-  Top = 315
+  Top = 397
   Width = 384
   ActiveControl = Notebook1
   Caption = 'About WinFF'
@@ -16,7 +16,7 @@ object Form3: TForm3
     Height = 268
     Width = 384
     Align = alClient
-    PageIndex = 2
+    PageIndex = 0
     TabOrder = 0
     object Page1: TPage
       Caption = 'WinFF'
