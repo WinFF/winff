@@ -4,14 +4,14 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 0.44
+AppVerName=WinFF 0.45
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
-AppSupportURL=http://biggmatt.com/forums
+AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=0.4.4.0
+VersionInfoVersion=0.4.5.0
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
