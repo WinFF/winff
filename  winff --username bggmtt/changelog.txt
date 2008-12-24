@@ -1,6 +1,11 @@
 WinFF Copyright 2008 Matthew Weatherford
 http://www.winff.org
 
+v0.45
+-----
+Import/Export multiple presets in one file
+Presets updated for FFmpeg SVN R15824
+
 v0.44
 -----
 Resizable window (issue 24)
