@@ -55,6 +55,7 @@ type
     mitForums: TMenuItem;
     MenuItem9: TMenuItem;
     Notebook1: TNotebook;
+    OpenDialog2: TOpenDialog;
     optionsbtn: TBitBtn;
     PageControl1: TPageControl;
     Panel1: TPanel;
@@ -92,7 +93,8 @@ type
     procedure AspectratioChange(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
-    procedure categoryboxCloseUp(Sender: TObject);
+    procedure LaunchBrowser(URL:string);
+    procedure LaunchPdf(pdffile:string);
     procedure ChooseFolderBtnClick(Sender: TObject);
     procedure AddBtnClick(Sender: TObject);
     procedure ClearBtnClick(Sender: TObject);
@@ -738,11 +740,34 @@ begin
 
 end;
 
-procedure TForm1.categoryboxCloseUp(Sender: TObject);
+// launch browser
+procedure TForm1.launchbrowser(URL:string);
 begin
-
+{$ifdef linux}
+  exec('/usr/bin/firefox', URL);
+  If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', URL);
+  If Dosexitcode<>0 Then exec('/usr/bin/konqueror', URL);
+  If Dosexitcode<>0 Then Showmessage('More information can be found at ' + URL);
+  {$endif}
+  {$ifdef win32}
+  ShellExecute(self.Handle,'open',PChar(URL),nil,nil, SW_SHOWNORMAL);
+  {$endif}
 end;
 
+// launch pdf
+procedure TForm1.LaunchPdf(pdffile:string);
+begin
+  {$ifdef linux}
+  exec('/usr/bin/evince', pdffile);
+  If Dosexitcode<>0 Then exec('/usr/bin/kpdf', pdffile);
+  If Dosexitcode<>0 Then exec('/usr/bin/xpdf', pdffile);
+  If Dosexitcode<>0 Then exec('/usr/bin/acroread', pdffile);
+  If Dosexitcode<>0 Then Showmessage('More information can be found at http://www.winff.org');
+  {$endif}
+  {$ifdef win32}
+  ShellExecute(self.Handle,'open',PChar(pdffile),nil,nil, SW_SHOWNORMAL);
+  {$endif}
+end;
 
 // set a value in the config file
 procedure TForm1.setconfigvalue(key:string;value:string);
@@ -976,63 +1001,33 @@ end;
 procedure TForm1.mitDocsClick(Sender: TObject);
 var s : string;
 begin
-
   {$ifdef linux}
-  s := '/usr/share/docs/winff/WinFF.pdf.gz';
+  s := '/usr/share/doc/winff/WinFF.pdf.gz';
   if fileexists('/usr/share/docs/winff/WinFF.pdf') then s:='/usr/share/docs/winff/WinFF.pdf';
   if fileexists('/usr/share/winff/WinFF.pdf') then s:='/usr/share/winff/WinFF.pdf';
   if fileexists('/usr/share/winff/WinFF.pdf.gz') then s:='/usr/share/winff/WinFF.pdf.gz';
   if fileexists('/usr/share/doc/packages/winff/WinFF.pdf.gz') then s:='/usr/share/doc/packages/winff/WinFF.pdf.gz';
   if fileexists('/usr/share/doc/packages/winff/WinFF.pdf') then s:='/usr/share/doc/packages/winff/WinFF.pdf';
-  // code modified from CactusJukebox /
-  exec('/usr/bin/evince', s);
-  If Dosexitcode<>0 Then exec('/usr/bin/kpdf', s);
-  If Dosexitcode<>0 Then exec('/usr/bin/xpdf', s);
-  If Dosexitcode<>0 Then exec('/usr/bin/acroread', s);
-  If Dosexitcode<>0 Then Showmessage('More information can be found at http://www.winff.org');
   {$endif}
   {$ifdef win32}
   s := extraspath + 'WinFF.pdf';
-  ShellExecute(self.Handle,'open',PChar(s),nil,nil, SW_SHOWNORMAL);
   {$endif}
+  Launchpdf(s);
 end;
 
 //menu: Help Forums
 procedure TForm1.mitForumsClick(Sender: TObject);
 var s : string;
 begin
-  // code modified from CactusJukebox /
-  s := 'http://www.winff.org/forums/';
-  {$ifdef linux}
-  exec('/usr/bin/firefox', s);
-  If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', s);
-  If Dosexitcode<>0 Then exec('/usr/bin/konqueror', s);
-  If Dosexitcode<>0 Then Showmessage('More information can be found at ' + s);
-  {$endif}
-  {$ifdef win32}
-  ShellExecute(self.Handle,'open',PChar(s),nil,nil, SW_SHOWNORMAL);
-  {$endif}
+  launchbrowser('http://www.winff.org/forums/');
 end;
 
 //menu: Help Forums
 procedure TForm1.mitWinffClick(Sender: TObject);
 var s : string;
 begin
-  // code modified from CactusJukebox /
-  s := 'http://www.winff.org/';
-  {$ifdef linux}
-  exec('/usr/bin/firefox', s);
-  If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', s);
-  If Dosexitcode<>0 Then exec('/usr/bin/konqueror', s);
-  If Dosexitcode<>0 Then Showmessage('More information can be found at ' + s);
-  {$endif}
-  {$ifdef win32}
-  ShellExecute(self.Handle,'open',PChar(s),nil,nil, SW_SHOWNORMAL);
-  {$endif}
-
+  launchbrowser('http://www.winff.org/');
 end;
-
-
 
 // menu: about
 procedure TForm1.MenuItem2Click(Sender: TObject);
@@ -1049,9 +1044,10 @@ end;
 // menu: import preset
 procedure TForm1.importmenuClick(Sender: TObject);
 begin
-  OpenDialog1.Title:=rsSelectPresetFile;
-  if OpenDialog1.Execute then
-      importpresetfromfile(opendialog1.FileName);
+  OpenDialog2.Title:=rsSelectPresetFile;
+  opendialog2.InitialDir:=GetMydocumentsPath();
+  if OpenDialog2.Execute then
+     importpresetfromfile(opendialog2.FileName);
 
 end;
 
@@ -1426,7 +1422,10 @@ procedure tform1.importpresetfromfile(presetfilename: string);
 var
  importfile: txmldocument;
  importedpreset: tdomelement;
- i,j:integer;
+ i,j,reply,boxstyle:integer;
+ replaceall: boolean = false;
+ removepreset: boolean = false;
+ nodeexists:boolean = false;
  newnode,labelnode,paramsnode,extensionnode,categorynode,
   textl,textp,texte,textc, node,subnode: tdomnode;
  nodename,nodelabel,nodeparams,nodeext,nodecat, testchars:string;
@@ -1459,18 +1458,27 @@ begin
 
    nodename:= node.NodeName;
 
+   removepreset:=false;
+   nodeexists:=false;
    for i:= 0 to presets.ChildNodes.Count -1 do
-     if presets.ChildNodes.Item[i].NodeName = nodename then
-        begin
-         showmessage(Format(rsPresetAlreadyExist, ['"', nodename, '"']));
-         exit;
-        end;
+     if presets.ChildNodes.Item[i].NodeName = nodename then nodeexists := true;
+
+   if nodeexists then
+     begin
+       if replaceall=false then reply :=  MessageDlg ('Replace Preset', Format(rsPresetAlreadyExist, ['"', nodename, '"']),
+                                            mtConfirmation, [mbYes, mbNo, mbAll, mbCancel],0);
+       if reply=mrCancel then exit;
+       if reply=mrNo then continue;
+       if reply=mrAll then replaceall := true;
+       if (reply=mrYes) or (reply = mrAll) or (replaceall = true) then removepreset:=true;
+       if removepreset then presets.RemoveChild(presets.FindNode(nodename));
+     end;
 
    try
      nodelabel := node.FindNode('label').FindNode('#text').NodeValue;
    except
      begin
-       showmessage(rsPresetHasNoExt);
+       showmessage(rsPresethasnolabel);
        exit;
      end;
    end;
@@ -1489,7 +1497,6 @@ begin
          end;
      end;
 
-
    for i:= 0 to presets.ChildNodes.Count -1 do
      if presets.ChildNodes.Item[i].findnode('label').FindNode('#text').NodeValue = nodelabel then
         begin
@@ -1502,7 +1509,7 @@ begin
      nodeext := node.FindNode('extension').FindNode('#text').NodeValue;
    except
      begin
-       showmessage(rsPresethasnolabel);
+       showmessage(rsPresetHasNoExt);
        exit;
      end;
    end;
