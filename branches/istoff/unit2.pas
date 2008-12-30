@@ -318,7 +318,10 @@ procedure TForm2.importClick(Sender: TObject);
 var
  importfile: txmldocument;
  importedpreset: tdomelement;
- i,j:integer;
+ i,j,reply,boxstyle:integer;
+ replaceall: boolean = false;
+ removepreset: boolean = false;
+ nodeexists:boolean = false;
  newnode,labelnode,paramsnode,extensionnode, categorynode,
   textl,textp,texte, textc, node,subnode: tdomnode;
  nodename,nodelabel,nodeparams,nodeext, nodecategory, testchars:string;
@@ -354,12 +357,21 @@ begin
 
    nodename:= node.NodeName;
 
+   removepreset:=false;
+   nodeexists:=false;
    for i:= 0 to presets.ChildNodes.Count -1 do
-     if presets.ChildNodes.Item[i].NodeName = nodename then
-        begin
-         showmessage(Format(rsPresetAlreadyExist, ['"', nodename, '"']));
-         exit;
-        end;
+     if presets.ChildNodes.Item[i].NodeName = nodename then nodeexists := true;
+
+   if nodeexists then
+     begin
+       if replaceall=false then reply :=  MessageDlg ('Replace Preset', Format(rsPresetAlreadyExist, ['"', nodename, '"']),
+                                            mtConfirmation, [mbYes, mbNo, mbAll, mbCancel],0);
+       if reply=mrCancel then exit;
+       if reply=mrNo then continue;
+       if reply=mrAll then replaceall := true;
+       if (reply=mrYes) or (reply = mrAll) or (replaceall = true) then removepreset:=true;
+       if removepreset then presets.RemoveChild(presets.FindNode(nodename));
+     end;
 
    try
      nodelabel := node.FindNode('label').FindNode('#text').NodeValue;

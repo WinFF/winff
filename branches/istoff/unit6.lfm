@@ -1,7 +1,7 @@
 object Form6: TForm6
-  Left = 350
+  Left = 358
   Height = 320
-  Top = 286
+  Top = 312
   Width = 355
   HelpContext = 0
   Align = alNone
