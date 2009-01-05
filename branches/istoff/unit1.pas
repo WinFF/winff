@@ -27,6 +27,10 @@ type
     audbitrate: TEdit;
     audchannels: TEdit;
     audsamplingrate: TEdit;
+    btnMoveTop: TBitBtn;
+    btnMoveUp: TBitBtn;
+    btnMoveDown: TBitBtn;
+    btnMoveBottom: TBitBtn;
     categorybox: TComboBox;
     CheckBox2: TCheckBox;
     ChooseFolderBtn: TButton;
@@ -60,8 +64,10 @@ type
     PageControl1: TPageControl;
     Panel1: TPanel;
     Panel2: TPanel;
+    Panel3: TPanel;
     pass2: TCheckBox;
-    Play: TBitBtn;
+    PlayBtn: TBitBtn;
+    StartBtn: TBitBtn;
     pnlbottom: TPanel;
     pnlbottom2: TPanel;
     pnlMain: TPanel;
@@ -81,7 +87,6 @@ type
     MainMenu1: TMainMenu;
     OpenDialog1: TOpenDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
-    StartBtn: TBitBtn;
     tabPage1: TTabSheet;
     tabPage2: TPage;
     tabPage3: TPage;
@@ -91,6 +96,10 @@ type
     VidsizeX: TEdit;
     VidsizeY: TEdit;
     procedure AspectratioChange(Sender: TObject);
+    procedure btnMoveBottomClick(Sender: TObject);
+    procedure btnMoveDownClick(Sender: TObject);
+    procedure btnMoveTopClick(Sender: TObject);
+    procedure btnMoveUpClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
     procedure LaunchBrowser(URL:string);
@@ -116,7 +125,7 @@ type
     procedure mitForumsClick(Sender: TObject);
     procedure mitWinffClick(Sender: TObject);
     procedure pauseonfinishClick(Sender: TObject);
-    procedure PlayClick(Sender: TObject);
+    procedure PlayBtnClick(Sender: TObject);
     procedure RemoveBtnClick(Sender: TObject);
     function GetDeskTopPath() : string;
     function GetMydocumentsPath() : string ;
@@ -212,6 +221,14 @@ var
   rsMenuItem6='WinFF Website';
   rsMenuItem7='WinFF Forums';
 
+
+  // ListBox Arrows
+  rsMoveTop='';       //'Top';
+  rsMoveBottom='';    //'Bottom';
+  rsMoveUp='';        //'Up';
+  rsMoveDown='';      //'Down';
+
+
   rsimportmenu='Import Preset';
   rsshowoptions='Additional Options';
   rsOptions='Options';
@@ -287,7 +304,7 @@ begin
     shutdownonfinish.Caption:=rsshutdownonfinish;
     optionsbtn.Caption:=rsoptionsbtn;
     StartBtn.Caption:=rsstartbtn;
-    Play.Caption:=rsplay;
+    PlayBtn.Caption:=rsplay;
     ClearBtn.Caption:=rsclearbtn;
     RemoveBtn.Caption:=rsremovebtn;
     CheckBox2.Caption:=rscheckbox2;
@@ -318,9 +335,13 @@ begin
     tabPage2.Caption:=tabPage2caption;
     tabPage3.Caption:=tabPage3caption;
     tabPage4.Caption:=tabPage4caption;
+    btnMoveTop.Caption:=rsMoveTop;
+    btnMoveUp.Caption:=rsMoveUp;
+    btnMoveDown.Caption:=rsMoveDown;
+    btnMoveBottom.Caption:=rsMoveBottom;
 
 
-                    // start setup
+                    // PlayBtn setup
   {$IFDEF WIN32}
   ansicodepage:=getacp();
   presetspath :=GetappdataPath() + '\Winff\';
@@ -912,6 +933,81 @@ begin
 
 end;
 
+procedure TForm1.btnMoveBottomClick(Sender: TObject);
+var i,j,k : integer;
+    s : string;
+begin
+  k := filelist.items.count;
+  if k > 1 then
+  begin
+     i := filelist.ItemIndex;
+     if i < k -1 then
+     begin
+       s := filelist.items[i];
+       for j := i to k-2 do
+       begin
+         filelist.items[j] := filelist.items[j+1];
+       end;
+       filelist.items[k-1] := s;
+       filelist.itemindex := k-1;
+     end;
+  end;
+end;
+
+procedure TForm1.btnMoveDownClick(Sender: TObject);
+var i,j : integer;
+    s : string;
+begin
+  if filelist.Items.Count > 1 then
+  begin
+     i := filelist.ItemIndex;
+     if i < filelist.items.count -1 then
+     begin
+       s := filelist.items[i+1];
+       filelist.items[i+1] := filelist.items[i];
+       filelist.items[i] := s;
+       filelist.itemindex := i+1;
+     end;
+  end;
+end;
+
+procedure TForm1.btnMoveTopClick(Sender: TObject);
+var i,j : integer;
+    s : string;
+begin
+  if filelist.Items.Count > 1 then
+  begin
+     i := filelist.ItemIndex;
+     if i > 0 then
+     begin
+       s := filelist.items[i];
+       for j := i downto 1 do
+       begin
+         filelist.items[j] := filelist.items[j-1];
+       end;
+       filelist.items[0] := s;
+       filelist.itemindex := 0;
+     end;
+  end;
+end;
+
+procedure TForm1.btnMoveUpClick(Sender: TObject);
+var i,j : integer;
+    s : string;
+begin
+  if filelist.Items.Count > 1 then
+  begin
+     i := filelist.ItemIndex;
+     if i > 0 then
+     begin
+       s := filelist.items[i-1];
+       filelist.items[i-1] := filelist.items[i];
+       filelist.items[i] := s;
+       filelist.itemindex := i-1;
+     end;
+  end;
+end;
+
 
 // drop files into list
 procedure TForm1.FormDropFiles(Sender: TObject; const FileNames: array of String
@@ -1148,8 +1244,8 @@ begin
      displaycmdline.Checked:= not displaycmdline.Checked;
 end;
 
-// play the selected file
-procedure TForm1.PlayClick(Sender: TObject);
+// PlayBtn the selected file
+procedure TForm1.PlayBtnClick(Sender: TObject);
 var
 selecteditem,i : integer;
 ffplayfilename,filenametoplay: string;
@@ -1217,7 +1313,7 @@ end;
 
 
 
-// Start Conversions
+// PlayBtn Conversions
 procedure TForm1.StartBtnClick(Sender: TObject);
 var
 i,j : integer;
@@ -1301,10 +1397,17 @@ begin                                     // get setup
            {$ifdef win32}'.bat'{$endif}
            {$ifdef unix}'.sh'{$endif} ;
 
+
    for i:=0 to filelist.Items.Count - 1 do
      begin
        filename := filelist.items[i];
        basename := extractfilename(filename);
+//
+//     would be nice to do the following to indicate progress through the batch
+//       filelist.itemindex := i;
+//       form1.Caption := fc + ' - Processing file ' + intTostr(i) + ' of ' + IntToStr (filelist.items.count -1) + ' - ' + basename;
+//
+       application.processmessages;
        for j:= length(basename) downto 1  do
          begin
            if basename[j] = #46 then
