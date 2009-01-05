@@ -325,8 +325,8 @@ object Form1: TForm1
   Position = poDefault
   LCLVersion = '0.9.26'
   object Label2: TLabel
-    Height = 17
-    Width = 4
+    Height = 18
+    Width = 5
     ParentColor = False
   end
   object pnlMain: TPanel
@@ -1430,14 +1430,14 @@ object Form1: TForm1
             Top = 25
             Width = 80
             OnChange = AspectratioChange
-            TabOrder = 3
+            TabOrder = 4
           end
           object VidsizeY: TEdit
             Left = 265
             Height = 23
             Top = 25
             Width = 32
-            TabOrder = 4
+            TabOrder = 3
           end
           object pass2: TCheckBox
             Left = 6
