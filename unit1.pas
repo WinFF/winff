@@ -180,7 +180,7 @@ var
   usechcp: string;
   {$ENDIF}
   extraspath: string;
-  lastpreset: string;
+ lastpreset: string;
   presetsfile: Txmldocument;
   presetspath: string;
   configpath: string;
@@ -934,23 +934,36 @@ begin
 end;
 
 procedure TForm1.btnMoveBottomClick(Sender: TObject);
-var i,j,k : integer;
+var i,j,k,l : integer;
     s : string;
+    tmp,tmp2 : tstringlist;
 begin
-  k := filelist.items.count;
-  if k > 1 then
+  j := filelist.Items.Count;
+  if j > 1 then
   begin
-     i := filelist.ItemIndex;
-     if i < k -1 then
-     begin
-       s := filelist.items[i];
-       for j := i to k-2 do
-       begin
-         filelist.items[j] := filelist.items[j+1];
-       end;
-       filelist.items[k-1] := s;
-       filelist.itemindex := k-1;
-     end;
+    tmp := tstringlist.create;
+    tmp2 := tstringlist.create;
+    tmp.Clear;
+    tmp2.Clear;
+    k := filelist.SelCount;
+    if k > 0 then
+    begin
+      for i := 0 to j-1 do
+      begin
+        if filelist.Selected[i] = true then
+        begin
+          tmp.add(filelist.items[i]);
+        end else
+        begin
+          tmp2.add(filelist.items[i]);
+        end;
+      end;
+      filelist.clear;
+      filelist.Items.AddStrings(tmp2);
+      filelist.Items.AddStrings(tmp);
+    end;
+    tmp2.free;
+    tmp.free;
   end;
 end;
 
@@ -972,22 +985,36 @@ begin
 end;
 
 procedure TForm1.btnMoveTopClick(Sender: TObject);
-var i,j : integer;
+var i,j,k,l : integer;
     s : string;
+    tmp,tmp2 : tstringlist;
 begin
-  if filelist.Items.Count > 1 then
+  j := filelist.Items.Count;
+  if j > 1 then
   begin
-     i := filelist.ItemIndex;
-     if i > 0 then
-     begin
-       s := filelist.items[i];
-       for j := i downto 1 do
-       begin
-         filelist.items[j] := filelist.items[j-1];
-       end;
-       filelist.items[0] := s;
-       filelist.itemindex := 0;
-     end;
+    tmp := tstringlist.create;
+    tmp2 := tstringlist.create;
+    tmp.Clear;
+    tmp2.Clear;
+    k := filelist.SelCount;
+    if k > 0 then
+    begin
+      for i := 0 to j-1 do
+      begin
+        if filelist.Selected[i] = true then
+        begin
+          tmp.add(filelist.items[i]);
+        end else
+        begin
+          tmp2.add(filelist.items[i]);
+        end;
+      end;
+      filelist.clear;
+      filelist.Items.AddStrings(tmp);
+      filelist.Items.AddStrings(tmp2);
+    end;
+    tmp2.free;
+    tmp.free;
   end;
 end;
 
