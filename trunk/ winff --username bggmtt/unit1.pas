@@ -399,6 +399,7 @@ begin
   if terminal = '' then
      begin
        terminal := '/usr/bin/xterm';
+       if fileexists('/usr/bin/x-terminal-emulator') then terminal:='/usr/bin/x-terminal-emulator';
        setconfigvalue('unix/terminal',terminal);
      end;
      

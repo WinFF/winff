@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 118
+  Left = 126
   Height = 688
-  Top = 171
+  Top = 179
   Width = 952
   HelpContext = 0
   ActiveControl = Notebook1
@@ -13,7 +13,7 @@ object Form1: TForm1
   ChildSizing.HorizontalSpacing = 0
   ChildSizing.VerticalSpacing = 0
   ChildSizing.ControlsPerLine = 0
-  ClientHeight = 656
+  ClientHeight = 658
   ClientWidth = 952
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
@@ -335,9 +335,9 @@ object Form1: TForm1
   LCLVersion = '0.9.26'
   object Label2: TLabel
     Left = 0
-    Height = 15
+    Height = 16
     Top = 0
-    Width = 2
+    Width = 3
     HelpContext = 0
     Align = alNone
     Alignment = taLeftJustify
@@ -352,7 +352,7 @@ object Form1: TForm1
   end
   object pnlMain: TPanel
     Left = 0
-    Height = 439
+    Height = 441
     Top = 54
     Width = 952
     HelpContext = 0
@@ -372,14 +372,14 @@ object Form1: TForm1
     ChildSizing.HorizontalSpacing = 0
     ChildSizing.VerticalSpacing = 0
     ChildSizing.ControlsPerLine = 0
-    ClientHeight = 439
+    ClientHeight = 441
     ClientWidth = 952
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
       Left = 0
-      Height = 299
+      Height = 301
       Top = 0
       Width = 952
       HelpContext = 0
@@ -404,7 +404,7 @@ object Form1: TForm1
     object pnlbottom: TPanel
       Left = 0
       Height = 140
-      Top = 299
+      Top = 301
       Width = 952
       HelpContext = 0
       Align = alBottom
@@ -450,13 +450,13 @@ object Form1: TForm1
           ChildSizing.HorizontalSpacing = 0
           ChildSizing.VerticalSpacing = 0
           ChildSizing.ControlsPerLine = 0
-          ClientHeight = 100
+          ClientHeight = 102
           ClientWidth = 946
           object Label1: TLabel
             Left = 13
             Height = 17
             Top = 11
-            Width = 95
+            Width = 127
             HelpContext = 0
             Align = alNone
             Alignment = taLeftJustify
@@ -474,7 +474,7 @@ object Form1: TForm1
             Left = 14
             Height = 17
             Top = 82
-            Width = 94
+            Width = 125
             HelpContext = 0
             Align = alNone
             Alignment = taLeftJustify
@@ -492,7 +492,7 @@ object Form1: TForm1
             Left = 13
             Height = 17
             Top = 43
-            Width = 95
+            Width = 127
             HelpContext = 0
             Align = alNone
             Alignment = taLeftJustify
@@ -1223,7 +1223,7 @@ object Form1: TForm1
   object pnlbottom2: TPanel
     Left = 0
     Height = 163
-    Top = 493
+    Top = 495
     Width = 952
     HelpContext = 0
     Align = alBottom
@@ -1264,13 +1264,13 @@ object Form1: TForm1
       ChildSizing.HorizontalSpacing = 0
       ChildSizing.VerticalSpacing = 0
       ChildSizing.ControlsPerLine = 0
-      ClientHeight = 136
+      ClientHeight = 138
       ClientWidth = 946
       Ctl3D = False
       TabOrder = 0
       object Notebook1: TNotebook
         Left = 0
-        Height = 136
+        Height = 138
         Top = 0
         Width = 946
         HelpContext = 0
@@ -1294,12 +1294,12 @@ object Form1: TForm1
           ChildSizing.VerticalSpacing = 0
           ChildSizing.ControlsPerLine = 0
           ClientWidth = 942
-          ClientHeight = 98
+          ClientHeight = 102
           object Label3: TLabel
             Left = 6
             Height = 17
             Top = 5
-            Width = 105
+            Width = 140
             HelpContext = 0
             Align = alNone
             Alignment = taLeftJustify
@@ -1317,7 +1317,7 @@ object Form1: TForm1
             Left = 219
             Height = 17
             Top = 5
-            Width = 80
+            Width = 107
             HelpContext = 0
             Align = alNone
             Alignment = taLeftJustify
@@ -1335,7 +1335,7 @@ object Form1: TForm1
             Left = 307
             Height = 17
             Top = 5
-            Width = 93
+            Width = 124
             HelpContext = 0
             Align = alNone
             Alignment = taLeftJustify
@@ -1351,9 +1351,9 @@ object Form1: TForm1
           end
           object Label9: TLabel
             Left = 253
-            Height = 10
+            Height = 14
             Top = 25
-            Width = 8
+            Width = 10
             HelpContext = 0
             Align = alNone
             Alignment = taLeftJustify
@@ -1374,7 +1374,7 @@ object Form1: TForm1
             Left = 124
             Height = 17
             Top = 5
-            Width = 86
+            Width = 114
             HelpContext = 0
             Align = alNone
             Alignment = taLeftJustify
@@ -1472,9 +1472,9 @@ object Form1: TForm1
           end
           object pass2: TCheckBox
             Left = 6
-            Height = 28
+            Height = 26
             Top = 64
-            Width = 72
+            Width = 89
             HelpContext = 0
             Align = alNone
             BorderSpacing.Left = 0
@@ -1493,9 +1493,9 @@ object Form1: TForm1
           end
           object CheckBox2: TCheckBox
             Left = 123
-            Height = 28
+            Height = 26
             Top = 64
-            Width = 107
+            Width = 134
             HelpContext = 0
             Align = alNone
             BorderSpacing.Left = 0
@@ -1522,7 +1522,7 @@ object Form1: TForm1
           ChildSizing.VerticalSpacing = 0
           ChildSizing.ControlsPerLine = 0
           ClientWidth = 946
-          ClientHeight = 143
+          ClientHeight = 136
           object Label7: TLabel
             Left = 9
             Height = 13
@@ -1635,7 +1635,7 @@ object Form1: TForm1
           ChildSizing.VerticalSpacing = 0
           ChildSizing.ControlsPerLine = 0
           ClientWidth = 946
-          ClientHeight = 143
+          ClientHeight = 136
           object commandlineparams: TEdit
             Left = 1
             Height = 24
