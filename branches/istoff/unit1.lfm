@@ -1,12 +1,12 @@
 object Form1: TForm1
   Left = 265
-  Height = 688
+  Height = 517
   Top = 162
   Width = 952
   ActiveControl = Notebook1
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 664
+  ClientHeight = 493
   ClientWidth = 952
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
@@ -325,26 +325,27 @@ object Form1: TForm1
   Position = poDefault
   LCLVersion = '0.9.26'
   object Label2: TLabel
-    Height = 21
-    Width = 8
+    Height = 22
+    Width = 9
     ParentColor = False
   end
   object pnlMain: TPanel
-    Height = 447
+    Height = 276
     Top = 54
     Width = 952
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 447
+    ClientHeight = 276
     ClientWidth = 952
+    Constraints.MinHeight = 276
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
-      Left = 48
-      Height = 307
-      Width = 904
+      Left = 32
+      Height = 136
+      Width = 920
       Align = alClient
       MultiSelect = True
       OnDblClick = PlayBtnClick
@@ -354,7 +355,7 @@ object Form1: TForm1
     end
     object pnlbottom: TPanel
       Height = 140
-      Top = 307
+      Top = 136
       Width = 952
       Align = alBottom
       ClientHeight = 140
@@ -441,18 +442,17 @@ object Form1: TForm1
       end
     end
     object Panel3: TPanel
-      Height = 307
-      Width = 48
+      Height = 136
+      Width = 32
       Align = alLeft
-      ClientHeight = 307
-      ClientWidth = 48
+      ClientHeight = 136
+      ClientWidth = 32
       ParentColor = False
       TabOrder = 2
       object btnMoveTop: TBitBtn
-        Left = 6
         Height = 30
-        Top = 18
-        Width = 32
+        Top = 2
+        Width = 30
         Caption = 'btnMoveTop'
         Glyph.Data = {
           36090000424D3609000000000000360000002800000018000000180000000100
@@ -535,10 +535,9 @@ object Form1: TForm1
         TabOrder = 0
       end
       object btnMoveUp: TBitBtn
-        Left = 6
         Height = 30
-        Top = 50
-        Width = 32
+        Top = 34
+        Width = 30
         Caption = 'btnMoveUp'
         Glyph.Data = {
           36090000424D3609000000000000360000002800000018000000180000000100
@@ -621,10 +620,9 @@ object Form1: TForm1
         TabOrder = 1
       end
       object btnMoveDown: TBitBtn
-        Left = 6
         Height = 30
-        Top = 82
-        Width = 32
+        Top = 66
+        Width = 30
         Caption = 'btnMoveDown'
         Glyph.Data = {
           36090000424D3609000000000000360000002800000018000000180000000100
@@ -707,10 +705,9 @@ object Form1: TForm1
         TabOrder = 2
       end
       object btnMoveBottom: TBitBtn
-        Left = 6
         Height = 30
-        Top = 114
-        Width = 32
+        Top = 98
+        Width = 30
         Caption = 'btnMoveBottom'
         Glyph.Data = {
           36090000424D3609000000000000360000002800000018000000180000000100
@@ -1332,7 +1329,7 @@ object Form1: TForm1
   end
   object pnlbottom2: TPanel
     Height = 163
-    Top = 501
+    Top = 330
     Width = 952
     Align = alBottom
     ClientHeight = 163
@@ -1358,8 +1355,8 @@ object Form1: TForm1
         TabOrder = 0
         object tabPage2: TPage
           Caption = 'Video Settings'
-          ClientWidth = 942
-          ClientHeight = 114
+          ClientWidth = 946
+          ClientHeight = 144
           object Label3: TLabel
             Left = 6
             Height = 13
