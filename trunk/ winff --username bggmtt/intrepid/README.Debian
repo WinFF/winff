@@ -7,4 +7,11 @@ The version of ffmpeg in Ubuntu can at this moment convert all the
 formats in the current presents, only when libavcodec-unstripped-51
 is installed (via (k)ubuntu-restricted-extras).
 
-Paul Gevers, November 1, 2008
+For you convenience other versions of the presets are provided in 
+/usr/share/winff/ and should replace or be merged with your
+~/.winff/presets.xml (and /usr/share/winff/presets.xml for system wide
+update). Unfortunately the API of ffmpeg changes once in a while, so
+you will have to check which version of libavcodec you have. The other
+presets files are named after the supported libavcodec.
+
+Paul Gevers, January 9, 2009

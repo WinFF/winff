@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <presets>
-  <CDWavStereo>
+<CDWavStereo>
     <label>Wav for CD</label>
     <params>-vn -ar 44100</params>
     <extension>wav</extension>
@@ -198,6 +198,12 @@
     <extension>ac3</extension>
     <category>Audio</category>
   </ac3dvd384>
+  <amraudio>
+    <label>AMR Audio</label>
+    <params>-acodec libamr_nb -ar 8000 -ac 1 -ab 32</params>
+    <extension>amr</extension>
+    <category>Mobile Phones</category>
+  </amraudio>
   <divx>
     <label>MS Compatible AVI</label>
     <params>-f avi -acodec libmp3lame -vcodec msmpeg4 -ab 192</params>
@@ -390,6 +396,12 @@
     <extension>3g2</extension>
     <category>Mobile Phones</category>
   </threeg2>
+  <threegp>
+    <label>3gp</label>
+    <params>-acodec libamr_nb  -ac 1  -vcodec h263 -s qcif -ar 8000 -r 25 -ab 12.2k</params>
+    <extension>3gp</extension>
+    <category>Mobile Phones</category>
+  </threegp>
   <wma>
     <label>WMA</label>
     <params>-vn  -acodec wmav2</params>

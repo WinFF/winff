@@ -1,3 +1,21 @@
+winff (0.45.1-1ubuntu1~ppa2j) jaunty; urgency=low
+
+  * Added debian/presets files for different versions of libavcodec
+    and added description to README.Debian.
+  Missing in previous changelog entry:
+  * Added two binary file types to the clean-up line in debian/rules
+  * Removed debian/winff.1 (now upstream)
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 09 Jan 2009 12:01:47 +0100
+
+winff (0.45.1-1ubuntu1~ppa1j) jaunty; urgency=low
+
+  * New upstream release (dropped patches)
+  * Added dependency on xterm (Closes: #510156)
+  * Added note to the long description about libavcodec.
+
+ -- Paul Gevers <paul@climbing.nl>  Thu, 08 Jan 2009 21:26:12 +0100
+
 winff (0.43-2ubuntu2~ppa3j) jaunty; urgency=low
 
   * Updated debian/winff.desktop to use the GenericName properly.

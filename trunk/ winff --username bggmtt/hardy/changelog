@@ -1,3 +1,22 @@
+winff (0.45.1-0ubuntu1~ppa2h) hardy; urgency=low
+
+  * Replaced debian/winff.1 with winff.1 in debian/rules
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 09 Jan 2009 13:56:00 +0100
+
+winff (0.45.1-0ubuntu1~ppa1h) hardy; urgency=low
+
+  * New upstream release
+  * Removed absolute path and extension from debian/desktop
+  * Added dependency on xterm or x-terminal-emulator (Closes: #510156)
+  * Replaced debian/presets_new-style.xml with versions appropriate
+    for different versions of libavcodec and added description to 
+    README.Debian.
+  * Added two binary file types to the clean-up line in debian/rules
+  * Removed debian/winff.1 (now upstream)
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 09 Jan 2009 11:02:13 +0100
+
 winff (0.43-0ubuntu1~ppa3h) hardy; urgency=low
 
   * Changes description to include "graphical"
