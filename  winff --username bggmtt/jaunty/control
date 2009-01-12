@@ -4,14 +4,13 @@ Priority: extra
 Maintainer: Paul Gevers <paul@climbing.nl>
 Build-Depends: debhelper (>= 5),
                lazarus-ide,
-               fpc (>= 2.2.2-3),
-               dpatch
+               fpc (>= 2.2.2-3)
 Standards-Version: 3.8.0
 Homepage: http://www.winff.org/
 
 Package: winff
 Architecture: any
-Depends: ffmpeg, ${shlibs:Depends}
+Depends: ffmpeg, xterm | x-terminal-emulator, ${shlibs:Depends}
 Recommends: ubuntu-restricted-extras | kubuntu-restricted-extras |
  xubuntu-restricted-extras
 Description: graphical video and audio batch converter using ffmpeg
@@ -25,3 +24,8 @@ Description: graphical video and audio batch converter using ffmpeg
  common formats and devices. These presets are intended to hit the
  "sweet spot" for each individual codec. They have been written with a
  tip of the balance to quality.
+ .
+ For most presets to work, it is necessary to have the unstripped version
+ of the libavcodec in the multiverse repository, which can be obtained by
+ installing ubuntu-restricted-extras or kubuntu-restricted-extras or
+ xubuntu-restricted-extras as suggested by this package.

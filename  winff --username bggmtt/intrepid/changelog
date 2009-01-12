@@ -1,3 +1,15 @@
+winff (0.45.1-0ubuntu1~ppa1i) intrepid; urgency=low
+
+  * New upstream release
+  * Removed absolute path and extension from debian/desktop
+  * Added dependency on xterm or x-terminal-emulator (Closes: #510156)
+  * Added debian/presets files for different versions of libavcodec
+    and added description to README.Debian.
+  * Added two binary file types to the clean-up line in debian/rules
+  * Removed debian/winff.1 (now upstream)
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 09 Jan 2009 12:01:47 +0100
+
 winff (0.43-0ubuntu1~ppa3i) intrepid; urgency=low
 
   * Updated debian/README.debian

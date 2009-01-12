@@ -10,7 +10,7 @@ Homepage: http://www.winff.org/
 
 Package: winff
 Architecture: any
-Depends: ffmpeg, ${shlibs:Depends}
+Depends: ffmpeg, xterm | x-terminal-emulator, ${shlibs:Depends}
 Description: graphical video and audio batch converter using ffmpeg
  WinFF is a graphical user interface for FFmpeg. It will convert
  almost any video file that FFmpeg will convert. WinFF does multiple

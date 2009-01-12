@@ -1,11 +1,12 @@
 [Desktop Entry]
 Version=1.0
-Name=Video converter (WinFF)
+Name=WinFF
 Comment=GUI for FFMPEG
-Exec=/usr/bin/winff
-Icon=winff.xpm
+Exec=winff
+Icon=winff
 Terminal=false
 Type=Application
 Categories=AudioVideo;AudioVideoEditing;GTK
-GenericName[en]=GUI for FFMPEG
-#Comment[en]=http://www.winff.org/
+GenericName=Video converter
+GenericName[en]=Video converter
+GenericName[nl]=Video converteerder
