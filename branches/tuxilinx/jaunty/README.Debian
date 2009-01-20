@@ -1,0 +1,10 @@
+Not all the original presets that come with WinFF work with the Debian
+version of ffmpeg. Therefore, a filtered version is provided as a
+standard. The original presets are still provided in 
+/usr/share/winff/presets-orig.xml and can be loaded into the program.
+
+The version of ffmpeg in Ubuntu can at this moment convert all the
+formats in the current presents, only when libavcodec-unstripped-##
+is installed (via (k)ubuntu-restricted-extras).
+
+Paul Gevers, November 28, 2008
