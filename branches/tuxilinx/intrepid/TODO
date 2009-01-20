@@ -1,7 +1,0 @@
-- edit preset files to contain -me_method instead of -me
-    Hardy's ffmpeg does not appear to support this. However, no preset is present that has this. So it is only relevant in the other presets files.
-- look into flag: +trell (replace with -trellis 1 ??)
-- issue 18: had 2 extra presets: see if they work on Ubuntu
-- issue 18: had extra options for x264HQ...
-
-- issue 22: intrepid appears to have other libnames
