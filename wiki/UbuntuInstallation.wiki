@@ -9,7 +9,7 @@ Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibu
 
 = Details Winff =
 
-The Ubuntu repositories come in two flavors. We provide our *signed* repository at [http://winff.org] or you can use the *unsigned* repository at [https://launchpad.net/~paul-climbing/+archive Launchpad]. We have not received any complains about our prive repo, so that is recommended, but for redundancy we mention Launchpad as well.
+The Ubuntu repositories come in two flavors. We provide our repository at [http://winff.org] or you can use the repository at [https://launchpad.net/~paul-climbing/+archive Launchpad]. We have not received any complains about our prive repo, so that is recommended, but for redundancy we mention Launchpad as well (however the later one might contain experimental packages).
 
 I describe to procedures, one using the command line, the other using synaptic. First the command line.
 
@@ -52,7 +52,7 @@ sudo apt-get update && sudo apt-get install winff
 (1) `deb http://winff.org/ubuntu intrepid universe`
 _(or if you prefer the PPA:)_ 
 `deb http://ppa.launchpad.net/paul-climbing/ubuntu intrepid main`
-(replace intrepid with your release)  Unfortunately the packages in the PPA are unsigned at the moment so you will have to accept the warning given by your package manager if you use those.
+(replace intrepid with your release)
 
 == Synaptic ==
 
