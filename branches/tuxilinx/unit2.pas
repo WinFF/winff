@@ -96,6 +96,7 @@ resourcestring
   rsLabelMustBeUnique = 'Label must be unique.';
   rsCreatePreset = 'Create Preset:';
   rsRemovePreset = 'Remove Preset:';
+  rsReplacePreset = 'Replace Preset';
 
 implementation
 
@@ -364,7 +365,7 @@ begin
 
    if nodeexists then
      begin
-       if replaceall=false then reply :=  MessageDlg ('Replace Preset', Format(rsPresetAlreadyExist, ['"', nodename, '"']),
+       if replaceall=false then reply :=  MessageDlg (rsReplacePreset, Format(rsPresetAlreadyExist, ['"', nodename, '"']),
                                             mtConfirmation, [mbYes, mbNo, mbAll, mbCancel],0);
        if reply=mrCancel then exit;
        if reply=mrNo then continue;
