@@ -11,7 +11,6 @@
       <ActiveEditorIndexAtStart Value="1"/>
     </General>
     <i18n>
-      <EnableI18N Value="True"/>
       <OutDir Value="..\..\"/>
     </i18n>
     <VersionInfo>
