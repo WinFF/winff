@@ -211,7 +211,8 @@ var
   rsMenuItem5='Preferences';
   rsMenuItem6='WinFF Website';
   rsMenuItem7='WinFF Forums';
-
+  rsmitdocs='Documentation';
+  rsmitabout='About';
   rsimportmenu='Import Preset';
   rsshowoptions='Additional Options';
   rsOptions='Options';
@@ -225,6 +226,7 @@ var
   rsLabel8='Sample Rate';
   rsLabel4='Frame Rate';
   rsLabel3='Video Bitrate';
+  rslabel11='Output Folder';
   rsGroupBox1='Additional Options';
   rsLabel2='Output Folder';
   rsLabel1='Convert To ...';
@@ -299,6 +301,8 @@ begin
     MenuItem5.Caption:=rsmenuitem5;
     mitWinff.Caption := rsmenuitem6;
     mitForums.Caption := rsmenuitem7;
+    mitDocs.Caption:=rsmitdocs;
+    mitabout.Caption:=rsmitabout;
     importmenu.Caption:=rsimportmenu;
     showoptions.Caption:=rsshowoptions;
     Options.Caption:=rsoptions;
@@ -311,6 +315,7 @@ begin
     Label4.Caption:=rslabel4;
     Label3.Caption:=rslabel3;
     Label19.Caption:=rslabel19;
+    label11.Caption:=rslabel11;
     GroupBox1.Caption:=rsgroupbox1;
     Label1.Caption:=rslabel1;
     Label2.Caption:=rslabel2;
