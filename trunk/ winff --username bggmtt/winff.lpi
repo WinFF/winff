@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <CONFIG>
   <ProjectOptions>
-    <PathDelim Value="/"/>
+    <PathDelim Value="\"/>
     <Version Value="6"/>
     <General>
       <MainUnit Value="0"/>
-      <IconPath Value="./"/>
+      <IconPath Value=".\"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
-      <ActiveEditorIndexAtStart Value="0"/>
+      <ActiveEditorIndexAtStart Value="1"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
@@ -21,6 +21,7 @@
     </VersionInfo>
     <PublishOptions>
       <Version Value="2"/>
+      <DestinationDirectory Value="$(TestDir)\publishedproject\"/>
       <IgnoreBinaries Value="False"/>
       <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
       <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
@@ -28,7 +29,7 @@
     <RunParams>
       <local>
         <FormatVersion Value="1"/>
-        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
       </local>
     </RunParams>
     <RequiredPackages Count="2">
@@ -58,8 +59,8 @@
         <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit1.lrs"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="21" Y="402"/>
-        <TopLine Value="378"/>
+        <CursorPos X="29" Y="232"/>
+        <TopLine Value="221"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Loaded Value="True"/>
@@ -71,12 +72,12 @@
         <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit2.lrs"/>
         <UnitName Value="Unit2"/>
-        <CursorPos X="10" Y="374"/>
-        <TopLine Value="314"/>
+        <CursorPos X="37" Y="81"/>
+        <TopLine Value="60"/>
         <EditorIndex Value="1"/>
         <UsageCount Value="210"/>
         <Bookmarks Count="1">
-          <Item0 X="3" Y="469" ID="1"/>
+          <Item0 X="3" Y="471" ID="1"/>
         </Bookmarks>
         <Loaded Value="True"/>
       </Unit2>
@@ -94,32 +95,32 @@
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
-        <Filename Value="usr/share/lazarus/lcl/include/application.inc"/>
+        <Filename Value="usr\share\lazarus\lcl\include\application.inc"/>
         <CursorPos X="1" Y="315"/>
         <TopLine Value="286"/>
         <UsageCount Value="3"/>
       </Unit4>
       <Unit5>
-        <Filename Value="usr/share/lazarus/lcl/interfaces/gtk/gtkobject.inc"/>
+        <Filename Value="usr\share\lazarus\lcl\interfaces\gtk\gtkobject.inc"/>
         <CursorPos X="1" Y="1912"/>
         <TopLine Value="1883"/>
         <UsageCount Value="3"/>
       </Unit5>
       <Unit6>
-        <Filename Value="usr/share/lazarus/lcl/interfaces/gtk/gtkproc.inc"/>
+        <Filename Value="usr\share\lazarus\lcl\interfaces\gtk\gtkproc.inc"/>
         <CursorPos X="1" Y="3204"/>
         <TopLine Value="3177"/>
         <UsageCount Value="3"/>
       </Unit6>
       <Unit7>
-        <Filename Value="DOCUME~1/matt/LOCALS~1/Temp/testcompileroptions.pas"/>
+        <Filename Value="DOCUME~1\matt\LOCALS~1\Temp\testcompileroptions.pas"/>
         <UnitName Value="testcompileroptions"/>
         <CursorPos X="1" Y="1"/>
         <TopLine Value="1"/>
         <UsageCount Value="3"/>
       </Unit7>
       <Unit8>
-        <Filename Value="DOCUME~1/matt/LOCALS~1/Temp/testcompileroptions1.pas"/>
+        <Filename Value="DOCUME~1\matt\LOCALS~1\Temp\testcompileroptions1.pas"/>
         <UnitName Value="testcompileroptions1"/>
         <CursorPos X="1" Y="1"/>
         <TopLine Value="1"/>
@@ -152,33 +153,33 @@
         <Loaded Value="True"/>
       </Unit10>
       <Unit11>
-        <Filename Value="usr/share/lazarus/lcl/lclproc.pas"/>
+        <Filename Value="usr\share\lazarus\lcl\lclproc.pas"/>
         <UnitName Value="LCLProc"/>
         <CursorPos X="1" Y="786"/>
         <TopLine Value="771"/>
         <UsageCount Value="5"/>
       </Unit11>
       <Unit12>
-        <Filename Value="usr/share/lazarus/lcl/interfaces/gtk2/gtk2int.pas"/>
+        <Filename Value="usr\share\lazarus\lcl\interfaces\gtk2\gtk2int.pas"/>
         <UnitName Value="Gtk2Int"/>
         <CursorPos X="1" Y="387"/>
         <TopLine Value="372"/>
         <UsageCount Value="5"/>
       </Unit12>
       <Unit13>
-        <Filename Value="usr/share/lazarus/lcl/include/customlistbox.inc"/>
+        <Filename Value="usr\share\lazarus\lcl\include\customlistbox.inc"/>
         <CursorPos X="1" Y="493"/>
         <TopLine Value="478"/>
         <UsageCount Value="5"/>
       </Unit13>
       <Unit14>
-        <Filename Value="usr/share/lazarus/lcl/include/wincontrol.inc"/>
+        <Filename Value="usr\share\lazarus\lcl\include\wincontrol.inc"/>
         <CursorPos X="1" Y="4468"/>
         <TopLine Value="4453"/>
         <UsageCount Value="5"/>
       </Unit14>
       <Unit15>
-        <Filename Value="usr/share/lazarus/lcl/interfaces/gtk2/gtk2wsstdctrls.pp"/>
+        <Filename Value="usr\share\lazarus\lcl\interfaces\gtk2\gtk2wsstdctrls.pp"/>
         <UnitName Value="Gtk2WSStdCtrls"/>
         <CursorPos X="1" Y="293"/>
         <TopLine Value="278"/>
@@ -199,21 +200,21 @@
         <Loaded Value="True"/>
       </Unit16>
       <Unit17>
-        <Filename Value="../../../../usr/lib/lazarus/lcl/interfaces/gtk2/interfaces.pas"/>
+        <Filename Value="..\..\..\..\usr\lib\lazarus\lcl\interfaces\gtk2\interfaces.pas"/>
         <UnitName Value="Interfaces"/>
         <CursorPos X="1" Y="1"/>
         <TopLine Value="3"/>
         <UsageCount Value="8"/>
       </Unit17>
       <Unit18>
-        <Filename Value="../../../../usr/lib/lazarus/ide/lazarus.pp"/>
+        <Filename Value="..\..\..\..\usr\lib\lazarus\ide\lazarus.pp"/>
         <UnitName Value="Lazarus"/>
         <CursorPos X="1" Y="1"/>
         <TopLine Value="1"/>
         <UsageCount Value="8"/>
       </Unit18>
       <Unit19>
-        <Filename Value="../../../../usr/lib/lazarus/lcl/interfaces/qt/qt4.pas"/>
+        <Filename Value="..\..\..\..\usr\lib\lazarus\lcl\interfaces\qt\qt4.pas"/>
         <UnitName Value="qt4"/>
         <CursorPos X="1" Y="10946"/>
         <TopLine Value="10907"/>
@@ -227,60 +228,60 @@
         <SyntaxHighlighter Value="LFM"/>
       </Unit20>
       <Unit21>
-        <Filename Value="../../../../usr/lib/lazarus/lcl/interfaces/gtk2/gtk2int.pas"/>
+        <Filename Value="..\..\..\..\usr\lib\lazarus\lcl\interfaces\gtk2\gtk2int.pas"/>
         <UnitName Value="Gtk2Int"/>
         <CursorPos X="79" Y="15"/>
         <TopLine Value="4"/>
         <UsageCount Value="17"/>
       </Unit21>
       <Unit22>
-        <Filename Value="../../../../usr/lib/lazarus/lcl/include/customform.inc"/>
+        <Filename Value="..\..\..\..\usr\lib\lazarus\lcl\include\customform.inc"/>
         <CursorPos X="1" Y="627"/>
         <TopLine Value="608"/>
         <UsageCount Value="14"/>
       </Unit22>
       <Unit23>
-        <Filename Value="../../../../usr/share/fpcsrc/packages/fcl-xml/src/xmlread.pp"/>
+        <Filename Value="..\..\..\..\usr\share\fpcsrc\packages\fcl-xml\src\xmlread.pp"/>
         <UnitName Value="XMLRead"/>
         <CursorPos X="11" Y="44"/>
         <TopLine Value="584"/>
         <UsageCount Value="8"/>
       </Unit23>
       <Unit24>
-        <Filename Value="../../../../usr/share/fpcsrc/rtl/objpas/sysutils/finah.inc"/>
+        <Filename Value="..\..\..\..\usr\share\fpcsrc\rtl\objpas\sysutils\finah.inc"/>
         <CursorPos X="10" Y="23"/>
         <TopLine Value="3"/>
         <UsageCount Value="8"/>
       </Unit24>
       <Unit25>
-        <Filename Value="../../../../usr/lib/lazarus/lcl/include/control.inc"/>
+        <Filename Value="..\..\..\..\usr\lib\lazarus\lcl\include\control.inc"/>
         <CursorPos X="1" Y="2095"/>
         <TopLine Value="2076"/>
         <UsageCount Value="8"/>
       </Unit25>
       <Unit26>
-        <Filename Value="../../../../usr/lib/lazarus/lcl/interfaces/gtk2/gtk2wsstdctrls.pp"/>
+        <Filename Value="..\..\..\..\usr\lib\lazarus\lcl\interfaces\gtk2\gtk2wsstdctrls.pp"/>
         <UnitName Value="Gtk2WSStdCtrls"/>
         <CursorPos X="43" Y="717"/>
         <TopLine Value="688"/>
         <UsageCount Value="8"/>
       </Unit26>
       <Unit27>
-        <Filename Value="../../../../usr/lib/lazarus/lcl/propertystorage.pas"/>
+        <Filename Value="..\..\..\..\usr\lib\lazarus\lcl\propertystorage.pas"/>
         <UnitName Value="PropertyStorage"/>
         <CursorPos X="1" Y="533"/>
         <TopLine Value="514"/>
         <UsageCount Value="12"/>
       </Unit27>
       <Unit28>
-        <Filename Value="../../../../usr/lib/lazarus/lcl/translations.pas"/>
+        <Filename Value="..\..\..\..\usr\lib\lazarus\lcl\translations.pas"/>
         <UnitName Value="Translations"/>
         <CursorPos X="38" Y="318"/>
         <TopLine Value="426"/>
         <UsageCount Value="12"/>
       </Unit28>
       <Unit29>
-        <Filename Value="../../../../lazarus/fpc/2.2.2/source/packages/fcl-base/src/gettext.pp"/>
+        <Filename Value="..\..\..\..\lazarus\fpc\2.2.2\source\packages\fcl-base\src\gettext.pp"/>
         <UnitName Value="gettext"/>
         <CursorPos X="1" Y="1"/>
         <TopLine Value="1"/>
@@ -412,10 +413,11 @@
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="8"/>
+    <PathDelim Value="\"/>
     <SearchPaths>
-      <OtherUnitFiles Value="$(LazarusDir)/components/codetools/units/$(TargetCPU)-$(TargetOS)/"/>
+      <OtherUnitFiles Value="$(LazarusDir)\components\codetools\units\$(TargetCPU)-$(TargetOS)\"/>
       <LCLWidgetType Value="gtk2"/>
-      <SrcPath Value="$(LazarusDir)/lcl/;$(LazarusDir)/lcl/interfaces/$(LCLWidgetType)/"/>
+      <SrcPath Value="$(LazarusDir)\lcl\;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)\"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
