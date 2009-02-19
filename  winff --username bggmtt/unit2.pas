@@ -78,6 +78,7 @@ resourcestring
    rsaddpresetbtn='Add / Update';
    rsexport='Export';
    rsimport='Import';
+   rsimportpresets='Import Presets';
    rsCancelBtn='Cancel';
    rsOKbtn='Save';
    rsDeleteBtn='Delete';
@@ -327,6 +328,7 @@ var
  nodename,nodelabel,nodeparams,nodeext, nodecategory, testchars:string;
 begin
  opendialog1.DefaultExt:='.xml';
+ opendialog1.Title:=rsimportpresets;
  opendialog1.Execute;
  if opendialog1.FileName = '' then exit;
  if not fileexists(opendialog1.FileName) then

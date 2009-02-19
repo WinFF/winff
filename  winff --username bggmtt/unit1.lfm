@@ -1,24 +1,15 @@
 object Form1: TForm1
-  Left = 126
-  Height = 688
-  Top = 179
-  Width = 952
-  HelpContext = 0
+  Left = 75
+  Height = 605
+  Top = 85
+  Width = 1072
   ActiveControl = Notebook1
-  Align = alNone
   AllowDropFiles = True
   Caption = 'WinFF'
-  ChildSizing.LeftRightSpacing = 0
-  ChildSizing.TopBottomSpacing = 0
-  ChildSizing.HorizontalSpacing = 0
-  ChildSizing.VerticalSpacing = 0
-  ChildSizing.ControlsPerLine = 0
-  ClientHeight = 658
-  ClientWidth = 952
+  ClientHeight = 585
+  ClientWidth = 1072
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
-  Font.Height = 0
-  Font.Style = []
   Icon.Data = {
     BE2500000000010001003030000001002000A825000016000000280000003000
     0000600000000100200000000000802500000000000000000000000000000000
@@ -334,175 +325,75 @@ object Form1: TForm1
   Position = poDefault
   LCLVersion = '0.9.26'
   object Label2: TLabel
-    Left = 0
-    Height = 16
-    Top = 0
-    Width = 3
-    HelpContext = 0
-    Align = alNone
-    Alignment = taLeftJustify
-    BorderSpacing.Left = 0
-    BorderSpacing.Top = 0
-    BorderSpacing.Right = 0
-    BorderSpacing.Bottom = 0
-    BorderSpacing.Around = 0
-    BorderSpacing.CellAlignHorizontal = ccaFill
-    BorderSpacing.CellAlignVertical = ccaFill
+    Height = 14
+    Width = 1
     ParentColor = False
   end
   object pnlMain: TPanel
-    Left = 0
-    Height = 441
+    Height = 368
     Top = 54
-    Width = 952
-    HelpContext = 0
+    Width = 1072
     Align = alClient
     AutoSize = True
-    BorderSpacing.Left = 0
-    BorderSpacing.Top = 0
-    BorderSpacing.Right = 0
-    BorderSpacing.Bottom = 0
-    BorderSpacing.Around = 0
-    BorderSpacing.CellAlignHorizontal = ccaFill
-    BorderSpacing.CellAlignVertical = ccaFill
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ChildSizing.LeftRightSpacing = 0
-    ChildSizing.TopBottomSpacing = 0
-    ChildSizing.HorizontalSpacing = 0
-    ChildSizing.VerticalSpacing = 0
-    ChildSizing.ControlsPerLine = 0
-    ClientHeight = 441
-    ClientWidth = 952
+    ClientHeight = 368
+    ClientWidth = 1072
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
-      Left = 0
-      Height = 301
-      Top = 0
-      Width = 952
-      HelpContext = 0
+      Height = 228
+      Width = 1072
       Align = alClient
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
-      IntegralHeight = False
-      ItemHeight = 0
       MultiSelect = True
       OnDblClick = PlayClick
       OnKeyPress = filelistKeyPress
-      Sorted = False
-      Style = lbStandard
       TabOrder = 0
-      TopIndex = -1
     end
     object pnlbottom: TPanel
-      Left = 0
       Height = 140
-      Top = 301
-      Width = 952
-      HelpContext = 0
+      Top = 228
+      Width = 1072
       Align = alBottom
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
-      ChildSizing.LeftRightSpacing = 0
-      ChildSizing.TopBottomSpacing = 0
-      ChildSizing.HorizontalSpacing = 0
-      ChildSizing.VerticalSpacing = 0
-      ChildSizing.ControlsPerLine = 0
       ClientHeight = 140
-      ClientWidth = 952
+      ClientWidth = 1072
       ParentColor = False
       TabOrder = 1
       object PageControl1: TPageControl
         Left = 1
         Height = 138
         Top = 1
-        Width = 950
-        HelpContext = 0
+        Width = 1070
         ActivePage = tabPage1
         Align = alClient
-        BorderSpacing.Left = 0
-        BorderSpacing.Top = 0
-        BorderSpacing.Right = 0
-        BorderSpacing.Bottom = 0
-        BorderSpacing.Around = 0
-        BorderSpacing.CellAlignHorizontal = ccaFill
-        BorderSpacing.CellAlignVertical = ccaFill
         TabIndex = 0
         TabOrder = 0
-        TabPosition = tpTop
         object tabPage1: TTabSheet
-          HelpContext = 0
           Caption = 'tabPage1'
-          ChildSizing.LeftRightSpacing = 0
-          ChildSizing.TopBottomSpacing = 0
-          ChildSizing.HorizontalSpacing = 0
-          ChildSizing.VerticalSpacing = 0
-          ChildSizing.ControlsPerLine = 0
-          ClientHeight = 102
-          ClientWidth = 946
+          ClientHeight = 112
+          ClientWidth = 1062
           object Label1: TLabel
             Left = 13
-            Height = 17
+            Height = 14
             Top = 11
-            Width = 127
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 69
             Caption = 'Convert to....'
             ParentColor = False
           end
           object Label11: TLabel
             Left = 14
-            Height = 17
+            Height = 14
             Top = 82
-            Width = 125
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 66
             Caption = 'Output folder'
             ParentColor = False
           end
           object Label19: TLabel
             Left = 13
-            Height = 17
+            Height = 14
             Top = 43
-            Width = 127
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 69
             Caption = 'Convert to....'
             ParentColor = False
           end
@@ -511,22 +402,8 @@ object Form1: TForm1
             Height = 21
             Top = 35
             Width = 392
-            HelpContext = 0
-            Align = alNone
-            AutoComplete = False
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
-            CharCase = ecNormal
-            Ctl3D = False
-            ItemHeight = 0
-            ItemWidth = 0
+            ItemHeight = 13
             MaxLength = 65535
-            Sorted = False
             Style = csDropDownList
             TabOrder = 0
           end
@@ -535,15 +412,6 @@ object Form1: TForm1
             Height = 23
             Top = 76
             Width = 352
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             TabOrder = 1
           end
           object ChooseFolderBtn: TButton
@@ -551,18 +419,8 @@ object Form1: TForm1
             Height = 25
             Top = 76
             Width = 32
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
             BorderSpacing.InnerBorder = 4
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             Caption = '...'
-            Font.Height = 0
             Font.Style = [fsBold]
             OnClick = ChooseFolderBtnClick
             ParentFont = False
@@ -573,20 +431,7 @@ object Form1: TForm1
             Height = 21
             Top = 4
             Width = 392
-            HelpContext = 0
-            Align = alNone
-            AutoComplete = False
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
-            CharCase = ecNormal
-            Ctl3D = False
-            ItemHeight = 0
-            ItemWidth = 0
+            ItemHeight = 13
             MaxLength = 65535
             OnChange = categoryboxChange
             Sorted = True
@@ -598,41 +443,16 @@ object Form1: TForm1
     end
   end
   object Panel1: TPanel
-    Left = 0
     Height = 54
-    Top = 0
-    Width = 952
-    HelpContext = 0
+    Width = 1072
     Align = alTop
-    BorderSpacing.Left = 0
-    BorderSpacing.Top = 0
-    BorderSpacing.Right = 0
-    BorderSpacing.Bottom = 0
-    BorderSpacing.Around = 0
-    BorderSpacing.CellAlignHorizontal = ccaFill
-    BorderSpacing.CellAlignVertical = ccaFill
-    ChildSizing.LeftRightSpacing = 0
-    ChildSizing.TopBottomSpacing = 0
-    ChildSizing.HorizontalSpacing = 0
-    ChildSizing.VerticalSpacing = 0
-    ChildSizing.ControlsPerLine = 0
     ClientHeight = 54
-    ClientWidth = 952
+    ClientWidth = 1072
     TabOrder = 1
     object AddBtn: TBitBtn
       Left = 1
       Height = 53
-      Top = 0
       Width = 60
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Add'
       Glyph.Data = {
         36090000424D3609000000000000360000002800000018000000180000000100
@@ -718,17 +538,7 @@ object Form1: TForm1
     object RemoveBtn: TBitBtn
       Left = 64
       Height = 53
-      Top = 0
       Width = 60
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Remove'
       Glyph.Data = {
         36090000424D3609000000000000360000002800000018000000180000000100
@@ -814,17 +624,7 @@ object Form1: TForm1
     object ClearBtn: TBitBtn
       Left = 128
       Height = 53
-      Top = 0
       Width = 60
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Clear'
       Glyph.Data = {
         36090000424D3609000000000000360000002800000018000000180000000100
@@ -910,17 +710,7 @@ object Form1: TForm1
     object Play: TBitBtn
       Left = 200
       Height = 53
-      Top = 0
       Width = 70
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Play'
       Glyph.Data = {
         36090000424D3609000000000000360000002800000018000000180000000100
@@ -1006,17 +796,7 @@ object Form1: TForm1
     object StartBtn: TBitBtn
       Left = 272
       Height = 53
-      Top = 0
       Width = 70
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Convert'
       Glyph.Data = {
         36090000424D3609000000000000360000002800000018000000180000000100
@@ -1100,25 +880,12 @@ object Form1: TForm1
       TabOrder = 4
     end
     object Panel2: TPanel
-      Left = 826
+      Left = 946
       Height = 52
       Top = 1
       Width = 125
-      HelpContext = 0
       Align = alRight
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       BevelOuter = bvNone
-      ChildSizing.LeftRightSpacing = 0
-      ChildSizing.TopBottomSpacing = 0
-      ChildSizing.HorizontalSpacing = 0
-      ChildSizing.VerticalSpacing = 0
-      ChildSizing.ControlsPerLine = 0
       ClientHeight = 52
       ClientWidth = 125
       TabOrder = 5
@@ -1127,15 +894,6 @@ object Form1: TForm1
         Height = 53
         Top = -1
         Width = 60
-        HelpContext = 0
-        Align = alNone
-        BorderSpacing.Left = 0
-        BorderSpacing.Top = 0
-        BorderSpacing.Right = 0
-        BorderSpacing.Bottom = 0
-        BorderSpacing.Around = 0
-        BorderSpacing.CellAlignHorizontal = ccaFill
-        BorderSpacing.CellAlignVertical = ccaFill
         Caption = 'Options'
         Glyph.Data = {
           36090000424D3609000000000000360000002800000018000000180000000100
@@ -1221,26 +979,12 @@ object Form1: TForm1
     end
   end
   object pnlbottom2: TPanel
-    Left = 0
     Height = 163
-    Top = 495
-    Width = 952
-    HelpContext = 0
+    Top = 422
+    Width = 1072
     Align = alBottom
-    BorderSpacing.Left = 0
-    BorderSpacing.Top = 0
-    BorderSpacing.Right = 0
-    BorderSpacing.Bottom = 0
-    BorderSpacing.Around = 0
-    BorderSpacing.CellAlignHorizontal = ccaFill
-    BorderSpacing.CellAlignVertical = ccaFill
-    ChildSizing.LeftRightSpacing = 0
-    ChildSizing.TopBottomSpacing = 0
-    ChildSizing.HorizontalSpacing = 0
-    ChildSizing.VerticalSpacing = 0
-    ChildSizing.ControlsPerLine = 0
     ClientHeight = 163
-    ClientWidth = 952
+    ClientWidth = 1072
     ParentColor = False
     TabOrder = 2
     Visible = False
@@ -1248,143 +992,61 @@ object Form1: TForm1
       Left = 1
       Height = 161
       Top = 1
-      Width = 950
-      HelpContext = 0
+      Width = 1070
       Align = alClient
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'GroupBox1'
-      ChildSizing.LeftRightSpacing = 0
-      ChildSizing.TopBottomSpacing = 0
-      ChildSizing.HorizontalSpacing = 0
-      ChildSizing.VerticalSpacing = 0
-      ChildSizing.ControlsPerLine = 0
-      ClientHeight = 138
-      ClientWidth = 946
-      Ctl3D = False
+      ClientHeight = 143
+      ClientWidth = 1066
       TabOrder = 0
       object Notebook1: TNotebook
-        Left = 0
-        Height = 138
-        Top = 0
-        Width = 946
-        HelpContext = 0
+        Height = 143
+        Width = 1066
         Align = alClient
-        BorderSpacing.Left = 0
-        BorderSpacing.Top = 0
-        BorderSpacing.Right = 0
-        BorderSpacing.Bottom = 0
-        BorderSpacing.Around = 0
-        BorderSpacing.CellAlignHorizontal = ccaFill
-        BorderSpacing.CellAlignVertical = ccaFill
-        Options = []
         PageIndex = 0
         TabOrder = 0
         object tabPage2: TPage
-          HelpContext = 0
           Caption = 'Video Settings'
-          ChildSizing.LeftRightSpacing = 0
-          ChildSizing.TopBottomSpacing = 0
-          ChildSizing.HorizontalSpacing = 0
-          ChildSizing.VerticalSpacing = 0
-          ChildSizing.ControlsPerLine = 0
-          ClientWidth = 942
-          ClientHeight = 102
+          ClientWidth = 1058
+          ClientHeight = 117
           object Label3: TLabel
             Left = 6
-            Height = 17
+            Height = 14
             Top = 5
-            Width = 140
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 68
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
           object Label5: TLabel
             Left = 219
-            Height = 17
+            Height = 14
             Top = 5
-            Width = 107
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 49
             Caption = 'Video Size'
             ParentColor = False
           end
           object Label6: TLabel
             Left = 307
-            Height = 17
+            Height = 14
             Top = 5
-            Width = 124
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 62
             Caption = 'Aspect Ratio'
             ParentColor = False
           end
           object Label9: TLabel
             Left = 253
-            Height = 14
+            Height = 13
             Top = 25
-            Width = 10
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 7
             Caption = 'X'
             Font.Height = -10
-            Font.Style = []
             ParentColor = False
             ParentFont = False
           end
           object Label4: TLabel
             Left = 124
-            Height = 17
+            Height = 14
             Top = 5
-            Width = 114
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 57
             Caption = 'Frame Rate'
             ParentColor = False
           end
@@ -1393,15 +1055,6 @@ object Form1: TForm1
             Height = 23
             Top = 25
             Width = 104
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             OnChange = VidbitrateChange
             TabOrder = 0
           end
@@ -1410,15 +1063,6 @@ object Form1: TForm1
             Height = 23
             Top = 25
             Width = 88
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             TabOrder = 1
           end
           object VidsizeX: TEdit
@@ -1426,15 +1070,6 @@ object Form1: TForm1
             Height = 23
             Top = 25
             Width = 32
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             TabOrder = 2
           end
           object Aspectratio: TEdit
@@ -1442,15 +1077,6 @@ object Form1: TForm1
             Height = 23
             Top = 25
             Width = 80
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             OnChange = AspectratioChange
             TabOrder = 3
           end
@@ -1459,68 +1085,31 @@ object Form1: TForm1
             Height = 23
             Top = 25
             Width = 32
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             TabOrder = 4
           end
           object pass2: TCheckBox
             Left = 6
-            Height = 26
+            Height = 19
             Top = 64
-            Width = 89
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 57
             Caption = '2 pass'
             Color = clForm
             ParentColor = False
-            State = cbUnchecked
             TabOrder = 5
-            UseOnChange = False
           end
           object CheckBox2: TCheckBox
             Left = 123
-            Height = 26
+            Height = 19
             Top = 64
-            Width = 134
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
+            Width = 80
             Caption = 'Deinterlace'
             Color = clForm
             ParentColor = False
-            State = cbUnchecked
             TabOrder = 6
-            UseOnChange = False
           end
         end
         object tabPage3: TPage
-          HelpContext = 0
           Caption = 'Audio Settings'
-          ChildSizing.LeftRightSpacing = 0
-          ChildSizing.TopBottomSpacing = 0
-          ChildSizing.HorizontalSpacing = 0
-          ChildSizing.VerticalSpacing = 0
-          ChildSizing.ControlsPerLine = 0
           ClientWidth = 946
           ClientHeight = 136
           object Label7: TLabel
@@ -1528,16 +1117,6 @@ object Form1: TForm1
             Height = 13
             Top = 5
             Width = 81
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             Caption = 'Audio Bit Rate'
             ParentColor = False
           end
@@ -1546,16 +1125,6 @@ object Form1: TForm1
             Height = 13
             Top = 5
             Width = 71
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             Caption = 'Sample Rate'
             ParentColor = False
           end
@@ -1564,16 +1133,6 @@ object Form1: TForm1
             Height = 13
             Top = 5
             Width = 46
-            HelpContext = 0
-            Align = alNone
-            Alignment = taLeftJustify
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             Caption = 'Label10'
             ParentColor = False
           end
@@ -1582,15 +1141,6 @@ object Form1: TForm1
             Height = 23
             Top = 25
             Width = 101
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             TabOrder = 0
           end
           object audsamplingrate: TEdit
@@ -1598,15 +1148,6 @@ object Form1: TForm1
             Height = 23
             Top = 25
             Width = 80
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             TabOrder = 1
           end
           object audchannels: TEdit
@@ -1614,26 +1155,11 @@ object Form1: TForm1
             Height = 23
             Top = 25
             Width = 32
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             TabOrder = 2
           end
         end
         object tabPage4: TPage
-          HelpContext = 0
           Caption = 'tabPage4'
-          ChildSizing.LeftRightSpacing = 0
-          ChildSizing.TopBottomSpacing = 0
-          ChildSizing.HorizontalSpacing = 0
-          ChildSizing.VerticalSpacing = 0
-          ChildSizing.ControlsPerLine = 0
           ClientWidth = 946
           ClientHeight = 136
           object commandlineparams: TEdit
@@ -1641,15 +1167,6 @@ object Form1: TForm1
             Height = 24
             Top = 25
             Width = 469
-            HelpContext = 0
-            Align = alNone
-            BorderSpacing.Left = 0
-            BorderSpacing.Top = 0
-            BorderSpacing.Right = 0
-            BorderSpacing.Bottom = 0
-            BorderSpacing.Around = 0
-            BorderSpacing.CellAlignHorizontal = ccaFill
-            BorderSpacing.CellAlignVertical = ccaFill
             TabOrder = 0
           end
         end
@@ -1657,8 +1174,6 @@ object Form1: TForm1
     end
   end
   object OpenDialog1: TOpenDialog
-    Width = 0
-    Height = 0
     Title = 'Select Video Files...'
     FilterIndex = 0
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
@@ -1666,8 +1181,6 @@ object Form1: TForm1
     top = 400
   end
   object SelectDirectoryDialog1: TSelectDirectoryDialog
-    Width = 0
-    Height = 0
     FilterIndex = 0
     left = 488
     top = 312
@@ -1677,112 +1190,74 @@ object Form1: TForm1
     top = 312
     object filemenu: TMenuItem
       Caption = 'File'
-      RightJustify = False
-      ShowAlwaysCheckable = False
       object importmenu: TMenuItem
         Caption = 'Import Preset'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = importmenuClick
       end
       object MenuItem2: TMenuItem
         Caption = 'About'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         Visible = False
         OnClick = MenuItem2Click
       end
       object MenuItem3: TMenuItem
         Caption = 'Exit'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = MenuItem3Click
       end
     end
     object MenuItem1: TMenuItem
       Caption = 'Edit'
-      RightJustify = False
-      ShowAlwaysCheckable = False
       object MenuItem4: TMenuItem
         Caption = 'Presets'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = MenuItem4Click
       end
       object MenuItem5: TMenuItem
         Caption = 'Preferences'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = MenuItem5Click
       end
     end
     object Options: TMenuItem
       Caption = 'Options'
-      RightJustify = False
-      ShowAlwaysCheckable = False
       object showoptions: TMenuItem
         Caption = 'Additional Options'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = showoptionsClick
       end
       object displaycmdline: TMenuItem
         Caption = 'Display Cmd Line'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = displaycmdlineClick
       end
       object pauseonfinish: TMenuItem
         Caption = 'Pause on Finish'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = pauseonfinishClick
       end
       object shutdownonfinish: TMenuItem
         Caption = 'Shutdown on Finish'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = shutdownonfinishClick
       end
     end
     object MenuItem6: TMenuItem
       Caption = 'Help'
-      RightJustify = False
-      ShowAlwaysCheckable = False
       object mitDocs: TMenuItem
         Caption = 'Documentation'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = mitDocsClick
       end
       object mitWinff: TMenuItem
         Caption = 'WinFF Website'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = mitWinffClick
       end
       object mitForums: TMenuItem
         Caption = 'Forums'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = mitForumsClick
       end
       object MenuItem9: TMenuItem
         Caption = '-'
-        RightJustify = False
-        ShowAlwaysCheckable = False
       end
       object mitAbout: TMenuItem
         Caption = 'About'
-        RightJustify = False
-        ShowAlwaysCheckable = False
         OnClick = mitAboutClick
       end
     end
   end
   object OpenDialog2: TOpenDialog
-    Width = 0
-    Height = 0
     DefaultExt = '.wff'
     Filter = '.wff'
     left = 551
