@@ -1,387 +1,429 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: WinFF 0.45.1\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Choplair <chopinou-NOSP@M-choplair.org>\n"
+"PO-Revision-Date: 2009-02-18\n"
+"Last-Translator: Choplair <choplair@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: unit1:rsaddbtn
+#: unit1.rsaddbtn
 msgid "Add"
 msgstr "Ajouter"
 
-#: unit1:rslabel10
-msgid "AC'"
-msgstr "Canal audio"
+#: unit1.rsallcategories
+msgid "(All Categories)"
+msgstr ""
 
-#: unit1:rsdisplaycmdline
-msgid "Display CMD Line"
-msgstr "Afficher la ligne de commande"
-
-#: unit1:rspauseonfinish
-msgid "Pause on Finish"
-msgstr "Mettre en veille à la fin"
-
-#: unit1:rsshutdownonfinish
-msgid "Shutdown on Finish"
-msgstr "Eteindre l'ordinateur à la fin"
-
-#: unit1:rsoptionsbtn
-msgid "Options"
-msgstr "Options"
-
-#: unit1:rsstartbtn
-msgid "Convert"
-msgstr "Convertir"
-
-#: unit1:rsplay
-msgid "Play"
-msgstr "Lire"
-
-#: unit1:rsclearbtn
-msgid "Clear"
-msgstr "Vider"
-
-#: unit1:rsremovebtn
-msgid "Remove"
-msgstr "Supprimer"
-
-#: unit1:rscheckbox2
+#: unit1.rscheckbox2
 msgid "Deinterlace"
 msgstr "Désentrelacer"
 
-#: unit1:rspass2
-msgid "2 pass"
-msgstr "2 passes"
+#: unit1.rsclearbtn
+msgid "Clear"
+msgstr "Vider"
 
-#: unit1:rsmenuitem1
-msgid "Edit"
-msgstr "Editer"
+#: unit1.rsclose
+#, fuzzy
+msgid "Close"
+msgstr "Vider"
 
-#: unit1:rsmenuitem2
-msgid "About"
-msgstr "A propos"
-
-#: unit1:rsmenuitem3
-msgid "Exit"
-msgstr "Quitter"
-
-#: unit1:rsmenuitem4
-msgid "Presets"
-msgstr "Modèles"
-
-#: unit1:rsmenuitem5
-msgid "Preferences"
-msgstr "Préférences"
-
-#: unit1:rsimportmenu
-msgid "Import Preset"
-msgstr "Importer un Modèle"
-
-#: unit1:rsshowoptions
-msgid "Additional Options"
-msgstr "Options supplémentaires"
-
-#: unit1:rsoptions
+#: unit1.rsclosebtn
 msgid "Options"
 msgstr "Options"
 
-#: unit1:rsfilemenu
-msgid "File"
-msgstr "Fichier"
-
-#: unit1:rsgroupbox2
-msgid "Additional Command Line Parameters (Advanced)"
-msgstr "Paramètres de ligne de commande supplémentaire (expert)"
-
-#: unit1:rslabel5
-msgid "Video Size"
-msgstr "Résolution Vidéo"
-
-#: unit1:rslabel6
-msgid "Aspect Ratio"
-msgstr "Rapport Hauteur/Largeur"
-
-#: unit1:rslabel7
-msgid "Audio Bitrate"
-msgstr "Débit Audio"
-
-#: unit1:rslabel8
-msgid "Sample Rate"
-msgstr "Fréquence"
-
-#: unit1:rslabel4
-msgid "Frame Rate"
-msgstr "Images/Seconde"
-
-#: unit1:rslabel3
-msgid "Video Bitrate"
-msgstr "Débit Vidéo"
-
-#: unit1:rsgroupbox1
-msgid "Additional Options"
-msgstr "Options supplémentaires"
-
-#: unit1:rslabel1
-msgid "Output Folder"
-msgstr "Dossier de sortie"
-
-#: unit1:rslabel2
-msgid "Convert To ..."
-msgstr "Convertir en..."
-
-#: unit1:rscouldnotfindpresetfile
-msgid "Could not find presets file."
-msgstr "Le fichier de modèle est introuvable."
-
-#: unit1:rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
-msgstr "FFmpeg est introuvable."
-
-#: unit1:rscouldnotfindffplay
-msgid "Could not find FFPlay."
-msgstr "FFPlay est introuvable."
-
-#: unit1:rsselectvideofiles
-msgid "Select Video Files"
-msgstr "Sélectionner des fichiers vidéos"
-
-#: unit1:rsselectpresetfile
-msgid "Select Preset File"
-msgstr "Sélectionner un fichier de modèle"
-
-#: unit1:rspleaseselectapreset
-msgid "Please select a preset"
-msgstr "Veuillez choisir un modèle"
-
-#: unit1:rspleaseadd1file
-msgid "Please add at least 1 file to convert"
-msgstr "Veuillez ajouter au moins un fichier à convertir"
-
-#: unit1:rsconverting
+#: unit1.rsconverting
 msgid "Converting"
 msgstr "Conversion..."
 
-#: unit1:rspressenter
-msgid "Press Enter to Continue"
-msgstr "Appuyez sur Entrée pour continuer"
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "FFmpeg est introuvable."
 
-#: unit1:rscouldnotfindfile
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "FFPlay est introuvable."
+
+#: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
 msgstr "Fichier introuvable"
 
-#: unit1:rsinvalidpreset
-msgid "Invalid Preset File"
-msgstr "Fichier de modèle invalide"
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Le fichier de modèle est introuvable."
 
-#: unit1:rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
-msgstr "Le modèle %s%s%s existe déjà"
+#: unit1.rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr "Afficher la ligne de commande"
 
-#: unit1:rspresethasnolabel
-msgid "The preset to import does not have a label"
-msgstr "Le modèle à importer n'a pas de label"
-
-#: unit1:rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Le modèle contient des caractères illégaux"
-
-#: unit1:rspresetwithlabelexists
-msgid "Preset with label: %s%s%s already exists"
-msgstr "Un modèle avec le label \"%s%s%s\" existe déjà"
-
-#: unit1:rspresethasnoext
-msgid "The preset to import does not have an extension"
-msgstr "Le modèle à importer n'a pas d'extension"
-
-#: unit1:rsnamemustbeallpha
-msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "Le nom doit être alphanumérique (a-z, A-Z, 0-9)"
-
-#: unit1:rsextensionnoperiod
+#: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
 msgstr "L'extension ne peut pas contenir de point."
 
-#: unit1:rsfiledoesnotexist
+#: unit1.rsfiledoesnotexist
 msgid "file does not exist"
 msgstr "n'existe pas"
 
-#: unit1:rspresettoexport
-msgid "Please select a preset to export"
-msgstr "Veuillez choisir un modèle à exporter"
+#: unit1.rsfilemenu
+msgid "File"
+msgstr "Fichier"
 
-#: unit2:rsLabel6
-msgid "Category"
-msgstr "Catégorie"
+#: unit1.rsgroupbox1
+msgid "Additional Options"
+msgstr "Options supplémentaires"
 
-#: unit2:rsform2
-msgid "Edit Presets"
-msgstr "Modifier les Modèles"
+#: unit1.rsimportmenu
+msgid "Import Preset"
+msgstr "Importer un Modèle"
 
-#: unit2:rsaddpresetbtn
-msgid "Add / Update"
-msgstr "Ajouter / Actualiser"
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Fichier de modèle invalide"
 
-#: unit2:rsexport
-msgid "Export"
-msgstr "Exporter"
+#: unit1.rslabel1
+msgid "Convert To ..."
+msgstr "Convertir en..."
 
-#: unit2:rsimport
-msgid "Import"
-msgstr "Importer"
+#: unit1.rslabel10
+msgid "Audio Channels"
+msgstr ""
 
-#: unit2:rscancelbtn
-msgid "Cancel"
-msgstr "Annuler"
+#: unit1.rslabel11
+msgid "Output Folder"
+msgstr "Dossier de sortie"
 
-#: unit2:rslabel5
-msgid "Output File Extension (no \".\")"
-msgstr "Extension du fichier de destination (ne pas mettre de point)"
+#: unit1.rslabel19
+#, fuzzy
+msgid "Device Preset"
+msgstr "Supprimer modèle :"
 
-#: unit2:rsokbtn
-msgid "Save"
-msgstr "Enregistrer"
+#: unit1.rslabel3
+msgid "Video Bitrate"
+msgstr "Débit Vidéo"
 
-#: unit2:rsdeletebtn
-msgid "Delete"
-msgstr "Effacer"
+#: unit1.rslabel4
+msgid "Frame Rate"
+msgstr "Images/Seconde"
 
-#: unit2:rslabel1
+#: unit1.rslabel5
+msgid "Video Size"
+msgstr "Résolution Vidéo"
+
+#: unit1.rslabel6
+msgid "Aspect Ratio"
+msgstr "Rapport Hauteur/Largeur"
+
+#: unit1.rslabel7
+msgid "Audio Bitrate"
+msgstr "Débit Audio"
+
+#: unit1.rslabel8
+msgid "Sample Rate"
+msgstr "Fréquence"
+
+#: unit1.rsmenuitem1
+msgid "Edit"
+msgstr "Editer"
+
+#: unit1.rsmenuitem3
+msgid "Exit"
+msgstr "Quitter"
+
+#: unit1.rsmenuitem4
 msgid "Presets"
 msgstr "Modèles"
 
-#: unit2:rslabel2
-msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "Nom du modèle (Un seul mot alphanumerique)"
+#: unit1.rsmenuitem5
+msgid "Preferences"
+msgstr "Préférences"
 
-#: unit2:rslabel3
-msgid "Preset Label"
-msgstr "Label du modèle"
+#: unit1.rsmenuitem6
+msgid "WinFF Website"
+msgstr ""
 
-#: unit2:rslabel4
-msgid "Preset Command Line (no -i or output file)"
-msgstr "Ligne de commande pour le modèle (pas de -i ni de fichier de destination)"
+#: unit1.rsmenuitem7
+msgid "WinFF Forums"
+msgstr ""
 
-#: unit2:rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Vous devez spécifier un nom."
+#: unit1.rsmitabout
+msgid "About"
+msgstr "A propos"
 
-#: unit2:rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Vous devez spécifier un label."
+#: unit1.rsmitdocs
+msgid "Documentation"
+msgstr ""
 
-#: unit2:rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Vous devez spécifier l'extension."
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "Le nom doit être alphanumérique (a-z, A-Z, 0-9)"
 
-#: unit2:rsupdatepreset
-msgid "Update Preset:"
-msgstr "Actualiser le modèle :"
+#: unit1.rspass2
+msgid "2 pass"
+msgstr "2 passes"
 
-#: unit2:rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Le label doit être unique."
+#: unit1.rspauseonfinish
+msgid "Pause on Finish"
+msgstr "Mettre en veille à la fin"
 
-#: unit2:rscreatepreset
-msgid "Create Preset:"
-msgstr "Créer modèle :"
+#: unit1.rsplay
+msgid "Play"
+msgstr "Lire"
 
-#: unit2:rsremovepreset
-msgid "Remove Preset:"
-msgstr "Supprimer modèle :"
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Veuillez ajouter au moins un fichier à convertir"
 
-#: unit3:rsbutton1
-msgid "OK"
-msgstr "OK"
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "Le modèle %s%s%s existe déjà"
 
-#: unit3:rspage1
-msgid "WinFF"
-msgstr "WinFF"
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Le modèle à importer n'a pas d'extension"
 
-#: unit3:rspage2
-msgid "FFmpeg"
-msgstr "FFmpeg"
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Le modèle à importer n'a pas de label"
 
-#: unit3:rspage3
-msgid "Thanks"
-msgstr "Remerciements"
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Veuillez choisir un modèle à exporter"
 
-#: unit3:rsform3
-msgid "About WinFF"
-msgstr "A propos de WinFF"
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "Un modèle avec le label \"%s%s%s\" existe déjà"
 
-#: unit3:rslabel8
-msgid "FFmpeg builds by"
-msgstr "Compilation de FFmpeg par"
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Appuyez sur Entrée pour continuer"
 
-#: unit4:rsform4
-msgid "WinFF Preferences"
-msgstr "Préférence de WinFF"
+#: unit1.rsremovebtn
+msgid "Remove"
+msgstr "Supprimer"
 
-#: unit4:rsbutton1
-msgid "OK"
-msgstr "OK"
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Sélectionner un fichier de modèle"
 
-#: unit4:rsbutton2
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Sélectionner des fichiers vidéos"
+
+#: unit1.rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr "Eteindre l'ordinateur à la fin"
+
+#: unit1.rsstartbtn
+msgid "Convert"
+msgstr "Convertir"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Le modèle contient des caractères illégaux"
+
+#: unit1.tabpage1caption
+msgid "Output Details"
+msgstr ""
+
+#: unit1.tabpage2caption
+#, fuzzy
+msgid "Video Settings"
+msgstr "Résolution Vidéo"
+
+#: unit1.tabpage3caption
+msgid "Audio Settings"
+msgstr ""
+
+#: unit1.tabpage4caption
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr "Paramètres de ligne de commande supplémentaire (expert)"
+
+#: unit2.rsaddpresetbtn
+msgid "Add / Update"
+msgstr "Ajouter / Actualiser"
+
+#: unit2.rscancelbtn
 msgid "Cancel"
 msgstr "Annuler"
 
-#: unit4:rscheckbox1
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Créer modèle :"
+
+#: unit2.rsdeletebtn
+msgid "Delete"
+msgstr "Effacer"
+
+#: unit2.rsexport
+msgid "Export"
+msgstr "Exporter"
+
+#: unit2.rsform2
+msgid "Edit Presets"
+msgstr "Modifier les Modèles"
+
+#: unit2.rsimport
+msgid "Import"
+msgstr "Importer"
+
+#: unit2.rsimportpresets
+#, fuzzy
+msgid "Import Presets"
+msgstr "Importer un Modèle"
+
+#: unit2.rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr "Nom du modèle (Un seul mot alphanumerique)"
+
+#: unit2.rslabel3
+msgid "Preset Label"
+msgstr "Label du modèle"
+
+#: unit2.rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr "Ligne de commande pour le modèle (pas de -i ni de fichier de destination)"
+
+#: unit2.rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr "Extension du fichier de destination (ne pas mettre de point)"
+
+#: unit2.rslabel6
+msgid "Category"
+msgstr "Catégorie"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Le label doit être unique."
+
+#: unit2.rsokbtn
+msgid "Save"
+msgstr "Enregistrer"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Supprimer modèle :"
+
+#: unit2.rsreplacepreset
+#, fuzzy
+msgid "Replace Preset"
+msgstr "Actualiser le modèle :"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Actualiser le modèle :"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Vous devez spécifier l'extension."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Vous devez spécifier un label."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Vous devez spécifier un nom."
+
+#: unit3.rsbutton1
+#, fuzzy
+msgctxt "unit3.rsbutton1"
+msgid "OK"
+msgstr "OK"
+
+#: unit3.rsform3
+msgid "About WinFF"
+msgstr "A propos de WinFF"
+
+#: unit3.rslabel8
+msgid "FFmpeg builds by"
+msgstr "Compilation de FFmpeg par"
+
+#: unit3.rspage1
+msgid "WinFF"
+msgstr "WinFF"
+
+#: unit3.rspage2
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: unit3.rspage3
+msgid "Thanks"
+msgstr "Remerciements"
+
+#: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
 msgstr "Mémoriser le dernier répertoire utilisé"
 
-#: unit4:rscheckbox3
+#: unit4.rscheckbox2
+msgid "Use CHCP for international characters"
+msgstr ""
+
+#: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
 msgstr "Multithreading pour les processeurs doubles coeurs"
 
-#: unit4:rslabel1
+#: unit4.rsform4
+msgid "WinFF Preferences"
+msgstr "Préférence de WinFF"
+
+#: unit4.rslabel1
 msgid "Default Destination Directory"
 msgstr "Répertoire de destination par défaut"
 
-#: unit4:rslabel2
+#: unit4.rslabel2
 msgid "Path to FFmpeg.exe"
 msgstr "Chemin vers FFmpeg.exe"
 
-#: unit4:rslabel3
+#: unit4.rslabel3
 msgid "Path to FFPlay.exe"
 msgstr "Chemin vers FFPlay.exe"
 
-#: unit4:rslabel4
+#: unit4.rslabel4
 msgid "Path to FFmpeg Executable"
 msgstr "Chemin vers l'exécutable de FFmpeg"
 
-#: unit4:rslabel5
+#: unit4.rslabel5
 msgid "Path to FFPlay Executable"
 msgstr "Chemin vers l'exécutable de FFPlay"
 
-#: unit4:rslabel6
+#: unit4.rslabel6
 msgid "Terminal to run FFmpeg"
 msgstr "Terminal dans lequel lancer FFmpeg"
 
-#: unit4:rslabel7
+#: unit4.rslabel7
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "Paramètres du terminal (-e pour Xterm, -x pour le terminal de Gnome...)"
 
-#: unit4:rspage1
+#: unit4.rspage1
 msgid "General"
 msgstr "Général"
 
-#: unit4:rspage2
+#: unit4.rspage2
 msgid "Ms Windows"
 msgstr "Windows"
 
-#: unit4:rspage3
+#: unit4.rspage3
 msgid "Linux"
 msgstr "Linux"
 
-#: unit5:rsform5
+#: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "Commande de FFmpeg"
 
-#: unit5:rsbutton1
-msgid "OK"
-msgstr "Ok"
+#: unit6.rsform6
+#, fuzzy
+msgid "Export Presets"
+msgstr "Importer un Modèle"
+
+#: unit6.rslabel1
+#, fuzzy
+msgid "Choose presets to export"
+msgstr "Veuillez choisir un modèle à exporter"
+
+#~ msgid "AC'"
+#~ msgstr "Canal audio"
+#~ msgid "Please select a preset"
+#~ msgstr "Veuillez choisir un modèle"
 
