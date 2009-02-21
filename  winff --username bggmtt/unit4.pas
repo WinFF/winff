@@ -28,6 +28,7 @@ type
     CheckBox1: TCheckBox;
     CheckBox2: TCheckBox;
     CheckBox3: TCheckBox;
+    prioritybox: TComboBox;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
@@ -42,6 +43,7 @@ type
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
+    Label8: TLabel;
     Notebook1: TNotebook;
     OpenDialog1: TOpenDialog;
     Page1: TPage;
@@ -82,9 +84,14 @@ resourcestring
     rsLabel5='Path to FFPlay Executable';
     rsLabel6='Terminal to run FFmpeg';
     rsLabel7='Terminal Options (-e for Xterm , -x for Gnome Terminal';
+    rslabel8='Priority';
     rsPage1='General';
     rsPage2='Ms Windows';
     rsPage3='Linux';
+
+    rspriorityhigh='High';
+    rsprioritynormal='Normal';
+    rspriorityidle='Idle';
 
 implementation
 
@@ -112,7 +119,9 @@ begin
     page1.caption:=rsPage1;
     page2.caption:=rsPage2;
     page3.caption:=rsPage3;
-
+    prioritybox.Items.Add(rspriorityhigh);
+    prioritybox.Items.Add(rsprioritynormal);
+    prioritybox.Items.Add(rspriorityidle);
   {$ifdef win32}
    edit2.Text:= form1.getconfigvalue('win32/ffmpeg');
    edit3.Text:= form1.getconfigvalue('win32/ffplay');
@@ -141,6 +150,8 @@ begin
      checkbox3.Checked := true
   else
      checkbox3.Checked := false;
+
+  prioritybox.Text := form1.getconfigvalue('general/priority')
 end;
 
 // save preference
@@ -174,6 +185,7 @@ begin
     unit1.multithreading:='false';
    end;
 
+  form1.setconfigvalue('general/priority', prioritybox.Text);
 
   edit1.Text := trim(edit1.Text);
   edit2.Text := trim(edit2.Text);

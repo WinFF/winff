@@ -1006,17 +1006,31 @@ end;
 //menu: help documentation
 procedure TForm1.mitDocsClick(Sender: TObject);
 var s : string;
+language: string;
 begin
+  language:=leftstr(lang,2);
+  showmessage(language);
   {$ifdef linux}
-  s := '/usr/share/doc/winff/WinFF.pdf.gz';
-  if fileexists('/usr/share/docs/winff/WinFF.pdf') then s:='/usr/share/docs/winff/WinFF.pdf';
-  if fileexists('/usr/share/winff/WinFF.pdf') then s:='/usr/share/winff/WinFF.pdf';
-  if fileexists('/usr/share/winff/WinFF.pdf.gz') then s:='/usr/share/winff/WinFF.pdf.gz';
-  if fileexists('/usr/share/doc/packages/winff/WinFF.pdf.gz') then s:='/usr/share/doc/packages/winff/WinFF.pdf.gz';
-  if fileexists('/usr/share/doc/packages/winff/WinFF.pdf') then s:='/usr/share/doc/packages/winff/WinFF.pdf';
+  s :='';
+  if fileexists('/usr/share/doc/winff/WinFF.' + language + '.pdf.gz') then s:='/usr/share/doc/winff/WinFF.' + language + '.pdf.gz';
+  if fileexists('/usr/share/docs/winff/WinFF.' + language + '.pdf') then s:='/usr/share/docs/winff/WinFF.' + language + '.pdf';
+  if fileexists('/usr/share/winff/WinFF.' + language + '.pdf') then s:='/usr/share/winff/WinFF.' + language + '.pdf';
+  if fileexists('/usr/share/winff/WinFF.' + language + '.pdf.gz') then s:='/usr/share/winff/WinFF.' + language + '.pdf.gz';
+  if fileexists('/usr/share/doc/packages/winff/WinFF.' + language + '.pdf.gz') then s:='/usr/share/doc/packages/winff/WinFF.' + language + '.pdf.gz';
+  if fileexists('/usr/share/doc/packages/winff/WinFF.' + language + '.pdf') then s:='/usr/share/doc/packages/winff/WinFF.' + language + '.pdf';
+  if s='' then
+     begin
+       s := '/usr/share/doc/winff/WinFF.en.pdf.gz';
+       if fileexists('/usr/share/docs/winff/WinFF.en.pdf') then s:='/usr/share/docs/winff/WinFF.en.pdf';
+       if fileexists('/usr/share/winff/WinFF.en.pdf') then s:='/usr/share/winff/WinFF.en.pdf';
+       if fileexists('/usr/share/winff/WinFF.en.pdf.gz') then s:='/usr/share/winff/WinFF.en.pdf.gz';
+       if fileexists('/usr/share/doc/packages/winff/WinFF.en.pdf.gz') then s:='/usr/share/doc/packages/winff/WinFF.en.pdf.gz';
+       if fileexists('/usr/share/doc/packages/winff/WinFF.en.pdf') then s:='/usr/share/doc/packages/winff/WinFF.en.pdf';
+     end;
   {$endif}
   {$ifdef win32}
-  s := extraspath + 'WinFF.pdf';
+  s := extraspath + 'WinFF.' + language + '.pdf';
+  if not (fileexists(s)) then s := extraspath + 'WinFF.en.pdf';
   {$endif}
   Launchpdf(s);
 end;
@@ -1228,12 +1242,22 @@ procedure TForm1.StartBtnClick(Sender: TObject);
 var
 i,j : integer;
 pn, extension, params, commandline, command, filename,batfile, passlogfile, basename:string;
-qterm, ffmpegfilename, usethreads, deinterlace, nullfile, titlestring, vxs,vys:string;
+qterm, ffmpegfilename, usethreads, deinterlace, nullfile, titlestring, vxs,vys,priority:string;
 script: tstringlist;
 thetime: tdatetime;
 scriptprocess:tprocess;
+scriptpriority:tprocesspriority;
 begin                                     // get setup
    scriptprocess:= TProcess.Create(nil);
+
+   priority := getconfigvalue('general/priority');
+   if priority= unit4.rspriorityhigh then scriptpriority:=pphigh
+     else if priority= unit4.rsprioritynormal then scriptpriority:=ppnormal
+     else if priority= unit4.rspriorityidle then scriptpriority:=ppidle
+     else scriptpriority:=ppnormal;
+   scriptprocess.Priority:= scriptpriority;
+
+
    script:= TStringList.Create;
    {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
    {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
