@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 75
+  Left = 22
   Height = 605
-  Top = 85
+  Top = 26
   Width = 1072
   ActiveControl = Notebook1
   AllowDropFiles = True
