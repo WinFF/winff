@@ -1,5 +1,5 @@
 WinFF
-Copyright 20006-2008 Matthew Weatherford
+Copyright 20006-2009 Matthew Weatherford
 http://www.winff.org
 
 WinFF is published under the GNU Public License v3 without any warranty implied or otherwise, with no suitability for any purpose. Use this software at your own risk.

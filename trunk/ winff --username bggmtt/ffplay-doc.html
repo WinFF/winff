@@ -1,190 +1,192 @@
-<HTML>
-<HEAD>
-<!-- Created by texi2html 1.56k from /usrc/ffmpeg/doc/ffplay-doc.texi on 13 May 2007 -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
 
-<TITLE>FFplay Documentation</TITLE>
-</HEAD>
-<BODY>
-<H1>FFplay Documentation</H1>
-<P>
-<P><HR><P>
-<H1>Table of Contents</H1>
-<UL>
-<LI><A NAME="TOC1" HREF="ffplay-doc.html#SEC1">1. Introduction</A>
-<LI><A NAME="TOC2" HREF="ffplay-doc.html#SEC2">2. Invocation</A>
-<UL>
-<LI><A NAME="TOC3" HREF="ffplay-doc.html#SEC3">2.1 Syntax</A>
-<LI><A NAME="TOC4" HREF="ffplay-doc.html#SEC4">2.2 Main options</A>
-<LI><A NAME="TOC5" HREF="ffplay-doc.html#SEC5">2.3 Advanced options</A>
-<LI><A NAME="TOC6" HREF="ffplay-doc.html#SEC6">2.4 While playing</A>
-</UL>
-</UL>
-<P><HR><P>
-<P>
+<!-- Created by texi2html 1.56k from doc/ffplay-doc.texi on 21 February 2009 -->
 
+<title>FFplay Documentation</title>
+</head><body>
+<h1>FFplay Documentation</h1>
+<p>
+</p><p></p><hr><p>
+</p><h1>Table of Contents</h1>
+<ul>
+<li><a name="TOC1" href="http://ffmpeg.org/ffplay-doc.html#SEC1">1. Introduction</a>
+</li><li><a name="TOC2" href="http://ffmpeg.org/ffplay-doc.html#SEC2">2. Invocation</a>
+<ul>
+<li><a name="TOC3" href="http://ffmpeg.org/ffplay-doc.html#SEC3">2.1 Syntax</a>
+</li><li><a name="TOC4" href="http://ffmpeg.org/ffplay-doc.html#SEC4">2.2 Main options</a>
+</li><li><a name="TOC5" href="http://ffmpeg.org/ffplay-doc.html#SEC5">2.3 Advanced options</a>
+</li><li><a name="TOC6" href="http://ffmpeg.org/ffplay-doc.html#SEC6">2.4 While playing</a>
+</li></ul>
+</li></ul>
+<p></p><hr><p>
+
+</p><p>
 FFplay Documentation
 
 
 
 
-<H1><A NAME="SEC1" HREF="ffplay-doc.html#TOC1">1. Introduction</A></H1>
-<P>
+</p><h1><a name="SEC1" href="http://ffmpeg.org/ffplay-doc.html#TOC1">1. Introduction</a></h1>
 
+<p>
 FFplay is a very simple and portable media player using the FFmpeg
 libraries and the SDL library. It is mostly used as a testbed for the
 various FFmpeg APIs.
 
 
 
-<H1><A NAME="SEC2" HREF="ffplay-doc.html#TOC2">2. Invocation</A></H1>
-<P>
+
+</p><h1><a name="SEC2" href="http://ffmpeg.org/ffplay-doc.html#TOC2">2. Invocation</a></h1>
 
 
 
-<H2><A NAME="SEC3" HREF="ffplay-doc.html#TOC3">2.1 Syntax</A></H2>
+<h2><a name="SEC3" href="http://ffmpeg.org/ffplay-doc.html#TOC3">2.1 Syntax</a></h2>
 
-<PRE>
-ffplay [options] <TT>`input_file'</TT>
-</PRE>
-
-<P>
+<pre>ffplay [options] <tt>`input_file'</tt>
+</pre>
 
 
 
-<H2><A NAME="SEC4" HREF="ffplay-doc.html#TOC4">2.2 Main options</A></H2>
-<P>
+<h2><a name="SEC4" href="http://ffmpeg.org/ffplay-doc.html#TOC4">2.2 Main options</a></h2>
 
-<DL COMPACT>
+<dl compact="compact">
 
-<DT>@option{-h}
-<DD>
-show help
-<DT>@option{-x width}
-<DD>
-force displayed width
-<DT>@option{-y height}
-<DD>
-force displayed height
-<DT>@option{-s size}
-<DD>
+<dt><samp>`-h'</samp>
+</dt><dd>
+Show help.
+</dd><dt><samp>`-version'</samp>
+</dt><dd>
+Show version.
+</dd><dt><samp>`-L'</samp>
+</dt><dd>
+Show license.
+</dd><dt><samp>`-formats'</samp>
+</dt><dd>
+Show available formats, codecs, protocols, ...
+</dd><dt><samp>`-x <var>width</var>'</samp>
+</dt><dd>
+Force displayed width.
+</dd><dt><samp>`-y <var>height</var>'</samp>
+</dt><dd>
+Force displayed height.
+</dd><dt><samp>`-s <var>size</var>'</samp>
+</dt><dd>
 Set frame size (WxH or abbreviation), needed for videos which don't
-contain a header with the framesize like raw YUV.
-<DT>@option{-an}
-<DD>
-disable audio
-<DT>@option{-vn}
-<DD>
-disable video
-<DT>@option{-ss pos}
-<DD>
-seek to a given position in seconds
-<DT>@option{-bytes}
-<DD>
-seek by bytes
-<DT>@option{-nodisp}
-<DD>
-disable graphical display
-<DT>@option{-f fmt}
-<DD>
-force format
-</DL>
-<P>
+contain a header with the frame size like raw YUV.
+</dd><dt><samp>`-an'</samp>
+</dt><dd>
+Disable audio.
+</dd><dt><samp>`-vn'</samp>
+</dt><dd>
+Disable video.
+</dd><dt><samp>`-ss <var>pos</var>'</samp>
+</dt><dd>
+Seek to a given position in seconds.
+</dd><dt><samp>`-bytes'</samp>
+</dt><dd>
+Seek by bytes.
+</dd><dt><samp>`-nodisp'</samp>
+</dt><dd>
+Disable graphical display.
+</dd><dt><samp>`-f <var>fmt</var>'</samp>
+</dt><dd>
+Force format.
+</dd></dl>
 
 
 
-<H2><A NAME="SEC5" HREF="ffplay-doc.html#TOC5">2.3 Advanced options</A></H2>
-<DL COMPACT>
+<h2><a name="SEC5" href="http://ffmpeg.org/ffplay-doc.html#TOC5">2.3 Advanced options</a></h2>
+<dl compact="compact">
 
-<DT>@option{-pix_fmt format}
-<DD>
-set pixel format
-<DT>@option{-stats}
-<DD>
+<dt><samp>`-pix_fmt <var>format</var>'</samp>
+</dt><dd>
+Set pixel format.
+</dd><dt><samp>`-stats'</samp>
+</dt><dd>
 Show the stream duration, the codec parameters, the current position in
 the stream and the audio/video synchronisation drift.
-<DT>@option{-debug}
-<DD>
-print specific debug info
-<DT>@option{-bug}
-<DD>
-work around bugs
-<DT>@option{-vismv}
-<DD>
-visualize motion vectors
-<DT>@option{-fast}
-<DD>
-non-spec-compliant optimizations
-<DT>@option{-genpts}
-<DD>
-generate pts
-<DT>@option{-rtp_tcp}
-<DD>
+</dd><dt><samp>`-debug'</samp>
+</dt><dd>
+Print specific debug info.
+</dd><dt><samp>`-bug'</samp>
+</dt><dd>
+Work around bugs.
+</dd><dt><samp>`-vismv'</samp>
+</dt><dd>
+Visualize motion vectors.
+</dd><dt><samp>`-fast'</samp>
+</dt><dd>
+Non-spec-compliant optimizations.
+</dd><dt><samp>`-genpts'</samp>
+</dt><dd>
+Generate pts.
+</dd><dt><samp>`-rtp_tcp'</samp>
+</dt><dd>
 Force RTP/TCP protocol usage instead of RTP/UDP. It is only meaningful
 if you are streaming with the RTSP protocol.
-<DT>@option{-sync type}
-<DD>
-Set the master clock to audio (<CODE>type=audio</CODE>), video
-(<CODE>type=video</CODE>) or external (<CODE>type=ext</CODE>). Default is audio. The
+</dd><dt><samp>`-sync <var>type</var>'</samp>
+</dt><dd>
+Set the master clock to audio (<code>type=audio</code>), video
+(<code>type=video</code>) or external (<code>type=ext</code>). Default is audio. The
 master clock is used to control audio-video synchronization. Most media
 players use audio as master clock, but in some cases (streaming or high
 quality broadcast) it is necessary to change that. This option is mainly
 used for debugging purposes.
-<DT>@option{-threads count}
-<DD>
-thread count
-</DL>
-<P>
+</dd><dt><samp>`-threads <var>count</var>'</samp>
+</dt><dd>
+Set the thread count.
+</dd></dl>
 
 
 
-<H2><A NAME="SEC6" HREF="ffplay-doc.html#TOC6">2.4 While playing</A></H2>
-<P>
+<h2><a name="SEC6" href="http://ffmpeg.org/ffplay-doc.html#TOC6">2.4 While playing</a></h2>
 
-<DL COMPACT>
+<dl compact="compact">
 
-<DT><KBD>q, ESC</KBD>
-<DD>
-quit
+<dt><kbd>q, ESC</kbd>
+</dt><dd>
+Quit.
 
-<DT><KBD>f</KBD>
-<DD>
-toggle full screen
+</dd><dt><kbd>f</kbd>
+</dt><dd>
+Toggle full screen.
 
-<DT><KBD>p, SPC</KBD>
-<DD>
-pause
+</dd><dt><kbd>p, SPC</kbd>
+</dt><dd>
+Pause.
 
-<DT><KBD>a</KBD>
-<DD>
-cycle audio channel
+</dd><dt><kbd>a</kbd>
+</dt><dd>
+Cycle audio channel.
 
-<DT><KBD>v</KBD>
-<DD>
-cycle video channel
+</dd><dt><kbd>v</kbd>
+</dt><dd>
+Cycle video channel.
 
-<DT><KBD>w</KBD>
-<DD>
-show audio waves
+</dd><dt><kbd>t</kbd>
+</dt><dd>
+Cycle subtitle channel.
 
-<DT><KBD>left/right</KBD>
-<DD>
-seek backward/forward 10 seconds
+</dd><dt><kbd>w</kbd>
+</dt><dd>
+Show audio waves.
 
-<DT><KBD>down/up</KBD>
-<DD>
-seek backward/forward 1 minute
+</dd><dt><kbd>left/right</kbd>
+</dt><dd>
+Seek backward/forward 10 seconds.
 
-<DT><KBD>mouse click</KBD>
-<DD>
-seek to percentage in file corresponding to fraction of width
+</dd><dt><kbd>down/up</kbd>
+</dt><dd>
+Seek backward/forward 1 minute.
 
-</DL>
-<P>
+</dd><dt><kbd>mouse click</kbd>
+</dt><dd>
+Seek to percentage in file corresponding to fraction of width.
 
+</dd></dl>
 
-
-<P><HR><P>
-This document was generated on 13 May 2007 using
-<A HREF="http://wwwinfo.cern.ch/dis/texi2html/">texi2html</A>&nbsp;1.56k.
-</BODY>
-</HTML>
+<p></p><hr><p>
+This document was generated on 21 February 2009 using
+<a href="http://wwwinfo.cern.ch/dis/texi2html/">texi2html</a>&nbsp;1.56k.
+</p></body></html>
