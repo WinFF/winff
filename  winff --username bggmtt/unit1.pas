@@ -1,9 +1,21 @@
 unit Unit1; 
 
-// WInFF 0.3 Copyright 2006-2008 Matthew Weatherford
+// WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
 // http://winff.org
 // Licensed under the GPL v3 or any later version
-
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 {$mode objfpc}{$H+}
 
@@ -93,6 +105,7 @@ type
     procedure AspectratioChange(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
+    procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure LaunchBrowser(URL:string);
     procedure LaunchPdf(pdffile:string);
     procedure ChooseFolderBtnClick(Sender: TObject);
@@ -746,11 +759,13 @@ begin
 
 end;
 
+
 // launch browser
 procedure TForm1.launchbrowser(URL:string);
 begin
 {$ifdef linux}
-  exec('/usr/bin/firefox', URL);
+  exec('sensible-browser', URL);
+  If Dosexitcode<>0 then exec('/usr/bin/firefox', URL);
   If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', URL);
   If Dosexitcode<>0 Then exec('/usr/bin/konqueror', URL);
   If Dosexitcode<>0 Then Showmessage('More information can be found at ' + URL);
@@ -974,12 +989,22 @@ var
 i:integer;
 begin
 
-  if key = char(8) then
+end;
+
+// filelist on key up
+procedure TForm1.filelistKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+var
+i:integer;
+s:string;
+begin
+           // delete
+  if key = 46 then
    begin
     i:=0;
    while i< filelist.Items.Count do
     if filelist.Selected[i] then
-      filelist.Items.Delete(i)
+     filelist.Items.Delete(i)
     else
        i+=1;
    end;
