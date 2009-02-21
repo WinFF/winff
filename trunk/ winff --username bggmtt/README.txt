@@ -6,6 +6,6 @@ WinFF is published under the GNU Public License v3 without any warranty implied 
 
 WinFF is a GUI for the command line video converter FFmpeg.
 
-Get the latest ffmpeg builds from http://ffmpeg.mplayerhq.hu/
+Get the latest ffmpeg builds and source from http://ffmpeg.mplayerhq.hu/
 
  
