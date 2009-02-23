@@ -1,4 +1,4 @@
-msgid ""
+﻿msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.4\n"
 "POT-Creation-Date: \n"
@@ -16,7 +16,7 @@ msgstr "Dodaj"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr ""
+msgstr "(Sve kategorije)"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
@@ -89,7 +89,7 @@ msgstr "Kovertuj u ..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr ""
+msgstr "Audio kanali"
 
 #: unit1.rslabel11
 msgid "Output Folder"
@@ -142,11 +142,11 @@ msgstr "Opcije"
 
 #: unit1.rsmenuitem6
 msgid "WinFF Website"
-msgstr ""
+msgstr "WinFF Vebsajt"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr ""
+msgstr "WinFF Forumi"
 
 #: unit1.rsmitabout
 msgid "About"
@@ -154,7 +154,7 @@ msgstr "O programu"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentacija"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
@@ -226,16 +226,16 @@ msgstr "Preset sadrži karaktere koji nisu dozvoljeni"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr ""
+msgstr "Output detalji"
 
 #: unit1.tabpage2caption
 #, fuzzy
 msgid "Video Settings"
-msgstr "Veličina videa"
+msgstr "Video setovanja"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr ""
+msgstr "Audio setovanja"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
@@ -430,16 +430,16 @@ msgstr "Molimo, selektujte preset za eksport"
 
 #: unit4.rspriority
 msgid "Priority"
-msgstr ""
+msgstr "Prioritet"
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr ""
+msgstr "Visoki"
 
 #: unit4.rsprioritynormal
 msgid "Normal"
-msgstr ""
+msgstr "Normalni"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr ""
+msgstr "Niski"

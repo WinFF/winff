@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2008-03-27 17:20+0200\n"
-"Last-Translator: kara <kara@karalamalar.net>\n"
+"PO-Revision-Date: 2009-02-23 12:00+0200\n"
+"Last-Translator: İzzet Emre Erkan <kara@karalamalar.net>\n"
 "Language-Team: karalamalar.net <kara@karalamalar.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -12,14 +12,13 @@ msgstr ""
 "X-Poedit-Country: TURKEY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-
 #: unit1.rsaddbtn
 msgid "Add"
-msgstr ""
+msgstr "Ekle"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr ""
+msgstr "(Tüm kategoriler)"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
@@ -30,9 +29,8 @@ msgid "Clear"
 msgstr "Temizle"
 
 #: unit1.rsclose
-#, fuzzy
 msgid "Close"
-msgstr "Temizle"
+msgstr "Kapat"
 
 #: unit1.rsclosebtn
 msgid "Options"
@@ -92,16 +90,15 @@ msgstr "Dönüştür ..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr ""
+msgstr "Ses Kanalları"
 
 #: unit1.rslabel11
 msgid "Output Folder"
 msgstr "Çıktı klasörü"
 
 #: unit1.rslabel19
-#, fuzzy
 msgid "Device Preset"
-msgstr "Ayar sil:"
+msgstr "Cihaz ayarı"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -145,11 +142,11 @@ msgstr "Tercihler"
 
 #: unit1.rsmenuitem6
 msgid "WinFF Website"
-msgstr ""
+msgstr "WinFF Web sitesi"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr ""
+msgstr "WinFF Forumları"
 
 #: unit1.rsmitabout
 msgid "About"
@@ -157,7 +154,7 @@ msgstr "Hakkında"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr ""
+msgstr "Dokümantasyon"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
@@ -229,16 +226,15 @@ msgstr "Ayar dosyası geçersiz karakterler içeriyor"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr ""
+msgstr "Çıktı detayları"
 
 #: unit1.tabpage2caption
-#, fuzzy
 msgid "Video Settings"
-msgstr "Video boyutu"
+msgstr "Video ayarları"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr ""
+msgstr "Ses ayarları"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
@@ -273,9 +269,8 @@ msgid "Import"
 msgstr "İçeri aktar"
 
 #: unit2.rsimportpresets
-#, fuzzy
 msgid "Import Presets"
-msgstr "Ayar yükle"
+msgstr "Ayarları yükle"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
@@ -310,9 +305,8 @@ msgid "Remove Preset:"
 msgstr "Ayar sil:"
 
 #: unit2.rsreplacepreset
-#, fuzzy
 msgid "Replace Preset"
-msgstr "Ayarı güncelle:"
+msgstr "Ayarı değiştir"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
@@ -331,7 +325,6 @@ msgid "You must enter a name."
 msgstr "Bir isim girmelisiniz."
 
 #: unit3.rsbutton1
-#, fuzzy
 msgctxt "unit3.rsbutton1"
 msgid "OK"
 msgstr "Tamam"
@@ -362,7 +355,7 @@ msgstr "Son kullanılan klasörü hatırla"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "Uluslararası karakterler için CHCP kullan"
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
@@ -417,32 +410,31 @@ msgid "FFmpeg Command Line"
 msgstr "FFmpeg komut satırı"
 
 #: unit6.rsform6
-#, fuzzy
 msgid "Export Presets"
-msgstr "Ayar yükle"
+msgstr "Ayarları dışarı aktar"
 
 #: unit6.rslabel1
-#, fuzzy
 msgid "Choose presets to export"
-msgstr "Lütfen dışarı aktarılacak ayarı seçin"
+msgstr "Dışarı aktarılacak ayarları seçin"
+
+#: unit4.rspriority
+msgid "Priority"
+msgstr "Öncelik"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Yüksek"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normal"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Önemsiz"
 
 #~ msgid "AC'"
 #~ msgstr "AC'"
 #~ msgid "Please select a preset"
 #~ msgstr "Lütfen bir ayar seçin"
 
-#: unit4.rspriority
-msgid "Priority"
-msgstr ""
-
-#: unit4.rspriorityhigh
-msgid "High"
-msgstr ""
-
-#: unit4.rsprioritynormal
-msgid "Normal"
-msgstr ""
-
-#: unit4.rspriorityidle
-msgid "Idle"
-msgstr ""
