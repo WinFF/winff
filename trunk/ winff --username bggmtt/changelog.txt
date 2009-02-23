@@ -1,5 +1,14 @@
-WinFF Copyright 2008 Matthew Weatherford
+WinFF Copyright 2006 - 2009 Matthew Weatherford
 http://www.winff.org
+
+V1.0
+-----
+Added Priority for the conversion script to the general preferences
+The Document menu now looks for translated docs (WinFF.xx.pdf, where xx is the language code)
+Majorily Revised Presets
+Use the sensible-browser command on Debian/Ubuntu based systems
+New Documentation
+
 
 v0.45
 -----
