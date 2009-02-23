@@ -428,3 +428,18 @@ msgstr "ÐÐ¾Ð»Ñ Ð¸Ð·Ð±ÐµÑÐµÑÐµ Ð½Ð°ÑÑÑÐ
 #~ msgid "Please select a preset"
 #~ msgstr "ÐÐ¾Ð»Ñ Ð¸Ð·Ð±ÐµÑÐµÑÐµ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ°"
 
+#: unit4.rspriority
+msgid "Priority"
+msgstr ""
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr ""
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr ""
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr ""

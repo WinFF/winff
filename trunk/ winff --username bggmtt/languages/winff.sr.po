@@ -428,3 +428,18 @@ msgstr "Molimo, selektujte preset za eksport"
 #~ msgid "Please select a preset"
 #~ msgstr "Molimo, selektujte preset"
 
+#: unit4.rspriority
+msgid "Priority"
+msgstr ""
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr ""
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr ""
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr ""
