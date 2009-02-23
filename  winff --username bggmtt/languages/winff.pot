@@ -416,3 +416,19 @@ msgstr ""
 #: unit6.rslabel1
 msgid "Choose presets to export"
 msgstr ""
+
+#: unit4.rspriority
+msgid "Priority"
+msgstr ""
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr ""
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr ""
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr ""
