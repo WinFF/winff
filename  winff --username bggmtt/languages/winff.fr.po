@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.45.1\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2009-02-18\n"
-"Last-Translator: Choplair <choplair@gmail.com>\n"
+"PO-Revision-Date: 2009-02-23 15:39+0100\n"
+"Last-Translator: Choplair <chopinou@choplair.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,7 +15,7 @@ msgstr "Ajouter"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr ""
+msgstr "(Toutes catégories)"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
@@ -26,9 +26,8 @@ msgid "Clear"
 msgstr "Vider"
 
 #: unit1.rsclose
-#, fuzzy
 msgid "Close"
-msgstr "Vider"
+msgstr "Fermer"
 
 #: unit1.rsclosebtn
 msgid "Options"
@@ -52,7 +51,7 @@ msgstr "Fichier introuvable"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "Le fichier de modèle est introuvable."
+msgstr "Le fichier de préréglage est introuvable."
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
@@ -76,11 +75,11 @@ msgstr "Options supplémentaires"
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
-msgstr "Importer un Modèle"
+msgstr "Importer un préréglage"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Fichier de modèle invalide"
+msgstr "Fichier de préréglage  invalide"
 
 #: unit1.rslabel1
 msgid "Convert To ..."
@@ -88,16 +87,15 @@ msgstr "Convertir en..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr ""
+msgstr "Cannaux audio"
 
 #: unit1.rslabel11
 msgid "Output Folder"
-msgstr "Dossier de sortie"
+msgstr "Répertoire de destination"
 
 #: unit1.rslabel19
-#, fuzzy
 msgid "Device Preset"
-msgstr "Supprimer modèle :"
+msgstr "Préréglage pour matériel"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -113,7 +111,7 @@ msgstr "Résolution Vidéo"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
-msgstr "Rapport Hauteur/Largeur"
+msgstr "Ration d'aspect"
 
 #: unit1.rslabel7
 msgid "Audio Bitrate"
@@ -133,7 +131,7 @@ msgstr "Quitter"
 
 #: unit1.rsmenuitem4
 msgid "Presets"
-msgstr "Modèles"
+msgstr "Préréglages"
 
 #: unit1.rsmenuitem5
 msgid "Preferences"
@@ -141,11 +139,11 @@ msgstr "Préférences"
 
 #: unit1.rsmenuitem6
 msgid "WinFF Website"
-msgstr ""
+msgstr "Site web de WinFF"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr ""
+msgstr "Forums de WinFF"
 
 #: unit1.rsmitabout
 msgid "About"
@@ -153,7 +151,7 @@ msgstr "A propos"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr ""
+msgstr "Documentation"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
@@ -177,23 +175,23 @@ msgstr "Veuillez ajouter au moins un fichier à convertir"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
-msgstr "Le modèle %s%s%s existe déjà"
+msgstr "Le préréglage %s%s%s existe déjà"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "Le modèle à importer n'a pas d'extension"
+msgstr "Le préréglage à importer n'a pas d'extension"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "Le modèle à importer n'a pas de label"
+msgstr "Le préréglage à importer n'a pas de label"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "Veuillez choisir un modèle à exporter"
+msgstr "Veuillez choisir un préréglage à exporter"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "Un modèle avec le label \"%s%s%s\" existe déjà"
+msgstr "Un préréglage avec le label \"%s%s%s\" existe déjà"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
@@ -205,7 +203,7 @@ msgstr "Supprimer"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "Sélectionner un fichier de modèle"
+msgstr "Sélectionner un fichier de préréglage"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
@@ -221,20 +219,19 @@ msgstr "Convertir"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "Le modèle contient des caractères illégaux"
+msgstr "Le préréglage contient des caractères illégaux"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr ""
+msgstr "Details de sortie"
 
 #: unit1.tabpage2caption
-#, fuzzy
 msgid "Video Settings"
-msgstr "Résolution Vidéo"
+msgstr "Paramètres vidéo"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr ""
+msgstr "Paramètres audio"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
@@ -250,7 +247,7 @@ msgstr "Annuler"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Créer modèle :"
+msgstr "Créer préréglage :"
 
 #: unit2.rsdeletebtn
 msgid "Delete"
@@ -262,28 +259,27 @@ msgstr "Exporter"
 
 #: unit2.rsform2
 msgid "Edit Presets"
-msgstr "Modifier les Modèles"
+msgstr "Modifier les préréglages"
 
 #: unit2.rsimport
 msgid "Import"
 msgstr "Importer"
 
 #: unit2.rsimportpresets
-#, fuzzy
 msgid "Import Presets"
-msgstr "Importer un Modèle"
+msgstr "Importer des préréglages"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "Nom du modèle (Un seul mot alphanumerique)"
+msgstr "Nom du préréglage (Un seul mot, alphanumerique)"
 
 #: unit2.rslabel3
 msgid "Preset Label"
-msgstr "Label du modèle"
+msgstr "Label du préréglage"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
-msgstr "Ligne de commande pour le modèle (pas de -i ni de fichier de destination)"
+msgstr "Ligne de commande pour le préréglage (pas de -i ni de fichier de destination)"
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
@@ -303,16 +299,15 @@ msgstr "Enregistrer"
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "Supprimer modèle :"
+msgstr "Supprimer préréglage :"
 
 #: unit2.rsreplacepreset
-#, fuzzy
 msgid "Replace Preset"
-msgstr "Actualiser le modèle :"
+msgstr "Remplacer préréglage"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "Actualiser le modèle :"
+msgstr "Actualiser le préréglage :"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
@@ -358,7 +353,7 @@ msgstr "Mémoriser le dernier répertoire utilisé"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "Utiliser CHCP pour les caractères multilingues"
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
@@ -413,32 +408,31 @@ msgid "FFmpeg Command Line"
 msgstr "Commande de FFmpeg"
 
 #: unit6.rsform6
-#, fuzzy
 msgid "Export Presets"
-msgstr "Importer un Modèle"
+msgstr "Exporter préréglages"
 
 #: unit6.rslabel1
-#, fuzzy
 msgid "Choose presets to export"
-msgstr "Veuillez choisir un modèle à exporter"
+msgstr "Choisissez les préréglages à exporter"
+
+#: unit4.rspriority
+msgid "Priority"
+msgstr "Priorité"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Haute"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normale"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Faible"
 
 #~ msgid "AC'"
 #~ msgstr "Canal audio"
 #~ msgid "Please select a preset"
 #~ msgstr "Veuillez choisir un modèle"
 
-#: unit4.rspriority
-msgid "Priority"
-msgstr ""
-
-#: unit4.rspriorityhigh
-msgid "High"
-msgstr ""
-
-#: unit4.rsprioritynormal
-msgid "Normal"
-msgstr ""
-
-#: unit4.rspriorityidle
-msgid "Idle"
-msgstr ""
