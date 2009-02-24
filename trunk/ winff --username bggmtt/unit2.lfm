@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 309
+  Left = 318
   Height = 461
-  Top = 348
+  Top = 295
   Width = 417
   ActiveControl = lbCategory
   Caption = 'Edit Presets'
@@ -9,7 +9,6 @@ object Form2: TForm2
   ClientWidth = 417
   Constraints.MinHeight = 400
   Constraints.MinWidth = 400
-  OnResize = FormResize
   OnShow = FormShow
   ParentFont = False
   Position = poMainFormCenter

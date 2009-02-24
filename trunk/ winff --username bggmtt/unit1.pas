@@ -102,7 +102,6 @@ type
     Vidframerate: TEdit;
     VidsizeX: TEdit;
     VidsizeY: TEdit;
-    procedure AspectratioChange(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
     procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
@@ -112,13 +111,9 @@ type
     procedure AddBtnClick(Sender: TObject);
     procedure ClearBtnClick(Sender: TObject);
     procedure displaycmdlineClick(Sender: TObject);
-    procedure ExitmenuClick(Sender: TObject);
-    procedure filelistKeyPress(Sender: TObject; var Key: char);
-    procedure FormActivate(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
-    procedure FormResize(Sender: TObject);
     procedure importmenuClick(Sender: TObject);
     procedure mitAboutClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
@@ -282,9 +277,8 @@ ch: char;
 i:integer;
 formheight,formwidth,formtop,formleft:integer;
 sformheight,sformwidth,sformtop,sformleft:string;
-importfromcmdline: string;
 currentpreset: string;
-
+//importfromcmdline:string;
 begin
    ExtrasPath:= ExtractFilePath(ParamStr(0));
 
@@ -320,7 +314,6 @@ begin
     showoptions.Caption:=rsshowoptions;
     Options.Caption:=rsoptions;
     filemenu.Caption:=rsfilemenu;
-    //GroupBox2.Caption:=rsgroupbox2;
     Label5.Caption:=rslabel5;
     Label6.Caption:=rslabel6;
     Label7.Caption:=rslabel7;
@@ -472,7 +465,6 @@ begin
                                       // import preset from command line
   if paramstr(1) <> '' then
    begin
-   importfromcmdline := paramstr(1);
    importpresetfromfile(paramstr(1));
    end;
 
@@ -589,14 +581,6 @@ begin
 
 end;
 
-// keep width on resize
-procedure TForm1.FormResize(Sender: TObject);
-begin
-  // Affects Panel Resizing.
-  // Changed to use Form Minimum / Height / Width using the GUI Property Settings
-
-end;
-
 // get the params from the preset
 function tform1.getpresetparams(presetname:string):string;
 var
@@ -661,7 +645,6 @@ i,j:integer;
 ispresent: boolean;
 node,subnode, catnode,catsubnode : tdomnode;
 category,presetcategory: string;
-categorylist: tstrings;
 begin
    selectedcategory:=trim(selectedcategory);
    categorybox.Clear;
@@ -724,10 +707,10 @@ end;
 // change category
 procedure TForm1.categoryboxChange(Sender: TObject);
 var
-i,j:integer;
+i:integer;
 node,subnode, catnode,catsubnode : tdomnode;
 selectedcategory, category,presetcategory: string;
-categorylist: tstrings;
+
 begin
    selectedcategory:=categorybox.Text;
 
@@ -928,11 +911,6 @@ begin
   DestFolder.Text := SelectDirectoryDialog1.FileName;
 end;
 
-procedure TForm1.AspectratioChange(Sender: TObject);
-begin
-
-end;
-
 
 // drop files into list
 procedure TForm1.FormDropFiles(Sender: TObject; const FileNames: array of String
@@ -976,30 +954,14 @@ begin
   filelist.Clear;
 end;
 
-
-
-procedure TForm1.ExitmenuClick(Sender: TObject);
-begin
-
-end;
-
-// filelist key press
-procedure TForm1.filelistKeyPress(Sender: TObject; var Key: char);
-var
-i:integer;
-begin
-
-end;
-
 // filelist on key up
 procedure TForm1.filelistKeyUp(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 var
 i:integer;
-s:string;
 begin
            // delete
-  if key = 46 then
+  if (key = 46) then
    begin
     i:=0;
    while i< filelist.Items.Count do
@@ -1009,10 +971,6 @@ begin
        i+=1;
    end;
 
-end;
-
-procedure TForm1.FormActivate(Sender: TObject);
-begin
 end;
 
 
@@ -1062,14 +1020,14 @@ end;
 
 //menu: Help Forums
 procedure TForm1.mitForumsClick(Sender: TObject);
-var s : string;
+
 begin
   launchbrowser('http://www.winff.org/forums/');
 end;
 
 //menu: Help Forums
 procedure TForm1.mitWinffClick(Sender: TObject);
-var s : string;
+
 begin
   launchbrowser('http://www.winff.org/');
 end;
@@ -1106,31 +1064,15 @@ procedure TForm1.showoptionsClick(Sender: TObject);
  begin
    if not showoptions.Checked then
         begin
-        //form1.Height:=461;
-        //groupbox1.Top:=264;
-        //groupbox1.Visible:=true;
-        //groupbox2.top:=376;
-        //groupbox2.Visible:=true;
-        //
-        //tabPage2.Visible:=  true;
-        //tabPage3.Visible:=  true;
-        //tabPage4.visible := displaycmdline.Checked;
-        //pnlbottom.visible := true;
         form1.Height:=form1.Height + pnlBottom.Height ; // This should be fine, not sure if you want to limit height
 
         if form1.height < 400 then form1.height := 550;
 
         pnlBottom2.Visible := True;
         showoptions.Checked:=true;
-        //form1.invalidate;
         end
   else
         begin
-        //form1.Height:=290;
-        //groupbox1.Top:=264;
-        //groupbox1.Visible:=false;
-        //groupbox2.top:=264;
-        //groupbox2.Visible:=false;
 
         if form1.Height - pnlBottom2.Height > 400 then
           begin
@@ -1143,7 +1085,6 @@ procedure TForm1.showoptionsClick(Sender: TObject);
         pnlbottom2.visible := false;
         showoptions.Checked:=false;
 
-        //form1.invalidate;
         vidbitrate.Clear;
         vidframerate.clear;
         aspectratio.Clear;
@@ -1156,6 +1097,7 @@ procedure TForm1.showoptionsClick(Sender: TObject);
         end;
   Application.ProcessMessages; // Should repaint the form like invalidate
 end;
+
 // menu: shutdown on finish
 procedure TForm1.shutdownonfinishClick(Sender: TObject);
 begin
@@ -1196,10 +1138,10 @@ end;
 // play the selected file
 procedure TForm1.PlayClick(Sender: TObject);
 var
-selecteditem,i : integer;
-ffplayfilename,filenametoplay: string;
+i : integer;
+filenametoplay: string;
 begin
- {$ifdef win32}ffplayfilename:='"' + ffplay + '"';{$endif}
+
 
  if not fileexists(ffplay) then
    begin
@@ -1267,7 +1209,7 @@ procedure TForm1.StartBtnClick(Sender: TObject);
 var
 i,j : integer;
 pn, extension, params, commandline, command, filename,batfile, passlogfile, basename:string;
-qterm, ffmpegfilename, usethreads, deinterlace, nullfile, titlestring, vxs,vys,priority:string;
+qterm, ffmpegfilename, usethreads, deinterlace, nullfile, titlestring, priority:string;
 script: tstringlist;
 thetime: tdatetime;
 scriptprocess:tprocess;
@@ -1447,8 +1389,8 @@ end;
    // replace a paramter from a commandline
 function Tform1.replaceparam(commandline:string; param:string; replacement:string):string;
 var
-i,j,startpos,endpos: integer;
-s:string;
+i,startpos,endpos: integer;
+
 begin
  startpos:=pos(param +' ', commandline);
  if startpos <> 0 then
@@ -1477,13 +1419,13 @@ procedure tform1.importpresetfromfile(presetfilename: string);
 var
  importfile: txmldocument;
  importedpreset: tdomelement;
- i,j,reply,boxstyle:integer;
+ i,j,reply:integer;
  replaceall: boolean = false;
  removepreset: boolean = false;
  nodeexists:boolean = false;
  newnode,labelnode,paramsnode,extensionnode,categorynode,
-  textl,textp,texte,textc, node,subnode: tdomnode;
- nodename,nodelabel,nodeparams,nodeext,nodecat, testchars:string;
+  textl,textp,texte,textc, node: tdomnode;
+ nodename,nodelabel,nodeext,testchars:string;
 begin
  if not fileexists(presetfilename) then
     begin

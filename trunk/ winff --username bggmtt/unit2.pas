@@ -60,15 +60,11 @@ type
     procedure addpresetbtnClick(Sender: TObject);
     procedure CancelBtnClick(Sender: TObject);
     procedure DeleteBtnClick(Sender: TObject);
-    procedure Edit4Change(Sender: TObject);
-    procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
-    procedure FormResize(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure exportClick(Sender: TObject);
     procedure importClick(Sender: TObject);
     procedure lbCategoryClick(Sender: TObject);
     procedure ListBox1Click(Sender: TObject);
-    procedure ListBox1SelectionChange(Sender: TObject; User: Boolean);
     procedure OKbtnClick(Sender: TObject);
     procedure ValidateFields(Var isOkay : Boolean);
     procedure RefreshPresetsBox;
@@ -119,9 +115,6 @@ uses unit1,unit6;
 
 // get setup
 procedure TForm2.FormShow(Sender: TObject);
-var
-i:integer;
-node,subnode: tdomnode;
 begin
 
    TranslateUnitResourceStrings('unit2', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
@@ -143,14 +136,6 @@ begin
 
    lbCategory.Clear;
    lbCategory.Items.AddStrings(form1.categorybox.Items);
-   {
-   for i:= 0 to presets.ChildNodes.Count -1  do
-   begin
-    node:= presets.ChildNodes.item[i];
-    subnode:= node.FindNode('label');
-    listbox1.items.add(subnode.findnode('#text').NodeValue);
-   end;
-   }
 
 end;
 
@@ -193,7 +178,7 @@ end;
 // add / update a preset
 procedure TForm2.addpresetbtnClick(Sender: TObject);
 var
-s,labeltext: string;
+labeltext: string;
 i:integer;
 
 newnode,labelnode,paramsnode,extensionnode,categorynode,
@@ -209,6 +194,7 @@ begin
   edit4.Text:=trim(edit4.text);
   edit4.Text:=trim(edit4.text);
   
+  isOkay := False;
   ValidateFields(isOkay);             //
 
   if not (isOkay) then exit;
@@ -271,23 +257,14 @@ begin
      end;
 
   RefreshPresetsBox;
-{
-  listbox1.Clear;                             // reload the listbox
-  for i:= 0 to presets.ChildNodes.Count -1  do
-    begin
-      node:= presets.ChildNodes.item[i];
-      subnode:= node.FindNode('label');
-      listbox1.items.add(subnode.findnode('#text').NodeValue);
-    end;
-}
+
 end;
 
 // delete a preset
 procedure TForm2.DeleteBtnClick(Sender: TObject);
 var
-i:integer;
 labeltext :string;
-node2delete, node,subnode: tdomnode;
+node2delete: tdomnode;
 begin
   node2delete:= presets.FindNode(pn);
   labeltext := presets.findnode(pn).findnode('label').findnode('#text').nodevalue;
@@ -299,32 +276,10 @@ begin
      end;
 
   RefreshPresetsBox;
-{
-  listbox1.Clear;
-  for i:= 0 to presets.ChildNodes.Count -1  do
-    begin
-      node:= presets.ChildNodes.item[i];
-      subnode:= node.FindNode('label');
-      listbox1.items.add(subnode.findnode('#text').NodeValue);
-    end;
-}
-end;
-
-procedure TForm2.Edit4Change(Sender: TObject);
-begin
-end;
-
-procedure TForm2.FormDropFiles(Sender: TObject; const FileNames: array of String
-  );
-begin
 
 end;
 
-procedure TForm2.FormResize(Sender: TObject);
-begin
-{  form2.Height:=429;
-  form2.Width:=388;        }
-end;
+
 
 
 // import a preset
@@ -332,13 +287,13 @@ procedure TForm2.importClick(Sender: TObject);
 var
  importfile: txmldocument;
  importedpreset: tdomelement;
- i,j,reply,boxstyle:integer;
+ i,j,reply:integer;
  replaceall: boolean = false;
  removepreset: boolean = false;
  nodeexists:boolean = false;
  newnode,labelnode,paramsnode,extensionnode, categorynode,
-  textl,textp,texte, textc, node,subnode: tdomnode;
- nodename,nodelabel,nodeparams,nodeext, nodecategory, testchars:string;
+  textl,textp,texte, textc, node: tdomnode;
+ nodename,nodelabel,nodeext, testchars:string;
 begin
  opendialog1.DefaultExt:='.xml';
  opendialog1.Title:=rsimportpresets;
@@ -464,28 +419,16 @@ begin
 
  RefreshPresetsBox;
 
-{
- listbox1.Clear;                             // reload the listbox
-  for i:= 0 to presets.ChildNodes.Count -1  do
-    begin
-      node:= presets.ChildNodes.item[i];
-      subnode:= node.FindNode('label');
-      listbox1.items.add(subnode.findnode('#text').NodeValue);
-    end;
-}
 end;
 
 procedure TForm2.lbCategoryClick(Sender: TObject);
-var i : integer;
-    s , cat, pre, ocat : string;
-    node, subnode : tdomnode;
 begin
   RefreshPresetsBox;
 end;
 
 procedure TForm2.RefreshPresetsBox;
 var i : integer;
-    s , cat, pre, ocat : string;
+    cat, pre, ocat : string;
     node, subnode : tdomnode;
 begin
 
@@ -516,69 +459,6 @@ begin
 unit6.form6.show;
 end;
 
-{
-//export a preset
-procedure TForm2.exportClick(Sender: TObject);
-var
-exportfile: txmldocument;
-exportpreset: tdomelement;
-newnode: tdomnode;
-exportfilename:string;
-exlabel,exparams,exext,excat: string;
-i:integer;
-begin
-if pn = '' then
-  begin
-    showmessage(rsPresettoExport);
-    exit;
-  end;
-
-savedialog1.FileName:=pn + '.wff';
-if not savedialog1.Execute then
-   exit;
-
-exlabel := presets.FindNode(pn).FindNode('label').FindNode('#text').NodeValue;
-exparams := presets.FindNode(pn).FindNode('params').FindNode('#text').NodeValue;
-exext := presets.FindNode(pn).FindNode('extension').FindNode('#text').NodeValue;
-excat := presets.FindNode(pn).FindNode('category').FindNode('#text').NodeValue;
-
-exportfile := txmldocument.Create;
-exportpreset:= exportfile.CreateElement('presets');
-exportfile.AppendChild(exportpreset);
-
-newnode := exportfile.CreateElement(pn);
-exportpreset.AppendChild(newnode);
-
-newnode := exportfile.CreateElement('label');
-exportpreset.FindNode(pn).AppendChild(newnode);
-newnode := exportfile.CreateElement('params');
-exportpreset.FindNode(pn).AppendChild(newnode);
-newnode := exportfile.CreateElement('extension');
-exportpreset.FindNode(pn).AppendChild(newnode);
-newnode := exportfile.CreateElement('category');
-exportpreset.FindNode(pn).AppendChild(newnode);
-
-
-newnode := exportfile.CreateTextNode(exlabel);
-exportpreset.FindNode(pn).FindNode('label').AppendChild(newnode);
-newnode := exportfile.CreateTextNode(exparams);
-exportpreset.FindNode(pn).FindNode('params').AppendChild(newnode);
-newnode := exportfile.CreateTextNode(exext);
-exportpreset.FindNode(pn).FindNode('extension').AppendChild(newnode);
-newnode := exportfile.CreateTextNode(excat);
-exportpreset.FindNode(pn).FindNode('category').AppendChild(newnode);
-
-
-writexmlfile(exportfile,savedialog1.FileName);
-
-
-end;
-}
-
-procedure TForm2.ListBox1SelectionChange(Sender: TObject; User: Boolean);
-begin
-
-end;
 
 // save & exit
 procedure TForm2.OKbtnClick(Sender: TObject);
@@ -610,11 +490,7 @@ begin
     showmessage(rsYouMustEnterLabel);
     exit;
    end;
- // if edit3.text='' then
- //  begin
- //   showmessage('You must enter the parameters.');
- //   exit;
- //  end;
+
   if edit4.text='' then
    begin
     showmessage(rsYouMustEnterExtension);
@@ -639,8 +515,6 @@ begin
   s:=edit4.text;                        // make sure no period in extension
 
   if pos('.',s) > 0 then                // check for '.' anywhere in extension
-                                        //
-  //if s[1] = '.' then
    begin
      showmessage(rsExtensionnoperiod);
      exit;

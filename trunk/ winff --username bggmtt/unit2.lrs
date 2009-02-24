@@ -1,67 +1,66 @@
 { This is an automatically generated lazarus resource file }
 
 LazarusResources.Add('TForm2','FORMDATA',[
-  'TPF0'#6'TForm2'#5'Form2'#4'Left'#3'5'#1#6'Height'#3#205#1#3'Top'#3'\'#1#5'Wi'
-  +'dth'#3#161#1#13'ActiveControl'#7#10'lbCategory'#7'Caption'#6#12'Edit Preset'
-  +'s'#12'ClientHeight'#3#205#1#11'ClientWidth'#3#161#1#21'Constraints.MinHeigh'
-  +'t'#3#144#1#20'Constraints.MinWidth'#3#144#1#8'OnResize'#7#10'FormResize'#6
-  +'OnShow'#7#8'FormShow'#10'ParentFont'#8#8'Position'#7#16'poMainFormCenter'#8
-  +'ShowHint'#9#10'LCLVersion'#6#6'0.9.26'#0#6'TPanel'#9'pnlBottom'#6'Height'#2
-  +'T'#3'Top'#3'y'#1#5'Width'#3#161#1#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6
-  +'bvNone'#12'ClientHeight'#2'T'#11'ClientWidth'#3#161#1#8'TabOrder'#2#0#0#7'T'
-  +'Button'#12'addpresetbtn'#4'Left'#2#8#6'Height'#2#25#3'Top'#2#17#5'Width'#2
-  +'['#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#13' Add / Update'#7'OnCli'
-  +'ck'#7#17'addpresetbtnClick'#8'TabOrder'#2#0#0#0#7'TButton'#9'DeleteBtn'#4'L'
-  +'eft'#2'h'#6'Height'#2#25#3'Top'#2#17#5'Width'#2'['#25'BorderSpacing.InnerBo'
-  +'rder'#2#4#7'Caption'#6#6'Delete'#7'OnClick'#7#14'DeleteBtnClick'#8'TabOrder'
-  +#2#1#0#0#7'TButton'#5'OKbtn'#4'Left'#3#248#0#6'Height'#2#25#3'Top'#2'1'#5'Wi'
-  +'dth'#2'K'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#4'Save'#7'OnClick'
-  +#7#10'OKbtnClick'#8'TabOrder'#2#2#0#0#7'TButton'#9'CancelBtn'#4'Left'#3'H'#1
-  +#6'Height'#2#25#3'Top'#2'1'#5'Width'#2'K'#25'BorderSpacing.InnerBorder'#2#4#7
-  +'Caption'#6#5'Close'#7'OnClick'#7#14'CancelBtnClick'#8'TabOrder'#2#3#0#0#7'T'
-  +'Button'#6'import'#4'Left'#3#248#0#6'Height'#2#25#3'Top'#2#18#5'Width'#2'K'
-  +#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#6'Import'#7'OnClick'#7#11'im'
-  +'portClick'#8'TabOrder'#2#4#0#0#7'TButton'#6'export'#4'Left'#3'H'#1#6'Height'
-  +#2#25#3'Top'#2#17#5'Width'#2'K'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'
-  +#6#6'Export'#7'OnClick'#7#11'exportClick'#8'TabOrder'#2#5#0#0#0#6'TPanel'#6
-  +'Panel1'#6'Height'#3#246#0#3'Top'#3#131#0#5'Width'#3#161#1#5'Align'#7#8'alBo'
-  +'ttom'#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#3#246#0#11'ClientWidth'#3
-  +#161#1#8'TabOrder'#2#1#0#6'TLabel'#6'Label2'#4'Left'#2#8#6'Height'#2#13#3'To'
-  +'p'#2#16#5'Width'#3'!'#1#7'Caption'#6'2Preset Name   (one word, only letters'
-  +' and numbers)'#11'ParentColor'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#8#6'Heig'
-  +'ht'#2#13#3'Top'#2'@'#5'Width'#2'G'#7'Caption'#6#12'Preset Label'#11'ParentC'
-  +'olor'#8#0#0#6'TLabel'#6'Label4'#4'Left'#2#8#6'Height'#2#13#3'Top'#2'p'#5'Wi'
-  +'dth'#3','#1#7'Caption'#6'5Preset Command Line Parameters (no -i or output f'
-  +'ile)'#11'ParentColor'#8#0#0#6'TLabel'#6'Label5'#4'Left'#2#8#6'Height'#2#13#3
-  +'Top'#3#160#0#5'Width'#3#251#0#7'Caption'#6'/Output File Extension (do not i'
-  +'nclude the ''.'' )'#11'ParentColor'#8#0#0#6'TLabel'#6'Label6'#4'Left'#2#9#6
-  +'Height'#2#13#3'Top'#3#208#0#5'Width'#2'4'#7'Caption'#6#8'Category'#11'Paren'
-  +'tColor'#8#0#0#5'TEdit'#5'Edit1'#4'Left'#2#8#6'Height'#2#23#4'Hint'#6'$(one '
-  +'word, only letters and numbers)'#3'Top'#2' '#5'Width'#3#0#1#8'TabOrder'#2#0
-  +#0#0#5'TEdit'#5'Edit2'#4'Left'#2#8#6'Height'#2#23#4'Hint'#6'-Enter a more de'
-  +'scriptive name for this preset'#3'Top'#2'P'#5'Width'#3#0#1#8'TabOrder'#2#1#0
-  +#0#5'TEdit'#5'Edit3'#4'Left'#2#8#6'Height'#2#23#4'Hint'#6'-Please don''t use'
-  +' -i or output file parameters'#3'Top'#3#128#0#5'Width'#3#139#1#8'TabOrder'#2
-  +#2#0#0#5'TEdit'#5'Edit4'#4'Left'#2#8#6'Height'#2#23#4'Hint'#6#20'Do not incl'
-  +'ude the .'#3'Top'#3#176#0#5'Width'#2'P'#9'MaxLength'#2#20#8'TabOrder'#2#3#0
-  +#0#5'TEdit'#5'Edit5'#4'Left'#2#9#6'Height'#2#23#4'Hint'#6',Choose a category'
-  +' to group this preset under'#3'Top'#3#224#0#5'Width'#2'x'#8'TabOrder'#2#4#0
-  +#0#0#6'TPanel'#6'Panel2'#6'Height'#3#131#0#5'Width'#3#161#1#5'Align'#7#8'alC'
-  +'lient'#10'BevelOuter'#7#6'bvNone'#7'Caption'#6#6'Panel2'#12'ClientHeight'#3
-  +#131#0#11'ClientWidth'#3#161#1#8'TabOrder'#2#2#0#6'TLabel'#6'Label1'#6'Heigh'
-  +'t'#2#13#5'Width'#3#161#1#5'Align'#7#5'alTop'#7'Caption'#6#17'Category / Pre'
-  +'set'#12'Font.CharSet'#2#17#11'ParentColor'#8#10'ParentFont'#8#0#0#8'TListBo'
-  +'x'#8'ListBox1'#4'Left'#3#168#0#6'Height'#2'v'#3'Top'#2#13#5'Width'#3#249#0#5
-  +'Align'#7#8'alClient'#7'Anchors'#11#5'akTop'#7'akRight'#8'akBottom'#0#7'OnCl'
-  +'ick'#7#13'ListBox1Click'#8'TabOrder'#2#0#0#0#8'TListBox'#10'lbCategory'#6'H'
-  +'eight'#2'v'#3'Top'#2#13#5'Width'#3#163#0#5'Align'#7#6'alLeft'#7'Anchors'#11
-  +#5'akTop'#8'akBottom'#0#7'OnClick'#7#15'lbCategoryClick'#8'TabOrder'#2#1#0#0
-  +#9'TSplitter'#9'Splitter1'#4'Left'#3#163#0#6'Height'#2'v'#3'Top'#2#13#5'Widt'
-  +'h'#2#5#0#0#0#11'TOpenDialog'#11'OpenDialog1'#5'Title'#6#15'Import a Preset'
-  +#10'DefaultExt'#6#4'.wff'#6'Filter'#6#19'WinFF Presets|*.wff'#11'FilterIndex'
-  +#2#0#4'left'#3'@'#1#0#0#11'TSaveDialog'#11'SaveDialog1'#5'Title'#6#15'Export'
-  +' a Preset'#11'FilterIndex'#2#0#7'Options'#11#17'ofOverwritePrompt'#14'ofEna'
-  +'bleSizing'#12'ofViewDetail'#0#4'left'#3#248#0#0#0#10'TXMLConfig'#10'XMLConf'
-  +'ig1'#8'RootName'#18#6#0#0#0'C'#0'O'#0'N'#0'F'#0'I'#0'G'#0#4'left'#3'"'#1#3
-  +'top'#3#169#0#0#0#0
+  'TPF0'#6'TForm2'#5'Form2'#4'Left'#3'>'#1#6'Height'#3#205#1#3'Top'#3''''#1#5'W'
+  +'idth'#3#161#1#13'ActiveControl'#7#10'lbCategory'#7'Caption'#6#12'Edit Prese'
+  +'ts'#12'ClientHeight'#3#205#1#11'ClientWidth'#3#161#1#21'Constraints.MinHeig'
+  +'ht'#3#144#1#20'Constraints.MinWidth'#3#144#1#6'OnShow'#7#8'FormShow'#10'Par'
+  +'entFont'#8#8'Position'#7#16'poMainFormCenter'#8'ShowHint'#9#10'LCLVersion'#6
+  +#6'0.9.26'#0#6'TPanel'#9'pnlBottom'#6'Height'#2'T'#3'Top'#3'y'#1#5'Width'#3
+  +#161#1#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2
+  +'T'#11'ClientWidth'#3#161#1#8'TabOrder'#2#0#0#7'TButton'#12'addpresetbtn'#4
+  +'Left'#2#8#6'Height'#2#25#3'Top'#2#17#5'Width'#2'['#25'BorderSpacing.InnerBo'
+  +'rder'#2#4#7'Caption'#6#13' Add / Update'#7'OnClick'#7#17'addpresetbtnClick'
+  +#8'TabOrder'#2#0#0#0#7'TButton'#9'DeleteBtn'#4'Left'#2'h'#6'Height'#2#25#3'T'
+  +'op'#2#17#5'Width'#2'['#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#6'Del'
+  +'ete'#7'OnClick'#7#14'DeleteBtnClick'#8'TabOrder'#2#1#0#0#7'TButton'#5'OKbtn'
+  +#4'Left'#3#248#0#6'Height'#2#25#3'Top'#2'1'#5'Width'#2'K'#25'BorderSpacing.I'
+  +'nnerBorder'#2#4#7'Caption'#6#4'Save'#7'OnClick'#7#10'OKbtnClick'#8'TabOrder'
+  +#2#2#0#0#7'TButton'#9'CancelBtn'#4'Left'#3'H'#1#6'Height'#2#25#3'Top'#2'1'#5
+  +'Width'#2'K'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#5'Close'#7'OnCli'
+  +'ck'#7#14'CancelBtnClick'#8'TabOrder'#2#3#0#0#7'TButton'#6'import'#4'Left'#3
+  +#248#0#6'Height'#2#25#3'Top'#2#18#5'Width'#2'K'#25'BorderSpacing.InnerBorder'
+  +#2#4#7'Caption'#6#6'Import'#7'OnClick'#7#11'importClick'#8'TabOrder'#2#4#0#0
+  +#7'TButton'#6'export'#4'Left'#3'H'#1#6'Height'#2#25#3'Top'#2#17#5'Width'#2'K'
+  +#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#6'Export'#7'OnClick'#7#11'ex'
+  +'portClick'#8'TabOrder'#2#5#0#0#0#6'TPanel'#6'Panel1'#6'Height'#3#246#0#3'To'
+  +'p'#3#131#0#5'Width'#3#161#1#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNon'
+  +'e'#12'ClientHeight'#3#246#0#11'ClientWidth'#3#161#1#8'TabOrder'#2#1#0#6'TLa'
+  +'bel'#6'Label2'#4'Left'#2#8#6'Height'#2#13#3'Top'#2#16#5'Width'#3'!'#1#7'Cap'
+  +'tion'#6'2Preset Name   (one word, only letters and numbers)'#11'ParentColor'
+  +#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#8#6'Height'#2#13#3'Top'#2'@'#5'Width'#2
+  +'G'#7'Caption'#6#12'Preset Label'#11'ParentColor'#8#0#0#6'TLabel'#6'Label4'#4
+  +'Left'#2#8#6'Height'#2#13#3'Top'#2'p'#5'Width'#3','#1#7'Caption'#6'5Preset C'
+  +'ommand Line Parameters (no -i or output file)'#11'ParentColor'#8#0#0#6'TLab'
+  +'el'#6'Label5'#4'Left'#2#8#6'Height'#2#13#3'Top'#3#160#0#5'Width'#3#251#0#7
+  +'Caption'#6'/Output File Extension (do not include the ''.'' )'#11'ParentCol'
+  +'or'#8#0#0#6'TLabel'#6'Label6'#4'Left'#2#9#6'Height'#2#13#3'Top'#3#208#0#5'W'
+  +'idth'#2'4'#7'Caption'#6#8'Category'#11'ParentColor'#8#0#0#5'TEdit'#5'Edit1'
+  +#4'Left'#2#8#6'Height'#2#23#4'Hint'#6'$(one word, only letters and numbers)'
+  +#3'Top'#2' '#5'Width'#3#0#1#8'TabOrder'#2#0#0#0#5'TEdit'#5'Edit2'#4'Left'#2#8
+  +#6'Height'#2#23#4'Hint'#6'-Enter a more descriptive name for this preset'#3
+  +'Top'#2'P'#5'Width'#3#0#1#8'TabOrder'#2#1#0#0#5'TEdit'#5'Edit3'#4'Left'#2#8#6
+  +'Height'#2#23#4'Hint'#6'-Please don''t use -i or output file parameters'#3'T'
+  +'op'#3#128#0#5'Width'#3#139#1#8'TabOrder'#2#2#0#0#5'TEdit'#5'Edit4'#4'Left'#2
+  +#8#6'Height'#2#23#4'Hint'#6#20'Do not include the .'#3'Top'#3#176#0#5'Width'
+  +#2'P'#9'MaxLength'#2#20#8'TabOrder'#2#3#0#0#5'TEdit'#5'Edit5'#4'Left'#2#9#6
+  +'Height'#2#23#4'Hint'#6',Choose a category to group this preset under'#3'Top'
+  +#3#224#0#5'Width'#2'x'#8'TabOrder'#2#4#0#0#0#6'TPanel'#6'Panel2'#6'Height'#3
+  +#131#0#5'Width'#3#161#1#5'Align'#7#8'alClient'#10'BevelOuter'#7#6'bvNone'#7
+  +'Caption'#6#6'Panel2'#12'ClientHeight'#3#131#0#11'ClientWidth'#3#161#1#8'Tab'
+  +'Order'#2#2#0#6'TLabel'#6'Label1'#6'Height'#2#13#5'Width'#3#161#1#5'Align'#7
+  +#5'alTop'#7'Caption'#6#17'Category / Preset'#12'Font.CharSet'#2#17#11'Parent'
+  +'Color'#8#10'ParentFont'#8#0#0#8'TListBox'#8'ListBox1'#4'Left'#3#168#0#6'Hei'
+  +'ght'#2'v'#3'Top'#2#13#5'Width'#3#249#0#5'Align'#7#8'alClient'#7'Anchors'#11
+  +#5'akTop'#7'akRight'#8'akBottom'#0#7'OnClick'#7#13'ListBox1Click'#8'TabOrder'
+  +#2#0#0#0#8'TListBox'#10'lbCategory'#6'Height'#2'v'#3'Top'#2#13#5'Width'#3#163
+  +#0#5'Align'#7#6'alLeft'#7'Anchors'#11#5'akTop'#8'akBottom'#0#7'OnClick'#7#15
+  +'lbCategoryClick'#8'TabOrder'#2#1#0#0#9'TSplitter'#9'Splitter1'#4'Left'#3#163
+  +#0#6'Height'#2'v'#3'Top'#2#13#5'Width'#2#5#0#0#0#11'TOpenDialog'#11'OpenDial'
+  +'og1'#5'Title'#6#15'Import a Preset'#10'DefaultExt'#6#4'.wff'#6'Filter'#6#19
+  +'WinFF Presets|*.wff'#11'FilterIndex'#2#0#4'left'#3'@'#1#0#0#11'TSaveDialog'
+  +#11'SaveDialog1'#5'Title'#6#15'Export a Preset'#11'FilterIndex'#2#0#7'Option'
+  +'s'#11#17'ofOverwritePrompt'#14'ofEnableSizing'#12'ofViewDetail'#0#4'left'#3
+  +#248#0#0#0#10'TXMLConfig'#10'XMLConfig1'#8'RootName'#18#6#0#0#0'C'#0'O'#0'N'
+  +#0'F'#0'I'#0'G'#0#4'left'#3'"'#1#3'top'#3#169#0#0#0#0
 ]);

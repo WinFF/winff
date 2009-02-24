@@ -71,9 +71,8 @@ type
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
-    procedure CheckBox4Change(Sender: TObject);
-    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+
   private
     { private declarations }
   public
@@ -169,8 +168,6 @@ end;
 
 // save preference
 procedure TForm4.Button1Click(Sender: TObject);
-var
-ipoint:string;
 
 begin
   form1.setconfigvalue('general/destfolder',edit1.text);
@@ -295,15 +292,6 @@ begin
     edit6.Text := opendialog1.FileName;
 end;
 
-procedure TForm4.CheckBox4Change(Sender: TObject);
-begin
-
-end;
-
-procedure TForm4.FormClose(Sender: TObject; var CloseAction: TCloseAction);
-begin
-
-end;
 
 initialization
   {$I unit4.lrs}

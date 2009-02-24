@@ -1,7 +1,7 @@
 object Form4: TForm4
-  Left = 386
+  Left = 330
   Height = 322
-  Top = 366
+  Top = 330
   Width = 400
   ActiveControl = Notebook1
   BorderIcons = [biSystemMenu, biMinimize]
@@ -9,7 +9,6 @@ object Form4: TForm4
   Caption = 'WinFF Preferences'
   ClientHeight = 322
   ClientWidth = 400
-  OnClose = FormClose
   OnCreate = FormCreate
   ParentFont = False
   Position = poMainFormCenter
@@ -97,21 +96,21 @@ object Form4: TForm4
     end
     object Page2: TPage
       Caption = 'MS Windows'
-      ClientWidth = 384
-      ClientHeight = 264
+      ClientWidth = 376
+      ClientHeight = 238
       object Label2: TLabel
         Left = 4
-        Height = 13
+        Height = 14
         Top = 8
-        Width = 156
+        Width = 133
         Caption = 'Path to FFmpeg Executable'
         ParentColor = False
       end
       object Label3: TLabel
         Left = 4
-        Height = 13
+        Height = 14
         Top = 64
-        Width = 150
+        Width = 127
         Caption = 'Path to FFplay Executable'
         ParentColor = False
       end
@@ -142,7 +141,7 @@ object Form4: TForm4
       object Button5: TButton
         Left = 332
         Height = 25
-        Top = 88
+        Top = 90
         Width = 32
         BorderSpacing.InnerBorder = 4
         Caption = '...'
@@ -151,46 +150,46 @@ object Form4: TForm4
       end
       object CheckBox2: TCheckBox
         Left = 4
-        Height = 20
+        Height = 19
         Top = 130
-        Width = 237
+        Width = 208
         Caption = 'Use CHCP for international characters'
         TabOrder = 4
       end
     end
     object Page3: TPage
       Caption = 'Linux'
-      ClientWidth = 384
-      ClientHeight = 264
+      ClientWidth = 376
+      ClientHeight = 238
       object Label4: TLabel
         Left = 4
-        Height = 13
+        Height = 14
         Top = 8
-        Width = 156
+        Width = 133
         Caption = 'Path to FFmpeg Executable'
         ParentColor = False
       end
       object Label5: TLabel
         Left = 4
-        Height = 13
+        Height = 14
         Top = 64
-        Width = 150
+        Width = 127
         Caption = 'Path to FFplay Executable'
         ParentColor = False
       end
       object Label6: TLabel
         Left = 4
-        Height = 13
+        Height = 14
         Top = 120
-        Width = 148
+        Width = 125
         Caption = 'Terminal to run FFmpeg in'
         ParentColor = False
       end
       object Label7: TLabel
         Left = 4
-        Height = 13
+        Height = 14
         Top = 176
-        Width = 307
+        Width = 268
         Caption = 'Terminal Options (''-e'' for xterm, ''-x'' for gnome terminal)'
         ParentColor = False
       end
@@ -212,7 +211,7 @@ object Form4: TForm4
         TabOrder = 1
       end
       object Edit5: TEdit
-        Left = 4
+        Left = 7
         Height = 23
         Top = 88
         Width = 312
@@ -236,19 +235,19 @@ object Form4: TForm4
         BorderSpacing.InnerBorder = 4
         Caption = '...'
         OnClick = Button8Click
-        TabOrder = 4
+        TabOrder = 5
       end
       object Edit6: TEdit
         Left = 4
         Height = 23
         Top = 144
         Width = 312
-        TabOrder = 5
+        TabOrder = 4
       end
       object Edit7: TEdit
         Left = 4
         Height = 23
-        Top = 200
+        Top = 202
         Width = 80
         TabOrder = 6
       end
