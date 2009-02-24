@@ -12,11 +12,11 @@ msgstr ""
 
 #: unit1.rsaddbtn
 msgid "Add"
-msgstr "ÐÐ¾Ð±Ð°Ð²ÑÐ½Ðµ"
+msgstr "Добавяне"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr ""
+msgstr "(Вс. Категории)"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
@@ -24,141 +24,141 @@ msgstr "Deinterlace"
 
 #: unit1.rsclearbtn
 msgid "Clear"
-msgstr "ÐÐ·ÑÐ¸ÑÑÐ²Ð°Ð½Ðµ"
+msgstr "Изчистване"
 
 #: unit1.rsclose
 #, fuzzy
 msgid "Close"
-msgstr "ÐÐ·ÑÐ¸ÑÑÐ²Ð°Ð½Ðµ"
+msgstr "Затваряне"
 
 #: unit1.rsclosebtn
 msgid "Options"
-msgstr "ÐÐ¿ÑÐ¸Ð¸"
+msgstr "Опции"
 
 #: unit1.rsconverting
 msgid "Converting"
-msgstr "ÐÐ¾Ð½Ð²ÐµÑÑÐ¸ÑÐ°Ð½Ðµ"
+msgstr "Конвертиране"
 
 #: unit1.rscouldnotfindffmpeg
 msgid "Could not find FFmpeg."
-msgstr "FFmpeg Ð½Ðµ Ðµ Ð½Ð°Ð¼ÐµÑÐµÐ½"
+msgstr "FFmpeg не е намерен"
 
 #: unit1.rscouldnotfindffplay
 msgid "Could not find FFPlay."
-msgstr "FFPlay Ð½Ðµ Ðµ Ð½Ð°Ð¼ÐµÑÐµÐ½."
+msgstr "FFPlay не е намерен"
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
-msgstr "ÐÐµ Ðµ Ð½Ð°Ð¼ÐµÑÐµÐ½ ÑÐ°Ð¹Ð»"
+msgstr "Файлът не е намерен"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "Ð¤Ð°Ð¹Ð»ÑÑ Ñ Ð³Ð¾ÑÐ¾Ð²Ð¸ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ¸ Ð½Ðµ Ðµ Ð½Ð°Ð¼ÐµÑÐµÐ½"
+msgstr "Файлът с готови настройки не е намерен"
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
-msgstr "ÐÐ¾ÐºÐ°Ð¶Ð¸ ÐºÐ¾Ð¼Ð°Ð½Ð´ÐµÐ½ ÑÐµÐ´"
+msgstr "Покажи команден ред"
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "Ð Ð°Ð·ÑÐ¸ÑÐµÐ½Ð¸ÐµÑÐ¾ Ð½Ðµ Ð¼Ð¾Ð¶Ðµ Ð´Ð° ÑÑÐ´ÑÑÐ¶Ð° ÑÐ¾ÑÐºÐ°"
+msgstr "Разширението не може да съдържа точка"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
-msgstr "ÑÐ°Ð¹Ð»ÑÑ Ð½Ðµ ÑÑÑÐµÑÑÐ²ÑÐ²Ð°"
+msgstr "файлът не съществува"
 
 #: unit1.rsfilemenu
 msgid "File"
-msgstr "Ð¤Ð°Ð¹Ð»"
+msgstr "Файл"
 
 #: unit1.rsgroupbox1
 msgid "Additional Options"
-msgstr "ÐÐ¾Ð¿ÑÐ»Ð½Ð¸ÑÐµÐ»Ð½Ð¸ ÐÐ¿ÑÐ¸Ð¸"
+msgstr "Допълнителни опции"
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
-msgstr "ÐÐ½Ð°ÑÑÐ½Ðµ Ð½Ð° Ð³Ð¾ÑÐ¾Ð²Ð¸ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ¸"
+msgstr "Внасяне на готови настройки"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "ÐÐµÐ²Ð°Ð»Ð¸Ð´ÐµÐ½ ÑÐ°Ð¹Ð» Ñ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ¸"
+msgstr "Невалиден файл с готови настройки"
 
 #: unit1.rslabel1
 msgid "Convert To ..."
-msgstr "ÐÐ¾Ð½Ð²ÐµÑÑÐ¸ÑÐ°Ð½Ðµ ÐºÑÐ¼ ..."
+msgstr "Конвертиране към ..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr ""
+msgstr "Аудио канали"
 
 #: unit1.rslabel11
 msgid "Output Folder"
-msgstr "ÐÐ·ÑÐ¾Ð´Ð½Ð° Ð¿Ð°Ð¿ÐºÐ°"
+msgstr "Изходна папка"
 
 #: unit1.rslabel19
 #, fuzzy
 msgid "Device Preset"
-msgstr "ÐÑÐµÐ¼Ð°ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ°"
+msgstr "Настройки на устройство"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
-msgstr "ÐÐ¸Ð´ÐµÐ¾ bitrate"
+msgstr "Видео bitrate"
 
 #: unit1.rslabel4
 msgid "Frame Rate"
-msgstr "Ð¡ÐºÐ¾ÑÐ¾ÑÑ Ð½Ð° ÐºÐ°Ð´ÑÐ¸"
+msgstr "Скорост на кадри"
 
 #: unit1.rslabel5
 msgid "Video Size"
-msgstr "ÐÐ¸Ð´ÐµÐ¾ ÑÐ°Ð·Ð¼ÐµÑ"
+msgstr "Видео размер"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
-msgstr "Ð¡ÑÐ¾ÑÐ½Ð¾ÑÐµÐ½Ð¸Ðµ Ð²Ð¸Ñ./ÑÐ¸Ñ."
+msgstr "Съотношение вис./шир."
 
 #: unit1.rslabel7
 msgid "Audio Bitrate"
-msgstr "ÐÑÐ´Ð¸Ð¾ Bitrate"
+msgstr "Аудио Bitrate"
 
 #: unit1.rslabel8
 msgid "Sample Rate"
-msgstr "Ð§ÐµÑÑÐ¾ÑÐ° Ð½Ð° ÑÐµÐ¼Ð¿Ð»Ð¸ÑÐ°Ð½Ðµ"
+msgstr "Честота на семпл."
 
 #: unit1.rsmenuitem1
 msgid "Edit"
-msgstr "Ð ÐµÐ´Ð°ÐºÑÐ¸ÑÐ°Ð½Ðµ"
+msgstr "Редактиране"
 
 #: unit1.rsmenuitem3
 msgid "Exit"
-msgstr "ÐÐ·ÑÐ¾Ð´"
+msgstr "Изход"
 
 #: unit1.rsmenuitem4
 msgid "Presets"
-msgstr "ÐÐ¾ÑÐ¾Ð²Ð¸ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ¸"
+msgstr "Готови настройки"
 
 #: unit1.rsmenuitem5
 msgid "Preferences"
-msgstr "ÐÑÐµÐ´Ð¿Ð¾ÑÐ¸ÑÐ°Ð½Ð¸Ñ"
+msgstr "Предпочитания"
 
 #: unit1.rsmenuitem6
 msgid "WinFF Website"
-msgstr ""
+msgstr "WinFF Сайт"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr ""
+msgstr "WinFF Форуми"
 
 #: unit1.rsmitabout
 msgid "About"
-msgstr "ÐÑÐ½Ð¾ÑÐ½Ð¾"
+msgstr "Относно"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr ""
+msgstr "Документация"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "ÐÐ¼ÐµÑÐ¾ ÑÑÑÐ±Ð²Ð° Ð´Ð° ÑÑÐ´ÑÑÐ¶Ð° ÑÐ°Ð¼Ð¾ Ð±ÑÐºÐ²Ð¸ Ð¸ ÑÐ¸ÑÑÐ¸"
+msgstr "Името трябва да съдържа само букви и/или цифри (a-z,A-Z,0-9)"
 
 #: unit1.rspass2
 msgid "2 pass"
@@ -166,166 +166,166 @@ msgstr "2 pass"
 
 #: unit1.rspauseonfinish
 msgid "Pause on Finish"
-msgstr "ÐÐ°ÑÐ·Ð° Ð¿ÑÐ¸ ÐºÑÐ°Ð¹"
+msgstr "Пауза при край"
 
 #: unit1.rsplay
 msgid "Play"
-msgstr "ÐÐ·Ð¿ÑÐ»Ð½ÐµÐ½Ð¸Ðµ"
+msgstr "Изпълнение"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "ÐÐ¾Ð»Ñ Ð´Ð¾Ð±Ð°Ð²ÐµÑÐµ Ð¿Ð¾Ð½Ðµ ÐµÐ´Ð¸Ð½ ÑÐ°Ð¹Ð» Ð·Ð° ÐºÐ¾Ð½Ð²ÐµÑÑÐ¸ÑÐ°Ð½Ðµ"
+msgstr "Моля, добавете поне 1 файл за конвертиране"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
-msgstr "ÐÐ°ÑÑÑÐ¾Ð¹ÐºÐ°: %s%s%s  Ð²ÐµÑÐµ ÑÑÑÐµÑÑÐ²ÑÐ²Ð°"
+msgstr "Настройката: %s%s%s  вече съществува"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "ÐÐ·Ð±ÑÐ°Ð½Ð°ÑÐ° Ð·Ð° Ð²Ð½Ð°ÑÑÐ½Ðµ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ° Ð½ÑÐ¼Ð° ÑÐ°Ð·ÑÐ¸ÑÐµÐ½Ð¸Ðµ"
+msgstr "Настройката за внасяне няма разширение"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "ÐÐ·Ð±ÑÐ°Ð½Ð°ÑÐ° Ð·Ð° Ð²Ð½Ð°ÑÑÐ½Ðµ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ° Ð½ÑÐ¼Ð° ÐµÑÐ¸ÐºÐµÑ"
+msgstr "Настройката за внасяне няма етикет"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "ÐÐ¾Ð»Ñ Ð¸Ð·Ð±ÐµÑÐµÑÐµ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ° Ð·Ð° Ð¸Ð·Ð½Ð°ÑÑÐ½Ðµ"
+msgstr "Моля изберете настройка за изнасяне"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "ÐÐ°ÑÑÑÐ¾Ð¹ÐºÐ° Ñ ÐµÑÐ¸ÐºÐµÑ: %s%s%s Ð²ÐµÑÐµ ÑÑÑÐµÑÑÐ²ÑÐ²Ð°"
+msgstr "Настройка с етикет: %s%s%s вече съществува"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr "ÐÐ°ÑÐ¸ÑÐ½ÐµÑÐµ Enter Ð·Ð° Ð´Ð° Ð¿ÑÐ¾Ð´ÑÐ»Ð¶Ð¸ÑÐµ"
+msgstr "Натиснете Enter за да продължите"
 
 #: unit1.rsremovebtn
 msgid "Remove"
-msgstr "ÐÑÐµÐ¼Ð°ÑÐ²Ð°Ð½Ðµ"
+msgstr "Премахване"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "ÐÐ·Ð±Ð¾Ñ Ð½Ð° ÑÐ°Ð¹Ð»Ð¾Ð²Ðµ Ñ Ð³Ð¾ÑÐ¾Ð²Ð¸ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ¸"
+msgstr "Изберете файл с настройки"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
-msgstr "ÐÐ·Ð±Ð¾Ñ Ð½Ð° Ð²Ð¸Ð´ÐµÐ¾ ÑÐ°Ð¹Ð»Ð¾Ð²Ðµ"
+msgstr "Изберете видео файлове"
 
 #: unit1.rsshutdownonfinish
 msgid "Shutdown on Finish"
-msgstr "ÐÐ·ÐºÐ»ÑÑÐ²Ð°Ð½Ðµ Ð¿ÑÐ¸ ÐºÑÐ°Ð¹"
+msgstr "Изключване при край"
 
 #: unit1.rsstartbtn
 msgid "Convert"
-msgstr "ÐÐ¾Ð½Ð²ÐµÑÑÐ¸ÑÐ°Ð½Ðµ"
+msgstr "Конвертиране"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "ÐÐ°ÑÑÑÐ¾Ð¹ÐºÐ°ÑÐ° ÑÑÐ´ÑÑÐ¶Ð° Ð½ÐµÐ²Ð°Ð»Ð¸Ð´Ð½Ð¸ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¸"
+msgstr "Настройката съдържа непозволени символи"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr ""
+msgstr "Детайли от изпълнението"
 
 #: unit1.tabpage2caption
 #, fuzzy
 msgid "Video Settings"
-msgstr "ÐÐ¸Ð´ÐµÐ¾ ÑÐ°Ð·Ð¼ÐµÑ"
+msgstr "Видео настройки"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr ""
+msgstr "Аудио настройки"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
-msgstr "ÐÐ¾Ð¿ÑÐ»Ð½Ð¸ÑÐµÐ»Ð½Ð¸ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÐ¸ Ð½Ð° ÐºÐ¾Ð¼Ð°Ð½Ð´Ð½Ð¸Ñ ÑÐµÐ´"
+msgstr "Допълнителни параметри на командния ред"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
-msgstr "ÐÐ¾Ð±Ð°Ð²ÑÐ½Ðµ/ÐÐ±Ð½Ð¾Ð²ÑÐ²Ð°Ð½Ðµ"
+msgstr "Добавяне/Обновяване"
 
 #: unit2.rscancelbtn
 msgid "Cancel"
-msgstr "ÐÑÐºÐ°Ð·"
+msgstr "Отказ"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Ð¡ÑÐ·Ð´Ð°Ð²Ð°Ð½Ðµ Ð½Ð° Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ°:"
+msgstr "Създаване на настройка:"
 
 #: unit2.rsdeletebtn
 msgid "Delete"
-msgstr "ÐÐ·ÑÑÐ¸Ð²Ð°Ð½Ðµ"
+msgstr "Изтриване"
 
 #: unit2.rsexport
 msgid "Export"
-msgstr "ÐÐ·Ð½Ð°ÑÑÐ½Ðµ"
+msgstr "Изнасяне"
 
 #: unit2.rsform2
 msgid "Edit Presets"
-msgstr "Ð ÐµÐ´Ð°ÐºÑÐ¸ÑÐ°Ð½Ðµ Ð½Ð° Ð³Ð¾ÑÐ¾Ð²Ð¸ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ¸"
+msgstr "Редактиране на настройки"
 
 #: unit2.rsimport
 msgid "Import"
-msgstr "ÐÐ½Ð°ÑÑÐ½Ðµ"
+msgstr "Внасяне"
 
 #: unit2.rsimportpresets
 #, fuzzy
 msgid "Import Presets"
-msgstr "ÐÐ½Ð°ÑÑÐ½Ðµ Ð½Ð° Ð³Ð¾ÑÐ¾Ð²Ð¸ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ¸"
+msgstr "Внасяне на настройки"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "ÐÐ¼Ðµ Ð½Ð° Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ° (ÐµÐ´Ð½Ð° Ð´ÑÐ¼Ð°, ÑÐ°Ð¼Ð¾ Ð±ÑÐºÐ²Ð¸/ÑÐ¸ÑÑÐ¸)"
+msgstr "Име на настройка(една дума, само букви/цифри)"
 
 #: unit2.rslabel3
 msgid "Preset Label"
-msgstr "ÐÑÐ¸ÐºÐµÑ Ð½Ð° Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ°"
+msgstr "Етикет на настройка"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
-msgstr "ÐÐ¾Ð¼Ð°Ð½Ð´ÐµÐ½ ÑÐµÐ´ Ð½Ð° Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ° (Ð±ÐµÐ· -i Ð¸Ð»Ð¸ Ð¸Ð·ÑÐ¾Ð´ÐµÐ½ ÑÐ°Ð¹Ð»)"
+msgstr "Команден ред на настройка (без -i или изходен файл)"
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
-msgstr "Ð Ð°Ð·ÑÐ¸ÑÐµÐ½Ð¸Ðµ Ð½Ð° Ð¸Ð·ÑÐ¾Ð´ÐµÐ½ ÑÐ°Ð¹Ð» (Ð±ÐµÐ· \".\")"
+msgstr "Разширение на изходния файл (без \".\")"
 
 #: unit2.rslabel6
 msgid "Category"
-msgstr "ÐÐ°ÑÐµÐ³Ð¾ÑÐ¸Ð¸"
+msgstr "Категория"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "ÐÑÐ¸ÐºÐµÑÑÑ ÑÑÑÐ±Ð²Ð° Ð´Ð° Ðµ ÑÐ½Ð¸ÐºÐ°Ð»ÐµÐ½."
+msgstr "Етикетът трябва да е уникален"
 
 #: unit2.rsokbtn
 msgid "Save"
-msgstr "ÐÐ°Ð¿Ð¸Ñ"
+msgstr "Запис"
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "ÐÑÐµÐ¼Ð°ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ°"
+msgstr "Премахване на настройка:"
 
 #: unit2.rsreplacepreset
 #, fuzzy
 msgid "Replace Preset"
-msgstr "ÐÐ±Ð½Ð¾Ð²ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ°:"
+msgstr "Замяна на настройка:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "ÐÐ±Ð½Ð¾Ð²ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ°:"
+msgstr "Обновяване на настройка:"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr "Ð¢ÑÑÐ±Ð²Ð° Ð´Ð° Ð²ÑÐ²ÐµÐ´ÐµÑÐµ ÑÐ°Ð·ÑÐ¸ÑÐµÐ½Ð¸Ðµ."
+msgstr "Трябва да въведете разширение."
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "Ð¢ÑÑÐ±Ð²Ð° Ð´Ð° Ð²ÑÐ²ÐµÐ´ÐµÑÐµ ÐµÑÐ¸ÐºÐµÑ"
+msgstr "Трябва да въведете етикет."
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr "Ð¢ÑÑÐ±Ð²Ð° Ð´Ð° Ð²ÑÐ²ÐµÐ´ÐµÑÐµ Ð¸Ð¼Ðµ."
+msgstr "Трябва да въведете име."
 
 #: unit3.rsbutton1
 #, fuzzy
@@ -335,11 +335,11 @@ msgstr "OK"
 
 #: unit3.rsform3
 msgid "About WinFF"
-msgstr "ÐÑÐ½Ð¾ÑÐ½Ð¾ WinFF"
+msgstr "Относно WinFF"
 
 #: unit3.rslabel8
 msgid "FFmpeg builds by"
-msgstr "FFmpeg builds Ð¾Ñ"
+msgstr "FFmpeg builds от"
 
 #: unit3.rspage1
 msgid "WinFF"
@@ -351,95 +351,95 @@ msgstr "FFmpeg"
 
 #: unit3.rspage3
 msgid "Thanks"
-msgstr "ÐÐ»Ð°Ð³Ð¾Ð´Ð°ÑÐ½Ð¾ÑÑÐ¸"
+msgstr "Благодарности"
 
 #: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
-msgstr "ÐÐ°Ð¿Ð¾Ð¼Ð½Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¾ Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð½Ð°ÑÐ° Ð´Ð¸ÑÐµÐºÑÐ¾ÑÐ¸Ñ"
+msgstr "Запомняне на последно използваната директория"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "Използване на CHCP за специални символи"
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
-msgstr "Multithreading Ð·Ð° Ð´Ð²ÑÑÐ´ÑÐµÐ½Ð¸ Ð¿ÑÐ¾ÑÐµÑÐ¾ÑÐ¸"
+msgstr "Multithreading за двуядрени процесори"
 
 #: unit4.rsform4
 msgid "WinFF Preferences"
-msgstr "WinFF ÐÑÐµÐ´Ð¿Ð¾ÑÐ¸ÑÐ°Ð½Ð¸Ñ"
+msgstr "WinFF Предпочитания"
 
 #: unit4.rslabel1
 msgid "Default Destination Directory"
-msgstr "ÐÐ·ÑÐ¾Ð´Ð½Ð° Ð´Ð¸ÑÐµÐºÑÐ¾ÑÐ¸Ñ Ð¿Ð¾ Ð¿Ð¾Ð´ÑÐ°Ð·Ð±Ð¸ÑÐ°Ð½Ðµ"
+msgstr "Изходна папка по подразбиране"
 
 #: unit4.rslabel2
 msgid "Path to FFmpeg.exe"
-msgstr "ÐÑÑ Ð´Ð¾ FFmpeg.exe"
+msgstr "Път до FFmpeg.exe"
 
 #: unit4.rslabel3
 msgid "Path to FFPlay.exe"
-msgstr "ÐÑÑ Ð´Ð¾ FFPlay.exe"
+msgstr "Път до FFPlay.exe"
 
 #: unit4.rslabel4
 msgid "Path to FFmpeg Executable"
-msgstr "ÐÑÑ Ð´Ð¾ FFmpeg Ð¸Ð·Ð¿ÑÐ»Ð½Ð¸Ð¼ ÑÐ°Ð¹Ð»"
+msgstr "Път до FFmpeg изпълним файл"
 
 #: unit4.rslabel5
 msgid "Path to FFPlay Executable"
-msgstr "ÐÑÑ Ð´Ð¾ FFPlay Ð¸Ð·Ð¿ÑÐ»Ð½Ð¸Ð¼ ÑÐ°Ð¹Ð»"
+msgstr "Път до FFPlay изпълним файл"
 
 #: unit4.rslabel6
 msgid "Terminal to run FFmpeg"
-msgstr "Ð¢ÐµÑÐ¼Ð¸Ð½Ð°Ð» Ð·Ð° Ð¸Ð·Ð¿ÑÐ»Ð½ÐµÐ½Ð¸Ðµ Ð½Ð° FFmpeg"
+msgstr "Терминал, в който да се изпълни FFmpeg"
 
 #: unit4.rslabel7
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
-msgstr "ÐÐ¿ÑÐ¸Ð¸ Ð½Ð° ÑÐµÑÐ¼Ð¸Ð½Ð°Ð»Ð° (-e Ð·Ð° Xterm, -x Ð·Ð° Gnome Terminal"
+msgstr "Опции на терминала (-e за Xterm, -x за Gnome Terminal)"
 
 #: unit4.rspage1
 msgid "General"
-msgstr "ÐÐ±ÑÐ¸"
+msgstr "Общи"
 
 #: unit4.rspage2
 msgid "Ms Windows"
-msgstr "Ðs Windows"
+msgstr "MS Windows"
 
 #: unit4.rspage3
 msgid "Linux"
-msgstr "ÐÐ¸Ð½ÑÐºÑ"
+msgstr "Линукс"
 
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
-msgstr "FFmpeg ÐºÐ¾Ð¼Ð°Ð½Ð´ÐµÐ½ ÑÐµÐ´"
+msgstr "FFmpeg Команден ред"
 
 #: unit6.rsform6
 #, fuzzy
 msgid "Export Presets"
-msgstr "ÐÐ½Ð°ÑÑÐ½Ðµ Ð½Ð° Ð³Ð¾ÑÐ¾Ð²Ð¸ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ¸"
+msgstr "Изнасяне на настройки"
 
 #: unit6.rslabel1
 #, fuzzy
 msgid "Choose presets to export"
-msgstr "ÐÐ¾Ð»Ñ Ð¸Ð·Ð±ÐµÑÐµÑÐµ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ° Ð·Ð° Ð¸Ð·Ð½Ð°ÑÑÐ½Ðµ"
+msgstr "Изберете настройки за изнасяне"
 
 #~ msgid "AC'"
-#~ msgstr "ÐC"
+#~ msgstr "AC"
 #~ msgid "Please select a preset"
-#~ msgstr "ÐÐ¾Ð»Ñ Ð¸Ð·Ð±ÐµÑÐµÑÐµ Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ°"
+#~ msgstr "Моля, изберете настройка"
 
 #: unit4.rspriority
 msgid "Priority"
-msgstr ""
+msgstr "Приоритет"
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr ""
+msgstr "Висок"
 
 #: unit4.rsprioritynormal
 msgid "Normal"
-msgstr ""
+msgstr "Нормален"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr ""
+msgstr "Нисък"
