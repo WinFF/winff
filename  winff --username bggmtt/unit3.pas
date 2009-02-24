@@ -23,11 +23,9 @@ unit Unit3;
 interface
 
 uses
-  {$ifdef win32}
-  windows,
-  {$endif}
-  Dos,Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Buttons, ExtCtrls, gettext,translations, XMLPropStorage;
+
+  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  Buttons, ExtCtrls, gettext,translations;
 
 type
 

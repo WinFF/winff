@@ -24,7 +24,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
-  StdCtrls, dom, xmlwrite, xmlread, gettext, translations;
+  StdCtrls, dom, xmlwrite, gettext, translations;
 
 type
 
@@ -102,9 +102,8 @@ var
 exportfile: txmldocument;
 exportpreset: tdomelement;
 node,subnode,newnode: tdomnode;
-exportfilename:string;
 exlabel,exparams,exext,excat: string;
-i,j,k:integer;
+i,j:integer;
 pn,selectedtext:string;
 begin
 
