@@ -102,7 +102,7 @@ type
     Vidframerate: TEdit;
     VidsizeX: TEdit;
     VidsizeY: TEdit;
-    procedure Button1Click(Sender: TObject);
+
     procedure categoryboxChange(Sender: TObject);
     procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure LaunchBrowser(URL:string);
@@ -745,14 +745,30 @@ end;
 
 // launch browser
 procedure TForm1.launchbrowser(URL:string);
+{$IFDEF linux}
+var
+launcher:tprocess;
+s:string;
+{$endif}
 begin
-{$ifdef linux}
-  exec('sensible-browser', URL);
-  If Dosexitcode<>0 then exec('/usr/bin/firefox', URL);
-  If Dosexitcode<>0 Then exec('/usr/bin/mozilla-firefox', URL);
-  If Dosexitcode<>0 Then exec('/usr/bin/konqueror', URL);
-  If Dosexitcode<>0 Then Showmessage('More information can be found at ' + URL);
+  {$ifdef linux}
+  s:='';
+  if fileexists('/usr/bin/sensible-browser') then s:='/usr/bin/sensible-browser';
+  if fileexists('/usr/bin/firefox') then s:='/usr/bin/firefox';
+  if fileexists('/usr/bin/mozilla-firefox') then s:='/usr/bin/mozilla-firefox';
+  if fileexists('/usr/bin/konqueror') then s:='/usr/bin/konqueror';
+  if s='' then
+     begin
+     Showmessage('More information can be found at ' + URL);
+     exit;
+     end;
+
+  launcher := tprocess.Create(nil);
+  launcher.CommandLine:= s + ' ' + URL;
+  launcher.Execute;
+  launcher.free;
   {$endif}
+
   {$ifdef win32}
   ShellExecute(self.Handle,'open',PChar(URL),nil,nil, SW_SHOWNORMAL);
   {$endif}
@@ -760,14 +776,30 @@ end;
 
 // launch pdf
 procedure TForm1.LaunchPdf(pdffile:string);
+{$IFDEF linux}
+var
+launcher:tprocess;
+s:string;
+{$endif}
 begin
   {$ifdef linux}
-  exec('/usr/bin/evince', pdffile);
-  If Dosexitcode<>0 Then exec('/usr/bin/kpdf', pdffile);
-  If Dosexitcode<>0 Then exec('/usr/bin/xpdf', pdffile);
-  If Dosexitcode<>0 Then exec('/usr/bin/acroread', pdffile);
-  If Dosexitcode<>0 Then Showmessage('More information can be found at http://www.winff.org');
+  s:='';
+  if fileexists('/usr/bin/evince') then s:='/usr/bin/evince';
+  if fileexists('/usr/bin/kpdf') then s:='/usr/bin/kpdf';
+  if fileexists('/usr/bin/xpdf') then s:='/usr/bin/xpdf';
+  if fileexists('/usr/bin/acroread') then s:='/usr/bin/acroread';
+  if s='' then
+     begin
+     Showmessage('More information can be found at ' + pdffile);
+     exit;
+     end;
+
+  launcher := tprocess.Create(nil);
+  launcher.CommandLine:= s + ' ' + pdffile;
+  launcher.Execute;
+  launcher.free;
   {$endif}
+
   {$ifdef win32}
   ShellExecute(self.Handle,'open',PChar(pdffile),nil,nil, SW_SHOWNORMAL);
   {$endif}
@@ -992,7 +1024,6 @@ var s : string;
 language: string;
 begin
   language:=leftstr(lang,2);
-  showmessage(language);
   {$ifdef linux}
   s :='';
   if fileexists('/usr/share/doc/winff/WinFF.' + language + '.pdf.gz') then s:='/usr/share/doc/winff/WinFF.' + language + '.pdf.gz';
@@ -1054,6 +1085,7 @@ begin
 
 end;
 
+// menu: about
 procedure TForm1.mitAboutClick(Sender: TObject);
 begin
   form3.Show;
@@ -1140,8 +1172,10 @@ procedure TForm1.PlayClick(Sender: TObject);
 var
 i : integer;
 filenametoplay: string;
+PlayProcess: TProcess;
 begin
 
+ playprocess:= TProcess.Create(nil);
 
  if not fileexists(ffplay) then
    begin
@@ -1162,47 +1196,13 @@ begin
     else i+=1;
 
  if filenametoplay <>'' then
-    sysutils.ExecuteProcess(ffplay, '"' + filenametoplay+'"' );
+    begin
+    PlayProcess.CommandLine:=ffplay + ' "' + filenametoplay+'"' ;
+    playProcess.Execute;
+    end;
 
+ playprocess.free;
 end;
-
-// math for neuros
-procedure TForm1.Button1Click(Sender: TObject);
-var
-vx,vy,vxf,vyf : real;
-vxi,vyi:longint;
-vxs,vys:string;
-begin
-   if (vidsizeX.text <>'') and (vidsizey.Text <> '') then
-     begin
-     try
-     vx:=strtofloat(VidsizeX.Text);
-     vy:=strtofloat(VidsizeY.Text);
-     except
-     vx:=0;
-     vy:=0;
-     end;
-     if (vx>0) and (vy>0) then
-        begin
-        vxf:=sqrt(307200*vx/vy);
-        vyf:=sqrt(307200*vy/vx);
-        vxf:=round(vxf);
-        vyf:=round(vyf);
-        vxs:=floattostr(vxf);
-        vys:=floattostr(vyf);
-        vxs:=trim(vxs);
-        vys:=trim(vys);
-        vxi:=strtoint(vxs);
-        vyi:=strtoint(vys);
-        if vxi mod 2 = 1 then vxi-=1;
-        if vyi mod 2 = 1 then vyi-=1;
-        VidsizeX.Text:=inttostr(vxi);
-        VidsizeY.Text:=inttostr(vyi);
-        end;
-     end;
-end;
-
-
 
 // Start Conversions
 procedure TForm1.StartBtnClick(Sender: TObject);
@@ -1543,7 +1543,7 @@ begin
    end;
    categorynode.AppendChild(textc);
 
-end; //for j 1 to childnodes-1
+ end; //for j = 1 to childnodes-1
 
 writexmlfile(presetsfile, presetspath + 'presets.xml');  // save the imported preset
 

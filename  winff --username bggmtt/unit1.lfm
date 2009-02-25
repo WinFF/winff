@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = 166
-  Height = 595
-  Top = 207
+  Left = 66
+  Height = 605
+  Top = 78
   Width = 1072
   ActiveControl = Notebook1
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 575
+  ClientHeight = 585
   ClientWidth = 1072
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
@@ -328,20 +328,20 @@ object Form1: TForm1
     ParentColor = False
   end
   object pnlMain: TPanel
-    Height = 358
+    Height = 368
     Top = 54
     Width = 1072
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 358
+    ClientHeight = 368
     ClientWidth = 1072
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
-      Height = 218
+      Height = 228
       Width = 1072
       Align = alClient
       MultiSelect = True
@@ -351,7 +351,7 @@ object Form1: TForm1
     end
     object pnlbottom: TPanel
       Height = 140
-      Top = 218
+      Top = 228
       Width = 1072
       Align = alBottom
       ClientHeight = 140
@@ -373,25 +373,25 @@ object Form1: TForm1
           ClientWidth = 1062
           object Label1: TLabel
             Left = 13
-            Height = 14
+            Height = 17
             Top = 11
-            Width = 69
+            Width = 127
             Caption = 'Convert to....'
             ParentColor = False
           end
           object Label11: TLabel
             Left = 14
-            Height = 14
+            Height = 17
             Top = 82
-            Width = 66
+            Width = 125
             Caption = 'Output folder'
             ParentColor = False
           end
           object Label19: TLabel
             Left = 13
-            Height = 14
+            Height = 17
             Top = 43
-            Width = 69
+            Width = 127
             Caption = 'Convert to....'
             ParentColor = False
           end
@@ -978,7 +978,7 @@ object Form1: TForm1
   end
   object pnlbottom2: TPanel
     Height = 163
-    Top = 412
+    Top = 422
     Width = 1072
     Align = alBottom
     ClientHeight = 163
@@ -1107,8 +1107,8 @@ object Form1: TForm1
         end
         object tabPage3: TPage
           Caption = 'Audio Settings'
-          ClientWidth = 1058
-          ClientHeight = 117
+          ClientWidth = 1066
+          ClientHeight = 143
           object Label7: TLabel
             Left = 9
             Height = 14
@@ -1157,8 +1157,8 @@ object Form1: TForm1
         end
         object tabPage4: TPage
           Caption = 'tabPage4'
-          ClientWidth = 1058
-          ClientHeight = 117
+          ClientWidth = 1066
+          ClientHeight = 143
           object commandlineparams: TEdit
             Left = 1
             Height = 24
