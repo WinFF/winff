@@ -4,14 +4,14 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 0.45
+AppVerName=WinFF 1.0
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=0.4.5.0
+VersionInfoVersion=1.0.0.0
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
@@ -19,6 +19,13 @@ OutputBaseFilename=setup
 Compression=lzma
 SolidCompression=yes
 SetupIconFile=WinFF.ico
+ChangesAssociations=yes
+
+[Registry]
+Root: HKCR; Subkey: ".wff"; ValueType: string; ValueName: ""; ValueData: "WinFF"; Flags: uninsdeletevalue
+Root: HKCR; Subkey: "WinFF"; ValueType: string; ValueName: ""; ValueData: "WinFF Presets"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "WinFF\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\winff.ico,0"
+Root: HKCR; Subkey: "WinFF\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\WinFF.EXE"" ""%1"""
 
 
 [Languages]
@@ -41,7 +48,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "winff.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "WinFF.pdf"; DestDir: "{app}"; Flags: ignoreversion
+Source: "WinFF.en.pdf"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ffmpeg.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ffplay.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "SDL.dll"; DestDir: "{app}"; Flags: ignoreversion
