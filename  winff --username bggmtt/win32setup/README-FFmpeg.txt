@@ -1,175 +1,45 @@
-The FFmpeg License: http://ffmpeg.mplayerhq.hu/legal.html
--------------------
-
 FFmpeg License
-FFmpeg is licensed under the GNU Lesser General Public License (LGPL). However, FFmpeg incorporates several optional modules that are covered by the GNU General Public License (GPL), notably libpostproc and libswscale. If those parts get used the GPL applies to all of FFmpeg. Read the license texts to learn how this affects programs built on top of FFmpeg or reusing FFmpeg. You may also wish to have a look at the GPL FAQ.
+
+FFmpeg is licensed under the GNU Lesser General Public License (LGPL) version 2.1 or later. However, FFmpeg incorporates several optional modules that are covered by the GNU General Public License (GPL) version 2 or later, notably libpostproc and libswscale. If those parts get used the GPL applies to all of FFmpeg.
+
+Read the license texts to learn how this affects programs built on top of FFmpeg or reusing FFmpeg. You may also wish to have a look at the GPL FAQ.
+
+Here is a short list of things you need to take into consideration when you incorporate FFmpeg into proprietary programs. This list is not exhaustive, it just lists the most common issues we encounter.
+
+    * Be careful if you enable GPL components.
+    * Provide the license text, the correct version.
+    * Provide FFmpeg sources, the exact version you use.
+    * Review your EULA terms. They have to be compatible with the license of FFmpeg. For example, terms forbidding reverse engineering are not acceptable.
+    * Read the LGPL license text, multiple times, and educate yourself about its effects.
 
 Trademark
+
 FFmpeg is a trademark of Fabrice Bellard, originator of the FFmpeg project.
+Patent Mini-FAQ
 
+A lot of legal questions surrounding patents arise when discussing multimedia technology. This mini-FAQ attempts to address these issues. Note that much of this discussion is based on precedent, or what has happened in the past under similar circumstances. Very little consideration is given to what could happen. If you use your imagination, you can visualize any dire scenario and cease doing any productive work.
 
-The Readme from the Win32 Builds:
----------------------------------
-These are unofficial FFmpeg Win32 builds made by Ramiro Polla.
+Q: Does FFmpeg use patented algorithms?
+A: We do not know, we are not lawyers so we are not qualified to answer this. Also we have never read patents to implement any part of FFmpeg, so even if we were qualified we could not answer it as we do not know what is patented. Furthermore the sheer number of software patents makes it impossible to read them all so no one (lawyer or not) could answer such a question with a definite no, those who do lie. What we do know is that various standards FFmpeg supports contain vague hints that any conforming implementation might be subject to some patent rights in some jurisdictions, examples for such statements are:
+For H.264:
 
-These files were originally hosted at: http://arrozcru.no-ip.org/ffmpeg_builds/
-The source code they were built with can also be found on the page above.
+    ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.
 
-If you experience any problems with this build, please report them to:
-http://arrozcru.no-ip.org/ffmpeg_forum/
+And for MPEG-4:
 
-FFmpeg revision number: 13712
-FFmpeg license: GPL
+    The user's attention is called to the possibility that, for some of the processes specified in this part of ISO/IEC 14496, conformance with this specification may require use of an invention covered by patent rights. By publication of this part of ISO/IEC 14496, no position is taken with respect to the validity of this claim or of any patent rights in connection therewith.
 
-configuration: --enable-memalign-hack --enable-avisynth --enable-libxvid \
-               --enable-libx264 --enable-libgsm --enable-libfaac \
-               --enable-libfaad --enable-liba52 --enable-libmp3lame \
-               --enable-libvorbis --enable-libtheora --enable-pthreads \
-               --enable-swscale --enable-gpl
+Q: Is it legal to use such patented algorithms?
+A: Patent laws change wildly between jurisdictions. Besides, even in places where software patents are recognized, there is serious doubt about the legitimacy of such legislation. Note that patents on algorithms are illegal in many countries. Plus the use of patents to prevent the usage of a format or codec on a specific operating system or together with specific other software might violate antitrust laws.
 
-Build system:
+Q: Bottom line: Should I be worried about patent issues if I use FFmpeg?
+A: Are you a private user working with FFmpeg for your own personal purposes? If so, there is remarkably little reason to be concerned. Are you using FFmpeg in a commercial software product? Read on to the next question...
 
-gcc 4.2.3
-nasm 2.02
-w32api-3.11
-mingw-runtime CVS May 18th, 2008
-binutils 2.18.50
+Q: Since FFmpeg is licensed under the LGPL, is it perfectly alright to incorporate the whole FFmpeg core into my own commercial product?
+A: You might have a problem here. Sure, the LGPL allows you to incorporate the code. However, there have been cases where companies have used FFmpeg in their projects, usually for such capabilities as superior MPEG-4 decoding. These companies found out that once you start trying to make money from certain technologies, the alleged owners of the technologies will come after their protection money. Most notably, MPEG-LA (licensing authority) is vigilant and diligent about collecting for MPEG-related technologies.
 
+Q: You called the patent license fee protection money, is this a joke?
+A: No. The legal validity of these patents is highly questionable. Still in many current legal systems it is very easy to ruin a company with patents even if the patents are invalid. Paying the (small) license fee is much cheaper than a patent lawsuit during which you would not be able to sell your product as the patent would be valid until you win the lawsuit 5+ years in the future. That is assuming you did not go bankrupt in the meantime...
 
-Extra libraries included:
-
-zlib 1.2.3
-    http://www.zlib.net/
-
-$ tar zxfv zlib-1.2.3.tar.gz
-$ cd zlib-1.2.3
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-
-pthreads-win32 2.8.0
-    ftp://sources.redhat.com/pub/pthreads-win32
-
-$ tar zxfv pthreads-w32-2-8-0-release.tar.gz
-$ cd pthreads-w32-2-8-0-release
-$ make clean GC-static
-$ cp libpthreadGC2.a /mingw/lib
-$ cp pthread.h sched.h /mingw/include
-
-libfaac 1.26
-    http://www.audiocoding.com/
-
-$ tar zxfv faac-1.26.tar.gz
-$ patch -p0 < faac_1.26_01_buildsystem.diff
-$ cd faac
-$ sh bootstrap
-$ ./configure --prefix=/mingw --enable-static --disable-shared
-$ make LDFLAGS="-no-undefined"
-$ make install
-
-libfaad2 2.6.1
-    http://www.audiocoding.com/
-
-$ tar zxfv faad2-2.6.1.tar.gz
-$ patch -p0 < faad2_2.6.1_01_buildsystem.diff
-$ cd faad2
-$ sh bootstrap
-$ ./configure --prefix=/mingw --enable-static --disable-shared
-$ make LDFLAGS="-no-undefined"
-$ make install
-
-libmp3lame 3.97
-    http://www.mp3dev.org/
-
-$ tar zxfv lame-3.97.tar.gz
-$ cd lame-3.97
-$ patch -p0 < ../lame_3.97_non_pic_objects.diff
-$ ./configure --prefix=/mingw --disable-shared --enable-static --disable-frontend --enable-nasm
-$ make
-$ make install
-
-libogg 1.1.3
-    http://www.xiph.org/
-
-$ tar zxfv libogg-1.1.3.tar.gz
-$ cd libogg-1.1.3
-$ ./configure --prefix=/mingw --enable-static --disable-shared
-$ make
-$ make install
-
-libvorbis 1.1.2
-    http://www.xiph.org/
-
-$ tar zxfv libvorbis-1.1.2.tar.gz
-$ cd libvorbis-1.1.2
-$ ./configure --prefix=/mingw --enable-static --disable-shared
-$ make
-$ make install
-
-libtheora 1.0beta3
-    http://www.xiph.org/
-
-$ tar xfvj libtheora-1.0beta3.tar.bz2
-$ patch -p0 < theora_1.0beta3_01_sys_types.diff
-$ cd libtheora-1.0beta3
-$ ./configure --prefix=/mingw --enable-static --disable-shared
-$ make
-$ make install
-
-libgsm 1.0.12
-    http://kbs.cs.tu-berlin.de/~jutta/toast.html
-
-$ tar zxfv gsm-1.0.12.tar.gz
-$ patch -p0 < gsm_1.0-pl12_01_ansi_pedantic.diff
-$ cd gsm-1.0-pl12
-$ make
-$ cp lib/libgsm.a /mingw/lib/
-$ cp inc/gsm.h /mingw/include/
-
-libamr-nb 7.0.0.1
-    http://www.penguin.cz/~utx/amr
-
-$ tar xfvj amrnb-7.0.0.1.tar.bz2
-$ cd amrnb-7.0.0.1
-$ ./configure --prefix=/mingw --enable-static --disable-shared
-$ make
-$ make install
-
-libamr-wb 7.0.0.2
-    http://www.penguin.cz/~utx/amr
-
-$ tar xfvj amrwb-7.0.0.2.tar.bz2
-$ cd amrwb-7.0.0.2
-$ ./configure --prefix=/mingw --enable-static --disable-shared
-$ make
-$ make install
-
-liba52 0.7.4
-    http://liba52.sourceforge.net
-
-$ tar zxfv a52dec-0.7.4.tar.gz
-$ cd a52dec-0.7.4
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-
-xvidcore 1.1.3
-    http://www.xvid.org/downloads.html
-
-$ tar xfvj xvidcore-1.1.3.tar.bz2
-$ cd xvidcore-1.1.3/build/generic
-$ ./configure --prefix=/mingw
-$ make
-$ make install
-$ rm /mingw/lib/xvidcore.dll
-$ mv /mingw/lib/xvidcore.a /mingw/lib/libxvidcore.a
-
-x264 r803
-    http://developers.videolan.org/x264.html
-
-$ tar xfvj x264-803.tar.bz2
-$ patch -p0 < x264_01_heap_analysis.diff
-$ cd x264-803
-$ ./configure --prefix=/mingw
-$ make
-$ make install
+Q: Can I be safe if I have paid my protection money.
+A: You can never be safe as long as your country recognizes software patents as valid. There are companies that own many patents, pay and cross-license for other companies patents, but even such companies are being found guilty of infringing some obscure little-known patent and end up paying millions for it. That's why lobbying against software patents is in your own interest. Of course none of this is related to you using FFmpeg or another codec implementation. If you want to be safe the only option is not to touch any software at all. 
