@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <CONFIG>
   <Compiler Value="c:\lazarus\fpc\2.2.2\bin\i386-win32\fpc.exe" Date="960851612"/>
-  <Params Value=" -MObjFPC -Sgi -O1 -g -gl -WG -vewnhi -l -Fu..\..\..\..\lazarus\components\codetools\units\i386-win32\ -Fu..\..\..\..\lazarus\lcl\units\i386-win32\ -Fu..\..\..\..\lazarus\lcl\units\i386-win32\gtk2\ -Fu..\..\..\..\lazarus\packager\units\i386-win32\ -Fu. -owinff.exe -dLCL -dLCLgtk2 winff.lpr"/>
+  <Params Value=" -MObjFPC -Sgi -O1 -g -gl -WG -vewnhi -l -Fu..\..\..\..\lazarus\components\codetools\units\i386-win32\ -Fu..\..\..\..\lazarus\lcl\units\i386-win32\ -Fu..\..\..\..\lazarus\lcl\units\i386-win32\win32\ -Fu..\..\..\..\lazarus\packager\units\i386-win32\ -Fu. -owinff.exe -dLCL -dLCLwin32 winff.lpr"/>
 </CONFIG>

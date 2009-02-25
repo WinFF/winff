@@ -1043,8 +1043,8 @@ begin
      end;
   {$endif}
   {$ifdef win32}
-  s := extraspath + 'WinFF.' + language + '.pdf';
-  if not (fileexists(s)) then s := extraspath + 'WinFF.en.pdf';
+  s := extraspath + 'Docs\WinFF.' + language + '.pdf';
+  if not (fileexists(s)) then s := extraspath + 'Docs\WinFF.en.pdf';
   {$endif}
   Launchpdf(s);
 end;
