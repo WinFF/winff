@@ -56,6 +56,8 @@ type
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Label10Click(Sender: TObject);
+    procedure Label12Click(Sender: TObject);
+    procedure Label13Click(Sender: TObject);
     procedure Label1Click(Sender: TObject);
     procedure Label3Click(Sender: TObject);
     procedure Label4Click(Sender: TObject);
@@ -97,18 +99,21 @@ begin                  // do translations
                      // fill thank you memo
     listbox1.items.Add('Chris Bidmead for scripting ideas.');
     listbox1.items.Add('Neil Hinton for 95/98/ME Compatibility');
-    listbox1.items.Add('German translation by Kai Evers');
-    listbox1.items.Add('Bulgarian translation by Simeon Uzunov');
-    listbox1.items.Add('Italian translation by Roberto Calamante');
-    listbox1.items.Add('Turkish translation by Emre Erkan');
-    listbox1.items.Add('Polish translation by Marcin Trybus');
     listbox1.items.Add('Iconsdesigns.com for their NeuvoXT 2 GPL Icons');
-    listbox1.items.Add('Dutch translation by Paul Gevers and Roger Gabriels');
-    listbox1.items.Add('Portuguese translation by Louis Torrao');
-    listbox1.items.Add('Brazilan Portuguese translation by Nighto');
-    listbox1.items.Add('Spanish translation by Victor Paese');
-    listbox1.items.Add('Traditional Chinese translation by Chung Yu');
-    listbox1.items.Add('Serbian translation by Predrag Tomasevic');
+    listbox1.items.Add('');
+
+    listbox1.items.Add('Brazilian Portuguese translation by Nighto.');
+    listbox1.items.Add('Bulgarian translation by Simeon Uzunov.');
+    listbox1.items.Add('Dutch translation by Paul Gevers.');
+    listbox1.items.Add('French translation by Choplair.');
+    listbox1.items.Add('German translation by Kai Evers.');
+    listbox1.items.Add('Italian translation by Roberto Boriotti.');
+    listbox1.items.Add('Polish translation by Marcin Trybus.');
+    listbox1.items.Add('Portuguese translation by Louis Torrao.');
+    listbox1.items.Add('Serbian Translation by Predrag Tomasevic.');
+    listbox1.items.Add('Spanish translation by Vίctor Paese.');
+    listbox1.items.Add('Traditional Chinese translation by Chung Yu.');
+    listbox1.items.Add('Turkish translation by Emre Erkan.');
     listbox1.items.Add('');
     listbox1.items.Add('Thanks to all the users');
 
@@ -118,6 +123,16 @@ end;
 procedure TForm3.Label10Click(Sender: TObject);
 begin
   form1.LaunchBrowser('http://ffmpeg.arrozcru.org/');
+end;
+
+procedure TForm3.Label12Click(Sender: TObject);
+begin
+form1.LaunchBrowser('http://www.stoffberg.com');
+end;
+
+procedure TForm3.Label13Click(Sender: TObject);
+begin
+  form1.LaunchBrowser('http://www.bandshed.net/');
 end;
 
 procedure TForm3.Button1Click(Sender: TObject);
@@ -146,7 +161,7 @@ end;
 
 procedure TForm3.Label7Click(Sender: TObject);
 begin
-  form1.LaunchBrowser('http://ffmpeg.mplayerhq.hu/');
+  form1.LaunchBrowser('http://ffmpeg.org/');
 end;
 
 
