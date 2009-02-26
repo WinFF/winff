@@ -24,7 +24,7 @@ ChangesAssociations=yes
 [Registry]
 Root: HKCR; Subkey: ".wff"; ValueType: string; ValueName: ""; ValueData: "WinFF"; Flags: uninsdeletevalue
 Root: HKCR; Subkey: "WinFF"; ValueType: string; ValueName: ""; ValueData: "WinFF Presets"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "WinFF\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\winff.ico,0"
+Root: HKCR; Subkey: "WinFF\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\winff.exe,0"
 Root: HKCR; Subkey: "WinFF\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\WinFF.EXE"" ""%1"""
 
 
@@ -48,19 +48,24 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "winff.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "WinFF.en.pdf"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ffmpeg.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ffplay.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "SDL.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "License.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "presets.xml"; DestDir: "{app}"; Flags: ignoreversion
 Source: "presets.xml"; DestDir: "{userappdata}\WinFF"; Flags: ignoreversion
-Source: "README.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "README-FFmpeg.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "README-Presets.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "ffmpeg-doc.html"; DestDir: "{app}"; Flags: ignoreversion
-Source: "ffplay-doc.html"; DestDir: "{app}"; Flags: ignoreversion
-Source: "changelog.txt"; DestDir: "{app}"; Flags: ignoreversion
+
+; documentation files
+Source: "License.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "README.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "README-FFmpeg.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "README-Presets.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "ffmpeg-doc.html"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "ffplay-doc.html"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "changelog.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "Docs\WinFF.en.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "Docs\WinFF.nl.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
+
+; language files
 Source: "languages\winff.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.de.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.bg.po"; DestDir: "{app}\languages"; Flags: ignoreversion
@@ -72,22 +77,26 @@ Source: "languages\winff.pb.po"; DestDir: "{app}\languages"; Flags: ignoreversio
 Source: "languages\winff.nl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.zh.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.fr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.sr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
 Name: "{group}\WinFF"; Filename: "{app}\winff.exe"; WorkingDir: "{app}";
 Name: "{group}\{cm:ProgramOnTheWeb,WinFF}"; Filename: "http://www.winff.org/"
-Name: "{group}\Documentation"; Filename: "{app}\WinFF.pdf";
-Name: "{group}\Change Log"; Filename: "{app}\changelog.txt";
-Name: "{group}\README"; Filename: "{app}\README.txt";
-Name: "{group}\README Presets"; Filename: "{app}\README-Presets.txt";
-Name: "{group}\README FFmpeg"; Filename: "{app}\README-FFmpeg.txt";
-Name: "{group}\License"; Filename: "{app}\License.txt";
 Name: "{commondesktop}\WinFF"; Filename: "{app}\winff.exe"; WorkingDir: "{app}"; Tasks: desktopicon
-Name: "{group}\FFmpeg Documentation"; Filename: "{app}\ffmpeg-doc.html";
-Name: "{group}\FFPlay Documentation"; Filename: "{app}\ffmpeg-play.html";
 Name: "{group}\{cm:UninstallProgram,WinFF}"; Filename: "{uninstallexe}"
+
+; documentation icons
+Name: "{group}\Docs\FFmpeg Documentation"; Filename: "{app}\Docs\ffmpeg-doc.html";
+Name: "{group}\Docs\FFPlay Documentation"; Filename: "{app}\Docs\ffplay-doc.html";
+Name: "{group}\Docs\Change Log"; Filename: "{app}\Docs\changelog.txt";
+Name: "{group}\Docs\README"; Filename: "{app}\Docs\README.txt";
+Name: "{group}\Docs\README Presets"; Filename: "{app}\Docs\README-Presets.txt";
+Name: "{group}\Docs\README FFmpeg"; Filename: "{app}\Docs\README-FFmpeg.txt";
+Name: "{group}\Docs\License"; Filename: "{app}\Docs\License.txt";
+Name: "{group}\Docs\Docs - English"; Filename: "{app}\Docs\WinFF.en.pdf";
+Name: "{group}\Docs\Docs - Dutch"; Filename: "{app}\Docs\WinFF.nl.pdf";
 
 [Run]
 Filename: "{app}\winff.exe"; Description: "{cm:LaunchProgram,WinFF}"; Flags: nowait postinstall skipifsilent
