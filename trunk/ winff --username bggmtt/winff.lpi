@@ -8,7 +8,7 @@
       <IconPath Value=".\"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
-      <ActiveEditorIndexAtStart Value="2"/>
+      <ActiveEditorIndexAtStart Value="6"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
@@ -16,9 +16,9 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <CurrentVersionNr Value="1"/>
-      <Comments Value="WinFF is a Cross Platform Batch GUI for FFmpeg. Source code available from WinFF.org"/>
-      <CompanyName Value="The WinFF Project"/>
-      <FileDescription Value="Cross Platform Batch GUI for FFmpeg"/>
+      <Comments Value="WinFF Video Converter"/>
+      <CompanyName Value="WinFF.org"/>
+      <FileDescription Value="WinFF Video Converter"/>
       <InternalName Value="winff"/>
       <LegalCopyright Value="Copyright 2009, GPL v3 by Matthew Weatherford"/>
       <OriginalFilename Value="winff.exe"/>
@@ -94,7 +94,7 @@
         <ResourceFilename Value="unit3.lrs"/>
         <UnitName Value="Unit3"/>
         <CursorPos X="25" Y="117"/>
-        <TopLine Value="92"/>
+        <TopLine Value="132"/>
         <EditorIndex Value="2"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
