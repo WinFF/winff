@@ -8,7 +8,7 @@
       <IconPath Value=".\"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
-      <ActiveEditorIndexAtStart Value="6"/>
+      <ActiveEditorIndexAtStart Value="3"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
@@ -138,8 +138,8 @@
         <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit4.lrs"/>
         <UnitName Value="Unit4"/>
-        <CursorPos X="1" Y="300"/>
-        <TopLine Value="254"/>
+        <CursorPos X="30" Y="131"/>
+        <TopLine Value="108"/>
         <EditorIndex Value="3"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>

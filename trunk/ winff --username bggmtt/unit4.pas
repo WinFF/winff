@@ -128,6 +128,7 @@ begin
     label5.caption:=rsLabel5;
     label6.caption:=rsLabel6;
     label7.caption:=rsLabel7;
+    label8.caption:=rslabel8;
     page1.caption:=rsPage1;
     page2.caption:=rsPage2;
     page3.caption:=rsPage3;
