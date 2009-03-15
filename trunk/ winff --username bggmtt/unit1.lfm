@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = 66
+  Left = 22
   Height = 605
-  Top = 78
+  Top = 26
   Width = 1072
   ActiveControl = Notebook1
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 572
+  ClientHeight = 585
   ClientWidth = 1072
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
@@ -328,20 +328,20 @@ object Form1: TForm1
     ParentColor = False
   end
   object pnlMain: TPanel
-    Height = 355
+    Height = 368
     Top = 54
     Width = 1072
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 355
+    ClientHeight = 368
     ClientWidth = 1072
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
-      Height = 215
+      Height = 228
       Width = 1072
       Align = alClient
       MultiSelect = True
@@ -351,7 +351,7 @@ object Form1: TForm1
     end
     object pnlbottom: TPanel
       Height = 140
-      Top = 215
+      Top = 228
       Width = 1072
       Align = alBottom
       ClientHeight = 140
@@ -978,7 +978,7 @@ object Form1: TForm1
   end
   object pnlbottom2: TPanel
     Height = 163
-    Top = 409
+    Top = 422
     Width = 1072
     Align = alBottom
     ClientHeight = 163
