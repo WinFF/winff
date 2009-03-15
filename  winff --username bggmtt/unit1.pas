@@ -753,10 +753,10 @@ s:string;
 begin
   {$ifdef linux}
   s:='';
-  if fileexists('/usr/bin/sensible-browser') then s:='/usr/bin/sensible-browser';
-  if fileexists('/usr/bin/firefox') then s:='/usr/bin/firefox';
-  if fileexists('/usr/bin/mozilla-firefox') then s:='/usr/bin/mozilla-firefox';
   if fileexists('/usr/bin/konqueror') then s:='/usr/bin/konqueror';
+  if fileexists('/usr/bin/mozilla-firefox') then s:='/usr/bin/mozilla-firefox';
+  if fileexists('/usr/bin/firefox') then s:='/usr/bin/firefox';
+  if fileexists('/usr/bin/sensible-browser') then s:='/usr/bin/sensible-browser';
   if s='' then
      begin
      Showmessage('More information can be found at ' + URL);
@@ -1027,7 +1027,7 @@ begin
   {$ifdef linux}
   s :='';
   if fileexists('/usr/share/doc/winff/WinFF.' + language + '.pdf.gz') then s:='/usr/share/doc/winff/WinFF.' + language + '.pdf.gz';
-  if fileexists('/usr/share/docs/winff/WinFF.' + language + '.pdf') then s:='/usr/share/docs/winff/WinFF.' + language + '.pdf';
+  if fileexists('/usr/share/doc/winff/WinFF.' + language + '.pdf') then s:='/usr/share/doc/winff/WinFF.' + language + '.pdf';
   if fileexists('/usr/share/winff/WinFF.' + language + '.pdf') then s:='/usr/share/winff/WinFF.' + language + '.pdf';
   if fileexists('/usr/share/winff/WinFF.' + language + '.pdf.gz') then s:='/usr/share/winff/WinFF.' + language + '.pdf.gz';
   if fileexists('/usr/share/doc/packages/winff/WinFF.' + language + '.pdf.gz') then s:='/usr/share/doc/packages/winff/WinFF.' + language + '.pdf.gz';
@@ -1035,7 +1035,7 @@ begin
   if s='' then
      begin
        s := '/usr/share/doc/winff/WinFF.en.pdf.gz';
-       if fileexists('/usr/share/docs/winff/WinFF.en.pdf') then s:='/usr/share/docs/winff/WinFF.en.pdf';
+       if fileexists('/usr/share/doc/winff/WinFF.en.pdf') then s:='/usr/share/doc/winff/WinFF.en.pdf';
        if fileexists('/usr/share/winff/WinFF.en.pdf') then s:='/usr/share/winff/WinFF.en.pdf';
        if fileexists('/usr/share/winff/WinFF.en.pdf.gz') then s:='/usr/share/winff/WinFF.en.pdf.gz';
        if fileexists('/usr/share/doc/packages/winff/WinFF.en.pdf.gz') then s:='/usr/share/doc/packages/winff/WinFF.en.pdf.gz';
