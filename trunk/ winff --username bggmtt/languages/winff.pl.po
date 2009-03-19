@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2008-04-03 11:44+0100\n"
+"PO-Revision-Date: 2009-03-19 00:33+0100\n"
 "Last-Translator: Marcin Trybus <mtrybus@o2.pl>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -12,13 +12,14 @@ msgstr ""
 "X-Poedit-Country: POLAND\n"
 "X-Poedit-Basepath: c:\\po\\winff\\\n"
 "X-Poedit-SearchPath-0: c:\\po\\winff\n"
+
 #: unit1.rsaddbtn
 msgid "Add"
 msgstr "Dodaj"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr ""
+msgstr "(Wszystkie kategorie)"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
@@ -29,9 +30,8 @@ msgid "Clear"
 msgstr "Wyczyść"
 
 #: unit1.rsclose
-#, fuzzy
 msgid "Close"
-msgstr "Wyczyść"
+msgstr "Zamknij"
 
 #: unit1.rsclosebtn
 msgid "Options"
@@ -91,16 +91,15 @@ msgstr "Konwertuj do..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr ""
+msgstr "Kanały Audio"
 
 #: unit1.rslabel11
 msgid "Output Folder"
 msgstr "Folder docelowy"
 
 #: unit1.rslabel19
-#, fuzzy
 msgid "Device Preset"
-msgstr "Usuń szablon:"
+msgstr "Szablony urządzeń"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -144,11 +143,11 @@ msgstr "Ustawienia"
 
 #: unit1.rsmenuitem6
 msgid "WinFF Website"
-msgstr ""
+msgstr "Strona domowa WinFF"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr ""
+msgstr "Forum WinFF"
 
 #: unit1.rsmitabout
 msgid "About"
@@ -156,7 +155,7 @@ msgstr "O WinFF..."
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentacja "
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
@@ -228,16 +227,15 @@ msgstr "Szablon zawiera niedozwolone znaki"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr ""
+msgstr "Szczgóły wyjścia"
 
 #: unit1.tabpage2caption
-#, fuzzy
 msgid "Video Settings"
-msgstr "Wymiary wideo"
+msgstr "Ustawienia wideo"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr ""
+msgstr "Ustawienia Audio"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
@@ -272,7 +270,6 @@ msgid "Import"
 msgstr "Import"
 
 #: unit2.rsimportpresets
-#, fuzzy
 msgid "Import Presets"
 msgstr "Importuj szablony"
 
@@ -309,9 +306,8 @@ msgid "Remove Preset:"
 msgstr "Usuń szablon:"
 
 #: unit2.rsreplacepreset
-#, fuzzy
 msgid "Replace Preset"
-msgstr "Zmień szablon:"
+msgstr "Zmień szablony"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
@@ -330,7 +326,6 @@ msgid "You must enter a name."
 msgstr "Podaj nazwę szablonu"
 
 #: unit3.rsbutton1
-#, fuzzy
 msgctxt "unit3.rsbutton1"
 msgid "OK"
 msgstr "OK"
@@ -361,7 +356,7 @@ msgstr "Pamiętaj ostatnio użyty folder"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "Użuwaj CHCP do zmiany kodowania znaków "
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
@@ -416,32 +411,32 @@ msgid "FFmpeg Command Line"
 msgstr "Wiersz poleceń FFmpeg"
 
 #: unit6.rsform6
-#, fuzzy
 msgid "Export Presets"
-msgstr "Importuj szablony"
+msgstr "Eksportuj szablony"
 
 #: unit6.rslabel1
-#, fuzzy
 msgid "Choose presets to export"
-msgstr "Wybierz szablon do eksportu"
+msgstr "Wybierz szablony do eksportu"
+
+#: unit4.rspriority
+msgid "Priority"
+msgstr "Priorytet"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Wysoki"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normalny"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Niski"
 
 #~ msgid "AC'"
 #~ msgstr "Kanały audio"
 #~ msgid "Please select a preset"
 #~ msgstr "Wybierz szablon"
 
-#: unit4.rspriority
-msgid "Priority"
-msgstr ""
 
-#: unit4.rspriorityhigh
-msgid "High"
-msgstr ""
-
-#: unit4.rsprioritynormal
-msgid "Normal"
-msgstr ""
-
-#: unit4.rspriorityidle
-msgid "Idle"
-msgstr ""
