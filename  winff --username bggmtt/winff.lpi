@@ -64,8 +64,8 @@
         <ResourceBaseClass Value="Form"/>
         <ResourceFilename Value="unit1.lrs"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="64" Y="758"/>
-        <TopLine Value="736"/>
+        <CursorPos X="9" Y="222"/>
+        <TopLine Value="205"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Loaded Value="True"/>

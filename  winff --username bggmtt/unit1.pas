@@ -217,8 +217,9 @@ var
   rsMenuItem3='Exit';
   rsMenuItem4='Presets';
   rsMenuItem5='Preferences';
-  rsMenuItem6='WinFF Website';
+  rsMenuItem6='Help';
   rsMenuItem7='WinFF Forums';
+  rsmitWinff='WinFF Website';
   rsmitdocs='Documentation';
   rsmitabout='About';
   rsimportmenu='Import Preset';
@@ -306,9 +307,10 @@ begin
     MenuItem3.Caption:=rsmenuitem3;
     MenuItem4.Caption:=rsmenuitem4;
     MenuItem5.Caption:=rsmenuitem5;
-    mitWinff.Caption := rsmenuitem6;
+    MenuItem6.Caption := rsmenuitem6;
     mitForums.Caption := rsmenuitem7;
     mitAbout.Caption:= rsmitabout;
+    mitWinff.Caption := rsmitWinff;
     mitdocs.Caption:= rsmitdocs;
     importmenu.Caption:=rsimportmenu;
     showoptions.Caption:=rsshowoptions;
