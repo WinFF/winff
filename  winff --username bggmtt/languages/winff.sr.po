@@ -140,7 +140,11 @@ msgstr "Preseti"
 msgid "Preferences"
 msgstr "Opcije"
 
-#: unit1.rsmenuitem6
+#: unit1.menuitem6
+msgid "Help"
+msgstr "Помоћ"
+
+#: unit1.rsmitWinff
 msgid "WinFF Website"
 msgstr "WinFF Vebsajt"
 

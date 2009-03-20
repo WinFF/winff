@@ -140,7 +140,11 @@ msgstr ""
 msgid "Preferences"
 msgstr ""
 
-#: unit1.rsmenuitem6
+#: unit1.menuitem6
+msgid "Help"
+msgstr ""
+
+#: unit1.rsmitWinff
 msgid "WinFF Website"
 msgstr ""
 

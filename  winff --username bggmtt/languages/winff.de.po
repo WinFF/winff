@@ -141,7 +141,11 @@ msgstr "Profile"
 msgid "Preferences"
 msgstr "Einstellungen"
 
-#: unit1.rsmenuitem6
+#: unit1.menuitem6
+msgid "Help"
+msgstr "Hilfe"
+
+#: unit1.rsmitWinff
 msgid "WinFF Website"
 msgstr "WinFF im Internet"
 

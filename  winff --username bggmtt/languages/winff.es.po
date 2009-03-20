@@ -139,7 +139,11 @@ msgstr "Valor preestablecido"
 msgid "Preferences"
 msgstr "Preferencias"
 
-#: unit1.rsmenuitem6
+#: unit1.menuitem6
+msgid "Help"
+msgstr "Ayuda"
+
+#: unit1.rsmitWinff
 msgid "WinFF Website"
 msgstr ""
 
