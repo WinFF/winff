@@ -144,7 +144,11 @@ msgstr "Voorinstellingen"
 msgid "Preferences"
 msgstr "Voorkeuren"
 
-#: unit1.rsmenuitem6
+#: unit1.menuitem6
+msgid "Help"
+msgstr "Help"
+
+#: unit1.rsmitWinff
 msgid "WinFF Website"
 msgstr "WinFF website"
 

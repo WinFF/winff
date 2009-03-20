@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.45.1\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2009-02-23 15:39+0100\n"
-"Last-Translator: Choplair <chopinou@choplair.org>\n"
+"PO-Revision-Date: 2009-03-20 21:44+0100\n"
+"Last-Translator: Choplair <chopinou-NOSP@M-choplair.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -55,7 +55,7 @@ msgstr "Le fichier de préréglage est introuvable."
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
-msgstr "Afficher la ligne de commande"
+msgstr "Affichage de la ligne de commande"
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
@@ -71,7 +71,7 @@ msgstr "Fichier"
 
 #: unit1.rsgroupbox1
 msgid "Additional Options"
-msgstr "Options supplémentaires"
+msgstr "Paramètres supplémentaires"
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -79,7 +79,7 @@ msgstr "Importer un préréglage"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Fichier de préréglage  invalide"
+msgstr "Fichier de préréglage invalide"
 
 #: unit1.rslabel1
 msgid "Convert To ..."
@@ -91,31 +91,31 @@ msgstr "Cannaux audio"
 
 #: unit1.rslabel11
 msgid "Output Folder"
-msgstr "Répertoire de destination"
+msgstr "Destination :"
 
 #: unit1.rslabel19
 msgid "Device Preset"
-msgstr "Préréglage pour matériel"
+msgstr "Préréglage :"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
-msgstr "Débit Vidéo"
+msgstr "Débit vidéo (kb/s)"
 
 #: unit1.rslabel4
 msgid "Frame Rate"
-msgstr "Images/Seconde"
+msgstr "Images/sec."
 
 #: unit1.rslabel5
 msgid "Video Size"
-msgstr "Résolution Vidéo"
+msgstr "Résolution"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
-msgstr "Ration d'aspect"
+msgstr "Ratio d'aspect"
 
 #: unit1.rslabel7
 msgid "Audio Bitrate"
-msgstr "Débit Audio"
+msgstr "Débit audio (kb/s)"
 
 #: unit1.rslabel8
 msgid "Sample Rate"
@@ -131,19 +131,23 @@ msgstr "Quitter"
 
 #: unit1.rsmenuitem4
 msgid "Presets"
-msgstr "Préréglages"
+msgstr "Liste des préréglages"
 
 #: unit1.rsmenuitem5
 msgid "Preferences"
-msgstr "Préférences"
+msgstr "Préférences de WinFF"
 
-#: unit1.rsmenuitem6
+#: unit1.menuitem6
+msgid "Help"
+msgstr "Aide"
+
+#: unit1.rsmitWinff
 msgid "WinFF Website"
 msgstr "Site web de WinFF"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr "Forums de WinFF"
+msgstr "Forum de WinFF"
 
 #: unit1.rsmitabout
 msgid "About"
@@ -183,7 +187,7 @@ msgstr "Le préréglage à importer n'a pas d'extension"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "Le préréglage à importer n'a pas de label"
+msgstr "Le préréglage à importer n'a pas de titre"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
@@ -191,7 +195,7 @@ msgstr "Veuillez choisir un préréglage à exporter"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "Un préréglage avec le label \"%s%s%s\" existe déjà"
+msgstr "Un préréglage avec le titre \"%s%s%s\" existe déjà"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
@@ -199,7 +203,7 @@ msgstr "Appuyez sur Entrée pour continuer"
 
 #: unit1.rsremovebtn
 msgid "Remove"
-msgstr "Supprimer"
+msgstr "Enlever"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -223,7 +227,7 @@ msgstr "Le préréglage contient des caractères illégaux"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr "Details de sortie"
+msgstr "Profil de sortie"
 
 #: unit1.tabpage2caption
 msgid "Video Settings"
@@ -235,11 +239,11 @@ msgstr "Paramètres audio"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
-msgstr "Paramètres de ligne de commande supplémentaire (expert)"
+msgstr "Paramètres additionels de ligne de commande (expert)"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
-msgstr "Ajouter / Actualiser"
+msgstr "Ajouter / Modifier"
 
 #: unit2.rscancelbtn
 msgid "Cancel"
@@ -275,11 +279,11 @@ msgstr "Nom du préréglage (Un seul mot, alphanumerique)"
 
 #: unit2.rslabel3
 msgid "Preset Label"
-msgstr "Label du préréglage"
+msgstr "Titre complet du préréglage"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
-msgstr "Ligne de commande pour le préréglage (pas de -i ni de fichier de destination)"
+msgstr "Ligne de commande du préréglage (pas de -i ni fichier de destination)"
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
@@ -322,7 +326,6 @@ msgid "You must enter a name."
 msgstr "Vous devez spécifier un nom."
 
 #: unit3.rsbutton1
-#, fuzzy
 msgctxt "unit3.rsbutton1"
 msgid "OK"
 msgstr "OK"
@@ -365,7 +368,7 @@ msgstr "Préférence de WinFF"
 
 #: unit4.rslabel1
 msgid "Default Destination Directory"
-msgstr "Répertoire de destination par défaut"
+msgstr "Répertoire de destination par défaut :"
 
 #: unit4.rslabel2
 msgid "Path to FFmpeg.exe"
@@ -389,7 +392,7 @@ msgstr "Terminal dans lequel lancer FFmpeg"
 
 #: unit4.rslabel7
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
-msgstr "Paramètres du terminal (-e pour Xterm, -x pour le terminal de Gnome...)"
+msgstr "Paramètres du terminal (-e pour Xterm, -x pour Gnome terminal...)"
 
 #: unit4.rspage1
 msgid "General"
