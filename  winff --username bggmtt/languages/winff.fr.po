@@ -137,7 +137,7 @@ msgstr "Liste des préréglages"
 msgid "Preferences"
 msgstr "Préférences de WinFF"
 
-#: unit1.menuitem6
+#: unit1.rsmenuitem6
 msgid "Help"
 msgstr "Aide"
 

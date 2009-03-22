@@ -144,7 +144,7 @@ msgstr "Voorinstellingen"
 msgid "Preferences"
 msgstr "Voorkeuren"
 
-#: unit1.menuitem6
+#: unit1.rsmenuitem6
 msgid "Help"
 msgstr "Help"
 
