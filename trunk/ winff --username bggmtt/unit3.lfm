@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 367
+  Left = 732
   Height = 318
-  Top = 449
+  Top = 420
   Width = 384
   ActiveControl = Notebook1
   Caption = 'About WinFF'
@@ -16,7 +16,7 @@ object Form3: TForm3
     Height = 268
     Width = 384
     Align = alClient
-    PageIndex = 2
+    PageIndex = 0
     TabOrder = 0
     object Page1: TPage
       Caption = 'WinFF'
@@ -150,9 +150,9 @@ object Form3: TForm3
       end
       object Label4: TLabel
         Cursor = crHandPoint
-        Left = 4
+        Left = 60
         Height = 14
-        Top = 114
+        Top = 26
         Width = 105
         Caption = 'http://www.winff.org'
         Font.Color = clBlue
@@ -163,7 +163,7 @@ object Form3: TForm3
       object Label11: TLabel
         Left = 4
         Height = 14
-        Top = 156
+        Top = 122
         Width = 199
         Caption = 'Debian/Ubuntu Packaging by Paul Gevers'
         ParentColor = False
@@ -171,7 +171,7 @@ object Form3: TForm3
       object Label12: TLabel
         Left = 4
         Height = 14
-        Top = 180
+        Top = 146
         Width = 196
         Caption = 'Additional Programming by Ian Stoffberg'
         Font.Color = clBlue
@@ -182,13 +182,21 @@ object Form3: TForm3
       object Label13: TLabel
         Left = 4
         Height = 14
-        Top = 202
-        Width = 153
-        Caption = 'High Quality Presets from Gmaq'
+        Top = 186
+        Width = 28
+        Caption = 'Gmaq'
         Font.Color = clBlue
         ParentColor = False
         ParentFont = False
         OnClick = Label13Click
+      end
+      object Label14: TLabel
+        Left = 4
+        Height = 14
+        Top = 170
+        Width = 125
+        Caption = 'High Quality Presets From'
+        ParentColor = False
       end
     end
     object Page2: TPage
