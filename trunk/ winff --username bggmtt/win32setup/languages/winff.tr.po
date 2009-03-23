@@ -141,6 +141,10 @@ msgid "Preferences"
 msgstr "Tercihler"
 
 #: unit1.rsmenuitem6
+msgid "Help"
+msgstr "Yardım"
+
+#: unit1.rsmitWinff
 msgid "WinFF Website"
 msgstr "WinFF Web sitesi"
 
