@@ -42,6 +42,7 @@ Name: "portuguese"; MessagesFile: "compiler:languages\Portuguese.isl"
 Name: "dutch"; MessagesFile: "compiler:languages\Dutch.isl"
 Name: "chinesetrad"; MessagesFile: "compiler:languages\chinesetrad.isl"
 Name: "serbian"; MessagesFile: "compiler:languages\serbian.isl"
+Name: "norwegian"; MessagesFile: "compiler:languages\Norwegian.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
@@ -78,6 +79,7 @@ Source: "languages\winff.nl.po"; DestDir: "{app}\languages"; Flags: ignoreversio
 Source: "languages\winff.zh.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.fr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.sr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.nb.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
