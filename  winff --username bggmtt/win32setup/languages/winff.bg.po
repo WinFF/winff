@@ -140,9 +140,13 @@ msgstr "Готови настройки"
 msgid "Preferences"
 msgstr "Предпочитания"
 
-#: unit1.rsmenuitem6
+#: unit1.rsmitwinff
 msgid "WinFF Website"
 msgstr "WinFF Сайт"
+
+#: unit1.rsmenuitem6
+msgid "Help"
+msgstr "Помощ"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
