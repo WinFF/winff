@@ -65,6 +65,7 @@ Source: "ffplay-doc.html"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "changelog.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "Docs\WinFF.en.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "Docs\WinFF.nl.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "Docs\WinFF.fr.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
 
 ; language files
 Source: "languages\winff.po"; DestDir: "{app}\languages"; Flags: ignoreversion
@@ -99,6 +100,7 @@ Name: "{group}\Docs\README FFmpeg"; Filename: "{app}\Docs\README-FFmpeg.txt";
 Name: "{group}\Docs\License"; Filename: "{app}\Docs\License.txt";
 Name: "{group}\Docs\Docs - English"; Filename: "{app}\Docs\WinFF.en.pdf";
 Name: "{group}\Docs\Docs - Dutch"; Filename: "{app}\Docs\WinFF.nl.pdf";
+Name: "{group}\Docs\Docs - French"; Filename: "{app}\Docs\WinFF.fr.pdf";
 
 [Run]
 Filename: "{app}\winff.exe"; Description: "{cm:LaunchProgram,WinFF}"; Flags: nowait postinstall skipifsilent
