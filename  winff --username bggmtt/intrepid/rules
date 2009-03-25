@@ -22,12 +22,6 @@ build-stamp: configure-stamp
 	dh_testdir
 
 	/usr/lib/lazarus/lazbuild --widgetset=gtk2 -B winff.lpr
-##	/usr/lib/openoffice/program/soffice -norestore -nofirststartwizard -nologo -headless -pt Cups-PDF WinFF.odt
-#	/usr/lib/openoffice/program/soffice "-accept=socket,host=localhost,port=2002;urp;StarOffice.ServiceManager" -nologo -headless -nofirststartwizard &
-	#sleep 15
-#	/usr/bin/unoconv --stdout WinFF.odt > winff.pdf
-#	/usr/bin/unoconv --stdout WinFF0.42_nl.odt > winff_nl.pdf
-#	/usr/bin/pkill soffice
 
 	touch $@
 
@@ -59,7 +53,7 @@ binary-arch: build install
 	dh_installman winff.1
 	dh_desktop
 	dh_strip
-	dh_compress
+	dh_compress --exclude=.pdf
 	dh_fixperms
 	find $(CURDIR)/debian/winff/usr/share/winff -type f | xargs chmod a-x
 	dh_installdeb

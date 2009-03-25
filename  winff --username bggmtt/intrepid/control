@@ -13,6 +13,7 @@ Architecture: any
 Depends: ffmpeg, xterm | x-terminal-emulator, ${shlibs:Depends}
 Recommends: ubuntu-restricted-extras | kubuntu-restricted-extras |
  xubuntu-restricted-extras
+Suggests: www-browser, pdf-viewer
 Description: graphical video and audio batch converter using ffmpeg
  WinFF is a graphical user interface for FFmpeg. It will convert
  almost any video file that FFmpeg will convert. WinFF does multiple
