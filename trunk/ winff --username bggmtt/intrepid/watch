@@ -4,4 +4,4 @@
 version=3
 
 http://code.google.com/p/winff/downloads/list \
-  (?:.*/)?winff(\d)\.(\d+)-source\.tar\.gz
+  (?:.*/)?winff-(\d)\.(\d+)\.(\d+)-source\.tar\.gz

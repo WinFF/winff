@@ -1,3 +1,17 @@
+winff (1.0.0-0~ppa1j) jaunty; urgency=low
+
+  * New upstream release
+  * Upstream moved documentation, so debian/docs and 
+    debian/winff.doc-base changed
+  * debian/rules prevent compression of pdf
+  * Checked original presets against libavcodec51 and libavcodec2 and
+    replaced verion the versions in debian/presets-libavcodecXX-vX.xml
+  * Copied debian/presets-libavcodec52-v3.xml to debian/presets.xml
+  * Updated debian/copyright to reflex upstream changes
+  * Added suggests for www-browser and pdf-viewer to debian/control
+
+ -- Paul Gevers <paul@climbing.nl>  Wed, 25 Mar 2009 10:25:08 +0100
+
 winff (0.45.1-1ubuntu1~ppa2j) jaunty; urgency=low
 
   * Added debian/presets files for different versions of libavcodec
