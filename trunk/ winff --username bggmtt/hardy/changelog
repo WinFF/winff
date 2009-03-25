@@ -1,3 +1,19 @@
+winff (0.45.2.h-hardy~ppa1) hardy; urgency=low
+
+  * Removed references to lclversion in the LFM for the forms and
+    special version for Hardy
+  * Removed debian/winff.1 again
+
+ -- Paul Gevers <paul@climbing.nl>  Wed, 14 Jan 2009 21:44:12 +0100
+
+winff (0.45.1.h-backto043~ppa1) hardy; urgency=low
+
+  * Reverted back to version 0.43 because version 0.45.1 is incompatible
+    with Hardy.
+  * Added debian/winff.1 back
+
+ -- Paul Gevers <paul@climbing.nl>  Mon, 12 Jan 2009 20:57:46 +0100
+
 winff (0.45.1-0ubuntu1~ppa2h) hardy; urgency=low
 
   * Replaced debian/winff.1 with winff.1 in debian/rules
