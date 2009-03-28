@@ -2,10 +2,12 @@
 <CONFIG>
   <ProjectOptions>
     <PathDelim Value="\"/>
-    <Version Value="6"/>
+    <Version Value="7"/>
     <General>
+      <Flags>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
       <MainUnit Value="0"/>
-      <IconPath Value=".\"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
       <ActiveEditorIndexAtStart Value="6"/>
@@ -62,7 +64,6 @@
         <ComponentName Value="Form1"/>
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <ResourceFilename Value="unit1.lrs"/>
         <UnitName Value="Unit1"/>
         <CursorPos X="9" Y="222"/>
         <TopLine Value="205"/>
@@ -75,7 +76,6 @@
         <ComponentName Value="Form2"/>
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <ResourceFilename Value="unit2.lrs"/>
         <UnitName Value="Unit2"/>
         <CursorPos X="1" Y="63"/>
         <TopLine Value="42"/>
@@ -91,7 +91,6 @@
         <ComponentName Value="Form3"/>
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <ResourceFilename Value="unit3.lrs"/>
         <UnitName Value="Unit3"/>
         <CursorPos X="37" Y="115"/>
         <TopLine Value="88"/>
@@ -136,7 +135,6 @@
         <ComponentName Value="Form4"/>
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <ResourceFilename Value="unit4.lrs"/>
         <UnitName Value="Unit4"/>
         <CursorPos X="30" Y="131"/>
         <TopLine Value="108"/>
@@ -149,7 +147,6 @@
         <ComponentName Value="Form5"/>
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <ResourceFilename Value="unit5.lrs"/>
         <UnitName Value="Unit5"/>
         <CursorPos X="1" Y="82"/>
         <TopLine Value="39"/>
@@ -196,7 +193,6 @@
         <HasResources Value="True"/>
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <ResourceFilename Value="unit6.lrs"/>
         <UnitName Value="unit6"/>
         <CursorPos X="1" Y="165"/>
         <TopLine Value="133"/>
