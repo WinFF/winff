@@ -7,6 +7,7 @@ del winff.exe
 del winff
 del *.lrt
 del *.lrs
+del *.or
 del *.compiled
 del backup/*.*
 rm backup
