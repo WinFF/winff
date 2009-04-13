@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.45.1 \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2009-02-18\n"
-"Last-Translator: Italo Ramirez I. <gualalux@hotmail.com>\n"
+"PO-Revision-Date: 2009-04-01\n"
+"Last-Translator: Víctor Paesa <wzrlpy@hotmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -11,11 +11,11 @@ msgstr ""
 
 #: unit1.rsaddbtn
 msgid "Add"
-msgstr "AÃ±adir"
+msgstr "Añadir"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr ""
+msgstr "(Todas categorías)"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
@@ -56,11 +56,11 @@ msgstr "No pude encontrar el archivo de preestablecidos"
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
-msgstr "Mostrar lÃ­nea de comando"
+msgstr "Mostrar línea de comando"
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "La extensiÃ³n no puede contener un punto"
+msgstr "La extensión no puede contener un punto"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
@@ -80,7 +80,7 @@ msgstr "Importar preestablecidos"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Fichero de preestablecidos invÃ¡lido"
+msgstr "Fichero de preestablecidos inválido"
 
 #: unit1.rslabel1
 msgid "Convert To ..."
@@ -88,7 +88,7 @@ msgstr "Convertir a ..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr ""
+msgstr "Canales de audio"
 
 #: unit1.rslabel11
 msgid "Output Folder"
@@ -97,7 +97,7 @@ msgstr "Carpeta destino"
 #: unit1.rslabel19
 #, fuzzy
 msgid "Device Preset"
-msgstr "Eliminar preestablecido:"
+msgstr "Elegir variante:"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -109,11 +109,11 @@ msgstr "Cuadros/s"
 
 #: unit1.rslabel5
 msgid "Video Size"
-msgstr "TamaÃ±o de video"
+msgstr "Tamaño(HxV)"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
-msgstr "RelaciÃ³n de aspecto"
+msgstr "Relación de aspecto"
 
 #: unit1.rslabel7
 msgid "Audio Bitrate"
@@ -145,11 +145,11 @@ msgstr "Ayuda"
 
 #: unit1.rsmitWinff
 msgid "WinFF Website"
-msgstr ""
+msgstr "Web de WinFF"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr ""
+msgstr "Forums de WinFF"
 
 #: unit1.rsmitabout
 msgid "About"
@@ -157,15 +157,15 @@ msgstr "Acerca de"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr ""
+msgstr "Documentación"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "El nombre ha de ser alfanumÃ©rico (a-z,A-Z,0-9), sin eÃ±es ni acentos"
+msgstr "El nombre ha de ser alfanumérico (a-z,A-Z,0-9), sin eñes ni acentos"
 
 #: unit1.rspass2
 msgid "2 pass"
-msgstr "2Âº paso"
+msgstr "2º paso"
 
 #: unit1.rspauseonfinish
 msgid "Pause on Finish"
@@ -177,7 +177,7 @@ msgstr "Reproducir"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "Por favor, aÃ±adir al menos un fichero para convertir"
+msgstr "Por favor, añadir al menos un fichero para convertir"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
@@ -185,7 +185,7 @@ msgstr "Preestablecido: %s%s%s ya existe"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "El preestablecido a importar no tiene extensiÃ³n"
+msgstr "El preestablecido a importar no tiene extensión"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
@@ -225,28 +225,28 @@ msgstr "Convertir"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "El preestablecido contiene caracteres invÃ¡lidos"
+msgstr "El preestablecido contiene caracteres inválidos"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr ""
+msgstr "Resultado"
 
 #: unit1.tabpage2caption
 #, fuzzy
 msgid "Video Settings"
-msgstr "TamaÃ±o de video"
+msgstr "Parámetros de video"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr ""
+msgstr "Parámetros de audio"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
-msgstr "ParÃ¡metros adicionales en la lÃ­nea de comando (avanzado)"
+msgstr "Parámetros adicionales en la línea de comando (avanzado)"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
-msgstr "AÃ±adir / Modificar"
+msgstr "Añadir / Modificar"
 
 #: unit2.rscancelbtn
 msgid "Cancel"
@@ -287,7 +287,7 @@ msgstr "Etiqueta del preestablecido"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
-msgstr "LÃ­nea de commando del preestablecido (sin -i ni fichero de salida"
+msgstr "Línea de commando del preestablecido (sin -i ni fichero de salida"
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
@@ -295,11 +295,11 @@ msgstr "Sufijo del fichero de salida (sin \".\")"
 
 #: unit2.rslabel6
 msgid "Category"
-msgstr "CategorÃ­a"
+msgstr "Categoría"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "La etiqueta ha de ser Ãºnica"
+msgstr "La etiqueta ha de ser única"
 
 #: unit2.rsokbtn
 msgid "Save"
@@ -320,7 +320,7 @@ msgstr "Modificar preestablecido:"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr "Tienes que teclear una extensiÃ³n"
+msgstr "Tienes que teclear una extensión"
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
@@ -358,15 +358,15 @@ msgstr "Gracias"
 
 #: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
-msgstr "Recordar la Ãºltima carpeta usada"
+msgstr "Recordar la última carpeta usada"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "Usar CHCP para idiomas no ingleses"
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
-msgstr "Multihilo para procesadores con 2 nÃºcleos"
+msgstr "Multihilo para procesadores con 2 núcleos"
 
 #: unit4.rsform4
 msgid "WinFF Preferences"
@@ -374,7 +374,7 @@ msgstr "Preferencias de WinFF"
 
 #: unit4.rslabel1
 msgid "Default Destination Directory"
-msgstr "Carpeta destino por omisiÃ³n"
+msgstr "Carpeta destino por omisión"
 
 #: unit4.rslabel2
 msgid "Path to FFmpeg.exe"
@@ -414,7 +414,7 @@ msgstr "Linux"
 
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
-msgstr "LÃ­nea de comando de FFmpeg"
+msgstr "Línea de comando de FFmpeg"
 
 #: unit6.rsform6
 #, fuzzy
@@ -433,17 +433,17 @@ msgstr "Por favor, elige un preestablecido para exportarlo"
 
 #: unit4.rspriority
 msgid "Priority"
-msgstr ""
+msgstr "Proridad"
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr ""
+msgstr "Maxima"
 
 #: unit4.rsprioritynormal
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr ""
+msgstr "Mínima"
 
