@@ -22,9 +22,9 @@ wget --quiet --output-document=- "http://winff.org/ubuntu/AAFE086A.gpg" | sudo a
 
 After that you need to add the repository to apt. You can do that by entering the line (1) in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
 {{{
-echo "deb http://winff.org/ubuntu intrepid universe" | sudo tee /etc/apt/sources.list.d/winff.list
+echo "deb http://winff.org/ubuntu jaunty universe" | sudo tee /etc/apt/sources.list.d/winff.list
 }}}
-Of course you need to change intrepid to hardy or jaunty if you have that. (You can also just add the line to /etc/apt/sources.list .)
+Of course you need to change jaunty to hardy or intrepid if you have that. (You can also just add the line to /etc/apt/sources.list .)
 
 You can now install WinFF directly by running:
 {{{
@@ -49,10 +49,10 @@ sudo apt-get update && sudo apt-get install winff
 }}}
 ----
 
-(1) `deb http://winff.org/ubuntu intrepid universe`
+(1) `deb http://winff.org/ubuntu jaunty universe`
 _(or if you prefer the PPA:)_ 
-`deb http://ppa.launchpad.net/paul-climbing/ubuntu intrepid main`
-(replace intrepid with your release)
+`deb http://ppa.launchpad.net/paul-climbing/ubuntu jaunty main`
+(replace jaunty with your release)
 
 == Synaptic ==
 
@@ -68,7 +68,7 @@ Now go to the "Third-party Software" tab and select "add"
 
 http://winff.org/images/screenshots/synaptic_add_repo-win.png
 
-In the next field type (or copy/paste) `deb http://winff.org/ubuntu intrepid universe` (change intrepid to *your* release) and press "Add source".
+In the next field type (or copy/paste) `deb http://winff.org/ubuntu jaunty universe` (change jaunty to *your* release) and press "Add source".
 
 http://winff.org/images/screenshots/synaptic_add_repo-field.png
 
@@ -81,7 +81,11 @@ In order to use an other presets file than supplied with the package you might n
 
 (3) /usr/share/doc/winff/README.Debian
 
-= Details ffmpeg for Interpid (Jaunty) =
+= Details ffmpeg for Jaunty =
+
+Jaunty contains a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed which should pull in the 'unstripped' versions of several libraries. You can also look for them directly: libavcodec-unstripped-52, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
+
+= Details ffmpeg for Interpid =
 
 Intrepid contains a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed which should pull in the 'unstripped' versions of several libraries. You can also look for them directly: libavcodec-unstripped-51, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
 
