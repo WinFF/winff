@@ -19,7 +19,7 @@ wget --quiet --output-document=- "http://winff.org/ubuntu/AAFE086A.gpg" | sudo a
 
 After that you need to add the repository to apt. You can do that by entering the line (1) in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
 {{{
-echo "deb http://winff.org/ubuntu intrepid universe" | sudo tee /etc/apt/sources.list.d/winff.list
+echo "deb http://winff.org/ubuntu hardy universe" | sudo tee /etc/apt/sources.list.d/winff.list
 }}}
 You can also just add the line to /etc/apt/sources.list .
 
@@ -45,9 +45,9 @@ sudo apt-get update && sudo apt-get install winff
 }}}
 ----
 
-(1) `deb http://winff.org/ubuntu intrepid universe`
+(1) `deb http://winff.org/ubuntu hardy universe`
 _(or if you prefer the PPA:)_ 
-`deb http://ppa.launchpad.net/paul-climbing/ubuntu intrepid main`
+`deb http://ppa.launchpad.net/paul-climbing/ubuntu hardy main`
 
 (2) for instance `sudo apt-get update` or while in synaptic pressing "Reload"
 
