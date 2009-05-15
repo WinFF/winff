@@ -1,0 +1,50 @@
+unit umain;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
+  Menus, ComCtrls, ExtCtrls;
+
+type
+
+  { TMainForm }
+
+  TMainForm = class(TForm)
+     MainMenu: TMainMenu;
+     mmiAbout: TMenuItem;
+     mmiSpacer0: TMenuItem;
+     mmiForums: TMenuItem;
+     mmiWinffWebsite: TMenuItem;
+     mmiShutdownOnFinish: TMenuItem;
+     mmiPauseOnFinish: TMenuItem;
+     mmiDisplayCmdLine: TMenuItem;
+     mmiPreferences: TMenuItem;
+     mmiEdit: TMenuItem;
+     mmiOptions: TMenuItem;
+     mmiHelp: TMenuItem;
+     mmiEditPresets: TMenuItem;
+     mmiAdditionalOptions: TMenuItem;
+     mmiDocumentation: TMenuItem;
+     mmiQuit: TMenuItem;
+     mmiFile: TMenuItem;
+     pnlMainSpacer: TPanel;
+     StatusBar: TStatusBar;
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end; 
+
+var
+  MainForm: TMainForm;
+
+implementation
+
+initialization
+  {$I umain.lrs}
+
+end.
+

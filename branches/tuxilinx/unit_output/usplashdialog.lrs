@@ -1,0 +1,10 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TSplashDialog','FORMDATA',[
+  'TPF0'#13'TSplashDialog'#12'SplashDialog'#4'Left'#3#238#2#6'Height'#3','#1#3
+  +'Top'#3#143#1#5'Width'#3#144#1#11'BorderIcons'#11#0#11'BorderStyle'#7#6'bsNo'
+  +'ne'#7'Caption'#6#12'SplashDialog'#9'FormStyle'#7#8'fsSplash'#8'Position'#7
+  +#14'poScreenCenter'#10'LCLVersion'#6#6'0.9.27'#0#6'TTimer'#11'SplashTimer'#8
+  +'Interval'#3#220#5#7'OnTimer'#7#16'SplashTimerTimer'#4'left'#2'i'#3'top'#2'J'
+  +#0#0#0
+]);
