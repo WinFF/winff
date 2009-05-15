@@ -1,0 +1,22 @@
+program winff_new;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Interfaces, // this includes the LCL widgetset
+  Forms, umain, upreseteditor, uexportpreset
+  { you can add units after this };
+
+{$IFDEF WINDOWS}{$R winff_new.rc}{$ENDIF}
+
+begin
+   Application.Initialize;
+   Application.CreateForm(TMainForm, MainForm);
+   Application.CreateForm(TPresetEditorDialog, PresetEditorDialog);
+   Application.CreateForm(TExportPresetDialog, ExportPresetDialog);
+   Application.Run;
+end.
+
