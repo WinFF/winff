@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<presets>
-  <wmv>
-    <label>WMV</label>
-    <params>-vcodec wmv2  -acodec wmav2</params>
-    <extension>wmv</extension>
-  </wmv>
-</presets>
