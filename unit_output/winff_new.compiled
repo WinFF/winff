@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<CONFIG>
-  <Compiler Value="/usr/local/bin/ppc386" Date="1242407957"/>
-  <Params Value=" -MObjFPC -Scgi -O1 -gl -WG -vewnhi -l -Fi/home/mce/FOSS/WinFF/dbuild/unit_output/ -Fu/home/mce/FOSS/WinFF/dbuild/units_forms/mainform_dialogs/ -Fu/usr/lib/lazarus/lcl/units/i386-linux/ -Fu/usr/lib/lazarus/lcl/units/i386-linux/gtk2/ -Fu/usr/lib/lazarus/packager/units/i386-linux/ -Fu/home/mce/FOSS/WinFF/dbuild/ -Fu. -FU/home/mce/FOSS/WinFF/dbuild/unit_output/ -FE/home/mce/FOSS/WinFF/dbuild/unit_output/ -owinff_new -dLCL -dLCLgtk2 winff_new.lpr"/>
-</CONFIG>
