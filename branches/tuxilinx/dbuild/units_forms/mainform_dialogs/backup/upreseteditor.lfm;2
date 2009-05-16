@@ -1,0 +1,115 @@
+object PresetEditorDialog: TPresetEditorDialog
+  Left = 635
+  Height = 468
+  Top = 271
+  Width = 437
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Preset Editor...'
+  ClientHeight = 468
+  ClientWidth = 437
+  Position = poScreenCenter
+  LCLVersion = '0.9.27'
+  object pnlTopToolbar: TPanel
+    Left = 0
+    Height = 80
+    Top = 0
+    Width = 437
+    Align = alTop
+    ClientHeight = 80
+    ClientWidth = 437
+    TabOrder = 0
+    object btnImport: TBitBtn
+      Left = 8
+      Height = 65
+      Top = 8
+      Width = 65
+      Caption = 'Import'
+      Layout = blGlyphTop
+      TabOrder = 0
+    end
+    object btnExport: TBitBtn
+      Left = 80
+      Height = 65
+      Top = 8
+      Width = 65
+      Caption = 'Export'
+      Layout = blGlyphTop
+      TabOrder = 1
+    end
+    object btnCancel: TBitBtn
+      Left = 365
+      Height = 65
+      Top = 8
+      Width = 65
+      Anchors = [akTop, akRight]
+      Caption = 'Cancel'
+      Layout = blGlyphTop
+      TabOrder = 2
+    end
+    object btnSave: TBitBtn
+      Left = 293
+      Height = 65
+      Top = 8
+      Width = 65
+      Anchors = [akTop, akRight]
+      Caption = 'Save'
+      Layout = blGlyphTop
+      TabOrder = 3
+    end
+  end
+  object pnlBottom: TPanel
+    Left = 0
+    Height = 330
+    Top = 138
+    Width = 437
+    Align = alBottom
+    ClientHeight = 330
+    ClientWidth = 437
+    TabOrder = 1
+    object grpbxPresetEditor: TGroupBox
+      Left = 8
+      Height = 238
+      Top = 8
+      Width = 422
+      Anchors = [akTop, akLeft, akRight]
+      Caption = 'Preset Editor:'
+      ClientHeight = 219
+      ClientWidth = 418
+      TabOrder = 0
+      object lblText0: TLabel
+        Left = 6
+        Height = 18
+        Top = 5
+        Width = 89
+        Caption = 'Preset Name:'
+        ParentColor = False
+      end
+      object btnAddUpdate: TButton
+        Left = 6
+        Height = 25
+        Top = 189
+        Width = 130
+        Anchors = [akLeft, akBottom]
+        Caption = 'Add / Update'
+        TabOrder = 0
+      end
+      object btnDelete: TButton
+        Left = 150
+        Height = 25
+        Top = 189
+        Width = 130
+        Anchors = [akLeft, akBottom]
+        Caption = 'Delete'
+        TabOrder = 1
+      end
+      object edtPresetName: TEdit
+        Left = 6
+        Height = 27
+        Top = 21
+        Width = 80
+        TabOrder = 2
+      end
+    end
+  end
+end

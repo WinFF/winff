@@ -1,0 +1,197 @@
+object PresetEditorDialog: TPresetEditorDialog
+  Left = 661
+  Height = 528
+  Top = 273
+  Width = 395
+  ActiveControl = pnlTopToolbar
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Preset Editor...'
+  ClientHeight = 528
+  ClientWidth = 395
+  Position = poScreenCenter
+  LCLVersion = '0.9.27'
+  object pnlTopToolbar: TPanel
+    Left = 0
+    Height = 80
+    Top = 0
+    Width = 395
+    Align = alTop
+    ClientHeight = 80
+    ClientWidth = 395
+    TabOrder = 0
+    object btnImport: TBitBtn
+      Left = 8
+      Height = 65
+      Top = 8
+      Width = 65
+      Caption = 'Import'
+      Layout = blGlyphTop
+      TabOrder = 0
+    end
+    object btnExport: TBitBtn
+      Left = 80
+      Height = 65
+      Top = 8
+      Width = 65
+      Caption = 'Export'
+      Layout = blGlyphTop
+      TabOrder = 1
+    end
+    object btnCancel: TBitBtn
+      Left = 323
+      Height = 65
+      Top = 8
+      Width = 65
+      Anchors = [akTop, akRight]
+      Caption = 'Cancel'
+      Layout = blGlyphTop
+      OnClick = btnCancelClick
+      TabOrder = 2
+    end
+    object btnSave: TBitBtn
+      Left = 251
+      Height = 65
+      Top = 8
+      Width = 65
+      Anchors = [akTop, akRight]
+      Caption = 'Save'
+      Layout = blGlyphTop
+      TabOrder = 3
+    end
+  end
+  object pnlBottom: TPanel
+    Left = 0
+    Height = 241
+    Top = 287
+    Width = 395
+    Align = alBottom
+    ClientHeight = 241
+    ClientWidth = 395
+    TabOrder = 1
+    object grpbxPresetEditor: TGroupBox
+      Left = 8
+      Height = 223
+      Top = 8
+      Width = 380
+      Anchors = [akTop, akLeft, akRight]
+      Caption = 'Preset Editor:'
+      ClientHeight = 204
+      ClientWidth = 376
+      TabOrder = 0
+      object lblText0: TLabel
+        Left = 6
+        Height = 18
+        Top = 5
+        Width = 89
+        Caption = 'Preset Name:'
+        ParentColor = False
+      end
+      object lblText2: TLabel
+        Left = 6
+        Height = 18
+        Top = 61
+        Width = 107
+        Caption = 'Output Extesion:'
+        ParentColor = False
+      end
+      object lblText1: TLabel
+        Left = 198
+        Height = 18
+        Top = 5
+        Width = 84
+        Caption = 'Preset Label:'
+        ParentColor = False
+      end
+      object lblText3: TLabel
+        Left = 198
+        Height = 18
+        Top = 61
+        Width = 62
+        Caption = 'Category:'
+        ParentColor = False
+      end
+      object lblText4: TLabel
+        Left = 6
+        Height = 18
+        Top = 119
+        Width = 147
+        Caption = 'Preset Command Line:'
+        ParentColor = False
+      end
+      object btnAddUpdate: TButton
+        Left = 6
+        Height = 25
+        Top = 174
+        Width = 130
+        Anchors = [akLeft, akBottom]
+        Caption = 'Add / Update'
+        TabOrder = 0
+      end
+      object btnDelete: TButton
+        Left = 150
+        Height = 25
+        Top = 174
+        Width = 130
+        Anchors = [akLeft, akBottom]
+        Caption = 'Delete'
+        TabOrder = 1
+      end
+      object edtPresetName: TEdit
+        Left = 6
+        Height = 27
+        Top = 21
+        Width = 170
+        TabOrder = 2
+      end
+      object edtOutputExtension: TEdit
+        Left = 6
+        Height = 27
+        Top = 79
+        Width = 170
+        TabOrder = 3
+      end
+      object edtPresetLabel: TEdit
+        Left = 198
+        Height = 27
+        Top = 21
+        Width = 170
+        TabOrder = 4
+      end
+      object edtPresetCategory: TEdit
+        Left = 198
+        Height = 27
+        Top = 79
+        Width = 170
+        TabOrder = 5
+      end
+      object edtPresetCommandLine: TEdit
+        Left = 6
+        Height = 27
+        Top = 135
+        Width = 362
+        TabOrder = 6
+      end
+    end
+  end
+  object pnlMiddleSpacer: TPanel
+    Left = 0
+    Height = 207
+    Top = 80
+    Width = 395
+    Align = alClient
+    ClientHeight = 207
+    ClientWidth = 395
+    TabOrder = 2
+    object trvAvailablePresets: TTreeView
+      Left = 8
+      Height = 191
+      Top = 8
+      Width = 380
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      DefaultItemHeight = 19
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+    end
+  end
+end

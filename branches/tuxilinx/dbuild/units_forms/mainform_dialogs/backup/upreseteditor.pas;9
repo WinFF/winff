@@ -1,0 +1,36 @@
+unit upreseteditor; 
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
+  ExtCtrls, Buttons;
+
+type
+
+  { TPresetEditorDialog }
+
+  TPresetEditorDialog = class(TForm)
+     btnSave: TBitBtn;
+     btnCancel: TBitBtn;
+     btnExport: TBitBtn;
+     btnImport: TBitBtn;
+     pnlTopToolbar: TPanel;
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end; 
+
+var
+  PresetEditorDialog: TPresetEditorDialog;
+
+implementation
+
+initialization
+  {$I upreseteditor.lrs}
+
+end.
+

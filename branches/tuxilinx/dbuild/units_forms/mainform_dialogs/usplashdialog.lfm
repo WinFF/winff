@@ -1,0 +1,18 @@
+object SplashDialog: TSplashDialog
+  Left = 750
+  Height = 300
+  Top = 399
+  Width = 400
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'SplashDialog'
+  FormStyle = fsSplash
+  Position = poScreenCenter
+  LCLVersion = '0.9.27'
+  object SplashTimer: TTimer
+    Interval = 1500
+    OnTimer = SplashTimerTimer
+    left = 105
+    top = 74
+  end
+end
