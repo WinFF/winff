@@ -3,7 +3,7 @@ object MainForm: TMainForm
   Height = 629
   Top = 118
   Width = 583
-  ActiveControl = pclAdditionalOptions
+  ActiveControl = pnlTopToolbar
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'WinFF 1.0.1 ***ALPHA***'
