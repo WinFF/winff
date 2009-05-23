@@ -323,14 +323,16 @@ LazarusResources.Add('TAddFilesDialog','FORMDATA',[
   +#252#255#255#255#0#0#195#225#252''#255#255#0#0#195#225#254''#255#255#0#0
   ,#135#225#254''#255#255#0#0#3#193#252'8'#255#255#0#0#1#0'x'#0#255#255#0#0#255
   +#255#255#248#255#255#0#0#255#255#255#255#255#255#0#0#255#255#255#255#255#255
-  +#0#0#8'Position'#7#14'poScreenCenter'#13'ShowInTaskBar'#7#7'stNever'#10'LCLV'
-  +'ersion'#6#6'0.9.27'#0#6'TPanel'#7'pnlMain'#4'Left'#2#0#6'Height'#2'@'#3'Top'
-  +#2#0#5'Width'#3'E'#1#5'Align'#7#8'alClient'#12'ClientHeight'#2'@'#11'ClientW'
-  +'idth'#3'E'#1#8'TabOrder'#2#0#0#6'TLabel'#8'lblText0'#4'Left'#2#8#6'Height'#2
-  +#18#3'Top'#2#8#5'Width'#3#199#0#7'Caption'#6'!Please Wait While Adding files'
-  +'...'#11'ParentColor'#8#0#0#14'TColorProgress'#11'prgProgress'#4'Left'#2#8#6
-  +'Height'#2#24#3'Top'#2' '#5'Width'#3#8#1#9'ForeColor'#7#6'clBlue'#8'Progress'
-  +#2#0#8'ShowText'#8#0#0#6'TLabel'#11'lblProgress'#4'Left'#3'('#1#6'Height'#2
-  +#18#3'Top'#2'#'#5'Width'#2#21#7'Anchors'#11#5'akTop'#7'akRight'#0#7'Caption'
-  +#6#2'0%'#11'ParentColor'#8#0#0#0#0
+  +#0#0#6'OnShow'#7#8'FormShow'#8'Position'#7#14'poScreenCenter'#13'ShowInTaskB'
+  +'ar'#7#7'stNever'#10'LCLVersion'#6#6'0.9.27'#0#6'TPanel'#7'pnlMain'#4'Left'#2
+  +#0#6'Height'#2'@'#3'Top'#2#0#5'Width'#3'E'#1#5'Align'#7#8'alClient'#12'Clien'
+  +'tHeight'#2'@'#11'ClientWidth'#3'E'#1#8'TabOrder'#2#0#0#6'TLabel'#8'lblText0'
+  +#4'Left'#2#8#6'Height'#2#18#3'Top'#2#8#5'Width'#3#199#0#7'Caption'#6'!Please'
+  +' Wait While Adding files...'#11'ParentColor'#8#0#0#14'TColorProgress'#11'pr'
+  +'gProgress'#4'Left'#2#8#6'Height'#2#24#3'Top'#2' '#5'Width'#3#8#1#9'ForeColo'
+  +'r'#7#6'clBlue'#8'Progress'#2#0#8'ShowText'#8#0#0#6'TLabel'#11'lblProgress'#4
+  +'Left'#3'('#1#6'Height'#2#18#3'Top'#2'#'#5'Width'#2#21#7'Anchors'#11#5'akTop'
+  +#7'akRight'#0#7'Caption'#6#2'0%'#11'ParentColor'#8#0#0#0#6'TTimer'#10'CheckT'
+  +'imer'#7'Enabled'#8#8'Interval'#2'2'#7'OnTimer'#7#15'CheckTimerTimer'#4'left'
+  +#3#237#0#3'top'#2#14#0#0#0
 ]);

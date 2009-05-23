@@ -314,6 +314,7 @@ object AddFilesDialog: TAddFilesDialog
     000001007800FFFF0000FFFFFFF8FFFF0000FFFFFFFFFFFF0000FFFFFFFFFFFF
     0000
   }
+  OnShow = FormShow
   Position = poScreenCenter
   ShowInTaskBar = stNever
   LCLVersion = '0.9.27'
@@ -352,5 +353,12 @@ object AddFilesDialog: TAddFilesDialog
       Caption = '0%'
       ParentColor = False
     end
+  end
+  object CheckTimer: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = CheckTimerTimer
+    left = 237
+    top = 14
   end
 end
