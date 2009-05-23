@@ -5,10 +5,18 @@ unit uaddfilesdialog;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs; 
+  Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
+  ExtCtrls, StdCtrls, ColorProgress;
 
 type
+
+  { TAddFilesDialog }
+
   TAddFilesDialog = class(TForm)
+     lblProgress: TLabel;
+     prgProgress: TColorProgress;
+     lblText0: TLabel;
+     pnlMain: TPanel;
   private
     { private declarations }
   public

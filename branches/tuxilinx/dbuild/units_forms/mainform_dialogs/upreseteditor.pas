@@ -35,6 +35,7 @@ type
      pnlTopToolbar: TPanel;
      trvAvailablePresets: TTreeView;
      procedure btnCancelClick(Sender: TObject);
+     procedure btnExportClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -54,6 +55,11 @@ uses
 procedure TPresetEditorDialog.btnCancelClick(Sender: TObject);
 begin
    Close;
+end;
+
+procedure TPresetEditorDialog.btnExportClick(Sender: TObject);
+begin
+   ExportPresetDialog.ShowModal;
 end;
 
 initialization
