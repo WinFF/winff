@@ -7,7 +7,7 @@
       <TargetFileExt Value=""/>
       <Icon Value="0"/>
       <UseXPManifest Value="True"/>
-      <ActiveEditorIndexAtStart Value="11"/>
+      <ActiveEditorIndexAtStart Value="9"/>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
@@ -45,10 +45,10 @@
         <Filename Value="winff_new.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="winff_new"/>
-        <CursorPos X="21" Y="7"/>
-        <TopLine Value="1"/>
+        <CursorPos X="11" Y="27"/>
+        <TopLine Value="10"/>
         <EditorIndex Value="2"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -57,10 +57,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="umain"/>
-        <CursorPos X="37" Y="7"/>
+        <CursorPos X="3" Y="8"/>
         <TopLine Value="1"/>
         <EditorIndex Value="0"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -72,7 +72,7 @@
         <CursorPos X="37" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -84,7 +84,7 @@
         <CursorPos X="44" Y="8"/>
         <TopLine Value="1"/>
         <EditorIndex Value="11"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -96,7 +96,7 @@
         <CursorPos X="60" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="10"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit4>
       <Unit5>
@@ -108,7 +108,7 @@
         <CursorPos X="20" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="6"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -117,10 +117,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ucmdlinedialog"/>
-        <CursorPos X="1" Y="1"/>
+        <CursorPos X="6" Y="8"/>
         <TopLine Value="1"/>
         <EditorIndex Value="5"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit6>
       <Unit7>
@@ -132,7 +132,7 @@
         <CursorPos X="48" Y="12"/>
         <TopLine Value="1"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit7>
       <Unit8>
@@ -144,7 +144,7 @@
         <CursorPos X="24" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="4"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit8>
       <Unit9>
@@ -175,27 +175,27 @@
         <CursorPos X="60" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="7"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit12>
       <Unit13>
         <Filename Value="units_forms/modules/uwinffunixprocs.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uwinffunixprocs"/>
-        <CursorPos X="65" Y="7"/>
+        <CursorPos X="6" Y="24"/>
         <TopLine Value="1"/>
         <EditorIndex Value="8"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit13>
       <Unit14>
         <Filename Value="units_forms/modules/uwinffprocs.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uwinffprocs"/>
-        <CursorPos X="49" Y="7"/>
+        <CursorPos X="11" Y="24"/>
         <TopLine Value="1"/>
         <EditorIndex Value="9"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit14>
     </Units>
