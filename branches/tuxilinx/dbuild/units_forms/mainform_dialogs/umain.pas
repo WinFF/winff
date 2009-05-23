@@ -7,7 +7,6 @@
    MainForm, the main user interface
 }
 
-
 unit umain;
 
 {$mode objfpc}{$H+}

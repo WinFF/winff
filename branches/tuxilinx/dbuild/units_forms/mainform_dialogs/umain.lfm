@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 438
+  Left = 501
   Height = 629
-  Top = 118
+  Top = 98
   Width = 583
   ActiveControl = pnlTopToolbar
   BorderIcons = [biSystemMenu, biMinimize]

@@ -7,7 +7,6 @@
    Main project file
 }
 
-
 program winff_new;
 
 {$mode objfpc}{$H+}
@@ -19,7 +18,13 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, umain, upreseteditor, uexportpreset, upreferences, uabout,
   ucmdlinedialog, uaddfilesdialog, usplashdialog, progresscolor,
-  uwinffwin32procs, uwinffunixprocs, uwinffprocs;
+  uwinffprocs,
+  {$IFDEF UNIX}
+     uwinffunixprocs;
+  {$ENDIF}
+  {$IFDEF WINDOWS}
+     uwinffwin32procs;
+  {$ENDIF}
 
 {$IFDEF WINDOWS}{$R winff_new.rc}{$ENDIF}
 
