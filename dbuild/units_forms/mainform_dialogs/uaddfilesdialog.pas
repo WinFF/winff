@@ -31,6 +31,9 @@ type
      prgProgress: TColorProgress;
      lblText0: TLabel;
      pnlMain: TPanel;
+     CheckTimer: TTimer;
+     procedure CheckTimerTimer(Sender: TObject);
+     procedure FormShow(Sender: TObject);
   private
     { private declarations }
   public
@@ -41,6 +44,23 @@ var
   AddFilesDialog: TAddFilesDialog;
 
 implementation
+
+{ TAddFilesDialog }
+
+procedure TAddFilesDialog.FormShow(Sender: TObject);
+begin
+   CheckTimer.Enabled := True;
+end;
+
+procedure TAddFilesDialog.CheckTimerTimer(Sender: TObject);
+begin
+   Application.ProcessMessages;
+   if (prgProgress.PercentDone = 100) then
+   begin
+      CheckTimer.Enabled := False;
+      Self.Close;
+   end;
+end;
 
 initialization
   {$I uaddfilesdialog.lrs}
