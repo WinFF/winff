@@ -1,4 +1,14 @@
-unit upreseteditor; 
+{
+   This unit is part of the WinFF project
+   Copyright (c) 2006 - 2009 Matthew Weatherford
+   http://www.winff.org
+   Licensed under the GNU GPL v3
+
+   Preset Editor, edit WinFF presets
+}
+
+
+unit upreseteditor;
 
 {$mode objfpc}{$H+}
 

@@ -3,6 +3,7 @@ object AddFilesDialog: TAddFilesDialog
   Height = 64
   Top = 280
   Width = 325
+  ActiveControl = pnlMain
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Please Wait...'

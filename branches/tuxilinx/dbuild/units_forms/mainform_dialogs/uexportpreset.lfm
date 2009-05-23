@@ -3,6 +3,7 @@ object ExportPresetDialog: TExportPresetDialog
   Height = 324
   Top = 266
   Width = 400
+  ActiveControl = pnlMainSpacer
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Export Preset To File...'
@@ -331,7 +332,7 @@ object ExportPresetDialog: TExportPresetDialog
       Top = 8
       Width = 385
       Caption = 'Select A Preset To Export:'
-      ClientHeight = 253
+      ClientHeight = 268
       ClientWidth = 381
       TabOrder = 0
       object trvAvailablePresets: TTreeView

@@ -1,3 +1,13 @@
+{
+   This unit is part of the WinFF project
+   Copyright (c) 2006 - 2009 Matthew Weatherford
+   http://www.winff.org
+   Licensed under the GNU GPL v3
+
+   MainForm, the main user interface
+}
+
+
 unit umain;
 
 {$mode objfpc}{$H+}

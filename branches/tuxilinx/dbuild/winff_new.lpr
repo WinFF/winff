@@ -1,3 +1,13 @@
+{
+   This unit is part of the WinFF project
+   Copyright (c) 2006 - 2009 Matthew Weatherford
+   http://www.winff.org
+   Licensed under the GNU GPL v3
+
+   Main project file
+}
+
+
 program winff_new;
 
 {$mode objfpc}{$H+}
@@ -8,7 +18,8 @@ uses
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, umain, upreseteditor, uexportpreset, upreferences, uabout,
-  ucmdlinedialog, uaddfilesdialog, usplashdialog, progresscolor;
+  ucmdlinedialog, uaddfilesdialog, usplashdialog, progresscolor,
+  uwinffwin32procs, uwinffunixprocs, uwinffprocs;
 
 {$IFDEF WINDOWS}{$R winff_new.rc}{$ENDIF}
 
