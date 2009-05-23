@@ -35,6 +35,8 @@ uses
 
   procedure ResetEditField(const AEdit: TEdit; const AOverrideStandardSetting: Boolean; const ANewValue: String);
 
+  procedure Reset;
+
   function GetDesktopPath(const AHandle: THandle): String;
 
   function GetMyDocumentsPath(const AHandle: THandle): String;
@@ -55,6 +57,93 @@ uses
   function DisplayWarningMessage(const AWarningMessage: String; const ACaption: String): Boolean;
 
 implementation
+
+var
+   RefreshValue: Integer = 0;
+
+{
+   Operating system independent
+   Performs various resetting actions on variables etc.
+}
+procedure Reset;
+begin
+   RefreshValue := 0;
+end;
+
+{
+   Operating system independent
+   Local procedure
+   Shows an "Adding files" dialog to notify the end user that
+   WinFF is not stalled while adding large amounts of files
+}
+procedure ShowProgressDialog(const AFileCount: Integer);
+begin
+   if AFileCount > 29 then
+   begin
+      with AddFilesDialog do
+      begin
+         prgProgress.MaxValue := AFileCount;
+         Show;
+         SetFocus;
+      end;
+      Application.ProcessMessages;
+   end
+   else
+      Exit;
+end;
+
+{
+   Operating system independent
+   Local procedure
+   Update the information in the "Adding files" dialog
+}
+procedure UpdateProgressDialog;
+begin
+   inc(RefreshValue);
+   with AddFilesDialog do
+   begin
+      prgProgress.Progress := RefreshValue;
+      lblProgress.Caption := IntToStr(prgProgress.PercentDone) + '%';
+   end;
+end;
+
+{
+   Operating system independent
+   Fill the listview with the selected files
+   This procedure is invoked when we're using the OpenDialog
+   to select our files for batch processing
+}
+procedure FillListViewDialog(const AListView: TListView; const AInputFiles: TStrings);
+var
+   I: Integer;
+begin
+   ShowProgressDialog(AInputFiles.Count);
+   for I := 0 to AInputFiles.Count - 1 do
+   begin
+      with AListView.Items.Add do
+      begin
+         Caption := AInputFiles[I];
+         SubItems.Add(GetFileSize(Caption));
+         SubItems.Add(ExtractFileExt(Caption));
+      end;
+      UpdateProgressDialog;
+   end;
+end;
+
+{
+   Operating system independent
+   Add a single file to the listview
+   This procedure is invoked when files are dropped on the form
+}
+procedure FillListView(const AListView: TListView; const AInputFile: String);
+begin
+   with AListView.Items.Add do
+   begin
+      Caption := AInputFile;
+      SubItems.Add(GetFileSize(Caption));
+      SubItems.Add(ExtractFileExt(Caption));
+   end;
+end;
 
 end.
 
