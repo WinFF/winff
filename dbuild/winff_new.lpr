@@ -7,8 +7,8 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, umain, upreseteditor, uexportpreset, upreferences, uabout, ucmdlinedialog, uaddfilesdialog, usplashdialog
-  { you can add units after this };
+  Forms, umain, upreseteditor, uexportpreset, upreferences, uabout,
+  ucmdlinedialog, uaddfilesdialog, usplashdialog, progresscolor;
 
 {$IFDEF WINDOWS}{$R winff_new.rc}{$ENDIF}
 
