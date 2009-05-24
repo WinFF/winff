@@ -64,6 +64,9 @@ type
      lblText2: TLabel;
      lsvFileBin: TListView;
      MainMenu: TMainMenu;
+     pumDeleteAllFiles: TMenuItem;
+     pumSpacer0: TMenuItem;
+     pumDeleteSelectedFile: TMenuItem;
      mmiAbout: TMenuItem;
      mmiSpacer0: TMenuItem;
      mmiForums: TMenuItem;
@@ -88,6 +91,7 @@ type
      pnlAdditionalSettings: TPanel;
      pnlMainSpacer: TPanel;
      pnlTopToolbar: TPanel;
+     pumFileBin: TPopupMenu;
      StatusBar: TStatusBar;
      tbsVideoSettings: TTabSheet;
      tbsAudioSettings: TTabSheet;
@@ -119,6 +123,8 @@ type
      procedure mmiPreferencesClick(Sender: TObject);
      procedure mmiQuitClick(Sender: TObject);
      procedure mmiShutdownOnFinishClick(Sender: TObject);
+     procedure pumDeleteAllFilesClick(Sender: TObject);
+     procedure pumDeleteSelectedFileClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -170,6 +176,30 @@ end;
 procedure TMainForm.mmiShutdownOnFinishClick(Sender: TObject);
 begin
    mmiShutdownOnFinish.Checked := not mmiShutdownOnFinish.Checked;
+end;
+
+procedure TMainForm.pumDeleteAllFilesClick(Sender: TObject);
+begin
+   if (lsvFileBin.Selected = nil) then
+      Exit
+   else
+   begin
+      if uwinffprocs.DisplayWarningMessage('Do you want to delete ' + IntToStr(lsvFileBin.Items.Count) + ' files from the list?', 'Are you sure?') then
+         lsvFileBin.Items.Clear;
+      StatusBar.Panels[0].Text := 'Total files: ' + IntToStr(lsvFileBin.Items.Count);
+   end;
+end;
+
+procedure TMainForm.pumDeleteSelectedFileClick(Sender: TObject);
+begin
+   if (lsvFileBin.Selected = nil) then
+      Exit
+   else
+   begin
+      if uwinffprocs.DisplayWarningMessage('Do you want to delete: ' + ExtractFileName(lsvFileBin.Selected.Caption) + ' from the list?', 'Are you sure?') then
+         lsvFileBin.Selected.Delete;
+      StatusBar.Panels[0].Text := 'Total files: ' + IntToStr(lsvFileBin.Items.Count);
+   end;
 end;
 
 procedure TMainForm.FormResize(Sender: TObject);

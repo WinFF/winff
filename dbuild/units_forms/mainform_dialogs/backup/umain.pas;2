@@ -114,6 +114,7 @@ type
      procedure edtVideoSizeHeightKeyPress(Sender: TObject; var Key: char);
      procedure edtVideoSizeWidthChange(Sender: TObject);
      procedure edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
+     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
      procedure FormResize(Sender: TObject);
      procedure mmiAboutClick(Sender: TObject);
      procedure mmiAdditionalOptionsClick(Sender: TObject);
@@ -304,6 +305,23 @@ procedure TMainForm.edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
 begin
    if not uwinffprocs.ValidateNumericInput(edtVideoSizeWidth, Key) then
       Key := #0;
+end;
+
+procedure TMainForm.FormDropFiles(Sender: TObject; const FileNames: array of String);
+var
+   NumFiles, I: Integer;
+begin
+   NumFiles := High(FileNames);
+   for I := 0 to NumFiles do
+   begin
+      {
+         TODO
+         Perform a check here if the dropped filetype
+         is actually supported by ffmpeg
+      }
+      uwinffprocs.FillListView(lsvFileBin, FileNames[I]);
+   end;
+   StatusBar.Panels[0].Text := 'Total files: ' + IntToStr(lsvFileBin.Items.Count);
 end;
 
 initialization

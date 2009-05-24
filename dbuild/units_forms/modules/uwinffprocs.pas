@@ -41,7 +41,7 @@ uses
 
   function GetMyDocumentsPath(const AHandle: THandle): String;
 
-  function GetApplicationDataPath(const AHandle: THandle): String;
+  //function GetApplicationDataPath(const AHandle: THandle): String;
 
   function ValidateNumericInput(const AEdit: TEdit; const AKey: Char): Boolean;
 
@@ -276,6 +276,30 @@ begin
    begin
       CmdLine := CmdLine + ' ' + AReplacement;
    end;
+end;
+
+{
+   Operating system independent
+   Format the file size to MiB
+}
+function FormatFileSizeToMiB(const AFileSize: Integer): String;
+begin
+   Result := FormatFloat('#.##0.00', (AFileSize / (1024 * 1024))) + ' MiB'
+end;
+
+{
+   Operating system independent
+   Get the file size in MiB
+}
+function GetFileSize(const AInputFile: String): String;
+var
+   ASr: TSearchRec;
+begin
+   if FindFirst(AInputFile, faAnyFile, ASr) = 0 then
+      Result := FormatFileSizeToMiB(ASr.Size)
+   else
+      Result := '0 MiB';
+   FindClose(ASr);
 end;
 
 end.

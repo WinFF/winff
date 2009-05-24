@@ -94,8 +94,22 @@ type
      tbsAdditionalCmdLineParams: TTabSheet;
      tbsOutputSettings: TTabSheet;
      procedure btnAdditionalOptionsClick(Sender: TObject);
+     procedure edtAudioBitrateChange(Sender: TObject);
+     procedure edtAudioBitrateKeyPress(Sender: TObject; var Key: char);
+     procedure edtAudioChannelsChange(Sender: TObject);
+     procedure edtAudioChannelsKeyPress(Sender: TObject; var Key: char);
+     procedure edtAudioSampleRateChange(Sender: TObject);
+     procedure edtAudioSampleRateKeyPress(Sender: TObject; var Key: char);
+     procedure edtVideoAspectRatioChange(Sender: TObject);
+     procedure edtVideoAspectRatioKeyPress(Sender: TObject; var Key: char);
      procedure edtVideoBitrateChange(Sender: TObject);
      procedure edtVideoBitrateKeyPress(Sender: TObject; var Key: char);
+     procedure edtVideoFramerateChange(Sender: TObject);
+     procedure edtVideoFramerateKeyPress(Sender: TObject; var Key: char);
+     procedure edtVideoSizeHeightChange(Sender: TObject);
+     procedure edtVideoSizeHeightKeyPress(Sender: TObject; var Key: char);
+     procedure edtVideoSizeWidthChange(Sender: TObject);
+     procedure edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
      procedure FormResize(Sender: TObject);
      procedure mmiAboutClick(Sender: TObject);
      procedure mmiAdditionalOptionsClick(Sender: TObject);
@@ -174,6 +188,50 @@ begin
    mmiAdditionalOptions.Click;
 end;
 
+procedure TMainForm.edtAudioBitrateChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtAudioBitrate, False, '');
+end;
+
+procedure TMainForm.edtAudioBitrateKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtAudioBitrate, Key) then
+      KEy := #0;
+end;
+
+procedure TMainForm.edtAudioChannelsChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtAudioChannels, False, '');
+end;
+
+procedure TMainForm.edtAudioChannelsKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtAudioChannels, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtAudioSampleRateChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtAudioSampleRate, False, '');
+end;
+
+procedure TMainForm.edtAudioSampleRateKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtAudioSampleRate, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtVideoAspectRatioChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoAspectRatio, False, '');
+end;
+
+procedure TMainForm.edtVideoAspectRatioKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoAspectRatio, Key) then
+      Key := #0;
+end;
+
 procedure TMainForm.edtVideoBitrateChange(Sender: TObject);
 begin
    uwinffprocs.ResetEditField(edtVideoBitrate, False, '');
@@ -182,6 +240,39 @@ end;
 procedure TMainForm.edtVideoBitrateKeyPress(Sender: TObject; var Key: char);
 begin
    if not uwinffprocs.ValidateNumericInput(edtVideoBitrate, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtVideoFramerateChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoFramerate, False, '');
+end;
+
+procedure TMainForm.edtVideoFramerateKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoFramerate, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtVideoSizeHeightChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoSizeHeight, False, '');
+end;
+
+procedure TMainForm.edtVideoSizeHeightKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoSizeHeight, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtVideoSizeWidthChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoSizeWidth, False, '');
+end;
+
+procedure TMainForm.edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoSizeWidth, Key) then
       Key := #0;
 end;
 
