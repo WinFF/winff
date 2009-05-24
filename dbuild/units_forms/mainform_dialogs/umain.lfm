@@ -4,6 +4,7 @@ object MainForm: TMainForm
   Top = 98
   Width = 583
   ActiveControl = pnlTopToolbar
+  AllowDropFiles = True
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'WinFF 1.0.1 ***ALPHA***'
@@ -315,6 +316,7 @@ object MainForm: TMainForm
     0000
   }
   Menu = MainMenu
+  OnDropFiles = FormDropFiles
   OnResize = FormResize
   Position = poScreenCenter
   LCLVersion = '0.9.27'
@@ -638,6 +640,7 @@ object MainForm: TMainForm
               Caption = 'File Extension'
               Width = 132
             end>
+          PopupMenu = pumFileBin
           ReadOnly = True
           ScrollBars = ssAutoBoth
           TabOrder = 0
@@ -732,6 +735,7 @@ object MainForm: TMainForm
               Top = 100
               Width = 27
               Caption = '...'
+              OnClick = btnSelectOutputFolderClick
               TabOrder = 3
             end
           end
@@ -1263,8 +1267,8 @@ object MainForm: TMainForm
     end
   end
   object MainMenu: TMainMenu
-    left = 248
-    top = 16
+    left = 280
+    top = 128
     object mmiFile: TMenuItem
       Caption = 'File'
       object mmiQuit: TMenuItem
@@ -1309,9 +1313,11 @@ object MainForm: TMainForm
       end
       object mmiWinffWebsite: TMenuItem
         Caption = 'WinFF Website'
+        OnClick = mmiWinffWebsiteClick
       end
       object mmiForums: TMenuItem
         Caption = 'Forums'
+        OnClick = mmiForumsClick
       end
       object mmiSpacer0: TMenuItem
         Caption = '-'
@@ -1321,5 +1327,24 @@ object MainForm: TMainForm
         OnClick = mmiAboutClick
       end
     end
+  end
+  object pumFileBin: TPopupMenu
+    left = 130
+    top = 134
+    object pumDeleteSelectedFile: TMenuItem
+      Caption = 'Delete Selected File'
+      OnClick = pumDeleteSelectedFileClick
+    end
+    object pumSpacer0: TMenuItem
+      Caption = '-'
+    end
+    object pumDeleteAllFiles: TMenuItem
+      Caption = 'Delete All Files'
+      OnClick = pumDeleteAllFilesClick
+    end
+  end
+  object SelectDirectoryDialog: TSelectDirectoryDialog
+    left = 374
+    top = 143
   end
 end
