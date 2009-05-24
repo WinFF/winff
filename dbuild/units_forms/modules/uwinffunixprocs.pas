@@ -27,6 +27,8 @@ uses
 
    function Unix_GetMyDocumentsPath: String;
 
+   function Unix_GetApplicationDataPath: String;
+
 implementation
 
 
@@ -122,6 +124,15 @@ end;
    Get the user's home folder path
 }
 function Unix_GetMyDocumentsPath: String;
+begin
+   Result := GetEnvironmentVariable('HOME');
+end;
+
+{
+   Unix specefic
+   Get the path to the user's application data path
+}
+function Unix_GetApplicationDataPath: String;
 begin
    Result := GetEnvironmentVariable('HOME');
 end;
