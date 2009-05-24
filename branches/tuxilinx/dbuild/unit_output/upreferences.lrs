@@ -1,3 +1,5 @@
+{ This is an automatically generated lazarus resource file }
+
 LazarusResources.Add('TPreferencesDialog','FORMDATA',[
   'TPF0'#18'TPreferencesDialog'#17'PreferencesDialog'#4'Left'#3'#'#2#6'Height'#3
   +'A'#1#3'Top'#3#16#1#5'Width'#3#144#1#13'ActiveControl'#7#14'pclPreferences'
@@ -324,54 +326,55 @@ LazarusResources.Add('TPreferencesDialog','FORMDATA',[
   +#0#255#255#255#255#255#255#0#0#6'OnShow'#7#8'FormShow'#8'Position'#7#14'poSc'
   +'reenCenter'#13'ShowInTaskBar'#7#7'stNever'#10'LCLVersion'#6#6'0.9.27'#0#12
   +'TPageControl'#14'pclPreferences'#4'Left'#2#8#6'Height'#3#8#1#3'Top'#2#8#5'W'
-  +'idth'#3#128#1#10'ActivePage'#7#8'tbsLinux'#8'TabIndex'#2#2#8'TabOrder'#2#0#0
-  +#9'TTabSheet'#10'tbsGeneral'#7'Caption'#6#7'General'#12'ClientHeight'#3#233#0
-  +#11'ClientWidth'#3'|'#1#0#6'TLabel'#8'lblText0'#4'Left'#2#8#6'Height'#2#18#3
-  +'Top'#2#8#5'Width'#3#189#0#7'Caption'#6#30'Default Destination Directory:'#11
-  +'ParentColor'#8#0#0#6'TBevel'#6'Bevel1'#4'Left'#2#8#6'Height'#2#2#3'Top'#2'C'
-  +#5'Width'#3'i'#1#0#0#5'TEdit'#30'edtDefaultDestinationDirectory'#4'Left'#2#8
-  +#6'Height'#2#27#3'Top'#2#27#5'Width'#3'H'#1#8'TabOrder'#2#0#0#0#7'TButton'#31
-  +'btnSelectDefaultOutputDirectory'#4'Left'#3'V'#1#6'Height'#2#27#3'Top'#2#27#5
-  +'Width'#2#27#7'Caption'#6#3'...'#8'TabOrder'#2#1#0#0#9'TCheckBox'#28'cbxReme'
-  +'mberLastUsedDirectory'#4'Left'#2#8#6'Height'#2#22#3'Top'#2'S'#5'Width'#3#224
-  +#0#7'Caption'#6#28'Remember Last Used Directory'#8'TabOrder'#2#2#0#0#9'TChec'
-  +'kBox'#23'cbxEnableMultithreading'#4'Left'#2#8#6'Height'#2#22#3'Top'#2'k'#5
-  +'Width'#3'G'#1#7'Caption'#6'.Enable Multithreading For Dual Core Processors'
-  +#8'TabOrder'#2#3#0#0#0#9'TTabSheet'#12'tbsMsWindows'#7'Caption'#6#10'MS Wind'
-  +'ows'#12'ClientHeight'#3#233#0#11'ClientWidth'#3'|'#1#0#6'TLabel'#8'lblText1'
-  +#4'Left'#2#8#6'Height'#2#18#3'Top'#2#8#5'Width'#3#132#0#7'Caption'#6#19'Path'
-  +' To FFmpeg.exe:'#11'ParentColor'#8#0#0#6'TLabel'#8'lblText2'#4'Left'#2#8#6
-  +'Height'#2#18#3'Top'#2'C'#5'Width'#2'w'#7'Caption'#6#19'Path To FFplay.exe:'
-  +#11'ParentColor'#8#0#0#6'TBevel'#6'Bevel2'#4'Left'#2#8#6'Height'#2#2#3'Top'#2
-  +'{'#5'Width'#3'i'#1#0#0#5'TEdit'#15'edtWinFFmpegExe'#4'Left'#2#8#6'Height'#2
-  +#27#3'Top'#2#27#5'Width'#3'H'#1#8'TabOrder'#2#0#0#0#5'TEdit'#15'edtWinFFplay'
-  +'Exe'#4'Left'#2#8#6'Height'#2#27#3'Top'#2'S'#5'Width'#3'H'#1#8'TabOrder'#2#1
-  +#0#0#7'TButton'#21'btnSelectWinFFmpegExe'#4'Left'#3'V'#1#6'Height'#2#27#3'To'
-  +'p'#2#27#5'Width'#2#27#7'Caption'#6#3'...'#8'TabOrder'#2#2#0#0#7'TButton'#21
-  +'btnSelectWinFFplayExe'#4'Left'#3'V'#1#6'Height'#2#27#3'Top'#2'S'#5'Width'#2
-  +#27#7'Caption'#6#3'...'#8'TabOrder'#2#3#0#0#9'TCheckBox'#10'cbxUseChcp'#4'Le'
-  +'ft'#2#8#6'Height'#2#22#3'Top'#3#139#0#5'Width'#3#15#1#7'Caption'#6'%Use CHC'
-  +'P For International Characters'#8'TabOrder'#2#4#0#0#0#9'TTabSheet'#8'tbsLin'
-  +'ux'#7'Caption'#6#5'Linux'#12'ClientHeight'#3#233#0#11'ClientWidth'#3'|'#1#0
-  +#6'TLabel'#8'lblText3'#4'Left'#2#8#6'Height'#2#18#3'Top'#2#8#5'Width'#3#179#0
-  +#7'Caption'#6#26'Path To FFmpeg Executable:'#11'ParentColor'#8#0#0#6'TLabel'
-  +#8'lblText4'#4'Left'#2#8#6'Height'#2#18#3'Top'#2'C'#5'Width'#3#168#0#7'Capti'
-  +'on'#6#26'Path To FFplay Executable:'#11'ParentColor'#8#0#0#6'TLabel'#8'lblT'
-  +'ext5'#4'Left'#2#8#6'Height'#2#18#3'Top'#2'{'#5'Width'#3#172#0#7'Caption'#6
-  +#26'Terminal To Run FFmpeg In:'#11'ParentColor'#8#0#0#6'TLabel'#8'lblText6'#4
-  +'Left'#2#8#6'Height'#2#18#3'Top'#3#179#0#5'Width'#3'i'#1#7'Caption'#6'8Termi'
-  +'nal Options (-e for Xterm or -x for GNOME Terminal:'#11'ParentColor'#8#0#0#5
-  +'TEdit'#15'edtLinFFmpegExe'#4'Left'#2#8#6'Height'#2#27#3'Top'#2#27#5'Width'#3
-  +'H'#1#8'TabOrder'#2#0#0#0#5'TEdit'#15'edtLinFFplayExe'#4'Left'#2#8#6'Height'
-  +#2#27#3'Top'#2'S'#5'Width'#3'H'#1#8'TabOrder'#2#1#0#0#5'TEdit'#25'edtLinTerm'
-  +'inalToRunFFmpeg'#4'Left'#2#8#6'Height'#2#27#3'Top'#3#139#0#5'Width'#3'k'#1#8
-  +'TabOrder'#2#2#0#0#5'TEdit'#21'edtLinTerminalOptions'#4'Left'#2#8#6'Height'#2
-  +#27#3'Top'#3#195#0#5'Width'#3'k'#1#8'TabOrder'#2#3#0#0#7'TButton'#21'btnLinS'
-  +'electFFmpegExe'#4'Left'#3'X'#1#6'Height'#2#27#3'Top'#2#27#5'Width'#2#27#7'C'
-  +'aption'#6#3'...'#8'TabOrder'#2#4#0#0#7'TButton'#21'btnLinSelectFFplayExe'#4
-  +'Left'#3'X'#1#6'Height'#2#27#3'Top'#2'S'#5'Width'#2#27#7'Caption'#6#3'...'#8
-  +'TabOrder'#2#5#0#0#0#0#7'TButton'#5'btnOK'#4'Left'#2'R'#6'Height'#2#25#3'Top'
-  +#3' '#1#5'Width'#2'n'#7'Caption'#6#2'OK'#8'TabOrder'#2#1#0#0#7'TButton'#9'bt'
-  +'nCancel'#4'Left'#3#209#0#6'Height'#2#25#3'Top'#3' '#1#5'Width'#2'n'#7'Capti'
-  +'on'#6#6'Cancel'#7'OnClick'#7#14'btnCancelClick'#8'TabOrder'#2#2#0#0#0
+  +'idth'#3#128#1#10'ActivePage'#7#10'tbsGeneral'#8'TabIndex'#2#0#8'TabOrder'#2
+  +#0#0#9'TTabSheet'#10'tbsGeneral'#7'Caption'#6#7'General'#12'ClientHeight'#3
+  +#233#0#11'ClientWidth'#3'|'#1#0#6'TLabel'#8'lblText0'#4'Left'#2#8#6'Height'#2
+  +#18#3'Top'#2#8#5'Width'#3#189#0#7'Caption'#6#30'Default Destination Director'
+  +'y:'#11'ParentColor'#8#0#0#6'TBevel'#6'Bevel1'#4'Left'#2#8#6'Height'#2#2#3'T'
+  +'op'#2'C'#5'Width'#3'i'#1#0#0#5'TEdit'#30'edtDefaultDestinationDirectory'#4
+  +'Left'#2#8#6'Height'#2#27#3'Top'#2#27#5'Width'#3'H'#1#8'TabOrder'#2#0#0#0#7
+  +'TButton'#31'btnSelectDefaultOutputDirectory'#4'Left'#3'V'#1#6'Height'#2#27#3
+  +'Top'#2#27#5'Width'#2#27#7'Caption'#6#3'...'#8'TabOrder'#2#1#0#0#9'TCheckBox'
+  +#28'cbxRememberLastUsedDirectory'#4'Left'#2#8#6'Height'#2#22#3'Top'#2'S'#5'W'
+  +'idth'#3#224#0#7'Caption'#6#28'Remember Last Used Directory'#8'TabOrder'#2#2
+  +#0#0#9'TCheckBox'#23'cbxEnableMultithreading'#4'Left'#2#8#6'Height'#2#22#3'T'
+  +'op'#2'k'#5'Width'#3'G'#1#7'Caption'#6'.Enable Multithreading For Dual Core '
+  +'Processors'#8'TabOrder'#2#3#0#0#0#9'TTabSheet'#12'tbsMsWindows'#7'Caption'#6
+  +#10'MS Windows'#12'ClientHeight'#3#233#0#11'ClientWidth'#3'|'#1#0#6'TLabel'#8
+  +'lblText1'#4'Left'#2#8#6'Height'#2#18#3'Top'#2#8#5'Width'#3#132#0#7'Caption'
+  +#6#19'Path To FFmpeg.exe:'#11'ParentColor'#8#0#0#6'TLabel'#8'lblText2'#4'Lef'
+  +'t'#2#8#6'Height'#2#18#3'Top'#2'C'#5'Width'#2'w'#7'Caption'#6#19'Path To FFp'
+  +'lay.exe:'#11'ParentColor'#8#0#0#6'TBevel'#6'Bevel2'#4'Left'#2#8#6'Height'#2
+  +#2#3'Top'#2'{'#5'Width'#3'i'#1#0#0#5'TEdit'#15'edtWinFFmpegExe'#4'Left'#2#8#6
+  +'Height'#2#27#3'Top'#2#27#5'Width'#3'H'#1#8'TabOrder'#2#0#0#0#5'TEdit'#15'ed'
+  +'tWinFFplayExe'#4'Left'#2#8#6'Height'#2#27#3'Top'#2'S'#5'Width'#3'H'#1#8'Tab'
+  +'Order'#2#1#0#0#7'TButton'#21'btnSelectWinFFmpegExe'#4'Left'#3'V'#1#6'Height'
+  +#2#27#3'Top'#2#27#5'Width'#2#27#7'Caption'#6#3'...'#8'TabOrder'#2#2#0#0#7'TB'
+  +'utton'#21'btnSelectWinFFplayExe'#4'Left'#3'V'#1#6'Height'#2#27#3'Top'#2'S'#5
+  +'Width'#2#27#7'Caption'#6#3'...'#8'TabOrder'#2#3#0#0#9'TCheckBox'#10'cbxUseC'
+  +'hcp'#4'Left'#2#8#6'Height'#2#22#3'Top'#3#139#0#5'Width'#3#15#1#7'Caption'#6
+  +'%Use CHCP For International Characters'#8'TabOrder'#2#4#0#0#0#9'TTabSheet'#8
+  +'tbsLinux'#7'Caption'#6#5'Linux'#12'ClientHeight'#3#233#0#11'ClientWidth'#3
+  +'|'#1#0#6'TLabel'#8'lblText3'#4'Left'#2#8#6'Height'#2#18#3'Top'#2#8#5'Width'
+  +#3#179#0#7'Caption'#6#26'Path To FFmpeg Executable:'#11'ParentColor'#8#0#0#6
+  +'TLabel'#8'lblText4'#4'Left'#2#8#6'Height'#2#18#3'Top'#2'C'#5'Width'#3#168#0
+  +#7'Caption'#6#26'Path To FFplay Executable:'#11'ParentColor'#8#0#0#6'TLabel'
+  +#8'lblText5'#4'Left'#2#8#6'Height'#2#18#3'Top'#2'{'#5'Width'#3#172#0#7'Capti'
+  +'on'#6#26'Terminal To Run FFmpeg In:'#11'ParentColor'#8#0#0#6'TLabel'#8'lblT'
+  +'ext6'#4'Left'#2#8#6'Height'#2#18#3'Top'#3#179#0#5'Width'#3'i'#1#7'Caption'#6
+  +'8Terminal Options (-e for Xterm or -x for GNOME Terminal:'#11'ParentColor'#8
+  +#0#0#5'TEdit'#15'edtLinFFmpegExe'#4'Left'#2#8#6'Height'#2#27#3'Top'#2#27#5'W'
+  +'idth'#3'H'#1#8'TabOrder'#2#0#0#0#5'TEdit'#15'edtLinFFplayExe'#4'Left'#2#8#6
+  +'Height'#2#27#3'Top'#2'S'#5'Width'#3'H'#1#8'TabOrder'#2#1#0#0#5'TEdit'#25'ed'
+  +'tLinTerminalToRunFFmpeg'#4'Left'#2#8#6'Height'#2#27#3'Top'#3#139#0#5'Width'
+  +#3'k'#1#8'TabOrder'#2#2#0#0#5'TEdit'#21'edtLinTerminalOptions'#4'Left'#2#8#6
+  +'Height'#2#27#3'Top'#3#195#0#5'Width'#3'k'#1#8'TabOrder'#2#3#0#0#7'TButton'
+  +#21'btnLinSelectFFmpegExe'#4'Left'#3'X'#1#6'Height'#2#27#3'Top'#2#27#5'Width'
+  +#2#27#7'Caption'#6#3'...'#8'TabOrder'#2#4#0#0#7'TButton'#21'btnLinSelectFFpl'
+  +'ayExe'#4'Left'#3'X'#1#6'Height'#2#27#3'Top'#2'S'#5'Width'#2#27#7'Caption'#6
+  +#3'...'#8'TabOrder'#2#5#0#0#0#0#7'TButton'#5'btnOK'#4'Left'#2'R'#6'Height'#2
+  +#27#3'Top'#3' '#1#5'Width'#2'n'#7'Caption'#6#2'OK'#8'TabOrder'#2#1#0#0#7'TBu'
+  +'tton'#9'btnCancel'#4'Left'#3#209#0#6'Height'#2#27#3'Top'#3' '#1#5'Width'#2
+  +'n'#7'Caption'#6#6'Cancel'#7'OnClick'#7#14'btnCancelClick'#8'TabOrder'#2#2#0
+  +#0#0
 ]);

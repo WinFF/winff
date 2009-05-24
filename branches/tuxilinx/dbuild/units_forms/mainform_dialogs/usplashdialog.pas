@@ -15,13 +15,14 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
-  ExtCtrls;
+  ExtCtrls, StdCtrls;
 
 type
 
   { TSplashDialog }
 
   TSplashDialog = class(TForm)
+     Label1: TLabel;
      SplashTimer: TTimer;
      procedure SplashTimerTimer(Sender: TObject);
   private

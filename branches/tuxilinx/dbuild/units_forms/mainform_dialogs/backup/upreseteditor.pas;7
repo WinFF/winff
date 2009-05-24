@@ -17,7 +17,11 @@ type
      btnCancel: TBitBtn;
      btnExport: TBitBtn;
      btnImport: TBitBtn;
+     btnAddUpdate: TButton;
+     btnDelete: TButton;
+     edtPresetName: TEdit;
      grpbxPresetEditor: TGroupBox;
+     lblText0: TLabel;
      pnlBottom: TPanel;
      pnlTopToolbar: TPanel;
   private

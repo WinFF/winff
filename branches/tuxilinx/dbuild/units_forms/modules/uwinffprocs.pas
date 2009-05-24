@@ -322,7 +322,7 @@ end;
    Operating system independent
    Display a warning message dialog
 }
-function DisplayWarningMessage(const AWarningMessage: String; const ACaption: String): Boolean
+function DisplayWarningMessage(const AWarningMessage: String; const ACaption: String): Boolean;
 var
    Answer: Integer;
 begin

@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
-  ExtCtrls, Buttons;
+  ExtCtrls, Buttons, StdCtrls;
 
 type
 
@@ -17,6 +17,8 @@ type
      btnCancel: TBitBtn;
      btnExport: TBitBtn;
      btnImport: TBitBtn;
+     grpbxPresetEditor: TGroupBox;
+     pnlBottom: TPanel;
      pnlTopToolbar: TPanel;
   private
     { private declarations }

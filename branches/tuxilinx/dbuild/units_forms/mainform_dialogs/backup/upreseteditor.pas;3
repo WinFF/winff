@@ -34,6 +34,7 @@ type
      pnlBottom: TPanel;
      pnlTopToolbar: TPanel;
      trvAvailablePresets: TTreeView;
+     procedure btnCancelClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -44,6 +45,13 @@ var
   PresetEditorDialog: TPresetEditorDialog;
 
 implementation
+
+{ TPresetEditorDialog }
+
+procedure TPresetEditorDialog.btnCancelClick(Sender: TObject);
+begin
+   Close;
+end;
 
 initialization
   {$I upreseteditor.lrs}

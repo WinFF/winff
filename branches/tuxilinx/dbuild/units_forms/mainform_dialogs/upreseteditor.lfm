@@ -1,13 +1,13 @@
 object PresetEditorDialog: TPresetEditorDialog
   Left = 409
-  Height = 528
+  Height = 538
   Top = 159
   Width = 395
   ActiveControl = pnlTopToolbar
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Preset Editor...'
-  ClientHeight = 528
+  ClientHeight = 538
   ClientWidth = 395
   Icon.Data = {
     BE2500000000010001003030000001002000A825000016000000280000003000
@@ -673,21 +673,21 @@ object PresetEditorDialog: TPresetEditorDialog
   end
   object pnlBottom: TPanel
     Left = 0
-    Height = 241
-    Top = 287
+    Height = 250
+    Top = 288
     Width = 395
     Align = alBottom
-    ClientHeight = 241
+    ClientHeight = 250
     ClientWidth = 395
     TabOrder = 1
     object grpbxPresetEditor: TGroupBox
       Left = 8
-      Height = 223
-      Top = 8
+      Height = 233
+      Top = 7
       Width = 380
       Anchors = [akTop, akLeft, akRight]
       Caption = 'Preset Editor:'
-      ClientHeight = 204
+      ClientHeight = 214
       ClientWidth = 376
       TabOrder = 0
       object lblText0: TLabel
@@ -732,8 +732,8 @@ object PresetEditorDialog: TPresetEditorDialog
       end
       object btnAddUpdate: TButton
         Left = 6
-        Height = 25
-        Top = 174
+        Height = 27
+        Top = 176
         Width = 130
         Anchors = [akLeft, akBottom]
         Caption = 'Add / Update'
@@ -741,8 +741,8 @@ object PresetEditorDialog: TPresetEditorDialog
       end
       object btnDelete: TButton
         Left = 150
-        Height = 25
-        Top = 174
+        Height = 27
+        Top = 176
         Width = 130
         Anchors = [akLeft, akBottom]
         Caption = 'Delete'
@@ -787,16 +787,16 @@ object PresetEditorDialog: TPresetEditorDialog
   end
   object pnlMiddleSpacer: TPanel
     Left = 0
-    Height = 207
+    Height = 208
     Top = 80
     Width = 395
     Align = alClient
-    ClientHeight = 207
+    ClientHeight = 208
     ClientWidth = 395
     TabOrder = 2
     object trvAvailablePresets: TTreeView
       Left = 8
-      Height = 191
+      Height = 192
       Top = 8
       Width = 380
       Anchors = [akTop, akLeft, akRight, akBottom]

@@ -347,7 +347,7 @@ object ExportPresetDialog: TExportPresetDialog
     end
     object btnExportSelectedPreset: TButton
       Left = 8
-      Height = 25
+      Height = 27
       Top = 288
       Width = 170
       Caption = 'Export Selected Preset'
@@ -355,7 +355,7 @@ object ExportPresetDialog: TExportPresetDialog
     end
     object btnCancel: TButton
       Left = 192
-      Height = 25
+      Height = 27
       Top = 288
       Width = 170
       Caption = 'Cancel'

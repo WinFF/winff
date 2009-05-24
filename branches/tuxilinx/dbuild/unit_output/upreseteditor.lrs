@@ -1,8 +1,10 @@
+{ This is an automatically generated lazarus resource file }
+
 LazarusResources.Add('TPresetEditorDialog','FORMDATA',[
   'TPF0'#19'TPresetEditorDialog'#18'PresetEditorDialog'#4'Left'#3#153#1#6'Heigh'
-  +'t'#3#16#2#3'Top'#3#159#0#5'Width'#3#139#1#13'ActiveControl'#7#13'pnlTopTool'
+  +'t'#3#26#2#3'Top'#3#159#0#5'Width'#3#139#1#13'ActiveControl'#7#13'pnlTopTool'
   +'bar'#11'BorderIcons'#11#12'biSystemMenu'#0#11'BorderStyle'#7#8'bsSingle'#7
-  +'Caption'#6#16'Preset Editor...'#12'ClientHeight'#3#16#2#11'ClientWidth'#3
+  +'Caption'#6#16'Preset Editor...'#12'ClientHeight'#3#26#2#11'ClientWidth'#3
   +#139#1#9'Icon.Data'#10#194'%'#0#0#190'%'#0#0#0#0#1#0#1#0'00'#0#0#1#0' '#0#168
   +'%'#0#0#22#0#0#0'('#0#0#0'0'#0#0#0'`'#0#0#0#1#0' '#0#0#0#0#0#128'%'#0#0#0#0#0
   +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
@@ -669,11 +671,11 @@ LazarusResources.Add('TPresetEditorDialog','FORMDATA',[
   +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
   +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
   +#0#6'Layout'#7#10'blGlyphTop'#8'TabOrder'#2#3#0#0#0#6'TPanel'#9'pnlBottom'#4
-  +'Left'#2#0#6'Height'#3#241#0#3'Top'#3#31#1#5'Width'#3#139#1#5'Align'#7#8'alB'
-  +'ottom'#12'ClientHeight'#3#241#0#11'ClientWidth'#3#139#1#8'TabOrder'#2#1#0#9
-  +'TGroupBox'#17'grpbxPresetEditor'#4'Left'#2#8#6'Height'#3#223#0#3'Top'#2#8#5
+  +'Left'#2#0#6'Height'#3#250#0#3'Top'#3' '#1#5'Width'#3#139#1#5'Align'#7#8'alB'
+  +'ottom'#12'ClientHeight'#3#250#0#11'ClientWidth'#3#139#1#8'TabOrder'#2#1#0#9
+  +'TGroupBox'#17'grpbxPresetEditor'#4'Left'#2#8#6'Height'#3#233#0#3'Top'#2#7#5
   +'Width'#3'|'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#7'Caption'#6#14
-  +'Preset Editor:'#12'ClientHeight'#3#204#0#11'ClientWidth'#3'x'#1#8'TabOrder'
+  +'Preset Editor:'#12'ClientHeight'#3#214#0#11'ClientWidth'#3'x'#1#8'TabOrder'
   +#2#0#0#6'TLabel'#8'lblText0'#4'Left'#2#6#6'Height'#2#18#3'Top'#2#5#5'Width'#2
   +'Y'#7'Caption'#6#12'Preset Name:'#11'ParentColor'#8#0#0#6'TLabel'#8'lblText2'
   +#4'Left'#2#6#6'Height'#2#18#3'Top'#2'='#5'Width'#2'k'#7'Caption'#6#16'Output'
@@ -683,9 +685,9 @@ LazarusResources.Add('TPresetEditorDialog','FORMDATA',[
   +'='#5'Width'#2'>'#7'Caption'#6#9'Category:'#11'ParentColor'#8#0#0#6'TLabel'#8
   +'lblText4'#4'Left'#2#6#6'Height'#2#18#3'Top'#2'w'#5'Width'#3#147#0#7'Caption'
   +#6#20'Preset Command Line:'#11'ParentColor'#8#0#0#7'TButton'#12'btnAddUpdate'
-  +#4'Left'#2#6#6'Height'#2#25#3'Top'#3#174#0#5'Width'#3#130#0#7'Anchors'#11#6
+  +#4'Left'#2#6#6'Height'#2#27#3'Top'#3#176#0#5'Width'#3#130#0#7'Anchors'#11#6
   +'akLeft'#8'akBottom'#0#7'Caption'#6#12'Add / Update'#8'TabOrder'#2#0#0#0#7'T'
-  +'Button'#9'btnDelete'#4'Left'#3#150#0#6'Height'#2#25#3'Top'#3#174#0#5'Width'
+  +'Button'#9'btnDelete'#4'Left'#3#150#0#6'Height'#2#27#3'Top'#3#176#0#5'Width'
   +#3#130#0#7'Anchors'#11#6'akLeft'#8'akBottom'#0#7'Caption'#6#6'Delete'#8'TabO'
   +'rder'#2#1#0#0#5'TEdit'#13'edtPresetName'#4'Left'#2#6#6'Height'#2#27#3'Top'#2
   +#21#5'Width'#3#170#0#8'TabOrder'#2#2#0#0#5'TEdit'#18'edtOutputExtension'#4'L'
@@ -695,9 +697,9 @@ LazarusResources.Add('TPresetEditorDialog','FORMDATA',[
   +#0#6'Height'#2#27#3'Top'#2'O'#5'Width'#3#170#0#8'TabOrder'#2#5#0#0#5'TEdit'
   +#20'edtPresetCommandLine'#4'Left'#2#6#6'Height'#2#27#3'Top'#3#135#0#5'Width'
   +#3'j'#1#8'TabOrder'#2#6#0#0#0#0#6'TPanel'#15'pnlMiddleSpacer'#4'Left'#2#0#6
-  +'Height'#3#207#0#3'Top'#2'P'#5'Width'#3#139#1#5'Align'#7#8'alClient'#12'Clie'
-  +'ntHeight'#3#207#0#11'ClientWidth'#3#139#1#8'TabOrder'#2#2#0#9'TTreeView'#19
-  +'trvAvailablePresets'#4'Left'#2#8#6'Height'#3#191#0#3'Top'#2#8#5'Width'#3'|'
+  +'Height'#3#208#0#3'Top'#2'P'#5'Width'#3#139#1#5'Align'#7#8'alClient'#12'Clie'
+  +'ntHeight'#3#208#0#11'ClientWidth'#3#139#1#8'TabOrder'#2#2#0#9'TTreeView'#19
+  +'trvAvailablePresets'#4'Left'#2#8#6'Height'#3#192#0#3'Top'#2#8#5'Width'#3'|'
   +#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#8'akBottom'#0#17'DefaultItemH'
   +'eight'#2#19#10'ScrollBars'#7#10'ssAutoBoth'#8'TabOrder'#2#0#0#0#0#0
 ]);
