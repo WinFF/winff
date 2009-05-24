@@ -14,7 +14,7 @@
       <AutoIncrementBuild Value="True"/>
       <CurrentVersionNr Value="1"/>
       <CurrentMinorRevNr Value="1"/>
-      <CurrentBuildNr Value="18"/>
+      <CurrentBuildNr Value="20"/>
       <ProjectVersion Value="1.0.1.0"/>
       <FileDescription Value="An easy to use front-end for the commandline encoder FFMpeg"/>
       <LegalCopyright Value="Matthew Weatherford"/>
@@ -36,7 +36,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="10">
+    <Units Count="11">
       <Unit0>
         <Filename Value="winff_new.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -53,7 +53,7 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="umain"/>
-        <CursorPos X="32" Y="81"/>
+        <CursorPos X="68" Y="76"/>
         <TopLine Value="57"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="21"/>
@@ -150,75 +150,82 @@
         <UsageCount Value="10"/>
         <SyntaxHighlighter Value="LFM"/>
       </Unit9>
+      <Unit10>
+        <Filename Value="units_forms/mainform_dialogs/umain.lfm"/>
+        <CursorPos X="29" Y="60"/>
+        <TopLine Value="42"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="LFM"/>
+      </Unit10>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="17" Column="85" TopLine="9"/>
+        <Caret Line="45" Column="28" TopLine="10"/>
       </Position1>
       <Position2>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="46" Column="27" TopLine="10"/>
+        <Caret Line="22" Column="16" TopLine="10"/>
       </Position2>
       <Position3>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="45" Column="28" TopLine="10"/>
+        <Caret Line="40" Column="23" TopLine="10"/>
       </Position3>
       <Position4>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="22" Column="16" TopLine="10"/>
+        <Caret Line="48" Column="23" TopLine="12"/>
       </Position4>
       <Position5>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="40" Column="23" TopLine="10"/>
+        <Caret Line="22" Column="28" TopLine="9"/>
       </Position5>
       <Position6>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="48" Column="23" TopLine="12"/>
+        <Caret Line="41" Column="26" TopLine="9"/>
       </Position6>
       <Position7>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="22" Column="28" TopLine="9"/>
+        <Caret Line="50" Column="27" TopLine="14"/>
       </Position7>
       <Position8>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="41" Column="26" TopLine="9"/>
+        <Caret Line="51" Column="27" TopLine="15"/>
       </Position8>
       <Position9>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="50" Column="27" TopLine="14"/>
-      </Position9>
-      <Position10>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="51" Column="27" TopLine="15"/>
-      </Position10>
-      <Position11>
         <Filename Value="units_forms/mainform_dialogs/usplashdialog.pas"/>
         <Caret Line="24" Column="24" TopLine="1"/>
-      </Position11>
-      <Position12>
+      </Position9>
+      <Position10>
         <Filename Value="units_forms/mainform_dialogs/usplashdialog.pas"/>
         <Caret Line="17" Column="52" TopLine="1"/>
+      </Position10>
+      <Position11>
+        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
+        <Caret Line="23" Column="49" TopLine="1"/>
+      </Position11>
+      <Position12>
+        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
+        <Caret Line="16" Column="13" TopLine="1"/>
       </Position12>
       <Position13>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="23" Column="49" TopLine="1"/>
+        <Caret Line="20" Column="18" TopLine="1"/>
       </Position13>
       <Position14>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="16" Column="13" TopLine="1"/>
+        <Caret Line="21" Column="15" TopLine="1"/>
       </Position14>
       <Position15>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="20" Column="18" TopLine="1"/>
+        <Caret Line="23" Column="14" TopLine="1"/>
       </Position15>
       <Position16>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="21" Column="15" TopLine="1"/>
+        <Caret Line="22" Column="19" TopLine="1"/>
       </Position16>
       <Position17>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="23" Column="14" TopLine="1"/>
+        <Caret Line="24" Column="21" TopLine="1"/>
       </Position17>
       <Position18>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
@@ -226,52 +233,48 @@
       </Position18>
       <Position19>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="24" Column="21" TopLine="1"/>
+        <Caret Line="23" Column="19" TopLine="1"/>
       </Position19>
       <Position20>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="22" Column="19" TopLine="1"/>
+        <Caret Line="24" Column="19" TopLine="1"/>
       </Position20>
       <Position21>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="23" Column="19" TopLine="1"/>
+        <Caret Line="28" Column="21" TopLine="1"/>
       </Position21>
       <Position22>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="24" Column="19" TopLine="1"/>
+        <Caret Line="29" Column="21" TopLine="1"/>
       </Position22>
       <Position23>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="28" Column="21" TopLine="1"/>
+        <Caret Line="30" Column="21" TopLine="1"/>
       </Position23>
       <Position24>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="29" Column="21" TopLine="1"/>
+        <Caret Line="25" Column="26" TopLine="1"/>
       </Position24>
       <Position25>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="30" Column="21" TopLine="1"/>
+        <Caret Line="33" Column="21" TopLine="1"/>
       </Position25>
       <Position26>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="25" Column="26" TopLine="1"/>
+        <Caret Line="37" Column="50" TopLine="19"/>
       </Position26>
       <Position27>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="33" Column="21" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
+        <Caret Line="56" Column="55" TopLine="48"/>
       </Position27>
       <Position28>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="37" Column="50" TopLine="19"/>
+        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
+        <Caret Line="81" Column="33" TopLine="57"/>
       </Position28>
       <Position29>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="56" Column="55" TopLine="48"/>
+        <Caret Line="81" Column="32" TopLine="57"/>
       </Position29>
-      <Position30>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="81" Column="33" TopLine="57"/>
-      </Position30>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

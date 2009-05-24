@@ -316,6 +316,7 @@ object MainForm: TMainForm
     0000
   }
   Menu = MainMenu
+  OnCreate = FormCreate
   OnDropFiles = FormDropFiles
   OnResize = FormResize
   Position = poScreenCenter
