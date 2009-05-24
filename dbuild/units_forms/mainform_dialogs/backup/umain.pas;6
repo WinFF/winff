@@ -73,6 +73,7 @@ uses
 procedure TMainForm.mmiAdditionalOptionsClick(Sender: TObject);
 begin
    pnlAdditionalSettings.Visible := not pnlAdditionalSettings.Visible;
+   mmiAdditionalOptions.Checked := not mmiAdditionalOptions.Checked;
    MainForm.Repaint;
 end;
 

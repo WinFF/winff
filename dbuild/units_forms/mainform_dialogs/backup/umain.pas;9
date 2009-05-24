@@ -53,6 +53,7 @@ type
      tbsOutputSettings: TTabSheet;
      procedure FormResize(Sender: TObject);
      procedure mmiAdditionalOptionsClick(Sender: TObject);
+     procedure mmiEditPresetsClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -73,6 +74,11 @@ procedure TMainForm.mmiAdditionalOptionsClick(Sender: TObject);
 begin
    pnlAdditionalSettings.Visible := not pnlAdditionalSettings.Visible;
    MainForm.Repaint;
+end;
+
+procedure TMainForm.mmiEditPresetsClick(Sender: TObject);
+begin
+   PresetEditorDialog.ShowModal;
 end;
 
 procedure TMainForm.FormResize(Sender: TObject);
