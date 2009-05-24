@@ -280,7 +280,7 @@ end;
 
 {
    Operating system independent
-   Format the file size to MiB
+   Format the input file size to MiB
 }
 function FormatFileSizeToMiB(const AFileSize: Integer): String;
 begin
@@ -300,6 +300,38 @@ begin
    else
       Result := '0 MiB';
    FindClose(ASr);
+end;
+
+{
+   Operating system independent
+   Display an error message dialog
+}
+function DisplayErrorMessage(const AErrorMessage: String; const ACaption: String): Boolean;
+var
+   Answer: Integer;
+begin
+   Result := False;
+   Answer := Application.MessageBox(PChar(AErrorMessage), PChar(ACaption), MB_ICONERROR + MB_YESNO);
+   if Answer = idYes then
+      Result := True
+   else
+      Result := False;
+end;
+
+{
+   Operating system independent
+   Display a warning message dialog
+}
+function DisplayWarningMessage(const AWarningMessage: String; const ACaption: String): Boolean
+var
+   Answer: Integer;
+begin
+   Result := False;
+   Answer := Application.MessageBox(PChar(AWarningMessage), PChar(ACaption), MB_ICONQUESTION + MB_YESNO);
+   if Answer = idYes then
+      Result := True
+   else
+      Result := False;
 end;
 
 end.
