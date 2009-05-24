@@ -78,7 +78,7 @@ end;
 
 procedure TMainForm.mmiEditPresetsClick(Sender: TObject);
 begin
-   PresetEditorDialog.ShowModals;
+   PresetEditorDialog.ShowModal;
 end;
 
 procedure TMainForm.FormResize(Sender: TObject);

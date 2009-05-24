@@ -447,6 +447,8 @@ object MainForm: TMainForm
               Height = 27
               Top = 26
               Width = 88
+              OnChange = edtVideoBitrateChange
+              OnKeyPress = edtVideoBitrateKeyPress
               TabOrder = 0
             end
             object edtVideoFramerate: TEdit
@@ -454,6 +456,8 @@ object MainForm: TMainForm
               Height = 27
               Top = 26
               Width = 88
+              OnChange = edtVideoFramerateChange
+              OnKeyPress = edtVideoFramerateKeyPress
               TabOrder = 1
             end
             object cbx2PassEncoding: TCheckBox
@@ -477,6 +481,8 @@ object MainForm: TMainForm
               Height = 27
               Top = 27
               Width = 30
+              OnChange = edtVideoSizeWidthChange
+              OnKeyPress = edtVideoSizeWidthKeyPress
               TabOrder = 4
             end
             object edtVideoSizeHeight: TEdit
@@ -484,6 +490,8 @@ object MainForm: TMainForm
               Height = 27
               Top = 27
               Width = 30
+              OnChange = edtVideoSizeHeightChange
+              OnKeyPress = edtVideoSizeHeightKeyPress
               TabOrder = 5
             end
             object edtVideoAspectRatio: TEdit
@@ -491,6 +499,8 @@ object MainForm: TMainForm
               Height = 27
               Top = 27
               Width = 88
+              OnChange = edtVideoAspectRatioChange
+              OnKeyPress = edtVideoAspectRatioKeyPress
               TabOrder = 6
             end
           end
@@ -543,6 +553,8 @@ object MainForm: TMainForm
               Height = 27
               Top = 26
               Width = 104
+              OnChange = edtAudioBitrateChange
+              OnKeyPress = edtAudioBitrateKeyPress
               TabOrder = 0
             end
             object edtAudioSampleRate: TEdit
@@ -550,6 +562,8 @@ object MainForm: TMainForm
               Height = 27
               Top = 26
               Width = 104
+              OnChange = edtAudioSampleRateChange
+              OnKeyPress = edtAudioSampleRateKeyPress
               TabOrder = 1
             end
             object edtAudioChannels: TEdit
@@ -557,6 +571,8 @@ object MainForm: TMainForm
               Height = 27
               Top = 26
               Width = 104
+              OnChange = edtAudioChannelsChange
+              OnKeyPress = edtAudioChannelsKeyPress
               TabOrder = 2
             end
           end

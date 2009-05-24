@@ -50,8 +50,6 @@ uses
 
   function GetFileSize(const AInputFile: String): String;
 
-  function FormatFileSizeToMiB(const AFileSize: Integer): String;
-
   function DisplayErrorMessage(const AErrorMessage: String; const ACaption: String): Boolean;
 
   function DisplayWarningMessage(const AWarningMessage: String; const ACaption: String): Boolean;
@@ -247,6 +245,37 @@ begin
       Result := True;
    if (AKey = '-') and (AEdit.SelStart = 0) and (Pos('-', AEdit.Text) = 0) then
       Result := True;
+end;
+
+{
+   Operating system independent
+   Replace a parameter in a string
+}
+function ReplaceParameter(const ACommandLine: String; const AParameter: String; const AReplacement: String): String;
+var
+   I, J, StartPos, EndPos: Integer;
+   CmdLine: String;
+begin
+   Result := '';
+   CmdLine := ACommandLine;
+   StartPos := Pos(AParameter + ' ', CmdLine);
+   if StartPos <> 0 then
+   begin
+      for I := StartPos + 1 to Length(CmdLine) - 1 do
+      begin
+         if CmdLine[I] = '=' then
+         begin
+            EndPos := I - 1;
+            Break;
+         end;
+         Delete(CmdLine, StartPos, EndPos - StartPos);
+         Result := LeftStr(CmdLine, StartPos) + AReplacement + ' ' + LeftStr(CmdLine, Length(CmdLine) - StartPos);
+      end;
+   end
+   else
+   begin
+      CmdLine := CmdLine + ' ' + AReplacement;
+   end;
 end;
 
 end.
