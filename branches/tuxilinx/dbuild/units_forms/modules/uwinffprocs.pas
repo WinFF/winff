@@ -41,7 +41,7 @@ uses
 
   function GetMyDocumentsPath(const AHandle: THandle): String;
 
-  //function GetApplicationDataPath(const AHandle: THandle): String;
+  function GetApplicationDataPath(const AHandle: THandle): String;
 
   function ValidateNumericInput(const AEdit: TEdit; const AKey: Char): Boolean;
 
@@ -231,6 +231,20 @@ begin
    {$ENDIF}
    {$IFDEF WINDOWS}
       Result := uwinffwin32procs.Win32_GetMyDocumentsPath;
+   {$ENDIF}
+end;
+
+{
+   Operating system independent
+   Get the path to the user's application data path
+}
+function GetApplicationDataPath(const AHandle: THandle): String;
+begin
+   {$IFDEF UNIX}
+      Result := uwinffunixprocs.Unix_GetApplicationDataPath;
+   {$ENDIF}
+   {$IFDEF WINDOWS}
+      Result := uwinffwin32procs.Win32_GetApplicationDataPath(AHandle);
    {$ENDIF}
 end;
 
