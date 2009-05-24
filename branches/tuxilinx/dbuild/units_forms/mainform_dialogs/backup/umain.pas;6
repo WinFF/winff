@@ -19,6 +19,7 @@ type
      btnClearFileList: TBitBtn;
      btnRemoveFiles: TBitBtn;
      btnAddFiles: TBitBtn;
+     ComboBox1: TComboBox;
      grpbxAdditionalOptions: TGroupBox;
      lsvFileBin: TListView;
      MainMenu: TMainMenu;
@@ -54,6 +55,8 @@ type
      procedure FormResize(Sender: TObject);
      procedure mmiAdditionalOptionsClick(Sender: TObject);
      procedure mmiEditPresetsClick(Sender: TObject);
+     procedure tbsOutputSettingsContextPopup(Sender: TObject; MousePos: TPoint;
+        var Handled: Boolean);
   private
     { private declarations }
   public
