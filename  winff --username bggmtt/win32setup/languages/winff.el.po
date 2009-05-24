@@ -1,348 +1,345 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 0.45.1 \n"
+"Project-Id-Version: WinFF 1.0.1\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2009-04-01\n"
-"Last-Translator: Víctor Paesa <wzrlpy@hotmail.com>\n"
+"PO-Revision-Date: 2009-05-01\n"
+"Last-Translator: Γεώργιος Γεωργάς <apopatos@myrealbox.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: Hellas\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: unit1.rsaddbtn
 msgid "Add"
-msgstr "Añadir"
+msgstr "Προσθήκη"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr "(Todas categorías)"
+msgstr "(Όλες οι Κατηγορίες)"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
-msgstr "Desentrelazar"
+msgstr "Απόπλεξη"
 
 #: unit1.rsclearbtn
 msgid "Clear"
-msgstr "Borrar"
+msgstr "Καθαρισμός"
 
 #: unit1.rsclose
-#, fuzzy
 msgid "Close"
-msgstr "Borrar"
+msgstr "Κλείσιμο"
 
 #: unit1.rsclosebtn
 msgid "Options"
-msgstr "Opciones"
+msgstr "Επιλογές"
 
 #: unit1.rsconverting
 msgid "Converting"
-msgstr "Convirtiendo"
+msgstr "Μετατροπή"
 
 #: unit1.rscouldnotfindffmpeg
 msgid "Could not find FFmpeg."
-msgstr "No pude encontrar FFmpeg"
+msgstr "Δεv βρέθηκε το FFmpeg"
 
 #: unit1.rscouldnotfindffplay
 msgid "Could not find FFPlay."
-msgstr "No pude encontrar FFplay"
+msgstr "Δεν βρέθηκε το FFplay"
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
-msgstr "No pude encontrar el fichero"
+msgstr "Δεν βρέθηκε το αρχείο"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "No pude encontrar el archivo de preestablecidos"
+msgstr "Δεν βρέθηκε το αρχείο Presets"
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
-msgstr "Mostrar línea de comando"
+msgstr "Προβολή Γραμμής Εντολών"
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "La extensión no puede contener un punto"
+msgstr "Η κατάληξη δεν μπορεί να περιέχει τελεία"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
-msgstr "el fichero no existe"
+msgstr "το αρχείο δεν υπάρχει"
 
 #: unit1.rsfilemenu
 msgid "File"
-msgstr "Archivo"
+msgstr "Αρχείο"
 
 #: unit1.rsgroupbox1
 msgid "Additional Options"
-msgstr "Opciones adicionales"
+msgstr "Επιπλέον Επιλογές"
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
-msgstr "Importar preestablecidos"
+msgstr "Εισαγωγή Preset"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Fichero de preestablecidos inválido"
+msgstr "Ακατάλληλο Αρχείο Preset"
 
 #: unit1.rslabel1
 msgid "Convert To ..."
-msgstr "Convertir a ..."
+msgstr "Μετατροπή Σε..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr "Canales de audio"
+msgstr "Κανάλια Ήχου"
 
 #: unit1.rslabel11
 msgid "Output Folder"
-msgstr "Carpeta destino"
+msgstr "Φάκελος Προορισμού"
 
 #: unit1.rslabel19
-#, fuzzy
 msgid "Device Preset"
-msgstr "Elegir variante:"
+msgstr "Preset Συσκευής"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
-msgstr "Bits/s video"
+msgstr "Ρυθμός Δεδομένων Βίντεο"
 
 #: unit1.rslabel4
 msgid "Frame Rate"
-msgstr "Cuadros/s"
+msgstr "Ρυθμός Καρέ"
 
 #: unit1.rslabel5
 msgid "Video Size"
-msgstr "Tamaño(HxV)"
+msgstr "Μέγεθος Βίντεο"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
-msgstr "Relación de aspecto"
+msgstr "Αναλογία"
 
 #: unit1.rslabel7
 msgid "Audio Bitrate"
-msgstr "Bits/s audio"
+msgstr "Ρυθμός Δεδομένων Ήχου"
 
 #: unit1.rslabel8
 msgid "Sample Rate"
-msgstr "Tasa de muestreo"
+msgstr "Ρυθμός Δειγματοληψίας"
 
 #: unit1.rsmenuitem1
 msgid "Edit"
-msgstr "Editar"
+msgstr "Επεξεργασία"
 
 #: unit1.rsmenuitem3
 msgid "Exit"
-msgstr "Salir"
+msgstr "Έξοδος"
 
 #: unit1.rsmenuitem4
 msgid "Presets"
-msgstr "Valor preestablecido"
+msgstr "Presets"
 
 #: unit1.rsmenuitem5
 msgid "Preferences"
-msgstr "Preferencias"
+msgstr "Προτιμήσεις"
 
 #: unit1.rsmenuitem6
 msgid "Help"
-msgstr "Ayuda"
+msgstr "Βοήθεια"
 
 #: unit1.rsmitWinff
 msgid "WinFF Website"
-msgstr "Web de WinFF"
+msgstr "Ιστοσελίδα WinFF"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr "Forums de WinFF"
+msgstr "Φόρουμ WinFF"
 
 #: unit1.rsmitabout
 msgid "About"
-msgstr "Acerca de"
+msgstr "Περί"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr "Documentación"
+msgstr "Τεκμηρίωση"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "El nombre ha de ser alfanumérico (a-z,A-Z,0-9), sin eñes ni acentos"
+msgstr "Το όνομα Πρέπει να είναι αλφαρηθμιτικό(a-z,A-Z,0-9) "
 
 #: unit1.rspass2
 msgid "2 pass"
-msgstr "2º paso"
+msgstr "2 περάσματα"
 
 #: unit1.rspauseonfinish
 msgid "Pause on Finish"
-msgstr "Pausa al acabar"
+msgstr "Πάγωμα μετά το Πέρας"
 
 #: unit1.rsplay
 msgid "Play"
-msgstr "Reproducir"
+msgstr "Αναπαραγωγή"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "Por favor, añadir al menos un fichero para convertir"
+msgstr "Παρακαλώ προσθέστε ένα τουλάχιστον αρχείο για μετατροπή"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
-msgstr "Preestablecido: %s%s%s ya existe"
+msgstr "Το Preset: %s%s%s υπάρχει ήδη"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "El preestablecido a importar no tiene extensión"
+msgstr "Το Preset που προσπαθείτε να εισάγεται δεν έχει κατάληξη"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "El preestablecido a importar no tiene etiqueta"
+msgstr "Το Preset που προσπαθείτε να εισάγεται δεν έχει ετικέτα"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "Por favor, elige un preestablecido para exportarlo"
+msgstr "Παρακαλώ επιλέξετε ένα Preset για εξαγωγή"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "El preestablecido con etiqueta: %s%s%s ya existe"
+msgstr "Το Preset με ετικέτα: %s%s%s υπάρχει ήδη"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr "Pulse Entrar para seguir"
+msgstr "Πατήστε Emter για να συνεχίσετε"
 
 #: unit1.rsremovebtn
 msgid "Remove"
-msgstr "Eliminar"
+msgstr "Αφαίρεση"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "Elegir archivo de preestablecidos"
+msgstr "Επιλογή Αρχείου Preset"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
-msgstr "Elegir archivos de video"
+msgstr "Επιλογή Αρχείων Βίντεο"
 
 #: unit1.rsshutdownonfinish
 msgid "Shutdown on Finish"
-msgstr "Apagar al acabar"
+msgstr "Κλείσιμο μετά το Πέρας "
 
 #: unit1.rsstartbtn
 msgid "Convert"
-msgstr "Convertir"
+msgstr "Μετατροπή"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "El preestablecido contiene caracteres inválidos"
+msgstr "Το Preset εμπεριέχει άκυρους χαρακτήρες"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr "Resultado"
+msgstr "Λεπτομέρειες Παραγωγής"
 
 #: unit1.tabpage2caption
-#, fuzzy
 msgid "Video Settings"
-msgstr "Parámetros de video"
+msgstr "Ρυθμίσεις Βίντεο"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr "Parámetros de audio"
+msgstr "Ρυθμίσεις Ήχου"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
-msgstr "Parámetros adicionales en la línea de comando (avanzado)"
+msgstr "Επιπλέον Παράμετροι Γραμμής Εντολών (Για Προχωρημένους)"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
-msgstr "Añadir / Modificar"
+msgstr "Προσθήκη / Αναβάθμιση"
 
 #: unit2.rscancelbtn
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Άκυρο"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Crear preestablecido:"
+msgstr "Δημιμουργία Preset"
 
 #: unit2.rsdeletebtn
 msgid "Delete"
-msgstr "Borrar"
+msgstr "Διαγραφή"
 
 #: unit2.rsexport
 msgid "Export"
-msgstr "Exportar"
+msgstr "Εξαγωγή"
 
 #: unit2.rsform2
 msgid "Edit Presets"
-msgstr "Editar preestablecidos"
+msgstr "Επεξεργασία Presets"
 
 #: unit2.rsimport
 msgid "Import"
-msgstr "Importar"
+msgstr "Εισαγωγή"
 
 #: unit2.rsimportpresets
-#, fuzzy
 msgid "Import Presets"
-msgstr "Importar preestablecidos"
+msgstr "Εισαγωγή Presets"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "Nombre del preestablecido (una palabra, sólo A-z 0-9)"
+msgstr "Όνομα Preset (Μία λέξη, Μόνο A-z 0-9"
 
 #: unit2.rslabel3
 msgid "Preset Label"
-msgstr "Etiqueta del preestablecido"
+msgstr "Τίτλος Preset"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
-msgstr "Línea de commando del preestablecido (sin -i ni fichero de salida"
+msgstr "Γραμμή εντολών Preset (όχι -i ή τελικό αρχείο)"
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
-msgstr "Sufijo del fichero de salida (sin \".\")"
+msgstr "Κατάληξη Τελικού Αρχείου (όχι \".\")"
 
 #: unit2.rslabel6
 msgid "Category"
-msgstr "Categoría"
+msgstr "Κατηγορία"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "La etiqueta ha de ser única"
+msgstr "Η ετικέτα πρέπει να είναι μοναδική"
 
 #: unit2.rsokbtn
 msgid "Save"
-msgstr "Guardar"
+msgstr "Αποθήκευση"
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "Eliminar preestablecido:"
+msgstr "Αφαίρεση Preset"
 
 #: unit2.rsreplacepreset
-#, fuzzy
 msgid "Replace Preset"
-msgstr "Modificar preestablecido:"
+msgstr "Αντικατάσταση Preset"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "Modificar preestablecido:"
+msgstr "Αναβάθμιση Preset"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr "Tienes que teclear una extensión"
+msgstr "Πρέπει να προσθέσετε την κατάληξη"
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "Tienes que teclear una etiqueta"
+msgstr "Πρέπει να προσθέσετε ετικέτα"
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr "Tienes que teclear un nombre"
+msgstr "Πρέπει να προσθέσετε όνομα"
 
 #: unit3.rsbutton1
-#, fuzzy
 msgctxt "unit3.rsbutton1"
 msgid "OK"
-msgstr "Aceptar"
+msgstr "Εντάξει"
 
 #: unit3.rsform3
 msgid "About WinFF"
-msgstr "Acerca de WinFF"
+msgstr "Περί του WinFF"
 
 #: unit3.rslabel8
 msgid "FFmpeg builds by"
-msgstr "FFmpeg compilado por"
+msgstr "FFmpeg από"
 
 #: unit3.rspage1
 msgid "WinFF"
@@ -354,59 +351,59 @@ msgstr "FFmpeg"
 
 #: unit3.rspage3
 msgid "Thanks"
-msgstr "Gracias"
+msgstr "Ευχαριστίες"
 
 #: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
-msgstr "Recordar la última carpeta usada"
+msgstr "Απομνημόνευση Τελευταίου Καταλόγου"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
-msgstr "Usar CHCP para idiomas no ingleses"
+msgstr "Χρησιμοποίηση CHCP για διεθνείς χαρακτήρες"
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
-msgstr "Multihilo para procesadores con 2 núcleos"
+msgstr "Πολυεπεξεργασία για Διπλοπύρηνους Επεξεργαστές"
 
 #: unit4.rsform4
 msgid "WinFF Preferences"
-msgstr "Preferencias de WinFF"
+msgstr "Προτιμήσεις WinFF"
 
 #: unit4.rslabel1
 msgid "Default Destination Directory"
-msgstr "Carpeta destino por omisión"
+msgstr "Προεπιλεγμένος Φάκελος Προορισμού"
 
 #: unit4.rslabel2
 msgid "Path to FFmpeg.exe"
-msgstr "Camino hasta FFmpeg.exe"
+msgstr "διαδρομή για το FFmpeg.exe"
 
 #: unit4.rslabel3
 msgid "Path to FFPlay.exe"
-msgstr "Camino hasta FFplay.exe"
+msgstr "Διαδρομή για το FFPlay.exe"
 
 #: unit4.rslabel4
 msgid "Path to FFmpeg Executable"
-msgstr "Camino hasta FFmpeg.exe"
+msgstr "Διαδρομή Εκτελέσιμου FFmpeg"
 
 #: unit4.rslabel5
 msgid "Path to FFPlay Executable"
-msgstr "Camino hasta FFplay.exe"
+msgstr "Διαδρομή Εκτελέσιμου FFPlay"
 
 #: unit4.rslabel6
 msgid "Terminal to run FFmpeg"
-msgstr "Terminal para ejecutar FFmpeg"
+msgstr "Τερματικό Εκτέλεσης FFmpeg"
 
 #: unit4.rslabel7
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
-msgstr "Opciones para el terminal (-e para Xterm, -x para Gnome Terminal"
+msgstr "Επιλογές Τερματικού (-e για Xterm, -x για Τερματικό Gnome"
 
 #: unit4.rspage1
 msgid "General"
-msgstr "General"
+msgstr "Γενικά"
 
 #: unit4.rspage2
 msgid "Ms Windows"
-msgstr "MS Windows"
+msgstr "Ms Windows"
 
 #: unit4.rspage3
 msgid "Linux"
@@ -414,36 +411,29 @@ msgstr "Linux"
 
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
-msgstr "Línea de comando de FFmpeg"
+msgstr "Γραμμή Εντολών FFmpeg"
 
 #: unit6.rsform6
-#, fuzzy
 msgid "Export Presets"
-msgstr "Importar preestablecidos"
+msgstr "Εξαγωγή Presets"
 
 #: unit6.rslabel1
-#, fuzzy
 msgid "Choose presets to export"
-msgstr "Por favor, elige un preestablecido para exportarlo"
-
-#~ msgid "AC'"
-#~ msgstr "Canales de audio"
-#~ msgid "Please select a preset"
-#~ msgstr "Por favor, elegir un valor preestablecido"
+msgstr "Επιλογή Presets για εξαγωγή"
 
 #: unit4.rspriority
 msgid "Priority"
-msgstr "Proridad"
+msgstr "Προτεραιότητα"
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr "Maxima"
+msgstr "Υψηλή"
 
 #: unit4.rsprioritynormal
 msgid "Normal"
-msgstr "Normal"
+msgstr "Κανονική"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr "Mínima"
+msgstr "Αδρανές"
 
