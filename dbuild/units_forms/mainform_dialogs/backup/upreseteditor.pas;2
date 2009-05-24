@@ -46,6 +46,9 @@ var
 
 implementation
 
+uses
+   uexportpreset;
+
 { TPresetEditorDialog }
 
 procedure TPresetEditorDialog.btnCancelClick(Sender: TObject);

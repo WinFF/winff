@@ -323,8 +323,8 @@ object PreferencesDialog: TPreferencesDialog
     Height = 264
     Top = 8
     Width = 384
-    ActivePage = tbsLinux
-    TabIndex = 2
+    ActivePage = tbsGeneral
+    TabIndex = 0
     TabOrder = 0
     object tbsGeneral: TTabSheet
       Caption = 'General'
@@ -525,7 +525,7 @@ object PreferencesDialog: TPreferencesDialog
   end
   object btnOK: TButton
     Left = 82
-    Height = 25
+    Height = 27
     Top = 288
     Width = 110
     Caption = 'OK'
@@ -533,7 +533,7 @@ object PreferencesDialog: TPreferencesDialog
   end
   object btnCancel: TButton
     Left = 209
-    Height = 25
+    Height = 27
     Top = 288
     Width = 110
     Caption = 'Cancel'

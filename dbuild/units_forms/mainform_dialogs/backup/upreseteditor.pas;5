@@ -19,8 +19,16 @@ type
      btnImport: TBitBtn;
      btnAddUpdate: TButton;
      btnDelete: TButton;
+     edtOutputExtension: TEdit;
+     edtPresetLabel: TEdit;
+     edtPresetCategory: TEdit;
+     edtPresetCommandLine: TEdit;
      edtPresetName: TEdit;
      grpbxPresetEditor: TGroupBox;
+     lblText2: TLabel;
+     lblText1: TLabel;
+     lblText3: TLabel;
+     lblText4: TLabel;
      lblText0: TLabel;
      pnlBottom: TPanel;
      pnlTopToolbar: TPanel;

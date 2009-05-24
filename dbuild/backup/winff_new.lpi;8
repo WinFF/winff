@@ -7,14 +7,14 @@
       <TargetFileExt Value=""/>
       <Icon Value="0"/>
       <UseXPManifest Value="True"/>
-      <ActiveEditorIndexAtStart Value="0"/>
+      <ActiveEditorIndexAtStart Value="9"/>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <CurrentVersionNr Value="1"/>
       <CurrentMinorRevNr Value="1"/>
-      <CurrentBuildNr Value="18"/>
+      <CurrentBuildNr Value="44"/>
       <ProjectVersion Value="1.0.1.0"/>
       <FileDescription Value="An easy to use front-end for the commandline encoder FFMpeg"/>
       <LegalCopyright Value="Matthew Weatherford"/>
@@ -31,20 +31,24 @@
         <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="1">
+    <RequiredPackages Count="2">
       <Item1>
-        <PackageName Value="LCL"/>
+        <PackageName Value="progresscolor"/>
+        <MinVersion Major="1" Minor="2" Valid="True"/>
       </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
     </RequiredPackages>
-    <Units Count="10">
+    <Units Count="15">
       <Unit0>
         <Filename Value="winff_new.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="winff_new"/>
-        <CursorPos X="41" Y="24"/>
-        <TopLine Value="1"/>
+        <CursorPos X="11" Y="27"/>
+        <TopLine Value="10"/>
         <EditorIndex Value="2"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -53,10 +57,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="umain"/>
-        <CursorPos X="32" Y="81"/>
-        <TopLine Value="57"/>
+        <CursorPos X="3" Y="8"/>
+        <TopLine Value="1"/>
         <EditorIndex Value="0"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -65,10 +69,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="upreseteditor"/>
-        <CursorPos X="18" Y="50"/>
-        <TopLine Value="24"/>
+        <CursorPos X="37" Y="7"/>
+        <TopLine Value="1"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -77,10 +81,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uexportpreset"/>
-        <CursorPos X="24" Y="24"/>
+        <CursorPos X="44" Y="8"/>
         <TopLine Value="1"/>
-        <EditorIndex Value="8"/>
-        <UsageCount Value="21"/>
+        <EditorIndex Value="11"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -89,10 +93,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="upreferences"/>
-        <CursorPos X="23" Y="24"/>
+        <CursorPos X="60" Y="7"/>
         <TopLine Value="1"/>
-        <EditorIndex Value="7"/>
-        <UsageCount Value="21"/>
+        <EditorIndex Value="10"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit4>
       <Unit5>
@@ -101,10 +105,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uabout"/>
-        <CursorPos X="17" Y="24"/>
+        <CursorPos X="20" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="6"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -113,10 +117,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ucmdlinedialog"/>
-        <CursorPos X="25" Y="24"/>
+        <CursorPos X="6" Y="8"/>
         <TopLine Value="1"/>
         <EditorIndex Value="5"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit6>
       <Unit7>
@@ -125,10 +129,10 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uaddfilesdialog"/>
-        <CursorPos X="26" Y="24"/>
-        <TopLine Value="1"/>
+        <CursorPos X="8" Y="62"/>
+        <TopLine Value="26"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit7>
       <Unit8>
@@ -137,140 +141,184 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="usplashdialog"/>
-        <CursorPos X="33" Y="33"/>
-        <TopLine Value="2"/>
+        <CursorPos X="33" Y="42"/>
+        <TopLine Value="24"/>
         <EditorIndex Value="4"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit8>
       <Unit9>
         <Filename Value="units_forms/mainform_dialogs/upreseteditor.lfm"/>
         <CursorPos X="4" Y="1"/>
         <TopLine Value="80"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="3"/>
         <SyntaxHighlighter Value="LFM"/>
       </Unit9>
+      <Unit10>
+        <Filename Value="units_forms/mainform_dialogs/umain.lfm"/>
+        <CursorPos X="29" Y="60"/>
+        <TopLine Value="42"/>
+        <UsageCount Value="3"/>
+        <SyntaxHighlighter Value="LFM"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../../../../usr/lib/lazarus/lcl/buttons.pp"/>
+        <UnitName Value="Buttons"/>
+        <CursorPos X="25" Y="145"/>
+        <TopLine Value="132"/>
+        <UsageCount Value="4"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="units_forms/modules/uwinffwin32procs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uwinffwin32procs"/>
+        <CursorPos X="1" Y="182"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="7"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="units_forms/modules/uwinffunixprocs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uwinffunixprocs"/>
+        <CursorPos X="38" Y="43"/>
+        <TopLine Value="30"/>
+        <EditorIndex Value="8"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="units_forms/modules/uwinffprocs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uwinffprocs"/>
+        <CursorPos X="98" Y="55"/>
+        <TopLine Value="8"/>
+        <EditorIndex Value="9"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+      </Unit14>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="17" Column="85" TopLine="9"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="18" Column="23" TopLine="1"/>
       </Position1>
       <Position2>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="46" Column="27" TopLine="10"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="19" Column="27" TopLine="1"/>
       </Position2>
       <Position3>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="45" Column="28" TopLine="10"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="17" Column="21" TopLine="1"/>
       </Position3>
       <Position4>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="22" Column="16" TopLine="10"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="23" Column="16" TopLine="1"/>
       </Position4>
       <Position5>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="40" Column="23" TopLine="10"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="27" Column="14" TopLine="1"/>
       </Position5>
       <Position6>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="48" Column="23" TopLine="12"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="24" Column="19" TopLine="1"/>
       </Position6>
       <Position7>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="22" Column="28" TopLine="9"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="28" Column="14" TopLine="3"/>
       </Position7>
       <Position8>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="41" Column="26" TopLine="9"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="25" Column="19" TopLine="3"/>
       </Position8>
       <Position9>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="50" Column="27" TopLine="14"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="29" Column="14" TopLine="4"/>
       </Position9>
       <Position10>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="51" Column="27" TopLine="15"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="26" Column="19" TopLine="4"/>
       </Position10>
       <Position11>
-        <Filename Value="units_forms/mainform_dialogs/usplashdialog.pas"/>
-        <Caret Line="24" Column="24" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="30" Column="14" TopLine="5"/>
       </Position11>
       <Position12>
-        <Filename Value="units_forms/mainform_dialogs/usplashdialog.pas"/>
-        <Caret Line="17" Column="52" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="27" Column="19" TopLine="5"/>
       </Position12>
       <Position13>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="23" Column="49" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="21" Column="23" TopLine="5"/>
       </Position13>
       <Position14>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="16" Column="13" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="29" Column="27" TopLine="5"/>
       </Position14>
       <Position15>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="20" Column="18" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="23" Column="23" TopLine="5"/>
       </Position15>
       <Position16>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="21" Column="15" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="46" Column="50" TopLine="39"/>
       </Position16>
       <Position17>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="23" Column="14" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/upreferences.pas"/>
+        <Caret Line="47" Column="44" TopLine="44"/>
       </Position17>
       <Position18>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="22" Column="19" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
+        <Caret Line="95" Column="46" TopLine="95"/>
       </Position18>
       <Position19>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="24" Column="21" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/uabout.pas"/>
+        <Caret Line="1" Column="88" TopLine="1"/>
       </Position19>
       <Position20>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="22" Column="19" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/uabout.pas"/>
+        <Caret Line="17" Column="46" TopLine="10"/>
       </Position20>
       <Position21>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="23" Column="19" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/uabout.pas"/>
+        <Caret Line="33" Column="10" TopLine="15"/>
       </Position21>
       <Position22>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="24" Column="19" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/uabout.pas"/>
+        <Caret Line="17" Column="21" TopLine="9"/>
       </Position22>
       <Position23>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="28" Column="21" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/uabout.pas"/>
+        <Caret Line="18" Column="15" TopLine="9"/>
       </Position23>
       <Position24>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="29" Column="21" TopLine="1"/>
+        <Filename Value="units_forms/mainform_dialogs/uabout.pas"/>
+        <Caret Line="22" Column="44" TopLine="18"/>
       </Position24>
       <Position25>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="30" Column="21" TopLine="1"/>
+        <Filename Value="units_forms/modules/uwinffprocs.pas"/>
+        <Caret Line="24" Column="11" TopLine="4"/>
       </Position25>
       <Position26>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="25" Column="26" TopLine="1"/>
+        <Filename Value="units_forms/modules/uwinffprocs.pas"/>
+        <Caret Line="19" Column="7" TopLine="1"/>
       </Position26>
       <Position27>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="33" Column="21" TopLine="1"/>
+        <Filename Value="units_forms/modules/uwinffunixprocs.pas"/>
+        <Caret Line="24" Column="6" TopLine="1"/>
       </Position27>
       <Position28>
-        <Filename Value="units_forms/mainform_dialogs/upreseteditor.pas"/>
-        <Caret Line="37" Column="50" TopLine="19"/>
+        <Filename Value="units_forms/mainform_dialogs/uaddfilesdialog.pas"/>
+        <Caret Line="12" Column="48" TopLine="1"/>
       </Position28>
       <Position29>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="56" Column="55" TopLine="48"/>
+        <Filename Value="units_forms/mainform_dialogs/uaddfilesdialog.pas"/>
+        <Caret Line="35" Column="44" TopLine="28"/>
       </Position29>
       <Position30>
-        <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
-        <Caret Line="81" Column="33" TopLine="57"/>
+        <Filename Value="units_forms/mainform_dialogs/uaddfilesdialog.pas"/>
+        <Caret Line="36" Column="6" TopLine="33"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>
@@ -278,7 +326,7 @@
     <Version Value="8"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)/"/>
-      <OtherUnitFiles Value="units_forms/mainform_dialogs/"/>
+      <OtherUnitFiles Value="$(LazarusDir)/components/codetools/units/$(TargetCPU)-$(TargetOS)/;units_forms/mainform_dialogs/;units_forms/modules/"/>
       <UnitOutputDirectory Value="unit_output"/>
     </SearchPaths>
     <Linking>

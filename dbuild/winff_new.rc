@@ -1,5 +1,5 @@
 1 VERSIONINFO
-FILEVERSION 1,0,1,46
+FILEVERSION 1,0,1,50
 PRODUCTVERSION 1,0,1,0
 {
  BLOCK "StringFileInfo"
@@ -9,7 +9,7 @@ PRODUCTVERSION 1,0,1,0
    VALUE "Comments", "\000"
    VALUE "CompanyName", "\000"
    VALUE "FileDescription", "An easy to use front-end for the commandline encoder FFMpeg\000"
-   VALUE "FileVersion", "1.0.1.46\000"
+   VALUE "FileVersion", "1.0.1.50\000"
    VALUE "InternalName", "\000"
    VALUE "LegalCopyright", "Matthew Weatherford\000"
    VALUE "LegalTrademarks", "\000"

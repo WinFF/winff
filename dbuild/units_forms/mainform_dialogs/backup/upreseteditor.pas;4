@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
-  ExtCtrls, Buttons, StdCtrls;
+  ExtCtrls, Buttons, StdCtrls, ComCtrls;
 
 type
 
@@ -30,8 +30,10 @@ type
      lblText3: TLabel;
      lblText4: TLabel;
      lblText0: TLabel;
+     pnlMiddleSpacer: TPanel;
      pnlBottom: TPanel;
      pnlTopToolbar: TPanel;
+     trvAvailablePresets: TTreeView;
   private
     { private declarations }
   public

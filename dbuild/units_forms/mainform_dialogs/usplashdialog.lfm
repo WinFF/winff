@@ -6,6 +6,8 @@ object SplashDialog: TSplashDialog
   BorderIcons = []
   BorderStyle = bsNone
   Caption = 'SplashDialog'
+  ClientHeight = 300
+  ClientWidth = 400
   FormStyle = fsSplash
   Icon.Data = {
     BE2500000000010001003030000001002000A825000016000000280000003000
@@ -315,6 +317,18 @@ object SplashDialog: TSplashDialog
   Position = poScreenCenter
   ShowInTaskBar = stNever
   LCLVersion = '0.9.27'
+  object Label1: TLabel
+    Left = 47
+    Height = 27
+    Top = 137
+    Width = 307
+    Caption = 'WinFF v1.0.1 ***ALPHA***'
+    Font.Height = -22
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
   object SplashTimer: TTimer
     Interval = 1500
     OnTimer = SplashTimerTimer

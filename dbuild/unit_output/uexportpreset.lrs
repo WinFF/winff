@@ -332,8 +332,8 @@ LazarusResources.Add('TExportPresetDialog','FORMDATA',[
   +'ClientWidth'#3'}'#1#8'TabOrder'#2#0#0#9'TTreeView'#19'trvAvailablePresets'#4
   +'Left'#2#6#6'Height'#3#240#0#3'Top'#2#7#5'Width'#3'q'#1#17'DefaultItemHeight'
   +#2#19#10'ScrollBars'#7#10'ssAutoBoth'#8'TabOrder'#2#0#0#0#0#7'TButton'#23'bt'
-  +'nExportSelectedPreset'#4'Left'#2#8#6'Height'#2#25#3'Top'#3' '#1#5'Width'#3
+  +'nExportSelectedPreset'#4'Left'#2#8#6'Height'#2#27#3'Top'#3' '#1#5'Width'#3
   +#170#0#7'Caption'#6#22'Export Selected Preset'#8'TabOrder'#2#1#0#0#7'TButton'
-  +#9'btnCancel'#4'Left'#3#192#0#6'Height'#2#25#3'Top'#3' '#1#5'Width'#3#170#0#7
+  +#9'btnCancel'#4'Left'#3#192#0#6'Height'#2#27#3'Top'#3' '#1#5'Width'#3#170#0#7
   +'Caption'#6#6'Cancel'#7'OnClick'#7#14'btnCancelClick'#8'TabOrder'#2#2#0#0#0#0
 ]);
