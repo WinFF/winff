@@ -14,7 +14,7 @@ unit uwinffunixprocs;
 interface
 
 uses
-   Classes, SysUtils, Unix, BaseUnix, Dos, Dialogs;
+   Classes, SysUtils, Unix, BaseUnix, Dos, Dialogs, Process;
 
 
    procedure Unix_LaunchURL(const AURL: String);
@@ -35,14 +35,39 @@ implementation
    Executes an URL
 }
 procedure Unix_LaunchURL(const AURL: String);
+var
+   ALauncher: TProcess;
+   S: String;
 begin
-    Exec('/usr/bin/firefox', AURL);
+    {Exec('/usr/bin/firefox', AURL);
     if DosExitCode <> 0 then
        Exec('/usr/bin/mozilla-firefox', AURL);
     if DosExitCode <> 0 then
        Exec('/usr/bin/konqueror', AURL);
     if DosExitCode <> 0 then
-       ShowMessage('More information can be found @ ' + AURL);
+       ShowMessage('More information can be found @ ' + AURL); }
+    S := '';
+    if FileExists('/usr/bin/konqueror') then
+       S := '/usr/bin/konqueror';
+    if FileExists('/usr/bin/mozilla-firefox') then
+       S := '/usr/bin/mozilla-firefox';
+    if FileExists('/usr/bin/firefox') then
+       S := '/usr/bin/firefox';
+    if FileExists('/usr/bin/sensible-browser') then
+       S := '/usr/bin/sensible-browser';
+    if FileExists('/usr/bin/epiphany-browser') then
+       S := '/usr/bin/epiphany-browser';
+    if FileExists('/usr/bin/kazehakase') then
+       S := '/usr/bin/kazehakase';
+    if S = '' then
+    begin
+       ShowMessage('More information can be found at ' + AURL);
+       Exit;
+    end;
+    ALauncher := TProcess.Create(nil);
+    ALauncher.CommandLine := S + ' ' + AURL;
+    ALauncher.Execute;
+    ALauncher.Free;
 end;
 
 {
@@ -50,8 +75,11 @@ end;
    Launch a document viewer and show a PDF file
 }
 procedure Unix_LaunchPDF(const APdfFile: String);
+var
+   ALauncher: TProcess;
+   S: String;
 begin
-   Exec('/usr/bin/evince', APdfFile);
+   {Exec('/usr/bin/evince', APdfFile);
    if DosExitCode <> 0 then
       Exec('/usr/bin/kpdf', APdfFile);
    if DosExitCode <> 0 then
@@ -59,7 +87,25 @@ begin
    if DosExitCode <> 0 then
       Exec('/usr/bin/acroread', APdfFile);
    if DosExitCode <> 0 then
-      ShowMessage('More information can be found @ http://www.winff.org');
+      ShowMessage('More information can be found @ http://www.winff.org');}
+   S := '';
+   if FileExists('/usr/bin/evince') then
+      S := '/usr/bin/evince';
+   if FileExists('/usr/bin/kpdf') then
+      S := '/usr/bin/kpdf';
+   if FileExists('/usr/bin/xpdf') then
+      S := '/usr/bin/xpdf';
+   if FileExists('/usr/bin/acroread') then
+      S := '/usr/bin/acroread';
+   if S = '' then
+   begin
+      ShowMessage('More information can be found at ' + APdfFile;
+      Exit;
+   end;
+   ALauncher := TProcess.Create(nil);
+   ALauncher.CommandLine := S + ' ' + APdfFile;
+   ALauncher.Execute;
+   ALauncher.Free;
 end;
 
 {
