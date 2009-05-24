@@ -145,5 +145,109 @@ begin
    end;
 end;
 
+{
+   Operating system independent
+   Launcth the default browser with a given URL
+}
+procedure LaunchURL(const AHandle: THandle; const AURL: String);
+begin
+   {$IFDEF UNIX}
+      uwinffunixprocs.Unix_LaunchURL(AURL);
+   {$ENDIF}
+   {$IFDEF WINDOWS}
+      uwinffwi32procs.Win32_LaunchURL(AHandle, AURL);
+   {$ENDIF}
+end;
+
+{
+   Operating system independent
+   Launch the default document viewer and display a PDF file
+}
+procedure LaunchPdfFile(const AHandle: THandle; const APdfFile: String);
+begin
+   {$IFDEF UNIX}
+      uwinffunixprocs.Unix_LaunchPDF(APdfFile);
+   {$ENDIF}
+   {$IFDEF WINDOWS}
+      uwinffwin32procs.Win32_LaunchPDF(AHandle, APdfFile);
+   {$ENDIF}
+end;
+
+{
+   Operating system independent
+   Reset a TEdit's text property
+}
+procedure ResetEditField(const AEdit: TEdit; const AOverrideStandardSetting: Boolean; const ANewValue: String);
+begin
+   if AOverrideStandardSetting then
+   begin
+      if (AEdit.Text = '') then
+         AEdit.Text := ANewValue;
+   end
+   else
+   begin
+      if (AEdit.Text = '') then
+         AEdit.Text := '0';
+   end;
+end;
+
+{
+   Operating system independent
+   Disable the close button in the system menu area
+}
+procedure DisableSystemMenu(const AHandle: THandle);
+begin
+   {$IFDEF UNIX}
+      {
+         TODO
+         We need to find a equivalent for unix here
+      }
+   {$ENDIF}
+   {$IFDEF WINDOWS}
+      uwinffwin32procs.Win32_DisableCloseButton(AHandle);
+   {$ENDIF}
+end;
+
+{
+   Operating system independent
+   Get the path to the user's desktop folder
+}
+function GetDesktopPath(const AHandle: THandle): String;
+begin
+   {$IFDEF UNIX}
+      Result := uwinffunixprocs.Unix_GetDesktopPath;
+   {$ENDIF}
+   {$IFDEF WINDOWS}
+      Result := uwinffwin32procs.Win32_GetDesktopPath(AHandle);
+   {$ENDIF}
+end;
+
+{
+   Operating system independent
+   Get the path to the user's documents folder
+}
+function GetMyDocumentsPath(const AHandle: THandle): String;
+begin
+   {$IFDEF UNIX}
+      Result := uwinffunixprocs.Unix_GetMyDocumentsPath;
+   {$ENDIF}
+   {$IFDEF WINDOWS}
+      Result := uwinffwin32procs.Win32_GetMyDocumentsPath;
+   {$ENDIF}
+end;
+
+{
+   Operating system independent
+   Validate the numeric input in the selected TEdit field
+}
+function ValidateNumericInput(const AEdit: TEdit; const AKey: Char): Boolean;
+begin
+   Result := False;
+   if AKey in [#8, '0'..'9'] then
+      Result := True;
+   if (AKey = '-') and (AEdit.SelStart = 0) and (Pos('-', AEdit.Text) = 0) then
+      Result := True;
+end;
+
 end.
 
