@@ -94,6 +94,8 @@ type
      tbsAdditionalCmdLineParams: TTabSheet;
      tbsOutputSettings: TTabSheet;
      procedure btnAdditionalOptionsClick(Sender: TObject);
+     procedure edtVideoBitrateChange(Sender: TObject);
+     procedure edtVideoBitrateKeyPress(Sender: TObject; var Key: char);
      procedure FormResize(Sender: TObject);
      procedure mmiAboutClick(Sender: TObject);
      procedure mmiAdditionalOptionsClick(Sender: TObject);
@@ -115,7 +117,7 @@ var
 implementation
 
 uses
-   upreseteditor, uabout, upreferences;
+   upreseteditor, uabout, upreferences, uwinffprocs;
 
 { TMainForm }
 
@@ -170,6 +172,17 @@ end;
 procedure TMainForm.btnAdditionalOptionsClick(Sender: TObject);
 begin
    mmiAdditionalOptions.Click;
+end;
+
+procedure TMainForm.edtVideoBitrateChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoBitrate, False, '');
+end;
+
+procedure TMainForm.edtVideoBitrateKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoBitrate, Key) then
+      Key := #0;
 end;
 
 initialization

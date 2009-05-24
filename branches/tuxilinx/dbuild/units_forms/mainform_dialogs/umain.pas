@@ -99,6 +99,8 @@ type
      tbsAdditionalCmdLineParams: TTabSheet;
      tbsOutputSettings: TTabSheet;
      procedure btnAdditionalOptionsClick(Sender: TObject);
+     procedure btnClearFileListClick(Sender: TObject);
+     procedure btnRemoveFilesClick(Sender: TObject);
      procedure btnSelectOutputFolderClick(Sender: TObject);
      procedure edtAudioBitrateChange(Sender: TObject);
      procedure edtAudioBitrateKeyPress(Sender: TObject; var Key: char);
@@ -232,6 +234,16 @@ end;
 procedure TMainForm.btnAdditionalOptionsClick(Sender: TObject);
 begin
    mmiAdditionalOptions.Click;
+end;
+
+procedure TMainForm.btnClearFileListClick(Sender: TObject);
+begin
+   pumDeleteAllFiles.Click;
+end;
+
+procedure TMainForm.btnRemoveFilesClick(Sender: TObject);
+begin
+   pumDeleteSelectedFile.Click;
 end;
 
 procedure TMainForm.btnSelectOutputFolderClick(Sender: TObject);
