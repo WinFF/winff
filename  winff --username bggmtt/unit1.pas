@@ -1229,6 +1229,8 @@ begin                                     // get setup
 
    script:= TStringList.Create;
    {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
+   {$ifdef unix}script.Add('#!/bin/sh');{$endif}
+
    {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
    {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
 
