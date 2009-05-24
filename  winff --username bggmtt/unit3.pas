@@ -109,10 +109,13 @@ begin                  // do translations
     listbox1.items.Add('Marcin Trybus');
     listbox1.items.Add('Louis Torrao');
     listbox1.items.Add('Predrag Tomasevic');
-    listbox1.items.Add('Vίctor Paese');
+    listbox1.items.Add('Víctor Paesa');
     listbox1.items.Add('Chung Yu');
     listbox1.items.Add('Emre Erkan');
     listbox1.items.Add('Ellen Rohaan');
+    listbox1.items.Add('Ofir Klinger');
+    listbox1.items.Add('Γεώργιος Γεωργάς');
+
     listbox1.items.Add('');
     listbox1.items.Add('Iconsdesigns.com for their NeuvoXT 2 GPL Icons');
     listbox1.items.Add('');
