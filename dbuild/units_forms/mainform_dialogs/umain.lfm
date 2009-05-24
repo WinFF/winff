@@ -922,6 +922,7 @@ object MainForm: TMainForm
         0000000000000000000000000000000000000000000000000000
       }
       Layout = blGlyphTop
+      OnClick = btnRemoveFilesClick
       TabOrder = 1
     end
     object btnClearFileList: TBitBtn
@@ -1007,6 +1008,7 @@ object MainForm: TMainForm
         0000000000000000000000000000000000000000000000000000
       }
       Layout = blGlyphTop
+      OnClick = btnClearFileListClick
       TabOrder = 2
     end
     object btnStartConversion: TBitBtn

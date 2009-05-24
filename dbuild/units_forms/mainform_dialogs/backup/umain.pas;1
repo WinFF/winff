@@ -116,6 +116,7 @@ type
      procedure edtVideoSizeHeightKeyPress(Sender: TObject; var Key: char);
      procedure edtVideoSizeWidthChange(Sender: TObject);
      procedure edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
+     procedure FormCreate(Sender: TObject);
      procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
      procedure FormResize(Sender: TObject);
      procedure mmiAboutClick(Sender: TObject);
@@ -327,6 +328,11 @@ procedure TMainForm.edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
 begin
    if not uwinffprocs.ValidateNumericInput(edtVideoSizeWidth, Key) then
       Key := #0;
+end;
+
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+   SelectDirectoryDialog.InitialDir := uwinffprocs.GetMyDocumentsPath(Self.Handle);
 end;
 
 procedure TMainForm.FormDropFiles(Sender: TObject; const FileNames: array of String);

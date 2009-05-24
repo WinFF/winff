@@ -7,14 +7,14 @@
       <TargetFileExt Value=""/>
       <Icon Value="0"/>
       <UseXPManifest Value="True"/>
-      <ActiveEditorIndexAtStart Value="9"/>
+      <ActiveEditorIndexAtStart Value="1"/>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <CurrentVersionNr Value="1"/>
       <CurrentMinorRevNr Value="1"/>
-      <CurrentBuildNr Value="48"/>
+      <CurrentBuildNr Value="49"/>
       <ProjectVersion Value="1.0.1.0"/>
       <FileDescription Value="An easy to use front-end for the commandline encoder FFMpeg"/>
       <LegalCopyright Value="Matthew Weatherford"/>
@@ -48,7 +48,7 @@
         <CursorPos X="11" Y="27"/>
         <TopLine Value="10"/>
         <EditorIndex Value="2"/>
-        <UsageCount Value="125"/>
+        <UsageCount Value="126"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -60,7 +60,7 @@
         <CursorPos X="82" Y="335"/>
         <TopLine Value="333"/>
         <EditorIndex Value="0"/>
-        <UsageCount Value="125"/>
+        <UsageCount Value="126"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -72,7 +72,7 @@
         <CursorPos X="37" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="125"/>
+        <UsageCount Value="126"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -84,7 +84,7 @@
         <CursorPos X="44" Y="8"/>
         <TopLine Value="1"/>
         <EditorIndex Value="11"/>
-        <UsageCount Value="125"/>
+        <UsageCount Value="126"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -96,7 +96,7 @@
         <CursorPos X="60" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="10"/>
-        <UsageCount Value="125"/>
+        <UsageCount Value="126"/>
         <Loaded Value="True"/>
       </Unit4>
       <Unit5>
@@ -108,7 +108,7 @@
         <CursorPos X="20" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="6"/>
-        <UsageCount Value="125"/>
+        <UsageCount Value="126"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -120,7 +120,7 @@
         <CursorPos X="6" Y="8"/>
         <TopLine Value="1"/>
         <EditorIndex Value="5"/>
-        <UsageCount Value="125"/>
+        <UsageCount Value="126"/>
         <Loaded Value="True"/>
       </Unit6>
       <Unit7>
@@ -132,7 +132,7 @@
         <CursorPos X="8" Y="62"/>
         <TopLine Value="26"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="125"/>
+        <UsageCount Value="126"/>
         <Loaded Value="True"/>
       </Unit7>
       <Unit8>
@@ -144,7 +144,7 @@
         <CursorPos X="33" Y="42"/>
         <TopLine Value="24"/>
         <EditorIndex Value="4"/>
-        <UsageCount Value="125"/>
+        <UsageCount Value="126"/>
         <Loaded Value="True"/>
       </Unit8>
       <Unit9>
@@ -161,7 +161,7 @@
         <CursorPos X="1" Y="182"/>
         <TopLine Value="1"/>
         <EditorIndex Value="7"/>
-        <UsageCount Value="75"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
       </Unit10>
       <Unit11>
@@ -171,7 +171,7 @@
         <CursorPos X="38" Y="43"/>
         <TopLine Value="30"/>
         <EditorIndex Value="8"/>
-        <UsageCount Value="75"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
       </Unit11>
       <Unit12>

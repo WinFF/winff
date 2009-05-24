@@ -314,6 +314,7 @@ object PreferencesDialog: TPreferencesDialog
     000001007800FFFF0000FFFFFFF8FFFF0000FFFFFFFFFFFF0000FFFFFFFFFFFF
     0000
   }
+  OnCreate = FormCreate
   OnShow = FormShow
   Position = poScreenCenter
   ShowInTaskBar = stNever
@@ -323,8 +324,8 @@ object PreferencesDialog: TPreferencesDialog
     Height = 264
     Top = 8
     Width = 384
-    ActivePage = tbsGeneral
-    TabIndex = 0
+    ActivePage = tbsLinux
+    TabIndex = 2
     TabOrder = 0
     object tbsGeneral: TTabSheet
       Caption = 'General'
@@ -344,6 +345,20 @@ object PreferencesDialog: TPreferencesDialog
         Top = 67
         Width = 361
       end
+      object Bevel3: TBevel
+        Left = 8
+        Height = 2
+        Top = 147
+        Width = 361
+      end
+      object lblText7: TLabel
+        Left = 8
+        Height = 18
+        Top = 160
+        Width = 48
+        Caption = 'Priority:'
+        ParentColor = False
+      end
       object edtDefaultDestinationDirectory: TEdit
         Left = 8
         Height = 27
@@ -357,6 +372,7 @@ object PreferencesDialog: TPreferencesDialog
         Top = 27
         Width = 27
         Caption = '...'
+        OnClick = btnSelectDefaultOutputDirectoryClick
         TabOrder = 1
       end
       object cbxRememberLastUsedDirectory: TCheckBox
@@ -374,6 +390,17 @@ object PreferencesDialog: TPreferencesDialog
         Width = 327
         Caption = 'Enable Multithreading For Dual Core Processors'
         TabOrder = 3
+      end
+      object cobxPriority: TComboBox
+        Left = 8
+        Height = 29
+        Top = 179
+        Width = 361
+        AutoComplete = False
+        ItemHeight = 0
+        ItemWidth = 0
+        TabOrder = 4
+        Text = 'cobxPriority'
       end
     end
     object tbsMsWindows: TTabSheet
@@ -422,6 +449,7 @@ object PreferencesDialog: TPreferencesDialog
         Top = 27
         Width = 27
         Caption = '...'
+        OnClick = btnSelectWinFFmpegExeClick
         TabOrder = 2
       end
       object btnSelectWinFFplayExe: TButton
@@ -430,6 +458,7 @@ object PreferencesDialog: TPreferencesDialog
         Top = 83
         Width = 27
         Caption = '...'
+        OnClick = btnSelectWinFFplayExeClick
         TabOrder = 3
       end
       object cbxUseChcp: TCheckBox
@@ -511,6 +540,7 @@ object PreferencesDialog: TPreferencesDialog
         Top = 27
         Width = 27
         Caption = '...'
+        OnClick = btnLinSelectFFmpegExeClick
         TabOrder = 4
       end
       object btnLinSelectFFplayExe: TButton
@@ -519,6 +549,7 @@ object PreferencesDialog: TPreferencesDialog
         Top = 83
         Width = 27
         Caption = '...'
+        OnClick = btnLinSelectFFplayExeClick
         TabOrder = 5
       end
     end
@@ -539,5 +570,13 @@ object PreferencesDialog: TPreferencesDialog
     Caption = 'Cancel'
     OnClick = btnCancelClick
     TabOrder = 2
+  end
+  object SelectDirectoryDialog: TSelectDirectoryDialog
+    left = 32
+    top = 280
+  end
+  object OpenDialog: TOpenDialog
+    left = 344
+    top = 280
   end
 end
