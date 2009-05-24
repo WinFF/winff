@@ -324,9 +324,9 @@ LazarusResources.Add('TSplashDialog','FORMDATA',[
   ,#135#225#254''#255#255#0#0#3#193#252'8'#255#255#0#0#1#0'x'#0#255#255#0#0#255
   +#255#255#248#255#255#0#0#255#255#255#255#255#255#0#0#255#255#255#255#255#255
   +#0#0#8'Position'#7#14'poScreenCenter'#13'ShowInTaskBar'#7#7'stNever'#10'LCLV'
-  +'ersion'#6#6'0.9.27'#0#6'TLabel'#6'Label1'#4'Left'#2'/'#6'Height'#2#27#3'Top'
-  +#3#137#0#5'Width'#3'3'#1#7'Caption'#6#24'WinFF v1.0.1 ***ALPHA***'#11'Font.H'
-  +'eight'#2#234#9'Font.Name'#6#4'Sans'#10'Font.Style'#11#6'fsBold'#0#11'Parent'
-  +'Color'#8#10'ParentFont'#8#0#0#6'TTimer'#11'SplashTimer'#8'Interval'#3#220#5
-  +#7'OnTimer'#7#16'SplashTimerTimer'#4'left'#2'i'#3'top'#2'J'#0#0#0
+  +'ersion'#6#6'0.9.27'#0#6'TLabel'#6'Label1'#4'Left'#2''''#6'Height'#2#27#3'To'
+  +'p'#3#137#0#5'Width'#3'B'#1#7'Caption'#6#25'WinFF v1.0.10 ***ALPHA***'#11'Fo'
+  +'nt.Height'#2#234#9'Font.Name'#6#4'Sans'#10'Font.Style'#11#6'fsBold'#0#11'Pa'
+  +'rentColor'#8#10'ParentFont'#8#0#0#6'TTimer'#11'SplashTimer'#8'Interval'#3
+  +#220#5#7'OnTimer'#7#16'SplashTimerTimer'#4'left'#2'i'#3'top'#2'J'#0#0#0
 ]);

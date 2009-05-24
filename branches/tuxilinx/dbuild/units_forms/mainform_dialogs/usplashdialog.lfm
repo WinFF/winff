@@ -318,11 +318,11 @@ object SplashDialog: TSplashDialog
   ShowInTaskBar = stNever
   LCLVersion = '0.9.27'
   object Label1: TLabel
-    Left = 47
+    Left = 39
     Height = 27
     Top = 137
-    Width = 307
-    Caption = 'WinFF v1.0.1 ***ALPHA***'
+    Width = 322
+    Caption = 'WinFF v1.0.10 ***ALPHA***'
     Font.Height = -22
     Font.Name = 'Sans'
     Font.Style = [fsBold]
