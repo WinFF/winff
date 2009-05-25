@@ -64,6 +64,9 @@ type
      lblText2: TLabel;
      lsvFileBin: TListView;
      MainMenu: TMainMenu;
+     pumDeleteAllFiles: TMenuItem;
+     pumSpacer0: TMenuItem;
+     pumDeleteSelectedFile: TMenuItem;
      mmiAbout: TMenuItem;
      mmiSpacer0: TMenuItem;
      mmiForums: TMenuItem;
@@ -88,12 +91,30 @@ type
      pnlAdditionalSettings: TPanel;
      pnlMainSpacer: TPanel;
      pnlTopToolbar: TPanel;
+     pumFileBin: TPopupMenu;
      StatusBar: TStatusBar;
      tbsVideoSettings: TTabSheet;
      tbsAudioSettings: TTabSheet;
      tbsAdditionalCmdLineParams: TTabSheet;
      tbsOutputSettings: TTabSheet;
      procedure btnAdditionalOptionsClick(Sender: TObject);
+     procedure edtAudioBitrateChange(Sender: TObject);
+     procedure edtAudioBitrateKeyPress(Sender: TObject; var Key: char);
+     procedure edtAudioChannelsChange(Sender: TObject);
+     procedure edtAudioChannelsKeyPress(Sender: TObject; var Key: char);
+     procedure edtAudioSampleRateChange(Sender: TObject);
+     procedure edtAudioSampleRateKeyPress(Sender: TObject; var Key: char);
+     procedure edtVideoAspectRatioChange(Sender: TObject);
+     procedure edtVideoAspectRatioKeyPress(Sender: TObject; var Key: char);
+     procedure edtVideoBitrateChange(Sender: TObject);
+     procedure edtVideoBitrateKeyPress(Sender: TObject; var Key: char);
+     procedure edtVideoFramerateChange(Sender: TObject);
+     procedure edtVideoFramerateKeyPress(Sender: TObject; var Key: char);
+     procedure edtVideoSizeHeightChange(Sender: TObject);
+     procedure edtVideoSizeHeightKeyPress(Sender: TObject; var Key: char);
+     procedure edtVideoSizeWidthChange(Sender: TObject);
+     procedure edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
+     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
      procedure FormResize(Sender: TObject);
      procedure mmiAboutClick(Sender: TObject);
      procedure mmiAdditionalOptionsClick(Sender: TObject);
@@ -103,6 +124,8 @@ type
      procedure mmiPreferencesClick(Sender: TObject);
      procedure mmiQuitClick(Sender: TObject);
      procedure mmiShutdownOnFinishClick(Sender: TObject);
+     procedure pumDeleteAllFilesClick(Sender: TObject);
+     procedure pumDeleteSelectedFileClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -115,7 +138,7 @@ var
 implementation
 
 uses
-   upreseteditor, uabout, upreferences;
+   upreseteditor, uabout, upreferences, uwinffprocs;
 
 { TMainForm }
 
@@ -156,6 +179,30 @@ begin
    mmiShutdownOnFinish.Checked := not mmiShutdownOnFinish.Checked;
 end;
 
+procedure TMainForm.pumDeleteAllFilesClick(Sender: TObject);
+begin
+   if (lsvFileBin.Selected = nil) then
+      Exit
+   else
+   begin
+      if uwinffprocs.DisplayWarningMessage('Do you want to delete ' + IntToStr(lsvFileBin.Items.Count) + ' files from the list?', 'Are you sure?') then
+         lsvFileBin.Items.Clear;
+      StatusBar.Panels[0].Text := 'Total files: ' + IntToStr(lsvFileBin.Items.Count);
+   end;
+end;
+
+procedure TMainForm.pumDeleteSelectedFileClick(Sender: TObject);
+begin
+   if (lsvFileBin.Selected = nil) then
+      Exit
+   else
+   begin
+      if uwinffprocs.DisplayWarningMessage('Do you want to delete: ' + ExtractFileName(lsvFileBin.Selected.Caption) + ' from the list?', 'Are you sure?') then
+         lsvFileBin.Selected.Delete;
+      StatusBar.Panels[0].Text := 'Total files: ' + IntToStr(lsvFileBin.Items.Count);
+   end;
+end;
+
 procedure TMainForm.FormResize(Sender: TObject);
 begin
    MainForm.Repaint;
@@ -170,6 +217,111 @@ end;
 procedure TMainForm.btnAdditionalOptionsClick(Sender: TObject);
 begin
    mmiAdditionalOptions.Click;
+end;
+
+procedure TMainForm.edtAudioBitrateChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtAudioBitrate, False, '');
+end;
+
+procedure TMainForm.edtAudioBitrateKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtAudioBitrate, Key) then
+      KEy := #0;
+end;
+
+procedure TMainForm.edtAudioChannelsChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtAudioChannels, False, '');
+end;
+
+procedure TMainForm.edtAudioChannelsKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtAudioChannels, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtAudioSampleRateChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtAudioSampleRate, False, '');
+end;
+
+procedure TMainForm.edtAudioSampleRateKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtAudioSampleRate, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtVideoAspectRatioChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoAspectRatio, False, '');
+end;
+
+procedure TMainForm.edtVideoAspectRatioKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoAspectRatio, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtVideoBitrateChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoBitrate, False, '');
+end;
+
+procedure TMainForm.edtVideoBitrateKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoBitrate, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtVideoFramerateChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoFramerate, False, '');
+end;
+
+procedure TMainForm.edtVideoFramerateKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoFramerate, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtVideoSizeHeightChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoSizeHeight, False, '');
+end;
+
+procedure TMainForm.edtVideoSizeHeightKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoSizeHeight, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.edtVideoSizeWidthChange(Sender: TObject);
+begin
+   uwinffprocs.ResetEditField(edtVideoSizeWidth, False, '');
+end;
+
+procedure TMainForm.edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
+begin
+   if not uwinffprocs.ValidateNumericInput(edtVideoSizeWidth, Key) then
+      Key := #0;
+end;
+
+procedure TMainForm.FormDropFiles(Sender: TObject; const FileNames: array of String);
+var
+   NumFiles, I: Integer;
+begin
+   NumFiles := High(FileNames);
+   for I := 0 to NumFiles do
+   begin
+      {
+         TODO
+         Perform a check here if the dropped filetype
+         is actually supported by ffmpeg
+      }
+      uwinffprocs.FillListView(lsvFileBin, FileNames[I]);
+   end;
+   StatusBar.Panels[0].Text := 'Total files: ' + IntToStr(lsvFileBin.Items.Count);
 end;
 
 initialization

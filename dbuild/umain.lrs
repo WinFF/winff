@@ -953,26 +953,28 @@ LazarusResources.Add('TMainForm','FORMDATA',[
   +'dditionalOptionsClick'#8'TabOrder'#2#5#0#0#0#9'TMainMenu'#8'MainMenu'#4'lef'
   +'t'#3#24#1#3'top'#3#128#0#0#9'TMenuItem'#7'mmiFile'#7'Caption'#6#4'File'#0#9
   +'TMenuItem'#7'mmiQuit'#7'Caption'#6#4'Quit'#7'OnClick'#7#12'mmiQuitClick'#0#0
-  +#0#9'TMenuItem'#7'mmiEdit'#7'Caption'#6#4'Edit'#0#9'TMenuItem'#14'mmiEditPre'
-  +'sets'#7'Caption'#6#12'Edit Presets'#7'OnClick'#7#19'mmiEditPresetsClick'#0#0
-  +#9'TMenuItem'#14'mmiPreferences'#7'Caption'#6#11'Preferences'#7'OnClick'#7#19
-  +'mmiPreferencesClick'#0#0#0#9'TMenuItem'#10'mmiOptions'#7'Caption'#6#7'Optio'
-  +'ns'#0#9'TMenuItem'#20'mmiAdditionalOptions'#7'Caption'#6#18'Additional Opti'
-  +'ons'#7'OnClick'#7#25'mmiAdditionalOptionsClick'#0#0#9'TMenuItem'#17'mmiDisp'
-  +'layCmdLine'#7'Caption'#6#16'Display CMD Line'#7'OnClick'#7#22'mmiDisplayCmd'
-  +'LineClick'#0#0#9'TMenuItem'#16'mmiPauseOnFinish'#7'Caption'#6#15'Pause On F'
-  ,'inish'#7'OnClick'#7#21'mmiPauseOnFinishClick'#0#0#9'TMenuItem'#19'mmiShutdo'
-  +'wnOnFinish'#7'Caption'#6#18'Shutdown On Finish'#7'OnClick'#7#24'mmiShutdown'
-  +'OnFinishClick'#0#0#0#9'TMenuItem'#7'mmiHelp'#7'Caption'#6#4'Help'#0#9'TMenu'
-  +'Item'#16'mmiDocumentation'#7'Caption'#6#13'Documentation'#0#0#9'TMenuItem'
-  +#15'mmiWinffWebsite'#7'Caption'#6#13'WinFF Website'#7'OnClick'#7#20'mmiWinff'
-  +'WebsiteClick'#0#0#9'TMenuItem'#9'mmiForums'#7'Caption'#6#6'Forums'#7'OnClic'
-  +'k'#7#14'mmiForumsClick'#0#0#9'TMenuItem'#10'mmiSpacer0'#7'Caption'#6#1'-'#0
-  +#0#9'TMenuItem'#8'mmiAbout'#7'Caption'#6#5'About'#7'OnClick'#7#13'mmiAboutCl'
-  +'ick'#0#0#0#0#10'TPopupMenu'#10'pumFileBin'#4'left'#3#130#0#3'top'#3#134#0#0
-  +#9'TMenuItem'#21'pumDeleteSelectedFile'#7'Caption'#6#20'Delete Selected File'
-  +#7'OnClick'#7#26'pumDeleteSelectedFileClick'#0#0#9'TMenuItem'#10'pumSpacer0'
-  +#7'Caption'#6#1'-'#0#0#9'TMenuItem'#17'pumDeleteAllFiles'#7'Caption'#6#16'De'
-  +'lete All Files'#7'OnClick'#7#22'pumDeleteAllFilesClick'#0#0#0#22'TSelectDir'
-  +'ectoryDialog'#21'SelectDirectoryDialog'#4'left'#3'v'#1#3'top'#3#143#0#0#0#0
+  +#0#9'TMenuItem'#10'mmiPresets'#7'Caption'#6#7'Presets'#0#9'TMenuItem'#16'mmi'
+  +'ImportPresets'#7'Caption'#6#14'Import Presets'#0#0#9'TMenuItem'#14'mmiEditP'
+  +'resets'#7'Caption'#6#12'Edit Presets'#7'OnClick'#7#19'mmiEditPresetsClick'#0
+  +#0#0#9'TMenuItem'#7'mmiEdit'#7'Caption'#6#4'Edit'#0#9'TMenuItem'#14'mmiPrefe'
+  +'rences'#7'Caption'#6#11'Preferences'#7'OnClick'#7#19'mmiPreferencesClick'#0
+  +#0#0#9'TMenuItem'#10'mmiOptions'#7'Caption'#6#7'Options'#0#9'TMenuItem'#20'm'
+  +'miAdditionalOptions'#7'Caption'#6#18'Additional Options'#7'OnClick'#7#25'mm'
+  +'iAdditionalOptionsClick'#0#0#9'TMenuItem'#17'mmiDisplayCmdLine'#7'Caption'#6
+  ,#16'Display CMD Line'#7'OnClick'#7#22'mmiDisplayCmdLineClick'#0#0#9'TMenuIte'
+  +'m'#16'mmiPauseOnFinish'#7'Caption'#6#15'Pause On Finish'#7'OnClick'#7#21'mm'
+  +'iPauseOnFinishClick'#0#0#9'TMenuItem'#19'mmiShutdownOnFinish'#7'Caption'#6
+  +#18'Shutdown On Finish'#7'OnClick'#7#24'mmiShutdownOnFinishClick'#0#0#0#9'TM'
+  +'enuItem'#7'mmiHelp'#7'Caption'#6#4'Help'#0#9'TMenuItem'#16'mmiDocumentation'
+  +#7'Caption'#6#13'Documentation'#0#0#9'TMenuItem'#15'mmiWinffWebsite'#7'Capti'
+  +'on'#6#13'WinFF Website'#7'OnClick'#7#20'mmiWinffWebsiteClick'#0#0#9'TMenuIt'
+  +'em'#9'mmiForums'#7'Caption'#6#6'Forums'#7'OnClick'#7#14'mmiForumsClick'#0#0
+  +#9'TMenuItem'#10'mmiSpacer0'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#8'mmiAbout'#7
+  +'Caption'#6#5'About'#7'OnClick'#7#13'mmiAboutClick'#0#0#0#0#10'TPopupMenu'#10
+  +'pumFileBin'#4'left'#3#130#0#3'top'#3#134#0#0#9'TMenuItem'#21'pumDeleteSelec'
+  +'tedFile'#7'Caption'#6#20'Delete Selected File'#7'OnClick'#7#26'pumDeleteSel'
+  +'ectedFileClick'#0#0#9'TMenuItem'#10'pumSpacer0'#7'Caption'#6#1'-'#0#0#9'TMe'
+  +'nuItem'#17'pumDeleteAllFiles'#7'Caption'#6#16'Delete All Files'#7'OnClick'#7
+  +#22'pumDeleteAllFilesClick'#0#0#0#22'TSelectDirectoryDialog'#21'SelectDirect'
+  +'oryDialog'#4'left'#3'v'#1#3'top'#3#143#0#0#0#0
 ]);

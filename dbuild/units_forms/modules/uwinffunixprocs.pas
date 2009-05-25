@@ -101,7 +101,7 @@ begin
       S := '/usr/bin/acroread';
    if S = '' then
    begin
-      ShowMessage('More information can be found at ' + APdfFile;
+      ShowMessage('More information can be found at ' + APdfFile);
       Exit;
    end;
    ALauncher := TProcess.Create(nil);
