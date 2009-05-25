@@ -14,7 +14,7 @@
       <AutoIncrementBuild Value="True"/>
       <CurrentVersionNr Value="1"/>
       <CurrentMinorRevNr Value="10"/>
-      <CurrentBuildNr Value="52"/>
+      <CurrentBuildNr Value="53"/>
       <ProjectVersion Value="1.0.1.0"/>
       <FileDescription Value="An easy to use front-end for the commandline encoder FFMpeg"/>
       <LegalCopyright Value="Matthew Weatherford"/>

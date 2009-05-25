@@ -7,14 +7,14 @@
       <TargetFileExt Value=""/>
       <Icon Value="0"/>
       <UseXPManifest Value="True"/>
-      <ActiveEditorIndexAtStart Value="0"/>
+      <ActiveEditorIndexAtStart Value="8"/>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <CurrentVersionNr Value="1"/>
       <CurrentMinorRevNr Value="10"/>
-      <CurrentBuildNr Value="53"/>
+      <CurrentBuildNr Value="54"/>
       <ProjectVersion Value="1.0.1.0"/>
       <FileDescription Value="An easy to use front-end for the commandline encoder FFMpeg"/>
       <LegalCopyright Value="Matthew Weatherford"/>
@@ -168,8 +168,8 @@
         <Filename Value="units_forms/modules/uwinffunixprocs.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uwinffunixprocs"/>
-        <CursorPos X="5" Y="138"/>
-        <TopLine Value="113"/>
+        <CursorPos X="66" Y="104"/>
+        <TopLine Value="91"/>
         <EditorIndex Value="8"/>
         <UsageCount Value="131"/>
         <Loaded Value="True"/>
@@ -185,7 +185,7 @@
         <Loaded Value="True"/>
       </Unit12>
     </Units>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
         <Caret Line="67" Column="16" TopLine="67"/>
@@ -298,6 +298,10 @@
         <Filename Value="units_forms/mainform_dialogs/umain.pas"/>
         <Caret Line="67" Column="16" TopLine="67"/>
       </Position28>
+      <Position29>
+        <Filename Value="units_forms/modules/uwinffunixprocs.pas"/>
+        <Caret Line="138" Column="5" TopLine="113"/>
+      </Position29>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

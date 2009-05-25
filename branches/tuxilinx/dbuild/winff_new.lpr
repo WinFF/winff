@@ -18,7 +18,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, umain, upreseteditor, uexportpreset, upreferences, uabout,
   ucmdlinedialog, uaddfilesdialog, usplashdialog, progresscolor,
-  uwinffprocs,
+  uwinffprocs, uwinffmpegscriptmanager, uwinffxmlmanager,
   {$IFDEF UNIX}
      uwinffunixprocs;
   {$ENDIF}
