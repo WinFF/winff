@@ -1279,12 +1279,18 @@ object MainForm: TMainForm
         OnClick = mmiQuitClick
       end
     end
-    object mmiEdit: TMenuItem
-      Caption = 'Edit'
+    object mmiPresets: TMenuItem
+      Caption = 'Presets'
+      object mmiImportPresets: TMenuItem
+        Caption = 'Import Presets'
+      end
       object mmiEditPresets: TMenuItem
         Caption = 'Edit Presets'
         OnClick = mmiEditPresetsClick
       end
+    end
+    object mmiEdit: TMenuItem
+      Caption = 'Edit'
       object mmiPreferences: TMenuItem
         Caption = 'Preferences'
         OnClick = mmiPreferencesClick

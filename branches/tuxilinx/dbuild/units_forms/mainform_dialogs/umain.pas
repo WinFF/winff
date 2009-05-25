@@ -64,6 +64,8 @@ type
      lblText2: TLabel;
      lsvFileBin: TListView;
      MainMenu: TMainMenu;
+     mmiImportPresets: TMenuItem;
+     mmiPresets: TMenuItem;
      pumDeleteAllFiles: TMenuItem;
      pumSpacer0: TMenuItem;
      pumDeleteSelectedFile: TMenuItem;
