@@ -7,7 +7,7 @@
       <TargetFileExt Value=""/>
       <Icon Value="0"/>
       <UseXPManifest Value="True"/>
-      <ActiveEditorIndexAtStart Value="8"/>
+      <ActiveEditorIndexAtStart Value="2"/>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
@@ -40,15 +40,15 @@
         <PackageName Value="LCL"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="13">
+    <Units Count="15">
       <Unit0>
         <Filename Value="winff_new.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="winff_new"/>
-        <CursorPos X="11" Y="27"/>
+        <CursorPos X="21" Y="23"/>
         <TopLine Value="10"/>
         <EditorIndex Value="2"/>
-        <UsageCount Value="181"/>
+        <UsageCount Value="186"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -60,7 +60,7 @@
         <CursorPos X="22" Y="67"/>
         <TopLine Value="67"/>
         <EditorIndex Value="0"/>
-        <UsageCount Value="181"/>
+        <UsageCount Value="186"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -72,7 +72,7 @@
         <CursorPos X="37" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="181"/>
+        <UsageCount Value="186"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -83,8 +83,8 @@
         <UnitName Value="uexportpreset"/>
         <CursorPos X="44" Y="8"/>
         <TopLine Value="1"/>
-        <EditorIndex Value="11"/>
-        <UsageCount Value="181"/>
+        <EditorIndex Value="13"/>
+        <UsageCount Value="186"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -95,8 +95,8 @@
         <UnitName Value="upreferences"/>
         <CursorPos X="8" Y="102"/>
         <TopLine Value="97"/>
-        <EditorIndex Value="10"/>
-        <UsageCount Value="181"/>
+        <EditorIndex Value="12"/>
+        <UsageCount Value="186"/>
         <Loaded Value="True"/>
       </Unit4>
       <Unit5>
@@ -108,7 +108,7 @@
         <CursorPos X="20" Y="7"/>
         <TopLine Value="1"/>
         <EditorIndex Value="6"/>
-        <UsageCount Value="181"/>
+        <UsageCount Value="186"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -120,7 +120,7 @@
         <CursorPos X="6" Y="8"/>
         <TopLine Value="1"/>
         <EditorIndex Value="5"/>
-        <UsageCount Value="181"/>
+        <UsageCount Value="186"/>
         <Loaded Value="True"/>
       </Unit6>
       <Unit7>
@@ -132,7 +132,7 @@
         <CursorPos X="8" Y="62"/>
         <TopLine Value="26"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="181"/>
+        <UsageCount Value="186"/>
         <Loaded Value="True"/>
       </Unit7>
       <Unit8>
@@ -144,14 +144,14 @@
         <CursorPos X="21" Y="25"/>
         <TopLine Value="1"/>
         <EditorIndex Value="4"/>
-        <UsageCount Value="181"/>
+        <UsageCount Value="186"/>
         <Loaded Value="True"/>
       </Unit8>
       <Unit9>
         <Filename Value="units_forms/mainform_dialogs/umain.lfm"/>
         <CursorPos X="11" Y="1290"/>
         <TopLine Value="1280"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="5"/>
         <SyntaxHighlighter Value="LFM"/>
       </Unit9>
       <Unit10>
@@ -161,17 +161,17 @@
         <CursorPos X="1" Y="182"/>
         <TopLine Value="150"/>
         <EditorIndex Value="7"/>
-        <UsageCount Value="131"/>
+        <UsageCount Value="136"/>
         <Loaded Value="True"/>
       </Unit10>
       <Unit11>
         <Filename Value="units_forms/modules/uwinffunixprocs.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uwinffunixprocs"/>
-        <CursorPos X="66" Y="104"/>
-        <TopLine Value="91"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
         <EditorIndex Value="8"/>
-        <UsageCount Value="131"/>
+        <UsageCount Value="136"/>
         <Loaded Value="True"/>
       </Unit11>
       <Unit12>
@@ -180,10 +180,30 @@
         <UnitName Value="uwinffprocs"/>
         <CursorPos X="71" Y="247"/>
         <TopLine Value="239"/>
-        <EditorIndex Value="9"/>
-        <UsageCount Value="131"/>
+        <EditorIndex Value="11"/>
+        <UsageCount Value="136"/>
         <Loaded Value="True"/>
       </Unit12>
+      <Unit13>
+        <Filename Value="units_forms/modules/uwinffmpegscriptmanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uwinffmpegscriptmanager"/>
+        <CursorPos X="29" Y="10"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="9"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="units_forms/modules/uwinffxmlmanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uwinffxmlmanager"/>
+        <CursorPos X="22" Y="11"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="10"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit14>
     </Units>
     <JumpHistory Count="29" HistoryIndex="28">
       <Position1>

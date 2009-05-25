@@ -14,7 +14,7 @@
       <AutoIncrementBuild Value="True"/>
       <CurrentVersionNr Value="1"/>
       <CurrentMinorRevNr Value="1"/>
-      <CurrentBuildNr Value="50"/>
+      <CurrentBuildNr Value="51"/>
       <ProjectVersion Value="1.0.1.0"/>
       <FileDescription Value="An easy to use front-end for the commandline encoder FFMpeg"/>
       <LegalCopyright Value="Matthew Weatherford"/>
@@ -181,7 +181,7 @@
         <CursorPos X="96" Y="325"/>
         <TopLine Value="313"/>
         <EditorIndex Value="9"/>
-        <UsageCount Value="75"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
       </Unit12>
     </Units>
