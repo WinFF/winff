@@ -51,9 +51,10 @@ binary-arch: build install
 	dh_install
 	dh_installmenu
 	dh_installman winff.1
+	dh_installmime
 	dh_desktop
 	dh_strip
-	dh_compress
+	dh_compress --exclude=.pdf
 	dh_fixperms
 	find $(CURDIR)/debian/winff/usr/share/winff -type f | xargs chmod a-x
 	dh_installdeb
