@@ -5,12 +5,14 @@ Maintainer: Paul Gevers <paul@climbing.nl>
 Build-Depends: debhelper (>= 5),
                lazarus-ide,
                fpc (>= 2.2.2-3)
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 Homepage: http://www.winff.org/
 
 Package: winff
 Architecture: any
-Depends: ffmpeg, xterm | x-terminal-emulator, ${shlibs:Depends}
+Depends: ffmpeg, xterm | x-terminal-emulator, ${shlibs:Depends},
+         ${misc:Depends}
+Suggests: www-browser, pdf-viewer
 Description: graphical video and audio batch converter using ffmpeg
  WinFF is a graphical user interface for FFmpeg. It will convert
  almost any video file that FFmpeg will convert. WinFF does multiple
