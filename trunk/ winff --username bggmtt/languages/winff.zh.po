@@ -11,93 +11,93 @@ msgstr ""
 
 #: unit1.rsaddbtn
 msgid "Add"
-msgstr ""
+msgstr "新增"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr ""
+msgstr "所有類別"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
-msgstr "éäº¤é¯"
+msgstr "非交錯"
 
 #: unit1.rsclearbtn
 msgid "Clear"
-msgstr "æ¸é¤"
+msgstr "清除"
 
 #: unit1.rsclose
 #, fuzzy
 msgid "Close"
-msgstr "æ¸é¤"
+msgstr "關閉"
 
 #: unit1.rsclosebtn
 msgid "Options"
-msgstr "é¸é "
+msgstr "選項"
 
 #: unit1.rsconverting
 msgid "Converting"
-msgstr "è½æä¸­..."
+msgstr "轉換­"
 
 #: unit1.rscouldnotfindffmpeg
 msgid "Could not find FFmpeg."
-msgstr "æ²æç¼ç¾ FFmpeg."
+msgstr "找不到 FFmpeg."
 
 #: unit1.rscouldnotfindffplay
 msgid "Could not find FFPlay."
-msgstr "æ²æç¼ç¾ FFPlay."
+msgstr "找不到 FFPlay."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
-msgstr "æ²æç¼ç¾æªæ¡"
+msgstr "找不到檔案"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "ç¡æ³ç¼ç¾ç·¨ç¢¼æ ¼å¼æª"
+msgstr "找不到編碼設定檔"
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
-msgstr "é¡¯ç¤ºå½ä»¤å"
+msgstr "顯示 CMD 命令行"
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "éæªåä¸è½åå« é» "
+msgstr "附檔名不可以有點 "
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
-msgstr "æªæ¡ä¸å­å¨"
+msgstr "檔案不存在"
 
 #: unit1.rsfilemenu
 msgid "File"
-msgstr "æªæ¡"
+msgstr "檔案"
 
 #: unit1.rsgroupbox1
 msgid "Additional Options"
-msgstr "é²éé¸é "
+msgstr "進階選項"
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
-msgstr "å¯å¥æ ¼å¼"
+msgstr "匯入編碼設定檔"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "ç¡æçç·¨ç¢¼æ ¼å¼æª"
+msgstr "編碼設定檔錯誤"
 
 #: unit1.rslabel1
 msgid "Convert To ..."
-msgstr "è½æ..."
+msgstr "轉換成..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr ""
+msgstr "聲音頻道"
 
 #: unit1.rslabel11
 msgid "Output Folder"
-msgstr "è¼¸åºè³æå¤¾"
+msgstr "輸出資料夾"
 
 #: unit1.rslabel19
 #, fuzzy
 msgid "Device Preset"
-msgstr "ç§»é¤ç·¨ç¢¼æ ¼å¼"
+msgstr "編碼格式"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -105,15 +105,15 @@ msgstr ""
 
 #: unit1.rslabel4
 msgid "Frame Rate"
-msgstr "ç«é¢æ´æ°ç"
+msgstr "畫面更新率"
 
 #: unit1.rslabel5
 msgid "Video Size"
-msgstr "å½±çå°ºå¯¸"
+msgstr "影片尺寸"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
-msgstr "ç«é¢é·å¯¬æ¯"
+msgstr "畫面長寬比"
 
 #: unit1.rslabel7
 msgid "Audio Bitrate"
@@ -121,47 +121,47 @@ msgstr ""
 
 #: unit1.rslabel8
 msgid "Sample Rate"
-msgstr "åæ¨£é »ç"
+msgstr "取樣頻率"
 
 #: unit1.rsmenuitem1
 msgid "Edit"
-msgstr "ç·¨è¼¯"
+msgstr "編輯"
 
 #: unit1.rsmenuitem3
 msgid "Exit"
-msgstr "é¢é"
+msgstr "離開"
 
 #: unit1.rsmenuitem4
 msgid "Presets"
-msgstr "æ ¼å¼"
+msgstr "編碼設定"
 
 #: unit1.rsmenuitem5
 msgid "Preferences"
-msgstr "åå¥½è¨­å®"
+msgstr "偏好設定"
 
 #: unit1.rsmenuitem6
 msgid "Help"
-msgstr ""
+msgstr "求助"
 
 #: unit1.rsmitWinff
 msgid "WinFF Website"
-msgstr ""
+msgstr "WinFF 網站"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr ""
+msgstr "WinFF 論壇"
 
 #: unit1.rsmitabout
 msgid "About"
-msgstr "éæ¼"
+msgstr "關於"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr ""
+msgstr "文件"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "åç¨±å¿é ä½¿ç¨è±æå­æ¯ææ¸å­"
+msgstr "名稱必須使用字母或數字(a-z,A-Z,0-9)"
 
 #: unit1.rspass2
 msgid "2 pass"
@@ -169,121 +169,127 @@ msgstr ""
 
 #: unit1.rspauseonfinish
 msgid "Pause on Finish"
-msgstr "å®æå¾æ«å"
+msgstr "完成後暫停"
 
 #: unit1.rsplay
 msgid "Play"
-msgstr "æ­æ¾"
+msgstr "播放"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "è³å°è«è¼¸å¥ä¸åè½ææªæ¡"
+msgstr "請至少要新增 1 個檔案才能做轉換"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
-msgstr "ç·¨ç¢¼æ ¼å¼ï¼%s%s%s å·²ç¶å­å¨"
+msgstr "編碼設定檔：%s%s%s 已存在"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "å¯å¥çç·¨ç¢¼æ ¼å¼æªæ²æéæªå"
+msgstr "匯入的設定值設定檔無附檔名"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "å¯å¥çç·¨ç¢¼æ ¼å¼æ²ææ¨è­åç¨±"
+msgstr "匯入的設定值設定檔無標籤"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "è«é¸æä¸ç¨®è¦è¼¸åºçç·¨ç¢¼æ ¼å¼"
+msgstr "請選擇一種編碼設定檔以輸出"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset"
+msgstr "請至少選擇一種編碼格式"
+
+
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "ç·¨ç¢¼æ ¼å¼:  %s%s%s å·²ç¶å­å¨"
+msgstr "編碼設定檔標籤: %s%s%s 已存在"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr "æ Enter ä»¥ç¹¼çº"
+msgstr "按 Enter 以繼續"
 
 #: unit1.rsremovebtn
 msgid "Remove"
-msgstr "ç§»é¤"
+msgstr "移除"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "é¸æç·¨ç¢¼æ ¼å¼æª"
+msgstr "選擇編碼設定檔"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
-msgstr "é¸æå½±çæªæ¡"
+msgstr "選擇影像檔"
 
 #: unit1.rsshutdownonfinish
 msgid "Shutdown on Finish"
-msgstr "å®æå¾éæ©"
+msgstr "完成後關機"
 
 #: unit1.rsstartbtn
 msgid "Convert"
-msgstr "è½æ"
+msgstr "轉換"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "æ­¤ç·¨ç¢¼æ ¼å¼åç¨±åå«äºéæ³çå­ååç¨±"
+msgstr "此編碼設定檔其中包含了無效的字元"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr ""
+msgstr "輸出詳細設定"
 
 #: unit1.tabpage2caption
 #, fuzzy
 msgid "Video Settings"
-msgstr "å½±çå°ºå¯¸"
+msgstr "影像設定"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr ""
+msgstr "聲音設定"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
-msgstr "é²éåæ¸å½ä»¤å"
+msgstr "進階參數命令列(進階)"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
-msgstr "æ°å¢/æ´æ°"
+msgstr "新增/更新"
 
 #: unit2.rscancelbtn
 msgid "Cancel"
-msgstr "åæ¶"
+msgstr "取消"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "æ°å¢ç·¨ç¢¼æ ¼å¼"
+msgstr "增設編碼設定檔"
 
 #: unit2.rsdeletebtn
 msgid "Delete"
-msgstr "åªé¤"
+msgstr "輸出"
 
 #: unit2.rsexport
 msgid "Export"
-msgstr "å¯åº"
+msgstr "匯出"
 
 #: unit2.rsform2
 msgid "Edit Presets"
-msgstr "ç·¨è¼¯ç·¨ç¢¼æ ¼å¼"
+msgstr "編輯編碼設定檔"
 
 #: unit2.rsimport
 msgid "Import"
-msgstr "å¯å¥"
+msgstr "匯入"
 
 #: unit2.rsimportpresets
 #, fuzzy
 msgid "Import Presets"
-msgstr "å¯å¥æ ¼å¼"
+msgstr "匯入編碼設定檔"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "ç·¨ç¢¼æ ¼å¼åç¨±(è±æå­ï¼åªéæ¼è±æå­æ¯èæ¸å­)"
+msgstr "編碼設定檔名稱(一個字，限 A-z, 0-9)"
 
 #: unit2.rslabel3
 msgid "Preset Label"
-msgstr "ç·¨ç¢¼æ ¼å¼çæ¨ç±¤åç¨±"
+msgstr "編碼設定檔標籤"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
@@ -291,54 +297,54 @@ msgstr ""
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
-msgstr "è¼¸åºæªçéæªå(ä¸ç¨ä¹ä¸è½æ \".\")"
+msgstr "輸出檔附檔名(不含 \".\")"
 
 #: unit2.rslabel6
 msgid "Category"
-msgstr "é¡å¥"
+msgstr "類別"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "æ¨ç±¤åç¨±ä¸å¯éè¤"
+msgstr "標籤必須具獨一性"
 
 #: unit2.rsokbtn
 msgid "Save"
-msgstr "å²å­"
+msgstr "儲存"
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "ç§»é¤ç·¨ç¢¼æ ¼å¼"
+msgstr "移除編碼設定檔"
 
 #: unit2.rsreplacepreset
 #, fuzzy
 msgid "Replace Preset"
-msgstr "æ´æ°ç·¨ç¢¼æ ¼å¼"
+msgstr "取代編碼設定檔"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "æ´æ°ç·¨ç¢¼æ ¼å¼"
+msgstr "更新編碼設定檔"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr "ä½ å¿é è¼¸å¥éæªå"
+msgstr "必須輸入附檔名"
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "ä½ å¿é è¼¸å¥æ¨ç±¤åç¨±"
+msgstr "必須輸入標籤"
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr "ä½ å¿é è¼¸å¥åå­"
+msgstr "必須輸入名稱"
 
 #: unit3.rsbutton1
 #, fuzzy
 msgctxt "unit3.rsbutton1"
 msgid "OK"
-msgstr "å¥½"
+msgstr "好"
 
 #: unit3.rsform3
 msgid "About WinFF"
-msgstr "æé WinFF"
+msgstr "關於 WinFF"
 
 #: unit3.rslabel8
 msgid "FFmpeg builds by"
@@ -354,11 +360,11 @@ msgstr "FFmpeg"
 
 #: unit3.rspage3
 msgid "Thanks"
-msgstr "éè¬"
+msgstr "感謝"
 
 #: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
-msgstr "è¨æ¶ä¸æ¬¡ä½¿ç¨çç®é"
+msgstr "記住最後的目錄位置"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
@@ -366,44 +372,44 @@ msgstr ""
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
-msgstr ""
+msgstr "多執行緒(針對雙核處理器而言)"
 
 #: unit4.rsform4
 msgid "WinFF Preferences"
-msgstr "WinFF åå¥½è¨­å®"
+msgstr "WinFF 偏好設定"
 
 #: unit4.rslabel1
 msgid "Default Destination Directory"
-msgstr "é è¨­ç®çç®é"
+msgstr "預設輸出的目錄"
 
 #: unit4.rslabel2
 msgid "Path to FFmpeg.exe"
-msgstr "FFmpeg.exe çç®é"
+msgstr "FFmpeg.exe 路徑"
 
 #: unit4.rslabel3
 msgid "Path to FFPlay.exe"
-msgstr "FFPlay.exe çç®é"
+msgstr "FFPlay.exe 路徑"
 
 #: unit4.rslabel4
 msgid "Path to FFmpeg Executable"
-msgstr "FFmpeg å·è¡è·¯å¾"
+msgstr "FFmpeg 檔所在路徑"
 
 #: unit4.rslabel5
 msgid "Path to FFPlay Executable"
-msgstr "FFPlay å·è¡è·¯å¾"
+msgstr "FFPlay 檔所在路徑"
 
 #: unit4.rslabel6
 msgid "Terminal to run FFmpeg"
-msgstr "ä»¥çµç«¯æ©æ¨¡å¼å·è¡ FFmpeg"
+msgstr "使用終端機介面來執行 FFmpeg"
 
 #: unit4.rslabel7
 #, fuzzy
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
-msgstr "çµç«¯æ©é¸é  (-e for Xterm , -x for Gnome Terminal)"
+msgstr "終端機介面選項(-e for Xterm , -x for Gnome Terminal)"
 
 #: unit4.rspage1
 msgid "General"
-msgstr "ä¸è¬"
+msgstr "一般設定"
 
 #: unit4.rspage2
 msgid "Ms Windows"
@@ -415,34 +421,37 @@ msgstr "Linux"
 
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
-msgstr "FFmpeg å½ä»¤å"
+msgstr "FFmpeg 命令列"
 
 #: unit6.rsform6
 #, fuzzy
 msgid "Export Presets"
-msgstr "å¯å¥æ ¼å¼"
+msgstr "匯出編碼設定檔"
 
 #: unit6.rslabel1
 #, fuzzy
 msgid "Choose presets to export"
-msgstr "è«é¸æä¸ç¨®è¦è¼¸åºçç·¨ç¢¼æ ¼å¼"
+msgstr "選擇要匯出的編碼格式"
 
-#~ msgid "Please select a preset"
-#~ msgstr "é¸æä¸ç¨®ç·¨ç¢¼æ ¼å¼"
 
 #: unit4.rspriority
 msgid "Priority"
-msgstr ""
+msgstr "執行權限"
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr ""
+msgstr "高"
 
 #: unit4.rsprioritynormal
 msgid "Normal"
-msgstr ""
+msgstr "一般"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr ""
+msgstr "閒置"
+
+
+
+
+
 
