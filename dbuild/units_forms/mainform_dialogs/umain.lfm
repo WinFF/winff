@@ -7,7 +7,7 @@ object MainForm: TMainForm
   AllowDropFiles = True
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'WinFF 1.0.1 ***ALPHA***'
+  Caption = 'WinFF 1.0.10 ***ALPHA***'
   ClientHeight = 604
   ClientWidth = 583
   Icon.Data = {

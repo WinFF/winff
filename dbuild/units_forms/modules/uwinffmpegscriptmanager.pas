@@ -14,7 +14,16 @@ unit uwinffmpegscriptmanager;
 interface
 
 uses
-  Classes, SysUtils; 
+  Classes, SysUtils;
+
+type
+   TWinFFScript = class(TObject)
+   private
+   public
+      constructor Create;
+      destructor Destroy;
+   published
+   end;
 
 implementation
 

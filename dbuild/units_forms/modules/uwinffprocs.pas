@@ -14,8 +14,8 @@ unit uwinffprocs;
 interface
 
 uses
-  Classes, SysUtils, StdCtrls, Laz_XmlCfg, Dom, XmlRead, XmlWrite,
-  ComCtrls, Forms, LCLType, uaddfilesdialog,
+  Classes, SysUtils, StdCtrls, ComCtrls, Forms, LCLType,
+  uaddfilesdialog,
   {$IFDEF WINDOWS}
      uwinffwin32procs;
   {$ENDIF}
