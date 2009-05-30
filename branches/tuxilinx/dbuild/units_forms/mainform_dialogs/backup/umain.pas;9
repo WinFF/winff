@@ -92,12 +92,14 @@ type
      pnlMainSpacer: TPanel;
      pnlTopToolbar: TPanel;
      pumFileBin: TPopupMenu;
+     SelectDirectoryDialog: TSelectDirectoryDialog;
      StatusBar: TStatusBar;
      tbsVideoSettings: TTabSheet;
      tbsAudioSettings: TTabSheet;
      tbsAdditionalCmdLineParams: TTabSheet;
      tbsOutputSettings: TTabSheet;
      procedure btnAdditionalOptionsClick(Sender: TObject);
+     procedure btnSelectOutputFolderClick(Sender: TObject);
      procedure edtAudioBitrateChange(Sender: TObject);
      procedure edtAudioBitrateKeyPress(Sender: TObject; var Key: char);
      procedure edtAudioChannelsChange(Sender: TObject);
@@ -114,15 +116,19 @@ type
      procedure edtVideoSizeHeightKeyPress(Sender: TObject; var Key: char);
      procedure edtVideoSizeWidthChange(Sender: TObject);
      procedure edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
+     procedure FormCreate(Sender: TObject);
+     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
      procedure FormResize(Sender: TObject);
      procedure mmiAboutClick(Sender: TObject);
      procedure mmiAdditionalOptionsClick(Sender: TObject);
      procedure mmiDisplayCmdLineClick(Sender: TObject);
      procedure mmiEditPresetsClick(Sender: TObject);
+     procedure mmiForumsClick(Sender: TObject);
      procedure mmiPauseOnFinishClick(Sender: TObject);
      procedure mmiPreferencesClick(Sender: TObject);
      procedure mmiQuitClick(Sender: TObject);
      procedure mmiShutdownOnFinishClick(Sender: TObject);
+     procedure mmiWinffWebsiteClick(Sender: TObject);
      procedure pumDeleteAllFilesClick(Sender: TObject);
      procedure pumDeleteSelectedFileClick(Sender: TObject);
   private
@@ -158,6 +164,11 @@ begin
    PresetEditorDialog.ShowModal;
 end;
 
+procedure TMainForm.mmiForumsClick(Sender: TObject);
+begin
+   uwinffprocs.LaunchURL(Self.Handle, 'http://www.winff.org/forums/');
+end;
+
 procedure TMainForm.mmiPauseOnFinishClick(Sender: TObject);
 begin
    mmiPauseOnFinish.Checked := not mmiPauseOnFinish.Checked;
@@ -176,6 +187,11 @@ end;
 procedure TMainForm.mmiShutdownOnFinishClick(Sender: TObject);
 begin
    mmiShutdownOnFinish.Checked := not mmiShutdownOnFinish.Checked;
+end;
+
+procedure TMainForm.mmiWinffWebsiteClick(Sender: TObject);
+begin
+   uwinffprocs.LaunchURL(Self.Handle, 'http://www.winff.org');
 end;
 
 procedure TMainForm.pumDeleteAllFilesClick(Sender: TObject);
@@ -218,6 +234,14 @@ begin
    mmiAdditionalOptions.Click;
 end;
 
+procedure TMainForm.btnSelectOutputFolderClick(Sender: TObject);
+begin
+   if SelectDirectoryDialog.Execute then
+   begin
+      edtOutputFolder.Text := SelectDirectoryDialog.FileName;
+   end;
+end;
+
 procedure TMainForm.edtAudioBitrateChange(Sender: TObject);
 begin
    uwinffprocs.ResetEditField(edtAudioBitrate, False, '');
@@ -226,7 +250,7 @@ end;
 procedure TMainForm.edtAudioBitrateKeyPress(Sender: TObject; var Key: char);
 begin
    if not uwinffprocs.ValidateNumericInput(edtAudioBitrate, Key) then
-      KEy := #0;
+      Key := #0;
 end;
 
 procedure TMainForm.edtAudioChannelsChange(Sender: TObject);
@@ -304,6 +328,28 @@ procedure TMainForm.edtVideoSizeWidthKeyPress(Sender: TObject; var Key: char);
 begin
    if not uwinffprocs.ValidateNumericInput(edtVideoSizeWidth, Key) then
       Key := #0;
+end;
+
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+   SelectDirectoryDialog.InitialDir := uwinffprocs.GetMyDocumentsPath(Self.Handle);
+end;
+
+procedure TMainForm.FormDropFiles(Sender: TObject; const FileNames: array of String);
+var
+   NumFiles, I: Integer;
+begin
+   NumFiles := High(FileNames);
+   for I := 0 to NumFiles do
+   begin
+      {
+         TODO
+         Perform a check here if the dropped filetype
+         is actually supported by ffmpeg
+      }
+      uwinffprocs.FillListView(lsvFileBin, FileNames[I]);
+   end;
+   StatusBar.Panels[0].Text := 'Total files: ' + IntToStr(lsvFileBin.Items.Count);
 end;
 
 initialization

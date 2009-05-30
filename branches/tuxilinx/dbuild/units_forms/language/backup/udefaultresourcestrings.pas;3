@@ -1,0 +1,16 @@
+unit udefaultresourcestrings;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils; 
+
+implementation
+
+uses
+   umain, upreseteditor, upreferences, uexportpreset
+
+end.
+
