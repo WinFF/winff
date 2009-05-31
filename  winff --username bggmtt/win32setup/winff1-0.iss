@@ -4,14 +4,14 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.0.2
+AppVerName=WinFF 1.0.3
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.0.2
+VersionInfoVersion=1.0.3
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
@@ -45,7 +45,7 @@ Name: "serbian"; MessagesFile: "compiler:languages\serbian.isl"
 Name: "norwegian"; MessagesFile: "compiler:languages\Norwegian.isl"
 Name: "hebrew"; MessagesFile: "compiler:languages\hebrew.isl"
 Name: "greek"; MessagesFile: "compiler:languages\greek.isl"
-
+Name: "slovenian"; MessagesFile: "compiler:languages\Slovenian.isl"
 
 
 [Tasks]
@@ -87,6 +87,7 @@ Source: "languages\winff.sr.po"; DestDir: "{app}\languages"; Flags: ignoreversio
 Source: "languages\winff.nb.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.el.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.he.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.sl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
