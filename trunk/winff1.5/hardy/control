@@ -1,0 +1,24 @@
+Source: winff
+Section: graphics
+Priority: extra
+Maintainer: Paul Gevers <paul@climbing.nl>
+Build-Depends: debhelper (>= 5),
+               lazarus-ide (>= 0.9.24-0-12~),
+               fpc (>= 2.2.2~)
+Standards-Version: 3.8.0
+Homepage: http://www.winff.org/
+
+Package: winff
+Architecture: any
+Depends: ffmpeg, xterm | x-terminal-emulator, ${shlibs:Depends}
+Description: graphical video and audio batch converter using ffmpeg
+ WinFF is a graphical user interface for FFmpeg. It will convert
+ almost any video file that FFmpeg will convert. WinFF does multiple
+ files in multiple formats at one time. You can, for example, convert
+ mpeg's, flv's, and mov's into avi's (or DVD/VCD format or MPEG or 3gp
+ etc.) all at once.
+ .
+ This package provides a variety of preset conversion settings for
+ common formats and devices. These presets are intended to hit the
+ "sweet spot" for each individual codec. They have been written with a
+ tip of the balance to quality.

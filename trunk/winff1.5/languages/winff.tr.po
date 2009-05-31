@@ -1,0 +1,444 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WinFF\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-02-23 12:00+0200\n"
+"Last-Translator: İzzet Emre Erkan <kara@karalamalar.net>\n"
+"Language-Team: karalamalar.net <kara@karalamalar.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Turkish\n"
+"X-Poedit-Country: TURKEY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: unit1.rsaddbtn
+msgid "Add"
+msgstr "Ekle"
+
+#: unit1.rsallcategories
+msgid "(All Categories)"
+msgstr "(Tüm kategoriler)"
+
+#: unit1.rscheckbox2
+msgid "Deinterlace"
+msgstr "Ayrıştır"
+
+#: unit1.rsclearbtn
+msgid "Clear"
+msgstr "Temizle"
+
+#: unit1.rsclose
+msgid "Close"
+msgstr "Kapat"
+
+#: unit1.rsclosebtn
+msgid "Options"
+msgstr "Ayarlar"
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "Dönüştürülüyor"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "FFmpeg bulunamıyor"
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "FFPlay bulunamıyor"
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Dosya bulunamıyor"
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Ayar dosyası bulunamıyor."
+
+#: unit1.rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr "Komut satırını göster"
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Uzantı nokta (.) karakteri içeremez"
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "Dosya bulunamadı"
+
+#: unit1.rsfilemenu
+msgid "File"
+msgstr "Dosya"
+
+#: unit1.rsgroupbox1
+msgid "Additional Options"
+msgstr "İlave seçenekler"
+
+#: unit1.rsimportmenu
+msgid "Import Preset"
+msgstr "Ayar yükle"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Yanlış ayar dosyası"
+
+#: unit1.rslabel1
+msgid "Convert To ..."
+msgstr "Dönüştür ..."
+
+#: unit1.rslabel10
+msgid "Audio Channels"
+msgstr "Ses Kanalları"
+
+#: unit1.rslabel11
+msgid "Output Folder"
+msgstr "Çıktı klasörü"
+
+#: unit1.rslabel19
+msgid "Device Preset"
+msgstr "Cihaz ayarı"
+
+#: unit1.rslabel3
+msgid "Video Bitrate"
+msgstr "Video bit oranı"
+
+#: unit1.rslabel4
+msgid "Frame Rate"
+msgstr "Çerçeve oranı"
+
+#: unit1.rslabel5
+msgid "Video Size"
+msgstr "Video boyutu"
+
+#: unit1.rslabel6
+msgid "Aspect Ratio"
+msgstr "En boy oranı"
+
+#: unit1.rslabel7
+msgid "Audio Bitrate"
+msgstr "Ses bit oranı"
+
+#: unit1.rslabel8
+msgid "Sample Rate"
+msgstr "Örnekleme oranı"
+
+#: unit1.rsmenuitem1
+msgid "Edit"
+msgstr "Düzenle"
+
+#: unit1.rsmenuitem3
+msgid "Exit"
+msgstr "Çıkış"
+
+#: unit1.rsmenuitem4
+msgid "Presets"
+msgstr "Ayarlar"
+
+#: unit1.rsmenuitem5
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: unit1.rsmenuitem6
+msgid "Help"
+msgstr "Yardım"
+
+#: unit1.rsmitWinff
+msgid "WinFF Website"
+msgstr "WinFF Web sitesi"
+
+#: unit1.rsmenuitem7
+msgid "WinFF Forums"
+msgstr "WinFF Forumları"
+
+#: unit1.rsmitabout
+msgid "About"
+msgstr "Hakkında"
+
+#: unit1.rsmitdocs
+msgid "Documentation"
+msgstr "Dokümantasyon"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "İsim alfanümetik olmaslı (a-z,A-Z,0-9)"
+
+#: unit1.rspass2
+msgid "2 pass"
+msgstr "2 tur"
+
+#: unit1.rspauseonfinish
+msgid "Pause on Finish"
+msgstr "Bittiğinde durdur"
+
+#: unit1.rsplay
+msgid "Play"
+msgstr "Çal"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Lütfen dönüştürmek için en az bir dosya ekleyin"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "Ayar dosyası zaten var: %s%s%s"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Aktarılacak ayar dosyasının uzantısı yok"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Aktarılacak ayar dosyasını etiketi yok"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Lütfen dışarı aktarılacak ayarı seçin"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "%s%s%s etiketli ayar dosyası zaten mevcut"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Devam etmek için Enter tuşuna basın"
+
+#: unit1.rsremovebtn
+msgid "Remove"
+msgstr "Çıkart"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Ayar dosyası seç"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Video dosyalarını seç"
+
+#: unit1.rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr "Bittiğinde kapat"
+
+#: unit1.rsstartbtn
+msgid "Convert"
+msgstr "Dönüştür"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Ayar dosyası geçersiz karakterler içeriyor"
+
+#: unit1.tabpage1caption
+msgid "Output Details"
+msgstr "Çıktı detayları"
+
+#: unit1.tabpage2caption
+msgid "Video Settings"
+msgstr "Video ayarları"
+
+#: unit1.tabpage3caption
+msgid "Audio Settings"
+msgstr "Ses ayarları"
+
+#: unit1.tabpage4caption
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr "İlave komut satırı parametreleri (Gelişmiş)"
+
+#: unit2.rsaddpresetbtn
+msgid "Add / Update"
+msgstr "Ekle / Güncelle"
+
+#: unit2.rscancelbtn
+msgid "Cancel"
+msgstr "İptal"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Ayar yarat:"
+
+#: unit2.rsdeletebtn
+msgid "Delete"
+msgstr "Sil"
+
+#: unit2.rsexport
+msgid "Export"
+msgstr "Dışarı aktar"
+
+#: unit2.rsform2
+msgid "Edit Presets"
+msgstr "Ayarları düzenle"
+
+#: unit2.rsimport
+msgid "Import"
+msgstr "İçeri aktar"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Ayarları yükle"
+
+#: unit2.rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr "Ayar ismi (Bir kelime, Sadece A-z 0-9)"
+
+#: unit2.rslabel3
+msgid "Preset Label"
+msgstr "Ayar etiketi"
+
+#: unit2.rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr "Ayar komut satırı (satır -i ya da çıktı dosyası)"
+
+#: unit2.rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr "Çıktı dosya uzantısı (no \".\")"
+
+#: unit2.rslabel6
+msgid "Category"
+msgstr "Kategori"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Etiket eşsiz olmalı."
+
+#: unit2.rsokbtn
+msgid "Save"
+msgstr "Kaydet"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Ayar sil:"
+
+#: unit2.rsreplacepreset
+msgid "Replace Preset"
+msgstr "Ayarı değiştir"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Ayarı güncelle:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Bir uzantı girmelisiniz"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Bir etiket girmelisiniz."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Bir isim girmelisiniz."
+
+#: unit3.rsbutton1
+msgctxt "unit3.rsbutton1"
+msgid "OK"
+msgstr "Tamam"
+
+#: unit3.rsform3
+msgid "About WinFF"
+msgstr "WinFF hakkında"
+
+#: unit3.rslabel8
+msgid "FFmpeg builds by"
+msgstr "FFmpeg yaratıcısı"
+
+#: unit3.rspage1
+msgid "WinFF"
+msgstr "WinFF"
+
+#: unit3.rspage2
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: unit3.rspage3
+msgid "Thanks"
+msgstr "Teşekkürler"
+
+#: unit4.rscheckbox1
+msgid "Remember Last Directory Used"
+msgstr "Son kullanılan klasörü hatırla"
+
+#: unit4.rscheckbox2
+msgid "Use CHCP for international characters"
+msgstr "Uluslararası karakterler için CHCP kullan"
+
+#: unit4.rscheckbox3
+msgid "Multithreading for Dual Core Processors"
+msgstr "Çift çekirdekli işlemciler için çoklu işlem"
+
+#: unit4.rsform4
+msgid "WinFF Preferences"
+msgstr "WinFF Tercihleri"
+
+#: unit4.rslabel1
+msgid "Default Destination Directory"
+msgstr "Varsayılan hedef klasörü"
+
+#: unit4.rslabel2
+msgid "Path to FFmpeg.exe"
+msgstr "FFmpeg.exe için yol"
+
+#: unit4.rslabel3
+msgid "Path to FFPlay.exe"
+msgstr "FFPlay.exe için yol"
+
+#: unit4.rslabel4
+msgid "Path to FFmpeg Executable"
+msgstr "FFmpeg uygulaması için yol"
+
+#: unit4.rslabel5
+msgid "Path to FFPlay Executable"
+msgstr "FFPlay uygulaması için yol"
+
+#: unit4.rslabel6
+msgid "Terminal to run FFmpeg"
+msgstr "FFmpeg çalıştırmak için istemci"
+
+#: unit4.rslabel7
+msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgstr "İstemci seçenekleri (Xterm için -e, Gnome istemcisi için -x)"
+
+#: unit4.rspage1
+msgid "General"
+msgstr "Genel"
+
+#: unit4.rspage2
+msgid "Ms Windows"
+msgstr "MS Windows"
+
+#: unit4.rspage3
+msgid "Linux"
+msgstr "Linux"
+
+#: unit5.rsform5
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg komut satırı"
+
+#: unit6.rsform6
+msgid "Export Presets"
+msgstr "Ayarları dışarı aktar"
+
+#: unit6.rslabel1
+msgid "Choose presets to export"
+msgstr "Dışarı aktarılacak ayarları seçin"
+
+#: unit4.rspriority
+msgid "Priority"
+msgstr "Öncelik"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Yüksek"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normal"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Önemsiz"
+
+#~ msgid "AC'"
+#~ msgstr "AC'"
+#~ msgid "Please select a preset"
+#~ msgstr "Lütfen bir ayar seçin"
+

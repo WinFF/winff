@@ -1,0 +1,449 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WinFF 0.45.1\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-02-18\n"
+"Last-Translator: Simeon Uzunov <uzunof@gmail.com>\n"
+"Language-Team: Bulgarian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"License: GPL version 3\n"
+
+#: unit1.rsaddbtn
+msgid "Add"
+msgstr "Добавяне"
+
+#: unit1.rsallcategories
+msgid "(All Categories)"
+msgstr "(Вс. Категории)"
+
+#: unit1.rscheckbox2
+msgid "Deinterlace"
+msgstr "Deinterlace"
+
+#: unit1.rsclearbtn
+msgid "Clear"
+msgstr "Изчистване"
+
+#: unit1.rsclose
+#, fuzzy
+msgid "Close"
+msgstr "Затваряне"
+
+#: unit1.rsclosebtn
+msgid "Options"
+msgstr "Опции"
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "Конвертиране"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "FFmpeg не е намерен"
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "FFPlay не е намерен"
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Файлът не е намерен"
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Файлът с готови настройки не е намерен"
+
+#: unit1.rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr "Покажи команден ред"
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Разширението не може да съдържа точка"
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "файлът не съществува"
+
+#: unit1.rsfilemenu
+msgid "File"
+msgstr "Файл"
+
+#: unit1.rsgroupbox1
+msgid "Additional Options"
+msgstr "Допълнителни опции"
+
+#: unit1.rsimportmenu
+msgid "Import Preset"
+msgstr "Внасяне на готови настройки"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Невалиден файл с готови настройки"
+
+#: unit1.rslabel1
+msgid "Convert To ..."
+msgstr "Конвертиране към ..."
+
+#: unit1.rslabel10
+msgid "Audio Channels"
+msgstr "Аудио канали"
+
+#: unit1.rslabel11
+msgid "Output Folder"
+msgstr "Изходна папка"
+
+#: unit1.rslabel19
+#, fuzzy
+msgid "Device Preset"
+msgstr "Настройки на устройство"
+
+#: unit1.rslabel3
+msgid "Video Bitrate"
+msgstr "Видео bitrate"
+
+#: unit1.rslabel4
+msgid "Frame Rate"
+msgstr "Скорост на кадри"
+
+#: unit1.rslabel5
+msgid "Video Size"
+msgstr "Видео размер"
+
+#: unit1.rslabel6
+msgid "Aspect Ratio"
+msgstr "Съотношение вис./шир."
+
+#: unit1.rslabel7
+msgid "Audio Bitrate"
+msgstr "Аудио Bitrate"
+
+#: unit1.rslabel8
+msgid "Sample Rate"
+msgstr "Честота на семпл."
+
+#: unit1.rsmenuitem1
+msgid "Edit"
+msgstr "Редактиране"
+
+#: unit1.rsmenuitem3
+msgid "Exit"
+msgstr "Изход"
+
+#: unit1.rsmenuitem4
+msgid "Presets"
+msgstr "Готови настройки"
+
+#: unit1.rsmenuitem5
+msgid "Preferences"
+msgstr "Предпочитания"
+
+#: unit1.rsmitwinff
+msgid "WinFF Website"
+msgstr "WinFF Сайт"
+
+#: unit1.rsmenuitem6
+msgid "Help"
+msgstr "Помощ"
+
+#: unit1.rsmenuitem7
+msgid "WinFF Forums"
+msgstr "WinFF Форуми"
+
+#: unit1.rsmitabout
+msgid "About"
+msgstr "Относно"
+
+#: unit1.rsmitdocs
+msgid "Documentation"
+msgstr "Документация"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "Името трябва да съдържа само букви и/или цифри (a-z,A-Z,0-9)"
+
+#: unit1.rspass2
+msgid "2 pass"
+msgstr "2 pass"
+
+#: unit1.rspauseonfinish
+msgid "Pause on Finish"
+msgstr "Пауза при край"
+
+#: unit1.rsplay
+msgid "Play"
+msgstr "Изпълнение"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Моля, добавете поне 1 файл за конвертиране"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "Настройката: %s%s%s  вече съществува"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Настройката за внасяне няма разширение"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Настройката за внасяне няма етикет"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Моля изберете настройка за изнасяне"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "Настройка с етикет: %s%s%s вече съществува"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Натиснете Enter за да продължите"
+
+#: unit1.rsremovebtn
+msgid "Remove"
+msgstr "Премахване"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Изберете файл с настройки"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Изберете видео файлове"
+
+#: unit1.rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr "Изключване при край"
+
+#: unit1.rsstartbtn
+msgid "Convert"
+msgstr "Конвертиране"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Настройката съдържа непозволени символи"
+
+#: unit1.tabpage1caption
+msgid "Output Details"
+msgstr "Детайли от изпълнението"
+
+#: unit1.tabpage2caption
+#, fuzzy
+msgid "Video Settings"
+msgstr "Видео настройки"
+
+#: unit1.tabpage3caption
+msgid "Audio Settings"
+msgstr "Аудио настройки"
+
+#: unit1.tabpage4caption
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr "Допълнителни параметри на командния ред"
+
+#: unit2.rsaddpresetbtn
+msgid "Add / Update"
+msgstr "Добавяне/Обновяване"
+
+#: unit2.rscancelbtn
+msgid "Cancel"
+msgstr "Отказ"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Създаване на настройка:"
+
+#: unit2.rsdeletebtn
+msgid "Delete"
+msgstr "Изтриване"
+
+#: unit2.rsexport
+msgid "Export"
+msgstr "Изнасяне"
+
+#: unit2.rsform2
+msgid "Edit Presets"
+msgstr "Редактиране на настройки"
+
+#: unit2.rsimport
+msgid "Import"
+msgstr "Внасяне"
+
+#: unit2.rsimportpresets
+#, fuzzy
+msgid "Import Presets"
+msgstr "Внасяне на настройки"
+
+#: unit2.rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr "Име на настройка(една дума, само букви/цифри)"
+
+#: unit2.rslabel3
+msgid "Preset Label"
+msgstr "Етикет на настройка"
+
+#: unit2.rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr "Команден ред на настройка (без -i или изходен файл)"
+
+#: unit2.rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr "Разширение на изходния файл (без \".\")"
+
+#: unit2.rslabel6
+msgid "Category"
+msgstr "Категория"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Етикетът трябва да е уникален"
+
+#: unit2.rsokbtn
+msgid "Save"
+msgstr "Запис"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Премахване на настройка:"
+
+#: unit2.rsreplacepreset
+#, fuzzy
+msgid "Replace Preset"
+msgstr "Замяна на настройка:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Обновяване на настройка:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Трябва да въведете разширение."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Трябва да въведете етикет."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Трябва да въведете име."
+
+#: unit3.rsbutton1
+#, fuzzy
+msgctxt "unit3.rsbutton1"
+msgid "OK"
+msgstr "OK"
+
+#: unit3.rsform3
+msgid "About WinFF"
+msgstr "Относно WinFF"
+
+#: unit3.rslabel8
+msgid "FFmpeg builds by"
+msgstr "FFmpeg builds от"
+
+#: unit3.rspage1
+msgid "WinFF"
+msgstr "WinFF"
+
+#: unit3.rspage2
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: unit3.rspage3
+msgid "Thanks"
+msgstr "Благодарности"
+
+#: unit4.rscheckbox1
+msgid "Remember Last Directory Used"
+msgstr "Запомняне на последно използваната директория"
+
+#: unit4.rscheckbox2
+msgid "Use CHCP for international characters"
+msgstr "Използване на CHCP за специални символи"
+
+#: unit4.rscheckbox3
+msgid "Multithreading for Dual Core Processors"
+msgstr "Multithreading за двуядрени процесори"
+
+#: unit4.rsform4
+msgid "WinFF Preferences"
+msgstr "WinFF Предпочитания"
+
+#: unit4.rslabel1
+msgid "Default Destination Directory"
+msgstr "Изходна папка по подразбиране"
+
+#: unit4.rslabel2
+msgid "Path to FFmpeg.exe"
+msgstr "Път до FFmpeg.exe"
+
+#: unit4.rslabel3
+msgid "Path to FFPlay.exe"
+msgstr "Път до FFPlay.exe"
+
+#: unit4.rslabel4
+msgid "Path to FFmpeg Executable"
+msgstr "Път до FFmpeg изпълним файл"
+
+#: unit4.rslabel5
+msgid "Path to FFPlay Executable"
+msgstr "Път до FFPlay изпълним файл"
+
+#: unit4.rslabel6
+msgid "Terminal to run FFmpeg"
+msgstr "Терминал, в който да се изпълни FFmpeg"
+
+#: unit4.rslabel7
+msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgstr "Опции на терминала (-e за Xterm, -x за Gnome Terminal)"
+
+#: unit4.rspage1
+msgid "General"
+msgstr "Общи"
+
+#: unit4.rspage2
+msgid "Ms Windows"
+msgstr "MS Windows"
+
+#: unit4.rspage3
+msgid "Linux"
+msgstr "Линукс"
+
+#: unit5.rsform5
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg Команден ред"
+
+#: unit6.rsform6
+#, fuzzy
+msgid "Export Presets"
+msgstr "Изнасяне на настройки"
+
+#: unit6.rslabel1
+#, fuzzy
+msgid "Choose presets to export"
+msgstr "Изберете настройки за изнасяне"
+
+#~ msgid "AC'"
+#~ msgstr "AC"
+#~ msgid "Please select a preset"
+#~ msgstr "Моля, изберете настройка"
+
+#: unit4.rspriority
+msgid "Priority"
+msgstr "Приоритет"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Висок"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Нормален"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Нисък"

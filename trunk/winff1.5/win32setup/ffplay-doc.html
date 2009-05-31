@@ -1,0 +1,192 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<!-- Created by texi2html 1.56k from doc/ffplay-doc.texi on 21 February 2009 -->
+
+<title>FFplay Documentation</title>
+</head><body>
+<h1>FFplay Documentation</h1>
+<p>
+</p><p></p><hr><p>
+</p><h1>Table of Contents</h1>
+<ul>
+<li><a name="TOC1" href="http://ffmpeg.org/ffplay-doc.html#SEC1">1. Introduction</a>
+</li><li><a name="TOC2" href="http://ffmpeg.org/ffplay-doc.html#SEC2">2. Invocation</a>
+<ul>
+<li><a name="TOC3" href="http://ffmpeg.org/ffplay-doc.html#SEC3">2.1 Syntax</a>
+</li><li><a name="TOC4" href="http://ffmpeg.org/ffplay-doc.html#SEC4">2.2 Main options</a>
+</li><li><a name="TOC5" href="http://ffmpeg.org/ffplay-doc.html#SEC5">2.3 Advanced options</a>
+</li><li><a name="TOC6" href="http://ffmpeg.org/ffplay-doc.html#SEC6">2.4 While playing</a>
+</li></ul>
+</li></ul>
+<p></p><hr><p>
+
+</p><p>
+FFplay Documentation
+
+
+
+
+</p><h1><a name="SEC1" href="http://ffmpeg.org/ffplay-doc.html#TOC1">1. Introduction</a></h1>
+
+<p>
+FFplay is a very simple and portable media player using the FFmpeg
+libraries and the SDL library. It is mostly used as a testbed for the
+various FFmpeg APIs.
+
+
+
+
+</p><h1><a name="SEC2" href="http://ffmpeg.org/ffplay-doc.html#TOC2">2. Invocation</a></h1>
+
+
+
+<h2><a name="SEC3" href="http://ffmpeg.org/ffplay-doc.html#TOC3">2.1 Syntax</a></h2>
+
+<pre>ffplay [options] <tt>`input_file'</tt>
+</pre>
+
+
+
+<h2><a name="SEC4" href="http://ffmpeg.org/ffplay-doc.html#TOC4">2.2 Main options</a></h2>
+
+<dl compact="compact">
+
+<dt><samp>`-h'</samp>
+</dt><dd>
+Show help.
+</dd><dt><samp>`-version'</samp>
+</dt><dd>
+Show version.
+</dd><dt><samp>`-L'</samp>
+</dt><dd>
+Show license.
+</dd><dt><samp>`-formats'</samp>
+</dt><dd>
+Show available formats, codecs, protocols, ...
+</dd><dt><samp>`-x <var>width</var>'</samp>
+</dt><dd>
+Force displayed width.
+</dd><dt><samp>`-y <var>height</var>'</samp>
+</dt><dd>
+Force displayed height.
+</dd><dt><samp>`-s <var>size</var>'</samp>
+</dt><dd>
+Set frame size (WxH or abbreviation), needed for videos which don't
+contain a header with the frame size like raw YUV.
+</dd><dt><samp>`-an'</samp>
+</dt><dd>
+Disable audio.
+</dd><dt><samp>`-vn'</samp>
+</dt><dd>
+Disable video.
+</dd><dt><samp>`-ss <var>pos</var>'</samp>
+</dt><dd>
+Seek to a given position in seconds.
+</dd><dt><samp>`-bytes'</samp>
+</dt><dd>
+Seek by bytes.
+</dd><dt><samp>`-nodisp'</samp>
+</dt><dd>
+Disable graphical display.
+</dd><dt><samp>`-f <var>fmt</var>'</samp>
+</dt><dd>
+Force format.
+</dd></dl>
+
+
+
+<h2><a name="SEC5" href="http://ffmpeg.org/ffplay-doc.html#TOC5">2.3 Advanced options</a></h2>
+<dl compact="compact">
+
+<dt><samp>`-pix_fmt <var>format</var>'</samp>
+</dt><dd>
+Set pixel format.
+</dd><dt><samp>`-stats'</samp>
+</dt><dd>
+Show the stream duration, the codec parameters, the current position in
+the stream and the audio/video synchronisation drift.
+</dd><dt><samp>`-debug'</samp>
+</dt><dd>
+Print specific debug info.
+</dd><dt><samp>`-bug'</samp>
+</dt><dd>
+Work around bugs.
+</dd><dt><samp>`-vismv'</samp>
+</dt><dd>
+Visualize motion vectors.
+</dd><dt><samp>`-fast'</samp>
+</dt><dd>
+Non-spec-compliant optimizations.
+</dd><dt><samp>`-genpts'</samp>
+</dt><dd>
+Generate pts.
+</dd><dt><samp>`-rtp_tcp'</samp>
+</dt><dd>
+Force RTP/TCP protocol usage instead of RTP/UDP. It is only meaningful
+if you are streaming with the RTSP protocol.
+</dd><dt><samp>`-sync <var>type</var>'</samp>
+</dt><dd>
+Set the master clock to audio (<code>type=audio</code>), video
+(<code>type=video</code>) or external (<code>type=ext</code>). Default is audio. The
+master clock is used to control audio-video synchronization. Most media
+players use audio as master clock, but in some cases (streaming or high
+quality broadcast) it is necessary to change that. This option is mainly
+used for debugging purposes.
+</dd><dt><samp>`-threads <var>count</var>'</samp>
+</dt><dd>
+Set the thread count.
+</dd></dl>
+
+
+
+<h2><a name="SEC6" href="http://ffmpeg.org/ffplay-doc.html#TOC6">2.4 While playing</a></h2>
+
+<dl compact="compact">
+
+<dt><kbd>q, ESC</kbd>
+</dt><dd>
+Quit.
+
+</dd><dt><kbd>f</kbd>
+</dt><dd>
+Toggle full screen.
+
+</dd><dt><kbd>p, SPC</kbd>
+</dt><dd>
+Pause.
+
+</dd><dt><kbd>a</kbd>
+</dt><dd>
+Cycle audio channel.
+
+</dd><dt><kbd>v</kbd>
+</dt><dd>
+Cycle video channel.
+
+</dd><dt><kbd>t</kbd>
+</dt><dd>
+Cycle subtitle channel.
+
+</dd><dt><kbd>w</kbd>
+</dt><dd>
+Show audio waves.
+
+</dd><dt><kbd>left/right</kbd>
+</dt><dd>
+Seek backward/forward 10 seconds.
+
+</dd><dt><kbd>down/up</kbd>
+</dt><dd>
+Seek backward/forward 1 minute.
+
+</dd><dt><kbd>mouse click</kbd>
+</dt><dd>
+Seek to percentage in file corresponding to fraction of width.
+
+</dd></dl>
+
+<p></p><hr><p>
+This document was generated on 21 February 2009 using
+<a href="http://wwwinfo.cern.ch/dis/texi2html/">texi2html</a>&nbsp;1.56k.
+</p></body></html>

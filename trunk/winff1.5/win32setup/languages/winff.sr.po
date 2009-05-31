@@ -1,0 +1,449 @@
+﻿msgid ""
+msgstr ""
+"Project-Id-Version: WinFF 0.4\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-12-09\n"
+"Last-Translator: Predrag Tomasevic <pele@beotel.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"License: GPL version 3\n"
+
+#: unit1.rsaddbtn
+msgid "Add"
+msgstr "Dodaj"
+
+#: unit1.rsallcategories
+msgid "(All Categories)"
+msgstr "(Sve kategorije)"
+
+#: unit1.rscheckbox2
+msgid "Deinterlace"
+msgstr "Deinterlace"
+
+#: unit1.rsclearbtn
+msgid "Clear"
+msgstr "Očisti"
+
+#: unit1.rsclose
+#, fuzzy
+msgid "Close"
+msgstr "Očisti"
+
+#: unit1.rsclosebtn
+msgid "Options"
+msgstr "Opcije"
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "Konverzija u toku"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "Nije moguće pronaći FFmpeg."
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "Nije moguće pronaći FFPlay."
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Nije moguće pronaći fajl"
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Nije moguće pronaći preset fajl."
+
+#: unit1.rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr "Prikazi komandnu liniju"
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Ekstenzija ne može sadržati tačku"
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "fajl ne postoji"
+
+#: unit1.rsfilemenu
+msgid "File"
+msgstr "Fajl"
+
+#: unit1.rsgroupbox1
+msgid "Additional Options"
+msgstr "Dodatne opcije"
+
+#: unit1.rsimportmenu
+msgid "Import Preset"
+msgstr "Importuj preset"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Preset fajl nije validan"
+
+#: unit1.rslabel1
+msgid "Convert To ..."
+msgstr "Kovertuj u ..."
+
+#: unit1.rslabel10
+msgid "Audio Channels"
+msgstr "Audio kanali"
+
+#: unit1.rslabel11
+msgid "Output Folder"
+msgstr "Rezultati u folder"
+
+#: unit1.rslabel19
+#, fuzzy
+msgid "Device Preset"
+msgstr "Obriši preset:"
+
+#: unit1.rslabel3
+msgid "Video Bitrate"
+msgstr "Video Bitrejt"
+
+#: unit1.rslabel4
+msgid "Frame Rate"
+msgstr "Fremrejt"
+
+#: unit1.rslabel5
+msgid "Video Size"
+msgstr "Veličina videa"
+
+#: unit1.rslabel6
+msgid "Aspect Ratio"
+msgstr "Odnos veličine"
+
+#: unit1.rslabel7
+msgid "Audio Bitrate"
+msgstr "Audio bitrejt"
+
+#: unit1.rslabel8
+msgid "Sample Rate"
+msgstr "Učestalost"
+
+#: unit1.rsmenuitem1
+msgid "Edit"
+msgstr "Edituj"
+
+#: unit1.rsmenuitem3
+msgid "Exit"
+msgstr "Izađi"
+
+#: unit1.rsmenuitem4
+msgid "Presets"
+msgstr "Preseti"
+
+#: unit1.rsmenuitem5
+msgid "Preferences"
+msgstr "Opcije"
+
+#: unit1.rsmenuitem6
+msgid "Help"
+msgstr "Помоћ"
+
+#: unit1.rsmitWinff
+msgid "WinFF Website"
+msgstr "WinFF Vebsajt"
+
+#: unit1.rsmenuitem7
+msgid "WinFF Forums"
+msgstr "WinFF Forumi"
+
+#: unit1.rsmitabout
+msgid "About"
+msgstr "O programu"
+
+#: unit1.rsmitdocs
+msgid "Documentation"
+msgstr "Dokumentacija"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "Ime more biti alfanumeričko (a-z,A-Z,0-9)"
+
+#: unit1.rspass2
+msgid "2 pass"
+msgstr "2 prolaza"
+
+#: unit1.rspauseonfinish
+msgid "Pause on Finish"
+msgstr "Pauziraj po završetku"
+
+#: unit1.rsplay
+msgid "Play"
+msgstr "Pusti"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Dodajte bar jedan fajl za konverziju"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "Preset: %s%s%s već postoji"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Preset za import nema ekstenziju"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Preset za import nema oznaku"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Molimo, selektujte preset za eksport"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "Preset sa oznakom: %s%s%s već postoji"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Pritisnite Enter za nastavak"
+
+#: unit1.rsremovebtn
+msgid "Remove"
+msgstr "Ukloni"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Selektuj preset fajl"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Selektuj video fajlove"
+
+#: unit1.rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr "Izgasi po završetku"
+
+#: unit1.rsstartbtn
+msgid "Convert"
+msgstr "Konvertuj"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Preset sadrži karaktere koji nisu dozvoljeni"
+
+#: unit1.tabpage1caption
+msgid "Output Details"
+msgstr "Output detalji"
+
+#: unit1.tabpage2caption
+#, fuzzy
+msgid "Video Settings"
+msgstr "Video setovanja"
+
+#: unit1.tabpage3caption
+msgid "Audio Settings"
+msgstr "Audio setovanja"
+
+#: unit1.tabpage4caption
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr "Dodatni parametri u komandnoj liniji (Napredno)"
+
+#: unit2.rsaddpresetbtn
+msgid "Add / Update"
+msgstr "Dodaj / Ažuriraj"
+
+#: unit2.rscancelbtn
+msgid "Cancel"
+msgstr "Odustani"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Kreiraj preset:"
+
+#: unit2.rsdeletebtn
+msgid "Delete"
+msgstr "Obriši"
+
+#: unit2.rsexport
+msgid "Export"
+msgstr "Eksportuj"
+
+#: unit2.rsform2
+msgid "Edit Presets"
+msgstr "Edituj presete"
+
+#: unit2.rsimport
+msgid "Import"
+msgstr "Importuj"
+
+#: unit2.rsimportpresets
+#, fuzzy
+msgid "Import Presets"
+msgstr "Importuj preset"
+
+#: unit2.rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr "Ime preseta (jedna reč, samo A-z 0-9)"
+
+#: unit2.rslabel3
+msgid "Preset Label"
+msgstr "Oznaka preseta"
+
+#: unit2.rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr "Preset komandna linija (bez -i ili rezultujućeg fajla)"
+
+#: unit2.rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr "Izlazna fajl ekstenzija (bez \".\")"
+
+#: unit2.rslabel6
+msgid "Category"
+msgstr "Kategorija"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Oznaka mora biti unikatna."
+
+#: unit2.rsokbtn
+msgid "Save"
+msgstr "Snimi"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Obriši preset:"
+
+#: unit2.rsreplacepreset
+#, fuzzy
+msgid "Replace Preset"
+msgstr "Ažuriraj preset:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Ažuriraj preset:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Morate uneti ekstenziju."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Morate uneti oznaku."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Morate uneti ime."
+
+#: unit3.rsbutton1
+#, fuzzy
+msgctxt "unit3.rsbutton1"
+msgid "OK"
+msgstr "OK"
+
+#: unit3.rsform3
+msgid "About WinFF"
+msgstr "O WinFF"
+
+#: unit3.rslabel8
+msgid "FFmpeg builds by"
+msgstr "FFmpeg bildovi:"
+
+#: unit3.rspage1
+msgid "WinFF"
+msgstr "WinFF"
+
+#: unit3.rspage2
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: unit3.rspage3
+msgid "Thanks"
+msgstr "Zahvalnica"
+
+#: unit4.rscheckbox1
+msgid "Remember Last Directory Used"
+msgstr "Zapamti zadnji korišćeni direktorijum"
+
+#: unit4.rscheckbox2
+msgid "Use CHCP for international characters"
+msgstr "Upotrebi CHCP za internacionalne karaktere"
+
+#: unit4.rscheckbox3
+msgid "Multithreading for Dual Core Processors"
+msgstr "Višenitno izvršavanje za Dual Core procesore"
+
+#: unit4.rsform4
+msgid "WinFF Preferences"
+msgstr "WinFF opcije"
+
+#: unit4.rslabel1
+msgid "Default Destination Directory"
+msgstr "Standardni izlazni direktorijum"
+
+#: unit4.rslabel2
+msgid "Path to FFmpeg.exe"
+msgstr "Putanja do FFmpeg.exe"
+
+#: unit4.rslabel3
+msgid "Path to FFPlay.exe"
+msgstr "Putanja do FFPlay.exe"
+
+#: unit4.rslabel4
+msgid "Path to FFmpeg Executable"
+msgstr "Putanja do FFmpeg izvršnog fajla"
+
+#: unit4.rslabel5
+msgid "Path to FFPlay Executable"
+msgstr "Putanja do FFPlay izvršnog fajla"
+
+#: unit4.rslabel6
+msgid "Terminal to run FFmpeg"
+msgstr "Terminal za pokretanja FFmpeg"
+
+#: unit4.rslabel7
+msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgstr "Terminalske opcije (-e za Xterm , -x za Gnome Terminal)"
+
+#: unit4.rspage1
+msgid "General"
+msgstr "Generalne"
+
+#: unit4.rspage2
+msgid "Ms Windows"
+msgstr "Ms Windows"
+
+#: unit4.rspage3
+msgid "Linux"
+msgstr "Linux"
+
+#: unit5.rsform5
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg komandna linija"
+
+#: unit6.rsform6
+#, fuzzy
+msgid "Export Presets"
+msgstr "Importuj preset"
+
+#: unit6.rslabel1
+#, fuzzy
+msgid "Choose presets to export"
+msgstr "Molimo, selektujte preset za eksport"
+
+#~ msgid "AC'"
+#~ msgstr "AC'"
+#~ msgid "Please select a preset"
+#~ msgstr "Molimo, selektujte preset"
+
+#: unit4.rspriority
+msgid "Priority"
+msgstr "Prioritet"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Visoki"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normalni"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Niski"

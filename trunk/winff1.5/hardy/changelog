@@ -1,0 +1,80 @@
+winff (0.45.2.h-hardy~ppa1) hardy; urgency=low
+
+  * Removed references to lclversion in the LFM for the forms and
+    special version for Hardy
+  * Removed debian/winff.1 again
+
+ -- Paul Gevers <paul@climbing.nl>  Wed, 14 Jan 2009 21:44:12 +0100
+
+winff (0.45.1.h-backto043~ppa1) hardy; urgency=low
+
+  * Reverted back to version 0.43 because version 0.45.1 is incompatible
+    with Hardy.
+  * Added debian/winff.1 back
+
+ -- Paul Gevers <paul@climbing.nl>  Mon, 12 Jan 2009 20:57:46 +0100
+
+winff (0.45.1-0ubuntu1~ppa2h) hardy; urgency=low
+
+  * Replaced debian/winff.1 with winff.1 in debian/rules
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 09 Jan 2009 13:56:00 +0100
+
+winff (0.45.1-0ubuntu1~ppa1h) hardy; urgency=low
+
+  * New upstream release
+  * Removed absolute path and extension from debian/desktop
+  * Added dependency on xterm or x-terminal-emulator (Closes: #510156)
+  * Replaced debian/presets_new-style.xml with versions appropriate
+    for different versions of libavcodec and added description to 
+    README.Debian.
+  * Added two binary file types to the clean-up line in debian/rules
+  * Removed debian/winff.1 (now upstream)
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 09 Jan 2009 11:02:13 +0100
+
+winff (0.43-0ubuntu1~ppa3h) hardy; urgency=low
+
+  * Changes description to include "graphical"
+  * Changed maintainer in debian/control to not confuse users.
+
+ -- Paul Gevers <paul@climbing.nl>  Sat, 01 Nov 2008 10:17:53 -0500
+
+winff (0.43-0ubuntu1~ppa1h) hardy; urgency=low
+
+  * New upstream release.
+  * Updated debian/copyright to reflect changes in dutch files.
+
+ -- Paul Gevers <paul@climbing.nl>  Sat, 25 Oct 2008 18:59:53 -0500
+
+winff (0.42-0ubuntu1~ppa5h) hardy; urgency=low
+
+  * Added presets_new-style.xml for ffmpeg versions that use the
+    library name instead of the codec name
+  * Updated README.Debian
+
+ -- Paul Gevers <paul@climbing.nl>  Thu, 09 Oct 2008 21:32:16 -0500
+
+winff (0.42-0ubuntu1~ppa4) hardy; urgency=low
+
+  * Bump version number for hardy.
+
+ -- Paul Gevers <paul@climbing.nl>  Sun, 05 Oct 2008 18:42:32 -0500
+
+winff (0.42-0ubuntu1~ppa3) intrepid; urgency=low
+
+  * Bump versionnumber (Dependencies from PPA were not met)
+
+ -- Paul Gevers <paul@climbing.nl>  Sun, 28 Sep 2008 20:04:23 -0500
+
+winff (0.42-0ubuntu1~ppa2) intrepid; urgency=low
+
+  * Bump versionnumber (Dependencies from PPA were not met)
+
+ -- Paul Gevers <paul@climbing.nl>  Sun, 28 Sep 2008 18:08:30 -0500
+
+winff (0.42-0ubuntu1~ppa1) intrepid; urgency=low
+
+  * Initial release (LP: #172804)
+
+ -- Paul Gevers <paul@climbing.nl>  Sun, 28 Sep 2008 08:01:04 -0500
