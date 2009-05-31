@@ -1,0 +1,438 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WinFF 0.45.1\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Matt Weatherford <matt@biggmatt.com>\n"
+"Language-Team: English <matt@biggmatt.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: unit1.rsaddbtn
+msgid "Add"
+msgstr ""
+
+#: unit1.rsallcategories
+msgid "(All Categories)"
+msgstr ""
+
+#: unit1.rscheckbox2
+msgid "Deinterlace"
+msgstr ""
+
+#: unit1.rsclearbtn
+msgid "Clear"
+msgstr ""
+
+#: unit1.rsclose
+msgid "Close"
+msgstr ""
+
+#: unit1.rsclosebtn
+msgid "Options"
+msgstr ""
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr ""
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr ""
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr ""
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr ""
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr ""
+
+#: unit1.rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr ""
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr ""
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr ""
+
+#: unit1.rsfilemenu
+msgid "File"
+msgstr ""
+
+#: unit1.rsgroupbox1
+msgid "Additional Options"
+msgstr ""
+
+#: unit1.rsimportmenu
+msgid "Import Preset"
+msgstr ""
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr ""
+
+#: unit1.rslabel1
+msgid "Convert To ..."
+msgstr ""
+
+#: unit1.rslabel10
+msgid "Audio Channels"
+msgstr ""
+
+#: unit1.rslabel11
+msgid "Output Folder"
+msgstr ""
+
+#: unit1.rslabel19
+msgid "Device Preset"
+msgstr ""
+
+#: unit1.rslabel3
+msgid "Video Bitrate"
+msgstr ""
+
+#: unit1.rslabel4
+msgid "Frame Rate"
+msgstr ""
+
+#: unit1.rslabel5
+msgid "Video Size"
+msgstr ""
+
+#: unit1.rslabel6
+msgid "Aspect Ratio"
+msgstr ""
+
+#: unit1.rslabel7
+msgid "Audio Bitrate"
+msgstr ""
+
+#: unit1.rslabel8
+msgid "Sample Rate"
+msgstr ""
+
+#: unit1.rsmenuitem1
+msgid "Edit"
+msgstr ""
+
+#: unit1.rsmenuitem3
+msgid "Exit"
+msgstr ""
+
+#: unit1.rsmenuitem4
+msgid "Presets"
+msgstr ""
+
+#: unit1.rsmenuitem5
+msgid "Preferences"
+msgstr ""
+
+#: unit1.rsmenuitem6
+msgid "Help"
+msgstr ""
+
+#: unit1.rsmitWinff
+msgid "WinFF Website"
+msgstr ""
+
+#: unit1.rsmenuitem7
+msgid "WinFF Forums"
+msgstr ""
+
+#: unit1.rsmitabout
+msgid "About"
+msgstr ""
+
+#: unit1.rsmitdocs
+msgid "Documentation"
+msgstr ""
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr ""
+
+#: unit1.rspass2
+msgid "2 pass"
+msgstr ""
+
+#: unit1.rspauseonfinish
+msgid "Pause on Finish"
+msgstr ""
+
+#: unit1.rsplay
+msgid "Play"
+msgstr ""
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr ""
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr ""
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr ""
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr ""
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr ""
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr ""
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr ""
+
+#: unit1.rsremovebtn
+msgid "Remove"
+msgstr ""
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr ""
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr ""
+
+#: unit1.rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr ""
+
+#: unit1.rsstartbtn
+msgid "Convert"
+msgstr ""
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr ""
+
+#: unit1.tabpage1caption
+msgid "Output Details"
+msgstr ""
+
+#: unit1.tabpage2caption
+msgid "Video Settings"
+msgstr ""
+
+#: unit1.tabpage3caption
+msgid "Audio Settings"
+msgstr ""
+
+#: unit1.tabpage4caption
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr ""
+
+#: unit2.rsaddpresetbtn
+msgid "Add / Update"
+msgstr ""
+
+#: unit2.rscancelbtn
+msgid "Cancel"
+msgstr ""
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr ""
+
+#: unit2.rsdeletebtn
+msgid "Delete"
+msgstr ""
+
+#: unit2.rsexport
+msgid "Export"
+msgstr ""
+
+#: unit2.rsform2
+msgid "Edit Presets"
+msgstr ""
+
+#: unit2.rsimport
+msgid "Import"
+msgstr ""
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr ""
+
+#: unit2.rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr ""
+
+#: unit2.rslabel3
+msgid "Preset Label"
+msgstr ""
+
+#: unit2.rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr ""
+
+#: unit2.rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr ""
+
+#: unit2.rslabel6
+msgid "Category"
+msgstr ""
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr ""
+
+#: unit2.rsokbtn
+msgid "Save"
+msgstr ""
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr ""
+
+#: unit2.rsreplacepreset
+msgid "Replace Preset"
+msgstr ""
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr ""
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr ""
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr ""
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr ""
+
+#: unit3.rsbutton1
+msgctxt "unit3.rsbutton1"
+msgid "OK"
+msgstr ""
+
+#: unit3.rsform3
+msgid "About WinFF"
+msgstr ""
+
+#: unit3.rslabel8
+msgid "FFmpeg builds by"
+msgstr ""
+
+#: unit3.rspage1
+msgid "WinFF"
+msgstr ""
+
+#: unit3.rspage2
+msgid "FFmpeg"
+msgstr ""
+
+#: unit3.rspage3
+msgid "Thanks"
+msgstr ""
+
+#: unit4.rscheckbox1
+msgid "Remember Last Directory Used"
+msgstr ""
+
+#: unit4.rscheckbox2
+msgid "Use CHCP for international characters"
+msgstr ""
+
+#: unit4.rscheckbox3
+msgid "Multithreading for Dual Core Processors"
+msgstr ""
+
+#: unit4.rsform4
+msgid "WinFF Preferences"
+msgstr ""
+
+#: unit4.rslabel1
+msgid "Default Destination Directory"
+msgstr ""
+
+#: unit4.rslabel2
+msgid "Path to FFmpeg.exe"
+msgstr ""
+
+#: unit4.rslabel3
+msgid "Path to FFPlay.exe"
+msgstr ""
+
+#: unit4.rslabel4
+msgid "Path to FFmpeg Executable"
+msgstr ""
+
+#: unit4.rslabel5
+msgid "Path to FFPlay Executable"
+msgstr ""
+
+#: unit4.rslabel6
+msgid "Terminal to run FFmpeg"
+msgstr ""
+
+#: unit4.rslabel7
+msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgstr ""
+
+#: unit4.rspage1
+msgid "General"
+msgstr ""
+
+#: unit4.rspage2
+msgid "Ms Windows"
+msgstr ""
+
+#: unit4.rspage3
+msgid "Linux"
+msgstr ""
+
+#: unit5.rsform5
+msgid "FFmpeg Command Line"
+msgstr ""
+
+#: unit6.rsform6
+msgid "Export Presets"
+msgstr ""
+
+#: unit6.rslabel1
+msgid "Choose presets to export"
+msgstr ""
+
+#: unit4.rspriority
+msgid "Priority"
+msgstr ""
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr ""
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr ""
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr ""

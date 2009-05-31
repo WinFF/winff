@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/winff">
+  <comment>WinFF preset file</comment>
+  <comment xml:lang="nl">Winff voorinstellingen bestand</comment>
+  <acronym>WinFF</acronym>
+  <icon name="winff"/>
+  <sub-class-of type="text/xml"/>
+  <glob pattern="*.wff"/>
+  <magic>
+    <match type="string" offset="20:30" value="<presets>">
+  </magic>
+</mime-type>
