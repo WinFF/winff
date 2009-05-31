@@ -18,7 +18,7 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <CurrentVersionNr Value="1"/>
-      <CurrentMinorRevNr Value="2"/>
+      <CurrentMinorRevNr Value="3"/>
       <Comments Value="WinFF Video Converter"/>
       <CompanyName Value="WinFF.org"/>
       <FileDescription Value="WinFF Video Converter"/>
@@ -66,8 +66,8 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="4" Y="1233"/>
-        <TopLine Value="1222"/>
+        <CursorPos X="69" Y="424"/>
+        <TopLine Value="396"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Loaded Value="True"/>
@@ -93,7 +93,7 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit3"/>
-        <CursorPos X="41" Y="117"/>
+        <CursorPos X="42" Y="118"/>
         <TopLine Value="88"/>
         <EditorIndex Value="2"/>
         <UsageCount Value="201"/>
@@ -198,7 +198,7 @@
         <CursorPos X="1" Y="165"/>
         <TopLine Value="133"/>
         <EditorIndex Value="5"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
       </Unit16>
       <Unit17>

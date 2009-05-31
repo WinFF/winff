@@ -412,6 +412,7 @@ begin
   if terminal = '' then
      begin
        terminal := '/usr/bin/xterm';
+       if fileexists('/usr/bin/gnome-terminal') then terminal:='/usr/bin/gnome-terminal';
        if fileexists('/usr/bin/x-terminal-emulator') then terminal:='/usr/bin/x-terminal-emulator';
        setconfigvalue('unix/terminal',terminal);
      end;
@@ -420,6 +421,7 @@ begin
   if termoptions = '' then
      begin
        termoptions := '-e';
+       if terminal = '/usr/bin/gnome-terminal' then termoptions := '-x';
        setconfigvalue('unix/termoptions',termoptions);
      end;
   {$ENDIF}
