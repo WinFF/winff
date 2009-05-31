@@ -1,6 +1,10 @@
 WinFF Copyright 2006 - 2009 Matthew Weatherford
 http://www.winff.org
 
+v1.03
+-----
+Slovenian
+Check to use gnome-terminal in linux
 
 v1.02
 -----
