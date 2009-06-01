@@ -1,6 +1,10 @@
 WinFF Copyright 2006 - 2009 Matthew Weatherford
 http://www.winff.org
 
+v1.04
+-----
+Russian
+
 v1.03
 -----
 Slovenian
