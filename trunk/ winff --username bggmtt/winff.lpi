@@ -10,7 +10,7 @@
       <MainUnit Value="0"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
-      <ActiveEditorIndexAtStart Value="2"/>
+      <ActiveEditorIndexAtStart Value="0"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
@@ -18,7 +18,7 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <CurrentVersionNr Value="1"/>
-      <CurrentMinorRevNr Value="3"/>
+      <CurrentMinorRevNr Value="4"/>
       <Comments Value="WinFF Video Converter"/>
       <CompanyName Value="WinFF.org"/>
       <FileDescription Value="WinFF Video Converter"/>
