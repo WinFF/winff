@@ -116,6 +116,8 @@ begin                  // do translations
     listbox1.items.Add('Ofir Klinger');
     listbox1.items.Add('Γεώργιος Γεωργάς');
     listbox1.items.Add('Martin Srebotnjak');
+    listbox1.items.Add('Joe Black');
+
 
     listbox1.items.Add('');
     listbox1.items.Add('Iconsdesigns.com for their NeuvoXT 2 GPL Icons');
