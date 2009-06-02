@@ -93,8 +93,8 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit3"/>
-        <CursorPos X="42" Y="118"/>
-        <TopLine Value="88"/>
+        <CursorPos X="34" Y="119"/>
+        <TopLine Value="1"/>
         <EditorIndex Value="2"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
