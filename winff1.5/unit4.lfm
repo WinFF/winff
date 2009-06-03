@@ -1,14 +1,14 @@
 object Form4: TForm4
-  Left = 338
-  Height = 322
-  Top = 356
-  Width = 400
+  Left = 1174
+  Height = 298
+  Top = 499
+  Width = 421
   ActiveControl = Notebook1
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'WinFF Preferences'
-  ClientHeight = 322
-  ClientWidth = 400
+  ClientHeight = 298
+  ClientWidth = 403
   OnCreate = FormCreate
   ParentFont = False
   Position = poMainFormCenter
@@ -32,21 +32,21 @@ object Form4: TForm4
     TabOrder = 1
     object Page1: TPage
       Caption = 'General'
-      ClientWidth = 376
-      ClientHeight = 238
+      ClientWidth = 382
+      ClientHeight = 241
       object Label1: TLabel
         Left = 4
-        Height = 14
+        Height = 18
         Top = 8
-        Width = 140
+        Width = 192
         Caption = 'Default Destination Directory'
         ParentColor = False
       end
       object Label8: TLabel
         Left = 4
-        Height = 14
+        Height = 18
         Top = 122
-        Width = 35
+        Width = 48
         Caption = 'Priority'
         ParentColor = False
       end
@@ -69,26 +69,25 @@ object Form4: TForm4
       end
       object CheckBox1: TCheckBox
         Left = 4
-        Height = 19
+        Height = 22
         Top = 64
-        Width = 174
+        Width = 227
         Caption = 'Remember Last Used Directory'
         TabOrder = 2
       end
       object CheckBox3: TCheckBox
         Left = 4
-        Height = 19
+        Height = 22
         Top = 90
-        Width = 216
+        Width = 283
         Caption = 'Mutlithreading for Dual Core Processors'
         TabOrder = 3
       end
       object prioritybox: TComboBox
         Left = 52
-        Height = 21
+        Height = 31
         Top = 122
         Width = 122
-        ItemHeight = 13
         MaxLength = -1
         Style = csDropDownList
         TabOrder = 4
@@ -96,8 +95,8 @@ object Form4: TForm4
     end
     object Page2: TPage
       Caption = 'MS Windows'
-      ClientWidth = 384
-      ClientHeight = 264
+      ClientWidth = 382
+      ClientHeight = 237
       object Label2: TLabel
         Left = 4
         Height = 14
@@ -159,8 +158,8 @@ object Form4: TForm4
     end
     object Page3: TPage
       Caption = 'Linux'
-      ClientWidth = 384
-      ClientHeight = 264
+      ClientWidth = 382
+      ClientHeight = 237
       object Label4: TLabel
         Left = 4
         Height = 14

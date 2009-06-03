@@ -1,13 +1,13 @@
 object Form1: TForm1
-  Left = 25
+  Left = 333
   Height = 587
-  Top = 25
-  Width = 1064
-  ActiveControl = Notebook1
+  Top = 185
+  Width = 826
+  ActiveControl = nbkSettings
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 567
-  ClientWidth = 1064
+  ClientHeight = 566
+  ClientWidth = 826
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
   Icon.Data = {
@@ -319,87 +319,88 @@ object Form1: TForm1
   OnClose = FormClose
   OnCreate = FormCreate
   OnDropFiles = FormDropFiles
+  ParentFont = False
   Position = poDefault
-  LCLVersion = '0.9.26.2'
+  LCLVersion = '0.9.26'
   object Label2: TLabel
-    Height = 16
-    Width = 1
+    Height = 19
+    Width = 4
     ParentColor = False
   end
   object pnlMain: TPanel
-    Height = 350
+    Height = 349
     Top = 54
-    Width = 1064
+    Width = 826
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 350
-    ClientWidth = 1064
+    ClientHeight = 349
+    ClientWidth = 826
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
-      Height = 210
-      Width = 1064
+      Height = 209
+      Width = 826
       Align = alClient
       MultiSelect = True
-      OnDblClick = PlayClick
+      OnDblClick = btnPlayClick
       OnKeyUp = filelistKeyUp
       TabOrder = 0
+      TopIndex = -1
     end
     object pnlbottom: TPanel
       Height = 140
-      Top = 210
-      Width = 1064
+      Top = 209
+      Width = 826
       Align = alBottom
       ClientHeight = 140
-      ClientWidth = 1064
+      ClientWidth = 826
       ParentColor = False
       TabOrder = 1
       object PageControl1: TPageControl
         Left = 1
         Height = 138
         Top = 1
-        Width = 1062
+        Width = 824
         ActivePage = tabPage1
         Align = alClient
         TabIndex = 0
         TabOrder = 0
         object tabPage1: TTabSheet
           Caption = 'tabPage1'
-          ClientHeight = 112
-          ClientWidth = 1054
+          ClientHeight = 115
+          ClientWidth = 822
           object Label1: TLabel
             Left = 13
-            Height = 16
+            Height = 14
             Top = 11
-            Width = 69
+            Width = 66
             Caption = 'Convert to....'
             ParentColor = False
           end
           object Label11: TLabel
             Left = 14
-            Height = 16
+            Height = 14
             Top = 82
-            Width = 73
+            Width = 71
             Caption = 'Output folder'
             ParentColor = False
           end
           object Label19: TLabel
             Left = 13
-            Height = 16
+            Height = 14
             Top = 43
-            Width = 69
+            Width = 66
             Caption = 'Convert to....'
             ParentColor = False
           end
           object PresetBox: TComboBox
             Left = 101
-            Height = 21
+            Height = 27
             Top = 35
             Width = 392
-            ItemHeight = 13
             MaxLength = 65535
             Style = csDropDownList
             TabOrder = 1
@@ -425,10 +426,9 @@ object Form1: TForm1
           end
           object categorybox: TComboBox
             Left = 101
-            Height = 21
+            Height = 27
             Top = 4
             Width = 392
-            ItemHeight = 13
             MaxLength = 65535
             OnChange = categoryboxChange
             Sorted = True
@@ -439,14 +439,14 @@ object Form1: TForm1
       end
     end
   end
-  object Panel1: TPanel
+  object pnlTop: TPanel
     Height = 54
-    Width = 1064
+    Width = 826
     Align = alTop
     ClientHeight = 54
-    ClientWidth = 1064
+    ClientWidth = 826
     TabOrder = 1
-    object AddBtn: TBitBtn
+    object btnAdd: TBitBtn
       Left = 1
       Height = 53
       Width = 60
@@ -529,10 +529,10 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = AddBtnClick
+      OnClick = btnAddClick
       TabOrder = 0
     end
-    object RemoveBtn: TBitBtn
+    object btnRemove: TBitBtn
       Left = 64
       Height = 53
       Width = 60
@@ -615,10 +615,10 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = RemoveBtnClick
+      OnClick = btnRemoveClick
       TabOrder = 1
     end
-    object ClearBtn: TBitBtn
+    object btnClear: TBitBtn
       Left = 128
       Height = 53
       Width = 60
@@ -701,14 +701,14 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = ClearBtnClick
+      OnClick = btnClearClick
       TabOrder = 2
     end
-    object Play: TBitBtn
+    object btnPlay: TBitBtn
       Left = 200
       Height = 53
       Width = 70
-      Caption = 'Play'
+      Caption = 'btnPlay'
       Glyph.Data = {
         36090000424D3609000000000000360000002800000018000000180000000100
         2000000000000009000064000000640000000000000000000000000000000000
@@ -787,10 +787,10 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = PlayClick
+      OnClick = btnPlayClick
       TabOrder = 3
     end
-    object StartBtn: TBitBtn
+    object btnConvert: TBitBtn
       Left = 272
       Height = 53
       Width = 70
@@ -873,11 +873,11 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = StartBtnClick
+      OnClick = btnConvertClick
       TabOrder = 4
     end
     object Panel2: TPanel
-      Left = 938
+      Left = 700
       Height = 52
       Top = 1
       Width = 125
@@ -886,7 +886,7 @@ object Form1: TForm1
       ClientHeight = 52
       ClientWidth = 125
       TabOrder = 5
-      object optionsbtn: TBitBtn
+      object btnOptions: TBitBtn
         Left = 40
         Height = 53
         Top = -1
@@ -970,80 +970,80 @@ object Form1: TForm1
         }
         Layout = blGlyphTop
         NumGlyphs = 0
-        OnClick = showoptionsClick
+        OnClick = mitShowOptionsClick
         TabOrder = 0
       end
     end
   end
   object pnlbottom2: TPanel
     Height = 163
-    Top = 404
-    Width = 1064
+    Top = 403
+    Width = 826
     Align = alBottom
     ClientHeight = 163
-    ClientWidth = 1064
+    ClientWidth = 826
     ParentColor = False
     TabOrder = 2
     Visible = False
-    object GroupBox1: TGroupBox
+    object gbxSettings: TGroupBox
       Left = 1
       Height = 161
       Top = 1
-      Width = 1062
+      Width = 824
       Align = alClient
-      Caption = 'GroupBox1'
-      ClientHeight = 143
-      ClientWidth = 1058
+      Caption = 'gbxSettings'
+      ClientHeight = 146
+      ClientWidth = 820
       TabOrder = 0
-      object Notebook1: TNotebook
-        Height = 143
-        Width = 1058
+      object nbkSettings: TNotebook
+        Height = 146
+        Width = 820
         Align = alClient
         PageIndex = 0
         TabOrder = 0
-        object tabPage2: TPage
+        object tabVideoSettings: TPage
           Caption = 'Video Settings'
-          ClientWidth = 1050
-          ClientHeight = 117
-          object Label3: TLabel
+          ClientWidth = 818
+          ClientHeight = 123
+          object lblVideoBitRate: TLabel
             Left = 6
-            Height = 16
+            Height = 14
             Top = 5
-            Width = 74
+            Width = 73
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
-          object Label5: TLabel
+          object lblVideoSize: TLabel
             Left = 219
-            Height = 16
+            Height = 14
             Top = 5
             Width = 54
             Caption = 'Video Size'
             ParentColor = False
           end
-          object Label6: TLabel
+          object lblAspectRatio: TLabel
             Left = 307
-            Height = 16
+            Height = 14
             Top = 5
-            Width = 67
+            Width = 65
             Caption = 'Aspect Ratio'
             ParentColor = False
           end
           object Label9: TLabel
             Left = 253
-            Height = 13
+            Height = 10
             Top = 25
-            Width = 7
+            Width = 6
             Caption = 'X'
             Font.Height = -10
             ParentColor = False
             ParentFont = False
           end
-          object Label4: TLabel
+          object lblFrameRate: TLabel
             Left = 124
-            Height = 16
+            Height = 14
             Top = 5
-            Width = 60
+            Width = 58
             Caption = 'Frame Rate'
             ParentColor = False
           end
@@ -1069,7 +1069,7 @@ object Form1: TForm1
             Width = 32
             TabOrder = 2
           end
-          object Aspectratio: TEdit
+          object edtAspectRatio: TEdit
             Left = 307
             Height = 23
             Top = 25
@@ -1083,52 +1083,52 @@ object Form1: TForm1
             Width = 32
             TabOrder = 3
           end
-          object pass2: TCheckBox
+          object cbx2Pass: TCheckBox
             Left = 6
-            Height = 19
+            Height = 22
             Top = 64
-            Width = 51
+            Width = 57
             Caption = '2 pass'
             Color = clForm
             ParentColor = False
             TabOrder = 5
           end
-          object CheckBox2: TCheckBox
+          object cbxDeinterlace: TCheckBox
             Left = 123
-            Height = 19
+            Height = 22
             Top = 64
-            Width = 74
+            Width = 83
             Caption = 'Deinterlace'
             Color = clForm
             ParentColor = False
             TabOrder = 6
           end
         end
-        object tabPage3: TPage
+        object tabAudioSettings: TPage
           Caption = 'Audio Settings'
-          ClientWidth = 1066
-          ClientHeight = 143
+          ClientWidth = 818
+          ClientHeight = 123
           object Label7: TLabel
             Left = 9
-            Height = 14
+            Height = 18
             Top = 5
-            Width = 69
+            Width = 94
             Caption = 'Audio Bit Rate'
             ParentColor = False
           end
           object Label8: TLabel
             Left = 133
-            Height = 14
+            Height = 18
             Top = 5
-            Width = 61
+            Width = 84
             Caption = 'Sample Rate'
             ParentColor = False
           end
           object Label10: TLabel
             Left = 264
-            Height = 14
+            Height = 18
             Top = 5
-            Width = 38
+            Width = 52
             Caption = 'Label10'
             ParentColor = False
           end
@@ -1154,10 +1154,10 @@ object Form1: TForm1
             TabOrder = 2
           end
         end
-        object tabPage4: TPage
-          Caption = 'tabPage4'
-          ClientWidth = 1066
-          ClientHeight = 143
+        object tabCmdLineSettings: TPage
+          Caption = 'tabCmdLineSettings'
+          ClientWidth = 818
+          ClientHeight = 123
           object commandlineparams: TEdit
             Left = 1
             Height = 24
@@ -1169,7 +1169,7 @@ object Form1: TForm1
       end
     end
   end
-  object OpenDialog1: TOpenDialog
+  object dlgOpenFile: TOpenDialog
     Title = 'Select Video Files...'
     FilterIndex = 0
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
@@ -1184,53 +1184,48 @@ object Form1: TForm1
   object MainMenu1: TMainMenu
     left = 512
     top = 312
-    object filemenu: TMenuItem
+    object mnuFile: TMenuItem
       Caption = 'File'
-      object importmenu: TMenuItem
+      object mitImportPreset: TMenuItem
         Caption = 'Import Preset'
-        OnClick = importmenuClick
+        OnClick = mitImportPresetClick
       end
-      object MenuItem2: TMenuItem
-        Caption = 'About'
-        Visible = False
-        OnClick = MenuItem2Click
-      end
-      object MenuItem3: TMenuItem
+      object mitExit: TMenuItem
         Caption = 'Exit'
-        OnClick = MenuItem3Click
+        OnClick = mitExitClick
       end
     end
-    object MenuItem1: TMenuItem
+    object mnuEdit: TMenuItem
       Caption = 'Edit'
-      object MenuItem4: TMenuItem
+      object mitPresets: TMenuItem
         Caption = 'Presets'
-        OnClick = MenuItem4Click
+        OnClick = mitPresetsClick
       end
-      object MenuItem5: TMenuItem
+      object mitPreferences: TMenuItem
         Caption = 'Preferences'
-        OnClick = MenuItem5Click
+        OnClick = mitPreferencesClick
       end
     end
-    object Options: TMenuItem
+    object mnuOptions: TMenuItem
       Caption = 'Options'
-      object showoptions: TMenuItem
+      object mitShowOptions: TMenuItem
         Caption = 'Additional Options'
-        OnClick = showoptionsClick
+        OnClick = mitShowOptionsClick
       end
-      object displaycmdline: TMenuItem
+      object mitDisplayCmdline: TMenuItem
         Caption = 'Display Cmd Line'
-        OnClick = displaycmdlineClick
+        OnClick = mitDisplayCmdlineClick
       end
-      object pauseonfinish: TMenuItem
+      object mitPauseOnFinish: TMenuItem
         Caption = 'Pause on Finish'
-        OnClick = pauseonfinishClick
+        OnClick = mitPauseOnFinishClick
       end
-      object shutdownonfinish: TMenuItem
+      object mitShutdownOnFinish: TMenuItem
         Caption = 'Shutdown on Finish'
-        OnClick = shutdownonfinishClick
+        OnClick = mitShutdownOnFinishClick
       end
     end
-    object MenuItem6: TMenuItem
+    object mnuHelp: TMenuItem
       Caption = 'Help'
       object mitDocs: TMenuItem
         Caption = 'Documentation'
@@ -1253,7 +1248,7 @@ object Form1: TForm1
       end
     end
   end
-  object OpenDialog2: TOpenDialog
+  object dlgOpenPreset: TOpenDialog
     DefaultExt = '.wff'
     Filter = '.wff'
     left = 551
