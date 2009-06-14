@@ -1,3 +1,0 @@
-?package(winff):needs="X11" section="Applications/Video"\
-  title="WinFF" command="/usr/bin/winff"\
-  icon="/usr/share/icons/hicolor/32x32/apps/winff.xpm"
