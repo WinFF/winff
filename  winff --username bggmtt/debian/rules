@@ -52,7 +52,8 @@ binary-arch: build install
 	dh_installmenu
 	dh_installman winff.1
 	dh_installmime
-	dh_desktop
+	dh_link usr/share/winff/languages/winff.po \
+		usr/share/winff/languages/winff.en.po
 	dh_strip
 	dh_compress --exclude=.pdf
 	dh_fixperms

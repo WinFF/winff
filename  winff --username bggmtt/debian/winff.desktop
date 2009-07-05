@@ -2,12 +2,12 @@
 Version=1.0
 Name=WinFF
 Comment=GUI for FFMPEG
-MimeType=application/winff
+MimeType=application/winff;
 Exec=winff
 Icon=winff
 Terminal=false
 Type=Application
-Categories=AudioVideo;AudioVideoEditing;GTK
+Categories=AudioVideo;AudioVideoEditing;GTK;
 GenericName=Video converter
 GenericName[en]=Video converter
 GenericName[nl]=Video converteerder
