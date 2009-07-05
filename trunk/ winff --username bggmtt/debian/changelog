@@ -1,3 +1,19 @@
+winff (1.0.4-1) unstable; urgency=low
+
+  * New upstream release
+    - Added language: Russian
+  * Updated debian/copyright
+  * Fixed debian/winff.desktop (was missing two trailing semicolons)
+  * Bumped policy version to 3.8.2 (changed section to video)
+  * Updated debian/winff.sharedmimeinfo (Closes: #530765)
+  * Create soft-link between languages/winff.po and languages/winff.en.po
+    (Closes: #531053)
+  * A blocking bug in lazarus (515035) has been fixed. (Closes: #511505)
+  * Remove dh_desktop from debian/rules because it is deprecated (lintian)
+  * Added Vcs-Browser and Vcs-Svn to control file.
+
+ -- Paul Gevers <paul@climbing.nl>  Sun, 05 Jul 2009 13:34:34 +0200
+
 winff (1.0.2-1) unstable; urgency=low
 
   * New upstream release
