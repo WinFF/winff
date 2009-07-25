@@ -19,8 +19,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.45.1\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Chung Yu <chungyu.hsu@gmail.com>\n"
+"PO-Revision-Date: 2009-07-18\n"
+"Last-Translator: 大宝(DaBao) <michaelbond01@163.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -105,7 +105,7 @@ msgstr "轉換成..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr "聲音頻道"
+msgstr "聲道(單聲道為1,立體聲為2)"
 
 #: unit1.rslabel11
 msgid "Output Folder"
@@ -118,11 +118,11 @@ msgstr "編碼格式"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
-msgstr ""
+msgstr "視頻比特率 Kb/s"
 
 #: unit1.rslabel4
 msgid "Frame Rate"
-msgstr "畫面更新率"
+msgstr "幀率 幀/s"
 
 #: unit1.rslabel5
 msgid "Video Size"
@@ -130,15 +130,15 @@ msgstr "影片尺寸"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
-msgstr "畫面長寬比"
+msgstr "畫面長寬比(4:3、16:9、2.35:1等)"
 
 #: unit1.rslabel7
 msgid "Audio Bitrate"
-msgstr ""
+msgstr "音頻比特率 Kb/s"
 
 #: unit1.rslabel8
 msgid "Sample Rate"
-msgstr "取樣頻率"
+msgstr "取樣頻率 b/s"
 
 #: unit1.rsmenuitem1
 msgid "Edit"
@@ -182,7 +182,7 @@ msgstr "名稱必須使用字母或數字(a-z,A-Z,0-9)"
 
 #: unit1.rspass2
 msgid "2 pass"
-msgstr ""
+msgstr "高品質模式"
 
 #: unit1.rspauseonfinish
 msgid "Pause on Finish"
@@ -302,7 +302,7 @@ msgstr "匯入編碼設定檔"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "編碼設定檔名稱(一個字，限 A-z, 0-9)"
+msgstr "編碼設定檔名稱(一個完整的詞，不可有空格，限 A-z，0-9)"
 
 #: unit2.rslabel3
 msgid "Preset Label"
@@ -310,11 +310,11 @@ msgstr "編碼設定檔標籤"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
-msgstr ""
+msgstr "編碼參數（沒有“-i”或者輸入文件）"
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
-msgstr "輸出檔附檔名(不含 \".\")"
+msgstr "輸出檔附檔名(不含 “.”)"
 
 #: unit2.rslabel6
 msgid "Category"
@@ -385,7 +385,7 @@ msgstr "記住最後的目錄位置"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "使用國際字符 CHCP"
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
@@ -422,7 +422,7 @@ msgstr "使用終端機介面來執行 FFmpeg"
 #: unit4.rslabel7
 #, fuzzy
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
-msgstr "終端機介面選項(-e for Xterm , -x for Gnome Terminal)"
+msgstr "終端機介面選項(-e 虛擬終端 , -x Gnome終端)"
 
 #: unit4.rspage1
 msgid "General"
@@ -453,7 +453,7 @@ msgstr "選擇要匯出的編碼格式"
 
 #: unit4.rspriority
 msgid "Priority"
-msgstr "執行權限"
+msgstr "優先級"
 
 #: unit4.rspriorityhigh
 msgid "High"
@@ -461,11 +461,11 @@ msgstr "高"
 
 #: unit4.rsprioritynormal
 msgid "Normal"
-msgstr "一般"
+msgstr "普通"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr "閒置"
+msgstr "低"
 
 
 
