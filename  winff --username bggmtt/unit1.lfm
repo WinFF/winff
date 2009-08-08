@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 125
+  Left = 258
   Height = 587
-  Top = 125
+  Top = 163
   Width = 1064
   ActiveControl = Notebook1
   AllowDropFiles = True
@@ -401,6 +401,7 @@ object Form1: TForm1
             Width = 392
             ItemHeight = 13
             MaxLength = 65535
+            OnChange = PresetBoxChange
             Style = csDropDownList
             TabOrder = 1
           end
