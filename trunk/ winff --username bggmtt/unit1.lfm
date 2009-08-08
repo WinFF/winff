@@ -1,9 +1,9 @@
 object Form1: TForm1
-  Left = 258
+  Left = 100
   Height = 587
-  Top = 163
+  Top = 100
   Width = 1064
-  ActiveControl = Notebook1
+  ActiveControl = nbkSettings
   AllowDropFiles = True
   Caption = 'WinFF'
   ClientHeight = 567
@@ -344,7 +344,7 @@ object Form1: TForm1
       Width = 1064
       Align = alClient
       MultiSelect = True
-      OnDblClick = PlayClick
+      OnDblClick = btnPlayClick
       OnKeyUp = filelistKeyUp
       TabOrder = 0
     end
@@ -440,14 +440,14 @@ object Form1: TForm1
       end
     end
   end
-  object Panel1: TPanel
+  object pnlTop: TPanel
     Height = 54
     Width = 1064
     Align = alTop
     ClientHeight = 54
     ClientWidth = 1064
     TabOrder = 1
-    object AddBtn: TBitBtn
+    object btnAdd: TBitBtn
       Left = 1
       Height = 53
       Width = 60
@@ -530,10 +530,10 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = AddBtnClick
+      OnClick = btnAddClick
       TabOrder = 0
     end
-    object RemoveBtn: TBitBtn
+    object btnRemove: TBitBtn
       Left = 64
       Height = 53
       Width = 60
@@ -616,10 +616,10 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = RemoveBtnClick
+      OnClick = btnRemoveClick
       TabOrder = 1
     end
-    object ClearBtn: TBitBtn
+    object btnClear: TBitBtn
       Left = 128
       Height = 53
       Width = 60
@@ -702,14 +702,14 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = ClearBtnClick
+      OnClick = btnClearClick
       TabOrder = 2
     end
-    object Play: TBitBtn
+    object btnPlay: TBitBtn
       Left = 200
       Height = 53
       Width = 70
-      Caption = 'Play'
+      Caption = 'btnPlay'
       Glyph.Data = {
         36090000424D3609000000000000360000002800000018000000180000000100
         2000000000000009000064000000640000000000000000000000000000000000
@@ -788,10 +788,10 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = PlayClick
+      OnClick = btnPlayClick
       TabOrder = 3
     end
-    object StartBtn: TBitBtn
+    object btnConvert: TBitBtn
       Left = 272
       Height = 53
       Width = 70
@@ -874,7 +874,7 @@ object Form1: TForm1
       }
       Layout = blGlyphTop
       NumGlyphs = 0
-      OnClick = StartBtnClick
+      OnClick = btnConvertClick
       TabOrder = 4
     end
     object Panel2: TPanel
@@ -887,7 +887,7 @@ object Form1: TForm1
       ClientHeight = 52
       ClientWidth = 125
       TabOrder = 5
-      object optionsbtn: TBitBtn
+      object btnOptions: TBitBtn
         Left = 40
         Height = 53
         Top = -1
@@ -971,7 +971,7 @@ object Form1: TForm1
         }
         Layout = blGlyphTop
         NumGlyphs = 0
-        OnClick = showoptionsClick
+        OnClick = mitShowOptionsClick
         TabOrder = 0
       end
     end
@@ -986,27 +986,27 @@ object Form1: TForm1
     ParentColor = False
     TabOrder = 2
     Visible = False
-    object GroupBox1: TGroupBox
+    object gbxSettings: TGroupBox
       Left = 1
       Height = 161
       Top = 1
       Width = 1062
       Align = alClient
-      Caption = 'GroupBox1'
+      Caption = 'gbxSettings'
       ClientHeight = 143
       ClientWidth = 1058
       TabOrder = 0
-      object Notebook1: TNotebook
+      object nbkSettings: TNotebook
         Height = 143
         Width = 1058
         Align = alClient
         PageIndex = 0
         TabOrder = 0
-        object tabPage2: TPage
+        object tabVideoSettings: TPage
           Caption = 'Video Settings'
           ClientWidth = 1050
           ClientHeight = 117
-          object Label3: TLabel
+          object lblVideoBitRate: TLabel
             Left = 6
             Height = 16
             Top = 5
@@ -1014,7 +1014,7 @@ object Form1: TForm1
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
-          object Label5: TLabel
+          object lblVideoSize: TLabel
             Left = 219
             Height = 16
             Top = 5
@@ -1022,7 +1022,7 @@ object Form1: TForm1
             Caption = 'Video Size'
             ParentColor = False
           end
-          object Label6: TLabel
+          object lblAspectRatio: TLabel
             Left = 307
             Height = 16
             Top = 5
@@ -1040,7 +1040,7 @@ object Form1: TForm1
             ParentColor = False
             ParentFont = False
           end
-          object Label4: TLabel
+          object lblFrameRate: TLabel
             Left = 124
             Height = 16
             Top = 5
@@ -1070,7 +1070,7 @@ object Form1: TForm1
             Width = 32
             TabOrder = 2
           end
-          object Aspectratio: TEdit
+          object edtAspectRatio: TEdit
             Left = 307
             Height = 23
             Top = 25
@@ -1084,7 +1084,7 @@ object Form1: TForm1
             Width = 32
             TabOrder = 3
           end
-          object pass2: TCheckBox
+          object cbx2Pass: TCheckBox
             Left = 6
             Height = 19
             Top = 64
@@ -1094,7 +1094,7 @@ object Form1: TForm1
             ParentColor = False
             TabOrder = 5
           end
-          object CheckBox2: TCheckBox
+          object cbxDeinterlace: TCheckBox
             Left = 123
             Height = 19
             Top = 64
@@ -1105,31 +1105,31 @@ object Form1: TForm1
             TabOrder = 6
           end
         end
-        object tabPage3: TPage
+        object tabAudioSettings: TPage
           Caption = 'Audio Settings'
-          ClientWidth = 1066
-          ClientHeight = 143
+          ClientWidth = 818
+          ClientHeight = 123
           object Label7: TLabel
             Left = 9
-            Height = 14
+            Height = 18
             Top = 5
-            Width = 69
+            Width = 94
             Caption = 'Audio Bit Rate'
             ParentColor = False
           end
           object Label8: TLabel
             Left = 133
-            Height = 14
+            Height = 18
             Top = 5
-            Width = 61
+            Width = 84
             Caption = 'Sample Rate'
             ParentColor = False
           end
           object Label10: TLabel
             Left = 264
-            Height = 14
+            Height = 18
             Top = 5
-            Width = 38
+            Width = 52
             Caption = 'Label10'
             ParentColor = False
           end
@@ -1155,10 +1155,10 @@ object Form1: TForm1
             TabOrder = 2
           end
         end
-        object tabPage4: TPage
-          Caption = 'tabPage4'
-          ClientWidth = 1066
-          ClientHeight = 143
+        object tabCmdLineSettings: TPage
+          Caption = 'tabCmdLineSettings'
+          ClientWidth = 818
+          ClientHeight = 123
           object commandlineparams: TEdit
             Left = 1
             Height = 24
@@ -1170,7 +1170,7 @@ object Form1: TForm1
       end
     end
   end
-  object OpenDialog1: TOpenDialog
+  object dlgOpenFile: TOpenDialog
     Title = 'Select Video Files...'
     FilterIndex = 0
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
@@ -1185,53 +1185,48 @@ object Form1: TForm1
   object MainMenu1: TMainMenu
     left = 512
     top = 312
-    object filemenu: TMenuItem
+    object mnuFile: TMenuItem
       Caption = 'File'
-      object importmenu: TMenuItem
+      object mitImportPreset: TMenuItem
         Caption = 'Import Preset'
-        OnClick = importmenuClick
+        OnClick = mitImportPresetClick
       end
-      object MenuItem2: TMenuItem
-        Caption = 'About'
-        Visible = False
-        OnClick = MenuItem2Click
-      end
-      object MenuItem3: TMenuItem
+      object mitExit: TMenuItem
         Caption = 'Exit'
-        OnClick = MenuItem3Click
+        OnClick = mitExitClick
       end
     end
-    object MenuItem1: TMenuItem
+    object mnuEdit: TMenuItem
       Caption = 'Edit'
-      object MenuItem4: TMenuItem
+      object mitPresets: TMenuItem
         Caption = 'Presets'
-        OnClick = MenuItem4Click
+        OnClick = mitPresetsClick
       end
-      object MenuItem5: TMenuItem
+      object mitPreferences: TMenuItem
         Caption = 'Preferences'
-        OnClick = MenuItem5Click
+        OnClick = mitPreferencesClick
       end
     end
-    object Options: TMenuItem
+    object mnuOptions: TMenuItem
       Caption = 'Options'
-      object showoptions: TMenuItem
+      object mitShowOptions: TMenuItem
         Caption = 'Additional Options'
-        OnClick = showoptionsClick
+        OnClick = mitShowOptionsClick
       end
-      object displaycmdline: TMenuItem
+      object mitDisplayCmdline: TMenuItem
         Caption = 'Display Cmd Line'
-        OnClick = displaycmdlineClick
+        OnClick = mitDisplayCmdlineClick
       end
-      object pauseonfinish: TMenuItem
+      object mitPauseOnFinish: TMenuItem
         Caption = 'Pause on Finish'
-        OnClick = pauseonfinishClick
+        OnClick = mitPauseOnFinishClick
       end
-      object shutdownonfinish: TMenuItem
+      object mitShutdownOnFinish: TMenuItem
         Caption = 'Shutdown on Finish'
-        OnClick = shutdownonfinishClick
+        OnClick = mitShutdownOnFinishClick
       end
     end
-    object MenuItem6: TMenuItem
+    object mnuHelp: TMenuItem
       Caption = 'Help'
       object mitDocs: TMenuItem
         Caption = 'Documentation'
@@ -1254,7 +1249,7 @@ object Form1: TForm1
       end
     end
   end
-  object OpenDialog2: TOpenDialog
+  object dlgOpenPreset: TOpenDialog
     DefaultExt = '.wff'
     Filter = '.wff'
     left = 551
