@@ -1,48 +1,25 @@
 object Form2: TForm2
-  Left = 326
+  Left = 1459
   Height = 461
-  Top = 321
+  Top = 289
   Width = 417
-  HelpContext = 0
   ActiveControl = lbCategory
-  Align = alNone
   Caption = 'Edit Presets'
-  ChildSizing.LeftRightSpacing = 0
-  ChildSizing.TopBottomSpacing = 0
-  ChildSizing.HorizontalSpacing = 0
-  ChildSizing.VerticalSpacing = 0
-  ChildSizing.ControlsPerLine = 0
   ClientHeight = 461
   ClientWidth = 417
   Constraints.MinHeight = 400
   Constraints.MinWidth = 400
-  Font.Height = 0
-  Font.Style = []
   OnShow = FormShow
   ParentFont = False
   Position = poMainFormCenter
   ShowHint = True
   LCLVersion = '0.9.26'
   object pnlBottom: TPanel
-    Left = 0
     Height = 84
     Top = 377
     Width = 417
-    HelpContext = 0
     Align = alBottom
-    BorderSpacing.Left = 0
-    BorderSpacing.Top = 0
-    BorderSpacing.Right = 0
-    BorderSpacing.Bottom = 0
-    BorderSpacing.Around = 0
-    BorderSpacing.CellAlignHorizontal = ccaFill
-    BorderSpacing.CellAlignVertical = ccaFill
     BevelOuter = bvNone
-    ChildSizing.LeftRightSpacing = 0
-    ChildSizing.TopBottomSpacing = 0
-    ChildSizing.HorizontalSpacing = 0
-    ChildSizing.VerticalSpacing = 0
-    ChildSizing.ControlsPerLine = 0
     ClientHeight = 84
     ClientWidth = 417
     TabOrder = 0
@@ -51,16 +28,7 @@ object Form2: TForm2
       Height = 25
       Top = 17
       Width = 91
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
       BorderSpacing.InnerBorder = 4
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = ' Add / Update'
       OnClick = addpresetbtnClick
       TabOrder = 0
@@ -70,16 +38,7 @@ object Form2: TForm2
       Height = 25
       Top = 17
       Width = 91
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
       BorderSpacing.InnerBorder = 4
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Delete'
       OnClick = DeleteBtnClick
       TabOrder = 1
@@ -89,16 +48,7 @@ object Form2: TForm2
       Height = 25
       Top = 49
       Width = 75
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
       BorderSpacing.InnerBorder = 4
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Save'
       OnClick = OKbtnClick
       TabOrder = 2
@@ -108,16 +58,7 @@ object Form2: TForm2
       Height = 25
       Top = 49
       Width = 75
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
       BorderSpacing.InnerBorder = 4
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Close'
       OnClick = CancelBtnClick
       TabOrder = 3
@@ -127,16 +68,7 @@ object Form2: TForm2
       Height = 25
       Top = 18
       Width = 75
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
       BorderSpacing.InnerBorder = 4
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Import'
       OnClick = importClick
       TabOrder = 4
@@ -146,41 +78,18 @@ object Form2: TForm2
       Height = 25
       Top = 17
       Width = 75
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
       BorderSpacing.InnerBorder = 4
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Export'
       OnClick = exportClick
       TabOrder = 5
     end
   end
   object Panel1: TPanel
-    Left = 0
     Height = 246
     Top = 131
     Width = 417
-    HelpContext = 0
     Align = alBottom
-    BorderSpacing.Left = 0
-    BorderSpacing.Top = 0
-    BorderSpacing.Right = 0
-    BorderSpacing.Bottom = 0
-    BorderSpacing.Around = 0
-    BorderSpacing.CellAlignHorizontal = ccaFill
-    BorderSpacing.CellAlignVertical = ccaFill
     BevelOuter = bvNone
-    ChildSizing.LeftRightSpacing = 0
-    ChildSizing.TopBottomSpacing = 0
-    ChildSizing.HorizontalSpacing = 0
-    ChildSizing.VerticalSpacing = 0
-    ChildSizing.ControlsPerLine = 0
     ClientHeight = 246
     ClientWidth = 417
     TabOrder = 1
@@ -189,16 +98,6 @@ object Form2: TForm2
       Height = 13
       Top = 16
       Width = 289
-      HelpContext = 0
-      Align = alNone
-      Alignment = taLeftJustify
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Preset Name   (one word, only letters and numbers)'
       ParentColor = False
     end
@@ -207,16 +106,6 @@ object Form2: TForm2
       Height = 13
       Top = 64
       Width = 71
-      HelpContext = 0
-      Align = alNone
-      Alignment = taLeftJustify
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Preset Label'
       ParentColor = False
     end
@@ -225,16 +114,6 @@ object Form2: TForm2
       Height = 13
       Top = 112
       Width = 300
-      HelpContext = 0
-      Align = alNone
-      Alignment = taLeftJustify
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Preset Command Line Parameters (no -i or output file)'
       ParentColor = False
     end
@@ -243,16 +122,6 @@ object Form2: TForm2
       Height = 13
       Top = 160
       Width = 251
-      HelpContext = 0
-      Align = alNone
-      Alignment = taLeftJustify
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Output File Extension (do not include the ''.'' )'
       ParentColor = False
     end
@@ -261,16 +130,6 @@ object Form2: TForm2
       Height = 13
       Top = 208
       Width = 52
-      HelpContext = 0
-      Align = alNone
-      Alignment = taLeftJustify
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Category'
       ParentColor = False
     end
@@ -280,15 +139,6 @@ object Form2: TForm2
       Hint = '(one word, only letters and numbers)'
       Top = 32
       Width = 256
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       TabOrder = 0
     end
     object Edit2: TEdit
@@ -297,15 +147,6 @@ object Form2: TForm2
       Hint = 'Enter a more descriptive name for this preset'
       Top = 80
       Width = 256
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       TabOrder = 1
     end
     object Edit3: TEdit
@@ -314,15 +155,6 @@ object Form2: TForm2
       Hint = 'Please don''t use -i or output file parameters'
       Top = 128
       Width = 395
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       TabOrder = 2
     end
     object Edit4: TEdit
@@ -331,15 +163,6 @@ object Form2: TForm2
       Hint = 'Do not include the .'
       Top = 176
       Width = 80
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       MaxLength = 20
       TabOrder = 3
     end
@@ -349,61 +172,24 @@ object Form2: TForm2
       Hint = 'Choose a category to group this preset under'
       Top = 224
       Width = 120
-      HelpContext = 0
-      Align = alNone
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       TabOrder = 4
     end
   end
   object Panel2: TPanel
-    Left = 0
     Height = 131
-    Top = 0
     Width = 417
-    HelpContext = 0
     Align = alClient
-    BorderSpacing.Left = 0
-    BorderSpacing.Top = 0
-    BorderSpacing.Right = 0
-    BorderSpacing.Bottom = 0
-    BorderSpacing.Around = 0
-    BorderSpacing.CellAlignHorizontal = ccaFill
-    BorderSpacing.CellAlignVertical = ccaFill
     BevelOuter = bvNone
     Caption = 'Panel2'
-    ChildSizing.LeftRightSpacing = 0
-    ChildSizing.TopBottomSpacing = 0
-    ChildSizing.HorizontalSpacing = 0
-    ChildSizing.VerticalSpacing = 0
-    ChildSizing.ControlsPerLine = 0
     ClientHeight = 131
     ClientWidth = 417
     TabOrder = 2
     object Label1: TLabel
-      Left = 0
       Height = 13
-      Top = 0
       Width = 417
-      HelpContext = 0
       Align = alTop
-      Alignment = taLeftJustify
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
       Caption = 'Category / Preset'
       Font.CharSet = 17
-      Font.Height = 0
-      Font.Style = []
       ParentColor = False
       ParentFont = False
     end
@@ -412,46 +198,19 @@ object Form2: TForm2
       Height = 118
       Top = 13
       Width = 249
-      HelpContext = 0
       Align = alClient
       Anchors = [akTop, akRight, akBottom]
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
-      IntegralHeight = False
-      ItemHeight = 0
-      MultiSelect = False
       OnClick = ListBox1Click
-      Sorted = False
-      Style = lbStandard
       TabOrder = 0
       TopIndex = -1
     end
     object lbCategory: TListBox
-      Left = 0
       Height = 118
       Top = 13
       Width = 163
-      HelpContext = 0
       Align = alLeft
       Anchors = [akTop, akBottom]
-      BorderSpacing.Left = 0
-      BorderSpacing.Top = 0
-      BorderSpacing.Right = 0
-      BorderSpacing.Bottom = 0
-      BorderSpacing.Around = 0
-      BorderSpacing.CellAlignHorizontal = ccaFill
-      BorderSpacing.CellAlignVertical = ccaFill
-      IntegralHeight = False
-      ItemHeight = 0
-      MultiSelect = False
       OnClick = lbCategoryClick
-      Sorted = False
-      Style = lbStandard
       TabOrder = 1
       TopIndex = -1
     end
@@ -460,12 +219,9 @@ object Form2: TForm2
       Height = 118
       Top = 13
       Width = 5
-      HelpContext = 0
     end
   end
   object OpenDialog1: TOpenDialog
-    Width = 0
-    Height = 0
     Title = 'Import a Preset'
     DefaultExt = '.wff'
     Filter = 'WinFF Presets|*.wff'
@@ -473,15 +229,12 @@ object Form2: TForm2
     left = 320
   end
   object SaveDialog1: TSaveDialog
-    Width = 0
-    Height = 0
     Title = 'Export a Preset'
     FilterIndex = 0
     Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
     left = 248
   end
   object XMLConfig1: TXMLConfig
-    StartEmpty = False
     RootName = 'CONFIG'
     left = 290
     top = 169

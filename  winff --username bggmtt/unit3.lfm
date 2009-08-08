@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 732
+  Left = 1526
   Height = 318
-  Top = 420
+  Top = 616
   Width = 384
   ActiveControl = Notebook1
   Caption = 'About WinFF'
@@ -9,8 +9,9 @@ object Form3: TForm3
   ClientWidth = 384
   Color = clForm
   OnCreate = FormCreate
+  ParentFont = False
   Position = poMainFormCenter
-  LCLVersion = '0.9.26.2'
+  LCLVersion = '0.9.26'
   object Notebook1: TNotebook
     Height = 268
     Width = 384
@@ -19,14 +20,14 @@ object Form3: TForm3
     TabOrder = 0
     object Page1: TPage
       Caption = 'WinFF'
-      ClientWidth = 376
-      ClientHeight = 242
+      ClientWidth = 382
+      ClientHeight = 245
       object Label1: TLabel
         Left = 60
-        Height = 16
+        Height = 18
         Top = 10
-        Width = 61
-        Caption = 'WinFF 1.0.4'
+        Width = 78
+        Caption = 'WinFF 1.0.2'
         ParentColor = False
       end
       object Image1: TImage
@@ -130,17 +131,17 @@ object Form3: TForm3
       end
       object Label2: TLabel
         Left = 4
-        Height = 16
+        Height = 18
         Top = 66
-        Width = 150
+        Width = 187
         Caption = 'Copyright 2006-2009 GPL V3'
         ParentColor = False
       end
       object Label3: TLabel
         Left = 4
-        Height = 16
+        Height = 18
         Top = 90
-        Width = 117
+        Width = 142
         Caption = 'Matthew Weatherford'
         Font.Color = clBlue
         ParentColor = False
@@ -150,9 +151,9 @@ object Form3: TForm3
       object Label4: TLabel
         Cursor = crHandPoint
         Left = 60
-        Height = 16
+        Height = 18
         Top = 26
-        Width = 114
+        Width = 132
         Caption = 'http://www.winff.org'
         Font.Color = clBlue
         ParentColor = False
@@ -161,17 +162,17 @@ object Form3: TForm3
       end
       object Label11: TLabel
         Left = 4
-        Height = 16
+        Height = 18
         Top = 122
-        Width = 221
+        Width = 269
         Caption = 'Debian/Ubuntu Packaging by Paul Gevers'
         ParentColor = False
       end
       object Label12: TLabel
         Left = 4
-        Height = 16
+        Height = 18
         Top = 146
-        Width = 220
+        Width = 266
         Caption = 'Additional Programming by Ian Stoffberg'
         Font.Color = clBlue
         ParentColor = False
@@ -180,9 +181,9 @@ object Form3: TForm3
       end
       object Label13: TLabel
         Left = 4
-        Height = 16
+        Height = 18
         Top = 186
-        Width = 33
+        Width = 40
         Caption = 'Gmaq'
         Font.Color = clBlue
         ParentColor = False
@@ -191,17 +192,17 @@ object Form3: TForm3
       end
       object Label14: TLabel
         Left = 4
-        Height = 16
+        Height = 18
         Top = 170
-        Width = 139
+        Width = 171
         Caption = 'High Quality Presets From'
         ParentColor = False
       end
     end
     object Page2: TPage
       Caption = 'FFmpeg'
-      ClientWidth = 376
-      ClientHeight = 242
+      ClientWidth = 382
+      ClientHeight = 241
       object Label5: TLabel
         Left = 4
         Height = 16
@@ -263,14 +264,15 @@ object Form3: TForm3
     end
     object Page3: TPage
       Caption = 'Thanks'
-      ClientWidth = 376
-      ClientHeight = 242
+      ClientWidth = 382
+      ClientHeight = 241
       object ListBox1: TListBox
-        Height = 242
-        Width = 376
+        Height = 241
+        Width = 382
         Align = alClient
         ClickOnSelChange = False
         TabOrder = 0
+        TopIndex = -1
       end
     end
   end
