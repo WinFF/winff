@@ -125,6 +125,7 @@ type
     procedure mitWinffClick(Sender: TObject);
     procedure pauseonfinishClick(Sender: TObject);
     procedure PlayClick(Sender: TObject);
+    procedure PresetBoxChange(Sender: TObject);
     procedure RemoveBtnClick(Sender: TObject);
     function GetDeskTopPath() : string;
     function GetMydocumentsPath() : string ;
@@ -135,6 +136,8 @@ type
     function getpresetparams(presetname:string):string;
     function getpresetcategory(presetname:string):string;
     function getpresetextension(presetname:string):string;
+    function getpresetdestdir(presetname:string):string;
+    procedure setpresetdestdir(presetname:string; destdir:string);
     procedure showoptionsClick(Sender: TObject);
     procedure shutdownonfinishClick(Sender: TObject);
     procedure StartBtnClick(Sender: TObject);
@@ -277,7 +280,7 @@ f1,f2:textfile;
 ch: char;
 i:integer;
 formheight,formwidth,formtop,formleft:integer;
-sformheight,sformwidth,sformtop,sformleft:string;
+sformheight,sformwidth,sformtop,sformleft, destdir:string;
 currentpreset: string;
 //importfromcmdline:string;
 begin
@@ -426,14 +429,6 @@ begin
      end;
   {$ENDIF}
 
-  destfolder.text := getconfigvalue('general/destfolder');   // get destination folder
-  if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
-  rememberlast := getconfigvalue('general/rememberlast');
-  if rememberlast='' then
-    begin
-     rememberlast:= 'true';
-     setconfigvalue('general/rememberlast',rememberlast);
-    end;
 
           // prepare preset
 
@@ -484,6 +479,7 @@ begin
         break;
         end;
     end;
+
                                           // set window size and position
   showopts:=getconfigvalue('general/showoptions');
   sformheight:=getconfigvalue('window/height');
@@ -522,6 +518,23 @@ begin
         form1.width := formwidth;
         form1.invalidate;
         end;
+
+  destfolder.text := getconfigvalue('general/destfolder');   // get destination folder
+  if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
+  rememberlast := getconfigvalue('general/rememberlast');
+  if rememberlast='true' then
+    begin
+      destdir := getpresetdestdir(currentpreset);
+      if destdir <> '' then
+         destfolder.Text:=destdir;
+    end;
+  if rememberlast='' then
+    begin
+     rememberlast:= 'true';
+     setconfigvalue('general/rememberlast',rememberlast);
+    end;
+
+
 
                                          // check 2 pass encoding
   pass2encoding:=getconfigvalue('general/pass2');
@@ -619,6 +632,41 @@ begin
     category:='';
    end;
    result:=category;
+end;
+
+// get the destination directory from the preset
+function tform1.getpresetdestdir(presetname:string):string;
+var
+dirnode : tdomnode;
+destdir:string;
+begin
+   try
+    if presets.FindNode(presetname).FindNode('destdir').HasChildNodes then
+    begin
+      dirnode:=presets.FindNode(presetname).FindNode('destdir').FindNode('#text');
+      destdir:=dirnode.NodeValue;
+    end
+   except
+    destdir:='';
+   end;
+   result:=destdir;
+end;
+
+// save the destination directory to the preset
+
+procedure tform1.setpresetdestdir(presetname:string; destdir:string);
+var
+destdirnode,text1:tdomnode;
+begin
+ try
+    presets.FindNode(presetname).FindNode('destdir').FindNode('#text').NodeValue :=destdir;
+ except
+    destdirnode:=presetsfile.CreateElement('destdir');
+    presets.FindNode(presetname).appendchild(destdirnode);
+    text1:=presetsfile.Createtextnode(destdir);
+    presets.FindNode(presetname).findnode('destdir').AppendChild(text1);
+ end;
+  writexmlfile(presetsfile, presetspath + 'presets.xml');
 end;
 
 // get the extension of the preset
@@ -744,6 +792,21 @@ begin
    presetbox.sorted:=true;
    presetbox.sorted:=false;
 
+end;
+
+
+// change preset
+procedure TForm1.PresetBoxChange(Sender: TObject);
+var
+node,subnode:tdomnode;
+destdir: string;
+currentpreset:string;
+begin
+currentpreset := getcurrentpresetname(presetbox.Text);
+destdir:= getpresetdestdir(currentpreset);
+if destdir <> '' then destfolder.text:= destdir;
+if destfolder.Text='' then destfolder.text := getconfigvalue('general/destfolder');
+if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
 end;
 
 
@@ -1208,6 +1271,7 @@ begin
  playprocess.free;
 end;
 
+
 // Start Conversions
 procedure TForm1.StartBtnClick(Sender: TObject);
 var
@@ -1390,6 +1454,9 @@ begin                                     // get setup
     end;
 
     script.Free;
+
+    setpresetdestdir(pn,destfolder.text);
+
 end;
 
    // replace a paramter from a commandline
