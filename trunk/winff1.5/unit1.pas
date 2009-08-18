@@ -26,25 +26,34 @@ uses
   {$IFDEF WIN32} windows, shellapi, dos,{$endif}
   {$IFDEF unix} baseunix, unix, {$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
-  unit4, unit5, gettext, translations, process
-  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls;
+  unit4, unit5,frmIntroWizard, frmWizard, gettext, translations, process
+  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, eventlog;
 
 type
+     TJob  = record
+           sourcefile : string;
+           targetcategory  : string;
+           targetpreset    : string;
+           targetfolder    : string;
+     end;
 
   { TForm1 }
 
   TForm1 = class(TForm)
     btnAdd: TBitBtn;
+    btnAddWizard: TBitBtn;
+    btnAddWizard1: TBitBtn;
+    btnUpdate: TButton;
+    DestFolder: TComboBox;
     edtAspectRatio: TEdit;
     audbitrate: TEdit;
     audchannels: TEdit;
     audsamplingrate: TEdit;
     categorybox: TComboBox;
     cbxDeinterlace: TCheckBox;
-    ChooseFolderBtn: TButton;
     btnClear: TBitBtn;
     commandlineparams: TEdit;
-    DestFolder: TEdit;
+    Memo1: TMemo;
     mitDisplayCmdline: TMenuItem;
     dlgOpenFile: TOpenDialog;
     filelist: TListBox;
@@ -91,6 +100,7 @@ type
     mnuOptions: TMenuItem;
     mnuFile: TMenuItem;
     MainMenu1: TMainMenu;
+    ScriptProcess: TProcess;
     //dlgOpenFile: TOpenDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     btnConvert: TBitBtn;
@@ -98,12 +108,19 @@ type
     tabVideoSettings: TPage;
     tabAudioSettings: TPage;
     tabCmdLineSettings: TPage;
+    timerStatus: TTimer;
     Vidbitrate: TEdit;
     Vidframerate: TEdit;
     VidsizeX: TEdit;
     VidsizeY: TEdit;
 
+    procedure btnAddWizard1Click(Sender: TObject);
+    procedure btnAddWizardClick(Sender: TObject);
+    procedure btnUpdateClick(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
+    procedure DestFolderChange(Sender: TObject);
+    procedure DestFolderClick(Sender: TObject);
+    procedure filelistClick(Sender: TObject);
     procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure LaunchBrowser(URL:string);
     procedure LaunchPdf(pdffile:string);
@@ -128,6 +145,8 @@ type
     procedure btnRemoveClick(Sender: TObject);
     function GetDeskTopPath() : string;
     function GetMydocumentsPath() : string ;
+    procedure PageControl1Change(Sender: TObject);
+    procedure PresetBoxChange(Sender: TObject);
     procedure setconfigvalue(key:string;value:string);
     function getconfigvalue(key:string):string;
     procedure populatepresetbox(selectedcategory:string);
@@ -141,12 +160,21 @@ type
     procedure importpresetfromfile(presetfilename: string);
     function GetappdataPath() : string ;
     function replaceparam(commandline:string;param:string;replacement:string):string;
+    procedure tabPage1ContextPopup(Sender: TObject; MousePos: TPoint;
+      var Handled: Boolean);
+    procedure timerStatusTimer(Sender: TObject);
     procedure VidbitrateChange(Sender: TObject);
     {$IFDEF WIN32}function GetWin32System(): Integer;{$endif}
 
+  // custom type
+
+
   private
     { private declarations }
-
+    //
+    // max number of items in queue = 256 (change if necessary)
+    //
+    jobqueue: array[0..255] of tJob;
   public
     { public declarations }
 
@@ -478,6 +506,7 @@ begin
      if presetbox.Items[i]=rememberpreset then
         begin
         presetbox.ItemIndex:=i;
+        application.processmessages;
         break;
         end;
     end;
@@ -541,7 +570,13 @@ begin
                                         // check for multithreading
   multithreading:=getconfigvalue('general/multithreading');
 
-
+  for i := 0 to 255 do
+  begin
+    jobqueue[i].sourcefile:='';
+    jobqueue[i].targetcategory:='';
+    jobqueue[i].targetpreset:='';
+    jobqueue[i].targetfolder:='';
+  end
 end;
 
 
@@ -606,16 +641,21 @@ var
 catnode : tdomnode;
 category:string;
 begin
-   try
-    if presets.FindNode(presetname).FindNode('category').HasChildNodes then
-    begin
-      catnode:=presets.FindNode(presetname).FindNode('category').FindNode('#text');
-      category:=catnode.NodeValue;
-    end
-   except
-    category:='';
+   // ian
+   result := '';
+   if presetname <> '' then
+   begin
+     try
+      if presets.FindNode(presetname).FindNode('category').HasChildNodes then
+      begin
+        catnode:=presets.FindNode(presetname).FindNode('category').FindNode('#text');
+        category:=catnode.NodeValue;
+      end
+     except
+      category:='';
+     end;
+     result:=category;
    end;
-   result:=category;
 end;
 
 // get the extension of the preset
@@ -743,6 +783,111 @@ begin
 
 end;
 
+procedure TForm1.DestFolderChange(Sender: TObject);
+begin
+  if filelist.SelCount = 1 then
+  begin
+    btnUpdate.Visible := True;
+  end;
+end;
+
+procedure TForm1.DestFolderClick(Sender: TObject);
+begin
+  if SelectDirectoryDialog1.execute = true then
+  begin
+    DestFolder.Text := SelectDirectoryDialog1.FileName;
+  end;
+end;
+
+procedure TForm1.filelistClick(Sender: TObject);
+var i : integer;
+begin
+  if filelist.SelCount = 1 then
+  begin
+    for i := 0 to filelist.Count -1 do
+    begin
+      if filelist.Selected[i] = true then
+      begin;
+        categorybox.text := JobQueue[i].targetcategory;
+        categoryboxChange(self);
+        presetbox.Text:= JobQueue[i].targetpreset;
+        DestFolder.text := JobQueue[i].targetfolder;
+        break;
+      end;
+    end;
+  end;
+end;
+
+procedure TForm1.btnAddWizardClick(Sender: TObject);
+var i,j : integer;
+    s : string;
+begin
+ try
+   // create Wizard only when needed
+   AddWizard := TAddWizard.create(self);
+   // initialise & populate preset variables
+   AddWizard.cbCategory.Items := form1.categorybox.items;
+   AddWizard.cbPreset.Items := form1.PresetBox.items;
+   AddWizard.cbDestinationFolder.text := form1.DestFolder.Text;
+   AddWizard.cbCategory.ItemIndex:= form1.categorybox.ItemIndex;
+   AddWizard.cbPreset.ItemIndex:=form1.PresetBox.ItemIndex;
+   AddWizard.tabWizard.ActivePageIndex:=0;
+   AddWizard.cbSourceFolder.Text:=AddWizard.flbAddFiles.Directory;
+   AddWizard.presets := presets;
+   i := AddWizard.ShowModal; // check return value
+   if i = 1 then // means finish button was clicked, so we add to job queue;
+   begin
+     for i := 0 to addWizard.lbQueue.Count -1 do
+     begin;
+       s := AddWizard.cbSourceFolder.text + addWizard.lbQueue.Items[i] + ',' + addWizard.cbPreset.text + ',' + AddWizard.cbDestinationFolder.text;
+       filelist.items.Add(s);
+       j := filelist.items.count -1;
+       jobqueue[j].sourcefile:=  AddWizard.cbSourceFolder.text + DirectorySeparator +  addWizard.lbQueue.Items[i];
+       jobqueue[j].targetpreset:= addWizard.cbPreset.text;
+       jobqueue[j].targetfolder:= AddWizard.cbDestinationFolder.text;
+       jobqueue[j].targetcategory:= AddWizard.cbCategory.text;
+     end;
+   end;
+   AddWizard.Free;
+ except
+   ShowMessage('Error Creating Form - AddWizard');
+   if AddWizard <> nil then
+   begin
+        AddWizard.Free;
+   end;
+ end;
+end;
+
+procedure TForm1.btnUpdateClick(Sender: TObject);
+var i : integer;
+    s : string;
+begin
+  if filelist.SelCount = 1 then
+  begin
+    for i := 0 to filelist.Count -1 do
+    begin
+      if filelist.Selected[i] = true then
+      begin;
+        s := jobQueue[i].SourceFile + ',' + PresetBox.text + ',' + DestFolder.text;
+        filelist.items[i] := s;
+
+
+        JobQueue[i].targetcategory := categorybox.text;
+        JobQueue[i].targetpreset := presetbox.Text;
+        JobQueue[i].targetfolder := DestFolder.text;
+        filelist.Selected[i] := False;
+        break;
+      end;
+    end;
+  end;
+  btnUpdate.Visible := False;
+end;
+
+procedure TForm1.btnAddWizard1Click(Sender: TObject);
+begin
+  IntroWizard.ShowModal;
+end;
+
 
 // launch browser
 procedure TForm1.launchbrowser(URL:string);
@@ -859,11 +1004,18 @@ begin
         raise exception.create('SHGetPathFromIDList failed : invalid pidl');
    SetLength(Result, lStrLen(PChar(Result)));
 end;
+
 {$endif}
 {$ifdef unix}
 begin
  result := GetEnvironmentVariable('HOME') ;
 end;
+
+procedure TForm1.PageControl1Change(Sender: TObject);
+begin
+
+end;
+
 {$endif}
 
 // get the user's application data path
@@ -937,6 +1089,15 @@ begin
 end;
 {$endif}
 
+procedure TForm1.PresetBoxChange(Sender: TObject);
+begin
+  if filelist.SelCount = 1 then
+  begin
+    btnUpdate.Visible := True;
+  end;
+end;
+
+
 // choose a folder
 procedure TForm1.ChooseFolderBtnClick(Sender: TObject);
 begin
@@ -958,14 +1119,23 @@ end;
 
 // add files to the list
 procedure tform1.btnAddClick(Sender: TObject);
+var s: string;
+    i: integer;
 begin
    dlgOpenFile.Title:=rsSelectVideoFiles;
    dlgOpenFile.InitialDir := getconfigvalue('general/addfilesfolder');
    if dlgOpenFile.Execute then
-      begin
+   begin
        setconfigvalue('general/addfilesfolder',dlgOpenFile.InitialDir);
-       filelist.items.AddStrings(dlgOpenFile.Files);
-      end;
+       // build Queue string
+       s := 'Convert "' + ExtractFileName(dlgOpenFile.FileName) + '" to ' + PresetBox.text + ', saving to ' + DestFolder.text;
+       filelist.items.Add(s);
+       i := filelist.items.Count -1;
+       jobqueue[i].sourcefile:= dlgOpenFile.FileName;
+       jobqueue[i].targetcategory:= CategoryBox.text;
+       jobqueue[i].targetpreset:= PresetBox.Text;
+       jobqueue[i].targetfolder:= DestFolder.Text;
+   end;
 end;
 
 // remove a file from the list
@@ -1173,10 +1343,10 @@ procedure TForm1.btnPlayClick(Sender: TObject);
 var
 i : integer;
 filenametoplay: string;
-PlayProcess: TProcess;
+ScriptProcess: TProcess;
 begin
 
- playprocess:= TProcess.Create(nil);
+ ScriptProcess:= TProcess.Create(nil);
 
  if not fileexists(ffplay) then
    begin
@@ -1198,11 +1368,11 @@ begin
 
  if filenametoplay <>'' then
     begin
-    PlayProcess.CommandLine:=ffplay + ' "' + filenametoplay+'"' ;
-    playProcess.Execute;
+    ScriptProcess.CommandLine:=ffplay + ' "' + filenametoplay+'"' ;
+    ScriptProcess.Execute;
     end;
 
- playprocess.free;
+ ScriptProcess.free;
 end;
 
 // Start Conversions
@@ -1213,10 +1383,10 @@ pn, extension, params, commandline, command, filename,batfile, passlogfile, base
 qterm, ffmpegfilename, usethreads, deinterlace, nullfile, titlestring, priority:string;
 script: tstringlist;
 thetime: tdatetime;
-scriptprocess:tprocess;
+//scriptprocess:tprocess;
 scriptpriority:tprocesspriority;
 begin                                     // get setup
-   scriptprocess:= TProcess.Create(nil);
+   //scriptprocess:= TProcess.Create(nil);
 
    priority := getconfigvalue('general/priority');
    if priority= unit4.rspriorityhigh then scriptpriority:=pphigh
@@ -1249,6 +1419,9 @@ begin                                     // get setup
        exit;
       end;
 
+   // this next bit needs to be moved into the loop through the queue list as there could be multiple jobs in the queue for different presets
+
+   {
    pn:=getcurrentpresetname(presetbox.Text);
    if pn='' then
       begin
@@ -1260,10 +1433,19 @@ begin                                     // get setup
        showmessage(rsPleaseAdd1File);
        exit;
       end;
+
+
    params:=getpresetparams(pn);
    extension:=getpresetextension(pn);
+   }
+
+
    unit5.form5.memo1.lines.Clear;
 
+   // This next bit is not really well suited to the job queue if the job queue supports different presets per job.
+   // will comment it out for now.  we need to rethink this
+
+   {
                                          // trim everything up
    commandlineparams.text := trim(commandlineparams.Text);
    vidbitrate.Text := trim(vidbitrate.Text);
@@ -1274,10 +1456,11 @@ begin                                     // get setup
    audbitrate.Text := trim(audbitrate.Text);
    audsamplingrate.Text := trim(audsamplingrate.Text);
    audchannels.Text:=trim(audchannels.Text);
-
+  }
                                       // replace preset params if mnuOptions specified
    commandline := params;
-   if vidbitrate.Text <> '' then
+
+{  if vidbitrate.Text <> '' then
            commandline:=replaceparam(commandline,'-b','-b ' + vidbitrate.text+'kb');
    if vidframerate.Text <> '' then
            commandline:=replaceparam(commandline,'-r','-r ' + vidframerate.Text);
@@ -1293,9 +1476,9 @@ begin                                     // get setup
            commandline:=replaceparam(commandline,'-ac','-ac ' + audchannels.Text);
    if commandlineparams.Text <> '' then
            commandline += ' ' + commandlineparams.text;
+   }
 
-
-                                           // build batch file
+   // build batch file
    thetime :=now;
    batfile := 'ff' + FormatDateTime('yymmddhhnnss',thetime) +
            {$ifdef win32}'.bat'{$endif}
@@ -1303,8 +1486,28 @@ begin                                     // get setup
 
    for i:=0 to filelist.Items.Count - 1 do
      begin
-       filename := filelist.items[i];
+
+        script.clear;
+        {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
+        {$ifdef unix}script.Add('#!/bin/sh');{$endif}
+       filename := jobqueue[i].sourcefile;
        basename := extractfilename(filename);
+
+       pn:=getcurrentpresetname(jobqueue[i].targetpreset);
+       if pn='' then
+       begin
+         showmessage(rsPleaseSelectAPreset);
+       exit;
+       end;
+       if filelist.Items.Count=0 then
+       begin
+         showmessage(rsPleaseAdd1File);
+         exit;
+       end;
+
+       params:=getpresetparams(pn);
+       extension:=getpresetextension(pn);
+
        for j:= length(basename) downto 1  do
          begin
            if basename[j] = #46 then
@@ -1320,13 +1523,13 @@ begin                                     // get setup
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + extractfilename(filename)+
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
-       
+       memo1.lines.add(rsConverting +' ' + extractfilename(filename));
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
 
        if cbx2Pass.Checked = false then
           begin
            command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline + ' "' +
-                  destfolder.Text + DirectorySeparator + basename +'.' + extension+ '"';
+                  jobqueue[i].targetfolder + DirectorySeparator + basename +'.' + extension+ '" -vstats_file -';
            script.Add(command);
           end
        else if cbx2Pass.Checked = true then
@@ -1335,31 +1538,66 @@ begin                                     // get setup
                  + ' -passlogfile "' + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
            script.Add(command);
            command := ffmpegfilename + usethreads + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
-                 + passlogfile + '"' + ' -pass 2 ' + ' "' + destfolder.Text + DirectorySeparator + basename +'.'
-                 + extension+ '"';
+                 + passlogfile + '"' + ' -pass 2 ' + ' "' + jobqueue[i].targetfolder+ DirectorySeparator + basename +'.'
+                 + extension+ '" -vstats_file -';
            script.add(command);
           end;
+       unit5.form5.memo1.lines.add(command);
+
+       if pausescript='true' then
+         {$ifdef win32}
+         script.Add('pause');
+         {$endif}
+         {$ifdef unix}
+         script.Add('read -p "' + rsPressEnter + '" dumbyvar');
+         {$endif}
+
+                                           // remove batch file on completion
+         {$ifdef win32}
+           script.Add('del ' + '"' + presetspath + batfile + '"');
+         {$endif}
+         {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
+         script.SaveToFile(presetspath+batfile);
+         {$ifdef unix}
+         fpchmod(presetspath + batfile,&777);
+         {$endif}
+
+          {$ifdef win32}
+          qterm := '"' + terminal + '"';
+          {$endif}
+
+          {$ifdef unix}qterm := terminal;{$endif}
+                                                        // do it
+          {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
+          {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
+
+          scriptprocess.execute;
+
+          timerStatus.Enabled:=True;
 
      end;
                                                         // finish off commandline
 
-                                         // pausescript
-   if pausescript='true' then
-       {$ifdef win32}
-       script.Add('pause');
-       {$endif}
-       {$ifdef unix}
-       script.Add('read -p "' + rsPressEnter + '" dumbyvar');
-       {$endif}
+
+
+
+    // pausescript
+
+   script.Clear;
+   {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
+   {$ifdef unix}script.Add('#!/bin/sh');{$endif}
+
+   {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
+   {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
+
+   {$ifdef win32}nullfile:='"NUL.avi"';{$endif}
+   {$ifdef unix}nullfile:='/dev/null';{$endif}
 
                                                //shutdown when finnshed
    if mitShutdownOnFinish.Checked and (pausescript='false') then
       {$ifdef win32}script.Add('shutdown.exe -s');{$endif}
       {$ifdef unix}script.Add('shutdown now');{$endif}
 
-                                           // remove batch file on completion
-   {$ifdef win32}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
-   {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
 
 
    if not mitDisplayCmdline.Checked then
@@ -1382,10 +1620,10 @@ begin                                     // get setup
     end
    else
     begin
-      unit5.Form5.Memo1.Lines:=script;
+      //unit5.Form5.Memo1.Lines:=script;
       unit5.Form5.Show;
     end;
-
+    timerStatus.Enabled:=false;
     script.Free;
 end;
 
@@ -1410,6 +1648,32 @@ begin
  else
      commandline+= ' ' + replacement;
      result:=commandline;
+end;
+
+procedure TForm1.tabPage1ContextPopup(Sender: TObject; MousePos: TPoint;
+  var Handled: Boolean);
+begin
+
+end;
+
+procedure TForm1.timerStatusTimer(Sender: TObject);
+var s : string;
+    i : integer;
+    t : tstringlist;
+begin
+  {
+  //t := tstringlist.create;
+  try
+  //t.LoadFromFile('/tmp/vsfile');
+  memo1.Lines.LoadFromFile('/home/istoff/vsfile');
+  s := memo1.lines[memo1.lines.Count-1];
+  if pos(s,'100') > 0 then
+  begin
+    showmessage(s)
+  end;
+  except
+  end;
+  t.free}
 end;
 
 procedure TForm1.VidbitrateChange(Sender: TObject);
@@ -1551,6 +1815,7 @@ begin
 writexmlfile(presetsfile, presetspath + 'presets.xml');  // save the imported preset
 
 populatepresetbox('');
+
 end;
 
 initialization
