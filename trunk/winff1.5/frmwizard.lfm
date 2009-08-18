@@ -1,0 +1,534 @@
+object AddWizard: TAddWizard
+  Left = 413
+  Height = 433
+  Top = 181
+  Width = 673
+  ActiveControl = tabWizard
+  Caption = 'AddWizard'
+  ClientHeight = 433
+  ClientWidth = 673
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '0.9.26.2'
+  object pnlTop: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 673
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'Add Files Wizard'
+    Font.Height = -24
+    ParentFont = False
+    TabOrder = 0
+    OnClick = pnlTopClick
+  end
+  object pnlBottom: TPanel
+    Left = 0
+    Height = 50
+    Top = 383
+    Width = 673
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 50
+    ClientWidth = 673
+    TabOrder = 1
+    object pnlButtons: TPanel
+      Left = 287
+      Height = 50
+      Top = 0
+      Width = 386
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 50
+      ClientWidth = 386
+      TabOrder = 0
+      object BitBtn1: TBitBtn
+        Left = 9
+        Height = 30
+        Top = 8
+        Width = 75
+        Cancel = True
+        Caption = 'Cancel'
+        Kind = bkCancel
+        ModalResult = 2
+        NumGlyphs = 0
+        TabOrder = 0
+      end
+      object btnBack: TBitBtn
+        Left = 113
+        Height = 30
+        Top = 8
+        Width = 75
+        Caption = 'Back'
+        NumGlyphs = 0
+        OnClick = btnBackClick
+        TabOrder = 1
+      end
+      object btnForward: TBitBtn
+        Left = 193
+        Height = 30
+        Top = 8
+        Width = 75
+        Caption = 'Forward'
+        NumGlyphs = 0
+        OnClick = btnForwardClick
+        TabOrder = 2
+      end
+      object btnOk: TBitBtn
+        Left = 297
+        Height = 30
+        Top = 8
+        Width = 75
+        Caption = '&OK'
+        Default = True
+        Kind = bkOK
+        ModalResult = 1
+        NumGlyphs = 0
+        OnClick = btnOkClick
+        TabOrder = 3
+      end
+    end
+  end
+  object pnlMain: TPanel
+    Left = 0
+    Height = 333
+    Top = 50
+    Width = 673
+    Align = alClient
+    BevelOuter = bvSpace
+    ClientHeight = 333
+    ClientWidth = 673
+    TabOrder = 2
+    object tabWizard: TPageControl
+      Left = 1
+      Height = 331
+      Top = 1
+      Width = 671
+      ActivePage = tab3Convert
+      Align = alClient
+      TabIndex = 2
+      TabOrder = 0
+      OnChange = tabWizardChange
+      OnPageChanged = tabWizardChange
+      object tab1Info: TTabSheet
+        Caption = 'Info'
+        ClientHeight = 331
+        ClientWidth = 671
+        object Memo1: TMemo
+          Left = 0
+          Height = 331
+          Top = 0
+          Width = 671
+          Align = alClient
+          Color = clBtnFace
+          Font.Height = -16
+          Lines.Strings = (
+            ' '
+            ' '
+            'Use the following screens to add multiple'
+            'files to the job queue quickly.  Use the Back'
+            'and Forward buttons below to move through'
+            'the various stages of the wizard.  Once you'
+            'are happy with your selection, press the OK'
+            'button to return to the Winff main window. '
+            'If you would like to exit without saving,'
+            'press the Cancel button below.'
+            ''
+          )
+          OnChange = Memo1Change
+          ParentFont = False
+          TabOrder = 0
+        end
+      end
+      object tab2SelectFiles: TTabSheet
+        Caption = 'Select Files'
+        ClientHeight = 331
+        ClientWidth = 671
+        object Panel2: TPanel
+          Left = 0
+          Height = 331
+          Top = 0
+          Width = 445
+          Align = alClient
+          BevelOuter = bvNone
+          Caption = 'Panel2'
+          ClientHeight = 331
+          ClientWidth = 445
+          TabOrder = 0
+          object Panel5: TPanel
+            Left = 0
+            Height = 42
+            Top = 0
+            Width = 445
+            Align = alTop
+            BevelOuter = bvNone
+            ClientHeight = 42
+            ClientWidth = 445
+            TabOrder = 0
+            OnClick = Panel5Click
+            object Label1: TLabel
+              Left = 11
+              Height = 14
+              Top = 15
+              Width = 67
+              Caption = 'Source Folder'
+              ParentColor = False
+            end
+            object cbSourceFolder: TComboBox
+              Left = 91
+              Height = 21
+              Top = 12
+              Width = 296
+              AutoComplete = False
+              Ctl3D = False
+              ItemHeight = 0
+              ItemWidth = 0
+              OnClick = cbSourceFolderClick
+              TabOrder = 0
+              Text = 'cbSourceFolder'
+            end
+          end
+          object Panel6: TPanel
+            Left = 0
+            Height = 289
+            Top = 42
+            Width = 445
+            Align = alClient
+            Caption = 'Panel6'
+            ClientHeight = 289
+            ClientWidth = 445
+            TabOrder = 1
+            object flbAddFiles: TFileListBox
+              Cursor = crHandPoint
+              Left = 1
+              Height = 287
+              Top = 1
+              Width = 443
+              Align = alClient
+              BorderStyle = bsNone
+              Directory = '/'
+              ItemHeight = 0
+              Mask = '*.avi;*.mkv;*.mp*;*.mov;*.divx;*.3gp'
+              MultiSelect = True
+              TabOrder = 0
+              TopIndex = -1
+            end
+          end
+        end
+        object Panel3: TPanel
+          Left = 450
+          Height = 331
+          Top = 0
+          Width = 221
+          Align = alRight
+          BevelOuter = bvNone
+          Caption = 'Panel3'
+          ClientHeight = 331
+          ClientWidth = 221
+          TabOrder = 1
+          object Panel4: TPanel
+            Left = 0
+            Height = 289
+            Top = 42
+            Width = 41
+            Align = alLeft
+            BevelOuter = bvNone
+            ClientHeight = 289
+            ClientWidth = 41
+            TabOrder = 0
+            object btnAdd: TSpeedButton
+              Left = 9
+              Height = 22
+              Top = 43
+              Width = 23
+              Color = clBtnFace
+              Glyph.Data = {
+                36040000424D3604000000000000360000002800000010000000100000000100
+                2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00216324B81D5E2006FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF002A702F38256929F7216324D9FFFFFF00FFFFFF00FFFFFF00FFFFFF0061BE
+                6DFF5DB868FF58B162FF53A95CFF4DA156FF47994FFF419149FF3B8842FF3580
+                3BFF3F8845FF59A15EFF448B49FF216324CFFFFFFF00FFFFFF00FFFFFF0065C3
+                71FFA0D7A9FF9CD5A5FF98D3A1FF94D09DFF90CE98FF8BCB93FF87C98EFF82C6
+                89FF7EC384FF7AC180FF76BE7CFF458C4AFF216324C4FFFFFF00FFFFFF0068C7
+                74FFA5DAAEFFA2D8ABFF9ED6A7FF9AD4A3FF96D29FFF93CF9AFF8ECC95FF89CA
+                90FF85C78BFF81C587FF7DC282FF4A9150FF256929C9FFFFFF00FFFFFF0068C7
+                74FF68C774FF65C371FF61BE6DFF5DB868FF58B162FF53A95CFF4DA156FF4799
+                4FFF419149FF5AA362FF559D5CFF2F7835D1FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00419149F73B8842DBFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF0047994FBB41914906FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+              }
+              NumGlyphs = 0
+              OnClick = btnAddClick
+            end
+            object btnUp: TSpeedButton
+              Left = 9
+              Height = 22
+              Top = 101
+              Width = 23
+              Color = clBtnFace
+              Glyph.Data = {
+                36040000424D3604000000000000360000002800000010000000100000000100
+                2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00286E2DFF256929FF216425FF1E60
+                22FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF002D7533FF74BD7AFF72BD78FF2265
+                26FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00337D39FF79C07EFF76BF7CFF266B
+                2BFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0039853FFF7DC282FF7AC180FF2B72
+                30FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF003F8D46FF81C587FF7EC385FF317A
+                36FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0045954CFF85C78CFF82C689FF3682
+                3DFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF004A9E53FF8ACA91FF87C98EFF3C8A
+                43FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050A659FF8ECC95FF8BCB93FF4292
+                4AFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0056AD5FFF93CF9AFF90CE98FF489A
+                50FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF005BB465FF96D29FFF94D09CFF5DAC
+                65FF499C5238FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF0065C371BB62BF6EF779C683FF9AD4A3FF98D3A1FF7DC3
+                86FF4FA458F74A9E53B8FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF0068C7740666C472DB7CCA87FF9ED6A7FF9CD4A5FF73C0
+                7DFF55AC5ED950A65906FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0066C572D17ECA88FF7BC885FF5DB8
+                68CFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0067C673C965C270C4FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+              }
+              NumGlyphs = 0
+            end
+            object btnDown: TSpeedButton
+              Left = 9
+              Height = 22
+              Top = 125
+              Width = 23
+              Color = clBtnFace
+              Glyph.Data = {
+                36040000424D3604000000000000360000002800000010000000100000000100
+                2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00256929C4216425C9FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF002D7533CF488F4DFF458C4AFF2265
+                26D1FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF003C8A430638833ED9519957FF79C07EFF76BF7CFF468D
+                4BFF236627DB20622306FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF0042924AB83D8C45F765AD6CFF7DC282FF7AC180FF4B92
+                50FF276D2CF7246828BBFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF0043944B384E9A55FF81C587FF7EC385FF317A
+                36FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0045954CFF85C78CFF82C689FF3682
+                3DFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF004A9E53FF8ACA91FF87C98EFF3C8A
+                43FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050A659FF8ECC95FF8BCB93FF4292
+                4AFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0056AD5FFF93CF9AFF90CE98FF489A
+                50FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF005BB465FF96D29FFF94D09CFF4EA2
+                57FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF005FBB6AFF9AD4A3FF98D3A1FF53AA
+                5DFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0063C06FFF9ED6A7FF9CD4A5FF59B2
+                63FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0066C572FFA2D8ABFFA0D7A9FF5DB8
+                68FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0068C774FF67C673FF65C270FF62BE
+                6DFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+              }
+              NumGlyphs = 0
+            end
+            object btnRemove: TSpeedButton
+              Left = 9
+              Height = 22
+              Top = 189
+              Width = 23
+              Color = clBtnFace
+              Glyph.Data = {
+                36040000424D3604000000000000360000002800000010000000100000000100
+                2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF004DA1560647994FB8FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF0053A95CD94DA156F747994F38FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF005DB868CF71BE7BFF7AC183FF5BAA64FF47994FFF419149FF3B8842FF3580
+                3BFF2F7835FF2A702FFF256929FF216324FF1D5E20FFFFFFFF00FFFFFF0065C3
+                71C47BC886FF9CD5A5FF98D3A1FF94D09DFF90CE98FF8BCB93FF87C98EFF82C6
+                89FF7EC384FF7AC180FF76BE7CFF72BD78FF216324FFFFFFFF00FFFFFF0068C7
+                74C97FCC8AFFA2D8ABFF9ED6A7FF9AD4A3FF96D29FFF93CF9AFF8ECC95FF89CA
+                90FF85C78BFF81C587FF7DC282FF78C07EFF256929FFFFFFFF00FFFFFF00FFFF
+                FF0068C774D180CD8BFF7CC987FF5DB868FF58B162FF53A95CFF4DA156FF4799
+                4FFF419149FF3B8842FF35803BFF2F7835FF2A702FFFFFFFFF00FFFFFF00FFFF
+                FF00FFFFFF0068C774DB65C371F7FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF0068C7740668C774BBFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+                FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+              }
+              NumGlyphs = 0
+              OnClick = btnRemoveClick
+            end
+          end
+          object lbQueue: TListBox
+            Left = 41
+            Height = 289
+            Top = 42
+            Width = 180
+            Align = alClient
+            BorderStyle = bsNone
+            Color = clWhite
+            ItemHeight = 0
+            MultiSelect = True
+            TabOrder = 1
+            TopIndex = -1
+          end
+          object Panel1: TPanel
+            Left = 0
+            Height = 42
+            Top = 0
+            Width = 221
+            Align = alTop
+            Caption = 'Job Queue'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 2
+          end
+        end
+        object Splitter1: TSplitter
+          Left = 445
+          Height = 331
+          Top = 0
+          Width = 5
+          Align = alRight
+          ResizeAnchor = akRight
+        end
+      end
+      object tab3Convert: TTabSheet
+        Caption = 'Convert To'
+        ClientHeight = 300
+        ClientWidth = 667
+        object Label2: TLabel
+          Left = 53
+          Height = 13
+          Top = 56
+          Width = 59
+          Caption = 'Convert to'
+          ParentColor = False
+          OnClick = Label2Click
+        end
+        object Label3: TLabel
+          Left = 69
+          Height = 13
+          Top = 92
+          Width = 36
+          Caption = 'Preset'
+          ParentColor = False
+        end
+        object Label4: TLabel
+          Left = 12
+          Height = 13
+          Top = 134
+          Width = 103
+          Caption = 'Destination Folder'
+          ParentColor = False
+        end
+        object cbCategory: TComboBox
+          Left = 125
+          Height = 21
+          Top = 48
+          Width = 359
+          AutoComplete = False
+          Ctl3D = False
+          ItemHeight = 0
+          ItemWidth = 0
+          OnChange = cbCategoryChange
+          TabOrder = 0
+          Text = 'cbCategory'
+        end
+        object cbPreset: TComboBox
+          Left = 125
+          Height = 21
+          Top = 88
+          Width = 360
+          AutoComplete = False
+          Ctl3D = False
+          ItemHeight = 0
+          ItemWidth = 0
+          TabOrder = 1
+          Text = 'cbPreset'
+        end
+        object cbDestinationFolder: TComboBox
+          Left = 125
+          Height = 21
+          Top = 128
+          Width = 360
+          AutoComplete = False
+          Ctl3D = False
+          ItemHeight = 0
+          ItemWidth = 0
+          OnClick = cbDestinationFolderClick
+          TabOrder = 2
+          Text = 'cbDestinationFolder'
+        end
+      end
+      object tab4Confirm: TTabSheet
+        Caption = 'Summary'
+      end
+    end
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    left = 48
+    top = 16
+  end
+  object SelectDirectoryDialog2: TSelectDirectoryDialog
+    left = 116
+    top = 16
+  end
+end
