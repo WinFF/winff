@@ -9,10 +9,11 @@ object IntroWizard: TIntroWizard
   ClientWidth = 415
   Font.Height = -13
   Font.Name = 'Arial'
-  ParentFont = False
-  LCLVersion = '0.9.26'
+  LCLVersion = '0.9.26.2'
   object pnlTop: TPanel
+    Left = 0
     Height = 50
+    Top = 0
     Width = 415
     Align = alTop
     BevelOuter = bvNone
@@ -23,6 +24,7 @@ object IntroWizard: TIntroWizard
     OnClick = pnlTopClick
   end
   object pnlBottom: TPanel
+    Left = 0
     Height = 50
     Top = 360
     Width = 415
@@ -34,6 +36,7 @@ object IntroWizard: TIntroWizard
     object pnlButtons: TPanel
       Left = 29
       Height = 50
+      Top = 0
       Width = 386
       Align = alRight
       BevelOuter = bvNone
@@ -87,6 +90,7 @@ object IntroWizard: TIntroWizard
     end
   end
   object pnlMain: TPanel
+    Left = 0
     Height = 310
     Top = 50
     Width = 415
@@ -96,7 +100,9 @@ object IntroWizard: TIntroWizard
     ClientWidth = 415
     TabOrder = 2
     object tabWizard: TPageControl
+      Left = 0
       Height = 310
+      Top = 0
       Width = 415
       ActivePage = tab1Intro
       Align = alClient
@@ -106,13 +112,15 @@ object IntroWizard: TIntroWizard
       OnPageChanged = tabWizardChange
       object tab1Intro: TTabSheet
         Caption = 'Info'
-        ClientHeight = 281
-        ClientWidth = 407
+        ClientHeight = 279
+        ClientWidth = 411
         object Memo1: TMemo
-          Height = 281
-          Width = 407
+          Left = 0
+          Height = 279
+          Top = 0
+          Width = 411
           Align = alClient
-          Color = clYellow
+          Color = clInfoBk
           Font.Height = -16
           Lines.Strings = (
             ' '
@@ -129,13 +137,15 @@ object IntroWizard: TIntroWizard
       end
       object tab2How: TTabSheet
         Caption = 'How it works'
-        ClientHeight = 281
-        ClientWidth = 407
+        ClientHeight = 279
+        ClientWidth = 411
         object memInfo: TMemo
-          Height = 281
-          Width = 407
+          Left = 0
+          Height = 279
+          Top = 0
+          Width = 411
           Align = alClient
-          Color = clYellow
+          Color = clInfoBk
           Font.Height = -16
           Font.Name = 'Arial'
           Lines.Strings = (
@@ -158,13 +168,15 @@ object IntroWizard: TIntroWizard
       end
       object tab3Terminology: TTabSheet
         Caption = 'Terminology'
-        ClientHeight = 281
-        ClientWidth = 407
+        ClientHeight = 279
+        ClientWidth = 411
         object Memo2: TMemo
-          Height = 281
-          Width = 407
+          Left = 0
+          Height = 279
+          Top = 0
+          Width = 411
           Align = alClient
-          Color = clYellow
+          Color = clInfoBk
           Font.Height = -16
           Lines.Strings = (
             ' '
@@ -189,13 +201,15 @@ object IntroWizard: TIntroWizard
       end
       object tab4Summary: TTabSheet
         Caption = 'Summary'
-        ClientHeight = 281
-        ClientWidth = 407
+        ClientHeight = 279
+        ClientWidth = 411
         object Memo3: TMemo
-          Height = 281
-          Width = 407
+          Left = 0
+          Height = 279
+          Top = 0
+          Width = 411
           Align = alClient
-          Color = clYellow
+          Color = clInfoBk
           Font.Height = -16
           Lines.Strings = (
             ''

@@ -100,7 +100,6 @@ type
     mnuOptions: TMenuItem;
     mnuFile: TMenuItem;
     MainMenu1: TMainMenu;
-    ScriptProcess: TProcess;
     //dlgOpenFile: TOpenDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     btnConvert: TBitBtn;
@@ -108,7 +107,6 @@ type
     tabVideoSettings: TPage;
     tabAudioSettings: TPage;
     tabCmdLineSettings: TPage;
-    timerStatus: TTimer;
     Vidbitrate: TEdit;
     Vidframerate: TEdit;
     VidsizeX: TEdit;
@@ -162,7 +160,6 @@ type
     function replaceparam(commandline:string;param:string;replacement:string):string;
     procedure tabPage1ContextPopup(Sender: TObject; MousePos: TPoint;
       var Handled: Boolean);
-    procedure timerStatusTimer(Sender: TObject);
     procedure VidbitrateChange(Sender: TObject);
     {$IFDEF WIN32}function GetWin32System(): Integer;{$endif}
 
@@ -1383,10 +1380,10 @@ pn, extension, params, commandline, command, filename,batfile, passlogfile, base
 qterm, ffmpegfilename, usethreads, deinterlace, nullfile, titlestring, priority:string;
 script: tstringlist;
 thetime: tdatetime;
-//scriptprocess:tprocess;
+scriptprocess:tprocess;
 scriptpriority:tprocesspriority;
 begin                                     // get setup
-   //scriptprocess:= TProcess.Create(nil);
+   scriptprocess:= TProcess.Create(nil);
 
    priority := getconfigvalue('general/priority');
    if priority= unit4.rspriorityhigh then scriptpriority:=pphigh
@@ -1573,7 +1570,7 @@ begin                                     // get setup
 
           scriptprocess.execute;
 
-          timerStatus.Enabled:=True;
+
 
      end;
                                                         // finish off commandline
@@ -1623,7 +1620,6 @@ begin                                     // get setup
       //unit5.Form5.Memo1.Lines:=script;
       unit5.Form5.Show;
     end;
-    timerStatus.Enabled:=false;
     script.Free;
 end;
 
@@ -1656,25 +1652,6 @@ begin
 
 end;
 
-procedure TForm1.timerStatusTimer(Sender: TObject);
-var s : string;
-    i : integer;
-    t : tstringlist;
-begin
-  {
-  //t := tstringlist.create;
-  try
-  //t.LoadFromFile('/tmp/vsfile');
-  memo1.Lines.LoadFromFile('/home/istoff/vsfile');
-  s := memo1.lines[memo1.lines.Count-1];
-  if pos(s,'100') > 0 then
-  begin
-    showmessage(s)
-  end;
-  except
-  end;
-  t.free}
-end;
 
 procedure TForm1.VidbitrateChange(Sender: TObject);
 begin
@@ -1810,12 +1787,11 @@ begin
    end;
    categorynode.AppendChild(textc);
 
- end; //for j = 1 to childnodes-1
+  end; //for j = 1 to childnodes-1
 
-writexmlfile(presetsfile, presetspath + 'presets.xml');  // save the imported preset
+  writexmlfile(presetsfile, presetspath + 'presets.xml');  // save the imported preset
 
-populatepresetbox('');
-
+  populatepresetbox('');
 end;
 
 initialization

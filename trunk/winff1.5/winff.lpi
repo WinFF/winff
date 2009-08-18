@@ -10,6 +10,7 @@
       <MainUnit Value="0"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="WinFF"/>
+      <ActiveEditorIndexAtStart Value="1"/>
     </General>
     <i18n>
       <OutDir Value="languages"/>
@@ -51,7 +52,7 @@
         <PackageName Value="LCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="34">
+    <Units Count="35">
       <Unit0>
         <Filename Value="winff.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -66,12 +67,14 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="13" Y="139"/>
-        <TopLine Value="339"/>
+        <CursorPos X="1" Y="163"/>
+        <TopLine Value="141"/>
+        <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Bookmarks Count="1">
-          <Item0 X="18" Y="884" ID="1"/>
+          <Item0 X="18" Y="881" ID="1"/>
         </Bookmarks>
+        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="unit2.pas"/>
@@ -287,9 +290,11 @@
         <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmIntroWizard"/>
-        <CursorPos X="64" Y="28"/>
+        <CursorPos X="17" Y="34"/>
         <TopLine Value="19"/>
+        <EditorIndex Value="1"/>
         <UsageCount Value="47"/>
+        <Loaded Value="True"/>
       </Unit30>
       <Unit31>
         <Filename Value="frmwizard.pas"/>
@@ -315,8 +320,68 @@
         <TopLine Value="458"/>
         <UsageCount Value="10"/>
       </Unit33>
+      <Unit34>
+        <Filename Value="frmintrowizard.lfm"/>
+        <CursorPos X="34" Y="208"/>
+        <TopLine Value="190"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="LFM"/>
+      </Unit34>
     </Units>
-    <JumpHistory Count="0" HistoryIndex="-1"/>
+    <JumpHistory Count="13" HistoryIndex="12">
+      <Position1>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="139" Column="13" TopLine="339"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1822" Column="7" TopLine="1666"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1818" Column="5" TopLine="1782"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1728" Column="3" TopLine="1681"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1346" Column="1" TopLine="1324"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="102" Column="26" TopLine="102"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="109" Column="32" TopLine="109"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1817" Column="1" TopLine="1779"/>
+      </Position8>
+      <Position9>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="109" Column="31" TopLine="87"/>
+      </Position9>
+      <Position10>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1487" Column="4" TopLine="1460"/>
+      </Position10>
+      <Position11>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1384" Column="1" TopLine="1365"/>
+      </Position11>
+      <Position12>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1574" Column="11" TopLine="1552"/>
+      </Position12>
+      <Position13>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1656" Column="1" TopLine="1632"/>
+      </Position13>
+    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="8"/>
