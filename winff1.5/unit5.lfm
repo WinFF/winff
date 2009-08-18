@@ -1,7 +1,7 @@
 object Form5: TForm5
-  Left = 1524
+  Left = 1012
   Height = 378
-  Top = 209
+  Top = 248
   Width = 386
   ActiveControl = Memo1
   Caption = 'FFmpeg Command Line'

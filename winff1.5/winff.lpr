@@ -26,7 +26,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms
   { add your units here }, Unit1, Unit2, Unit3, Unit4, Unit5,defaulttranslator,
-  unit6;
+  unit6, frmIntroWizard, frmWizard, TAChartLazarusPkg;
    {$ifdef win32}
    {$R resources.rc}
    {$endif}
@@ -44,6 +44,7 @@ begin
   Application.CreateForm(TForm4, Form4);
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TIntroWizard, IntroWizard);
   Application.Run;
 end.
 

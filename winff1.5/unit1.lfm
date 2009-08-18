@@ -1,13 +1,13 @@
 object Form1: TForm1
-  Left = 333
-  Height = 587
-  Top = 185
-  Width = 826
-  ActiveControl = nbkSettings
+  Left = 179
+  Height = 498
+  Top = 102
+  Width = 866
+  ActiveControl = PageControl1
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 566
-  ClientWidth = 826
+  ClientHeight = 473
+  ClientWidth = 866
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
   Icon.Data = {
@@ -319,136 +319,177 @@ object Form1: TForm1
   OnClose = FormClose
   OnCreate = FormCreate
   OnDropFiles = FormDropFiles
-  ParentFont = False
   Position = poDefault
-  LCLVersion = '0.9.26'
+  LCLVersion = '0.9.26.2'
   object Label2: TLabel
+    Left = 0
     Height = 19
-    Width = 4
+    Top = 0
+    Width = 6
     ParentColor = False
   end
   object pnlMain: TPanel
-    Height = 349
+    Left = 0
+    Height = 265
     Top = 54
-    Width = 826
+    Width = 866
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 349
-    ClientWidth = 826
+    ClientHeight = 265
+    ClientWidth = 866
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
-      Height = 209
-      Width = 826
+      Left = 0
+      Height = 125
+      Top = 0
+      Width = 866
       Align = alClient
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = 8
+      Font.Name = '-monotype-arial-medium-r-normal-*-*-80-*-*-*-*-microsoft-cp1252'
+      Font.Pitch = fpVariable
+      ItemHeight = 0
       MultiSelect = True
+      OnClick = filelistClick
       OnDblClick = btnPlayClick
       OnKeyUp = filelistKeyUp
+      ParentFont = False
       TabOrder = 0
       TopIndex = -1
     end
     object pnlbottom: TPanel
+      Left = 0
       Height = 140
-      Top = 209
-      Width = 826
+      Top = 125
+      Width = 866
       Align = alBottom
       ClientHeight = 140
-      ClientWidth = 826
+      ClientWidth = 866
       ParentColor = False
       TabOrder = 1
       object PageControl1: TPageControl
         Left = 1
         Height = 138
         Top = 1
-        Width = 824
+        Width = 864
         ActivePage = tabPage1
         Align = alClient
         TabIndex = 0
         TabOrder = 0
+        OnChange = PageControl1Change
+        OnPageChanged = PageControl1Change
         object tabPage1: TTabSheet
           Caption = 'tabPage1'
-          ClientHeight = 115
-          ClientWidth = 822
+          ClientHeight = 107
+          ClientWidth = 860
+          OnContextPopup = tabPage1ContextPopup
           object Label1: TLabel
             Left = 13
-            Height = 14
-            Top = 11
-            Width = 66
+            Height = 13
+            Top = 7
+            Width = 71
             Caption = 'Convert to....'
             ParentColor = False
           end
           object Label11: TLabel
-            Left = 14
-            Height = 14
-            Top = 82
-            Width = 71
+            Left = 13
+            Height = 13
+            Top = 71
+            Width = 73
             Caption = 'Output folder'
             ParentColor = False
           end
           object Label19: TLabel
             Left = 13
-            Height = 14
-            Top = 43
-            Width = 66
+            Height = 13
+            Top = 39
+            Width = 71
             Caption = 'Convert to....'
             ParentColor = False
           end
           object PresetBox: TComboBox
             Left = 101
-            Height = 27
+            Height = 21
             Top = 35
             Width = 392
+            AutoComplete = False
+            Ctl3D = False
+            ItemHeight = 0
+            ItemWidth = 0
             MaxLength = 65535
+            OnChange = PresetBoxChange
             Style = csDropDownList
             TabOrder = 1
           end
-          object DestFolder: TEdit
-            Left = 101
-            Height = 23
-            Top = 76
-            Width = 352
-            TabOrder = 2
-          end
-          object ChooseFolderBtn: TButton
-            Left = 461
-            Height = 25
-            Top = 76
-            Width = 32
-            BorderSpacing.InnerBorder = 4
-            Caption = '...'
-            Font.Style = [fsBold]
-            OnClick = ChooseFolderBtnClick
-            ParentFont = False
-            TabOrder = 3
-          end
           object categorybox: TComboBox
             Left = 101
-            Height = 27
+            Height = 21
             Top = 4
             Width = 392
+            AutoComplete = False
+            Ctl3D = False
+            ItemHeight = 0
+            ItemWidth = 0
             MaxLength = 65535
             OnChange = categoryboxChange
             Sorted = True
             Style = csDropDownList
             TabOrder = 0
           end
+          object DestFolder: TComboBox
+            Left = 101
+            Height = 21
+            Top = 68
+            Width = 392
+            AutoComplete = False
+            Ctl3D = True
+            ItemHeight = 0
+            ItemWidth = 0
+            OnChange = DestFolderChange
+            OnClick = DestFolderClick
+            TabOrder = 2
+          end
+          object btnUpdate: TButton
+            Left = 509
+            Height = 25
+            Top = 68
+            Width = 112
+            Caption = 'Update Queue'
+            OnClick = btnUpdateClick
+            TabOrder = 3
+            Visible = False
+          end
+          object Memo1: TMemo
+            Left = 621
+            Height = 90
+            Top = 7
+            Width = 200
+            Lines.Strings = (
+              'Memo1'
+            )
+            TabOrder = 4
+          end
         end
       end
     end
   end
   object pnlTop: TPanel
+    Left = 0
     Height = 54
-    Width = 826
+    Top = 0
+    Width = 866
     Align = alTop
     ClientHeight = 54
-    ClientWidth = 826
+    ClientWidth = 866
     TabOrder = 1
     object btnAdd: TBitBtn
       Left = 1
       Height = 53
+      Top = 0
       Width = 60
       Caption = 'Add'
       Glyph.Data = {
@@ -535,6 +576,7 @@ object Form1: TForm1
     object btnRemove: TBitBtn
       Left = 64
       Height = 53
+      Top = 0
       Width = 60
       Caption = 'Remove'
       Glyph.Data = {
@@ -621,6 +663,7 @@ object Form1: TForm1
     object btnClear: TBitBtn
       Left = 128
       Height = 53
+      Top = 0
       Width = 60
       Caption = 'Clear'
       Glyph.Data = {
@@ -707,6 +750,7 @@ object Form1: TForm1
     object btnPlay: TBitBtn
       Left = 200
       Height = 53
+      Top = 0
       Width = 70
       Caption = 'btnPlay'
       Glyph.Data = {
@@ -793,6 +837,7 @@ object Form1: TForm1
     object btnConvert: TBitBtn
       Left = 272
       Height = 53
+      Top = 0
       Width = 70
       Caption = 'Convert'
       Glyph.Data = {
@@ -877,7 +922,7 @@ object Form1: TForm1
       TabOrder = 4
     end
     object Panel2: TPanel
-      Left = 700
+      Left = 740
       Height = 52
       Top = 1
       Width = 125
@@ -974,66 +1019,244 @@ object Form1: TForm1
         TabOrder = 0
       end
     end
+    object btnAddWizard: TBitBtn
+      Left = 400
+      Height = 53
+      Top = 1
+      Width = 72
+      Caption = 'Job Wizard'
+      Glyph.Data = {
+        36090000424D3609000000000000360000002800000018000000180000000100
+        2000000000000009000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000000000000000000000297E
+        40FF298C4CFF268B4AFF268A49FF288A4AFF2B8043FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000002D93
+        53FF129E50FF0D9C4CFF0D9B4CFF109B4EFF2D9554FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000002B9B
+        56FF0CA651FF08A54EFF08A44EFF0BA34FFF2B9B57FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000002CA2
+        5AFF0CAF55FF08AE52FF08AD52FF0BAC52FF2CA159FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000115815FF2DAA
+        5FFF0CB758FF09B756FF09B656FF0BB456FF2DA85EFF125916FF000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000002B773AFF3F9E62FF30A05CFF2DA45BFF2DAA5FFF26C0
+        69FF0AC05CFF0AC35CFF0AC05BFF0ABC59FF26BB67FF2DA65CFF2B9E58FF2B99
+        56FF2F9254FF247334FF00000000000000000000000000000000000000000000
+        0000000000000000000036844AFF4BB57AFF33B76EFF22B865FF15BC5FFF0CC3
+        5DFF0AC85EFF0ACB60FF0AC85FFF0AC25CFF0ABA59FF0BB256FF0BA951FF0AA0
+        4DFF169850FF267B3DFF00000000000000000000000000000000000000000000
+        0000000000000000000035844AFF50B77DFF47BF7CFF40C37BFF37C777FF27CC
+        70FF1BD16CFF12D569FF0CCF63FF0AC65EFF09BD59FF08B254FF08A94FFF07A0
+        4BFF14984EFF257B3CFF00000000000000000000000000000000000000000000
+        0000000000000000000036854AFF52B87FFF4BC07FFF48C580FF45CB80FF41D2
+        81FF3DD882FF37DB80FF2ED578FF27CC70FF21C369FF1BB861FF18AE5BFF15A5
+        56FF1E9C55FF287C3EFF00000000000000000000000000000000000000000000
+        0000000000000000000038854BFF57BA82FF50C183FF4DC683FF4ACB83FF44D0
+        82FF40D381FF3CD480FF38D17CFF34CB77FF31C573FF2DBC6DFF29B366FF25AA
+        60FF2AA15EFF2A7D40FF00000000000000000000000000000000000000000000
+        000000000000000000002E783CFF51A56FFF50AB72FF4EAE72FF4EB375FF54CC
+        88FF43CE80FF3ECE7EFF3ACB7BFF37C777FF45C47CFF3FAB69FF3CA464FF3A9E
+        60FF3A975CFF267436FF00000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000000000000F5814FF4DB3
+        75FF47C881FF41C67CFF3DC479FF3BC177FF45AF6FFF105815FF000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000004CAC
+        70FF4AC280FF44C07BFF3FBE77FF3EBC76FF45A96BFF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000004CA6
+        6DFF4DBD7FFF45BA7AFF41B876FF40B675FF46A46AFF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000004C9F
+        69FF53B780FF4CB47AFF47B277FF47B076FF489F68FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000003883
+        4AFF479862FF44965FFF42955EFF42945DFF38844CFF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      Layout = blGlyphTop
+      NumGlyphs = 0
+      OnClick = btnAddWizardClick
+      TabOrder = 6
+    end
+    object btnAddWizard1: TBitBtn
+      Left = 480
+      Height = 53
+      Top = 1
+      Width = 136
+      Caption = 'FirstRun Wizard'
+      Glyph.Data = {
+        36090000424D3609000000000000360000002800000018000000180000000100
+        2000000000000009000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000000000000000000000297E
+        40FF298C4CFF268B4AFF268A49FF288A4AFF2B8043FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000002D93
+        53FF129E50FF0D9C4CFF0D9B4CFF109B4EFF2D9554FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000002B9B
+        56FF0CA651FF08A54EFF08A44EFF0BA34FFF2B9B57FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000002CA2
+        5AFF0CAF55FF08AE52FF08AD52FF0BAC52FF2CA159FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000115815FF2DAA
+        5FFF0CB758FF09B756FF09B656FF0BB456FF2DA85EFF125916FF000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000002B773AFF3F9E62FF30A05CFF2DA45BFF2DAA5FFF26C0
+        69FF0AC05CFF0AC35CFF0AC05BFF0ABC59FF26BB67FF2DA65CFF2B9E58FF2B99
+        56FF2F9254FF247334FF00000000000000000000000000000000000000000000
+        0000000000000000000036844AFF4BB57AFF33B76EFF22B865FF15BC5FFF0CC3
+        5DFF0AC85EFF0ACB60FF0AC85FFF0AC25CFF0ABA59FF0BB256FF0BA951FF0AA0
+        4DFF169850FF267B3DFF00000000000000000000000000000000000000000000
+        0000000000000000000035844AFF50B77DFF47BF7CFF40C37BFF37C777FF27CC
+        70FF1BD16CFF12D569FF0CCF63FF0AC65EFF09BD59FF08B254FF08A94FFF07A0
+        4BFF14984EFF257B3CFF00000000000000000000000000000000000000000000
+        0000000000000000000036854AFF52B87FFF4BC07FFF48C580FF45CB80FF41D2
+        81FF3DD882FF37DB80FF2ED578FF27CC70FF21C369FF1BB861FF18AE5BFF15A5
+        56FF1E9C55FF287C3EFF00000000000000000000000000000000000000000000
+        0000000000000000000038854BFF57BA82FF50C183FF4DC683FF4ACB83FF44D0
+        82FF40D381FF3CD480FF38D17CFF34CB77FF31C573FF2DBC6DFF29B366FF25AA
+        60FF2AA15EFF2A7D40FF00000000000000000000000000000000000000000000
+        000000000000000000002E783CFF51A56FFF50AB72FF4EAE72FF4EB375FF54CC
+        88FF43CE80FF3ECE7EFF3ACB7BFF37C777FF45C47CFF3FAB69FF3CA464FF3A9E
+        60FF3A975CFF267436FF00000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000000000000F5814FF4DB3
+        75FF47C881FF41C67CFF3DC479FF3BC177FF45AF6FFF105815FF000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000004CAC
+        70FF4AC280FF44C07BFF3FBE77FF3EBC76FF45A96BFF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000004CA6
+        6DFF4DBD7FFF45BA7AFF41B876FF40B675FF46A46AFF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000004C9F
+        69FF53B780FF4CB47AFF47B277FF47B076FF489F68FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000003883
+        4AFF479862FF44965FFF42955EFF42945DFF38844CFF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      Layout = blGlyphTop
+      NumGlyphs = 0
+      OnClick = btnAddWizard1Click
+      TabOrder = 7
+    end
   end
   object pnlbottom2: TPanel
-    Height = 163
-    Top = 403
-    Width = 826
+    Left = 0
+    Height = 154
+    Top = 319
+    Width = 866
     Align = alBottom
-    ClientHeight = 163
-    ClientWidth = 826
+    ClientHeight = 154
+    ClientWidth = 866
     ParentColor = False
     TabOrder = 2
     Visible = False
     object gbxSettings: TGroupBox
       Left = 1
-      Height = 161
+      Height = 152
       Top = 1
-      Width = 824
+      Width = 864
       Align = alClient
       Caption = 'gbxSettings'
-      ClientHeight = 146
-      ClientWidth = 820
+      ClientHeight = 134
+      ClientWidth = 860
+      Ctl3D = False
       TabOrder = 0
       object nbkSettings: TNotebook
-        Height = 146
-        Width = 820
+        Left = 0
+        Height = 134
+        Top = 0
+        Width = 860
         Align = alClient
         PageIndex = 0
         TabOrder = 0
         object tabVideoSettings: TPage
           Caption = 'Video Settings'
-          ClientWidth = 818
-          ClientHeight = 123
+          ClientWidth = 856
+          ClientHeight = 103
           object lblVideoBitRate: TLabel
             Left = 6
-            Height = 14
+            Height = 13
             Top = 5
-            Width = 73
+            Width = 81
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
           object lblVideoSize: TLabel
             Left = 219
-            Height = 14
+            Height = 13
             Top = 5
-            Width = 54
+            Width = 62
             Caption = 'Video Size'
             ParentColor = False
           end
           object lblAspectRatio: TLabel
             Left = 307
-            Height = 14
+            Height = 13
             Top = 5
-            Width = 65
+            Width = 72
             Caption = 'Aspect Ratio'
             ParentColor = False
           end
           object Label9: TLabel
             Left = 253
-            Height = 10
+            Height = 11
             Top = 25
-            Width = 6
+            Width = 8
             Caption = 'X'
             Font.Height = -10
             ParentColor = False
@@ -1041,9 +1264,9 @@ object Form1: TForm1
           end
           object lblFrameRate: TLabel
             Left = 124
-            Height = 14
+            Height = 13
             Top = 5
-            Width = 58
+            Width = 65
             Caption = 'Frame Rate'
             ParentColor = False
           end
@@ -1085,9 +1308,9 @@ object Form1: TForm1
           end
           object cbx2Pass: TCheckBox
             Left = 6
-            Height = 22
+            Height = 21
             Top = 64
-            Width = 57
+            Width = 61
             Caption = '2 pass'
             Color = clForm
             ParentColor = False
@@ -1095,9 +1318,9 @@ object Form1: TForm1
           end
           object cbxDeinterlace: TCheckBox
             Left = 123
-            Height = 22
+            Height = 21
             Top = 64
-            Width = 83
+            Width = 88
             Caption = 'Deinterlace'
             Color = clForm
             ParentColor = False
@@ -1106,8 +1329,8 @@ object Form1: TForm1
         end
         object tabAudioSettings: TPage
           Caption = 'Audio Settings'
-          ClientWidth = 818
-          ClientHeight = 123
+          ClientWidth = 860
+          ClientHeight = 134
           object Label7: TLabel
             Left = 9
             Height = 18
@@ -1156,8 +1379,8 @@ object Form1: TForm1
         end
         object tabCmdLineSettings: TPage
           Caption = 'tabCmdLineSettings'
-          ClientWidth = 818
-          ClientHeight = 123
+          ClientWidth = 860
+          ClientHeight = 134
           object commandlineparams: TEdit
             Left = 1
             Height = 24
@@ -1253,5 +1476,28 @@ object Form1: TForm1
     Filter = '.wff'
     left = 551
     top = 312
+  end
+  object timerStatus: TTimer
+    Enabled = False
+    Interval = 5000
+    OnTimer = timerStatusTimer
+    left = 513
+    top = 224
+  end
+  object ScriptProcess: TProcess
+    Active = False
+    Options = [poUsePipes]
+    Priority = ppNormal
+    StartupOptions = []
+    ShowWindow = swoShow
+    WindowColumns = 0
+    WindowHeight = 0
+    WindowLeft = 0
+    WindowRows = 0
+    WindowTop = 0
+    WindowWidth = 0
+    FillAttribute = 0
+    left = 629
+    top = 381
   end
 end
