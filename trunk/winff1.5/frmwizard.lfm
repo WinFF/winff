@@ -452,8 +452,8 @@ object AddWizard: TAddWizard
       end
       object tab3Convert: TTabSheet
         Caption = 'Convert To'
-        ClientHeight = 300
-        ClientWidth = 667
+        ClientHeight = 331
+        ClientWidth = 671
         object Label2: TLabel
           Left = 53
           Height = 13

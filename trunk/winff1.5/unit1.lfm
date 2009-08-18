@@ -323,9 +323,9 @@ object Form1: TForm1
   LCLVersion = '0.9.26.2'
   object Label2: TLabel
     Left = 0
-    Height = 20
+    Height = 21
     Top = 0
-    Width = 7
+    Width = 8
     ParentColor = False
   end
   object pnlMain: TPanel
@@ -411,6 +411,14 @@ object Form1: TForm1
             Caption = 'Convert to....'
             ParentColor = False
           end
+          object lblConvert: TLabel
+            Left = 509
+            Height = 13
+            Top = 12
+            Width = 58
+            Caption = 'lblConvert'
+            ParentColor = False
+          end
           object PresetBox: TComboBox
             Left = 101
             Height = 21
@@ -454,7 +462,7 @@ object Form1: TForm1
             TabOrder = 2
           end
           object btnUpdate: TButton
-            Left = 509
+            Left = 501
             Height = 25
             Top = 68
             Width = 112
@@ -463,14 +471,11 @@ object Form1: TForm1
             TabOrder = 3
             Visible = False
           end
-          object Memo1: TMemo
-            Left = 621
-            Height = 90
-            Top = 7
-            Width = 200
-            Lines.Strings = (
-              'Memo1'
-            )
+          object pbConvert: TProgressBar
+            Left = 501
+            Height = 20
+            Top = 35
+            Width = 112
             TabOrder = 4
           end
         end
