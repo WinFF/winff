@@ -53,7 +53,7 @@ type
     cbxDeinterlace: TCheckBox;
     btnClear: TBitBtn;
     commandlineparams: TEdit;
-    Memo1: TMemo;
+    lblConvert: TLabel;
     mitDisplayCmdline: TMenuItem;
     dlgOpenFile: TOpenDialog;
     filelist: TListBox;
@@ -100,6 +100,7 @@ type
     mnuOptions: TMenuItem;
     mnuFile: TMenuItem;
     MainMenu1: TMainMenu;
+    pbConvert: TProgressBar;
     //dlgOpenFile: TOpenDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     btnConvert: TBitBtn;
@@ -161,6 +162,7 @@ type
     procedure tabPage1ContextPopup(Sender: TObject; MousePos: TPoint;
       var Handled: Boolean);
     procedure VidbitrateChange(Sender: TObject);
+    procedure DeleteJobFromQueue;
     {$IFDEF WIN32}function GetWin32System(): Integer;{$endif}
 
   // custom type
@@ -168,18 +170,25 @@ type
 
   private
     { private declarations }
-    //
-    // max number of items in queue = 256 (change if necessary)
-    //
-    jobqueue: array[0..255] of tJob;
   public
     { public declarations }
 
   end; 
 
+{$IFDEF unix}
+const
+  // max number of items in queue = 256  (change if necessary)
+  // remember to change array definition of jobqueue below if you change this
+  NumJobs: Integer = 255;
+{$ENDIF}
+
 
 {$IFDEF WIN32}
 const
+  // max number of items in queue = 256  (change if necessary)
+  // remember to change array definition of jobqueue below if you change this
+  NumJobs: Integer = 255;
+
   shfolder = 'ShFolder.dll';
   { win32 custom directory constants }
   CSIDL_PERSONAL: longint = $0005;
@@ -203,6 +212,12 @@ var
   ansicodepage: longint;
   usechcp: string;
   {$ENDIF}
+  //
+  //
+  jobqueue: array[0..255] of tJob;
+
+
+
   extraspath: string;
   lastpreset: string;
   presetsfile: Txmldocument;
@@ -265,10 +280,13 @@ var
   rsLabel1='Convert To ...';
   rslabel11='Output Folder';
   rsLabel19='Device Preset';
+  rsConvert='Converting Job # ';
   tabPage1caption='Output Details';
   tabPage2caption='Video Settings';
   tabPage3caption='Audio Settings';
   tabPage4caption='Additional Command Line Parameters (Advanced)';
+
+
 
   //messages
   rsCouldNotFindPresetFile = 'Could not find presets file.';
@@ -293,6 +311,8 @@ var
   rsPresettoExport = 'Please select a preset to export';
   rsAllCategories = '(All Categories)';
 implementation
+
+
 
 
 // Initialize everything
@@ -355,6 +375,7 @@ begin
     tabVideoSettings.Caption:=tabPage2caption;
     tabAudioSettings.Caption:=tabPage3caption;
     tabCmdLineSettings.Caption:=tabPage4caption;
+    lblConvert.Caption := '';
 
 
                     // start setup
@@ -567,13 +588,15 @@ begin
                                         // check for multithreading
   multithreading:=getconfigvalue('general/multithreading');
 
-  for i := 0 to 255 do
+  for i := 0 to NumJobs do
   begin
     jobqueue[i].sourcefile:='';
     jobqueue[i].targetcategory:='';
     jobqueue[i].targetpreset:='';
     jobqueue[i].targetfolder:='';
-  end
+  end;
+
+  pbConvert.Visible:= False;
 end;
 
 
@@ -1137,40 +1160,60 @@ end;
 
 // remove a file from the list
 procedure tform1.btnRemoveClick(Sender: TObject);
-var
-i: integer;
+begin
+  DeleteJobFromQueue;
+end;
+
+procedure tform1.DeleteJobFromQueue;
+var i,j : integer;
 begin
   i:=0;
   while i< filelist.Items.Count do
     if filelist.Selected[i] then
-      filelist.Items.Delete(i)
-    else
+    begin
+      filelist.Items.Delete(i);
+     // this next bit of code is to delete the corresponding job from the job array.
+     // need to convert the queue from an array to a dynamic object of some kind
+     // not 100% sure which way to go on this.
+     for j := i to 254 do
+     begin
+       if jobqueue[j].sourcefile = '' then break;
+       jobqueue[j].sourcefile:= jobqueue[j+1].sourcefile;
+       jobqueue[j].targetcategory:= jobqueue[j+1].targetcategory;
+       jobqueue[j].targetpreset:= jobqueue[j+1].targetpreset;
+       jobqueue[j].targetfolder:= jobqueue[j+1].targetfolder;
+     end;
+    end else
        i+=1;
 end;
 
 // clear the file list
 procedure tform1.btnClearClick(Sender: TObject);
+var i : integer;
 begin
+
   filelist.Clear;
+
+  for i := 0 to NumJobs do
+  begin
+    jobqueue[i].sourcefile:='';
+    jobqueue[i].targetcategory:='';
+    jobqueue[i].targetpreset:='';
+    jobqueue[i].targetfolder:='';
+  end
+
+
 end;
 
 // filelist on key up
 procedure TForm1.filelistKeyUp(Sender: TObject; var Key: Word;
   Shift: TShiftState);
-var
-i:integer;
 begin
   // delete
   if (key = 46) then
    begin
-    i:=0;
-   while i< filelist.Items.Count do
-    if filelist.Selected[i] then
-     filelist.Items.Delete(i)
-    else
-       i+=1;
+     DeleteJobFromQueue;
    end;
-
 end;
 
 
@@ -1391,6 +1434,7 @@ begin                                     // get setup
      else if priority= unit4.rspriorityidle then scriptpriority:=ppidle
      else scriptpriority:=ppnormal;
    scriptprocess.Priority:= scriptpriority;
+   scriptprocess.Options := [poWaitonExit];
 
 
    script:= TStringList.Create;
@@ -1481,16 +1525,22 @@ begin                                     // get setup
            {$ifdef win32}'.bat'{$endif}
            {$ifdef unix}'.sh'{$endif} ;
 
+   pbConvert.Visible := True;
    for i:=0 to filelist.Items.Count - 1 do
      begin
 
-        script.clear;
-        {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
-        {$ifdef unix}script.Add('#!/bin/sh');{$endif}
+       script.clear;
+       {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
+       {$ifdef unix}script.Add('#!/bin/sh');{$endif}
        filename := jobqueue[i].sourcefile;
        basename := extractfilename(filename);
 
+       j := filelist.items.count; // using j and reusing it later.
+       lblConvert.Caption:= rsConvert + IntToStr(i+1) + ' / ' + InttoStr(j) ; //+ ' - ' + basename;
+       pbConvert.Position:= Trunc(((i+1)/j)*100);
+
        pn:=getcurrentpresetname(jobqueue[i].targetpreset);
+       application.processmessages;
        if pn='' then
        begin
          showmessage(rsPleaseSelectAPreset);
@@ -1520,7 +1570,6 @@ begin                                     // get setup
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + extractfilename(filename)+
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
-       memo1.lines.add(rsConverting +' ' + extractfilename(filename));
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
 
        if cbx2Pass.Checked = false then
@@ -1541,44 +1590,43 @@ begin                                     // get setup
           end;
        unit5.form5.memo1.lines.add(command);
 
+       // pausescript
+
        if pausescript='true' then
+       begin
          {$ifdef win32}
          script.Add('pause');
          {$endif}
          {$ifdef unix}
          script.Add('read -p "' + rsPressEnter + '" dumbyvar');
          {$endif}
-
+         unit5.form5.memo1.lines.add('---Pause Command---');
+       end;
                                            // remove batch file on completion
-         {$ifdef win32}
-           script.Add('del ' + '"' + presetspath + batfile + '"');
-         {$endif}
-         {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
-         script.SaveToFile(presetspath+batfile);
-         {$ifdef unix}
-         fpchmod(presetspath + batfile,&777);
-         {$endif}
+       {$ifdef win32}
+        script.Add('del ' + '"' + presetspath + batfile + '"');
+       {$endif}
+       {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
+       script.SaveToFile(presetspath+batfile);
+       {$ifdef unix}
+       fpchmod(presetspath + batfile,&777);
+       {$endif}
 
-          {$ifdef win32}
-          qterm := '"' + terminal + '"';
-          {$endif}
+       {$ifdef win32}
+       qterm := '"' + terminal + '"';
+       {$endif}
 
-          {$ifdef unix}qterm := terminal;{$endif}
+       {$ifdef unix}qterm := terminal;{$endif}
                                                         // do it
-          {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
-          {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
+       {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
+       {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
+        unit5.form5.memo1.lines.add('---Delete Script Command---');
 
-          scriptprocess.execute;
-
-
+        scriptprocess.execute;
 
      end;
                                                         // finish off commandline
 
-
-
-
-    // pausescript
 
    script.Clear;
    {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
@@ -1794,8 +1842,8 @@ begin
   populatepresetbox('');
 end;
 
+
 initialization
   {$I unit1.lrs}
-
 end.
 
