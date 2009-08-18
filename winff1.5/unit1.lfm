@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 179
+  Left = 336
   Height = 498
-  Top = 102
+  Top = 246
   Width = 866
   ActiveControl = PageControl1
   AllowDropFiles = True
@@ -323,9 +323,9 @@ object Form1: TForm1
   LCLVersion = '0.9.26.2'
   object Label2: TLabel
     Left = 0
-    Height = 19
+    Height = 20
     Top = 0
-    Width = 6
+    Width = 7
     ParentColor = False
   end
   object pnlMain: TPanel
@@ -1476,28 +1476,5 @@ object Form1: TForm1
     Filter = '.wff'
     left = 551
     top = 312
-  end
-  object timerStatus: TTimer
-    Enabled = False
-    Interval = 5000
-    OnTimer = timerStatusTimer
-    left = 513
-    top = 224
-  end
-  object ScriptProcess: TProcess
-    Active = False
-    Options = [poUsePipes]
-    Priority = ppNormal
-    StartupOptions = []
-    ShowWindow = swoShow
-    WindowColumns = 0
-    WindowHeight = 0
-    WindowLeft = 0
-    WindowRows = 0
-    WindowTop = 0
-    WindowWidth = 0
-    FillAttribute = 0
-    left = 629
-    top = 381
   end
 end
