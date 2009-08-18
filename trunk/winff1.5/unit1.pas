@@ -1419,7 +1419,7 @@ end;
 procedure TForm1.btnConvertClick(Sender: TObject);
 var
 i,j : integer;
-pn, extension, params, commandline, command, filename,batfile, passlogfile, basename:string;
+pn, extension, params, commandline, command, filename,batfile, passlogfile, basename, outputfilename:string;
 qterm, ffmpegfilename, usethreads, deinterlace, nullfile, titlestring, priority:string;
 script: tstringlist;
 thetime: tdatetime;
@@ -1535,6 +1535,14 @@ begin                                     // get setup
        filename := jobqueue[i].sourcefile;
        basename := extractfilename(filename);
 
+       // resolve issues with embedded quote marks in filename to be converted.  issue 38
+       {$ifdef unix}
+       filename := StringReplace(filename,' ','\ ',[rfReplaceAll]);
+       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
+ //      basename := StringReplace(basename,' ','\ ',[rfReplaceAll]);
+ //      basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
+       {$endif}
+
        j := filelist.items.count; // using j and reusing it later.
        lblConvert.Caption:= rsConvert + IntToStr(i+1) + ' / ' + InttoStr(j) ; //+ ' - ' + basename;
        pbConvert.Position:= Trunc(((i+1)/j)*100);
@@ -1564,6 +1572,12 @@ begin                                     // get setup
               end;
          end;
 
+       outputfilename := jobqueue[i].targetfolder + DirectorySeparator + basename +'.' + extension;
+       {$ifdef unix}
+       outputfilename := StringReplace(outputfilename,' ','\ ',[rfReplaceAll]);
+       outputfilename := StringReplace(outputfilename,'"','\"',[rfReplaceAll]);
+       {$endif}
+
        command := '';
        {$ifdef win32}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
@@ -1572,20 +1586,25 @@ begin                                     // get setup
        script.Add(titlestring);
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
 
+       {$ifdef windows}
+         filename := '"' + filename + '"'; // issue 38
+         outputfilename := '"' + outputfilename + '"';
+       {$endif}
+
+       // note removing quotes around filename in the following 3 usages of filename
        if cbx2Pass.Checked = false then
           begin
-           command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline + ' "' +
-                  jobqueue[i].targetfolder + DirectorySeparator + basename +'.' + extension+ '" -vstats_file -';
+           command := ffmpegfilename + usethreads + ' -i ' + filename + ' ' + deinterlace + commandline + ' '
+                  + outputfilename + ' -vstats_file -';
            script.Add(command);
           end
        else if cbx2Pass.Checked = true then
           begin
-           command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline + ' -an'
+           command := ffmpegfilename + usethreads + ' -i ' + filename + ' ' + deinterlace + commandline + ' -an'
                  + ' -passlogfile "' + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
            script.Add(command);
-           command := ffmpegfilename + usethreads + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
-                 + passlogfile + '"' + ' -pass 2 ' + ' "' + jobqueue[i].targetfolder+ DirectorySeparator + basename +'.'
-                 + extension+ '" -vstats_file -';
+           command := ffmpegfilename + usethreads + ' -y -i ' + filename + ' ' + deinterlace + commandline +  ' -passlogfile "'
+                 + passlogfile + '"' + ' -pass 2 ' + outputfilename + ' -vstats_file -';
            script.add(command);
           end;
        unit5.form5.memo1.lines.add(command);
