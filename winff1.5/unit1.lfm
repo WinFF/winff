@@ -323,9 +323,9 @@ object Form1: TForm1
   LCLVersion = '0.9.26.2'
   object Label2: TLabel
     Left = 0
-    Height = 21
+    Height = 22
     Top = 0
-    Width = 8
+    Width = 9
     ParentColor = False
   end
   object pnlMain: TPanel
