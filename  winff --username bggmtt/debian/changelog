@@ -1,3 +1,21 @@
+winff (1.0.4-2) UNRELEASED; urgency=low
+
+  * Bumped policy version to 3.8.3 (no changes needed)
+  * Added patch system (dpatch)
+  * Fix/improve lanquage support:
+    - Added language from upstream forum: Simplified Chinese
+    - Patch language files with upstream changes
+      (debian/patches/10_update_languages.dpatch)
+    - Rename winff.zh.po to winff.zh_TW.po because added zh_CN
+    - Rename winff.pb.po to winff.pt_BR.po because pb is unknown
+    - Rename winff.po to winff.en.po (and don't create soft-link)
+  * Update copyright where appropriate (several translators transfered
+    copyright to upstream.)
+  * Add breaks shared-mime-info (< 0.40) to control because we use 
+    generic-icon in mime file (Closes: #541168)
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 21 Aug 2009 21:51:22 +0200
+
 winff (1.0.4-1) unstable; urgency=low
 
   * New upstream release
