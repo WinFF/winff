@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WinFF 0.4\n"
 "PTT-Creation-Date: 03.05.2008\n"
 "PT-Revision-Date: \n"
-"Last-Translator: Luíds Torrao <luistorrao@gmail.com>\n"
+"Last-Translator: Luís Torrao <luistorrao@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
@@ -234,7 +234,7 @@ msgstr ""
 #: unit1.tabpage2caption
 #, fuzzy
 msgid "Video Settings"
-msgstr "Tamanho do Víddeo"
+msgstr "Tamanho do Vídeo"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
