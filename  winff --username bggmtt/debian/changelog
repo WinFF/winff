@@ -1,4 +1,4 @@
-winff (1.0.4-2) UNRELEASED; urgency=low
+winff (1.0.4-2) unstable; urgency=low
 
   * Bumped policy version to 3.8.3 (no changes needed)
   * Added patch system (dpatch)
