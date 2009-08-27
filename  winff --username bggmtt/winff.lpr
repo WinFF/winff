@@ -26,9 +26,9 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms
   { add your units here }, Unit1, Unit2, Unit3, Unit4, Unit5,defaulttranslator,
-  unit6;
+  unit6, LResources;
    {$ifdef win32}
-   {$R resources.rc}
+  // {$R resources.rc}
    {$endif}
 
 
@@ -36,6 +36,7 @@ uses
 {$IFDEF WINDOWS}{$R winff.rc}{$ENDIF}
 
 begin
+  {$I winff.lrs}
   Application.Title:='WinFF';
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
