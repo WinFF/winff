@@ -461,7 +461,7 @@ begin
    form1.close;
   end;
                                       // import preset from command line
-  if paramstr(1) <> '' then
+  if upcase(rightstr(paramstr(1),4)) = '.WFF' then
    begin
    importpresetfromfile(paramstr(1));
    end;

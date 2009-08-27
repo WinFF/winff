@@ -40,6 +40,7 @@ type
     Label12: TLabel;
     Label13: TLabel;
     Label14: TLabel;
+    Label15: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
@@ -111,18 +112,15 @@ begin                  // do translations
     listbox1.items.Add('Predrag Tomasevic');
     listbox1.items.Add('Víctor Paesa');
     listbox1.items.Add('Chung Yu');
-    listbox1.items.Add('Emre Erkan');
+    listbox1.items.Add('İzzet Emre Erkan');
     listbox1.items.Add('Ellen Rohaan');
     listbox1.items.Add('Ofir Klinger');
+    listbox1.items.Add('Martin Srebotnjak');
     listbox1.items.Add('Γεώργιος Γεωργάς');
-
-    listbox1.items.Add('');
-    listbox1.items.Add('Iconsdesigns.com for their NeuvoXT 2 GPL Icons');
-    listbox1.items.Add('');
-    listbox1.items.Add('Thanks to all the users');
 
 
 end;
+
 
 procedure TForm3.Label10Click(Sender: TObject);
 begin
