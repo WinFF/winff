@@ -230,6 +230,14 @@ object Form3: TForm3
         Caption = 'Icons and Logo by Alex Klepatsch'
         ParentColor = False
       end
+      object Label16: TLabel
+        Left = 52
+        Height = 16
+        Top = 178
+        Width = 37
+        Caption = 'JNavas'
+        ParentColor = False
+      end
     end
     object Page2: TPage
       Caption = 'FFmpeg'
