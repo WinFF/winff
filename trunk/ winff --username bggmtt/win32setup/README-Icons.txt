@@ -1,4 +1,5 @@
-﻿The Icons are from Iconsdesigns.com's NuoveXT 2.
-They were modified from their original state by scaling to 24x24 and converting to xpm.
+Winff's Icons are Copyright Alex Klepatsch 2009
 
-The are licensed under the GPL v2
+The are licensed under the GNU Public License v3
+You should have recieved a copy of the License with these Icons.
+If not please see http://www.gnu.org
