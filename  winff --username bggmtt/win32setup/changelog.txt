@@ -1,6 +1,16 @@
 WinFF Copyright 2006 - 2009 Matthew Weatherford
 http://www.winff.org
 
+v1.1
+-----
+New Icons and Logo
+Remember each preset's last destination directory
+fixed importing presets from command line 
+updated chinese
+New preset for Google Andriod, Nokia, Sony Walkman, more
+windows installer updated with ffmpeg r18709
+
+
 v1.04
 -----
 Russian

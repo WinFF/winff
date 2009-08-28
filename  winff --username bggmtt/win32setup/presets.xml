@@ -324,6 +324,12 @@
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesTVOutCRF21WSLBFix>
+  <iPodiTunesIphoneWS>
+    <label>iPhone WideScreen</label>
+    <params>-r 29.97 -vcodec libx264 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -s 480x320 -aspect 16:9 -acodec libfaac -ab 112kb -ar 48000 -ac 2</params>
+    <extension>m4v</extension>
+    <category>iPod-iTunes</category>
+  </iPodiTunesIphoneWS>
   <lgchocolate>
     <label>LG Chocolate</label>
     <params>-f mp4 -s 240x192 -r 11.988 -b 192kb -ab 56kb -vcodec libxvid -acodec libfaac</params>
@@ -448,7 +454,7 @@
     <label>Quicktime MOV</label>
     <params>-f mov -acodec libfaac -b 1250kb -r 25 -ab 128kb -s 640x480 -ac 2</params>
     <extension>mov</extension>
-    <category>Quicktime</category>
+    <category>QuickTime</category>
   </qmov>
   <wma>
     <label>WMA</label>
@@ -490,7 +496,7 @@
     <label>MP4 Fullscreen</label>
     <params>-f mp4 -r 29.97 -vcodec libx264 -s 640x480 -b 1000kb -aspect 4:3 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -b 1250k -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -acodec libfaac -ab 112kb -ar 48000 -ac 2</params>
     <extension>mp4</extension>
-    <category>MPEG4</category>
+    <category>MPEG-4</category>
   </x264HQFS>
   <x264HQPSP169robertswain>
     <label>PSP Widescreen</label>
@@ -508,6 +514,138 @@
     <label>MP4 Widescreen</label>
     <params>-f mp4 -r 29.97 -vcodec libx264 -s 704x384 -b 1000kb -aspect 16:9 -flags +loop -cmp +chroma -deblockalpha 0 -deblockbeta 0 -b 1250k -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -acodec libfaac -ab 112kb -ar 48000 -ac 2</params>
     <extension>mp4</extension>
-    <category>MPEG4</category>
+    <category>MPEG-4</category>
   </x264HQWS>
+  <android1>
+    <label>Google Android compatible video</label>
+    <params>-s 480x320 -vcodec mpeg4 -acodec libfaac -ac 1 -ar 16000 -r 13 -ab 32000 -aspect 3:2</params>
+    <extension>mp4</extension>
+    <category>Google Android</category>
+  </android1>
+  <android2>
+    <label>Google Android compatible video. Video bitrate: 480 kb/s</label>
+    <params>-s 480x320 -vcodec mpeg4 -b 480k -acodec libfaac -ac 1 -ar 16000 -r 13 -ab 32000 -aspect 3:2</params>
+    <extension>mp4</extension>
+    <category>Google Android</category>
+  </android2>
+  <walkmanXviDFS>
+    <label>Xvid walkman (4:3)</label>
+    <params>-r 29.97 -vcodec libxvid -s 320x240 -aspect 4:3 -maxrate 1500k -b 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -cmp 2 -subcmp 2 -g 300 -acodec libfaac -ar 48000 -ab 80k -ac 2</params>
+    <extension>mp4</extension>
+    <category>walkman</category>
+  </walkmanXviDFS>
+  <N810FS>
+    <label>Nokia N810 mplayer 4:3</label>
+    <params>-r 29.97 -vcodec libxvid -vtag XVID -s 400x240 -aspect 4:3  -maxrate 1200k -b 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -ab 160k -ac 2 -async 1</params>
+    <extension>avi</extension>
+    <category>Nokia</category>
+  </N810FS>
+  <N810WS>
+    <label>Nokia N810 mplayer 16:9</label>
+    <params>-r 29.97 -vcodec libxvid -vtag XVID -s 400x240 -aspect 16:9 -maxrate 1200k -b 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -flags +4mv -trellis -aic -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -ab 160k -ac 2 -async 1</params>
+    <extension>avi</extension>
+    <category>Nokia</category>
+  </N810WS>
+  <N810WS2>
+    <label>Nokia N810 mplayer CinemaScope 24:10</label>
+    <params>-r 29.97 -vcodec libxvid -vtag XVID -s 400x240 -aspect 24:10 -maxrate 1200k -b 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -flags +4mv -trellis -aic -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -ab 160k -ac 2 -async 1</params>
+    <extension>avi</extension>
+    <category>Nokia</category>
+  </N810WS2>
+  <NokiaN73N81N95WS>
+    <label>Nokia Nxx Video WideScreen</label>
+    <params>-f mp4 -r 15 -vcodec mpeg4 -s 320x240 -b 320kb -aspect 16:9 -acodec libfaac -ab 96kb -ar 44100 -ac 2</params>
+    <extension>mp4</extension>
+    <category>Nokia</category>
+  </NokiaN73N81N95WS>
+  <NokiaN73N81N95FS>
+    <label>Nokia Nxx Video FullScreen</label>
+    <params>-f mp4 -r 15 -vcodec mpeg4 -s 320x240 -b 320kb -aspect 4:3 -acodec libfaac -ab 96kb -ar 44100 -ac 2</params>
+    <extension>mp4</extension>
+    <category>Nokia</category>
+  </NokiaN73N81N95FS>
+   <MP3GP128x96mono43>
+    <label>3GPP H.263 128x96 4:3 AAC mono</label>
+    <params>-r 15 -b 64kb -ac 1 -s 128x96 -ar 16000 -ab 32kb -acodec libfaac -vcodec h263</params>
+    <extension>3gp</extension>
+    <category>Mobile Phones</category>
+  </MP3GP128x96mono43>
+  <MP3GP176x144mono43>
+    <label>3GPP H.263 176x144 4:3 AAC mono</label>
+    <params>-r 15 -b 64kb -ac 1 -s 176x132 -padtop 6 -padbottom 6 -ar 16000 -ab 32kb -acodec libfaac -vcodec h263</params>
+    <extension>3gp</extension>
+    <category>Mobile Phones</category>
+  </MP3GP176x144mono43>
+  <MP3GP176x144mono169C>
+    <label>3GPP H.263 176x144 16:9 crop AAC mono</label>
+    <params>-r 15 -b 64kb -ac 1 -s 256x144 -cropleft 40 -cropright 40 -ar 16000 -ab 32kb -acodec libfaac -vcodec h263</params>
+    <extension>3gp</extension>
+    <category>Mobile Phones</category>
+  </MP3GP176x144mono169C>
+  <MP3GP176x144mono169L>
+    <label>3GPP H.263 176x144 16:9 letterbox AAC mono</label>
+    <params>-r 15 -b 64kb -ac 1 -s 176x100 -padtop 22 -padbottom 22 -ar 16000 -ab 32kb -acodec libfaac -vcodec h263</params>
+    <extension>3gp</extension>
+    <category>Mobile Phones</category>
+  </MP3GP176x144mono169L>
+  <MP3GP320x240stereo43>
+    <label>3GPP H.264 320x240 4:3 AAC stereo</label>
+    <params>-r 15 -b 128kb -s 320x240 -ar 22050 -ab 64kb -acodec libfaac -vcodec libx264 -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <extension>3gp</extension>
+    <category>Mobile Phones</category>
+  </MP3GP320x240stereo43>
+  <MP3GP320x240stereo169C>
+    <label>3GPP H.264 320x240 16:9 crop AAC stereo</label>
+    <params>-r 15 -b 128kb -s 426x240 -cropleft 52 -cropright 54 -ar 22050 -ab 64kb -acodec libfaac -vcodec libx264 -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <extension>3gp</extension>
+    <category>Mobile Phones</category>
+  </MP3GP320x240stereo169C>
+  <MP3GP320x240stereo169L>
+    <label>3GPP H.264 320x240 16:9 letterbox AAC stereo</label>
+    <params>-r 15 -b 128kb -s 320x180 -padtop 30 -padbottom 30 -ar 22050 -ab 64kb -acodec libfaac -vcodec libx264 -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <extension>3gp</extension>
+    <category>Mobile Phones</category>
+  </MP3GP320x240stereo169L>
+   <MPEG4VideoHQ>
+    <label>MPEG-4 H.264 video (high quality)</label>
+    <params>-crf 35.0 -vcodec libx264 -acodec libfaac -ab 128kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <extension>mp4</extension>
+    <category>MPEG-4</category>
+  </MPEG4VideoHQ>
+  <MPEG4VideoVHQ>
+    <label>MPEG-4 H.264 video (very high quality)</label>
+    <params>-crf 25.0 -vcodec libx264 -acodec libfaac -ab 160kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <extension>mp4</extension>
+    <category>MPEG-4</category>
+  </MPEG4VideoVHQ>
+  <MPEG4VideoSHQ>
+    <label>MPEG-4 H.264 video (super high quality)</label>
+    <params>-crf 15.0 -vcodec libx264 -acodec libfaac -ab 192kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <extension>mp4</extension>
+    <category>MPEG-4</category>
+  </MPEG4VideoSHQ>
+  <qmovhq>
+    <label>QuickTime H.264 video (high quality)</label>
+    <params>-crf 35.0 -vcodec libx264 -acodec libfaac -ab 128kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <extension>mov</extension>
+    <category>QuickTime</category>
+  </qmovhq>
+  <qmovvhq>
+    <label>QuickTime H.264 video (very high quality)</label>
+    <params>-crf 25.0 -vcodec libx264 -acodec libfaac -ab 160kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <extension>mov</extension>
+    <category>QuickTime</category>
+  </qmovvhq>
+  <qmovshq>
+    <label>QuickTime H.264 video (super high quality)</label>
+    <params>-crf 15.0 -vcodec libx264 -acodec libfaac -ab 192kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <extension>mov</extension>
+    <category>QuickTime</category>
+  </qmovshq>
+  <tuna-Vids>
+    <label>Tuna-vIDS</label>
+    <params>-f avi -r 10 -s 256x192 -b 192k -bt 64k -vcodec libxvid -deinterlace -acodec libmp3lame -ar 32000 -ab 96k -ac 2</params>
+    <extension>avi</extension>
+    <category>Tuna-Vids</category>
+  </tuna-Vids>
 </presets>
