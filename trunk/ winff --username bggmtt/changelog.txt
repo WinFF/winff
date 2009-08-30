@@ -1,6 +1,12 @@
 WinFF Copyright 2006 - 2009 Matthew Weatherford
 http://www.winff.org
 
+v1.1.1
+-----
+Moved icons to folder structure describing their size.
+Updated most translation files with copyright notices (actualy done for 1.1)
+Added linux-script to create tar-bal
+
 v1.1
 -----
 New Icons and Logo
