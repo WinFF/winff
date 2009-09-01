@@ -1,3 +1,20 @@
+winff (1.1.1-1) UNRELEASED; urgency=low
+
+  * New upstream release
+    - New Icons and Logo
+    - Remember each preset's last destination directory
+    - Fixed importing presets from command line
+  * Updated debian/copyright due to new icons and translations
+  * Removed patch system again.
+  * Updated debian/winff.xmp from new icon and install in
+    /usr/share/pixmaps (updated debian/menu)
+  * Install pngs to hicolor theme
+  * Updated debian/rules to also remove executable mode from icons
+  * Updated debian/presets-libavcodec52-vX.xml from upstream site
+  * Checked original presets.xml against libavcodec52 (no changes)
+
+ -- Paul Gevers <paul@climbing.nl>  Tue, 01 Sep 2009 20:45:14 +0200
+
 winff (1.0.4-2) unstable; urgency=low
 
   * Bumped policy version to 3.8.3 (no changes needed)

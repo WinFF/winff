@@ -6,10 +6,9 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
-include /usr/share/dpatch/dpatch.make
 
 configure: configure-stamp
-configure-stamp: patch-stamp
+configure-stamp:
 	dh_testdir
 
 	if [ -f presets.xml ] ; then mv presets.xml presets-orig.xml; fi 
@@ -41,9 +40,7 @@ clean:
 		if [ -f winff.pt_BR.po ] ; then mv winff.pt_BR.po winff.pb.po; fi ;\
 		if [ -f winff.en.po ] ; then mv winff.en.po winff.po; fi ;\
 		if [ -f winff.zh_TW.po ] ; then mv winff.zh_TW.po winff.zh.po; fi
-	dpatch deapply-all
-	rm -rf patch-stamp debian/patched
-	dh_clean
+	dh_clean 
 
 install: build
 	dh_testdir
@@ -66,7 +63,7 @@ binary-arch: build install
 	dh_strip
 	dh_compress --exclude=.pdf
 	dh_fixperms
-	find $(CURDIR)/debian/winff/usr/share/winff -type f | xargs chmod a-x
+	find $(CURDIR)/debian/winff/usr/share/ -type f | xargs chmod a-x
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol
