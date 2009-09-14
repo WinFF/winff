@@ -18,9 +18,9 @@
 # Italo Ramirez I. <gualalux@hotmail.com>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 0.45.1 \n"
+"Project-Id-Version: WinFF 1.1.1 \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2009-04-01\n"
+"PO-Revision-Date: 2009-09-06\n"
 "Last-Translator: Víctor Paesa <wzrlpy@hotmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgstr "Desentrelazar"
 
 #: unit1.rsclearbtn
 msgid "Clear"
-msgstr "Borrar"
+msgstr "Nuevo"
 
 #: unit1.rsclose
 #, fuzzy
@@ -50,7 +50,7 @@ msgstr "Borrar"
 
 #: unit1.rsclosebtn
 msgid "Options"
-msgstr "Opciones"
+msgstr "Ajustes"
 
 #: unit1.rsconverting
 msgid "Converting"
@@ -58,19 +58,19 @@ msgstr "Convirtiendo"
 
 #: unit1.rscouldnotfindffmpeg
 msgid "Could not find FFmpeg."
-msgstr "No pude encontrar FFmpeg"
+msgstr "No pude encontrar FFmpeg."
 
 #: unit1.rscouldnotfindffplay
 msgid "Could not find FFPlay."
-msgstr "No pude encontrar FFplay"
+msgstr "No pude encontrar FFplay."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
-msgstr "No pude encontrar el fichero"
+msgstr "No pude encontrar el archivo"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "No pude encontrar el archivo de preestablecidos"
+msgstr "No pude encontrar el archivo de predeterminados."
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
@@ -78,11 +78,11 @@ msgstr "Mostrar línea de comando"
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "La extensión no puede contener un punto"
+msgstr "La extensión no puede contener un punto."
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
-msgstr "el fichero no existe"
+msgstr "el archivo no existe"
 
 #: unit1.rsfilemenu
 msgid "File"
@@ -90,15 +90,15 @@ msgstr "Archivo"
 
 #: unit1.rsgroupbox1
 msgid "Additional Options"
-msgstr "Opciones adicionales"
+msgstr "Parámetros"
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
-msgstr "Importar preestablecidos"
+msgstr "Importar predeterminados"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Fichero de preestablecidos inválido"
+msgstr "Archivo de predeterminados inválido"
 
 #: unit1.rslabel1
 msgid "Convert To ..."
@@ -106,7 +106,7 @@ msgstr "Convertir a ..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr "Canales de audio"
+msgstr "Canales"
 
 #: unit1.rslabel11
 msgid "Output Folder"
@@ -119,7 +119,7 @@ msgstr "Elegir variante:"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
-msgstr "Bits/s video"
+msgstr "Bits/s vídeo"
 
 #: unit1.rslabel4
 msgid "Frame Rate"
@@ -151,7 +151,7 @@ msgstr "Salir"
 
 #: unit1.rsmenuitem4
 msgid "Presets"
-msgstr "Valor preestablecido"
+msgstr "Valores predeterminados"
 
 #: unit1.rsmenuitem5
 msgid "Preferences"
@@ -163,23 +163,23 @@ msgstr "Ayuda"
 
 #: unit1.rsmitWinff
 msgid "WinFF Website"
-msgstr "Web de WinFF"
+msgstr "Sitio WinFF (inglés)"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr "Forums de WinFF"
+msgstr "Foro WinFF (inglés)"
 
 #: unit1.rsmitabout
 msgid "About"
-msgstr "Acerca de"
+msgstr "Créditos"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr "Documentación"
+msgstr "Documentación (inglés)"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "El nombre ha de ser alfanumérico (a-z,A-Z,0-9), sin eñes ni acentos"
+msgstr "El nombre ha de ser alfanumérico (a-z,A-Z,0-9), sin eñes ni acentos."
 
 #: unit1.rspass2
 msgid "2 pass"
@@ -195,43 +195,43 @@ msgstr "Reproducir"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "Por favor, añadir al menos un fichero para convertir"
+msgstr "Por favor, añadir al menos un archivo para convertir."
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
-msgstr "Preestablecido: %s%s%s ya existe"
+msgstr "predeterminado: %s%s%s ya existe"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "El preestablecido a importar no tiene extensión"
+msgstr "El predeterminado a importar no tiene extensión."
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "El preestablecido a importar no tiene etiqueta"
+msgstr "El predeterminado a importar no tiene etiqueta."
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "Por favor, elige un preestablecido para exportarlo"
+msgstr "Por favor, elige un predeterminado para exportarlo."
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "El preestablecido con etiqueta: %s%s%s ya existe"
+msgstr "El predeterminado con etiqueta: %s%s%s ya existe."
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr "Pulse Entrar para seguir"
+msgstr "Pulse Entrar para continuar."
 
 #: unit1.rsremovebtn
 msgid "Remove"
-msgstr "Eliminar"
+msgstr "Quitar"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "Elegir archivo de preestablecidos"
+msgstr "Elegir archivo de valores predeterminados"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
-msgstr "Elegir archivos de video"
+msgstr "Elegir archivos de vídeo"
 
 #: unit1.rsshutdownonfinish
 msgid "Shutdown on Finish"
@@ -243,7 +243,7 @@ msgstr "Convertir"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "El preestablecido contiene caracteres inválidos"
+msgstr "El predeterminado contiene caracteres inválidos."
 
 #: unit1.tabpage1caption
 msgid "Output Details"
@@ -252,11 +252,11 @@ msgstr "Resultado"
 #: unit1.tabpage2caption
 #, fuzzy
 msgid "Video Settings"
-msgstr "Parámetros de video"
+msgstr "Vídeo"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr "Parámetros de audio"
+msgstr "Audio"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
@@ -272,7 +272,7 @@ msgstr "Cancelar"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Crear preestablecido:"
+msgstr "Crear predeterminado:"
 
 #: unit2.rsdeletebtn
 msgid "Delete"
@@ -284,7 +284,7 @@ msgstr "Exportar"
 
 #: unit2.rsform2
 msgid "Edit Presets"
-msgstr "Editar preestablecidos"
+msgstr "Editar predeterminados"
 
 #: unit2.rsimport
 msgid "Import"
@@ -293,23 +293,23 @@ msgstr "Importar"
 #: unit2.rsimportpresets
 #, fuzzy
 msgid "Import Presets"
-msgstr "Importar preestablecidos"
+msgstr "Importar predeterminados"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "Nombre del preestablecido (una palabra, sólo A-z 0-9)"
+msgstr "Nombre del predeterminado (una palabra, sólo A-z 0-9)"
 
 #: unit2.rslabel3
 msgid "Preset Label"
-msgstr "Etiqueta del preestablecido"
+msgstr "Etiqueta del predeterminado"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
-msgstr "Línea de commando del preestablecido (sin -i ni fichero de salida"
+msgstr "Línea de comando del predeterminado (sin -i ni archivo de salida)"
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
-msgstr "Sufijo del fichero de salida (sin \".\")"
+msgstr "Extensión (ej. mp4) del archivo de salida (sin \".\")"
 
 #: unit2.rslabel6
 msgid "Category"
@@ -325,28 +325,28 @@ msgstr "Guardar"
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "Eliminar preestablecido:"
+msgstr "Eliminar predeterminado:"
 
 #: unit2.rsreplacepreset
 #, fuzzy
 msgid "Replace Preset"
-msgstr "Modificar preestablecido:"
+msgstr "Modificar predeterminado:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "Modificar preestablecido:"
+msgstr "Modificar predeterminado:"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr "Tienes que teclear una extensión"
+msgstr "Tienes que teclear una extensión."
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "Tienes que teclear una etiqueta"
+msgstr "Tienes que teclear una etiqueta."
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr "Tienes que teclear un nombre"
+msgstr "Tienes que teclear un nombre."
 
 #: unit3.rsbutton1
 #, fuzzy
@@ -396,19 +396,19 @@ msgstr "Carpeta destino por omisión"
 
 #: unit4.rslabel2
 msgid "Path to FFmpeg.exe"
-msgstr "Camino hasta FFmpeg.exe"
+msgstr "Ubicación de FFmpeg.exe"
 
 #: unit4.rslabel3
 msgid "Path to FFPlay.exe"
-msgstr "Camino hasta FFplay.exe"
+msgstr "Ubicación de FFplay.exe"
 
 #: unit4.rslabel4
 msgid "Path to FFmpeg Executable"
-msgstr "Camino hasta FFmpeg.exe"
+msgstr "Ubicación de FFmpeg"
 
 #: unit4.rslabel5
 msgid "Path to FFPlay Executable"
-msgstr "Camino hasta FFplay.exe"
+msgstr "Ubicación de FFplay"
 
 #: unit4.rslabel6
 msgid "Terminal to run FFmpeg"
@@ -437,17 +437,17 @@ msgstr "Línea de comando de FFmpeg"
 #: unit6.rsform6
 #, fuzzy
 msgid "Export Presets"
-msgstr "Importar preestablecidos"
+msgstr "Importar predeterminados"
 
 #: unit6.rslabel1
 #, fuzzy
 msgid "Choose presets to export"
-msgstr "Por favor, elige un preestablecido para exportarlo"
+msgstr "Por favor, elige un predeterminado para exportarlo"
 
 #~ msgid "AC'"
 #~ msgstr "Canales de audio"
 #~ msgid "Please select a preset"
-#~ msgstr "Por favor, elegir un valor preestablecido"
+#~ msgstr "Por favor, elegir un valor predeterminado"
 
 #: unit4.rspriority
 msgid "Priority"
