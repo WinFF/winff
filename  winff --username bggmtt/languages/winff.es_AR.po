@@ -19,11 +19,11 @@
 # Pablo Ramírez <prar78@gmail.com>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 0.45.1 \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2009-04-01\n"
+"Project-Id-Version: WinFF 1.1.1 \n"
+"POT-Creation-Date: 2009-09-06\n"
+"PO-Revision-Date: 2009-09-06\n"
 "Last-Translator: Pablo Ramírez <prar78@gmail.com>\n"
-"Language-Team: \n"
+"Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,7 +34,7 @@ msgstr "Añadir"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr "(Tipos)"
+msgstr "(Categorías)"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
@@ -71,7 +71,7 @@ msgstr "Archivo no encontrado"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "No hay Predeterminados"
+msgstr "Falta Predeterminado"
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
@@ -79,7 +79,7 @@ msgstr "Mostrar línea de comando"
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "La extensión no puede contener un punto"
+msgstr "La extensión no puede contener puntos"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
@@ -103,7 +103,7 @@ msgstr "Predeterminado inválido"
 
 #: unit1.rslabel1
 msgid "Convert To ..."
-msgstr "Tipo:"
+msgstr "Categoría:"
 
 #: unit1.rslabel10
 msgid "Audio Channels"
@@ -111,7 +111,7 @@ msgstr "Canales"
 
 #: unit1.rslabel11
 msgid "Output Folder"
-msgstr "Ubicación:"
+msgstr "Guardar en:"
 
 #: unit1.rslabel19
 #, fuzzy
@@ -184,7 +184,7 @@ msgstr "El nombre debe ser alfanumérico (a-z,A-Z,0-9)"
 
 #: unit1.rspass2
 msgid "2 pass"
-msgstr "Simple"
+msgstr "Paso 2"
 
 #: unit1.rspauseonfinish
 msgid "Pause on Finish"
@@ -196,7 +196,7 @@ msgstr "Ver"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "Añadir al menos un fichero para convertir"
+msgstr "Añadir al menos un archivo para convertir"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
@@ -236,7 +236,7 @@ msgstr "Elegir archivos"
 
 #: unit1.rsshutdownonfinish
 msgid "Shutdown on Finish"
-msgstr "Cerrar al finalizar"
+msgstr "Apagar al finalizar"
 
 #: unit1.rsstartbtn
 msgid "Convert"
@@ -261,7 +261,7 @@ msgstr "Audio"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
-msgstr "Línea de comando (avanzado)"
+msgstr "Línea Adicional de comandos (avanzado)"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
@@ -298,11 +298,11 @@ msgstr "Importar Predeterminado"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "Nombre (sin ñ, acentos, puntos o comas)"
+msgstr "Nombre (sin Espacios, ñ, acentos, puntos o comas)"
 
 #: unit2.rslabel3
 msgid "Preset Label"
-msgstr "Formato (ej. H.264 16:9)"
+msgstr "Formato (ej.: H.264 16:9)"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
@@ -310,15 +310,15 @@ msgstr "Línea de comando (sin -i ni extensiones)"
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
-msgstr "Extensión (ej. mp4) sin puntos"
+msgstr "Extensión (ej.: mp4) sin puntos"
 
 #: unit2.rslabel6
 msgid "Category"
-msgstr "Tipo (ej. MP4)"
+msgstr "Categoría (ej.: MP4)"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "La Formato debe ser uno"
+msgstr "El formato debe ser único"
 
 #: unit2.rsokbtn
 msgid "Save"
@@ -339,15 +339,15 @@ msgstr "Modificar Predeterminado:"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr "Ingresa una extensión"
+msgstr "Introduce una extensión"
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "Ingresa una Formato"
+msgstr "Introduce un Formato"
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr "Ingresa un nombre"
+msgstr "Introduce un nombre"
 
 #: unit3.rsbutton1
 #, fuzzy
@@ -377,7 +377,7 @@ msgstr "Agradecimientos"
 
 #: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
-msgstr "Directorio reciente"
+msgstr "Ubicación reciente"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
@@ -448,21 +448,21 @@ msgstr "Por favor, elige un Predeterminado para exportar"
 #~ msgid "AC'"
 #~ msgstr "Canales de audio"
 #~ msgid "Please select a preset"
-#~ msgstr "Por favor, elegir un valor preestablecido"
+#~ msgstr "Elige un valor predeterminado"
 
 #: unit4.rspriority
 msgid "Priority"
-msgstr "Nivel"
+msgstr "Modo"
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr "Óptimo"
+msgstr "Prioridad Alta"
 
 #: unit4.rsprioritynormal
 msgid "Normal"
-msgstr "Normal"
+msgstr "Prioridad Media"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr "Bajo"
+msgstr "Prioridad Baja"
 
