@@ -81,6 +81,10 @@ In order to use an other presets file than supplied with the package you might n
 
 (3) /usr/share/doc/winff/README.Debian
 
+= Details extended ffmpeg in Ubuntu =
+
+For a fuller ffmpeg than the standard on in your flavor of Ubuntu I refer to the excellent guide in the Ubuntuforums: http://ubuntuforums.org/showthread.php?t=1117283 If you want to compile your own ffmpeg (it is not so hard) you can follow the instructions here: http://ubuntuforums.org/showthread.php?t=786095
+
 = Details ffmpeg for Jaunty =
 
 Jaunty contains a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed which should pull in the 'unstripped' versions of several libraries. You can also look for them directly: libavcodec-unstripped-52, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
