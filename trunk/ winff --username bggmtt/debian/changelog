@@ -1,4 +1,4 @@
-winff (1.1.1-1) UNRELEASED; urgency=low
+winff (1.1.1-1) unstable; urgency=low
 
   * New upstream release
     - New Icons and Logo
@@ -12,8 +12,9 @@ winff (1.1.1-1) UNRELEASED; urgency=low
   * Updated debian/rules to also remove executable mode from icons
   * Updated debian/presets-libavcodec52-vX.xml from upstream site
   * Checked original presets.xml against libavcodec52 (no changes)
+  * Add debugging symbols
 
- -- Paul Gevers <paul@climbing.nl>  Tue, 01 Sep 2009 20:45:14 +0200
+ -- Paul Gevers <paul@climbing.nl>  Thu, 08 Oct 2009 20:24:35 +0200
 
 winff (1.0.4-2) unstable; urgency=low
 
