@@ -12,13 +12,18 @@ configure-stamp:
 	dh_testdir
 
 	if [ -f presets.xml ] ; then mv presets.xml presets-orig.xml; fi 
+	cp debian/presets-libavcodec51-v4.xml debian/presets.xml
+	cd languages ;\
+		if [ -f winff.pb.po ] ; then mv winff.pb.po winff.pt_BR.po; fi ;\
+		if [ -f winff.po ] ; then mv winff.po winff.en.po; fi ;\
+		if [ -f winff.zh.po ] ; then mv winff.zh.po winff.zh_TW.po; fi
 
 	touch configure-stamp
 
 
 build: build-stamp
 
-build-stamp: configure-stamp
+build-stamp: configure-stamp 
 	dh_testdir
 
 	/usr/lib/lazarus/lazbuild --widgetset=gtk2 -B winff.lpr
@@ -32,6 +37,10 @@ clean:
 
 	rm -f *.or *.res *.o *~ *.ppu *.rst *.rls *.bak winff.exe winff *.lrt winff.compiled
 	if [ -f presets-orig.xml ] ; then mv presets-orig.xml presets.xml; fi 
+	cd languages ;\
+		if [ -f winff.pt_BR.po ] ; then mv winff.pt_BR.po winff.pb.po; fi ;\
+		if [ -f winff.en.po ] ; then mv winff.en.po winff.po; fi ;\
+		if [ -f winff.zh_TW.po ] ; then mv winff.zh_TW.po winff.zh.po; fi
 	dh_clean 
 
 install: build
@@ -51,11 +60,12 @@ binary-arch: build install
 	dh_install
 	dh_installmenu
 	dh_installman winff.1
+	dh_installmime
 	dh_desktop
 	dh_strip
 	dh_compress --exclude=.pdf
 	dh_fixperms
-	find $(CURDIR)/debian/winff/usr/share/winff -type f | xargs chmod a-x
+	find $(CURDIR)/debian/winff/usr/share/ -type f | xargs chmod a-x
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol

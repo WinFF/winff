@@ -1,19 +1,23 @@
 Source: winff
-Section: graphics
+Section: video
 Priority: extra
 Maintainer: Paul Gevers <paul@climbing.nl>
 Build-Depends: debhelper (>= 5),
                lazarus-ide,
                fpc (>= 2.2.2-3)
-Standards-Version: 3.8.0
+Standards-Version: 3.8.3
 Homepage: http://www.winff.org/
+Vcs-Browser: http://code.google.com/p/winff/source/browse/#svn/trunk/%20winff%20--username%20bggmtt/debian
+Vcs-Svn: http://winff.googlecode.com/svn/trunk/%20winff%20--username%20bggmtt/debian
 
 Package: winff
 Architecture: any
-Depends: ffmpeg, xterm | x-terminal-emulator, ${shlibs:Depends}
+Depends: ffmpeg, xterm | x-terminal-emulator, ${shlibs:Depends},
+         ${misc:Depends}
 Recommends: ubuntu-restricted-extras | kubuntu-restricted-extras |
  xubuntu-restricted-extras
 Suggests: www-browser, pdf-viewer
+Breaks: shared-mime-info (<< 0.40) 
 Description: graphical video and audio batch converter using ffmpeg
  WinFF is a graphical user interface for FFmpeg. It will convert
  almost any video file that FFmpeg will convert. WinFF does multiple
