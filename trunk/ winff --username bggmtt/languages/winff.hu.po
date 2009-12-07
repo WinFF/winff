@@ -1,0 +1,455 @@
+# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Sponga Tamas <d7d7d7@freemail.hu>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: WinFF 0.45.1\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-12-05 23:00+0100\n"
+"Last-Translator: Sponga Tamas <d7d7d7@freemail.hu>\n"
+"Language-Team: Hungarian <matt@biggmatt.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Report-Msgid-Bugs-To: \n"
+
+#: unit1.rsaddbtn
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: unit1.rsallcategories
+msgid "(All Categories)"
+msgstr "(Minden kategória)"
+
+#: unit1.rscheckbox2
+msgid "Deinterlace"
+msgstr "Csíktalanítás"
+
+#: unit1.rsclearbtn
+msgid "Clear"
+msgstr "Tisztítás"
+
+#: unit1.rsclose
+msgid "Close"
+msgstr "Bezárás"
+
+#: unit1.rsclosebtn
+msgid "Options"
+msgstr "Beállítások"
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "Konvertálás"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "FFMpeg nem található."
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "FFPlay nem található."
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Fájl nem található"
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Beállító fájl nem található."
+
+#: unit1.rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr "Parancssor"
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Kiterjesztés nem tartalmazza a periódust  (???)"
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "Nincs ilyen fájl"
+
+#: unit1.rsfilemenu
+msgid "File"
+msgstr "Fájl"
+
+#: unit1.rsgroupbox1
+msgid "Additional Options"
+msgstr "Egyéb opciók"
+
+#: unit1.rsimportmenu
+msgid "Import Preset"
+msgstr "Beállítás importálása"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Érvénytelen beállító fájl"
+
+#: unit1.rslabel1
+msgid "Convert To ..."
+msgstr "Konvártálás..."
+
+#: unit1.rslabel10
+msgid "Audio Channels"
+msgstr "Hangcsatornák"
+
+#: unit1.rslabel11
+msgid "Output Folder"
+msgstr "Kimeneti mappa"
+
+#: unit1.rslabel19
+msgid "Device Preset"
+msgstr "Egység beállítása"
+
+#: unit1.rslabel3
+msgid "Video Bitrate"
+msgstr "Videó bitráta"
+
+#: unit1.rslabel4
+msgid "Frame Rate"
+msgstr "Képkockák aránya"
+
+#: unit1.rslabel5
+msgid "Video Size"
+msgstr "Videó méret"
+
+#: unit1.rslabel6
+msgid "Aspect Ratio"
+msgstr "Méretarány"
+
+#: unit1.rslabel7
+msgid "Audio Bitrate"
+msgstr "Hang bitráta"
+
+#: unit1.rslabel8
+msgid "Sample Rate"
+msgstr "Mintaarány"
+
+#: unit1.rsmenuitem1
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: unit1.rsmenuitem3
+msgid "Exit"
+msgstr "Kilépés"
+
+#: unit1.rsmenuitem4
+msgid "Presets"
+msgstr "Beállítások"
+
+#: unit1.rsmenuitem5
+msgid "Preferences"
+msgstr "Tulajdonságok"
+
+#: unit1.rsmenuitem6
+msgid "Help"
+msgstr "Súgó"
+
+#: unit1.rsmitWinff
+msgid "WinFF Website"
+msgstr "WinFF honlap"
+
+#: unit1.rsmenuitem7
+msgid "WinFF Forums"
+msgstr "WinFF fórumok"
+
+#: unit1.rsmitabout
+msgid "About"
+msgstr "A programról"
+
+#: unit1.rsmitdocs
+msgid "Documentation"
+msgstr "Dokumentáció"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "A névben csak betű/szám lehet (a-z,A-Z, 0-9)"
+
+#: unit1.rspass2
+msgid "2 pass"
+msgstr "2 lépésben"
+
+#: unit1.rspauseonfinish
+msgid "Pause on Finish"
+msgstr "A végén megáll"
+
+#: unit1.rsplay
+msgid "Play"
+msgstr "Lejátszás"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "A konvertáláshoz legalább 1 fájlt adj hozzá"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "A beállítás %s%s%s néven már létezik"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Az importálandó beállításnak nincs kiterjesztése"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Az importálandó beállításnak nincs címe"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Válassz ki egy beállítást az exportáláshoz"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "%s%s%s nevű beállítás már létezik"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Nyomj Entert a folytatáshoz"
+
+#: unit1.rsremovebtn
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "A beállítás fájl kiválasztása"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Videó fájl kiválasztása"
+
+#: unit1.rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr "A végén a rendszer leállítása"
+
+#: unit1.rsstartbtn
+msgid "Convert"
+msgstr "Konvertálás"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "A beállításokban nem megengedett karakter van"
+
+#: unit1.tabpage1caption
+msgid "Output Details"
+msgstr "Kimeneti részletek"
+
+#: unit1.tabpage2caption
+msgid "Video Settings"
+msgstr "Videóbeállítások"
+
+#: unit1.tabpage3caption
+msgid "Audio Settings"
+msgstr "Hangbeállítások"
+
+#: unit1.tabpage4caption
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr "Bővített parancsori paraméterek"
+
+#: unit2.rsaddpresetbtn
+msgid "Add / Update"
+msgstr "Hozzáadás / Frissítés"
+
+#: unit2.rscancelbtn
+msgid "Cancel"
+msgstr "Mégse"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Beállítás készítése:"
+
+#: unit2.rsdeletebtn
+msgid "Delete"
+msgstr "Törlés"
+
+#: unit2.rsexport
+msgid "Export"
+msgstr "Exportálás"
+
+#: unit2.rsform2
+msgid "Edit Presets"
+msgstr "Beállítások szerkesztése"
+
+#: unit2.rsimport
+msgid "Import"
+msgstr "Importálás"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Beállítások importálása"
+
+#: unit2.rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr "Beállítás neve (egy szó, csak A-Z-is és a számok)"
+
+#: unit2.rslabel3
+msgid "Preset Label"
+msgstr "Előre beállított címke"
+
+#: unit2.rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr "Parancssor beállítás"
+
+#: unit2.rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr "Kimeneti fájl kiterjesztése (nem \".\")"
+
+#: unit2.rslabel6
+msgid "Category"
+msgstr "Kategória"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "A cimkének egyedülállónak kell lenni"
+
+#: unit2.rsokbtn
+msgid "Save"
+msgstr "Mentés"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Beállítás eltávolítása:"
+
+#: unit2.rsreplacepreset
+msgid "Replace Preset"
+msgstr "Beállítások cseréje:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Beállítás frissítése:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Válaszd ki a kiterjesztést."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Lépj be egy címkébe."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Írd be a neved."
+
+#: unit3.rsbutton1
+msgctxt "unit3.rsbutton1"
+msgid "OK"
+msgstr "OK"
+
+#: unit3.rsform3
+msgid "About WinFF"
+msgstr "A WinFF-ről"
+
+#: unit3.rslabel8
+msgid "FFmpeg builds by"
+msgstr "FFmpeg-et készítette"
+
+#: unit3.rspage1
+msgid "WinFF"
+msgstr "WinFF"
+
+#: unit3.rspage2
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: unit3.rspage3
+msgid "Thanks"
+msgstr "Köszi :-)"
+
+#: unit4.rscheckbox1
+msgid "Remember Last Directory Used"
+msgstr "Emlékezzen az utoljára használt könyvtárra"
+
+#: unit4.rscheckbox2
+msgid "Use CHCP for international characters"
+msgstr "Használd a CHCP-t a nemzetközi karakterekhez"
+
+#: unit4.rscheckbox3
+msgid "Multithreading for Dual Core Processors"
+msgstr "Többszálú működés (Dual Core processzoroknál)"
+
+#: unit4.rsform4
+msgid "WinFF Preferences"
+msgstr "WinFF beállítások"
+
+#: unit4.rslabel1
+msgid "Default Destination Directory"
+msgstr "Alapértelmezett célkönyvtár"
+
+#: unit4.rslabel2
+msgid "Path to FFmpeg.exe"
+msgstr "FFmpeg.exe elérési út"
+
+#: unit4.rslabel3
+msgid "Path to FFPlay.exe"
+msgstr "FFplay.exe elérési út"
+
+#: unit4.rslabel4
+msgid "Path to FFmpeg Executable"
+msgstr "FFmpeg elérési út"
+
+#: unit4.rslabel5
+msgid "Path to FFPlay Executable"
+msgstr "FFPlay elérési út"
+
+#: unit4.rslabel6
+msgid "Terminal to run FFmpeg"
+msgstr "FFmpeg futtatása terminálban"
+
+#: unit4.rslabel7
+msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgstr "Parancssor beállítások (-e az Xterm , -x a Gnome Terminal)"
+
+#: unit4.rspage1
+msgid "General"
+msgstr "Fő"
+
+#: unit4.rspage2
+msgid "Ms Windows"
+msgstr "Ms Windows"
+
+#: unit4.rspage3
+msgid "Linux"
+msgstr "Linux"
+
+#: unit5.rsform5
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg parancssor"
+
+#: unit6.rsform6
+msgid "Export Presets"
+msgstr "Beállítások exportálása"
+
+#: unit6.rslabel1
+msgid "Choose presets to export"
+msgstr "Válaszd ki a beállításokat az exportáláshoz"
+
+#: unit4.rspriority
+msgid "Priority"
+msgstr "Prioritás"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Magas"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normál"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Várakozó"
