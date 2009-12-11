@@ -1,3 +1,11 @@
+winff (1.1.1-2) unstable; urgency=low
+
+  * Changed packaging to 3.0 (quilt) format (no changes needed)
+  * debian/rules changed path of lazbuild call (Closes: #560574)
+  * Added extra languages from upstream svn
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 11 Dec 2009 10:44:25 +0100
+
 winff (1.1.1-1) unstable; urgency=low
 
   * New upstream release
