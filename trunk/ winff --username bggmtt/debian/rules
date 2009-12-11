@@ -25,7 +25,7 @@ build: build-stamp
 build-stamp: configure-stamp 
 	dh_testdir
 
-	/usr/lib/lazarus/lazbuild --widgetset=gtk2 -B winff.lpr
+	lazbuild --widgetset=gtk2 -B winff.lpr
 
 	touch $@
 
