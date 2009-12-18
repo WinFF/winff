@@ -1,7 +1,7 @@
 object Form4: TForm4
-  Left = 500
+  Left = 578
   Height = 330
-  Top = 376
+  Top = 147
   Width = 396
   ActiveControl = Notebook1
   BorderIcons = [biSystemMenu, biMinimize]
@@ -50,7 +50,7 @@ object Form4: TForm4
   }
   OnCreate = FormCreate
   Position = poMainFormCenter
-  LCLVersion = '0.9.26.2'
+  LCLVersion = '0.9.28.2'
   object Button1: TButton
     Left = 224
     Height = 25
@@ -71,7 +71,7 @@ object Form4: TForm4
     object Page1: TPage
       Caption = 'General'
       ClientWidth = 376
-      ClientHeight = 238
+      ClientHeight = 236
       object Label1: TLabel
         Left = 4
         Height = 16
@@ -81,7 +81,7 @@ object Form4: TForm4
         ParentColor = False
       end
       object Label8: TLabel
-        Left = 4
+        Left = 5
         Height = 16
         Top = 122
         Width = 39
@@ -109,7 +109,7 @@ object Form4: TForm4
         Left = 4
         Height = 19
         Top = 64
-        Width = 167
+        Width = 182
         Caption = 'Remember Last Used Directory'
         TabOrder = 2
       end
@@ -117,43 +117,51 @@ object Form4: TForm4
         Left = 4
         Height = 19
         Top = 90
-        Width = 206
+        Width = 231
         Caption = 'Mutlithreading for Dual Core Processors'
         TabOrder = 3
       end
       object prioritybox: TComboBox
-        Left = 52
-        Height = 21
+        Left = 53
+        Height = 23
         Top = 122
         Width = 122
-        ItemHeight = 13
+        ItemHeight = 15
         Style = csDropDownList
         TabOrder = 4
+      end
+      object edtThreads: TEdit
+        Left = 244
+        Height = 23
+        Top = 88
+        Width = 80
+        OnChange = edtThreadsChange
+        TabOrder = 5
       end
     end
     object Page2: TPage
       Caption = 'MS Windows'
-      ClientWidth = 382
-      ClientHeight = 237
+      ClientWidth = 376
+      ClientHeight = 236
       object Label2: TLabel
         Left = 4
-        Height = 14
+        Height = 16
         Top = 8
-        Width = 133
+        Width = 164
         Caption = 'Path to FFmpeg Executable'
         ParentColor = False
       end
       object Label3: TLabel
         Left = 4
-        Height = 14
+        Height = 16
         Top = 64
-        Width = 127
+        Width = 156
         Caption = 'Path to FFplay Executable'
         ParentColor = False
       end
       object Edit2: TEdit
         Left = 4
-        Height = 23
+        Height = 21
         Top = 32
         Width = 312
         TabOrder = 0
@@ -170,7 +178,7 @@ object Form4: TForm4
       end
       object Edit3: TEdit
         Left = 4
-        Height = 23
+        Height = 21
         Top = 88
         Width = 312
         TabOrder = 2
@@ -187,52 +195,52 @@ object Form4: TForm4
       end
       object CheckBox2: TCheckBox
         Left = 4
-        Height = 19
+        Height = 22
         Top = 130
-        Width = 208
+        Width = 244
         Caption = 'Use CHCP for international characters'
         TabOrder = 4
       end
     end
     object Page3: TPage
       Caption = 'Linux'
-      ClientWidth = 382
-      ClientHeight = 237
+      ClientWidth = 376
+      ClientHeight = 236
       object Label4: TLabel
         Left = 4
-        Height = 14
+        Height = 16
         Top = 8
-        Width = 133
+        Width = 164
         Caption = 'Path to FFmpeg Executable'
         ParentColor = False
       end
       object Label5: TLabel
         Left = 4
-        Height = 14
+        Height = 16
         Top = 64
-        Width = 127
+        Width = 156
         Caption = 'Path to FFplay Executable'
         ParentColor = False
       end
       object Label6: TLabel
         Left = 4
-        Height = 14
+        Height = 16
         Top = 120
-        Width = 125
+        Width = 152
         Caption = 'Terminal to run FFmpeg in'
         ParentColor = False
       end
       object Label7: TLabel
         Left = 4
-        Height = 14
+        Height = 16
         Top = 176
-        Width = 268
+        Width = 314
         Caption = 'Terminal Options (''-e'' for xterm, ''-x'' for gnome terminal)'
         ParentColor = False
       end
       object Edit4: TEdit
         Left = 7
-        Height = 23
+        Height = 21
         Top = 32
         Width = 312
         TabOrder = 0
@@ -249,7 +257,7 @@ object Form4: TForm4
       end
       object Edit5: TEdit
         Left = 7
-        Height = 23
+        Height = 21
         Top = 88
         Width = 312
         TabOrder = 2
@@ -276,14 +284,14 @@ object Form4: TForm4
       end
       object Edit6: TEdit
         Left = 4
-        Height = 23
+        Height = 21
         Top = 144
         Width = 312
         TabOrder = 4
       end
       object Edit7: TEdit
         Left = 4
-        Height = 23
+        Height = 21
         Top = 202
         Width = 80
         TabOrder = 6

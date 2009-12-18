@@ -35,6 +35,9 @@ type
 
   TForm1 = class(TForm)
     btnAdd: TBitBtn;
+    btnPreview: TBitBtn;
+    Button1: TButton;
+    edtCropLeft: TEdit;
     edtAspectRatio: TEdit;
     audbitrate: TEdit;
     audchannels: TEdit;
@@ -45,6 +48,14 @@ type
     btnClear: TBitBtn;
     commandlineparams: TEdit;
     DestFolder: TEdit;
+    edtCropTop: TEdit;
+    edtCropBottom: TEdit;
+    edtCropRight: TEdit;
+    lblCropLeft: TLabel;
+    lblCropTop: TLabel;
+    lblCropBottom: TLabel;
+    lblCropRight: TLabel;
+//    mitPlaySoundonFinish: TMenuItem;
     mitDisplayCmdline: TMenuItem;
     dlgOpenFile: TOpenDialog;
     filelist: TListBox;
@@ -70,6 +81,8 @@ type
     nbkSettings: TNotebook;
     dlgOpenPreset: TOpenDialog;
     btnOptions: TBitBtn;
+    StatusBar1: TStatusBar;
+    tabPageCrop: TPage;
     PageControl1: TPageControl;
     pnlTop: TPanel;
     Panel2: TPanel;
@@ -79,6 +92,7 @@ type
     pnlbottom2: TPanel;
     pnlMain: TPanel;
     mitPauseOnFinish: TMenuItem;
+    mitPlaySoundOnFinish: TMenuItem;
     PresetBox: TComboBox;
     btnRemove: TBitBtn;
     mitShutdownOnFinish: TMenuItem;
@@ -98,12 +112,22 @@ type
     tabVideoSettings: TPage;
     tabAudioSettings: TPage;
     tabCmdLineSettings: TPage;
+    UpDown1: TUpDown;
+    UpDown2: TUpDown;
+    UpDown3: TUpDown;
+    UpDown4: TUpDown;
     Vidbitrate: TEdit;
     Vidframerate: TEdit;
     VidsizeX: TEdit;
     VidsizeY: TEdit;
 
+    procedure btnPreviewClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
+    procedure edtCropBottomChange(Sender: TObject);
+    procedure edtCropLeftChange(Sender: TObject);
+    procedure edtCropRightChange(Sender: TObject);
+    procedure edtCropTopChange(Sender: TObject);
     procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure LaunchBrowser(URL:string);
     procedure LaunchPdf(pdffile:string);
@@ -118,6 +142,7 @@ type
     procedure mitAboutClick(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure mitExitClick(Sender: TObject);
+    procedure mitPlaySoundonFinishClick(Sender: TObject);
     procedure mitPresetsClick(Sender: TObject);
     procedure mitPreferencesClick(Sender: TObject);
     procedure mitDocsClick(Sender: TObject);
@@ -197,15 +222,17 @@ var
   rememberpreset: string;
   pass2encoding: string ;
   pausescript: string;
+  playscript: string;
   multithreading: string;
   PODirectory, Lang, FallbackLang: String;
-
+  preview: boolean;
   Resourcestring
   // captions
   rsAddBtn='Add';
   rsLabel10='Audio Channels';
   rsdisplaycmdline='Display CMD Line';
   rspauseonfinish='Pause on Finish';
+  rsplaysoundonfinish='Play Sound on Finish';
   rsshutdownonfinish='Shutdown on Finish';
   rsoptionsbtn='Options';
   rsclosebtn='Options';
@@ -227,10 +254,37 @@ var
   rsmitabout='About';
   rsimportmenu='Import Preset';
   rsshowoptions='Additional Options';
+  rsCropLeft='Left';
+  rsCropTop='Top';
+  rsCropBottom='Bottom';
+  rsCropRight='Right';
+  rsPreview='Preview';
   rsOptions='Options';
   rsClose='Close';
   rsfilemenu='File';
   //rsGroupBox2='Additional Command Line Parameters (Advanced)';
+
+  //Hints
+  rsHintAdd='add file(s) to the list for conversion';
+  rsHintRemove='remove the selected file(s) from the list';
+  rsHintClear='remove all files from the list';
+  rsHintPlay='preview the selected source file with ffplay (good test to see if conversion is possible)';
+  rsHintPreview='preview using the output settings';
+  rsHintConvert='start the conversion process';
+  rsHintOptions='open or close the additional option window';
+  rsHintConvertTo='name of the device or file type the video should be converted to';
+  rsHintDevicePreset='specific setting to use for the chosen device or file type';
+  rsHintOutputfolder='the target location for the final video (choose a different folder than the source folder)';
+  rsHintVideobitrate='(<integer>kb) the target kilobits/second that the stream should use';
+  rsHintAudiobitrate='(<integer>kb) the target kilobits/second that the stream should use';
+  rsHintFramerate='(<real> or <integer>) the number of frames per second';
+  rsHintVideosize='(<integer> X <integer>) the amount of pixels of information. For codecs that don''t support pixel aspect ratio (PAR) this is the size of the video when viewed.';
+  rsHintAspectratio='(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display.';
+  rsHint2pass='Using two passes allows the encoder to gather information in the first run for enhanced quality.';
+  rsHintDeinterlace='removes interlacing from the video (if necessary)';
+  rsHintSamplerate='(<integer>) the sampling frequency of the audio in Hertz';
+  rsHintAudiochannels='(<integer>) number of audio channels';
+
 
   rsLabel5='Video Size';
   rsLabel6='Aspect Ratio';
@@ -247,6 +301,8 @@ var
   tabPage2caption='Video Settings';
   tabPage3caption='Audio Settings';
   tabPage4caption='Additional Command Line Parameters (Advanced)';
+  tabPage5caption='Crop';
+
 
   //messages
   rsCouldNotFindPresetFile = 'Could not find presets file.';
@@ -282,7 +338,7 @@ i:integer;
 formheight,formwidth,formtop,formleft:integer;
 sformheight,sformwidth,sformtop,sformleft:string;
 currentpreset, destdir: string;
-//importfromcmdline:string;
+
 begin
    ExtrasPath:= ExtractFilePath(ParamStr(0));
 
@@ -297,10 +353,12 @@ begin
     Label10.Caption:=rslabel10;
     mitDisplayCmdline.Caption:=rsdisplaycmdline;
     mitPauseOnFinish.Caption:=rspauseonfinish;
+    mitPlaySoundOnFinish.Caption:=rsplaysoundonfinish;
     mitShutdownOnFinish.Caption:=rsshutdownonfinish;
     btnOptions.Caption:=rsoptionsbtn;
     btnConvert.Caption:=rsstartbtn;
     btnPlay.Caption:=rsplay;
+    btnPreview.Caption:=rsPreview;
     btnClear.Caption:=rsclearbtn;
     btnRemove.Caption:=rsremovebtn;
     cbxDeinterlace.Caption:=rscheckbox2;
@@ -329,10 +387,36 @@ begin
     gbxSettings.Caption:=rsgroupbox1;
     Label1.Caption:=rslabel1;
     Label2.Caption:=rslabel2;
+    lblCropLeft.Caption:=rsCropLeft;
+    lblCropRight.Caption:=rsCropRight;
+    lblCropTop.Caption:=rsCropTop;
+    lblCropBottom.Caption:=rsCropBottom;
     tabPage1.Caption:=tabPage1caption;
     tabVideoSettings.Caption:=tabPage2caption;
     tabAudioSettings.Caption:=tabPage3caption;
     tabCmdLineSettings.Caption:=tabPage4caption;
+    tabPageCrop.Caption:=tabpage5caption;
+    //hints
+    btnAdd.Hint:=rsHintAdd;
+    btnRemove.Hint:=rsHintRemove;
+    btnClear.Hint:=rsHintClear;
+    btnPreview.Hint:=rsHintPreview;
+    btnPlay.Hint:=rsHintPlay;
+    btnOptions.Hint:=rsHintOptions;
+    btnConvert.Hint:=rsHintConvert;
+    categorybox.Hint:=rsHintConvertTo;
+    PresetBox.Hint:=rsHintDevicePreset;
+    DestFolder.Hint:=rsHintOutputfolder;
+    VidBitRate.Hint:=rsHintVideobitrate;
+    Vidframerate.Hint:=rsHintFramerate;
+    VidsizeX.Hint:=rsHintVideoSize;
+    VidsizeY.Hint:=rsHintVideoSize;
+    audbitrate.Hint:=rsHintAudiobitrate;
+    edtAspectRatio.Hint:=rsHintAspectratio;
+    cbx2Pass.Hint:=rsHint2pass;
+    cbxDeinterlace.Hint:=rsHintDeinterlace;
+    audChannels.Hint:=rsHintAudiochannels;
+    audsamplingrate.Hint:=rsHintSampleRate;
 
 
                     // start setup
@@ -404,7 +488,7 @@ begin
        ffplay := '/usr/bin/ffplay';
        if not fileexists(ffplay) then
          if fileexists('/usr/local/bin/ffplay') then
-            ffmpeg := '/usr/local/bin/ffplay'
+            ffplay := '/usr/local/bin/ffplay'
          else
             showmessage(rsCouldNotFindFFPlay);
        setconfigvalue('unix/ffplay',ffplay);
@@ -550,6 +634,18 @@ begin
   else
      mitPauseOnFinish.Checked:=false;
 
+  playscript:=getconfigvalue('general/playsound');
+  if playscript='' then
+    begin
+     playscript:= 'true';
+     setconfigvalue('general/playsound',playscript);
+    end;
+  if playscript='true' then
+     mitplaysoundOnFinish.Checked:=true
+  else
+     mitplaysoundOnFinish.Checked:=false;
+
+
 
                                         // check for multithreading
   multithreading:=getconfigvalue('general/multithreading');
@@ -579,7 +675,13 @@ begin
   else
      setconfigvalue('general/pause','false');
 
-           
+
+  if mitPlaySoundOnFinish.Checked then // save pause on finish
+     setconfigvalue('general/playsound','true')
+  else
+     setconfigvalue('general/playsound','false');
+
+
   if cbx2Pass.Checked then // save 2 pass
      setconfigvalue('general/pass2','true')
   else
@@ -661,10 +763,10 @@ destdir:string;
 begin
    try
     if presets.FindNode(presetname).FindNode('destdir').HasChildNodes then
-    begin
-      dirnode:=presets.FindNode(presetname).FindNode('destdir').FindNode('#text');
-      destdir:=dirnode.NodeValue;
-    end
+      begin
+        dirnode:=presets.FindNode(presetname).FindNode('destdir').FindNode('#text');
+        destdir:=dirnode.NodeValue;
+      end
    except
     destdir:='';
    end;
@@ -680,10 +782,13 @@ begin
  try
     presets.FindNode(presetname).FindNode('destdir').FindNode('#text').NodeValue :=destdir;
  except
-    destdirnode:=presetsfile.CreateElement('destdir');
-    presets.FindNode(presetname).appendchild(destdirnode);
-    text1:=presetsfile.Createtextnode(destdir);
-    presets.FindNode(presetname).findnode('destdir').AppendChild(text1);
+    try
+       destdirnode:=presetsfile.CreateElement('destdir');
+       presets.FindNode(presetname).appendchild(destdirnode);
+       text1:=presetsfile.Createtextnode(destdir);
+       presets.FindNode(presetname).findnode('destdir').AppendChild(text1);
+    except
+    end;
  end;
   writexmlfile(presetsfile, presetspath + 'presets.xml');
 end;
@@ -702,9 +807,9 @@ begin
    categorybox.items.add('------');
    for i:= 0 to presets.ChildNodes.Count -1  do
      begin
-       node:= presets.ChildNodes.item[i];
-       subnode:= node.FindNode('category');
        try
+         node:= presets.ChildNodes.item[i];
+         subnode:= node.FindNode('category');
          category:=subnode.findnode('#text').NodeValue;
          category:=trim(category)
        except
@@ -736,9 +841,9 @@ begin
       
    for i:= 0 to presets.ChildNodes.Count -1  do
    begin
-      node:= presets.ChildNodes.item[i];
-      subnode:= node.FindNode('label');
       try
+        node:= presets.ChildNodes.item[i];
+        subnode:= node.FindNode('label');
         catnode:= presets.ChildNodes.item[i];
         catsubnode:= catnode.FindNode('category');
         presetcategory:=catsubnode.FindNode('#text').NodeValue;
@@ -746,10 +851,16 @@ begin
         presetcategory:='';
       end;
       if category = '' then
+         try
          presetbox.items.add(subnode.findnode('#text').NodeValue)
+         except
+         end
       else
          if (presetcategory = category) then
+            try
             presetbox.items.add(subnode.findnode('#text').NodeValue);
+            except
+            end;
    end;
    presetbox.sorted:=true;
    presetbox.sorted:=false;
@@ -773,24 +884,91 @@ begin
 
   for i:= 0 to presets.ChildNodes.Count -1  do
    begin
+      try
       node:= presets.ChildNodes.item[i];
       subnode:= node.FindNode('label');
-      try
+
         catnode:= presets.ChildNodes.item[i];
         catsubnode:= catnode.FindNode('category');
         presetcategory:=catsubnode.FindNode('#text').NodeValue;
       except
         presetcategory:='';
       end;
-      if category = '' then
-         presetbox.items.add(subnode.findnode('#text').NodeValue)
-      else
-         if (presetcategory = category) then
-            presetbox.items.add(subnode.findnode('#text').NodeValue);
+      try
+        if category = '' then
+           presetbox.items.add(subnode.findnode('#text').NodeValue)
+        else
+           if (presetcategory = category) then
+              presetbox.items.add(subnode.findnode('#text').NodeValue);
+
+      except
+      end;
    end;
    presetbox.sorted:=true;
    presetbox.sorted:=false;
 
+end;
+
+// cropbootom change
+procedure TForm1.edtCropBottomChange(Sender: TObject);
+var
+i:integer;
+begin
+ try
+ i:=strtoint(edtcropbottom.text);
+ except
+ edtcropbottom.text:='0';
+ end;
+ i:=i;
+end;
+
+// cropleft change
+procedure TForm1.edtCropLeftChange(Sender: TObject);
+var
+i:integer;
+begin
+ try
+ i:=strtoint(edtcropleft.text);
+ except
+ edtcropleft.text:='0';
+ end;
+ i:=i;
+end;
+
+// cropright change
+procedure TForm1.edtCropRightChange(Sender: TObject);
+var
+i:integer;
+begin
+ try
+ i:=strtoint(edtcropright.text);
+ except
+ edtcropright.text:='0';
+ end;
+ i:=i;
+end;
+
+// croptop change
+procedure TForm1.edtCropTopChange(Sender: TObject);
+var
+i:integer;
+begin
+ try
+ i:=strtoint(edtcroptop.text);
+ except
+ edtcroptop.text:='0';
+ end;
+ i:=i;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+end;
+// preview button clicked
+procedure TForm1.btnPreviewClick(Sender: TObject);
+begin
+preview := true;
+btnConvertClick(Self);
 end;
 
 // change preset
@@ -1139,6 +1317,20 @@ begin
   form1.close;
 end;
 
+procedure TForm1.mitPlaySoundonFinishClick(Sender: TObject);
+begin
+  if mitplaysoundOnFinish.Checked then
+    begin
+    mitplaysoundOnFinish.checked:=false;
+    playscript:='false'
+    end
+  else
+    begin
+    mitplaysoundOnFinish.checked:=true;
+    playscript:='true';
+    end;
+end;
+
 // menu: import preset
 procedure TForm1.mitImportPresetClick(Sender: TObject);
 begin
@@ -1272,8 +1464,9 @@ end;
 procedure TForm1.btnConvertClick(Sender: TObject);
 var
 i,j : integer;
+cb,ct,cl,cr:integer;
 pn, extension, params, commandline, command, filename,batfile, passlogfile, basename:string;
-qterm, ffmpegfilename, usethreads, deinterlace, nullfile, titlestring, priority:string;
+qterm, ffmpegfilename,ffplayfilename, usethreads, numthreads, deinterlace, nullfile, titlestring, priority:string;
 script: tstringlist;
 thetime: tdatetime;
 scriptprocess:tprocess;
@@ -1295,13 +1488,19 @@ begin                                     // get setup
 
    {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
    {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
-
+   {$ifdef win32}ffplayfilename:='"' + ffplay + '"';{$endif}
+   {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
    {$ifdef win32}nullfile:='"NUL.avi"';{$endif}
    {$ifdef unix}nullfile:='/dev/null';{$endif}
 
    
-   if multithreading='true' then usethreads := ' -threads 2'
-    else usethreads:='';
+   if multithreading='true' then
+      begin
+        numthreads := trim(getconfigvalue('general/numberofthreads'));
+        if numthreads = '' then numthreads := '2';
+        usethreads := ' -threads ' + numthreads + ' ';
+      end
+   else usethreads:='';
    
    if cbxDeinterlace.Checked then deinterlace := ' -deinterlace '
     else deinterlace:='';
@@ -1337,6 +1536,10 @@ begin                                     // get setup
    audbitrate.Text := trim(audbitrate.Text);
    audsamplingrate.Text := trim(audsamplingrate.Text);
    audchannels.Text:=trim(audchannels.Text);
+   edtCropBottom.Text:=trim(edtCropbottom.text);
+   edtCropTop.Text:=trim(edtCropTop.text);
+   edtCropleft.Text:=trim(edtCropleft.text);
+   edtCropright.Text:=trim(edtCropright.text);
 
                                       // replace preset params if mnuOptions specified
    commandline := params;
@@ -1357,7 +1560,41 @@ begin                                     // get setup
    if commandlineparams.Text <> '' then
            commandline += ' ' + commandlineparams.text;
 
+                 // preview
+   if preview then commandline += ' -ss 00:01:00 -t 00:00:30';
 
+                 // cropping
+   if edtCropBottom.Text <> '' then
+      begin
+       cb:=strtoint(edtcropbottom.text);
+       if cb mod 2 = 1 then cb := cb-1;
+       edtcropbottom.text := inttostr(cb);
+       if edtcropbottom.text <> '0' then commandline := commandline + ' -cropbottom ' + edtCropBottom.Text + ' ';
+      end;
+
+   if edtCropTop.Text <> '' then
+     begin
+       ct:=strtoint(edtcroptop.text);
+       if ct mod 2 = 1 then ct := ct-1;
+       edtcroptop.text := inttostr(ct);
+       if edtcroptop.text <> '0' then commandline += ' -croptop ' + edtCropTop.Text + ' ';
+     end;
+
+   if edtCropLeft.Text <> '' then
+     begin
+       cl:=strtoint(edtcropleft.text);
+       if cl mod 2 = 1 then cl := cl-1;
+       edtcropleft.text := inttostr(cl);
+       if edtcropleft.text <> '0' then commandline += ' -cropleft ' + edtCropLeft.Text + ' ';
+     end;
+
+   if edtCropRight.Text <> '' then
+     begin
+       cr:=strtoint(edtcropright.text);
+       if cr mod 2 = 1 then cr := cr-1;
+       edtcropright.text := inttostr(cr);
+       if edtcropright.text <> '0' then commandline += ' -cropright ' + edtCropRight.Text + ' ';
+     end;
                                            // build batch file
    thetime :=now;
    batfile := 'ff' + FormatDateTime('yymmddhhnnss',thetime) +
@@ -1402,24 +1639,35 @@ begin                                     // get setup
                  + extension+ '"';
            script.add(command);
           end;
-
+       if preview then
+         begin
+         script.add(ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');
+         break;
+         end;
      end;
-                                                        // finish off commandline
+                                       // finish off command
 
                                          // pausescript
-   if pausescript='true' then
+   if (pausescript='true') and (preview=false) then
+       begin
        {$ifdef win32}
        script.Add('pause');
        {$endif}
        {$ifdef unix}
        script.Add('read -p "' + rsPressEnter + '" dumbyvar');
        {$endif}
-
+       end;
                                                //shutdown when finnshed
    if mitShutdownOnFinish.Checked and (pausescript='false') then
       {$ifdef win32}script.Add('shutdown.exe -s');{$endif}
       {$ifdef unix}script.Add('shutdown now');{$endif}
 
+                                           // remove preview file if exists
+   if preview then
+      begin
+        script.add('del ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');
+        preview:=false;
+      end;
                                            // remove batch file on completion
    {$ifdef win32}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
    {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
@@ -1450,7 +1698,6 @@ begin                                     // get setup
     end;
 
     script.Free;
-
     setpresetdestdir(pn,destfolder.text);
 end;
 

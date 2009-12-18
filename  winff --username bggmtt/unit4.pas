@@ -41,6 +41,7 @@ type
     CheckBox1: TCheckBox;
     CheckBox2: TCheckBox;
     CheckBox3: TCheckBox;
+    edtThreads: TEdit;
     prioritybox: TComboBox;
     Edit1: TEdit;
     Edit2: TEdit;
@@ -71,6 +72,7 @@ type
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
+    procedure edtThreadsChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
 
   private
@@ -163,8 +165,9 @@ begin
      checkbox3.Checked := true
   else
      checkbox3.Checked := false;
+  edtthreads.Text:= form1.getconfigvalue('general/numberofthreads');
 
-  prioritybox.Text := form1.getconfigvalue('general/priority')
+  prioritybox.Text := form1.getconfigvalue('general/priority');
 end;
 
 // save preference
@@ -195,6 +198,8 @@ begin
     form1.setconfigvalue('general/multithreading','false');
     unit1.multithreading:='false';
    end;
+  edtthreads.Text:=trim(edtthreads.Text);
+  form1.setconfigvalue('general/numberofthreads', edtthreads.Text);
 
   form1.setconfigvalue('general/priority', prioritybox.Text);
 
@@ -291,6 +296,11 @@ procedure TForm4.Button8Click(Sender: TObject);
 begin
    if opendialog1.Execute then
     edit6.Text := opendialog1.FileName;
+end;
+
+procedure TForm4.edtThreadsChange(Sender: TObject);
+begin
+
 end;
 
 
