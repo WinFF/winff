@@ -13,12 +13,13 @@
       <ActiveEditorIndexAtStart Value="2"/>
     </General>
     <i18n>
+      <EnableI18N Value="True"/>
       <OutDir Value="languages"/>
     </i18n>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <CurrentVersionNr Value="1"/>
-      <CurrentMajorRevNr Value="1"/>
+      <CurrentMajorRevNr Value="2"/>
       <Comments Value="WinFF Video Converter"/>
       <CompanyName Value="WinFF.org"/>
       <FileDescription Value="WinFF Video Converter"/>
@@ -65,8 +66,8 @@
         <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="7" Y="961"/>
-        <TopLine Value="936"/>
+        <CursorPos X="68" Y="1610"/>
+        <TopLine Value="1602"/>
         <EditorIndex Value="2"/>
         <UsageCount Value="214"/>
         <Bookmarks Count="2">
@@ -198,7 +199,7 @@
         <CursorPos X="1" Y="165"/>
         <TopLine Value="133"/>
         <EditorIndex Value="5"/>
-        <UsageCount Value="74"/>
+        <UsageCount Value="75"/>
         <Loaded Value="True"/>
       </Unit16>
       <Unit17>
