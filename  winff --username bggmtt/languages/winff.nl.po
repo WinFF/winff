@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2009-03-01 14:17+0100\n"
+"PO-Revision-Date: 2010-01-07 10:23+0100\n"
 "Last-Translator: Paul Gevers <paul@climbing.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,6 +28,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Dutch\n"
 
 #: unit1.rsaddbtn
 msgid "Add"
@@ -50,6 +51,7 @@ msgid "Close"
 msgstr "Sluiten"
 
 #: unit1.rsclosebtn
+msgctxt "unit1.rsclosebtn"
 msgid "Options"
 msgstr "Opties"
 
@@ -73,6 +75,22 @@ msgstr "Het bestand kan niet gevonden worden."
 msgid "Could not find presets file."
 msgstr "Kan het voorinstellingbestand niet vinden."
 
+#: unit1.rscropbottom
+msgid "Bottom"
+msgstr "Beneden"
+
+#: unit1.rscropleft
+msgid "Left"
+msgstr "Links"
+
+#: unit1.rscropright
+msgid "Right"
+msgstr "Rechts"
+
+#: unit1.rscroptop
+msgid "Top"
+msgstr "Boven"
+
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
 msgstr "Toon commandoregel"
@@ -90,8 +108,87 @@ msgid "File"
 msgstr "Bestand"
 
 #: unit1.rsgroupbox1
+msgctxt "unit1.rsgroupbox1"
 msgid "Additional Options"
 msgstr "Extra opties"
+
+#: unit1.rshint2pass
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
+msgstr "Het gebruik van \"2 keer\" zorgt ervoor dat de encoder informatie kan verzamelen in de eerste keer voor verbeterde kwaliteit."
+
+#: unit1.rshintadd
+msgid "add file(s) to the list for conversion"
+msgstr "voeg bestand(en) to aan de conversielijst"
+
+#: unit1.rshintaspectratio
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
+msgstr "(<integer:integer> of <real>) de fysieke aspect ratio (DAR) van de doelapparaat."
+
+#: unit1.rshintaudiobitrate
+msgctxt "unit1.rshintaudiobitrate"
+msgid "(<integer>kb) the target kilobits/second that the stream should use"
+msgstr "(<integer>kb) de doelsnelheid van de stream in kilobits per seconde"
+
+#: unit1.rshintaudiochannels
+msgid "(<integer>) number of audio channels"
+msgstr "(<integer>) aantal audiokanalen"
+
+#: unit1.rshintclear
+msgid "remove all files from the list"
+msgstr "verwijder alle bestanden uit de lijst"
+
+#: unit1.rshintconvert
+msgid "start the conversion process"
+msgstr "start het conversieproces"
+
+#: unit1.rshintconvertto
+msgid "name of the device or file type the video should be converted to"
+msgstr "naam van het apparaat of bestandstype waar de video naar geconverteerd moet worden"
+
+#: unit1.rshintdeinterlace
+msgid "removes interlacing from the video (if necessary)"
+msgstr "verwijder interlacing van de video (indien nodig)"
+
+#: unit1.rshintdevicepreset
+msgid "specific setting to use for the chosen device or file type"
+msgstr "specifieke instelling die gebruikt wordt voor het gekozen apparaat of bestandstype"
+
+#: unit1.rshintframerate
+msgid "(<real> or <integer>) the number of frames per second"
+msgstr "(<real> or <integer>) het aantal beelden per second"
+
+#: unit1.rshintoptions
+msgid "open or close the additional option window"
+msgstr "open of sluit het veld met extra opties"
+
+#: unit1.rshintoutputfolder
+msgid "the target location for the final video (choose a different folder than the source folder)"
+msgstr "de doelmap voor het eindresultaat (kies een andere map dan waar het origineel staat)"
+
+#: unit1.rshintplay
+msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "bekijk de geselecteerde bestanden met ffplay (goede test om te zien of conversie mogelijk is)"
+
+#: unit1.rshintpreview
+msgid "preview using the output settings"
+msgstr ""
+
+#: unit1.rshintremove
+msgid "remove the selected file(s) from the list"
+msgstr "verwijder geselecteerde bestand(en) uit de lijst"
+
+#: unit1.rshintsamplerate
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr "(<integer>) de bemonsteringsfrequentie van de audio in Hertz"
+
+#: unit1.rshintvideobitrate
+msgctxt "unit1.rshintvideobitrate"
+msgid "(<integer>kb) the target kilobits/second that the stream should use"
+msgstr "(<integer>kb) de doelsnelheid van de stream in kilobits per seconde"
+
+#: unit1.rshintvideosize
+msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+msgstr "(<integer> X <integer>) het aantal pixels met informatie. Voor codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van de video als het bekeken wordt."
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -110,12 +207,18 @@ msgid "Audio Channels"
 msgstr "Audio kanalen"
 
 #: unit1.rslabel11
+msgctxt "unit1.rslabel11"
 msgid "Output Folder"
 msgstr "Doelmap"
 
 #: unit1.rslabel19
 msgid "Device Preset"
 msgstr "Voorinstelling"
+
+#: unit1.rslabel2
+msgctxt "unit1.rslabel2"
+msgid "Output Folder"
+msgstr "Doelmap"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -145,11 +248,17 @@ msgstr "Audio frequentie"
 msgid "Edit"
 msgstr "Bewerken"
 
+#: unit1.rsmenuitem2
+msgctxt "unit1.rsmenuitem2"
+msgid "About"
+msgstr "Over"
+
 #: unit1.rsmenuitem3
 msgid "Exit"
 msgstr "Afsluiten"
 
 #: unit1.rsmenuitem4
+msgctxt "unit1.rsmenuitem4"
 msgid "Presets"
 msgstr "Voorinstellingen"
 
@@ -161,15 +270,12 @@ msgstr "Voorkeuren"
 msgid "Help"
 msgstr "Help"
 
-#: unit1.rsmitWinff
-msgid "WinFF Website"
-msgstr "WinFF website"
-
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
 msgstr "WinFF forums"
 
 #: unit1.rsmitabout
+msgctxt "unit1.rsmitabout"
 msgid "About"
 msgstr "Over"
 
@@ -177,9 +283,23 @@ msgstr "Over"
 msgid "Documentation"
 msgstr "Documentatie"
 
+#: unit1.rsmitWinff
+msgid "WinFF Website"
+msgstr "WinFF website"
+
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
 msgstr "De naam moet alfanumeriek zijn (a-z,A-Z,0-9)."
+
+#: unit1.rsoptions
+msgctxt "unit1.rsoptions"
+msgid "Options"
+msgstr "Opties"
+
+#: unit1.rsoptionsbtn
+msgctxt "unit1.rsoptionsbtn"
+msgid "Options"
+msgstr "Opties"
 
 #: unit1.rspass2
 msgid "2 pass"
@@ -193,9 +313,17 @@ msgstr "Pauzeer na beëindigen"
 msgid "Play"
 msgstr "Afspelen"
 
+#: unit1.rsplaysoundonfinish
+msgid "Play Sound on Finish"
+msgstr "Laat geluid horen na beëindigen"
+
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
 msgstr "Voer ten minste één bestand in om te converteren "
+
+#: unit1.rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "Selecteer een voorinstellingbestand"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
@@ -221,6 +349,10 @@ msgstr "Voorinstelling met label: %s%s%s bestaat reeds"
 msgid "Press Enter to Continue"
 msgstr "Druk 'enter' om verder te gaan"
 
+#: unit1.rspreview
+msgid "Preview"
+msgstr "Voorbeeld"
+
 #: unit1.rsremovebtn
 msgid "Remove"
 msgstr "Wissen"
@@ -232,6 +364,11 @@ msgstr "Selecteer voorinstellingbestand"
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
 msgstr "Selecteer videobestanden"
+
+#: unit1.rsshowoptions
+msgctxt "unit1.rsshowoptions"
+msgid "Additional Options"
+msgstr "Extra opties"
 
 #: unit1.rsshutdownonfinish
 msgid "Shutdown on Finish"
@@ -261,11 +398,16 @@ msgstr "Audio instellingen"
 msgid "Additional Command Line Parameters (Advanced)"
 msgstr "Extra parameters voor de commandoregel (gevorderden)"
 
+#: unit1.tabpage5caption
+msgid "Crop"
+msgstr "Bijsnijden"
+
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
 msgstr "Toevoegen / Vernieuwen"
 
 #: unit2.rscancelbtn
+msgctxt "unit2.rscancelbtn"
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -278,6 +420,7 @@ msgid "Delete"
 msgstr "Verwijderen"
 
 #: unit2.rsexport
+msgctxt "unit2.rsexport"
 msgid "Export"
 msgstr "Exporteer"
 
@@ -292,6 +435,11 @@ msgstr "Importeer"
 #: unit2.rsimportpresets
 msgid "Import Presets"
 msgstr "Importeer voorinstellingen"
+
+#: unit2.rslabel1
+msgctxt "unit2.rslabel1"
+msgid "Presets"
+msgstr "Voorinstelling"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
@@ -324,10 +472,6 @@ msgstr "Opslaan"
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Verwijder voorinstelling:"
-
-#: unit2.rsreplacepreset
-msgid "Replace Preset"
-msgstr "Vervang voorinstelling:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
@@ -369,6 +513,16 @@ msgstr "FFmpeg"
 #: unit3.rspage3
 msgid "Thanks"
 msgstr "Met dank aan"
+
+#: unit4.rsbutton1
+msgctxt "unit4.rsbutton1"
+msgid "OK"
+msgstr "Accepteren"
+
+#: unit4.rsbutton2
+msgctxt "unit4.rsbutton2"
+msgid "Cancel"
+msgstr "Annuleren"
 
 #: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
@@ -414,6 +568,11 @@ msgstr "Terminal voor het uitvoeren van FFmpeg"
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "Terminal opties (-e voor Xterm , -x voor Gnome Terminal)"
 
+#: unit4.rslabel8
+msgctxt "unit4.rslabel8"
+msgid "Priority"
+msgstr "Prioriteit"
+
 #: unit4.rspage1
 msgid "General"
 msgstr "Algemeen"
@@ -426,9 +585,36 @@ msgstr "MS Windows"
 msgid "Linux"
 msgstr "Linux"
 
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Hoog"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Inactief"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normaal"
+
+#: unit5.rsbutton1
+msgctxt "unit5.rsbutton1"
+msgid "OK"
+msgstr "Accepteren"
+
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg commandoregel"
+
+#: unit6.rscancelbtn
+msgctxt "unit6.rscancelbtn"
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: unit6.rsexportbtn
+msgctxt "unit6.rsexportbtn"
+msgid "Export"
+msgstr "Exporteer"
 
 #: unit6.rsform6
 msgid "Export Presets"
@@ -438,39 +624,8 @@ msgstr "Exporteer voorinstelling"
 msgid "Choose presets to export"
 msgstr "Selecteer een voorinstelling om te exporteren"
 
-#: unit4.rspriority
-msgid "Priority"
-msgstr "Prioriteit"
-
-#: unit4.rspriorityhigh
-msgid "High"
-msgstr "Hoog"
-
-#: unit4.rsprioritynormal
-msgid "Normal"
-msgstr "Normaal"
-
-#: unit4.rspriorityidle
-msgid "Idle"
-msgstr "Inactief"
-
-#~ msgctxt "unit1.rsoptions"
-#~ msgid "Options"
-#~ msgstr "Opties"
-#~ msgctxt "unit1.rsoptionsbtn"
-#~ msgid "Options"
-#~ msgstr "Opties"
-#~ msgid "Please select a preset"
-#~ msgstr "Selecteer een voorinstellingbestand"
-#~ msgctxt "unit1.rsshowoptions"
-#~ msgid "Additional Options"
-#~ msgstr "Extra opties"
-#~ msgctxt "unit2.rslabel1"
-#~ msgid "Presets"
-#~ msgstr "Voorinstelling"
-#~ msgctxt "unit6.rsexportbtn"
-#~ msgid "Export"
-#~ msgstr "Exporteer"
+#~ msgid "Replace Preset"
+#~ msgstr "Vervang voorinstelling:"
 #~ msgid "AC'"
 #~ msgstr "Aantal kanalen"
 
