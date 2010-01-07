@@ -1604,7 +1604,13 @@ begin                                     // get setup
    for i:=0 to filelist.Items.Count - 1 do
      begin
        filename := filelist.items[i];
+              // resolve issues with embedded quote marks in filename to be converted.  issue 38
+       {$ifdef unix}
+       filename := StringReplace(filename,' ','\ ',[rfReplaceAll]);
+       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
+       {$endif}
        basename := extractfilename(filename);
+
        for j:= length(basename) downto 1  do
          begin
            if basename[j] = #46 then

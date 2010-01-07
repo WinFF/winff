@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 175
+  Left = 150
   Height = 587
-  Top = 175
+  Top = 150
   Width = 1064
   AllowDropFiles = True
   Caption = 'WinFF'
