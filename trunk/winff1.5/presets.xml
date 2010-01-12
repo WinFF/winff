@@ -460,31 +460,31 @@
     <label>WMV2 Generic</label>
     <params>-vcodec wmv2  -acodec wmav2 -b 1000kb -ab 160kb -r 25</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv>
   <wmv2broadband>
     <label>WMV for Web Use</label>
     <params>-vcodec wmv2  -acodec wmav2 -b 640kb -ab 128kb -r 29.97 -s 320x240</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv2broadband>
   <wmv2xbox360>
     <label>Xbox 360</label>
     <params>-vcodec wmv2  -acodec wmav2 -b 1200kb -ab 160kb -r 25 -s 720x480</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv2xbox360>
   <wmv2zune>
     <label>Zune</label>
     <params>-vcodec wmv2  -acodec wmav2 -b 640kb -ab 128kb -r 23.97 -s 320x240</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv2zune>
   <wmv4powerpoint>
     <label>Power Point</label>
     <params>-vcodec wmv2  -acodec wmav2 -aspect 4:3 -b 500k -ab 32k -ac 1 -ar 22050 -s 320x240</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv4powerpoint>
   <x264HQFS>
     <label>MP4 Fullscreen</label>
@@ -510,4 +510,28 @@
     <extension>mp4</extension>
     <category>MPEG4</category>
   </x264HQWS>
+  <BRAVIAvga>
+    <label>Sony Bravia mpeg1 640x480</label>
+    <params>-acodec libmp3lame -ab 128kb -ar 44100 -vcodec mpeg1video -s vga -b 640kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Bravia</category>
+  </BRAVIAvga>
+  <BRAVIAwide>
+    <label>Sony Bravia mpeg1 640x360</label>
+    <params>-acodec libmp3lame -ab 128kb -ar 44100 -vcodec mpeg1video -s 640x360 -b 640kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Bravia</category>
+  </BRAVIAwide>
+  <BRAVIAsmall>
+    <label>Sony Bravia mpeg1 320x240</label>
+    <params>-acodec libmp3lame -ab 128kb -ar 44100 -vcodec mpeg1video -s 320x240 -b 480kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Bravia</category>
+  </BRAVIAsmall>
+  <BRAVIAsmWide>
+    <label>Sony Bravia mpeg1 320x180</label>
+    <params>-acodec libmp3lame -ab 128kb -ar 44100 -vcodec mpeg1video -s 320x180 -b 480kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Bravia</category>
+  </BRAVIAsmWide>
 </presets>
