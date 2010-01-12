@@ -36,7 +36,6 @@ type
   TForm1 = class(TForm)
     btnAdd: TBitBtn;
     btnPreview: TBitBtn;
-    Button1: TButton;
     edtCropLeft: TEdit;
     edtAspectRatio: TEdit;
     audbitrate: TEdit;
@@ -881,32 +880,32 @@ begin
       category:=''
    else
       category:=trim(categorybox.Text);
-
-  for i:= 0 to presets.ChildNodes.Count -1  do
-   begin
-      try
-      node:= presets.ChildNodes.item[i];
-      subnode:= node.FindNode('label');
+  try
+    for i:= 0 to presets.ChildNodes.Count -1  do
+     begin
+        try
+        node:= presets.ChildNodes.item[i];
+        subnode:= node.FindNode('label');
 
         catnode:= presets.ChildNodes.item[i];
         catsubnode:= catnode.FindNode('category');
         presetcategory:=catsubnode.FindNode('#text').NodeValue;
-      except
+        except
         presetcategory:='';
-      end;
-      try
-        if category = '' then
-           presetbox.items.add(subnode.findnode('#text').NodeValue)
-        else
-           if (presetcategory = category) then
-              presetbox.items.add(subnode.findnode('#text').NodeValue);
-
-      except
-      end;
-   end;
-   presetbox.sorted:=true;
-   presetbox.sorted:=false;
-
+        end;
+        try
+          if category = '' then
+             presetbox.items.add(subnode.findnode('#text').NodeValue)
+          else
+             if (presetcategory = category) then
+                presetbox.items.add(subnode.findnode('#text').NodeValue);
+        except
+        end;
+     end;
+  finally
+  end;
+  presetbox.sorted:=true;
+  presetbox.sorted:=false;
 end;
 
 // cropbootom change
@@ -1606,7 +1605,6 @@ begin                                     // get setup
        filename := filelist.items[i];
               // resolve issues with embedded quote marks in filename to be converted.  issue 38
        {$ifdef unix}
-       filename := StringReplace(filename,' ','\ ',[rfReplaceAll]);
        filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
        {$endif}
        basename := extractfilename(filename);
@@ -1704,7 +1702,10 @@ begin                                     // get setup
     end;
 
     script.Free;
-    setpresetdestdir(pn,destfolder.text);
+    try
+       setpresetdestdir(pn,destfolder.text);
+    finally
+    end;
 end;
 
    // replace a paramter from a commandline

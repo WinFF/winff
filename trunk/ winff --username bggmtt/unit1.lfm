@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 150
+  Left = 262
   Height = 587
-  Top = 150
+  Top = 139
   Width = 1064
   AllowDropFiles = True
   Caption = 'WinFF'
@@ -1109,7 +1109,7 @@ object Form1: TForm1
         Top = 0
         Width = 1058
         Align = alClient
-        PageIndex = 3
+        PageIndex = 0
         TabOrder = 0
         object tabVideoSettings: TPage
           Caption = 'Video Settings'
@@ -1119,7 +1119,7 @@ object Form1: TForm1
             Left = 6
             Height = 16
             Top = 5
-            Width = 85
+            Width = 74
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
@@ -1127,7 +1127,7 @@ object Form1: TForm1
             Left = 219
             Height = 16
             Top = 5
-            Width = 64
+            Width = 54
             Caption = 'Video Size'
             ParentColor = False
           end
@@ -1135,15 +1135,15 @@ object Form1: TForm1
             Left = 307
             Height = 16
             Top = 5
-            Width = 76
+            Width = 67
             Caption = 'Aspect Ratio'
             ParentColor = False
           end
           object Label9: TLabel
             Left = 253
-            Height = 14
+            Height = 13
             Top = 25
-            Width = 8
+            Width = 7
             Caption = 'X'
             Font.Height = -10
             ParentColor = False
@@ -1153,13 +1153,13 @@ object Form1: TForm1
             Left = 124
             Height = 16
             Top = 5
-            Width = 69
+            Width = 60
             Caption = 'Frame Rate'
             ParentColor = False
           end
           object Vidbitrate: TEdit
             Left = 6
-            Height = 21
+            Height = 23
             Top = 25
             Width = 104
             OnChange = VidbitrateChange
@@ -1167,37 +1167,37 @@ object Form1: TForm1
           end
           object Vidframerate: TEdit
             Left = 123
-            Height = 21
+            Height = 23
             Top = 25
             Width = 88
             TabOrder = 1
           end
           object VidsizeX: TEdit
             Left = 219
-            Height = 21
+            Height = 23
             Top = 25
             Width = 32
             TabOrder = 2
           end
           object edtAspectRatio: TEdit
             Left = 307
-            Height = 21
+            Height = 23
             Top = 25
             Width = 80
             TabOrder = 4
           end
           object VidsizeY: TEdit
             Left = 265
-            Height = 21
+            Height = 23
             Top = 25
             Width = 32
             TabOrder = 3
           end
           object cbx2Pass: TCheckBox
             Left = 6
-            Height = 22
+            Height = 19
             Top = 54
-            Width = 63
+            Width = 52
             Caption = '2 pass'
             Color = clForm
             ParentColor = False
@@ -1205,9 +1205,9 @@ object Form1: TForm1
           end
           object cbxDeinterlace: TCheckBox
             Left = 122
-            Height = 22
+            Height = 19
             Top = 55
-            Width = 89
+            Width = 79
             Caption = 'Deinterlace'
             Color = clForm
             ParentColor = False
@@ -1399,15 +1399,6 @@ object Form1: TForm1
             Position = 0
             TabOrder = 7
             Wrap = False
-          end
-          object Button1: TButton
-            Left = 352
-            Height = 25
-            Top = 41
-            Width = 75
-            Caption = 'Button1'
-            OnClick = Button1Click
-            TabOrder = 8
           end
         end
       end
