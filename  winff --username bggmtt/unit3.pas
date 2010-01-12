@@ -118,7 +118,8 @@ begin                  // do translations
     listbox1.items.Add('Ofir Klinger');
     listbox1.items.Add('Martin Srebotnjak');
     listbox1.items.Add('Γεώργιος Γεωργάς');
-
+    listbox1.items.add('Benny Beat');
+    listbox1.items.add('Göran Hanell');
 
 end;
 

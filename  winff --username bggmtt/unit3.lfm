@@ -49,9 +49,11 @@ object Form3: TForm3
   }
   OnCreate = FormCreate
   Position = poMainFormCenter
-  LCLVersion = '0.9.26.2'
+  LCLVersion = '0.9.28.2'
   object Notebook1: TNotebook
+    Left = 0
     Height = 268
+    Top = 0
     Width = 384
     Align = alClient
     PageIndex = 0
@@ -59,14 +61,15 @@ object Form3: TForm3
     object Page1: TPage
       Caption = 'WinFF'
       ClientWidth = 376
-      ClientHeight = 242
+      ClientHeight = 240
       object Label1: TLabel
         Left = 60
         Height = 16
         Top = 10
         Width = 52
-        Caption = 'WinFF 1.1'
+        Caption = 'WinFF 1.2'
         ParentColor = False
+        OnClick = Label1Click
       end
       object Image1: TImage
         Left = 4
@@ -156,7 +159,7 @@ object Form3: TForm3
       object Label2: TLabel
         Left = 4
         Height = 16
-        Top = 66
+        Top = 64
         Width = 150
         Caption = 'Copyright 2006-2009 GPL V3'
         ParentColor = False
@@ -242,7 +245,7 @@ object Form3: TForm3
     object Page2: TPage
       Caption = 'FFmpeg'
       ClientWidth = 376
-      ClientHeight = 242
+      ClientHeight = 240
       object Label5: TLabel
         Left = 4
         Height = 16
@@ -305,17 +308,21 @@ object Form3: TForm3
     object Page3: TPage
       Caption = 'Thanks'
       ClientWidth = 376
-      ClientHeight = 242
+      ClientHeight = 240
       object ListBox1: TListBox
-        Height = 242
+        Left = 0
+        Height = 240
+        Top = 0
         Width = 376
         Align = alClient
         ClickOnSelChange = False
+        ItemHeight = 0
         TabOrder = 0
       end
     end
   end
   object Panel1: TPanel
+    Left = 0
     Height = 50
     Top = 268
     Width = 384
