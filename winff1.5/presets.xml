@@ -80,7 +80,7 @@
   </I5GWS>
   <M4a>
     <label>MPEG4 Audio</label>
-    <params>-vn -acodec libfaac -ab 112kb -ac 2</params>
+    <params>-vn -acodec libfaac -ab 112kb -ar 44100 -ac 2</params>
     <extension>m4a</extension>
     <category>Audio</category>
   </M4a>
@@ -326,7 +326,7 @@
   </iPodiTunesTVOutCRF21WSLBFix>
   <lgchocolate>
     <label>LG Chocolate</label>
-    <params>-f mp4 -s 240x192 -r 11.988 -b 192kb -ab 56kb -vcodec libxvid -acodec libfaac</params>
+    <params>-f mp4 -s 240x192 -r 11.988 -b 192kb -ab 56kb -vcodec libxvid -acodec libfaac -ar 32000</params>
     <extension>mp4</extension>
     <category>LG</category>
   </lgchocolate>
@@ -446,7 +446,7 @@
   </ps3720pfs>
   <qmov>
     <label>Quicktime MOV</label>
-    <params>-f mov -acodec libfaac -b 1250kb -r 25 -ab 128kb -s 640x480 -ac 2</params>
+    <params>-f mov -acodec libfaac -b 1250kb -r 25 -ab 128kb -ar 48000 -s 640x480 -ac 2</params>
     <extension>mov</extension>
     <category>Quicktime</category>
   </qmov>
