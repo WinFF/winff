@@ -1488,7 +1488,7 @@ begin                                     // get setup
    {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
    {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
    {$ifdef win32}ffplayfilename:='"' + ffplay + '"';{$endif}
-   {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
+   {$ifdef unix}ffplayfilename:=ffplay;{$endif}
    {$ifdef win32}nullfile:='"NUL.avi"';{$endif}
    {$ifdef unix}nullfile:='/dev/null';{$endif}
 
@@ -1603,10 +1603,6 @@ begin                                     // get setup
    for i:=0 to filelist.Items.Count - 1 do
      begin
        filename := filelist.items[i];
-              // resolve issues with embedded quote marks in filename to be converted.  issue 38
-       {$ifdef unix}
-       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
-       {$endif}
        basename := extractfilename(filename);
 
        for j:= length(basename) downto 1  do
