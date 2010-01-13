@@ -1,5 +1,5 @@
 # translation of winff.po to Dutch
-# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2010 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,12 +15,12 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Roger Gabriels, 2008
-# Paul Gevers <paul@climbing.nl>, 2009.
+# Paul Gevers <paul@climbing.nl>, 2009-2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2010-01-07 10:23+0100\n"
+"PO-Revision-Date: 2010-01-13 20:36+0100\n"
 "Last-Translator: Paul Gevers <paul@climbing.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -155,7 +155,7 @@ msgstr "specifieke instelling die gebruikt wordt voor het gekozen apparaat of be
 
 #: unit1.rshintframerate
 msgid "(<real> or <integer>) the number of frames per second"
-msgstr "(<real> or <integer>) het aantal beelden per second"
+msgstr "(<real> of <integer>) het aantal beelden per second"
 
 #: unit1.rshintoptions
 msgid "open or close the additional option window"
@@ -171,7 +171,7 @@ msgstr "bekijk de geselecteerde bestanden met ffplay (goede test om te zien of c
 
 #: unit1.rshintpreview
 msgid "preview using the output settings"
-msgstr ""
+msgstr "voorbeeld bekijken met de huidige instellingen"
 
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
