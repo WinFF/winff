@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 200
+  Left = 50
   Height = 587
-  Top = 200
+  Top = 50
   Width = 1064
   AllowDropFiles = True
   Caption = 'WinFF'
@@ -1318,6 +1318,7 @@ object Form1: TForm1
             Top = 46
             Width = 48
             OnChange = edtCropLeftChange
+            OnKeyDown = nil
             TabOrder = 0
             Text = '0'
           end
@@ -1340,6 +1341,7 @@ object Form1: TForm1
             Top = 22
             Width = 48
             OnChange = edtCropTopChange
+            OnKeyDown = nil
             TabOrder = 2
             Text = '0'
           end
@@ -1349,6 +1351,7 @@ object Form1: TForm1
             Top = 70
             Width = 48
             OnChange = edtCropBottomChange
+            OnKeyDown = nil
             TabOrder = 3
             Text = '0'
           end
@@ -1358,6 +1361,7 @@ object Form1: TForm1
             Top = 46
             Width = 48
             OnChange = edtCropRightChange
+            OnKeyDown = nil
             TabOrder = 4
             Text = '0'
           end
