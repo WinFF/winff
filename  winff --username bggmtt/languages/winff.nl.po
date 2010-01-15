@@ -19,7 +19,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
-"POT-Creation-Date: \n"
+"POT-Creation-Date: 2010-01-06\n"
 "PO-Revision-Date: 2010-01-13 20:36+0100\n"
 "Last-Translator: Paul Gevers <paul@climbing.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
@@ -274,6 +274,10 @@ msgstr "Help"
 msgid "WinFF Forums"
 msgstr "WinFF forums"
 
+#: unit1.rsmitWinff
+msgid "WinFF Website"
+msgstr "WinFF website"
+
 #: unit1.rsmitabout
 msgctxt "unit1.rsmitabout"
 msgid "About"
@@ -282,10 +286,6 @@ msgstr "Over"
 #: unit1.rsmitdocs
 msgid "Documentation"
 msgstr "Documentatie"
-
-#: unit1.rsmitWinff
-msgid "WinFF Website"
-msgstr "WinFF website"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
@@ -624,8 +624,8 @@ msgstr "Exporteer voorinstelling"
 msgid "Choose presets to export"
 msgstr "Selecteer een voorinstelling om te exporteren"
 
-#~ msgid "Replace Preset"
-#~ msgstr "Vervang voorinstelling:"
 #~ msgid "AC'"
 #~ msgstr "Aantal kanalen"
 
+#~ msgid "Replace Preset"
+#~ msgstr "Vervang voorinstelling:"
