@@ -1603,6 +1603,9 @@ begin                                     // get setup
    for i:=0 to filelist.Items.Count - 1 do
      begin
        filename := filelist.items[i];
+       {$ifdef unix}
+       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
+       {$endif}
        basename := extractfilename(filename);
 
        for j:= length(basename) downto 1  do
