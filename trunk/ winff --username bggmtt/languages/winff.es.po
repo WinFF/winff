@@ -19,7 +19,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.1.1 \n"
-"POT-Creation-Date: \n"
+"POT-Creation-Date: 2010-01-06\n"
 "PO-Revision-Date: 2009-09-06\n"
 "Last-Translator: Víctor Paesa <wzrlpy@hotmail.com>\n"
 "Language-Team: \n"
@@ -49,6 +49,9 @@ msgid "Close"
 msgstr "Borrar"
 
 #: unit1.rsclosebtn
+#, fuzzy
+#| msgid "Options"
+msgctxt "unit1.rsclosebtn"
 msgid "Options"
 msgstr "Ajustes"
 
@@ -72,6 +75,24 @@ msgstr "No pude encontrar el archivo"
 msgid "Could not find presets file."
 msgstr "No pude encontrar el archivo de predeterminados."
 
+#: unit1.rscropbottom
+msgid "Bottom"
+msgstr ""
+
+#: unit1.rscropleft
+msgid "Left"
+msgstr ""
+
+#: unit1.rscropright
+#, fuzzy
+#| msgid "High"
+msgid "Right"
+msgstr "Maxima"
+
+#: unit1.rscroptop
+msgid "Top"
+msgstr ""
+
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
 msgstr "Mostrar línea de comando"
@@ -89,8 +110,89 @@ msgid "File"
 msgstr "Archivo"
 
 #: unit1.rsgroupbox1
+#, fuzzy
+#| msgid "Additional Options"
+msgctxt "unit1.rsgroupbox1"
 msgid "Additional Options"
 msgstr "Parámetros"
+
+#: unit1.rshint2pass
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
+msgstr ""
+
+#: unit1.rshintadd
+msgid "add file(s) to the list for conversion"
+msgstr ""
+
+#: unit1.rshintaspectratio
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
+msgstr ""
+
+#: unit1.rshintaudiobitrate
+msgctxt "unit1.rshintaudiobitrate"
+msgid "(<integer>kb) the target kilobits/second that the stream should use"
+msgstr ""
+
+#: unit1.rshintaudiochannels
+msgid "(<integer>) number of audio channels"
+msgstr ""
+
+#: unit1.rshintclear
+msgid "remove all files from the list"
+msgstr ""
+
+#: unit1.rshintconvert
+msgid "start the conversion process"
+msgstr ""
+
+#: unit1.rshintconvertto
+msgid "name of the device or file type the video should be converted to"
+msgstr ""
+
+#: unit1.rshintdeinterlace
+msgid "removes interlacing from the video (if necessary)"
+msgstr ""
+
+#: unit1.rshintdevicepreset
+msgid "specific setting to use for the chosen device or file type"
+msgstr ""
+
+#: unit1.rshintframerate
+msgid "(<real> or <integer>) the number of frames per second"
+msgstr ""
+
+#: unit1.rshintoptions
+msgid "open or close the additional option window"
+msgstr ""
+
+#: unit1.rshintoutputfolder
+msgid "the target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: unit1.rshintplay
+msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr ""
+
+#: unit1.rshintpreview
+msgid "preview using the output settings"
+msgstr ""
+
+#: unit1.rshintremove
+msgid "remove the selected file(s) from the list"
+msgstr ""
+
+#: unit1.rshintsamplerate
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr ""
+
+#: unit1.rshintvideobitrate
+msgctxt "unit1.rshintvideobitrate"
+msgid "(<integer>kb) the target kilobits/second that the stream should use"
+msgstr ""
+
+#: unit1.rshintvideosize
+msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+msgstr ""
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -109,6 +211,9 @@ msgid "Audio Channels"
 msgstr "Canales"
 
 #: unit1.rslabel11
+#, fuzzy
+#| msgid "Output Folder"
+msgctxt "unit1.rslabel11"
 msgid "Output Folder"
 msgstr "Carpeta destino"
 
@@ -116,6 +221,13 @@ msgstr "Carpeta destino"
 #, fuzzy
 msgid "Device Preset"
 msgstr "Elegir variante:"
+
+#: unit1.rslabel2
+#, fuzzy
+#| msgid "Output Folder"
+msgctxt "unit1.rslabel2"
+msgid "Output Folder"
+msgstr "Carpeta destino"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -145,11 +257,21 @@ msgstr "Tasa de muestreo"
 msgid "Edit"
 msgstr "Editar"
 
+#: unit1.rsmenuitem2
+#, fuzzy
+#| msgid "About"
+msgctxt "unit1.rsmenuitem2"
+msgid "About"
+msgstr "Créditos"
+
 #: unit1.rsmenuitem3
 msgid "Exit"
 msgstr "Salir"
 
 #: unit1.rsmenuitem4
+#, fuzzy
+#| msgid "Presets"
+msgctxt "unit1.rsmenuitem4"
 msgid "Presets"
 msgstr "Valores predeterminados"
 
@@ -161,15 +283,18 @@ msgstr "Preferencias"
 msgid "Help"
 msgstr "Ayuda"
 
-#: unit1.rsmitWinff
-msgid "WinFF Website"
-msgstr "Sitio WinFF (inglés)"
-
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
 msgstr "Foro WinFF (inglés)"
 
+#: unit1.rsmitWinff
+msgid "WinFF Website"
+msgstr "Sitio WinFF (inglés)"
+
 #: unit1.rsmitabout
+#, fuzzy
+#| msgid "About"
+msgctxt "unit1.rsmitabout"
 msgid "About"
 msgstr "Créditos"
 
@@ -180,6 +305,20 @@ msgstr "Documentación (inglés)"
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
 msgstr "El nombre ha de ser alfanumérico (a-z,A-Z,0-9), sin eñes ni acentos."
+
+#: unit1.rsoptions
+#, fuzzy
+#| msgid "Options"
+msgctxt "unit1.rsoptions"
+msgid "Options"
+msgstr "Ajustes"
+
+#: unit1.rsoptionsbtn
+#, fuzzy
+#| msgid "Options"
+msgctxt "unit1.rsoptionsbtn"
+msgid "Options"
+msgstr "Ajustes"
 
 #: unit1.rspass2
 msgid "2 pass"
@@ -193,9 +332,19 @@ msgstr "Pausa al acabar"
 msgid "Play"
 msgstr "Reproducir"
 
+#: unit1.rsplaysoundonfinish
+#, fuzzy
+#| msgid "Pause on Finish"
+msgid "Play Sound on Finish"
+msgstr "Pausa al acabar"
+
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
 msgstr "Por favor, añadir al menos un archivo para convertir."
+
+#: unit1.rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "Por favor, elegir un valor predeterminado"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
@@ -221,6 +370,10 @@ msgstr "El predeterminado con etiqueta: %s%s%s ya existe."
 msgid "Press Enter to Continue"
 msgstr "Pulse Entrar para continuar."
 
+#: unit1.rspreview
+msgid "Preview"
+msgstr ""
+
 #: unit1.rsremovebtn
 msgid "Remove"
 msgstr "Quitar"
@@ -232,6 +385,13 @@ msgstr "Elegir archivo de valores predeterminados"
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
 msgstr "Elegir archivos de vídeo"
+
+#: unit1.rsshowoptions
+#, fuzzy
+#| msgid "Additional Options"
+msgctxt "unit1.rsshowoptions"
+msgid "Additional Options"
+msgstr "Parámetros"
 
 #: unit1.rsshutdownonfinish
 msgid "Shutdown on Finish"
@@ -262,11 +422,18 @@ msgstr "Audio"
 msgid "Additional Command Line Parameters (Advanced)"
 msgstr "Parámetros adicionales en la línea de comando (avanzado)"
 
+#: unit1.tabpage5caption
+msgid "Crop"
+msgstr ""
+
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
 msgstr "Añadir / Modificar"
 
 #: unit2.rscancelbtn
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "unit2.rscancelbtn"
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -279,6 +446,9 @@ msgid "Delete"
 msgstr "Borrar"
 
 #: unit2.rsexport
+#, fuzzy
+#| msgid "Export"
+msgctxt "unit2.rsexport"
 msgid "Export"
 msgstr "Exportar"
 
@@ -294,6 +464,13 @@ msgstr "Importar"
 #, fuzzy
 msgid "Import Presets"
 msgstr "Importar predeterminados"
+
+#: unit2.rslabel1
+#, fuzzy
+#| msgid "Presets"
+msgctxt "unit2.rslabel1"
+msgid "Presets"
+msgstr "Valores predeterminados"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
@@ -326,11 +503,6 @@ msgstr "Guardar"
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Eliminar predeterminado:"
-
-#: unit2.rsreplacepreset
-#, fuzzy
-msgid "Replace Preset"
-msgstr "Modificar predeterminado:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
@@ -373,6 +545,19 @@ msgstr "FFmpeg"
 #: unit3.rspage3
 msgid "Thanks"
 msgstr "Gracias"
+
+#: unit4.rsbutton1
+#, fuzzy
+msgctxt "unit4.rsbutton1"
+msgid "OK"
+msgstr "Aceptar"
+
+#: unit4.rsbutton2
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "unit4.rsbutton2"
+msgid "Cancel"
+msgstr "Cancelar"
 
 #: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
@@ -418,6 +603,13 @@ msgstr "Terminal para ejecutar FFmpeg"
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "Opciones para el terminal (-e para Xterm, -x para Gnome Terminal"
 
+#: unit4.rslabel8
+#, fuzzy
+#| msgid "Priority"
+msgctxt "unit4.rslabel8"
+msgid "Priority"
+msgstr "Proridad"
+
 #: unit4.rspage1
 msgid "General"
 msgstr "General"
@@ -430,9 +622,41 @@ msgstr "MS Windows"
 msgid "Linux"
 msgstr "Linux"
 
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Maxima"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Mínima"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normal"
+
+#: unit5.rsbutton1
+#, fuzzy
+msgctxt "unit5.rsbutton1"
+msgid "OK"
+msgstr "Aceptar"
+
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "Línea de comando de FFmpeg"
+
+#: unit6.rscancelbtn
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "unit6.rscancelbtn"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: unit6.rsexportbtn
+#, fuzzy
+#| msgid "Export"
+msgctxt "unit6.rsexportbtn"
+msgid "Export"
+msgstr "Exportar"
 
 #: unit6.rsform6
 #, fuzzy
@@ -446,22 +670,7 @@ msgstr "Por favor, elige un predeterminado para exportarlo"
 
 #~ msgid "AC'"
 #~ msgstr "Canales de audio"
-#~ msgid "Please select a preset"
-#~ msgstr "Por favor, elegir un valor predeterminado"
 
-#: unit4.rspriority
-msgid "Priority"
-msgstr "Proridad"
-
-#: unit4.rspriorityhigh
-msgid "High"
-msgstr "Maxima"
-
-#: unit4.rsprioritynormal
-msgid "Normal"
-msgstr "Normal"
-
-#: unit4.rspriorityidle
-msgid "Idle"
-msgstr "Mínima"
-
+#, fuzzy
+#~ msgid "Replace Preset"
+#~ msgstr "Modificar predeterminado:"
