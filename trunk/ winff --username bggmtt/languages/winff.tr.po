@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF\n"
 "POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: 2009-02-23 12:00+0200\n"
+"PO-Revision-Date: 2010-01-17 13:19+0200\n"
 "Last-Translator: İzzet Emre Erkan <kara@karalamalar.net>\n"
 "Language-Team: karalamalar.net <kara@karalamalar.net>\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,6 @@ msgid "Close"
 msgstr "Kapat"
 
 #: unit1.rsclosebtn
-#, fuzzy
 #| msgid "Options"
 msgctxt "unit1.rsclosebtn"
 msgid "Options"
@@ -78,21 +77,20 @@ msgstr "Ayar dosyası bulunamıyor."
 
 #: unit1.rscropbottom
 msgid "Bottom"
-msgstr ""
+msgstr "Alt"
 
 #: unit1.rscropleft
 msgid "Left"
-msgstr ""
+msgstr "Sol"
 
 #: unit1.rscropright
-#, fuzzy
 #| msgid "High"
 msgid "Right"
-msgstr "Yüksek"
+msgstr "Sağ"
 
 #: unit1.rscroptop
 msgid "Top"
-msgstr ""
+msgstr "Üst"
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
@@ -111,7 +109,6 @@ msgid "File"
 msgstr "Dosya"
 
 #: unit1.rsgroupbox1
-#, fuzzy
 #| msgid "Additional Options"
 msgctxt "unit1.rsgroupbox1"
 msgid "Additional Options"
@@ -119,81 +116,81 @@ msgstr "İlave seçenekler"
 
 #: unit1.rshint2pass
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
-msgstr ""
+msgstr "İKi tur kullanmak, dönüştürücünün ilk turda bilgi toplayarak ikinci turda daha kaliteli sonuç üretmesini sağlar."
 
 #: unit1.rshintadd
 msgid "add file(s) to the list for conversion"
-msgstr ""
+msgstr "Dönüşüm için listeye dosya(lar) ekleyin"
 
 #: unit1.rshintaspectratio
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
-msgstr ""
+msgstr "(<integer:integer> ya da <real>) olarak hedef oynatıcı için fiziksel görüntü oranı (DAR)"
 
 #: unit1.rshintaudiobitrate
 msgctxt "unit1.rshintaudiobitrate"
 msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<integer>kb) Akışın kullanacağı hedef kilobits/second değeri"
 
 #: unit1.rshintaudiochannels
 msgid "(<integer>) number of audio channels"
-msgstr ""
+msgstr "(<integer>) ses kanalı sayısı"
 
 #: unit1.rshintclear
 msgid "remove all files from the list"
-msgstr ""
+msgstr "Listeden tüm dosyaları kaldır"
 
 #: unit1.rshintconvert
 msgid "start the conversion process"
-msgstr ""
+msgstr "dönüştürme sürecini başlat"
 
 #: unit1.rshintconvertto
 msgid "name of the device or file type the video should be converted to"
-msgstr ""
+msgstr "dönüştürülecek video için cihaz ismi ya da dosya tipi"
 
 #: unit1.rshintdeinterlace
 msgid "removes interlacing from the video (if necessary)"
-msgstr ""
+msgstr "videodan halkalamayı kaldır (gerekliyse)"
 
 #: unit1.rshintdevicepreset
 msgid "specific setting to use for the chosen device or file type"
-msgstr ""
+msgstr "seçilen cihaz ya da dosya tipi için özel ayarlar"
 
 #: unit1.rshintframerate
 msgid "(<real> or <integer>) the number of frames per second"
-msgstr ""
+msgstr "(<real> ya da <integer>) saniyedeki çerçeve sayısı"
 
 #: unit1.rshintoptions
 msgid "open or close the additional option window"
-msgstr ""
+msgstr "ek ayarlar penceresini aç ya da kapat"
 
 #: unit1.rshintoutputfolder
 msgid "the target location for the final video (choose a different folder than the source folder)"
-msgstr ""
+msgstr "videonun son halinin saklanacağı hedef klasör (kaynak klasörden faklı bir klasör seçin)"
 
 #: unit1.rshintplay
 msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr ""
+msgstr "ffplay ile kaynak dosyayı önizle (dönüşüm yapılabilirliği açısından iyi bir test)"
 
 #: unit1.rshintpreview
 msgid "preview using the output settings"
-msgstr ""
+msgstr "çıktı ayarları ile önizleme"
 
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
-msgstr ""
+msgstr "seçilen dosyaları listeden çıkart"
 
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr ""
+msgstr "(<integer>) Hertz cinsinden ses frekansı"
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
 msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<integer>kb) akışın kullanacağı hedef kilobits/second"
 
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
-msgstr ""
+msgstr "(<integer> X <integer>) bilgi piksellerinin miktarı. Piksel görüntü oranı (PAR) desteklemeyen kodeklerde bu değer video görüntülendiğindeki video boyutudur."
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -212,7 +209,6 @@ msgid "Audio Channels"
 msgstr "Ses Kanalları"
 
 #: unit1.rslabel11
-#, fuzzy
 #| msgid "Output Folder"
 msgctxt "unit1.rslabel11"
 msgid "Output Folder"
@@ -223,7 +219,6 @@ msgid "Device Preset"
 msgstr "Cihaz ayarı"
 
 #: unit1.rslabel2
-#, fuzzy
 #| msgid "Output Folder"
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
@@ -258,7 +253,6 @@ msgid "Edit"
 msgstr "Düzenle"
 
 #: unit1.rsmenuitem2
-#, fuzzy
 #| msgid "About"
 msgctxt "unit1.rsmenuitem2"
 msgid "About"
@@ -269,7 +263,6 @@ msgid "Exit"
 msgstr "Çıkış"
 
 #: unit1.rsmenuitem4
-#, fuzzy
 #| msgid "Presets"
 msgctxt "unit1.rsmenuitem4"
 msgid "Presets"
@@ -292,7 +285,6 @@ msgid "WinFF Website"
 msgstr "WinFF Web sitesi"
 
 #: unit1.rsmitabout
-#, fuzzy
 #| msgid "About"
 msgctxt "unit1.rsmitabout"
 msgid "About"
@@ -307,14 +299,12 @@ msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
 msgstr "İsim alfanümetik olmaslı (a-z,A-Z,0-9)"
 
 #: unit1.rsoptions
-#, fuzzy
 #| msgid "Options"
 msgctxt "unit1.rsoptions"
 msgid "Options"
 msgstr "Ayarlar"
 
 #: unit1.rsoptionsbtn
-#, fuzzy
 #| msgid "Options"
 msgctxt "unit1.rsoptionsbtn"
 msgid "Options"
@@ -333,10 +323,9 @@ msgid "Play"
 msgstr "Çal"
 
 #: unit1.rsplaysoundonfinish
-#, fuzzy
 #| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
-msgstr "Bittiğinde durdur"
+msgstr "Bittiğinde sesi kes"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
@@ -372,7 +361,7 @@ msgstr "Devam etmek için Enter tuşuna basın"
 
 #: unit1.rspreview
 msgid "Preview"
-msgstr ""
+msgstr "Önizleme"
 
 #: unit1.rsremovebtn
 msgid "Remove"
@@ -387,7 +376,6 @@ msgid "Select Video Files"
 msgstr "Video dosyalarını seç"
 
 #: unit1.rsshowoptions
-#, fuzzy
 #| msgid "Additional Options"
 msgctxt "unit1.rsshowoptions"
 msgid "Additional Options"
@@ -423,14 +411,13 @@ msgstr "İlave komut satırı parametreleri (Gelişmiş)"
 
 #: unit1.tabpage5caption
 msgid "Crop"
-msgstr ""
+msgstr "Kes"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
 msgstr "Ekle / Güncelle"
 
 #: unit2.rscancelbtn
-#, fuzzy
 #| msgid "Cancel"
 msgctxt "unit2.rscancelbtn"
 msgid "Cancel"
@@ -445,7 +432,6 @@ msgid "Delete"
 msgstr "Sil"
 
 #: unit2.rsexport
-#, fuzzy
 #| msgid "Export"
 msgctxt "unit2.rsexport"
 msgid "Export"
@@ -464,7 +450,6 @@ msgid "Import Presets"
 msgstr "Ayarları yükle"
 
 #: unit2.rslabel1
-#, fuzzy
 #| msgid "Presets"
 msgctxt "unit2.rslabel1"
 msgid "Presets"
@@ -544,7 +529,6 @@ msgid "Thanks"
 msgstr "Teşekkürler"
 
 #: unit4.rsbutton1
-#, fuzzy
 #| msgctxt "unit3.rsbutton1"
 #| msgid "OK"
 msgctxt "unit4.rsbutton1"
@@ -552,7 +536,6 @@ msgid "OK"
 msgstr "Tamam"
 
 #: unit4.rsbutton2
-#, fuzzy
 #| msgid "Cancel"
 msgctxt "unit4.rsbutton2"
 msgid "Cancel"
@@ -603,7 +586,6 @@ msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "İstemci seçenekleri (Xterm için -e, Gnome istemcisi için -x)"
 
 #: unit4.rslabel8
-#, fuzzy
 #| msgid "Priority"
 msgctxt "unit4.rslabel8"
 msgid "Priority"
@@ -634,7 +616,6 @@ msgid "Normal"
 msgstr "Normal"
 
 #: unit5.rsbutton1
-#, fuzzy
 #| msgctxt "unit3.rsbutton1"
 #| msgid "OK"
 msgctxt "unit5.rsbutton1"
@@ -646,14 +627,12 @@ msgid "FFmpeg Command Line"
 msgstr "FFmpeg komut satırı"
 
 #: unit6.rscancelbtn
-#, fuzzy
 #| msgid "Cancel"
 msgctxt "unit6.rscancelbtn"
 msgid "Cancel"
 msgstr "İptal"
 
 #: unit6.rsexportbtn
-#, fuzzy
 #| msgid "Export"
 msgctxt "unit6.rsexportbtn"
 msgid "Export"
@@ -669,6 +648,6 @@ msgstr "Dışarı aktarılacak ayarları seçin"
 
 #~ msgid "AC'"
 #~ msgstr "AC'"
-
 #~ msgid "Replace Preset"
 #~ msgstr "Ayarı değiştir"
+

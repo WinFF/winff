@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: 2010-01-13 20:36+0100\n"
+"PO-Revision-Date: 2010-01-17 17:23+0100\n"
 "Last-Translator: Paul Gevers <paul@climbing.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -44,7 +44,7 @@ msgstr "Ontvlechten"
 
 #: unit1.rsclearbtn
 msgid "Clear"
-msgstr "Verwijderen"
+msgstr "Wissen"
 
 #: unit1.rsclose
 msgid "Close"
@@ -65,7 +65,7 @@ msgstr "FFmpeg kan niet gevonden worden."
 
 #: unit1.rscouldnotfindffplay
 msgid "Could not find FFPlay."
-msgstr "FFPlay kan niet gevonden worden."
+msgstr "FFplay kan niet gevonden worden."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
@@ -77,7 +77,7 @@ msgstr "Kan het voorinstellingbestand niet vinden."
 
 #: unit1.rscropbottom
 msgid "Bottom"
-msgstr "Beneden"
+msgstr "Onder"
 
 #: unit1.rscropleft
 msgid "Left"
@@ -114,7 +114,7 @@ msgstr "Extra opties"
 
 #: unit1.rshint2pass
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
-msgstr "Het gebruik van \"2 keer\" zorgt ervoor dat de encoder informatie kan verzamelen in de eerste keer voor verbeterde kwaliteit."
+msgstr "Door twee keer de video te verwerken kan de encoder in de eerste ronde informatie verzamelen voor hogere kwaliteit."
 
 #: unit1.rshintadd
 msgid "add file(s) to the list for conversion"
@@ -122,16 +122,16 @@ msgstr "voeg bestand(en) to aan de conversielijst"
 
 #: unit1.rshintaspectratio
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
-msgstr "(<integer:integer> of <real>) de fysieke aspect ratio (DAR) van de doelapparaat."
+msgstr "(<geheel getal:geheel getal> of <reëel getal>) de fysieke aspect ratio (DAR) van de beoogde scherm."
 
 #: unit1.rshintaudiobitrate
 msgctxt "unit1.rshintaudiobitrate"
 msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr "(<integer>kb) de doelsnelheid van de stream in kilobits per seconde"
+msgstr "(<geheel getal>kb) de doelsnelheid van de stroom in kilobits per seconde"
 
 #: unit1.rshintaudiochannels
 msgid "(<integer>) number of audio channels"
-msgstr "(<integer>) aantal audiokanalen"
+msgstr "(<geheel getal>) aantal audiokanalen"
 
 #: unit1.rshintclear
 msgid "remove all files from the list"
@@ -155,7 +155,7 @@ msgstr "specifieke instelling die gebruikt wordt voor het gekozen apparaat of be
 
 #: unit1.rshintframerate
 msgid "(<real> or <integer>) the number of frames per second"
-msgstr "(<real> of <integer>) het aantal beelden per second"
+msgstr "(<reëel getal> of <geheel getal>) het aantal beelden per second"
 
 #: unit1.rshintoptions
 msgid "open or close the additional option window"
@@ -171,7 +171,7 @@ msgstr "bekijk de geselecteerde bestanden met ffplay (goede test om te zien of c
 
 #: unit1.rshintpreview
 msgid "preview using the output settings"
-msgstr "voorbeeld bekijken met de huidige instellingen"
+msgstr "bekijken een stukje film met de huidige instellingen"
 
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
@@ -179,16 +179,16 @@ msgstr "verwijder geselecteerde bestand(en) uit de lijst"
 
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr "(<integer>) de bemonsteringsfrequentie van de audio in Hertz"
+msgstr "(<geheel getal>) de bemonsteringsfrequentie van de audio in Hertz"
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
 msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr "(<integer>kb) de doelsnelheid van de stream in kilobits per seconde"
+msgstr "(<geheel getal>kb) de doelsnelheid van de stroom in kilobits per seconde"
 
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
-msgstr "(<integer> X <integer>) het aantal pixels met informatie. Voor codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van de video als het bekeken wordt."
+msgstr "(<geheel getal> X <geheel getal>) het aantal pixels met informatie. Voor codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van de video als het bekeken wordt."
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -251,7 +251,7 @@ msgstr "Bewerken"
 #: unit1.rsmenuitem2
 msgctxt "unit1.rsmenuitem2"
 msgid "About"
-msgstr "Over"
+msgstr "Over WinFF"
 
 #: unit1.rsmenuitem3
 msgid "Exit"
@@ -281,7 +281,7 @@ msgstr "WinFF website"
 #: unit1.rsmitabout
 msgctxt "unit1.rsmitabout"
 msgid "About"
-msgstr "Over"
+msgstr "Over WinFF"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
@@ -315,7 +315,7 @@ msgstr "Afspelen"
 
 #: unit1.rsplaysoundonfinish
 msgid "Play Sound on Finish"
-msgstr "Laat geluid horen na beëindigen"
+msgstr "Speel geluid af na afloop"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
@@ -355,7 +355,7 @@ msgstr "Voorbeeld"
 
 #: unit1.rsremovebtn
 msgid "Remove"
-msgstr "Wissen"
+msgstr "Verwijderen"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -404,7 +404,7 @@ msgstr "Bijsnijden"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
-msgstr "Toevoegen / Vernieuwen"
+msgstr "Invoeren"
 
 #: unit2.rscancelbtn
 msgctxt "unit2.rscancelbtn"
@@ -492,7 +492,7 @@ msgstr "Voer een naam in."
 #: unit3.rsbutton1
 msgctxt "unit3.rsbutton1"
 msgid "OK"
-msgstr "Accepteren"
+msgstr "OK"
 
 #: unit3.rsform3
 msgid "About WinFF"
@@ -626,6 +626,6 @@ msgstr "Selecteer een voorinstelling om te exporteren"
 
 #~ msgid "AC'"
 #~ msgstr "Aantal kanalen"
-
 #~ msgid "Replace Preset"
 #~ msgstr "Vervang voorinstelling:"
+
