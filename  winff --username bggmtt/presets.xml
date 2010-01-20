@@ -80,7 +80,7 @@
   </I5GWS>
   <M4a>
     <label>MPEG4 Audio</label>
-    <params>-vn -acodec libfaac -ab 112kb -ac 2</params>
+    <params>-vn -acodec libfaac -ab 112kb -ac 2 -ar 48000</params>
     <extension>m4a</extension>
     <category>Audio</category>
   </M4a>
@@ -332,7 +332,7 @@
   </iPodiTunesIphoneWS>
   <lgchocolate>
     <label>LG Chocolate</label>
-    <params>-f mp4 -s 240x192 -r 11.988 -b 192kb -ab 56kb -vcodec libxvid -acodec libfaac</params>
+    <params>-f mp4 -s 240x192 -r 11.988 -b 192kb -ab 56kb -vcodec libxvid -acodec libfaac -ar 22050</params>
     <extension>mp4</extension>
     <category>LG</category>
   </lgchocolate>
@@ -452,7 +452,7 @@
   </ps3720pfs>
   <qmov>
     <label>Quicktime MOV</label>
-    <params>-f mov -acodec libfaac -b 1250kb -r 25 -ab 128kb -s 640x480 -ac 2</params>
+    <params>-f mov -acodec libfaac -b 1250kb -r 25 -ab 128kb -s 640x480 -ac 2 -ar 48000</params>
     <extension>mov</extension>
     <category>QuickTime</category>
   </qmov>
@@ -466,31 +466,31 @@
     <label>WMV2 Generic</label>
     <params>-vcodec wmv2  -acodec wmav2 -b 1000kb -ab 160kb -r 25</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv>
   <wmv2broadband>
     <label>WMV for Web Use</label>
     <params>-vcodec wmv2  -acodec wmav2 -b 640kb -ab 128kb -r 29.97 -s 320x240</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv2broadband>
   <wmv2xbox360>
     <label>Xbox 360</label>
     <params>-vcodec wmv2  -acodec wmav2 -b 1200kb -ab 160kb -r 25 -s 720x480</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv2xbox360>
   <wmv2zune>
     <label>Zune</label>
     <params>-vcodec wmv2  -acodec wmav2 -b 640kb -ab 128kb -r 23.97 -s 320x240</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv2zune>
   <wmv4powerpoint>
     <label>Power Point</label>
     <params>-vcodec wmv2  -acodec wmav2 -aspect 4:3 -b 500k -ab 32k -ac 1 -ar 22050 -s 320x240</params>
     <extension>wmv</extension>
-    <category>Microsoft</category>
+    <category>WMV</category>
   </wmv4powerpoint>
   <x264HQFS>
     <label>MP4 Fullscreen</label>
@@ -608,37 +608,37 @@
   </MP3GP320x240stereo169L>
    <MPEG4VideoHQ>
     <label>MPEG-4 H.264 video (high quality)</label>
-    <params>-crf 35.0 -vcodec libx264 -acodec libfaac -ab 128kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <params>-crf 35.0 -vcodec libx264 -acodec libfaac -ar 48000 -ab 128kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </MPEG4VideoHQ>
   <MPEG4VideoVHQ>
     <label>MPEG-4 H.264 video (very high quality)</label>
-    <params>-crf 25.0 -vcodec libx264 -acodec libfaac -ab 160kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <params>-crf 25.0 -vcodec libx264 -acodec libfaac -ar 48000 -ab 160kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </MPEG4VideoVHQ>
   <MPEG4VideoSHQ>
     <label>MPEG-4 H.264 video (super high quality)</label>
-    <params>-crf 15.0 -vcodec libx264 -acodec libfaac -ab 192kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <params>-crf 15.0 -vcodec libx264 -acodec libfaac -ar 48000 -ab 192kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </MPEG4VideoSHQ>
   <qmovhq>
     <label>QuickTime H.264 video (high quality)</label>
-    <params>-crf 35.0 -vcodec libx264 -acodec libfaac -ab 128kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <params>-crf 35.0 -vcodec libx264 -acodec libfaac -ar 48000 -ab 128kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
     <extension>mov</extension>
     <category>QuickTime</category>
   </qmovhq>
   <qmovvhq>
     <label>QuickTime H.264 video (very high quality)</label>
-    <params>-crf 25.0 -vcodec libx264 -acodec libfaac -ab 160kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <params>-crf 25.0 -vcodec libx264 -acodec libfaac -ar 48000 -ab 160kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
     <extension>mov</extension>
     <category>QuickTime</category>
   </qmovvhq>
   <qmovshq>
     <label>QuickTime H.264 video (super high quality)</label>
-    <params>-crf 15.0 -vcodec libx264 -acodec libfaac -ab 192kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <params>-crf 15.0 -vcodec libx264 -acodec libfaac -ar 48000 -ab 192kb -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
     <extension>mov</extension>
     <category>QuickTime</category>
   </qmovshq>
@@ -648,4 +648,28 @@
     <extension>avi</extension>
     <category>Tuna-Vids</category>
   </tuna-Vids>
+  <BRAVIAvga>
+    <label>Sony Bravia mpeg1 640x480</label>
+    <params>-acodec libmp3lame -ab 128kb -ar 44100 -vcodec mpeg1video -s vga -b 640kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Bravia</category>
+  </BRAVIAvga>
+  <BRAVIAwide>
+    <label>Sony Bravia mpeg1 640x360</label>
+    <params>-acodec libmp3lame -ab 128kb -ar 44100 -vcodec mpeg1video -s 640x360 -b 640kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Bravia</category>
+  </BRAVIAwide>
+  <BRAVIAsmall>
+    <label>Sony Bravia mpeg1 320x240</label>
+    <params>-acodec libmp3lame -ab 128kb -ar 44100 -vcodec mpeg1video -s 320x240 -b 480kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Bravia</category>
+  </BRAVIAsmall>
+  <BRAVIAsmWide>
+    <label>Sony Bravia mpeg1 320x180</label>
+    <params>-acodec libmp3lame -ab 128kb -ar 44100 -vcodec mpeg1video -s 320x180 -b 480kb -strict -1</params>
+    <extension>mpg</extension>
+    <category>Bravia</category>
+  </BRAVIAsmWide>
 </presets>
