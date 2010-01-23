@@ -1623,6 +1623,10 @@ begin                                     // get setup
        
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
 
+       {$ifdef unix}
+       filename := stringreplace(filename,'"','\"',rfReplaceAll);
+       basename := stringreplace(basename,'"','\"',rfReplaceAll);
+       {$endif}
        if cbx2Pass.Checked = false then
           begin
            command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline + ' "' +
