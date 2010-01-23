@@ -977,7 +977,7 @@ destdir: string;
 currentpreset:string;
 begin
 currentpreset := getcurrentpresetname(presetbox.Text);
-destdir:= getpresetdestdir(currentpreset);
+//  destdir:= getpresetdestdir(currentpreset);     // get dest folder from preset
 if destdir <> '' then destfolder.text:= destdir;
 if destfolder.Text='' then destfolder.text := getconfigvalue('general/destfolder');
 if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
@@ -1698,10 +1698,10 @@ begin                                     // get setup
     end;
 
     script.Free;
-    try
-       setpresetdestdir(pn,destfolder.text);
-    finally
-    end;
+    // try                            // to set dest directory in preset
+    //   setpresetdestdir(pn,destfolder.text);
+    // finally
+    // end;
 end;
 
    // replace a paramter from a commandline
