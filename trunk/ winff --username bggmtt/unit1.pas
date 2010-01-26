@@ -1604,12 +1604,19 @@ begin                                     // get setup
      begin
        filename := filelist.items[i];
        basename := extractfilename(filename);
+       // resolve issues with embedded quote marks in filename to be converted.  issue 38
+       {$ifdef unix}
+       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
+       {$endif}
 
        for j:= length(basename) downto 1  do
          begin
            if basename[j] = #46 then
               begin
                 basename := leftstr(basename,j-1);
+                {$ifdef unix}
+                basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
+                {$endif}
                 break;
               end;
          end;
@@ -1617,16 +1624,12 @@ begin                                     // get setup
        command := '';
        {$ifdef win32}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
-       {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + extractfilename(filename)+
+       {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
        
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
 
-       {$ifdef unix}
-       filename := stringreplace(filename,'"','\"',rfReplaceAll);
-       basename := stringreplace(basename,'"','\"',rfReplaceAll);
-       {$endif}
        if cbx2Pass.Checked = false then
           begin
            command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline + ' "' +
@@ -1669,7 +1672,8 @@ begin                                     // get setup
                                            // remove preview file if exists
    if preview then
       begin
-        script.add('del ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');
+        {$ifdef win32}script.add('del ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');{$endif}
+        {$ifdef unix}script.add('rm ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');{$endif}
         preview:=false;
       end;
                                            // remove batch file on completion
