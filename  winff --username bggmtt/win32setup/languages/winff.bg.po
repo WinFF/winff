@@ -18,7 +18,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.45.1\n"
-"POT-Creation-Date: \n"
+"POT-Creation-Date: 2010-01-06\n"
 "PO-Revision-Date: 2009-02-18\n"
 "Last-Translator: Simeon Uzunov <uzunof@gmail.com>\n"
 "Language-Team: Bulgarian\n"
@@ -49,6 +49,8 @@ msgid "Close"
 msgstr "Затваряне"
 
 #: unit1.rsclosebtn
+#, fuzzy
+msgctxt "unit1.rsclosebtn"
 msgid "Options"
 msgstr "Опции"
 
@@ -72,6 +74,23 @@ msgstr "Файлът не е намерен"
 msgid "Could not find presets file."
 msgstr "Файлът с готови настройки не е намерен"
 
+#: unit1.rscropbottom
+msgid "Bottom"
+msgstr ""
+
+#: unit1.rscropleft
+msgid "Left"
+msgstr ""
+
+#: unit1.rscropright
+#, fuzzy
+msgid "Right"
+msgstr "Висок"
+
+#: unit1.rscroptop
+msgid "Top"
+msgstr ""
+
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
 msgstr "Покажи команден ред"
@@ -89,8 +108,88 @@ msgid "File"
 msgstr "Файл"
 
 #: unit1.rsgroupbox1
+#, fuzzy
+msgctxt "unit1.rsgroupbox1"
 msgid "Additional Options"
 msgstr "Допълнителни опции"
+
+#: unit1.rshint2pass
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
+msgstr ""
+
+#: unit1.rshintadd
+msgid "add file(s) to the list for conversion"
+msgstr ""
+
+#: unit1.rshintaspectratio
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
+msgstr ""
+
+#: unit1.rshintaudiobitrate
+msgctxt "unit1.rshintaudiobitrate"
+msgid "(<integer>kb) the target kilobits/second that the stream should use"
+msgstr ""
+
+#: unit1.rshintaudiochannels
+msgid "(<integer>) number of audio channels"
+msgstr ""
+
+#: unit1.rshintclear
+msgid "remove all files from the list"
+msgstr ""
+
+#: unit1.rshintconvert
+msgid "start the conversion process"
+msgstr ""
+
+#: unit1.rshintconvertto
+msgid "name of the device or file type the video should be converted to"
+msgstr ""
+
+#: unit1.rshintdeinterlace
+msgid "removes interlacing from the video (if necessary)"
+msgstr ""
+
+#: unit1.rshintdevicepreset
+msgid "specific setting to use for the chosen device or file type"
+msgstr ""
+
+#: unit1.rshintframerate
+msgid "(<real> or <integer>) the number of frames per second"
+msgstr ""
+
+#: unit1.rshintoptions
+msgid "open or close the additional option window"
+msgstr ""
+
+#: unit1.rshintoutputfolder
+msgid "the target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: unit1.rshintplay
+msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr ""
+
+#: unit1.rshintpreview
+msgid "preview using the output settings"
+msgstr ""
+
+#: unit1.rshintremove
+msgid "remove the selected file(s) from the list"
+msgstr ""
+
+#: unit1.rshintsamplerate
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr ""
+
+#: unit1.rshintvideobitrate
+msgctxt "unit1.rshintvideobitrate"
+msgid "(<integer>kb) the target kilobits/second that the stream should use"
+msgstr ""
+
+#: unit1.rshintvideosize
+msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+msgstr ""
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -109,6 +208,8 @@ msgid "Audio Channels"
 msgstr "Аудио канали"
 
 #: unit1.rslabel11
+#, fuzzy
+msgctxt "unit1.rslabel11"
 msgid "Output Folder"
 msgstr "Изходна папка"
 
@@ -116,6 +217,12 @@ msgstr "Изходна папка"
 #, fuzzy
 msgid "Device Preset"
 msgstr "Настройки на устройство"
+
+#: unit1.rslabel2
+#, fuzzy
+msgctxt "unit1.rslabel2"
+msgid "Output Folder"
+msgstr "Изходна папка"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -145,21 +252,25 @@ msgstr "Честота на семпл."
 msgid "Edit"
 msgstr "Редактиране"
 
+#: unit1.rsmenuitem2
+#, fuzzy
+msgctxt "unit1.rsmenuitem2"
+msgid "About"
+msgstr "Относно"
+
 #: unit1.rsmenuitem3
 msgid "Exit"
 msgstr "Изход"
 
 #: unit1.rsmenuitem4
+#, fuzzy
+msgctxt "unit1.rsmenuitem4"
 msgid "Presets"
 msgstr "Готови настройки"
 
 #: unit1.rsmenuitem5
 msgid "Preferences"
 msgstr "Предпочитания"
-
-#: unit1.rsmitwinff
-msgid "WinFF Website"
-msgstr "WinFF Сайт"
 
 #: unit1.rsmenuitem6
 msgid "Help"
@@ -169,7 +280,13 @@ msgstr "Помощ"
 msgid "WinFF Forums"
 msgstr "WinFF Форуми"
 
+#: unit1.rsmitWinff
+msgid "WinFF Website"
+msgstr "WinFF Сайт"
+
 #: unit1.rsmitabout
+#, fuzzy
+msgctxt "unit1.rsmitabout"
 msgid "About"
 msgstr "Относно"
 
@@ -180,6 +297,18 @@ msgstr "Документация"
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
 msgstr "Името трябва да съдържа само букви и/или цифри (a-z,A-Z,0-9)"
+
+#: unit1.rsoptions
+#, fuzzy
+msgctxt "unit1.rsoptions"
+msgid "Options"
+msgstr "Опции"
+
+#: unit1.rsoptionsbtn
+#, fuzzy
+msgctxt "unit1.rsoptionsbtn"
+msgid "Options"
+msgstr "Опции"
 
 #: unit1.rspass2
 msgid "2 pass"
@@ -193,9 +322,18 @@ msgstr "Пауза при край"
 msgid "Play"
 msgstr "Изпълнение"
 
+#: unit1.rsplaysoundonfinish
+#, fuzzy
+msgid "Play Sound on Finish"
+msgstr "Пауза при край"
+
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
 msgstr "Моля, добавете поне 1 файл за конвертиране"
+
+#: unit1.rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "Моля, изберете настройка"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
@@ -221,6 +359,10 @@ msgstr "Настройка с етикет: %s%s%s вече съществува
 msgid "Press Enter to Continue"
 msgstr "Натиснете Enter за да продължите"
 
+#: unit1.rspreview
+msgid "Preview"
+msgstr ""
+
 #: unit1.rsremovebtn
 msgid "Remove"
 msgstr "Премахване"
@@ -232,6 +374,12 @@ msgstr "Изберете файл с настройки"
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
 msgstr "Изберете видео файлове"
+
+#: unit1.rsshowoptions
+#, fuzzy
+msgctxt "unit1.rsshowoptions"
+msgid "Additional Options"
+msgstr "Допълнителни опции"
 
 #: unit1.rsshutdownonfinish
 msgid "Shutdown on Finish"
@@ -262,11 +410,17 @@ msgstr "Аудио настройки"
 msgid "Additional Command Line Parameters (Advanced)"
 msgstr "Допълнителни параметри на командния ред"
 
+#: unit1.tabpage5caption
+msgid "Crop"
+msgstr ""
+
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
 msgstr "Добавяне/Обновяване"
 
 #: unit2.rscancelbtn
+#, fuzzy
+msgctxt "unit2.rscancelbtn"
 msgid "Cancel"
 msgstr "Отказ"
 
@@ -279,6 +433,8 @@ msgid "Delete"
 msgstr "Изтриване"
 
 #: unit2.rsexport
+#, fuzzy
+msgctxt "unit2.rsexport"
 msgid "Export"
 msgstr "Изнасяне"
 
@@ -294,6 +450,12 @@ msgstr "Внасяне"
 #, fuzzy
 msgid "Import Presets"
 msgstr "Внасяне на настройки"
+
+#: unit2.rslabel1
+#, fuzzy
+msgctxt "unit2.rslabel1"
+msgid "Presets"
+msgstr "Готови настройки"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
@@ -326,11 +488,6 @@ msgstr "Запис"
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Премахване на настройка:"
-
-#: unit2.rsreplacepreset
-#, fuzzy
-msgid "Replace Preset"
-msgstr "Замяна на настройка:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
@@ -373,6 +530,18 @@ msgstr "FFmpeg"
 #: unit3.rspage3
 msgid "Thanks"
 msgstr "Благодарности"
+
+#: unit4.rsbutton1
+#, fuzzy
+msgctxt "unit4.rsbutton1"
+msgid "OK"
+msgstr "OK"
+
+#: unit4.rsbutton2
+#, fuzzy
+msgctxt "unit4.rsbutton2"
+msgid "Cancel"
+msgstr "Отказ"
 
 #: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
@@ -418,6 +587,12 @@ msgstr "Терминал, в който да се изпълни FFmpeg"
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "Опции на терминала (-e за Xterm, -x за Gnome Terminal)"
 
+#: unit4.rslabel8
+#, fuzzy
+msgctxt "unit4.rslabel8"
+msgid "Priority"
+msgstr "Приоритет"
+
 #: unit4.rspage1
 msgid "General"
 msgstr "Общи"
@@ -430,9 +605,39 @@ msgstr "MS Windows"
 msgid "Linux"
 msgstr "Линукс"
 
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Висок"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Нисък"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Нормален"
+
+#: unit5.rsbutton1
+#, fuzzy
+msgctxt "unit5.rsbutton1"
+msgid "OK"
+msgstr "OK"
+
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg Команден ред"
+
+#: unit6.rscancelbtn
+#, fuzzy
+msgctxt "unit6.rscancelbtn"
+msgid "Cancel"
+msgstr "Отказ"
+
+#: unit6.rsexportbtn
+#, fuzzy
+msgctxt "unit6.rsexportbtn"
+msgid "Export"
+msgstr "Изнасяне"
 
 #: unit6.rsform6
 #, fuzzy
@@ -446,21 +651,7 @@ msgstr "Изберете настройки за изнасяне"
 
 #~ msgid "AC'"
 #~ msgstr "AC"
-#~ msgid "Please select a preset"
-#~ msgstr "Моля, изберете настройка"
 
-#: unit4.rspriority
-msgid "Priority"
-msgstr "Приоритет"
-
-#: unit4.rspriorityhigh
-msgid "High"
-msgstr "Висок"
-
-#: unit4.rsprioritynormal
-msgid "Normal"
-msgstr "Нормален"
-
-#: unit4.rspriorityidle
-msgid "Idle"
-msgstr "Нисък"
+#, fuzzy
+#~ msgid "Replace Preset"
+#~ msgstr "Замяна на настройка:"

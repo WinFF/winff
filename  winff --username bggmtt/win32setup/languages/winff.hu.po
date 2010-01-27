@@ -1,62 +1,80 @@
+# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Sponga Tamas <d7d7d7@freemail.hu>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 0.4\n"
+"Project-Id-Version: WinFF 0.45.1\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-06\n"
-"Last-Translator: Luís Torrao <luistorrao@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2009-12-05 23:00+0100\n"
+"Last-Translator: Sponga Tamas <d7d7d7@freemail.hu>\n"
+"Language-Team: Hungarian <matt@biggmatt.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PTT-Creation-Date: 03.05.2008\n"
-"PT-Revision-Date: \n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: unit1.rsaddbtn
 msgid "Add"
-msgstr "Adicionar"
+msgstr "Hozzáadás"
 
 #: unit1.rsallcategories
 msgid "(All Categories)"
-msgstr ""
+msgstr "(Minden kategória)"
 
 #: unit1.rscheckbox2
 msgid "Deinterlace"
-msgstr "Desentrelaçar"
+msgstr "Csíktalanítás"
 
 #: unit1.rsclearbtn
 msgid "Clear"
-msgstr "Limpar"
+msgstr "Tisztítás"
 
 #: unit1.rsclose
-#, fuzzy
 msgid "Close"
-msgstr "Limpar"
+msgstr "Bezárás"
 
 #: unit1.rsclosebtn
 #, fuzzy
 #| msgid "Options"
 msgctxt "unit1.rsclosebtn"
 msgid "Options"
-msgstr "Opções"
+msgstr "Beállítások"
 
 #: unit1.rsconverting
 msgid "Converting"
-msgstr "Convertendo"
+msgstr "Konvertálás"
 
 #: unit1.rscouldnotfindffmpeg
 msgid "Could not find FFmpeg."
-msgstr "Não se encontrou FFmpeg"
+msgstr "FFMpeg nem található."
 
 #: unit1.rscouldnotfindffplay
 msgid "Could not find FFPlay."
-msgstr "Não se encontrou FFPlay"
+msgstr "FFPlay nem található."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
-msgstr "Não Se Encontrou O Ficheiro"
+msgstr "Fájl nem található"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "Não se encontrou o ficheiro de Predef"
+msgstr "Beállító fájl nem található."
 
 #: unit1.rscropbottom
 msgid "Bottom"
@@ -67,8 +85,10 @@ msgid "Left"
 msgstr ""
 
 #: unit1.rscropright
+#, fuzzy
+#| msgid "High"
 msgid "Right"
-msgstr ""
+msgstr "Magas"
 
 #: unit1.rscroptop
 msgid "Top"
@@ -76,26 +96,26 @@ msgstr ""
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
-msgstr "Mostral Linha CMD"
+msgstr "Parancssor"
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "A Extensão não pode conter ponto"
+msgstr "Kiterjesztés nem tartalmazza a periódust  (???)"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
-msgstr "o ficheiro não existe"
+msgstr "Nincs ilyen fájl"
 
 #: unit1.rsfilemenu
 msgid "File"
-msgstr "Ficheiro"
+msgstr "Fájl"
 
 #: unit1.rsgroupbox1
 #, fuzzy
 #| msgid "Additional Options"
 msgctxt "unit1.rsgroupbox1"
 msgid "Additional Options"
-msgstr "Opções Adicionais"
+msgstr "Egyéb opciók"
 
 #: unit1.rshint2pass
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
@@ -177,179 +197,180 @@ msgstr ""
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
-msgstr "Importar Predef"
+msgstr "Beállítás importálása"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Ficheiro de Predef Inválido"
+msgstr "Érvénytelen beállító fájl"
 
 #: unit1.rslabel1
 msgid "Convert To ..."
-msgstr "Converter a..."
+msgstr "Konvártálás..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr ""
+msgstr "Hangcsatornák"
 
 #: unit1.rslabel11
 #, fuzzy
 #| msgid "Output Folder"
 msgctxt "unit1.rslabel11"
 msgid "Output Folder"
-msgstr "Directoria de Saída"
+msgstr "Kimeneti mappa"
 
 #: unit1.rslabel19
-#, fuzzy
 msgid "Device Preset"
-msgstr "Remover Predef"
+msgstr "Egység beállítása"
 
 #: unit1.rslabel2
 #, fuzzy
 #| msgid "Output Folder"
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
-msgstr "Directoria de Saída"
+msgstr "Kimeneti mappa"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
-msgstr "Bitrate do Vídeo"
+msgstr "Videó bitráta"
 
 #: unit1.rslabel4
 msgid "Frame Rate"
-msgstr "Ratio do Frame"
+msgstr "Képkockák aránya"
 
 #: unit1.rslabel5
 msgid "Video Size"
-msgstr "Tamanho do Vídeo"
+msgstr "Videó méret"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
-msgstr "Ratio de Aparência"
+msgstr "Méretarány"
 
 #: unit1.rslabel7
 msgid "Audio Bitrate"
-msgstr "Bitrate Audio"
+msgstr "Hang bitráta"
 
 #: unit1.rslabel8
 msgid "Sample Rate"
-msgstr "Ratio de Audio"
+msgstr "Mintaarány"
 
 #: unit1.rsmenuitem1
 msgid "Edit"
-msgstr "Editar"
+msgstr "Szerkesztés"
 
 #: unit1.rsmenuitem2
 #, fuzzy
 #| msgid "About"
 msgctxt "unit1.rsmenuitem2"
 msgid "About"
-msgstr "Acerca de"
+msgstr "A programról"
 
 #: unit1.rsmenuitem3
 msgid "Exit"
-msgstr "Sair"
+msgstr "Kilépés"
 
 #: unit1.rsmenuitem4
 #, fuzzy
 #| msgid "Presets"
 msgctxt "unit1.rsmenuitem4"
 msgid "Presets"
-msgstr "Predef"
+msgstr "Beállítások"
 
 #: unit1.rsmenuitem5
 msgid "Preferences"
-msgstr "Preferências"
+msgstr "Tulajdonságok"
 
 #: unit1.rsmenuitem6
 msgid "Help"
-msgstr "Ajuda"
+msgstr "Súgó"
 
 #: unit1.rsmenuitem7
 msgid "WinFF Forums"
-msgstr ""
+msgstr "WinFF fórumok"
 
 #: unit1.rsmitWinff
 msgid "WinFF Website"
-msgstr ""
+msgstr "WinFF honlap"
 
 #: unit1.rsmitabout
 #, fuzzy
 #| msgid "About"
 msgctxt "unit1.rsmitabout"
 msgid "About"
-msgstr "Acerca de"
+msgstr "A programról"
 
 #: unit1.rsmitdocs
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentáció"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "O Nome deve ser alfanumérico (a-z,A-Z,0-9)"
+msgstr "A névben csak betű/szám lehet (a-z,A-Z, 0-9)"
 
 #: unit1.rsoptions
 #, fuzzy
 #| msgid "Options"
 msgctxt "unit1.rsoptions"
 msgid "Options"
-msgstr "Opções"
+msgstr "Beállítások"
 
 #: unit1.rsoptionsbtn
 #, fuzzy
 #| msgid "Options"
 msgctxt "unit1.rsoptionsbtn"
 msgid "Options"
-msgstr "Opções"
+msgstr "Beállítások"
 
 #: unit1.rspass2
 msgid "2 pass"
-msgstr "Passo 2"
+msgstr "2 lépésben"
 
 #: unit1.rspauseonfinish
 msgid "Pause on Finish"
-msgstr "Pausar ao Terminar"
+msgstr "A végén megáll"
 
 #: unit1.rsplay
 msgid "Play"
-msgstr "Reproduzir"
+msgstr "Lejátszás"
 
 #: unit1.rsplaysoundonfinish
 #, fuzzy
 #| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
-msgstr "Pausar ao Terminar"
+msgstr "A végén megáll"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "Por favor adicione pelo menos 1 ficheiro a converter"
+msgstr "A konvertáláshoz legalább 1 fájlt adj hozzá"
 
 #: unit1.rspleaseselectapreset
+#, fuzzy
+#| msgid "Please select a preset to export"
 msgid "Please select a preset"
-msgstr "Por Favor seleccione uma Predef"
+msgstr "Válassz ki egy beállítást az exportáláshoz"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
-msgstr "Predef: %s%s%s já existe"
+msgstr "A beállítás %s%s%s néven már létezik"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "O Predef a importar não tem extensão"
+msgstr "Az importálandó beállításnak nincs kiterjesztése"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "O Predef a importar não tem rótulo"
+msgstr "Az importálandó beállításnak nincs címe"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "Por favor seleccione um Predef a exportar"
+msgstr "Válassz ki egy beállítást az exportáláshoz"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "Predef com rótulo: %s%s%s já existe"
+msgstr "%s%s%s nevű beállítás már létezik"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr "Pressione Enter para Continuar"
+msgstr "Nyomj Entert a folytatáshoz"
 
 #: unit1.rspreview
 msgid "Preview"
@@ -357,51 +378,50 @@ msgstr ""
 
 #: unit1.rsremovebtn
 msgid "Remove"
-msgstr "Remover"
+msgstr "Eltávolítás"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "Seleccionar Ficheiro Predef"
+msgstr "A beállítás fájl kiválasztása"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
-msgstr "Seleccionar Ficheiros Vídeo"
+msgstr "Videó fájl kiválasztása"
 
 #: unit1.rsshowoptions
 #, fuzzy
 #| msgid "Additional Options"
 msgctxt "unit1.rsshowoptions"
 msgid "Additional Options"
-msgstr "Opções Adicionais"
+msgstr "Egyéb opciók"
 
 #: unit1.rsshutdownonfinish
 msgid "Shutdown on Finish"
-msgstr "Desligar ao Terminar"
+msgstr "A végén a rendszer leállítása"
 
 #: unit1.rsstartbtn
 msgid "Convert"
-msgstr "Converter"
+msgstr "Konvertálás"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "O Predef contem caracteres erróneos"
+msgstr "A beállításokban nem megengedett karakter van"
 
 #: unit1.tabpage1caption
 msgid "Output Details"
-msgstr ""
+msgstr "Kimeneti részletek"
 
 #: unit1.tabpage2caption
-#, fuzzy
 msgid "Video Settings"
-msgstr "Tamanho do Vídeo"
+msgstr "Videóbeállítások"
 
 #: unit1.tabpage3caption
 msgid "Audio Settings"
-msgstr ""
+msgstr "Hangbeállítások"
 
 #: unit1.tabpage4caption
 msgid "Additional Command Line Parameters (Advanced)"
-msgstr "Parâmetros Adicionais da Linha de Comando (Avançado)"
+msgstr "Bővített parancsori paraméterek"
 
 #: unit1.tabpage5caption
 msgid "Crop"
@@ -409,111 +429,109 @@ msgstr ""
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
-msgstr "Adicionar / Actualizar"
+msgstr "Hozzáadás / Frissítés"
 
 #: unit2.rscancelbtn
 #, fuzzy
 #| msgid "Cancel"
 msgctxt "unit2.rscancelbtn"
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Mégse"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Criar Predef:"
+msgstr "Beállítás készítése:"
 
 #: unit2.rsdeletebtn
 msgid "Delete"
-msgstr "Apagar"
+msgstr "Törlés"
 
 #: unit2.rsexport
 #, fuzzy
 #| msgid "Export"
 msgctxt "unit2.rsexport"
 msgid "Export"
-msgstr "Exportar"
+msgstr "Exportálás"
 
 #: unit2.rsform2
 msgid "Edit Presets"
-msgstr "Editar Predef's"
+msgstr "Beállítások szerkesztése"
 
 #: unit2.rsimport
 msgid "Import"
-msgstr "Importar"
+msgstr "Importálás"
 
 #: unit2.rsimportpresets
-#, fuzzy
 msgid "Import Presets"
-msgstr "Importar Predef"
+msgstr "Beállítások importálása"
 
 #: unit2.rslabel1
 #, fuzzy
 #| msgid "Presets"
 msgctxt "unit2.rslabel1"
 msgid "Presets"
-msgstr "Predef"
+msgstr "Beállítások"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "Nome do Predef (Uma palavra, Apenas A-z 0-9)"
+msgstr "Beállítás neve (egy szó, csak A-Z-is és a számok)"
 
 #: unit2.rslabel3
 msgid "Preset Label"
-msgstr "Rótulo de Predef"
+msgstr "Előre beállított címke"
 
 #: unit2.rslabel4
 msgid "Preset Command Line (no -i or output file)"
-msgstr "Linha de Comando de Predef (não -i ou ficheiro de saída)"
+msgstr "Parancssor beállítás"
 
 #: unit2.rslabel5
 msgid "Output File Extension (no \".\")"
-msgstr "Extensão do FIcheiro de Saída (não \".\")"
+msgstr "Kimeneti fájl kiterjesztése (nem \".\")"
 
 #: unit2.rslabel6
 msgid "Category"
-msgstr "Categoria"
+msgstr "Kategória"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "O Rótulo deve ser único"
+msgstr "A cimkének egyedülállónak kell lenni"
 
 #: unit2.rsokbtn
 msgid "Save"
-msgstr "Guardar"
+msgstr "Mentés"
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "Remover Predef"
+msgstr "Beállítás eltávolítása:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "Actualizar Predef:"
+msgstr "Beállítás frissítése:"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr "Deve introduzir uma extensão"
+msgstr "Válaszd ki a kiterjesztést."
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "Deve introduzir um rótulo"
+msgstr "Lépj be egy címkébe."
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr "Deve introduzir um nome"
+msgstr "Írd be a neved."
 
 #: unit3.rsbutton1
-#, fuzzy
 msgctxt "unit3.rsbutton1"
 msgid "OK"
 msgstr "OK"
 
 #: unit3.rsform3
 msgid "About WinFF"
-msgstr "Acerca de WinFF"
+msgstr "A WinFF-ről"
 
 #: unit3.rslabel8
 msgid "FFmpeg builds by"
-msgstr "FFmpeg builds por"
+msgstr "FFmpeg-et készítette"
 
 #: unit3.rspage1
 msgid "WinFF"
@@ -525,10 +543,12 @@ msgstr "FFmpeg"
 
 #: unit3.rspage3
 msgid "Thanks"
-msgstr "Obrigad@"
+msgstr "Köszi :-)"
 
 #: unit4.rsbutton1
 #, fuzzy
+#| msgctxt "unit3.rsbutton1"
+#| msgid "OK"
 msgctxt "unit4.rsbutton1"
 msgid "OK"
 msgstr "OK"
@@ -538,60 +558,62 @@ msgstr "OK"
 #| msgid "Cancel"
 msgctxt "unit4.rsbutton2"
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Mégse"
 
 #: unit4.rscheckbox1
 msgid "Remember Last Directory Used"
-msgstr "Recordar Última Directoria Usada"
+msgstr "Emlékezzen az utoljára használt könyvtárra"
 
 #: unit4.rscheckbox2
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "Használd a CHCP-t a nemzetközi karakterekhez"
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
-msgstr "Multithreading para Processadores Dual Core"
+msgstr "Többszálú működés (Dual Core processzoroknál)"
 
 #: unit4.rsform4
 msgid "WinFF Preferences"
-msgstr "Preferências de WinFF"
+msgstr "WinFF beállítások"
 
 #: unit4.rslabel1
 msgid "Default Destination Directory"
-msgstr "Directoria de Destino Por Defeito"
+msgstr "Alapértelmezett célkönyvtár"
 
 #: unit4.rslabel2
 msgid "Path to FFmpeg.exe"
-msgstr "Caminho a FFmpeg.exe"
+msgstr "FFmpeg.exe elérési út"
 
 #: unit4.rslabel3
 msgid "Path to FFPlay.exe"
-msgstr "Caminho a FFPlay.exe"
+msgstr "FFplay.exe elérési út"
 
 #: unit4.rslabel4
 msgid "Path to FFmpeg Executable"
-msgstr "Caminho a FFmpeg Executável"
+msgstr "FFmpeg elérési út"
 
 #: unit4.rslabel5
 msgid "Path to FFPlay Executable"
-msgstr "Caminho a FFPlay executável"
+msgstr "FFPlay elérési út"
 
 #: unit4.rslabel6
 msgid "Terminal to run FFmpeg"
-msgstr "Terminal para correr FFmpeg"
+msgstr "FFmpeg futtatása terminálban"
 
 #: unit4.rslabel7
 msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
-msgstr "Opções de Terminal"
+msgstr "Parancssor beállítások (-e az Xterm , -x a Gnome Terminal)"
 
 #: unit4.rslabel8
+#, fuzzy
+#| msgid "Priority"
 msgctxt "unit4.rslabel8"
 msgid "Priority"
-msgstr ""
+msgstr "Prioritás"
 
 #: unit4.rspage1
 msgid "General"
-msgstr "Geral"
+msgstr "Fő"
 
 #: unit4.rspage2
 msgid "Ms Windows"
@@ -603,53 +625,49 @@ msgstr "Linux"
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr ""
+msgstr "Magas"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr ""
+msgstr "Várakozó"
 
 #: unit4.rsprioritynormal
 msgid "Normal"
-msgstr ""
+msgstr "Normál"
 
 #: unit5.rsbutton1
 #, fuzzy
+#| msgctxt "unit3.rsbutton1"
+#| msgid "OK"
 msgctxt "unit5.rsbutton1"
 msgid "OK"
 msgstr "OK"
 
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
-msgstr "Linha de Comando FFmpeg"
+msgstr "FFmpeg parancssor"
 
 #: unit6.rscancelbtn
 #, fuzzy
 #| msgid "Cancel"
 msgctxt "unit6.rscancelbtn"
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Mégse"
 
 #: unit6.rsexportbtn
 #, fuzzy
 #| msgid "Export"
 msgctxt "unit6.rsexportbtn"
 msgid "Export"
-msgstr "Exportar"
+msgstr "Exportálás"
 
 #: unit6.rsform6
-#, fuzzy
 msgid "Export Presets"
-msgstr "Importar Predef"
+msgstr "Beállítások exportálása"
 
 #: unit6.rslabel1
-#, fuzzy
 msgid "Choose presets to export"
-msgstr "Por favor seleccione um Predef a exportar"
+msgstr "Válaszd ki a beállításokat az exportáláshoz"
 
-#~ msgid "AC'"
-#~ msgstr "Canal Audio"
-
-#, fuzzy
 #~ msgid "Replace Preset"
-#~ msgstr "Actualizar Predef:"
+#~ msgstr "Beállítások cseréje:"
