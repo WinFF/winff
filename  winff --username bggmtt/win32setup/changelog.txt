@@ -1,5 +1,24 @@
-WinFF Copyright 2006 - 2009 Matthew Weatherford
+WinFF Copyright 2006 - 2010 Matthew Weatherford
 http://www.winff.org
+
+
+
+v1.2.0
+-----
+Added preview
+Added cropping
+Checks for and escape quotes in filenames (issue 38)
+Add /usr/local/bin for FFplay executable search (issue 56)
+added tool tips (issue 60)
+More room for translated strings
+
+
+
+v1.1.1
+-----
+Moved icons to folder structure describing their size.
+Updated most translation files with copyright notices (actualy done for 1.1)
+Added linux-script to create tar-bal
 
 v1.1
 -----
