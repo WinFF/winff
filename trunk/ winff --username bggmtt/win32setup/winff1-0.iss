@@ -4,14 +4,14 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.1
+AppVerName=WinFF 1.2
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.1
+VersionInfoVersion=1.2
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
@@ -47,6 +47,8 @@ Name: "hebrew"; MessagesFile: "compiler:languages\hebrew.isl"
 Name: "greek"; MessagesFile: "compiler:languages\greek.isl"
 Name: "slovenian"; MessagesFile: "compiler:languages\Slovenian.isl"
 Name: "Russian"; MessagesFile: "compiler:languages\Russian.isl"
+Name: "Catalan"; MessagesFile: "compiler:languages\Catalan.isl"
+Name: "Swedish"; MessagesFile: "compiler:languages\Swedish.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
@@ -70,6 +72,8 @@ Source: "changelog.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "Docs\WinFF.en.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "Docs\WinFF.nl.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "Docs\WinFF.fr.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "Docs\WinFF.es.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "Docs\WinFF.ca.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
 
 ; language files
 Source: "languages\winff.po"; DestDir: "{app}\languages"; Flags: ignoreversion
@@ -89,6 +93,14 @@ Source: "languages\winff.el.po"; DestDir: "{app}\languages"; Flags: ignoreversio
 Source: "languages\winff.he.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.sl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.ru.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.ca.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.es_AR.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.es_UY.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.hu.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.ku.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.pl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.sv.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.zh_CN.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
@@ -109,7 +121,8 @@ Name: "{group}\Docs\License"; Filename: "{app}\Docs\License.txt";
 Name: "{group}\Docs\Docs - English"; Filename: "{app}\Docs\WinFF.en.pdf";
 Name: "{group}\Docs\Docs - Dutch"; Filename: "{app}\Docs\WinFF.nl.pdf";
 Name: "{group}\Docs\Docs - French"; Filename: "{app}\Docs\WinFF.fr.pdf";
-
+Name: "{group}\Docs\Docs - Spanish"; Filename: "{app}\Docs\WinFF.es.pdf";
+Name: "{group}\Docs\Docs - Catalan"; Filename: "{app}\Docs\WinFF.ca.pdf";
 [Run]
 Filename: "{app}\winff.exe"; Description: "{cm:LaunchProgram,WinFF}"; Flags: nowait postinstall skipifsilent
 
