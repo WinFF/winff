@@ -66,12 +66,12 @@
         <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="38" Y="1628"/>
-        <TopLine Value="1625"/>
+        <CursorPos X="6" Y="1187"/>
+        <TopLine Value="1166"/>
         <EditorIndex Value="2"/>
         <UsageCount Value="214"/>
         <Bookmarks Count="2">
-          <Item0 X="23" Y="406" ID="1"/>
+          <Item0 X="23" Y="408" ID="1"/>
           <Item1 X="1" Y="285" ID="2"/>
         </Bookmarks>
         <Loaded Value="True"/>
@@ -199,7 +199,7 @@
         <CursorPos X="1" Y="165"/>
         <TopLine Value="133"/>
         <EditorIndex Value="5"/>
-        <UsageCount Value="77"/>
+        <UsageCount Value="78"/>
         <Loaded Value="True"/>
       </Unit16>
       <Unit17>
