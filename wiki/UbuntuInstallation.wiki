@@ -22,9 +22,9 @@ wget --quiet --output-document=- "http://winff.org/ubuntu/AAFE086A.gpg" | sudo a
 
 After that you need to add the repository to apt. You can do that by entering the line (1) in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
 {{{
-echo "deb http://winff.org/ubuntu jaunty universe" | sudo tee /etc/apt/sources.list.d/winff.list
+echo "deb http://winff.org/ubuntu karmic universe" | sudo tee /etc/apt/sources.list.d/winff.list
 }}}
-Of course you need to change jaunty to hardy or intrepid if you have that. (You can also just add the line to /etc/apt/sources.list .)
+Of course you need to change karmic to hardy or intrepid or jaunty if you have that. (You can also just add the line to /etc/apt/sources.list .)
 
 You can now install WinFF directly by running:
 {{{
@@ -49,10 +49,10 @@ sudo apt-get update && sudo apt-get install winff
 }}}
 ----
 
-(1) `deb http://winff.org/ubuntu jaunty universe`
+(1) `deb http://winff.org/ubuntu karmic universe`
 _(or if you prefer the PPA:)_ 
-`deb http://ppa.launchpad.net/paul-climbing/ubuntu jaunty main`
-(replace jaunty with your release)
+`deb http://ppa.launchpad.net/paul-climbing/ubuntu karmic main`
+(replace karmic with your release)
 
 == Synaptic ==
 
@@ -85,9 +85,13 @@ In order to use an other presets file than supplied with the package you might n
 
 For a fuller ffmpeg than the standard on in your flavor of Ubuntu I refer to the excellent guide in the Ubuntuforums: http://ubuntuforums.org/showthread.php?t=1117283 If you want to compile your own ffmpeg (it is not so hard) you can follow the instructions here: http://ubuntuforums.org/showthread.php?t=786095
 
-= Details ffmpeg for Jaunty =
+= Details ffmpeg for Lucid =
 
-Jaunty contains a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed which should pull in the 'unstripped' versions of several libraries. You can also look for them directly: libavcodec-unstripped-52, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
+Lucid contains a pretty complete ffmpeg already, but you probably want to have the 'unstripped' versions of several libraries. You can install them directly: libavcodec-extra-52, libavutil-extra-49 and libavformat-extra-52 from the multiverse repository. For AAC support you should install the [http://www.medibuntu.org/ Medibuntu] version of ffmpeg, (see the [https://help.ubuntu.com/community/Medibuntu Medibuntu wiki]). The full explanation is available at [https://help.ubuntu.com/community/Medibuntu], and in short below the Hardy details.
+
+= Details ffmpeg for Karmic and Jaunty =
+
+Karmic and Jaunty contain a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed which should pull in the 'unstripped' versions of several libraries. You can also look for them directly: libavcodec-unstripped-52, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
 
 = Details ffmpeg for Interpid =
 
