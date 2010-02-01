@@ -325,6 +325,8 @@ var
   rsFileDoesNotExist = 'file does not exist';
   rsPresettoExport = 'Please select a preset to export';
   rsAllCategories = '(All Categories)';
+  rsSelectDirectory = 'Select Directory';
+
 implementation
 
 
@@ -1180,8 +1182,9 @@ end;
 // choose a folder
 procedure TForm1.ChooseFolderBtnClick(Sender: TObject);
 begin
-  SelectDirectoryDialog1.execute;
-  DestFolder.Text := SelectDirectoryDialog1.FileName;
+  selectdirectorydialog1.Title:= rsSelectDirectory;
+  if SelectDirectoryDialog1.execute then
+     DestFolder.Text := SelectDirectoryDialog1.FileName;
 end;
 
 
