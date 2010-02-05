@@ -49,26 +49,36 @@ install: build
 
 # Build architecture-independent files here.
 binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs -i changelog.txt
+	dh_installdocs -i
+	dh_install -i
+	dh_compress -i --exclude=.pdf
+	dh_installdeb -i
+	dh_gencontrol -i
+	dh_md5sums -i
+	dh_builddeb -i
 
 # Build architecture-dependent files here.
 binary-arch: build install
 	dh_testdir
 	dh_testroot
-	dh_installchangelogs changelog.txt
-	dh_installdocs
-	dh_install
-	dh_installmenu
-	dh_installman winff.1
-	dh_installmime
+	dh_installchangelogs -a -pwinff changelog.txt
+	dh_installdocs -a -pwinff
+	dh_install -a
+	dh_installmenu -a
+	dh_installman -a -pwinff winff.1
+	dh_installmime -a
 	dh_strip --dbg-package=winff-dbg
-	dh_compress --exclude=.pdf
-	dh_fixperms
+	dh_compress -a --exclude=.pdf
+	dh_fixperms -a
 	find $(CURDIR)/debian/winff/usr/share/ -type f | xargs chmod a-x
-	dh_installdeb
-	dh_shlibdeps
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
+	dh_installdeb -a
+	dh_shlibdeps -a
+	dh_gencontrol -a
+	dh_md5sums -a
+	dh_builddeb -a
 
 binary: binary-indep binary-arch
 .PHONY: build clean binary-indep binary-arch binary install configure
