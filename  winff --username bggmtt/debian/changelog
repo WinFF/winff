@@ -1,3 +1,19 @@
+winff (1.2.0-1) unstable; urgency=low
+
+  * New upstream release
+    - Escape quotes in filenames
+    - Check if /usr/local/bin/ffplay exists
+    - Improved space for translated strings
+  * Updated copyright file with revision 135 of DEP5
+  * Bumped policy version to 3.8.4 (no changes needed)
+  * Removed translation files now included upstream
+  * Patched Swedish, Portugeuse and Italian translation files with
+    upstream svn. Thanks to Americo Monteiro. (Closes: #567573)
+  * Added winff-doc package to prevent arch:any filling with arch
+    independent files.  
+
+ -- Paul Gevers <paul@climbing.nl>  Mon, 01 Feb 2010 22:21:58 +0100
+
 winff (1.1.1-2) unstable; urgency=low
 
   * Changed packaging to 3.0 (quilt) format (no changes needed)
