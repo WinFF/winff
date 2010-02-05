@@ -1,7 +1,0 @@
-# See uscan(1) for format
-
-# Compulsory line, this is a version 3 file
-version=3
-
-http://code.google.com/p/winff/downloads/list \
-  (?:.*/)?winff-(\d)\.(\d+)\.(\d+)-source\.tar\.gz
