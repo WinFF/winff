@@ -15,12 +15,14 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Marcin Trybus <mtrybus@o2.pl>, 2008-2009
+#
+# New phrases in version 1.2.x translated by Kamil Garbala <elkanguro@orange.pl>, 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: 2009-03-19 00:33+0100\n"
-"Last-Translator: Marcin Trybus <mtrybus@o2.pl>\n"
+"PO-Revision-Date: 2010-01-06 22:01+0100\n"
+"Last-Translator: Kamil Garbala <elkanguro@orange.pl>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,21 +81,21 @@ msgstr "Nie odnaleziono pliku z szablonami."
 
 #: unit1.rscropbottom
 msgid "Bottom"
-msgstr ""
+msgstr "Z dołu"
 
 #: unit1.rscropleft
 msgid "Left"
-msgstr ""
+msgstr "Z lewej"
 
 #: unit1.rscropright
 #, fuzzy
 #| msgid "High"
 msgid "Right"
-msgstr "Wysoki"
+msgstr "Z prawej"
 
 #: unit1.rscroptop
 msgid "Top"
-msgstr ""
+msgstr "U góry"
 
 #: unit1.rsdisplaycmdline
 msgid "Display CMD Line"
@@ -120,81 +122,81 @@ msgstr "Dodatkowe opcje"
 
 #: unit1.rshint2pass
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
-msgstr ""
+msgstr "Użycie dwóch przejść umożliwia koderowi zebranie informacji już podczas pierwszego uruchomienia dla polepszonej jakości."
 
 #: unit1.rshintadd
 msgid "add file(s) to the list for conversion"
-msgstr ""
+msgstr "Dodaj plik(i) do listy w celu konwersji"
 
 #: unit1.rshintaspectratio
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
-msgstr ""
+msgstr "(<integer:integer> or <real>) fizyczne proporcje obrazu (DAR) docelowego monitora"
 
 #: unit1.rshintaudiobitrate
 msgctxt "unit1.rshintaudiobitrate"
 msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<integer>kb) docelowa wartość kb/s strumienia"
 
 #: unit1.rshintaudiochannels
 msgid "(<integer>) number of audio channels"
-msgstr ""
+msgstr "(<integer>) liczba kanałów dźwięku"
 
 #: unit1.rshintclear
 msgid "remove all files from the list"
-msgstr ""
+msgstr "usuń wszystkie pliki z listy"
 
 #: unit1.rshintconvert
 msgid "start the conversion process"
-msgstr ""
+msgstr "rozpocznij proces konwersji"
 
 #: unit1.rshintconvertto
 msgid "name of the device or file type the video should be converted to"
-msgstr ""
+msgstr "nazwa urządzenia lub typ pliku na jaki film ma zostać skonwertowany"
 
 #: unit1.rshintdeinterlace
 msgid "removes interlacing from the video (if necessary)"
-msgstr ""
+msgstr "usuwa przeplot z filmu (jeśli konieczne)"
 
 #: unit1.rshintdevicepreset
 msgid "specific setting to use for the chosen device or file type"
-msgstr ""
+msgstr "specyficzne ustawienia dla wybranego urządzenia lub typu pliku"
 
 #: unit1.rshintframerate
 msgid "(<real> or <integer>) the number of frames per second"
-msgstr ""
+msgstr "(<real> lub <integer>) liczba klatek na sekundę"
 
 #: unit1.rshintoptions
 msgid "open or close the additional option window"
-msgstr ""
+msgstr "otwiera lub zamyka dodatkowe okno z ustawieniami"
 
 #: unit1.rshintoutputfolder
 msgid "the target location for the final video (choose a different folder than the source folder)"
-msgstr ""
+msgstr "folder docelowy dla otrzymanego pliku (wybierz inny niż folder pliku źródłowego)"
 
 #: unit1.rshintplay
 msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr ""
+msgstr "podgląd wybranego pliku źródłowego poprzez ffplay (przydatne do sprawdzenia czy konwersja jest możliwa)"
 
 #: unit1.rshintpreview
 msgid "preview using the output settings"
-msgstr ""
+msgstr "podgląd z użyciem ustawień wyjścia"
 
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
-msgstr ""
+msgstr "usuń wybrane pliki z listy"
 
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr ""
+msgstr "(<integer> frekwencja próbki dźwięku w Hz"
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
 msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<integer>kb) docelowa wartość kb/s strumienia"
 
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
-msgstr ""
+msgstr "(<integer> X <integer>) liczba pikseli informacji. Dla kodeków, które nie wspierają PAR (pikselowa proporcja obrazu) jest to rozmiar wideo podczas odtwarzania."
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -240,7 +242,7 @@ msgstr "Klatek na sek."
 
 #: unit1.rslabel5
 msgid "Video Size"
-msgstr "Wymiary wideo"
+msgstr "Rozmiar"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
@@ -337,7 +339,7 @@ msgstr "Odtwarzaj"
 #, fuzzy
 #| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
-msgstr "Pauza po zakończeniu"
+msgstr "Odegraj dźwięk po zakończeniu"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
@@ -373,7 +375,7 @@ msgstr "Naciśnij Enter by kontynuować"
 
 #: unit1.rspreview
 msgid "Preview"
-msgstr ""
+msgstr "Podgląd"
 
 #: unit1.rsremovebtn
 msgid "Remove"
@@ -424,11 +426,11 @@ msgstr "Parametry wiersza poleceń (zaawansowane)"
 
 #: unit1.tabpage5caption
 msgid "Crop"
-msgstr ""
+msgstr "Przytnij"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
-msgstr "Dodaj / Zmień"
+msgstr "Dodaj / Aktualizuj"
 
 #: unit2.rscancelbtn
 #, fuzzy
@@ -473,7 +475,7 @@ msgstr "Szablony"
 
 #: unit2.rslabel2
 msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "Nazwa szablonu (wylacznie litery i cyfry)"
+msgstr "Nazwa szablonu (jeden wyraz, wyłącznie litery i cyfry)"
 
 #: unit2.rslabel3
 msgid "Preset Label"
@@ -493,7 +495,7 @@ msgstr "Kategoria"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "Opis musi byc unikalny."
+msgstr "Opis musi być unikalny."
 
 #: unit2.rsokbtn
 msgid "Save"
