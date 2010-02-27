@@ -570,9 +570,11 @@ begin
   sformtop:=getconfigvalue('window/top');
   sformleft:=getconfigvalue('window/left');
 
+  formtop := 0;
   if sformtop <> '' then formtop:=strtoint(sformtop);
   if formtop > 0 then form1.Top := formtop;
 
+  formleft := 0;
   if sformleft <> '' then formleft:=strtoint(sformleft);
   if formleft >0 then form1.Left := formleft;
 
@@ -722,6 +724,9 @@ var
 catnode : tdomnode;
 category:string;
 begin
+ result := '';
+ if presetname <> '' then
+ begin
    try
     if presets.FindNode(presetname).FindNode('category').HasChildNodes then
     begin
@@ -732,6 +737,7 @@ begin
     category:='';
    end;
    result:=category;
+ end;
 end;
 
 // get the extension of the preset
@@ -762,6 +768,9 @@ var
 dirnode : tdomnode;
 destdir:string;
 begin
+   result := '';
+ if presetname <> '' then
+ begin
    try
     if presets.FindNode(presetname).FindNode('destdir').HasChildNodes then
       begin
@@ -772,6 +781,7 @@ begin
     destdir:='';
    end;
    result:=destdir;
+ end;
 end;
 
 // save the destination directory to the preset
@@ -979,6 +989,7 @@ destdir: string;
 currentpreset:string;
 begin
 currentpreset := getcurrentpresetname(presetbox.Text);
+   destdir := '' ;
 //  destdir:= getpresetdestdir(currentpreset);     // get dest folder from preset
 if destdir <> '' then destfolder.text:= destdir;
 if destfolder.Text='' then destfolder.text := getconfigvalue('general/destfolder');
