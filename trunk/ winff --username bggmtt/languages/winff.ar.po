@@ -1,0 +1,628 @@
+# translation of winff.po to Arabic
+# Copyright (C) 2009-2010 Matthew Weatherford <matt@biggmatt.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+# MrTux <ashrafkhalaf@gmail.com>, 2010
+msgid ""
+msgstr ""
+"Project-Id-Version: Winff\n"
+"POT-Creation-Date: 2010-01-06\n"
+"PO-Revision-Date: 2010-04-05 01:17+0200\n"
+"Last-Translator: Muhammad Negm <alam.hor@gmail.com>\n"
+"Language-Team: Muhammad Negm <alam.hor@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Virtaal 0.3.1\n"
+"X-Poedit-Language: Arabic\n"
+"X-Poedit-Country: EGYPT\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=3; plural=(n>99)?1:(n > 2 && n < 11)?2:0;\n"
+
+#: unit1.rsaddbtn
+msgid "Add"
+msgstr "إضافة"
+
+#: unit1.rsallcategories
+msgid "(All Categories)"
+msgstr "جميع التصنيفات"
+
+#: unit1.rscheckbox2
+msgid "Deinterlace"
+msgstr "فك التضفير"
+
+#: unit1.rsclearbtn
+msgid "Clear"
+msgstr "تنظيف"
+
+#: unit1.rsclose
+msgid "Close"
+msgstr "إغلاق"
+
+#: unit1.rsclosebtn
+msgctxt "unit1.rsclosebtn"
+msgid "Options"
+msgstr "خيارات"
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "جاري التحويل"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "لم أجد FFmpeg"
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "لم أجد مشغلFFmpeg"
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "لم أجد الملف "
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "لم أجد ملف النسبة"
+
+#: unit1.rscropbottom
+msgid "Bottom"
+msgstr "أسفل"
+
+#: unit1.rscropleft
+msgid "Left"
+msgstr "يسار"
+
+#: unit1.rscropright
+msgid "Right"
+msgstr "يمين"
+
+#: unit1.rscroptop
+msgid "Top"
+msgstr "أعلى"
+
+#: unit1.rsdisplaycmdline
+msgid "Display CMD Line"
+msgstr "عرض نافذة سطر الأوامر"
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "اللاحقة لا يمكن أن تحوي مده\"~\""
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "الملف غير موجود"
+
+#: unit1.rsfilemenu
+msgid "File"
+msgstr "ملف"
+
+#: unit1.rsgroupbox1
+msgctxt "unit1.rsgroupbox1"
+msgid "Additional Options"
+msgstr "خيارات إضافية"
+
+#: unit1.rshint2pass
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
+msgstr "استخدام تمرير مزدوج يمكن المحول من استخلاص معلومات تحسن جودة الملف الناتج"
+
+#: unit1.rshintadd
+msgid "add file(s) to the list for conversion"
+msgstr "إضافة ملف(ات) إلى قائمة التحويل"
+
+#: unit1.rshintaspectratio
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
+msgstr "(<عدد صحيح:عدد صحيح> أو <عدد حقيقي>) تحديد نسبه عدد السطور إلي عرض الشاشة"
+
+#: unit1.rshintaudiobitrate
+msgctxt "unit1.rshintaudiobitrate"
+msgid "(<integer>kb) the target kilobits/second that the stream should use"
+msgstr " (<عدد صحيح> ك.ب) المعدل المستهدف بالكيلو بت /ثانية الذي تود استعماله "
+
+#: unit1.rshintaudiochannels
+msgid "(<integer>) number of audio channels"
+msgstr "(<عدد صحيح>) عدد قنوات الصوت"
+
+#: unit1.rshintclear
+msgid "remove all files from the list"
+msgstr "إزالة كل الملفات من القائمة"
+
+#: unit1.rshintconvert
+msgid "start the conversion process"
+msgstr "ابدأ التحويل"
+
+#: unit1.rshintconvertto
+msgid "name of the device or file type the video should be converted to"
+msgstr "اسم الجهاز أو نوع ملف الڤيديو ينبغي أن يحول إلى"
+
+#: unit1.rshintdeinterlace
+msgid "removes interlacing from the video (if necessary)"
+msgstr "إزالة التضفير من الفيديو (عند الضرورة)"
+
+#: unit1.rshintdevicepreset
+msgid "specific setting to use for the chosen device or file type"
+msgstr "استخدام أعدادات معينة لنوع الملف أو المشغل"
+
+#: unit1.rshintframerate
+msgid "(<real> or <integer>) the number of frames per second"
+msgstr "(<حقيقي> أو <عدد صحيح>) عدد الإطارات لكل ثانية"
+
+#: unit1.rshintoptions
+msgid "open or close the additional option window"
+msgstr "فتح أو إغلاق نافذة الخيارات الإضافية"
+
+#: unit1.rshintoutputfolder
+msgid "the target location for the final video (choose a different folder than the source folder)"
+msgstr "مكان ملف الفيديو الناتج (اختر مجلدا مختلفا عن المجلد المصدر)"
+
+#: unit1.rshintplay
+msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "معاينة الملف المصدر المختار باستخدام ffplay ( جيد لمعرفة إمكانية التحويل)"
+
+#: unit1.rshintpreview
+msgid "preview using the output settings"
+msgstr "المعاينة باستخدام أعدادات الخرج"
+
+#: unit1.rshintremove
+msgid "remove the selected file(s) from the list"
+msgstr "إزالة الملفات المحددة من القائمة"
+
+#: unit1.rshintsamplerate
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr "(<عدد صحيح>) تردد معاينة الصوت بالهرتز"
+
+#: unit1.rshintvideobitrate
+msgctxt "unit1.rshintvideobitrate"
+msgid "(<integer>kb) the target kilobits/second that the stream should use"
+msgstr "(<عدد صحيح>كيلوبت) المعدل المستهدف بالكيلوبت/ثانية الذي تود استعماله"
+
+#: unit1.rshintvideosize
+msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+msgstr "(<عدد صحيح> × <عدد صحيح>) مجموع بكسلات البيانات.صالح للترميزات التي لا تدعم مقياس عدد السطور (PAR) ذلك يحجم الفيديو عند عرضه"
+
+#: unit1.rsimportmenu
+msgid "Import Preset"
+msgstr "استيراد ملف"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "الملف المختار غير صالح"
+
+#: unit1.rslabel1
+msgid "Convert To ..."
+msgstr "حول إلى ..."
+
+#: unit1.rslabel10
+msgid "Audio Channels"
+msgstr "قنوات الصوت"
+
+#: unit1.rslabel11
+msgctxt "unit1.rslabel11"
+msgid "Output Folder"
+msgstr "مجلد الخرج"
+
+#: unit1.rslabel19
+msgid "Device Preset"
+msgstr "نوع المشغل"
+
+#: unit1.rslabel2
+msgctxt "unit1.rslabel2"
+msgid "Output Folder"
+msgstr "مجلد الخرج"
+
+#: unit1.rslabel3
+msgid "Video Bitrate"
+msgstr "معدل البتات"
+
+#: unit1.rslabel4
+msgid "Frame Rate"
+msgstr "معدل الإطارات"
+
+#: unit1.rslabel5
+msgid "Video Size"
+msgstr "حجم الفيديو"
+
+#: unit1.rslabel6
+msgid "Aspect Ratio"
+msgstr "نسبة عدد السطور إلى العرض"
+
+#: unit1.rslabel7
+msgid "Audio Bitrate"
+msgstr "معدل البتات"
+
+#: unit1.rslabel8
+msgid "Sample Rate"
+msgstr "معدل العينات"
+
+#: unit1.rsmenuitem1
+msgid "Edit"
+msgstr "تحرير"
+
+#: unit1.rsmenuitem2
+msgctxt "unit1.rsmenuitem2"
+msgid "About"
+msgstr "تحويل"
+
+#: unit1.rsmenuitem3
+msgid "Exit"
+msgstr "خروج"
+
+#: unit1.rsmenuitem4
+msgctxt "unit1.rsmenuitem4"
+msgid "Presets"
+msgstr "نسب"
+
+#: unit1.rsmenuitem5
+msgid "Preferences"
+msgstr "تفضيلات"
+
+#: unit1.rsmenuitem6
+msgid "Help"
+msgstr "مساعدة"
+
+#: unit1.rsmenuitem7
+msgid "WinFF Forums"
+msgstr "منتدى WinFF"
+
+#: unit1.rsmitabout
+msgctxt "unit1.rsmitabout"
+msgid "About"
+msgstr "حول"
+
+#: unit1.rsmitdocs
+msgid "Documentation"
+msgstr "وثائق"
+
+#: unit1.rsmitWinff
+msgid "WinFF Website"
+msgstr "موقع WinFF"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "يجب أن يكون الاسم حرفي رقمي (a-z,A-Z,0-9)"
+
+#: unit1.rsoptions
+msgctxt "unit1.rsoptions"
+msgid "Options"
+msgstr "خيارات"
+
+#: unit1.rsoptionsbtn
+msgctxt "unit1.rsoptionsbtn"
+msgid "Options"
+msgstr "خيارات"
+
+#: unit1.rspass2
+msgid "2 pass"
+msgstr "التمرير المزدوج"
+
+#: unit1.rspauseonfinish
+msgid "Pause on Finish"
+msgstr "إيقاف عند الانتهاء"
+
+#: unit1.rsplay
+msgid "Play"
+msgstr "شغل"
+
+#: unit1.rsplaysoundonfinish
+msgid "Play Sound on Finish"
+msgstr "تشغيل الصوت عند الانتهاء"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "رجاء إضافة ملف على الأقل للتحويل"
+
+#: unit1.rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "رجاء حدد ملفا"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "الملف %s%s%s موجود بالفعل"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "النسبة لا تحتوي على لاحقة"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "النسبة التي جلبتها لا تحتوي علي وسم خاص بها"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "فضلاً حدد النسبة لتصديرها"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "النسبة ذات الوسم : %s%s%s موجودة بالفعل"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "اضغط زر \"Enter \"للاستمرار"
+
+#: unit1.rspreview
+msgid "Preview"
+msgstr "معاينة"
+
+#: unit1.rsremovebtn
+msgid "Remove"
+msgstr "أزل"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "اختر ملف النسبة"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "اختر ملفات الفيديو"
+
+#: unit1.rsshowoptions
+msgctxt "unit1.rsshowoptions"
+msgid "Additional Options"
+msgstr "خيارات إضافية"
+
+#: unit1.rsshutdownonfinish
+msgid "Shutdown on Finish"
+msgstr "إغلاق عند الانتهاء"
+
+#: unit1.rsstartbtn
+msgid "Convert"
+msgstr "حول"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "النسبة تحتوي على حروف غير صالحة"
+
+#: unit1.tabpage1caption
+msgid "Output Details"
+msgstr "تفاصيل الخرج"
+
+#: unit1.tabpage2caption
+msgid "Video Settings"
+msgstr "أعدادات الفيديو"
+
+#: unit1.tabpage3caption
+msgid "Audio Settings"
+msgstr "أعدادات الصوت"
+
+#: unit1.tabpage4caption
+msgid "Additional Command Line Parameters (Advanced)"
+msgstr "معاملات سطر أوامر إضافية (متقدم)"
+
+#: unit1.tabpage5caption
+msgid "Crop"
+msgstr "قصقصة الصورة"
+
+#: unit2.rsaddpresetbtn
+msgid "Add / Update"
+msgstr "إضافة/تحديث"
+
+#: unit2.rscancelbtn
+msgctxt "unit2.rscancelbtn"
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "إنشاء نسبة"
+
+#: unit2.rsdeletebtn
+msgid "Delete"
+msgstr "حذف"
+
+#: unit2.rsexport
+msgctxt "unit2.rsexport"
+msgid "Export"
+msgstr "تصدير"
+
+#: unit2.rsform2
+msgid "Edit Presets"
+msgstr "تحرير النسب"
+
+#: unit2.rsimport
+msgid "Import"
+msgstr "استيراد"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "استيراد نسبة"
+
+#: unit2.rslabel1
+msgctxt "unit2.rslabel1"
+msgid "Presets"
+msgstr "النسب"
+
+#: unit2.rslabel2
+msgid "Preset Name (One word , Only A-z 0-9)"
+msgstr "اسم النسبة (كلمة واحدة، حروف وأرقام فقط)"
+
+#: unit2.rslabel3
+msgid "Preset Label"
+msgstr "وسم النسبة"
+
+#: unit2.rslabel4
+msgid "Preset Command Line (no -i or output file)"
+msgstr " نسبة لسطر الأوامر (دون الخيار -i أو ملف الناتج)"
+
+#: unit2.rslabel5
+msgid "Output File Extension (no \".\")"
+msgstr "لاحقة الملف الناتج"
+
+#: unit2.rslabel6
+msgid "Category"
+msgstr "التصنيف"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "الوسم لابد أن يكون فريدا"
+
+#: unit2.rsokbtn
+msgid "Save"
+msgstr "حفظ"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "إزالة نسبة"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "تحديث النسبة"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "لابد من إدخال لاحقة"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "لابد من إدخال وسم "
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "إدخال الاسم"
+
+#: unit3.rsbutton1
+msgctxt "unit3.rsbutton1"
+msgid "OK"
+msgstr "موافق"
+
+#: unit3.rsform3
+msgid "About WinFF"
+msgstr "حول WinFF"
+
+#: unit3.rslabel8
+msgid "FFmpeg builds by"
+msgstr "FFmpeg تم بناؤه بواسطة"
+
+#: unit3.rspage1
+msgid "WinFF"
+msgstr "WinFF"
+
+#: unit3.rspage2
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: unit3.rspage3
+msgid "Thanks"
+msgstr "الشكر لـ"
+
+#: unit4.rsbutton1
+msgctxt "unit4.rsbutton1"
+msgid "OK"
+msgstr "موافق"
+
+#: unit4.rsbutton2
+msgctxt "unit4.rsbutton2"
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: unit4.rscheckbox1
+msgid "Remember Last Directory Used"
+msgstr "تذكر المجلد المستخدم أخيرا"
+
+#: unit4.rscheckbox2
+msgid "Use CHCP for international characters"
+msgstr "استخدام محارف CHCP العالمية"
+
+#: unit4.rscheckbox3
+msgid "Multithreading for Dual Core Processors"
+msgstr "معالجة متعددة الخيوط للمعالجات مزدوجة الأنوية"
+
+#: unit4.rsform4
+msgid "WinFF Preferences"
+msgstr "تفضيلات WinFF"
+
+#: unit4.rslabel1
+msgid "Default Destination Directory"
+msgstr "وجهة المجلد الافتراضي"
+
+#: unit4.rslabel2
+msgid "Path to FFmpeg.exe"
+msgstr "المسار إلى FFmpeg.exe"
+
+#: unit4.rslabel3
+msgid "Path to FFPlay.exe"
+msgstr "المسار إلى FFPlay.exe"
+
+#: unit4.rslabel4
+msgid "Path to FFmpeg Executable"
+msgstr "المسار التنفيذي إلى FFmpeg "
+
+#: unit4.rslabel5
+msgid "Path to FFPlay Executable"
+msgstr "المسار إلى FFPlay التنفيذي"
+
+#: unit4.rslabel6
+msgid "Terminal to run FFmpeg"
+msgstr "طرفية لتشغيل FFmpeg"
+
+#: unit4.rslabel7
+msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgstr "خيارات للطرفية (-e في حالة طرفية اكس أو -x في حالة طرفية گنوم)"
+
+#: unit4.rslabel8
+msgctxt "unit4.rslabel8"
+msgid "Priority"
+msgstr "أولوية"
+
+#: unit4.rspage1
+msgid "General"
+msgstr "عام"
+
+#: unit4.rspage2
+msgid "Ms Windows"
+msgstr "مايكروسوفت وندوز"
+
+#: unit4.rspage3
+msgid "Linux"
+msgstr "لينوكس"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "عالي"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "عاطل"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "عادي"
+
+#: unit5.rsbutton1
+msgctxt "unit5.rsbutton1"
+msgid "OK"
+msgstr "موافق"
+
+#: unit5.rsform5
+msgid "FFmpeg Command Line"
+msgstr "سطر أوامر FFmpeg"
+
+#: unit6.rscancelbtn
+msgctxt "unit6.rscancelbtn"
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: unit6.rsexportbtn
+msgctxt "unit6.rsexportbtn"
+msgid "Export"
+msgstr "تصدير"
+
+#: unit6.rsform6
+msgid "Export Presets"
+msgstr "تصدير النسب"
+
+#: unit6.rslabel1
+msgid "Choose presets to export"
+msgstr "اختار النسب التي تود تصديرها"
+
