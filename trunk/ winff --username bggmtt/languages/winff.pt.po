@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff 1.2.0\n"
 "POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: 2010-02-01 20:27+0000\n"
+"PO-Revision-Date: 2010-02-07 02:12+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@netcabo.pt>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -80,7 +80,7 @@ msgstr "Fundo"
 
 #: unit1.rscropleft
 msgid "Left"
-msgstr "Esquerda"
+msgstr "Esq."
 
 #: unit1.rscropright
 msgid "Right"
@@ -121,16 +121,16 @@ msgstr "adicionar ficheiro(s) à lista para conversão"
 
 #: unit1.rshintaspectratio
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
-msgstr "(<integer:integer> ou <real>) o rácio de aspecto físico (DAR) da imagem de destino."
+msgstr "(<inteiro:inteiro> ou <real>) o rácio de aspecto físico (DAR) da imagem de destino."
 
 #: unit1.rshintaudiobitrate
 msgctxt "unit1.rshintaudiobitrate"
 msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr "(<integer>kb) os kilobits/segundo de destino que o fluxo deve usar"
+msgstr "(<inteiro>kb) os kilobits/segundo de destino que o fluxo deve usar"
 
 #: unit1.rshintaudiochannels
 msgid "(<integer>) number of audio channels"
-msgstr "(<integer>) número de canais de áudio"
+msgstr "(<inteiro>) número de canais de áudio"
 
 #: unit1.rshintclear
 msgid "remove all files from the list"
@@ -154,7 +154,7 @@ msgstr "definição específica para usar para o dispositivo escolhido ou tipo d
 
 #: unit1.rshintframerate
 msgid "(<real> or <integer>) the number of frames per second"
-msgstr "(<real> ou <integer>) o número de imagens por segundo"
+msgstr "(<real> ou <inteiro>) o número de imagens por segundo"
 
 #: unit1.rshintoptions
 msgid "open or close the additional option window"
@@ -178,17 +178,17 @@ msgstr "remover os ficheiro(s) seleccionados da lista"
 
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr "(<integer>) a frequência de amostragem para o áudio em Hertz"
+msgstr "(<inteiro>) a frequência de amostragem para o áudio em Hertz"
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
 msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr "(<integer>kb) os kilobits/segundo de destino que o fluxo deve usar"
+msgstr "(<inteiro>kb) os kilobits/segundo de destino que o fluxo deve usar"
 
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgstr ""
-"(<integer> X <integer>) a quantidade de pixeis de informação. Para codecs que não suportam rácio de aspecto de pixeis (PAR) isto é o tamanho do vídeo quando "
+"(<inteiro> X <inteiro>) a quantidade de pixeis de informação. Para codecs que não suportam rácio de aspecto de pixeis (PAR) isto é o tamanho do vídeo quando "
 "visualizado."
 
 #: unit1.rsimportmenu
@@ -224,15 +224,15 @@ msgstr "Directório de Saída"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
-msgstr "Taxa de bits do Vídeo"
+msgstr "Taxa de bits"
 
 #: unit1.rslabel4
 msgid "Frame Rate"
-msgstr "Taxa de Quadros"
+msgstr "Taxa de Imagens"
 
 #: unit1.rslabel5
 msgid "Video Size"
-msgstr "Tamanho do Vídeo"
+msgstr "   Tamanho"
 
 #: unit1.rslabel6
 msgid "Aspect Ratio"
@@ -240,7 +240,7 @@ msgstr "Rácio de Aparência"
 
 #: unit1.rslabel7
 msgid "Audio Bitrate"
-msgstr "Taxa de bits de Áudio"
+msgstr "Taxa de bits"
 
 #: unit1.rslabel8
 msgid "Sample Rate"
@@ -411,7 +411,7 @@ msgstr "Recortar"
 
 #: unit2.rsaddpresetbtn
 msgid "Add / Update"
-msgstr "Adicionar / Actualizar"
+msgstr "Adi./Actualizar"
 
 #: unit2.rscancelbtn
 msgctxt "unit2.rscancelbtn"
@@ -543,7 +543,7 @@ msgstr "Usar CHCP para caracteres internacionais"
 
 #: unit4.rscheckbox3
 msgid "Multithreading for Dual Core Processors"
-msgstr "Multi-processamento para Processadores Dual Core"
+msgstr "Multi-processamento para Dual Core"
 
 #: unit4.rsform4
 msgid "WinFF Preferences"
