@@ -1,7 +1,5 @@
-# Description: Update portuguese translation with changes from BTS and svn
-# Origin: http://bugs.debian.org/567573
+# Description: Update portuguese translation with changes from svn
 # Upstream-origin: http://winff.googlecode.com/svn/trunk/%20winff%20--username%20bggmtt/languages/winff.pt.po
-# Bug: http://bugs.debian.org/567573
 
 --- winff-1.2.0.orig/languages/winff.pt.po
 +++ winff-1.2.0/languages/winff.pt.po
@@ -31,7 +29,7 @@
  "POT-Creation-Date: 2010-01-06\n"
 -"Last-Translator: Luís Torrao <luistorrao@gmail.com>\n"
 -"Language-Team: \n"
-+"PO-Revision-Date: 2010-02-01 20:27+0000\n"
++"PO-Revision-Date: 2010-02-07 02:12+0000\n"
 +"Last-Translator: Américo Monteiro <a_monteiro@netcabo.pt>\n"
 +"Language-Team: Portuguese <traduz@debianpt.org>\n"
  "MIME-Version: 1.0\n"
@@ -44,7 +42,7 @@
  
  #: unit1.rsaddbtn
  msgid "Add"
-@@ -16,7 +35,7 @@ msgstr "Adicionar"
+@@ -16,7 +35,7 @@
  
  #: unit1.rsallcategories
  msgid "(All Categories)"
@@ -53,7 +51,7 @@
  
  #: unit1.rscheckbox2
  msgid "Deinterlace"
-@@ -27,196 +46,189 @@ msgid "Clear"
+@@ -27,219 +46,211 @@
  msgstr "Limpar"
  
  #: unit1.rsclose
@@ -102,7 +100,7 @@
  #: unit1.rscropleft
  msgid "Left"
 -msgstr ""
-+msgstr "Esquerda"
++msgstr "Esq."
  
  #: unit1.rscropright
  msgid "Right"
@@ -153,18 +151,18 @@
  #: unit1.rshintaspectratio
  msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
 -msgstr ""
-+msgstr "(<integer:integer> ou <real>) o rácio de aspecto físico (DAR) da imagem de destino."
++msgstr "(<inteiro:inteiro> ou <real>) o rácio de aspecto físico (DAR) da imagem de destino."
  
  #: unit1.rshintaudiobitrate
  msgctxt "unit1.rshintaudiobitrate"
  msgid "(<integer>kb) the target kilobits/second that the stream should use"
 -msgstr ""
-+msgstr "(<integer>kb) os kilobits/segundo de destino que o fluxo deve usar"
++msgstr "(<inteiro>kb) os kilobits/segundo de destino que o fluxo deve usar"
  
  #: unit1.rshintaudiochannels
  msgid "(<integer>) number of audio channels"
 -msgstr ""
-+msgstr "(<integer>) número de canais de áudio"
++msgstr "(<inteiro>) número de canais de áudio"
  
  #: unit1.rshintclear
  msgid "remove all files from the list"
@@ -194,7 +192,7 @@
  #: unit1.rshintframerate
  msgid "(<real> or <integer>) the number of frames per second"
 -msgstr ""
-+msgstr "(<real> ou <integer>) o número de imagens por segundo"
++msgstr "(<real> ou <inteiro>) o número de imagens por segundo"
  
  #: unit1.rshintoptions
  msgid "open or close the additional option window"
@@ -224,18 +222,18 @@
  #: unit1.rshintsamplerate
  msgid "(<integer>) the sampling frequency of the audio in Hertz"
 -msgstr ""
-+msgstr "(<integer>) a frequência de amostragem para o áudio em Hertz"
++msgstr "(<inteiro>) a frequência de amostragem para o áudio em Hertz"
  
  #: unit1.rshintvideobitrate
  msgctxt "unit1.rshintvideobitrate"
  msgid "(<integer>kb) the target kilobits/second that the stream should use"
 -msgstr ""
-+msgstr "(<integer>kb) os kilobits/segundo de destino que o fluxo deve usar"
++msgstr "(<inteiro>kb) os kilobits/segundo de destino que o fluxo deve usar"
  
  #: unit1.rshintvideosize
  msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
  msgstr ""
-+"(<integer> X <integer>) a quantidade de pixeis de informação. Para codecs que não suportam rácio de aspecto de pixeis (PAR) isto é o tamanho do vídeo quando "
++"(<inteiro> X <inteiro>) a quantidade de pixeis de informação. Para codecs que não suportam rácio de aspecto de pixeis (PAR) isto é o tamanho do vídeo quando "
 +"visualizado."
  
  #: unit1.rsimportmenu
@@ -283,16 +281,17 @@
  #: unit1.rslabel3
  msgid "Video Bitrate"
 -msgstr "Bitrate do Vídeo"
-+msgstr "Taxa de bits do Vídeo"
++msgstr "Taxa de bits"
  
  #: unit1.rslabel4
  msgid "Frame Rate"
 -msgstr "Ratio do Frame"
-+msgstr "Taxa de Quadros"
++msgstr "Taxa de Imagens"
  
  #: unit1.rslabel5
  msgid "Video Size"
-@@ -224,22 +236,21 @@ msgstr "Tamanho do Vídeo"
+-msgstr "Tamanho do Vídeo"
++msgstr "   Tamanho"
  
  #: unit1.rslabel6
  msgid "Aspect Ratio"
@@ -302,7 +301,7 @@
  #: unit1.rslabel7
  msgid "Audio Bitrate"
 -msgstr "Bitrate Audio"
-+msgstr "Taxa de bits de Áudio"
++msgstr "Taxa de bits"
  
  #: unit1.rslabel8
  msgid "Sample Rate"
@@ -318,7 +317,7 @@
  #| msgid "About"
  msgctxt "unit1.rsmenuitem2"
  msgid "About"
-@@ -250,11 +261,9 @@ msgid "Exit"
+@@ -250,11 +261,9 @@
  msgstr "Sair"
  
  #: unit1.rsmenuitem4
@@ -331,7 +330,7 @@
  
  #: unit1.rsmenuitem5
  msgid "Preferences"
-@@ -266,36 +275,32 @@ msgstr "Ajuda"
+@@ -266,36 +275,32 @@
  
  #: unit1.rsmenuitem7
  msgid "WinFF Forums"
@@ -372,7 +371,7 @@
  #| msgid "Options"
  msgctxt "unit1.rsoptionsbtn"
  msgid "Options"
-@@ -303,7 +308,7 @@ msgstr "Opções"
+@@ -303,7 +308,7 @@
  
  #: unit1.rspass2
  msgid "2 pass"
@@ -381,7 +380,7 @@
  
  #: unit1.rspauseonfinish
  msgid "Pause on Finish"
-@@ -314,38 +319,37 @@ msgid "Play"
+@@ -314,38 +319,37 @@
  msgstr "Reproduzir"
  
  #: unit1.rsplaysoundonfinish
@@ -428,7 +427,7 @@
  
  #: unit1.rspressenter
  msgid "Press Enter to Continue"
-@@ -353,7 +357,7 @@ msgstr "Pressione Enter para Continuar"
+@@ -353,7 +357,7 @@
  
  #: unit1.rspreview
  msgid "Preview"
@@ -437,7 +436,7 @@
  
  #: unit1.rsremovebtn
  msgid "Remove"
-@@ -361,14 +365,13 @@ msgstr "Remover"
+@@ -361,14 +365,13 @@
  
  #: unit1.rsselectpresetfile
  msgid "Select Preset File"
@@ -454,7 +453,7 @@
  #| msgid "Additional Options"
  msgctxt "unit1.rsshowoptions"
  msgid "Additional Options"
-@@ -376,7 +379,7 @@ msgstr "Opções Adicionais"
+@@ -376,7 +379,7 @@
  
  #: unit1.rsshutdownonfinish
  msgid "Shutdown on Finish"
@@ -463,7 +462,7 @@
  
  #: unit1.rsstartbtn
  msgid "Convert"
-@@ -384,90 +387,83 @@ msgstr "Converter"
+@@ -384,90 +387,83 @@
  
  #: unit1.rsthepresethasillegalchars
  msgid "The preset contains illegal characters"
@@ -498,7 +497,8 @@
  
  #: unit2.rsaddpresetbtn
  msgid "Add / Update"
- msgstr "Adicionar / Actualizar"
+-msgstr "Adicionar / Actualizar"
++msgstr "Adi./Actualizar"
  
  #: unit2.rscancelbtn
 -#, fuzzy
@@ -568,7 +568,7 @@
  
  #: unit2.rslabel6
  msgid "Category"
-@@ -475,41 +471,40 @@ msgstr "Categoria"
+@@ -475,41 +471,40 @@
  
  #: unit2.rslabelmustbeunique
  msgid "Label must be unique."
@@ -618,7 +618,7 @@
  
  #: unit3.rslabel8
  msgid "FFmpeg builds by"
-@@ -525,16 +520,14 @@ msgstr "FFmpeg"
+@@ -525,16 +520,14 @@
  
  #: unit3.rspage3
  msgid "Thanks"
@@ -636,7 +636,7 @@
  #| msgid "Cancel"
  msgctxt "unit4.rsbutton2"
  msgid "Cancel"
-@@ -542,15 +535,15 @@ msgstr "Cancelar"
+@@ -542,15 +535,15 @@
  
  #: unit4.rscheckbox1
  msgid "Remember Last Directory Used"
@@ -651,11 +651,11 @@
  #: unit4.rscheckbox3
  msgid "Multithreading for Dual Core Processors"
 -msgstr "Multithreading para Processadores Dual Core"
-+msgstr "Multi-processamento para Processadores Dual Core"
++msgstr "Multi-processamento para Dual Core"
  
  #: unit4.rsform4
  msgid "WinFF Preferences"
-@@ -558,23 +551,23 @@ msgstr "Preferências de WinFF"
+@@ -558,23 +551,23 @@
  
  #: unit4.rslabel1
  msgid "Default Destination Directory"
@@ -684,7 +684,7 @@
  
  #: unit4.rslabel6
  msgid "Terminal to run FFmpeg"
-@@ -582,12 +575,12 @@ msgstr "Terminal para correr FFmpeg"
+@@ -582,12 +575,12 @@
  
  #: unit4.rslabel7
  msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
@@ -699,7 +699,7 @@
  
  #: unit4.rspage1
  msgid "General"
-@@ -603,53 +596,48 @@ msgstr "Linux"
+@@ -603,53 +596,48 @@
  
  #: unit4.rspriorityhigh
  msgid "High"

@@ -1,3 +1,19 @@
+winff (1.2.0-2) unstable; urgency=low
+
+  * debian/patches/empty-presetname-fix.patch:
+    - unit1.pas causes an access violation when trying to use an empty
+    presetname. This checks for an empty name and avoids accessing it.
+    (LP: #521818)
+  * Added preset file for ubuntu with libfaac based presets removed
+    (LP: #527548)
+  * Changed build-dep because lazbuild moved (Closes: #577347)
+  * Added Galician and Arabic translations from upstream svn.
+  * Updated Portuguese translation patch
+  * Updated description of lintian override (not needed for
+    update-to-date lintian, but needed for ftp-master).
+
+ -- Paul Gevers <paul@climbing.nl>  Tue, 27 Apr 2010 20:06:53 +0200
+
 winff (1.2.0-1) unstable; urgency=low
 
   * New upstream release
@@ -10,7 +26,7 @@ winff (1.2.0-1) unstable; urgency=low
   * Patched Swedish, Portugeuse and Italian translation files with
     upstream svn. Thanks to Americo Monteiro. (Closes: #567573)
   * Added winff-doc package to prevent arch:any filling with arch
-    independent files.  
+    independent files.
 
  -- Paul Gevers <paul@climbing.nl>  Mon, 01 Feb 2010 22:21:58 +0100
 
