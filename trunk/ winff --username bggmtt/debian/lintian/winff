@@ -1,4 +1,4 @@
-# The Free Pascal Compiler does not properly support linking. Please
-# see BTS #472304. The zlib functionality is provided without a proper 
-# way to turn it off. 
+# Lintian on ftp-master is not up-to-date. Version 2.4.0 has been fixed
+# because fpc triggered a false positive. See e.g.
+# http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=472304#45
 winff binary: embedded-zlib
