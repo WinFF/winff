@@ -1,12 +1,13 @@
 object Form1: TForm1
-  Left = 150
-  Height = 587
-  Top = 150
-  Width = 1064
+  Left = 251
+  Height = 654
+  Top = 116
+  Width = 1432
+  ActiveControl = edtCropTop
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 567
-  ClientWidth = 1064
+  ClientHeight = 627
+  ClientWidth = 1432
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
   Icon.Data = {
@@ -322,45 +323,46 @@ object Form1: TForm1
   LCLVersion = '0.9.28.2'
   object Label2: TLabel
     Left = 0
-    Height = 16
+    Height = 15
     Top = 0
-    Width = 1
+    Width = 2
     ParentColor = False
   end
   object pnlMain: TPanel
     Left = 0
-    Height = 327
+    Height = 391
     Top = 54
-    Width = 1064
+    Width = 1432
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 327
-    ClientWidth = 1064
+    ClientHeight = 391
+    ClientWidth = 1432
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
       Left = 0
-      Height = 147
+      Height = 211
       Top = 0
-      Width = 1064
+      Width = 1432
       Align = alClient
       ItemHeight = 0
       MultiSelect = True
       OnDblClick = btnPlayClick
       OnKeyUp = filelistKeyUp
       TabOrder = 0
+      TopIndex = -1
     end
     object pnlbottom: TPanel
       Left = 0
       Height = 180
-      Top = 147
-      Width = 1064
+      Top = 211
+      Width = 1432
       Align = alBottom
       ClientHeight = 180
-      ClientWidth = 1064
+      ClientWidth = 1432
       ParentColor = False
       ParentShowHint = False
       ShowHint = True
@@ -369,45 +371,45 @@ object Form1: TForm1
         Left = 1
         Height = 178
         Top = 1
-        Width = 1062
+        Width = 1430
         ActivePage = tabPage1
         Align = alClient
         TabIndex = 0
         TabOrder = 0
         object tabPage1: TTabSheet
           Caption = 'tabPage1'
-          ClientHeight = 150
-          ClientWidth = 1054
+          ClientHeight = 143
+          ClientWidth = 1424
           object Label1: TLabel
             Left = 13
-            Height = 16
+            Height = 18
             Top = 1
-            Width = 69
+            Width = 85
             Caption = 'Convert to....'
             ParentColor = False
           end
           object Label11: TLabel
             Left = 12
-            Height = 16
+            Height = 18
             Top = 103
-            Width = 73
+            Width = 87
             Caption = 'Output folder'
             ParentColor = False
           end
           object Label19: TLabel
             Left = 13
-            Height = 16
+            Height = 18
             Top = 53
-            Width = 69
+            Width = 85
             Caption = 'Convert to....'
             ParentColor = False
           end
           object PresetBox: TComboBox
             Left = 13
-            Height = 23
+            Height = 31
             Top = 69
             Width = 472
-            ItemHeight = 15
+            ItemHeight = 0
             MaxLength = 65535
             OnChange = PresetBoxChange
             Style = csDropDownList
@@ -415,7 +417,7 @@ object Form1: TForm1
           end
           object DestFolder: TEdit
             Left = 12
-            Height = 23
+            Height = 27
             Top = 121
             Width = 439
             TabOrder = 2
@@ -434,10 +436,10 @@ object Form1: TForm1
           end
           object categorybox: TComboBox
             Left = 13
-            Height = 23
+            Height = 31
             Top = 17
             Width = 472
-            ItemHeight = 15
+            ItemHeight = 0
             MaxLength = 65535
             OnChange = categoryboxChange
             Sorted = True
@@ -452,10 +454,10 @@ object Form1: TForm1
     Left = 0
     Height = 54
     Top = 0
-    Width = 1064
+    Width = 1432
     Align = alTop
     ClientHeight = 54
-    ClientWidth = 1064
+    ClientWidth = 1432
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
@@ -895,7 +897,7 @@ object Form1: TForm1
       TabOrder = 4
     end
     object Panel2: TPanel
-      Left = 938
+      Left = 1306
       Height = 52
       Top = 1
       Width = 125
@@ -1083,11 +1085,11 @@ object Form1: TForm1
   object pnlbottom2: TPanel
     Left = 0
     Height = 163
-    Top = 381
-    Width = 1064
+    Top = 445
+    Width = 1432
     Align = alBottom
     ClientHeight = 163
-    ClientWidth = 1064
+    ClientWidth = 1432
     ParentColor = False
     ParentShowHint = False
     ShowHint = True
@@ -1097,53 +1099,53 @@ object Form1: TForm1
       Left = 1
       Height = 161
       Top = 1
-      Width = 1062
+      Width = 1430
       Align = alClient
       Caption = 'gbxSettings'
-      ClientHeight = 143
-      ClientWidth = 1058
+      ClientHeight = 142
+      ClientWidth = 1426
       TabOrder = 0
       object nbkSettings: TNotebook
         Left = 0
-        Height = 143
+        Height = 142
         Top = 0
-        Width = 1058
+        Width = 1426
         Align = alClient
-        PageIndex = 0
+        PageIndex = 3
         TabOrder = 0
         object tabVideoSettings: TPage
           Caption = 'Video Settings'
-          ClientWidth = 1050
-          ClientHeight = 115
+          ClientWidth = 1420
+          ClientHeight = 108
           object lblVideoBitRate: TLabel
             Left = 6
-            Height = 16
+            Height = 18
             Top = 5
-            Width = 74
+            Width = 94
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
           object lblVideoSize: TLabel
             Left = 219
-            Height = 16
+            Height = 18
             Top = 5
-            Width = 54
+            Width = 69
             Caption = 'Video Size'
             ParentColor = False
           end
           object lblAspectRatio: TLabel
             Left = 307
-            Height = 16
+            Height = 18
             Top = 5
-            Width = 67
+            Width = 83
             Caption = 'Aspect Ratio'
             ParentColor = False
           end
           object Label9: TLabel
             Left = 253
-            Height = 13
+            Height = 14
             Top = 25
-            Width = 7
+            Width = 8
             Caption = 'X'
             Font.Height = -10
             ParentColor = False
@@ -1151,15 +1153,15 @@ object Form1: TForm1
           end
           object lblFrameRate: TLabel
             Left = 124
-            Height = 16
+            Height = 18
             Top = 5
-            Width = 60
+            Width = 76
             Caption = 'Frame Rate'
             ParentColor = False
           end
           object Vidbitrate: TEdit
             Left = 6
-            Height = 23
+            Height = 27
             Top = 25
             Width = 104
             OnChange = VidbitrateChange
@@ -1167,37 +1169,37 @@ object Form1: TForm1
           end
           object Vidframerate: TEdit
             Left = 123
-            Height = 23
+            Height = 27
             Top = 25
             Width = 88
             TabOrder = 1
           end
           object VidsizeX: TEdit
             Left = 219
-            Height = 23
+            Height = 27
             Top = 25
             Width = 32
             TabOrder = 2
           end
           object edtAspectRatio: TEdit
             Left = 307
-            Height = 23
+            Height = 27
             Top = 25
             Width = 80
             TabOrder = 4
           end
           object VidsizeY: TEdit
             Left = 265
-            Height = 23
+            Height = 27
             Top = 25
             Width = 32
             TabOrder = 3
           end
           object cbx2Pass: TCheckBox
             Left = 6
-            Height = 19
+            Height = 22
             Top = 54
-            Width = 52
+            Width = 66
             Caption = '2 pass'
             Color = clForm
             ParentColor = False
@@ -1205,9 +1207,9 @@ object Form1: TForm1
           end
           object cbxDeinterlace: TCheckBox
             Left = 122
-            Height = 19
+            Height = 22
             Top = 55
-            Width = 79
+            Width = 99
             Caption = 'Deinterlace'
             Color = clForm
             ParentColor = False
@@ -1216,61 +1218,91 @@ object Form1: TForm1
         end
         object tabAudioSettings: TPage
           Caption = 'Audio Settings'
-          ClientWidth = 1050
-          ClientHeight = 115
+          ClientWidth = 1420
+          ClientHeight = 107
           object Label7: TLabel
             Left = 9
-            Height = 16
+            Height = 18
             Top = 5
-            Width = 85
+            Width = 94
             Caption = 'Audio Bit Rate'
             ParentColor = False
           end
           object Label8: TLabel
             Left = 133
-            Height = 16
+            Height = 18
             Top = 5
-            Width = 76
+            Width = 84
             Caption = 'Sample Rate'
             ParentColor = False
           end
           object Label10: TLabel
-            Left = 264
-            Height = 16
+            Left = 266
+            Height = 18
             Top = 5
-            Width = 46
+            Width = 52
+            Caption = 'Label10'
+            ParentColor = False
+          end
+          object Label20: TLabel
+            Left = 11
+            Height = 18
+            Top = 60
+            Width = 52
+            Caption = 'Label10'
+            ParentColor = False
+          end
+          object Label21: TLabel
+            Left = 133
+            Height = 18
+            Top = 60
+            Width = 52
             Caption = 'Label10'
             ParentColor = False
           end
           object audbitrate: TEdit
             Left = 9
-            Height = 21
+            Height = 27
             Top = 25
             Width = 101
             TabOrder = 0
           end
           object audsamplingrate: TEdit
             Left = 133
-            Height = 21
+            Height = 27
             Top = 25
             Width = 80
             TabOrder = 1
           end
           object audchannels: TEdit
             Left = 261
-            Height = 21
+            Height = 27
             Top = 25
             Width = 32
             TabOrder = 2
           end
+          object edtVolume: TEdit
+            Left = 9
+            Height = 27
+            Top = 76
+            Width = 101
+            TabOrder = 3
+          end
+          object edtAudioSync: TEdit
+            Left = 133
+            Height = 27
+            Top = 76
+            Width = 101
+            TabOrder = 4
+          end
         end
         object tabCmdLineSettings: TPage
           Caption = 'tabCmdLineSettings'
-          ClientWidth = 1050
-          ClientHeight = 115
+          ClientWidth = 1420
+          ClientHeight = 107
           object commandlineparams: TEdit
             Left = 1
-            Height = 21
+            Height = 27
             Top = 25
             Width = 469
             TabOrder = 0
@@ -1278,43 +1310,67 @@ object Form1: TForm1
         end
         object tabPageCrop: TPage
           Caption = 'Crop'
-          ClientWidth = 1050
-          ClientHeight = 115
+          ClientWidth = 1420
+          ClientHeight = 107
           object lblCropLeft: TLabel
-            Left = 19
-            Height = 16
+            Left = 3
+            Height = 18
             Top = 46
-            Width = 21
+            Width = 26
             Caption = 'Left'
             ParentColor = False
           end
           object lblCropTop: TLabel
-            Left = 139
-            Height = 16
+            Left = 123
+            Height = 18
             Top = 6
-            Width = 22
+            Width = 23
             Caption = 'Top'
             ParentColor = False
           end
           object lblCropBottom: TLabel
-            Left = 123
-            Height = 16
+            Left = 107
+            Height = 18
             Top = 94
-            Width = 41
+            Width = 49
             Caption = 'Bottom'
             ParentColor = False
           end
           object lblCropRight: TLabel
-            Left = 259
-            Height = 16
+            Left = 243
+            Height = 18
             Top = 46
-            Width = 29
+            Width = 35
             Caption = 'Right'
             ParentColor = False
           end
+          object label22: TLabel
+            Left = 289
+            Height = 18
+            Top = 36
+            Width = 51
+            Caption = 'Seek To'
+            ParentColor = False
+          end
+          object label23: TLabel
+            Left = 289
+            Height = 18
+            Top = 69
+            Width = 99
+            Caption = 'Time to Record'
+            ParentColor = False
+          end
+          object label24: TLabel
+            Left = 377
+            Height = 18
+            Top = 14
+            Width = 169
+            Caption = 'Hours / Minutes / Seconds'
+            ParentColor = False
+          end
           object edtCropLeft: TEdit
-            Left = 51
-            Height = 23
+            Left = 35
+            Height = 27
             Top = 46
             Width = 48
             OnChange = edtCropLeftChange
@@ -1322,8 +1378,8 @@ object Form1: TForm1
             Text = '0'
           end
           object UpDown1: TUpDown
-            Left = 99
-            Height = 23
+            Left = 83
+            Height = 27
             Top = 46
             Width = 17
             Associate = edtCropLeft
@@ -1335,8 +1391,8 @@ object Form1: TForm1
             Wrap = False
           end
           object edtCropTop: TEdit
-            Left = 123
-            Height = 23
+            Left = 107
+            Height = 27
             Top = 22
             Width = 48
             OnChange = edtCropTopChange
@@ -1344,8 +1400,8 @@ object Form1: TForm1
             Text = '0'
           end
           object edtCropBottom: TEdit
-            Left = 123
-            Height = 23
+            Left = 107
+            Height = 27
             Top = 70
             Width = 48
             OnChange = edtCropBottomChange
@@ -1353,8 +1409,8 @@ object Form1: TForm1
             Text = '0'
           end
           object edtCropRight: TEdit
-            Left = 187
-            Height = 23
+            Left = 171
+            Height = 27
             Top = 46
             Width = 48
             OnChange = edtCropRightChange
@@ -1362,8 +1418,8 @@ object Form1: TForm1
             Text = '0'
           end
           object UpDown2: TUpDown
-            Left = 171
-            Height = 23
+            Left = 155
+            Height = 27
             Top = 70
             Width = 17
             Associate = edtCropBottom
@@ -1375,8 +1431,8 @@ object Form1: TForm1
             Wrap = False
           end
           object UpDown3: TUpDown
-            Left = 235
-            Height = 23
+            Left = 219
+            Height = 27
             Top = 46
             Width = 17
             Associate = edtCropRight
@@ -1388,8 +1444,8 @@ object Form1: TForm1
             Wrap = False
           end
           object UpDown4: TUpDown
-            Left = 171
-            Height = 23
+            Left = 155
+            Height = 27
             Top = 22
             Width = 17
             Associate = edtCropTop
@@ -1400,15 +1456,61 @@ object Form1: TForm1
             TabOrder = 7
             Wrap = False
           end
+          object edtSeekHH: TSpinEdit
+            Left = 369
+            Height = 27
+            Top = 33
+            Width = 39
+            TabOrder = 8
+          end
+          object edtSeekMM: TSpinEdit
+            Left = 416
+            Height = 27
+            Top = 33
+            Width = 41
+            MaxValue = 59
+            TabOrder = 9
+          end
+          object edtSeekSS: TSpinEdit
+            Left = 465
+            Height = 27
+            Top = 33
+            Width = 42
+            MaxValue = 59
+            TabOrder = 10
+          end
+          object edtTTRHH: TSpinEdit
+            Left = 369
+            Height = 27
+            Top = 66
+            Width = 39
+            TabOrder = 11
+          end
+          object edtTTRMM: TSpinEdit
+            Left = 416
+            Height = 27
+            Top = 66
+            Width = 41
+            MaxValue = 59
+            TabOrder = 12
+          end
+          object edtTTRSS: TSpinEdit
+            Left = 465
+            Height = 27
+            Top = 66
+            Width = 42
+            MaxValue = 59
+            TabOrder = 13
+          end
         end
       end
     end
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 23
-    Top = 544
-    Width = 1064
+    Height = 19
+    Top = 608
+    Width = 1432
     AutoHint = True
     Panels = <>
     ParentShowHint = False
@@ -1418,8 +1520,8 @@ object Form1: TForm1
     Title = 'Select Video Files...'
     FilterIndex = 0
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
-    left = 512
-    top = 400
+    left = 560
+    top = 392
   end
   object SelectDirectoryDialog1: TSelectDirectoryDialog
     FilterIndex = 0

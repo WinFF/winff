@@ -1,7 +1,7 @@
 object Form6: TForm6
-  Left = 689
+  Left = 688
   Height = 320
-  Top = 288
+  Top = 261
   Width = 355
   ActiveControl = ListBox1
   Caption = 'Export Presets'
@@ -50,12 +50,12 @@ object Form6: TForm6
   }
   OnResize = FormResize
   OnShow = FormShow
-  LCLVersion = '0.9.28'
+  LCLVersion = '0.9.28.2'
   object Label1: TLabel
     Left = 16
-    Height = 16
+    Height = 18
     Top = 16
-    Width = 153
+    Width = 168
     Caption = 'Choose Presets to export:'
     ParentColor = False
   end

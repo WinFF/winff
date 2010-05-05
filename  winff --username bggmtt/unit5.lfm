@@ -1,7 +1,7 @@
 object Form5: TForm5
-  Left = 500
+  Left = 499
   Height = 378
-  Top = 209
+  Top = 182
   Width = 386
   ActiveControl = Memo1
   Caption = 'FFmpeg Command Line'
@@ -49,7 +49,7 @@ object Form5: TForm5
   OnCreate = FormCreate
   OnResize = FormResize
   Position = poMainFormCenter
-  LCLVersion = '0.9.26.2'
+  LCLVersion = '0.9.28.2'
   object Memo1: TMemo
     Left = 8
     Height = 322

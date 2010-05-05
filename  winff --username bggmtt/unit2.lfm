@@ -1,9 +1,9 @@
 object Form2: TForm2
-  Left = 500
+  Left = 499
   Height = 461
-  Top = 289
+  Top = 262
   Width = 417
-  ActiveControl = lbCategory
+  ActiveControl = Panel2
   Caption = 'Edit Presets'
   ClientHeight = 461
   ClientWidth = 417
@@ -51,8 +51,9 @@ object Form2: TForm2
   OnShow = FormShow
   Position = poMainFormCenter
   ShowHint = True
-  LCLVersion = '0.9.26.2'
+  LCLVersion = '0.9.28.2'
   object pnlBottom: TPanel
+    Left = 0
     Height = 84
     Top = 377
     Width = 417
@@ -123,6 +124,7 @@ object Form2: TForm2
     end
   end
   object Panel1: TPanel
+    Left = 0
     Height = 246
     Top = 131
     Width = 417
@@ -133,47 +135,47 @@ object Form2: TForm2
     TabOrder = 1
     object Label2: TLabel
       Left = 8
-      Height = 13
+      Height = 18
       Top = 16
-      Width = 289
+      Width = 338
       Caption = 'Preset Name   (one word, only letters and numbers)'
       ParentColor = False
     end
     object Label3: TLabel
       Left = 8
-      Height = 13
+      Height = 18
       Top = 64
-      Width = 71
+      Width = 81
       Caption = 'Preset Label'
       ParentColor = False
     end
     object Label4: TLabel
       Left = 8
-      Height = 13
+      Height = 18
       Top = 112
-      Width = 300
+      Width = 352
       Caption = 'Preset Command Line Parameters (no -i or output file)'
       ParentColor = False
     end
     object Label5: TLabel
       Left = 8
-      Height = 13
+      Height = 18
       Top = 160
-      Width = 251
+      Width = 291
       Caption = 'Output File Extension (do not include the ''.'' )'
       ParentColor = False
     end
     object Label6: TLabel
       Left = 9
-      Height = 13
+      Height = 18
       Top = 208
-      Width = 52
+      Width = 60
       Caption = 'Category'
       ParentColor = False
     end
     object Edit1: TEdit
       Left = 8
-      Height = 23
+      Height = 27
       Hint = '(one word, only letters and numbers)'
       Top = 32
       Width = 256
@@ -181,7 +183,7 @@ object Form2: TForm2
     end
     object Edit2: TEdit
       Left = 8
-      Height = 23
+      Height = 27
       Hint = 'Enter a more descriptive name for this preset'
       Top = 80
       Width = 256
@@ -189,7 +191,7 @@ object Form2: TForm2
     end
     object Edit3: TEdit
       Left = 8
-      Height = 23
+      Height = 27
       Hint = 'Please don''t use -i or output file parameters'
       Top = 128
       Width = 395
@@ -197,7 +199,7 @@ object Form2: TForm2
     end
     object Edit4: TEdit
       Left = 8
-      Height = 23
+      Height = 27
       Hint = 'Do not include the .'
       Top = 176
       Width = 80
@@ -206,7 +208,7 @@ object Form2: TForm2
     end
     object Edit5: TEdit
       Left = 9
-      Height = 23
+      Height = 27
       Hint = 'Choose a category to group this preset under'
       Top = 224
       Width = 120
@@ -214,7 +216,9 @@ object Form2: TForm2
     end
   end
   object Panel2: TPanel
+    Left = 0
     Height = 131
+    Top = 0
     Width = 417
     Align = alClient
     BevelOuter = bvNone
@@ -223,7 +227,9 @@ object Form2: TForm2
     ClientWidth = 417
     TabOrder = 2
     object Label1: TLabel
+      Left = 0
       Height = 13
+      Top = 0
       Width = 417
       Align = alTop
       Caption = 'Category / Preset'
@@ -238,17 +244,22 @@ object Form2: TForm2
       Width = 249
       Align = alClient
       Anchors = [akTop, akRight, akBottom]
+      ItemHeight = 0
       OnClick = ListBox1Click
       TabOrder = 0
+      TopIndex = -1
     end
     object lbCategory: TListBox
+      Left = 0
       Height = 118
       Top = 13
       Width = 163
       Align = alLeft
       Anchors = [akTop, akBottom]
+      ItemHeight = 0
       OnClick = lbCategoryClick
       TabOrder = 1
+      TopIndex = -1
     end
     object Splitter1: TSplitter
       Left = 163
@@ -271,6 +282,7 @@ object Form2: TForm2
     left = 248
   end
   object XMLConfig1: TXMLConfig
+    StartEmpty = False
     RootName = 'CONFIG'
     left = 290
     top = 169
