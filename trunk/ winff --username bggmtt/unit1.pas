@@ -27,7 +27,7 @@ uses
   {$IFDEF unix} baseunix, unix, {$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
-  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls;
+  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, MaskEdit, Spin;
 
 type
 
@@ -36,6 +36,15 @@ type
   TForm1 = class(TForm)
     btnAdd: TBitBtn;
     btnPreview: TBitBtn;
+    edtVolume: TEdit;
+    edtAudioSync: TEdit;
+  {  edtTTRHH: TMaskEdit;
+    edtSeekMM: TMaskEdit;
+    edtTTRMM: TMaskEdit;
+    edtSeekSS: TMaskEdit;
+    edtTTRSS: TMaskEdit;
+  }  //edtVolume: TEdit;
+    //edtVolume1: TEdit;
     edtCropLeft: TEdit;
     edtAspectRatio: TEdit;
     audbitrate: TEdit;
@@ -50,10 +59,17 @@ type
     edtCropTop: TEdit;
     edtCropBottom: TEdit;
     edtCropRight: TEdit;
+    Label20: TLabel;
+    Label21: TLabel;
     lblCropLeft: TLabel;
+    label22: TLabel;
+    //label22: TLabel;
+    lblCropRight2: TLabel;
     lblCropTop: TLabel;
     lblCropBottom: TLabel;
     lblCropRight: TLabel;
+    label23: TLabel;
+    label24: TLabel;
 //    mitPlaySoundonFinish: TMenuItem;
     mitDisplayCmdline: TMenuItem;
     dlgOpenFile: TOpenDialog;
@@ -80,6 +96,12 @@ type
     nbkSettings: TNotebook;
     dlgOpenPreset: TOpenDialog;
     btnOptions: TBitBtn;
+    edtSeekHH: TSpinEdit;
+    edtSeekMM: TSpinEdit;
+    edtSeekSS: TSpinEdit;
+    edtTTRHH: TSpinEdit;
+    edtTTRMM: TSpinEdit;
+    edtTTRSS: TSpinEdit;
     StatusBar1: TStatusBar;
     tabPageCrop: TPage;
     PageControl1: TPageControl;
@@ -112,9 +134,12 @@ type
     tabAudioSettings: TPage;
     tabCmdLineSettings: TPage;
     UpDown1: TUpDown;
+    UpDown10: TUpDown;
     UpDown2: TUpDown;
     UpDown3: TUpDown;
     UpDown4: TUpDown;
+    UpDown6: TUpDown;
+    UpDown7: TUpDown;
     Vidbitrate: TEdit;
     Vidframerate: TEdit;
     VidsizeX: TEdit;
@@ -133,6 +158,8 @@ type
     procedure ChooseFolderBtnClick(Sender: TObject);
     procedure btnAddClick(Sender: TObject);
     procedure btnClearClick(Sender: TObject);
+    procedure lblCropRight1Click(Sender: TObject);
+    procedure edtSeekHHChange(Sender: TObject);
     procedure mitDisplayCmdlineClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -283,7 +310,11 @@ var
   rsHintDeinterlace='removes interlacing from the video (if necessary)';
   rsHintSamplerate='(<integer>) the sampling frequency of the audio in Hertz';
   rsHintAudiochannels='(<integer>) number of audio channels';
-
+  rsHintVolume='(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume';
+  rsHintAudioSync='(<integer>) Audio Sync = DON"T KNOW THE HINT TEXT!';
+  rsHintSeek='<hh:mm:ss> - Begin recording at start time';
+  rsHintRecord='<hh:mm:ss> - Amount of time to record';
+  rsHintTime='Make sure that the start time + time to record is less than total length of job';
 
   rsLabel5='Video Size';
   rsLabel6='Aspect Ratio';
@@ -296,6 +327,12 @@ var
   rsLabel1='Convert To ...';
   rslabel11='Output Folder';
   rsLabel19='Device Preset';
+  rsLabel20='Volume';
+  rsLabel21='Audio Sync';
+  rsLabel22='Seek to';
+  rsLabel23='Time to Record';
+  rsLabel24='Hours / Minutes / Seconds';
+
   tabPage1caption='Output Details';
   tabPage2caption='Video Settings';
   tabPage3caption='Audio Settings';
@@ -385,6 +422,13 @@ begin
     lblVideoBitRate.Caption:=rslabel3;
     label11.Caption:=rslabel11;
     Label19.Caption:=rslabel19;
+    Label20.Caption:=rslabel20;
+    Label21.Caption:=rslabel21;
+    Label22.Caption:=rslabel22;
+    Label23.Caption:=rslabel23;
+    Label24.Caption:=rslabel24;
+
+
     gbxSettings.Caption:=rsgroupbox1;
     Label1.Caption:=rslabel1;
     Label2.Caption:=rslabel2;
@@ -418,6 +462,8 @@ begin
     cbxDeinterlace.Hint:=rsHintDeinterlace;
     audChannels.Hint:=rsHintAudiochannels;
     audsamplingrate.Hint:=rsHintSampleRate;
+    edtVolume.hint := rsHintVolume;
+    edtAudioSync.hint := rsHintAudioSync;
 
 
                     // start setup
@@ -1239,6 +1285,16 @@ end;
 procedure tform1.btnClearClick(Sender: TObject);
 begin
   filelist.Clear;
+end;
+
+procedure TForm1.lblCropRight1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.edtSeekHHChange(Sender: TObject);
+begin
+
 end;
 
 // filelist on key up
