@@ -1,13 +1,13 @@
 object Form1: TForm1
-  Left = 251
-  Height = 654
-  Top = 116
-  Width = 1432
+  Left = 395
+  Height = 634
+  Top = 135
+  Width = 674
   ActiveControl = edtCropTop
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 627
-  ClientWidth = 1432
+  ClientHeight = 611
+  ClientWidth = 674
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
   Icon.Data = {
@@ -320,33 +320,33 @@ object Form1: TForm1
   OnCreate = FormCreate
   OnDropFiles = FormDropFiles
   Position = poDefault
-  LCLVersion = '0.9.28.2'
+  LCLVersion = '0.9.26.2'
   object Label2: TLabel
     Left = 0
-    Height = 15
+    Height = 17
     Top = 0
-    Width = 2
+    Width = 4
     ParentColor = False
   end
   object pnlMain: TPanel
     Left = 0
-    Height = 391
+    Height = 373
     Top = 54
-    Width = 1432
+    Width = 674
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 391
-    ClientWidth = 1432
+    ClientHeight = 373
+    ClientWidth = 674
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
       Left = 0
-      Height = 211
+      Height = 193
       Top = 0
-      Width = 1432
+      Width = 674
       Align = alClient
       ItemHeight = 0
       MultiSelect = True
@@ -358,11 +358,11 @@ object Form1: TForm1
     object pnlbottom: TPanel
       Left = 0
       Height = 180
-      Top = 211
-      Width = 1432
+      Top = 193
+      Width = 674
       Align = alBottom
       ClientHeight = 180
-      ClientWidth = 1432
+      ClientWidth = 674
       ParentColor = False
       ParentShowHint = False
       ShowHint = True
@@ -371,15 +371,15 @@ object Form1: TForm1
         Left = 1
         Height = 178
         Top = 1
-        Width = 1430
+        Width = 672
         ActivePage = tabPage1
         Align = alClient
         TabIndex = 0
         TabOrder = 0
         object tabPage1: TTabSheet
           Caption = 'tabPage1'
-          ClientHeight = 143
-          ClientWidth = 1424
+          ClientHeight = 147
+          ClientWidth = 668
           object Label1: TLabel
             Left = 13
             Height = 18
@@ -409,7 +409,10 @@ object Form1: TForm1
             Height = 31
             Top = 69
             Width = 472
+            AutoComplete = False
+            Ctl3D = False
             ItemHeight = 0
+            ItemWidth = 0
             MaxLength = 65535
             OnChange = PresetBoxChange
             Style = csDropDownList
@@ -418,14 +421,14 @@ object Form1: TForm1
           object DestFolder: TEdit
             Left = 12
             Height = 27
-            Top = 121
+            Top = 120
             Width = 439
             TabOrder = 2
           end
           object ChooseFolderBtn: TButton
             Left = 452
             Height = 25
-            Top = 117
+            Top = 120
             Width = 32
             BorderSpacing.InnerBorder = 4
             Caption = '...'
@@ -439,7 +442,10 @@ object Form1: TForm1
             Height = 31
             Top = 17
             Width = 472
+            AutoComplete = False
+            Ctl3D = False
             ItemHeight = 0
+            ItemWidth = 0
             MaxLength = 65535
             OnChange = categoryboxChange
             Sorted = True
@@ -454,10 +460,10 @@ object Form1: TForm1
     Left = 0
     Height = 54
     Top = 0
-    Width = 1432
+    Width = 674
     Align = alTop
     ClientHeight = 54
-    ClientWidth = 1432
+    ClientWidth = 674
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
@@ -897,7 +903,7 @@ object Form1: TForm1
       TabOrder = 4
     end
     object Panel2: TPanel
-      Left = 1306
+      Left = 548
       Height = 52
       Top = 1
       Width = 125
@@ -1085,11 +1091,11 @@ object Form1: TForm1
   object pnlbottom2: TPanel
     Left = 0
     Height = 163
-    Top = 445
-    Width = 1432
+    Top = 427
+    Width = 674
     Align = alBottom
     ClientHeight = 163
-    ClientWidth = 1432
+    ClientWidth = 674
     ParentColor = False
     ParentShowHint = False
     ShowHint = True
@@ -1099,24 +1105,25 @@ object Form1: TForm1
       Left = 1
       Height = 161
       Top = 1
-      Width = 1430
+      Width = 672
       Align = alClient
       Caption = 'gbxSettings'
       ClientHeight = 142
-      ClientWidth = 1426
+      ClientWidth = 668
+      Ctl3D = False
       TabOrder = 0
       object nbkSettings: TNotebook
         Left = 0
         Height = 142
         Top = 0
-        Width = 1426
+        Width = 668
         Align = alClient
         PageIndex = 3
         TabOrder = 0
         object tabVideoSettings: TPage
           Caption = 'Video Settings'
-          ClientWidth = 1420
-          ClientHeight = 108
+          ClientWidth = 664
+          ClientHeight = 111
           object lblVideoBitRate: TLabel
             Left = 6
             Height = 18
@@ -1143,9 +1150,9 @@ object Form1: TForm1
           end
           object Label9: TLabel
             Left = 253
-            Height = 14
+            Height = 13
             Top = 25
-            Width = 8
+            Width = 7
             Caption = 'X'
             Font.Height = -10
             ParentColor = False
@@ -1218,8 +1225,8 @@ object Form1: TForm1
         end
         object tabAudioSettings: TPage
           Caption = 'Audio Settings'
-          ClientWidth = 1420
-          ClientHeight = 107
+          ClientWidth = 664
+          ClientHeight = 111
           object Label7: TLabel
             Left = 9
             Height = 18
@@ -1298,8 +1305,8 @@ object Form1: TForm1
         end
         object tabCmdLineSettings: TPage
           Caption = 'tabCmdLineSettings'
-          ClientWidth = 1420
-          ClientHeight = 107
+          ClientWidth = 664
+          ClientHeight = 111
           object commandlineparams: TEdit
             Left = 1
             Height = 27
@@ -1310,8 +1317,8 @@ object Form1: TForm1
         end
         object tabPageCrop: TPage
           Caption = 'Crop'
-          ClientWidth = 1420
-          ClientHeight = 107
+          ClientWidth = 664
+          ClientHeight = 111
           object lblCropLeft: TLabel
             Left = 3
             Height = 18
@@ -1469,6 +1476,7 @@ object Form1: TForm1
             Top = 33
             Width = 41
             MaxValue = 59
+            OnChange = edtSeekMMChange
             TabOrder = 9
           end
           object edtSeekSS: TSpinEdit
@@ -1508,9 +1516,9 @@ object Form1: TForm1
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 19
-    Top = 608
-    Width = 1432
+    Height = 21
+    Top = 590
+    Width = 674
     AutoHint = True
     Panels = <>
     ParentShowHint = False

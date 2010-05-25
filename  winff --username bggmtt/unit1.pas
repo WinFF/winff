@@ -152,6 +152,7 @@ type
     procedure edtCropLeftChange(Sender: TObject);
     procedure edtCropRightChange(Sender: TObject);
     procedure edtCropTopChange(Sender: TObject);
+    procedure edtSeekMMChange(Sender: TObject);
     procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure LaunchBrowser(URL:string);
     procedure LaunchPdf(pdffile:string);
@@ -1018,6 +1019,10 @@ begin
  i:=i;
 end;
 
+procedure TForm1.edtSeekMMChange(Sender: TObject);
+begin
+end;
+
 procedure TForm1.Button1Click(Sender: TObject);
 begin
 end;
@@ -1540,6 +1545,7 @@ script: tstringlist;
 thetime: tdatetime;
 scriptprocess:tprocess;
 scriptpriority:tprocesspriority;
+ignorepreview:boolean;
 begin                                     // get setup
    scriptprocess:= TProcess.Create(nil);
 
@@ -1609,6 +1615,9 @@ begin                                     // get setup
    edtCropTop.Text:=trim(edtCropTop.text);
    edtCropleft.Text:=trim(edtCropleft.text);
    edtCropright.Text:=trim(edtCropright.text);
+   edtVolume.Text:=trim(edtVolume.Text);
+   edtAudioSync.Text:=trim(edtAudioSync.Text);
+
 
                                       // replace preset params if mnuOptions specified
    commandline := params;
@@ -1626,11 +1635,47 @@ begin                                     // get setup
            commandline:=replaceparam(commandline,'-ar','-ar ' + audsamplingrate.Text);
    if audchannels.Text <> '' then
            commandline:=replaceparam(commandline,'-ac','-ac ' + audchannels.Text);
+
+   // changes for winff 1.3
+   //
+   ignorepreview := false;
+   if edtVolume.Text <> '' then
+           commandline:=replaceparam(commandline,'-volume','-volume ' + edtVolume.Text);
+   if edtAudioSync.Text <> '' then
+           commandline:=replaceparam(commandline,'-async','-async ' + edtAudioSync.Text);
+
+
+
+
+   if edtSeekHH.Value + edtSeekMM.Value + edtSeekSS.Value > 0 then
+   begin
+     ignorepreview := true;
+     if edtSeekMM.Value < 10 then edtSeekMM.Text := '0' + edtSeekMM.Text;
+     if edtSeekSS.Value < 10 then edtSeekSS.Text := '0' + edtSeekSS.Text;
+
+     commandline:=replaceparam(commandline,'-ss','-ss ' + edtSeekHH.Text + ':' + edtSeekMM.Text + ':' + edtSeekSS.Text);
+   end;
+
+   if edtTTRHH.Value + edtTTRMM.Value + edtTTRSS.Value > 0 then
+   begin
+     ignorepreview := true;
+     if edtTTRMM.Value < 10 then edtTTRMM.Text := '0' + edtTTRMM.Text;
+     if edtTTRSS.Value < 10 then edtTTRSS.Text := '0' + edtTTRSS.Text;
+
+     commandline:=replaceparam(commandline,'-t','-t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text);
+   end;
+
+
    if commandlineparams.Text <> '' then
            commandline += ' ' + commandlineparams.text;
 
-                 // preview
-   if preview then commandline += ' -ss 00:01:00 -t 00:00:30';
+   // preview
+   // if -ss and -t are already set, ignore the following parameter.
+   if (preview = true) and (ignorepreview = false) then
+   begin
+     commandline += ' -ss 00:01:00 -t 00:00:30';
+   end;
+
 
                  // cropping
    if edtCropBottom.Text <> '' then
