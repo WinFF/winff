@@ -3,7 +3,7 @@ object Form1: TForm1
   Height = 634
   Top = 135
   Width = 674
-  ActiveControl = Vidbitrate
+  ActiveControl = pnlTop
   AllowDropFiles = True
   Caption = 'WinFF'
   ClientHeight = 609
@@ -323,9 +323,9 @@ object Form1: TForm1
   LCLVersion = '0.9.28.2'
   object Label2: TLabel
     Left = 0
-    Height = 19
+    Height = 20
     Top = 0
-    Width = 6
+    Width = 7
     ParentColor = False
   end
   object pnlMain: TPanel
