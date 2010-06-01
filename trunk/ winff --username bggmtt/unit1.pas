@@ -1625,8 +1625,55 @@ begin                                     // get setup
            commandline:=replaceparam(commandline,'-b','-b ' + vidbitrate.text+'kb');
    if vidframerate.Text <> '' then
            commandline:=replaceparam(commandline,'-r','-r ' + vidframerate.Text);
+
+// Inserting Crop Routine here as per Issue 77 on code.google.com
+// Changed by Ian V1.3
+
+// cropping
+   if edtCropBottom.Text <> '' then
+      begin
+       cb:=strtoint(edtcropbottom.text);
+       if cb mod 2 = 1 then cb := cb-1;
+       edtcropbottom.text := inttostr(cb);
+       if edtcropbottom.text <> '0' then commandline := commandline + ' -cropbottom ' + edtCropBottom.Text + ' ';
+      end;
+
+   if edtCropTop.Text <> '' then
+     begin
+       ct:=strtoint(edtcroptop.text);
+       if ct mod 2 = 1 then ct := ct-1;
+       edtcroptop.text := inttostr(ct);
+       if edtcroptop.text <> '0' then commandline += ' -croptop ' + edtCropTop.Text + ' ';
+     end;
+
+   if edtCropLeft.Text <> '' then
+     begin
+       cl:=strtoint(edtcropleft.text);
+       if cl mod 2 = 1 then cl := cl-1;
+       edtcropleft.text := inttostr(cl);
+       if edtcropleft.text <> '0' then commandline += ' -cropleft ' + edtCropLeft.Text + ' ';
+     end;
+
+   if edtCropRight.Text <> '' then
+     begin
+       cr:=strtoint(edtcropright.text);
+       if cr mod 2 = 1 then cr := cr-1;
+       edtcropright.text := inttostr(cr);
+       if edtcropright.text <> '0' then commandline += ' -cropright ' + edtCropRight.Text + ' ';
+     end;
+
+
+
    if (VidsizeX.Text <>'') AND (VidsizeY.Text <>'') then
-           commandline:=replaceparam(commandline,'-s','-s ' + VidsizeX.Text + 'x' + VidsizeY.Text);
+   begin
+        // 1.2
+        //commandline:=replaceparam(commandline,'-s','-s ' + VidsizeX.Text + 'x' + VidsizeY.Text);
+        //1.3
+        commandline:=replaceparam(commandline,'-s','');
+        commandline += ' -s ' + VidsizeX.Text + 'x' + VidsizeY.Text + ' ';
+
+   end;
+
    if edtAspectRatio.Text <> '' then
            commandline:=replaceparam(commandline,'-aspect','-aspect ' + edtAspectRatio.Text);
    if audbitrate.Text <> '' then
@@ -1677,38 +1724,6 @@ begin                                     // get setup
    end;
 
 
-                 // cropping
-   if edtCropBottom.Text <> '' then
-      begin
-       cb:=strtoint(edtcropbottom.text);
-       if cb mod 2 = 1 then cb := cb-1;
-       edtcropbottom.text := inttostr(cb);
-       if edtcropbottom.text <> '0' then commandline := commandline + ' -cropbottom ' + edtCropBottom.Text + ' ';
-      end;
-
-   if edtCropTop.Text <> '' then
-     begin
-       ct:=strtoint(edtcroptop.text);
-       if ct mod 2 = 1 then ct := ct-1;
-       edtcroptop.text := inttostr(ct);
-       if edtcroptop.text <> '0' then commandline += ' -croptop ' + edtCropTop.Text + ' ';
-     end;
-
-   if edtCropLeft.Text <> '' then
-     begin
-       cl:=strtoint(edtcropleft.text);
-       if cl mod 2 = 1 then cl := cl-1;
-       edtcropleft.text := inttostr(cl);
-       if edtcropleft.text <> '0' then commandline += ' -cropleft ' + edtCropLeft.Text + ' ';
-     end;
-
-   if edtCropRight.Text <> '' then
-     begin
-       cr:=strtoint(edtcropright.text);
-       if cr mod 2 = 1 then cr := cr-1;
-       edtcropright.text := inttostr(cr);
-       if edtcropright.text <> '0' then commandline += ' -cropright ' + edtCropRight.Text + ' ';
-     end;
                                            // build batch file
    thetime :=now;
    batfile := 'ff' + FormatDateTime('yymmddhhnnss',thetime) +
