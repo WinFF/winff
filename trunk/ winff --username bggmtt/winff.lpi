@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <CONFIG>
   <ProjectOptions>
-    <PathDelim Value="/"/>
     <Version Value="7"/>
     <General>
       <Flags>
@@ -60,12 +59,12 @@
       </Unit0>
       <Unit1>
         <Filename Value="unit1.pas"/>
-        <ComponentName Value="Form1"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="2" Y="1001"/>
-        <TopLine Value="996"/>
+        <CursorPos X="1" Y="822"/>
+        <TopLine Value="803"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Bookmarks Count="2">
@@ -76,23 +75,27 @@
       </Unit1>
       <Unit2>
         <Filename Value="unit2.pas"/>
-        <ComponentName Value="Form2"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit2"/>
         <CursorPos X="1" Y="63"/>
         <TopLine Value="63"/>
+        <EditorIndex Value="2"/>
         <UsageCount Value="210"/>
+        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="unit3.pas"/>
-        <ComponentName Value="Form3"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form3"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit3"/>
-        <CursorPos X="40" Y="122"/>
-        <TopLine Value="96"/>
+        <CursorPos X="42" Y="102"/>
+        <TopLine Value="92"/>
+        <EditorIndex Value="3"/>
         <UsageCount Value="201"/>
+        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="usr/share/lazarus/lcl/include/application.inc"/>
@@ -128,8 +131,8 @@
       </Unit8>
       <Unit9>
         <Filename Value="unit4.pas"/>
-        <ComponentName Value="Form4"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form4"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit4"/>
         <CursorPos X="48" Y="202"/>
@@ -138,8 +141,8 @@
       </Unit9>
       <Unit10>
         <Filename Value="unit5.pas"/>
-        <ComponentName Value="Form5"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form5"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit5"/>
         <CursorPos X="1" Y="82"/>
@@ -181,14 +184,16 @@
       </Unit15>
       <Unit16>
         <Filename Value="unit6.pas"/>
+        <IsPartOfProject Value="True"/>
         <ComponentName Value="Form6"/>
         <HasResources Value="True"/>
-        <IsPartOfProject Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unit6"/>
         <CursorPos X="1" Y="165"/>
         <TopLine Value="133"/>
-        <UsageCount Value="82"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="83"/>
+        <Loaded Value="True"/>
       </Unit16>
       <Unit17>
         <Filename Value="../../../usr/lib/lazarus/lcl/interfaces/gtk2/interfaces.pas"/>
@@ -279,7 +284,7 @@
         <UsageCount Value="8"/>
       </Unit29>
     </Units>
-    <JumpHistory Count="17" HistoryIndex="16">
+    <JumpHistory Count="19" HistoryIndex="18">
       <Position1>
         <Filename Value="unit1.pas"/>
         <Caret Line="59" Column="148" TopLine="31"/>
@@ -346,16 +351,24 @@
       </Position16>
       <Position17>
         <Filename Value="unit1.pas"/>
-        <Caret Line="1549" Column="43" TopLine="1654"/>
+        <Caret Line="1016" Column="91" TopLine="924"/>
       </Position17>
+      <Position18>
+        <Filename Value="unit3.pas"/>
+        <Caret Line="122" Column="41" TopLine="96"/>
+      </Position18>
+      <Position19>
+        <Filename Value="unit3.pas"/>
+        <Caret Line="102" Column="42" TopLine="92"/>
+      </Position19>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="8"/>
     <SearchPaths>
       <OtherUnitFiles Value="$(LazarusDir)/components/codetools/units/$(TargetCPU)-$(TargetOS)/"/>
-      <LCLWidgetType Value="gtk2"/>
       <SrcPath Value="$(LazarusDir)/lcl/;$(LazarusDir)/lcl/interfaces/$(LCLWidgetType)/"/>
+      <LCLWidgetType Value="gtk2"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>

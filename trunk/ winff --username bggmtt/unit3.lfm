@@ -52,22 +52,22 @@ object Form3: TForm3
   LCLVersion = '0.9.28.2'
   object Notebook1: TNotebook
     Left = 0
-    Height = 249
+    Height = 265
     Top = 0
     Width = 373
     Align = alClient
-    PageIndex = 2
+    PageIndex = 0
     TabOrder = 0
     object Page1: TPage
       Caption = 'WinFF'
-      ClientWidth = 367
-      ClientHeight = 214
+      ClientWidth = 369
+      ClientHeight = 234
       object Label1: TLabel
         Left = 60
-        Height = 16
+        Height = 18
         Top = 10
-        Width = 52
-        Caption = 'WinFF 1.2'
+        Width = 61
+        Caption = 'WinFF 1.3'
         ParentColor = False
         OnClick = Label1Click
       end
@@ -158,18 +158,18 @@ object Form3: TForm3
       end
       object Label2: TLabel
         Left = 4
-        Height = 16
+        Height = 18
         Top = 64
-        Width = 150
+        Width = 185
         Caption = 'Copyright 2006-2009 GPL V3'
         ParentColor = False
       end
       object Label3: TLabel
         Left = 4
-        Height = 16
+        Height = 18
         Top = 90
-        Width = 117
-        Caption = 'Matthew Weatherford'
+        Width = 250
+        Caption = 'Matthew Weatherford and Ian Stoffberg'
         Font.Color = clBlue
         ParentColor = False
         ParentFont = False
@@ -178,9 +178,9 @@ object Form3: TForm3
       object Label4: TLabel
         Cursor = crHandPoint
         Left = 60
-        Height = 16
+        Height = 18
         Top = 26
-        Width = 114
+        Width = 122
         Caption = 'http://www.winff.org'
         Font.Color = clBlue
         ParentColor = False
@@ -189,28 +189,17 @@ object Form3: TForm3
       end
       object Label11: TLabel
         Left = 4
-        Height = 16
+        Height = 18
         Top = 114
-        Width = 221
+        Width = 263
         Caption = 'Debian/Ubuntu Packaging by Paul Gevers'
         ParentColor = False
       end
-      object Label12: TLabel
-        Left = 4
-        Height = 16
-        Top = 138
-        Width = 220
-        Caption = 'Additional Programming by Ian Stoffberg'
-        Font.Color = clBlue
-        ParentColor = False
-        ParentFont = False
-        OnClick = Label12Click
-      end
       object Label13: TLabel
         Left = 4
-        Height = 16
-        Top = 178
-        Width = 33
+        Height = 18
+        Top = 173
+        Width = 40
         Caption = 'Gmaq'
         Font.Color = clBlue
         ParentColor = False
@@ -219,38 +208,38 @@ object Form3: TForm3
       end
       object Label14: TLabel
         Left = 4
-        Height = 16
-        Top = 162
-        Width = 139
+        Height = 18
+        Top = 157
+        Width = 166
         Caption = 'High Quality Presets From'
         ParentColor = False
       end
       object Label15: TLabel
         Left = 4
-        Height = 16
-        Top = 210
-        Width = 177
+        Height = 18
+        Top = 205
+        Width = 213
         Caption = 'Icons and Logo by Alex Klepatsch'
         ParentColor = False
       end
       object Label16: TLabel
         Left = 52
-        Height = 16
-        Top = 178
-        Width = 37
+        Height = 18
+        Top = 174
+        Width = 44
         Caption = 'JNavas'
         ParentColor = False
       end
     end
     object Page2: TPage
       Caption = 'FFmpeg'
-      ClientWidth = 367
-      ClientHeight = 214
+      ClientWidth = 369
+      ClientHeight = 234
       object Label5: TLabel
         Left = 4
         Height = 18
         Top = 10
-        Width = 54
+        Width = 52
         Caption = 'FFmpeg'
         ParentColor = False
         ParentFont = False
@@ -259,7 +248,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 34
-        Width = 175
+        Width = 168
         Caption = 'Trademark Fabrice Belllard'
         ParentColor = False
       end
@@ -268,7 +257,7 @@ object Form3: TForm3
         Left = 6
         Height = 18
         Top = 50
-        Width = 110
+        Width = 109
         Caption = 'http://ffmpeg.org'
         Font.Color = clBlue
         Font.Height = -13
@@ -280,7 +269,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 82
-        Width = 181
+        Width = 171
         Caption = 'FFmpeg Windows Builds by'
         ParentColor = False
       end
@@ -288,7 +277,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 98
-        Width = 84
+        Width = 80
         Caption = 'Ramiro Polla'
         ParentColor = False
       end
@@ -297,7 +286,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 114
-        Width = 171
+        Width = 170
         Caption = 'http://ffmpeg.arrozcru.org/'
         Font.Color = clBlue
         ParentColor = False
@@ -307,13 +296,13 @@ object Form3: TForm3
     end
     object Page3: TPage
       Caption = 'Thanks'
-      ClientWidth = 367
-      ClientHeight = 214
+      ClientWidth = 369
+      ClientHeight = 234
       object ListBox1: TListBox
         Left = 0
-        Height = 214
+        Height = 234
         Top = 0
-        Width = 367
+        Width = 369
         Align = alClient
         ClickOnSelChange = False
         ItemHeight = 0
@@ -324,17 +313,17 @@ object Form3: TForm3
   end
   object Panel1: TPanel
     Left = 0
-    Height = 50
-    Top = 249
+    Height = 34
+    Top = 265
     Width = 373
     Align = alBottom
-    ClientHeight = 50
+    ClientHeight = 34
     ClientWidth = 373
     TabOrder = 1
     object Button1: TButton
       Left = 152
       Height = 25
-      Top = 12
+      Top = 4
       Width = 75
       BorderSpacing.InnerBorder = 4
       Caption = 'OK'
