@@ -37,7 +37,6 @@ type
     Label1: TLabel;
     Label10: TLabel;
     Label11: TLabel;
-    Label12: TLabel;
     Label13: TLabel;
     Label14: TLabel;
     Label15: TLabel;
@@ -120,6 +119,17 @@ begin                  // do translations
     listbox1.items.Add('Γεώργιος Γεωργάς');
     listbox1.items.add('Benny Beat');
     listbox1.items.add('Göran Hanell');
+    listbox1.items.add('Muhammad Negm');
+    listbox1.items.add('Pablo Ramírez');
+    listbox1.items.add('Miguel Anxo Bouzada');
+    listbox1.items.add('Sponga Tamas');
+    listbox1.items.add('Arlindo Pereira');
+    listbox1.items.add('Américo Monteiro');
+    listbox1.items.add('Joe Black');
+    listbox1.items.add('Göran Hannel');
+    listbox1.items.add('大宝(DaBao)');
+
+
 
 end;
 
@@ -131,7 +141,7 @@ end;
 
 procedure TForm3.Label12Click(Sender: TObject);
 begin
-form1.LaunchBrowser('http://www.stoffberg.com');
+form1.LaunchBrowser('http://istoff.blogspot.com');
 end;
 
 procedure TForm3.Label13Click(Sender: TObject);
