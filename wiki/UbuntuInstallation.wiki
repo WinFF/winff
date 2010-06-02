@@ -5,26 +5,26 @@
 
 Until the packages are completely accepted (and after that for faster updates) Ubuntu packages are available at [http://winff.org/] and at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
 
-Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibuntu] for Hardy users.
+Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibuntu] for Hardy and Lucid users.
 
 = Details Winff =
 
 The Ubuntu repositories come in two flavors. We provide our repository at [http://winff.org] or you can use the repository at [https://launchpad.net/~paul-climbing/+archive Launchpad]. We have not received any complains about our prive repo, so that is recommended, but for redundancy we mention Launchpad as well (however the later one might contain experimental packages).
 
-I describe to procedures, one using the command line, the other using synaptic. First the command line.
+I describe two procedures, one using the command line, the other using synaptic. First the command line.
 
 == Command line ==
-If you use the signed repository you need to accept the key [http://winff.org/ubuntu/AAFE086A.gpg AAFE086A]. To get that installed you can run:
+If you use the winff.org repository you need to accept the key [http://winff.org/ubuntu/AAFE086A.gpg AAFE086A]. To get that installed you can run:
 
 {{{
 wget --quiet --output-document=- "http://winff.org/ubuntu/AAFE086A.gpg" | sudo apt-key add -
 }}}
 
-After that you need to add the repository to apt. You can do that by entering the line (1) in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
+After that you need to add the repository to apt. You can do that by entering the line marked (1) below in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
 {{{
-echo "deb http://winff.org/ubuntu karmic universe" | sudo tee /etc/apt/sources.list.d/winff.list
+echo "deb http://winff.org/ubuntu lucid universe" | sudo tee /etc/apt/sources.list.d/winff.list
 }}}
-Of course you need to change karmic to hardy or intrepid or jaunty if you have that. (You can also just add the line to /etc/apt/sources.list .)
+Of course you need to change lucide to karmic or hardy or intrepid or jaunty if you have that. (You can also just add the line to /etc/apt/sources.list .)
 
 You can now install WinFF directly by running:
 {{{
@@ -40,6 +40,11 @@ jaunty users also want to run:
 {{{
 sudo apt-get install libavcodec-unstripped-52 
 }}}
+
+karmic and lucid users also want to run:
+{{{
+sudo apt-get install libavcodec-extra-52 
+}}}
 ----
 *If you are having problems* with the described procedure, please file a bug in our [http://code.google.com/p/winff/issues/list bug tracker]. Please include in the bug the output of 
 {{{
@@ -49,10 +54,10 @@ sudo apt-get update && sudo apt-get install winff
 }}}
 ----
 
-(1) `deb http://winff.org/ubuntu karmic universe`
+(1) `deb http://winff.org/ubuntu lucid universe`
 _(or if you prefer the PPA:)_ 
-`deb http://ppa.launchpad.net/paul-climbing/ubuntu karmic main`
-(replace karmic with your release)
+`deb http://ppa.launchpad.net/paul-climbing/ubuntu lucid main`
+(replace lucid with your release)
 
 == Synaptic ==
 
@@ -68,11 +73,11 @@ Now go to the "Third-party Software" tab and select "add"
 
 http://winff.org/images/screenshots/synaptic_add_repo-win.png
 
-In the next field type (or copy/paste) `deb http://winff.org/ubuntu jaunty universe` (change jaunty to *your* release) and press "Add source".
+In the next field type (or copy/paste) `deb http://winff.org/ubuntu lucid universe` (change lucid to *your* release) and press "Add source".
 
 http://winff.org/images/screenshots/synaptic_add_repo-field.png
 
-Now, after you press "Reload" you can just choose winff from the list. If you have winff installed from Matt's package file, you should uninstall that first.
+Now, after you press "Reload" you can just choose winff from the list. If you have winff installed from a very old version of Matt's package file, you should uninstall that first.
 
 = Warning non standard ffmpeg =
 If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (3) after installation. If you find that your presets don't work, try the other presets files that are available [http://code.google.com/p/winff/downloads/list here].
@@ -91,7 +96,7 @@ Lucid contains a pretty complete ffmpeg already, but you probably want to have t
 
 = Details ffmpeg for Karmic and Jaunty =
 
-Karmic and Jaunty contain a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed which should pull in the 'unstripped' versions of several libraries. You can also look for them directly: libavcodec-unstripped-52, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
+Karmic and Jaunty contain a pretty complete ffmpeg already, but you probably want to have the 'unstripped' versions of several libraries. You can look for them directly: libavcodec-unstripped-52, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
 
 = Details ffmpeg for Interpid =
 
