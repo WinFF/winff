@@ -129,7 +129,7 @@ msgstr "(<nombre>kb) le debit du flux désiré en kilobits par seconde"
 
 #: unit1.rshintaudiochannels
 msgid "(<integer>) number of audio channels"
-msgstr "(<nombre>) nombre de cannaux audio"
+msgstr "(<nombre>) nombre de canaux audio"
 
 #: unit1.rshintclear
 msgid "remove all files from the list"
@@ -202,7 +202,7 @@ msgstr "Convertir en..."
 
 #: unit1.rslabel10
 msgid "Audio Channels"
-msgstr "Cannaux audio"
+msgstr "Canaux audio"
 
 #: unit1.rslabel11
 #| msgid "Output Folder"
