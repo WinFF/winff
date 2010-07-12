@@ -23,15 +23,22 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Buttons, gettext, translations;
+  ClipBrd,Buttons, gettext, translations, ExtCtrls;
 
 type
 
   { TForm5 }
 
   TForm5 = class(TForm)
+    btnClip: TButton;
+    btnSave: TButton;
     Button1: TButton;
     Memo1: TMemo;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    SaveDialog1: TSaveDialog;
+    procedure btnClipClick(Sender: TObject);
+    procedure btnSaveClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormResize(Sender: TObject);
@@ -47,7 +54,9 @@ var
 Resourcestring
   rsform5='FFmpeg Command Line';
   rsbutton1='OK';
-  
+  rsClip='Clipboard';
+  rsClip2='Done';
+  rsSave='Save';
 implementation
 
 uses unit1;
@@ -59,6 +68,9 @@ begin
 TranslateUnitResourceStrings('unit5', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
   form5.Caption:=rsform5;
   button1.Caption:=rsbutton1;
+  btnClip.Caption:=rsClip;
+  btnSave.Caption:=rsSave;
+
 
 
 end;
@@ -66,6 +78,25 @@ end;
 procedure TForm5.Button1Click(Sender: TObject);
 begin
   form5.Close;
+end;
+
+procedure TForm5.btnClipClick(Sender: TObject);
+begin
+     Clipboard.AsText:=memo1.text; // can copy just one line, but what if its 2-pass?
+     btnClip.Caption := rsClip2;
+     application.processmessages;
+     sleep(500);
+     btnClip.Caption := rsClip;
+     application.processmessages;
+end;
+
+procedure TForm5.btnSaveClick(Sender: TObject);
+begin
+  If SaveDialog1.execute then
+  begin
+       memo1.lines.savetofile(SaveDialog1.FileName);
+
+  end;
 end;
 
 procedure TForm5.FormResize(Sender: TObject);
