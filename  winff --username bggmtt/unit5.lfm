@@ -1,12 +1,12 @@
 object Form5: TForm5
   Left = 499
-  Height = 378
+  Height = 440
   Top = 182
-  Width = 386
+  Width = 528
   ActiveControl = Memo1
   Caption = 'FFmpeg Command Line'
-  ClientHeight = 378
-  ClientWidth = 386
+  ClientHeight = 440
+  ClientWidth = 528
   Icon.Data = {
     7E04000000000100010010100000010020006804000016000000280000001000
     0000200000000100200000000000000400006400000064000000000000000000
@@ -51,10 +51,11 @@ object Form5: TForm5
   Position = poMainFormCenter
   LCLVersion = '0.9.28.2'
   object Memo1: TMemo
-    Left = 8
-    Height = 322
-    Top = 8
-    Width = 368
+    Left = 0
+    Height = 390
+    Top = 0
+    Width = 528
+    Align = alClient
     Lines.Strings = (
       ''
     )
@@ -62,14 +63,60 @@ object Form5: TForm5
     TabOrder = 0
     WordWrap = False
   end
-  object Button1: TButton
-    Left = 160
-    Height = 25
-    Top = 336
-    Width = 75
-    BorderSpacing.InnerBorder = 4
-    Caption = 'OK'
-    OnClick = Button1Click
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 390
+    Width = 528
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 50
+    ClientWidth = 528
     TabOrder = 1
+    object Panel2: TPanel
+      Left = 0
+      Height = 50
+      Top = 0
+      Width = 320
+      Align = alLeft
+      BevelOuter = bvNone
+      ClientHeight = 50
+      ClientWidth = 320
+      TabOrder = 0
+      object btnSave: TButton
+        Left = 160
+        Height = 25
+        Top = 18
+        Width = 147
+        BorderSpacing.InnerBorder = 4
+        Caption = 'Copy to Clipboard'
+        OnClick = btnSaveClick
+        TabOrder = 0
+      end
+      object btnClip: TButton
+        Left = 8
+        Height = 25
+        Top = 18
+        Width = 147
+        BorderSpacing.InnerBorder = 4
+        Caption = 'Copy to Clipboard'
+        OnClick = btnClipClick
+        TabOrder = 1
+      end
+    end
+    object Button1: TButton
+      Left = 434
+      Height = 25
+      Top = 18
+      Width = 75
+      BorderSpacing.InnerBorder = 4
+      Caption = 'OK'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    left = 60
+    top = 110
   end
 end
