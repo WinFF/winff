@@ -31,13 +31,16 @@ type
 
   TForm5 = class(TForm)
     btnClip: TButton;
+    btnContinue: TButton;
     btnSave: TButton;
     Button1: TButton;
     Memo1: TMemo;
     Panel1: TPanel;
     Panel2: TPanel;
+    Panel3: TPanel;
     SaveDialog1: TSaveDialog;
     procedure btnClipClick(Sender: TObject);
+    procedure btnContinueClick(Sender: TObject);
     procedure btnSaveClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -46,6 +49,7 @@ type
     { private declarations }
   public
     { public declarations }
+    scriptfilename : string;
   end; 
 
 var
@@ -55,8 +59,9 @@ Resourcestring
   rsform5='FFmpeg Command Line';
   rsbutton1='OK';
   rsClip='Clipboard';
-  rsClip2='Done';
+  rsClip2='Close';
   rsSave='Save';
+  rsContinue='Continue';
 implementation
 
 uses unit1;
@@ -70,8 +75,9 @@ TranslateUnitResourceStrings('unit5', PODirectory + 'winff.%s.po', unit1.Lang, u
   button1.Caption:=rsbutton1;
   btnClip.Caption:=rsClip;
   btnSave.Caption:=rsSave;
-
-
+  btnContinue.Caption:=rsContinue;
+  application.processmessages;
+  btnSave.Left := btnClip.Left + btnClip.Width + 4;
 
 end;
 
@@ -90,6 +96,11 @@ begin
      application.processmessages;
 end;
 
+procedure TForm5.btnContinueClick(Sender: TObject);
+begin
+  Memo1.lines.SaveToFile(ScriptFilename);
+end;
+
 procedure TForm5.btnSaveClick(Sender: TObject);
 begin
   If SaveDialog1.execute then
@@ -105,8 +116,9 @@ begin
   if form5.height < 150 then form5.height:=150;
   memo1.Height:= form5.Height -56;
   memo1.width:= form5.width -20;
-  button1.Left:=form5.Width div 2 - 36;
-  button1.top:=form5.Height-40;
+  // button1 position determined by panels
+  // button1.Left:=form5.Width div 2 - 36;
+  // button1.top:=form5.Height-40;
 end;
 
 initialization
