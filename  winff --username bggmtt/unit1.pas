@@ -1546,6 +1546,7 @@ thetime: tdatetime;
 scriptprocess:tprocess;
 scriptpriority:tprocesspriority;
 ignorepreview:boolean;
+resmod : integer;
 begin                                     // get setup
    scriptprocess:= TProcess.Create(nil);
 
@@ -1830,10 +1831,32 @@ begin                                     // get setup
      scriptprocess.execute;
     end
    else
-    begin
+   begin
+      // if continue pressed, attempt to execute user modified script;
       unit5.Form5.Memo1.Lines:=script;
-      unit5.Form5.Show;
-    end;
+      form5.scriptfilename:= presetspath + batfile;
+      resmod := unit5.Form5.ShowModal;
+      if resmod = 1 then     // Continue Clicked;
+      begin
+
+
+       {$ifdef unix}
+       fpchmod(presetspath + batfile,&777);
+       {$endif}
+
+       {$ifdef win32}
+       qterm := '"' + terminal + '"';
+       {$endif}
+
+       {$ifdef unix}qterm := terminal;{$endif}
+                                                        // do it
+       {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
+       {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
+
+       scriptprocess.execute;
+
+      end;
+   end;
 
     script.Free;
     // try                            // to set dest directory in preset

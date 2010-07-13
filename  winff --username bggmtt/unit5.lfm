@@ -1,12 +1,12 @@
 object Form5: TForm5
   Left = 499
-  Height = 440
+  Height = 386
   Top = 182
-  Width = 528
+  Width = 654
   ActiveControl = Memo1
   Caption = 'FFmpeg Command Line'
-  ClientHeight = 440
-  ClientWidth = 528
+  ClientHeight = 386
+  ClientWidth = 654
   Icon.Data = {
     7E04000000000100010010100000010020006804000016000000280000001000
     0000200000000100200000000000000400006400000064000000000000000000
@@ -52,12 +52,12 @@ object Form5: TForm5
   LCLVersion = '0.9.28.2'
   object Memo1: TMemo
     Left = 0
-    Height = 390
+    Height = 336
     Top = 0
-    Width = 528
+    Width = 654
     Align = alClient
     Lines.Strings = (
-      ''
+      '`2'
     )
     ScrollBars = ssAutoBoth
     TabOrder = 0
@@ -66,53 +66,82 @@ object Form5: TForm5
   object Panel1: TPanel
     Left = 0
     Height = 50
-    Top = 390
-    Width = 528
+    Top = 336
+    Width = 654
     Align = alBottom
     BevelOuter = bvNone
     ClientHeight = 50
-    ClientWidth = 528
+    ClientWidth = 654
     TabOrder = 1
     object Panel2: TPanel
       Left = 0
       Height = 50
       Top = 0
-      Width = 320
-      Align = alLeft
+      Width = 472
+      Align = alClient
       BevelOuter = bvNone
       ClientHeight = 50
-      ClientWidth = 320
+      ClientWidth = 472
       TabOrder = 0
       object btnSave: TButton
-        Left = 160
-        Height = 25
-        Top = 18
-        Width = 147
+        Left = 144
+        Height = 35
+        Top = 8
+        Width = 54
+        Anchors = []
+        AutoSize = True
         BorderSpacing.InnerBorder = 4
-        Caption = 'Copy to Clipboard'
+        Caption = 'Save'
         OnClick = btnSaveClick
         TabOrder = 0
       end
       object btnClip: TButton
-        Left = 8
-        Height = 25
-        Top = 18
-        Width = 147
+        Left = 7
+        Height = 35
+        Top = 8
+        Width = 135
+        Anchors = []
+        AutoSize = True
         BorderSpacing.InnerBorder = 4
         Caption = 'Copy to Clipboard'
         OnClick = btnClipClick
         TabOrder = 1
       end
     end
-    object Button1: TButton
-      Left = 434
-      Height = 25
-      Top = 18
-      Width = 75
-      BorderSpacing.InnerBorder = 4
-      Caption = 'OK'
-      OnClick = Button1Click
+    object Panel3: TPanel
+      Left = 472
+      Height = 50
+      Top = 0
+      Width = 182
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 50
+      ClientWidth = 182
       TabOrder = 1
+      object Button1: TButton
+        Left = 96
+        Height = 35
+        Top = 11
+        Width = 40
+        Anchors = []
+        AutoSize = True
+        BorderSpacing.InnerBorder = 4
+        Caption = 'OK'
+        ModalResult = 2
+        OnClick = Button1Click
+        TabOrder = 0
+      end
+      object btnContinue: TButton
+        Left = 8
+        Height = 35
+        Top = 11
+        Width = 71
+        Anchors = []
+        Caption = 'Continue'
+        ModalResult = 1
+        OnClick = btnContinueClick
+        TabOrder = 1
+      end
     end
   end
   object SaveDialog1: TSaveDialog

@@ -6,7 +6,7 @@ object Form1: TForm1
   ActiveControl = pnlTop
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 611
+  ClientHeight = 609
   ClientWidth = 674
   Constraints.MinHeight = 350
   Constraints.MinWidth = 540
@@ -323,28 +323,28 @@ object Form1: TForm1
   LCLVersion = '0.9.28.2'
   object Label2: TLabel
     Left = 0
-    Height = 21
+    Height = 22
     Top = 0
-    Width = 8
+    Width = 9
     ParentColor = False
   end
   object pnlMain: TPanel
     Left = 0
-    Height = 373
+    Height = 371
     Top = 54
     Width = 674
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 373
+    ClientHeight = 371
     ClientWidth = 674
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
       Left = 0
-      Height = 193
+      Height = 191
       Top = 0
       Width = 674
       Align = alClient
@@ -358,7 +358,7 @@ object Form1: TForm1
     object pnlbottom: TPanel
       Left = 0
       Height = 180
-      Top = 193
+      Top = 191
       Width = 674
       Align = alBottom
       ClientHeight = 180
@@ -384,7 +384,7 @@ object Form1: TForm1
             Left = 13
             Height = 18
             Top = 1
-            Width = 85
+            Width = 84
             Caption = 'Convert to....'
             ParentColor = False
           end
@@ -392,7 +392,7 @@ object Form1: TForm1
             Left = 12
             Height = 18
             Top = 103
-            Width = 87
+            Width = 85
             Caption = 'Output folder'
             ParentColor = False
           end
@@ -400,13 +400,13 @@ object Form1: TForm1
             Left = 13
             Height = 18
             Top = 53
-            Width = 85
+            Width = 84
             Caption = 'Convert to....'
             ParentColor = False
           end
           object PresetBox: TComboBox
             Left = 13
-            Height = 31
+            Height = 27
             Top = 69
             Width = 472
             ItemHeight = 0
@@ -417,7 +417,7 @@ object Form1: TForm1
           end
           object DestFolder: TEdit
             Left = 12
-            Height = 27
+            Height = 25
             Top = 120
             Width = 439
             TabOrder = 2
@@ -436,7 +436,7 @@ object Form1: TForm1
           end
           object categorybox: TComboBox
             Left = 13
-            Height = 31
+            Height = 27
             Top = 17
             Width = 472
             ItemHeight = 0
@@ -1085,7 +1085,7 @@ object Form1: TForm1
   object pnlbottom2: TPanel
     Left = 0
     Height = 163
-    Top = 427
+    Top = 425
     Width = 674
     Align = alBottom
     ClientHeight = 163
@@ -1121,7 +1121,7 @@ object Form1: TForm1
             Left = 6
             Height = 18
             Top = 5
-            Width = 94
+            Width = 91
             Caption = 'Video Bit Rate'
             ParentColor = False
           end
@@ -1129,7 +1129,7 @@ object Form1: TForm1
             Left = 219
             Height = 18
             Top = 5
-            Width = 69
+            Width = 68
             Caption = 'Video Size'
             ParentColor = False
           end
@@ -1137,7 +1137,7 @@ object Form1: TForm1
             Left = 307
             Height = 18
             Top = 5
-            Width = 83
+            Width = 81
             Caption = 'Aspect Ratio'
             ParentColor = False
           end
@@ -1155,13 +1155,13 @@ object Form1: TForm1
             Left = 124
             Height = 18
             Top = 5
-            Width = 76
+            Width = 74
             Caption = 'Frame Rate'
             ParentColor = False
           end
           object Vidbitrate: TEdit
             Left = 6
-            Height = 27
+            Height = 25
             Top = 25
             Width = 104
             OnChange = VidbitrateChange
@@ -1169,37 +1169,37 @@ object Form1: TForm1
           end
           object Vidframerate: TEdit
             Left = 123
-            Height = 27
+            Height = 25
             Top = 25
             Width = 88
             TabOrder = 1
           end
           object VidsizeX: TEdit
             Left = 219
-            Height = 27
+            Height = 25
             Top = 25
             Width = 32
             TabOrder = 2
           end
           object edtAspectRatio: TEdit
             Left = 307
-            Height = 27
+            Height = 25
             Top = 25
             Width = 80
             TabOrder = 4
           end
           object VidsizeY: TEdit
             Left = 265
-            Height = 27
+            Height = 25
             Top = 25
             Width = 32
             TabOrder = 3
           end
           object cbx2Pass: TCheckBox
             Left = 6
-            Height = 22
+            Height = 21
             Top = 54
-            Width = 66
+            Width = 65
             Caption = '2 pass'
             Color = clForm
             ParentColor = False
@@ -1207,9 +1207,9 @@ object Form1: TForm1
           end
           object cbxDeinterlace: TCheckBox
             Left = 122
-            Height = 22
+            Height = 21
             Top = 55
-            Width = 99
+            Width = 96
             Caption = 'Deinterlace'
             Color = clForm
             ParentColor = False
@@ -1510,7 +1510,7 @@ object Form1: TForm1
   object StatusBar1: TStatusBar
     Left = 0
     Height = 21
-    Top = 590
+    Top = 588
     Width = 674
     AutoHint = True
     Panels = <>
