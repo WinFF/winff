@@ -5,7 +5,10 @@ v1.3.0
 -----
 cropping is applied to the input file instead of output
 added ability to edit/copy/save script before executing
-added 'seek to' and 'time to record' to cropping tab
+added 'seek to' and 'time to record' to cropping options
+added 'volume' and 'async' to audio options
+added Galician translation
+added Arabic translation
 high quality google android presets
 
 v1.2.0
