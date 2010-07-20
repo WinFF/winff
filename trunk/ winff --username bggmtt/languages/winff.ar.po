@@ -49,6 +49,9 @@ msgid "Clear"
 msgstr "تنظيف"
 
 #: unit1.rsclose
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit1.rsclose"
 msgid "Close"
 msgstr "إغلاق"
 
@@ -135,6 +138,10 @@ msgstr " (<عدد صحيح> ك.ب) المعدل المستهدف بالكيلو 
 msgid "(<integer>) number of audio channels"
 msgstr "(<عدد صحيح>) عدد قنوات الصوت"
 
+#: unit1.rshintaudiosync
+msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+msgstr ""
+
 #: unit1.rshintclear
 msgid "remove all files from the list"
 msgstr "إزالة كل الملفات من القائمة"
@@ -175,6 +182,10 @@ msgstr "معاينة الملف المصدر المختار باستخدام ffp
 msgid "preview using the output settings"
 msgstr "المعاينة باستخدام أعدادات الخرج"
 
+#: unit1.rshintrecord
+msgid "<hh:mm:ss> - Amount of time to record"
+msgstr ""
+
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
 msgstr "إزالة الملفات المحددة من القائمة"
@@ -182,6 +193,14 @@ msgstr "إزالة الملفات المحددة من القائمة"
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<عدد صحيح>) تردد معاينة الصوت بالهرتز"
+
+#: unit1.rshintseek
+msgid "<hh:mm:ss> - Begin recording at start time"
+msgstr ""
+
+#: unit1.rshinttime
+msgid "Make sure that the start time + time to record is less than total length of job"
+msgstr ""
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
@@ -191,6 +210,10 @@ msgstr "(<عدد صحيح>كيلوبت) المعدل المستهدف بالكي
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgstr "(<عدد صحيح> × <عدد صحيح>) مجموع بكسلات البيانات.صالح للترميزات التي لا تدعم مقياس عدد السطور (PAR) ذلك يحجم الفيديو عند عرضه"
+
+#: unit1.rshintvolume
+msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
+msgstr ""
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -221,6 +244,28 @@ msgstr "نوع المشغل"
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
 msgstr "مجلد الخرج"
+
+#: unit1.rslabel20
+msgid "Volume"
+msgstr ""
+
+#: unit1.rslabel21
+#, fuzzy
+#| msgid "Audio Settings"
+msgid "Audio Sync"
+msgstr "أعدادات الصوت"
+
+#: unit1.rslabel22
+msgid "Seek to"
+msgstr ""
+
+#: unit1.rslabel23
+msgid "Time to Record"
+msgstr ""
+
+#: unit1.rslabel24
+msgid "Hours / Minutes / Seconds"
+msgstr ""
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -285,7 +330,7 @@ msgstr "حول"
 msgid "Documentation"
 msgstr "وثائق"
 
-#: unit1.rsmitWinff
+#: unit1.rsmitwinff
 msgid "WinFF Website"
 msgstr "موقع WinFF"
 
@@ -358,6 +403,12 @@ msgstr "معاينة"
 #: unit1.rsremovebtn
 msgid "Remove"
 msgstr "أزل"
+
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "وجهة المجلد الافتراضي"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -468,6 +519,9 @@ msgid "Label must be unique."
 msgstr "الوسم لابد أن يكون فريدا"
 
 #: unit2.rsokbtn
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit2.rsokbtn"
 msgid "Save"
 msgstr "حفظ"
 
@@ -571,7 +625,9 @@ msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "خيارات للطرفية (-e في حالة طرفية اكس أو -x في حالة طرفية گنوم)"
 
 #: unit4.rslabel8
-msgctxt "unit4.rslabel8"
+#, fuzzy
+#| msgctxt "unit4.rslabel8"
+#| msgid "Priority"
 msgid "Priority"
 msgstr "أولوية"
 
@@ -604,9 +660,33 @@ msgctxt "unit5.rsbutton1"
 msgid "OK"
 msgstr "موافق"
 
+#: unit5.rsclip
+msgid "Clipboard"
+msgstr ""
+
+#: unit5.rsclip2
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit5.rsclip2"
+msgid "Close"
+msgstr "إغلاق"
+
+#: unit5.rscontinue
+#, fuzzy
+#| msgid "Converting"
+msgid "Continue"
+msgstr "جاري التحويل"
+
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "سطر أوامر FFmpeg"
+
+#: unit5.rssave
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit5.rssave"
+msgid "Save"
+msgstr "حفظ"
 
 #: unit6.rscancelbtn
 msgctxt "unit6.rscancelbtn"
@@ -625,4 +705,3 @@ msgstr "تصدير النسب"
 #: unit6.rslabel1
 msgid "Choose presets to export"
 msgstr "اختار النسب التي تود تصديرها"
-

@@ -43,11 +43,13 @@ msgid "Clear"
 msgstr "Azzera"
 
 #: unit1.rsclose
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit1.rsclose"
 msgid "Close"
 msgstr "Chiudi"
 
 #: unit1.rsclosebtn
-#| msgid "Options"
 msgctxt "unit1.rsclosebtn"
 msgid "Options"
 msgstr "Opzioni"
@@ -81,7 +83,6 @@ msgid "Left"
 msgstr "Sinistra"
 
 #: unit1.rscropright
-#| msgid "High"
 msgid "Right"
 msgstr "Destra"
 
@@ -106,7 +107,6 @@ msgid "File"
 msgstr "File"
 
 #: unit1.rsgroupbox1
-#| msgid "Additional Options"
 msgctxt "unit1.rsgroupbox1"
 msgid "Additional Options"
 msgstr "Opzioni avanzate"
@@ -131,6 +131,10 @@ msgstr "(<integer>kb) il flusso in kilobit/secondo utilizzato"
 #: unit1.rshintaudiochannels
 msgid "(<integer>) number of audio channels"
 msgstr "(<integer>) numero dei canali audio"
+
+#: unit1.rshintaudiosync
+msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+msgstr ""
 
 #: unit1.rshintclear
 msgid "remove all files from the list"
@@ -172,6 +176,10 @@ msgstr "anteprima del file sorgente con FFplay (buon test per verificare se la c
 msgid "preview using the output settings"
 msgstr "anteprima con le impostazioni di conversione"
 
+#: unit1.rshintrecord
+msgid "<hh:mm:ss> - Amount of time to record"
+msgstr ""
+
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
 msgstr "rimuove i file selezioniati dall'elenco"
@@ -179,6 +187,14 @@ msgstr "rimuove i file selezioniati dall'elenco"
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<integer>) la frequenza di campionamento dell'audio in Hertz"
+
+#: unit1.rshintseek
+msgid "<hh:mm:ss> - Begin recording at start time"
+msgstr ""
+
+#: unit1.rshinttime
+msgid "Make sure that the start time + time to record is less than total length of job"
+msgstr ""
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
@@ -188,6 +204,10 @@ msgstr "(<integer>kb) il valore del flusso in kilobits/secondo del file destinaz
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgstr "(<integer> X <integer>) il totale di pixel di informazioni. Per codec che non supportano il rapporto d'aspetto dei pixel (PAR) questo è la dimensione del video quando visualizzato."
+
+#: unit1.rshintvolume
+msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
+msgstr ""
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -206,7 +226,6 @@ msgid "Audio Channels"
 msgstr "Canali audio"
 
 #: unit1.rslabel11
-#| msgid "Output Folder"
 msgctxt "unit1.rslabel11"
 msgid "Output Folder"
 msgstr "Cartella destinazione"
@@ -216,10 +235,31 @@ msgid "Device Preset"
 msgstr "Profilo dispositivo"
 
 #: unit1.rslabel2
-#| msgid "Output Folder"
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
 msgstr "Cartella destinazione"
+
+#: unit1.rslabel20
+msgid "Volume"
+msgstr ""
+
+#: unit1.rslabel21
+#, fuzzy
+#| msgid "Audio Settings"
+msgid "Audio Sync"
+msgstr "Impostazioni audio"
+
+#: unit1.rslabel22
+msgid "Seek to"
+msgstr ""
+
+#: unit1.rslabel23
+msgid "Time to Record"
+msgstr ""
+
+#: unit1.rslabel24
+msgid "Hours / Minutes / Seconds"
+msgstr ""
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -250,7 +290,6 @@ msgid "Edit"
 msgstr "Modifica"
 
 #: unit1.rsmenuitem2
-#| msgid "About"
 msgctxt "unit1.rsmenuitem2"
 msgid "About"
 msgstr "Info su WinFF"
@@ -260,7 +299,6 @@ msgid "Exit"
 msgstr "Esci"
 
 #: unit1.rsmenuitem4
-#| msgid "Presets"
 msgctxt "unit1.rsmenuitem4"
 msgid "Presets"
 msgstr "Profili"
@@ -277,12 +315,7 @@ msgstr "?"
 msgid "WinFF Forums"
 msgstr "Forum WinFF"
 
-#: unit1.rsmitWinff
-msgid "WinFF Website"
-msgstr "Sito web WinFF"
-
 #: unit1.rsmitabout
-#| msgid "About"
 msgctxt "unit1.rsmitabout"
 msgid "About"
 msgstr "Info su WinFF"
@@ -291,18 +324,20 @@ msgstr "Info su WinFF"
 msgid "Documentation"
 msgstr "Documentazione"
 
+#: unit1.rsmitwinff
+msgid "WinFF Website"
+msgstr "Sito web WinFF"
+
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
 msgstr "Il nome deve essere alfanumerico (a-z,A-Z,0-9)"
 
 #: unit1.rsoptions
-#| msgid "Options"
 msgctxt "unit1.rsoptions"
 msgid "Options"
 msgstr "Opzioni"
 
 #: unit1.rsoptionsbtn
-#| msgid "Options"
 msgctxt "unit1.rsoptionsbtn"
 msgid "Options"
 msgstr "Opzioni"
@@ -320,7 +355,6 @@ msgid "Play"
 msgstr "Riproduci"
 
 #: unit1.rsplaysoundonfinish
-#| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
 msgstr "Riproduci suono alla fine della conversione"
 
@@ -364,6 +398,12 @@ msgstr "Anteprima"
 msgid "Remove"
 msgstr "Rimuovi"
 
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "Cartella destinazione predefinita"
+
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
 msgstr "Selezionare file profilo"
@@ -373,7 +413,6 @@ msgid "Select Video Files"
 msgstr "Selezionare file video"
 
 #: unit1.rsshowoptions
-#| msgid "Additional Options"
 msgctxt "unit1.rsshowoptions"
 msgid "Additional Options"
 msgstr "Opzioni avanzate"
@@ -415,7 +454,6 @@ msgid "Add / Update"
 msgstr "Aggiungi/aggiorna"
 
 #: unit2.rscancelbtn
-#| msgid "Cancel"
 msgctxt "unit2.rscancelbtn"
 msgid "Cancel"
 msgstr "Annulla"
@@ -429,7 +467,6 @@ msgid "Delete"
 msgstr "Elimina"
 
 #: unit2.rsexport
-#| msgid "Export"
 msgctxt "unit2.rsexport"
 msgid "Export"
 msgstr "Esporta"
@@ -447,7 +484,6 @@ msgid "Import Presets"
 msgstr "Importa profilo"
 
 #: unit2.rslabel1
-#| msgid "Presets"
 msgctxt "unit2.rslabel1"
 msgid "Presets"
 msgstr "Profili"
@@ -477,6 +513,9 @@ msgid "Label must be unique."
 msgstr "La descrizione deve essere unica."
 
 #: unit2.rsokbtn
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit2.rsokbtn"
 msgid "Save"
 msgstr "Salva"
 
@@ -526,14 +565,11 @@ msgid "Thanks"
 msgstr "Ringraziamenti"
 
 #: unit4.rsbutton1
-#| msgctxt "unit3.rsbutton1"
-#| msgid "OK"
 msgctxt "unit4.rsbutton1"
 msgid "OK"
 msgstr "OK"
 
 #: unit4.rsbutton2
-#| msgid "Cancel"
 msgctxt "unit4.rsbutton2"
 msgid "Cancel"
 msgstr "Annulla"
@@ -583,8 +619,9 @@ msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "Opzioni terminale (-e per Xterm , -x per Gnome)"
 
 #: unit4.rslabel8
+#, fuzzy
+#| msgctxt "unit4.rslabel8"
 #| msgid "Priority"
-msgctxt "unit4.rslabel8"
 msgid "Priority"
 msgstr "Priorità"
 
@@ -613,24 +650,44 @@ msgid "Normal"
 msgstr "Normale"
 
 #: unit5.rsbutton1
-#| msgctxt "unit3.rsbutton1"
-#| msgid "OK"
 msgctxt "unit5.rsbutton1"
 msgid "OK"
 msgstr "OK"
+
+#: unit5.rsclip
+msgid "Clipboard"
+msgstr ""
+
+#: unit5.rsclip2
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit5.rsclip2"
+msgid "Close"
+msgstr "Chiudi"
+
+#: unit5.rscontinue
+#, fuzzy
+#| msgid "Converting"
+msgid "Continue"
+msgstr "Conversione..."
 
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "Riga comando FFmpeg"
 
+#: unit5.rssave
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit5.rssave"
+msgid "Save"
+msgstr "Salva"
+
 #: unit6.rscancelbtn
-#| msgid "Cancel"
 msgctxt "unit6.rscancelbtn"
 msgid "Cancel"
 msgstr "Annulla"
 
 #: unit6.rsexportbtn
-#| msgid "Export"
 msgctxt "unit6.rsexportbtn"
 msgid "Export"
 msgstr "Esporta"
@@ -643,8 +700,8 @@ msgstr "Esporta profili"
 msgid "Choose presets to export"
 msgstr "Selezionare un profilo da esportare"
 
-#~ msgid "AC'"
-#~ msgstr "Canali audio"
 #~ msgid "Replace Preset"
 #~ msgstr "Sostituisci profilo"
 
+#~ msgid "AC'"
+#~ msgstr "Canali audio"

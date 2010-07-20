@@ -45,6 +45,7 @@ msgstr "Изчистване"
 
 #: unit1.rsclose
 #, fuzzy
+msgctxt "unit1.rsclose"
 msgid "Close"
 msgstr "Затваряне"
 
@@ -134,6 +135,10 @@ msgstr ""
 msgid "(<integer>) number of audio channels"
 msgstr ""
 
+#: unit1.rshintaudiosync
+msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+msgstr ""
+
 #: unit1.rshintclear
 msgid "remove all files from the list"
 msgstr ""
@@ -174,12 +179,24 @@ msgstr ""
 msgid "preview using the output settings"
 msgstr ""
 
+#: unit1.rshintrecord
+msgid "<hh:mm:ss> - Amount of time to record"
+msgstr ""
+
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
 msgstr ""
 
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr ""
+
+#: unit1.rshintseek
+msgid "<hh:mm:ss> - Begin recording at start time"
+msgstr ""
+
+#: unit1.rshinttime
+msgid "Make sure that the start time + time to record is less than total length of job"
 msgstr ""
 
 #: unit1.rshintvideobitrate
@@ -189,6 +206,10 @@ msgstr ""
 
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+msgstr ""
+
+#: unit1.rshintvolume
+msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
 msgstr ""
 
 #: unit1.rsimportmenu
@@ -223,6 +244,28 @@ msgstr "Настройки на устройство"
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
 msgstr "Изходна папка"
+
+#: unit1.rslabel20
+msgid "Volume"
+msgstr ""
+
+#: unit1.rslabel21
+#, fuzzy
+#| msgid "Audio Settings"
+msgid "Audio Sync"
+msgstr "Аудио настройки"
+
+#: unit1.rslabel22
+msgid "Seek to"
+msgstr ""
+
+#: unit1.rslabel23
+msgid "Time to Record"
+msgstr ""
+
+#: unit1.rslabel24
+msgid "Hours / Minutes / Seconds"
+msgstr ""
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -280,10 +323,6 @@ msgstr "Помощ"
 msgid "WinFF Forums"
 msgstr "WinFF Форуми"
 
-#: unit1.rsmitWinff
-msgid "WinFF Website"
-msgstr "WinFF Сайт"
-
 #: unit1.rsmitabout
 #, fuzzy
 msgctxt "unit1.rsmitabout"
@@ -293,6 +332,10 @@ msgstr "Относно"
 #: unit1.rsmitdocs
 msgid "Documentation"
 msgstr "Документация"
+
+#: unit1.rsmitwinff
+msgid "WinFF Website"
+msgstr "WinFF Сайт"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
@@ -366,6 +409,12 @@ msgstr ""
 #: unit1.rsremovebtn
 msgid "Remove"
 msgstr "Премахване"
+
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "Изходна папка по подразбиране"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -482,6 +531,9 @@ msgid "Label must be unique."
 msgstr "Етикетът трябва да е уникален"
 
 #: unit2.rsokbtn
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit2.rsokbtn"
 msgid "Save"
 msgstr "Запис"
 
@@ -589,7 +641,6 @@ msgstr "Опции на терминала (-e за Xterm, -x за Gnome Termina
 
 #: unit4.rslabel8
 #, fuzzy
-msgctxt "unit4.rslabel8"
 msgid "Priority"
 msgstr "Приоритет"
 
@@ -623,9 +674,32 @@ msgctxt "unit5.rsbutton1"
 msgid "OK"
 msgstr "OK"
 
+#: unit5.rsclip
+msgid "Clipboard"
+msgstr ""
+
+#: unit5.rsclip2
+#, fuzzy
+msgctxt "unit5.rsclip2"
+msgid "Close"
+msgstr "Затваряне"
+
+#: unit5.rscontinue
+#, fuzzy
+#| msgid "Converting"
+msgid "Continue"
+msgstr "Конвертиране"
+
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg Команден ред"
+
+#: unit5.rssave
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit5.rssave"
+msgid "Save"
+msgstr "Запис"
 
 #: unit6.rscancelbtn
 #, fuzzy
@@ -649,9 +723,9 @@ msgstr "Изнасяне на настройки"
 msgid "Choose presets to export"
 msgstr "Изберете настройки за изнасяне"
 
-#~ msgid "AC'"
-#~ msgstr "AC"
-
 #, fuzzy
 #~ msgid "Replace Preset"
 #~ msgstr "Замяна на настройка:"
+
+#~ msgid "AC'"
+#~ msgstr "AC"

@@ -47,6 +47,9 @@ msgid "Clear"
 msgstr "Wissen"
 
 #: unit1.rsclose
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit1.rsclose"
 msgid "Close"
 msgstr "Sluiten"
 
@@ -133,6 +136,10 @@ msgstr "(<geheel getal>kb) de doelsnelheid van de stroom in kilobits per seconde
 msgid "(<integer>) number of audio channels"
 msgstr "(<geheel getal>) aantal audiokanalen"
 
+#: unit1.rshintaudiosync
+msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+msgstr ""
+
 #: unit1.rshintclear
 msgid "remove all files from the list"
 msgstr "verwijder alle bestanden uit de lijst"
@@ -173,6 +180,10 @@ msgstr "bekijk de geselecteerde bestanden met ffplay (goede test om te zien of c
 msgid "preview using the output settings"
 msgstr "bekijken een stukje film met de huidige instellingen"
 
+#: unit1.rshintrecord
+msgid "<hh:mm:ss> - Amount of time to record"
+msgstr ""
+
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
 msgstr "verwijder geselecteerde bestand(en) uit de lijst"
@@ -180,6 +191,14 @@ msgstr "verwijder geselecteerde bestand(en) uit de lijst"
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<geheel getal>) de bemonsteringsfrequentie van de audio in Hertz"
+
+#: unit1.rshintseek
+msgid "<hh:mm:ss> - Begin recording at start time"
+msgstr ""
+
+#: unit1.rshinttime
+msgid "Make sure that the start time + time to record is less than total length of job"
+msgstr ""
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
@@ -189,6 +208,10 @@ msgstr "(<geheel getal>kb) de doelsnelheid van de stroom in kilobits per seconde
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgstr "(<geheel getal> X <geheel getal>) het aantal pixels met informatie. Voor codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van de video als het bekeken wordt."
+
+#: unit1.rshintvolume
+msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
+msgstr ""
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -219,6 +242,28 @@ msgstr "Voorinstelling"
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
 msgstr "Doelmap"
+
+#: unit1.rslabel20
+msgid "Volume"
+msgstr ""
+
+#: unit1.rslabel21
+#, fuzzy
+#| msgid "Audio Settings"
+msgid "Audio Sync"
+msgstr "Audio instellingen"
+
+#: unit1.rslabel22
+msgid "Seek to"
+msgstr ""
+
+#: unit1.rslabel23
+msgid "Time to Record"
+msgstr ""
+
+#: unit1.rslabel24
+msgid "Hours / Minutes / Seconds"
+msgstr ""
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -274,10 +319,6 @@ msgstr "Help"
 msgid "WinFF Forums"
 msgstr "WinFF forums"
 
-#: unit1.rsmitWinff
-msgid "WinFF Website"
-msgstr "WinFF website"
-
 #: unit1.rsmitabout
 msgctxt "unit1.rsmitabout"
 msgid "About"
@@ -286,6 +327,10 @@ msgstr "Over WinFF"
 #: unit1.rsmitdocs
 msgid "Documentation"
 msgstr "Documentatie"
+
+#: unit1.rsmitwinff
+msgid "WinFF Website"
+msgstr "WinFF website"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
@@ -356,6 +401,12 @@ msgstr "Voorbeeld"
 #: unit1.rsremovebtn
 msgid "Remove"
 msgstr "Verwijderen"
+
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "Standaard doelmap"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -466,6 +517,9 @@ msgid "Label must be unique."
 msgstr "Label moet uniek zijn."
 
 #: unit2.rsokbtn
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit2.rsokbtn"
 msgid "Save"
 msgstr "Opslaan"
 
@@ -569,7 +623,9 @@ msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "Terminal opties (-e voor Xterm , -x voor Gnome Terminal)"
 
 #: unit4.rslabel8
-msgctxt "unit4.rslabel8"
+#, fuzzy
+#| msgctxt "unit4.rslabel8"
+#| msgid "Priority"
 msgid "Priority"
 msgstr "Prioriteit"
 
@@ -602,9 +658,33 @@ msgctxt "unit5.rsbutton1"
 msgid "OK"
 msgstr "Accepteren"
 
+#: unit5.rsclip
+msgid "Clipboard"
+msgstr ""
+
+#: unit5.rsclip2
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit5.rsclip2"
+msgid "Close"
+msgstr "Sluiten"
+
+#: unit5.rscontinue
+#, fuzzy
+#| msgid "Converting"
+msgid "Continue"
+msgstr "Bezig met converteren"
+
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg commandoregel"
+
+#: unit5.rssave
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit5.rssave"
+msgid "Save"
+msgstr "Opslaan"
 
 #: unit6.rscancelbtn
 msgctxt "unit6.rscancelbtn"
@@ -624,8 +704,8 @@ msgstr "Exporteer voorinstelling"
 msgid "Choose presets to export"
 msgstr "Selecteer een voorinstelling om te exporteren"
 
-#~ msgid "AC'"
-#~ msgstr "Aantal kanalen"
 #~ msgid "Replace Preset"
 #~ msgstr "Vervang voorinstelling:"
 
+#~ msgid "AC'"
+#~ msgstr "Aantal kanalen"

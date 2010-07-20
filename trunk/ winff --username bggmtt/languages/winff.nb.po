@@ -46,11 +46,13 @@ msgid "Clear"
 msgstr "Tøm"
 
 #: unit1.rsclose
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit1.rsclose"
 msgid "Close"
 msgstr "Lukk"
 
 #: unit1.rsclosebtn
-#| msgid "Options"
 msgctxt "unit1.rsclosebtn"
 msgid "Options"
 msgstr "Alternativer"
@@ -84,7 +86,6 @@ msgid "Left"
 msgstr "Venstre"
 
 #: unit1.rscropright
-#| msgid "High"
 msgid "Right"
 msgstr "Høyre"
 
@@ -109,7 +110,6 @@ msgid "File"
 msgstr "Fil"
 
 #: unit1.rsgroupbox1
-#| msgid "Additional Options"
 msgctxt "unit1.rsgroupbox1"
 msgid "Additional Options"
 msgstr "Ekstra alternativer"
@@ -134,6 +134,10 @@ msgstr "(<heltall>kb) kbits/sekund-målet som strømmen skulle brukes."
 #: unit1.rshintaudiochannels
 msgid "(<integer>) number of audio channels"
 msgstr "(<heltall>) antall lydkanaler"
+
+#: unit1.rshintaudiosync
+msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+msgstr ""
 
 #: unit1.rshintclear
 msgid "remove all files from the list"
@@ -175,6 +179,10 @@ msgstr "Forhåndsvisning av den velgte kildefilen med ffplay (god test å sjekke
 msgid "preview using the output settings"
 msgstr "Forhåndsvisning med utdata instillinger."
 
+#: unit1.rshintrecord
+msgid "<hh:mm:ss> - Amount of time to record"
+msgstr ""
+
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
 msgstr "Fjern den velgte filen(e) fra lista."
@@ -182,6 +190,14 @@ msgstr "Fjern den velgte filen(e) fra lista."
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<heltall>) lydsamplingsfrekvensen i Hertz"
+
+#: unit1.rshintseek
+msgid "<hh:mm:ss> - Begin recording at start time"
+msgstr ""
+
+#: unit1.rshinttime
+msgid "Make sure that the start time + time to record is less than total length of job"
+msgstr ""
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
@@ -191,6 +207,10 @@ msgstr "(<heltall>kb) kbits/sekund-målet som strømmen skulle brukes."
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgstr "(<heltall> X <heltall>) antall informasjonspikseler. For videokodeks som ikke støtte piksel (PAR) dette er videostørrelse når vist. "
+
+#: unit1.rshintvolume
+msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
+msgstr ""
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -209,7 +229,6 @@ msgid "Audio Channels"
 msgstr "Lydkanaler"
 
 #: unit1.rslabel11
-#| msgid "Output Folder"
 msgctxt "unit1.rslabel11"
 msgid "Output Folder"
 msgstr "Utdatamappe"
@@ -219,10 +238,31 @@ msgid "Device Preset"
 msgstr "Forhåndsinnstilling"
 
 #: unit1.rslabel2
-#| msgid "Output Folder"
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
 msgstr "Utdatamappe"
+
+#: unit1.rslabel20
+msgid "Volume"
+msgstr ""
+
+#: unit1.rslabel21
+#, fuzzy
+#| msgid "Audio Settings"
+msgid "Audio Sync"
+msgstr "Lyd innstillinger"
+
+#: unit1.rslabel22
+msgid "Seek to"
+msgstr ""
+
+#: unit1.rslabel23
+msgid "Time to Record"
+msgstr ""
+
+#: unit1.rslabel24
+msgid "Hours / Minutes / Seconds"
+msgstr ""
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -253,7 +293,6 @@ msgid "Edit"
 msgstr "Rediger"
 
 #: unit1.rsmenuitem2
-#| msgid "About"
 msgctxt "unit1.rsmenuitem2"
 msgid "About"
 msgstr "Om WinFF"
@@ -263,7 +302,6 @@ msgid "Exit"
 msgstr "Avslutt"
 
 #: unit1.rsmenuitem4
-#| msgid "Presets"
 msgctxt "unit1.rsmenuitem4"
 msgid "Presets"
 msgstr "Forhåndsinnstillinger"
@@ -280,12 +318,7 @@ msgstr "Hjelp"
 msgid "WinFF Forums"
 msgstr "WinFF forumer"
 
-#: unit1.rsmitWinff
-msgid "WinFF Website"
-msgstr "WinFF nettstedet"
-
 #: unit1.rsmitabout
-#| msgid "About"
 msgctxt "unit1.rsmitabout"
 msgid "About"
 msgstr "Om WinFF"
@@ -294,18 +327,20 @@ msgstr "Om WinFF"
 msgid "Documentation"
 msgstr "Dokumentasjon"
 
+#: unit1.rsmitwinff
+msgid "WinFF Website"
+msgstr "WinFF nettstedet"
+
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
 msgstr "Navnet må være alfanumerisk (a-z, A-Z, 0-9)"
 
 #: unit1.rsoptions
-#| msgid "Options"
 msgctxt "unit1.rsoptions"
 msgid "Options"
 msgstr "Alternativer"
 
 #: unit1.rsoptionsbtn
-#| msgid "Options"
 msgctxt "unit1.rsoptionsbtn"
 msgid "Options"
 msgstr "Alternativer"
@@ -323,7 +358,6 @@ msgid "Play"
 msgstr "Spill"
 
 #: unit1.rsplaysoundonfinish
-#| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
 msgstr "Spill lyd hvis ferdig"
 
@@ -332,7 +366,6 @@ msgid "Please add at least 1 file to convert"
 msgstr "Legg til minst 1 fil å konvertere"
 
 #: unit1.rspleaseselectapreset
-#| msgid "Please select a preset to export"
 msgid "Please select a preset"
 msgstr "Velg en forhåndsinnstilling"
 
@@ -368,6 +401,12 @@ msgstr "Forhåndsvisning"
 msgid "Remove"
 msgstr "Fjern"
 
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "Standard målmappe"
+
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
 msgstr "Velg fila med forhåndsinnstilling"
@@ -377,7 +416,6 @@ msgid "Select Video Files"
 msgstr "Velg videofiler"
 
 #: unit1.rsshowoptions
-#| msgid "Additional Options"
 msgctxt "unit1.rsshowoptions"
 msgid "Additional Options"
 msgstr "Ekstra alternativer"
@@ -419,7 +457,6 @@ msgid "Add / Update"
 msgstr "Legg til / Oppdater"
 
 #: unit2.rscancelbtn
-#| msgid "Cancel"
 msgctxt "unit2.rscancelbtn"
 msgid "Cancel"
 msgstr "Avbryt"
@@ -433,7 +470,6 @@ msgid "Delete"
 msgstr "Slett"
 
 #: unit2.rsexport
-#| msgid "Export"
 msgctxt "unit2.rsexport"
 msgid "Export"
 msgstr "Eksporter"
@@ -451,7 +487,6 @@ msgid "Import Presets"
 msgstr "Importer forhåndsinnstillinger"
 
 #: unit2.rslabel1
-#| msgid "Presets"
 msgctxt "unit2.rslabel1"
 msgid "Presets"
 msgstr "Forhåndsinnstillinger"
@@ -481,6 +516,9 @@ msgid "Label must be unique."
 msgstr "Merkelappet må være entydig."
 
 #: unit2.rsokbtn
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit2.rsokbtn"
 msgid "Save"
 msgstr "Lagre"
 
@@ -530,14 +568,11 @@ msgid "Thanks"
 msgstr "Takk"
 
 #: unit4.rsbutton1
-#| msgctxt "unit3.rsbutton1"
-#| msgid "OK"
 msgctxt "unit4.rsbutton1"
 msgid "OK"
 msgstr "OK"
 
 #: unit4.rsbutton2
-#| msgid "Cancel"
 msgctxt "unit4.rsbutton2"
 msgid "Cancel"
 msgstr "Avbryt"
@@ -587,8 +622,9 @@ msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "Terminal valg (-e til Xterm, -x til Gnome terminal)"
 
 #: unit4.rslabel8
+#, fuzzy
+#| msgctxt "unit4.rslabel8"
 #| msgid "Priority"
-msgctxt "unit4.rslabel8"
 msgid "Priority"
 msgstr "Prioritet"
 
@@ -617,24 +653,44 @@ msgid "Normal"
 msgstr "Vanlig"
 
 #: unit5.rsbutton1
-#| msgctxt "unit3.rsbutton1"
-#| msgid "OK"
 msgctxt "unit5.rsbutton1"
 msgid "OK"
 msgstr "OK"
+
+#: unit5.rsclip
+msgid "Clipboard"
+msgstr ""
+
+#: unit5.rsclip2
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit5.rsclip2"
+msgid "Close"
+msgstr "Lukk"
+
+#: unit5.rscontinue
+#, fuzzy
+#| msgid "Converting"
+msgid "Continue"
+msgstr "Konverterer"
 
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg kommandolinje"
 
+#: unit5.rssave
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit5.rssave"
+msgid "Save"
+msgstr "Lagre"
+
 #: unit6.rscancelbtn
-#| msgid "Cancel"
 msgctxt "unit6.rscancelbtn"
 msgid "Cancel"
 msgstr "Avbryt"
 
 #: unit6.rsexportbtn
-#| msgid "Export"
 msgctxt "unit6.rsexportbtn"
 msgid "Export"
 msgstr "Eksporter"
@@ -649,4 +705,3 @@ msgstr "Velg forhåndsinnstillinger å eksportere"
 
 #~ msgid "Replace Preset"
 #~ msgstr "Erstatt forhåndsinnstillinga"
-

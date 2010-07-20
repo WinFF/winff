@@ -44,6 +44,9 @@ msgid "Clear"
 msgstr "Limpar"
 
 #: unit1.rsclose
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit1.rsclose"
 msgid "Close"
 msgstr "Pechar"
 
@@ -130,6 +133,10 @@ msgstr "(<integer>kb) kilobits/segundo a usar polo fluxo no destino"
 msgid "(<integer>) number of audio channels"
 msgstr "(<integer>) número de canles de son"
 
+#: unit1.rshintaudiosync
+msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+msgstr ""
+
 #: unit1.rshintclear
 msgid "remove all files from the list"
 msgstr "Eliminar todos os ficheiros da lista"
@@ -170,6 +177,10 @@ msgstr "Vista previa do ficheiro orixe seleccionado con ffplay (é unha boa prob
 msgid "preview using the output settings"
 msgstr "Vista previa empregando os axustes de saída"
 
+#: unit1.rshintrecord
+msgid "<hh:mm:ss> - Amount of time to record"
+msgstr ""
+
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
 msgstr "Eliminar o(s) ficheiro(s) seleccionado(s) da lista"
@@ -177,6 +188,14 @@ msgstr "Eliminar o(s) ficheiro(s) seleccionado(s) da lista"
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<integer>) frecuencia de mostraxe do son en Hertz"
+
+#: unit1.rshintseek
+msgid "<hh:mm:ss> - Begin recording at start time"
+msgstr ""
+
+#: unit1.rshinttime
+msgid "Make sure that the start time + time to record is less than total length of job"
+msgstr ""
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
@@ -186,6 +205,10 @@ msgstr "(<integer>kb) kilobits/segundo a usar polo fluxo no destino"
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgstr "(<integer> X <integer>) cantidade de píxeles de información. Para códecs non compatibles coa relación de aspecto de píxeles (PAR), este é o tamaño do vídeo ao ser visto."
+
+#: unit1.rshintvolume
+msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
+msgstr ""
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -216,6 +239,28 @@ msgstr "Dispositivo predefinido"
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
 msgstr "Cartafol de saída"
+
+#: unit1.rslabel20
+msgid "Volume"
+msgstr ""
+
+#: unit1.rslabel21
+#, fuzzy
+#| msgid "Audio Settings"
+msgid "Audio Sync"
+msgstr "Axustes de son"
+
+#: unit1.rslabel22
+msgid "Seek to"
+msgstr ""
+
+#: unit1.rslabel23
+msgid "Time to Record"
+msgstr ""
+
+#: unit1.rslabel24
+msgid "Hours / Minutes / Seconds"
+msgstr ""
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -280,7 +325,7 @@ msgstr "Acerca de"
 msgid "Documentation"
 msgstr "Documentación"
 
-#: unit1.rsmitWinff
+#: unit1.rsmitwinff
 msgid "WinFF Website"
 msgstr "Web de WinFF"
 
@@ -353,6 +398,12 @@ msgstr "Vista previa"
 #: unit1.rsremovebtn
 msgid "Remove"
 msgstr "Eliminar"
+
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "Cartafol predeterminado de destino"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -463,6 +514,9 @@ msgid "Label must be unique."
 msgstr "A etiqueta ten que ser única"
 
 #: unit2.rsokbtn
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit2.rsokbtn"
 msgid "Save"
 msgstr "Gardar"
 
@@ -566,7 +620,9 @@ msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "Opcións da terminal (-e p/ Xterm, -x p/ Gnome Terminal"
 
 #: unit4.rslabel8
-msgctxt "unit4.rslabel8"
+#, fuzzy
+#| msgctxt "unit4.rslabel8"
+#| msgid "Priority"
 msgid "Priority"
 msgstr "Prioridade"
 
@@ -599,9 +655,33 @@ msgctxt "unit5.rsbutton1"
 msgid "OK"
 msgstr "Aceptar"
 
+#: unit5.rsclip
+msgid "Clipboard"
+msgstr ""
+
+#: unit5.rsclip2
+#, fuzzy
+#| msgid "Close"
+msgctxt "unit5.rsclip2"
+msgid "Close"
+msgstr "Pechar"
+
+#: unit5.rscontinue
+#, fuzzy
+#| msgid "Converting"
+msgid "Continue"
+msgstr "Convertendo"
+
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "Liña de ordes de FFmpeg"
+
+#: unit5.rssave
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit5.rssave"
+msgid "Save"
+msgstr "Gardar"
 
 #: unit6.rscancelbtn
 msgctxt "unit6.rscancelbtn"
@@ -623,4 +703,3 @@ msgstr "Elixa predefinicións para exportalas"
 
 #~ msgid "Replace Preset"
 #~ msgstr "Substituir pre-axuste"
-
