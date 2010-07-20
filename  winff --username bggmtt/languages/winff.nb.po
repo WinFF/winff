@@ -1,5 +1,5 @@
 # translation of winff.po to Norwegian Bokmal
-# Copyright (C) 2006-2009 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2006-2010 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,12 +14,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009 ""
+# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2010 ""
 msgid ""
 msgstr ""
 "Project-Id-Version: Winff 1.0\n"
 "POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: 2010-01-17 13:05+0100\n"
+"PO-Revision-Date: 2010-07-20 22:54+0100\n"
 "Last-Translator: Ellen Rohaan <ellen.rohaan@esac.climbing.nl>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,6 @@ msgid "Clear"
 msgstr "Tøm"
 
 #: unit1.rsclose
-#, fuzzy
 #| msgid "Close"
 msgctxt "unit1.rsclose"
 msgid "Close"
@@ -137,7 +136,7 @@ msgstr "(<heltall>) antall lydkanaler"
 
 #: unit1.rshintaudiosync
 msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
-msgstr ""
+msgstr "(<heltall>) Lyd synkronisering"
 
 #: unit1.rshintclear
 msgid "remove all files from the list"
@@ -181,7 +180,7 @@ msgstr "Forhåndsvisning med utdata instillinger."
 
 #: unit1.rshintrecord
 msgid "<hh:mm:ss> - Amount of time to record"
-msgstr ""
+msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
@@ -193,11 +192,11 @@ msgstr "(<heltall>) lydsamplingsfrekvensen i Hertz"
 
 #: unit1.rshintseek
 msgid "<hh:mm:ss> - Begin recording at start time"
-msgstr ""
+msgstr "<hh:mm:ss> - Tidspunkt hvor det nye opptaket skal begynne"
 
 #: unit1.rshinttime
 msgid "Make sure that the start time + time to record is less than total length of job"
-msgstr ""
+msgstr "Forskikre deg at starttiden og optakstiden er mindre enn orginallengde "
 
 #: unit1.rshintvideobitrate
 msgctxt "unit1.rshintvideobitrate"
@@ -210,7 +209,7 @@ msgstr "(<heltall> X <heltall>) antall informasjonspikseler. For videokodeks som
 
 #: unit1.rshintvolume
 msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
-msgstr ""
+msgstr "(<heltall>) Gjeldende lydstyrke = 256, halvt lydstyrke = 128, doppelt lydstyrke = 512"
 
 #: unit1.rsimportmenu
 msgid "Import Preset"
@@ -244,25 +243,24 @@ msgstr "Utdatamappe"
 
 #: unit1.rslabel20
 msgid "Volume"
-msgstr ""
+msgstr "Lydstyrke"
 
 #: unit1.rslabel21
-#, fuzzy
 #| msgid "Audio Settings"
 msgid "Audio Sync"
-msgstr "Lyd innstillinger"
+msgstr "Lyd synkronisering"
 
 #: unit1.rslabel22
 msgid "Seek to"
-msgstr ""
+msgstr "Søke til"
 
 #: unit1.rslabel23
 msgid "Time to Record"
-msgstr ""
+msgstr "Opptakstid"
 
 #: unit1.rslabel24
 msgid "Hours / Minutes / Seconds"
-msgstr ""
+msgstr "Time / Minuter / Sekunder"
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -402,10 +400,9 @@ msgid "Remove"
 msgstr "Fjern"
 
 #: unit1.rsselectdirectory
-#, fuzzy
 #| msgid "Default Destination Directory"
 msgid "Select Directory"
-msgstr "Standard målmappe"
+msgstr "Velg målmappe"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -516,7 +513,6 @@ msgid "Label must be unique."
 msgstr "Merkelappet må være entydig."
 
 #: unit2.rsokbtn
-#, fuzzy
 #| msgid "Save"
 msgctxt "unit2.rsokbtn"
 msgid "Save"
@@ -622,7 +618,6 @@ msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr "Terminal valg (-e til Xterm, -x til Gnome terminal)"
 
 #: unit4.rslabel8
-#, fuzzy
 #| msgctxt "unit4.rslabel8"
 #| msgid "Priority"
 msgid "Priority"
@@ -659,27 +654,24 @@ msgstr "OK"
 
 #: unit5.rsclip
 msgid "Clipboard"
-msgstr ""
+msgstr "Utklippstavle"
 
 #: unit5.rsclip2
-#, fuzzy
 #| msgid "Close"
 msgctxt "unit5.rsclip2"
 msgid "Close"
 msgstr "Lukk"
 
 #: unit5.rscontinue
-#, fuzzy
 #| msgid "Converting"
 msgid "Continue"
-msgstr "Konverterer"
+msgstr "Fortsette"
 
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg kommandolinje"
 
 #: unit5.rssave
-#, fuzzy
 #| msgid "Save"
 msgctxt "unit5.rssave"
 msgid "Save"
@@ -705,3 +697,4 @@ msgstr "Velg forhåndsinnstillinger å eksportere"
 
 #~ msgid "Replace Preset"
 #~ msgstr "Erstatt forhåndsinnstillinga"
+
