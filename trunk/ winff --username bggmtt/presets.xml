@@ -528,6 +528,18 @@
     <extension>mp4</extension>
     <category>Google Android</category>
   </android2>
+  <android3>
+    <label>Google Android video. VHQ 16:9 widescreen</label>
+    <params>-s 480x272 -vcodec libx264 -b 500k -threads 0 -acodec libfaac -ab 96kb</params>
+    <extension>mp4</extension>
+    <category>Google Android</category>
+  </android3>
+  <android4>
+    <label>Google Android video. VHQ 4:3 fullscreen</label>
+    <params>-s 432x320 -vcodec libx264 -b 500k -threads 0 -acodec libfaac -ab 96kb</params>
+    <extension>mp4</extension>
+    <category>Google Android</category>
+  </android4>
   <walkmanXviDFS>
     <label>Xvid walkman (4:3)</label>
     <params>-r 29.97 -vcodec libxvid -s 320x240 -aspect 4:3 -maxrate 1500k -b 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -cmp 2 -subcmp 2 -g 300 -acodec libfaac -ar 48000 -ab 80k -ac 2</params>
