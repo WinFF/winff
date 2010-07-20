@@ -45,6 +45,7 @@ msgstr "Limpar"
 
 #: unit1.rsclose
 #, fuzzy
+msgctxt "unit1.rsclose"
 msgid "Close"
 msgstr "Fechar"
 
@@ -137,6 +138,10 @@ msgstr ""
 msgid "(<integer>) number of audio channels"
 msgstr ""
 
+#: unit1.rshintaudiosync
+msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+msgstr ""
+
 #: unit1.rshintclear
 msgid "remove all files from the list"
 msgstr ""
@@ -177,12 +182,24 @@ msgstr ""
 msgid "preview using the output settings"
 msgstr ""
 
+#: unit1.rshintrecord
+msgid "<hh:mm:ss> - Amount of time to record"
+msgstr ""
+
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
 msgstr ""
 
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr ""
+
+#: unit1.rshintseek
+msgid "<hh:mm:ss> - Begin recording at start time"
+msgstr ""
+
+#: unit1.rshinttime
+msgid "Make sure that the start time + time to record is less than total length of job"
 msgstr ""
 
 #: unit1.rshintvideobitrate
@@ -192,6 +209,10 @@ msgstr ""
 
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+msgstr ""
+
+#: unit1.rshintvolume
+msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
 msgstr ""
 
 #: unit1.rsimportmenu
@@ -228,6 +249,26 @@ msgstr "Remover Pré-definição"
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
 msgstr "Diretório de Saída"
+
+#: unit1.rslabel20
+msgid "Volume"
+msgstr ""
+
+#: unit1.rslabel21
+msgid "Audio Sync"
+msgstr ""
+
+#: unit1.rslabel22
+msgid "Seek to"
+msgstr ""
+
+#: unit1.rslabel23
+msgid "Time to Record"
+msgstr ""
+
+#: unit1.rslabel24
+msgid "Hours / Minutes / Seconds"
+msgstr ""
 
 #: unit1.rslabel3
 msgid "Video Bitrate"
@@ -287,10 +328,6 @@ msgstr "Ajuda"
 msgid "WinFF Forums"
 msgstr "Fórum do WinFF"
 
-#: unit1.rsmitWinff
-msgid "WinFF Website"
-msgstr "Site do WinFF"
-
 #: unit1.rsmitabout
 #, fuzzy
 #| msgid "About"
@@ -301,6 +338,10 @@ msgstr "Sobre"
 #: unit1.rsmitdocs
 msgid "Documentation"
 msgstr "Documentação"
+
+#: unit1.rsmitwinff
+msgid "WinFF Website"
+msgstr "Site do WinFF"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
@@ -377,6 +418,12 @@ msgstr ""
 #: unit1.rsremovebtn
 msgid "Remove"
 msgstr "Remover"
+
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "Diretório de Destino Padrão"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -497,6 +544,9 @@ msgid "Label must be unique."
 msgstr "O rótulo deve ser único"
 
 #: unit2.rsokbtn
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit2.rsokbtn"
 msgid "Save"
 msgstr "Salvar"
 
@@ -606,7 +656,6 @@ msgstr "Opções de Terminal (-e para Xterm, -x para Gnome Terminal)"
 #: unit4.rslabel8
 #, fuzzy
 #| msgid "Priority"
-msgctxt "unit4.rslabel8"
 msgid "Priority"
 msgstr "Prioridade"
 
@@ -640,9 +689,32 @@ msgctxt "unit5.rsbutton1"
 msgid "OK"
 msgstr "OK"
 
+#: unit5.rsclip
+msgid "Clipboard"
+msgstr ""
+
+#: unit5.rsclip2
+#, fuzzy
+msgctxt "unit5.rsclip2"
+msgid "Close"
+msgstr "Fechar"
+
+#: unit5.rscontinue
+#, fuzzy
+#| msgid "Converting"
+msgid "Continue"
+msgstr "Convertendo"
+
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
 msgstr "Linha de Comando FFmpeg"
+
+#: unit5.rssave
+#, fuzzy
+#| msgid "Save"
+msgctxt "unit5.rssave"
+msgid "Save"
+msgstr "Salvar"
 
 #: unit6.rscancelbtn
 #, fuzzy
@@ -666,9 +738,9 @@ msgstr "Importar Pré-defeinições"
 msgid "Choose presets to export"
 msgstr "Por favor selecione uma pré-definição para exportar"
 
-#~ msgid "AC'"
-#~ msgstr "Canal de Áudio"
-
 #, fuzzy
 #~ msgid "Replace Preset"
 #~ msgstr "Substituir Pré-definição"
+
+#~ msgid "AC'"
+#~ msgstr "Canal de Áudio"
