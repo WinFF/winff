@@ -1688,7 +1688,7 @@ begin                                     // get setup
    //
    ignorepreview := false;
    if edtVolume.Text <> '' then
-           commandline:=replaceparam(commandline,'-volume','-volume ' + edtVolume.Text);
+           commandline:=replaceparam(commandline,'-vol','-vol ' + edtVolume.Text);
    if edtAudioSync.Text <> '' then
            commandline:=replaceparam(commandline,'-async','-async ' + edtAudioSync.Text);
 
