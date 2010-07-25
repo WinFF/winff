@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 175
+  Left = 150
   Height = 587
-  Top = 175
+  Top = 150
   Width = 1064
   ActiveControl = pnlTop
   AllowDropFiles = True
@@ -1217,8 +1217,8 @@ object Form1: TForm1
         end
         object tabAudioSettings: TPage
           Caption = 'Audio Settings'
-          ClientWidth = 660
-          ClientHeight = 114
+          ClientWidth = 1050
+          ClientHeight = 115
           object Label7: TLabel
             Left = 9
             Height = 18
@@ -1297,8 +1297,8 @@ object Form1: TForm1
         end
         object tabCmdLineSettings: TPage
           Caption = 'tabCmdLineSettings'
-          ClientWidth = 660
-          ClientHeight = 114
+          ClientWidth = 1050
+          ClientHeight = 115
           object commandlineparams: TEdit
             Left = 1
             Height = 25
@@ -1309,8 +1309,8 @@ object Form1: TForm1
         end
         object tabPageCrop: TPage
           Caption = 'Crop'
-          ClientWidth = 660
-          ClientHeight = 114
+          ClientWidth = 1050
+          ClientHeight = 115
           object lblCropLeft: TLabel
             Left = 3
             Height = 18

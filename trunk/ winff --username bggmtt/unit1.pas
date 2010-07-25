@@ -1623,7 +1623,7 @@ begin                                     // get setup
                                       // replace preset params if mnuOptions specified
    commandline := params;
    if vidbitrate.Text <> '' then
-           commandline:=replaceparam(commandline,'-b','-b ' + vidbitrate.text+'kb');
+           commandline:=replaceparam(commandline,'-b','-b ' + vidbitrate.text+'k');
    if vidframerate.Text <> '' then
            commandline:=replaceparam(commandline,'-r','-r ' + vidframerate.Text);
 
@@ -1678,7 +1678,7 @@ begin                                     // get setup
    if edtAspectRatio.Text <> '' then
            commandline:=replaceparam(commandline,'-aspect','-aspect ' + edtAspectRatio.Text);
    if audbitrate.Text <> '' then
-           commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'kb');
+           commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'k');
    if audsamplingrate.Text <> '' then
            commandline:=replaceparam(commandline,'-ar','-ar ' + audsamplingrate.Text);
    if audchannels.Text <> '' then
