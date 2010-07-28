@@ -1,3 +1,0 @@
-?package(winff):needs="X11" section="Applications/Video"\
-  title="WinFF" command="/usr/bin/winff"\
-  icon="winff.xpm"
