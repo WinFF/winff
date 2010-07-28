@@ -2,11 +2,12 @@ Source: winff
 Section: video
 Priority: extra
 Maintainer: Paul Gevers <paul@climbing.nl>
-Build-Depends: debhelper (>= 5),
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 7.0~),
                lcl,
 	       lcl-gtk2,
                fpc (>= 2.2.2-3)
-Standards-Version: 3.8.4
+Standards-Version: 3.9.0
 Homepage: http://www.winff.org/
 Vcs-Browser: http://code.google.com/p/winff/source/browse/#svn/trunk/%20winff%20--username%20bggmtt/debian
 Vcs-Svn: http://winff.googlecode.com/svn/trunk/%20winff%20--username%20bggmtt/debian
