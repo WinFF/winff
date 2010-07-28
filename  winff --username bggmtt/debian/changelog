@@ -1,3 +1,24 @@
+winff (1.3.0-1) unstable; urgency=low
+
+  * New upstream release
+    - cropping is applied to the input file instead of output
+    - added ability to edit/copy/save script before executing
+    - added 'seek to' and 'time to record' to cropping options
+    - added 'volume' and 'async' to audio options
+  * Removed patches (all included in upstream)
+  * Removed additional translations
+  * Rewritten watch file (googlecode changed interface)
+  * Removed debian/README.source (not using dpatch anymore)
+  * Bumped standards version to 3.9.0 (no changes needed)
+  * Patched Dutch and Norwegian translation with latest svn update
+  * Replaced dh_clean -k with dh_prep in debian/rules and updated
+    debhelper dependency    
+  * Added permission correction in debian/rules to indep rule 
+  * Removed lintian override
+  * Added DM-Upload-Allowed
+
+ -- Paul Gevers <paul@climbing.nl>  Thu, 22 Jul 2010 20:14:05 +0200
+
 winff (1.2.0-2) unstable; urgency=low
 
   * debian/patches/empty-presetname-fix.patch:
