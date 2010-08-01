@@ -53,7 +53,7 @@
         <Filename Value="winff.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="winff"/>
-        <CursorPos X="11" Y="24"/>
+        <CursorPos X="20" Y="9"/>
         <TopLine Value="5"/>
         <EditorIndex Value="1"/>
         <UsageCount Value="214"/>
@@ -65,8 +65,8 @@
         <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="81" Y="1626"/>
-        <TopLine Value="1812"/>
+        <CursorPos X="88" Y="315"/>
+        <TopLine Value="438"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Bookmarks Count="2">

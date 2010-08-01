@@ -1110,7 +1110,7 @@ object Form1: TForm1
         Top = 0
         Width = 1058
         Align = alClient
-        PageIndex = 0
+        PageIndex = 1
         TabOrder = 0
         object tabVideoSettings: TPage
           Caption = 'Video Settings'
@@ -1221,75 +1221,75 @@ object Form1: TForm1
           ClientHeight = 115
           object Label7: TLabel
             Left = 9
-            Height = 18
+            Height = 16
             Top = 5
-            Width = 91
+            Width = 76
             Caption = 'Audio Bit Rate'
             ParentColor = False
           end
           object Label8: TLabel
             Left = 133
-            Height = 18
+            Height = 16
             Top = 5
-            Width = 83
+            Width = 66
             Caption = 'Sample Rate'
             ParentColor = False
           end
           object Label10: TLabel
             Left = 266
-            Height = 18
+            Height = 16
             Top = 5
-            Width = 51
+            Width = 41
             Caption = 'Label10'
             ParentColor = False
           end
           object Label20: TLabel
             Left = 11
-            Height = 18
+            Height = 16
             Top = 60
-            Width = 51
+            Width = 41
             Caption = 'Label10'
             ParentColor = False
           end
           object Label21: TLabel
             Left = 133
-            Height = 18
+            Height = 16
             Top = 60
-            Width = 51
+            Width = 41
             Caption = 'Label10'
             ParentColor = False
           end
           object audbitrate: TEdit
             Left = 9
-            Height = 25
+            Height = 23
             Top = 25
             Width = 101
             TabOrder = 0
           end
           object audsamplingrate: TEdit
             Left = 133
-            Height = 25
+            Height = 23
             Top = 25
             Width = 80
             TabOrder = 1
           end
           object audchannels: TEdit
             Left = 261
-            Height = 25
+            Height = 23
             Top = 25
             Width = 32
             TabOrder = 2
           end
           object edtVolume: TEdit
             Left = 9
-            Height = 25
+            Height = 23
             Top = 76
             Width = 101
             TabOrder = 3
           end
           object edtAudioSync: TEdit
             Left = 133
-            Height = 25
+            Height = 23
             Top = 76
             Width = 101
             TabOrder = 4
@@ -1373,7 +1373,6 @@ object Form1: TForm1
             Top = 46
             Width = 48
             OnChange = edtCropLeftChange
-            OnKeyDown = nil
             TabOrder = 0
             Text = '0'
           end
@@ -1396,7 +1395,6 @@ object Form1: TForm1
             Top = 22
             Width = 48
             OnChange = edtCropTopChange
-            OnKeyDown = nil
             TabOrder = 2
             Text = '0'
           end
@@ -1406,7 +1404,6 @@ object Form1: TForm1
             Top = 70
             Width = 48
             OnChange = edtCropBottomChange
-            OnKeyDown = nil
             TabOrder = 3
             Text = '0'
           end
@@ -1416,7 +1413,6 @@ object Form1: TForm1
             Top = 46
             Width = 48
             OnChange = edtCropRightChange
-            OnKeyDown = nil
             TabOrder = 4
             Text = '0'
           end
