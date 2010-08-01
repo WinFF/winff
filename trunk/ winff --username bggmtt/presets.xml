@@ -336,6 +336,12 @@
     <extension>mp4</extension>
     <category>LG</category>
   </lgchocolate>
+  <lgdare>
+    <label>LG Dare</label>
+    <params>-f mp4 -s 320x240 -r 11.988 -b 160k -ab 56k -vcodec libxvid -acodec libfaac</params>
+    <extension>mp4</extension>
+    <category>LG</category>
+  </lgdare>
   <mp3>
     <label>MP3</label>
     <params>-acodec libmp3lame -ab 160kb -ac 2 -ar 44100</params>
