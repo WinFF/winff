@@ -188,8 +188,6 @@ type
     function getpresetparams(presetname:string):string;
     function getpresetcategory(presetname:string):string;
     function getpresetextension(presetname:string):string;
-    function getpresetdestdir(presetname:string):string;
-    procedure setpresetdestdir(presetname:string; destdir:string);
     procedure mitShowOptionsClick(Sender: TObject);
     procedure mitShutdownOnFinishClick(Sender: TObject);
     procedure btnConvertClick(Sender: TObject);
@@ -655,17 +653,7 @@ begin
   destfolder.text := getconfigvalue('general/destfolder');   // get destination folder
   if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
   rememberlast := getconfigvalue('general/rememberlast');
-  if rememberlast='true' then
-    begin
-      destdir := getpresetdestdir(currentpreset);
-      if destdir <> '' then
-         destfolder.Text:=destdir;
-    end;
-  if rememberlast='' then
-    begin
-     rememberlast:= 'true';
-     setconfigvalue('general/rememberlast',rememberlast);
-    end;
+
 
                                          // check 2 pass encoding
   pass2encoding:=getconfigvalue('general/pass2');
@@ -807,48 +795,6 @@ begin
      if currentpreset = subnode.findnode('#text').nodevalue then
        result := node.nodename;
    end;
-end;
-
-// get the destination directory from the preset
-function tform1.getpresetdestdir(presetname:string):string;
-var
-dirnode : tdomnode;
-destdir:string;
-begin
-   result := '';
- if presetname <> '' then
- begin
-   try
-    if presets.FindNode(presetname).FindNode('destdir').HasChildNodes then
-      begin
-        dirnode:=presets.FindNode(presetname).FindNode('destdir').FindNode('#text');
-        destdir:=dirnode.NodeValue;
-      end
-   except
-    destdir:='';
-   end;
-   result:=destdir;
- end;
-end;
-
-// save the destination directory to the preset
-
-procedure tform1.setpresetdestdir(presetname:string; destdir:string);
-var
-destdirnode,text1:tdomnode;
-begin
- try
-    presets.FindNode(presetname).FindNode('destdir').FindNode('#text').NodeValue :=destdir;
- except
-    try
-       destdirnode:=presetsfile.CreateElement('destdir');
-       presets.FindNode(presetname).appendchild(destdirnode);
-       text1:=presetsfile.Createtextnode(destdir);
-       presets.FindNode(presetname).findnode('destdir').AppendChild(text1);
-    except
-    end;
- end;
-  writexmlfile(presetsfile, presetspath + 'presets.xml');
 end;
 
 

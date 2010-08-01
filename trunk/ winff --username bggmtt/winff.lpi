@@ -65,13 +65,13 @@
         <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="88" Y="315"/>
-        <TopLine Value="438"/>
+        <CursorPos X="3" Y="656"/>
+        <TopLine Value="643"/>
         <EditorIndex Value="0"/>
         <UsageCount Value="214"/>
         <Bookmarks Count="2">
-          <Item0 X="6" Y="1842" ID="1"/>
-          <Item1 X="1" Y="314" ID="2"/>
+          <Item0 X="6" Y="1788" ID="1"/>
+          <Item1 X="1" Y="312" ID="2"/>
         </Bookmarks>
         <Loaded Value="True"/>
       </Unit1>
@@ -295,7 +295,7 @@
         <UsageCount Value="10"/>
       </Unit30>
     </Units>
-    <JumpHistory Count="29" HistoryIndex="28">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="unit5.pas"/>
         <Caret Line="83" Column="35" TopLine="75"/>
@@ -412,6 +412,10 @@
         <Filename Value="unit5.pas"/>
         <Caret Line="108" Column="45" TopLine="71"/>
       </Position29>
+      <Position30>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="191" Column="5" TopLine="180"/>
+      </Position30>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
