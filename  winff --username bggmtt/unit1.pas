@@ -312,7 +312,7 @@ var
   rsHintSamplerate='(<integer>) the sampling frequency of the audio in Hertz';
   rsHintAudiochannels='(<integer>) number of audio channels';
   rsHintVolume='(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume';
-  rsHintAudioSync='(<integer>) Audio Sync = DON"T KNOW THE HINT TEXT!';
+  rsHintAudioSync='(<integer>) Audio Sync = from 10 up to audio bitrate such as 44100, 48000';
   rsHintSeek='<hh:mm:ss> - Begin recording at start time';
   rsHintRecord='<hh:mm:ss> - Amount of time to record';
   rsHintTime='Make sure that the start time + time to record is less than total length of job';
