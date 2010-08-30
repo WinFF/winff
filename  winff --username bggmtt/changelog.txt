@@ -1,6 +1,13 @@
 WinFF Copyright 2006 - 2010 Matthew Weatherford
 http://www.winff.org
 
+v1.3.1
+------
+volume working
+async tip updated
+removed obselete code
+general code cleanup
+
 v1.3.0
 -----
 cropping is applied to the input file instead of output
