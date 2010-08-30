@@ -4,14 +4,14 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.2
+AppVerName=WinFF 1.3.1
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.2
+VersionInfoVersion=1.3.1
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
