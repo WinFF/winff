@@ -1818,6 +1818,7 @@ i,startpos,endpos: integer;
 
 begin
  startpos:=pos(param +' ', commandline);
+ endpos:=length(commandline)+1;
  if startpos <> 0 then
    begin
      for I:=startpos+1 to length(commandline)-1 do
