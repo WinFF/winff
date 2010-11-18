@@ -1,7 +1,8 @@
 Source: winff
 Section: video
 Priority: extra
-Maintainer: Paul Gevers <paul@climbing.nl>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Paul Gevers <paul@climbing.nl>
 DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 7.0~),
 	       lcl,
@@ -20,7 +21,8 @@ Depends: ffmpeg,
 	 ${misc:Depends},
 Recommends: winff-doc,
 Suggests: www-browser,
-Breaks: shared-mime-info (<< 0.40),
+          libavcodec-extra-52,
+Breaks: shared-mime-info (<< 0.40), 
 Description: graphical video and audio batch converter using ffmpeg
  WinFF is a graphical user interface for FFmpeg. It will convert
  almost any video file that FFmpeg will convert. WinFF does multiple
@@ -32,6 +34,10 @@ Description: graphical video and audio batch converter using ffmpeg
  common formats and devices. These presets are intended to hit the
  "sweet spot" for each individual codec. They have been written with a
  tip of the balance to quality.
+ .
+ For most presets to work, it is necessary to have the unstripped version
+ of the libavcodec in the multiverse repository, which can be obtained by
+ installing libavcodec-extra-## as suggested by this package.
 
 Package: winff-dbg
 Architecture: any
