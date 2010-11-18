@@ -12,6 +12,14 @@ configure-stamp:
 	dh_testdir
 
 	if [ -f presets.xml ] ; then mv presets.xml presets-orig.xml; fi 
+
+ifeq ($(shell dpkg-vendor --derives-from Ubuntu && echo yes),yes)
+	mv debian/control debian/control.debian
+	mv debian/presets.xml debian/presets-debian.xml
+	cp debian/control.ubuntu debian/control
+	cp debian/presets-ubuntu.xml debian/presets.xml
+endif
+
 	cd languages ;\
 		if [ -f winff.pb.po ] ; then mv winff.pb.po winff.pt_BR.po; fi ;\
 		if [ -f winff.po ] ; then mv winff.po winff.en.po; fi ;\
@@ -40,6 +48,11 @@ clean:
 		if [ -f winff.pt_BR.po ] ; then mv winff.pt_BR.po winff.pb.po; fi ;\
 		if [ -f winff.en.po ] ; then mv winff.en.po winff.po; fi ;\
 		if [ -f winff.zh_TW.po ] ; then mv winff.zh_TW.po winff.zh.po; fi
+
+	cd debian ;\
+		if [ -f control.debian ] ; then mv control.debian control; fi ;\
+		if [ -f presets-debian.xml ] ; then mv presets-debian.xml presets.xml; fi
+
 	dh_clean 
 
 install: build

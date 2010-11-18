@@ -1,3 +1,16 @@
+winff (1.3.1-1) experimental; urgency=low
+
+  * New upstream release
+  * dropped translation patches
+  * Added patch fix_last_option_in_advanced_options (LP: #574921)
+  * Smart rules file to remove diff Ubuntu/Debian
+    - Added control.ubuntu for Ubuntu specific control file
+    - Added presets-ubuntu.xml for Ubuntu presets
+  * Updated debian/README.debian
+  * Bumped standards version to 3.9.1 (no changes needed)
+
+ -- Paul Gevers <paul@climbing.nl>  Thu, 04 Nov 2010 19:34:18 +0100
+
 winff (1.3.0-1) unstable; urgency=low
 
   * New upstream release
