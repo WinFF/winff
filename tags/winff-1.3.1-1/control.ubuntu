@@ -1,0 +1,71 @@
+Source: winff
+Section: video
+Priority: extra
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Paul Gevers <paul@climbing.nl>
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 7.0~),
+	       lcl,
+	       lcl-gtk2,
+	       fpc (>= 2.2.2-3),
+Standards-Version: 3.9.1
+Homepage: http://www.winff.org/
+Vcs-Browser: http://code.google.com/p/winff/source/browse/#svn/trunk/%20winff%20--username%20bggmtt/debian
+Vcs-Svn: http://winff.googlecode.com/svn/trunk/%20winff%20--username%20bggmtt/debian
+
+Package: winff
+Architecture: any
+Depends: ffmpeg,
+	 xterm | x-terminal-emulator,
+	 ${shlibs:Depends},
+	 ${misc:Depends},
+Recommends: winff-doc,
+Suggests: www-browser,
+          libavcodec-extra-52,
+Breaks: shared-mime-info (<< 0.40), 
+Description: graphical video and audio batch converter using ffmpeg
+ WinFF is a graphical user interface for FFmpeg. It will convert
+ almost any video file that FFmpeg will convert. WinFF does multiple
+ files in multiple formats at one time. You can, for example, convert
+ mpeg's, flv's, and mov's into avi's (or DVD/VCD format or MPEG or 3gp
+ etc.) all at once.
+ .
+ This package provides a variety of preset conversion settings for
+ common formats and devices. These presets are intended to hit the
+ "sweet spot" for each individual codec. They have been written with a
+ tip of the balance to quality.
+ .
+ For most presets to work, it is necessary to have the unstripped version
+ of the libavcodec in the multiverse repository, which can be obtained by
+ installing libavcodec-extra-## as suggested by this package.
+
+Package: winff-dbg
+Architecture: any
+Section: debug
+Depends: winff (= ${binary:Version}),
+	 ${misc:Depends},
+Description: winff debugging symbols
+ WinFF is a graphical user interface for FFmpeg. It will convert
+ almost any video file that FFmpeg will convert. WinFF does multiple
+ files in multiple formats at one time. You can, for example, convert
+ mpeg's, flv's, and mov's into avi's (or DVD/VCD format or MPEG or 3gp
+ etc.) all at once.
+ .
+ This package contains the debugging symbols for winff.
+
+Package: winff-doc
+Architecture: all
+Section: doc
+Depends: winff,
+	 ${shlibs:Depends},
+	 ${misc:Depends},
+Suggests: pdf-viewer,
+Replaces: winff (<< 1.2.0),
+Description: winff documentation
+ WinFF is a graphical user interface for FFmpeg. It will convert
+ almost any video file that FFmpeg will convert. WinFF does multiple
+ files in multiple formats at one time. You can, for example, convert
+ mpeg's, flv's, and mov's into avi's (or DVD/VCD format or MPEG or 3gp
+ etc.) all at once.
+ .
+ This package contains the pdf-manuals for winff in several languages.
