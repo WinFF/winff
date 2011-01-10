@@ -1,1 +1,0 @@
-application/winff; /usr/bin/winff %s; description="WinFF preset file"; nametemplate=%s.wff; test=test -n "$DISPLAY"
