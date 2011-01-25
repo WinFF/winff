@@ -1,6 +1,7 @@
 unit Unit3; 
 
 // WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
+// WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
 // http://winff.org
 // Licensed under the GPL v3 or any later version
 //
@@ -29,9 +30,9 @@ uses
 
 type
 
-  { TForm3 }
+  { TfrmAbout }
 
-  TForm3 = class(TForm)
+  TfrmAbout = class(TForm)
     Button1: TButton;
     Image1: TImage;
     Label1: TLabel;
@@ -73,34 +74,21 @@ type
   end; 
 
 var
-  Form3: TForm3; 
-
-Resourcestring
-    rsButton1='OK';
-    rsPage1='WinFF';
-    rsPage2='FFmpeg';
-    rsPage3='Thanks';
-    rsform3='About WinFF';
-    rslabel8='FFmpeg builds by';
+  frmAbout: TfrmAbout;
 
 implementation
 
 uses unit1;
-{ TForm3 }
+{ TfrmAbout }
 
-procedure TForm3.FormCreate(Sender: TObject);
-begin                  // do translations
+procedure TfrmAbout.FormCreate(Sender: TObject);
+begin
+    // do translations
     TranslateUnitResourceStrings('unit3', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
-    button1.caption:=rsButton1;
-    page1.caption:=rsPage1;
-    page2.caption:=rsPage2;
-    page3.caption:=rsPage3;
-    form3.caption:=rsform3;
-    label8.caption:=rslabel8;
     
-                     // fill thank you memo
+    // fill thank you memo
 
-    listbox1.items.Add('Translators');
+    listbox1.items.Add('Translators:');
     listbox1.items.Add('Nighto');
     listbox1.items.Add('Simeon Uzunov');
     listbox1.items.Add('Paul Gevers');
@@ -128,55 +116,56 @@ begin                  // do translations
     listbox1.items.add('Joe Black');
     listbox1.items.add('Göran Hannel');
     listbox1.items.add('大宝(DaBao)');
+    listbox1.items.add('Alexey Osipov');
 
 
 
 end;
 
 
-procedure TForm3.Label10Click(Sender: TObject);
+procedure TfrmAbout.Label10Click(Sender: TObject);
 begin
-  form1.LaunchBrowser('http://ffmpeg.arrozcru.org/');
+  frmMain.LaunchBrowser('http://ffmpeg.arrozcru.org/');
 end;
 
-procedure TForm3.Label12Click(Sender: TObject);
+procedure TfrmAbout.Label12Click(Sender: TObject);
 begin
-form1.LaunchBrowser('http://istoff.blogspot.com');
+frmMain.LaunchBrowser('http://istoff.blogspot.com');
 end;
 
-procedure TForm3.Label13Click(Sender: TObject);
+procedure TfrmAbout.Label13Click(Sender: TObject);
 begin
-  form1.LaunchBrowser('http://www.bandshed.net/');
+  frmMain.LaunchBrowser('http://www.bandshed.net/');
 end;
 
 
-procedure TForm3.Button1Click(Sender: TObject);
+procedure TfrmAbout.Button1Click(Sender: TObject);
 begin
-  form3.close;
+  frmAbout.close;
 end;
 
-procedure TForm3.Label1Click(Sender: TObject);
+procedure TfrmAbout.Label1Click(Sender: TObject);
 begin
 
 end;
 
-procedure TForm3.Label3Click(Sender: TObject);
+procedure TfrmAbout.Label3Click(Sender: TObject);
 begin
-   form1.LaunchBrowser('http://www.biggmatt.com');
+   frmMain.LaunchBrowser('http://www.biggmatt.com');
 end;
 
-procedure TForm3.Label4Click(Sender: TObject);
+procedure TfrmAbout.Label4Click(Sender: TObject);
 begin
-  form1.LaunchBrowser('http://www.winff.org');
+  frmMain.LaunchBrowser('http://www.winff.org');
 end;
 
-procedure TForm3.Label5Click(Sender: TObject);
+procedure TfrmAbout.Label5Click(Sender: TObject);
 begin
 end;
 
-procedure TForm3.Label7Click(Sender: TObject);
+procedure TfrmAbout.Label7Click(Sender: TObject);
 begin
-  form1.LaunchBrowser('http://ffmpeg.org/');
+  frmMain.LaunchBrowser('http://ffmpeg.org/');
 end;
 
 
