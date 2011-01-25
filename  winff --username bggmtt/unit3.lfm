@@ -1,9 +1,11 @@
-object Form3: TForm3
-  Left = 499
+object frmAbout: TfrmAbout
+  Left = 538
   Height = 299
-  Top = 286
+  Top = 289
   Width = 373
   ActiveControl = Notebook1
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
   Caption = 'About WinFF'
   ClientHeight = 299
   ClientWidth = 373
@@ -60,14 +62,14 @@ object Form3: TForm3
     TabOrder = 0
     object Page1: TPage
       Caption = 'WinFF'
-      ClientWidth = 369
-      ClientHeight = 234
+      ClientWidth = 365
+      ClientHeight = 238
       object Label1: TLabel
         Left = 60
         Height = 18
         Top = 10
-        Width = 61
-        Caption = 'WinFF 1.3'
+        Width = 78
+        Caption = 'WinFF 1.3.2'
         ParentColor = False
         OnClick = Label1Click
       end
@@ -160,7 +162,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 64
-        Width = 185
+        Width = 187
         Caption = 'Copyright 2006-2009 GPL V3'
         ParentColor = False
       end
@@ -168,7 +170,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 90
-        Width = 250
+        Width = 257
         Caption = 'Matthew Weatherford and Ian Stoffberg'
         Font.Color = clBlue
         ParentColor = False
@@ -180,7 +182,7 @@ object Form3: TForm3
         Left = 60
         Height = 18
         Top = 26
-        Width = 122
+        Width = 132
         Caption = 'http://www.winff.org'
         Font.Color = clBlue
         ParentColor = False
@@ -191,7 +193,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 114
-        Width = 263
+        Width = 269
         Caption = 'Debian/Ubuntu Packaging by Paul Gevers'
         ParentColor = False
       end
@@ -210,7 +212,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 157
-        Width = 166
+        Width = 171
         Caption = 'High Quality Presets From'
         ParentColor = False
       end
@@ -218,7 +220,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 205
-        Width = 213
+        Width = 219
         Caption = 'Icons and Logo by Alex Klepatsch'
         ParentColor = False
       end
@@ -226,20 +228,20 @@ object Form3: TForm3
         Left = 52
         Height = 18
         Top = 174
-        Width = 44
+        Width = 46
         Caption = 'JNavas'
         ParentColor = False
       end
     end
     object Page2: TPage
       Caption = 'FFmpeg'
-      ClientWidth = 369
-      ClientHeight = 234
+      ClientWidth = 365
+      ClientHeight = 235
       object Label5: TLabel
         Left = 4
         Height = 18
         Top = 10
-        Width = 52
+        Width = 54
         Caption = 'FFmpeg'
         ParentColor = False
         ParentFont = False
@@ -248,7 +250,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 34
-        Width = 168
+        Width = 175
         Caption = 'Trademark Fabrice Belllard'
         ParentColor = False
       end
@@ -257,7 +259,7 @@ object Form3: TForm3
         Left = 6
         Height = 18
         Top = 50
-        Width = 109
+        Width = 110
         Caption = 'http://ffmpeg.org'
         Font.Color = clBlue
         Font.Height = -13
@@ -269,7 +271,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 82
-        Width = 171
+        Width = 181
         Caption = 'FFmpeg Windows Builds by'
         ParentColor = False
       end
@@ -277,7 +279,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 98
-        Width = 80
+        Width = 84
         Caption = 'Ramiro Polla'
         ParentColor = False
       end
@@ -286,7 +288,7 @@ object Form3: TForm3
         Left = 4
         Height = 18
         Top = 114
-        Width = 170
+        Width = 171
         Caption = 'http://ffmpeg.arrozcru.org/'
         Font.Color = clBlue
         ParentColor = False
@@ -296,13 +298,13 @@ object Form3: TForm3
     end
     object Page3: TPage
       Caption = 'Thanks'
-      ClientWidth = 369
-      ClientHeight = 234
+      ClientWidth = 365
+      ClientHeight = 235
       object ListBox1: TListBox
         Left = 0
-        Height = 234
+        Height = 235
         Top = 0
-        Width = 369
+        Width = 365
         Align = alClient
         ClickOnSelChange = False
         ItemHeight = 0
@@ -317,13 +319,18 @@ object Form3: TForm3
     Top = 265
     Width = 373
     Align = alBottom
+    BevelOuter = bvNone
     ClientHeight = 34
     ClientWidth = 373
     TabOrder = 1
     object Button1: TButton
-      Left = 152
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      Left = 149
       Height = 25
-      Top = 4
+      Top = 5
       Width = 75
       BorderSpacing.InnerBorder = 4
       Caption = 'OK'
