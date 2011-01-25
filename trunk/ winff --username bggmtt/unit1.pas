@@ -1,6 +1,7 @@
 unit Unit1; 
 
 // WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
+// WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
 // http://winff.org
 // Licensed under the GPL v3 or any later version
 //
@@ -27,94 +28,102 @@ uses
   {$IFDEF unix} baseunix, unix, {$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
-  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, MaskEdit, Spin;
+  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, MaskEdit, Spin,
+  PoTranslator;
 
 type
 
-  { TForm1 }
+  { TfrmMain }
 
-  TForm1 = class(TForm)
-    btnAdd: TBitBtn;
-    btnPreview: TBitBtn;
-    edtVolume: TEdit;
-    edtAudioSync: TEdit;
-  {  edtTTRHH: TMaskEdit;
-    edtSeekMM: TMaskEdit;
-    edtTTRMM: TMaskEdit;
-    edtSeekSS: TMaskEdit;
-    edtTTRSS: TMaskEdit;
-  }  //edtVolume: TEdit;
-    //edtVolume1: TEdit;
-    edtCropLeft: TEdit;
-    edtAspectRatio: TEdit;
+  TfrmMain = class(TForm)
     audbitrate: TEdit;
     audchannels: TEdit;
     audsamplingrate: TEdit;
+    btnAdd: TBitBtn;
+    btnOptions: TBitBtn;
+    btnPreview: TBitBtn;
     categorybox: TComboBox;
+    cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
-    ChooseFolderBtn: TButton;
     btnClear: TBitBtn;
+    ChooseFolderBtn: TButton;
     commandlineparams: TEdit;
     DestFolder: TEdit;
-    edtCropTop: TEdit;
+    edtAspectRatio: TEdit;
+    edtAudioSync: TEdit;
     edtCropBottom: TEdit;
+    edtCropLeft: TEdit;
     edtCropRight: TEdit;
-    Label20: TLabel;
-    Label21: TLabel;
-    lblCropLeft: TLabel;
-    label22: TLabel;
-    //label22: TLabel;
-    lblCropRight2: TLabel;
-    lblCropTop: TLabel;
-    lblCropBottom: TLabel;
-    lblCropRight: TLabel;
-    label23: TLabel;
-    label24: TLabel;
-//    mitPlaySoundonFinish: TMenuItem;
-    mitDisplayCmdline: TMenuItem;
-    dlgOpenFile: TOpenDialog;
-    filelist: TListBox;
-    gbxSettings: TGroupBox;
-    Label1: TLabel;
-    Label10: TLabel;
-    Label11: TLabel;
-    Label19: TLabel;
-    Label2: TLabel;
-    lblVideoBitRate: TLabel;
-    lblFrameRate: TLabel;
-    lblVideoSize: TLabel;
-    lblAspectRatio: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
-    mitDocs: TMenuItem;
-    mitAbout: TMenuItem;
-    mnuHelp: TMenuItem;
-    mitWinff: TMenuItem;
-    mitForums: TMenuItem;
-    MenuItem9: TMenuItem;
-    nbkSettings: TNotebook;
-    dlgOpenPreset: TOpenDialog;
-    btnOptions: TBitBtn;
+    edtCropTop: TEdit;
     edtSeekHH: TSpinEdit;
     edtSeekMM: TSpinEdit;
     edtSeekSS: TSpinEdit;
     edtTTRHH: TSpinEdit;
     edtTTRMM: TSpinEdit;
     edtTTRSS: TSpinEdit;
-    StatusBar1: TStatusBar;
-    tabPageCrop: TPage;
-    PageControl1: TPageControl;
-    pnlTop: TPanel;
+    edtVolume: TEdit;
+    gbxSettings: TGroupBox;
+    grpOutputSettings: TGroupBox;
+    Label1: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label19: TLabel;
+    Label20: TLabel;
+    Label21: TLabel;
+    label22: TLabel;
+    label23: TLabel;
+    label24: TLabel;
+    Label3: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    lblAspectRatio: TLabel;
+    lblCropBottom: TLabel;
+    lblCropLeft: TLabel;
+    lblCropRight: TLabel;
+    //label22: TLabel;
+    lblCropRight2: TLabel;
+    lblCropTop: TLabel;
+    lblFrameRate: TLabel;
+    lblVideoBitRate: TLabel;
+    lblVideoSize: TLabel;
+//    mitPlaySoundonFinish: TMenuItem;
+    mitDisplayCmdline: TMenuItem;
+    dlgOpenFile: TOpenDialog;
+    filelist: TListBox;
+    Label2: TLabel;
+    mitDocs: TMenuItem;
+    mitAbout: TMenuItem;
+    mnuHelp: TMenuItem;
+    mitWinff: TMenuItem;
+    mitForums: TMenuItem;
+    MenuItem9: TMenuItem;
+    dlgOpenPreset: TOpenDialog;
+    nbkSettings: TNotebook;
+    Panel1: TPanel;
+    Panel10: TPanel;
+    Panel11: TPanel;
+    Panel12: TPanel;
+    Panel13: TPanel;
+    Panel14: TPanel;
+    pnlSpacer: TPanel;
     Panel2: TPanel;
-    cbx2Pass: TCheckBox;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    Panel6: TPanel;
+    Panel7: TPanel;
+    Panel8: TPanel;
+    Panel9: TPanel;
+    PresetBox: TComboBox;
+    StatusBar1: TStatusBar;
+    pnlTop: TPanel;
     btnPlay: TBitBtn;
     pnlbottom: TPanel;
-    pnlbottom2: TPanel;
+    pnlAdditionalOptions: TPanel;
     pnlMain: TPanel;
     mitPauseOnFinish: TMenuItem;
     mitPlaySoundOnFinish: TMenuItem;
-    PresetBox: TComboBox;
     btnRemove: TBitBtn;
     mitShutdownOnFinish: TMenuItem;
     mnuEdit: TMenuItem;
@@ -129,10 +138,11 @@ type
     //dlgOpenFile: TOpenDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     btnConvert: TBitBtn;
-    tabPage1: TTabSheet;
-    tabVideoSettings: TPage;
     tabAudioSettings: TPage;
     tabCmdLineSettings: TPage;
+    tabPageCrop: TPage;
+    tabPageTime: TPage;
+    tabVideoSettings: TPage;
     UpDown1: TUpDown;
     UpDown10: TUpDown;
     UpDown2: TUpDown;
@@ -225,7 +235,7 @@ const
 {$ENDIF}
 
 var
-  Form1: TForm1; 
+  frmMain: TfrmMain;
   {$IFDEF WIN32}
   PIDL : PItemIDList;
   ansicodepage: longint;
@@ -249,95 +259,9 @@ var
   pausescript: string;
   playscript: string;
   multithreading: string;
-  PODirectory, Lang, FallbackLang: String;
+  PODirectory, Lang, FallbackLang, POFile: String;
   preview: boolean;
   Resourcestring
-  // captions
-  rsAddBtn='Add';
-  rsLabel10='Audio Channels';
-  rsdisplaycmdline='Display CMD Line';
-  rspauseonfinish='Pause on Finish';
-  rsplaysoundonfinish='Play Sound on Finish';
-  rsshutdownonfinish='Shutdown on Finish';
-  rsoptionsbtn='Options';
-  rsclosebtn='Options';
-  rsStartBtn='Convert';
-  rsPlay='Play';
-  rsClearBtn='Clear';
-  rsRemoveBtn='Remove';
-  rsCheckBox2='Deinterlace';
-  rspass2='2 pass';
-  rsMenuItem1='Edit';
-  rsMenuItem2='About';
-  rsMenuItem3='Exit';
-  rsMenuItem4='Presets';
-  rsMenuItem5='Preferences';
-  rsMenuItem6='Help';
-  rsMenuItem7='WinFF Forums';
-  rsmitWinff='WinFF Website';
-  rsmitdocs='Documentation';
-  rsmitabout='About';
-  rsimportmenu='Import Preset';
-  rsshowoptions='Additional Options';
-  rsCropLeft='Left';
-  rsCropTop='Top';
-  rsCropBottom='Bottom';
-  rsCropRight='Right';
-  rsPreview='Preview';
-  rsOptions='Options';
-  rsClose='Close';
-  rsfilemenu='File';
-  //rsGroupBox2='Additional Command Line Parameters (Advanced)';
-
-  //Hints
-  rsHintAdd='add file(s) to the list for conversion';
-  rsHintRemove='remove the selected file(s) from the list';
-  rsHintClear='remove all files from the list';
-  rsHintPlay='preview the selected source file with ffplay (good test to see if conversion is possible)';
-  rsHintPreview='preview using the output settings';
-  rsHintConvert='start the conversion process';
-  rsHintOptions='open or close the additional option window';
-  rsHintConvertTo='name of the device or file type the video should be converted to';
-  rsHintDevicePreset='specific setting to use for the chosen device or file type';
-  rsHintOutputfolder='the target location for the final video (choose a different folder than the source folder)';
-  rsHintVideobitrate='(<integer>kb) the target kilobits/second that the stream should use';
-  rsHintAudiobitrate='(<integer>kb) the target kilobits/second that the stream should use';
-  rsHintFramerate='(<real> or <integer>) the number of frames per second';
-  rsHintVideosize='(<integer> X <integer>) the amount of pixels of information. For codecs that don''t support pixel aspect ratio (PAR) this is the size of the video when viewed.';
-  rsHintAspectratio='(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display.';
-  rsHint2pass='Using two passes allows the encoder to gather information in the first run for enhanced quality.';
-  rsHintDeinterlace='removes interlacing from the video (if necessary)';
-  rsHintSamplerate='(<integer>) the sampling frequency of the audio in Hertz';
-  rsHintAudiochannels='(<integer>) number of audio channels';
-  rsHintVolume='(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume';
-  rsHintAudioSync='(<integer>) Audio Sync = from 10 up to audio bitrate such as 44100, 48000';
-  rsHintSeek='<hh:mm:ss> - Begin recording at start time';
-  rsHintRecord='<hh:mm:ss> - Amount of time to record';
-  rsHintTime='Make sure that the start time + time to record is less than total length of job';
-
-  rsLabel5='Video Size';
-  rsLabel6='Aspect Ratio';
-  rsLabel7='Audio Bitrate';
-  rsLabel8='Sample Rate';
-  rsLabel4='Frame Rate';
-  rsLabel3='Video Bitrate';
-  rsGroupBox1='Additional Options';
-  rsLabel2='Output Folder';
-  rsLabel1='Convert To ...';
-  rslabel11='Output Folder';
-  rsLabel19='Device Preset';
-  rsLabel20='Volume';
-  rsLabel21='Audio Sync';
-  rsLabel22='Seek to';
-  rsLabel23='Time to Record';
-  rsLabel24='Hours / Minutes / Seconds';
-
-  tabPage1caption='Output Details';
-  tabPage2caption='Video Settings';
-  tabPage3caption='Audio Settings';
-  tabPage4caption='Additional Command Line Parameters (Advanced)';
-  tabPage5caption='Crop';
-
 
   //messages
   rsCouldNotFindPresetFile = 'Could not find presets file.';
@@ -360,14 +284,13 @@ var
   rsExtensionnoperiod = 'Extension can not contain a period';
   rsFileDoesNotExist = 'file does not exist';
   rsPresettoExport = 'Please select a preset to export';
-  rsAllCategories = '(All Categories)';
   rsSelectDirectory = 'Select Directory';
 
 implementation
 
 
 // Initialize everything
-procedure tform1.FormCreate(Sender: TObject);
+procedure TfrmMain.FormCreate(Sender: TObject);
 var
 f1,f2:textfile;
 ch: char;
@@ -381,89 +304,7 @@ begin
 
 
                // do translations
-   {$ifdef win32}PODirectory := extraspath + '\languages\'{$endif};
-   {$ifdef unix}PODirectory := '/usr/share/winff/languages/'{$endif};
-   GetLanguageIDs(Lang, FallbackLang); // in unit gettext
    TranslateUnitResourceStrings('unit1', PODirectory + 'winff.%s.po', Lang, FallbackLang);
-
-    btnAdd.Caption:=rsaddbtn;
-    Label10.Caption:=rslabel10;
-    mitDisplayCmdline.Caption:=rsdisplaycmdline;
-    mitPauseOnFinish.Caption:=rspauseonfinish;
-    mitPlaySoundOnFinish.Caption:=rsplaysoundonfinish;
-    mitShutdownOnFinish.Caption:=rsshutdownonfinish;
-    btnOptions.Caption:=rsoptionsbtn;
-    btnConvert.Caption:=rsstartbtn;
-    btnPlay.Caption:=rsplay;
-    btnPreview.Caption:=rsPreview;
-    btnClear.Caption:=rsclearbtn;
-    btnRemove.Caption:=rsremovebtn;
-    cbxDeinterlace.Caption:=rscheckbox2;
-    cbx2Pass.Caption:=rspass2;
-    mnuEdit.Caption:=rsmenuitem1;
-    mitExit.Caption:=rsmenuitem3;
-    mitPresets.Caption:=rsmenuitem4;
-    mitPreferences.Caption:=rsmenuitem5;
-    mnuHelp.Caption := rsmenuitem6;
-    mitForums.Caption := rsmenuitem7;
-    mitAbout.Caption:= rsmitabout;
-    mitWinff.Caption := rsmitWinff;
-    mitdocs.Caption:= rsmitdocs;
-    mitImportPreset.Caption:=rsimportmenu;
-    mitShowOptions.Caption:=rsshowoptions;
-    mnuOptions.Caption:=rsoptions;
-    mnuFile.Caption:=rsfilemenu;
-    lblVideoSize.Caption:=rslabel5;
-    lblAspectRatio.Caption:=rslabel6;
-    Label7.Caption:=rslabel7;
-    Label8.Caption:=rslabel8;
-    lblFrameRate.Caption:=rslabel4;
-    lblVideoBitRate.Caption:=rslabel3;
-    label11.Caption:=rslabel11;
-    Label19.Caption:=rslabel19;
-    Label20.Caption:=rslabel20;
-    Label21.Caption:=rslabel21;
-    Label22.Caption:=rslabel22;
-    Label23.Caption:=rslabel23;
-    Label24.Caption:=rslabel24;
-
-
-    gbxSettings.Caption:=rsgroupbox1;
-    Label1.Caption:=rslabel1;
-    Label2.Caption:=rslabel2;
-    lblCropLeft.Caption:=rsCropLeft;
-    lblCropRight.Caption:=rsCropRight;
-    lblCropTop.Caption:=rsCropTop;
-    lblCropBottom.Caption:=rsCropBottom;
-    tabPage1.Caption:=tabPage1caption;
-    tabVideoSettings.Caption:=tabPage2caption;
-    tabAudioSettings.Caption:=tabPage3caption;
-    tabCmdLineSettings.Caption:=tabPage4caption;
-    tabPageCrop.Caption:=tabpage5caption;
-    //hints
-    btnAdd.Hint:=rsHintAdd;
-    btnRemove.Hint:=rsHintRemove;
-    btnClear.Hint:=rsHintClear;
-    btnPreview.Hint:=rsHintPreview;
-    btnPlay.Hint:=rsHintPlay;
-    btnOptions.Hint:=rsHintOptions;
-    btnConvert.Hint:=rsHintConvert;
-    categorybox.Hint:=rsHintConvertTo;
-    PresetBox.Hint:=rsHintDevicePreset;
-    DestFolder.Hint:=rsHintOutputfolder;
-    VidBitRate.Hint:=rsHintVideobitrate;
-    Vidframerate.Hint:=rsHintFramerate;
-    VidsizeX.Hint:=rsHintVideoSize;
-    VidsizeY.Hint:=rsHintVideoSize;
-    audbitrate.Hint:=rsHintAudiobitrate;
-    edtAspectRatio.Hint:=rsHintAspectratio;
-    cbx2Pass.Hint:=rsHint2pass;
-    cbxDeinterlace.Hint:=rsHintDeinterlace;
-    audChannels.Hint:=rsHintAudiochannels;
-    audsamplingrate.Hint:=rsHintSampleRate;
-    edtVolume.hint := rsHintVolume;
-    edtAudioSync.hint := rsHintAudioSync;
-
 
                     // start setup
   {$IFDEF WIN32}
@@ -579,7 +420,7 @@ begin
   if not fileexists(presetspath + 'presets.xml') then
      begin
      showmessage(rsCouldNotFindPresetFile);
-     form1.close;
+     frmMain.close;
      end;
 
   presetsfile.Create;                         // load the presets file
@@ -588,7 +429,7 @@ begin
    presets:=presetsfile.DocumentElement;
   except
    showmessage(rsCouldNotFindPresetFile);
-   form1.close;
+   frmMain.close;
   end;
                                       // import preset from command line
   if upcase(rightstr(paramstr(1),4)) = '.WFF' then
@@ -617,11 +458,11 @@ begin
 
   formtop := 0;
   if sformtop <> '' then formtop:=strtoint(sformtop);
-  if formtop > 0 then form1.Top := formtop;
+  if formtop > 0 then frmMain.Top := formtop;
 
   formleft := 0;
   if sformleft <> '' then formleft:=strtoint(sformleft);
-  if formleft >0 then form1.Left := formleft;
+  if formleft >0 then frmMain.Left := formleft;
 
   if sformheight = '' then formheight:=400
   else formheight := strtoint(sformheight);
@@ -635,18 +476,18 @@ begin
   if showopts='true' then
         begin
         mitShowOptions.Checked:=true;
-        pnlBottom2.Visible :=true;
-        form1.height := formheight;
-        form1.width := formwidth;
-        form1.invalidate;
+        pnlAdditionalOptions.Visible :=true;
+        frmMain.height := formheight;
+        frmMain.width := formwidth;
+        frmMain.invalidate;
         end
   else
         begin
         mitShowOptions.Checked:=false;
-        pnlBottom2.Visible :=false;
-        form1.height := formheight;
-        form1.width := formwidth;
-        form1.invalidate;
+        pnlAdditionalOptions.Visible :=false;
+        frmMain.height := formheight;
+        frmMain.width := formwidth;
+        frmMain.invalidate;
         end;
 
 
@@ -693,7 +534,7 @@ end;
 
 
 // clean up and shut down
-procedure TForm1.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+procedure TfrmMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 var
 s:string;
 begin
@@ -726,17 +567,17 @@ begin
      setconfigvalue('general/pass2','false');
 
      // save window position and size
-  setconfigvalue('window/height',inttostr(form1.height));
-  setconfigvalue('window/width',inttostr(form1.width));
-  setconfigvalue('window/top',inttostr(form1.Top));
-  setconfigvalue('window/left',inttostr(form1.Left));
+  setconfigvalue('window/height',inttostr(frmMain.height));
+  setconfigvalue('window/width',inttostr(frmMain.width));
+  setconfigvalue('window/top',inttostr(frmMain.Top));
+  setconfigvalue('window/left',inttostr(frmMain.Left));
 
   presetsfile.Free;           // cleanup
 
 end;
 
 // get the params from the preset
-function tform1.getpresetparams(presetname:string):string;
+function TfrmMain.getpresetparams(presetname:string):string;
 var
 paramnode : tdomnode;
 param:string;
@@ -754,7 +595,7 @@ begin
 end;
 
 // get the category from the preset
-function tform1.getpresetcategory(presetname:string):string;
+function TfrmMain.getpresetcategory(presetname:string):string;
 var
 catnode : tdomnode;
 category:string;
@@ -776,14 +617,14 @@ begin
 end;
 
 // get the extension of the preset
-function tform1.getpresetextension(presetname:string):string;
+function TfrmMain.getpresetextension(presetname:string):string;
 begin
    result:=presets.FindNode(presetname).FindNode('extension').FindNode('#text').NodeValue;
 end;
 
 
 // get the name of the selected preset
-function tform1.getcurrentpresetname(currentpreset:string):string;
+function TfrmMain.getcurrentpresetname(currentpreset:string):string;
 var
 i:integer;
 node,subnode: tdomnode;
@@ -799,7 +640,7 @@ end;
 
 
 // clear and load the preset box with current list
-procedure tform1.populatepresetbox(selectedcategory:string);
+procedure TfrmMain.populatepresetbox(selectedcategory:string);
 var
 i,j:integer;
 ispresent: boolean;
@@ -871,7 +712,7 @@ begin
 end;
 
 // change category
-procedure TForm1.categoryboxChange(Sender: TObject);
+procedure TfrmMain.categoryboxChange(Sender: TObject);
 var
 i:integer;
 node,subnode, catnode,catsubnode : tdomnode;
@@ -914,7 +755,7 @@ begin
 end;
 
 // cropbootom change
-procedure TForm1.edtCropBottomChange(Sender: TObject);
+procedure TfrmMain.edtCropBottomChange(Sender: TObject);
 var
 i:integer;
 begin
@@ -927,7 +768,7 @@ begin
 end;
 
 // cropleft change
-procedure TForm1.edtCropLeftChange(Sender: TObject);
+procedure TfrmMain.edtCropLeftChange(Sender: TObject);
 var
 i:integer;
 begin
@@ -940,7 +781,7 @@ begin
 end;
 
 // cropright change
-procedure TForm1.edtCropRightChange(Sender: TObject);
+procedure TfrmMain.edtCropRightChange(Sender: TObject);
 var
 i:integer;
 begin
@@ -953,7 +794,7 @@ begin
 end;
 
 // croptop change
-procedure TForm1.edtCropTopChange(Sender: TObject);
+procedure TfrmMain.edtCropTopChange(Sender: TObject);
 var
 i:integer;
 begin
@@ -965,22 +806,22 @@ begin
  i:=i;
 end;
 
-procedure TForm1.edtSeekMMChange(Sender: TObject);
+procedure TfrmMain.edtSeekMMChange(Sender: TObject);
 begin
 end;
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfrmMain.Button1Click(Sender: TObject);
 begin
 end;
 // preview button clicked
-procedure TForm1.btnPreviewClick(Sender: TObject);
+procedure TfrmMain.btnPreviewClick(Sender: TObject);
 begin
 preview := true;
 btnConvertClick(Self);
 end;
 
 // change preset
-procedure TForm1.PresetBoxChange(Sender: TObject);
+procedure TfrmMain.PresetBoxChange(Sender: TObject);
 var
 destdir: string;
 currentpreset:string;
@@ -995,7 +836,7 @@ end;
 
 
 // launch browser
-procedure TForm1.launchbrowser(URL:string);
+procedure TfrmMain.launchbrowser(URL:string);
 {$IFDEF linux}
 var
 launcher:tprocess;
@@ -1026,7 +867,7 @@ begin
 end;
 
 // launch pdf
-procedure TForm1.LaunchPdf(pdffile:string);
+procedure TfrmMain.LaunchPdf(pdffile:string);
 {$IFDEF linux}
 var
 launcher:tprocess;
@@ -1057,7 +898,7 @@ begin
 end;
 
 // set a value in the config file
-procedure TForm1.setconfigvalue(key:string;value:string);
+procedure TfrmMain.setconfigvalue(key:string;value:string);
 var
 cfg: TXMLConfig;
 begin
@@ -1067,7 +908,7 @@ begin
 end;
 
 // get a value from the config file
-function TForm1.getconfigvalue(key:string): string;
+function TfrmMain.getconfigvalue(key:string): string;
 var
 cfg: TXMLConfig;
 begin
@@ -1077,13 +918,13 @@ begin
 end;
 
 // get the user's desktop path
-function tform1.GetDeskTopPath() : string ;
+function TfrmMain.GetDeskTopPath() : string ;
 {$ifdef win32}
 var
   ppidl: PItemIdList;
 begin
   ppidl := nil;
-  SHGetSpecialFolderLocation(Form1.Handle,CSIDL_DESKTOPDIRECTORY , ppidl);
+  SHGetSpecialFolderLocation(frmMain.Handle,CSIDL_DESKTOPDIRECTORY , ppidl);
   SetLength(Result, MAX_PATH);
    if not SHGetPathFromIDList(ppidl, PChar(Result)) then
         raise exception.create('SHGetPathFromIDList failed : invalid pidl');
@@ -1097,13 +938,13 @@ end;
 {$endif}
 
 // get the user's document's path
-function tform1.GetMydocumentsPath() : string ;
+function TfrmMain.GetMydocumentsPath() : string ;
 {$ifdef win32}
 var
   ppidl: PItemIdList;
 begin
   ppidl := nil;
-  SHGetSpecialFolderLocation(Form1.Handle,CSIDL_PERSONAL , ppidl);
+  SHGetSpecialFolderLocation(frmMain.Handle,CSIDL_PERSONAL , ppidl);
   SetLength(Result, MAX_PATH);
    if not SHGetPathFromIDList(ppidl, PChar(Result)) then
         raise exception.create('SHGetPathFromIDList failed : invalid pidl');
@@ -1117,13 +958,13 @@ end;
 {$endif}
 
 // get the user's application data path
-function tform1.GetappdataPath() : string ;
+function TfrmMain.GetappdataPath() : string ;
 {$ifdef win32}
 var
   ppidl: PItemIdList;
 begin
   ppidl := nil;
-  SHGetSpecialFolderLocation(Form1.Handle,CSIDL_APPDATA , ppidl);
+  SHGetSpecialFolderLocation(frmMain.Handle,CSIDL_APPDATA , ppidl);
   SetLength(Result, MAX_PATH);
    if not SHGetPathFromIDList(ppidl, PChar(Result)) then
         raise exception.create('SHGetPathFromIDList failed : invalid pidl');
@@ -1138,7 +979,7 @@ end;
 
 // get windows version
 {$ifdef win32}
-function tform1.GetWIn32System(): Integer;
+function TfrmMain.GetWIn32System(): Integer;
 var
   osVerInfo: TOSVersionInfo;
   majorVer, minorVer: Integer;
@@ -1188,7 +1029,7 @@ end;
 {$endif}
 
 // choose a folder
-procedure TForm1.ChooseFolderBtnClick(Sender: TObject);
+procedure TfrmMain.ChooseFolderBtnClick(Sender: TObject);
 begin
   selectdirectorydialog1.Title:= rsSelectDirectory;
   if SelectDirectoryDialog1.execute then
@@ -1197,7 +1038,7 @@ end;
 
 
 // drop files into list
-procedure TForm1.FormDropFiles(Sender: TObject; const FileNames: array of String
+procedure TfrmMain.FormDropFiles(Sender: TObject; const FileNames: array of String
   );
 var
 numfiles, i:integer;
@@ -1208,7 +1049,7 @@ for i:= 0 to numfiles do
 end;
 
 // add files to the list
-procedure tform1.btnAddClick(Sender: TObject);
+procedure TfrmMain.btnAddClick(Sender: TObject);
 begin
    dlgOpenFile.Title:=rsSelectVideoFiles;
    dlgOpenFile.InitialDir := getconfigvalue('general/addfilesfolder');
@@ -1220,7 +1061,7 @@ begin
 end;
 
 // remove a file from the list
-procedure tform1.btnRemoveClick(Sender: TObject);
+procedure TfrmMain.btnRemoveClick(Sender: TObject);
 var
 i: integer;
 begin
@@ -1233,23 +1074,23 @@ begin
 end;
 
 // clear the file list
-procedure tform1.btnClearClick(Sender: TObject);
+procedure TfrmMain.btnClearClick(Sender: TObject);
 begin
   filelist.Clear;
 end;
 
-procedure TForm1.lblCropRight1Click(Sender: TObject);
+procedure TfrmMain.lblCropRight1Click(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.edtSeekHHChange(Sender: TObject);
+procedure TfrmMain.edtSeekHHChange(Sender: TObject);
 begin
 
 end;
 
 // filelist on key up
-procedure TForm1.filelistKeyUp(Sender: TObject; var Key: Word;
+procedure TfrmMain.filelistKeyUp(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 var
 i:integer;
@@ -1268,20 +1109,22 @@ begin
 end;
 
 
+
+
 // menu: edit the presets
-procedure TForm1.mitPresetsClick(Sender: TObject);
+procedure TfrmMain.mitPresetsClick(Sender: TObject);
 begin
-  form2.show;
+  frmEditPresets.show;
 end;
 
 // menu: edit preferences
-procedure TForm1.mitPreferencesClick(Sender: TObject);
+procedure TfrmMain.mitPreferencesClick(Sender: TObject);
 begin
-form4.show;
+frmPreferences.show;
 end;
 
 //menu: help documentation
-procedure TForm1.mitDocsClick(Sender: TObject);
+procedure TfrmMain.mitDocsClick(Sender: TObject);
 var s : string;
 language: string;
 begin
@@ -1312,32 +1155,32 @@ begin
 end;
 
 //menu: Help Forums
-procedure TForm1.mitForumsClick(Sender: TObject);
+procedure TfrmMain.mitForumsClick(Sender: TObject);
 
 begin
   launchbrowser('http://www.winff.org/forums/');
 end;
 
 //menu: Help Forums
-procedure TForm1.mitWinffClick(Sender: TObject);
+procedure TfrmMain.mitWinffClick(Sender: TObject);
 
 begin
   launchbrowser('http://www.winff.org/');
 end;
 
 // menu: about
-procedure TForm1.MenuItem2Click(Sender: TObject);
+procedure TfrmMain.MenuItem2Click(Sender: TObject);
 begin
-  form3.show;
+  frmAbout.show;
 end;
 
 // menu: exit the program
-procedure TForm1.mitExitClick(Sender: TObject);
+procedure TfrmMain.mitExitClick(Sender: TObject);
 begin
-  form1.close;
+  frmMain.close;
 end;
 
-procedure TForm1.mitPlaySoundonFinishClick(Sender: TObject);
+procedure TfrmMain.mitPlaySoundonFinishClick(Sender: TObject);
 begin
   if mitplaysoundOnFinish.Checked then
     begin
@@ -1352,7 +1195,7 @@ begin
 end;
 
 // menu: import preset
-procedure TForm1.mitImportPresetClick(Sender: TObject);
+procedure TfrmMain.mitImportPresetClick(Sender: TObject);
 begin
   dlgOpenPreset.Title:=rsSelectPresetFile;
   dlgOpenPreset.InitialDir:=GetMydocumentsPath();
@@ -1362,35 +1205,28 @@ begin
 end;
 
 // menu: about
-procedure TForm1.mitAboutClick(Sender: TObject);
+procedure TfrmMain.mitAboutClick(Sender: TObject);
 begin
-  form3.Show;
+  frmAbout.Show;
 end;
 
 // menu: show / hide additional mnuOptions
-procedure TForm1.mitShowOptionsClick(Sender: TObject);
+procedure TfrmMain.mitShowOptionsClick(Sender: TObject);
  begin
    if not mitShowOptions.Checked then
         begin
-        form1.Height:=form1.Height + pnlBottom.Height ; // This should be fine, not sure if you want to limit height
+        frmMain.Height := frmMain.Height + pnlAdditionalOptions.Height;
+        pnlAdditionalOptions.Visible := True;
+        //Constraints.MinHeight := Constraints.MinHeight + pnlAdditionalOptions.Height;
 
-        if form1.height < 400 then form1.height := 550;
-
-        pnlBottom2.Visible := True;
         mitShowOptions.Checked:=true;
         end
   else
         begin
+        //Constraints.MinHeight := Constraints.MinHeight - pnlAdditionalOptions.Height;
+        pnlAdditionalOptions.visible := false;
+        frmMain.Height := frmMain.Height - pnlAdditionalOptions.Height;
 
-        if form1.Height - pnlBottom2.Height > 400 then
-          begin
-            form1.Height:=form1.Height-pnlBottom.Height;
-          end
-        else
-          begin
-            form1.Height := 400;/// Ensure they don't make it too small.
-          end;
-        pnlbottom2.visible := false;
         mitShowOptions.Checked:=false;
 
         vidbitrate.Clear;
@@ -1403,11 +1239,13 @@ procedure TForm1.mitShowOptionsClick(Sender: TObject);
         mitDisplayCmdline.Checked:=false;
         commandlineparams.Clear;
         end;
-  Application.ProcessMessages; // Should repaint the form like invalidate
+
+  //  Application.ProcessMessages; // Should repaint the form like invalidate
+  Invalidate; //Why not use Invalidate itself?
 end;
 
 // menu: shutdown on finish
-procedure TForm1.mitShutdownOnFinishClick(Sender: TObject);
+procedure TfrmMain.mitShutdownOnFinishClick(Sender: TObject);
 begin
    if mitShutdownOnFinish.Checked then
     begin
@@ -1422,7 +1260,7 @@ begin
 end;
 
 // menu: pause on finish
-procedure TForm1.mitPauseOnFinishClick(Sender: TObject);
+procedure TfrmMain.mitPauseOnFinishClick(Sender: TObject);
 begin
   if mitPauseOnFinish.Checked then
     begin
@@ -1438,13 +1276,13 @@ begin
 end;
 
 // menu: display commandline
-procedure TForm1.mitDisplayCmdlineClick(Sender: TObject);
+procedure TfrmMain.mitDisplayCmdlineClick(Sender: TObject);
 begin
      mitDisplayCmdline.Checked:= not mitDisplayCmdline.Checked;
 end;
 
 // btnPlay the selected file
-procedure TForm1.btnPlayClick(Sender: TObject);
+procedure TfrmMain.btnPlayClick(Sender: TObject);
 var
 i : integer;
 filenametoplay: string;
@@ -1481,7 +1319,7 @@ begin
 end;
 
 // Start Conversions
-procedure TForm1.btnConvertClick(Sender: TObject);
+procedure TfrmMain.btnConvertClick(Sender: TObject);
 var
 i,j : integer;
 cb,ct,cl,cr:integer;
@@ -1546,7 +1384,7 @@ begin                                     // get setup
       end;
    params:=getpresetparams(pn);
    extension:=getpresetextension(pn);
-   unit5.form5.memo1.lines.Clear;
+   frmScript.memo1.lines.Clear;
 
                                          // trim everything up
    commandlineparams.text := trim(commandlineparams.Text);
@@ -1779,9 +1617,9 @@ begin                                     // get setup
    else
    begin
       // if continue pressed, attempt to execute user modified script;
-      unit5.Form5.Memo1.Lines:=script;
-      form5.scriptfilename:= presetspath + batfile;
-      resmod := unit5.Form5.ShowModal;
+      frmScript.Memo1.Lines:=script;
+      frmScript.scriptfilename:= presetspath + batfile;
+      resmod := frmScript.ShowModal;
       if resmod = 1 then     // Continue Clicked;
       begin
 
@@ -1812,7 +1650,7 @@ begin                                     // get setup
 end;
 
    // replace a paramter from a commandline
-function Tform1.replaceparam(commandline:string; param:string; replacement:string):string;
+function TfrmMain.replaceparam(commandline:string; param:string; replacement:string):string;
 var
 i,startpos,endpos: integer;
 
@@ -1835,13 +1673,13 @@ begin
      result:=commandline;
 end;
 
-procedure TForm1.VidbitrateChange(Sender: TObject);
+procedure TfrmMain.VidbitrateChange(Sender: TObject);
 begin
 
 end;
 
 // import a preset from a file
-procedure tform1.importpresetfromfile(presetfilename: string);
+procedure TfrmMain.importpresetfromfile(presetfilename: string);
 var
  importfile: txmldocument;
  importedpreset: tdomelement;
@@ -1978,6 +1816,22 @@ end;
 
 initialization
   {$I unit1.lrs}
+  {$ifdef win32}PODirectory := extraspath + '\languages\'{$endif};
+  {$ifdef unix}PODirectory := '/usr/share/winff/languages/'{$endif};
+  GetLanguageIDs(Lang, FallbackLang); // in unit gettext
+  POFile := PODirectory + 'winff.' + Lang + '.po';
+  if not FileExists(POFile) then
+     POFile := PODirectory + 'winff.' + FallbackLang + '.po';
+
+  if FileExists(POFile) then
+  begin
+    try
+      LRSTranslator := TPoTranslator.Create(POFile);
+    except
+    end;
+  end
+  else
+    POFile := '';
 
 end.
 

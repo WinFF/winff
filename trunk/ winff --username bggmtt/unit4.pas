@@ -1,6 +1,7 @@
 unit Unit4; 
 
 // WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
+// WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
 // http://winff.org
 // Licensed under the GPL v3 or any later version
 //
@@ -27,9 +28,9 @@ uses
 
 type
 
-  { TForm4 }
+  { TfrmPreferences }
 
-  TForm4 = class(TForm)
+  TfrmPreferences = class(TForm)
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
@@ -41,8 +42,6 @@ type
     CheckBox1: TCheckBox;
     CheckBox2: TCheckBox;
     CheckBox3: TCheckBox;
-    edtThreads: TEdit;
-    prioritybox: TComboBox;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
@@ -50,19 +49,30 @@ type
     Edit5: TEdit;
     Edit6: TEdit;
     Edit7: TEdit;
+    edtThreads: TEdit;
+    Label7: TLabel;
+    Label8: TLabel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
     Notebook1: TNotebook;
     OpenDialog1: TOpenDialog;
     Page1: TPage;
     Page2: TPage;
     Page3: TPage;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    Panel6: TPanel;
+    Panel7: TPanel;
+    Panel8: TPanel;
+    pnlBottom: TPanel;
+    prioritybox: TComboBox;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
@@ -82,27 +92,9 @@ type
   end; 
 
 var
-  Form4: TForm4; 
+  frmPreferences: TfrmPreferences;
 
 resourcestring
-    rsform4='WinFF Preferences';
-    rsButton1='OK';
-    rsButton2='Cancel';
-    rsCheckBox1='Remember Last Directory Used';
-    rsCheckBox2='Use CHCP for international characters';
-    rsCheckBox3='Multithreading for Dual Core Processors';
-    rsLabel1='Default Destination Directory';
-    rsLabel2='Path to FFmpeg.exe';
-    rsLabel3='Path to FFPlay.exe';
-    rsLabel4='Path to FFmpeg Executable';
-    rsLabel5='Path to FFPlay Executable';
-    rsLabel6='Terminal to run FFmpeg';
-    rsLabel7='Terminal Options (-e for Xterm , -x for Gnome Terminal';
-    rslabel8='Priority';
-    rsPage1='General';
-    rsPage2='Ms Windows';
-    rsPage3='Linux';
-
     rspriorityhigh='High';
     rsprioritynormal='Normal';
     rspriorityidle='Idle';
@@ -110,98 +102,81 @@ resourcestring
 implementation
 
 uses unit1;
-{ TForm4 }
+{ TfrmPreferences }
 
 // load preferences
-procedure TForm4.FormCreate(Sender: TObject);
+procedure TfrmPreferences.FormCreate(Sender: TObject);
 
 begin
     TranslateUnitResourceStrings('unit4', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
-    form4.Caption:=rsform4;
-    button1.caption:=rsButton1;
-    button2.caption:=rsButton2;
-    checkbox1.caption:=rsCheckBox1;
-    checkbox2.caption:=rsCheckBox2;
-    checkbox3.caption:=rsCheckBox3;
-    label1.caption:=rsLabel1;
-    label2.caption:=rsLabel2;
-    label3.caption:=rsLabel3;
-    label4.caption:=rsLabel4;
-    label5.caption:=rsLabel5;
-    label6.caption:=rsLabel6;
-    label7.caption:=rsLabel7;
-    label8.caption:=rslabel8;
-    page1.caption:=rsPage1;
-    page2.caption:=rsPage2;
-    page3.caption:=rsPage3;
     prioritybox.Items.Add(rspriorityhigh);
     prioritybox.Items.Add(rsprioritynormal);
     prioritybox.Items.Add(rspriorityidle);
   {$ifdef win32}
-   edit2.Text:= form1.getconfigvalue('win32/ffmpeg');
-   edit3.Text:= form1.getconfigvalue('win32/ffplay');
-   if form1.getconfigvalue('win32/chcp') = 'true' then
+   edit2.Text:= frmMain.getconfigvalue('win32/ffmpeg');
+   edit3.Text:= frmMain.getconfigvalue('win32/ffplay');
+   if frmMain.getconfigvalue('win32/chcp') = 'true' then
      checkbox2.Checked := true
   else
      checkbox2.Checked := false;
   {$endif}
   {$ifdef unix}
 
-   edit4.Text:= form1.getconfigvalue('unix/ffmpeg');
-   edit5.Text:= form1.getconfigvalue('unix/ffplay');
-   edit6.Text:= form1.getconfigvalue('unix/terminal');
-   edit7.Text:= form1.getconfigvalue('unix/termoptions');
+   edit4.Text:= frmMain.getconfigvalue('unix/ffmpeg');
+   edit5.Text:= frmMain.getconfigvalue('unix/ffplay');
+   edit6.Text:= frmMain.getconfigvalue('unix/terminal');
+   edit7.Text:= frmMain.getconfigvalue('unix/termoptions');
   {$endif}
 
-  edit1.Text:= form1.getconfigvalue('general/destfolder');
+  edit1.Text:= frmMain.getconfigvalue('general/destfolder');
 
 
-  if form1.getconfigvalue('general/rememberlast') = 'true' then
+  if frmMain.getconfigvalue('general/rememberlast') = 'true' then
      checkbox1.Checked := true
   else
      checkbox1.Checked := false;
 
-  if form1.getconfigvalue('general/multithreading') = 'true' then
+  if frmMain.getconfigvalue('general/multithreading') = 'true' then
      checkbox3.Checked := true
   else
      checkbox3.Checked := false;
-  edtthreads.Text:= form1.getconfigvalue('general/numberofthreads');
+  edtthreads.Text:= frmMain.getconfigvalue('general/numberofthreads');
 
-  prioritybox.Text := form1.getconfigvalue('general/priority');
+  prioritybox.Text := frmMain.getconfigvalue('general/priority');
 end;
 
 // save preference
-procedure TForm4.Button1Click(Sender: TObject);
+procedure TfrmPreferences.Button1Click(Sender: TObject);
 
 begin
-  form1.setconfigvalue('general/destfolder',edit1.text);
-  form1.DestFolder.Text := edit1.text;
+  frmMain.setconfigvalue('general/destfolder',edit1.text);
+  frmMain.DestFolder.Text := edit1.text;
   
   if checkbox1.Checked then
    begin
-    form1.setconfigvalue('general/rememberlast','true');
+    frmMain.setconfigvalue('general/rememberlast','true');
     unit1.rememberlast:='true';
    end
   else
    begin
-    form1.setconfigvalue('general/rememberlast','false');
+    frmMain.setconfigvalue('general/rememberlast','false');
     unit1.rememberlast:='false';
    end;
 
   if checkbox3.Checked then
    begin
-    form1.setconfigvalue('general/multithreading','true');
+    frmMain.setconfigvalue('general/multithreading','true');
     unit1.multithreading:='true';
    end
   else
    begin
-    form1.setconfigvalue('general/multithreading','false');
+    frmMain.setconfigvalue('general/multithreading','false');
     unit1.multithreading:='false';
    end;
   edtthreads.Text:=trim(edtthreads.Text);
-  form1.setconfigvalue('general/numberofthreads', edtthreads.Text);
+  frmMain.setconfigvalue('general/numberofthreads', edtthreads.Text);
 
-  form1.setconfigvalue('general/priority', prioritybox.Text);
+  frmMain.setconfigvalue('general/priority', prioritybox.Text);
 
   edit1.Text := trim(edit1.Text);
   edit2.Text := trim(edit2.Text);
@@ -219,17 +194,17 @@ begin
 
   unit1.ffmpeg := edit2.text;
   unit1.ffplay := edit3.text;
-  form1.setconfigvalue('win32/ffmpeg',edit2.text);
-  form1.setconfigvalue('win32/ffplay',edit3.text);
+  frmMain.setconfigvalue('win32/ffmpeg',edit2.text);
+  frmMain.setconfigvalue('win32/ffplay',edit3.text);
   
   if checkbox2.Checked then
    begin
-    form1.setconfigvalue('win32/chcp','true');
+    frmMain.setconfigvalue('win32/chcp','true');
     unit1.usechcp:='true';
    end
   else
    begin
-    form1.setconfigvalue('win32/chcp','false');
+    frmMain.setconfigvalue('win32/chcp','false');
     unit1.usechcp:='false';
    end;
   {$endif}
@@ -246,59 +221,59 @@ begin
   unit1.ffplay := edit5.text;
   unit1.terminal :=edit6.text;
   unit1.termoptions := edit7.text;
-  form1.setconfigvalue('unix/ffmpeg',edit4.text);
-  form1.setconfigvalue('unix/ffplay',edit5.text);
-  form1.setconfigvalue('unix/terminal',edit6.text);
-  form1.setconfigvalue('unix/termoptions',edit7.text);
+  frmMain.setconfigvalue('unix/ffmpeg',edit4.text);
+  frmMain.setconfigvalue('unix/ffplay',edit5.text);
+  frmMain.setconfigvalue('unix/terminal',edit6.text);
+  frmMain.setconfigvalue('unix/termoptions',edit7.text);
   {$endif}
   
 
-  form4.close;
+  frmPreferences.close;
 
 end;
 
-procedure TForm4.Button3Click(Sender: TObject);
+procedure TfrmPreferences.Button3Click(Sender: TObject);
 begin
  if selectdirectorydialog1.Execute then
     edit1.Text := selectdirectorydialog1.FileName;
 end;
 
-procedure TForm4.Button2Click(Sender: TObject);
+procedure TfrmPreferences.Button2Click(Sender: TObject);
 begin
-  form4.close;
+  frmPreferences.close;
 end;
 
-procedure TForm4.Button4Click(Sender: TObject);
+procedure TfrmPreferences.Button4Click(Sender: TObject);
 begin
   if opendialog1.Execute then
     edit2.Text := opendialog1.FileName;
 end;
 
-procedure TForm4.Button5Click(Sender: TObject);
+procedure TfrmPreferences.Button5Click(Sender: TObject);
 begin
    if opendialog1.Execute then
     edit3.Text := opendialog1.FileName;
 end;
 
-procedure TForm4.Button6Click(Sender: TObject);
+procedure TfrmPreferences.Button6Click(Sender: TObject);
 begin
   if opendialog1.Execute then
     edit4.Text := opendialog1.FileName;
 end;
 
-procedure TForm4.Button7Click(Sender: TObject);
+procedure TfrmPreferences.Button7Click(Sender: TObject);
 begin
   if opendialog1.Execute then
     edit5.Text := opendialog1.FileName;
 end;
 
-procedure TForm4.Button8Click(Sender: TObject);
+procedure TfrmPreferences.Button8Click(Sender: TObject);
 begin
    if opendialog1.Execute then
     edit6.Text := opendialog1.FileName;
 end;
 
-procedure TForm4.edtThreadsChange(Sender: TObject);
+procedure TfrmPreferences.edtThreadsChange(Sender: TObject);
 begin
 
 end;

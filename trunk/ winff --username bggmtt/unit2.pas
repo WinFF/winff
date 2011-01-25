@@ -1,6 +1,7 @@
 unit Unit2; 
 
 // WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
+// WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
 // http://winff.org
 // Licensed under the GPL v3 or any later version
 //
@@ -28,9 +29,9 @@ uses
 
 type
 
-  { TForm2 }
+  { TfrmEditPresets }
 
-  TForm2 = class(TForm)
+  TfrmEditPresets = class(TForm)
     addpresetbtn: TButton;
     CancelBtn: TButton;
     DeleteBtn: TButton;
@@ -51,8 +52,11 @@ type
     ListBox1: TListBox;
     OKbtn: TButton;
     OpenDialog1: TOpenDialog;
-    Panel1: TPanel;
-    Panel2: TPanel;
+    pnlRight2: TPanel;
+    pnlRight1: TPanel;
+    pnlLeft: TPanel;
+    pnlSettings: TPanel;
+    pnlTop: TPanel;
     pnlBottom: TPanel;
     SaveDialog1: TSaveDialog;
     Splitter1: TSplitter;
@@ -77,28 +81,13 @@ type
   end; 
 
 var
-  Form2: TForm2; 
+  frmEditPresets: TfrmEditPresets;
   pn:string;
   shown: boolean;
 
 resourcestring
-  //captions
-   rsform2='Edit Presets';
-   rsaddpresetbtn='Add / Update';
-   rsexport='Export';
-   rsimport='Import';
-   rsimportpresets='Import Presets';
-   rsCancelBtn='Cancel';
-   rsOKbtn='Save';
-   rsDeleteBtn='Delete';
-   rsLabel1='Presets';
-   rsLabel2='Preset Name (One word , Only A-z 0-9)';
-   rsLabel3='Preset Label';
-   rsLabel4='Preset Command Line (no -i or output file)';
-   rsLabel5='Output File Extension (no ".")';
-   rsLabel6='Category';
-
   // messages
+  rsimportpresets='Import Presets';
   rsYouMustEnterNmae = 'You must enter a name.';
   rsYouMustEnterLabel = 'You must enter a label.';
   rsYouMustEnterExtension = 'You must enter the extension.';
@@ -111,38 +100,23 @@ implementation
 
 uses unit1,unit6;
 
-{ TForm2 }
+{ TfrmEditPresets }
 
 // get setup
-procedure TForm2.FormShow(Sender: TObject);
+procedure TfrmEditPresets.FormShow(Sender: TObject);
 begin
 
    TranslateUnitResourceStrings('unit2', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
 
-   form2.caption:=rsform2;
-   addpresetbtn.caption:=rsaddpresetbtn;
-   export.caption:=rsexport;
-   import.caption:=rsimport;
-   cancelbtn.caption:=rsCancelBtn;
-   okbtn.caption:=rsOKbtn;
-   deletebtn.caption:=rsDeleteBtn;
-   label1.caption:=rsLabel1;
-   label2.caption:=rsLabel2;
-   label3.caption:=rsLabel3;
-   label4.caption:=rsLabel4;
-   label5.caption:=rsLabel5;
-   label6.caption:=rsLabel6;
-
-
    lbCategory.Clear;
-   lbCategory.Items.AddStrings(form1.categorybox.Items);
+   lbCategory.Items.AddStrings(frmMain.categorybox.Items);
 
 end;
 
 
 
 // Get the selected preset's information
-procedure TForm2.ListBox1Click(Sender: TObject);
+procedure TfrmEditPresets.ListBox1Click(Sender: TObject);
 var
 i:integer;
 selectedtext :string;
@@ -176,7 +150,7 @@ begin
 end;
 
 // add / update a preset
-procedure TForm2.addpresetbtnClick(Sender: TObject);
+procedure TfrmEditPresets.addpresetbtnClick(Sender: TObject);
 var
 labeltext: string;
 i:integer;
@@ -261,7 +235,7 @@ begin
 end;
 
 // delete a preset
-procedure TForm2.DeleteBtnClick(Sender: TObject);
+procedure TfrmEditPresets.DeleteBtnClick(Sender: TObject);
 var
 labeltext :string;
 node2delete: tdomnode;
@@ -283,7 +257,7 @@ end;
 
 
 // import a preset
-procedure TForm2.importClick(Sender: TObject);
+procedure TfrmEditPresets.importClick(Sender: TObject);
 var
  importfile: txmldocument;
  importedpreset: tdomelement;
@@ -421,12 +395,12 @@ begin
 
 end;
 
-procedure TForm2.lbCategoryClick(Sender: TObject);
+procedure TfrmEditPresets.lbCategoryClick(Sender: TObject);
 begin
   RefreshPresetsBox;
 end;
 
-procedure TForm2.RefreshPresetsBox;
+procedure TfrmEditPresets.RefreshPresetsBox;
 var i : integer;
     cat, pre, ocat : string;
     node, subnode : tdomnode;
@@ -453,29 +427,29 @@ begin
    end;
 end;
 
-procedure TForm2.exportClick(Sender: TObject);
+procedure TfrmEditPresets.exportClick(Sender: TObject);
 
 begin
-unit6.form6.show;
+frmExport.show;
 end;
 
 
 // save & exit
-procedure TForm2.OKbtnClick(Sender: TObject);
+procedure TfrmEditPresets.OKbtnClick(Sender: TObject);
 begin
   writexmlfile(presetsfile, presetspath + 'presets.xml');
-  form1.populatepresetbox('');
-  form2.close;
+  frmMain.populatepresetbox('');
+  frmEditPresets.close;
 end;
 
 // just exit
-procedure TForm2.CancelBtnClick(Sender: TObject);
+procedure TfrmEditPresets.CancelBtnClick(Sender: TObject);
 begin
-  form1.populatepresetbox('');
-  form2.close;
+  frmMain.populatepresetbox('');
+  frmEditPresets.close;
 end;
 
-procedure TForm2.ValidateFields(var IsOkay: Boolean);
+procedure TfrmEditPresets.ValidateFields(var IsOkay: Boolean);
 var i : integer;
     s : string;
 begin

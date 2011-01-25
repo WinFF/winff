@@ -1,6 +1,7 @@
 unit Unit5; 
 
 // WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
+// WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
 // http://winff.org
 // Licensed under the GPL v3 or any later version
 //
@@ -23,26 +24,24 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ClipBrd,Buttons, gettext, translations, ExtCtrls;
+  ClipBrd,Buttons, gettext, ExtCtrls;
 
 type
 
-  { TForm5 }
+  { TfrmScript }
 
-  TForm5 = class(TForm)
+  TfrmScript = class(TForm)
     btnClip: TButton;
-    btnContinue: TButton;
+    btnClose: TButton;
+    btnRun: TButton;
     btnSave: TButton;
-    Button1: TButton;
     Memo1: TMemo;
     Panel1: TPanel;
-    Panel2: TPanel;
-    Panel3: TPanel;
     SaveDialog1: TSaveDialog;
     procedure btnClipClick(Sender: TObject);
-    procedure btnContinueClick(Sender: TObject);
+    procedure btnRunClick(Sender: TObject);
     procedure btnSaveClick(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure btnCloseClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormResize(Sender: TObject);
   private
@@ -53,55 +52,40 @@ type
   end; 
 
 var
-  Form5: TForm5; 
+  frmScript: TfrmScript;
 
-Resourcestring
-  rsform5='FFmpeg Command Line';
-  rsbutton1='OK';
-  rsClip='Clipboard';
-  rsClip2='Close';
-  rsSave='Save';
-  rsContinue='Continue';
 implementation
 
 uses unit1;
 
-{ TForm5 }
+{ TfrmScript }
 
-procedure TForm5.FormCreate(Sender: TObject);
+procedure TfrmScript.FormCreate(Sender: TObject);
 begin
-TranslateUnitResourceStrings('unit5', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
-  form5.Caption:=rsform5;
-  button1.Caption:=rsbutton1;
-  btnClip.Caption:=rsClip;
-  btnSave.Caption:=rsSave;
-  btnContinue.Caption:=rsContinue;
-  application.processmessages;
-  btnSave.Left := btnClip.Left + btnClip.Width + 4;
 
 end;
 
-procedure TForm5.Button1Click(Sender: TObject);
+procedure TfrmScript.btnCloseClick(Sender: TObject);
 begin
-  form5.Close;
+  frmScript.Close;
 end;
 
-procedure TForm5.btnClipClick(Sender: TObject);
+procedure TfrmScript.btnClipClick(Sender: TObject);
 begin
      Clipboard.AsText:=memo1.text; // can copy just one line, but what if its 2-pass?
-     btnClip.Caption := rsClip2;
+     {
      application.processmessages;
      sleep(500);
-     btnClip.Caption := rsClip;
      application.processmessages;
+     }
 end;
 
-procedure TForm5.btnContinueClick(Sender: TObject);
+procedure TfrmScript.btnRunClick(Sender: TObject);
 begin
   Memo1.lines.SaveToFile(ScriptFilename);
 end;
 
-procedure TForm5.btnSaveClick(Sender: TObject);
+procedure TfrmScript.btnSaveClick(Sender: TObject);
 begin
   If SaveDialog1.execute then
   begin
@@ -110,15 +94,15 @@ begin
   end;
 end;
 
-procedure TForm5.FormResize(Sender: TObject);
+procedure TfrmScript.FormResize(Sender: TObject);
 begin
-  if form5.Width < 100 then form5.width:=100;
-  if form5.height < 150 then form5.height:=150;
-  memo1.Height:= form5.Height -56;
-  memo1.width:= form5.width -20;
-  // button1 position determined by panels
-  // button1.Left:=form5.Width div 2 - 36;
-  // button1.top:=form5.Height-40;
+  if frmScript.Width < 100 then frmScript.width:=100;
+  if frmScript.height < 150 then frmScript.height:=150;
+  memo1.Height:= frmScript.Height -56;
+  memo1.width:= frmScript.width -20;
+  // btnClose position determined by panels
+  // btnClose.Left:=frmScript.Width div 2 - 36;
+  // btnClose.top:=frmScript.Height-40;
 end;
 
 initialization

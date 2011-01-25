@@ -1,12 +1,12 @@
-object Form5: TForm5
-  Left = 499
-  Height = 386
-  Top = 182
-  Width = 654
+object frmScript: TfrmScript
+  Left = 575
+  Height = 381
+  Top = 130
+  Width = 656
   ActiveControl = Memo1
   Caption = 'FFmpeg Command Line'
-  ClientHeight = 386
-  ClientWidth = 654
+  ClientHeight = 381
+  ClientWidth = 656
   Icon.Data = {
     7E04000000000100010010100000010020006804000016000000280000001000
     0000200000000100200000000000000400006400000064000000000000000000
@@ -52,9 +52,9 @@ object Form5: TForm5
   LCLVersion = '0.9.28.2'
   object Memo1: TMemo
     Left = 0
-    Height = 336
+    Height = 331
     Top = 0
-    Width = 654
+    Width = 656
     Align = alClient
     Lines.Strings = (
       '`2'
@@ -66,82 +66,82 @@ object Form5: TForm5
   object Panel1: TPanel
     Left = 0
     Height = 50
-    Top = 336
-    Width = 654
+    Top = 331
+    Width = 656
     Align = alBottom
     BevelOuter = bvNone
     ClientHeight = 50
-    ClientWidth = 654
+    ClientWidth = 656
     TabOrder = 1
-    object Panel2: TPanel
-      Left = 0
-      Height = 50
-      Top = 0
-      Width = 472
-      Align = alClient
-      BevelOuter = bvNone
-      ClientHeight = 50
-      ClientWidth = 472
+    object btnClose: TButton
+      AnchorSideTop.Control = btnRun
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = btnRun
+      Left = 476
+      Height = 35
+      Top = 8
+      Width = 80
+      Anchors = [akTop, akRight]
+      AutoSize = True
+      BorderSpacing.Right = 10
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Close'
+      Constraints.MinWidth = 80
+      ModalResult = 2
+      OnClick = btnCloseClick
       TabOrder = 0
-      object btnSave: TButton
-        Left = 144
-        Height = 35
-        Top = 8
-        Width = 54
-        Anchors = []
-        AutoSize = True
-        BorderSpacing.InnerBorder = 4
-        Caption = 'Save'
-        OnClick = btnSaveClick
-        TabOrder = 0
-      end
-      object btnClip: TButton
-        Left = 7
-        Height = 35
-        Top = 8
-        Width = 135
-        Anchors = []
-        AutoSize = True
-        BorderSpacing.InnerBorder = 4
-        Caption = 'Copy to Clipboard'
-        OnClick = btnClipClick
-        TabOrder = 1
-      end
     end
-    object Panel3: TPanel
-      Left = 472
-      Height = 50
-      Top = 0
-      Width = 182
-      Align = alRight
-      BevelOuter = bvNone
-      ClientHeight = 50
-      ClientWidth = 182
+    object btnRun: TButton
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 566
+      Height = 35
+      Top = 8
+      Width = 80
+      Anchors = [akTop, akRight]
+      AutoSize = True
+      BorderSpacing.Right = 10
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Run!'
+      Constraints.MinWidth = 80
+      ModalResult = 1
+      OnClick = btnRunClick
       TabOrder = 1
-      object Button1: TButton
-        Left = 96
-        Height = 35
-        Top = 11
-        Width = 40
-        Anchors = []
-        AutoSize = True
-        BorderSpacing.InnerBorder = 4
-        Caption = 'OK'
-        ModalResult = 2
-        OnClick = Button1Click
-        TabOrder = 0
-      end
-      object btnContinue: TButton
-        Left = 8
-        Height = 35
-        Top = 11
-        Width = 71
-        Anchors = []
-        Caption = 'Continue'
-        ModalResult = 1
-        OnClick = btnContinueClick
-        TabOrder = 1
-      end
+    end
+    object btnClip: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      Left = 10
+      Height = 35
+      Top = 8
+      Width = 134
+      AutoSize = True
+      BorderSpacing.Left = 10
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Copy to Clipboard'
+      Constraints.MinWidth = 80
+      OnClick = btnClipClick
+      TabOrder = 2
+    end
+    object btnSave: TButton
+      AnchorSideLeft.Control = btnClip
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = btnClip
+      AnchorSideTop.Side = asrCenter
+      Left = 154
+      Height = 35
+      Top = 8
+      Width = 82
+      AutoSize = True
+      BorderSpacing.Left = 10
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Save As...'
+      Constraints.MinWidth = 80
+      OnClick = btnSaveClick
+      TabOrder = 3
     end
   end
   object SaveDialog1: TSaveDialog
