@@ -11,7 +11,7 @@ PRODUCTVERSION 1,2,0,0
    VALUE "FileDescription", "WinFF Video Converter\000"
    VALUE "FileVersion", "1.3.2.0\000"
    VALUE "InternalName", "winff\000"
-   VALUE "LegalCopyright", "Copyright 2010, GPL v3 by Matthew Weatherford\000"
+   VALUE "LegalCopyright", "Copyright 2011, GPL v3 by Matthew Weatherford\000"
    VALUE "LegalTrademarks", "\000"
    VALUE "OriginalFilename", "winff.exe\000"
    VALUE "ProductName", "WinFF\000"

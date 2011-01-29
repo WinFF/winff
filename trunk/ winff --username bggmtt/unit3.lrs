@@ -1,5 +1,7 @@
+{ This is an automatically generated lazarus resource file }
+
 LazarusResources.Add('TfrmAbout','FORMDATA',[
-  'TPF0'#9'TfrmAbout'#8'frmAbout'#4'Left'#3#26#2#6'Height'#3'+'#1#3'Top'#3'!'#1
+  'TPF0'#9'TfrmAbout'#8'frmAbout'#4'Left'#3#144#1#6'Height'#3'+'#1#3'Top'#3#1#1
   +#5'Width'#3'u'#1#13'ActiveControl'#7#9'Notebook1'#11'BorderIcons'#11#12'biSy'
   +'stemMenu'#0#11'BorderStyle'#7#8'bsDialog'#7'Caption'#6#11'About WinFF'#12'C'
   +'lientHeight'#3'+'#1#11'ClientWidth'#3'u'#1#5'Color'#7#6'clForm'#9'Icon.Data'
@@ -58,8 +60,8 @@ LazarusResources.Add('TfrmAbout','FORMDATA',[
   +'LCLVersion'#6#8'0.9.28.2'#0#9'TNotebook'#9'Notebook1'#4'Left'#2#0#6'Height'
   +#3#9#1#3'Top'#2#0#5'Width'#3'u'#1#5'Align'#7#8'alClient'#9'PageIndex'#2#0#8
   +'TabOrder'#2#0#0#5'TPage'#5'Page1'#7'Caption'#6#5'WinFF'#11'ClientWidth'#3'm'
-  +#1#12'ClientHeight'#3#238#0#0#6'TLabel'#6'Label1'#4'Left'#2'<'#6'Height'#2#18
-  +#3'Top'#2#10#5'Width'#2'N'#7'Caption'#6#11'WinFF 1.3.2'#11'ParentColor'#8#7
+  +#1#12'ClientHeight'#3#237#0#0#6'TLabel'#6'Label1'#4'Left'#2'<'#6'Height'#2#16
+  +#3'Top'#2#10#5'Width'#2'='#7'Caption'#6#11'WinFF 1.3.2'#11'ParentColor'#8#7
   +'OnClick'#7#11'Label1Click'#0#0#6'TImage'#6'Image1'#4'Left'#2#4#6'Height'#2
   +'0'#3'Top'#2#10#5'Width'#2'0'#12'Picture.Data'#10#148#9#0#0#23'TPortableNetw'
   +'orkGraphicx'#9#0#0#137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0'0'#0#0#0'0'#8#6
@@ -160,49 +162,48 @@ LazarusResources.Add('TfrmAbout','FORMDATA',[
   +'?'#142#178'!@Q'#20#12#6'C'#147#4#236#238#175#194#190'}'#251#176'Z'#173#253
   +'Q?:'#20'E'#225#240#225#195#24#141#198','#25'X'#11#4'p'#222#207'm'#10#10#10
   +'(..F7'#140'M'#198'ShkkS'#140'F'#227'N`'#237#255#1'O'#236'zK'#192'>'#210#228
-  +#0#0#0#0'IEND'#174'B`'#130#0#0#6'TLabel'#6'Label2'#4'Left'#2#4#6'Height'#2#18
-  +#3'Top'#2'@'#5'Width'#3#187#0#7'Caption'#6#26'Copyright 2006-2009 GPL V3'#11
-  +'ParentColor'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#4#6'Height'#2#18#3'Top'#2
-  +'Z'#5'Width'#3#1#1#7'Caption'#6'%Matthew Weatherford and Ian Stoffberg'#10'F'
-  +'ont.Color'#7#6'clBlue'#11'ParentColor'#8#10'ParentFont'#8#7'OnClick'#7#11'L'
-  +'abel3Click'#0#0#6'TLabel'#6'Label4'#6'Cursor'#7#11'crHandPoint'#4'Left'#2'<'
-  +#6'Height'#2#18#3'Top'#2#26#5'Width'#3#132#0#7'Caption'#6#20'http://www.winf'
-  +'f.org'#10'Font.Color'#7#6'clBlue'#11'ParentColor'#8#10'ParentFont'#8#7'OnCl'
-  +'ick'#7#11'Label4Click'#0#0#6'TLabel'#7'Label11'#4'Left'#2#4#6'Height'#2#18#3
-  +'Top'#2'r'#5'Width'#3#13#1#7'Caption'#6'&Debian/Ubuntu Packaging by Paul Gev'
-  +'ers'#11'ParentColor'#8#0#0#6'TLabel'#7'Label13'#4'Left'#2#4#6'Height'#2#18#3
-  +'Top'#3#173#0#5'Width'#2'('#7'Caption'#6#4'Gmaq'#10'Font.Color'#7#6'clBlue'
-  +#11'ParentColor'#8#10'ParentFont'#8#7'OnClick'#7#12'Label13Click'#0#0#6'TLab'
-  +'el'#7'Label14'#4'Left'#2#4#6'Height'#2#18#3'Top'#3#157#0#5'Width'#3#171#0#7
-  +'Caption'#6#25'High Quality Presets From'#11'ParentColor'#8#0#0#6'TLabel'#7
-  +'Label15'#4'Left'#2#4#6'Height'#2#18#3'Top'#3#205#0#5'Width'#3#219#0#7'Capti'
-  +'on'#6' Icons and Logo by Alex Klepatsch'#11'ParentColor'#8#0#0#6'TLabel'#7
-  +'Label16'#4'Left'#2'4'#6'Height'#2#18#3'Top'#3#174#0#5'Width'#2'.'#7'Caption'
-  +#6#6'JNavas'#11'ParentColor'#8#0#0#0#5'TPage'#5'Page2'#7'Caption'#6#6'FFmpeg'
-  +#11'ClientWidth'#3'm'#1#12'ClientHeight'#3#235#0#0#6'TLabel'#6'Label5'#4'Lef'
-  +'t'#2#4#6'Height'#2#18#3'Top'#2#10#5'Width'#2'6'#7'Caption'#6#6'FFmpeg'#11'P'
-  +'arentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label6'#4'Left'#2#4#6'Height'
-  +#2#18#3'Top'#2'"'#5'Width'#3#175#0#7'Caption'#6#26'Trademark Fabrice Belllar'
-  +'d'#11'ParentColor'#8#0#0#6'TLabel'#6'Label7'#6'Cursor'#7#11'crHandPoint'#4
-  +'Left'#2#6#6'Height'#2#18#3'Top'#2'2'#5'Width'#2'n'#7'Caption'#6#17'http://f'
-  +'fmpeg.org'#10'Font.Color'#7#6'clBlue'#11'Font.Height'#2#243#11'ParentColor'
-  +#8#10'ParentFont'#8#7'OnClick'#7#11'Label7Click'#0#0#6'TLabel'#6'Label8'#4'L'
-  +'eft'#2#4#6'Height'#2#18#3'Top'#2'R'#5'Width'#3#181#0#7'Caption'#6#24'FFmpeg'
-  +' Windows Builds by'#11'ParentColor'#8#0#0#6'TLabel'#6'Label9'#4'Left'#2#4#6
-  +'Height'#2#18#3'Top'#2'b'#5'Width'#2'T'#7'Caption'#6#12'Ramiro Polla'#11'Par'
-  +'entColor'#8#0#0#6'TLabel'#7'Label10'#6'Cursor'#7#11'crHandPoint'#4'Left'#2#4
-  ,#6'Height'#2#18#3'Top'#2'r'#5'Width'#3#171#0#7'Caption'#6#27'http://ffmpeg.a'
-  +'rrozcru.org/'#10'Font.Color'#7#6'clBlue'#11'ParentColor'#8#10'ParentFont'#8
-  +#7'OnClick'#7#12'Label10Click'#0#0#0#5'TPage'#5'Page3'#7'Caption'#6#6'Thanks'
-  +#11'ClientWidth'#3'm'#1#12'ClientHeight'#3#235#0#0#8'TListBox'#8'ListBox1'#4
-  +'Left'#2#0#6'Height'#3#235#0#3'Top'#2#0#5'Width'#3'm'#1#5'Align'#7#8'alClien'
-  +'t'#16'ClickOnSelChange'#8#10'ItemHeight'#2#0#8'TabOrder'#2#0#8'TopIndex'#2
-  +#255#0#0#0#0#6'TPanel'#6'Panel1'#4'Left'#2#0#6'Height'#2'"'#3'Top'#3#9#1#5'W'
-  +'idth'#3'u'#1#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#12'ClientHei'
-  +'ght'#2'"'#11'ClientWidth'#3'u'#1#8'TabOrder'#2#1#0#7'TButton'#7'Button1'#22
-  +'AnchorSideLeft.Control'#7#6'Panel1'#19'AnchorSideLeft.Side'#7#9'asrCenter'
-  +#21'AnchorSideTop.Control'#7#6'Panel1'#18'AnchorSideTop.Side'#7#9'asrCenter'
-  +#4'Left'#3#149#0#6'Height'#2#25#3'Top'#2#5#5'Width'#2'K'#25'BorderSpacing.In'
-  +'nerBorder'#2#4#7'Caption'#6#2'OK'#7'OnClick'#7#12'Button1Click'#8'TabOrder'
-  +#2#0#0#0#0#0
+  +#0#0#0#0'IEND'#174'B`'#130#0#0#6'TLabel'#6'Label2'#4'Left'#2#4#6'Height'#2#16
+  +#3'Top'#2'@'#5'Width'#3#150#0#7'Caption'#6#26'Copyright 2006-2009 GPL V3'#11
+  +'ParentColor'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#4#6'Height'#2#16#3'Top'#2
+  +'Z'#5'Width'#3')'#1#7'Caption'#6'6Matthew Weatherford,  Ian Stoffberg, and A'
+  +'lexey Osipov'#10'Font.Color'#7#6'clBlue'#11'ParentColor'#8#10'ParentFont'#8
+  +#7'OnClick'#7#11'Label3Click'#0#0#6'TLabel'#6'Label4'#6'Cursor'#7#11'crHandP'
+  +'oint'#4'Left'#2'<'#6'Height'#2#16#3'Top'#2#26#5'Width'#2'r'#7'Caption'#6#20
+  +'http://www.winff.org'#10'Font.Color'#7#6'clBlue'#11'ParentColor'#8#10'Paren'
+  +'tFont'#8#7'OnClick'#7#11'Label4Click'#0#0#6'TLabel'#7'Label11'#4'Left'#2#4#6
+  +'Height'#2#16#3'Top'#2'r'#5'Width'#3#221#0#7'Caption'#6'&Debian/Ubuntu Packa'
+  +'ging by Paul Gevers'#11'ParentColor'#8#0#0#6'TLabel'#7'Label13'#4'Left'#2#4
+  +#6'Height'#2#16#3'Top'#3#173#0#5'Width'#2'!'#7'Caption'#6#4'Gmaq'#10'Font.Co'
+  +'lor'#7#6'clBlue'#11'ParentColor'#8#10'ParentFont'#8#7'OnClick'#7#12'Label13'
+  +'Click'#0#0#6'TLabel'#7'Label14'#4'Left'#2#4#6'Height'#2#16#3'Top'#3#157#0#5
+  +'Width'#3#139#0#7'Caption'#6#25'High Quality Presets From'#11'ParentColor'#8
+  +#0#0#6'TLabel'#7'Label15'#4'Left'#2#4#6'Height'#2#16#3'Top'#3#205#0#5'Width'
+  +#3#177#0#7'Caption'#6' Icons and Logo by Alex Klepatsch'#11'ParentColor'#8#0
+  +#0#6'TLabel'#7'Label16'#4'Left'#2'4'#6'Height'#2#16#3'Top'#3#174#0#5'Width'#2
+  +'%'#7'Caption'#6#6'JNavas'#11'ParentColor'#8#0#0#0#5'TPage'#5'Page2'#7'Capti'
+  +'on'#6#6'FFmpeg'#11'ClientWidth'#3'm'#1#12'ClientHeight'#3#237#0#0#6'TLabel'
+  +#6'Label5'#4'Left'#2#4#6'Height'#2#16#3'Top'#2#10#5'Width'#2','#7'Caption'#6
+  +#6'FFmpeg'#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label6'#4'Left'
+  +#2#4#6'Height'#2#16#3'Top'#2'"'#5'Width'#3#141#0#7'Caption'#6#26'Trademark F'
+  +'abrice Belllard'#11'ParentColor'#8#0#0#6'TLabel'#6'Label7'#6'Cursor'#7#11'c'
+  +'rHandPoint'#4'Left'#2#6#6'Height'#2#18#3'Top'#2'2'#5'Width'#2'g'#7'Caption'
+  +#6#17'http://ffmpeg.org'#10'Font.Color'#7#6'clBlue'#11'Font.Height'#2#243#11
+  +'ParentColor'#8#10'ParentFont'#8#7'OnClick'#7#11'Label7Click'#0#0#6'TLabel'#6
+  +'Label8'#4'Left'#2#4#6'Height'#2#16#3'Top'#2'R'#5'Width'#3#147#0#7'Caption'#6
+  +#24'FFmpeg Windows Builds by'#11'ParentColor'#8#0#0#6'TLabel'#6'Label9'#4'Le'
+  +'ft'#2#4#6'Height'#2#16#3'Top'#2'b'#5'Width'#2'D'#7'Caption'#6#12'Ramiro Pol'
+  +'la'#11'ParentColor'#8#0#0#6'TLabel'#7'Label10'#6'Cursor'#7#11'crHandPoint'#4
+  ,'Left'#2#4#6'Height'#2#16#3'Top'#2'r'#5'Width'#3#147#0#7'Caption'#6#27'http:'
+  +'//ffmpeg.arrozcru.org/'#10'Font.Color'#7#6'clBlue'#11'ParentColor'#8#10'Par'
+  +'entFont'#8#7'OnClick'#7#12'Label10Click'#0#0#0#5'TPage'#5'Page3'#7'Caption'
+  +#6#6'Thanks'#11'ClientWidth'#3'm'#1#12'ClientHeight'#3#237#0#0#8'TListBox'#8
+  +'ListBox1'#4'Left'#2#0#6'Height'#3#237#0#3'Top'#2#0#5'Width'#3'm'#1#5'Align'
+  +#7#8'alClient'#16'ClickOnSelChange'#8#10'ItemHeight'#2#0#8'TabOrder'#2#0#0#0
+  +#0#0#6'TPanel'#6'Panel1'#4'Left'#2#0#6'Height'#2'"'#3'Top'#3#9#1#5'Width'#3
+  +'u'#1#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'"'
+  +#11'ClientWidth'#3'u'#1#8'TabOrder'#2#1#0#7'TButton'#7'Button1'#22'AnchorSid'
+  +'eLeft.Control'#7#6'Panel1'#19'AnchorSideLeft.Side'#7#9'asrCenter'#21'Anchor'
+  +'SideTop.Control'#7#6'Panel1'#18'AnchorSideTop.Side'#7#9'asrCenter'#4'Left'#3
+  +#149#0#6'Height'#2#25#3'Top'#2#5#5'Width'#2'K'#25'BorderSpacing.InnerBorder'
+  +#2#4#7'Caption'#6#2'OK'#7'OnClick'#7#12'Button1Click'#8'TabOrder'#2#0#0#0#0#0
 ]);
