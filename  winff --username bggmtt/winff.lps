@@ -16,8 +16,8 @@
         <ComponentName Value="frmMain"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
+        <CursorPos X="84" Y="31"/>
+        <TopLine Value="16"/>
         <UsageCount Value="20"/>
       </Unit1>
       <Unit2>
