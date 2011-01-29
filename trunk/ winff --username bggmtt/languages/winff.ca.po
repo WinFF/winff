@@ -68,7 +68,7 @@ msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
 #: TFRMABOUT.LABEL3.CAPTION
-msgid "Matthew Weatherford and Ian Stoffberg"
+msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr ""
 
 #: TFRMABOUT.LABEL4.CAPTION
