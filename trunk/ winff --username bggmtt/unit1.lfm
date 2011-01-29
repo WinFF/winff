@@ -1,13 +1,15 @@
 object frmMain: TfrmMain
-  Left = 261
+  Left = 275
   Height = 587
-  Top = 103
+  Top = 149
   Width = 1064
   ActiveControl = Panel2
   AllowDropFiles = True
   Caption = 'WinFF'
   ClientHeight = 567
   ClientWidth = 1064
+  Constraints.MinHeight = 460
+  Constraints.MinWidth = 460
   Icon.Data = {
     BE2500000000010001003030000001002000A825000016000000280000003000
     0000600000000100200000000000002400006400000064000000000000000000
@@ -1446,18 +1448,18 @@ object frmMain: TfrmMain
         end
         object tabAudioSettings: TPage
           Caption = 'Audio'
-          ClientWidth = 784
-          ClientHeight = 115
+          ClientWidth = 1052
+          ClientHeight = 117
           object Panel1: TPanel
             Left = 5
-            Height = 115
+            Height = 117
             Top = 0
             Width = 111
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 5
             BevelOuter = bvNone
-            ClientHeight = 115
+            ClientHeight = 117
             ClientWidth = 111
             Constraints.MinWidth = 100
             TabOrder = 0
@@ -1524,14 +1526,14 @@ object frmMain: TfrmMain
           object Panel3: TPanel
             AnchorSideLeft.Control = Panel1
             Left = 126
-            Height = 115
+            Height = 117
             Top = 0
             Width = 101
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 115
+            ClientHeight = 117
             ClientWidth = 101
             Constraints.MinWidth = 100
             TabOrder = 1
@@ -1597,14 +1599,14 @@ object frmMain: TfrmMain
           end
           object Panel4: TPanel
             Left = 237
-            Height = 115
+            Height = 117
             Top = 0
             Width = 102
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 115
+            ClientHeight = 117
             ClientWidth = 102
             TabOrder = 2
             object Label10: TLabel
@@ -1640,17 +1642,17 @@ object frmMain: TfrmMain
         end
         object tabPageCrop: TPage
           Caption = 'Crop'
-          ClientWidth = 784
-          ClientHeight = 115
+          ClientWidth = 1052
+          ClientHeight = 117
           object Panel11: TPanel
             Left = 0
-            Height = 115
+            Height = 117
             Top = 0
             Width = 96
             Align = alLeft
             AutoSize = True
             BevelOuter = bvNone
-            ClientHeight = 115
+            ClientHeight = 117
             ClientWidth = 96
             TabOrder = 0
             object lblCropLeft: TLabel
@@ -1660,7 +1662,7 @@ object frmMain: TfrmMain
               AnchorSideBottom.Side = asrBottom
               Left = 0
               Height = 18
-              Top = 48
+              Top = 49
               Width = 26
               Caption = 'Left'
               Layout = tlCenter
@@ -1673,7 +1675,7 @@ object frmMain: TfrmMain
               AnchorSideTop.Side = asrCenter
               Left = 31
               Height = 27
-              Top = 44
+              Top = 45
               Width = 48
               BorderSpacing.Left = 5
               OnChange = edtCropLeftChange
@@ -1690,7 +1692,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Side = asrBottom
               Left = 79
               Height = 27
-              Top = 44
+              Top = 45
               Width = 17
               Associate = edtCropLeft
               Min = 0
@@ -1703,14 +1705,14 @@ object frmMain: TfrmMain
           end
           object Panel12: TPanel
             Left = 106
-            Height = 115
+            Height = 117
             Top = 0
             Width = 65
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 115
+            ClientHeight = 117
             ClientWidth = 65
             TabOrder = 1
             object lblCropTop: TLabel
@@ -1736,7 +1738,7 @@ object frmMain: TfrmMain
               AnchorSideBottom.Side = asrBottom
               Left = 0
               Height = 18
-              Top = 94
+              Top = 96
               Width = 65
               Alignment = taCenter
               Anchors = [akLeft, akRight, akBottom]
@@ -1785,7 +1787,7 @@ object frmMain: TfrmMain
               AnchorSideBottom.Control = lblCropBottom
               Left = 0
               Height = 27
-              Top = 64
+              Top = 66
               Width = 48
               Anchors = [akLeft, akRight, akBottom]
               BorderSpacing.Bottom = 3
@@ -1801,7 +1803,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Side = asrBottom
               Left = 48
               Height = 27
-              Top = 64
+              Top = 66
               Width = 17
               Anchors = [akTop, akRight]
               Associate = edtCropBottom
@@ -1817,14 +1819,14 @@ object frmMain: TfrmMain
             AnchorSideLeft.Control = Panel12
             AnchorSideLeft.Side = asrBottom
             Left = 181
-            Height = 115
+            Height = 117
             Top = 0
             Width = 105
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 115
+            ClientHeight = 117
             ClientWidth = 105
             TabOrder = 2
             object lblCropRight: TLabel
@@ -1833,7 +1835,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = edtCropRight
               Left = 0
               Height = 18
-              Top = 48
+              Top = 49
               Width = 35
               Anchors = [akTop, akRight]
               BorderSpacing.Right = 5
@@ -1846,7 +1848,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = UpDown3
               Left = 40
               Height = 27
-              Top = 44
+              Top = 45
               Width = 48
               Anchors = [akTop, akRight]
               OnChange = edtCropRightChange
@@ -1861,7 +1863,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Side = asrBottom
               Left = 88
               Height = 27
-              Top = 44
+              Top = 45
               Width = 17
               Anchors = [akTop, akRight]
               Associate = edtCropRight
@@ -2038,18 +2040,18 @@ object frmMain: TfrmMain
         end
         object tabCmdLineSettings: TPage
           Caption = 'FFmpeg'
-          ClientWidth = 784
-          ClientHeight = 115
+          ClientWidth = 1052
+          ClientHeight = 117
           object Panel8: TPanel
             Left = 5
-            Height = 115
+            Height = 117
             Top = 0
             Width = 469
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 5
             BevelOuter = bvNone
-            ClientHeight = 115
+            ClientHeight = 117
             ClientWidth = 469
             Constraints.MinWidth = 300
             TabOrder = 0
