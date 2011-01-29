@@ -70,7 +70,7 @@ msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
 #: TFRMABOUT.LABEL3.CAPTION
-msgid "Matthew Weatherford and Ian Stoffberg"
+msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr ""
 
 #: TFRMABOUT.LABEL4.CAPTION
@@ -703,6 +703,7 @@ msgstr ""
 msgid "Copy to Clipboard"
 msgstr ""
 
+#| msgctxt "unit3.rsbutton1"
 #: TFRMSCRIPT.BTNCLOSE.CAPTION
 #, fuzzy
 #| msgid "Close"
@@ -731,7 +732,6 @@ msgstr "Vediguherîne"
 msgid "Could not find FFmpeg."
 msgstr "FFmpeg nehat dîtin."
 
-#| msgctxt "unit3.rsbutton1"
 #: unit1.rscouldnotfindffplay
 msgid "Could not find FFPlay."
 msgstr "FFPlay nehat dîtin."
