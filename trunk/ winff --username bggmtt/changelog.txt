@@ -6,7 +6,7 @@ v1.3.2
 Fix changing last option in preset via additional options (issue 63)
 Fixed issue47: Large fonts or long translations can extend
 Code cleanup and renames
-uses Lazarus' new translatiion system
+Much better translations, uses Lazarus' new translatiion system 
 Improved window behavior
 
 v1.3.1
