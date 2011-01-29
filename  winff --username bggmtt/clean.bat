@@ -5,8 +5,6 @@ del *.rst
 del *.bak
 del winff.exe
 del winff
-del *.lrt
-del *.lrs
 del *.or
 del *.compiled
 del backup/*.*
