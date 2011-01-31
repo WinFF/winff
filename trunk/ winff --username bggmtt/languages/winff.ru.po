@@ -54,10 +54,9 @@ msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
 #: TFRMABOUT.LABEL3.CAPTION
-#, fuzzy
 #| msgid "Matthew Weatherford and Ian Stoffberg"
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-msgstr "Matthew Weatherford и Ian Stoffberg"
+msgstr "Matthew Weatherford, Ian Stoffberg и Alexey Osipov"
 
 #: TFRMABOUT.LABEL4.CAPTION
 msgid "http://www.winff.org"
