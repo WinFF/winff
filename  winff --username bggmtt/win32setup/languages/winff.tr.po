@@ -29,31 +29,700 @@ msgstr ""
 "X-Poedit-Country: TURKEY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: unit1.rsaddbtn
-msgid "Add"
-msgstr "Ekle"
+#: TFRMABOUT.BUTTON1.CAPTION
+msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+msgid "OK"
+msgstr ""
 
-#: unit1.rsallcategories
-msgid "(All Categories)"
-msgstr "(Tüm kategoriler)"
+#: TFRMABOUT.CAPTION
+msgid "About WinFF"
+msgstr ""
 
-#: unit1.rscheckbox2
-msgid "Deinterlace"
-msgstr "Ayrıştır"
+#: TFRMABOUT.LABEL1.CAPTION
+msgid "WinFF 1.3.2"
+msgstr ""
 
-#: unit1.rsclearbtn
-msgid "Clear"
-msgstr "Temizle"
+#: TFRMABOUT.LABEL10.CAPTION
+msgid "http://ffmpeg.arrozcru.org/"
+msgstr ""
 
-#: unit1.rsclose
+#: TFRMABOUT.LABEL11.CAPTION
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr ""
+
+#: TFRMABOUT.LABEL13.CAPTION
+msgid "Gmaq"
+msgstr ""
+
+#: TFRMABOUT.LABEL14.CAPTION
+msgid "High Quality Presets From"
+msgstr ""
+
+#: TFRMABOUT.LABEL15.CAPTION
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr ""
+
+#: TFRMABOUT.LABEL16.CAPTION
+msgid "JNavas"
+msgstr ""
+
+#: TFRMABOUT.LABEL2.CAPTION
+msgid "Copyright 2006-2009 GPL V3"
+msgstr ""
+
+#: TFRMABOUT.LABEL3.CAPTION
+msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+msgstr ""
+
+#: TFRMABOUT.LABEL4.CAPTION
+msgid "http://www.winff.org"
+msgstr ""
+
+#: TFRMABOUT.LABEL5.CAPTION
+msgctxt "TFRMABOUT.LABEL5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.LABEL6.CAPTION
+msgid "Trademark Fabrice Belllard"
+msgstr ""
+
+#: TFRMABOUT.LABEL7.CAPTION
+msgid "http://ffmpeg.org"
+msgstr ""
+
+#: TFRMABOUT.LABEL8.CAPTION
+msgid "FFmpeg Windows Builds by"
+msgstr ""
+
+#: TFRMABOUT.LABEL9.CAPTION
+msgid "Ramiro Polla"
+msgstr ""
+
+#: TFRMABOUT.PAGE1.CAPTION
+msgctxt "TFRMABOUT.PAGE1.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMABOUT.PAGE2.CAPTION
+msgctxt "TFRMABOUT.PAGE2.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.PAGE3.CAPTION
+msgid "Thanks"
+msgstr ""
+
+#: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
+msgid "Add / Update"
+msgstr ""
+
+#: TFRMEDITPRESETS.CANCELBTN.CAPTION
+#, fuzzy
+#| msgid "Close"
+msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Kapat"
 
-#: unit1.rsclosebtn
-#| msgid "Options"
-msgctxt "unit1.rsclosebtn"
+#: TFRMEDITPRESETS.CAPTION
+msgid "Edit Presets"
+msgstr ""
+
+#: TFRMEDITPRESETS.DELETEBTN.CAPTION
+msgid "Delete"
+msgstr ""
+
+#: TFRMEDITPRESETS.EDIT1.HINT
+msgid "One word, only letters and numbers"
+msgstr ""
+
+#: TFRMEDITPRESETS.EDIT2.HINT
+msgid "Enter a more descriptive name for this preset"
+msgstr ""
+
+#: TFRMEDITPRESETS.EDIT3.HINT
+msgid "Please don't use -i or output file parameters"
+msgstr ""
+
+#: TFRMEDITPRESETS.EDIT4.HINT
+msgid "Do not include a dot"
+msgstr ""
+
+#: TFRMEDITPRESETS.EDIT5.HINT
+msgid "Choose a category to group this preset under"
+msgstr ""
+
+#: TFRMEDITPRESETS.EXPORT.CAPTION
+msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+msgid "Export"
+msgstr ""
+
+#: TFRMEDITPRESETS.IMPORT.CAPTION
+msgid "Import"
+msgstr ""
+
+#: TFRMEDITPRESETS.LABEL1.CAPTION
+msgid "Category / Preset"
+msgstr ""
+
+#: TFRMEDITPRESETS.LABEL2.CAPTION
+msgid "Preset Name (one word, only letters and numbers)"
+msgstr ""
+
+#: TFRMEDITPRESETS.LABEL3.CAPTION
+msgid "Preset Label"
+msgstr ""
+
+#: TFRMEDITPRESETS.LABEL4.CAPTION
+msgid "Preset Command Line Parameters (no -i or output file)"
+msgstr ""
+
+#: TFRMEDITPRESETS.LABEL5.CAPTION
+msgid "Output File Extension (do not include the '.' )"
+msgstr ""
+
+#: TFRMEDITPRESETS.LABEL6.CAPTION
+msgid "Category"
+msgstr ""
+
+#: TFRMEDITPRESETS.OKBTN.CAPTION
+msgid "Save"
+msgstr ""
+
+#: TFRMEDITPRESETS.PNLTOP.CAPTION
+msgid "pnlTop"
+msgstr ""
+
+#: TFRMEXPORT.CANCELBTN.CAPTION
+msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+msgid "Cancel"
+msgstr ""
+
+#: TFRMEXPORT.CAPTION
+msgid "Export Presets"
+msgstr ""
+
+#: TFRMEXPORT.EXPORTBTN.CAPTION
+msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+msgid "Export"
+msgstr ""
+
+#: TFRMEXPORT.LABEL1.CAPTION
+msgid "Choose Presets to Export:"
+msgstr ""
+
+#: TFRMMAIN.AUDBITRATE.HINT
+msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr ""
+
+#: TFRMMAIN.AUDCHANNELS.HINT
+msgid "(<integer>) number of audio channels"
+msgstr ""
+
+#: TFRMMAIN.AUDSAMPLINGRATE.HINT
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr ""
+
+#: TFRMMAIN.BTNADD.CAPTION
+msgid "Add"
+msgstr ""
+
+#: TFRMMAIN.BTNADD.HINT
+msgid "Add file(s) to the list for conversion"
+msgstr ""
+
+#: TFRMMAIN.BTNCLEAR.CAPTION
+msgid "Clear"
+msgstr ""
+
+#: TFRMMAIN.BTNCLEAR.HINT
+msgid "Remove all files from the list"
+msgstr ""
+
+#: TFRMMAIN.BTNCONVERT.CAPTION
+msgid "Convert"
+msgstr ""
+
+#: TFRMMAIN.BTNCONVERT.HINT
+msgid "Start the conversion process"
+msgstr ""
+
+#: TFRMMAIN.BTNOPTIONS.CAPTION
+msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr "Ayarlar"
+msgstr ""
+
+#: TFRMMAIN.BTNOPTIONS.HINT
+msgid "Open/close the additional options window"
+msgstr ""
+
+#: TFRMMAIN.BTNPLAY.CAPTION
+msgid "Play"
+msgstr ""
+
+#: TFRMMAIN.BTNPLAY.HINT
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr ""
+
+#: TFRMMAIN.BTNPREVIEW.CAPTION
+msgid "Preview"
+msgstr ""
+
+#: TFRMMAIN.BTNPREVIEW.HINT
+msgid "Preview using the output settings"
+msgstr ""
+
+#: TFRMMAIN.BTNREMOVE.CAPTION
+msgid "Remove"
+msgstr ""
+
+#: TFRMMAIN.BTNREMOVE.HINT
+msgid "Remove selected file(s) from the list"
+msgstr ""
+
+#: TFRMMAIN.CAPTION
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMMAIN.CATEGORYBOX.HINT
+msgid "Device or file type the video should be converted to"
+msgstr ""
+
+#: TFRMMAIN.CBX2PASS.CAPTION
+msgid "2 pass"
+msgstr ""
+
+#: TFRMMAIN.CBX2PASS.HINT
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr ""
+
+#: TFRMMAIN.CBXDEINTERLACE.CAPTION
+msgid "Deinterlace"
+msgstr ""
+
+#: TFRMMAIN.CBXDEINTERLACE.HINT
+msgid "Removes interlacing from the video (if necessary)"
+msgstr ""
+
+#: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMMAIN.DESTFOLDER.HINT
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.EDTASPECTRATIO.HINT
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr ""
+
+#: TFRMMAIN.EDTAUDIOSYNC.HINT
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+
+#: TFRMMAIN.EDTCROPBOTTOM.TEXT
+msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTCROPLEFT.TEXT
+msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTCROPRIGHT.TEXT
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTCROPTOP.TEXT
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKHH.HINT
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKMM.HINT
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKSS.HINT
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRHH.HINT
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRMM.HINT
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRSS.HINT
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTVOLUME.HINT
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+
+#: TFRMMAIN.GBXSETTINGS.CAPTION
+msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+msgid "Additional Options"
+msgstr ""
+
+#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgid "Output Details"
+msgstr ""
+
+#: TFRMMAIN.LABEL1.CAPTION
+msgid "Convert to:"
+msgstr ""
+
+#: TFRMMAIN.LABEL10.CAPTION
+msgid "Audio Channels"
+msgstr ""
+
+#: TFRMMAIN.LABEL11.CAPTION
+msgid "Output Folder:"
+msgstr ""
+
+#: TFRMMAIN.LABEL19.CAPTION
+msgid "Preset:"
+msgstr ""
+
+#: TFRMMAIN.LABEL20.CAPTION
+msgid "Volume"
+msgstr ""
+
+#: TFRMMAIN.LABEL21.CAPTION
+msgid "Sync"
+msgstr ""
+
+#: TFRMMAIN.LABEL22.CAPTION
+msgid "Seek to"
+msgstr ""
+
+#: TFRMMAIN.LABEL23.CAPTION
+msgid "Time to Record"
+msgstr ""
+
+#: TFRMMAIN.LABEL24.CAPTION
+msgid "Hours / Minutes / Seconds"
+msgstr ""
+
+#: TFRMMAIN.LABEL3.CAPTION
+msgid "Additional Command Line Parameters"
+msgstr ""
+
+#: TFRMMAIN.LABEL7.CAPTION
+msgid "Audio Bitrate"
+msgstr ""
+
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr ""
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr ""
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+msgid "Right"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPTOP.CAPTION
+msgid "Top"
+msgstr ""
+
+#: TFRMMAIN.LBLFRAMERATE.CAPTION
+msgid "Frame Rate"
+msgstr ""
+
+#: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
+msgid "Video Bitrate"
+msgstr ""
+
+#: TFRMMAIN.LBLVIDEOSIZE.CAPTION
+msgid "Video Size"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM9.CAPTION
+msgid "-"
+msgstr ""
+
+#: TFRMMAIN.MITABOUT.CAPTION
+msgid "About"
+msgstr ""
+
+#: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+msgid "Display Cmd Line"
+msgstr ""
+
+#: TFRMMAIN.MITDOCS.CAPTION
+msgid "Documentation"
+msgstr ""
+
+#: TFRMMAIN.MITEXIT.CAPTION
+msgid "Exit"
+msgstr ""
+
+#: TFRMMAIN.MITFORUMS.CAPTION
+msgid "Forums"
+msgstr ""
+
+#: TFRMMAIN.MITIMPORTPRESET.CAPTION
+msgid "Import Preset"
+msgstr ""
+
+#: TFRMMAIN.MITPAUSEONFINISH.CAPTION
+msgid "Pause on Finish"
+msgstr ""
+
+#: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+msgid "Play Sound on Finish"
+msgstr ""
+
+#: TFRMMAIN.MITPREFERENCES.CAPTION
+msgid "Preferences"
+msgstr ""
+
+#: TFRMMAIN.MITPRESETS.CAPTION
+msgid "Presets"
+msgstr ""
+
+#: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+msgid "Additional Options"
+msgstr ""
+
+#: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+msgid "Shutdown on Finish"
+msgstr ""
+
+#: TFRMMAIN.MITWINFF.CAPTION
+msgid "WinFF Website"
+msgstr ""
+
+#: TFRMMAIN.MNUEDIT.CAPTION
+msgid "Edit"
+msgstr ""
+
+#: TFRMMAIN.MNUFILE.CAPTION
+msgid "File"
+msgstr ""
+
+#: TFRMMAIN.MNUHELP.CAPTION
+msgid "Help"
+msgstr ""
+
+#: TFRMMAIN.MNUOPTIONS.CAPTION
+msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+msgid "Options"
+msgstr ""
+
+#: TFRMMAIN.PNLMAIN.CAPTION
+msgid "pnlMain"
+msgstr ""
+
+#: TFRMMAIN.PRESETBOX.HINT
+msgid "Specific settings to use for the choosen device or file type"
+msgstr ""
+
+#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+msgid "Audio"
+msgstr ""
+
+#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
+msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABPAGECROP.CAPTION
+msgid "Crop"
+msgstr ""
+
+#: TFRMMAIN.TABPAGETIME.CAPTION
+msgid "Time"
+msgstr ""
+
+#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+msgid "Video"
+msgstr ""
+
+#: TFRMMAIN.VIDBITRATE.HINT
+msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr ""
+
+#: TFRMMAIN.VIDFRAMERATE.HINT
+msgid "(<real> or <integer>) number of frames per second"
+msgstr ""
+
+#: TFRMMAIN.VIDSIZEX.HINT
+msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+
+#: TFRMMAIN.VIDSIZEY.HINT
+msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON1.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+msgid "OK"
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON2.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+msgid "Cancel"
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON3.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON4.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON5.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON6.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON7.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON8.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.CAPTION
+msgid "WinFF Preferences"
+msgstr ""
+
+#: TFRMPREFERENCES.CHECKBOX1.CAPTION
+msgid "Remember Last Used Directory"
+msgstr ""
+
+#: TFRMPREFERENCES.CHECKBOX2.CAPTION
+msgid "Use CHCP for international characters"
+msgstr ""
+
+#: TFRMPREFERENCES.CHECKBOX3.CAPTION
+msgid "Use Several Encoding Threads:"
+msgstr ""
+
+#: TFRMPREFERENCES.EDIT7.HINT
+msgid "'-e' for xterm, '-x' for gnome-terminal"
+msgstr ""
+
+#: TFRMPREFERENCES.LABEL1.CAPTION
+msgid "Default Destination Directory:"
+msgstr ""
+
+#: TFRMPREFERENCES.LABEL2.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr ""
+
+#: TFRMPREFERENCES.LABEL3.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr ""
+
+#: TFRMPREFERENCES.LABEL4.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr ""
+
+#: TFRMPREFERENCES.LABEL5.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr ""
+
+#: TFRMPREFERENCES.LABEL6.CAPTION
+msgid "Terminal to run FFmpeg in:"
+msgstr ""
+
+#: TFRMPREFERENCES.LABEL7.CAPTION
+msgid "Terminal Options:"
+msgstr ""
+
+#: TFRMPREFERENCES.LABEL8.CAPTION
+msgid "Priority:"
+msgstr ""
+
+#: TFRMPREFERENCES.PAGE1.CAPTION
+msgid "General"
+msgstr ""
+
+#: TFRMPREFERENCES.PAGE2.CAPTION
+msgid "MS Windows"
+msgstr ""
+
+#: TFRMPREFERENCES.PAGE3.CAPTION
+msgid "Linux"
+msgstr ""
+
+#: TFRMSCRIPT.BTNCLIP.CAPTION
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: TFRMSCRIPT.BTNCLOSE.CAPTION
+#, fuzzy
+#| msgid "Close"
+msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+msgid "Close"
+msgstr "Kapat"
+
+#: TFRMSCRIPT.BTNRUN.CAPTION
+msgid "Run!"
+msgstr ""
+
+#: TFRMSCRIPT.BTNSAVE.CAPTION
+msgid "Save As..."
+msgstr ""
+
+#: TFRMSCRIPT.CAPTION
+msgctxt "TFRMSCRIPT.CAPTION"
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg komut satırı"
 
 #: unit1.rsconverting
 msgid "Converting"
@@ -75,27 +744,6 @@ msgstr "Dosya bulunamıyor"
 msgid "Could not find presets file."
 msgstr "Ayar dosyası bulunamıyor."
 
-#: unit1.rscropbottom
-msgid "Bottom"
-msgstr "Alt"
-
-#: unit1.rscropleft
-msgid "Left"
-msgstr "Sol"
-
-#: unit1.rscropright
-#| msgid "High"
-msgid "Right"
-msgstr "Sağ"
-
-#: unit1.rscroptop
-msgid "Top"
-msgstr "Üst"
-
-#: unit1.rsdisplaycmdline
-msgid "Display CMD Line"
-msgstr "Komut satırını göster"
-
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
 msgstr "Uzantı nokta (.) karakteri içeremez"
@@ -104,228 +752,13 @@ msgstr "Uzantı nokta (.) karakteri içeremez"
 msgid "file does not exist"
 msgstr "Dosya bulunamadı"
 
-#: unit1.rsfilemenu
-msgid "File"
-msgstr "Dosya"
-
-#: unit1.rsgroupbox1
-#| msgid "Additional Options"
-msgctxt "unit1.rsgroupbox1"
-msgid "Additional Options"
-msgstr "İlave seçenekler"
-
-#: unit1.rshint2pass
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
-msgstr "İKi tur kullanmak, dönüştürücünün ilk turda bilgi toplayarak ikinci turda daha kaliteli sonuç üretmesini sağlar."
-
-#: unit1.rshintadd
-msgid "add file(s) to the list for conversion"
-msgstr "Dönüşüm için listeye dosya(lar) ekleyin"
-
-#: unit1.rshintaspectratio
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
-msgstr "(<integer:integer> ya da <real>) olarak hedef oynatıcı için fiziksel görüntü oranı (DAR)"
-
-#: unit1.rshintaudiobitrate
-msgctxt "unit1.rshintaudiobitrate"
-msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr "(<integer>kb) Akışın kullanacağı hedef kilobits/second değeri"
-
-#: unit1.rshintaudiochannels
-msgid "(<integer>) number of audio channels"
-msgstr "(<integer>) ses kanalı sayısı"
-
-#: unit1.rshintclear
-msgid "remove all files from the list"
-msgstr "Listeden tüm dosyaları kaldır"
-
-#: unit1.rshintconvert
-msgid "start the conversion process"
-msgstr "dönüştürme sürecini başlat"
-
-#: unit1.rshintconvertto
-msgid "name of the device or file type the video should be converted to"
-msgstr "dönüştürülecek video için cihaz ismi ya da dosya tipi"
-
-#: unit1.rshintdeinterlace
-msgid "removes interlacing from the video (if necessary)"
-msgstr "videodan halkalamayı kaldır (gerekliyse)"
-
-#: unit1.rshintdevicepreset
-msgid "specific setting to use for the chosen device or file type"
-msgstr "seçilen cihaz ya da dosya tipi için özel ayarlar"
-
-#: unit1.rshintframerate
-msgid "(<real> or <integer>) the number of frames per second"
-msgstr "(<real> ya da <integer>) saniyedeki çerçeve sayısı"
-
-#: unit1.rshintoptions
-msgid "open or close the additional option window"
-msgstr "ek ayarlar penceresini aç ya da kapat"
-
-#: unit1.rshintoutputfolder
-msgid "the target location for the final video (choose a different folder than the source folder)"
-msgstr "videonun son halinin saklanacağı hedef klasör (kaynak klasörden faklı bir klasör seçin)"
-
-#: unit1.rshintplay
-msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "ffplay ile kaynak dosyayı önizle (dönüşüm yapılabilirliği açısından iyi bir test)"
-
-#: unit1.rshintpreview
-msgid "preview using the output settings"
-msgstr "çıktı ayarları ile önizleme"
-
-#: unit1.rshintremove
-msgid "remove the selected file(s) from the list"
-msgstr "seçilen dosyaları listeden çıkart"
-
-#: unit1.rshintsamplerate
-msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr "(<integer>) Hertz cinsinden ses frekansı"
-
-#: unit1.rshintvideobitrate
-msgctxt "unit1.rshintvideobitrate"
-msgid "(<integer>kb) the target kilobits/second that the stream should use"
-msgstr "(<integer>kb) akışın kullanacağı hedef kilobits/second"
-
-#: unit1.rshintvideosize
-msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
-msgstr "(<integer> X <integer>) bilgi piksellerinin miktarı. Piksel görüntü oranı (PAR) desteklemeyen kodeklerde bu değer video görüntülendiğindeki video boyutudur."
-
-#: unit1.rsimportmenu
-msgid "Import Preset"
-msgstr "Ayar yükle"
-
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
 msgstr "Yanlış ayar dosyası"
 
-#: unit1.rslabel1
-msgid "Convert To ..."
-msgstr "Dönüştür ..."
-
-#: unit1.rslabel10
-msgid "Audio Channels"
-msgstr "Ses Kanalları"
-
-#: unit1.rslabel11
-#| msgid "Output Folder"
-msgctxt "unit1.rslabel11"
-msgid "Output Folder"
-msgstr "Çıktı klasörü"
-
-#: unit1.rslabel19
-msgid "Device Preset"
-msgstr "Cihaz ayarı"
-
-#: unit1.rslabel2
-#| msgid "Output Folder"
-msgctxt "unit1.rslabel2"
-msgid "Output Folder"
-msgstr "Çıktı klasörü"
-
-#: unit1.rslabel3
-msgid "Video Bitrate"
-msgstr "Video bit oranı"
-
-#: unit1.rslabel4
-msgid "Frame Rate"
-msgstr "Çerçeve oranı"
-
-#: unit1.rslabel5
-msgid "Video Size"
-msgstr "Video boyutu"
-
-#: unit1.rslabel6
-msgid "Aspect Ratio"
-msgstr "En boy oranı"
-
-#: unit1.rslabel7
-msgid "Audio Bitrate"
-msgstr "Ses bit oranı"
-
-#: unit1.rslabel8
-msgid "Sample Rate"
-msgstr "Örnekleme oranı"
-
-#: unit1.rsmenuitem1
-msgid "Edit"
-msgstr "Düzenle"
-
-#: unit1.rsmenuitem2
-#| msgid "About"
-msgctxt "unit1.rsmenuitem2"
-msgid "About"
-msgstr "Hakkında"
-
-#: unit1.rsmenuitem3
-msgid "Exit"
-msgstr "Çıkış"
-
-#: unit1.rsmenuitem4
-#| msgid "Presets"
-msgctxt "unit1.rsmenuitem4"
-msgid "Presets"
-msgstr "Ayarlar"
-
-#: unit1.rsmenuitem5
-msgid "Preferences"
-msgstr "Tercihler"
-
-#: unit1.rsmenuitem6
-msgid "Help"
-msgstr "Yardım"
-
-#: unit1.rsmenuitem7
-msgid "WinFF Forums"
-msgstr "WinFF Forumları"
-
-#: unit1.rsmitWinff
-msgid "WinFF Website"
-msgstr "WinFF Web sitesi"
-
-#: unit1.rsmitabout
-#| msgid "About"
-msgctxt "unit1.rsmitabout"
-msgid "About"
-msgstr "Hakkında"
-
-#: unit1.rsmitdocs
-msgid "Documentation"
-msgstr "Dokümantasyon"
-
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
 msgstr "İsim alfanümetik olmaslı (a-z,A-Z,0-9)"
-
-#: unit1.rsoptions
-#| msgid "Options"
-msgctxt "unit1.rsoptions"
-msgid "Options"
-msgstr "Ayarlar"
-
-#: unit1.rsoptionsbtn
-#| msgid "Options"
-msgctxt "unit1.rsoptionsbtn"
-msgid "Options"
-msgstr "Ayarlar"
-
-#: unit1.rspass2
-msgid "2 pass"
-msgstr "2 tur"
-
-#: unit1.rspauseonfinish
-msgid "Pause on Finish"
-msgstr "Bittiğinde durdur"
-
-#: unit1.rsplay
-msgid "Play"
-msgstr "Çal"
-
-#: unit1.rsplaysoundonfinish
-#| msgid "Pause on Finish"
-msgid "Play Sound on Finish"
-msgstr "Bittiğinde sesi kes"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
@@ -348,6 +781,8 @@ msgid "The preset to import does not have a label"
 msgstr "Aktarılacak ayar dosyasını etiketi yok"
 
 #: unit1.rspresettoexport
+#, fuzzy
+#| msgid "Please select a preset to "
 msgid "Please select a preset to export"
 msgstr "Lütfen dışarı aktarılacak ayarı seçin"
 
@@ -359,13 +794,11 @@ msgstr "%s%s%s etiketli ayar dosyası zaten mevcut"
 msgid "Press Enter to Continue"
 msgstr "Devam etmek için Enter tuşuna basın"
 
-#: unit1.rspreview
-msgid "Preview"
-msgstr "Önizleme"
-
-#: unit1.rsremovebtn
-msgid "Remove"
-msgstr "Çıkart"
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "Varsayılan hedef klasörü"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -375,113 +808,21 @@ msgstr "Ayar dosyası seç"
 msgid "Select Video Files"
 msgstr "Video dosyalarını seç"
 
-#: unit1.rsshowoptions
-#| msgid "Additional Options"
-msgctxt "unit1.rsshowoptions"
-msgid "Additional Options"
-msgstr "İlave seçenekler"
-
-#: unit1.rsshutdownonfinish
-msgid "Shutdown on Finish"
-msgstr "Bittiğinde kapat"
-
-#: unit1.rsstartbtn
-msgid "Convert"
-msgstr "Dönüştür"
-
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Ayar dosyası geçersiz karakterler içeriyor"
-
-#: unit1.tabpage1caption
-msgid "Output Details"
-msgstr "Çıktı detayları"
-
-#: unit1.tabpage2caption
-msgid "Video Settings"
-msgstr "Video ayarları"
-
-#: unit1.tabpage3caption
-msgid "Audio Settings"
-msgstr "Ses ayarları"
-
-#: unit1.tabpage4caption
-msgid "Additional Command Line Parameters (Advanced)"
-msgstr "İlave komut satırı parametreleri (Gelişmiş)"
-
-#: unit1.tabpage5caption
-msgid "Crop"
-msgstr "Kes"
-
-#: unit2.rsaddpresetbtn
-msgid "Add / Update"
-msgstr "Ekle / Güncelle"
-
-#: unit2.rscancelbtn
-#| msgid "Cancel"
-msgctxt "unit2.rscancelbtn"
-msgid "Cancel"
-msgstr "İptal"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Ayar yarat:"
 
-#: unit2.rsdeletebtn
-msgid "Delete"
-msgstr "Sil"
-
-#: unit2.rsexport
-#| msgid "Export"
-msgctxt "unit2.rsexport"
-msgid "Export"
-msgstr "Dışarı aktar"
-
-#: unit2.rsform2
-msgid "Edit Presets"
-msgstr "Ayarları düzenle"
-
-#: unit2.rsimport
-msgid "Import"
-msgstr "İçeri aktar"
-
 #: unit2.rsimportpresets
 msgid "Import Presets"
 msgstr "Ayarları yükle"
 
-#: unit2.rslabel1
-#| msgid "Presets"
-msgctxt "unit2.rslabel1"
-msgid "Presets"
-msgstr "Ayarlar"
-
-#: unit2.rslabel2
-msgid "Preset Name (One word , Only A-z 0-9)"
-msgstr "Ayar ismi (Bir kelime, Sadece A-z 0-9)"
-
-#: unit2.rslabel3
-msgid "Preset Label"
-msgstr "Ayar etiketi"
-
-#: unit2.rslabel4
-msgid "Preset Command Line (no -i or output file)"
-msgstr "Ayar komut satırı (satır -i ya da çıktı dosyası)"
-
-#: unit2.rslabel5
-msgid "Output File Extension (no \".\")"
-msgstr "Çıktı dosya uzantısı (no \".\")"
-
-#: unit2.rslabel6
-msgid "Category"
-msgstr "Kategori"
-
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
 msgstr "Etiket eşsiz olmalı."
-
-#: unit2.rsokbtn
-msgid "Save"
-msgstr "Kaydet"
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
@@ -503,106 +844,6 @@ msgstr "Bir etiket girmelisiniz."
 msgid "You must enter a name."
 msgstr "Bir isim girmelisiniz."
 
-#: unit3.rsbutton1
-msgctxt "unit3.rsbutton1"
-msgid "OK"
-msgstr "Tamam"
-
-#: unit3.rsform3
-msgid "About WinFF"
-msgstr "WinFF hakkında"
-
-#: unit3.rslabel8
-msgid "FFmpeg builds by"
-msgstr "FFmpeg yaratıcısı"
-
-#: unit3.rspage1
-msgid "WinFF"
-msgstr "WinFF"
-
-#: unit3.rspage2
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: unit3.rspage3
-msgid "Thanks"
-msgstr "Teşekkürler"
-
-#: unit4.rsbutton1
-#| msgctxt "unit3.rsbutton1"
-#| msgid "OK"
-msgctxt "unit4.rsbutton1"
-msgid "OK"
-msgstr "Tamam"
-
-#: unit4.rsbutton2
-#| msgid "Cancel"
-msgctxt "unit4.rsbutton2"
-msgid "Cancel"
-msgstr "İptal"
-
-#: unit4.rscheckbox1
-msgid "Remember Last Directory Used"
-msgstr "Son kullanılan klasörü hatırla"
-
-#: unit4.rscheckbox2
-msgid "Use CHCP for international characters"
-msgstr "Uluslararası karakterler için CHCP kullan"
-
-#: unit4.rscheckbox3
-msgid "Multithreading for Dual Core Processors"
-msgstr "Çift çekirdekli işlemciler için çoklu işlem"
-
-#: unit4.rsform4
-msgid "WinFF Preferences"
-msgstr "WinFF Tercihleri"
-
-#: unit4.rslabel1
-msgid "Default Destination Directory"
-msgstr "Varsayılan hedef klasörü"
-
-#: unit4.rslabel2
-msgid "Path to FFmpeg.exe"
-msgstr "FFmpeg.exe için yol"
-
-#: unit4.rslabel3
-msgid "Path to FFPlay.exe"
-msgstr "FFPlay.exe için yol"
-
-#: unit4.rslabel4
-msgid "Path to FFmpeg Executable"
-msgstr "FFmpeg uygulaması için yol"
-
-#: unit4.rslabel5
-msgid "Path to FFPlay Executable"
-msgstr "FFPlay uygulaması için yol"
-
-#: unit4.rslabel6
-msgid "Terminal to run FFmpeg"
-msgstr "FFmpeg çalıştırmak için istemci"
-
-#: unit4.rslabel7
-msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
-msgstr "İstemci seçenekleri (Xterm için -e, Gnome istemcisi için -x)"
-
-#: unit4.rslabel8
-#| msgid "Priority"
-msgctxt "unit4.rslabel8"
-msgid "Priority"
-msgstr "Öncelik"
-
-#: unit4.rspage1
-msgid "General"
-msgstr "Genel"
-
-#: unit4.rspage2
-msgid "Ms Windows"
-msgstr "MS Windows"
-
-#: unit4.rspage3
-msgid "Linux"
-msgstr "Linux"
-
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Yüksek"
@@ -614,40 +855,4 @@ msgstr "Önemsiz"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normal"
-
-#: unit5.rsbutton1
-#| msgctxt "unit3.rsbutton1"
-#| msgid "OK"
-msgctxt "unit5.rsbutton1"
-msgid "OK"
-msgstr "Tamam"
-
-#: unit5.rsform5
-msgid "FFmpeg Command Line"
-msgstr "FFmpeg komut satırı"
-
-#: unit6.rscancelbtn
-#| msgid "Cancel"
-msgctxt "unit6.rscancelbtn"
-msgid "Cancel"
-msgstr "İptal"
-
-#: unit6.rsexportbtn
-#| msgid "Export"
-msgctxt "unit6.rsexportbtn"
-msgid "Export"
-msgstr "Dışarı aktar"
-
-#: unit6.rsform6
-msgid "Export Presets"
-msgstr "Ayarları dışarı aktar"
-
-#: unit6.rslabel1
-msgid "Choose presets to export"
-msgstr "Dışarı aktarılacak ayarları seçin"
-
-#~ msgid "AC'"
-#~ msgstr "AC'"
-#~ msgid "Replace Preset"
-#~ msgstr "Ayarı değiştir"
 
