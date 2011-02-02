@@ -1,31 +1,5 @@
-# Copyright (C) 2008-2010 Matthew Weatherford <matt@biggmatt.com>
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
 msgid ""
-msgstr ""
-"Project-Id-Version: WinFF 1.2.0\n"
-"POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Matt Weatherford <matt@biggmatt.com>\n"
-"Language-Team: English <matt@biggmatt.com>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: United States\n"
-"X-Poedit-SourceCharset: utf-8\n"
+msgstr "Content-Type: text/plain; charset=UTF-8"
 
 #: unit1.rsaddbtn
 msgid "Add"
@@ -44,6 +18,7 @@ msgid "Clear"
 msgstr ""
 
 #: unit1.rsclose
+msgctxt "unit1.rsclose"
 msgid "Close"
 msgstr ""
 
@@ -130,6 +105,10 @@ msgstr ""
 msgid "(<integer>) number of audio channels"
 msgstr ""
 
+#: unit1.rshintaudiosync
+msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+msgstr ""
+
 #: unit1.rshintclear
 msgid "remove all files from the list"
 msgstr ""
@@ -170,12 +149,24 @@ msgstr ""
 msgid "preview using the output settings"
 msgstr ""
 
+#: unit1.rshintrecord
+msgid "<hh:mm:ss> - Amount of time to record"
+msgstr ""
+
 #: unit1.rshintremove
 msgid "remove the selected file(s) from the list"
 msgstr ""
 
 #: unit1.rshintsamplerate
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr ""
+
+#: unit1.rshintseek
+msgid "<hh:mm:ss> - Begin recording at start time"
+msgstr ""
+
+#: unit1.rshinttime
+msgid "Make sure that the start time + time to record is less than total length of job"
 msgstr ""
 
 #: unit1.rshintvideobitrate
@@ -185,6 +176,10 @@ msgstr ""
 
 #: unit1.rshintvideosize
 msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+msgstr ""
+
+#: unit1.rshintvolume
+msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
 msgstr ""
 
 #: unit1.rsimportmenu
@@ -215,6 +210,26 @@ msgstr ""
 #: unit1.rslabel2
 msgctxt "unit1.rslabel2"
 msgid "Output Folder"
+msgstr ""
+
+#: unit1.rslabel20
+msgid "Volume"
+msgstr ""
+
+#: unit1.rslabel21
+msgid "Audio Sync"
+msgstr ""
+
+#: unit1.rslabel22
+msgid "Seek to"
+msgstr ""
+
+#: unit1.rslabel23
+msgid "Time to Record"
+msgstr ""
+
+#: unit1.rslabel24
+msgid "Hours / Minutes / Seconds"
 msgstr ""
 
 #: unit1.rslabel3
@@ -280,7 +295,7 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: unit1.rsmitWinff
+#: unit1.rsmitwinff
 msgid "WinFF Website"
 msgstr ""
 
@@ -352,6 +367,10 @@ msgstr ""
 
 #: unit1.rsremovebtn
 msgid "Remove"
+msgstr ""
+
+#: unit1.rsselectdirectory
+msgid "Select Directory"
 msgstr ""
 
 #: unit1.rsselectpresetfile
@@ -463,6 +482,7 @@ msgid "Label must be unique."
 msgstr ""
 
 #: unit2.rsokbtn
+msgctxt "unit2.rsokbtn"
 msgid "Save"
 msgstr ""
 
@@ -566,7 +586,6 @@ msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgstr ""
 
 #: unit4.rslabel8
-msgctxt "unit4.rslabel8"
 msgid "Priority"
 msgstr ""
 
@@ -599,8 +618,26 @@ msgctxt "unit5.rsbutton1"
 msgid "OK"
 msgstr ""
 
+#: unit5.rsclip
+msgid "Clipboard"
+msgstr ""
+
+#: unit5.rsclip2
+msgctxt "unit5.rsclip2"
+msgid "Close"
+msgstr ""
+
+#: unit5.rscontinue
+msgid "Continue"
+msgstr ""
+
 #: unit5.rsform5
 msgid "FFmpeg Command Line"
+msgstr ""
+
+#: unit5.rssave
+msgctxt "unit5.rssave"
+msgid "Save"
 msgstr ""
 
 #: unit6.rscancelbtn
