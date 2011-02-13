@@ -23,6 +23,7 @@ msgstr ""
 "PO-Revision-Date: 2010-07-20 22:48+0100\n"
 "Last-Translator: Paul Gevers <paul@climbing.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,15 +34,17 @@ msgstr ""
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: TFRMABOUT.CAPTION
 msgid "About WinFF"
-msgstr ""
+msgstr "Over WinFF"
 
 #: TFRMABOUT.LABEL1.CAPTION
+#, fuzzy
+#| msgid "WinFF"
 msgid "WinFF 1.3.2"
-msgstr ""
+msgstr "WinFF"
 
 #: TFRMABOUT.LABEL10.CAPTION
 msgid "http://ffmpeg.arrozcru.org/"
@@ -80,6 +83,8 @@ msgid "http://www.winff.org"
 msgstr ""
 
 #: TFRMABOUT.LABEL5.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -93,30 +98,36 @@ msgid "http://ffmpeg.org"
 msgstr ""
 
 #: TFRMABOUT.LABEL8.CAPTION
+#, fuzzy
+#| msgid "FFmpeg builds by"
 msgid "FFmpeg Windows Builds by"
-msgstr ""
+msgstr "FFmpeg gebouwd door"
 
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Ramiro Polla"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
+#, fuzzy
+#| msgid "WinFF"
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: TFRMABOUT.PAGE2.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
-msgstr ""
+msgstr "Met dank aan"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
-msgstr ""
+msgstr "Invoeren"
 
 #: TFRMEDITPRESETS.CANCELBTN.CAPTION
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
@@ -125,11 +136,11 @@ msgstr "Sluiten"
 
 #: TFRMEDITPRESETS.CAPTION
 msgid "Edit Presets"
-msgstr ""
+msgstr "Bewerk voorinstellingen"
 
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
-msgstr ""
+msgstr "Verwijderen"
 
 #: TFRMEDITPRESETS.EDIT1.HINT
 msgid "One word, only letters and numbers"
@@ -140,8 +151,10 @@ msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
 #: TFRMEDITPRESETS.EDIT3.HINT
+#, fuzzy
+#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
-msgstr ""
+msgstr "Commandoregel voorinstelling (geen -i of doelbestand)"
 
 #: TFRMEDITPRESETS.EDIT4.HINT
 msgid "Do not include a dot"
@@ -154,39 +167,50 @@ msgstr ""
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "Exporteer"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
-msgstr ""
+msgstr "Importeer"
 
 #: TFRMEDITPRESETS.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Create Preset:"
 msgid "Category / Preset"
-msgstr ""
+msgstr "Creëer voorinstelling:"
 
 #: TFRMEDITPRESETS.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr ""
+msgstr "Naam voorinstelling (één woord , alleen A-z 0-9)"
 
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
-msgstr ""
+msgstr "Label voorinstelling"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr ""
+msgstr "Commandoregel voorinstelling (geen -i of doelbestand)"
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
-msgstr ""
+msgstr "Achtervoegsel doelbestand (geen \".\")"
 
 #: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
-msgstr ""
+msgstr "Categorie"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
+#, fuzzy
+#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
+#| msgid "Save"
 msgid "Save"
-msgstr ""
+msgstr "Opslaan"
 
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
@@ -195,115 +219,142 @@ msgstr ""
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
-msgstr ""
+msgstr "Exporteer voorinstelling"
 
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "Exporteer"
 
 #: TFRMEXPORT.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
-msgstr ""
+msgstr "Selecteer een voorinstelling om te exporteren"
 
 #: TFRMMAIN.AUDBITRATE.HINT
+#, fuzzy
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<geheel getal>kb) de doelsnelheid van de stroom in kilobits per seconde"
 
 #: TFRMMAIN.AUDCHANNELS.HINT
 msgid "(<integer>) number of audio channels"
-msgstr ""
+msgstr "(<geheel getal>) aantal audiokanalen"
 
 #: TFRMMAIN.AUDSAMPLINGRATE.HINT
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr ""
+msgstr "(<geheel getal>) de bemonsteringsfrequentie van de audio in Hertz"
 
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
-msgstr ""
+msgstr "Toevoegen"
 
 #: TFRMMAIN.BTNADD.HINT
+#, fuzzy
+#| msgid "add file(s) to the list for conversion"
 msgid "Add file(s) to the list for conversion"
-msgstr ""
+msgstr "voeg bestand(en) to aan de conversielijst"
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
-msgstr ""
+msgstr "Wissen"
 
 #: TFRMMAIN.BTNCLEAR.HINT
+#, fuzzy
+#| msgid "remove all files from the list"
 msgid "Remove all files from the list"
-msgstr ""
+msgstr "verwijder alle bestanden uit de lijst"
 
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
-msgstr ""
+msgstr "Converteer"
 
 #: TFRMMAIN.BTNCONVERT.HINT
+#, fuzzy
+#| msgid "start the conversion process"
 msgid "Start the conversion process"
-msgstr ""
+msgstr "start het conversieproces"
 
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Opties"
 
 #: TFRMMAIN.BTNOPTIONS.HINT
+#, fuzzy
+#| msgid "open or close the additional option window"
 msgid "Open/close the additional options window"
-msgstr ""
+msgstr "open of sluit het veld met extra opties"
 
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
-msgstr ""
+msgstr "Afspelen"
 
 #: TFRMMAIN.BTNPLAY.HINT
+#, fuzzy
+#| msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr ""
+msgstr "bekijk de geselecteerde bestanden met ffplay (goede test om te zien of conversie mogelijk is)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
-msgstr ""
+msgstr "Voorbeeld"
 
 #: TFRMMAIN.BTNPREVIEW.HINT
+#, fuzzy
+#| msgid "preview using the output settings"
 msgid "Preview using the output settings"
-msgstr ""
+msgstr "bekijken een stukje film met de huidige instellingen"
 
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
-msgstr ""
+msgstr "Verwijderen"
 
 #: TFRMMAIN.BTNREMOVE.HINT
+#, fuzzy
+#| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
-msgstr ""
+msgstr "verwijder geselecteerde bestand(en) uit de lijst"
 
 #: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
+#, fuzzy
+#| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
-msgstr ""
+msgstr "naam van het apparaat of bestandstype waar de video naar geconverteerd moet worden"
 
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
-msgstr ""
+msgstr "2 keer"
 
 #: TFRMMAIN.CBX2PASS.HINT
+#, fuzzy
+#| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr ""
+msgstr "Door twee keer de video te verwerken kan de encoder in de eerste ronde informatie verzamelen voor hogere kwaliteit."
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
-msgstr ""
+msgstr "Ontvlechten"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
+#, fuzzy
+#| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
-msgstr ""
+msgstr "verwijder interlacing van de video (indien nodig)"
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -311,12 +362,16 @@ msgid "..."
 msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
+#, fuzzy
+#| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr ""
+msgstr "de doelmap voor het eindresultaat (kies een andere map dan waar het origineel staat)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
+#, fuzzy
+#| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr ""
+msgstr "(<geheel getal:geheel getal> of <reëel getal>) de fysieke aspect ratio (DAR) van de beoogde scherm."
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
@@ -358,52 +413,68 @@ msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
 #: TFRMMAIN.EDTTTRHH.HINT
+#, fuzzy
+#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<hh:mm:ss> - Opnametijdsduur"
 
 #: TFRMMAIN.EDTTTRMM.HINT
+#, fuzzy
+#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRMM.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<hh:mm:ss> - Opnametijdsduur"
 
 #: TFRMMAIN.EDTTTRSS.HINT
+#, fuzzy
+#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRSS.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<hh:mm:ss> - Opnametijdsduur"
 
 #: TFRMMAIN.EDTVOLUME.HINT
+#, fuzzy
+#| msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
+msgstr "(<geheel getal>) Huidige volume = 256, half volume = 128, dubbel volume = 512"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "Extra opties"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
-msgstr ""
+msgstr "Uitvoer details"
 
 #: TFRMMAIN.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Convert"
 msgid "Convert to:"
-msgstr ""
+msgstr "Converteer"
 
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
-msgstr ""
+msgstr "Audio kanalen"
 
 #: TFRMMAIN.LABEL11.CAPTION
+#, fuzzy
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
+#| msgid "Output Folder"
 msgid "Output Folder:"
-msgstr ""
+msgstr "Doelmap"
 
 #: TFRMMAIN.LABEL19.CAPTION
+#, fuzzy
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
+#| msgid "Presets"
 msgid "Preset:"
-msgstr ""
+msgstr "Voorinstellingen"
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
-msgstr ""
+msgstr "Volume"
 
 #: TFRMMAIN.LABEL21.CAPTION
 msgid "Sync"
@@ -411,27 +482,29 @@ msgstr ""
 
 #: TFRMMAIN.LABEL22.CAPTION
 msgid "Seek to"
-msgstr ""
+msgstr "Spring naar"
 
 #: TFRMMAIN.LABEL23.CAPTION
 msgid "Time to Record"
-msgstr ""
+msgstr "Opnametijdsduur"
 
 #: TFRMMAIN.LABEL24.CAPTION
 msgid "Hours / Minutes / Seconds"
-msgstr ""
+msgstr "Uren / minuten / seconden"
 
 #: TFRMMAIN.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
-msgstr ""
+msgstr "Extra parameters voor de commandoregel (gevorderden)"
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
-msgstr ""
+msgstr "Audio bitsnelheid"
 
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
-msgstr ""
+msgstr "Audio frequentie"
 
 #: TFRMMAIN.LABEL9.CAPTION
 msgid "X"
@@ -439,167 +512,197 @@ msgstr ""
 
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
-msgstr ""
+msgstr "Aspectratio"
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
-msgstr ""
+msgstr "Onder"
 
 #: TFRMMAIN.LBLCROPLEFT.CAPTION
 msgid "Left"
-msgstr ""
+msgstr "Links"
 
 #: TFRMMAIN.LBLCROPRIGHT.CAPTION
 msgid "Right"
-msgstr ""
+msgstr "Rechts"
 
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
-msgstr ""
+msgstr "Boven"
 
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
-msgstr ""
+msgstr "Video frequentie"
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
-msgstr ""
+msgstr "Video bitsnelheid"
 
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
-msgstr ""
+msgstr "Videogrootte"
 
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
 msgstr ""
 
 #: TFRMMAIN.MITABOUT.CAPTION
+#, fuzzy
+#| msgctxt "REMOVED3"
+#| msgid "About"
 msgid "About"
-msgstr ""
+msgstr "Over WinFF"
 
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+#, fuzzy
+#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
-msgstr ""
+msgstr "Toon commandoregel"
 
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
-msgstr ""
+msgstr "Documentatie"
 
 #: TFRMMAIN.MITEXIT.CAPTION
 msgid "Exit"
-msgstr ""
+msgstr "Afsluiten"
 
 #: TFRMMAIN.MITFORUMS.CAPTION
+#, fuzzy
+#| msgid "WinFF Forums"
 msgid "Forums"
-msgstr ""
+msgstr "WinFF forums"
 
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
-msgstr ""
+msgstr "Importeer voorinstelling"
 
 #: TFRMMAIN.MITPAUSEONFINISH.CAPTION
 msgid "Pause on Finish"
-msgstr ""
+msgstr "Pauzeer na beëindigen"
 
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
-msgstr ""
+msgstr "Speel geluid af na afloop"
 
 #: TFRMMAIN.MITPREFERENCES.CAPTION
 msgid "Preferences"
-msgstr ""
+msgstr "Voorkeuren"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
+#, fuzzy
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
+#| msgid "Presets"
 msgid "Presets"
-msgstr ""
+msgstr "Voorinstellingen"
 
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "Extra opties"
 
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
-msgstr ""
+msgstr "Afsluiten na beëindigen"
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
-msgstr ""
+msgstr "WinFF website"
 
 #: TFRMMAIN.MNUEDIT.CAPTION
 msgid "Edit"
-msgstr ""
+msgstr "Bewerken"
 
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
-msgstr ""
+msgstr "Bestand"
 
 #: TFRMMAIN.MNUHELP.CAPTION
 msgid "Help"
-msgstr ""
+msgstr "Help"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
+#, fuzzy
+#| msgctxt "REMOVED6"
+#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Opties"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
 
 #: TFRMMAIN.PRESETBOX.HINT
+#, fuzzy
+#| msgid "specific setting to use for the chosen device or file type"
 msgid "Specific settings to use for the choosen device or file type"
-msgstr ""
+msgstr "specifieke instelling die gebruikt wordt voor het gekozen apparaat of bestandstype"
 
 #: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#, fuzzy
+#| msgid "Audio Sync"
 msgid "Audio"
-msgstr ""
+msgstr "Geluidssynchronisatie"
 
 #: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMMAIN.TABPAGECROP.CAPTION
 msgid "Crop"
-msgstr ""
+msgstr "Bijsnijden"
 
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
 
 #: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#, fuzzy
+#| msgid "Video Size"
 msgid "Video"
-msgstr ""
+msgstr "Videogrootte"
 
 #: TFRMMAIN.VIDBITRATE.HINT
+#, fuzzy
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<geheel getal>kb) de doelsnelheid van de stroom in kilobits per seconde"
 
 #: TFRMMAIN.VIDFRAMERATE.HINT
+#, fuzzy
+#| msgid "(<real> or <integer>) the number of frames per second"
 msgid "(<real> or <integer>) number of frames per second"
-msgstr ""
+msgstr "(<reëel getal> of <geheel getal>) het aantal beelden per second"
 
 #: TFRMMAIN.VIDSIZEX.HINT
+#, fuzzy
+#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
+msgstr "(<geheel getal> X <geheel getal>) het aantal pixels met informatie. Voor codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van de video als het bekeken wordt."
 
 #: TFRMMAIN.VIDSIZEY.HINT
+#, fuzzy
+#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
+msgstr "(<geheel getal> X <geheel getal>) het aantal pixels met informatie. Voor codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van de video als het bekeken wordt."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "Accepteren"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
@@ -633,75 +736,100 @@ msgstr ""
 
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
-msgstr ""
+msgstr "WinFF voorkeuren"
 
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
+#, fuzzy
+#| msgid "Remember Last Directory Used"
 msgid "Remember Last Used Directory"
-msgstr ""
+msgstr "Onthoudt de laatst gebruikte map"
 
 #: TFRMPREFERENCES.CHECKBOX2.CAPTION
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "Gebruik CHCP voor internationale karakters"
 
 #: TFRMPREFERENCES.CHECKBOX3.CAPTION
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
 #: TFRMPREFERENCES.EDIT7.HINT
+#, fuzzy
+#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr ""
+msgstr "Terminal opties (-e voor Xterm , -x voor Gnome Terminal)"
 
 #: TFRMPREFERENCES.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Default Destination Directory"
 msgid "Default Destination Directory:"
-msgstr ""
+msgstr "Standaard doelmap"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "Pad naar uitvoerbaar FFmpeg bestand"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "Pad naar uitvoerbaar FFPlay bestand"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "Pad naar uitvoerbaar FFmpeg bestand"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "Pad naar uitvoerbaar FFPlay bestand"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
+#, fuzzy
+#| msgid "Terminal to run FFmpeg"
 msgid "Terminal to run FFmpeg in:"
-msgstr ""
+msgstr "Terminal voor het uitvoeren van FFmpeg"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
+#, fuzzy
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#| msgid "Additional Options"
 msgid "Terminal Options:"
-msgstr ""
+msgstr "Extra opties"
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
+#, fuzzy
+#| msgid "Priority"
 msgid "Priority:"
-msgstr ""
+msgstr "Prioriteit"
 
 #: TFRMPREFERENCES.PAGE1.CAPTION
 msgid "General"
-msgstr ""
+msgstr "Algemeen"
 
 #: TFRMPREFERENCES.PAGE2.CAPTION
+#, fuzzy
+#| msgid "Ms Windows"
 msgid "MS Windows"
-msgstr ""
+msgstr "MS Windows"
 
 #: TFRMPREFERENCES.PAGE3.CAPTION
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: TFRMSCRIPT.BTNCLIP.CAPTION
+#, fuzzy
+#| msgid "Clipboard"
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Klembord"
 
 #: TFRMSCRIPT.BTNCLOSE.CAPTION
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
@@ -717,7 +845,6 @@ msgid "Save As..."
 msgstr ""
 
 #: TFRMSCRIPT.CAPTION
-msgctxt "TFRMSCRIPT.CAPTION"
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg commandoregel"
 
@@ -778,8 +905,6 @@ msgid "The preset to import does not have a label"
 msgstr "De voorinstelling die geïmporteerd moet worden, heeft geen label."
 
 #: unit1.rspresettoexport
-#, fuzzy
-#| msgid "Please select a preset to "
 msgid "Please select a preset to export"
 msgstr "Selecteer een voorinstelling om te exporteren"
 
@@ -792,7 +917,6 @@ msgid "Press Enter to Continue"
 msgstr "Druk 'enter' om verder te gaan"
 
 #: unit1.rsselectdirectory
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
 msgstr "Selecteer doelmap"
 
@@ -852,3 +976,74 @@ msgstr "Inactief"
 msgid "Normal"
 msgstr "Normaal"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Alle categoriën)"
+
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "(<geheel getal>) Geluidssynchronisatie"
+
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "<hh:mm:ss> - Begintijdstip van de nieuwe opname"
+
+#~ msgid "Make sure that the start time + time to record is less than total length of job"
+#~ msgstr "Zorg ervoor dat de starttijd plus de totale duur van de opname minder is dan de lengte van het origineel"
+
+#~ msgid "Convert To ..."
+#~ msgstr "Converteer naar"
+
+#~ msgid "Device Preset"
+#~ msgstr "Voorinstelling"
+
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Doelmap"
+
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Over WinFF"
+
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opties"
+
+#~ msgid "Video Settings"
+#~ msgstr "Video instellingen"
+
+#~ msgid "Audio Settings"
+#~ msgstr "Audio instellingen"
+
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Annuleren"
+
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Voorinstelling"
+
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading voor dual-core processoren"
+
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Pad naar FFmpeg.exe"
+
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Pad naar FFPlay.exe"
+
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Accepteren"
+
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Doorgaan"
+
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Opslaan"
+
+#~ msgid "Replace Preset"
+#~ msgstr "Vervang voorinstelling:"
+
+#~ msgid "AC'"
+#~ msgstr "Aantal kanalen"

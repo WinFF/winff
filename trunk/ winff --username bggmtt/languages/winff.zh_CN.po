@@ -22,22 +22,26 @@ msgstr ""
 "PO-Revision-Date: 2009-07-18\n"
 "Last-Translator: 大宝(DaBao) <michaelbond01@163.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: TFRMABOUT.BUTTON1.CAPTION
+#, fuzzy
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "确定"
 
 #: TFRMABOUT.CAPTION
 msgid "About WinFF"
-msgstr ""
+msgstr "关于 WinFF"
 
 #: TFRMABOUT.LABEL1.CAPTION
+#, fuzzy
+#| msgid "WinFF"
 msgid "WinFF 1.3.2"
-msgstr ""
+msgstr "WinFF"
 
 #: TFRMABOUT.LABEL10.CAPTION
 msgid "http://ffmpeg.arrozcru.org/"
@@ -76,6 +80,8 @@ msgid "http://www.winff.org"
 msgstr ""
 
 #: TFRMABOUT.LABEL5.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -97,22 +103,26 @@ msgid "Ramiro Polla"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
+#, fuzzy
+#| msgid "WinFF"
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: TFRMABOUT.PAGE2.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
-msgstr ""
+msgstr "鸣谢"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
-msgstr ""
+msgstr "新增/更新"
 
 #: TFRMEDITPRESETS.CANCELBTN.CAPTION
 #, fuzzy
@@ -122,11 +132,11 @@ msgstr "关闭"
 
 #: TFRMEDITPRESETS.CAPTION
 msgid "Edit Presets"
-msgstr ""
+msgstr "编辑编码设置文件"
 
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
-msgstr ""
+msgstr "删除"
 
 #: TFRMEDITPRESETS.EDIT1.HINT
 msgid "One word, only letters and numbers"
@@ -137,8 +147,10 @@ msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
 #: TFRMEDITPRESETS.EDIT3.HINT
+#, fuzzy
+#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
-msgstr ""
+msgstr "编码参数（没有“-i”或者输出文件）"
 
 #: TFRMEDITPRESETS.EDIT4.HINT
 msgid "Do not include a dot"
@@ -149,63 +161,81 @@ msgid "Choose a category to group this preset under"
 msgstr ""
 
 #: TFRMEDITPRESETS.EXPORT.CAPTION
+#, fuzzy
+#| msgid "Export"
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "导出"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
-msgstr ""
+msgstr "导入"
 
 #: TFRMEDITPRESETS.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Create Preset:"
 msgid "Category / Preset"
-msgstr ""
+msgstr "添加编码设置文件"
 
 #: TFRMEDITPRESETS.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr ""
+msgstr "名称(一个完整的词，不可有空格，限 A-z，0-9)"
 
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
-msgstr ""
+msgstr "标签"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr ""
+msgstr "编码参数（没有“-i”或者输出文件）"
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
-msgstr ""
+msgstr "输出文件后缀(不含 “.”)"
 
 #: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
-msgstr ""
+msgstr "类别"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
+#, fuzzy
+#| msgid "Save"
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr ""
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
+#, fuzzy
+#| msgid "Cancel"
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: TFRMEXPORT.CAPTION
+#, fuzzy
 msgid "Export Presets"
-msgstr ""
+msgstr "导出编码设置文件"
 
 #: TFRMEXPORT.EXPORTBTN.CAPTION
+#, fuzzy
+#| msgid "Export"
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "导出"
 
 #: TFRMEXPORT.LABEL1.CAPTION
+#, fuzzy
 msgid "Choose Presets to Export:"
-msgstr ""
+msgstr "选择要导出的编码格式"
 
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
@@ -222,7 +252,7 @@ msgstr ""
 
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
-msgstr ""
+msgstr "添加"
 
 #: TFRMMAIN.BTNADD.HINT
 msgid "Add file(s) to the list for conversion"
@@ -230,7 +260,7 @@ msgstr ""
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
-msgstr ""
+msgstr "清除"
 
 #: TFRMMAIN.BTNCLEAR.HINT
 msgid "Remove all files from the list"
@@ -238,16 +268,18 @@ msgstr ""
 
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
-msgstr ""
+msgstr "转换"
 
 #: TFRMMAIN.BTNCONVERT.HINT
 msgid "Start the conversion process"
 msgstr ""
 
 #: TFRMMAIN.BTNOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Options"
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "选项"
 
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
@@ -255,7 +287,7 @@ msgstr ""
 
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
-msgstr ""
+msgstr "播放"
 
 #: TFRMMAIN.BTNPLAY.HINT
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
@@ -271,13 +303,15 @@ msgstr ""
 
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
-msgstr ""
+msgstr "删除"
 
 #: TFRMMAIN.BTNREMOVE.HINT
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
 #: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
@@ -288,7 +322,7 @@ msgstr ""
 
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
-msgstr ""
+msgstr "高品质模式"
 
 #: TFRMMAIN.CBX2PASS.HINT
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
@@ -296,7 +330,7 @@ msgstr ""
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
-msgstr ""
+msgstr "非交错"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
 msgid "Removes interlacing from the video (if necessary)"
@@ -374,29 +408,37 @@ msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
+#, fuzzy
+#| msgid "Additional Options"
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "高级选项"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
-msgstr ""
+msgstr "输出设置"
 
 #: TFRMMAIN.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Convert"
 msgid "Convert to:"
-msgstr ""
+msgstr "转换"
 
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
-msgstr ""
+msgstr "声道(单声道为1，立体声2)"
 
 #: TFRMMAIN.LABEL11.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
 msgid "Output Folder:"
-msgstr ""
+msgstr "输出路径："
 
 #: TFRMMAIN.LABEL19.CAPTION
+#, fuzzy
+#| msgid "Presets"
 msgid "Preset:"
-msgstr ""
+msgstr "编码设置"
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -419,16 +461,18 @@ msgid "Hours / Minutes / Seconds"
 msgstr ""
 
 #: TFRMMAIN.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
-msgstr ""
+msgstr "高级参数"
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
-msgstr ""
+msgstr "比特率 Kb/s"
 
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
-msgstr ""
+msgstr "采样率 b/s"
 
 #: TFRMMAIN.LABEL9.CAPTION
 msgid "X"
@@ -436,7 +480,7 @@ msgstr ""
 
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
-msgstr ""
+msgstr "画面长宽比(4:3、16:9、2.35:1等)"
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
@@ -447,8 +491,10 @@ msgid "Left"
 msgstr ""
 
 #: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#, fuzzy
+#| msgid "High"
 msgid "Right"
-msgstr ""
+msgstr "高"
 
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
@@ -456,89 +502,103 @@ msgstr ""
 
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
-msgstr ""
+msgstr "帧率 帧/s"
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
-msgstr ""
+msgstr "比特率 Kb/s"
 
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
-msgstr ""
+msgstr "影片尺寸"
 
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
 msgstr ""
 
 #: TFRMMAIN.MITABOUT.CAPTION
+#, fuzzy
+#| msgid "About"
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+#, fuzzy
+#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
-msgstr ""
+msgstr "显示 CMD 命令行"
 
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
-msgstr ""
+msgstr "帮助说明"
 
 #: TFRMMAIN.MITEXIT.CAPTION
 msgid "Exit"
-msgstr ""
+msgstr "退出"
 
 #: TFRMMAIN.MITFORUMS.CAPTION
+#, fuzzy
+#| msgid "WinFF Forums"
 msgid "Forums"
-msgstr ""
+msgstr "WinFF 论坛"
 
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
-msgstr ""
+msgstr "导入编码设置文件"
 
 #: TFRMMAIN.MITPAUSEONFINISH.CAPTION
 msgid "Pause on Finish"
-msgstr ""
+msgstr "完成后暂停"
 
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+#, fuzzy
+#| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
-msgstr ""
+msgstr "完成后暂停"
 
 #: TFRMMAIN.MITPREFERENCES.CAPTION
 msgid "Preferences"
-msgstr ""
+msgstr "偏好设置"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
+#, fuzzy
+#| msgid "Presets"
 msgid "Presets"
-msgstr ""
+msgstr "编码设置"
 
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Additional Options"
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "高级选项"
 
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
-msgstr ""
+msgstr "完成后关闭电脑"
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
-msgstr ""
+msgstr "WinFF 官方网站"
 
 #: TFRMMAIN.MNUEDIT.CAPTION
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
-msgstr ""
+msgstr "文件"
 
 #: TFRMMAIN.MNUHELP.CAPTION
 msgid "Help"
-msgstr ""
+msgstr "帮助"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "选项"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -549,10 +609,14 @@ msgid "Specific settings to use for the choosen device or file type"
 msgstr ""
 
 #: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#, fuzzy
+#| msgid "Audio Settings"
 msgid "Audio"
-msgstr ""
+msgstr "音频设置"
 
 #: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -566,8 +630,10 @@ msgid "Time"
 msgstr ""
 
 #: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#, fuzzy
+#| msgid "Video Size"
 msgid "Video"
-msgstr ""
+msgstr "影片尺寸"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -589,14 +655,17 @@ msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that d
 msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
+#, fuzzy
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "确定"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
+#, fuzzy
+#| msgid "Cancel"
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
@@ -630,71 +699,92 @@ msgstr ""
 
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
-msgstr ""
+msgstr "WinFF 偏好设置"
 
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
+#, fuzzy
+#| msgid "Remember Last Directory Used"
 msgid "Remember Last Used Directory"
-msgstr ""
+msgstr "记住最后一次的输出路径"
 
 #: TFRMPREFERENCES.CHECKBOX2.CAPTION
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "使用国际字符 CHCP"
 
 #: TFRMPREFERENCES.CHECKBOX3.CAPTION
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
 #: TFRMPREFERENCES.EDIT7.HINT
+#, fuzzy
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr ""
+msgstr "终端选项(-e 虚拟终端 , -x Gnome终端)"
 
 #: TFRMPREFERENCES.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Default Destination Directory"
 msgid "Default Destination Directory:"
-msgstr ""
+msgstr "默认输出路径"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "FFmpeg 所在路径"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "FFPlay 所在路径"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "FFmpeg 所在路径"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "FFPlay 所在路径"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
+#, fuzzy
+#| msgid "Terminal to run FFmpeg"
 msgid "Terminal to run FFmpeg in:"
-msgstr ""
+msgstr "終端路径"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
+#, fuzzy
+#| msgid "Additional Options"
 msgid "Terminal Options:"
-msgstr ""
+msgstr "高级选项"
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
+#, fuzzy
+#| msgid "Priority"
 msgid "Priority:"
-msgstr ""
+msgstr "优先级"
 
 #: TFRMPREFERENCES.PAGE1.CAPTION
 msgid "General"
-msgstr ""
+msgstr "常规选项"
 
 #: TFRMPREFERENCES.PAGE2.CAPTION
+#, fuzzy
+#| msgid "Ms Windows"
 msgid "MS Windows"
-msgstr ""
+msgstr "瘟到死"
 
 #: TFRMPREFERENCES.PAGE3.CAPTION
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: TFRMSCRIPT.BTNCLIP.CAPTION
 msgid "Copy to Clipboard"
@@ -715,7 +805,6 @@ msgid "Save As..."
 msgstr ""
 
 #: TFRMSCRIPT.CAPTION
-msgctxt "TFRMSCRIPT.CAPTION"
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg 命令行"
 
@@ -776,8 +865,6 @@ msgid "The preset to import does not have a label"
 msgstr "添加的编码设置文件没有标签"
 
 #: unit1.rspresettoexport
-#, fuzzy
-#| msgid "Please select a preset to "
 msgid "Please select a preset to export"
 msgstr "请选择一种编码设置文件以输出"
 
@@ -852,3 +939,78 @@ msgstr "低"
 msgid "Normal"
 msgstr "普通"
 
+#~ msgid "(All Categories)"
+#~ msgstr "所有类别"
+
+#~ msgid "Convert To ..."
+#~ msgstr "转出为..."
+
+#, fuzzy
+#~ msgid "Device Preset"
+#~ msgstr "编码格式"
+
+#, fuzzy
+#~| msgid "Output Folder"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "输出路径："
+
+#, fuzzy
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "关于"
+
+#, fuzzy
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "选项"
+
+#, fuzzy
+#~ msgid "Video Settings"
+#~ msgstr "视频设置"
+
+#~ msgid "Audio Settings"
+#~ msgstr "音频设置"
+
+#, fuzzy
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#, fuzzy
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "编码设置"
+
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "多线程(仅适用于多核CPU)"
+
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe 路径"
+
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFPlay.exe 路径"
+
+#, fuzzy
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "确定"
+
+#, fuzzy
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "转换­"
+
+#, fuzzy
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "保存"
+
+#, fuzzy
+#~ msgid "Replace Preset"
+#~ msgstr "替换编码设置文件"
