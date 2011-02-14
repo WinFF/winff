@@ -439,7 +439,7 @@ object frmMain: TfrmMain
           AnchorSideTop.Side = asrBottom
           Left = 13
           Height = 23
-          Hint = 'Specific settings to use for the choosen device or file type'
+          Hint = 'Specific settings to use for the chosen device or file type'
           Top = 63
           Width = 1034
           Align = alTop
