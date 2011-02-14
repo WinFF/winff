@@ -595,7 +595,7 @@ msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
 #| msgid "specific setting to use for the chosen device or file type"
-msgid "Specific settings to use for the choosen device or file type"
+msgid "Specific settings to use for the chosen device or file type"
 msgstr "Bestemte innstillinger til å bruke med den velgte enheten eller filtypen"
 
 #: TFRMMAIN.TABAUDIOSETTINGS.CAPTION

@@ -484,7 +484,7 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'axLength'#4#255#255#0#0#8'OnChange'#7#17'categoryboxChange'#6'Sorted'#9#5'S'
   +'tyle'#7#14'csDropDownList'#8'TabOrder'#2#0#0#0#9'TComboBox'#9'PresetBox'#18
   +'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#13#6'Height'#2#23#4'Hint'#6'<S'
-  +'pecific settings to use for the choosen device or file type'#3'Top'#2'?'#5
+  +'pecific settings to use for the chosen device or file type'#3'Top'#2'?'#5
   +'Width'#3#10#4#5'Align'#7#5'alTop'#18'BorderSpacing.Left'#2#13#19'BorderSpac'
   +'ing.Right'#2#13#10'ItemHeight'#2#15#9'MaxLength'#4#255#255#0#0#8'OnChange'#7
   +#15'PresetBoxChange'#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#1#0#0#6'TPa'

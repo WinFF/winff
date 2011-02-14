@@ -625,7 +625,7 @@ msgstr ""
 #: TFRMMAIN.PRESETBOX.HINT
 #, fuzzy
 #| msgid "specific setting to use for the chosen device or file type"
-msgid "Specific settings to use for the choosen device or file type"
+msgid "Specific settings to use for the chosen device or file type"
 msgstr "Configuració específica per al tipus de dispositiu o arxiu triat"
 
 #: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
