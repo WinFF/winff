@@ -4,9 +4,12 @@
 # upload to the download section of googlecode.
 
 # Created by Paul Gevers <paul@climbing.nl> (30 Aug 2009)
-# Copyright 2009 by Matthew Weatherford <matt@biggmatt.com>
+# Updated 14 Feb 2011
+# Copyright 2011 by Matthew Weatherford <matt@biggmatt.com>
 
-VERSION="1.1.1"
+VERSION=`grep FILEVERSION winff.rc | sed "{ s/FILEVERSION // ; s/,/./g }"`
+VERSION=${VERSION%.0*}
+
 SVN="/usr/bin/svn"
 TAR="/bin/tar"
 REPOSITORY="http://winff.googlecode.com/svn/trunk/%20winff%20--username%20bggmtt"
@@ -16,7 +19,7 @@ cd $TMPDIR
 pwd
 $SVN export $REPOSITORY winff
 cd winff
-rm -rf debian hardy intrepid jaunty win32setup
+rm -rf debian win32setup scripts
 cd $TMPDIR
-$TAR -czf winff-${VERSION}-source.tar.gz
+$TAR -czf winff-${VERSION}-source.tar.gz winff
 echo "Source file can be found at ${TMPDIR}/winff-${VERSION}-source.tar.gz"
