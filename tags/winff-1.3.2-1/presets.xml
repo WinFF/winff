@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<presets>
+  <CDWavStereo>
+    <label>Wav for CD</label>
+    <params>-vn -ar 44100</params>
+    <extension>wav</extension>
+    <category>Audio</category>
+  </CDWavStereo>
+  <ac3dvd192>
+    <label>Ac3 DVD - 192kbps Stereo</label>
+    <params>-f ac3 -acodec ac3 -ab 192k -ar 48000 -ac 2</params>
+    <extension>ac3</extension>
+    <category>Audio</category>
+  </ac3dvd192>
+  <ac3dvd384>
+    <label>Ac3 DVD - 384kbps Stereo</label>
+    <params>-f ac3 -acodec ac3 -ab 384k -ar 48000 -ac 2</params>
+    <extension>ac3</extension>
+    <category>Audio</category>
+  </ac3dvd384>
+  <dvntsc>
+    <label>Raw DV for NTSC Fullscreen</label>
+    <params>-target ntsc-dv -aspect 4:3 -f dv</params>
+    <extension>dv</extension>
+    <category>DV</category>
+  </dvntsc>
+  <dvpal>
+    <label>Raw DV for PAL Fullscreen</label>
+    <params>-target pal-dv -aspect 4:3 -f dv</params>
+    <extension>dv</extension>
+    <category>DV</category>
+  </dvpal>
+  <flvwebFS>
+    <label>Flash Video (flv) for Web use Fullscreen</label>
+    <params>-vcodec flv -f flv -r 29.97 -s 320x240 -aspect 4:3 -b 300k -g 160 -cmp dct  -subcmp dct  -mbd 2 -flags +aic+cbp+mv0+mv4 -trellis 1 -ac 1 -ar 22050 -ab 56k</params>
+    <extension>flv</extension>
+    <category>Websites</category>
+  </flvwebFS>
+  <flvwebWS>
+    <label>Flash: Video (flv) for Web use Widescreen</label>
+    <params>-vcodec flv -f flv -r 29.97 -s 320x180 -aspect 16:9 -b 300k -g 160 -cmp dct -subcmp dct -mbd 2 -flags +aic+cbp+mv0+mv4 -trellis 1 -ac 1 -ar 22050 -ab 56k</params>
+    <extension>flv</extension>
+    <category>Websites</category>
+  </flvwebWS>
+  <ntscvcdhq>
+    <label>NTSC VCD (HQ)</label>
+    <params>-f vcd -target ntsc-vcd -mbd rd -trellis -mv0 -cmp 0 -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>VCD</category>
+  </ntscvcdhq>
+  <ogg1>
+    <label>OGG</label>
+    <params>-acodec vorbis -aq 60 -vn -ac 2</params>
+    <extension>OGG</extension>
+    <category>Audio</category>
+  </ogg1>
+  <palvcdhq>
+    <label>PAL VCD (HQ)</label>
+    <params>-f vcd -target pal-vcd -mbd rd -trellis -mv0 -cmp 0 -subcmp 2</params>
+    <extension>mpg</extension>
+    <category>VCD</category>
+  </palvcdhq>
+  <wma>
+    <label>WMA</label>
+    <params>-vn  -acodec wmav2 -ab 160k</params>
+    <extension>wma</extension>
+    <category>Audio</category>
+  </wma>
+  <wmv>
+    <label>WMV2 Generic</label>
+    <params>-vcodec wmv2  -acodec wmav2 -b 1000k -ab 160k -r 25</params>
+    <extension>wmv</extension>
+    <category>Microsoft</category>
+  </wmv>
+  <wmv2broadband>
+    <label>WMV for Web Use</label>
+    <params>-vcodec wmv2  -acodec wmav2 -b 640k -ab 128k -r 29.97 -s 320x240</params>
+    <extension>wmv</extension>
+    <category>Microsoft</category>
+  </wmv2broadband>
+  <wmv2xbox360>
+    <label>Xbox 360</label>
+    <params>-vcodec wmv2  -acodec wmav2 -b 1200k -ab 160k -r 25 -s 720x480</params>
+    <extension>wmv</extension>
+    <category>Microsoft</category>
+  </wmv2xbox360>
+  <wmv2zune>
+    <label>Zune</label>
+    <params>-vcodec wmv2  -acodec wmav2 -b 640k -ab 128k -r 23.97 -s 320x240</params>
+    <extension>wmv</extension>
+    <category>Microsoft</category>
+  </wmv2zune>
+  <wmv4powerpoint>
+    <label>Power Point</label>
+    <params>-vcodec wmv2  -acodec wmav2 -aspect 4:3 -b 500k -ab 32k -ac 1 -ar 22050 -s 320x240</params>
+    <extension>wmv</extension>
+    <category>Microsoft</category>
+  </wmv4powerpoint>
+</presets>
