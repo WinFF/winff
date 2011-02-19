@@ -22,23 +22,27 @@ msgstr ""
 "PO-Revision-Date: 2009-02-18\n"
 "Last-Translator: Kai Evers <kevers@s.netic.de>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "License: GPL version 3\n"
 
 #: TFRMABOUT.BUTTON1.CAPTION
+#, fuzzy
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: TFRMABOUT.CAPTION
 msgid "About WinFF"
-msgstr ""
+msgstr "Über WinFF"
 
 #: TFRMABOUT.LABEL1.CAPTION
+#, fuzzy
+#| msgid "WinFF"
 msgid "WinFF 1.3.2"
-msgstr ""
+msgstr "WinFF"
 
 #: TFRMABOUT.LABEL10.CAPTION
 msgid "http://ffmpeg.arrozcru.org/"
@@ -77,6 +81,8 @@ msgid "http://www.winff.org"
 msgstr ""
 
 #: TFRMABOUT.LABEL5.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -90,30 +96,36 @@ msgid "http://ffmpeg.org"
 msgstr ""
 
 #: TFRMABOUT.LABEL8.CAPTION
+#, fuzzy
+#| msgid "FFmpeg builds by"
 msgid "FFmpeg Windows Builds by"
-msgstr ""
+msgstr "FFmpeg-Builds von"
 
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Ramiro Polla"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
+#, fuzzy
+#| msgid "WinFF"
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: TFRMABOUT.PAGE2.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
-msgstr ""
+msgstr "Danke"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
-msgstr ""
+msgstr "Hinzu / Aktualisieren"
 
 #: TFRMEDITPRESETS.CANCELBTN.CAPTION
 #, fuzzy
@@ -123,11 +135,11 @@ msgstr "Schließen"
 
 #: TFRMEDITPRESETS.CAPTION
 msgid "Edit Presets"
-msgstr ""
+msgstr "Profile bearbeiten"
 
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: TFRMEDITPRESETS.EDIT1.HINT
 msgid "One word, only letters and numbers"
@@ -138,8 +150,10 @@ msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
 #: TFRMEDITPRESETS.EDIT3.HINT
+#, fuzzy
+#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
-msgstr ""
+msgstr "Kommandozeile für das Profil (kein -i oder keine Ausgabedatei)"
 
 #: TFRMEDITPRESETS.EDIT4.HINT
 msgid "Do not include a dot"
@@ -150,63 +164,81 @@ msgid "Choose a category to group this preset under"
 msgstr ""
 
 #: TFRMEDITPRESETS.EXPORT.CAPTION
+#, fuzzy
+#| msgid "Export"
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "Exportieren"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
-msgstr ""
+msgstr "Importieren"
 
 #: TFRMEDITPRESETS.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Create Preset:"
 msgid "Category / Preset"
-msgstr ""
+msgstr "Profil erstellen:"
 
 #: TFRMEDITPRESETS.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr ""
+msgstr "Profilname (ein Wort, nur A-z,0-9)"
 
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
-msgstr ""
+msgstr "Profilbezeichnung"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr ""
+msgstr "Kommandozeile für das Profil (kein -i oder keine Ausgabedatei)"
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
-msgstr ""
+msgstr "Dateiendung für zu speichernde Datei (kein \".\")"
 
 #: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
-msgstr ""
+msgstr "Kategorie"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
+#, fuzzy
+#| msgid "Save"
 msgid "Save"
-msgstr ""
+msgstr "Speichern"
 
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr ""
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
+#, fuzzy
+#| msgid "Cancel"
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #: TFRMEXPORT.CAPTION
+#, fuzzy
 msgid "Export Presets"
-msgstr ""
+msgstr "Profil exportieren"
 
 #: TFRMEXPORT.EXPORTBTN.CAPTION
+#, fuzzy
+#| msgid "Export"
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "Exportieren"
 
 #: TFRMEXPORT.LABEL1.CAPTION
+#, fuzzy
 msgid "Choose Presets to Export:"
-msgstr ""
+msgstr "Bitte zu exportierendes Profil wählen"
 
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
@@ -223,7 +255,7 @@ msgstr ""
 
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
-msgstr ""
+msgstr "Hinzu"
 
 #: TFRMMAIN.BTNADD.HINT
 msgid "Add file(s) to the list for conversion"
@@ -231,7 +263,7 @@ msgstr ""
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
-msgstr ""
+msgstr "Löschen"
 
 #: TFRMMAIN.BTNCLEAR.HINT
 msgid "Remove all files from the list"
@@ -239,16 +271,18 @@ msgstr ""
 
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
-msgstr ""
+msgstr "Konvertieren"
 
 #: TFRMMAIN.BTNCONVERT.HINT
 msgid "Start the conversion process"
 msgstr ""
 
 #: TFRMMAIN.BTNOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Options"
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Einstellungen"
 
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
@@ -256,7 +290,7 @@ msgstr ""
 
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
-msgstr ""
+msgstr "Abspielen"
 
 #: TFRMMAIN.BTNPLAY.HINT
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
@@ -272,13 +306,15 @@ msgstr ""
 
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
-msgstr ""
+msgstr "Entfernen"
 
 #: TFRMMAIN.BTNREMOVE.HINT
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
 #: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
@@ -289,7 +325,7 @@ msgstr ""
 
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
-msgstr ""
+msgstr "2 Pass"
 
 #: TFRMMAIN.CBX2PASS.HINT
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
@@ -297,7 +333,7 @@ msgstr ""
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
-msgstr ""
+msgstr "Deinterlace"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
 msgid "Removes interlacing from the video (if necessary)"
@@ -375,29 +411,37 @@ msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
+#, fuzzy
+#| msgid "Additional Options"
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "Erweiterte Einstellungen"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
-msgstr ""
+msgstr "Ausgabe-Details"
 
 #: TFRMMAIN.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Convert"
 msgid "Convert to:"
-msgstr ""
+msgstr "Konvertieren"
 
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
-msgstr ""
+msgstr "Audio-Kanäle"
 
 #: TFRMMAIN.LABEL11.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
 msgid "Output Folder:"
-msgstr ""
+msgstr "Ausgabeverzeichnis"
 
 #: TFRMMAIN.LABEL19.CAPTION
+#, fuzzy
+#| msgid "Presets"
 msgid "Preset:"
-msgstr ""
+msgstr "Profile"
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -420,16 +464,18 @@ msgid "Hours / Minutes / Seconds"
 msgstr ""
 
 #: TFRMMAIN.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
-msgstr ""
+msgstr "Zusätzliche Kommandozeilen-Parameter (erweitert)"
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
-msgstr ""
+msgstr "Audio-Bitrate"
 
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
-msgstr ""
+msgstr "Sample-Rate"
 
 #: TFRMMAIN.LABEL9.CAPTION
 msgid "X"
@@ -437,7 +483,7 @@ msgstr ""
 
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
-msgstr ""
+msgstr "Seitenverhältnis"
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
@@ -448,8 +494,10 @@ msgid "Left"
 msgstr ""
 
 #: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#, fuzzy
+#| msgid "High"
 msgid "Right"
-msgstr ""
+msgstr "Hoch"
 
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
@@ -457,103 +505,121 @@ msgstr ""
 
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
-msgstr ""
+msgstr "Frame-Rate"
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
-msgstr ""
+msgstr "Video-Bitrate"
 
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
-msgstr ""
+msgstr "Video-Größe"
 
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
 msgstr ""
 
 #: TFRMMAIN.MITABOUT.CAPTION
+#, fuzzy
+#| msgid "About"
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+#, fuzzy
+#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
-msgstr ""
+msgstr "Kommandozeile anzeigen"
 
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentation"
 
 #: TFRMMAIN.MITEXIT.CAPTION
 msgid "Exit"
-msgstr ""
+msgstr "Beenden"
 
 #: TFRMMAIN.MITFORUMS.CAPTION
+#, fuzzy
+#| msgid "WinFF Forums"
 msgid "Forums"
-msgstr ""
+msgstr "WinFF Foren"
 
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
-msgstr ""
+msgstr "Profil importieren"
 
 #: TFRMMAIN.MITPAUSEONFINISH.CAPTION
 msgid "Pause on Finish"
-msgstr ""
+msgstr "Pause nach Beenden"
 
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+#, fuzzy
+#| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
-msgstr ""
+msgstr "Pause nach Beenden"
 
 #: TFRMMAIN.MITPREFERENCES.CAPTION
 msgid "Preferences"
-msgstr ""
+msgstr "Einstellungen"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
+#, fuzzy
+#| msgid "Presets"
 msgid "Presets"
-msgstr ""
+msgstr "Profile"
 
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Additional Options"
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "Erweiterte Einstellungen"
 
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
-msgstr ""
+msgstr "Herunterfahren nach Beenden"
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
-msgstr ""
+msgstr "WinFF im Internet"
 
 #: TFRMMAIN.MNUEDIT.CAPTION
 msgid "Edit"
-msgstr ""
+msgstr "Bearbeiten"
 
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
-msgstr ""
+msgstr "Datei"
 
 #: TFRMMAIN.MNUHELP.CAPTION
 msgid "Help"
-msgstr ""
+msgstr "Hilfe"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Einstellungen"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
 
 #: TFRMMAIN.PRESETBOX.HINT
-msgid "Specific settings to use for the choosen device or file type"
+msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
 
 #: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#, fuzzy
+#| msgid "Audio Settings"
 msgid "Audio"
-msgstr ""
+msgstr "Audio-Einstellungen"
 
 #: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -567,8 +633,10 @@ msgid "Time"
 msgstr ""
 
 #: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#, fuzzy
+#| msgid "Video Size"
 msgid "Video"
-msgstr ""
+msgstr "Video-Größe"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -590,14 +658,17 @@ msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that d
 msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
+#, fuzzy
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
+#, fuzzy
+#| msgid "Cancel"
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
@@ -631,71 +702,93 @@ msgstr ""
 
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
-msgstr ""
+msgstr "WinFF Einstellungen"
 
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
+#, fuzzy
+#| msgid "Remember Last Directory Used"
 msgid "Remember Last Used Directory"
-msgstr ""
+msgstr "Zuletzt benutztes Verzeichnis merken"
 
 #: TFRMPREFERENCES.CHECKBOX2.CAPTION
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "CHCP für internationale Zeichen verwenden"
 
 #: TFRMPREFERENCES.CHECKBOX3.CAPTION
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
 #: TFRMPREFERENCES.EDIT7.HINT
+#, fuzzy
+#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr ""
+msgstr "Terminal-Einstellungen (-e für Xterm , -x für Gnome Terminal)"
 
 #: TFRMPREFERENCES.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Default Destination Directory"
 msgid "Default Destination Directory:"
-msgstr ""
+msgstr "Standard-Ausgabeverzeichnis"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "Pfad zu FFmpeg"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "Pfad zu FFPlay"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "Pfad zu FFmpeg"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "Pfad zu FFPlay"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
+#, fuzzy
+#| msgid "Terminal to run FFmpeg"
 msgid "Terminal to run FFmpeg in:"
-msgstr ""
+msgstr "Terminal, in dem FFmpeg ausgeführt werden soll"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
+#, fuzzy
+#| msgid "Additional Options"
 msgid "Terminal Options:"
-msgstr ""
+msgstr "Erweiterte Einstellungen"
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
+#, fuzzy
+#| msgid "Priority"
 msgid "Priority:"
-msgstr ""
+msgstr "Priorität"
 
 #: TFRMPREFERENCES.PAGE1.CAPTION
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: TFRMPREFERENCES.PAGE2.CAPTION
+#, fuzzy
+#| msgid "Ms Windows"
 msgid "MS Windows"
-msgstr ""
+msgstr "Windows"
 
 #: TFRMPREFERENCES.PAGE3.CAPTION
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: TFRMSCRIPT.BTNCLIP.CAPTION
 msgid "Copy to Clipboard"
@@ -716,7 +809,6 @@ msgid "Save As..."
 msgstr ""
 
 #: TFRMSCRIPT.CAPTION
-msgctxt "TFRMSCRIPT.CAPTION"
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg-Kommandozeile"
 
@@ -777,8 +869,6 @@ msgid "The preset to import does not have a label"
 msgstr "Das zu importierende Profil hat keine Bezeichnung"
 
 #: unit1.rspresettoexport
-#, fuzzy
-#| msgid "Please select a preset to "
 msgid "Please select a preset to export"
 msgstr "Bitte zu exportierendes Profil wählen"
 
@@ -853,3 +943,81 @@ msgstr "Leerlauf"
 msgid "Normal"
 msgstr "Normal"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Alle Kategorien)"
+
+#~ msgid "Convert To ..."
+#~ msgstr "Konvertieren nach..."
+
+#, fuzzy
+#~ msgid "Device Preset"
+#~ msgstr "Geräteprofil"
+
+#, fuzzy
+#~| msgid "Output Folder"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Ausgabeverzeichnis"
+
+#, fuzzy
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Über"
+
+#, fuzzy
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Einstellungen"
+
+#, fuzzy
+#~ msgid "Video Settings"
+#~ msgstr "Video-Einstellungen"
+
+#~ msgid "Audio Settings"
+#~ msgstr "Audio-Einstellungen"
+
+#, fuzzy
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Abbrechen"
+
+#, fuzzy
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Profile"
+
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading für Dual-Core-Prozessoren"
+
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Pfad zu FFmpeg"
+
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Pfad zu FFPlay"
+
+#, fuzzy
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#, fuzzy
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Konvertieren"
+
+#, fuzzy
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Speichern"
+
+#, fuzzy
+#~ msgid "Replace Preset"
+#~ msgstr "Profil ersetzen"
+
+#~ msgid "AC'"
+#~ msgstr "AC"
