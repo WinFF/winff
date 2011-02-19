@@ -1,0 +1,6 @@
+# Local options for package building
+# Paul Gevers, 12 Feb 2011
+# See http://raphaelhertzog.com/2010/09/14/how-to-customize-dpkg-sources-behaviour-in-your-debian-source-package/
+
+# abort if you have upstream changes not managed by an existing patch in debian/patches
+abort-on-upstream-changes
