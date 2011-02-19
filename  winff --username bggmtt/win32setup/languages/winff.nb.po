@@ -1,5 +1,5 @@
-# translation of winff.po to Norwegian Bokmal
-# Copyright (C) 2006-2010 Matthew Weatherford <matt@biggmatt.com>
+# translation of winff.po to Norwegian Bokmål
+# Copyright (C) 2006-2011 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,108 +14,114 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2010 ""
+# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2011
 msgid ""
 msgstr ""
 "Project-Id-Version: Winff 1.0\n"
-"POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: 2010-07-28 20:34+0100\n"
-"Last-Translator: Paul Gevers <paul@climbing.nl>\n"
+"POT-Creation-Date: 2011-02-13\n"
+"PO-Revision-Date: 2011-02-13 20:24+0100\n"
+"Last-Translator: Ellen Rohaan <ellen.rohaan@esac.climbing.nl>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Norwegian Bokmal\n"
+"X-Poedit-Language: Norwegian Bokmål\n"
 "X-Poedit-Country: NORWAY\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: TFRMABOUT.CAPTION
 msgid "About WinFF"
-msgstr ""
+msgstr "Om WinFF"
 
 #: TFRMABOUT.LABEL1.CAPTION
+#| msgid "WinFF"
 msgid "WinFF 1.3.2"
-msgstr ""
+msgstr "WinFF 1.3.2"
 
 #: TFRMABOUT.LABEL10.CAPTION
 msgid "http://ffmpeg.arrozcru.org/"
-msgstr ""
+msgstr "http://ffmpeg.arrozcru.org/"
 
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr ""
+msgstr "Debian/Ubuntu Packaging av Paul Gevers"
 
 #: TFRMABOUT.LABEL13.CAPTION
 msgid "Gmaq"
-msgstr ""
+msgstr "Gmaq"
 
 #: TFRMABOUT.LABEL14.CAPTION
 msgid "High Quality Presets From"
-msgstr ""
+msgstr "Høy kvalitet forhåndsinnstillinga fra"
 
 #: TFRMABOUT.LABEL15.CAPTION
 msgid "Icons and Logo by Alex Klepatsch"
-msgstr ""
+msgstr "Ikoner og logo av Alex Klepatsch"
 
 #: TFRMABOUT.LABEL16.CAPTION
 msgid "JNavas"
-msgstr ""
+msgstr "JNavas"
 
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
-msgstr ""
+msgstr "Copyright 2006-2009 GPL V3"
 
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-msgstr ""
+msgstr "Matthew Weatherford,  Ian Stoffberg og Alexey Osipov"
 
 #: TFRMABOUT.LABEL4.CAPTION
 msgid "http://www.winff.org"
-msgstr ""
+msgstr "http://www.winff.org"
 
 #: TFRMABOUT.LABEL5.CAPTION
+#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
-msgstr ""
+msgstr "Trademark Fabrice Belllard"
 
 #: TFRMABOUT.LABEL7.CAPTION
 msgid "http://ffmpeg.org"
-msgstr ""
+msgstr "http://ffmpeg.org"
 
 #: TFRMABOUT.LABEL8.CAPTION
+#| msgid "FFmpeg builds by"
 msgid "FFmpeg Windows Builds by"
-msgstr ""
+msgstr "FFmpeg Windows er bygget av"
 
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Ramiro Polla"
-msgstr ""
+msgstr "Ramiro Polla"
 
 #: TFRMABOUT.PAGE1.CAPTION
+#| msgid "WinFF"
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: TFRMABOUT.PAGE2.CAPTION
+#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
-msgstr ""
+msgstr "Takk"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
-msgstr ""
+msgstr "Legg til / Oppdater"
 
 #: TFRMEDITPRESETS.CANCELBTN.CAPTION
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
@@ -124,583 +130,646 @@ msgstr "Lukk"
 
 #: TFRMEDITPRESETS.CAPTION
 msgid "Edit Presets"
-msgstr ""
+msgstr "Rediger forhåndsinnstillinger"
 
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
-msgstr ""
+msgstr "Slett"
 
 #: TFRMEDITPRESETS.EDIT1.HINT
 msgid "One word, only letters and numbers"
-msgstr ""
+msgstr "Et ord, bare bokstaver og tall"
 
 #: TFRMEDITPRESETS.EDIT2.HINT
 msgid "Enter a more descriptive name for this preset"
-msgstr ""
+msgstr "Gi et navn som beskriver denne forhåndsinnstillinga"
 
 #: TFRMEDITPRESETS.EDIT3.HINT
+#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
-msgstr ""
+msgstr "Ikke bruk -i eller utdata fil"
 
 #: TFRMEDITPRESETS.EDIT4.HINT
 msgid "Do not include a dot"
-msgstr ""
+msgstr "Ikke inkluder en punkt"
 
 #: TFRMEDITPRESETS.EDIT5.HINT
 msgid "Choose a category to group this preset under"
-msgstr ""
+msgstr "Velg en kategori til denne forhåndsinnstillinga"
 
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "Eksporter"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
-msgstr ""
+msgstr "Importer"
 
 #: TFRMEDITPRESETS.LABEL1.CAPTION
+#| msgid "Create Preset:"
 msgid "Category / Preset"
-msgstr ""
+msgstr "Kategori / forhåndsinnstillinga"
 
 #: TFRMEDITPRESETS.LABEL2.CAPTION
+#| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr ""
+msgstr "Navnet til forhåndsinnstillinga (et ord, bare bokstaver og tall)"
 
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
-msgstr ""
+msgstr "Merkelappet til forhåndsinnstillinga"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
+#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr ""
+msgstr "Kommandolinje til forhåndsinnstillinga (ingen -i eller utdata fil)"
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
+#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
-msgstr ""
+msgstr "Etternavn til utdatafil (ingen \".\") "
 
 #: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
+#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
+#| msgid "Save"
 msgid "Save"
-msgstr ""
+msgstr "Lagre"
 
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
-msgstr ""
+msgstr "pnlTop"
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
-msgstr ""
+msgstr "Eksporter forhåndsinnstillinger"
 
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "Eksporter"
 
 #: TFRMEXPORT.LABEL1.CAPTION
+#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
-msgstr ""
+msgstr "Velg forhåndsinnstillinger å eksportere:"
 
 #: TFRMMAIN.AUDBITRATE.HINT
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<heltall>) kbits/sekund-målet som strømmen skal brukes"
 
 #: TFRMMAIN.AUDCHANNELS.HINT
 msgid "(<integer>) number of audio channels"
-msgstr ""
+msgstr "(<heltall>) antall lydkanaler"
 
 #: TFRMMAIN.AUDSAMPLINGRATE.HINT
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr ""
+msgstr "(<heltall>) lydsamplingsfrekvensen i Hertz"
 
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
-msgstr ""
+msgstr "Legg til"
 
 #: TFRMMAIN.BTNADD.HINT
+#| msgid "add file(s) to the list for conversion"
 msgid "Add file(s) to the list for conversion"
-msgstr ""
+msgstr "Tilsett fil(er) til konverteringslista"
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
-msgstr ""
+msgstr "Tøm"
 
 #: TFRMMAIN.BTNCLEAR.HINT
+#| msgid "remove all files from the list"
 msgid "Remove all files from the list"
-msgstr ""
+msgstr "Fjern alle filer fra lista"
 
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
-msgstr ""
+msgstr "Konverter"
 
 #: TFRMMAIN.BTNCONVERT.HINT
+#| msgid "start the conversion process"
 msgid "Start the conversion process"
-msgstr ""
+msgstr "Start konverteringsprosessen"
 
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Alternativer"
 
 #: TFRMMAIN.BTNOPTIONS.HINT
+#| msgid "open or close the additional option window"
 msgid "Open/close the additional options window"
-msgstr ""
+msgstr "Åpen/lukk vinduet med ekstra alternativer"
 
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
-msgstr ""
+msgstr "Spill"
 
 #: TFRMMAIN.BTNPLAY.HINT
+#| msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr ""
+msgstr "Forhåndsvisning av den velgte kildefilen med ffplay (god test å sjekke om konvertering er mulig)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
-msgstr ""
+msgstr "Forhåndsvisning"
 
 #: TFRMMAIN.BTNPREVIEW.HINT
+#| msgid "preview using the output settings"
 msgid "Preview using the output settings"
-msgstr ""
+msgstr "Forhåndsvisning med utdata instillinger"
 
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
-msgstr ""
+msgstr "Fjern"
 
 #: TFRMMAIN.BTNREMOVE.HINT
+#| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
-msgstr ""
+msgstr "Fjern den velgte filen(e) fra lista"
 
 #: TFRMMAIN.CAPTION
+#| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
+#| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
-msgstr ""
+msgstr "Navnet til enheten eller filtypen som videoen skal konverteres til"
 
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
-msgstr ""
+msgstr "To gjennomganger"
 
 #: TFRMMAIN.CBX2PASS.HINT
+#| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr ""
+msgstr "Ved bruk av to gjennomganger samle koder informasjon ved første gjennomgang for høyere kvalitet"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
-msgstr ""
+msgstr "Flett av"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
+#| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
-msgstr ""
+msgstr "Fjerns sammenfletting fra videoen (hvis nødvendig)"
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
+#| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr ""
+msgstr "Målet til endelig video (velg en annen mappe enn kildemappe)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
+#| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr ""
+msgstr "(<heltall:heltall> eller <reelt tall>) det fysiske høyde-/breddeforholdet (DAR) av mål-skjermen"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr ""
+msgstr "(<heltall>) Fra 10 til lydsamplingsfrekvensen, f.e. 44100, 48000. Tillat \"stretch\"/\"squeeze\" lyd strømmen."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPLEFT.TEXT
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPRIGHT.TEXT
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPTOP.TEXT
 msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<hh:mm:ss> - Søke til denne posisjon før konvertering starter"
 
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<hh:mm:ss> - Søke til denne posisjon før konvertering starter"
 
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<hh:mm:ss> - Søke til denne posisjon før konvertering starter"
 
 #: TFRMMAIN.EDTTTRHH.HINT
+#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 
 #: TFRMMAIN.EDTTTRMM.HINT
+#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRMM.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 
 #: TFRMMAIN.EDTTTRSS.HINT
+#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRSS.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 
 #: TFRMMAIN.EDTVOLUME.HINT
+#| msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
+msgstr "(<heltall>) 256 = gjeldende lydstyrke, 128 = halvt lydstyrke, 512 = doppelt lydstyrke"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "Ekstra alternativer"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
-msgstr ""
+msgstr "Utdata detaljer"
 
 #: TFRMMAIN.LABEL1.CAPTION
+#| msgid "Convert"
 msgid "Convert to:"
-msgstr ""
+msgstr "Konverter til:"
 
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
-msgstr ""
+msgstr "Lydkanaler"
 
 #: TFRMMAIN.LABEL11.CAPTION
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
+#| msgid "Output Folder"
 msgid "Output Folder:"
-msgstr ""
+msgstr "Utdatamappe:"
 
 #: TFRMMAIN.LABEL19.CAPTION
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
+#| msgid "Presets"
 msgid "Preset:"
-msgstr ""
+msgstr "Forhåndsinnstillinga:"
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
-msgstr ""
+msgstr "Lydstyrke"
 
 #: TFRMMAIN.LABEL21.CAPTION
 msgid "Sync"
-msgstr ""
+msgstr "Synkroniser"
 
 #: TFRMMAIN.LABEL22.CAPTION
 msgid "Seek to"
-msgstr ""
+msgstr "Søke til"
 
 #: TFRMMAIN.LABEL23.CAPTION
 msgid "Time to Record"
-msgstr ""
+msgstr "Opptakstid"
 
 #: TFRMMAIN.LABEL24.CAPTION
 msgid "Hours / Minutes / Seconds"
-msgstr ""
+msgstr "Timer / Minuter / Sekunder"
 
 #: TFRMMAIN.LABEL3.CAPTION
+#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
-msgstr ""
+msgstr "Tilleggsparametrene til kommandolinje"
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
-msgstr ""
+msgstr "Lydbitfrekvensen"
 
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
-msgstr ""
+msgstr "Samplingsfrekvensen"
 
 #: TFRMMAIN.LABEL9.CAPTION
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
-msgstr ""
+msgstr "Høyde-/breddeforhold"
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
-msgstr ""
+msgstr "Nedre side"
 
 #: TFRMMAIN.LBLCROPLEFT.CAPTION
 msgid "Left"
-msgstr ""
+msgstr "Venstre"
 
 #: TFRMMAIN.LBLCROPRIGHT.CAPTION
 msgid "Right"
-msgstr ""
+msgstr "Høyre"
 
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
-msgstr ""
+msgstr "Øvre side"
 
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
-msgstr ""
+msgstr "Rutefrekvensen"
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
-msgstr ""
+msgstr "Videobitfrekvensen"
 
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
-msgstr ""
+msgstr "Video størelse"
 
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: TFRMMAIN.MITABOUT.CAPTION
+#| msgctxt "REMOVED3"
+#| msgid "About"
 msgid "About"
-msgstr ""
+msgstr "Om WinFF"
 
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
-msgstr ""
+msgstr "Vis kommandolinje"
 
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentasjon"
 
 #: TFRMMAIN.MITEXIT.CAPTION
 msgid "Exit"
-msgstr ""
+msgstr "Avslutt"
 
 #: TFRMMAIN.MITFORUMS.CAPTION
+#| msgid "WinFF Forums"
 msgid "Forums"
-msgstr ""
+msgstr "Forumer"
 
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
-msgstr ""
+msgstr "Importer forhåndsinnstillinger"
 
 #: TFRMMAIN.MITPAUSEONFINISH.CAPTION
 msgid "Pause on Finish"
-msgstr ""
+msgstr "Pause hvis ferdig"
 
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
-msgstr ""
+msgstr "Spill lyd hvis ferdig"
 
 #: TFRMMAIN.MITPREFERENCES.CAPTION
 msgid "Preferences"
-msgstr ""
+msgstr "Innstillingene"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
+#| msgid "Presets"
 msgid "Presets"
-msgstr ""
+msgstr "Forhåndsinnstillinger"
 
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "Ekstra alternativer"
 
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
-msgstr ""
+msgstr "Slutt av hvis ferdig"
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
-msgstr ""
+msgstr "WinFF nettstedet"
 
 #: TFRMMAIN.MNUEDIT.CAPTION
 msgid "Edit"
-msgstr ""
+msgstr "Rediger"
 
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
-msgstr ""
+msgstr "Fil"
 
 #: TFRMMAIN.MNUHELP.CAPTION
 msgid "Help"
-msgstr ""
+msgstr "Hjelp"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
+#| msgctxt "REMOVED6"
+#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Alternativer"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
-msgstr ""
+msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
-msgid "Specific settings to use for the choosen device or file type"
-msgstr ""
+#| msgid "specific setting to use for the chosen device or file type"
+msgid "Specific settings to use for the chosen device or file type"
+msgstr "Bestemte innstillinger til å bruke med den velgte enheten eller filtypen"
 
 #: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#| msgid "Audio Sync"
 msgid "Audio"
-msgstr ""
+msgstr "Lyd"
 
 #: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
+#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMMAIN.TABPAGECROP.CAPTION
 msgid "Crop"
-msgstr ""
+msgstr "Skjær"
 
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
-msgstr ""
+msgstr "Tid"
 
 #: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#| msgid "Video Size"
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: TFRMMAIN.VIDBITRATE.HINT
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<heltall>) kbits/sekund-målet som strømmen skal brukes"
 
 #: TFRMMAIN.VIDFRAMERATE.HINT
+#| msgid "(<real> or <integer>) the number of frames per second"
 msgid "(<real> or <integer>) number of frames per second"
-msgstr ""
+msgstr "(<reelt tall> or <heltall>) antall bilder per sekund"
 
 #: TFRMMAIN.VIDSIZEX.HINT
+#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
+msgstr "(<heltall> X <heltall>) antall informasjonspikseler. For videokodeks som ikke støtte piksel (PAR) dette er videostørrelse når vist. "
 
 #: TFRMMAIN.VIDSIZEY.HINT
+#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
+msgstr "(<heltall> X <heltall>) antall informasjonspikseler. For videokodeks som ikke støtte piksel (PAR) dette er videostørrelse når vist. "
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON4.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON5.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON6.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON7.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON8.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
-msgstr ""
+msgstr "WinFF innstillinger"
 
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
+#| msgid "Remember Last Directory Used"
 msgid "Remember Last Used Directory"
-msgstr ""
+msgstr "Husk sistbrukte mappe"
 
 #: TFRMPREFERENCES.CHECKBOX2.CAPTION
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "Bruk CHCP for internasjonale karakter"
 
 #: TFRMPREFERENCES.CHECKBOX3.CAPTION
 msgid "Use Several Encoding Threads:"
-msgstr ""
+msgstr "Bruk forskjellige koderingstråder: "
 
 #: TFRMPREFERENCES.EDIT7.HINT
+#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr ""
+msgstr "\"-e\" til xterm, \"-x\" til gnome terminal"
 
 #: TFRMPREFERENCES.LABEL1.CAPTION
+#| msgid "Default Destination Directory"
 msgid "Default Destination Directory:"
-msgstr ""
+msgstr "Standard målmappe:"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
+#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "Sti til FFmpeg programfila:"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
+#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "Sti til FFPlay programfila:"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
+#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "Sti til FFmpeg programfila:"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
+#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "Sti til FFPlay programfila:"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
+#| msgid "Terminal to run FFmpeg"
 msgid "Terminal to run FFmpeg in:"
-msgstr ""
+msgstr "Terminal til å kjøre FFmpeg:"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#| msgid "Additional Options"
 msgid "Terminal Options:"
-msgstr ""
+msgstr "Terminal alternativer:"
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
+#| msgid "Priority"
 msgid "Priority:"
-msgstr ""
+msgstr "Prioritet:"
 
 #: TFRMPREFERENCES.PAGE1.CAPTION
 msgid "General"
-msgstr ""
+msgstr "Generelt"
 
 #: TFRMPREFERENCES.PAGE2.CAPTION
+#| msgid "Ms Windows"
 msgid "MS Windows"
-msgstr ""
+msgstr "MS Windows"
 
 #: TFRMPREFERENCES.PAGE3.CAPTION
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: TFRMSCRIPT.BTNCLIP.CAPTION
+#| msgid "Clipboard"
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopier til utklippstavle"
 
 #: TFRMSCRIPT.BTNCLOSE.CAPTION
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
@@ -709,14 +778,13 @@ msgstr "Lukk"
 
 #: TFRMSCRIPT.BTNRUN.CAPTION
 msgid "Run!"
-msgstr ""
+msgstr "Gå!"
 
 #: TFRMSCRIPT.BTNSAVE.CAPTION
 msgid "Save As..."
-msgstr ""
+msgstr "Lagre som..."
 
 #: TFRMSCRIPT.CAPTION
-msgctxt "TFRMSCRIPT.CAPTION"
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg kommandolinje"
 
@@ -777,8 +845,6 @@ msgid "The preset to import does not have a label"
 msgstr "Forhåndsinnstillinga å importere har ingen merkelapp."
 
 #: unit1.rspresettoexport
-#, fuzzy
-#| msgid "Please select a preset to "
 msgid "Please select a preset to export"
 msgstr "Velg en forhåndsinnstilling å eksportere."
 
@@ -791,7 +857,6 @@ msgid "Press Enter to Continue"
 msgstr "Trykk Enter å fortsette"
 
 #: unit1.rsselectdirectory
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
 msgstr "Velg målmappe"
 
@@ -850,4 +915,45 @@ msgstr "Tomgang"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Vanlig"
+
+#~ msgid "(All Categories)"
+#~ msgstr "(Alle kategorier)"
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "(<heltall>) Lyd synkronisering"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "<hh:mm:ss> - Tidspunkt hvor det nye opptaket skal begynne"
+#~ msgid "Make sure that the start time + time to record is less than total length of job"
+#~ msgstr "Forskikre deg at starttiden og optakstiden er mindre enn orginallengde "
+#~ msgid "Convert To ..."
+#~ msgstr "Konverter til"
+#~ msgid "Device Preset"
+#~ msgstr "Forhåndsinnstilling"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Utdatamappe"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Om WinFF"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Alternativer"
+#~ msgid "Video Settings"
+#~ msgstr "Video innstillinger"
+#~ msgid "Audio Settings"
+#~ msgstr "Lyd innstillinger"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Forhåndsinnstillinger"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Flertråding for doble core prosessorer"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Sti til FFmpeg.exe "
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Sti til FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
 

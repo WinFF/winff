@@ -519,7 +519,7 @@ msgid "pnlMain"
 msgstr ""
 
 #: TFRMMAIN.PRESETBOX.HINT
-msgid "Specific settings to use for the choosen device or file type"
+msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
 
 #: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
