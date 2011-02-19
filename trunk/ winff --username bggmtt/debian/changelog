@@ -1,3 +1,16 @@
+winff (1.3.2-1) unstable; urgency=low
+
+  * New upstream release
+    + greatly improved GUI layout (LP: #695040)
+  * Dropping old patches (upstream now)
+  * Moved rm line from d/rules to d/clean and don't clean *.lrt files
+    because they now contain essential info (but do clean *.lrs files)
+  * Updated d/copyright for new upstream notices and files
+  * Updated all preset files to fix upstream bug 108, k in stead of kb
+    + added patch for upstream presets.xml file
+
+ -- Paul Gevers <paul@climbing.nl>  Sat, 19 Feb 2011 10:47:39 +0100
+
 winff (1.3.1-2) experimental; urgency=low
 
   * Changed buttons to adept to string size (partly Launchpad: #695040)

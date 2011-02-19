@@ -42,7 +42,6 @@ clean:
 	dh_testroot
 	rm -f build-stamp configure-stamp
 
-	rm -f *.or *.res *.o *~ *.ppu *.rst *.rls *.bak winff.exe winff *.lrt winff.compiled
 	if [ -f presets-orig.xml ] ; then mv presets-orig.xml presets.xml; fi 
 	cd languages ;\
 		if [ -f winff.pt_BR.po ] ; then mv winff.pt_BR.po winff.pb.po; fi ;\
