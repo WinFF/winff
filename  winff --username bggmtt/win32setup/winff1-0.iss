@@ -4,14 +4,14 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.3.1
+AppVerName=WinFF 1.3.2
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.3.1
+VersionInfoVersion=1.3.2
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
@@ -71,6 +71,7 @@ Source: "README-Presets.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "ffmpeg-doc.html"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "ffplay-doc.html"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "changelog.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "AUTHORS"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "Docs\WinFF.en.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "Docs\WinFF.nl.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "Docs\WinFF.fr.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
