@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
-  Left = 275
+  Left = 150
   Height = 587
-  Top = 149
+  Top = 150
   Width = 1064
   ActiveControl = Panel2
   AllowDropFiles = True
