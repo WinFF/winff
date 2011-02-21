@@ -16,9 +16,11 @@
         <ComponentName Value="frmMain"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="84" Y="31"/>
-        <TopLine Value="16"/>
+        <CursorPos X="53" Y="1484"/>
+        <TopLine Value="1475"/>
+        <EditorIndex Value="1"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="unit2.pas"/>
@@ -36,9 +38,7 @@
         <UnitName Value="Unit3"/>
         <CursorPos X="44" Y="4"/>
         <TopLine Value="1"/>
-        <EditorIndex Value="1"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="unit4.pas"/>

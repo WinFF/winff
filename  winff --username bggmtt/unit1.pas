@@ -1482,8 +1482,8 @@ begin                                     // get setup
    if edtSeekHH.Value + edtSeekMM.Value + edtSeekSS.Value > 0 then
    begin
      ignorepreview := true;
-     if edtSeekMM.Value < 10 then edtSeekMM.Text := '0' + edtSeekMM.Text;
-     if edtSeekSS.Value < 10 then edtSeekSS.Text := '0' + edtSeekSS.Text;
+     if (edtSeekMM.Value < 10) and (length(edtSeekMM.Text)<2) then edtSeekMM.Text := '0' + edtSeekMM.Text;
+     if (edtSeekSS.Value < 10) and (length(edtSeekSS.Text)<2) then edtSeekSS.Text := '0' + edtSeekSS.Text;
 
      commandline:=replaceparam(commandline,'-ss','-ss ' + edtSeekHH.Text + ':' + edtSeekMM.Text + ':' + edtSeekSS.Text);
    end;
@@ -1491,8 +1491,8 @@ begin                                     // get setup
    if edtTTRHH.Value + edtTTRMM.Value + edtTTRSS.Value > 0 then
    begin
      ignorepreview := true;
-     if edtTTRMM.Value < 10 then edtTTRMM.Text := '0' + edtTTRMM.Text;
-     if edtTTRSS.Value < 10 then edtTTRSS.Text := '0' + edtTTRSS.Text;
+     if (edtTTRMM.Value < 10) and (length(edtTTRMM.Text)<2)  then edtTTRMM.Text := '0' + edtTTRMM.Text;
+     if (edtTTRSS.Value < 10) and (length(edtTTRSS.Text)<2)  then edtTTRSS.Text := '0' + edtTTRSS.Text;
 
      commandline:=replaceparam(commandline,'-t','-t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text);
    end;
