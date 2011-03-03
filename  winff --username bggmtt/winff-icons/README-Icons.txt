@@ -1,7 +1,16 @@
 Winff's Icons are Copyright Alex Klepatsch 2009
 
-The are licensed under the GNU Public License v3
-You should have received a copy of the License with these Icons.
-If not please see http://www.gnu.org
+These icons are free software: you can redistribute them and/or modify
+them under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+These files are distributed in the hope that they will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with these files.  If not, see <http://www.gnu.org/licenses/>.
 
 The source of the logo's is included in the winff_logo2.svgz file.
