@@ -1,3 +1,11 @@
+winff (1.3.2-2) unstable; urgency=low
+
+  * Preventing additional zeros in time fields from additional options
+    (Upstream: #111)
+  * Fix presets for old name of libvorbis codec (Upstream: #112)
+
+ -- Paul Gevers <paul@climbing.nl>  Fri, 18 Mar 2011 20:44:52 +0100
+
 winff (1.3.2-1) unstable; urgency=low
 
   * New upstream release
