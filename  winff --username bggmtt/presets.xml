@@ -404,8 +404,8 @@
   </ntscvcdhq>
   <ogg1>
     <label>OGG</label>
-    <params>-acodec vorbis -aq 60 -vn -ac 2</params>
-    <extension>OGG</extension>
+    <params>-acodec libvorbis -aq 60 -vn -ac 2</params>
+    <extension>ogg</extension>
     <category>Audio</category>
   </ogg1>
   <paldvdgoodqFS>
