@@ -1,0 +1,21 @@
+Description: Probably going from libavcodec version 51 to 52 the name
+  of the vorbis codec changed from vorbis to libvorbis. In the same go
+  change the extension to lower case for consistency.
+Bug: http://code.google.com/p/winff/issues/detail?id=112
+Author: Paul Gevers <paul@climbing.nl>
+
+Index: winff-git/presets.xml
+===================================================================
+--- winff-git.orig/presets.xml	2011-03-18 19:34:15.608911428 +0100
++++ winff-git/presets.xml	2011-03-18 19:34:51.680911456 +0100
+@@ -404,8 +404,8 @@
+   </ntscvcdhq>
+   <ogg1>
+     <label>OGG</label>
+-    <params>-acodec vorbis -aq 60 -vn -ac 2</params>
+-    <extension>OGG</extension>
++    <params>-acodec libvorbis -aq 60 -vn -ac 2</params>
++    <extension>ogg</extension>
+     <category>Audio</category>
+   </ogg1>
+   <paldvdgoodqFS>
