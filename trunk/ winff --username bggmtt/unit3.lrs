@@ -191,11 +191,11 @@ LazarusResources.Add('TfrmAbout','FORMDATA',[
   +'ParentColor'#8#10'ParentFont'#8#7'OnClick'#7#11'Label7Click'#0#0#6'TLabel'#6
   +'Label8'#4'Left'#2#4#6'Height'#2#16#3'Top'#2'R'#5'Width'#3#147#0#7'Caption'#6
   +#24'FFmpeg Windows Builds by'#11'ParentColor'#8#0#0#6'TLabel'#6'Label9'#4'Le'
-  +'ft'#2#4#6'Height'#2#16#3'Top'#2'b'#5'Width'#2'D'#7'Caption'#6#12'Ramiro Pol'
-  +'la'#11'ParentColor'#8#0#0#6'TLabel'#7'Label10'#6'Cursor'#7#11'crHandPoint'#4
-  ,'Left'#2#4#6'Height'#2#16#3'Top'#2'r'#5'Width'#3#147#0#7'Caption'#6#27'http:'
-  +'//ffmpeg.arrozcru.org/'#10'Font.Color'#7#6'clBlue'#11'ParentColor'#8#10'Par'
-  +'entFont'#8#7'OnClick'#7#12'Label10Click'#0#0#0#5'TPage'#5'Page3'#7'Caption'
+  +'ft'#2#4#6'Height'#2#16#3'Top'#2'b'#5'Width'#2'E'#7'Caption'#6#12'Kyle Schwa'
+  +'rz'#11'ParentColor'#8#0#0#6'TLabel'#7'Label10'#6'Cursor'#7#11'crHandPoint'#4
+  ,'Left'#2#4#6'Height'#2#16#3'Top'#2'r'#5'Width'#3#154#0#7'Caption'#6#28'http:'
+  +'//hawkeye.arrozcru.org/'#10'Font.Color'#7#6'clBlue'#11'ParentColor'#8#10'Pa'
+  +'rentFont'#8#7'OnClick'#7#12'Label10Click'#0#0#0#5'TPage'#5'Page3'#7'Caption'
   +#6#6'Thanks'#11'ClientWidth'#3'm'#1#12'ClientHeight'#3#237#0#0#8'TListBox'#8
   +'ListBox1'#4'Left'#2#0#6'Height'#3#237#0#3'Top'#2#0#5'Width'#3'm'#1#5'Align'
   +#7#8'alClient'#16'ClickOnSelChange'#8#10'ItemHeight'#2#0#8'TabOrder'#2#0#0#0
