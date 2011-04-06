@@ -18,9 +18,7 @@
         <UnitName Value="Unit1"/>
         <CursorPos X="53" Y="1484"/>
         <TopLine Value="1475"/>
-        <EditorIndex Value="1"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="unit2.pas"/>
@@ -77,7 +75,7 @@
       </Unit7>
     </Units>
     <General>
-      <ActiveEditorIndexAtStart Value="1"/>
+      <ActiveEditorIndexAtStart Value="0"/>
     </General>
     <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectSession>

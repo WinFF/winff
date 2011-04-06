@@ -279,8 +279,8 @@ object frmAbout: TfrmAbout
         Left = 4
         Height = 16
         Top = 98
-        Width = 68
-        Caption = 'Ramiro Polla'
+        Width = 69
+        Caption = 'Kyle Schwarz'
         ParentColor = False
       end
       object Label10: TLabel
@@ -288,8 +288,8 @@ object frmAbout: TfrmAbout
         Left = 4
         Height = 16
         Top = 114
-        Width = 147
-        Caption = 'http://ffmpeg.arrozcru.org/'
+        Width = 154
+        Caption = 'http://hawkeye.arrozcru.org/'
         Font.Color = clBlue
         ParentColor = False
         ParentFont = False
