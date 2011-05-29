@@ -279,12 +279,12 @@ var
   rsPresetHasNoLabel = 'The preset to import does not have a label';
   rsThePresetHasIllegalChars = 'The preset contains illegal characters';
   rsPresetWithLabelExists = 'Preset with label: %s%s%s already exists';
-  rsPresethasnoExt = 'The preset to import does not have an extension';
-  rsNameMustBeAllpha = 'Name Must be alphanumeric (a-z,A-Z,0-9)';
-  rsExtensionnoperiod = 'Extension can not contain a period';
-  rsFileDoesNotExist = 'file does not exist';
-  rsPresettoExport = 'Please select a preset to export';
-  rsSelectDirectory = 'Select Directory';
+  rsPresethasnoExt	= 'The preset to import does not have an extension';
+  rsNameMustBeAllpha	= 'Name Must be alphanumeric (a-z,A-Z,0-9)';
+  rsExtensionnoperiod	= 'Extension can not contain a period';
+  rsFileDoesNotExist	= 'file does not exist';
+  rsPresettoExport	= 'Please select a preset to export';
+  rsSelectDirectory	= 'Select Directory';
 
 implementation
 
@@ -1519,9 +1519,16 @@ begin                                     // get setup
      begin
        filename := filelist.items[i];
        basename := extractfilename(filename);
+
+       if preview = true then
+       begin
+         basename := 'tmp_' + inttostr(random(10000000)) ;
+       end;	
+
        // resolve issues with embedded quote marks in filename to be converted.  issue 38
        {$ifdef unix}
        filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
+       basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
        {$endif}
 
        for j:= length(basename) downto 1  do
@@ -1529,9 +1536,6 @@ begin                                     // get setup
            if basename[j] = #46 then
               begin
                 basename := leftstr(basename,j-1);
-                {$ifdef unix}
-                basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
-                {$endif}
                 break;
               end;
          end;
