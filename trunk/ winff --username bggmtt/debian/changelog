@@ -1,3 +1,12 @@
+winff (1.3.2-3) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.2 (no change needed)
+  * Build depend on fp-utils as work around for bug #624361
+  * Use upstream svn fix for bug 110 to prevent overwrite on preview
+  * Updated d/copyright with proper fsf address
+
+ -- Paul Gevers <paul@climbing.nl>  Mon, 13 Jun 2011 22:15:18 +0200
+
 winff (1.3.2-2) unstable; urgency=low
 
   * Preventing additional zeros in time fields from additional options
