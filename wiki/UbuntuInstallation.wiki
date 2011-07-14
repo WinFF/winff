@@ -5,7 +5,7 @@
 
 Winff is included in Ubuntu. Just search for it in your favorite package manager and install from there. ONLY if you want faster update or newer versions, our Ubuntu packages are available at [http://winff.org/] and at my [https://launchpad.net/~paul-climbing/+archive/ppa Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
 
-Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibuntu] for Lucid, Maverick and Natty users (via lib*-extra-* packages).
+Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibuntu] for Lucid, Maverick and Natty users (via lib`*`-extra-`*` packages).
 
 = Details Winff =
 
