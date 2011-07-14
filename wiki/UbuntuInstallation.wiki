@@ -3,121 +3,51 @@
 
 = Introduction =
 
-Winff is included in Ubuntu. Just search for it in your favorite package manager and install from there. ONLY if you want faster update or newer versions, our Ubuntu packages are available at [http://winff.org/] and at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
+Winff is included in Ubuntu. Just search for it in your favorite package manager and install from there. ONLY if you want faster update or newer versions, our Ubuntu packages are available at [http://winff.org/] and at my [https://launchpad.net/~paul-climbing/+archive/ppa Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
 
-Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibuntu] for Hardy and Lucid users.
+Also a fuller featured ffmpeg is available via [http://www.medibuntu.org/ Medibuntu] for Lucid, Maverick and Natty users (via lib*-extra-* packages).
 
 = Details Winff =
 
-The Ubuntu repositories come in two flavors. We provide our repository at [http://winff.org] or you can use the repository at [https://launchpad.net/~paul-climbing/+archive Launchpad]. We have not received any complains about our prive repo, so that is recommended, but for redundancy we mention Launchpad as well (however the later one might contain experimental packages).
+The Ubuntu repositories come in two flavors. We provide our repository at [http://winff.org] or you can use the repository at [https://launchpad.net/~paul-climbing/+archive/ppa Launchpad]. We prefer the later.
 
-I describe two procedures, one using the command line, the other using synaptic. First the command line.
+== How do I use software from a PPA? ==
 
-== Command line ==
-If you use the winff.org repository you need to accept the key [http://winff.org/ubuntu/AAFE086A.gpg AAFE086A]. To get that installed you can run:
+To start installing and using software from a Personal Package Archive, you first need to tell Ubuntu where to find the PPA.
 
+Step 1: Open a terminal and enter:
 {{{
-wget --quiet --output-document=- "http://winff.org/ubuntu/AAFE086A.gpg" | sudo apt-key add -
+sudo add-apt-repository ppa:paul-climbing/ppa
 }}}
 
-After that you need to add the repository to apt. You can do that by entering the line marked (1) below in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
-{{{
-echo "deb http://winff.org/ubuntu lucid universe" | sudo tee /etc/apt/sources.list.d/winff.list
-}}}
-Of course you need to change lucide to karmic or hardy or intrepid or jaunty if you have that. (You can also just add the line to /etc/apt/sources.list .)
+Your system will now fetch the PPA's key. This enables your Ubuntu system to verify that the packages in the PPA have not been interfered with since they were built.
 
-You can now install WinFF directly by running:
+Step 2: Now, as a one-off, you should tell your system to pull down the latest list of software from each archive it knows about, including the PPA you just added:
 {{{
-sudo apt-get update && sudo apt-get install winff
+sudo apt-get update
 }}}
 
-interpid users also want to run:
+Now you're ready to start installing software from the PPA!
+
+Step 3: You can now install WinFF directly by running:
 {{{
-sudo apt-get install libavcodec-unstripped-51 
+sudo apt-get install winff
 }}}
 
-jaunty users also want to run:
-{{{
-sudo apt-get install libavcodec-unstripped-52 
-}}}
-
-karmic and lucid users also want to run:
+Step 4 (optional): Install the unstripped version of ffmpeg:
 {{{
 sudo apt-get install libavcodec-extra-52 
 }}}
-----
-*If you are having problems* with the described procedure, please file a bug in our [http://code.google.com/p/winff/issues/list bug tracker]. Please include in the bug the output of 
-{{{
-cat /etc/apt/sources.list.d/winff.list
-# and
-sudo apt-get update && sudo apt-get install winff
-}}}
-----
-
-(1) `deb http://winff.org/ubuntu lucid universe`
-_(or if you prefer the PPA:)_ 
-`deb http://ppa.launchpad.net/paul-climbing/ubuntu lucid main`
-(replace lucid with your release)
-
-== Synaptic ==
-
-If you are using synaptic to install packages you have to download and save the [http://winff.org/ubuntu/AAFE086A.gpg key (right click here)]. Then go in the synaptic menu to Setting -> Repositories.
-
-http://winff.org/images/screenshots/synaptic_setting_repo.png
-
-Now go to the tab "Authentication", press "Import Key File" and select the just downloaded [http://winff.org/ubuntu/AAFE086A.gpg file].
-
-http://winff.org/images/screenshots/synaptic_add_key.png
-
-Now go to the "Third-party Software" tab and select "add"
-
-http://winff.org/images/screenshots/synaptic_add_repo-win.png
-
-In the next field type (or copy/paste) `deb http://winff.org/ubuntu lucid universe` (change lucid to *your* release) and press "Add source".
-
-http://winff.org/images/screenshots/synaptic_add_repo-field.png
-
-Now, after you press "Reload" you can just choose winff from the list. If you have winff installed from a very old version of Matt's package file, you should uninstall that first.
 
 = Warning non standard ffmpeg =
-If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (3) after installation. If you find that your presets don't work, try the other presets files that are available [http://code.google.com/p/winff/downloads/list here].
+If you don't run the standard Ubuntu ffmpeg and want to make use of the more extended original set of presets, please read the README.Debian (1) after installation. If you find that your presets don't work, try the other presets files that are available [http://code.google.com/p/winff/downloads/list here].
 
 In order to use an other presets file than supplied with the package you might need to remove the old preset file in ~/.winff/presets.xml , but by doing that you will also remove self-made presets. So if you made or edited the presets, you want to compare the files manually.
 
-(3) /usr/share/doc/winff/README.Debian
+(1) /usr/share/doc/winff/README.Debian
 
 = Details extended ffmpeg in Ubuntu =
 
-For a fuller ffmpeg than the standard on in your flavor of Ubuntu I refer to the excellent guide in the Ubuntuforums: http://ubuntuforums.org/showthread.php?t=1117283 If you want to compile your own ffmpeg (it is not so hard) you can follow the instructions here: http://ubuntuforums.org/showthread.php?t=786095
+For a fuller ffmpeg than the standard on in your flavor of Ubuntu I refer to the excellent guide in the Ubuntu-forums: http://ubuntuforums.org/showthread.php?t=1117283 If you want to compile your own ffmpeg (it is not so hard) you can follow the instructions here: http://ubuntuforums.org/showthread.php?t=786095
 
-= Details ffmpeg for Lucid =
-
-Lucid contains a pretty complete ffmpeg already, but you probably want to have the 'unstripped' versions of several libraries. You can install them directly: libavcodec-extra-52, libavutil-extra-49 and libavformat-extra-52 from the multiverse repository. For AAC support you should install the [http://www.medibuntu.org/ Medibuntu] version of ffmpeg, (see the [https://help.ubuntu.com/community/Medibuntu Medibuntu wiki]). The full explanation is available at [https://help.ubuntu.com/community/Medibuntu], and in short below the Hardy details.
-
-= Details ffmpeg for Karmic and Jaunty =
-
-Karmic and Jaunty contain a pretty complete ffmpeg already, but you probably want to have the 'unstripped' versions of several libraries. You can look for them directly: libavcodec-unstripped-52, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
-
-= Details ffmpeg for Interpid =
-
-Intrepid contains a pretty complete ffmpeg already, but you probably want to have ubuntu-restricted-extras installed which should pull in the 'unstripped' versions of several libraries. You can also look for them directly: libavcodec-unstripped-51, libavutil-unstripped-49 and libavformat-unstripped-52 from the multiverse repository.
-
-= Details ffmpeg for Hardy =
-
-Because of legal and copyright issues not all codec are standard available in ffmpeg from Ubuntu. If you don't mind these issues (see the [https://help.ubuntu.com/community/Medibuntu Medibuntu wiki]) you can install the fuller featured ffmpeg from [http://www.medibuntu.org/ Medibuntu]. The full explanation is available at [https://help.ubuntu.com/community/Medibuntu]. In short the procedure is as follows:
-
-  * add the medibuntu repository to your sources, for instance using the following command:
-  {{{
-  sudo wget http://www.medibuntu.org/sources.list.d/hardy.list -O /etc/apt/sources.list.d/medibuntu.list
-  }}}
-  If you are running Gutsy or... replace the string "hardy" by that version of ubuntu.
-
-  * After that you should add the GPG Key via:
-  {{{
-  sudo apt-get update && sudo apt-get install medibuntu-keyring && sudo apt-get update
-  }}}
-  You may be asked to accept this package even though it cannot be authenticated. This is normal; typing "Yes" means you trust Medibuntu. If you want to import the gpg key of medibuntu directly, it has number: 0C5A2783 The contains you can find for instance at [http://wwwkeys.pgp.net:11371/pks/lookup?op=get&search=0x2EBC26B60C5A2783 pgp.net].
-
-Now you are ready to install the medibuntu version of ffmpeg.
-
-Beware, because the medibuntu version of ffmpeg is usually newer, the presets that come with winff might not always work. Please take a look at the [http://www.biggmatt.com/forums/index.php?board=3.0 forum].
+Ubuntu contains a pretty complete ffmpeg already, but you probably want to have the 'unstripped' versions of several libraries. You can install them directly: libavcodec-extra-52, libavutil-extra-49 and libavformat-extra-52 from the multiverse repository. For AAC support you should install the [http://www.medibuntu.org/ Medibuntu] version of ffmpeg, (see the [https://help.ubuntu.com/community/Medibuntu Medibuntu wiki]). The full explanation is available at [https://help.ubuntu.com/community/Medibuntu].
