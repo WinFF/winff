@@ -312,13 +312,6 @@ msgstr "Remover"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -339,6 +332,10 @@ msgstr "Desentrelaçar"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr ""
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -346,6 +343,10 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -409,6 +410,13 @@ msgstr ""
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 #, fuzzy
@@ -602,6 +610,10 @@ msgstr "Ajuda"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opções"
+
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -929,6 +941,54 @@ msgstr "Você deve introduzir um rótulo"
 msgid "You must enter a name."
 msgstr "Você deve introduzir um nome"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Todas as categorias)"
+#~ msgid "Convert To ..."
+#~ msgstr "Converter para..."
+#~ msgid "Device Preset"
+#~ msgstr "Remover Pré-definição"
+#~| msgid "Output Folder"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Diretório de Saída"
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Sobre"
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opções"
+#~ msgid "Video Settings"
+#~ msgstr "Tamanho do Vídeo"
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Pré-definições"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading para Processadores Dual Core"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Caminho para FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Caminho para FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Convertendo"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Salvar"
+#~ msgid "Replace Preset"
+#~ msgstr "Substituir Pré-definição"
+#~ msgid "AC'"
+#~ msgstr "Canal de Áudio"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"
@@ -938,81 +998,7 @@ msgid "Idle"
 msgstr "Baixa"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Normal"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Todas as categorias)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Converter para..."
-
-#, fuzzy
-#~ msgid "Device Preset"
-#~ msgstr "Remover Pré-definição"
-
-#, fuzzy
-#~| msgid "Output Folder"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Diretório de Saída"
-
-#, fuzzy
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Sobre"
-
-#, fuzzy
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opções"
-
-#, fuzzy
-#~ msgid "Video Settings"
-#~ msgstr "Tamanho do Vídeo"
-
-#, fuzzy
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#, fuzzy
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Pré-definições"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading para Processadores Dual Core"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Caminho para FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Caminho para FFPlay.exe"
-
-#, fuzzy
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Convertendo"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Salvar"
-
-#, fuzzy
-#~ msgid "Replace Preset"
-#~ msgstr "Substituir Pré-definição"
-
-#~ msgid "AC'"
-#~ msgstr "Canal de Áudio"

@@ -310,13 +310,6 @@ msgstr "Ukloni"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -337,6 +330,10 @@ msgstr "Deinterlace"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr ""
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -344,6 +341,10 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -407,6 +408,13 @@ msgstr ""
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 #, fuzzy
@@ -600,6 +608,10 @@ msgstr "Помоћ"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opcije"
+
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -929,6 +941,56 @@ msgstr "Morate uneti oznaku."
 msgid "You must enter a name."
 msgstr "Morate uneti ime."
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Sve kategorije)"
+#~ msgid "Convert To ..."
+#~ msgstr "Kovertuj u ..."
+#~ msgid "Device Preset"
+#~ msgstr "Obriši preset:"
+#~| msgid "Output Folder"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Rezultati u folder"
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "O programu"
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opcije"
+#~ msgid "Video Settings"
+#~ msgstr "Video setovanja"
+#~ msgid "Audio Settings"
+#~ msgstr "Audio setovanja"
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Odustani"
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Preseti"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Višenitno izvršavanje za Dual Core procesore"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Putanja do FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Putanja do FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Konverzija u toku"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Snimi"
+#~ msgid "Replace Preset"
+#~ msgstr "Ažuriraj preset:"
+#~ msgid "AC'"
+#~ msgstr "AC'"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Visoki"
@@ -938,84 +1000,7 @@ msgid "Idle"
 msgstr "Niski"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Normalni"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Sve kategorije)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Kovertuj u ..."
-
-#, fuzzy
-#~ msgid "Device Preset"
-#~ msgstr "Obriši preset:"
-
-#, fuzzy
-#~| msgid "Output Folder"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Rezultati u folder"
-
-#, fuzzy
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "O programu"
-
-#, fuzzy
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opcije"
-
-#, fuzzy
-#~ msgid "Video Settings"
-#~ msgstr "Video setovanja"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Audio setovanja"
-
-#, fuzzy
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Odustani"
-
-#, fuzzy
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Preseti"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Višenitno izvršavanje za Dual Core procesore"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Putanja do FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Putanja do FFPlay.exe"
-
-#, fuzzy
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Konverzija u toku"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Snimi"
-
-#, fuzzy
-#~ msgid "Replace Preset"
-#~ msgstr "Ažuriraj preset:"
-
-#~ msgid "AC'"
-#~ msgstr "AC'"

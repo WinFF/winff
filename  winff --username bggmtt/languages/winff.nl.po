@@ -186,6 +186,7 @@ msgstr "Label voorinstelling"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Parameters voor commandoregel (geen -i of doelbestand)"
 
+#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 #| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
@@ -196,7 +197,6 @@ msgid "Category"
 msgstr "Categorie"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
-#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #| msgid "Save"
 msgid "Save"
 msgstr "Opslaan"
@@ -214,6 +214,7 @@ msgstr "Annuleren"
 msgid "Export Presets"
 msgstr "Exporteer voorinstelling"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -225,7 +226,6 @@ msgid "Choose Presets to Export:"
 msgstr "Selecteer voorinstelling om te exporteren:"
 
 #: TFRMMAIN.AUDBITRATE.HINT
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -303,12 +303,6 @@ msgstr "Verwijderen"
 msgid "Remove selected file(s) from the list"
 msgstr "Verwijder geselecteerde bestand(en) uit de lijst"
 
-#: TFRMMAIN.CAPTION
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
@@ -332,6 +326,10 @@ msgstr "Ontvlechten"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "Verwijder interlacing van de video (indien nodig)"
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -341,6 +339,10 @@ msgstr "..."
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "De doelmap voor het eindresultaat (kies een andere map dan waar het origineel staat)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
@@ -409,6 +411,11 @@ msgstr "<hh:mm:ss> - Tijdsduur van te converteren fragment"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<geheel getal>) 256 = huidige volume, 128 = half volume, 512 = dubbel volume"
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
@@ -418,23 +425,23 @@ msgstr "Extra opties"
 msgid "Output Details"
 msgstr "Uitvoer details"
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Converteer naar:"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Audio kanalen"
 
 #: TFRMMAIN.LABEL11.CAPTION
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #| msgid "Output Folder"
 msgid "Output Folder:"
 msgstr "Doelmap:"
 
 #: TFRMMAIN.LABEL19.CAPTION
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Preset:"
 msgstr "Voorinstelling:"
@@ -504,6 +511,7 @@ msgstr "Video frequentie"
 msgid "Video Bitrate"
 msgstr "Video bitsnelheid"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Videogrootte"
@@ -513,7 +521,6 @@ msgid "-"
 msgstr "-"
 
 #: TFRMMAIN.MITABOUT.CAPTION
-#| msgctxt "REMOVED3"
 #| msgid "About"
 msgid "About"
 msgstr "Over WinFF"
@@ -544,6 +551,7 @@ msgstr "Importeer voorinstelling"
 msgid "Pause on Finish"
 msgstr "Pauzeer na beëindigen"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Speel geluid af na afloop"
@@ -553,7 +561,6 @@ msgid "Preferences"
 msgstr "Voorkeuren"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Presets"
 msgstr "Voorinstellingen"
@@ -575,6 +582,7 @@ msgstr "WinFF website"
 msgid "Edit"
 msgstr "Bewerken"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Bestand"
@@ -584,11 +592,14 @@ msgid "Help"
 msgstr "Help"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
-#| msgctxt "REMOVED6"
 #| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opties"
+
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -614,6 +625,7 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Bijsnijden"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr "Tijd"
@@ -624,7 +636,6 @@ msgid "Video"
 msgstr "Beeld"
 
 #: TFRMMAIN.VIDBITRATE.HINT
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -732,6 +743,7 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Pad naar uitvoerbaar FFmpeg bestand:"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
@@ -744,7 +756,6 @@ msgid "Terminal to run FFmpeg in:"
 msgstr "Terminal voor het uitvoeren van FFmpeg:"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #| msgid "Additional Options"
 msgid "Terminal Options:"
 msgstr "Terminal opties:"
@@ -905,18 +916,6 @@ msgstr "Voer een label in."
 msgid "You must enter a name."
 msgstr "Voer een naam in."
 
-#: unit4.rspriorityhigh
-msgid "High"
-msgstr "Hoog"
-
-#: unit4.rspriorityidle
-msgid "Idle"
-msgstr "Inactief"
-
-#: unit4.rsprioritynormal
-msgid "Normal"
-msgstr "Normaal"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Alle categoriën)"
 #~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
@@ -957,4 +956,15 @@ msgstr "Normaal"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Hoog"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Inactief"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normaal"
 

@@ -314,13 +314,6 @@ msgstr "הסר"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -341,6 +334,10 @@ msgstr "Deinterlace"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr ""
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -348,6 +345,10 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -411,6 +412,13 @@ msgstr ""
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 #, fuzzy
@@ -604,6 +612,10 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "אפשרויות"
 
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
+
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
@@ -648,6 +660,7 @@ msgstr ""
 msgid "(<real> or <integer>) number of frames per second"
 msgstr ""
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
@@ -660,7 +673,6 @@ msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #| msgid "OK"
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
@@ -936,6 +948,54 @@ msgstr "חובה לציין תווית."
 msgid "You must enter a name."
 msgstr "חובה לציין שם."
 
+#~ msgid "(All Categories)"
+#~ msgstr "(כל הקטגוריות)"
+#~ msgid "Convert To ..."
+#~ msgstr "המר ל..."
+#~| msgid "Output Folder"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "תיקיית יעד"
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "אודות"
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "אפשרויות"
+#~ msgid "Video Settings"
+#~ msgstr "הגדרות וידאו"
+#~ msgid "Audio Settings"
+#~ msgstr "הגדרות אודיו"
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "ביטול"
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Presets"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading למעבדי כפולי ליבה"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "נתיב ל-FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "נתיב ל-FFPlay.exe"
+#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~| msgid "OK"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "בסדר"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "ממיר"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "שמור"
+#~ msgid "Replace Preset"
+#~ msgstr "החלף preset"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "גבוהה"
@@ -945,77 +1005,7 @@ msgid "Idle"
 msgstr "לא פעיל"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "רגילה"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(כל הקטגוריות)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "המר ל..."
-
-#, fuzzy
-#~| msgid "Output Folder"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "תיקיית יעד"
-
-#, fuzzy
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "אודות"
-
-#, fuzzy
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "אפשרויות"
-
-#~ msgid "Video Settings"
-#~ msgstr "הגדרות וידאו"
-
-#~ msgid "Audio Settings"
-#~ msgstr "הגדרות אודיו"
-
-#, fuzzy
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "ביטול"
-
-#, fuzzy
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Presets"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading למעבדי כפולי ליבה"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "נתיב ל-FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "נתיב ל-FFPlay.exe"
-
-#, fuzzy
-#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~| msgid "OK"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "בסדר"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "ממיר"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "שמור"
-
-#~ msgid "Replace Preset"
-#~ msgstr "החלף preset"

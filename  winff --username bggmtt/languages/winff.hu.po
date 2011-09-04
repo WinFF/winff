@@ -314,13 +314,6 @@ msgstr "Eltávolítás"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -341,6 +334,10 @@ msgstr "Csíktalanítás"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr ""
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -348,6 +345,10 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -411,6 +412,13 @@ msgstr ""
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 #, fuzzy
@@ -605,6 +613,10 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Beállítások"
 
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
+
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
@@ -649,6 +661,7 @@ msgstr ""
 msgid "(<real> or <integer>) number of frames per second"
 msgstr ""
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
@@ -661,7 +674,6 @@ msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #| msgid "OK"
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
@@ -937,6 +949,56 @@ msgstr "Lépj be egy címkébe."
 msgid "You must enter a name."
 msgstr "Írd be a neved."
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Minden kategória)"
+#~ msgid "Convert To ..."
+#~ msgstr "Konvártálás..."
+#~ msgid "Device Preset"
+#~ msgstr "Egység beállítása"
+#~| msgid "Output Folder"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Kimeneti mappa"
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "A programról"
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Beállítások"
+#~ msgid "Video Settings"
+#~ msgstr "Videóbeállítások"
+#~ msgid "Audio Settings"
+#~ msgstr "Hangbeállítások"
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Mégse"
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Beállítások"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Többszálú működés (Dual Core processzoroknál)"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe elérési út"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFplay.exe elérési út"
+#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~| msgid "OK"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Konvertálás"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Mentés"
+#~ msgid "Replace Preset"
+#~ msgstr "Beállítások cseréje:"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Magas"
@@ -946,80 +1008,7 @@ msgid "Idle"
 msgstr "Várakozó"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Normál"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Minden kategória)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Konvártálás..."
-
-#~ msgid "Device Preset"
-#~ msgstr "Egység beállítása"
-
-#, fuzzy
-#~| msgid "Output Folder"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Kimeneti mappa"
-
-#, fuzzy
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "A programról"
-
-#, fuzzy
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Beállítások"
-
-#~ msgid "Video Settings"
-#~ msgstr "Videóbeállítások"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Hangbeállítások"
-
-#, fuzzy
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Mégse"
-
-#, fuzzy
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Beállítások"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Többszálú működés (Dual Core processzoroknál)"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "FFmpeg.exe elérési út"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "FFplay.exe elérési út"
-
-#, fuzzy
-#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~| msgid "OK"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Konvertálás"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Mentés"
-
-#~ msgid "Replace Preset"
-#~ msgstr "Beállítások cseréje:"

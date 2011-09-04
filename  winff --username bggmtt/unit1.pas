@@ -46,6 +46,7 @@ type
     cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
     btnClear: TBitBtn;
+    CheckBox1: TCheckBox;
     ChooseFolderBtn: TButton;
     commandlineparams: TEdit;
     DestFolder: TEdit;
@@ -106,7 +107,8 @@ type
     Panel12: TPanel;
     Panel13: TPanel;
     Panel14: TPanel;
-    pnlSpacer: TPanel;
+    Panel15: TPanel;
+    Panel16: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
@@ -164,6 +166,7 @@ type
     procedure edtCropTopChange(Sender: TObject);
     procedure edtSeekMMChange(Sender: TObject);
     procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure Label11Click(Sender: TObject);
     procedure LaunchBrowser(URL:string);
     procedure LaunchPdf(pdffile:string);
     procedure ChooseFolderBtnClick(Sender: TObject);
@@ -190,6 +193,7 @@ type
     procedure btnRemoveClick(Sender: TObject);
     function GetDeskTopPath() : string;
     function GetMydocumentsPath() : string ;
+    procedure Panel14Click(Sender: TObject);
     procedure PresetBoxChange(Sender: TObject);
     procedure setconfigvalue(key:string;value:string);
     function getconfigvalue(key:string):string;
@@ -950,6 +954,12 @@ begin
         raise exception.create('SHGetPathFromIDList failed : invalid pidl');
    SetLength(Result, lStrLen(PChar(Result)));
 end;
+
+procedure TfrmMain.Panel14Click(Sender: TObject);
+begin
+
+end;
+
 {$endif}
 {$ifdef unix}
 begin
@@ -1105,6 +1115,11 @@ begin
     else
        i+=1;
    end;
+
+end;
+
+procedure TfrmMain.Label11Click(Sender: TObject);
+begin
 
 end;
 
