@@ -313,13 +313,6 @@ msgstr "Rake"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -340,6 +333,10 @@ msgstr "Deinterlace"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr ""
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -347,6 +344,10 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -410,6 +411,13 @@ msgstr ""
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 #, fuzzy
@@ -604,6 +612,10 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Vebijêrk"
 
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
+
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
@@ -648,6 +660,7 @@ msgstr ""
 msgid "(<real> or <integer>) number of frames per second"
 msgstr ""
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
@@ -660,7 +673,6 @@ msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #| msgid "OK"
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
@@ -936,6 +948,56 @@ msgstr "Divê label binivîsî"
 msgid "You must enter a name."
 msgstr "Divê tu navek binivîsî"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Hemû Kategorî)"
+#~ msgid "Convert To ..."
+#~ msgstr "Veguherîne li"
+#~ msgid "Device Preset"
+#~ msgstr "Pêşmîheng"
+#~| msgid "Output Folder"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Peldanka tomarkirinê"
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Derbarê Winff de"
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Vebijêrk"
+#~ msgid "Video Settings"
+#~ msgstr "Mîhengên Vîdyoyê"
+#~ msgid "Audio Settings"
+#~ msgstr "Mîhengên Dengê"
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Betal"
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Pêşmîheng"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading ji bo komputerên Dual Core"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Pelrêça FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Pelrêça FFPlay.exe"
+#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~| msgid "OK"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Çêbû"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Vediguherîne"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Tomarke"
+#~ msgid "Replace Preset"
+#~ msgstr "Pêşmîheng biguhere:"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Bilind"
@@ -945,80 +1007,7 @@ msgid "Idle"
 msgstr "Beredayî"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Asayî"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Hemû Kategorî)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Veguherîne li"
-
-#~ msgid "Device Preset"
-#~ msgstr "Pêşmîheng"
-
-#, fuzzy
-#~| msgid "Output Folder"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Peldanka tomarkirinê"
-
-#, fuzzy
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Derbarê Winff de"
-
-#, fuzzy
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Vebijêrk"
-
-#~ msgid "Video Settings"
-#~ msgstr "Mîhengên Vîdyoyê"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Mîhengên Dengê"
-
-#, fuzzy
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Betal"
-
-#, fuzzy
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Pêşmîheng"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading ji bo komputerên Dual Core"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Pelrêça FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Pelrêça FFPlay.exe"
-
-#, fuzzy
-#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~| msgid "OK"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "Çêbû"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Vediguherîne"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Tomarke"
-
-#~ msgid "Replace Preset"
-#~ msgstr "Pêşmîheng biguhere:"

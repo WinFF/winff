@@ -222,6 +222,7 @@ msgstr "Cancel·la"
 msgid "Export Presets"
 msgstr "Exporta la configuració"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -235,7 +236,6 @@ msgstr "Si us plau, trieu la configuració a exportar"
 
 #: TFRMMAIN.AUDBITRATE.HINT
 #, fuzzy
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -320,13 +320,6 @@ msgstr "Esborra"
 msgid "Remove selected file(s) from the list"
 msgstr "esborra de la llista els arxius seleccionats"
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #, fuzzy
 #| msgid "name of the device or file type the video should be converted to"
@@ -353,6 +346,10 @@ msgstr "Desenllaça"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "Treu l'entrellaçat del vídeo (si escau)"
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -363,6 +360,10 @@ msgstr ""
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Carpeta de destinació per al vídeo final (ha de ser diferent de l'arxiu font)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #, fuzzy
@@ -428,6 +429,13 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
@@ -437,26 +445,26 @@ msgstr "Opcions addicionals"
 msgid "Output Details"
 msgstr "detalls de la sortida"
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Converteix"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Canals d'àudio"
 
 #: TFRMMAIN.LABEL11.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #| msgid "Output Folder"
 msgid "Output Folder:"
 msgstr "Carpeta de sortida:"
 
 #: TFRMMAIN.LABEL19.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Preset:"
 msgstr "Configuracions"
@@ -527,6 +535,7 @@ msgstr "Fotogrames"
 msgid "Video Bitrate"
 msgstr "Ràtio del vídeo"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Mida del vídeo"
@@ -537,7 +546,6 @@ msgstr ""
 
 #: TFRMMAIN.MITABOUT.CAPTION
 #, fuzzy
-#| msgctxt "REMOVED3"
 #| msgid "About"
 msgid "About"
 msgstr "Quant a"
@@ -570,6 +578,7 @@ msgstr "Importa una configuració"
 msgid "Pause on Finish"
 msgstr "Pausa en finalitzar"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Reprodueix un só en finalitzar"
@@ -580,7 +589,6 @@ msgstr "Preferències"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Presets"
 msgstr "Configuracions"
@@ -602,6 +610,7 @@ msgstr "Web de WinFF"
 msgid "Edit"
 msgstr "Edita"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Arxiu"
@@ -612,11 +621,14 @@ msgstr "Ajuda"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 #, fuzzy
-#| msgctxt "REMOVED6"
 #| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opcions"
+
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -645,6 +657,7 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Retalla"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -657,7 +670,6 @@ msgstr "Mida del vídeo"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 #, fuzzy
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -774,6 +786,7 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Ruta fins a FFmpeg"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -781,6 +794,7 @@ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Ruta fins a FFplay"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.LABEL6.CAPTION
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
@@ -789,14 +803,12 @@ msgstr "Terminal per a executar FFmpeg"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #| msgid "Additional Options"
 msgid "Terminal Options:"
 msgstr "Opcions addicionals"
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
 #, fuzzy
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #| msgid "Priority"
 msgid "Priority:"
 msgstr "Prioritat"
@@ -956,6 +968,51 @@ msgstr "Heu d'inserir una etiqueta."
 msgid "You must enter a name."
 msgstr "Heu d'inserir un nom."
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Totes les categories)"
+#~ msgid "Convert To ..."
+#~ msgstr "Converteix a..."
+#~ msgid "Device Preset"
+#~ msgstr "Tipus de format:"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Carpeta de sortida:"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Quant a"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opcions"
+#~ msgid "Video Settings"
+#~ msgstr "Opcions de vídeo"
+#~ msgid "Audio Settings"
+#~ msgstr "Opcions d'àudio"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Cancel·la"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Configuracions"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Empra la multitasca per a processadors amb més d'un nucli"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Ruta fins a FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Ruta fins a FFplay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "D'acord"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Convertint"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "desa"
+#~ msgid "Replace Preset"
+#~ msgstr "Reemplaça la configuració"
+#~ msgid "AC'"
+#~ msgstr "Canales de audio"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"
@@ -965,70 +1022,7 @@ msgid "Idle"
 msgstr "Baixa"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Normal"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Totes les categories)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Converteix a..."
-
-#~ msgid "Device Preset"
-#~ msgstr "Tipus de format:"
-
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Carpeta de sortida:"
-
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Quant a"
-
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opcions"
-
-#~ msgid "Video Settings"
-#~ msgstr "Opcions de vídeo"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Opcions d'àudio"
-
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
-
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Configuracions"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Empra la multitasca per a processadors amb més d'un nucli"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Ruta fins a FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Ruta fins a FFplay.exe"
-
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "D'acord"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Convertint"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "desa"
-
-#~ msgid "Replace Preset"
-#~ msgstr "Reemplaça la configuració"
-
-#~ msgid "AC'"
-#~ msgstr "Canales de audio"

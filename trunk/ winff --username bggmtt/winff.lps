@@ -2,13 +2,13 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="7"/>
+    <Version Value="9"/>
     <Units Count="8">
       <Unit0>
         <Filename Value="winff.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="winff"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit1.pas"/>
@@ -16,9 +16,14 @@
         <ComponentName Value="frmMain"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <CursorPos X="53" Y="1484"/>
-        <TopLine Value="1475"/>
-        <UsageCount Value="20"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="958"/>
+        <CursorPos X="3" Y="960"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="unit2.pas"/>
@@ -26,7 +31,7 @@
         <ComponentName Value="frmEditPresets"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit2"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit2>
       <Unit3>
         <Filename Value="unit3.pas"/>
@@ -34,9 +39,9 @@
         <ComponentName Value="frmAbout"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit3"/>
-        <CursorPos X="44" Y="4"/>
         <TopLine Value="1"/>
-        <UsageCount Value="20"/>
+        <CursorPos X="44" Y="4"/>
+        <UsageCount Value="21"/>
       </Unit3>
       <Unit4>
         <Filename Value="unit4.pas"/>
@@ -44,7 +49,7 @@
         <ComponentName Value="frmPreferences"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit4"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit4>
       <Unit5>
         <Filename Value="unit5.pas"/>
@@ -52,7 +57,7 @@
         <ComponentName Value="frmScript"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit5"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit5>
       <Unit6>
         <Filename Value="unit6.pas"/>
@@ -61,22 +66,104 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unit6"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit6>
       <Unit7>
         <Filename Value="potranslator.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="PoTranslator"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="0"/>
-        <UsageCount Value="20"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="35" Y="23"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit7>
     </Units>
     <General>
-      <ActiveEditorIndexAtStart Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
     </General>
-    <JumpHistory Count="0" HistoryIndex="-1"/>
+    <JumpHistory Count="20" HistoryIndex="19">
+      <Position1>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1484" Column="53" TopLine="1475"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1485" Column="53" TopLine="1476"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1486" Column="53" TopLine="1477"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1485" Column="53" TopLine="1476"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1486" Column="53" TopLine="1477"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1485" Column="53" TopLine="1476"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1484" Column="53" TopLine="1475"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1486" Column="53" TopLine="1477"/>
+      </Position8>
+      <Position9>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1485" Column="53" TopLine="1476"/>
+      </Position9>
+      <Position10>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1484" Column="53" TopLine="1475"/>
+      </Position10>
+      <Position11>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1485" Column="53" TopLine="1476"/>
+      </Position11>
+      <Position12>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1486" Column="53" TopLine="1477"/>
+      </Position12>
+      <Position13>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1485" Column="53" TopLine="1476"/>
+      </Position13>
+      <Position14>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1484" Column="53" TopLine="1475"/>
+      </Position14>
+      <Position15>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1485" Column="53" TopLine="1476"/>
+      </Position15>
+      <Position16>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1486" Column="53" TopLine="1477"/>
+      </Position16>
+      <Position17>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1485" Column="53" TopLine="1476"/>
+      </Position17>
+      <Position18>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1491" Column="53" TopLine="1482"/>
+      </Position18>
+      <Position19>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="1148" Column="43" TopLine="1120"/>
+      </Position19>
+      <Position20>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="959" Column="3" TopLine="957"/>
+      </Position20>
+    </JumpHistory>
   </ProjectSession>
 </CONFIG>

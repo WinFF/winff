@@ -227,6 +227,7 @@ msgstr "إلغاء"
 msgid "Export Presets"
 msgstr "تصدير النسب"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -240,7 +241,6 @@ msgstr "اختار النسب التي تود تصديرها"
 
 #: TFRMMAIN.AUDBITRATE.HINT
 #, fuzzy
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -325,13 +325,6 @@ msgstr "أزل"
 msgid "Remove selected file(s) from the list"
 msgstr "إزالة الملفات المحددة من القائمة"
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #, fuzzy
 #| msgid "name of the device or file type the video should be converted to"
@@ -358,6 +351,10 @@ msgstr "فك التضفير"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "إزالة التضفير من الفيديو (عند الضرورة)"
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -368,6 +365,10 @@ msgstr ""
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "مكان ملف الفيديو الناتج (اختر مجلدا مختلفا عن المجلد المصدر)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #, fuzzy
@@ -433,6 +434,13 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
@@ -442,26 +450,26 @@ msgstr "خيارات إضافية"
 msgid "Output Details"
 msgstr "تفاصيل الخرج"
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "حول"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "قنوات الصوت"
 
 #: TFRMMAIN.LABEL11.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #| msgid "Output Folder"
 msgid "Output Folder:"
 msgstr "مجلد الخرج"
 
 #: TFRMMAIN.LABEL19.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Preset:"
 msgstr "نسب"
@@ -532,6 +540,7 @@ msgstr "معدل الإطارات"
 msgid "Video Bitrate"
 msgstr "معدل البتات"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "حجم الفيديو"
@@ -542,7 +551,6 @@ msgstr ""
 
 #: TFRMMAIN.MITABOUT.CAPTION
 #, fuzzy
-#| msgctxt "REMOVED3"
 #| msgid "About"
 msgid "About"
 msgstr "تحويل"
@@ -575,6 +583,7 @@ msgstr "استيراد ملف"
 msgid "Pause on Finish"
 msgstr "إيقاف عند الانتهاء"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "تشغيل الصوت عند الانتهاء"
@@ -585,7 +594,6 @@ msgstr "تفضيلات"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Presets"
 msgstr "نسب"
@@ -607,6 +615,7 @@ msgstr "موقع WinFF"
 msgid "Edit"
 msgstr "تحرير"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "ملف"
@@ -617,11 +626,14 @@ msgstr "مساعدة"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 #, fuzzy
-#| msgctxt "REMOVED6"
 #| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "خيارات"
+
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -650,6 +662,7 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "قصقصة الصورة"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -662,7 +675,6 @@ msgstr "حجم الفيديو"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 #, fuzzy
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -779,6 +791,7 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "المسار التنفيذي إلى FFmpeg "
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -786,6 +799,7 @@ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "المسار إلى FFPlay التنفيذي"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.LABEL6.CAPTION
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
@@ -794,14 +808,12 @@ msgstr "طرفية لتشغيل FFmpeg"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #| msgid "Additional Options"
 msgid "Terminal Options:"
 msgstr "خيارات إضافية"
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
 #, fuzzy
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #| msgid "Priority"
 msgid "Priority:"
 msgstr "أولوية"
@@ -961,6 +973,47 @@ msgstr "لابد من إدخال وسم "
 msgid "You must enter a name."
 msgstr "إدخال الاسم"
 
+#~ msgid "(All Categories)"
+#~ msgstr "جميع التصنيفات"
+#~ msgid "Convert To ..."
+#~ msgstr "حول إلى ..."
+#~ msgid "Device Preset"
+#~ msgstr "نوع المشغل"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "مجلد الخرج"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "حول"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "خيارات"
+#~ msgid "Video Settings"
+#~ msgstr "أعدادات الفيديو"
+#~ msgid "Audio Settings"
+#~ msgstr "أعدادات الصوت"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "إلغاء"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "النسب"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "معالجة متعددة الخيوط للمعالجات مزدوجة الأنوية"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "المسار إلى FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "المسار إلى FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "موافق"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "جاري التحويل"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "حفظ"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "عالي"
@@ -970,64 +1023,7 @@ msgid "Idle"
 msgstr "عاطل"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "عادي"
 
-#~ msgid "(All Categories)"
-#~ msgstr "جميع التصنيفات"
-
-#~ msgid "Convert To ..."
-#~ msgstr "حول إلى ..."
-
-#~ msgid "Device Preset"
-#~ msgstr "نوع المشغل"
-
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "مجلد الخرج"
-
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "حول"
-
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "خيارات"
-
-#~ msgid "Video Settings"
-#~ msgstr "أعدادات الفيديو"
-
-#~ msgid "Audio Settings"
-#~ msgstr "أعدادات الصوت"
-
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "إلغاء"
-
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "النسب"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "معالجة متعددة الخيوط للمعالجات مزدوجة الأنوية"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "المسار إلى FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "المسار إلى FFPlay.exe"
-
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "موافق"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "جاري التحويل"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "حفظ"

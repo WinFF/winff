@@ -308,13 +308,6 @@ msgstr "Премахване"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -335,6 +328,10 @@ msgstr "Deinterlace"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr ""
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -342,6 +339,10 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -405,6 +406,13 @@ msgstr ""
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 #, fuzzy
@@ -589,6 +597,10 @@ msgstr "Помощ"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Опции"
+
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -915,6 +927,51 @@ msgstr "Трябва да въведете етикет."
 msgid "You must enter a name."
 msgstr "Трябва да въведете име."
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Вс. Категории)"
+#~ msgid "Convert To ..."
+#~ msgstr "Конвертиране към ..."
+#~ msgid "Device Preset"
+#~ msgstr "Настройки на устройство"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Изходна папка"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Относно"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Опции"
+#~ msgid "Video Settings"
+#~ msgstr "Видео настройки"
+#~ msgid "Audio Settings"
+#~ msgstr "Аудио настройки"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Отказ"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Готови настройки"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading за двуядрени процесори"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Път до FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Път до FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Конвертиране"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Запис"
+#~ msgid "Replace Preset"
+#~ msgstr "Замяна на настройка:"
+#~ msgid "AC'"
+#~ msgstr "AC"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Висок"
@@ -924,79 +981,7 @@ msgid "Idle"
 msgstr "Нисък"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Нормален"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Вс. Категории)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Конвертиране към ..."
-
-#, fuzzy
-#~ msgid "Device Preset"
-#~ msgstr "Настройки на устройство"
-
-#, fuzzy
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Изходна папка"
-
-#, fuzzy
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Относно"
-
-#, fuzzy
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Опции"
-
-#, fuzzy
-#~ msgid "Video Settings"
-#~ msgstr "Видео настройки"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Аудио настройки"
-
-#, fuzzy
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Отказ"
-
-#, fuzzy
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Готови настройки"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading за двуядрени процесори"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Път до FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Път до FFPlay.exe"
-
-#, fuzzy
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Конвертиране"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Запис"
-
-#, fuzzy
-#~ msgid "Replace Preset"
-#~ msgstr "Замяна на настройка:"
-
-#~ msgid "AC'"
-#~ msgstr "AC"

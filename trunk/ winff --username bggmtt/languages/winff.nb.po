@@ -185,6 +185,7 @@ msgstr "Merkelappet til forhåndsinnstillinga"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Kommandolinje til forhåndsinnstillinga (ingen -i eller utdata fil)"
 
+#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 #| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
@@ -195,7 +196,6 @@ msgid "Category"
 msgstr "Kategori"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
-#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #| msgid "Save"
 msgid "Save"
 msgstr "Lagre"
@@ -213,6 +213,7 @@ msgstr "Avbryt"
 msgid "Export Presets"
 msgstr "Eksporter forhåndsinnstillinger"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -224,7 +225,6 @@ msgid "Choose Presets to Export:"
 msgstr "Velg forhåndsinnstillinger å eksportere:"
 
 #: TFRMMAIN.AUDBITRATE.HINT
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -302,12 +302,6 @@ msgstr "Fjern"
 msgid "Remove selected file(s) from the list"
 msgstr "Fjern den velgte filen(e) fra lista"
 
-#: TFRMMAIN.CAPTION
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
@@ -331,6 +325,10 @@ msgstr "Flett av"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "Fjerns sammenfletting fra videoen (hvis nødvendig)"
 
+#: TFRMMAIN.CHECKBOX1.CAPTION
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
@@ -340,6 +338,10 @@ msgstr "..."
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Målet til endelig video (velg en annen mappe enn kildemappe)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
@@ -408,6 +410,11 @@ msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<heltall>) 256 = gjeldende lydstyrke, 128 = halvt lydstyrke, 512 = doppelt lydstyrke"
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
@@ -417,23 +424,23 @@ msgstr "Ekstra alternativer"
 msgid "Output Details"
 msgstr "Utdata detaljer"
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Konverter til:"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Lydkanaler"
 
 #: TFRMMAIN.LABEL11.CAPTION
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #| msgid "Output Folder"
 msgid "Output Folder:"
 msgstr "Utdatamappe:"
 
 #: TFRMMAIN.LABEL19.CAPTION
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Preset:"
 msgstr "Forhåndsinnstillinga:"
@@ -503,6 +510,7 @@ msgstr "Rutefrekvensen"
 msgid "Video Bitrate"
 msgstr "Videobitfrekvensen"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Video størelse"
@@ -512,7 +520,6 @@ msgid "-"
 msgstr "-"
 
 #: TFRMMAIN.MITABOUT.CAPTION
-#| msgctxt "REMOVED3"
 #| msgid "About"
 msgid "About"
 msgstr "Om WinFF"
@@ -543,6 +550,7 @@ msgstr "Importer forhåndsinnstillinger"
 msgid "Pause on Finish"
 msgstr "Pause hvis ferdig"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Spill lyd hvis ferdig"
@@ -552,7 +560,6 @@ msgid "Preferences"
 msgstr "Innstillingene"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Presets"
 msgstr "Forhåndsinnstillinger"
@@ -574,6 +581,7 @@ msgstr "WinFF nettstedet"
 msgid "Edit"
 msgstr "Rediger"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Fil"
@@ -583,11 +591,14 @@ msgid "Help"
 msgstr "Hjelp"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
-#| msgctxt "REMOVED6"
 #| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Alternativer"
+
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -613,6 +624,7 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Skjær"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr "Tid"
@@ -623,7 +635,6 @@ msgid "Video"
 msgstr "Video"
 
 #: TFRMMAIN.VIDBITRATE.HINT
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -731,6 +742,7 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Sti til FFmpeg programfila:"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
@@ -743,7 +755,6 @@ msgid "Terminal to run FFmpeg in:"
 msgstr "Terminal til å kjøre FFmpeg:"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #| msgid "Additional Options"
 msgid "Terminal Options:"
 msgstr "Terminal alternativer:"
@@ -904,18 +915,6 @@ msgstr "Du må oppgi et merkelapp."
 msgid "You must enter a name."
 msgstr "Du må oppgi et navn."
 
-#: unit4.rspriorityhigh
-msgid "High"
-msgstr "Høy"
-
-#: unit4.rspriorityidle
-msgid "Idle"
-msgstr "Tomgang"
-
-#: unit4.rsprioritynormal
-msgid "Normal"
-msgstr "Vanlig"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Alle kategorier)"
 #~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
@@ -956,4 +955,15 @@ msgstr "Vanlig"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "OK"
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Høy"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Tomgang"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Vanlig"
 
