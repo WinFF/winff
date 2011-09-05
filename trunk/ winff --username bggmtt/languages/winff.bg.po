@@ -312,6 +312,11 @@ msgstr ""
 msgid "Device or file type the video should be converted to"
 msgstr ""
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 pass"
@@ -326,10 +331,6 @@ msgstr "Deinterlace"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
 msgid "Removes interlacing from the video (if necessary)"
-msgstr ""
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
 msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
@@ -890,43 +891,6 @@ msgstr "Изберете файл с настройки"
 msgid "Select Video Files"
 msgstr "Изберете видео файлове"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Настройката съдържа непозволени символи"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Създаване на настройка:"
-
-#: unit2.rsimportpresets
-#, fuzzy
-msgid "Import Presets"
-msgstr "Внасяне на настройки"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Етикетът трябва да е уникален"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Премахване на настройка:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Обновяване на настройка:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Трябва да въведете разширение."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Трябва да въведете етикет."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Трябва да въведете име."
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Вс. Категории)"
 #~ msgid "Convert To ..."
@@ -972,6 +936,43 @@ msgstr "Трябва да въведете име."
 #~ msgstr "Замяна на настройка:"
 #~ msgid "AC'"
 #~ msgstr "AC"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Настройката съдържа непозволени символи"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Създаване на настройка:"
+
+#: unit2.rsimportpresets
+#, fuzzy
+msgid "Import Presets"
+msgstr "Внасяне на настройки"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Етикетът трябва да е уникален"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Премахване на настройка:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Обновяване на настройка:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Трябва да въведете разширение."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Трябва да въведете етикет."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Трябва да въведете име."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Висок"

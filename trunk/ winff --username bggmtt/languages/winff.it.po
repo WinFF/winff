@@ -177,6 +177,7 @@ msgstr "Importa"
 msgid "Category / Preset"
 msgstr "Crea profilo:"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -222,7 +223,6 @@ msgstr "Annulla"
 msgid "Export Presets"
 msgstr "Esporta profili"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -326,6 +326,11 @@ msgstr "rimuove i file selezioniati dall'elenco"
 msgid "Device or file type the video should be converted to"
 msgstr "nome del dispositivo o tipo di file in cui deve essere convertito il video"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 passaggi"
@@ -345,10 +350,6 @@ msgstr "Deinterallaccia"
 #| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "rimuove interlacciamento dal video (se necessario)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -400,11 +401,13 @@ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -445,14 +448,12 @@ msgstr "Opzioni avanzate"
 msgid "Output Details"
 msgstr "Dettagli output"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Converti"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Canali audio"
@@ -499,6 +500,7 @@ msgstr "Parametri aggiuntivi riga comando (Avanzate)"
 msgid "Audio Bitrate"
 msgstr "Bitrate audio"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Frequenza campionamento"
@@ -535,7 +537,7 @@ msgstr "Frame/sec"
 msgid "Video Bitrate"
 msgstr "Bitrate video"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Dimensione video"
@@ -570,6 +572,7 @@ msgstr "Esci"
 msgid "Forums"
 msgstr "Forum WinFF"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importa profilo"
@@ -578,7 +581,6 @@ msgstr "Importa profilo"
 msgid "Pause on Finish"
 msgstr "Pausa alla fine"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Riproduci suono alla fine della conversione"
@@ -610,7 +612,7 @@ msgstr "Sito web WinFF"
 msgid "Edit"
 msgstr "Modifica"
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "File"
@@ -657,7 +659,6 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Ritaglia"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -735,10 +736,12 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "Preferenze WinFF"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -786,7 +789,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Percorso programma FFmpeg"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -794,7 +796,6 @@ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Percorso programma FFplay"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.LABEL6.CAPTION
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
@@ -932,42 +933,6 @@ msgstr "Selezionare file profilo"
 msgid "Select Video Files"
 msgstr "Selezionare file video"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Il profilo contiene caratteri non validi"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Crea profilo:"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Importa profilo"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "La descrizione deve essere unica."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Elimina profilo:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Aggiorna profilo:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Inserire l'estensione."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Inserire la descrizione."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Inserire il nome."
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Tutte le categorie)"
 #~ msgid "Convert To ..."
@@ -1013,6 +978,42 @@ msgstr "Inserire il nome."
 #~ msgstr "Sostituisci profilo"
 #~ msgid "AC'"
 #~ msgstr "Canali audio"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Il profilo contiene caratteri non validi"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Crea profilo:"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importa profilo"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "La descrizione deve essere unica."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Elimina profilo:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Aggiorna profilo:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Inserire l'estensione."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Inserire la descrizione."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Inserire il nome."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"

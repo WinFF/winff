@@ -179,6 +179,7 @@ msgstr "Importera"
 msgid "Category / Preset"
 msgstr "Skapa förinställning"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -224,7 +225,6 @@ msgstr "Avbryt"
 msgid "Export Presets"
 msgstr "Exportera förinställningar"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -328,6 +328,11 @@ msgstr "ta bort de valda filerna från listan"
 msgid "Device or file type the video should be converted to"
 msgstr "namn på enhet eller filtyp som videon ska anpassas för"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 pass"
@@ -347,10 +352,6 @@ msgstr "Avfläta"
 #| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "avflätar videon (om det behövs)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -402,11 +403,13 @@ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -447,14 +450,12 @@ msgstr "Fler alternativ"
 msgid "Output Details"
 msgstr "Detaljer för utmatning"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Konvertera"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Ljudkanaler"
@@ -501,6 +502,7 @@ msgstr "Fler kommandoradsparametrar (Avancerad)"
 msgid "Audio Bitrate"
 msgstr "Bithastighet ljud"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Samplingshastighet"
@@ -537,7 +539,7 @@ msgstr "Bilder/sekund"
 msgid "Video Bitrate"
 msgstr "Bithastighet video"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Storlek på video"
@@ -572,6 +574,7 @@ msgstr "Avsluta"
 msgid "Forums"
 msgstr "WinFFs forum"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importera förinställningar"
@@ -580,7 +583,6 @@ msgstr "Importera förinställningar"
 msgid "Pause on Finish"
 msgstr "Pausa när konverteringen är klar"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Spela ljud när konverteringen är klar"
@@ -612,7 +614,7 @@ msgstr "WinFFs webbplats"
 msgid "Edit"
 msgstr "Redigera"
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Fil"
@@ -659,7 +661,6 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Beskär"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -737,10 +738,12 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "WinFF inställningar"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -788,7 +791,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Sökväg till programmet FFmpeg"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -796,7 +798,6 @@ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Sökväg till programmet FFPlay"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.LABEL6.CAPTION
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
@@ -934,42 +935,6 @@ msgstr "Välj förinställningsfil"
 msgid "Select Video Files"
 msgstr "Välj videofiler"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Förinställningen innehåller ogiltiga tecken"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Skapa förinställning"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Importera förinställningar"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Etiketten måste vara unik"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Ta bort förinställning:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Uppdatera förinställning:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Du måste ange tillägget"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Du måste ange en etikett"
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Du måste ange ett namn"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Alla kategorier)"
 #~ msgid "Convert To ..."
@@ -1013,6 +978,42 @@ msgstr "Du måste ange ett namn"
 #~ msgstr "Spara"
 #~ msgid "Replace Preset"
 #~ msgstr "Ersätt förinställning:"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Förinställningen innehåller ogiltiga tecken"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Skapa förinställning"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importera förinställningar"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Etiketten måste vara unik"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Ta bort förinställning:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Uppdatera förinställning:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Du måste ange tillägget"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Du måste ange en etikett"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Du måste ange ett namn"
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Hög"

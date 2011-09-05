@@ -255,6 +255,11 @@ msgstr ""
 msgid "Device or file type the video should be converted to"
 msgstr ""
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr ""
@@ -269,10 +274,6 @@ msgstr ""
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
 msgid "Removes interlacing from the video (if necessary)"
-msgstr ""
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
 msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION

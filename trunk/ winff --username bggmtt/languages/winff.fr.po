@@ -176,6 +176,7 @@ msgstr "Importer"
 msgid "Category / Preset"
 msgstr "Créer préréglage :"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -221,7 +222,6 @@ msgstr "Annuler"
 msgid "Export Presets"
 msgstr "Exporter préréglages"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -325,6 +325,11 @@ msgstr "enlève le(s) fichier(s) sélectionné(s) de la liste"
 msgid "Device or file type the video should be converted to"
 msgstr "nom de l'appareil ou type de fichier vers lequel la vidéo doit être convertie"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 passes"
@@ -344,10 +349,6 @@ msgstr "Désentrelacer"
 #| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "supprime l'entrelacement des images (si besoin)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -399,11 +400,13 @@ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -444,14 +447,12 @@ msgstr "Paramètres supplémentaires"
 msgid "Output Details"
 msgstr "Profil de sortie"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Convertir"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Canaux audio"
@@ -498,6 +499,7 @@ msgstr "Paramètres additionels de ligne de commande (expert)"
 msgid "Audio Bitrate"
 msgstr "Débit audio"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Fréquence"
@@ -534,7 +536,7 @@ msgstr "Images/sec."
 msgid "Video Bitrate"
 msgstr "Débit vidéo"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Taille de la vidéo"
@@ -569,6 +571,7 @@ msgstr "Quitter"
 msgid "Forums"
 msgstr "Forums de WinFF"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importer un préréglage"
@@ -577,7 +580,6 @@ msgstr "Importer un préréglage"
 msgid "Pause on Finish"
 msgstr "Mettre en veille à la fin"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Jouer un son à la fin"
@@ -609,7 +611,7 @@ msgstr "Site web de WinFF"
 msgid "Edit"
 msgstr "Editer"
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Fichier"
@@ -656,7 +658,6 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Recadrage"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -734,10 +735,12 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "Préférence de WinFF"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -785,7 +788,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Chemin vers l'exécutable de FFmpeg"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -793,7 +795,6 @@ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Chemin vers l'exécutable de FFPlay"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.LABEL6.CAPTION
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
@@ -931,42 +932,6 @@ msgstr "Sélectionner un fichier de préréglage"
 msgid "Select Video Files"
 msgstr "Sélectionner des fichiers vidéos"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Le préréglage contient des caractères illégaux"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Créer préréglage :"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Importer des préréglages"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Le label doit être unique."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Supprimer préréglage :"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Actualiser le préréglage :"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Vous devez spécifier l'extension."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Vous devez spécifier un label."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Vous devez spécifier un nom."
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Toutes catégories)"
 #~ msgid "Convert To ..."
@@ -1012,6 +977,42 @@ msgstr "Vous devez spécifier un nom."
 #~ msgstr "Remplacer préréglage"
 #~ msgid "AC'"
 #~ msgstr "Canal audio"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Le préréglage contient des caractères illégaux"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Créer préréglage :"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importer des préréglages"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Le label doit être unique."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Supprimer préréglage :"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Actualiser le préréglage :"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Vous devez spécifier l'extension."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Vous devez spécifier un label."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Vous devez spécifier un nom."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Haute"

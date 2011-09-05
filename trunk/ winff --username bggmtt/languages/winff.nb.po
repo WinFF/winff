@@ -144,6 +144,7 @@ msgstr "Et ord, bare bokstaver og tall"
 msgid "Enter a more descriptive name for this preset"
 msgstr "Gi et navn som beskriver denne forhåndsinnstillinga"
 
+#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.EDIT3.HINT
 #| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
@@ -171,6 +172,7 @@ msgstr "Importer"
 msgid "Category / Preset"
 msgstr "Kategori / forhåndsinnstillinga"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
@@ -185,7 +187,6 @@ msgstr "Merkelappet til forhåndsinnstillinga"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Kommandolinje til forhåndsinnstillinga (ingen -i eller utdata fil)"
 
-#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 #| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
@@ -213,7 +214,6 @@ msgstr "Avbryt"
 msgid "Export Presets"
 msgstr "Eksporter forhåndsinnstillinger"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -307,6 +307,11 @@ msgstr "Fjern den velgte filen(e) fra lista"
 msgid "Device or file type the video should be converted to"
 msgstr "Navnet til enheten eller filtypen som videoen skal konverteres til"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "To gjennomganger"
@@ -324,10 +329,6 @@ msgstr "Flett av"
 #| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "Fjerns sammenfletting fra videoen (hvis nødvendig)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -377,11 +378,13 @@ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr "<hh:mm:ss> - Søke til denne posisjon før konvertering starter"
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr "<hh:mm:ss> - Søke til denne posisjon før konvertering starter"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -424,13 +427,11 @@ msgstr "Ekstra alternativer"
 msgid "Output Details"
 msgstr "Utdata detaljer"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Konverter til:"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Lydkanaler"
@@ -474,6 +475,7 @@ msgstr "Tilleggsparametrene til kommandolinje"
 msgid "Audio Bitrate"
 msgstr "Lydbitfrekvensen"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Samplingsfrekvensen"
@@ -510,7 +512,7 @@ msgstr "Rutefrekvensen"
 msgid "Video Bitrate"
 msgstr "Videobitfrekvensen"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Video størelse"
@@ -542,6 +544,7 @@ msgstr "Avslutt"
 msgid "Forums"
 msgstr "Forumer"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importer forhåndsinnstillinger"
@@ -550,7 +553,6 @@ msgstr "Importer forhåndsinnstillinger"
 msgid "Pause on Finish"
 msgstr "Pause hvis ferdig"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Spill lyd hvis ferdig"
@@ -581,7 +583,7 @@ msgstr "WinFF nettstedet"
 msgid "Edit"
 msgstr "Rediger"
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Fil"
@@ -624,7 +626,6 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Skjær"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr "Tid"
@@ -697,6 +698,7 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr "..."
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "WinFF innstillinger"
@@ -742,7 +744,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Sti til FFmpeg programfila:"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
@@ -879,42 +880,6 @@ msgstr "Velg fila med forhåndsinnstilling"
 msgid "Select Video Files"
 msgstr "Velg videofiler"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Forhåndsinnstillinga inneholder ulovlig karakter"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Lag forhåndsinnstillinga:"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Importer forhåndsinnstillinger"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Merkelappet må være entydig."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Fjern forhåndsinnstillinga:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Oppdater forhåndsinnstillinga:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Du må oppgi etternavnet."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Du må oppgi et merkelapp."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Du må oppgi et navn."
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Alle kategorier)"
 #~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
@@ -955,6 +920,42 @@ msgstr "Du må oppgi et navn."
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "OK"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Forhåndsinnstillinga inneholder ulovlig karakter"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Lag forhåndsinnstillinga:"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importer forhåndsinnstillinger"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Merkelappet må være entydig."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Fjern forhåndsinnstillinga:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Oppdater forhåndsinnstillinga:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Du må oppgi etternavnet."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Du må oppgi et merkelapp."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Du må oppgi et navn."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Høy"

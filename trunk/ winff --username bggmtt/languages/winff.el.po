@@ -318,6 +318,11 @@ msgstr ""
 msgid "Device or file type the video should be converted to"
 msgstr ""
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 περάσματα"
@@ -332,10 +337,6 @@ msgstr "Απόπλεξη"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
 msgid "Removes interlacing from the video (if necessary)"
-msgstr ""
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
 msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
@@ -617,6 +618,7 @@ msgstr "Επιλογές"
 msgid "Panel15"
 msgstr ""
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
@@ -661,7 +663,6 @@ msgstr ""
 msgid "(<real> or <integer>) number of frames per second"
 msgstr ""
 
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
@@ -913,42 +914,6 @@ msgstr "Επιλογή Αρχείου Preset"
 msgid "Select Video Files"
 msgstr "Επιλογή Αρχείων Βίντεο"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Το Preset εμπεριέχει άκυρους χαρακτήρες"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Δημιμουργία Preset"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Εισαγωγή Presets"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Η ετικέτα πρέπει να είναι μοναδική"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Αφαίρεση Preset"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Αναβάθμιση Preset"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Πρέπει να προσθέσετε την κατάληξη"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Πρέπει να προσθέσετε ετικέτα"
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Πρέπει να προσθέσετε όνομα"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Όλες οι Κατηγορίες)"
 #~ msgid "Convert To ..."
@@ -999,6 +964,42 @@ msgstr "Πρέπει να προσθέσετε όνομα"
 #~ msgstr "Αποθήκευση"
 #~ msgid "Replace Preset"
 #~ msgstr "Αντικατάσταση Preset"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Το Preset εμπεριέχει άκυρους χαρακτήρες"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Δημιμουργία Preset"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Εισαγωγή Presets"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Η ετικέτα πρέπει να είναι μοναδική"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Αφαίρεση Preset"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Αναβάθμιση Preset"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Πρέπει να προσθέσετε την κατάληξη"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Πρέπει να προσθέσετε ετικέτα"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Πρέπει να προσθέσετε όνομα"
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Υψηλή"

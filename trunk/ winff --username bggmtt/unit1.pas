@@ -46,7 +46,7 @@ type
     cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
     btnClear: TBitBtn;
-    CheckBox1: TCheckBox;
+    cbOutputPath: TCheckBox;
     ChooseFolderBtn: TButton;
     commandlineparams: TEdit;
     DestFolder: TEdit;
@@ -160,6 +160,7 @@ type
     procedure btnPreviewClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
+    procedure cbOutputPathChange(Sender: TObject);
     procedure edtCropBottomChange(Sender: TObject);
     procedure edtCropLeftChange(Sender: TObject);
     procedure edtCropRightChange(Sender: TObject);
@@ -756,6 +757,16 @@ begin
   end;
   presetbox.sorted:=true;
   presetbox.sorted:=false;
+end;
+
+procedure TfrmMain.cbOutputPathChange(Sender: TObject);
+begin
+  // coded by Ian Stoffberg - Issue 125
+  // begin change
+  // if Use Source path is checked, the output folder is ignored
+  destfolder.Enabled := not(cbOutputPath.Checked);
+  application.processmessages;
+  // end Changed
 end;
 
 // cropbootom change
@@ -1561,13 +1572,26 @@ begin                                     // get setup
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
-       
+       // coded by Ian Stoffberg - Issue 125
+       // begin change
+       if cbOutputPath.checked = true then
+       begin
+         destfolder.text := extractfilepath(filename);
+       end;
+       // End Change
+
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
+
+       if lowercase((ExtractFileName(filename))) =  lowercase(basename + '.' + extension) then
+       begin
+               basename :=  'o_' + basename;
+       end;
 
        if cbx2Pass.Checked = false then
           begin
-           command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline + ' "' +
-                  destfolder.Text + DirectorySeparator + basename +'.' + extension+ '"';
+           command := ffmpegfilename + usethreads + ' -y -i "' + filename + '" ' + deinterlace + commandline + ' "' +
+                destfolder.Text + DirectorySeparator + basename +'.' + extension+ '"';
+
            script.Add(command);
           end
        else if cbx2Pass.Checked = true then

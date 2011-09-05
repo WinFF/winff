@@ -182,6 +182,7 @@ msgstr "استيراد"
 msgid "Category / Preset"
 msgstr "إنشاء نسبة"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -227,7 +228,6 @@ msgstr "إلغاء"
 msgid "Export Presets"
 msgstr "تصدير النسب"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -331,6 +331,11 @@ msgstr "إزالة الملفات المحددة من القائمة"
 msgid "Device or file type the video should be converted to"
 msgstr "اسم الجهاز أو نوع ملف الڤيديو ينبغي أن يحول إلى"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "التمرير المزدوج"
@@ -350,10 +355,6 @@ msgstr "فك التضفير"
 #| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "إزالة التضفير من الفيديو (عند الضرورة)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -405,11 +406,13 @@ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -450,14 +453,12 @@ msgstr "خيارات إضافية"
 msgid "Output Details"
 msgstr "تفاصيل الخرج"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "حول"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "قنوات الصوت"
@@ -504,6 +505,7 @@ msgstr "معاملات سطر أوامر إضافية (متقدم)"
 msgid "Audio Bitrate"
 msgstr "معدل البتات"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "معدل العينات"
@@ -540,7 +542,7 @@ msgstr "معدل الإطارات"
 msgid "Video Bitrate"
 msgstr "معدل البتات"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "حجم الفيديو"
@@ -575,6 +577,7 @@ msgstr "خروج"
 msgid "Forums"
 msgstr "منتدى WinFF"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "استيراد ملف"
@@ -583,7 +586,6 @@ msgstr "استيراد ملف"
 msgid "Pause on Finish"
 msgstr "إيقاف عند الانتهاء"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "تشغيل الصوت عند الانتهاء"
@@ -615,7 +617,7 @@ msgstr "موقع WinFF"
 msgid "Edit"
 msgstr "تحرير"
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "ملف"
@@ -662,7 +664,6 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "قصقصة الصورة"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -740,10 +741,12 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "تفضيلات WinFF"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -791,7 +794,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "المسار التنفيذي إلى FFmpeg "
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -799,7 +801,6 @@ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "المسار إلى FFPlay التنفيذي"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.LABEL6.CAPTION
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
@@ -937,42 +938,6 @@ msgstr "اختر ملف النسبة"
 msgid "Select Video Files"
 msgstr "اختر ملفات الفيديو"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "النسبة تحتوي على حروف غير صالحة"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "إنشاء نسبة"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "استيراد نسبة"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "الوسم لابد أن يكون فريدا"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "إزالة نسبة"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "تحديث النسبة"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "لابد من إدخال لاحقة"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "لابد من إدخال وسم "
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "إدخال الاسم"
-
 #~ msgid "(All Categories)"
 #~ msgstr "جميع التصنيفات"
 #~ msgid "Convert To ..."
@@ -1014,6 +979,42 @@ msgstr "إدخال الاسم"
 #~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
 #~ msgid "Save"
 #~ msgstr "حفظ"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "النسبة تحتوي على حروف غير صالحة"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "إنشاء نسبة"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "استيراد نسبة"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "الوسم لابد أن يكون فريدا"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "إزالة نسبة"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "تحديث النسبة"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "لابد من إدخال لاحقة"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "لابد من إدخال وسم "
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "إدخال الاسم"
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "عالي"
