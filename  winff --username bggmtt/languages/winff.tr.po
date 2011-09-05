@@ -180,6 +180,7 @@ msgstr "İçeri aktar"
 msgid "Category / Preset"
 msgstr "Ayar yarat:"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -225,7 +226,6 @@ msgstr "İptal"
 msgid "Export Presets"
 msgstr "Ayarları dışarı aktar"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -329,6 +329,11 @@ msgstr "seçilen dosyaları listeden çıkart"
 msgid "Device or file type the video should be converted to"
 msgstr "dönüştürülecek video için cihaz ismi ya da dosya tipi"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 tur"
@@ -348,10 +353,6 @@ msgstr "Ayrıştır"
 #| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "videodan halkalamayı kaldır (gerekliyse)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -403,11 +404,13 @@ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -448,14 +451,12 @@ msgstr "İlave seçenekler"
 msgid "Output Details"
 msgstr "Çıktı detayları"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Dönüştür"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Ses Kanalları"
@@ -502,6 +503,7 @@ msgstr "İlave komut satırı parametreleri (Gelişmiş)"
 msgid "Audio Bitrate"
 msgstr "Ses bit oranı"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Örnekleme oranı"
@@ -538,7 +540,7 @@ msgstr "Çerçeve oranı"
 msgid "Video Bitrate"
 msgstr "Video bit oranı"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Video boyutu"
@@ -573,6 +575,7 @@ msgstr "Çıkış"
 msgid "Forums"
 msgstr "WinFF Forumları"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Ayar yükle"
@@ -581,7 +584,6 @@ msgstr "Ayar yükle"
 msgid "Pause on Finish"
 msgstr "Bittiğinde durdur"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Bittiğinde sesi kes"
@@ -613,7 +615,7 @@ msgstr "WinFF Web sitesi"
 msgid "Edit"
 msgstr "Düzenle"
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Dosya"
@@ -660,7 +662,6 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Kes"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -738,10 +739,12 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "WinFF Tercihleri"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -789,7 +792,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "FFmpeg uygulaması için yol"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -797,7 +799,6 @@ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "FFPlay uygulaması için yol"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.LABEL6.CAPTION
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
@@ -935,42 +936,6 @@ msgstr "Ayar dosyası seç"
 msgid "Select Video Files"
 msgstr "Video dosyalarını seç"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Ayar dosyası geçersiz karakterler içeriyor"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Ayar yarat:"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Ayarları yükle"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Etiket eşsiz olmalı."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Ayar sil:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Ayarı güncelle:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Bir uzantı girmelisiniz"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Bir etiket girmelisiniz."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Bir isim girmelisiniz."
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Tüm kategoriler)"
 #~ msgid "Convert To ..."
@@ -1016,6 +981,42 @@ msgstr "Bir isim girmelisiniz."
 #~ msgstr "Ayarı değiştir"
 #~ msgid "AC'"
 #~ msgstr "AC'"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Ayar dosyası geçersiz karakterler içeriyor"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Ayar yarat:"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Ayarları yükle"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Etiket eşsiz olmalı."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Ayar sil:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Ayarı güncelle:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Bir uzantı girmelisiniz"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Bir etiket girmelisiniz."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Bir isim girmelisiniz."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Yüksek"

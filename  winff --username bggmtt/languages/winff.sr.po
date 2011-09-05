@@ -314,6 +314,11 @@ msgstr ""
 msgid "Device or file type the video should be converted to"
 msgstr ""
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 prolaza"
@@ -328,10 +333,6 @@ msgstr "Deinterlace"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
 msgid "Removes interlacing from the video (if necessary)"
-msgstr ""
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
 msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
@@ -904,43 +905,6 @@ msgstr "Selektuj preset fajl"
 msgid "Select Video Files"
 msgstr "Selektuj video fajlove"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Preset sadrži karaktere koji nisu dozvoljeni"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Kreiraj preset:"
-
-#: unit2.rsimportpresets
-#, fuzzy
-msgid "Import Presets"
-msgstr "Importuj preset"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Oznaka mora biti unikatna."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Obriši preset:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Ažuriraj preset:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Morate uneti ekstenziju."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Morate uneti oznaku."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Morate uneti ime."
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Sve kategorije)"
 #~ msgid "Convert To ..."
@@ -991,6 +955,43 @@ msgstr "Morate uneti ime."
 #~ msgstr "Ažuriraj preset:"
 #~ msgid "AC'"
 #~ msgstr "AC'"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Preset sadrži karaktere koji nisu dozvoljeni"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Kreiraj preset:"
+
+#: unit2.rsimportpresets
+#, fuzzy
+msgid "Import Presets"
+msgstr "Importuj preset"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Oznaka mora biti unikatna."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Obriši preset:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Ažuriraj preset:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Morate uneti ekstenziju."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Morate uneti oznaku."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Morate uneti ime."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Visoki"

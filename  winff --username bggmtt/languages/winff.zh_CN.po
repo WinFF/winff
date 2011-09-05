@@ -282,6 +282,11 @@ msgstr "从列表中移除所选文件"
 msgid "Device or file type the video should be converted to"
 msgstr "视频应转换为的设备或文件类型"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "两步编码"
@@ -297,10 +302,6 @@ msgstr "反交错"
 #: TFRMMAIN.CBXDEINTERLACE.HINT
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "从视频中移除交错 (如果需要)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"

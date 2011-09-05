@@ -147,6 +147,7 @@ msgstr ""
 msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
+#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.EDIT3.HINT
 #, fuzzy
 #| msgid "Preset Command Line (no -i or output file)"
@@ -176,6 +177,7 @@ msgstr "Importar"
 msgid "Category / Preset"
 msgstr "Crear preconfiguración:"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -192,7 +194,6 @@ msgstr "Etiqueta predefinida"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Liña de ordes predefinida (sen -i ou ficheiro de saída)"
 
-#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Output File Extension (no \".\")"
@@ -222,7 +223,6 @@ msgstr "Cancelar"
 msgid "Export Presets"
 msgstr "Exportar preconfiguracións"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -326,6 +326,11 @@ msgstr "Sacar o(s) ficheiro(s) seleccionado(s) da lista"
 msgid "Device or file type the video should be converted to"
 msgstr "Nome do dispositivo ou tipo de ficheiro para converter a"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 pasadas"
@@ -345,10 +350,6 @@ msgstr "Desentrelazar"
 #| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "Sacar o entrelazado do vídeo (de ser necesario)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -400,11 +401,13 @@ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -453,14 +456,12 @@ msgstr "Opcións adicionais"
 msgid "Output Details"
 msgstr "Detalles da saída"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Converter"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Canles de son"
@@ -507,6 +508,7 @@ msgstr "Parámetros adicionais en liña de ordes (avanzado)"
 msgid "Audio Bitrate"
 msgstr "Bits/s. son"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Taxa de mostraxe"
@@ -543,7 +545,7 @@ msgstr "Fotogramas/s."
 msgid "Video Bitrate"
 msgstr "Bits/s. vídeo"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Tamaño(HxV)"
@@ -578,6 +580,7 @@ msgstr "Saír"
 msgid "Forums"
 msgstr "Foros de WinFF"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importar preconfiguración"
@@ -586,7 +589,6 @@ msgstr "Importar preconfiguración"
 msgid "Pause on Finish"
 msgstr "Pausa ao rematar"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Pausa ao rematar"
@@ -618,7 +620,7 @@ msgstr "Web de WinFF"
 msgid "Edit"
 msgstr "Editar"
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Ficheiro"
@@ -665,7 +667,6 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Recortar"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -743,6 +744,7 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "Preferencias de WinFF"
@@ -794,7 +796,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Ruta ao executable FFmpeg"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -937,42 +938,6 @@ msgstr "Elixir ficheiro de preconfiguración"
 msgid "Select Video Files"
 msgstr "Elixir ficheiros de vídeo"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "A preconfiguración conten caracteres incorrectos"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Crear preconfiguración:"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Importar preconfiguracións"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "A etiqueta ten que ser única"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Eliminar preconfiguración:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Actualizar preconfiguración:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Debe introducir unha extensión"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Debe introducir unha etiqueta"
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Debe introducir un nome"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Todas as categorias)"
 #~ msgid "<hh:mm:ss> - Begin recording at start time"
@@ -1018,6 +983,42 @@ msgstr "Debe introducir un nome"
 #~ msgstr "Gardar"
 #~ msgid "Replace Preset"
 #~ msgstr "Substituir preconfiguración"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "A preconfiguración conten caracteres incorrectos"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Crear preconfiguración:"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importar preconfiguracións"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "A etiqueta ten que ser única"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Eliminar preconfiguración:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Actualizar preconfiguración:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Debe introducir unha extensión"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Debe introducir unha etiqueta"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Debe introducir un nome"
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"

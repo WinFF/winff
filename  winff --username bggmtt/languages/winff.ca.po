@@ -177,6 +177,7 @@ msgstr "Importa"
 msgid "Category / Preset"
 msgstr "Crea una nova configuració:"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -222,7 +223,6 @@ msgstr "Cancel·la"
 msgid "Export Presets"
 msgstr "Exporta la configuració"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -326,6 +326,11 @@ msgstr "esborra de la llista els arxius seleccionats"
 msgid "Device or file type the video should be converted to"
 msgstr "El nom del dispositiu o el tipus d'arxiu de vídeo hauria de ser convertir a"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 passes"
@@ -345,10 +350,6 @@ msgstr "Desenllaça"
 #| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "Treu l'entrellaçat del vídeo (si escau)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -400,11 +401,13 @@ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -445,14 +448,12 @@ msgstr "Opcions addicionals"
 msgid "Output Details"
 msgstr "detalls de la sortida"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Converteix"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Canals d'àudio"
@@ -499,6 +500,7 @@ msgstr "Configuració sota la línia d'ordres (avançat)"
 msgid "Audio Bitrate"
 msgstr "Ràtio de l'àudio"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Freqüència del mostreig"
@@ -535,7 +537,7 @@ msgstr "Fotogrames"
 msgid "Video Bitrate"
 msgstr "Ràtio del vídeo"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Mida del vídeo"
@@ -570,6 +572,7 @@ msgstr "Surt"
 msgid "Forums"
 msgstr "Fòrums de WinFF"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importa una configuració"
@@ -578,7 +581,6 @@ msgstr "Importa una configuració"
 msgid "Pause on Finish"
 msgstr "Pausa en finalitzar"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Reprodueix un só en finalitzar"
@@ -610,7 +612,7 @@ msgstr "Web de WinFF"
 msgid "Edit"
 msgstr "Edita"
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Arxiu"
@@ -657,7 +659,6 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Retalla"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -735,10 +736,12 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "Preferències de WinFF"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -786,7 +789,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Ruta fins a FFmpeg"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -794,7 +796,6 @@ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Ruta fins a FFplay"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.LABEL6.CAPTION
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
@@ -932,42 +933,6 @@ msgstr "Trieu l'arxiu de configuracions"
 msgid "Select Video Files"
 msgstr "Trieu els arxius de vídeo"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "L'arxiu de configuració conté caràcters invàlids!"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Crea una nova configuració:"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Importa una configuració"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "L'etiqueta ha de ser única."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Esbora la configuració:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Actualitza la configuració:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Heu d'inserir una extensió."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Heu d'inserir una etiqueta."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Heu d'inserir un nom."
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Totes les categories)"
 #~ msgid "Convert To ..."
@@ -1013,6 +978,42 @@ msgstr "Heu d'inserir un nom."
 #~ msgstr "Reemplaça la configuració"
 #~ msgid "AC'"
 #~ msgstr "Canales de audio"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "L'arxiu de configuració conté caràcters invàlids!"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Crea una nova configuració:"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importa una configuració"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "L'etiqueta ha de ser única."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Esbora la configuració:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Actualitza la configuració:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Heu d'inserir una extensió."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Heu d'inserir una etiqueta."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Heu d'inserir un nom."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"

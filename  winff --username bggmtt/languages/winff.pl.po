@@ -182,6 +182,7 @@ msgstr "Import"
 msgid "Category / Preset"
 msgstr "Stwórz szablon:"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -227,7 +228,6 @@ msgstr "Anuluj"
 msgid "Export Presets"
 msgstr "Eksportuj szablony"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -331,6 +331,11 @@ msgstr "usuwa zaznaczne pliki z listy"
 msgid "Device or file type the video should be converted to"
 msgstr "nazwa docelowego urządzenia lub typ docelowego pliku wideo"
 
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source"
+msgstr ""
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 przejścia"
@@ -350,10 +355,6 @@ msgstr "Usuń przeplot"
 #| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "usuń przeplot z pliku wideo (jeśli to konieczne)"
-
-#: TFRMMAIN.CHECKBOX1.CAPTION
-msgid "Use Source"
-msgstr ""
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -405,11 +406,13 @@ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -450,14 +453,12 @@ msgstr "Dodatkowe opcje"
 msgid "Output Details"
 msgstr "Szczegóły wyjścia"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "Konwertuj"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Kanały dźwięku"
@@ -504,6 +505,7 @@ msgstr "Parametry wiersza poleceń (zaawansowane)"
 msgid "Audio Bitrate"
 msgstr "Przepływowość"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Próbkowanie"
@@ -540,7 +542,7 @@ msgstr "Klatek na sek."
 msgid "Video Bitrate"
 msgstr "Przepływowość"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Rozdzielczość"
@@ -575,6 +577,7 @@ msgstr "Zakończ"
 msgid "Forums"
 msgstr "Forum WinFF"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importuj szablony"
@@ -583,7 +586,6 @@ msgstr "Importuj szablony"
 msgid "Pause on Finish"
 msgstr "Pauza po zakończeniu"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Sygnał dźwiękowy po zakończeniu"
@@ -615,7 +617,7 @@ msgstr "Strona domowa WinFF"
 msgid "Edit"
 msgstr "Edycja"
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Plik"
@@ -662,7 +664,6 @@ msgstr "FFmpeg"
 msgid "Crop"
 msgstr "Przytnij"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
 msgstr ""
@@ -740,10 +741,12 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "Ustawienia WinFF"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -791,7 +794,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Ścieżka do programu FFmpeg"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
@@ -799,7 +801,6 @@ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Ścieżka do programu FFPlay"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.LABEL6.CAPTION
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
@@ -937,42 +938,6 @@ msgstr "Wybierz plik z szablonami"
 msgid "Select Video Files"
 msgstr "Wybierz plik wideo"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Szablon zawiera niedozwolone znaki"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Stwórz szablon:"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Importuj szablony"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Opis musi byc unikalny."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Usuń szablon:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Zmień szablon:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Podaj rozszerzenie pliku"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Podaj opis szablonu"
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Podaj nazwę szablonu"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Wszystkie kategorie)"
 #~ msgid "Convert To ..."
@@ -1018,6 +983,42 @@ msgstr "Podaj nazwę szablonu"
 #~ msgstr "Zmień szablony"
 #~ msgid "AC'"
 #~ msgstr "Kanały audio"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Szablon zawiera niedozwolone znaki"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Stwórz szablon:"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importuj szablony"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Opis musi byc unikalny."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Usuń szablon:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Zmień szablon:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Podaj rozszerzenie pliku"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Podaj opis szablonu"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Podaj nazwę szablonu"
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Wysoki"

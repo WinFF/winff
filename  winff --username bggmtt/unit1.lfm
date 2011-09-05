@@ -510,12 +510,13 @@ object frmMain: TfrmMain
             ClientHeight = 27
             ClientWidth = 85
             TabOrder = 1
-            object CheckBox1: TCheckBox
+            object cbOutputPath: TCheckBox
               Left = 8
               Height = 19
               Top = 4
               Width = 78
               Caption = 'Use Source'
+              OnChange = cbOutputPathChange
               TabOrder = 0
             end
           end
@@ -1213,22 +1214,22 @@ object frmMain: TfrmMain
         Top = 0
         Width = 456
         Align = alClient
-        PageIndex = 1
+        PageIndex = 3
         TabOrder = 0
         object tabVideoSettings: TPage
           Caption = 'Video'
           ClientWidth = 448
-          ClientHeight = 117
+          ClientHeight = 94
           object Panel2: TPanel
             Left = 5
-            Height = 117
+            Height = 94
             Top = 0
             Width = 100
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 5
             BevelOuter = bvNone
-            ClientHeight = 117
+            ClientHeight = 94
             ClientWidth = 100
             Constraints.MinWidth = 100
             TabOrder = 0
@@ -1283,14 +1284,14 @@ object frmMain: TfrmMain
           end
           object Panel5: TPanel
             Left = 115
-            Height = 117
+            Height = 94
             Top = 0
             Width = 100
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 117
+            ClientHeight = 94
             ClientWidth = 100
             Constraints.MinWidth = 100
             TabOrder = 1
@@ -1344,14 +1345,14 @@ object frmMain: TfrmMain
           end
           object Panel6: TPanel
             Left = 225
-            Height = 117
+            Height = 94
             Top = 0
             Width = 100
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 117
+            ClientHeight = 94
             ClientWidth = 100
             Constraints.MinWidth = 100
             TabOrder = 2
@@ -1420,14 +1421,14 @@ object frmMain: TfrmMain
           end
           object Panel7: TPanel
             Left = 335
-            Height = 117
+            Height = 94
             Top = 0
             Width = 100
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 117
+            ClientHeight = 94
             ClientWidth = 100
             Constraints.MinWidth = 100
             TabOrder = 3
@@ -1890,16 +1891,16 @@ object frmMain: TfrmMain
         object tabPageTime: TPage
           Caption = 'Time'
           ClientWidth = 448
-          ClientHeight = 117
+          ClientHeight = 94
           object Panel9: TPanel
             Left = 0
-            Height = 117
+            Height = 94
             Top = 0
             Width = 122
             Align = alLeft
             AutoSize = True
             BevelOuter = bvNone
-            ClientHeight = 117
+            ClientHeight = 94
             ClientWidth = 122
             Constraints.MinWidth = 100
             TabOrder = 0
@@ -1938,13 +1939,13 @@ object frmMain: TfrmMain
           object Panel10: TPanel
             AnchorSideLeft.Control = Panel9
             Left = 122
-            Height = 117
+            Height = 94
             Top = 0
             Width = 142
             Align = alLeft
             AutoSize = True
             BevelOuter = bvNone
-            ClientHeight = 117
+            ClientHeight = 94
             ClientWidth = 142
             Constraints.MinWidth = 100
             TabOrder = 1
