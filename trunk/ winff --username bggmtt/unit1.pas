@@ -29,7 +29,7 @@ uses
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
   {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, MaskEdit, Spin,
-  PoTranslator, types;
+  PoTranslator, types,FileUtil;
 
 type
 
@@ -88,6 +88,8 @@ type
     lblFrameRate: TLabel;
     lblVideoBitRate: TLabel;
     lblVideoSize: TLabel;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
 //    mitPlaySoundonFinish: TMenuItem;
     mitDisplayCmdline: TMenuItem;
     dlgOpenFile: TOpenDialog;
@@ -117,6 +119,7 @@ type
     Panel7: TPanel;
     Panel8: TPanel;
     Panel9: TPanel;
+    PopupMenu1: TPopupMenu;
     PresetBox: TComboBox;
     StatusBar1: TStatusBar;
     pnlTop: TPanel;
@@ -167,11 +170,17 @@ type
     procedure edtCropTopChange(Sender: TObject);
     procedure edtSeekMMChange(Sender: TObject);
     procedure filelistClick(Sender: TObject);
+    procedure filelistContextPopup(Sender: TObject; MousePos: TPoint;
+      var Handled: Boolean);
     procedure filelistDrawItem(Control: TWinControl; Index: Integer;
       ARect: TRect; State: TOwnerDrawState);
     procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure filelistMeasureItem(Control: TWinControl; Index: Integer;
       var AHeight: Integer);
+    procedure filelistMouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
+    procedure filelistShowHint(Sender: TObject; HintInfo: PHintInfo);
+    procedure FormDestroy(Sender: TObject);
     procedure Label11Click(Sender: TObject);
     procedure LaunchBrowser(URL:string);
     procedure LaunchPdf(pdffile:string);
@@ -181,6 +190,7 @@ type
     procedure btnClearClick(Sender: TObject);
     procedure lblCropRight1Click(Sender: TObject);
     procedure edtSeekHHChange(Sender: TObject);
+    procedure MenuItem1Click(Sender: TObject);
     procedure mitDisplayCmdlineClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -201,6 +211,7 @@ type
     function GetDeskTopPath() : string;
     function GetMydocumentsPath() : string ;
     procedure Panel14Click(Sender: TObject);
+    procedure PopupMenu1Popup(Sender: TObject);
     procedure PresetBoxChange(Sender: TObject);
     procedure SelectDirectoryDialog1FolderChange(Sender: TObject);
     procedure setconfigvalue(key:string;value:string);
@@ -250,7 +261,8 @@ const
 
 
 var
-  JobList,PresetList,CategoryList,DestinationList :TstringList;
+  JobList,PresetList,CategoryList,DestinationList,FileInfoList :TstringList;
+  fOldIndex: integer = -1; // used for dynamic hint on the filelist.
 
   frmMain: TfrmMain;
   {$IFDEF WIN32}
@@ -322,6 +334,7 @@ begin
    CategoryList := tstringlist.Create;
    PresetList := tstringlist.Create;
    DestinationList := tstringlist.Create;
+   FileInfoList := tstringlist.Create;
 
    ExtrasPath:= ExtractFilePath(ParamStr(0));
 
@@ -848,6 +861,11 @@ begin
 
 end;
 
+procedure TfrmMain.filelistContextPopup(Sender: TObject; MousePos: TPoint;
+  var Handled: Boolean);
+begin
+end;
+
 procedure TfrmMain.filelistDrawItem(Control: TWinControl; Index: Integer;
   ARect: TRect; State: TOwnerDrawState);
 begin
@@ -869,8 +887,8 @@ end;
 // preview button clicked
 procedure TfrmMain.btnPreviewClick(Sender: TObject);
 begin
-preview := true;
-btnConvertClick(Self);
+  preview := true;
+  btnConvertClick(Self);
 end;
 
 // change preset
@@ -889,8 +907,6 @@ end;
 
 procedure TfrmMain.SelectDirectoryDialog1FolderChange(Sender: TObject);
 begin
-  //
- sleep(100);
 end;
 
 
@@ -1006,11 +1022,12 @@ begin                                     // get setup
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
-       destfolder.text := extractfilepath(filename);
+       //destfolder.text := extractfilepath(filename);
         command := ffmpegfilename +  '  -i "' + filename + '" 2>' + presetspath + 'output.txt';
 
         script.Add(command);
-                                           // remove batch file on completion
+
+        // remove batch file on completion
    {$ifdef win32}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
    {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
 
@@ -1127,6 +1144,17 @@ begin
 
 end;
 
+procedure TfrmMain.PopupMenu1Popup(Sender: TObject);
+begin
+    if filelist.selcount > 0 then
+    begin
+      PopupMenu1.Items.Enabled:=True;
+    end else
+    begin
+      PopupMenu1.Items.Enabled:=False;
+    end;
+end;
+
 {$endif}
 {$ifdef unix}
 begin
@@ -1231,6 +1259,7 @@ for i:= 0 to numfiles do
    CategoryList.add(categorybox.Text);
    PresetList.add(PresetBox.Text);
    JobList.add(t);
+   FileInfoList.add(u);
 end;
 
 // add files to the list
@@ -1260,9 +1289,11 @@ begin
             t := GetFileInfo(u);
             filelist.items.Add(s);
             JobList.add(t);
+            FileInfoList.add(u);
           end;
           //filelist.items.AddStrings(dlgOpenFile.Files);
       end;
+   sleep(1000);
 end;
 
 // remove a file from the list
@@ -1271,7 +1302,7 @@ var
 i: integer;
 begin
 
-{
+
 i:=0;
   while i< filelist.Items.Count do
     if filelist.Selected[i] then
@@ -1281,16 +1312,12 @@ i:=0;
         categorylist.Delete(i);
         presetlist.Delete(i);
         destinationlist.Delete(i);
+        fileinfolist.Delete(i);
       end
     else
        i+=1;
-}
- showmessage( 'Presets ' + IntToStr (PresetList.Count));
- showmessage( 'Categories ' + IntToStr (CategoryList.Count));
- showmessage( 'Destinations ' + IntToStr (DestinationList.Count));
- showmessage( 'Jobs ' + IntToStr (JobList.Count));
 
- end;
+end;
 
 // clear the file list
 procedure TfrmMain.btnClearClick(Sender: TObject);
@@ -1301,6 +1328,7 @@ begin
   presetlist.clear;
   categorylist.clear;
   joblist.clear;
+  fileinfolist.Clear;
 end;
 
 procedure TfrmMain.lblCropRight1Click(Sender: TObject);
@@ -1311,6 +1339,19 @@ end;
 procedure TfrmMain.edtSeekHHChange(Sender: TObject);
 begin
 
+end;
+
+procedure TfrmMain.MenuItem1Click(Sender: TObject);
+var i : integer;
+begin
+     for i := 0 to filelist.Count -1 do
+       begin
+         if filelist.Selected[i] = true then
+           begin
+                CategoryList.Strings[i] := categorybox.Text;
+                PresetList.Strings[i] := PresetBox.Text;
+           end;
+       end;
 end;
 
 // filelist on key up
@@ -1331,6 +1372,7 @@ begin
           CategoryList.delete(i);
           DestinationList.delete(i);
           PresetList.delete(i);
+          fileinfolist.Delete(i);
      end
     else
        i+=1;
@@ -1342,6 +1384,44 @@ procedure TfrmMain.filelistMeasureItem(Control: TWinControl; Index: Integer;
   var AHeight: Integer);
 begin
     AHeight := (Index+1)*28;
+end;
+
+procedure TfrmMain.filelistMouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+var lstIndex : Integer ;
+begin
+
+ begin
+   with filelist do
+   begin
+    lstIndex:=SendMessage(Handle, LB_ITEMFROMPOINT, 0, MakeLParam(x,y)) ;
+
+    // this should do the trick..
+    if fOldIndex <> lstIndex then
+      Application.CancelHint;
+    fOldIndex := lstIndex;
+
+    if (lstIndex >= 0) and (lstIndex <= Items.Count) then
+      Hint := FileInfoList.Strings[lstIndex]
+    else
+      Hint := ''
+    end;
+ end;
+
+end;
+
+procedure TfrmMain.filelistShowHint(Sender: TObject; HintInfo: PHintInfo);
+begin
+
+end;
+
+procedure TfrmMain.FormDestroy(Sender: TObject);
+begin
+   JobList.Free;
+   CategoryList.Free;
+   PresetList.Free;
+   DestinationList.Free;
+   FileInfoList.Free;
 end;
 
 procedure TfrmMain.Label11Click(Sender: TObject);
@@ -1411,8 +1491,15 @@ end;
 
 // menu: about
 procedure TfrmMain.MenuItem2Click(Sender: TObject);
+var i : integer;
 begin
-  frmAbout.show;
+     for i := 0 to filelist.Count -1 do
+       begin
+         if filelist.Selected[i] = true then
+           begin
+                DestinationList.Strings[i] := DestFolder.Text;
+           end;
+       end;
 end;
 
 // menu: exit the program
@@ -1813,6 +1900,10 @@ begin                                     // get setup
        begin
          destfolder.text := DestinationList.Strings[i];
        end;
+       if RightStr(destfolder.text,1) = DirectorySeparator then // trim extra \'s
+        begin
+          destfolder.text := copy(DestFolder.text,1,length(DestFolder.text) -1);
+        end;
        // End Change
 
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
@@ -2103,7 +2194,8 @@ begin
   ts := tmemo.Create(self);
   ts.Lines.Clear;
   launchffmpeginfo(filedetails);
-  ts.lines.LoadFromFile(presetspath + 'output.txt');
+  t := presetspath + 'output.txt';
+  ts.lines.LoadFromFile(t);
   result := '';
   fileDetails := '';
   for i := 0 to ts.lines.count -1 do
@@ -2118,6 +2210,10 @@ begin
            fileDetails := fileDetails + '  ' + s;
         end;
     end;
+  try
+    DeleteFileUTF8(t);
+  except
+  end;
   ts.free;
 
 end;

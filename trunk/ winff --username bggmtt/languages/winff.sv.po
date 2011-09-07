@@ -147,10 +147,12 @@ msgstr "Radera"
 msgid "One word, only letters and numbers"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMEDITPRESETS.EDIT2.HINT
 msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEDITPRESETS.EDIT3.HINT
 #, fuzzy
 #| msgid "Preset Command Line (no -i or output file)"
@@ -216,13 +218,11 @@ msgstr "Spara"
 msgid "pnlTop"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "Avbryt"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
 msgstr "Exportera förinställningar"
@@ -249,6 +249,7 @@ msgstr "(<heltal>kb) hur många kilobit/sekund som strömmen får använda"
 msgid "(<integer>) number of audio channels"
 msgstr "(<heltal>) antal ljudkanaler"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.AUDSAMPLINGRATE.HINT
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<heltal>) samplingsfrekvens för ljudet (i Hertz)"
@@ -294,6 +295,7 @@ msgstr "Alternativ"
 msgid "Open/close the additional options window"
 msgstr "Öppna eller stäng fönstret med fler inställningsalternativ"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
 msgstr "Spela upp"
@@ -318,7 +320,6 @@ msgstr "förhandsvisa med valda inställningar för utdata"
 msgid "Remove"
 msgstr "Ta bort"
 
-#| msgctxt "REMOVED3"
 #: TFRMMAIN.BTNREMOVE.HINT
 #, fuzzy
 #| msgid "remove the selected file(s) from the list"
@@ -331,6 +332,7 @@ msgstr "ta bort de valda filerna från listan"
 msgid "Device or file type the video should be converted to"
 msgstr "namn på enhet eller filtyp som videon ska anpassas för"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source"
@@ -367,7 +369,6 @@ msgstr ""
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "målkatalog för den konverterade videofilen (välj en annan katalog än källkatalogen)"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.DLGOPENFILE.TITLE
 msgid "Select Video Files..."
 msgstr ""
@@ -378,6 +379,7 @@ msgstr ""
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr "(<heltal>:<heltal> eller <decimaltal>) det fysiska höjd/bredd-förhållandet på målenhetens display."
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
 msgstr ""
@@ -402,7 +404,6 @@ msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
 msgstr ""
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -449,7 +450,6 @@ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "Fler alternativ"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
 msgstr "Detaljer för utmatning"
@@ -492,10 +492,12 @@ msgstr ""
 msgid "Time to Record"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.LABEL24.CAPTION
 msgid "Hours / Minutes / Seconds"
 msgstr ""
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.LABEL3.CAPTION
 #, fuzzy
 #| msgid "Additional Command Line Parameters (Advanced)"
@@ -546,18 +548,24 @@ msgstr "Bithastighet video"
 msgid "Video Size"
 msgstr "Storlek på video"
 
+#: TFRMMAIN.MENUITEM1.CAPTION
+msgid "Apply Preset"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgid "Apply Destination Folder"
+msgstr ""
+
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.MITABOUT.CAPTION
 #, fuzzy
 #| msgid "About"
 msgid "About"
 msgstr "Om"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
 #, fuzzy
 #| msgid "Display CMD Line"
@@ -686,6 +694,49 @@ msgstr "(<heltal>kb) hur många kilobit/sekund som strömmen får använda"
 msgid "(<real> or <integer>) number of frames per second"
 msgstr "(<decimaltal> eller <heltal>) antal bilder per sekund"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Alla kategorier)"
+#~ msgid "Convert To ..."
+#~ msgstr "Konvertera till ..."
+#~ msgid "Device Preset"
+#~ msgstr "Formatalternativ"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Målkatalog"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Om"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Alternativ"
+#~ msgid "Video Settings"
+#~ msgstr "Videoinställningar"
+#~ msgid "Audio Settings"
+#~ msgstr "Ljudinställningar"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Förinställningar för konvertering"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading för Dual Core-processorer"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Sökväg till FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Sökväg till FFplay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Konverterar"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Spara"
+#~ msgid "Replace Preset"
+#~ msgstr "Ersätt förinställning:"
 #: TFRMMAIN.VIDSIZEX.HINT
 #, fuzzy
 #| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
@@ -758,49 +809,6 @@ msgstr "Använd CHCP för internationella tecken"
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Alla kategorier)"
-#~ msgid "Convert To ..."
-#~ msgstr "Konvertera till ..."
-#~ msgid "Device Preset"
-#~ msgstr "Formatalternativ"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Målkatalog"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Om"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Alternativ"
-#~ msgid "Video Settings"
-#~ msgstr "Videoinställningar"
-#~ msgid "Audio Settings"
-#~ msgstr "Ljudinställningar"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Förinställningar för konvertering"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading för Dual Core-processorer"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Sökväg till FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Sökväg till FFplay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Konverterar"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Spara"
-#~ msgid "Replace Preset"
-#~ msgstr "Ersätt förinställning:"
 #: TFRMPREFERENCES.EDIT7.HINT
 #, fuzzy
 #| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"

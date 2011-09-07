@@ -318,6 +318,7 @@ object frmMain: TfrmMain
   Menu = MainMenu1
   OnClose = FormClose
   OnCreate = FormCreate
+  OnDestroy = FormDestroy
   OnDropFiles = FormDropFiles
   Position = poDefault
   LCLVersion = '0.9.30'
@@ -351,10 +352,16 @@ object frmMain: TfrmMain
       ItemHeight = 36
       MultiSelect = True
       OnClick = filelistClick
+      OnContextPopup = filelistContextPopup
       OnDblClick = btnPlayClick
       OnDrawItem = filelistDrawItem
       OnKeyUp = filelistKeyUp
       OnMeasureItem = filelistMeasureItem
+      OnMouseMove = filelistMouseMove
+      OnShowHint = filelistShowHint
+      ParentShowHint = False
+      PopupMenu = PopupMenu1
+      ShowHint = True
       Style = lbOwnerDrawFixed
       TabOrder = 0
     end
@@ -2194,5 +2201,18 @@ object frmMain: TfrmMain
     Filter = '.wff'
     left = 584
     top = 8
+  end
+  object PopupMenu1: TPopupMenu
+    OnPopup = PopupMenu1Popup
+    left = 310
+    top = 139
+    object MenuItem1: TMenuItem
+      Caption = 'Apply Preset'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Apply Destination Folder'
+      OnClick = MenuItem2Click
+    end
   end
 end

@@ -148,10 +148,12 @@ msgstr "Sil"
 msgid "One word, only letters and numbers"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMEDITPRESETS.EDIT2.HINT
 msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEDITPRESETS.EDIT3.HINT
 #, fuzzy
 #| msgid "Preset Command Line (no -i or output file)"
@@ -217,13 +219,11 @@ msgstr "Kaydet"
 msgid "pnlTop"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "İptal"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
 msgstr "Ayarları dışarı aktar"
@@ -250,6 +250,7 @@ msgstr "(<integer>kb) Akışın kullanacağı hedef kilobits/second değeri"
 msgid "(<integer>) number of audio channels"
 msgstr "(<integer>) ses kanalı sayısı"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.AUDSAMPLINGRATE.HINT
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<integer>) Hertz cinsinden ses frekansı"
@@ -295,6 +296,7 @@ msgstr "Ayarlar"
 msgid "Open/close the additional options window"
 msgstr "ek ayarlar penceresini aç ya da kapat"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
 msgstr "Çal"
@@ -319,7 +321,6 @@ msgstr "çıktı ayarları ile önizleme"
 msgid "Remove"
 msgstr "Çıkart"
 
-#| msgctxt "REMOVED3"
 #: TFRMMAIN.BTNREMOVE.HINT
 #, fuzzy
 #| msgid "remove the selected file(s) from the list"
@@ -332,6 +333,7 @@ msgstr "seçilen dosyaları listeden çıkart"
 msgid "Device or file type the video should be converted to"
 msgstr "dönüştürülecek video için cihaz ismi ya da dosya tipi"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source"
@@ -368,7 +370,6 @@ msgstr ""
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "videonun son halinin saklanacağı hedef klasör (kaynak klasörden faklı bir klasör seçin)"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.DLGOPENFILE.TITLE
 msgid "Select Video Files..."
 msgstr ""
@@ -379,6 +380,7 @@ msgstr ""
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr "(<integer:integer> ya da <real>) olarak hedef oynatıcı için fiziksel görüntü oranı (DAR)"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
 msgstr ""
@@ -403,7 +405,6 @@ msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
 msgstr ""
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -450,7 +451,6 @@ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "İlave seçenekler"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
 msgstr "Çıktı detayları"
@@ -493,10 +493,12 @@ msgstr ""
 msgid "Time to Record"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.LABEL24.CAPTION
 msgid "Hours / Minutes / Seconds"
 msgstr ""
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.LABEL3.CAPTION
 #, fuzzy
 #| msgid "Additional Command Line Parameters (Advanced)"
@@ -547,18 +549,24 @@ msgstr "Video bit oranı"
 msgid "Video Size"
 msgstr "Video boyutu"
 
+#: TFRMMAIN.MENUITEM1.CAPTION
+msgid "Apply Preset"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgid "Apply Destination Folder"
+msgstr ""
+
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.MITABOUT.CAPTION
 #, fuzzy
 #| msgid "About"
 msgid "About"
 msgstr "Hakkında"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
 #, fuzzy
 #| msgid "Display CMD Line"
@@ -687,6 +695,51 @@ msgstr "(<integer>kb) akışın kullanacağı hedef kilobits/second"
 msgid "(<real> or <integer>) number of frames per second"
 msgstr "(<real> ya da <integer>) saniyedeki çerçeve sayısı"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Tüm kategoriler)"
+#~ msgid "Convert To ..."
+#~ msgstr "Dönüştür ..."
+#~ msgid "Device Preset"
+#~ msgstr "Cihaz ayarı"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Çıktı klasörü"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Hakkında"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Ayarlar"
+#~ msgid "Video Settings"
+#~ msgstr "Video ayarları"
+#~ msgid "Audio Settings"
+#~ msgstr "Ses ayarları"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "İptal"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Ayarlar"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Çift çekirdekli işlemciler için çoklu işlem"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe için yol"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFPlay.exe için yol"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Tamam"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Dönüştürülüyor"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Kaydet"
+#~ msgid "Replace Preset"
+#~ msgstr "Ayarı değiştir"
+#~ msgid "AC'"
+#~ msgstr "AC'"
 #: TFRMMAIN.VIDSIZEX.HINT
 #, fuzzy
 #| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
@@ -759,51 +812,6 @@ msgstr "Uluslararası karakterler için CHCP kullan"
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Tüm kategoriler)"
-#~ msgid "Convert To ..."
-#~ msgstr "Dönüştür ..."
-#~ msgid "Device Preset"
-#~ msgstr "Cihaz ayarı"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Çıktı klasörü"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Hakkında"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Ayarlar"
-#~ msgid "Video Settings"
-#~ msgstr "Video ayarları"
-#~ msgid "Audio Settings"
-#~ msgstr "Ses ayarları"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "İptal"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Ayarlar"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Çift çekirdekli işlemciler için çoklu işlem"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "FFmpeg.exe için yol"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "FFPlay.exe için yol"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "Tamam"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Dönüştürülüyor"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Kaydet"
-#~ msgid "Replace Preset"
-#~ msgstr "Ayarı değiştir"
-#~ msgid "AC'"
-#~ msgstr "AC'"
 #: TFRMPREFERENCES.EDIT7.HINT
 #, fuzzy
 #| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
