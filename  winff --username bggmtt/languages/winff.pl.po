@@ -16,6 +16,7 @@
 #
 # Marcin Trybus <mtrybus@o2.pl>, 2008-2010
 # Kamil Garbala <elkanguro@orange.pl>, 2010
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -182,7 +183,6 @@ msgstr "Import"
 msgid "Category / Preset"
 msgstr "Stwórz szablon:"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -219,11 +219,13 @@ msgstr "Zapisz"
 msgid "pnlTop"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "Anuluj"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
 msgstr "Eksportuj szablony"
@@ -319,6 +321,7 @@ msgstr "podgląd przy użyciu ustawień wyjścia"
 msgid "Remove"
 msgstr "Usuń"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.BTNREMOVE.HINT
 #, fuzzy
 #| msgid "remove the selected file(s) from the list"
@@ -367,6 +370,7 @@ msgstr ""
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "miejsce docelowe skonwertowanego pliku (wybierz inny katalog niż źródłowy)"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.DLGOPENFILE.TITLE
 msgid "Select Video Files..."
 msgstr ""
@@ -401,18 +405,17 @@ msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
 msgstr ""
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -449,6 +452,7 @@ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "Dodatkowe opcje"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
 msgstr "Szczegóły wyjścia"
@@ -505,7 +509,6 @@ msgstr "Parametry wiersza poleceń (zaawansowane)"
 msgid "Audio Bitrate"
 msgstr "Przepływowość"
 
-#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Próbkowanie"
@@ -542,7 +545,6 @@ msgstr "Klatek na sek."
 msgid "Video Bitrate"
 msgstr "Przepływowość"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Rozdzielczość"
@@ -551,12 +553,14 @@ msgstr "Rozdzielczość"
 msgid "-"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.MITABOUT.CAPTION
 #, fuzzy
 #| msgid "About"
 msgid "About"
 msgstr "O programie"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
 #, fuzzy
 #| msgid "Display CMD Line"
@@ -577,7 +581,6 @@ msgstr "Zakończ"
 msgid "Forums"
 msgstr "Forum WinFF"
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importuj szablony"
@@ -617,7 +620,6 @@ msgstr "Strona domowa WinFF"
 msgid "Edit"
 msgstr "Edycja"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Plik"
@@ -741,12 +743,10 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "Ustawienia WinFF"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -761,6 +761,51 @@ msgstr "Używaj CHCP do zmiany kodowania znaków "
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Wszystkie kategorie)"
+#~ msgid "Convert To ..."
+#~ msgstr "Konwertuj do..."
+#~ msgid "Device Preset"
+#~ msgstr "Szablon urządzenia"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Katalog docelowy"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "O programie"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opcje"
+#~ msgid "Video Settings"
+#~ msgstr "Ustawienia obrazu"
+#~ msgid "Audio Settings"
+#~ msgstr "Ustawienia dźwięku"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Anuluj"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Szablony"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Wielowątkowość dla procesora dwurdzeniowego"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Ścieżka do FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Ścieżka do FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Konwertowanie"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Zapisz"
+#~ msgid "Replace Preset"
+#~ msgstr "Zmień szablony"
+#~ msgid "AC'"
+#~ msgstr "Kanały audio"
 #: TFRMPREFERENCES.EDIT7.HINT
 #, fuzzy
 #| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
@@ -938,51 +983,6 @@ msgstr "Wybierz plik z szablonami"
 msgid "Select Video Files"
 msgstr "Wybierz plik wideo"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Wszystkie kategorie)"
-#~ msgid "Convert To ..."
-#~ msgstr "Konwertuj do..."
-#~ msgid "Device Preset"
-#~ msgstr "Szablon urządzenia"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Katalog docelowy"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "O programie"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opcje"
-#~ msgid "Video Settings"
-#~ msgstr "Ustawienia obrazu"
-#~ msgid "Audio Settings"
-#~ msgstr "Ustawienia dźwięku"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Anuluj"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Szablony"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Wielowątkowość dla procesora dwurdzeniowego"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Ścieżka do FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Ścieżka do FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Konwertowanie"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Zapisz"
-#~ msgid "Replace Preset"
-#~ msgstr "Zmień szablony"
-#~ msgid "AC'"
-#~ msgstr "Kanały audio"
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Szablon zawiera niedozwolone znaki"

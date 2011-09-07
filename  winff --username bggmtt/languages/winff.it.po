@@ -15,6 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # bovirus <roberto.boriotti@canon-europe.com>, 2008-2009
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.45.1\n"
@@ -177,7 +178,6 @@ msgstr "Importa"
 msgid "Category / Preset"
 msgstr "Crea profilo:"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -214,11 +214,13 @@ msgstr "Salva"
 msgid "pnlTop"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "Annulla"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
 msgstr "Esporta profili"
@@ -314,6 +316,7 @@ msgstr "anteprima con le impostazioni di conversione"
 msgid "Remove"
 msgstr "Rimuovi"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.BTNREMOVE.HINT
 #, fuzzy
 #| msgid "remove the selected file(s) from the list"
@@ -362,6 +365,7 @@ msgstr ""
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "la cartella destinazione per il video finale (scegliere una cartella differente da quella sorgente)"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.DLGOPENFILE.TITLE
 msgid "Select Video Files..."
 msgstr ""
@@ -396,18 +400,17 @@ msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
 msgstr ""
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -444,6 +447,7 @@ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "Opzioni avanzate"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
 msgstr "Dettagli output"
@@ -500,7 +504,6 @@ msgstr "Parametri aggiuntivi riga comando (Avanzate)"
 msgid "Audio Bitrate"
 msgstr "Bitrate audio"
 
-#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Frequenza campionamento"
@@ -537,7 +540,6 @@ msgstr "Frame/sec"
 msgid "Video Bitrate"
 msgstr "Bitrate video"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Dimensione video"
@@ -546,12 +548,14 @@ msgstr "Dimensione video"
 msgid "-"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.MITABOUT.CAPTION
 #, fuzzy
 #| msgid "About"
 msgid "About"
 msgstr "Info su WinFF"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
 #, fuzzy
 #| msgid "Display CMD Line"
@@ -572,7 +576,6 @@ msgstr "Esci"
 msgid "Forums"
 msgstr "Forum WinFF"
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importa profilo"
@@ -612,7 +615,6 @@ msgstr "Sito web WinFF"
 msgid "Edit"
 msgstr "Modifica"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "File"
@@ -736,12 +738,10 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "Preferenze WinFF"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -756,6 +756,51 @@ msgstr "Usa CHCP per caratteri internazionali"
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Tutte le categorie)"
+#~ msgid "Convert To ..."
+#~ msgstr "Converti in ..."
+#~ msgid "Device Preset"
+#~ msgstr "Profilo dispositivo"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Cartella destinazione"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Info su WinFF"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opzioni"
+#~ msgid "Video Settings"
+#~ msgstr "Impostazioni video"
+#~ msgid "Audio Settings"
+#~ msgstr "Impostazioni audio"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Annulla"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Profili"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading per processori Dual Core"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Percorso programma FFmpeg"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Percorso programma FFplay"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Conversione..."
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Salva"
+#~ msgid "Replace Preset"
+#~ msgstr "Sostituisci profilo"
+#~ msgid "AC'"
+#~ msgstr "Canali audio"
 #: TFRMPREFERENCES.EDIT7.HINT
 #, fuzzy
 #| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
@@ -933,51 +978,6 @@ msgstr "Selezionare file profilo"
 msgid "Select Video Files"
 msgstr "Selezionare file video"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Tutte le categorie)"
-#~ msgid "Convert To ..."
-#~ msgstr "Converti in ..."
-#~ msgid "Device Preset"
-#~ msgstr "Profilo dispositivo"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Cartella destinazione"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Info su WinFF"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opzioni"
-#~ msgid "Video Settings"
-#~ msgstr "Impostazioni video"
-#~ msgid "Audio Settings"
-#~ msgstr "Impostazioni audio"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Annulla"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Profili"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading per processori Dual Core"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Percorso programma FFmpeg"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Percorso programma FFplay"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Conversione..."
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Salva"
-#~ msgid "Replace Preset"
-#~ msgstr "Sostituisci profilo"
-#~ msgid "AC'"
-#~ msgstr "Canali audio"
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Il profilo contiene caratteri non validi"
