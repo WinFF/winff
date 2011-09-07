@@ -14,6 +14,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Göran Hanell <hannell@algonet.se>, 2009
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.1.1\n"
@@ -179,7 +180,6 @@ msgstr "Importera"
 msgid "Category / Preset"
 msgstr "Skapa förinställning"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -216,11 +216,13 @@ msgstr "Spara"
 msgid "pnlTop"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "Avbryt"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
 msgstr "Exportera förinställningar"
@@ -316,6 +318,7 @@ msgstr "förhandsvisa med valda inställningar för utdata"
 msgid "Remove"
 msgstr "Ta bort"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.BTNREMOVE.HINT
 #, fuzzy
 #| msgid "remove the selected file(s) from the list"
@@ -364,6 +367,7 @@ msgstr ""
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "målkatalog för den konverterade videofilen (välj en annan katalog än källkatalogen)"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.DLGOPENFILE.TITLE
 msgid "Select Video Files..."
 msgstr ""
@@ -398,18 +402,17 @@ msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
 msgstr ""
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -446,6 +449,7 @@ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "Fler alternativ"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
 msgstr "Detaljer för utmatning"
@@ -502,7 +506,6 @@ msgstr "Fler kommandoradsparametrar (Avancerad)"
 msgid "Audio Bitrate"
 msgstr "Bithastighet ljud"
 
-#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Samplingshastighet"
@@ -539,7 +542,6 @@ msgstr "Bilder/sekund"
 msgid "Video Bitrate"
 msgstr "Bithastighet video"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "Storlek på video"
@@ -548,12 +550,14 @@ msgstr "Storlek på video"
 msgid "-"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.MITABOUT.CAPTION
 #, fuzzy
 #| msgid "About"
 msgid "About"
 msgstr "Om"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
 #, fuzzy
 #| msgid "Display CMD Line"
@@ -574,7 +578,6 @@ msgstr "Avsluta"
 msgid "Forums"
 msgstr "WinFFs forum"
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "Importera förinställningar"
@@ -614,7 +617,6 @@ msgstr "WinFFs webbplats"
 msgid "Edit"
 msgstr "Redigera"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Fil"
@@ -738,12 +740,10 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "WinFF inställningar"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -758,6 +758,49 @@ msgstr "Använd CHCP för internationella tecken"
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Alla kategorier)"
+#~ msgid "Convert To ..."
+#~ msgstr "Konvertera till ..."
+#~ msgid "Device Preset"
+#~ msgstr "Formatalternativ"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Målkatalog"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Om"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Alternativ"
+#~ msgid "Video Settings"
+#~ msgstr "Videoinställningar"
+#~ msgid "Audio Settings"
+#~ msgstr "Ljudinställningar"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Förinställningar för konvertering"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading för Dual Core-processorer"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Sökväg till FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Sökväg till FFplay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Konverterar"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Spara"
+#~ msgid "Replace Preset"
+#~ msgstr "Ersätt förinställning:"
 #: TFRMPREFERENCES.EDIT7.HINT
 #, fuzzy
 #| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
@@ -935,49 +978,6 @@ msgstr "Välj förinställningsfil"
 msgid "Select Video Files"
 msgstr "Välj videofiler"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Alla kategorier)"
-#~ msgid "Convert To ..."
-#~ msgstr "Konvertera till ..."
-#~ msgid "Device Preset"
-#~ msgstr "Formatalternativ"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Målkatalog"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Om"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Alternativ"
-#~ msgid "Video Settings"
-#~ msgstr "Videoinställningar"
-#~ msgid "Audio Settings"
-#~ msgstr "Ljudinställningar"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Förinställningar för konvertering"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading för Dual Core-processorer"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Sökväg till FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Sökväg till FFplay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Konverterar"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Spara"
-#~ msgid "Replace Preset"
-#~ msgstr "Ersätt förinställning:"
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Förinställningen innehåller ogiltiga tecken"

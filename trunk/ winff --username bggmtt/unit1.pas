@@ -1,4 +1,4 @@
-unit Unit1; 
+unit Unit1;
 
 // WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
 // WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
@@ -29,7 +29,7 @@ uses
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
   {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, MaskEdit, Spin,
-  PoTranslator;
+  PoTranslator, types;
 
 type
 
@@ -166,10 +166,16 @@ type
     procedure edtCropRightChange(Sender: TObject);
     procedure edtCropTopChange(Sender: TObject);
     procedure edtSeekMMChange(Sender: TObject);
+    procedure filelistClick(Sender: TObject);
+    procedure filelistDrawItem(Control: TWinControl; Index: Integer;
+      ARect: TRect; State: TOwnerDrawState);
     procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure filelistMeasureItem(Control: TWinControl; Index: Integer;
+      var AHeight: Integer);
     procedure Label11Click(Sender: TObject);
     procedure LaunchBrowser(URL:string);
     procedure LaunchPdf(pdffile:string);
+    procedure launchffmpeginfo(vfilename:string);
     procedure ChooseFolderBtnClick(Sender: TObject);
     procedure btnAddClick(Sender: TObject);
     procedure btnClearClick(Sender: TObject);
@@ -196,6 +202,7 @@ type
     function GetMydocumentsPath() : string ;
     procedure Panel14Click(Sender: TObject);
     procedure PresetBoxChange(Sender: TObject);
+    procedure SelectDirectoryDialog1FolderChange(Sender: TObject);
     procedure setconfigvalue(key:string;value:string);
     function getconfigvalue(key:string):string;
     procedure populatepresetbox(selectedcategory:string);
@@ -210,6 +217,7 @@ type
     function GetappdataPath() : string ;
     function replaceparam(commandline:string;param:string;replacement:string):string;
     procedure VidbitrateChange(Sender: TObject);
+    function GetFileInfo(var filedetails : string) : string;
     {$IFDEF WIN32}function GetWin32System(): Integer;{$endif}
 
   private
@@ -239,7 +247,11 @@ const
   cOsXP:      Integer =  6;
 {$ENDIF}
 
+
+
 var
+  JobList,PresetList,CategoryList,DestinationList :TstringList;
+
   frmMain: TfrmMain;
   {$IFDEF WIN32}
   PIDL : PItemIDList;
@@ -266,6 +278,7 @@ var
   multithreading: string;
   PODirectory, Lang, FallbackLang, POFile: String;
   preview: boolean;
+
   Resourcestring
 
   //messages
@@ -305,6 +318,11 @@ sformheight,sformwidth,sformtop,sformleft:string;
 currentpreset, destdir: string;
 
 begin
+   JobList := tstringlist.create;
+   CategoryList := tstringlist.Create;
+   PresetList := tstringlist.Create;
+   DestinationList := tstringlist.Create;
+
    ExtrasPath:= ExtractFilePath(ParamStr(0));
 
 
@@ -825,6 +843,26 @@ procedure TfrmMain.edtSeekMMChange(Sender: TObject);
 begin
 end;
 
+procedure TfrmMain.filelistClick(Sender: TObject);
+begin
+
+end;
+
+procedure TfrmMain.filelistDrawItem(Control: TWinControl; Index: Integer;
+  ARect: TRect; State: TOwnerDrawState);
+begin
+  with (control as tlistbox).Canvas do
+  begin
+    FillRect(ARect) ;
+    Font.Color := clBlack;
+    TextOut(ARect.Left, ARect.Top, filelist.items[Index] + ' (' + joblist.Strings[index] + ' )');
+    Font.Color := clBlue;
+    Font.Size  := 8;
+    Font.Style := [fsItalic];
+    TextOut(ARect.Left + 15, ARect.Top + 14, destinationlist.Strings[index] + ' - Convert to ' + Presetlist.Strings[index]);
+  end;
+end;
+
 procedure TfrmMain.Button1Click(Sender: TObject);
 begin
 end;
@@ -847,6 +885,12 @@ currentpreset := getcurrentpresetname(presetbox.Text);
 if destdir <> '' then destfolder.text:= destdir;
 if destfolder.Text='' then destfolder.text := getconfigvalue('general/destfolder');
 if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
+end;
+
+procedure TfrmMain.SelectDirectoryDialog1FolderChange(Sender: TObject);
+begin
+  //
+ sleep(100);
 end;
 
 
@@ -880,6 +924,118 @@ begin
   ShellExecute(self.Handle,'open',PChar(URL),nil,nil, SW_SHOWNORMAL);
   {$endif}
 end;
+
+// launch ffmpeg ifno
+procedure TfrmMain.launchffmpeginfo(vfilename:string);
+var
+i,j : integer;
+cb,ct,cl,cr:integer;
+pn, extension, params, commandline, command, filename,batfile, passlogfile, basename:string;
+qterm, ffmpegfilename,ffplayfilename, usethreads, numthreads, deinterlace, nullfile, titlestring, priority:string;
+script: tstringlist;
+thetime: tdatetime;
+scriptprocess:tprocess;
+scriptpriority:tprocesspriority;
+ignorepreview:boolean;
+resmod : integer;
+begin                                     // get setup
+   scriptprocess:= TProcess.Create(nil);
+
+   priority := getconfigvalue('general/priority');
+   if priority= unit4.rspriorityhigh then scriptpriority:=pphigh
+     else if priority= unit4.rsprioritynormal then scriptpriority:=ppnormal
+     else if priority= unit4.rspriorityidle then scriptpriority:=ppidle
+     else scriptpriority:=ppnormal;
+   scriptprocess.Priority:= scriptpriority;
+
+
+   script:= TStringList.Create;
+   {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
+   {$ifdef unix}script.Add('#!/bin/sh');{$endif}
+
+   {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
+   {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
+   {$ifdef win32}ffplayfilename:='"' + ffplay + '"';{$endif}
+   {$ifdef unix}ffplayfilename:=ffplay;{$endif}
+   {$ifdef win32}nullfile:='"NUL.avi"';{$endif}
+   {$ifdef unix}nullfile:='/dev/null';{$endif}
+
+
+
+   if not fileexists(ffmpeg) then
+      begin
+       showmessage(rsCouldnotFindFFplay);
+       exit;
+      end;
+
+   frmScript.memo1.lines.Clear;
+
+                                         // trim everything up
+
+
+                                      // replace preset params if mnuOptions specified
+   commandline := '';
+
+                                           // build batch file
+   thetime :=now;
+   batfile := 'ff' + FormatDateTime('yymmddhhnnss',thetime) +
+           {$ifdef win32}'.bat'{$endif}
+           {$ifdef unix}'.sh'{$endif} ;
+
+   filename := vfilename;
+   basename := extractfilename(filename);
+
+       // resolve issues with embedded quote marks in filename to be converted.  issue 38
+       {$ifdef unix}
+       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
+       basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
+       {$endif}
+
+       for j:= length(basename) downto 1  do
+         begin
+           if basename[j] = #46 then
+              begin
+                basename := leftstr(basename,j-1);
+                break;
+              end;
+         end;
+
+       command := '';
+       {$ifdef win32}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
+            ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
+       {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
+            ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
+       script.Add(titlestring);
+       destfolder.text := extractfilepath(filename);
+        command := ffmpegfilename +  '  -i "' + filename + '" 2>' + presetspath + 'output.txt';
+
+        script.Add(command);
+                                           // remove batch file on completion
+   {$ifdef win32}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
+   {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
+
+
+     script.SaveToFile(presetspath+batfile);
+     {$ifdef unix}
+     fpchmod(presetspath + batfile,&777);
+     {$endif}
+
+     {$ifdef win32}
+     qterm := '"' + terminal + '"';
+     {$endif}
+
+     {$ifdef unix}qterm := terminal;{$endif}
+                                                        // do it
+     {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
+     {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
+
+     scriptprocess.execute;
+
+    script.Free;
+    sleep(1000) ; // need to wait for this to finish before continuing;
+end;
+
+
 
 // launch pdf
 procedure TfrmMain.LaunchPdf(pdffile:string);
@@ -1063,21 +1219,49 @@ procedure TfrmMain.FormDropFiles(Sender: TObject; const FileNames: array of Stri
   );
 var
 numfiles, i:integer;
+s,t,u : string;
 begin
 numfiles := high(Filenames);
 for i:= 0 to numfiles do
-   filelist.Items.add(Filenames[i]);
+   s :=filelist.items[i];
+   u := s;
+   t := GetFileInfo(u);
+   filelist.items.Add(s);
+   DestinationList.Add(DestFolder.text);
+   CategoryList.add(categorybox.Text);
+   PresetList.add(PresetBox.Text);
+   JobList.add(t);
 end;
 
 // add files to the list
 procedure TfrmMain.btnAddClick(Sender: TObject);
+var
+  vFileInfo : string;
+  i : integer;
+  s,t,u : string;
 begin
    dlgOpenFile.Title:=rsSelectVideoFiles;
    dlgOpenFile.InitialDir := getconfigvalue('general/addfilesfolder');
    if dlgOpenFile.Execute then
       begin
-       setconfigvalue('general/addfilesfolder',dlgOpenFile.InitialDir);
-       filelist.items.AddStrings(dlgOpenFile.Files);
+        setconfigvalue('general/addfilesfolder',dlgOpenFile.InitialDir);
+        for i := 0 to dlgOpenFile.files.Count -1 do
+          begin
+            DestinationList.Add(DestFolder.text);
+            try
+              CategoryList.add(categorybox.Text);
+            except
+              CategoryList.add('');
+            end;
+            PresetList.add(PresetBox.Text);
+
+            s := dlgOpenFile.files[i];
+            u := s;
+            t := GetFileInfo(u);
+            filelist.items.Add(s);
+            JobList.add(t);
+          end;
+          //filelist.items.AddStrings(dlgOpenFile.Files);
       end;
 end;
 
@@ -1086,18 +1270,37 @@ procedure TfrmMain.btnRemoveClick(Sender: TObject);
 var
 i: integer;
 begin
-  i:=0;
+
+{
+i:=0;
   while i< filelist.Items.Count do
     if filelist.Selected[i] then
-      filelist.Items.Delete(i)
+      begin
+        filelist.Items.Delete(i);
+        joblist.Delete(i);
+        categorylist.Delete(i);
+        presetlist.Delete(i);
+        destinationlist.Delete(i);
+      end
     else
        i+=1;
-end;
+}
+ showmessage( 'Presets ' + IntToStr (PresetList.Count));
+ showmessage( 'Categories ' + IntToStr (CategoryList.Count));
+ showmessage( 'Destinations ' + IntToStr (DestinationList.Count));
+ showmessage( 'Jobs ' + IntToStr (JobList.Count));
+
+ end;
 
 // clear the file list
 procedure TfrmMain.btnClearClick(Sender: TObject);
+var i : integer;
 begin
   filelist.Clear;
+  destinationlist.clear;
+  presetlist.clear;
+  categorylist.clear;
+  joblist.clear;
 end;
 
 procedure TfrmMain.lblCropRight1Click(Sender: TObject);
@@ -1122,11 +1325,23 @@ begin
     i:=0;
    while i< filelist.Items.Count do
     if filelist.Selected[i] then
-     filelist.Items.Delete(i)
+     begin
+          filelist.Items.Delete(i);
+          joblist.Delete(i);
+          CategoryList.delete(i);
+          DestinationList.delete(i);
+          PresetList.delete(i);
+     end
     else
        i+=1;
    end;
 
+end;
+
+procedure TfrmMain.filelistMeasureItem(Control: TWinControl; Index: Integer;
+  var AHeight: Integer);
+begin
+    AHeight := (Index+1)*28;
 end;
 
 procedure TfrmMain.Label11Click(Sender: TObject);
@@ -1397,152 +1612,169 @@ begin                                     // get setup
        exit;
       end;
 
+   if filelist.Items.Count=0 then
+      begin
+       showmessage(rsPleaseAdd1File);
+       exit;
+      end;
+
    pn:=getcurrentpresetname(presetbox.Text);
    if pn='' then
       begin
        showmessage(rsPleaseSelectAPreset);
        exit;
       end;
-   if filelist.Items.Count=0 then
-      begin
-       showmessage(rsPleaseAdd1File);
-       exit;
-      end;
-   params:=getpresetparams(pn);
-   extension:=getpresetextension(pn);
-   frmScript.memo1.lines.Clear;
 
-                                         // trim everything up
-   commandlineparams.text := trim(commandlineparams.Text);
-   vidbitrate.Text := trim(vidbitrate.Text);
-   vidframerate.text := trim(vidframerate.Text);
-   VidsizeX.text := trim(VidsizeX.Text);
-   VidsizeY.text := trim(VidsizeY.Text);
-   edtAspectRatio.Text := trim(edtAspectRatio.text);
-   audbitrate.Text := trim(audbitrate.Text);
-   audsamplingrate.Text := trim(audsamplingrate.Text);
-   audchannels.Text:=trim(audchannels.Text);
-   edtCropBottom.Text:=trim(edtCropbottom.text);
-   edtCropTop.Text:=trim(edtCropTop.text);
-   edtCropleft.Text:=trim(edtCropleft.text);
-   edtCropright.Text:=trim(edtCropright.text);
-   edtVolume.Text:=trim(edtVolume.Text);
-   edtAudioSync.Text:=trim(edtAudioSync.Text);
+   // this marks the start of the block that is moving inside the loop!!
 
 
-                                      // replace preset params if mnuOptions specified
-   commandline := params;
-   if vidbitrate.Text <> '' then
-           commandline:=replaceparam(commandline,'-b','-b ' + vidbitrate.text+'k');
-   if vidframerate.Text <> '' then
-           commandline:=replaceparam(commandline,'-r','-r ' + vidframerate.Text);
-
-// Inserting Crop Routine here as per Issue 77 on code.google.com
-// Changed by Ian V1.3
-
-// cropping
-   if edtCropBottom.Text <> '' then
-      begin
-       cb:=strtoint(edtcropbottom.text);
-       if cb mod 2 = 1 then cb := cb-1;
-       edtcropbottom.text := inttostr(cb);
-       if edtcropbottom.text <> '0' then commandline := commandline + ' -cropbottom ' + edtCropBottom.Text + ' ';
-      end;
-
-   if edtCropTop.Text <> '' then
-     begin
-       ct:=strtoint(edtcroptop.text);
-       if ct mod 2 = 1 then ct := ct-1;
-       edtcroptop.text := inttostr(ct);
-       if edtcroptop.text <> '0' then commandline += ' -croptop ' + edtCropTop.Text + ' ';
-     end;
-
-   if edtCropLeft.Text <> '' then
-     begin
-       cl:=strtoint(edtcropleft.text);
-       if cl mod 2 = 1 then cl := cl-1;
-       edtcropleft.text := inttostr(cl);
-       if edtcropleft.text <> '0' then commandline += ' -cropleft ' + edtCropLeft.Text + ' ';
-     end;
-
-   if edtCropRight.Text <> '' then
-     begin
-       cr:=strtoint(edtcropright.text);
-       if cr mod 2 = 1 then cr := cr-1;
-       edtcropright.text := inttostr(cr);
-       if edtcropright.text <> '0' then commandline += ' -cropright ' + edtCropRight.Text + ' ';
-     end;
-
-
-
-   if (VidsizeX.Text <>'') AND (VidsizeY.Text <>'') then
-   begin
-        // 1.2
-        //commandline:=replaceparam(commandline,'-s','-s ' + VidsizeX.Text + 'x' + VidsizeY.Text);
-        //1.3
-        commandline:=replaceparam(commandline,'-s','');
-        commandline += ' -s ' + VidsizeX.Text + 'x' + VidsizeY.Text + ' ';
-
-   end;
-
-   if edtAspectRatio.Text <> '' then
-           commandline:=replaceparam(commandline,'-aspect','-aspect ' + edtAspectRatio.Text);
-   if audbitrate.Text <> '' then
-           commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'k');
-   if audsamplingrate.Text <> '' then
-           commandline:=replaceparam(commandline,'-ar','-ar ' + audsamplingrate.Text);
-   if audchannels.Text <> '' then
-           commandline:=replaceparam(commandline,'-ac','-ac ' + audchannels.Text);
-
-   // changes for winff 1.3
+   // *end of block that is moving inside loop.  block ended before this line
    //
-   ignorepreview := false;
-   if edtVolume.Text <> '' then
-           commandline:=replaceparam(commandline,'-vol','-vol ' + edtVolume.Text);
-   if edtAudioSync.Text <> '' then
-           commandline:=replaceparam(commandline,'-async','-async ' + edtAudioSync.Text);
-
-
-
-
-   if edtSeekHH.Value + edtSeekMM.Value + edtSeekSS.Value > 0 then
-   begin
-     ignorepreview := true;
-     if (edtSeekMM.Value < 10) and (length(edtSeekMM.Text)<2) then edtSeekMM.Text := '0' + edtSeekMM.Text;
-     if (edtSeekSS.Value < 10) and (length(edtSeekSS.Text)<2) then edtSeekSS.Text := '0' + edtSeekSS.Text;
-
-     commandline:=replaceparam(commandline,'-ss','-ss ' + edtSeekHH.Text + ':' + edtSeekMM.Text + ':' + edtSeekSS.Text);
-   end;
-
-   if edtTTRHH.Value + edtTTRMM.Value + edtTTRSS.Value > 0 then
-   begin
-     ignorepreview := true;
-     if (edtTTRMM.Value < 10) and (length(edtTTRMM.Text)<2)  then edtTTRMM.Text := '0' + edtTTRMM.Text;
-     if (edtTTRSS.Value < 10) and (length(edtTTRSS.Text)<2)  then edtTTRSS.Text := '0' + edtTTRSS.Text;
-
-     commandline:=replaceparam(commandline,'-t','-t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text);
-   end;
-
-
-   if commandlineparams.Text <> '' then
-           commandline += ' ' + commandlineparams.text;
-
-   // preview
-   // if -ss and -t are already set, ignore the following parameter.
-   if (preview = true) and (ignorepreview = false) then
-   begin
-     commandline += ' -ss 00:01:00 -t 00:00:30';
-   end;
-
-
                                            // build batch file
    thetime :=now;
    batfile := 'ff' + FormatDateTime('yymmddhhnnss',thetime) +
            {$ifdef win32}'.bat'{$endif}
            {$ifdef unix}'.sh'{$endif} ;
 
+
+
    for i:=0 to filelist.Items.Count - 1 do
      begin
+// MAJOR CHANGE - WARNING - POSSIBLY MAJOR HEADACHES AHEAD
+// Because we can have different conversions per Job Item
+// We need to recreate the params of the ffmpeg command lines for each job in the queue.
+// I am moving a huge chunk of code inside the loop
+       presetbox.text := presetlist.strings[i];
+       categorybox.text := CategoryList.strings[i];
+       DestFolder.Text:=DestinationList.strings[i];
+
+       pn:=getcurrentpresetname(presetbox.Text);
+       params:=getpresetparams(pn);
+       extension:=getpresetextension(pn);
+       frmScript.memo1.lines.Clear;
+
+                                             // trim everything up
+       commandlineparams.text := trim(commandlineparams.Text);
+       vidbitrate.Text := trim(vidbitrate.Text);
+       vidframerate.text := trim(vidframerate.Text);
+       VidsizeX.text := trim(VidsizeX.Text);
+       VidsizeY.text := trim(VidsizeY.Text);
+       edtAspectRatio.Text := trim(edtAspectRatio.text);
+       audbitrate.Text := trim(audbitrate.Text);
+       audsamplingrate.Text := trim(audsamplingrate.Text);
+       audchannels.Text:=trim(audchannels.Text);
+       edtCropBottom.Text:=trim(edtCropbottom.text);
+       edtCropTop.Text:=trim(edtCropTop.text);
+       edtCropleft.Text:=trim(edtCropleft.text);
+       edtCropright.Text:=trim(edtCropright.text);
+       edtVolume.Text:=trim(edtVolume.Text);
+       edtAudioSync.Text:=trim(edtAudioSync.Text);
+
+                                          // replace preset params if mnuOptions specified
+       commandline := params;
+       if vidbitrate.Text <> '' then
+               commandline:=replaceparam(commandline,'-b','-b ' + vidbitrate.text+'k');
+       if vidframerate.Text <> '' then
+               commandline:=replaceparam(commandline,'-r','-r ' + vidframerate.Text);
+
+    // Inserting Crop Routine here as per Issue 77 on code.google.com
+    // Changed by Ian V1.3
+
+    // cropping
+       if edtCropBottom.Text <> '' then
+          begin
+           cb:=strtoint(edtcropbottom.text);
+           if cb mod 2 = 1 then cb := cb-1;
+           edtcropbottom.text := inttostr(cb);
+           if edtcropbottom.text <> '0' then commandline := commandline + ' -cropbottom ' + edtCropBottom.Text + ' ';
+          end;
+
+       if edtCropTop.Text <> '' then
+         begin
+           ct:=strtoint(edtcroptop.text);
+           if ct mod 2 = 1 then ct := ct-1;
+           edtcroptop.text := inttostr(ct);
+           if edtcroptop.text <> '0' then commandline += ' -croptop ' + edtCropTop.Text + ' ';
+         end;
+
+       if edtCropLeft.Text <> '' then
+         begin
+           cl:=strtoint(edtcropleft.text);
+           if cl mod 2 = 1 then cl := cl-1;
+           edtcropleft.text := inttostr(cl);
+           if edtcropleft.text <> '0' then commandline += ' -cropleft ' + edtCropLeft.Text + ' ';
+         end;
+
+       if edtCropRight.Text <> '' then
+         begin
+           cr:=strtoint(edtcropright.text);
+           if cr mod 2 = 1 then cr := cr-1;
+           edtcropright.text := inttostr(cr);
+           if edtcropright.text <> '0' then commandline += ' -cropright ' + edtCropRight.Text + ' ';
+         end;
+
+
+
+       if (VidsizeX.Text <>'') AND (VidsizeY.Text <>'') then
+       begin
+            // 1.2
+            //commandline:=replaceparam(commandline,'-s','-s ' + VidsizeX.Text + 'x' + VidsizeY.Text);
+            //1.3
+            commandline:=replaceparam(commandline,'-s','');
+            commandline += ' -s ' + VidsizeX.Text + 'x' + VidsizeY.Text + ' ';
+
+       end;
+
+       if edtAspectRatio.Text <> '' then
+               commandline:=replaceparam(commandline,'-aspect','-aspect ' + edtAspectRatio.Text);
+       if audbitrate.Text <> '' then
+               commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'k');
+       if audsamplingrate.Text <> '' then
+               commandline:=replaceparam(commandline,'-ar','-ar ' + audsamplingrate.Text);
+       if audchannels.Text <> '' then
+               commandline:=replaceparam(commandline,'-ac','-ac ' + audchannels.Text);
+
+       // changes for winff 1.3
+       //
+       ignorepreview := false;
+       if edtVolume.Text <> '' then
+               commandline:=replaceparam(commandline,'-vol','-vol ' + edtVolume.Text);
+       if edtAudioSync.Text <> '' then
+               commandline:=replaceparam(commandline,'-async','-async ' + edtAudioSync.Text);
+
+       if edtSeekHH.Value + edtSeekMM.Value + edtSeekSS.Value > 0 then
+       begin
+         ignorepreview := true;
+         if (edtSeekMM.Value < 10) and (length(edtSeekMM.Text)<2) then edtSeekMM.Text := '0' + edtSeekMM.Text;
+         if (edtSeekSS.Value < 10) and (length(edtSeekSS.Text)<2) then edtSeekSS.Text := '0' + edtSeekSS.Text;
+
+         commandline:=replaceparam(commandline,'-ss','-ss ' + edtSeekHH.Text + ':' + edtSeekMM.Text + ':' + edtSeekSS.Text);
+       end;
+
+       if edtTTRHH.Value + edtTTRMM.Value + edtTTRSS.Value > 0 then
+       begin
+         ignorepreview := true;
+         if (edtTTRMM.Value < 10) and (length(edtTTRMM.Text)<2)  then edtTTRMM.Text := '0' + edtTTRMM.Text;
+         if (edtTTRSS.Value < 10) and (length(edtTTRSS.Text)<2)  then edtTTRSS.Text := '0' + edtTTRSS.Text;
+
+         commandline:=replaceparam(commandline,'-t','-t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text);
+       end;
+
+
+       if commandlineparams.Text <> '' then
+               commandline += ' ' + commandlineparams.text;
+
+       // preview
+       // if -ss and -t are already set, ignore the following parameter.
+       if (preview = true) and (ignorepreview = false) then
+       begin
+         commandline += ' -ss 00:01:00 -t 00:00:30';
+       end;
+
+// inserted block ends here
+
+
+
        filename := filelist.items[i];
        basename := extractfilename(filename);
 
@@ -1577,6 +1809,9 @@ begin                                     // get setup
        if cbOutputPath.checked = true then
        begin
          destfolder.text := extractfilepath(filename);
+       end else
+       begin
+         destfolder.text := DestinationList.Strings[i];
        end;
        // End Change
 
@@ -1683,6 +1918,7 @@ begin                                     // get setup
        scriptprocess.execute;
 
       end;
+
    end;
 
     script.Free;
@@ -1857,6 +2093,35 @@ writexmlfile(presetsfile, presetspath + 'presets.xml');  // save the imported pr
 populatepresetbox('');
 end;
 
+function TfrmMain.GetFileInfo(var fileDetails : string) : string;
+var ts : tmemo;
+    i,j,k : integer;
+    s,t,u : string;
+begin
+//
+
+  ts := tmemo.Create(self);
+  ts.Lines.Clear;
+  launchffmpeginfo(filedetails);
+  ts.lines.LoadFromFile(presetspath + 'output.txt');
+  result := '';
+  fileDetails := '';
+  for i := 0 to ts.lines.count -1 do
+    begin
+      s := ts.lines[i];
+      if pos('duration',lowercase(s)) > 0 then
+        begin
+           result := result + s;
+        end;
+       if pos('stream #',lowercase(s)) > 0 then
+        begin
+           fileDetails := fileDetails + '  ' + s;
+        end;
+    end;
+  ts.free;
+
+end;
+
 initialization
   {$I unit1.lrs}
   {$ifdef win32}PODirectory := extraspath + '\languages\'{$endif};
@@ -1875,6 +2140,8 @@ initialization
   end
   else
     POFile := '';
+
+
 
 end.
 

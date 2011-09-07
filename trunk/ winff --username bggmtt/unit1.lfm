@@ -348,10 +348,14 @@ object frmMain: TfrmMain
       Top = 0
       Width = 460
       Align = alClient
-      ItemHeight = 0
+      ItemHeight = 36
       MultiSelect = True
+      OnClick = filelistClick
       OnDblClick = btnPlayClick
+      OnDrawItem = filelistDrawItem
       OnKeyUp = filelistKeyUp
+      OnMeasureItem = filelistMeasureItem
+      Style = lbOwnerDrawFixed
       TabOrder = 0
     end
     object pnlbottom: TPanel
@@ -2109,6 +2113,7 @@ object frmMain: TfrmMain
   end
   object SelectDirectoryDialog1: TSelectDirectoryDialog
     FilterIndex = 0
+    OnFolderChange = SelectDirectoryDialog1FolderChange
     left = 488
     top = 8
   end

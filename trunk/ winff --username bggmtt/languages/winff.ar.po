@@ -15,6 +15,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 # MrTux <ashrafkhalaf@gmail.com>, 2010
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid ""
 msgstr ""
 "Project-Id-Version: Winff\n"
@@ -182,7 +183,6 @@ msgstr "استيراد"
 msgid "Category / Preset"
 msgstr "إنشاء نسبة"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
@@ -219,11 +219,13 @@ msgstr "حفظ"
 msgid "pnlTop"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "إلغاء"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
 msgstr "تصدير النسب"
@@ -319,6 +321,7 @@ msgstr "المعاينة باستخدام أعدادات الخرج"
 msgid "Remove"
 msgstr "أزل"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.BTNREMOVE.HINT
 #, fuzzy
 #| msgid "remove the selected file(s) from the list"
@@ -367,6 +370,7 @@ msgstr ""
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "مكان ملف الفيديو الناتج (اختر مجلدا مختلفا عن المجلد المصدر)"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.DLGOPENFILE.TITLE
 msgid "Select Video Files..."
 msgstr ""
@@ -401,18 +405,17 @@ msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
 msgstr ""
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -449,6 +452,7 @@ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "خيارات إضافية"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
 msgstr "تفاصيل الخرج"
@@ -505,7 +509,6 @@ msgstr "معاملات سطر أوامر إضافية (متقدم)"
 msgid "Audio Bitrate"
 msgstr "معدل البتات"
 
-#| msgctxt "REMOVED3"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "معدل العينات"
@@ -542,7 +545,6 @@ msgstr "معدل الإطارات"
 msgid "Video Bitrate"
 msgstr "معدل البتات"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
 msgstr "حجم الفيديو"
@@ -551,12 +553,14 @@ msgstr "حجم الفيديو"
 msgid "-"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.MITABOUT.CAPTION
 #, fuzzy
 #| msgid "About"
 msgid "About"
 msgstr "تحويل"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
 #, fuzzy
 #| msgid "Display CMD Line"
@@ -577,7 +581,6 @@ msgstr "خروج"
 msgid "Forums"
 msgstr "منتدى WinFF"
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
 msgstr "استيراد ملف"
@@ -617,7 +620,6 @@ msgstr "موقع WinFF"
 msgid "Edit"
 msgstr "تحرير"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "ملف"
@@ -741,12 +743,10 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
 msgstr "تفضيلات WinFF"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -761,6 +761,47 @@ msgstr "استخدام محارف CHCP العالمية"
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
+#~ msgid "(All Categories)"
+#~ msgstr "جميع التصنيفات"
+#~ msgid "Convert To ..."
+#~ msgstr "حول إلى ..."
+#~ msgid "Device Preset"
+#~ msgstr "نوع المشغل"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "مجلد الخرج"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "حول"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "خيارات"
+#~ msgid "Video Settings"
+#~ msgstr "أعدادات الفيديو"
+#~ msgid "Audio Settings"
+#~ msgstr "أعدادات الصوت"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "إلغاء"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "النسب"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "معالجة متعددة الخيوط للمعالجات مزدوجة الأنوية"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "المسار إلى FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "المسار إلى FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "موافق"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "جاري التحويل"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "حفظ"
 #: TFRMPREFERENCES.EDIT7.HINT
 #, fuzzy
 #| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
@@ -938,47 +979,6 @@ msgstr "اختر ملف النسبة"
 msgid "Select Video Files"
 msgstr "اختر ملفات الفيديو"
 
-#~ msgid "(All Categories)"
-#~ msgstr "جميع التصنيفات"
-#~ msgid "Convert To ..."
-#~ msgstr "حول إلى ..."
-#~ msgid "Device Preset"
-#~ msgstr "نوع المشغل"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "مجلد الخرج"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "حول"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "خيارات"
-#~ msgid "Video Settings"
-#~ msgstr "أعدادات الفيديو"
-#~ msgid "Audio Settings"
-#~ msgstr "أعدادات الصوت"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "إلغاء"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "النسب"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "معالجة متعددة الخيوط للمعالجات مزدوجة الأنوية"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "المسار إلى FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "المسار إلى FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "موافق"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "جاري التحويل"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "حفظ"
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "النسبة تحتوي على حروف غير صالحة"
