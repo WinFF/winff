@@ -1,13 +1,13 @@
 object frmMain: TfrmMain
-  Left = 435
-  Height = 532
-  Top = 201
-  Width = 460
+  Left = 967
+  Height = 540
+  Top = 197
+  Width = 752
   ActiveControl = Panel2
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 512
-  ClientWidth = 460
+  ClientHeight = 520
+  ClientWidth = 752
   Constraints.MinHeight = 460
   Constraints.MinWidth = 460
   Icon.Data = {
@@ -331,23 +331,23 @@ object frmMain: TfrmMain
   end
   object pnlMain: TPanel
     Left = 0
-    Height = 295
+    Height = 303
     Top = 54
-    Width = 460
+    Width = 752
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 295
-    ClientWidth = 460
+    ClientHeight = 303
+    ClientWidth = 752
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
       Left = 0
-      Height = 142
+      Height = 150
       Top = 0
-      Width = 460
+      Width = 752
       Align = alClient
       ItemHeight = 36
       MultiSelect = True
@@ -368,13 +368,13 @@ object frmMain: TfrmMain
     object pnlbottom: TPanel
       Left = 0
       Height = 153
-      Top = 142
-      Width = 460
+      Top = 150
+      Width = 752
       Align = alBottom
       AutoSize = True
       BevelOuter = bvNone
       ClientHeight = 153
-      ClientWidth = 460
+      ClientWidth = 752
       ParentColor = False
       ParentShowHint = False
       ShowHint = True
@@ -383,19 +383,19 @@ object frmMain: TfrmMain
         Left = 0
         Height = 150
         Top = 3
-        Width = 460
+        Width = 752
         Align = alTop
         AutoSize = True
         BorderSpacing.Top = 3
         Caption = 'Output Details'
         ClientHeight = 132
-        ClientWidth = 456
+        ClientWidth = 748
         TabOrder = 0
         object Label1: TLabel
           Left = 13
           Height = 16
           Top = 5
-          Width = 430
+          Width = 722
           Align = alTop
           BorderSpacing.Left = 13
           BorderSpacing.Top = 5
@@ -407,7 +407,7 @@ object frmMain: TfrmMain
           Left = 13
           Height = 16
           Top = 47
-          Width = 430
+          Width = 722
           Align = alTop
           BorderSpacing.Left = 13
           BorderSpacing.Top = 3
@@ -419,7 +419,7 @@ object frmMain: TfrmMain
           Left = 13
           Height = 16
           Top = 89
-          Width = 430
+          Width = 722
           Align = alTop
           BorderSpacing.Left = 13
           BorderSpacing.Top = 3
@@ -433,7 +433,7 @@ object frmMain: TfrmMain
           Height = 23
           Hint = 'Device or file type the video should be converted to'
           Top = 21
-          Width = 430
+          Width = 722
           Align = alTop
           BorderSpacing.Left = 13
           BorderSpacing.Right = 13
@@ -449,7 +449,7 @@ object frmMain: TfrmMain
           Height = 23
           Hint = 'Specific settings to use for the chosen device or file type'
           Top = 63
-          Width = 430
+          Width = 722
           Align = alTop
           BorderSpacing.Left = 13
           BorderSpacing.Right = 13
@@ -463,31 +463,31 @@ object frmMain: TfrmMain
           Left = 13
           Height = 27
           Top = 105
-          Width = 430
+          Width = 722
           Align = alTop
           AutoSize = True
           BorderSpacing.Left = 13
           BorderSpacing.Right = 13
           BevelOuter = bvNone
           ClientHeight = 27
-          ClientWidth = 430
+          ClientWidth = 722
           TabOrder = 2
           OnClick = Panel14Click
           object Panel15: TPanel
             Left = 0
             Height = 27
             Top = 0
-            Width = 345
+            Width = 637
             Align = alClient
             BevelOuter = bvNone
             Caption = 'Panel15'
             ClientHeight = 27
-            ClientWidth = 345
+            ClientWidth = 637
             TabOrder = 0
             object ChooseFolderBtn: TButton
               AnchorSideLeft.Side = asrBottom
               AnchorSideRight.Side = asrBottom
-              Left = 302
+              Left = 594
               Height = 27
               Top = 0
               Width = 38
@@ -505,14 +505,14 @@ object frmMain: TfrmMain
               Height = 23
               Hint = 'Target location for the final video (choose a different folder than the source folder)'
               Top = 0
-              Width = 299
+              Width = 591
               Anchors = [akTop, akLeft, akRight]
               BorderSpacing.Right = 3
               TabOrder = 1
             end
           end
           object Panel16: TPanel
-            Left = 345
+            Left = 637
             Height = 27
             Top = 0
             Width = 85
@@ -539,11 +539,11 @@ object frmMain: TfrmMain
     Left = 0
     Height = 54
     Top = 0
-    Width = 460
+    Width = 752
     Align = alTop
     AutoSize = True
     ClientHeight = 54
-    ClientWidth = 460
+    ClientWidth = 752
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
@@ -1094,7 +1094,7 @@ object frmMain: TfrmMain
       TabOrder = 5
     end
     object btnOptions: TBitBtn
-      Left = 391
+      Left = 683
       Height = 52
       Hint = 'Open/close the additional options window'
       Top = 1
@@ -1188,8 +1188,8 @@ object frmMain: TfrmMain
   object StatusBar1: TStatusBar
     Left = 0
     Height = 23
-    Top = 489
-    Width = 460
+    Top = 497
+    Width = 752
     AutoHint = True
     Panels = <>
     ParentShowHint = False
@@ -1198,12 +1198,12 @@ object frmMain: TfrmMain
   object pnlAdditionalOptions: TPanel
     Left = 0
     Height = 140
-    Top = 349
-    Width = 460
+    Top = 357
+    Width = 752
     Align = alBottom
     BevelOuter = bvNone
     ClientHeight = 140
-    ClientWidth = 460
+    ClientWidth = 752
     ParentColor = False
     ParentShowHint = False
     ShowHint = True
@@ -1213,23 +1213,23 @@ object frmMain: TfrmMain
       Left = 0
       Height = 140
       Top = 0
-      Width = 460
+      Width = 752
       Align = alClient
       Caption = 'Additional Options'
       ClientHeight = 122
-      ClientWidth = 456
+      ClientWidth = 748
       TabOrder = 0
       object nbkSettings: TNotebook
         Left = 0
         Height = 122
         Top = 0
-        Width = 456
+        Width = 748
         Align = alClient
-        PageIndex = 3
+        PageIndex = 0
         TabOrder = 0
         object tabVideoSettings: TPage
           Caption = 'Video'
-          ClientWidth = 448
+          ClientWidth = 740
           ClientHeight = 94
           object Panel2: TPanel
             Left = 5
@@ -2213,6 +2213,12 @@ object frmMain: TfrmMain
     object MenuItem2: TMenuItem
       Caption = 'Apply Destination Folder'
       OnClick = MenuItem2Click
+    end
+    object mitViewMode: TMenuItem
+      AutoCheck = True
+      Caption = 'Detailed View'
+      ShowAlwaysCheckable = True
+      OnClick = mitViewModeClick
     end
   end
 end

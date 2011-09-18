@@ -510,6 +510,10 @@ msgstr ""
 msgid "Shutdown on Finish"
 msgstr ""
 
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr ""
+
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
 msgstr ""
@@ -710,6 +714,10 @@ msgstr ""
 
 #: TFRMSCRIPT.CAPTION
 msgid "FFmpeg Command Line"
+msgstr ""
+
+#: unit1.rsanalysing
+msgid "Analysing"
 msgstr ""
 
 #: unit1.rsconverting

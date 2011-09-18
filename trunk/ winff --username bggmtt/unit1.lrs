@@ -1,9 +1,9 @@
 { This is an automatically generated lazarus resource file }
 
 LazarusResources.Add('TfrmMain','FORMDATA',[
-  'TPF0'#8'TfrmMain'#7'frmMain'#4'Left'#3#179#1#6'Height'#3#20#2#3'Top'#3#201#0
-  +#5'Width'#3#204#1#13'ActiveControl'#7#6'Panel2'#14'AllowDropFiles'#9#7'Capti'
-  +'on'#6#5'WinFF'#12'ClientHeight'#3#0#2#11'ClientWidth'#3#204#1#21'Constraint'
+  'TPF0'#8'TfrmMain'#7'frmMain'#4'Left'#3#199#3#6'Height'#3#28#2#3'Top'#3#197#0
+  +#5'Width'#3#240#2#13'ActiveControl'#7#6'Panel2'#14'AllowDropFiles'#9#7'Capti'
+  +'on'#6#5'WinFF'#12'ClientHeight'#3#8#2#11'ClientWidth'#3#240#2#21'Constraint'
   +'s.MinHeight'#3#204#1#20'Constraints.MinWidth'#3#204#1#9'Icon.Data'#10#194'%'
   +#0#0#190'%'#0#0#0#0#1#0#1#0'00'#0#0#1#0' '#0#168'%'#0#0#22#0#0#0'('#0#0#0'0'
   +#0#0#0'`'#0#0#0#1#0' '#0#0#0#0#0#0'$'#0#0'd'#0#0#0'd'#0#0#0#0#0#0#0#0#0#0#0
@@ -455,66 +455,66 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'Destroy'#11'OnDropFiles'#7#13'FormDropFiles'#8'Position'#7#9'poDefault'#10
   +'LCLVersion'#6#6'0.9.30'#0#6'TLabel'#6'Label2'#4'Left'#2#0#6'Height'#2#1#3'T'
   +'op'#2#0#5'Width'#2#1#11'ParentColor'#8#0#0#6'TPanel'#7'pnlMain'#4'Left'#2#0
-  +#6'Height'#3''''#1#3'Top'#2'6'#5'Width'#3#204#1#5'Align'#7#8'alClient'#8'Aut'
-  +'oSize'#9#10'BevelOuter'#7#6'bvNone'#7'Caption'#6#7'pnlMain'#12'ClientHeight'
-  +#3''''#1#11'ClientWidth'#3#204#1#5'Color'#7#8'clSilver'#11'ParentColor'#8#8
-  +'TabOrder'#2#0#0#8'TListBox'#8'filelist'#4'Left'#2#0#6'Height'#3#142#0#3'Top'
-  +#2#0#5'Width'#3#204#1#5'Align'#7#8'alClient'#10'ItemHeight'#2'$'#11'MultiSel'
+  +#6'Height'#3'/'#1#3'Top'#2'6'#5'Width'#3#240#2#5'Align'#7#8'alClient'#8'Auto'
+  +'Size'#9#10'BevelOuter'#7#6'bvNone'#7'Caption'#6#7'pnlMain'#12'ClientHeight'
+  +#3'/'#1#11'ClientWidth'#3#240#2#5'Color'#7#8'clSilver'#11'ParentColor'#8#8'T'
+  +'abOrder'#2#0#0#8'TListBox'#8'filelist'#4'Left'#2#0#6'Height'#3#150#0#3'Top'
+  +#2#0#5'Width'#3#240#2#5'Align'#7#8'alClient'#10'ItemHeight'#2'$'#11'MultiSel'
   +'ect'#9#7'OnClick'#7#13'filelistClick'#14'OnContextPopup'#7#20'filelistConte'
   +'xtPopup'#10'OnDblClick'#7#12'btnPlayClick'#10'OnDrawItem'#7#16'filelistDraw'
   +'Item'#7'OnKeyUp'#7#13'filelistKeyUp'#13'OnMeasureItem'#7#19'filelistMeasure'
   +'Item'#11'OnMouseMove'#7#17'filelistMouseMove'#10'OnShowHint'#7#16'filelistS'
   +'howHint'#14'ParentShowHint'#8#9'PopupMenu'#7#10'PopupMenu1'#8'ShowHint'#9#5
   +'Style'#7#16'lbOwnerDrawFixed'#8'TabOrder'#2#0#0#0#6'TPanel'#9'pnlbottom'#4
-  +'Left'#2#0#6'Height'#3#153#0#3'Top'#3#142#0#5'Width'#3#204#1#5'Align'#7#8'al'
+  +'Left'#2#0#6'Height'#3#153#0#3'Top'#3#150#0#5'Width'#3#240#2#5'Align'#7#8'al'
   +'Bottom'#8'AutoSize'#9#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#3#153#0#11
-  +'ClientWidth'#3#204#1#11'ParentColor'#8#14'ParentShowHint'#8#8'ShowHint'#9#8
+  +'ClientWidth'#3#240#2#11'ParentColor'#8#14'ParentShowHint'#8#8'ShowHint'#9#8
   +'TabOrder'#2#1#0#9'TGroupBox'#17'grpOutputSettings'#4'Left'#2#0#6'Height'#3
-  +#150#0#3'Top'#2#3#5'Width'#3#204#1#5'Align'#7#5'alTop'#8'AutoSize'#9#17'Bord'
+  +#150#0#3'Top'#2#3#5'Width'#3#240#2#5'Align'#7#5'alTop'#8'AutoSize'#9#17'Bord'
   +'erSpacing.Top'#2#3#7'Caption'#6#14'Output Details'#12'ClientHeight'#3#132#0
-  +#11'ClientWidth'#3#200#1#8'TabOrder'#2#0#0#6'TLabel'#6'Label1'#4'Left'#2#13#6
-  +'Height'#2#16#3'Top'#2#5#5'Width'#3#174#1#5'Align'#7#5'alTop'#18'BorderSpaci'
+  +#11'ClientWidth'#3#236#2#8'TabOrder'#2#0#0#6'TLabel'#6'Label1'#4'Left'#2#13#6
+  +'Height'#2#16#3'Top'#2#5#5'Width'#3#210#2#5'Align'#7#5'alTop'#18'BorderSpaci'
   +'ng.Left'#2#13#17'BorderSpacing.Top'#2#5#19'BorderSpacing.Right'#2#13#7'Capt'
   +'ion'#6#11'Convert to:'#11'ParentColor'#8#0#0#6'TLabel'#7'Label19'#4'Left'#2
-  +#13#6'Height'#2#16#3'Top'#2'/'#5'Width'#3#174#1#5'Align'#7#5'alTop'#18'Borde'
+  +#13#6'Height'#2#16#3'Top'#2'/'#5'Width'#3#210#2#5'Align'#7#5'alTop'#18'Borde'
   +'rSpacing.Left'#2#13#17'BorderSpacing.Top'#2#3#19'BorderSpacing.Right'#2#13#7
   +'Caption'#6#7'Preset:'#11'ParentColor'#8#0#0#6'TLabel'#7'Label11'#4'Left'#2
-  +#13#6'Height'#2#16#3'Top'#2'Y'#5'Width'#3#174#1#5'Align'#7#5'alTop'#18'Borde'
+  +#13#6'Height'#2#16#3'Top'#2'Y'#5'Width'#3#210#2#5'Align'#7#5'alTop'#18'Borde'
   +'rSpacing.Left'#2#13#17'BorderSpacing.Top'#2#3#19'BorderSpacing.Right'#2#13#7
   +'Caption'#6#14'Output Folder:'#11'ParentColor'#8#7'OnClick'#7#12'Label11Clic'
   +'k'#0#0#9'TComboBox'#11'categorybox'#4'Left'#2#13#6'Height'#2#23#4'Hint'#6'4'
   +'Device or file type the video should be converted to'#3'Top'#2#21#5'Width'#3
-  +#174#1#5'Align'#7#5'alTop'#18'BorderSpacing.Left'#2#13#19'BorderSpacing.Righ'
+  +#210#2#5'Align'#7#5'alTop'#18'BorderSpacing.Left'#2#13#19'BorderSpacing.Righ'
   +'t'#2#13#10'ItemHeight'#2#15#9'MaxLength'#4#255#255#0#0#8'OnChange'#7#17'cat'
   +'egoryboxChange'#6'Sorted'#9#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#0#0
   +#0#9'TComboBox'#9'PresetBox'#4'Left'#2#13#6'Height'#2#23#4'Hint'#6';Specific'
   +' settings to use for the chosen device or file type'#3'Top'#2'?'#5'Width'#3
-  +#174#1#5'Align'#7#5'alTop'#18'BorderSpacing.Left'#2#13#19'BorderSpacing.Righ'
+  +#210#2#5'Align'#7#5'alTop'#18'BorderSpacing.Left'#2#13#19'BorderSpacing.Righ'
   +'t'#2#13#10'ItemHeight'#2#15#9'MaxLength'#4#255#255#0#0#8'OnChange'#7#15'Pre'
   +'setBoxChange'#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#1#0#0#6'TPanel'#7
-  +'Panel14'#4'Left'#2#13#6'Height'#2#27#3'Top'#2'i'#5'Width'#3#174#1#5'Align'#7
+  +'Panel14'#4'Left'#2#13#6'Height'#2#27#3'Top'#2'i'#5'Width'#3#210#2#5'Align'#7
   +#5'alTop'#8'AutoSize'#9#18'BorderSpacing.Left'#2#13#19'BorderSpacing.Right'#2
-  +#13#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2#27#11'ClientWidth'#3#174#1
+  +#13#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2#27#11'ClientWidth'#3#210#2
   +#8'TabOrder'#2#2#7'OnClick'#7#12'Panel14Click'#0#6'TPanel'#7'Panel15'#4'Left'
-  +#2#0#6'Height'#2#27#3'Top'#2#0#5'Width'#3'Y'#1#5'Align'#7#8'alClient'#10'Bev'
+  +#2#0#6'Height'#2#27#3'Top'#2#0#5'Width'#3'}'#2#5'Align'#7#8'alClient'#10'Bev'
   +'elOuter'#7#6'bvNone'#7'Caption'#6#7'Panel15'#12'ClientHeight'#2#27#11'Clien'
-  +'tWidth'#3'Y'#1#8'TabOrder'#2#0#0#7'TButton'#15'ChooseFolderBtn'#19'AnchorSi'
+  +'tWidth'#3'}'#2#8'TabOrder'#2#0#0#7'TButton'#15'ChooseFolderBtn'#19'AnchorSi'
   +'deLeft.Side'#7#9'asrBottom'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'
-  +#3'.'#1#6'Height'#2#27#3'Top'#2#0#5'Width'#2'&'#7'Anchors'#11#5'akTop'#7'akR'
+  +#3'R'#2#6'Height'#2#27#3'Top'#2#0#5'Width'#2'&'#7'Anchors'#11#5'akTop'#7'akR'
   +'ight'#0#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#3'...'#10'Font.Style'
   +#11#6'fsBold'#0#7'OnClick'#7#20'ChooseFolderBtnClick'#10'ParentFont'#8#8'Tab'
   +'Order'#2#0#0#0#5'TEdit'#10'DestFolder'#23'AnchorSideRight.Control'#7#15'Cho'
   +'oseFolderBtn'#4'Left'#2#0#6'Height'#2#23#4'Hint'#6'VTarget location for the'
   +' final video (choose a different folder than the source folder)'#3'Top'#2#0
-  +#5'Width'#3'+'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#19'BorderSpac'
-  +'ing.Right'#2#3#8'TabOrder'#2#1#0#0#0#6'TPanel'#7'Panel16'#4'Left'#3'Y'#1#6
+  +#5'Width'#3'O'#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#19'BorderSpac'
+  +'ing.Right'#2#3#8'TabOrder'#2#1#0#0#0#6'TPanel'#7'Panel16'#4'Left'#3'}'#2#6
   +'Height'#2#27#3'Top'#2#0#5'Width'#2'U'#5'Align'#7#7'alRight'#10'BevelOuter'#7
   +#6'bvNone'#12'ClientHeight'#2#27#11'ClientWidth'#2'U'#8'TabOrder'#2#1#0#9'TC'
   +'heckBox'#12'cbOutputPath'#4'Left'#2#8#6'Height'#2#19#3'Top'#2#4#5'Width'#2
   +'N'#7'Caption'#6#10'Use Source'#8'OnChange'#7#18'cbOutputPathChange'#8'TabOr'
   +'der'#2#0#0#0#0#0#0#0#0#6'TPanel'#6'pnlTop'#4'Left'#2#0#6'Height'#2'6'#3'Top'
-  ,#2#0#5'Width'#3#204#1#5'Align'#7#5'alTop'#8'AutoSize'#9#12'ClientHeight'#2'6'
-  +#11'ClientWidth'#3#204#1#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#1#0
+  ,#2#0#5'Width'#3#240#2#5'Align'#7#5'alTop'#8'AutoSize'#9#12'ClientHeight'#2'6'
+  +#11'ClientWidth'#3#240#2#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#1#0
   +#7'TBitBtn'#6'btnAdd'#4'Left'#2#1#6'Height'#2'4'#4'Hint'#6'&Add file(s) to t'
   +'he list for conversion'#3'Top'#2#1#5'Width'#2'<'#5'Align'#7#6'alLeft'#8'Aut'
   +'oSize'#9#7'Caption'#6#3'Add'#20'Constraints.MinWidth'#2'<'#10'Glyph.Data'#10
@@ -1174,7 +1174,7 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0#255#255#255#0
   +#255#255#255#0#255#255#255#0#255#255#255#0#6'Layout'#7#10'blGlyphTop'#9'NumG'
   +'lyphs'#2#0#7'OnClick'#7#15'btnPreviewClick'#8'TabOrder'#2#5#0#0#7'TBitBtn'
-  +#10'btnOptions'#4'Left'#3#135#1#6'Height'#2'4'#4'Hint'#6'(Open/close the add'
+  +#10'btnOptions'#4'Left'#3#171#2#6'Height'#2'4'#4'Hint'#6'(Open/close the add'
   +'itional options window'#3'Top'#2#1#5'Width'#2'D'#5'Align'#7#7'alRight'#8'Au'
   +'toSize'#9#7'Caption'#6#7'Options'#20'Constraints.MinWidth'#2'<'#10'Glyph.Da'
   +'ta'#10':'#9#0#0'6'#9#0#0'BM6'#9#0#0#0#0#0#0'6'#0#0#0'('#0#0#0#24#0#0#0#24#0
@@ -1283,18 +1283,18 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'KKjMMMjOOOjRRRjRRRjQQQj;;;'#24#255#255#255#0#255#255#255#0#255#255#255#0#255
   ,#255#255#0#255#255#255#0#6'Layout'#7#10'blGlyphTop'#9'NumGlyphs'#2#0#7'OnCli'
   +'ck'#7#19'mitShowOptionsClick'#8'TabOrder'#2#6#0#0#0#10'TStatusBar'#10'Statu'
-  +'sBar1'#4'Left'#2#0#6'Height'#2#23#3'Top'#3#233#1#5'Width'#3#204#1#8'AutoHin'
+  +'sBar1'#4'Left'#2#0#6'Height'#2#23#3'Top'#3#241#1#5'Width'#3#240#2#8'AutoHin'
   +'t'#9#6'Panels'#14#0#14'ParentShowHint'#8#8'ShowHint'#9#0#0#6'TPanel'#20'pnl'
-  +'AdditionalOptions'#4'Left'#2#0#6'Height'#3#140#0#3'Top'#3']'#1#5'Width'#3
-  +#204#1#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#3
-  +#140#0#11'ClientWidth'#3#204#1#11'ParentColor'#8#14'ParentShowHint'#8#8'Show'
+  +'AdditionalOptions'#4'Left'#2#0#6'Height'#3#140#0#3'Top'#3'e'#1#5'Width'#3
+  +#240#2#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#3
+  +#140#0#11'ClientWidth'#3#240#2#11'ParentColor'#8#14'ParentShowHint'#8#8'Show'
   +'Hint'#9#8'TabOrder'#2#3#7'Visible'#8#0#9'TGroupBox'#11'gbxSettings'#4'Left'
-  +#2#0#6'Height'#3#140#0#3'Top'#2#0#5'Width'#3#204#1#5'Align'#7#8'alClient'#7
+  +#2#0#6'Height'#3#140#0#3'Top'#2#0#5'Width'#3#240#2#5'Align'#7#8'alClient'#7
   +'Caption'#6#18'Additional Options'#12'ClientHeight'#2'z'#11'ClientWidth'#3
-  +#200#1#8'TabOrder'#2#0#0#9'TNotebook'#11'nbkSettings'#4'Left'#2#0#6'Height'#2
-  +'z'#3'Top'#2#0#5'Width'#3#200#1#5'Align'#7#8'alClient'#9'PageIndex'#2#3#8'Ta'
+  +#236#2#8'TabOrder'#2#0#0#9'TNotebook'#11'nbkSettings'#4'Left'#2#0#6'Height'#2
+  +'z'#3'Top'#2#0#5'Width'#3#236#2#5'Align'#7#8'alClient'#9'PageIndex'#2#0#8'Ta'
   +'bOrder'#2#0#0#5'TPage'#16'tabVideoSettings'#7'Caption'#6#5'Video'#11'Client'
-  +'Width'#3#192#1#12'ClientHeight'#2'^'#0#6'TPanel'#6'Panel2'#4'Left'#2#5#6'He'
+  +'Width'#3#228#2#12'ClientHeight'#2'^'#0#6'TPanel'#6'Panel2'#4'Left'#2#5#6'He'
   +'ight'#2'^'#3'Top'#2#0#5'Width'#2'd'#5'Align'#7#6'alLeft'#8'AutoSize'#9#18'B'
   +'orderSpacing.Left'#2#5#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'^'#11
   +'ClientWidth'#2'd'#20'Constraints.MinWidth'#2'd'#8'TabOrder'#2#0#0#6'TLabel'
@@ -1613,5 +1613,7 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'up'#7#15'PopupMenu1Popup'#4'left'#3'6'#1#3'top'#3#139#0#0#9'TMenuItem'#9'Me'
   +'nuItem1'#7'Caption'#6#12'Apply Preset'#7'OnClick'#7#14'MenuItem1Click'#0#0#9
   +'TMenuItem'#9'MenuItem2'#7'Caption'#6#24'Apply Destination Folder'#7'OnClick'
-  +#7#14'MenuItem2Click'#0#0#0#0
+  +#7#14'MenuItem2Click'#0#0#9'TMenuItem'#11'mitViewMode'#9'AutoCheck'#9#7'Capt'
+  +'ion'#6#13'Detailed View'#19'ShowAlwaysCheckable'#9#7'OnClick'#7#16'mitViewM'
+  +'odeClick'#0#0#0#0
 ]);
