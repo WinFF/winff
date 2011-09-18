@@ -72,10 +72,12 @@ msgstr ""
 msgid "JNavas"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr ""
@@ -150,12 +152,10 @@ msgstr "Usuń"
 msgid "One word, only letters and numbers"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMEDITPRESETS.EDIT2.HINT
 msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEDITPRESETS.EDIT3.HINT
 #, fuzzy
 #| msgid "Preset Command Line (no -i or output file)"
@@ -170,6 +170,7 @@ msgstr ""
 msgid "Choose a category to group this preset under"
 msgstr ""
 
+#| msgctxt "REMOVED3"
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
@@ -217,6 +218,7 @@ msgstr "Kategoria"
 msgid "Save"
 msgstr "Zapisz"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr ""
@@ -252,7 +254,7 @@ msgstr "docelowa szerokość strumienia w kilobitach na sekundę (liczba całkow
 msgid "(<integer>) number of audio channels"
 msgstr "ilość kanałów dźwięku (liczba całkowita)"
 
-#| msgctxt "REMOVED3"
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.AUDSAMPLINGRATE.HINT
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "częstotliwość próbkowania dźwięku w Hertzach (liczba całkowita)"
@@ -298,7 +300,7 @@ msgstr "Opcje"
 msgid "Open/close the additional options window"
 msgstr "otwórz lub zamknij okno opcji dodatkowych"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
 msgstr "Odtwórz"
@@ -335,7 +337,6 @@ msgstr "usuwa zaznaczne pliki z listy"
 msgid "Device or file type the video should be converted to"
 msgstr "nazwa docelowego urządzenia lub typ docelowego pliku wideo"
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source"
@@ -382,7 +383,6 @@ msgstr ""
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr "proporcje obrazu po konwersji (para liczb całkowitych przedzielonych dwukropkiem LUB liczba rzeczywista)"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
 msgstr ""
@@ -417,11 +417,13 @@ msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.EDTTTRHH.HINT
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
@@ -495,12 +497,10 @@ msgstr ""
 msgid "Time to Record"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.LABEL24.CAPTION
 msgid "Hours / Minutes / Seconds"
 msgstr ""
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.LABEL3.CAPTION
 #, fuzzy
 #| msgid "Additional Command Line Parameters (Advanced)"
@@ -620,6 +620,55 @@ msgstr "Dodatkowe opcje"
 msgid "Shutdown on Finish"
 msgstr "Wyłącz po zakończeniu"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Wszystkie kategorie)"
+#~ msgid "Convert To ..."
+#~ msgstr "Konwertuj do..."
+#~ msgid "Device Preset"
+#~ msgstr "Szablon urządzenia"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Katalog docelowy"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "O programie"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opcje"
+#~ msgid "Video Settings"
+#~ msgstr "Ustawienia obrazu"
+#~ msgid "Audio Settings"
+#~ msgstr "Ustawienia dźwięku"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Anuluj"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Szablony"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Wielowątkowość dla procesora dwurdzeniowego"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Ścieżka do FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Ścieżka do FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Konwertowanie"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Zapisz"
+#~ msgid "Replace Preset"
+#~ msgstr "Zmień szablony"
+#~ msgid "AC'"
+#~ msgstr "Kanały audio"
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr ""
+
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
 msgstr "Strona domowa WinFF"
@@ -697,51 +746,6 @@ msgstr "szerokość strumienia danych w kilobitach na sekundę (liczba całkowit
 msgid "(<real> or <integer>) number of frames per second"
 msgstr "liczba klatek na sekundę (liczba całkowita lub rzeczywista)"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Wszystkie kategorie)"
-#~ msgid "Convert To ..."
-#~ msgstr "Konwertuj do..."
-#~ msgid "Device Preset"
-#~ msgstr "Szablon urządzenia"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Katalog docelowy"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "O programie"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opcje"
-#~ msgid "Video Settings"
-#~ msgstr "Ustawienia obrazu"
-#~ msgid "Audio Settings"
-#~ msgstr "Ustawienia dźwięku"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Anuluj"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Szablony"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Wielowątkowość dla procesora dwurdzeniowego"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Ścieżka do FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Ścieżka do FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Konwertowanie"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Zapisz"
-#~ msgid "Replace Preset"
-#~ msgstr "Zmień szablony"
-#~ msgid "AC'"
-#~ msgstr "Kanały audio"
 #: TFRMMAIN.VIDSIZEX.HINT
 #, fuzzy
 #| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
@@ -908,6 +912,10 @@ msgstr ""
 #: TFRMSCRIPT.CAPTION
 msgid "FFmpeg Command Line"
 msgstr "Wiersz poleceń FFmpeg"
+
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr ""
 
 #: unit1.rsconverting
 msgid "Converting"

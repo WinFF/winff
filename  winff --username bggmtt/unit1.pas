@@ -90,6 +90,7 @@ type
     lblVideoSize: TLabel;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
+    mitViewMode: TMenuItem;
 //    mitPlaySoundonFinish: TMenuItem;
     mitDisplayCmdline: TMenuItem;
     dlgOpenFile: TOpenDialog;
@@ -204,6 +205,7 @@ type
     procedure mitPreferencesClick(Sender: TObject);
     procedure mitDocsClick(Sender: TObject);
     procedure mitForumsClick(Sender: TObject);
+    procedure mitViewModeClick(Sender: TObject);
     procedure mitWinffClick(Sender: TObject);
     procedure mitPauseOnFinishClick(Sender: TObject);
     procedure btnPlayClick(Sender: TObject);
@@ -302,6 +304,7 @@ var
   rsPleaseSelectAPreset = 'Please select a preset';
   rsPleaseAdd1File = 'Please add at least 1 file to convert';
   rsConverting = 'Converting';
+  rsAnalysing = 'Analysing';
   rsPressEnter = 'Press Enter to Continue';
   rsCouldNotFindFile = 'Could Not Find File';
   rsInvalidPreset = 'Invalid Preset File';
@@ -857,8 +860,20 @@ begin
 end;
 
 procedure TfrmMain.filelistClick(Sender: TObject);
+var i,j : integer;
 begin
-
+  if filelist.SelCount = 1 then
+   begin
+     for j := 0 to filelist.Count -1 do
+       begin
+         if filelist.Selected[j] then i := j;
+       end;
+     categorybox.Text:= CategoryList.Strings[i];
+     categoryboxChange(self);
+     PresetBox.Text:= PresetList.Strings[i];
+     DestFolder.Text:= DestinationList.Strings[i];
+     Application.ProcessMessages;
+   end;
 end;
 
 procedure TfrmMain.filelistContextPopup(Sender: TObject; MousePos: TPoint;
@@ -966,6 +981,7 @@ begin                                     // get setup
 
 
    script:= TStringList.Create;
+   {$ifdef win32}script.Add('@echo off');{$endif}
    {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
    {$ifdef unix}script.Add('#!/bin/sh');{$endif}
 
@@ -1017,9 +1033,9 @@ begin                                     // get setup
          end;
 
        command := '';
-       {$ifdef win32}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
+       {$ifdef win32}titlestring:='title ' + rsAnalysing + ' ' + extractfilename(filename) +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
-       {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
+       {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsAnalysing +' ' + basename +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
        //destfolder.text := extractfilepath(filename);
@@ -1028,7 +1044,7 @@ begin                                     // get setup
         script.Add(command);
 
         // remove batch file on completion
-   {$ifdef win32}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
+//   {$ifdef win32}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
    {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
 
 
@@ -1042,14 +1058,20 @@ begin                                     // get setup
      {$endif}
 
      {$ifdef unix}qterm := terminal;{$endif}
+     scriptprocess.ShowWindow := swoNone;
                                                         // do it
      {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
      {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
-
      scriptprocess.execute;
-
     script.Free;
     sleep(1000) ; // need to wait for this to finish before continuing;
+    {$ifdef win32}
+    try
+      DeleteFileUTF8(presetspath + batfile);
+    except;
+           // Could Not Delete Generated Batch File
+    end;
+    {$endif}
 end;
 
 
@@ -1480,6 +1502,17 @@ procedure TfrmMain.mitForumsClick(Sender: TObject);
 
 begin
   launchbrowser('http://www.winff.org/forums/');
+end;
+
+procedure TfrmMain.mitViewModeClick(Sender: TObject);
+begin
+  if mitViewMode.Checked = True then
+   begin
+     filelist.style := lbOwnerDrawFixed;;
+   end else
+   begin
+     filelist.style := lbStandard;
+   end;
 end;
 
 //menu: Help Forums

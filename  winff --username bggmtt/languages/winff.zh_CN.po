@@ -537,6 +537,10 @@ msgstr "其他选项"
 msgid "Shutdown on Finish"
 msgstr "完成时关闭"
 
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr ""
+
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
 msgstr "WinFF 网站"
@@ -738,6 +742,10 @@ msgstr "另存为..."
 #: TFRMSCRIPT.CAPTION
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg 命令行"
+
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr ""
 
 #: unit1.rsconverting
 msgid "Converting"
