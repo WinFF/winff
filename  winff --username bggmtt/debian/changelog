@@ -1,3 +1,16 @@
+winff (1.3.2-5) unstable; urgency=low
+
+  * Update d/copyright to make it dep5 conformal again
+  * Update preset files with new upstream files
+  * Update presets for Debian with new libavcodec53 presets minus libfaac
+    (LP: #871332)
+  * Merge debian and ubuntu package
+    - Suggest libavcodec-extra-5(2|3)
+    - Extend long description with text about libavcodec-extra-##
+    - Removed file shuffling from d/rules
+
+ -- Paul Gevers <paul@climbing.nl>  Wed, 12 Oct 2011 22:43:52 +0200
+
 winff (1.3.2-4) unstable; urgency=low
 
   * Update Chinese translations (Upstream: #118)

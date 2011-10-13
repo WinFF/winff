@@ -21,6 +21,7 @@ Depends: ffmpeg,
 	 ${misc:Depends},
 Recommends: winff-doc,
 Suggests: www-browser,
+          libavcodec-extra-53 | libavcodec-extra-52,
 Breaks: shared-mime-info (<< 0.40),
 Description: graphical video and audio batch converter using ffmpeg
  WinFF is a graphical user interface for FFmpeg. It will convert
@@ -33,6 +34,11 @@ Description: graphical video and audio batch converter using ffmpeg
  common formats and devices. These presets are intended to hit the
  "sweet spot" for each individual codec. They have been written with a
  tip of the balance to quality.
+ .
+ For most presets to work, it is necessary to have the unstripped version
+ of the libavcodec package, which can be obtained by installing
+ libavcodec-extra-## as suggested by this package. It might be necessary
+ to enable additional repositories to find that package.
 
 Package: winff-dbg
 Architecture: any
