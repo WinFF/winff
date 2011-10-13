@@ -1,0 +1,99 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+configure: configure-stamp
+configure-stamp:
+	dh_testdir
+
+	if [ -f presets.xml ] ; then mv presets.xml presets-orig.xml; fi 
+
+ifeq ($(shell dpkg-vendor --derives-from Ubuntu && echo yes),yes)
+	mv debian/control debian/control.debian
+	mv debian/presets.xml debian/presets-debian.xml
+	cp debian/control.ubuntu debian/control
+	cp debian/presets-ubuntu.xml debian/presets.xml
+endif
+
+	cd languages ;\
+		if [ -f winff.pb.po ] ; then mv winff.pb.po winff.pt_BR.po; fi ;\
+		if [ -f winff.po ] ; then mv winff.po winff.en.po; fi ;\
+		if [ -f winff.zh.po ] ; then mv winff.zh.po winff.zh_TW.po; fi
+
+	touch configure-stamp
+
+
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+
+build-stamp: configure-stamp 
+	dh_testdir
+
+	lazbuild --widgetset=gtk2 -B winff.lpr
+
+	touch $@
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp configure-stamp
+
+	if [ -f presets-orig.xml ] ; then mv presets-orig.xml presets.xml; fi 
+	cd languages ;\
+		if [ -f winff.pt_BR.po ] ; then mv winff.pt_BR.po winff.pb.po; fi ;\
+		if [ -f winff.en.po ] ; then mv winff.en.po winff.po; fi ;\
+		if [ -f winff.zh_TW.po ] ; then mv winff.zh_TW.po winff.zh.po; fi
+
+	cd debian ;\
+		if [ -f control.debian ] ; then mv control.debian control; fi ;\
+		if [ -f presets-debian.xml ] ; then mv presets-debian.xml presets.xml; fi
+
+	dh_clean 
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+
+# Build architecture-independent files here.
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs -i changelog.txt
+	dh_installdocs -i
+	dh_install -i
+	dh_compress -i --exclude=.pdf
+	dh_fixperms -i
+	dh_installdeb -i
+	dh_gencontrol -i
+	dh_md5sums -i
+	dh_builddeb -i
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs -a -pwinff changelog.txt
+	dh_installdocs -a -pwinff
+	dh_install -a
+	dh_installmenu -a
+	dh_installman -a -pwinff winff.1
+	dh_installmime -a
+	dh_strip --dbg-package=winff-dbg
+	dh_compress -a --exclude=.pdf
+	dh_fixperms -a
+	find $(CURDIR)/debian/winff/usr/share/ -type f | xargs chmod a-x
+	dh_installdeb -a
+	dh_shlibdeps -a
+	dh_gencontrol -a
+	dh_md5sums -a
+	dh_builddeb -a
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install configure
