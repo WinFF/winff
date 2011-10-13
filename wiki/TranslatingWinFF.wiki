@@ -2,11 +2,16 @@
 #labels Phase-Implementation
 
 =Translating WinFF=
+
+== Via the web ==
+Register at launchpad and translate away: [https://translations.launchpad.net/winff/]
+
+== With your local editor ==
 The winff.po can be translated using a text editor or programs such as a kbabel for linux, poedit for windows and linux. I'm going to cover using a text editor.
 
-get the latest file from [http://code.google.com/p/winff/source/checkout svn]
+Get the latest file from [http://code.google.com/p/winff/source/checkout svn]
 
-once you have the file, open it in your text editor. The Gnome editor is great. If your using windows i don't recommend notepad, but it should work theoretically.
+Once you have the file, open it in your text editor. The Gnome editor is great. If your using windows I don't recommend notepad, but it should work theoretically.
 
 
 Once in the file you will see a bunch of lines like:
@@ -19,7 +24,7 @@ Once in the file you will see a bunch of lines like:
 }}}
  
 
-The First line is the english line, and should must remain as it is. The second line is where the translation should go. For example from Kai Evers German translation:
+The First line is the English line, and should must remain as it is. The second line is where the translation should go. For example from Kai Evers German translation:
 
  
 {{{
@@ -39,9 +44,8 @@ Some pointers:
 
     * Do not use the single quote - ' -
     * AC is audio channel.
-    * Some translation maybe to long to fit in the space above or next to the button. I had to do this in English also. Unfortunately it is unavoidable. To make matters worse: different linux distros and different users, use different default fonts.
 
-Once you are happy with your translation, contact me and I'll tell you where to send it.
+Once you are happy with your translation, upload it to our [http://code.google.com/p/winff/issues/list bug tracker] as wish list bug.
 
 New translations will be posted on winff.org, and will come out with next release.
 
