@@ -1806,31 +1806,46 @@ begin                                     // get setup
            cb:=strtoint(edtcropbottom.text);
            if cb mod 2 = 1 then cb := cb-1;
            edtcropbottom.text := inttostr(cb);
-           if edtcropbottom.text <> '0' then commandline := commandline + ' -cropbottom ' + edtCropBottom.Text + ' ';
-          end;
-
+          end
+       else
+           edtCropBottom.Text := '0';
+    
        if edtCropTop.Text <> '' then
          begin
            ct:=strtoint(edtcroptop.text);
            if ct mod 2 = 1 then ct := ct-1;
            edtcroptop.text := inttostr(ct);
-           if edtcroptop.text <> '0' then commandline += ' -croptop ' + edtCropTop.Text + ' ';
-         end;
-
+         end
+       else
+           edtCropTop.Text := '0';
+    
        if edtCropLeft.Text <> '' then
          begin
            cl:=strtoint(edtcropleft.text);
            if cl mod 2 = 1 then cl := cl-1;
            edtcropleft.text := inttostr(cl);
-           if edtcropleft.text <> '0' then commandline += ' -cropleft ' + edtCropLeft.Text + ' ';
-         end;
-
+         end
+       else
+           edtCropLeft.Text := '0';
+    
        if edtCropRight.Text <> '' then
          begin
            cr:=strtoint(edtcropright.text);
            if cr mod 2 = 1 then cr := cr-1;
            edtcropright.text := inttostr(cr);
-           if edtcropright.text <> '0' then commandline += ' -cropright ' + edtCropRight.Text + ' ';
+         end
+       else
+           edtCropRight.Text := '0';
+    
+       // As per libavcodec soname 53 the cropping changed to a filter option with compacted syntax
+       // Paul
+       if (edtCropTop.Text <> '0') OR (edtCropBottom.Text <> '0') OR (edtCropLeft.Text <> '0') OR (edtCropRight.Text <> '0') then
+         begin
+              commandline += ' -vf crop=' ;
+              commandline += 'iw-' + edtCropLeft.Text + '-' + edtCropRight.Text + ':' ;
+              commandline += 'ih-' + edtCropTop.Text + '-' + edtCropBottom.Text + ':' ;
+              commandline += edtCropLeft.Text + ':' ;
+              commandline += edtCropTop.Text ;
          end;
 
 
