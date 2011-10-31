@@ -218,6 +218,16 @@ msgstr "Добавить"
 msgid "Add file(s) to the list for conversion"
 msgstr "Добавить файл(ы) в список преобразования"
 
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Destination Folder"
+msgstr ""
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "Очистить"
@@ -273,7 +283,7 @@ msgstr "Устройство или тип файла, в который нуж�
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
-msgid "Use Source"
+msgid "Use Source Folder"
 msgstr ""
 
 #: TFRMMAIN.CBX2PASS.CAPTION
@@ -473,10 +483,12 @@ msgid "Video Size"
 msgstr "Размер видео"
 
 #: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
 msgstr ""
 
 #: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
 msgstr ""
 
@@ -560,6 +572,14 @@ msgstr "Настройки"
 
 #: TFRMMAIN.PANEL15.CAPTION
 msgid "Panel15"
+msgstr ""
+
+#: TFRMMAIN.PANEL17.CAPTION
+msgid "Panel17"
+msgstr ""
+
+#: TFRMMAIN.PANEL18.CAPTION
+msgid "Panel18"
 msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION

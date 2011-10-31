@@ -17,6 +17,8 @@
 # Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2011
 #| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 msgid ""
 msgstr ""
 "Project-Id-Version: Winff 1.0\n"
@@ -70,12 +72,11 @@ msgstr "Ikoner og logo av Alex Klepatsch"
 msgid "JNavas"
 msgstr "JNavas"
 
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
 msgstr "Copyright 2006-2009 GPL V3"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
+#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr "Matthew Weatherford,  Ian Stoffberg og Alexey Osipov"
@@ -119,6 +120,7 @@ msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
 msgstr "Takk"
@@ -148,6 +150,7 @@ msgstr "Et ord, bare bokstaver og tall"
 msgid "Enter a more descriptive name for this preset"
 msgstr "Gi et navn som beskriver denne forhåndsinnstillinga"
 
+#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.EDIT3.HINT
 #| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
@@ -161,7 +164,6 @@ msgstr "Ikke inkluder en punkt"
 msgid "Choose a category to group this preset under"
 msgstr "Velg en kategori til denne forhåndsinnstillinga"
 
-#| msgctxt "REMOVED3"
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
@@ -190,6 +192,7 @@ msgstr "Merkelappet til forhåndsinnstillinga"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Kommandolinje til forhåndsinnstillinga (ingen -i eller utdata fil)"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 #| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
@@ -204,7 +207,6 @@ msgstr "Kategori"
 msgid "Save"
 msgstr "Lagre"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr "pnlTop"
@@ -238,7 +240,6 @@ msgstr "(<heltall>) kbits/sekund-målet som strømmen skal brukes"
 msgid "(<integer>) number of audio channels"
 msgstr "(<heltall>) antall lydkanaler"
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.AUDSAMPLINGRATE.HINT
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<heltall>) lydsamplingsfrekvensen i Hertz"
@@ -251,6 +252,16 @@ msgstr "Legg til"
 #| msgid "add file(s) to the list for conversion"
 msgid "Add file(s) to the list for conversion"
 msgstr "Tilsett fil(er) til konverteringslista"
+
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Destination Folder"
+msgstr ""
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr ""
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
@@ -280,7 +291,6 @@ msgstr "Alternativer"
 msgid "Open/close the additional options window"
 msgstr "Åpen/lukk vinduet med ekstra alternativer"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
 msgstr "Spill"
@@ -299,6 +309,7 @@ msgstr "Forhåndsvisning"
 msgid "Preview using the output settings"
 msgstr "Forhåndsvisning med utdata instillinger"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "Fjern"
@@ -315,7 +326,7 @@ msgstr "Navnet til enheten eller filtypen som videoen skal konverteres til"
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
-msgid "Use Source"
+msgid "Use Source Folder"
 msgstr ""
 
 #: TFRMMAIN.CBX2PASS.CAPTION
@@ -389,7 +400,6 @@ msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr "<hh:mm:ss> - Søke til denne posisjon før konvertering starter"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
@@ -504,6 +514,46 @@ msgstr "Venstre"
 msgid "Right"
 msgstr "Høyre"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Alle kategorier)"
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "(<heltall>) Lyd synkronisering"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "<hh:mm:ss> - Tidspunkt hvor det nye opptaket skal begynne"
+#~ msgid "Make sure that the start time + time to record is less than total length of job"
+#~ msgstr "Forskikre deg at starttiden og optakstiden er mindre enn orginallengde "
+#~ msgid "Convert To ..."
+#~ msgstr "Konverter til"
+#~ msgid "Device Preset"
+#~ msgstr "Forhåndsinnstilling"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Utdatamappe"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Om WinFF"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Alternativer"
+#~ msgid "Video Settings"
+#~ msgstr "Video innstillinger"
+#~ msgid "Audio Settings"
+#~ msgstr "Lyd innstillinger"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Forhåndsinnstillinger"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Flertråding for doble core prosessorer"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Sti til FFmpeg.exe "
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Sti til FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr "Øvre side"
@@ -521,10 +571,12 @@ msgid "Video Size"
 msgstr "Video størelse"
 
 #: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
 msgstr ""
 
 #: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
 msgstr ""
 
@@ -585,46 +637,6 @@ msgstr "Ekstra alternativer"
 msgid "Shutdown on Finish"
 msgstr "Slutt av hvis ferdig"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Alle kategorier)"
-#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
-#~ msgstr "(<heltall>) Lyd synkronisering"
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "<hh:mm:ss> - Tidspunkt hvor det nye opptaket skal begynne"
-#~ msgid "Make sure that the start time + time to record is less than total length of job"
-#~ msgstr "Forskikre deg at starttiden og optakstiden er mindre enn orginallengde "
-#~ msgid "Convert To ..."
-#~ msgstr "Konverter til"
-#~ msgid "Device Preset"
-#~ msgstr "Forhåndsinnstilling"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Utdatamappe"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Om WinFF"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Alternativer"
-#~ msgid "Video Settings"
-#~ msgstr "Video innstillinger"
-#~ msgid "Audio Settings"
-#~ msgstr "Lyd innstillinger"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Forhåndsinnstillinger"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Flertråding for doble core prosessorer"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Sti til FFmpeg.exe "
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Sti til FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
 #: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
 msgstr ""
@@ -653,6 +665,14 @@ msgstr "Alternativer"
 
 #: TFRMMAIN.PANEL15.CAPTION
 msgid "Panel15"
+msgstr ""
+
+#: TFRMMAIN.PANEL17.CAPTION
+msgid "Panel17"
+msgstr ""
+
+#: TFRMMAIN.PANEL18.CAPTION
+msgid "Panel18"
 msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION

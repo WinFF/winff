@@ -235,6 +235,16 @@ msgstr "新增"
 msgid "Add file(s) to the list for conversion"
 msgstr "新增要轉換的檔案到清單中"
 
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Destination Folder"
+msgstr ""
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "清除"
@@ -290,7 +300,7 @@ msgstr "要轉換到哪個裝置或檔案型態"
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
-msgid "Use Source"
+msgid "Use Source Folder"
 msgstr ""
 
 #: TFRMMAIN.CBX2PASS.CAPTION
@@ -466,6 +476,32 @@ msgstr "左側"
 msgid "Right"
 msgstr "右側"
 
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "聲訊同步，數值為整數"
+#~ msgid "(All Categories)"
+#~ msgstr "所有類別"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
+#~ msgid "Audio Settings"
+#~ msgstr "聲訊設定"
+#~ msgid "Continue"
+#~ msgstr "繼續"
+#~ msgid "Convert To ..."
+#~ msgstr "匯出類別"
+#~ msgid "Device Preset"
+#~ msgstr "編碼格式"
+#~ msgid ""
+#~ "Make sure that the start time + time to record is less than total length "
+#~ "of job"
+#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFPlay.exe 所在目錄"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe 所在目錄"
+#~ msgid "Video Settings"
+#~ msgstr "視訊設定"
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr "頂端"
@@ -483,10 +519,12 @@ msgid "Video Size"
 msgstr "畫面大小"
 
 #: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
 msgstr ""
 
 #: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
 msgstr ""
 
@@ -543,32 +581,6 @@ msgstr "額外選項"
 msgid "Shutdown on Finish"
 msgstr "完成後關閉"
 
-#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
-#~ msgstr "聲訊同步，數值為整數"
-#~ msgid "(All Categories)"
-#~ msgstr "所有類別"
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
-#~ msgid "Audio Settings"
-#~ msgstr "聲訊設定"
-#~ msgid "Continue"
-#~ msgstr "繼續"
-#~ msgid "Convert To ..."
-#~ msgstr "匯出類別"
-#~ msgid "Device Preset"
-#~ msgstr "編碼格式"
-#~ msgid ""
-#~ "Make sure that the start time + time to record is less than total length "
-#~ "of job"
-#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "FFPlay.exe 所在目錄"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "FFmpeg.exe 所在目錄"
-#~ msgid "Video Settings"
-#~ msgstr "視訊設定"
 #: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
 msgstr ""
@@ -596,6 +608,14 @@ msgstr "選項"
 
 #: TFRMMAIN.PANEL15.CAPTION
 msgid "Panel15"
+msgstr ""
+
+#: TFRMMAIN.PANEL17.CAPTION
+msgid "Panel17"
+msgstr ""
+
+#: TFRMMAIN.PANEL18.CAPTION
+msgid "Panel18"
 msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
