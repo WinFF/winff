@@ -452,30 +452,6 @@ msgstr "額外指令行參數"
 msgid "Audio Bitrate"
 msgstr "音效位元率"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "取樣頻率"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr "X"
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "畫面比例"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr "底端"
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr "左側"
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-msgid "Right"
-msgstr "右側"
-
 #~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
 #~ msgstr "聲訊同步，數值為整數"
 #~ msgid "(All Categories)"
@@ -502,6 +478,30 @@ msgstr "右側"
 #~ msgstr "FFmpeg.exe 所在目錄"
 #~ msgid "Video Settings"
 #~ msgstr "視訊設定"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "取樣頻率"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr "X"
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "畫面比例"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr "底端"
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr "左側"
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+msgid "Right"
+msgstr "右側"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr "頂端"

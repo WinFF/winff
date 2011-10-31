@@ -52,6 +52,7 @@ msgstr "WinFF 1.3.2"
 msgid "http://ffmpeg.arrozcru.org/"
 msgstr "http://ffmpeg.arrozcru.org/"
 
+#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
 msgstr "Debian/Ubuntu Packaging av Paul Gevers"
@@ -76,7 +77,6 @@ msgstr "JNavas"
 msgid "Copyright 2006-2009 GPL V3"
 msgstr "Copyright 2006-2009 GPL V3"
 
-#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr "Matthew Weatherford,  Ian Stoffberg og Alexey Osipov"
@@ -91,6 +91,7 @@ msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
 msgstr "Trademark Fabrice Belllard"
@@ -120,11 +121,11 @@ msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
 msgstr "Takk"
 
+#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
 msgstr "Legg til / Oppdater"
@@ -150,7 +151,6 @@ msgstr "Et ord, bare bokstaver og tall"
 msgid "Enter a more descriptive name for this preset"
 msgstr "Gi et navn som beskriver denne forhåndsinnstillinga"
 
-#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.EDIT3.HINT
 #| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
@@ -164,6 +164,7 @@ msgstr "Ikke inkluder en punkt"
 msgid "Choose a category to group this preset under"
 msgstr "Velg en kategori til denne forhåndsinnstillinga"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
@@ -192,7 +193,6 @@ msgstr "Merkelappet til forhåndsinnstillinga"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Kommandolinje til forhåndsinnstillinga (ingen -i eller utdata fil)"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 #| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
@@ -281,6 +281,7 @@ msgstr "Konverter"
 msgid "Start the conversion process"
 msgstr "Start konverteringsprosessen"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
@@ -309,7 +310,6 @@ msgstr "Forhåndsvisning"
 msgid "Preview using the output settings"
 msgstr "Forhåndsvisning med utdata instillinger"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "Fjern"
@@ -490,30 +490,6 @@ msgstr "Tilleggsparametrene til kommandolinje"
 msgid "Audio Bitrate"
 msgstr "Lydbitfrekvensen"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "Samplingsfrekvensen"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr "X"
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "Høyde-/breddeforhold"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr "Nedre side"
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr "Venstre"
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-msgid "Right"
-msgstr "Høyre"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Alle kategorier)"
 #~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
@@ -554,6 +530,30 @@ msgstr "Høyre"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "OK"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Samplingsfrekvensen"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr "X"
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Høyde-/breddeforhold"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr "Nedre side"
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr "Venstre"
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+msgid "Right"
+msgstr "Høyre"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr "Øvre side"

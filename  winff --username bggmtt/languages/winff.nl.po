@@ -53,6 +53,7 @@ msgstr "WinFF 1.3.2"
 msgid "http://ffmpeg.arrozcru.org/"
 msgstr "http://ffmpeg.arrozcru.org/"
 
+#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
 msgstr "Debian/Ubuntu pakketbeheer door Paul Gevers"
@@ -77,7 +78,6 @@ msgstr "JNavas"
 msgid "Copyright 2006-2009 GPL V3"
 msgstr "Copyright 2006-2009 GPL V3"
 
-#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr "Matthew Weatherford,  Ian Stoffberg, en Alexey Osipov"
@@ -92,6 +92,7 @@ msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
 msgstr "Trademark Fabrice Belllard"
@@ -121,11 +122,11 @@ msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
 msgstr "Met dank aan"
 
+#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
 msgstr "Invoeren"
@@ -151,7 +152,6 @@ msgstr "Eén woord, alleen letters en cijfers"
 msgid "Enter a more descriptive name for this preset"
 msgstr "Geef een meer omschrijvende naam op voor deze voorinstelling"
 
-#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.EDIT3.HINT
 #| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
@@ -165,6 +165,7 @@ msgstr "Gebruik géén punt"
 msgid "Choose a category to group this preset under"
 msgstr "Kies een categorie om deze voorinstelling te groeperen "
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
@@ -193,7 +194,6 @@ msgstr "Label voorinstelling"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Parameters voor commandoregel (geen -i of doelbestand)"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 #| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
@@ -282,6 +282,7 @@ msgstr "Converteer"
 msgid "Start the conversion process"
 msgstr "Start het conversieproces"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
@@ -310,7 +311,6 @@ msgstr "Voorbeeld"
 msgid "Preview using the output settings"
 msgstr "Bekijken een stukje film met de huidige instellingen"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "Verwijderen"
@@ -491,30 +491,6 @@ msgstr "Extra parameters voor de commandoregel"
 msgid "Audio Bitrate"
 msgstr "Audio bitsnelheid"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "Audio frequentie"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr "X"
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "Aspectratio"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr "Onder"
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr "Links"
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-msgid "Right"
-msgstr "Rechts"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Alle categoriën)"
 #~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
@@ -555,6 +531,30 @@ msgstr "Rechts"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Audio frequentie"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr "X"
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Aspectratio"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr "Onder"
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr "Links"
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+msgid "Right"
+msgstr "Rechts"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr "Boven"

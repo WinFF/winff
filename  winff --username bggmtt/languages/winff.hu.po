@@ -188,6 +188,7 @@ msgstr "Beállítás készítése:"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Beállítás neve (egy szó, csak A-Z-is és a számok)"
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
 msgstr "Előre beállított címke"
@@ -218,7 +219,6 @@ msgstr "Mentés"
 msgid "pnlTop"
 msgstr ""
 
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 #, fuzzy
 #| msgid "Cancel"
@@ -495,32 +495,6 @@ msgstr "Bővített parancsori paraméterek"
 msgid "Audio Bitrate"
 msgstr "Hang bitráta"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "Mintaarány"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr ""
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "Méretarány"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-#, fuzzy
-#| msgid "High"
-msgid "Right"
-msgstr "Magas"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Minden kategória)"
 #~ msgid "Convert To ..."
@@ -571,6 +545,32 @@ msgstr "Magas"
 #~ msgstr "Mentés"
 #~ msgid "Replace Preset"
 #~ msgstr "Beállítások cseréje:"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Mintaarány"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr ""
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Méretarány"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#, fuzzy
+#| msgid "High"
+msgid "Right"
+msgstr "Magas"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr ""
