@@ -42,11 +42,13 @@ type
     btnAdd: TBitBtn;
     btnOptions: TBitBtn;
     btnPreview: TBitBtn;
+    btnApplyDestination: TButton;
+    btnApplyPreset: TButton;
     categorybox: TComboBox;
+    cbOutputPath: TCheckBox;
     cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
     btnClear: TBitBtn;
-    cbOutputPath: TCheckBox;
     ChooseFolderBtn: TButton;
     commandlineparams: TEdit;
     DestFolder: TEdit;
@@ -112,6 +114,9 @@ type
     Panel14: TPanel;
     Panel15: TPanel;
     Panel16: TPanel;
+    Panel17: TPanel;
+    Panel18: TPanel;
+    Panel19: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
@@ -161,8 +166,9 @@ type
     VidsizeX: TEdit;
     VidsizeY: TEdit;
 
+    procedure btnApplyPresetClick(Sender: TObject);
     procedure btnPreviewClick(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure btnApplyDestinationClick(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
     procedure cbOutputPathChange(Sender: TObject);
     procedure edtCropBottomChange(Sender: TObject);
@@ -341,8 +347,7 @@ begin
 
    ExtrasPath:= ExtractFilePath(ParamStr(0));
 
-
-               // do translations
+   // do translations
    TranslateUnitResourceStrings('unit1', PODirectory + 'winff.%s.po', Lang, FallbackLang);
 
                     // start setup
@@ -896,14 +901,38 @@ begin
   end;
 end;
 
-procedure TfrmMain.Button1Click(Sender: TObject);
+procedure TfrmMain.btnApplyDestinationClick(Sender: TObject);
+var i : integer;
 begin
+     for i := 0 to filelist.Count -1 do
+       begin
+         if filelist.Selected[i] = true then
+           begin
+                DestinationList.Strings[i] := DestFolder.Text;
+           end;
+       end;
+     Application.ProcessMessages;
 end;
+
 // preview button clicked
 procedure TfrmMain.btnPreviewClick(Sender: TObject);
 begin
   preview := true;
   btnConvertClick(Self);
+end;
+
+procedure TfrmMain.btnApplyPresetClick(Sender: TObject);
+var i : integer;
+begin
+     for i := 0 to filelist.Count -1 do
+       begin
+         if filelist.Selected[i] = true then
+           begin
+                CategoryList.Strings[i] := categorybox.Text;
+                PresetList.Strings[i] := PresetBox.Text;
+           end;
+       end;
+     Application.ProcessMessages;
 end;
 
 // change preset
@@ -1161,6 +1190,13 @@ begin
    SetLength(Result, lStrLen(PChar(Result)));
 end;
 
+{$endif}
+{$ifdef unix}
+begin
+ result := GetEnvironmentVariable('HOME') ;
+end;
+{$endif}
+
 procedure TfrmMain.Panel14Click(Sender: TObject);
 begin
 
@@ -1177,12 +1213,7 @@ begin
     end;
 end;
 
-{$endif}
-{$ifdef unix}
-begin
- result := GetEnvironmentVariable('HOME') ;
-end;
-{$endif}
+
 
 // get the user's application data path
 function TfrmMain.GetappdataPath() : string ;
@@ -1364,16 +1395,8 @@ begin
 end;
 
 procedure TfrmMain.MenuItem1Click(Sender: TObject);
-var i : integer;
 begin
-     for i := 0 to filelist.Count -1 do
-       begin
-         if filelist.Selected[i] = true then
-           begin
-                CategoryList.Strings[i] := categorybox.Text;
-                PresetList.Strings[i] := PresetBox.Text;
-           end;
-       end;
+     btnApplyPreset.Click;
 end;
 
 // filelist on key up
@@ -1524,15 +1547,9 @@ end;
 
 // menu: about
 procedure TfrmMain.MenuItem2Click(Sender: TObject);
-var i : integer;
 begin
-     for i := 0 to filelist.Count -1 do
-       begin
-         if filelist.Selected[i] = true then
-           begin
-                DestinationList.Strings[i] := DestFolder.Text;
-           end;
-       end;
+     btnApplyDestination.Click;
+     Application.ProcessMessages;
 end;
 
 // menu: exit the program
@@ -2271,6 +2288,8 @@ initialization
   {$ifdef win32}PODirectory := extraspath + '\languages\'{$endif};
   {$ifdef unix}PODirectory := '/usr/share/winff/languages/'{$endif};
   GetLanguageIDs(Lang, FallbackLang); // in unit gettext
+
+
   POFile := PODirectory + 'winff.' + Lang + '.po';
   if not FileExists(POFile) then
      POFile := PODirectory + 'winff.' + FallbackLang + '.po';

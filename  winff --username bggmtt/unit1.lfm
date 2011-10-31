@@ -345,7 +345,7 @@ object frmMain: TfrmMain
     TabOrder = 0
     object filelist: TListBox
       Left = 0
-      Height = 150
+      Height = 136
       Top = 0
       Width = 752
       Align = alClient
@@ -367,13 +367,13 @@ object frmMain: TfrmMain
     end
     object pnlbottom: TPanel
       Left = 0
-      Height = 153
-      Top = 150
+      Height = 167
+      Top = 136
       Width = 752
       Align = alBottom
       AutoSize = True
       BevelOuter = bvNone
-      ClientHeight = 153
+      ClientHeight = 167
       ClientWidth = 752
       ParentColor = False
       ParentShowHint = False
@@ -381,115 +381,156 @@ object frmMain: TfrmMain
       TabOrder = 1
       object grpOutputSettings: TGroupBox
         Left = 0
-        Height = 150
+        Height = 164
         Top = 3
         Width = 752
         Align = alTop
         AutoSize = True
         BorderSpacing.Top = 3
         Caption = 'Output Details'
-        ClientHeight = 132
+        ClientHeight = 146
         ClientWidth = 748
         TabOrder = 0
-        object Label1: TLabel
-          Left = 13
-          Height = 16
-          Top = 5
-          Width = 722
-          Align = alTop
-          BorderSpacing.Left = 13
-          BorderSpacing.Top = 5
-          BorderSpacing.Right = 13
-          Caption = 'Convert to:'
-          ParentColor = False
-        end
-        object Label19: TLabel
-          Left = 13
-          Height = 16
-          Top = 47
-          Width = 722
-          Align = alTop
-          BorderSpacing.Left = 13
-          BorderSpacing.Top = 3
-          BorderSpacing.Right = 13
-          Caption = 'Preset:'
-          ParentColor = False
-        end
-        object Label11: TLabel
-          Left = 13
-          Height = 16
-          Top = 89
-          Width = 722
-          Align = alTop
-          BorderSpacing.Left = 13
-          BorderSpacing.Top = 3
-          BorderSpacing.Right = 13
-          Caption = 'Output Folder:'
-          ParentColor = False
-          OnClick = Label11Click
-        end
-        object categorybox: TComboBox
-          Left = 13
-          Height = 23
-          Hint = 'Device or file type the video should be converted to'
-          Top = 21
-          Width = 722
-          Align = alTop
-          BorderSpacing.Left = 13
-          BorderSpacing.Right = 13
-          ItemHeight = 15
-          MaxLength = 65535
-          OnChange = categoryboxChange
-          Sorted = True
-          Style = csDropDownList
-          TabOrder = 0
-        end
-        object PresetBox: TComboBox
-          Left = 13
-          Height = 23
-          Hint = 'Specific settings to use for the chosen device or file type'
-          Top = 63
-          Width = 722
-          Align = alTop
-          BorderSpacing.Left = 13
-          BorderSpacing.Right = 13
-          ItemHeight = 15
-          MaxLength = 65535
-          OnChange = PresetBoxChange
-          Style = csDropDownList
-          TabOrder = 1
-        end
         object Panel14: TPanel
           Left = 13
-          Height = 27
-          Top = 105
+          Height = 0
+          Top = 146
           Width = 722
           Align = alTop
           AutoSize = True
           BorderSpacing.Left = 13
           BorderSpacing.Right = 13
           BevelOuter = bvNone
-          ClientHeight = 27
+          ClientHeight = 0
           ClientWidth = 722
-          TabOrder = 2
+          TabOrder = 0
           OnClick = Panel14Click
           object Panel15: TPanel
             Left = 0
-            Height = 27
+            Height = 0
             Top = 0
             Width = 637
             Align = alClient
             BevelOuter = bvNone
             Caption = 'Panel15'
-            ClientHeight = 27
-            ClientWidth = 637
             TabOrder = 0
+          end
+          object Panel16: TPanel
+            Left = 637
+            Height = 0
+            Top = 0
+            Width = 85
+            Align = alRight
+            BevelOuter = bvNone
+            TabOrder = 1
+          end
+        end
+        object Panel17: TPanel
+          Left = 0
+          Height = 146
+          Top = 0
+          Width = 748
+          Align = alTop
+          BevelOuter = bvNone
+          Caption = 'Panel17'
+          ClientHeight = 146
+          ClientWidth = 748
+          TabOrder = 1
+          object Panel18: TPanel
+            Left = 0
+            Height = 146
+            Top = 0
+            Width = 606
+            Align = alClient
+            BevelOuter = bvNone
+            Caption = 'Panel18'
+            ClientHeight = 146
+            ClientWidth = 606
+            TabOrder = 0
+            object categorybox: TComboBox
+              Left = 13
+              Height = 23
+              Hint = 'Device or file type the video should be converted to'
+              Top = 21
+              Width = 580
+              Align = alTop
+              BorderSpacing.Left = 13
+              BorderSpacing.Right = 13
+              ItemHeight = 15
+              MaxLength = 65535
+              OnChange = categoryboxChange
+              Sorted = True
+              Style = csDropDownList
+              TabOrder = 0
+            end
+            object Label1: TLabel
+              Left = 13
+              Height = 16
+              Top = 5
+              Width = 580
+              Align = alTop
+              BorderSpacing.Left = 13
+              BorderSpacing.Top = 5
+              BorderSpacing.Right = 13
+              Caption = 'Convert to:'
+              ParentColor = False
+            end
+            object Label19: TLabel
+              Left = 13
+              Height = 16
+              Top = 47
+              Width = 580
+              Align = alTop
+              BorderSpacing.Left = 13
+              BorderSpacing.Top = 3
+              BorderSpacing.Right = 13
+              Caption = 'Preset:'
+              ParentColor = False
+            end
+            object PresetBox: TComboBox
+              Left = 13
+              Height = 23
+              Hint = 'Specific settings to use for the chosen device or file type'
+              Top = 63
+              Width = 580
+              Align = alTop
+              BorderSpacing.Left = 13
+              BorderSpacing.Right = 13
+              ItemHeight = 15
+              MaxLength = 65535
+              OnChange = PresetBoxChange
+              Style = csDropDownList
+              TabOrder = 1
+            end
+            object Label11: TLabel
+              Left = 13
+              Height = 16
+              Top = 89
+              Width = 580
+              Align = alTop
+              BorderSpacing.Left = 13
+              BorderSpacing.Top = 3
+              BorderSpacing.Right = 13
+              Caption = 'Output Folder:'
+              ParentColor = False
+              OnClick = Label11Click
+            end
+            object DestFolder: TEdit
+              Left = 14
+              Height = 22
+              Hint = 'Target location for the final video (choose a different folder than the source folder)'
+              Top = 106
+              Width = 541
+              Anchors = [akTop, akLeft, akRight, akBottom]
+              BorderSpacing.Right = 3
+              TabOrder = 2
+            end
             object ChooseFolderBtn: TButton
               AnchorSideLeft.Side = asrBottom
               AnchorSideRight.Side = asrBottom
-              Left = 594
+              Left = 563
               Height = 27
-              Top = 0
+              Top = 106
               Width = 38
               Anchors = [akTop, akRight]
               BorderSpacing.InnerBorder = 4
@@ -497,38 +538,45 @@ object frmMain: TfrmMain
               Font.Style = [fsBold]
               OnClick = ChooseFolderBtnClick
               ParentFont = False
-              TabOrder = 0
-            end
-            object DestFolder: TEdit
-              AnchorSideRight.Control = ChooseFolderBtn
-              Left = 0
-              Height = 23
-              Hint = 'Target location for the final video (choose a different folder than the source folder)'
-              Top = 0
-              Width = 591
-              Anchors = [akTop, akLeft, akRight]
-              BorderSpacing.Right = 3
-              TabOrder = 1
+              TabOrder = 3
             end
           end
-          object Panel16: TPanel
-            Left = 637
-            Height = 27
+          object Panel19: TPanel
+            Left = 606
+            Height = 146
             Top = 0
-            Width = 85
+            Width = 142
             Align = alRight
             BevelOuter = bvNone
-            ClientHeight = 27
-            ClientWidth = 85
+            ClientHeight = 146
+            ClientWidth = 142
             TabOrder = 1
             object cbOutputPath: TCheckBox
-              Left = 8
+              Left = 0
               Height = 19
-              Top = 4
-              Width = 78
-              Caption = 'Use Source'
+              Top = 21
+              Width = 114
+              Caption = 'Use Source Folder'
               OnChange = cbOutputPathChange
               TabOrder = 0
+            end
+            object btnApplyDestination: TButton
+              Left = 0
+              Height = 25
+              Top = 106
+              Width = 139
+              Caption = 'Apply Destination Folder'
+              OnClick = btnApplyDestinationClick
+              TabOrder = 1
+            end
+            object btnApplyPreset: TButton
+              Left = 0
+              Height = 25
+              Top = 63
+              Width = 139
+              Caption = 'Apply Preset'
+              OnClick = btnApplyPresetClick
+              TabOrder = 2
             end
           end
         end
@@ -1225,7 +1273,7 @@ object frmMain: TfrmMain
         Top = 0
         Width = 748
         Align = alClient
-        PageIndex = 0
+        PageIndex = 1
         TabOrder = 0
         object tabVideoSettings: TPage
           Caption = 'Video'
@@ -1476,7 +1524,7 @@ object frmMain: TfrmMain
         end
         object tabAudioSettings: TPage
           Caption = 'Audio'
-          ClientWidth = 448
+          ClientWidth = 740
           ClientHeight = 94
           object Panel1: TPanel
             Left = 5
@@ -1670,7 +1718,7 @@ object frmMain: TfrmMain
         end
         object tabPageCrop: TPage
           Caption = 'Crop'
-          ClientWidth = 448
+          ClientWidth = 740
           ClientHeight = 94
           object Panel11: TPanel
             Left = 0
@@ -1901,7 +1949,7 @@ object frmMain: TfrmMain
         end
         object tabPageTime: TPage
           Caption = 'Time'
-          ClientWidth = 448
+          ClientWidth = 740
           ClientHeight = 94
           object Panel9: TPanel
             Left = 0
@@ -2063,18 +2111,18 @@ object frmMain: TfrmMain
         end
         object tabCmdLineSettings: TPage
           Caption = 'FFmpeg'
-          ClientWidth = 448
-          ClientHeight = 117
+          ClientWidth = 740
+          ClientHeight = 94
           object Panel8: TPanel
             Left = 5
-            Height = 117
+            Height = 94
             Top = 0
             Width = 300
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 5
             BevelOuter = bvNone
-            ClientHeight = 117
+            ClientHeight = 94
             ClientWidth = 300
             Constraints.MinWidth = 300
             TabOrder = 0
@@ -2215,8 +2263,9 @@ object frmMain: TfrmMain
       OnClick = MenuItem2Click
     end
     object mitViewMode: TMenuItem
-      AutoCheck = True
       Caption = 'Detailed View'
+      Checked = True
+      GlyphShowMode = gsmAlways
       ShowAlwaysCheckable = True
       OnClick = mitViewModeClick
     end
