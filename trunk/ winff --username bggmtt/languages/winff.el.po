@@ -188,6 +188,7 @@ msgstr "Δημιμουργία Preset"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Όνομα Preset (Μία λέξη, Μόνο A-z 0-9"
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
 msgstr "Τίτλος Preset"
@@ -218,7 +219,6 @@ msgstr "Αποθήκευση"
 msgid "pnlTop"
 msgstr ""
 
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 #, fuzzy
 #| msgid "Cancel"
@@ -495,32 +495,6 @@ msgstr "Επιπλέον Παράμετροι Γραμμής Εντολών (Γ�
 msgid "Audio Bitrate"
 msgstr "Ρυθμός Δεδομένων Ήχου"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "Ρυθμός Δειγματοληψίας"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr ""
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "Αναλογία"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-#, fuzzy
-#| msgid "High"
-msgid "Right"
-msgstr "Υψηλή"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Όλες οι Κατηγορίες)"
 #~ msgid "Convert To ..."
@@ -571,6 +545,32 @@ msgstr "Υψηλή"
 #~ msgstr "Αποθήκευση"
 #~ msgid "Replace Preset"
 #~ msgstr "Αντικατάσταση Preset"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Ρυθμός Δειγματοληψίας"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr ""
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Αναλογία"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#, fuzzy
+#| msgid "High"
+msgid "Right"
+msgstr "Υψηλή"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr ""

@@ -492,32 +492,6 @@ msgstr "Parâmetros Adicionais da Linha de Comando (Avançado)"
 msgid "Audio Bitrate"
 msgstr "Bitrate de Áudio"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "Taxa de Amostragem"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr ""
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "Proporção de Aspecto"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-#, fuzzy
-#| msgid "High"
-msgid "Right"
-msgstr "Alta"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Todas as categorias)"
 #~ msgid "Convert To ..."
@@ -566,6 +540,32 @@ msgstr "Alta"
 #~ msgstr "Substituir Pré-definição"
 #~ msgid "AC'"
 #~ msgstr "Canal de Áudio"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Taxa de Amostragem"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr ""
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Proporção de Aspecto"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#, fuzzy
+#| msgid "High"
+msgid "Right"
+msgstr "Alta"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr ""

@@ -188,6 +188,7 @@ msgstr "Ustvari prednastavitev:"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Ime prednastavitve (ena beseda, le A-z 0-9)"
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
 msgstr "Oznaka prednastavitve"
@@ -218,7 +219,6 @@ msgstr "Shrani"
 msgid "pnlTop"
 msgstr ""
 
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 #, fuzzy
 #| msgid "Cancel"
@@ -495,32 +495,6 @@ msgstr "Dodatni parametri ukazne vrstice (napredno)"
 msgid "Audio Bitrate"
 msgstr "Mera vzorčenja zvoka"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "Mera vzorčenja"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr ""
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "Razmerje stranic"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-#, fuzzy
-#| msgid "High"
-msgid "Right"
-msgstr "visoka"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(vse kategorije)"
 #~ msgid "Convert To ..."
@@ -571,6 +545,32 @@ msgstr "visoka"
 #~ msgstr "Shrani"
 #~ msgid "Replace Preset"
 #~ msgstr "Zamenjaj prednastavitev"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Mera vzorčenja"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr ""
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Razmerje stranic"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#, fuzzy
+#| msgid "High"
+msgid "Right"
+msgstr "visoka"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr ""

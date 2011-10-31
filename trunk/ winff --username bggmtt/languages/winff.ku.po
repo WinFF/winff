@@ -187,6 +187,7 @@ msgstr "Pêşmîheng biafirîne:"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Navê Pêşmîheng (peyvek, tenê A-z 0-9)"
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
 msgstr "Labela Pêşmîheng"
@@ -217,7 +218,6 @@ msgstr "Tomarke"
 msgid "pnlTop"
 msgstr ""
 
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 #, fuzzy
 #| msgid "Cancel"
@@ -494,32 +494,6 @@ msgstr "Zêdetir parametreyên rêzika fermanê (Pêşketî)"
 msgid "Audio Bitrate"
 msgstr "Bitrate a dengê"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "Sample Rate"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr ""
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "Aspect Ratio"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-#, fuzzy
-#| msgid "High"
-msgid "Right"
-msgstr "Bilind"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Hemû Kategorî)"
 #~ msgid "Convert To ..."
@@ -570,6 +544,32 @@ msgstr "Bilind"
 #~ msgstr "Tomarke"
 #~ msgid "Replace Preset"
 #~ msgstr "Pêşmîheng biguhere:"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Sample Rate"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr ""
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Aspect Ratio"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#, fuzzy
+#| msgid "High"
+msgid "Right"
+msgstr "Bilind"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr ""

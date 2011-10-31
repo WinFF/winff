@@ -52,6 +52,7 @@ msgstr "WinFF"
 msgid "http://ffmpeg.arrozcru.org/"
 msgstr ""
 
+#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
 msgstr ""
@@ -76,7 +77,6 @@ msgstr ""
 msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
-#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr ""
@@ -92,6 +92,7 @@ msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
 msgstr ""
@@ -124,11 +125,11 @@ msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
 msgstr "Teşekkürler"
 
+#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
 msgstr "Ekle / Güncelle"
@@ -156,7 +157,6 @@ msgstr ""
 msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
-#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.EDIT3.HINT
 #, fuzzy
 #| msgid "Preset Command Line (no -i or output file)"
@@ -171,6 +171,7 @@ msgstr ""
 msgid "Choose a category to group this preset under"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
@@ -202,7 +203,6 @@ msgstr "Ayar etiketi"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Ayar komut satırı (satır -i ya da çıktı dosyası)"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 #, fuzzy
 #| msgid "Output File Extension (no \".\")"
@@ -298,11 +298,13 @@ msgstr "Dönüştür"
 msgid "Start the conversion process"
 msgstr "dönüştürme sürecini başlat"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Ayarlar"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 #, fuzzy
 #| msgid "open or close the additional option window"
@@ -329,12 +331,10 @@ msgstr "Önizleme"
 msgid "Preview using the output settings"
 msgstr "çıktı ayarları ile önizleme"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "Çıkart"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.BTNREMOVE.HINT
 #, fuzzy
 #| msgid "remove the selected file(s) from the list"
@@ -519,30 +519,6 @@ msgstr "İlave komut satırı parametreleri (Gelişmiş)"
 msgid "Audio Bitrate"
 msgstr "Ses bit oranı"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "Örnekleme oranı"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr ""
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "En boy oranı"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr "Alt"
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr "Sol"
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-msgid "Right"
-msgstr "Sağ"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Tüm kategoriler)"
 #~ msgid "Convert To ..."
@@ -588,6 +564,30 @@ msgstr "Sağ"
 #~ msgstr "Ayarı değiştir"
 #~ msgid "AC'"
 #~ msgstr "AC'"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Örnekleme oranı"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr ""
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "En boy oranı"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr "Alt"
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr "Sol"
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+msgid "Right"
+msgstr "Sağ"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr "Üst"

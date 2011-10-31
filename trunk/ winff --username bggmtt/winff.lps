@@ -3,15 +3,17 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="9"/>
-    <Units Count="20">
+    <Units Count="22">
       <Unit0>
         <Filename Value="winff.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="winff"/>
+        <EditorIndex Value="3"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="24" Y="39"/>
-        <UsageCount Value="117"/>
+        <TopLine Value="3"/>
+        <CursorPos X="1" Y="48"/>
+        <UsageCount Value="119"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit1.pas"/>
@@ -22,14 +24,14 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="1219"/>
-        <CursorPos X="30" Y="1251"/>
-        <UsageCount Value="117"/>
+        <TopLine Value="1330"/>
+        <CursorPos X="10" Y="1362"/>
+        <UsageCount Value="119"/>
         <Bookmarks Count="4">
           <Item0 X="15" Y="194" ID="4"/>
-          <Item1 X="15" Y="2263" ID="3"/>
-          <Item2 X="1" Y="350" ID="1"/>
-          <Item3 X="57" Y="2275" ID="2"/>
+          <Item1 X="15" Y="2261" ID="3"/>
+          <Item2 X="57" Y="2273" ID="2"/>
+          <Item3 X="1" Y="1446" ID="1"/>
         </Bookmarks>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -40,12 +42,10 @@
         <ComponentName Value="frmEditPresets"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit2"/>
-        <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
         <TopLine Value="233"/>
         <CursorPos X="20" Y="257"/>
-        <UsageCount Value="117"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="119"/>
       </Unit2>
       <Unit3>
         <Filename Value="unit3.pas"/>
@@ -55,7 +55,7 @@
         <UnitName Value="Unit3"/>
         <TopLine Value="1"/>
         <CursorPos X="44" Y="4"/>
-        <UsageCount Value="117"/>
+        <UsageCount Value="119"/>
       </Unit3>
       <Unit4>
         <Filename Value="unit4.pas"/>
@@ -63,7 +63,7 @@
         <ComponentName Value="frmPreferences"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit4"/>
-        <UsageCount Value="117"/>
+        <UsageCount Value="119"/>
       </Unit4>
       <Unit5>
         <Filename Value="unit5.pas"/>
@@ -71,7 +71,7 @@
         <ComponentName Value="frmScript"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit5"/>
-        <UsageCount Value="117"/>
+        <UsageCount Value="119"/>
       </Unit5>
       <Unit6>
         <Filename Value="unit6.pas"/>
@@ -80,7 +80,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="unit6"/>
-        <UsageCount Value="117"/>
+        <UsageCount Value="119"/>
       </Unit6>
       <Unit7>
         <Filename Value="potranslator.pas"/>
@@ -89,7 +89,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="35" Y="11"/>
-        <UsageCount Value="117"/>
+        <UsageCount Value="119"/>
       </Unit7>
       <Unit8>
         <Filename Value="C:\lazarus\lcl\stdctrls.pp"/>
@@ -175,13 +175,29 @@
       <Unit19>
         <Filename Value="C:\lazarus\fpc\2.4.2\source\packages\fcl-base\src\gettext.pp"/>
         <UnitName Value="gettext"/>
-        <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="250"/>
         <CursorPos X="25" Y="292"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="10"/>
       </Unit19>
+      <Unit20>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="57"/>
+        <CursorPos X="1" Y="82"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2094"/>
+        <CursorPos X="1" Y="2117"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit21>
     </Units>
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
@@ -189,123 +205,123 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2265" Column="41" TopLine="2233"/>
+        <Caret Line="1214" Column="1" TopLine="1178"/>
       </Position1>
       <Position2>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2264" Column="41" TopLine="2232"/>
+        <Caret Line="1251" Column="30" TopLine="1219"/>
       </Position2>
       <Position3>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2265" Column="41" TopLine="2233"/>
+        <Caret Line="342" Column="4" TopLine="538"/>
       </Position3>
       <Position4>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2264" Column="41" TopLine="2232"/>
+        <Caret Line="574" Column="1" TopLine="538"/>
       </Position4>
       <Position5>
         <Filename Value="unit1.pas"/>
-        <Caret Line="2265" Column="41" TopLine="2233"/>
+        <Caret Line="577" Column="1" TopLine="539"/>
       </Position5>
       <Position6>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2264" Column="41" TopLine="2232"/>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <Caret Line="878" Column="1" TopLine="855"/>
       </Position6>
       <Position7>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2265" Column="41" TopLine="2233"/>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <Caret Line="879" Column="1" TopLine="855"/>
       </Position7>
       <Position8>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2264" Column="41" TopLine="2232"/>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <Caret Line="884" Column="1" TopLine="855"/>
       </Position8>
       <Position9>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2265" Column="41" TopLine="2233"/>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <Caret Line="80" Column="1" TopLine="57"/>
       </Position9>
       <Position10>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2264" Column="41" TopLine="2232"/>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <Caret Line="81" Column="1" TopLine="57"/>
       </Position10>
       <Position11>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2265" Column="41" TopLine="2233"/>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <Caret Line="82" Column="1" TopLine="57"/>
       </Position11>
       <Position12>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2264" Column="41" TopLine="2232"/>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <Caret Line="2088" Column="1" TopLine="2065"/>
       </Position12>
       <Position13>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2265" Column="41" TopLine="2233"/>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <Caret Line="2090" Column="1" TopLine="2065"/>
       </Position13>
       <Position14>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2264" Column="41" TopLine="2232"/>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <Caret Line="2097" Column="1" TopLine="2065"/>
       </Position14>
       <Position15>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2265" Column="41" TopLine="2233"/>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <Caret Line="2099" Column="1" TopLine="2065"/>
       </Position15>
       <Position16>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2264" Column="41" TopLine="2232"/>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <Caret Line="2100" Column="1" TopLine="2065"/>
       </Position16>
       <Position17>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2265" Column="41" TopLine="2233"/>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <Caret Line="2101" Column="1" TopLine="2065"/>
       </Position17>
       <Position18>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2266" Column="41" TopLine="2234"/>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <Caret Line="2102" Column="1" TopLine="2065"/>
       </Position18>
       <Position19>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="2273" Column="41" TopLine="2241"/>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <Caret Line="2103" Column="1" TopLine="2065"/>
       </Position19>
       <Position20>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="916" Column="3" TopLine="914"/>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <Caret Line="2117" Column="1" TopLine="2094"/>
       </Position20>
       <Position21>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1378" Column="27" TopLine="1376"/>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="42" Column="1" TopLine="3"/>
       </Position21>
       <Position22>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="925" Column="1" TopLine="914"/>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="43" Column="1" TopLine="3"/>
       </Position22>
       <Position23>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1536" Column="52" TopLine="1535"/>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="44" Column="1" TopLine="3"/>
       </Position23>
       <Position24>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="913" Column="13" TopLine="904"/>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="45" Column="1" TopLine="3"/>
       </Position24>
       <Position25>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="1547" Column="1" TopLine="1536"/>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="46" Column="1" TopLine="3"/>
       </Position25>
       <Position26>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="945" Column="1" TopLine="900"/>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="47" Column="1" TopLine="3"/>
       </Position26>
       <Position27>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="929" Column="10" TopLine="904"/>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="48" Column="1" TopLine="3"/>
       </Position27>
       <Position28>
         <Filename Value="unit1.pas"/>
-        <Caret Line="413" Column="25" TopLine="392"/>
+        <Caret Line="574" Column="1" TopLine="539"/>
       </Position28>
       <Position29>
         <Filename Value="unit1.pas"/>
-        <Caret Line="1215" Column="1" TopLine="1179"/>
+        <Caret Line="1455" Column="6" TopLine="1455"/>
       </Position29>
       <Position30>
         <Filename Value="unit1.pas"/>
-        <Caret Line="1214" Column="1" TopLine="1178"/>
+        <Caret Line="1431" Column="5" TopLine="1428"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>

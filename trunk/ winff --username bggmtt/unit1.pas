@@ -1435,8 +1435,8 @@ procedure TfrmMain.filelistMouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 var lstIndex : Integer ;
 begin
+ {$ifdef win32}
 
- begin
    with filelist do
    begin
     lstIndex:=SendMessage(Handle, LB_ITEMFROMPOINT, 0, MakeLParam(x,y)) ;
@@ -1451,13 +1451,11 @@ begin
     else
       Hint := ''
     end;
- end;
-
+ {$endif}
 end;
 
 procedure TfrmMain.filelistShowHint(Sender: TObject; HintInfo: PHintInfo);
 begin
-
 end;
 
 procedure TfrmMain.FormDestroy(Sender: TObject);

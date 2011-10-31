@@ -188,6 +188,7 @@ msgstr "צור preset:"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "שם ה-preset (מילה אחת, רק A-z 0-9)"
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
 msgstr "תווית ה-preset"
@@ -218,7 +219,6 @@ msgstr "שמור"
 msgid "pnlTop"
 msgstr ""
 
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 #, fuzzy
 #| msgid "Cancel"
@@ -495,32 +495,6 @@ msgstr "פרמטרי שורת פקודה נוספים (מתקדם)"
 msgid "Audio Bitrate"
 msgstr "אודיו Bitrate"
 
-#: TFRMMAIN.LABEL8.CAPTION
-msgid "Sample Rate"
-msgstr "קצב דגימה"
-
-#: TFRMMAIN.LABEL9.CAPTION
-msgid "X"
-msgstr ""
-
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
-msgid "Aspect Ratio"
-msgstr "יחס רוחב-גובה"
-
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
-msgid "Bottom"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
-msgid "Left"
-msgstr ""
-
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
-#, fuzzy
-#| msgid "High"
-msgid "Right"
-msgstr "גבוהה"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(כל הקטגוריות)"
 #~ msgid "Convert To ..."
@@ -569,6 +543,32 @@ msgstr "גבוהה"
 #~ msgstr "שמור"
 #~ msgid "Replace Preset"
 #~ msgstr "החלף preset"
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "קצב דגימה"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr ""
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "יחס רוחב-גובה"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#, fuzzy
+#| msgid "High"
+msgid "Right"
+msgstr "גבוהה"
+
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr ""
