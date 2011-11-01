@@ -1,6 +1,9 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+msgid " will be applied to all jobs when the conversion starts"
+msgstr ""
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -204,7 +207,7 @@ msgstr ""
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Destination Folder"
+msgid "Apply Output Folder"
 msgstr ""
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
@@ -261,6 +264,11 @@ msgstr ""
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
+#: TFRMMAIN.CAPTION
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr ""
+
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -293,10 +301,6 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr ""
-
-#: TFRMMAIN.DLGOPENFILE.TITLE
-msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -361,11 +365,6 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.FRMMAIN.CAPTION
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr ""
-
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
@@ -389,6 +388,10 @@ msgstr ""
 
 #: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
+msgstr ""
+
+#: TFRMMAIN.LABEL2.CAPTION
+msgid "NOTE: Currently any additional options chosen"
 msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
@@ -545,18 +548,6 @@ msgstr ""
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
-
-#: TFRMMAIN.PANEL15.CAPTION
-msgid "Panel15"
-msgstr ""
-
-#: TFRMMAIN.PANEL17.CAPTION
-msgid "Panel17"
-msgstr ""
-
-#: TFRMMAIN.PANEL18.CAPTION
-msgid "Panel18"
 msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION

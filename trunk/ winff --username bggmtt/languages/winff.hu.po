@@ -1,3 +1,9 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid " will be applied to all jobs when the conversion starts"
+msgstr ""
+
 # Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
@@ -14,22 +20,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Sponga Tamas <d7d7d7@freemail.hu>, 2009
-msgid ""
-msgstr ""
-"Project-Id-Version: WinFF 0.45.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: 2009-12-05 23:00+0100\n"
-"Last-Translator: Sponga Tamas <d7d7d7@freemail.hu>\n"
-"Language-Team: Hungarian <matt@biggmatt.com>\n"
-"Language: hu\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: United States\n"
-"X-Poedit-SourceCharset: utf-8\n"
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -124,6 +114,7 @@ msgstr "FFmpeg"
 msgid "Thanks"
 msgstr "Köszi :-)"
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
 msgstr "Hozzáadás / Frissítés"
@@ -188,7 +179,6 @@ msgstr "Beállítás készítése:"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Beállítás neve (egy szó, csak A-Z-is és a számok)"
 
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
 msgstr "Előre beállított címke"
@@ -266,7 +256,7 @@ msgstr ""
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Destination Folder"
+msgid "Apply Output Folder"
 msgstr ""
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
@@ -325,6 +315,13 @@ msgstr "Eltávolítás"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
+#: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -357,10 +354,6 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr ""
-
-#: TFRMMAIN.DLGOPENFILE.TITLE
-msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -425,76 +418,6 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.FRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-#, fuzzy
-#| msgid "Additional Options"
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Egyéb opciók"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "Kimeneti részletek"
-
-#: TFRMMAIN.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Convert"
-msgid "Convert to:"
-msgstr "Konvertálás"
-
-#: TFRMMAIN.LABEL10.CAPTION
-msgid "Audio Channels"
-msgstr "Hangcsatornák"
-
-#: TFRMMAIN.LABEL11.CAPTION
-#, fuzzy
-#| msgid "Output Folder"
-msgid "Output Folder:"
-msgstr "Kimeneti mappa"
-
-#: TFRMMAIN.LABEL19.CAPTION
-#, fuzzy
-#| msgid "Presets"
-msgid "Preset:"
-msgstr "Beállítások"
-
-#: TFRMMAIN.LABEL20.CAPTION
-msgid "Volume"
-msgstr ""
-
-#: TFRMMAIN.LABEL21.CAPTION
-msgid "Sync"
-msgstr ""
-
-#: TFRMMAIN.LABEL22.CAPTION
-msgid "Seek to"
-msgstr ""
-
-#: TFRMMAIN.LABEL23.CAPTION
-msgid "Time to Record"
-msgstr ""
-
-#: TFRMMAIN.LABEL24.CAPTION
-msgid "Hours / Minutes / Seconds"
-msgstr ""
-
-#: TFRMMAIN.LABEL3.CAPTION
-#, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
-msgid "Additional Command Line Parameters"
-msgstr "Bővített parancsori paraméterek"
-
-#: TFRMMAIN.LABEL7.CAPTION
-msgid "Audio Bitrate"
-msgstr "Hang bitráta"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Minden kategória)"
 #~ msgid "Convert To ..."
@@ -545,6 +468,73 @@ msgstr "Hang bitráta"
 #~ msgstr "Mentés"
 #~ msgid "Replace Preset"
 #~ msgstr "Beállítások cseréje:"
+#: TFRMMAIN.GBXSETTINGS.CAPTION
+#, fuzzy
+#| msgid "Additional Options"
+msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+msgid "Additional Options"
+msgstr "Egyéb opciók"
+
+#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgid "Output Details"
+msgstr "Kimeneti részletek"
+
+#: TFRMMAIN.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Convert"
+msgid "Convert to:"
+msgstr "Konvertálás"
+
+#: TFRMMAIN.LABEL10.CAPTION
+msgid "Audio Channels"
+msgstr "Hangcsatornák"
+
+#: TFRMMAIN.LABEL11.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
+msgid "Output Folder:"
+msgstr "Kimeneti mappa"
+
+#: TFRMMAIN.LABEL19.CAPTION
+#, fuzzy
+#| msgid "Presets"
+msgid "Preset:"
+msgstr "Beállítások"
+
+#: TFRMMAIN.LABEL2.CAPTION
+msgid "NOTE: Currently any additional options chosen"
+msgstr ""
+
+#: TFRMMAIN.LABEL20.CAPTION
+msgid "Volume"
+msgstr ""
+
+#: TFRMMAIN.LABEL21.CAPTION
+msgid "Sync"
+msgstr ""
+
+#: TFRMMAIN.LABEL22.CAPTION
+msgid "Seek to"
+msgstr ""
+
+#: TFRMMAIN.LABEL23.CAPTION
+msgid "Time to Record"
+msgstr ""
+
+#: TFRMMAIN.LABEL24.CAPTION
+msgid "Hours / Minutes / Seconds"
+msgstr ""
+
+#: TFRMMAIN.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Additional Command Line Parameters (Advanced)"
+msgid "Additional Command Line Parameters"
+msgstr "Bővített parancsori paraméterek"
+
+#: TFRMMAIN.LABEL7.CAPTION
+msgid "Audio Bitrate"
+msgstr "Hang bitráta"
+
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Mintaarány"
@@ -688,18 +678,6 @@ msgstr "Súgó"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Beállítások"
-
-#: TFRMMAIN.PANEL15.CAPTION
-msgid "Panel15"
-msgstr ""
-
-#: TFRMMAIN.PANEL17.CAPTION
-msgid "Panel17"
-msgstr ""
-
-#: TFRMMAIN.PANEL18.CAPTION
-msgid "Panel18"
-msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"

@@ -1,16 +1,8 @@
 msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid " will be applied to all jobs when the conversion starts"
 msgstr ""
-"Project-Id-Version: WinFF 1.0.2\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Alexey Osipov <lion-simba@pridelands.ru>\n"
-"Language-Team: Russian\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Russian\n"
-"X-Poedit-Country: Crymea <Sevastopol>\n"
-"X-Poedit-SourceCharset: utf-8\n"
 
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
@@ -220,7 +212,7 @@ msgstr "Добавить файл(ы) в список преобразовани
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Destination Folder"
+msgid "Apply Output Folder"
 msgstr ""
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
@@ -277,6 +269,11 @@ msgstr "Удалить"
 msgid "Remove selected file(s) from the list"
 msgstr "Удалить выбранные файлы из списка"
 
+#: TFRMMAIN.CAPTION
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "Устройство или тип файла, в который нужно преобразовать видео"
@@ -310,10 +307,6 @@ msgstr ""
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Каталог для готового видео (должен отличаться от исходного)"
-
-#: TFRMMAIN.DLGOPENFILE.TITLE
-msgid "Select Video Files..."
-msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -380,11 +373,6 @@ msgstr "<чч:мм:сс> - Остановиться после преобраз�
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<целое>) 256 = Текущая громкость, 128 = Половина громкости, 512 = Двойная громкость"
 
-#: TFRMMAIN.FRMMAIN.CAPTION
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
@@ -413,6 +401,10 @@ msgstr "Сохранить в каталог:"
 #: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
 msgstr "Параметры:"
+
+#: TFRMMAIN.LABEL2.CAPTION
+msgid "NOTE: Currently any additional options chosen"
+msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -569,18 +561,6 @@ msgstr "Помощь"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Настройки"
-
-#: TFRMMAIN.PANEL15.CAPTION
-msgid "Panel15"
-msgstr ""
-
-#: TFRMMAIN.PANEL17.CAPTION
-msgid "Panel17"
-msgstr ""
-
-#: TFRMMAIN.PANEL18.CAPTION
-msgid "Panel18"
-msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
