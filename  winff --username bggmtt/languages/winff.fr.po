@@ -1,3 +1,9 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid " will be applied to all jobs when the conversion starts"
+msgstr ""
+
 # Copyright (C) 2008-2010 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,18 +23,8 @@
 #| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
-msgid ""
-msgstr ""
-"Project-Id-Version: WinFF 0.45.1\n"
-"POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: 2010-01-24 11:43+0100\n"
-"Last-Translator: Thomas --Choplair-- Gutleben <chopinou@choplair.org>\n"
-"Language-Team: \n"
-"Language: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-
+#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -48,7 +44,6 @@ msgstr "WinFF"
 msgid "http://ffmpeg.arrozcru.org/"
 msgstr ""
 
-#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
 msgstr ""
@@ -61,6 +56,7 @@ msgstr ""
 msgid "High Quality Presets From"
 msgstr ""
 
+#| msgctxt "REMOVED6"
 #: TFRMABOUT.LABEL15.CAPTION
 msgid "Icons and Logo by Alex Klepatsch"
 msgstr ""
@@ -88,7 +84,6 @@ msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
 msgstr ""
@@ -103,6 +98,7 @@ msgstr ""
 msgid "FFmpeg Windows Builds by"
 msgstr "Compilation de FFmpeg par"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Ramiro Polla"
 msgstr ""
@@ -125,7 +121,6 @@ msgstr "FFmpeg"
 msgid "Thanks"
 msgstr "Remerciements"
 
-#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
 msgstr "Ajouter / Modifier"
@@ -167,7 +162,6 @@ msgstr ""
 msgid "Choose a category to group this preset under"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
@@ -228,11 +222,13 @@ msgstr "Annuler"
 msgid "Export Presets"
 msgstr "Exporter préréglages"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Exporter"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Choose presets to export"
@@ -266,7 +262,7 @@ msgstr "ajouter des fichiers à la liste de conversion"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Destination Folder"
+msgid "Apply Output Folder"
 msgstr ""
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
@@ -294,13 +290,11 @@ msgstr "Convertir"
 msgid "Start the conversion process"
 msgstr "démarrer l'opération de conversion"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Options"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 #, fuzzy
 #| msgid "open or close the additional option window"
@@ -336,6 +330,13 @@ msgstr "Enlever"
 #| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
 msgstr "enlève le(s) fichier(s) sélectionné(s) de la liste"
+
+#: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
 #, fuzzy
@@ -378,10 +379,6 @@ msgstr ""
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "le lieu de destination de la vidéo finale (choisir un dossier différent du répertoire source)"
-
-#: TFRMMAIN.DLGOPENFILE.TITLE
-msgid "Select Video Files..."
-msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #, fuzzy
@@ -447,74 +444,6 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.FRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Paramètres supplémentaires"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "Profil de sortie"
-
-#: TFRMMAIN.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Convert"
-msgid "Convert to:"
-msgstr "Convertir"
-
-#: TFRMMAIN.LABEL10.CAPTION
-msgid "Audio Channels"
-msgstr "Canaux audio"
-
-#: TFRMMAIN.LABEL11.CAPTION
-#, fuzzy
-#| msgid "Output Folder"
-msgid "Output Folder:"
-msgstr "Dossier de sortie"
-
-#: TFRMMAIN.LABEL19.CAPTION
-#, fuzzy
-#| msgid "Presets"
-msgid "Preset:"
-msgstr "Préréglages"
-
-#: TFRMMAIN.LABEL20.CAPTION
-msgid "Volume"
-msgstr ""
-
-#: TFRMMAIN.LABEL21.CAPTION
-msgid "Sync"
-msgstr ""
-
-#: TFRMMAIN.LABEL22.CAPTION
-msgid "Seek to"
-msgstr ""
-
-#: TFRMMAIN.LABEL23.CAPTION
-msgid "Time to Record"
-msgstr ""
-
-#: TFRMMAIN.LABEL24.CAPTION
-msgid "Hours / Minutes / Seconds"
-msgstr ""
-
-#: TFRMMAIN.LABEL3.CAPTION
-#, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
-msgid "Additional Command Line Parameters"
-msgstr "Paramètres additionels de ligne de commande (expert)"
-
-#: TFRMMAIN.LABEL7.CAPTION
-msgid "Audio Bitrate"
-msgstr "Débit audio"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(Toutes catégories)"
 #~ msgid "Convert To ..."
@@ -560,6 +489,71 @@ msgstr "Débit audio"
 #~ msgstr "Remplacer préréglage"
 #~ msgid "AC'"
 #~ msgstr "Canal audio"
+#: TFRMMAIN.GBXSETTINGS.CAPTION
+msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+msgid "Additional Options"
+msgstr "Paramètres supplémentaires"
+
+#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgid "Output Details"
+msgstr "Profil de sortie"
+
+#: TFRMMAIN.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Convert"
+msgid "Convert to:"
+msgstr "Convertir"
+
+#: TFRMMAIN.LABEL10.CAPTION
+msgid "Audio Channels"
+msgstr "Canaux audio"
+
+#: TFRMMAIN.LABEL11.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
+msgid "Output Folder:"
+msgstr "Dossier de sortie"
+
+#: TFRMMAIN.LABEL19.CAPTION
+#, fuzzy
+#| msgid "Presets"
+msgid "Preset:"
+msgstr "Préréglages"
+
+#: TFRMMAIN.LABEL2.CAPTION
+msgid "NOTE: Currently any additional options chosen"
+msgstr ""
+
+#: TFRMMAIN.LABEL20.CAPTION
+msgid "Volume"
+msgstr ""
+
+#: TFRMMAIN.LABEL21.CAPTION
+msgid "Sync"
+msgstr ""
+
+#: TFRMMAIN.LABEL22.CAPTION
+msgid "Seek to"
+msgstr ""
+
+#: TFRMMAIN.LABEL23.CAPTION
+msgid "Time to Record"
+msgstr ""
+
+#: TFRMMAIN.LABEL24.CAPTION
+msgid "Hours / Minutes / Seconds"
+msgstr ""
+
+#: TFRMMAIN.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Additional Command Line Parameters (Advanced)"
+msgid "Additional Command Line Parameters"
+msgstr "Paramètres additionels de ligne de commande (expert)"
+
+#: TFRMMAIN.LABEL7.CAPTION
+msgid "Audio Bitrate"
+msgstr "Débit audio"
+
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Fréquence"
@@ -697,18 +691,6 @@ msgstr "Aide"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Options"
-
-#: TFRMMAIN.PANEL15.CAPTION
-msgid "Panel15"
-msgstr ""
-
-#: TFRMMAIN.PANEL17.CAPTION
-msgid "Panel17"
-msgstr ""
-
-#: TFRMMAIN.PANEL18.CAPTION
-msgid "Panel18"
-msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"

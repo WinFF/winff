@@ -71,6 +71,7 @@ type
     Label10: TLabel;
     Label11: TLabel;
     Label19: TLabel;
+    Label2: TLabel;
     Label20: TLabel;
     Label21: TLabel;
     label22: TLabel;
@@ -97,7 +98,6 @@ type
     mitDisplayCmdline: TMenuItem;
     dlgOpenFile: TOpenDialog;
     filelist: TListBox;
-    Label2: TLabel;
     mitDocs: TMenuItem;
     mitAbout: TMenuItem;
     mnuHelp: TMenuItem;
@@ -112,12 +112,12 @@ type
     Panel12: TPanel;
     Panel13: TPanel;
     Panel14: TPanel;
-    Panel15: TPanel;
     Panel16: TPanel;
     Panel17: TPanel;
     Panel18: TPanel;
     Panel19: TPanel;
     Panel2: TPanel;
+    Panel20: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
     Panel5: TPanel;
@@ -188,6 +188,7 @@ type
       Y: Integer);
     procedure filelistShowHint(Sender: TObject; HintInfo: PHintInfo);
     procedure FormDestroy(Sender: TObject);
+    procedure grpOutputSettingsClick(Sender: TObject);
     procedure Label11Click(Sender: TObject);
     procedure LaunchBrowser(URL:string);
     procedure LaunchPdf(pdffile:string);
@@ -1465,6 +1466,11 @@ begin
    PresetList.Free;
    DestinationList.Free;
    FileInfoList.Free;
+end;
+
+procedure TfrmMain.grpOutputSettingsClick(Sender: TObject);
+begin
+
 end;
 
 procedure TfrmMain.Label11Click(Sender: TObject);

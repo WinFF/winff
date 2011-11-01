@@ -1,3 +1,9 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid " will be applied to all jobs when the conversion starts"
+msgstr ""
+
 # translation of winff.po to Arabic
 # Copyright (C) 2009-2010 Matthew Weatherford <matt@biggmatt.com>
 #
@@ -18,23 +24,8 @@
 #| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
-msgid ""
-msgstr ""
-"Project-Id-Version: Winff\n"
-"POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: 2010-04-05 01:17+0200\n"
-"Last-Translator: Muhammad Negm <alam.hor@gmail.com>\n"
-"Language-Team: Muhammad Negm <alam.hor@gmail.com>\n"
-"Language: en\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.3.1\n"
-"X-Poedit-Language: Arabic\n"
-"X-Poedit-Country: EGYPT\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"Plural-Forms: nplurals=3; plural=(n>99)?1:(n > 2 && n < 11)?2:0;\n"
-
+#| msgctxt "REMOVED3"
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -54,7 +45,6 @@ msgstr "WinFF"
 msgid "http://ffmpeg.arrozcru.org/"
 msgstr ""
 
-#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
 msgstr ""
@@ -67,6 +57,7 @@ msgstr ""
 msgid "High Quality Presets From"
 msgstr ""
 
+#| msgctxt "REMOVED6"
 #: TFRMABOUT.LABEL15.CAPTION
 msgid "Icons and Logo by Alex Klepatsch"
 msgstr ""
@@ -94,7 +85,6 @@ msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
 msgstr ""
@@ -109,6 +99,7 @@ msgstr ""
 msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg تم بناؤه بواسطة"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Ramiro Polla"
 msgstr ""
@@ -131,7 +122,6 @@ msgstr "FFmpeg"
 msgid "Thanks"
 msgstr "الشكر لـ"
 
-#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
 msgstr "إضافة/تحديث"
@@ -173,7 +163,6 @@ msgstr ""
 msgid "Choose a category to group this preset under"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
@@ -234,11 +223,13 @@ msgstr "إلغاء"
 msgid "Export Presets"
 msgstr "تصدير النسب"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "تصدير"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Choose presets to export"
@@ -272,7 +263,7 @@ msgstr "إضافة ملف(ات) إلى قائمة التحويل"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Destination Folder"
+msgid "Apply Output Folder"
 msgstr ""
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
@@ -300,13 +291,11 @@ msgstr "حول"
 msgid "Start the conversion process"
 msgstr "ابدأ التحويل"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "خيارات"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 #, fuzzy
 #| msgid "open or close the additional option window"
@@ -342,6 +331,13 @@ msgstr "أزل"
 #| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
 msgstr "إزالة الملفات المحددة من القائمة"
+
+#: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
 #, fuzzy
@@ -384,10 +380,6 @@ msgstr ""
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "مكان ملف الفيديو الناتج (اختر مجلدا مختلفا عن المجلد المصدر)"
-
-#: TFRMMAIN.DLGOPENFILE.TITLE
-msgid "Select Video Files..."
-msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #, fuzzy
@@ -453,74 +445,6 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.FRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "خيارات إضافية"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "تفاصيل الخرج"
-
-#: TFRMMAIN.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Convert"
-msgid "Convert to:"
-msgstr "حول"
-
-#: TFRMMAIN.LABEL10.CAPTION
-msgid "Audio Channels"
-msgstr "قنوات الصوت"
-
-#: TFRMMAIN.LABEL11.CAPTION
-#, fuzzy
-#| msgid "Output Folder"
-msgid "Output Folder:"
-msgstr "مجلد الخرج"
-
-#: TFRMMAIN.LABEL19.CAPTION
-#, fuzzy
-#| msgid "Presets"
-msgid "Preset:"
-msgstr "نسب"
-
-#: TFRMMAIN.LABEL20.CAPTION
-msgid "Volume"
-msgstr ""
-
-#: TFRMMAIN.LABEL21.CAPTION
-msgid "Sync"
-msgstr ""
-
-#: TFRMMAIN.LABEL22.CAPTION
-msgid "Seek to"
-msgstr ""
-
-#: TFRMMAIN.LABEL23.CAPTION
-msgid "Time to Record"
-msgstr ""
-
-#: TFRMMAIN.LABEL24.CAPTION
-msgid "Hours / Minutes / Seconds"
-msgstr ""
-
-#: TFRMMAIN.LABEL3.CAPTION
-#, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
-msgid "Additional Command Line Parameters"
-msgstr "معاملات سطر أوامر إضافية (متقدم)"
-
-#: TFRMMAIN.LABEL7.CAPTION
-msgid "Audio Bitrate"
-msgstr "معدل البتات"
-
 #~ msgid "(All Categories)"
 #~ msgstr "جميع التصنيفات"
 #~ msgid "Convert To ..."
@@ -562,6 +486,71 @@ msgstr "معدل البتات"
 #~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
 #~ msgid "Save"
 #~ msgstr "حفظ"
+#: TFRMMAIN.GBXSETTINGS.CAPTION
+msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+msgid "Additional Options"
+msgstr "خيارات إضافية"
+
+#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgid "Output Details"
+msgstr "تفاصيل الخرج"
+
+#: TFRMMAIN.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Convert"
+msgid "Convert to:"
+msgstr "حول"
+
+#: TFRMMAIN.LABEL10.CAPTION
+msgid "Audio Channels"
+msgstr "قنوات الصوت"
+
+#: TFRMMAIN.LABEL11.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
+msgid "Output Folder:"
+msgstr "مجلد الخرج"
+
+#: TFRMMAIN.LABEL19.CAPTION
+#, fuzzy
+#| msgid "Presets"
+msgid "Preset:"
+msgstr "نسب"
+
+#: TFRMMAIN.LABEL2.CAPTION
+msgid "NOTE: Currently any additional options chosen"
+msgstr ""
+
+#: TFRMMAIN.LABEL20.CAPTION
+msgid "Volume"
+msgstr ""
+
+#: TFRMMAIN.LABEL21.CAPTION
+msgid "Sync"
+msgstr ""
+
+#: TFRMMAIN.LABEL22.CAPTION
+msgid "Seek to"
+msgstr ""
+
+#: TFRMMAIN.LABEL23.CAPTION
+msgid "Time to Record"
+msgstr ""
+
+#: TFRMMAIN.LABEL24.CAPTION
+msgid "Hours / Minutes / Seconds"
+msgstr ""
+
+#: TFRMMAIN.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Additional Command Line Parameters (Advanced)"
+msgid "Additional Command Line Parameters"
+msgstr "معاملات سطر أوامر إضافية (متقدم)"
+
+#: TFRMMAIN.LABEL7.CAPTION
+msgid "Audio Bitrate"
+msgstr "معدل البتات"
+
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "معدل العينات"
@@ -699,18 +688,6 @@ msgstr "مساعدة"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "خيارات"
-
-#: TFRMMAIN.PANEL15.CAPTION
-msgid "Panel15"
-msgstr ""
-
-#: TFRMMAIN.PANEL17.CAPTION
-msgid "Panel17"
-msgstr ""
-
-#: TFRMMAIN.PANEL18.CAPTION
-msgid "Panel18"
-msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"

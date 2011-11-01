@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="9"/>
+    <Version Value="7"/>
     <General>
       <Flags>
         <LRSInOutputDirectory Value="False"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
+      <TargetFileExt Value=""/>
       <Title Value="WinFF"/>
     </General>
     <i18n>
@@ -16,14 +17,7 @@
     </i18n>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
-      <MajorVersionNr Value="1"/>
-      <MinorVersionNr Value="3"/>
-      <RevisionNr Value="2"/>
-      <StringTable Comments="WinFF Video Converter" CompanyName="WinFF.org" FileDescription="WinFF Video Converter" InternalName="winff" LegalCopyright="Copyright 2011, GPL v3 by Matthew Weatherford" OriginalFilename="winff.exe" ProductName="WinFF" ProductVersion="1.2.0.0"/>
     </VersionInfo>
-    <BuildModes Count="1">
-      <Item1 Name="default" Default="True"/>
-    </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
       <IgnoreBinaries Value="False"/>
@@ -102,15 +96,14 @@
     </Units>
   </ProjectOptions>
   <CompilerOptions>
-    <Version Value="9"/>
+    <Version Value="8"/>
     <SearchPaths>
-      <OtherUnitFiles Value="$(LazarusDir)/components/codetools/units/$(TargetCPU)-$(TargetOS)"/>
-      <SrcPath Value="$(LazarusDir)/lcl;$(LazarusDir)/lcl/interfaces/$(LCLWidgetType)"/>
+      <OtherUnitFiles Value="$(LazarusDir)/components/codetools/units/$(TargetCPU)-$(TargetOS)/"/>
+      <SrcPath Value="$(LazarusDir)/lcl/;$(LazarusDir)/lcl/interfaces/$(LCLWidgetType)/"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
         <CStyleOperator Value="False"/>
-        <UseAnsiStrings Value="False"/>
       </SyntaxOptions>
     </Parsing>
     <Linking>
