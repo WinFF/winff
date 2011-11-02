@@ -67,6 +67,7 @@ msgstr ""
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr ""
 
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMABOUT.LABEL4.CAPTION
 msgid "http://www.winff.org"
 msgstr ""
@@ -114,7 +115,6 @@ msgstr "FFmpeg"
 msgid "Thanks"
 msgstr "Köszi :-)"
 
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
 msgstr "Hozzáadás / Frissítés"
@@ -315,13 +315,6 @@ msgstr "Eltávolítás"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -356,6 +349,10 @@ msgstr ""
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr ""
 
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
+
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr ""
@@ -372,50 +369,6 @@ msgstr ""
 #: TFRMMAIN.EDTCROPLEFT.TEXT
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
-msgstr ""
-
-#: TFRMMAIN.EDTCROPRIGHT.TEXT
-msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
-msgid "0"
-msgstr ""
-
-#: TFRMMAIN.EDTCROPTOP.TEXT
-msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
-msgid "0"
-msgstr ""
-
-#: TFRMMAIN.EDTSEEKHH.HINT
-msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
-msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-
-#: TFRMMAIN.EDTSEEKMM.HINT
-msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
-msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-
-#: TFRMMAIN.EDTSEEKSS.HINT
-msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
-msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-
-#: TFRMMAIN.EDTTTRHH.HINT
-msgctxt "TFRMMAIN.EDTTTRHH.HINT"
-msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
-
-#: TFRMMAIN.EDTTTRMM.HINT
-msgctxt "TFRMMAIN.EDTTTRMM.HINT"
-msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
-
-#: TFRMMAIN.EDTTTRSS.HINT
-msgctxt "TFRMMAIN.EDTTTRSS.HINT"
-msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
-
-#: TFRMMAIN.EDTVOLUME.HINT
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #~ msgid "(All Categories)"
@@ -468,6 +421,57 @@ msgstr ""
 #~ msgstr "Mentés"
 #~ msgid "Replace Preset"
 #~ msgstr "Beállítások cseréje:"
+#: TFRMMAIN.EDTCROPRIGHT.TEXT
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTCROPTOP.TEXT
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKHH.HINT
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKMM.HINT
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKSS.HINT
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRHH.HINT
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRMM.HINT
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRSS.HINT
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTVOLUME.HINT
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 #, fuzzy
 #| msgid "Additional Options"

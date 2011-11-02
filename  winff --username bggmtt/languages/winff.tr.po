@@ -26,6 +26,7 @@ msgstr ""
 #| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgctxt "REMOVED3"
 #| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
+#| msgctxt "REMOVED6"
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -57,7 +58,7 @@ msgstr ""
 msgid "High Quality Presets From"
 msgstr ""
 
-#| msgctxt "REMOVED6"
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMABOUT.LABEL15.CAPTION
 msgid "Icons and Logo by Alex Klepatsch"
 msgstr ""
@@ -99,7 +100,6 @@ msgstr ""
 msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg yaratıcısı"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Ramiro Polla"
 msgstr ""
@@ -178,12 +178,14 @@ msgstr "İçeri aktar"
 msgid "Category / Preset"
 msgstr "Ayar yarat:"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Ayar ismi (Bir kelime, Sadece A-z 0-9)"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
 msgstr "Ayar etiketi"
@@ -223,13 +225,11 @@ msgstr "İptal"
 msgid "Export Presets"
 msgstr "Ayarları dışarı aktar"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Dışarı aktar"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Choose presets to export"
@@ -332,13 +332,6 @@ msgstr "Çıkart"
 msgid "Remove selected file(s) from the list"
 msgstr "seçilen dosyaları listeden çıkart"
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #, fuzzy
 #| msgid "name of the device or file type the video should be converted to"
@@ -381,6 +374,10 @@ msgstr ""
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "videonun son halinin saklanacağı hedef klasör (kaynak klasörden faklı bir klasör seçin)"
 
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
+
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #, fuzzy
 #| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
@@ -399,50 +396,6 @@ msgstr ""
 #: TFRMMAIN.EDTCROPLEFT.TEXT
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
-msgstr ""
-
-#: TFRMMAIN.EDTCROPRIGHT.TEXT
-msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
-msgid "0"
-msgstr ""
-
-#: TFRMMAIN.EDTCROPTOP.TEXT
-msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
-msgid "0"
-msgstr ""
-
-#: TFRMMAIN.EDTSEEKHH.HINT
-msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
-msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-
-#: TFRMMAIN.EDTSEEKMM.HINT
-msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
-msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-
-#: TFRMMAIN.EDTSEEKSS.HINT
-msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
-msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-
-#: TFRMMAIN.EDTTTRHH.HINT
-msgctxt "TFRMMAIN.EDTTTRHH.HINT"
-msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
-
-#: TFRMMAIN.EDTTTRMM.HINT
-msgctxt "TFRMMAIN.EDTTTRMM.HINT"
-msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
-
-#: TFRMMAIN.EDTTTRSS.HINT
-msgctxt "TFRMMAIN.EDTTTRSS.HINT"
-msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
-
-#: TFRMMAIN.EDTVOLUME.HINT
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #~ msgid "(All Categories)"
@@ -490,6 +443,57 @@ msgstr ""
 #~ msgstr "Ayarı değiştir"
 #~ msgid "AC'"
 #~ msgstr "AC'"
+#: TFRMMAIN.EDTCROPRIGHT.TEXT
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTCROPTOP.TEXT
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKHH.HINT
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKMM.HINT
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKSS.HINT
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRHH.HINT
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRMM.HINT
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRSS.HINT
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTVOLUME.HINT
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
