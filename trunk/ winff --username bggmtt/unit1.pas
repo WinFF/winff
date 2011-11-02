@@ -1533,13 +1533,15 @@ end;
 
 procedure TfrmMain.mitViewModeClick(Sender: TObject);
 begin
-  if mitViewMode.Checked = True then
+  if mitViewMode.Checked = False then
    begin
      filelist.style := lbOwnerDrawFixed;;
    end else
    begin
      filelist.style := lbStandard;
    end;
+   mitViewMode.Checked := Not(mitViewMode.Checked);
+   Application.ProcessMessages;
 end;
 
 //menu: Help Forums

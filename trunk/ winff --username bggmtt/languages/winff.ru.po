@@ -269,11 +269,6 @@ msgstr "Удалить"
 msgid "Remove selected file(s) from the list"
 msgstr "Удалить выбранные файлы из списка"
 
-#: TFRMMAIN.CAPTION
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "Устройство или тип файла, в который нужно преобразовать видео"
@@ -307,6 +302,10 @@ msgstr ""
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Каталог для готового видео (должен отличаться от исходного)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -372,6 +371,11 @@ msgstr "<чч:мм:сс> - Остановиться после преобраз�
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<целое>) 256 = Текущая громкость, 128 = Половина громкости, 512 = Двойная громкость"
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"

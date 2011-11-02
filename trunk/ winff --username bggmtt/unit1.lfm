@@ -6,7 +6,7 @@ object frmMain: TfrmMain
   ActiveControl = Panel2
   AllowDropFiles = True
   Caption = 'WinFF'
-  ClientHeight = 515
+  ClientHeight = 520
   ClientWidth = 752
   Constraints.MinHeight = 460
   Constraints.MinWidth = 460
@@ -323,28 +323,28 @@ object frmMain: TfrmMain
   OnDestroy = FormDestroy
   OnDropFiles = FormDropFiles
   Position = poDefault
-  LCLVersion = '0.9.28.2'
+  LCLVersion = '0.9.30'
   object pnlMain: TPanel
     Left = 0
-    Height = 250
-    Top = 54
+    Height = 254
+    Top = 53
     Width = 752
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 250
+    ClientHeight = 254
     ClientWidth = 752
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
       Left = 0
-      Height = 86
+      Height = 90
       Top = 0
       Width = 752
       Align = alClient
-      ItemHeight = 36
+      ItemHeight = 0
       MultiSelect = True
       OnClick = filelistClick
       OnContextPopup = filelistContextPopup
@@ -357,14 +357,12 @@ object frmMain: TfrmMain
       ParentShowHint = False
       PopupMenu = PopupMenu1
       ShowHint = True
-      Style = lbOwnerDrawFixed
       TabOrder = 0
-      TopIndex = -1
     end
     object pnlbottom: TPanel
       Left = 0
       Height = 164
-      Top = 86
+      Top = 90
       Width = 752
       Align = alBottom
       BevelOuter = bvNone
@@ -383,13 +381,13 @@ object frmMain: TfrmMain
         AutoSize = True
         BorderSpacing.Top = 3
         Caption = 'Output Details'
-        ClientHeight = 146
+        ClientHeight = 143
         ClientWidth = 748
         TabOrder = 0
         OnClick = grpOutputSettingsClick
         object Panel14: TPanel
           Left = 13
-          Height = 1
+          Height = 0
           Top = 0
           Width = 722
           Align = alTop
@@ -397,13 +395,13 @@ object frmMain: TfrmMain
           BorderSpacing.Left = 13
           BorderSpacing.Right = 13
           BevelOuter = bvNone
-          ClientHeight = 1
+          ClientHeight = 0
           ClientWidth = 722
           TabOrder = 0
           OnClick = Panel14Click
           object Panel16: TPanel
             Left = 637
-            Height = 1
+            Height = 0
             Top = 0
             Width = 85
             Align = alRight
@@ -413,27 +411,27 @@ object frmMain: TfrmMain
         end
         object Panel17: TPanel
           Left = 0
-          Height = 145
-          Top = 1
+          Height = 143
+          Top = 0
           Width = 748
           Align = alClient
           BevelOuter = bvNone
-          ClientHeight = 145
+          ClientHeight = 143
           ClientWidth = 748
           TabOrder = 1
           object Panel18: TPanel
             Left = 0
-            Height = 145
+            Height = 143
             Top = 0
             Width = 606
             Align = alClient
             BevelOuter = bvNone
-            ClientHeight = 145
+            ClientHeight = 143
             ClientWidth = 606
             TabOrder = 0
             object Label1: TLabel
               Left = 13
-              Height = 14
+              Height = 15
               Top = 5
               Width = 580
               Align = alTop
@@ -445,8 +443,8 @@ object frmMain: TfrmMain
             end
             object Label19: TLabel
               Left = 13
-              Height = 14
-              Top = 53
+              Height = 15
+              Top = 45
               Width = 580
               Align = alTop
               BorderSpacing.Left = 13
@@ -457,8 +455,8 @@ object frmMain: TfrmMain
             end
             object Label11: TLabel
               Left = 13
-              Height = 14
-              Top = 101
+              Height = 15
+              Top = 85
               Width = 580
               Align = alTop
               BorderSpacing.Left = 13
@@ -470,13 +468,13 @@ object frmMain: TfrmMain
             end
             object categorybox: TComboBox
               Left = 13
-              Height = 31
+              Height = 22
               Hint = 'Device or file type the video should be converted to'
-              Top = 19
+              Top = 20
               Width = 593
               Align = alTop
               BorderSpacing.Left = 13
-              ItemHeight = 0
+              ItemHeight = 14
               MaxLength = 65535
               OnChange = categoryboxChange
               Sorted = True
@@ -485,15 +483,15 @@ object frmMain: TfrmMain
             end
             object PresetBox: TComboBox
               Left = 13
-              Height = 31
+              Height = 22
               Hint = 'Specific settings to use for the chosen device or file type'
-              Top = 67
+              Top = 60
               Width = 593
               Align = alTop
               BorderSpacing.Left = 13
               Font.Height = -11
               Font.Name = 'Sans'
-              ItemHeight = 0
+              ItemHeight = 14
               MaxLength = 65535
               OnChange = PresetBoxChange
               ParentFont = False
@@ -503,7 +501,7 @@ object frmMain: TfrmMain
             object Panel20: TPanel
               Left = 0
               Height = 28
-              Top = 115
+              Top = 100
               Width = 606
               Align = alTop
               BevelOuter = bvNone
@@ -515,7 +513,7 @@ object frmMain: TfrmMain
                 Height = 28
                 Hint = 'Target location for the final video (choose a different folder than the source folder)'
                 Top = 0
-                Width = 556
+                Width = 545
                 Align = alClient
                 BorderSpacing.Left = 13
                 BorderSpacing.Right = 5
@@ -523,11 +521,10 @@ object frmMain: TfrmMain
               end
               object ChooseFolderBtn: TButton
                 AnchorSideLeft.Side = asrBottom
-                AnchorSideRight.Side = asrBottom
-                Left = 574
+                Left = 563
                 Height = 28
                 Top = 0
-                Width = 32
+                Width = 43
                 Align = alRight
                 AutoSize = True
                 BorderSpacing.InnerBorder = 4
@@ -541,19 +538,19 @@ object frmMain: TfrmMain
           end
           object Panel19: TPanel
             Left = 606
-            Height = 145
+            Height = 143
             Top = 0
             Width = 142
             Align = alRight
             BevelOuter = bvNone
-            ClientHeight = 145
+            ClientHeight = 143
             ClientWidth = 142
             TabOrder = 1
             object cbOutputPath: TCheckBox
               Left = 5
-              Height = 24
+              Height = 19
               Top = 21
-              Width = 125
+              Width = 110
               Caption = 'Use Source Folder'
               OnChange = cbOutputPathChange
               TabOrder = 0
@@ -583,19 +580,19 @@ object frmMain: TfrmMain
   end
   object pnlTop: TPanel
     Left = 0
-    Height = 54
+    Height = 53
     Top = 0
     Width = 752
     Align = alTop
     AutoSize = True
-    ClientHeight = 54
+    ClientHeight = 53
     ClientWidth = 752
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
     object btnAdd: TBitBtn
       Left = 1
-      Height = 52
+      Height = 51
       Hint = 'Add file(s) to the list for conversion'
       Top = 1
       Width = 60
@@ -686,10 +683,10 @@ object frmMain: TfrmMain
     end
     object btnRemove: TBitBtn
       Left = 61
-      Height = 52
+      Height = 51
       Hint = 'Remove selected file(s) from the list'
       Top = 1
-      Width = 60
+      Width = 65
       Align = alLeft
       AutoSize = True
       Caption = 'Remove'
@@ -776,8 +773,8 @@ object frmMain: TfrmMain
       TabOrder = 1
     end
     object btnClear: TBitBtn
-      Left = 121
-      Height = 52
+      Left = 126
+      Height = 51
       Hint = 'Remove all files from the list'
       Top = 1
       Width = 60
@@ -867,8 +864,8 @@ object frmMain: TfrmMain
       TabOrder = 2
     end
     object btnPlay: TBitBtn
-      Left = 181
-      Height = 52
+      Left = 186
+      Height = 51
       Hint = 'Preview the selected source file with ffplay (good test to see if conversion is possible)'
       Top = 1
       Width = 60
@@ -958,11 +955,11 @@ object frmMain: TfrmMain
       TabOrder = 3
     end
     object btnConvert: TBitBtn
-      Left = 301
-      Height = 52
+      Left = 312
+      Height = 51
       Hint = 'Start the conversion process'
       Top = 1
-      Width = 60
+      Width = 64
       Align = alLeft
       AutoSize = True
       Caption = 'Convert'
@@ -1049,11 +1046,11 @@ object frmMain: TfrmMain
       TabOrder = 4
     end
     object btnPreview: TBitBtn
-      Left = 241
-      Height = 52
+      Left = 246
+      Height = 51
       Hint = 'Preview using the output settings'
       Top = 1
-      Width = 60
+      Width = 66
       Align = alLeft
       AutoSize = True
       Caption = 'Preview'
@@ -1140,11 +1137,11 @@ object frmMain: TfrmMain
       TabOrder = 5
     end
     object btnOptions: TBitBtn
-      Left = 691
-      Height = 52
+      Left = 688
+      Height = 51
       Hint = 'Open/close the additional options window'
       Top = 1
-      Width = 60
+      Width = 63
       Align = alRight
       AutoSize = True
       Caption = 'Options'
@@ -1233,8 +1230,8 @@ object frmMain: TfrmMain
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 21
-    Top = 494
+    Height = 23
+    Top = 497
     Width = 752
     AutoHint = True
     Panels = <>
@@ -1244,7 +1241,7 @@ object frmMain: TfrmMain
   object pnlAdditionalOptions: TPanel
     Left = 0
     Height = 190
-    Top = 304
+    Top = 307
     Width = 752
     Align = alBottom
     BevelOuter = bvNone
@@ -1262,12 +1259,12 @@ object frmMain: TfrmMain
       Width = 752
       Align = alClient
       Caption = 'Additional Options'
-      ClientHeight = 175
+      ClientHeight = 172
       ClientWidth = 748
       TabOrder = 0
       object Label2: TLabel
         Left = 13
-        Height = 30
+        Height = 29
         Top = 5
         Width = 722
         Align = alTop
@@ -1279,26 +1276,26 @@ object frmMain: TfrmMain
       end
       object nbkSettings: TNotebook
         Left = 0
-        Height = 140
-        Top = 35
+        Height = 138
+        Top = 34
         Width = 748
         Align = alClient
         PageIndex = 0
         TabOrder = 0
         object tabVideoSettings: TPage
           Caption = 'Video'
-          ClientWidth = 744
-          ClientHeight = 109
+          ClientWidth = 740
+          ClientHeight = 111
           object Panel2: TPanel
             Left = 5
-            Height = 109
+            Height = 111
             Top = 0
             Width = 100
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 5
             BevelOuter = bvNone
-            ClientHeight = 109
+            ClientHeight = 111
             ClientWidth = 100
             Constraints.MinWidth = 100
             TabOrder = 0
@@ -1308,7 +1305,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = Panel2
               AnchorSideRight.Side = asrBottom
               Left = 0
-              Height = 14
+              Height = 15
               Top = 3
               Width = 100
               Anchors = [akTop, akLeft, akRight]
@@ -1323,9 +1320,9 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = Panel2
               AnchorSideRight.Side = asrBottom
               Left = 0
-              Height = 23
+              Height = 22
               Hint = '(<integer>) the target kilobits/second that the stream should use'
-              Top = 20
+              Top = 21
               Width = 100
               Anchors = [akTop, akLeft, akRight]
               BorderSpacing.Top = 3
@@ -1339,7 +1336,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = Panel2
               AnchorSideRight.Side = asrBottom
               Left = 0
-              Height = 24
+              Height = 19
               Hint = 'Using two passes allows the encoder to gather information in the first run for enhanced quality'
               Top = 48
               Width = 100
@@ -1353,14 +1350,14 @@ object frmMain: TfrmMain
           end
           object Panel5: TPanel
             Left = 115
-            Height = 109
+            Height = 111
             Top = 0
             Width = 100
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 109
+            ClientHeight = 111
             ClientWidth = 100
             Constraints.MinWidth = 100
             TabOrder = 1
@@ -1370,7 +1367,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = Panel5
               AnchorSideRight.Side = asrBottom
               Left = 0
-              Height = 14
+              Height = 15
               Top = 3
               Width = 100
               Anchors = [akTop, akLeft, akRight]
@@ -1385,9 +1382,9 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = Panel5
               AnchorSideRight.Side = asrBottom
               Left = 0
-              Height = 23
+              Height = 22
               Hint = '(<real> or <integer>) number of frames per second'
-              Top = 20
+              Top = 21
               Width = 100
               Anchors = [akTop, akLeft, akRight]
               BorderSpacing.Top = 3
@@ -1400,7 +1397,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = Panel5
               AnchorSideRight.Side = asrBottom
               Left = 0
-              Height = 24
+              Height = 19
               Hint = 'Removes interlacing from the video (if necessary)'
               Top = 48
               Width = 100
@@ -1414,14 +1411,14 @@ object frmMain: TfrmMain
           end
           object Panel6: TPanel
             Left = 225
-            Height = 109
+            Height = 111
             Top = 0
             Width = 100
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 109
+            ClientHeight = 111
             ClientWidth = 100
             Constraints.MinWidth = 100
             TabOrder = 2
@@ -1431,7 +1428,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = Panel6
               AnchorSideRight.Side = asrBottom
               Left = 0
-              Height = 14
+              Height = 15
               Top = 3
               Width = 100
               Anchors = [akTop, akLeft, akRight]
@@ -1446,8 +1443,8 @@ object frmMain: TfrmMain
               AnchorSideTop.Side = asrBottom
               AnchorSideRight.Control = VidsizeY
               Left = 45
-              Height = 14
-              Top = 27
+              Height = 13
+              Top = 28
               Width = 10
               Alignment = taCenter
               Anchors = [akTop, akLeft, akRight]
@@ -1466,7 +1463,7 @@ object frmMain: TfrmMain
               Left = 0
               Height = 27
               Hint = '(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''''t support pixel aspect ratio (PAR) this is the final frame size.'
-              Top = 20
+              Top = 21
               Width = 40
               AutoSize = False
               BorderSpacing.Top = 3
@@ -1480,7 +1477,7 @@ object frmMain: TfrmMain
               Left = 60
               Height = 27
               Hint = '(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''''t support pixel aspect ratio (PAR) this is the final frame size.'
-              Top = 20
+              Top = 21
               Width = 40
               Anchors = [akTop, akRight]
               AutoSize = False
@@ -1490,14 +1487,14 @@ object frmMain: TfrmMain
           end
           object Panel7: TPanel
             Left = 335
-            Height = 109
+            Height = 111
             Top = 0
             Width = 100
             Align = alLeft
             AutoSize = True
             BorderSpacing.Left = 10
             BevelOuter = bvNone
-            ClientHeight = 109
+            ClientHeight = 111
             ClientWidth = 100
             Constraints.MinWidth = 100
             TabOrder = 3
@@ -1507,7 +1504,7 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = Panel7
               AnchorSideRight.Side = asrBottom
               Left = 0
-              Height = 14
+              Height = 15
               Top = 3
               Width = 100
               Anchors = [akTop, akLeft, akRight]
@@ -1522,9 +1519,9 @@ object frmMain: TfrmMain
               AnchorSideRight.Control = Panel7
               AnchorSideRight.Side = asrBottom
               Left = 0
-              Height = 23
+              Height = 22
               Hint = '(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display'
-              Top = 20
+              Top = 21
               Width = 100
               Anchors = [akTop, akLeft, akRight]
               BorderSpacing.Top = 3
@@ -2274,9 +2271,7 @@ object frmMain: TfrmMain
     end
     object mitViewMode: TMenuItem
       Caption = 'Detailed View'
-      Checked = True
       GlyphShowMode = gsmAlways
-      ShowAlwaysCheckable = True
       OnClick = mitViewModeClick
     end
   end
