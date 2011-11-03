@@ -1,9 +1,3 @@
-msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
-
-msgid " will be applied to all jobs when the conversion starts"
-msgstr ""
-
 # translation of winff.po to Taiwanese Chinese
 # Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
 #
@@ -23,6 +17,22 @@ msgstr ""
 # Chung Yu <chungyu.hsu@gmail.com>, 2008-2009
 # 大宝(DaBao) <michaelbond01@163.com>, 2009
 # kentxchang <kentxchang@gmail.com>, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: Winff 1.3.1\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: kentxchang <kentxchang@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: TAIWAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: /usr/share/locale/zh/LC_MESSAGES/\n"
+"X-Poedit-SearchPath-0: /usr/share/locale/zh_TW/LC_MESSAGES\n"
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -227,7 +237,7 @@ msgstr "新增要轉換的檔案到清單中"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Output Folder"
+msgid "Apply Destination Folder"
 msgstr ""
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
@@ -340,32 +350,6 @@ msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
 msgstr "0"
 
-#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
-#~ msgstr "聲訊同步，數值為整數"
-#~ msgid "(All Categories)"
-#~ msgstr "所有類別"
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
-#~ msgid "Audio Settings"
-#~ msgstr "聲訊設定"
-#~ msgid "Continue"
-#~ msgstr "繼續"
-#~ msgid "Convert To ..."
-#~ msgstr "匯出類別"
-#~ msgid "Device Preset"
-#~ msgstr "編碼格式"
-#~ msgid ""
-#~ "Make sure that the start time + time to record is less than total length "
-#~ "of job"
-#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "FFPlay.exe 所在目錄"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "FFmpeg.exe 所在目錄"
-#~ msgid "Video Settings"
-#~ msgstr "視訊設定"
 #: TFRMMAIN.EDTCROPRIGHT.TEXT
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
@@ -440,10 +424,6 @@ msgstr "輸出資料夾："
 msgid "Preset:"
 msgstr "編碼方案："
 
-#: TFRMMAIN.LABEL2.CAPTION
-msgid "NOTE: Currently any additional options chosen"
-msgstr ""
-
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
 msgstr "音量"
@@ -472,6 +452,32 @@ msgstr "額外指令行參數"
 msgid "Audio Bitrate"
 msgstr "音效位元率"
 
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "聲訊同步，數值為整數"
+#~ msgid "(All Categories)"
+#~ msgstr "所有類別"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
+#~ msgid "Audio Settings"
+#~ msgstr "聲訊設定"
+#~ msgid "Continue"
+#~ msgstr "繼續"
+#~ msgid "Convert To ..."
+#~ msgstr "匯出類別"
+#~ msgid "Device Preset"
+#~ msgstr "編碼格式"
+#~ msgid ""
+#~ "Make sure that the start time + time to record is less than total length "
+#~ "of job"
+#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFPlay.exe 所在目錄"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe 所在目錄"
+#~ msgid "Video Settings"
+#~ msgstr "視訊設定"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "取樣頻率"
@@ -599,6 +605,18 @@ msgstr "輔助說明"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "選項"
+
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
+
+#: TFRMMAIN.PANEL17.CAPTION
+msgid "Panel17"
+msgstr ""
+
+#: TFRMMAIN.PANEL18.CAPTION
+msgid "Panel18"
+msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
