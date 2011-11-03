@@ -1,9 +1,3 @@
-msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
-
-msgid " will be applied to all jobs when the conversion starts"
-msgstr ""
-
 # translation of winff.po to Arabic
 # Copyright (C) 2009-2010 Matthew Weatherford <matt@biggmatt.com>
 #
@@ -24,9 +18,23 @@ msgstr ""
 #| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
-#| msgctxt "REMOVED3"
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
-#| msgctxt "REMOVED6"
+msgid ""
+msgstr ""
+"Project-Id-Version: Winff\n"
+"POT-Creation-Date: 2010-01-06\n"
+"PO-Revision-Date: 2010-04-05 01:17+0200\n"
+"Last-Translator: Muhammad Negm <alam.hor@gmail.com>\n"
+"Language-Team: Muhammad Negm <alam.hor@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Virtaal 0.3.1\n"
+"X-Poedit-Language: Arabic\n"
+"X-Poedit-Country: EGYPT\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=3; plural=(n>99)?1:(n > 2 && n < 11)?2:0;\n"
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -46,6 +54,7 @@ msgstr "WinFF"
 msgid "http://ffmpeg.arrozcru.org/"
 msgstr ""
 
+#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
 msgstr ""
@@ -58,7 +67,6 @@ msgstr ""
 msgid "High Quality Presets From"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMABOUT.LABEL15.CAPTION
 msgid "Icons and Logo by Alex Klepatsch"
 msgstr ""
@@ -86,6 +94,7 @@ msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
 msgstr ""
@@ -122,6 +131,7 @@ msgstr "FFmpeg"
 msgid "Thanks"
 msgstr "الشكر لـ"
 
+#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
 msgstr "إضافة/تحديث"
@@ -163,6 +173,7 @@ msgstr ""
 msgid "Choose a category to group this preset under"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
@@ -178,14 +189,12 @@ msgstr "استيراد"
 msgid "Category / Preset"
 msgstr "إنشاء نسبة"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "اسم النسبة (كلمة واحدة، حروف وأرقام فقط)"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
 msgstr "وسم النسبة"
@@ -263,7 +272,7 @@ msgstr "إضافة ملف(ات) إلى قائمة التحويل"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Output Folder"
+msgid "Apply Destination Folder"
 msgstr ""
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
@@ -291,11 +300,13 @@ msgstr "حول"
 msgid "Start the conversion process"
 msgstr "ابدأ التحويل"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "خيارات"
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 #, fuzzy
 #| msgid "open or close the additional option window"
@@ -398,47 +409,6 @@ msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
 msgstr ""
 
-#~ msgid "(All Categories)"
-#~ msgstr "جميع التصنيفات"
-#~ msgid "Convert To ..."
-#~ msgstr "حول إلى ..."
-#~ msgid "Device Preset"
-#~ msgstr "نوع المشغل"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "مجلد الخرج"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "حول"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "خيارات"
-#~ msgid "Video Settings"
-#~ msgstr "أعدادات الفيديو"
-#~ msgid "Audio Settings"
-#~ msgstr "أعدادات الصوت"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "إلغاء"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "النسب"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "معالجة متعددة الخيوط للمعالجات مزدوجة الأنوية"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "المسار إلى FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "المسار إلى FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "موافق"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "جاري التحويل"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "حفظ"
 #: TFRMMAIN.EDTCROPRIGHT.TEXT
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
@@ -521,10 +491,6 @@ msgstr "مجلد الخرج"
 msgid "Preset:"
 msgstr "نسب"
 
-#: TFRMMAIN.LABEL2.CAPTION
-msgid "NOTE: Currently any additional options chosen"
-msgstr ""
-
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
 msgstr ""
@@ -555,6 +521,47 @@ msgstr "معاملات سطر أوامر إضافية (متقدم)"
 msgid "Audio Bitrate"
 msgstr "معدل البتات"
 
+#~ msgid "(All Categories)"
+#~ msgstr "جميع التصنيفات"
+#~ msgid "Convert To ..."
+#~ msgstr "حول إلى ..."
+#~ msgid "Device Preset"
+#~ msgstr "نوع المشغل"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "مجلد الخرج"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "حول"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "خيارات"
+#~ msgid "Video Settings"
+#~ msgstr "أعدادات الفيديو"
+#~ msgid "Audio Settings"
+#~ msgstr "أعدادات الصوت"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "إلغاء"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "النسب"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "معالجة متعددة الخيوط للمعالجات مزدوجة الأنوية"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "المسار إلى FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "المسار إلى FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "موافق"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "جاري التحويل"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "حفظ"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "معدل العينات"
@@ -692,6 +699,18 @@ msgstr "مساعدة"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "خيارات"
+
+#: TFRMMAIN.PANEL15.CAPTION
+msgid "Panel15"
+msgstr ""
+
+#: TFRMMAIN.PANEL17.CAPTION
+msgid "Panel17"
+msgstr ""
+
+#: TFRMMAIN.PANEL18.CAPTION
+msgid "Panel18"
+msgstr ""
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
