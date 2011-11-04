@@ -35,6 +35,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Dutch\n"
 
+msgid " will be applied to all jobs when the conversion starts"
+msgstr "toegepast op alle video's op het moment dat de convertie begint."
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -257,12 +260,12 @@ msgstr "Voeg bestand(en) to aan de conversielijst"
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Destination Folder"
-msgstr ""
+msgstr "Doelmap toepassen"
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Voorinstelling toepassen"
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
@@ -328,7 +331,7 @@ msgstr "Naam van het apparaat of bestandstype waar de video naar geconverteerd m
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
-msgstr ""
+msgstr "Bronmap gebruiken"
 
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
@@ -360,7 +363,7 @@ msgstr "De doelmap voor het eindresultaat (kies een andere map dan waar het orig
 
 #: TFRMMAIN.DLGOPENFILE.TITLE
 msgid "Select Video Files..."
-msgstr ""
+msgstr "Selecteer video bestanden ..."
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
@@ -461,6 +464,10 @@ msgstr "Doelmap:"
 #| msgid "Presets"
 msgid "Preset:"
 msgstr "Voorinstelling:"
+
+#: TFRMMAIN.LABEL2.CAPTION
+msgid "NOTE: Currently any additional options chosen"
+msgstr "Waarschuwing: Op dit moment worden de instellingen in de extra opties"
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -574,12 +581,12 @@ msgstr "Videogrootte"
 #: TFRMMAIN.MENUITEM1.CAPTION
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Voorinstelling toepassen"
 
 #: TFRMMAIN.MENUITEM2.CAPTION
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
-msgstr ""
+msgstr "Doelmap toepassen"
 
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
@@ -640,7 +647,7 @@ msgstr "Afsluiten na beëindigen"
 
 #: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
-msgstr ""
+msgstr "Weergave van details"
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
@@ -875,7 +882,7 @@ msgstr "FFmpeg commandoregel"
 
 #: unit1.rsanalysing
 msgid "Analysing"
-msgstr ""
+msgstr "Bezig met analyse"
 
 #: unit1.rsconverting
 msgid "Converting"
