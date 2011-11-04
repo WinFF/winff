@@ -1,11 +1,9 @@
-msgid " will be applied to all jobs when the conversion starts"
-msgstr ""
-
 # Malay translation for winff
 # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
 # This file is distributed under the same license as the winff package.
-# abuyop <Unknown>, 2011.
 #
+# Launchpad contributors see:
+# https://translations.launchpad.net/winff/trunk/+pots/winff/ms/+details
 msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
@@ -20,6 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2011-11-02 19:20+0000\n"
 "X-Generator: Launchpad (build 14214)\n"
+
+msgid " will be applied to all jobs when the conversion starts"
+msgstr ""
 
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
