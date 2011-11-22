@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="7"/>
+    <Units Count="24">
+      <Unit0>
+        <Filename Value="winff.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="winff"/>
+        <CursorPos X="1" Y="48"/>
+        <TopLine Value="25"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="121"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <CursorPos X="7" Y="1625"/>
+        <TopLine Value="1603"/>
+        <UsageCount Value="121"/>
+        <Bookmarks Count="4">
+          <Item0 X="1" Y="1448" ID="1"/>
+          <Item1 X="57" Y="2281" ID="2"/>
+          <Item2 X="15" Y="2269" ID="3"/>
+          <Item3 X="15" Y="196" ID="4"/>
+        </Bookmarks>
+      </Unit1>
+      <Unit2>
+        <Filename Value="unit2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmEditPresets"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit2"/>
+        <CursorPos X="20" Y="257"/>
+        <TopLine Value="233"/>
+        <UsageCount Value="121"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="unit3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAbout"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit3"/>
+        <CursorPos X="44" Y="4"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="121"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="unit4.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPreferences"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit4"/>
+        <UsageCount Value="121"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="unit5.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmScript"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit5"/>
+        <UsageCount Value="121"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="unit6.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmExport"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unit6"/>
+        <UsageCount Value="121"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="potranslator.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PoTranslator"/>
+        <CursorPos X="35" Y="11"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="121"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\lazarus\lcl\stdctrls.pp"/>
+        <UnitName Value="StdCtrls"/>
+        <CursorPos X="49" Y="259"/>
+        <TopLine Value="231"/>
+        <UsageCount Value="6"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <CursorPos X="3" Y="1074"/>
+        <TopLine Value="1051"/>
+        <UsageCount Value="6"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <CursorPos X="1" Y="2289"/>
+        <TopLine Value="2265"/>
+        <UsageCount Value="9"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\lcl\include\buttoncontrol.inc"/>
+        <CursorPos X="1" Y="27"/>
+        <TopLine Value="27"/>
+        <UsageCount Value="9"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\lazarus\lcl\include\buttons.inc"/>
+        <CursorPos X="1" Y="175"/>
+        <TopLine Value="175"/>
+        <UsageCount Value="9"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\lcl\include\bitbtn.inc"/>
+        <CursorPos X="1" Y="58"/>
+        <TopLine Value="58"/>
+        <UsageCount Value="9"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\lazarus\lcl\include\wincontrol.inc"/>
+        <CursorPos X="1" Y="5242"/>
+        <TopLine Value="5219"/>
+        <UsageCount Value="6"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\lcl\lclmessageglue.pas"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <CursorPos X="1" Y="121"/>
+        <TopLine Value="110"/>
+        <UsageCount Value="6"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32callback.inc"/>
+        <CursorPos X="1" Y="213"/>
+        <TopLine Value="190"/>
+        <UsageCount Value="6"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\fpc\2.4.2\source\rtl\win\wininc\ascdef.inc"/>
+        <CursorPos X="10" Y="122"/>
+        <TopLine Value="99"/>
+        <UsageCount Value="9"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\lazarus\lcl\fileutil.pas"/>
+        <UnitName Value="FileUtil"/>
+        <CursorPos X="16" Y="206"/>
+        <TopLine Value="168"/>
+        <UsageCount Value="9"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\lazarus\fpc\2.4.2\source\packages\fcl-base\src\gettext.pp"/>
+        <UnitName Value="gettext"/>
+        <CursorPos X="25" Y="292"/>
+        <TopLine Value="250"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <CursorPos X="1" Y="82"/>
+        <TopLine Value="57"/>
+        <UsageCount Value="10"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <CursorPos X="1" Y="2117"/>
+        <TopLine Value="2094"/>
+        <UsageCount Value="10"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\0.9.28.2\examples\hello.pp"/>
+        <UnitName Value="Hello_world"/>
+        <CursorPos X="28" Y="17"/>
+        <TopLine Value="6"/>
+        <UsageCount Value="10"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\..\..\..\usr\lib\lazarus\0.9.28.2\ide\lazarus.pp"/>
+        <UnitName Value="Lazarus"/>
+        <CursorPos X="1" Y="129"/>
+        <TopLine Value="106"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+    </Units>
+    <General>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="48" Column="1" TopLine="25"/>
+      </Position1>
+      <Position2>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="38" Column="19" TopLine="23"/>
+      </Position2>
+      <Position3>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="48" Column="58" TopLine="25"/>
+      </Position3>
+      <Position4>
+        <Filename Value="winff.lpr"/>
+        <Caret Line="35" Column="18" TopLine="23"/>
+      </Position4>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

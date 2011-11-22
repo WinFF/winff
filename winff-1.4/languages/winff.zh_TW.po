@@ -1,0 +1,909 @@
+# translation of winff.po to Taiwanese Chinese
+# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Chung Yu <chungyu.hsu@gmail.com>, 2008-2009
+# 大宝(DaBao) <michaelbond01@163.com>, 2009
+# kentxchang <kentxchang@gmail.com>, 2011
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: TFRMABOUT.BUTTON1.CAPTION
+msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+msgid "OK"
+msgstr "確定"
+
+#: TFRMABOUT.CAPTION
+msgid "About WinFF"
+msgstr "關於 WinFF"
+
+#: TFRMABOUT.LABEL1.CAPTION
+msgid "WinFF 1.3.2"
+msgstr "WinFF 1.3.2"
+
+#: TFRMABOUT.LABEL10.CAPTION
+msgid "http://ffmpeg.arrozcru.org/"
+msgstr "http://ffmpeg.arrozcru.org/"
+
+#: TFRMABOUT.LABEL11.CAPTION
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr "Debian/Ubuntu 套件由 Paul Gevers 製作"
+
+#: TFRMABOUT.LABEL13.CAPTION
+msgid "Gmaq"
+msgstr "Gmaq"
+
+#: TFRMABOUT.LABEL14.CAPTION
+msgid "High Quality Presets From"
+msgstr "高品質編碼方案來自"
+
+#: TFRMABOUT.LABEL15.CAPTION
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr "圖示與圖標由 Alex Klepatsch 製作"
+
+#: TFRMABOUT.LABEL16.CAPTION
+msgid "JNavas"
+msgstr "JNavas"
+
+#: TFRMABOUT.LABEL2.CAPTION
+msgid "Copyright 2006-2009 GPL V3"
+msgstr "Copyright 2006-2009 GPL V3"
+
+#: TFRMABOUT.LABEL3.CAPTION
+msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+msgstr "Matthew Weatherford,  Ian Stoffberg, 以及 Alexey Osipov"
+
+#: TFRMABOUT.LABEL4.CAPTION
+msgid "http://www.winff.org"
+msgstr "http://www.winff.org"
+
+#: TFRMABOUT.LABEL5.CAPTION
+msgctxt "TFRMABOUT.LABEL5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.LABEL6.CAPTION
+msgid "Trademark Fabrice Belllard"
+msgstr "商標 Fabrice Belllard"
+
+#: TFRMABOUT.LABEL7.CAPTION
+msgid "http://ffmpeg.org"
+msgstr "http://ffmpeg.org"
+
+#: TFRMABOUT.LABEL8.CAPTION
+msgid "FFmpeg Windows Builds by"
+msgstr "FFmpeg 的 Windows 版編譯是由"
+
+#: TFRMABOUT.LABEL9.CAPTION
+msgid "Ramiro Polla"
+msgstr "Ramiro Polla"
+
+#: TFRMABOUT.PAGE1.CAPTION
+msgctxt "TFRMABOUT.PAGE1.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMABOUT.PAGE2.CAPTION
+msgctxt "TFRMABOUT.PAGE2.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.PAGE3.CAPTION
+msgid "Thanks"
+msgstr "感謝"
+
+#: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
+msgid "Add / Update"
+msgstr "新增 / 更新"
+
+#: TFRMEDITPRESETS.CANCELBTN.CAPTION
+msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+msgid "Close"
+msgstr "關閉"
+
+#: TFRMEDITPRESETS.CAPTION
+msgid "Edit Presets"
+msgstr "編輯編碼方案"
+
+#: TFRMEDITPRESETS.DELETEBTN.CAPTION
+msgid "Delete"
+msgstr "移除"
+
+#: TFRMEDITPRESETS.EDIT1.HINT
+msgid "One word, only letters and numbers"
+msgstr "一個單字，只包含字母與數字"
+
+#: TFRMEDITPRESETS.EDIT2.HINT
+msgid "Enter a more descriptive name for this preset"
+msgstr "輸入此編碼方案的完整名稱"
+
+#: TFRMEDITPRESETS.EDIT3.HINT
+msgid "Please don't use -i or output file parameters"
+msgstr "請不要使用 -i 或者匯出檔案參數）"
+
+#: TFRMEDITPRESETS.EDIT4.HINT
+msgid "Do not include a dot"
+msgstr "不要包含點"
+
+#: TFRMEDITPRESETS.EDIT5.HINT
+msgid "Choose a category to group this preset under"
+msgstr "選擇要將此編碼方案包含在哪個類別之下："
+
+#: TFRMEDITPRESETS.EXPORT.CAPTION
+msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+msgid "Export"
+msgstr "匯出"
+
+#: TFRMEDITPRESETS.IMPORT.CAPTION
+msgid "Import"
+msgstr "匯入"
+
+#: TFRMEDITPRESETS.LABEL1.CAPTION
+msgid "Category / Preset"
+msgstr "類別 / 編碼方案"
+
+#: TFRMEDITPRESETS.LABEL2.CAPTION
+msgid "Preset Name (one word, only letters and numbers)"
+msgstr "編碼方案名稱（一個完整的單字，只能有字母與數字）"
+
+#: TFRMEDITPRESETS.LABEL3.CAPTION
+msgid "Preset Label"
+msgstr "編碼方案標籤"
+
+#: TFRMEDITPRESETS.LABEL4.CAPTION
+msgid "Preset Command Line Parameters (no -i or output file)"
+msgstr "編碼方案命令列參數（沒有 -i 或者輸出檔）"
+
+#: TFRMEDITPRESETS.LABEL5.CAPTION
+msgid "Output File Extension (do not include the '.' )"
+msgstr "輸出檔副檔名（不含 .）"
+
+#: TFRMEDITPRESETS.LABEL6.CAPTION
+msgid "Category"
+msgstr "類別"
+
+#: TFRMEDITPRESETS.OKBTN.CAPTION
+msgid "Save"
+msgstr "儲存"
+
+#: TFRMEDITPRESETS.PNLTOP.CAPTION
+#, fuzzy
+msgid "pnlTop"
+msgstr "頂端"
+
+#: TFRMEXPORT.CANCELBTN.CAPTION
+msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+msgid "Cancel"
+msgstr "取消"
+
+#: TFRMEXPORT.CAPTION
+msgid "Export Presets"
+msgstr "匯出編碼方案"
+
+#: TFRMEXPORT.EXPORTBTN.CAPTION
+msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+msgid "Export"
+msgstr "匯出"
+
+#: TFRMEXPORT.LABEL1.CAPTION
+msgid "Choose Presets to Export:"
+msgstr "選取要匯出的編碼方案"
+
+#: TFRMMAIN.AUDBITRATE.HINT
+msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "此串流使用的每秒鐘資料量（為一整數，單位為 KB/s）"
+
+#: TFRMMAIN.AUDCHANNELS.HINT
+msgid "(<integer>) number of audio channels"
+msgstr "音訊的聲道數（為一整數）"
+
+#: TFRMMAIN.AUDSAMPLINGRATE.HINT
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr "聲訊的取樣率（為一整數，單位為赫茲）"
+
+#: TFRMMAIN.BTNADD.CAPTION
+msgid "Add"
+msgstr "新增"
+
+#: TFRMMAIN.BTNADD.HINT
+msgid "Add file(s) to the list for conversion"
+msgstr "新增要轉換的檔案到清單中"
+
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Output Folder"
+msgstr ""
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
+#: TFRMMAIN.BTNCLEAR.CAPTION
+msgid "Clear"
+msgstr "清除"
+
+#: TFRMMAIN.BTNCLEAR.HINT
+msgid "Remove all files from the list"
+msgstr "移除清單中的所有檔案"
+
+#: TFRMMAIN.BTNCONVERT.CAPTION
+msgid "Convert"
+msgstr "轉換"
+
+#: TFRMMAIN.BTNCONVERT.HINT
+msgid "Start the conversion process"
+msgstr "開始執行轉換工作"
+
+#: TFRMMAIN.BTNOPTIONS.CAPTION
+msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+msgid "Options"
+msgstr "選項"
+
+#: TFRMMAIN.BTNOPTIONS.HINT
+msgid "Open/close the additional options window"
+msgstr "開啟或關閉額外選項視窗"
+
+#: TFRMMAIN.BTNPLAY.CAPTION
+msgid "Play"
+msgstr "播放"
+
+#: TFRMMAIN.BTNPLAY.HINT
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "以 ffplay 預覽所選取的來源檔（可以測試是否支援此檔案的編碼轉換）"
+
+#: TFRMMAIN.BTNPREVIEW.CAPTION
+msgid "Preview"
+msgstr "預覽"
+
+#: TFRMMAIN.BTNPREVIEW.HINT
+msgid "Preview using the output settings"
+msgstr "使用輸出設定來預覽"
+
+#: TFRMMAIN.BTNREMOVE.CAPTION
+msgid "Remove"
+msgstr "移除"
+
+#: TFRMMAIN.BTNREMOVE.HINT
+msgid "Remove selected file(s) from the list"
+msgstr "從清單中移除所選取的檔案"
+
+#: TFRMMAIN.CAPTION
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMMAIN.CATEGORYBOX.HINT
+msgid "Device or file type the video should be converted to"
+msgstr "要轉換到哪個裝置或檔案型態"
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr ""
+
+#: TFRMMAIN.CBX2PASS.CAPTION
+msgid "2 pass"
+msgstr "高畫質輸出（較花時間）"
+
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "聲訊同步，數值為整數"
+#~ msgid "(All Categories)"
+#~ msgstr "所有類別"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
+#~ msgid "Audio Settings"
+#~ msgstr "聲訊設定"
+#~ msgid "Continue"
+#~ msgstr "繼續"
+#~ msgid "Convert To ..."
+#~ msgstr "匯出類別"
+#~ msgid "Device Preset"
+#~ msgstr "編碼格式"
+#~ msgid ""
+#~ "Make sure that the start time + time to record is less than total length "
+#~ "of job"
+#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFPlay.exe 所在目錄"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe 所在目錄"
+#~ msgid "Video Settings"
+#~ msgstr "視訊設定"
+#: TFRMMAIN.CBX2PASS.HINT
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "使用兩輪編碼，可以在第一輪裡取得資訊以提高編碼品質"
+
+#: TFRMMAIN.CBXDEINTERLACE.CAPTION
+msgid "Deinterlace"
+msgstr "解交錯"
+
+#: TFRMMAIN.CBXDEINTERLACE.HINT
+msgid "Removes interlacing from the video (if necessary)"
+msgstr "去除視訊中的交錯（如果有必要的話）"
+
+#: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMMAIN.DESTFOLDER.HINT
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr "最終視訊的目標位置（不可與來源檔在同一路徑）"
+
+#: TFRMMAIN.EDTASPECTRATIO.HINT
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "匯出後的實際畫面比例。格式可以是比例式（如：4:3、16:9、2.35:1 等），也可以是比例值（如：1.33、1.77、2.35 等）"
+
+#: TFRMMAIN.EDTAUDIOSYNC.HINT
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "從 10 到取樣頻率的值（44100，48000 等）。允許 \"stretch\"/\"squeeze\" 音效串流。"
+
+#: TFRMMAIN.EDTCROPBOTTOM.TEXT
+msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPLEFT.TEXT
+msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPRIGHT.TEXT
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPTOP.TEXT
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTSEEKHH.HINT
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "在開始轉換前先移動到哪個時間位置，格式為<時:分:秒>"
+
+#: TFRMMAIN.EDTSEEKMM.HINT
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "在開始轉換前先移動到哪個時間位置，格式為<時:分:秒>"
+
+#: TFRMMAIN.EDTSEEKSS.HINT
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "在開始轉換前先移動到哪個時間位置，格式為<時:分:秒>"
+
+#: TFRMMAIN.EDTTTRHH.HINT
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "轉換多久的影像後停止，格式為<時:分:秒>"
+
+#: TFRMMAIN.EDTTTRMM.HINT
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "轉換多久的影像後停止，格式為<時:分:秒>"
+
+#: TFRMMAIN.EDTTTRSS.HINT
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "轉換多久的影像後停止，格式為<時:分:秒>"
+
+#: TFRMMAIN.EDTVOLUME.HINT
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "音量大小，數值為整數，目前音量：256，一半音量：128，雙倍音量：512"
+
+#: TFRMMAIN.GBXSETTINGS.CAPTION
+msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+msgid "Additional Options"
+msgstr "額外選項"
+
+#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgid "Output Details"
+msgstr "輸出詳情"
+
+#: TFRMMAIN.LABEL1.CAPTION
+msgid "Convert to:"
+msgstr "轉換為："
+
+#: TFRMMAIN.LABEL10.CAPTION
+msgid "Audio Channels"
+msgstr "聲道"
+
+#: TFRMMAIN.LABEL12.CAPTION
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
+msgid "Output Folder:"
+msgstr "輸出資料夾："
+
+#: TFRMMAIN.LABEL19.CAPTION
+msgid "Preset:"
+msgstr "編碼方案："
+
+#: TFRMMAIN.LABEL2.CAPTION
+msgid "NOTE: Currently any additional options chosen"
+msgstr ""
+
+#: TFRMMAIN.LABEL20.CAPTION
+msgid "Volume"
+msgstr "音量"
+
+#: TFRMMAIN.LABEL21.CAPTION
+msgid "Sync"
+msgstr "同步"
+
+#: TFRMMAIN.LABEL22.CAPTION
+msgid "Seek to"
+msgstr "區段開始"
+
+#: TFRMMAIN.LABEL23.CAPTION
+msgid "Time to Record"
+msgstr "區段時長"
+
+#: TFRMMAIN.LABEL24.CAPTION
+msgid "Hours / Minutes / Seconds"
+msgstr "小時 / 分鐘 / 秒"
+
+#: TFRMMAIN.LABEL3.CAPTION
+msgid "Additional Command Line Parameters"
+msgstr "額外指令行參數"
+
+#: TFRMMAIN.LABEL4.CAPTION
+msgid "will be applied to all jobs when the conversion starts"
+msgstr ""
+
+#: TFRMMAIN.LABEL7.CAPTION
+msgid "Audio Bitrate"
+msgstr "音效位元率"
+
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "取樣頻率"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr "X"
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "畫面比例"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr "底端"
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr "左側"
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+msgid "Right"
+msgstr "右側"
+
+#: TFRMMAIN.LBLCROPTOP.CAPTION
+msgid "Top"
+msgstr "頂端"
+
+#: TFRMMAIN.LBLFRAMERATE.CAPTION
+msgid "Frame Rate"
+msgstr "影格率"
+
+#: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
+msgid "Video Bitrate"
+msgstr "位元率"
+
+#: TFRMMAIN.LBLVIDEOSIZE.CAPTION
+msgid "Video Size"
+msgstr "畫面大小"
+
+#: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM9.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFRMMAIN.MITABOUT.CAPTION
+msgid "About"
+msgstr "關於"
+
+#: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+msgid "Display Cmd Line"
+msgstr "顯示命令列"
+
+#: TFRMMAIN.MITDOCS.CAPTION
+msgid "Documentation"
+msgstr "說明文件"
+
+#: TFRMMAIN.MITEXIT.CAPTION
+msgid "Exit"
+msgstr "離開"
+
+#: TFRMMAIN.MITFORUMS.CAPTION
+msgid "Forums"
+msgstr "論壇"
+
+#: TFRMMAIN.MITIMPORTPRESET.CAPTION
+msgid "Import Preset"
+msgstr "匯入編碼方案"
+
+#: TFRMMAIN.MITPAUSEONFINISH.CAPTION
+msgid "Pause on Finish"
+msgstr "完成後暫停"
+
+#: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+msgid "Play Sound on Finish"
+msgstr "完成時播放音效"
+
+#: TFRMMAIN.MITPREFERENCES.CAPTION
+msgid "Preferences"
+msgstr "個人偏好"
+
+#: TFRMMAIN.MITPRESETS.CAPTION
+msgid "Presets"
+msgstr "編碼方案"
+
+#: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+msgid "Additional Options"
+msgstr "額外選項"
+
+#: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+msgid "Shutdown on Finish"
+msgstr "完成後關閉"
+
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr ""
+
+#: TFRMMAIN.MITWINFF.CAPTION
+msgid "WinFF Website"
+msgstr "WinFF 官方網站"
+
+#: TFRMMAIN.MNUEDIT.CAPTION
+msgid "Edit"
+msgstr "設定"
+
+#: TFRMMAIN.MNUFILE.CAPTION
+msgid "File"
+msgstr "檔案"
+
+#: TFRMMAIN.MNUHELP.CAPTION
+msgid "Help"
+msgstr "輔助說明"
+
+#: TFRMMAIN.MNUOPTIONS.CAPTION
+msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+msgid "Options"
+msgstr "選項"
+
+#: TFRMMAIN.PNLMAIN.CAPTION
+msgid "pnlMain"
+msgstr ""
+
+#: TFRMMAIN.PRESETBOX.HINT
+msgid "Specific settings to use for the chosen device or file type"
+msgstr "指定選取的裝置或檔案型態要使用的設定"
+
+#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+msgid "Audio"
+msgstr "音效"
+
+#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
+msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABPAGECROP.CAPTION
+msgid "Crop"
+msgstr "裁剪"
+
+#: TFRMMAIN.TABPAGETIME.CAPTION
+msgid "Time"
+msgstr "時間"
+
+#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+msgid "Video"
+msgstr "影像"
+
+#: TFRMMAIN.VIDBITRATE.HINT
+msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "串流要使用的每秒鐘資料量（整數，單位為 KB/s）"
+
+#: TFRMMAIN.VIDFRAMERATE.HINT
+msgid "(<real> or <integer>) number of frames per second"
+msgstr "每秒鐘播放的影格數（整數或實數）"
+
+#: TFRMMAIN.VIDSIZEX.HINT
+msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "每個影格的像素數（整數 x 整數）。對那些不支援像素比例（Pixel Aspect Ratio, PAR）的編解碼器，這個數字是最後的影像大小。"
+
+#: TFRMMAIN.VIDSIZEY.HINT
+msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "每個影格的像素數（整數 x 整數）。對那些不支援像素比例（Pixel Aspect Ratio, PAR）的編解碼器，這個數字是最後的影像大小。"
+
+#: TFRMPREFERENCES.BUTTON1.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+msgid "OK"
+msgstr "確定"
+
+#: TFRMPREFERENCES.BUTTON2.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+msgid "Cancel"
+msgstr "取消"
+
+#: TFRMPREFERENCES.BUTTON3.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON4.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON5.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON6.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON7.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON8.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.CAPTION
+msgid "WinFF Preferences"
+msgstr "WinFF 個人偏好"
+
+#: TFRMPREFERENCES.CHECKBOX1.CAPTION
+msgid "Remember Last Used Directory"
+msgstr "記住最後一次使用的目錄"
+
+#: TFRMPREFERENCES.CHECKBOX2.CAPTION
+msgid "Use CHCP for international characters"
+msgstr "國際字元使用 CHCP"
+
+#: TFRMPREFERENCES.CHECKBOX3.CAPTION
+msgid "Use Several Encoding Threads:"
+msgstr "使用多個編碼執行緒："
+
+#: TFRMPREFERENCES.EDIT7.HINT
+msgid "'-e' for xterm, '-x' for gnome-terminal"
+msgstr "終端機選項（-e 為 xterm，-x 為 Gnome 終端機）"
+
+#: TFRMPREFERENCES.LABEL1.CAPTION
+msgid "Default Destination Directory:"
+msgstr "預設目標目錄："
+
+#: TFRMPREFERENCES.LABEL2.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr "FFmpeg 執行檔所在路徑："
+
+#: TFRMPREFERENCES.LABEL3.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr "FFPlay 執行檔所在路徑："
+
+#: TFRMPREFERENCES.LABEL4.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr "FFmpeg 執行檔所在路徑："
+
+#: TFRMPREFERENCES.LABEL5.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr "FFPlay 執行檔所在路徑："
+
+#: TFRMPREFERENCES.LABEL6.CAPTION
+msgid "Terminal to run FFmpeg in:"
+msgstr "用於執行 FFmpeg 的終端機位於："
+
+#: TFRMPREFERENCES.LABEL7.CAPTION
+msgid "Terminal Options:"
+msgstr "終端機選項："
+
+#: TFRMPREFERENCES.LABEL8.CAPTION
+msgid "Priority:"
+msgstr "優先權："
+
+#: TFRMPREFERENCES.PAGE1.CAPTION
+msgid "General"
+msgstr "一般設定"
+
+#: TFRMPREFERENCES.PAGE2.CAPTION
+msgid "MS Windows"
+msgstr "MS Windows"
+
+#: TFRMPREFERENCES.PAGE3.CAPTION
+msgid "Linux"
+msgstr "Linux"
+
+#: TFRMSCRIPT.BTNCLIP.CAPTION
+msgid "Copy to Clipboard"
+msgstr "複製到剪貼簿"
+
+#: TFRMSCRIPT.BTNCLOSE.CAPTION
+msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+msgid "Close"
+msgstr "關閉"
+
+#: TFRMSCRIPT.BTNRUN.CAPTION
+msgid "Run!"
+msgstr "執行！"
+
+#: TFRMSCRIPT.BTNSAVE.CAPTION
+msgid "Save As..."
+msgstr "另存為..."
+
+#: TFRMSCRIPT.CAPTION
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg 指令行"
+
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr ""
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "轉換中"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "找不到 FFmpeg。"
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "找不到 FFPlay。"
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "找不到檔案"
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "找不到編碼設定檔案。"
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "副檔名裡不可以有點"
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "檔案不存在"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "編碼設定檔案錯誤"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "名稱必須為字母或數字(a-z,A-Z,0-9)"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "請至少新增一個檔案進行轉換"
+
+#: unit1.rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "請至少選取一種編碼格式"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "編碼設定檔案：%s%s%s 已經存在"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "要匯入的編碼設定檔案沒有副檔名"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "要匯入的編碼設定沒有標籤"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "請選取一種編碼設定以匯出"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "標籤: %s%s%s 已經存在"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "按 Enter 鍵繼續"
+
+#: unit1.rsselectdirectory
+msgid "Select Directory"
+msgstr "選取目錄"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "選取編碼設定檔案"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "選取視訊檔案"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "此編碼設定檔案中含有無效字元"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "建立編碼設定："
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "匯入編碼設定"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "已有同名標籤。"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "移除編碼設定："
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "更新編碼設定："
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "您必須輸入副檔名。"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "您必須輸入標籤。"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "您必須輸入名稱。"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "高"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "閒置"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "普通"
+
