@@ -19,6 +19,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -279,11 +283,6 @@ msgstr "移除"
 msgid "Remove selected file(s) from the list"
 msgstr "从列表中移除所选文件"
 
-#: TFRMMAIN.CAPTION
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "视频应转换为的设备或文件类型"
@@ -317,6 +316,10 @@ msgstr "..."
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "最终文件的目标位置 (选择不同于源文件夹的文件夹)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -380,12 +383,18 @@ msgstr "<hh:mm:ss> - 这么多视频转换完成后停止"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<整数>) 256 = 当前音量、128 = 一半音量、512 = 双倍音量"
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "其他选项"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
 msgid "Output Details"
 msgstr "输出详细信息"
 
@@ -578,26 +587,35 @@ msgstr "面板主体"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "指定所选设备或文件类型要使用的设置"
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "视频"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "音频"
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "裁剪"
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr "时间"
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
-msgid "Video"
-msgstr "视频"
+#: TFRMMAIN.TABSHEET5.CAPTION
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "输出详细信息"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"

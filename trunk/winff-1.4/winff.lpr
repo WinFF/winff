@@ -27,13 +27,15 @@ uses
   Forms
   { add your units here }, Unit1, Unit2, Unit3, Unit4, Unit5,defaulttranslator,
   unit6;
-   {$ifdef win32}
+   {$ifdef windows}
    {$R resources.rc}
    {$endif}
 
 
 
-{$IFDEF WINDOWS}{$R winff.rc}{$ENDIF}
+//{$IFDEF WINDOWS}{$R winff.rc}{$ENDIF}
+
+{$R *.res}
 
 begin
   Application.Title:='WinFF';

@@ -25,6 +25,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -64,10 +68,12 @@ msgstr ""
 msgid "JNavas"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr ""
@@ -134,12 +140,10 @@ msgstr "Chiudi"
 msgid "Edit Presets"
 msgstr "Modifica profilo"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
 msgstr "Elimina"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMEDITPRESETS.EDIT1.HINT
 msgid "One word, only letters and numbers"
 msgstr ""
@@ -278,6 +282,51 @@ msgstr "Azzera"
 msgid "Remove all files from the list"
 msgstr "rimuove tutti i file dalla lista"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Tutte le categorie)"
+#~ msgid "Convert To ..."
+#~ msgstr "Converti in ..."
+#~ msgid "Device Preset"
+#~ msgstr "Profilo dispositivo"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Cartella destinazione"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Info su WinFF"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opzioni"
+#~ msgid "Video Settings"
+#~ msgstr "Impostazioni video"
+#~ msgid "Audio Settings"
+#~ msgstr "Impostazioni audio"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Annulla"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Profili"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading per processori Dual Core"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Percorso programma FFmpeg"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Percorso programma FFplay"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Conversione..."
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Salva"
+#~ msgid "Replace Preset"
+#~ msgstr "Sostituisci profilo"
+#~ msgid "AC'"
+#~ msgstr "Canali audio"
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
 msgstr "Converti"
@@ -329,13 +378,6 @@ msgstr "Rimuovi"
 msgid "Remove selected file(s) from the list"
 msgstr "rimuove i file selezioniati dall'elenco"
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #, fuzzy
 #| msgid "name of the device or file type the video should be converted to"
@@ -351,51 +393,6 @@ msgstr ""
 msgid "2 pass"
 msgstr "2 passaggi"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Tutte le categorie)"
-#~ msgid "Convert To ..."
-#~ msgstr "Converti in ..."
-#~ msgid "Device Preset"
-#~ msgstr "Profilo dispositivo"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Cartella destinazione"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Info su WinFF"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opzioni"
-#~ msgid "Video Settings"
-#~ msgstr "Impostazioni video"
-#~ msgid "Audio Settings"
-#~ msgstr "Impostazioni audio"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Annulla"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Profili"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading per processori Dual Core"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Percorso programma FFmpeg"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Percorso programma FFplay"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Conversione..."
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Salva"
-#~ msgid "Replace Preset"
-#~ msgstr "Sostituisci profilo"
-#~ msgid "AC'"
-#~ msgstr "Canali audio"
 #: TFRMMAIN.CBX2PASS.HINT
 #, fuzzy
 #| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
@@ -422,6 +419,10 @@ msgstr ""
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "la cartella destinazione per il video finale (scegliere una cartella differente da quella sorgente)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #, fuzzy
@@ -487,12 +488,20 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "Opzioni avanzate"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
 msgid "Output Details"
 msgstr "Dettagli output"
 
@@ -705,32 +714,41 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "impostazione specifica da usare per il dispositivo o il tipo di file scelto"
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
+#, fuzzy
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Dimensione video"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
 #, fuzzy
 #| msgid "Audio Settings"
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Impostazioni audio"
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "Ritaglia"
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr ""
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgid "Video Size"
-msgid "Video"
-msgstr "Dimensione video"
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Dettagli output"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 #, fuzzy

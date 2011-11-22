@@ -14,8 +14,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Martin Srebotnjak <milrs@filmsi.net>, 2009
+#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
 
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
@@ -26,7 +31,6 @@ msgstr "V redu"
 msgid "About WinFF"
 msgstr "O programu WinFF"
 
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #: TFRMABOUT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "WinFF"
@@ -269,69 +273,6 @@ msgstr "Počisti"
 msgid "Remove all files from the list"
 msgstr ""
 
-#: TFRMMAIN.BTNCONVERT.CAPTION
-msgid "Convert"
-msgstr "Pretvori"
-
-#: TFRMMAIN.BTNCONVERT.HINT
-msgid "Start the conversion process"
-msgstr ""
-
-#: TFRMMAIN.BTNOPTIONS.CAPTION
-#, fuzzy
-#| msgid "Options"
-msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
-msgid "Options"
-msgstr "Možnosti"
-
-#: TFRMMAIN.BTNOPTIONS.HINT
-msgid "Open/close the additional options window"
-msgstr ""
-
-#: TFRMMAIN.BTNPLAY.CAPTION
-msgid "Play"
-msgstr "Predvajaj"
-
-#: TFRMMAIN.BTNPLAY.HINT
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr ""
-
-#: TFRMMAIN.BTNPREVIEW.CAPTION
-msgid "Preview"
-msgstr ""
-
-#: TFRMMAIN.BTNPREVIEW.HINT
-msgid "Preview using the output settings"
-msgstr ""
-
-#: TFRMMAIN.BTNREMOVE.CAPTION
-msgid "Remove"
-msgstr "Odstrani"
-
-#: TFRMMAIN.BTNREMOVE.HINT
-msgid "Remove selected file(s) from the list"
-msgstr ""
-
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
-#: TFRMMAIN.CATEGORYBOX.HINT
-msgid "Device or file type the video should be converted to"
-msgstr ""
-
-#: TFRMMAIN.CBOUTPUTPATH.CAPTION
-msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
-msgid "Use Source Folder"
-msgstr ""
-
-#: TFRMMAIN.CBX2PASS.CAPTION
-msgid "2 pass"
-msgstr "2 koraka"
-
 #~ msgid "(All Categories)"
 #~ msgstr "(vse kategorije)"
 #~ msgid "Convert To ..."
@@ -382,6 +323,62 @@ msgstr "2 koraka"
 #~ msgstr "Shrani"
 #~ msgid "Replace Preset"
 #~ msgstr "Zamenjaj prednastavitev"
+#: TFRMMAIN.BTNCONVERT.CAPTION
+msgid "Convert"
+msgstr "Pretvori"
+
+#: TFRMMAIN.BTNCONVERT.HINT
+msgid "Start the conversion process"
+msgstr ""
+
+#: TFRMMAIN.BTNOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Options"
+msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+msgid "Options"
+msgstr "Možnosti"
+
+#: TFRMMAIN.BTNOPTIONS.HINT
+msgid "Open/close the additional options window"
+msgstr ""
+
+#: TFRMMAIN.BTNPLAY.CAPTION
+msgid "Play"
+msgstr "Predvajaj"
+
+#: TFRMMAIN.BTNPLAY.HINT
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr ""
+
+#: TFRMMAIN.BTNPREVIEW.CAPTION
+msgid "Preview"
+msgstr ""
+
+#: TFRMMAIN.BTNPREVIEW.HINT
+msgid "Preview using the output settings"
+msgstr ""
+
+#: TFRMMAIN.BTNREMOVE.CAPTION
+msgid "Remove"
+msgstr "Odstrani"
+
+#: TFRMMAIN.BTNREMOVE.HINT
+msgid "Remove selected file(s) from the list"
+msgstr ""
+
+#: TFRMMAIN.CATEGORYBOX.HINT
+msgid "Device or file type the video should be converted to"
+msgstr ""
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr ""
+
+#: TFRMMAIN.CBX2PASS.CAPTION
+msgid "2 pass"
+msgstr "2 koraka"
+
 #: TFRMMAIN.CBX2PASS.HINT
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr ""
@@ -401,6 +398,10 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -465,6 +466,13 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 #, fuzzy
 #| msgid "Additional Options"
@@ -473,6 +481,7 @@ msgid "Additional Options"
 msgstr "Dodatne možnosti"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
 msgid "Output Details"
 msgstr "Podrobnosti izhoda"
 
@@ -689,32 +698,41 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
+#, fuzzy
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Velikost sličice"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
 #, fuzzy
 #| msgid "Audio Settings"
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Zvočne nastavitve"
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr ""
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr ""
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgid "Video Size"
-msgid "Video"
-msgstr "Velikost sličice"
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Podrobnosti izhoda"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"

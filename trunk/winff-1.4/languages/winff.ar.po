@@ -25,6 +25,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -64,10 +68,12 @@ msgstr ""
 msgid "JNavas"
 msgstr ""
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr ""
@@ -134,12 +140,10 @@ msgstr "إغلاق"
 msgid "Edit Presets"
 msgstr "تحرير النسب"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
 msgstr "حذف"
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMEDITPRESETS.EDIT1.HINT
 msgid "One word, only letters and numbers"
 msgstr ""
@@ -278,6 +282,47 @@ msgstr "تنظيف"
 msgid "Remove all files from the list"
 msgstr "إزالة كل الملفات من القائمة"
 
+#~ msgid "(All Categories)"
+#~ msgstr "جميع التصنيفات"
+#~ msgid "Convert To ..."
+#~ msgstr "حول إلى ..."
+#~ msgid "Device Preset"
+#~ msgstr "نوع المشغل"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "مجلد الخرج"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "حول"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "خيارات"
+#~ msgid "Video Settings"
+#~ msgstr "أعدادات الفيديو"
+#~ msgid "Audio Settings"
+#~ msgstr "أعدادات الصوت"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "إلغاء"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "النسب"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "معالجة متعددة الخيوط للمعالجات مزدوجة الأنوية"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "المسار إلى FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "المسار إلى FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "موافق"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "جاري التحويل"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "حفظ"
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
 msgstr "حول"
@@ -329,13 +374,6 @@ msgstr "أزل"
 msgid "Remove selected file(s) from the list"
 msgstr "إزالة الملفات المحددة من القائمة"
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #, fuzzy
 #| msgid "name of the device or file type the video should be converted to"
@@ -351,47 +389,6 @@ msgstr ""
 msgid "2 pass"
 msgstr "التمرير المزدوج"
 
-#~ msgid "(All Categories)"
-#~ msgstr "جميع التصنيفات"
-#~ msgid "Convert To ..."
-#~ msgstr "حول إلى ..."
-#~ msgid "Device Preset"
-#~ msgstr "نوع المشغل"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "مجلد الخرج"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "حول"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "خيارات"
-#~ msgid "Video Settings"
-#~ msgstr "أعدادات الفيديو"
-#~ msgid "Audio Settings"
-#~ msgstr "أعدادات الصوت"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "إلغاء"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "النسب"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "معالجة متعددة الخيوط للمعالجات مزدوجة الأنوية"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "المسار إلى FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "المسار إلى FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "موافق"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "جاري التحويل"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "حفظ"
 #: TFRMMAIN.CBX2PASS.HINT
 #, fuzzy
 #| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
@@ -418,6 +415,10 @@ msgstr ""
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "مكان ملف الفيديو الناتج (اختر مجلدا مختلفا عن المجلد المصدر)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #, fuzzy
@@ -483,12 +484,20 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "خيارات إضافية"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
 msgid "Output Details"
 msgstr "تفاصيل الخرج"
 
@@ -701,32 +710,41 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "استخدام أعدادات معينة لنوع الملف أو المشغل"
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
+#, fuzzy
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "حجم الفيديو"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
 #, fuzzy
 #| msgid "Audio Settings"
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "أعدادات الصوت"
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "قصقصة الصورة"
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr ""
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgid "Video Size"
-msgid "Video"
-msgstr "حجم الفيديو"
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "تفاصيل الخرج"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 #, fuzzy

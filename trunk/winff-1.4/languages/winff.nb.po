@@ -26,6 +26,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -64,6 +68,7 @@ msgstr "Ikoner og logo av Alex Klepatsch"
 msgid "JNavas"
 msgstr "JNavas"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
 msgstr "Copyright 2006-2009 GPL V3"
@@ -128,7 +133,6 @@ msgstr "Lukk"
 msgid "Edit Presets"
 msgstr "Rediger forhåndsinnstillinger"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
 msgstr "Slett"
@@ -261,6 +265,46 @@ msgstr "Tøm"
 msgid "Remove all files from the list"
 msgstr "Fjern alle filer fra lista"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Alle kategorier)"
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "(<heltall>) Lyd synkronisering"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "<hh:mm:ss> - Tidspunkt hvor det nye opptaket skal begynne"
+#~ msgid "Make sure that the start time + time to record is less than total length of job"
+#~ msgstr "Forskikre deg at starttiden og optakstiden er mindre enn orginallengde "
+#~ msgid "Convert To ..."
+#~ msgstr "Konverter til"
+#~ msgid "Device Preset"
+#~ msgstr "Forhåndsinnstilling"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Utdatamappe"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Om WinFF"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Alternativer"
+#~ msgid "Video Settings"
+#~ msgstr "Video innstillinger"
+#~ msgid "Audio Settings"
+#~ msgstr "Lyd innstillinger"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Forhåndsinnstillinger"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Flertråding for doble core prosessorer"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Sti til FFmpeg.exe "
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Sti til FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
 msgstr "Konverter"
@@ -307,11 +351,6 @@ msgstr "Fjern"
 msgid "Remove selected file(s) from the list"
 msgstr "Fjern den velgte filen(e) fra lista"
 
-#: TFRMMAIN.CAPTION
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
@@ -326,46 +365,6 @@ msgstr ""
 msgid "2 pass"
 msgstr "To gjennomganger"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Alle kategorier)"
-#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
-#~ msgstr "(<heltall>) Lyd synkronisering"
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "<hh:mm:ss> - Tidspunkt hvor det nye opptaket skal begynne"
-#~ msgid "Make sure that the start time + time to record is less than total length of job"
-#~ msgstr "Forskikre deg at starttiden og optakstiden er mindre enn orginallengde "
-#~ msgid "Convert To ..."
-#~ msgstr "Konverter til"
-#~ msgid "Device Preset"
-#~ msgstr "Forhåndsinnstilling"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Utdatamappe"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Om WinFF"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Alternativer"
-#~ msgid "Video Settings"
-#~ msgstr "Video innstillinger"
-#~ msgid "Audio Settings"
-#~ msgstr "Lyd innstillinger"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Forhåndsinnstillinger"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Flertråding for doble core prosessorer"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Sti til FFmpeg.exe "
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Sti til FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
 #: TFRMMAIN.CBX2PASS.HINT
 #| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
@@ -389,6 +388,10 @@ msgstr "..."
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Målet til endelig video (velg en annen mappe enn kildemappe)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
@@ -457,12 +460,18 @@ msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<heltall>) 256 = gjeldende lydstyrke, 128 = halvt lydstyrke, 512 = doppelt lydstyrke"
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
 msgstr "Ekstra alternativer"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
+msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
 msgid "Output Details"
 msgstr "Utdata detaljer"
 
@@ -664,29 +673,35 @@ msgstr "pnlMain"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Bestemte innstillinger til å bruke med den velgte enheten eller filtypen"
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
-#| msgid "Audio Sync"
+#: TFRMMAIN.TABSHEET1.CAPTION
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Video"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Lyd"
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-#| msgid "FFmpeg"
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "Skjær"
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr "Tid"
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
-#| msgid "Video Size"
-msgid "Video"
-msgstr "Video"
+#: TFRMMAIN.TABSHEET5.CAPTION
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Utdata detaljer"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
