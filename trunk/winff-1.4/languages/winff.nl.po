@@ -24,6 +24,7 @@
 #| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgctxt "REMOVED6"
 #| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
@@ -36,7 +37,8 @@ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "OK"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Over WinFF"
 
@@ -46,7 +48,9 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF 1.3.2"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+#, fuzzy
+#| msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr "http://ffmpeg.arrozcru.org/"
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -69,7 +73,6 @@ msgstr "Iconen and logo van Alex Klepatsch"
 msgid "JNavas"
 msgstr "JNavas"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
 msgstr "Copyright 2006-2009 GPL V3"
@@ -102,7 +105,9 @@ msgid "FFmpeg Windows Builds by"
 msgstr "MS Windows FFmpeg gebouwd door"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+#, fuzzy
+#| msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr "Ramiro Polla"
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -205,6 +210,46 @@ msgstr "Opslaan"
 msgid "pnlTop"
 msgstr "pnlTop"
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Alle categoriën)"
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "(<geheel getal>) Geluidssynchronisatie"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "<hh:mm:ss> - Begintijdstip van de nieuwe opname"
+#~ msgid "Make sure that the start time + time to record is less than total length of job"
+#~ msgstr "Zorg ervoor dat de starttijd plus de totale duur van de opname minder is dan de lengte van het origineel"
+#~ msgid "Convert To ..."
+#~ msgstr "Converteer naar"
+#~ msgid "Device Preset"
+#~ msgstr "Voorinstelling"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Doelmap"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Over WinFF"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opties"
+#~ msgid "Video Settings"
+#~ msgstr "Video instellingen"
+#~ msgid "Audio Settings"
+#~ msgstr "Audio instellingen"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Annuleren"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Voorinstelling"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading voor dual-core processoren"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Pad naar FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Pad naar FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Accepteren"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
@@ -266,46 +311,6 @@ msgstr "Wissen"
 msgid "Remove all files from the list"
 msgstr "Verwijder alle bestanden uit de lijst"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Alle categoriën)"
-#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
-#~ msgstr "(<geheel getal>) Geluidssynchronisatie"
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "<hh:mm:ss> - Begintijdstip van de nieuwe opname"
-#~ msgid "Make sure that the start time + time to record is less than total length of job"
-#~ msgstr "Zorg ervoor dat de starttijd plus de totale duur van de opname minder is dan de lengte van het origineel"
-#~ msgid "Convert To ..."
-#~ msgstr "Converteer naar"
-#~ msgid "Device Preset"
-#~ msgstr "Voorinstelling"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Doelmap"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Over WinFF"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opties"
-#~ msgid "Video Settings"
-#~ msgstr "Video instellingen"
-#~ msgid "Audio Settings"
-#~ msgstr "Audio instellingen"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Annuleren"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Voorinstelling"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading voor dual-core processoren"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Pad naar FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Pad naar FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "Accepteren"
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
 msgstr "Converteer"
@@ -466,16 +471,6 @@ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Extra opties"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
-msgid "Output Details"
-msgstr "Uitvoer details"
-
 #: TFRMMAIN.LABEL1.CAPTION
 #| msgid "Convert"
 msgid "Convert to:"
@@ -494,10 +489,6 @@ msgstr "Doelmap:"
 #| msgid "Presets"
 msgid "Preset:"
 msgstr "Voorinstelling:"
-
-#: TFRMMAIN.LABEL2.CAPTION
-msgid "NOTE: Currently any additional options chosen"
-msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -523,10 +514,6 @@ msgstr "Uren / minuten / seconden"
 #| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
 msgstr "Extra parameters voor de commandoregel"
-
-#: TFRMMAIN.LABEL4.CAPTION
-msgid "will be applied to all jobs when the conversion starts"
-msgstr ""
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"

@@ -21,6 +21,8 @@
 #| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgctxt "REMOVED6"
 #| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
@@ -33,7 +35,8 @@ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "OK"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Om WinFF"
 
@@ -44,7 +47,7 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -67,12 +70,10 @@ msgstr ""
 msgid "JNavas"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr ""
@@ -103,7 +104,7 @@ msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg kompileringar från"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -216,6 +217,49 @@ msgstr "Spara"
 msgid "pnlTop"
 msgstr ""
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Alla kategorier)"
+#~ msgid "Convert To ..."
+#~ msgstr "Konvertera till ..."
+#~ msgid "Device Preset"
+#~ msgstr "Formatalternativ"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Målkatalog"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Om"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Alternativ"
+#~ msgid "Video Settings"
+#~ msgstr "Videoinställningar"
+#~ msgid "Audio Settings"
+#~ msgstr "Ljudinställningar"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Förinställningar för konvertering"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading för Dual Core-processorer"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Sökväg till FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Sökväg till FFplay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Konverterar"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Spara"
+#~ msgid "Replace Preset"
+#~ msgstr "Ersätt förinställning:"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
@@ -281,49 +325,6 @@ msgstr "Rensa"
 msgid "Remove all files from the list"
 msgstr "ta bort alla filer från listan"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Alla kategorier)"
-#~ msgid "Convert To ..."
-#~ msgstr "Konvertera till ..."
-#~ msgid "Device Preset"
-#~ msgstr "Formatalternativ"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Målkatalog"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Om"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Alternativ"
-#~ msgid "Video Settings"
-#~ msgstr "Videoinställningar"
-#~ msgid "Audio Settings"
-#~ msgstr "Ljudinställningar"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Förinställningar för konvertering"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading för Dual Core-processorer"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Sökväg till FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Sökväg till FFplay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Konverterar"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Spara"
-#~ msgid "Replace Preset"
-#~ msgstr "Ersätt förinställning:"
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
 msgstr "Konvertera"
@@ -492,16 +493,6 @@ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Fler alternativ"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
-msgid "Output Details"
-msgstr "Detaljer för utmatning"
-
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
@@ -524,10 +515,6 @@ msgstr "Målkatalog"
 #| msgid "Presets"
 msgid "Preset:"
 msgstr "Förinställningar för konvertering"
-
-#: TFRMMAIN.LABEL2.CAPTION
-msgid "NOTE: Currently any additional options chosen"
-msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -554,10 +541,6 @@ msgstr ""
 #| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
 msgstr "Fler kommandoradsparametrar (Avancerad)"
-
-#: TFRMMAIN.LABEL4.CAPTION
-msgid "will be applied to all jobs when the conversion starts"
-msgstr ""
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
