@@ -40,15 +40,15 @@ type
     audchannels: TEdit;
     audsamplingrate: TEdit;
     btnAdd: TBitBtn;
-    btnOptions: TBitBtn;
-    btnPreview: TBitBtn;
     btnApplyDestination: TButton;
     btnApplyPreset: TButton;
+    btnOptions: TBitBtn;
+    btnPreview: TBitBtn;
+    btnClear: TBitBtn;
     categorybox: TComboBox;
     cbOutputPath: TCheckBox;
     cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
-    btnClear: TBitBtn;
     ChooseFolderBtn: TButton;
     commandlineparams: TEdit;
     DestFolder: TEdit;
@@ -106,19 +106,19 @@ type
     mitForums: TMenuItem;
     MenuItem9: TMenuItem;
     dlgOpenPreset: TOpenDialog;
-    nbkSettings: TNotebook;
-    Panel1: TPanel;
-    Panel10: TPanel;
-    Panel11: TPanel;
-    Panel12: TPanel;
-    Panel13: TPanel;
     Panel14: TPanel;
     Panel16: TPanel;
     Panel17: TPanel;
     Panel18: TPanel;
     Panel19: TPanel;
-    Panel2: TPanel;
     Panel20: TPanel;
+    pgSettings: TPageControl;
+    Panel1: TPanel;
+    Panel10: TPanel;
+    Panel11: TPanel;
+    Panel12: TPanel;
+    Panel13: TPanel;
+    Panel2: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
     Panel5: TPanel;
@@ -126,11 +126,10 @@ type
     Panel7: TPanel;
     Panel8: TPanel;
     Panel9: TPanel;
+    pnlbottom: TPanel;
     PopupMenu1: TPopupMenu;
-    PresetBox: TComboBox;
     pnlTop: TPanel;
     btnPlay: TBitBtn;
-    pnlbottom: TPanel;
     pnlAdditionalOptions: TPanel;
     pnlMain: TPanel;
     mitPauseOnFinish: TMenuItem;
@@ -146,15 +145,17 @@ type
     mnuOptions: TMenuItem;
     mnuFile: TMenuItem;
     MainMenu1: TMainMenu;
+    PresetBox: TComboBox;
     //dlgOpenFile: TOpenDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     btnConvert: TBitBtn;
     StatusBar1: TStatusBar;
-    tabAudioSettings: TPage;
-    tabCmdLineSettings: TPage;
-    tabPageCrop: TPage;
-    tabPageTime: TPage;
-    tabVideoSettings: TPage;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
+    TabSheet4: TTabSheet;
+    TabSheet5: TTabSheet;
+    TabSheet6: TTabSheet;
     UpDown1: TUpDown;
     UpDown10: TUpDown;
     UpDown2: TUpDown;
@@ -220,6 +221,7 @@ type
     procedure btnRemoveClick(Sender: TObject);
     function GetDeskTopPath() : string;
     function GetMydocumentsPath() : string ;
+    procedure nbkSettingsChangeBounds(Sender: TObject);
     procedure Panel14Click(Sender: TObject);
     procedure PopupMenu1Popup(Sender: TObject);
     procedure PresetBoxChange(Sender: TObject);
@@ -1192,6 +1194,11 @@ begin
    SetLength(Result, lStrLen(PChar(Result)));
 end;
 
+procedure TfrmMain.nbkSettingsChangeBounds(Sender: TObject);
+begin
+
+end;
+
 {$endif}
 {$ifdef unix}
 begin
@@ -1596,7 +1603,7 @@ end;
 // menu: show / hide additional mnuOptions
 procedure TfrmMain.mitShowOptionsClick(Sender: TObject);
  begin
-   if not mitShowOptions.Checked then
+{   if not mitShowOptions.Checked then
         begin
         //frmMain.Height := frmMain.Height + pnlAdditionalOptions.Height;
         pnlAdditionalOptions.Visible := True;
@@ -1622,10 +1629,38 @@ procedure TfrmMain.mitShowOptionsClick(Sender: TObject);
         mitDisplayCmdline.Checked:=false;
         commandlineparams.Clear;
         end;
+}
+ if not mitShowOptions.Checked then
+ begin
+      pgSettings.Pages[1].TabVisible:= True;
+      sleep(50); application.processmessages;
+      pgSettings.Pages[2].TabVisible:=True;
+      sleep(50); application.processmessages;
+      pgSettings.Pages[3].TabVisible:=True;
+      sleep(50); application.processmessages;
+      pgSettings.Pages[4].TabVisible:=True;
+      sleep(50); application.processmessages;
+      pgSettings.Pages[5].TabVisible:=True;
+      mitShowOptions.Checked:=true;
+ end else
+ begin
+   pgSettings.Pages[1].TabVisible:=False;
+   sleep(50); application.processmessages;
+   pgSettings.Pages[2].TabVisible:=False;
+   sleep(50); application.processmessages;
+   pgSettings.Pages[3].TabVisible:=False;
+   sleep(50); application.processmessages;
+   pgSettings.Pages[4].TabVisible:=False;
+   sleep(50); application.processmessages;
+   pgSettings.Pages[5].TabVisible:=False;
+   sleep(50); application.processmessages;
+   mitShowOptions.Checked:=False;
+ end;
 
-  //  Application.ProcessMessages; // Should repaint the form like invalidate
-  Invalidate; //Why not use Invalidate itself?
+ Application.ProcessMessages; // Should repaint the form like invalidate
+  //Invalidate; //Why not use Invalidate itself?
   AdjustSize;
+// end;
 end;
 
 // menu: shutdown on finish
