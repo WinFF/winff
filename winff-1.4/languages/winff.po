@@ -10,7 +10,8 @@ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr ""
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr ""
 
@@ -19,7 +20,7 @@ msgid "WinFF 1.3.2"
 msgstr ""
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -72,7 +73,7 @@ msgid "FFmpeg Windows Builds by"
 msgstr ""
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -370,16 +371,6 @@ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr ""
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr ""
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
-msgid "Output Details"
-msgstr ""
-
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
 msgstr ""
@@ -395,10 +386,6 @@ msgstr ""
 
 #: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
-msgstr ""
-
-#: TFRMMAIN.LABEL2.CAPTION
-msgid "NOTE: Currently any additional options chosen"
 msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
@@ -423,10 +410,6 @@ msgstr ""
 
 #: TFRMMAIN.LABEL3.CAPTION
 msgid "Additional Command Line Parameters"
-msgstr ""
-
-#: TFRMMAIN.LABEL4.CAPTION
-msgid "will be applied to all jobs when the conversion starts"
 msgstr ""
 
 #: TFRMMAIN.LABEL7.CAPTION

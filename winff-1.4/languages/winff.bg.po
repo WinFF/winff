@@ -28,7 +28,8 @@ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "OK"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Относно WinFF"
 
@@ -39,7 +40,7 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -96,7 +97,7 @@ msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg builds от"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -209,6 +210,51 @@ msgstr "Запис"
 msgid "pnlTop"
 msgstr ""
 
+#~ msgid "(All Categories)"
+#~ msgstr "(Вс. Категории)"
+#~ msgid "Convert To ..."
+#~ msgstr "Конвертиране към ..."
+#~ msgid "Device Preset"
+#~ msgstr "Настройки на устройство"
+#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#~ msgid "Output Folder"
+#~ msgstr "Изходна папка"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Относно"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Опции"
+#~ msgid "Video Settings"
+#~ msgstr "Видео настройки"
+#~ msgid "Audio Settings"
+#~ msgstr "Аудио настройки"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Отказ"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Готови настройки"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading за двуядрени процесори"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Път до FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Път до FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Конвертиране"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Запис"
+#~ msgid "Replace Preset"
+#~ msgstr "Замяна на настройка:"
+#~ msgid "AC'"
+#~ msgstr "AC"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 #, fuzzy
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
@@ -270,51 +316,6 @@ msgstr "Изчистване"
 msgid "Remove all files from the list"
 msgstr ""
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Вс. Категории)"
-#~ msgid "Convert To ..."
-#~ msgstr "Конвертиране към ..."
-#~ msgid "Device Preset"
-#~ msgstr "Настройки на устройство"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Изходна папка"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Относно"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Опции"
-#~ msgid "Video Settings"
-#~ msgstr "Видео настройки"
-#~ msgid "Audio Settings"
-#~ msgstr "Аудио настройки"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Отказ"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Готови настройки"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading за двуядрени процесори"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Път до FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Път до FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Конвертиране"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Запис"
-#~ msgid "Replace Preset"
-#~ msgstr "Замяна на настройка:"
-#~ msgid "AC'"
-#~ msgstr "AC"
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
 msgstr "Конвертиране"
@@ -464,17 +465,6 @@ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-#, fuzzy
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Допълнителни опции"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
-msgid "Output Details"
-msgstr "Детайли от изпълнението"
-
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
@@ -495,10 +485,6 @@ msgstr "Изходна папка"
 #, fuzzy
 msgid "Preset:"
 msgstr "Готови настройки"
-
-#: TFRMMAIN.LABEL2.CAPTION
-msgid "NOTE: Currently any additional options chosen"
-msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -525,10 +511,6 @@ msgstr ""
 #| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
 msgstr "Допълнителни параметри на командния ред"
-
-#: TFRMMAIN.LABEL4.CAPTION
-msgid "will be applied to all jobs when the conversion starts"
-msgstr ""
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"

@@ -28,7 +28,8 @@ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "确定"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "关于 WinFF"
 
@@ -37,7 +38,9 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF 1.3.2"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+#, fuzzy
+#| msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr "http://ffmpeg.arrozcru.org/"
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -90,7 +93,9 @@ msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg Windows 版编译者"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+#, fuzzy
+#| msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr "Ramiro Polla"
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -388,16 +393,6 @@ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "其他选项"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
-msgid "Output Details"
-msgstr "输出详细信息"
-
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
 msgstr "转换为:"
@@ -414,10 +409,6 @@ msgstr "输出文件夹:"
 #: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
 msgstr "预设:"
-
-#: TFRMMAIN.LABEL2.CAPTION
-msgid "NOTE: Currently any additional options chosen"
-msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -442,10 +433,6 @@ msgstr "小时数 / 分钟数 / 秒数"
 #: TFRMMAIN.LABEL3.CAPTION
 msgid "Additional Command Line Parameters"
 msgstr "其他命令行参数"
-
-#: TFRMMAIN.LABEL4.CAPTION
-msgid "will be applied to all jobs when the conversion starts"
-msgstr ""
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"

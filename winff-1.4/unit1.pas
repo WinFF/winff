@@ -65,20 +65,16 @@ type
     edtTTRMM: TSpinEdit;
     edtTTRSS: TSpinEdit;
     edtVolume: TEdit;
-    gbxSettings: TGroupBox;
-    grpOutputSettings: TGroupBox;
     Label1: TLabel;
     Label10: TLabel;
     Label12: TLabel;
     Label19: TLabel;
-    Label2: TLabel;
     Label20: TLabel;
     Label21: TLabel;
     label22: TLabel;
     label23: TLabel;
     label24: TLabel;
     Label3: TLabel;
-    Label4: TLabel;
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
@@ -106,19 +102,16 @@ type
     mitForums: TMenuItem;
     MenuItem9: TMenuItem;
     dlgOpenPreset: TOpenDialog;
-    Panel14: TPanel;
-    Panel16: TPanel;
-    Panel17: TPanel;
-    Panel18: TPanel;
-    Panel19: TPanel;
-    Panel20: TPanel;
-    pgSettings: TPageControl;
     Panel1: TPanel;
     Panel10: TPanel;
     Panel11: TPanel;
     Panel12: TPanel;
     Panel13: TPanel;
+    Panel17: TPanel;
+    Panel18: TPanel;
+    Panel19: TPanel;
     Panel2: TPanel;
+    Panel20: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
     Panel5: TPanel;
@@ -126,6 +119,7 @@ type
     Panel7: TPanel;
     Panel8: TPanel;
     Panel9: TPanel;
+    pgSettings: TPageControl;
     pnlbottom: TPanel;
     PopupMenu1: TPopupMenu;
     pnlTop: TPanel;
@@ -221,7 +215,6 @@ type
     procedure btnRemoveClick(Sender: TObject);
     function GetDeskTopPath() : string;
     function GetMydocumentsPath() : string ;
-    procedure nbkSettingsChangeBounds(Sender: TObject);
     procedure Panel14Click(Sender: TObject);
     procedure PopupMenu1Popup(Sender: TObject);
     procedure PresetBoxChange(Sender: TObject);
@@ -393,8 +386,8 @@ begin
   {$endif}
 
   {$IFDEF UNIX}
-  presetbox.Height:=30;
-  categorybox.Height:=30;
+  //presetbox.Height:=30;
+  //categorybox.Height:=30;
 
   extraspath:='/usr/share/winff/';
   if not directoryexists(extraspath) then
@@ -524,18 +517,21 @@ begin
   if showopts='true' then
         begin
         mitShowOptions.Checked:=true;
-        pnlAdditionalOptions.Visible :=true;
+{        pnlAdditionalOptions.Visible :=true;
         frmMain.height := formheight;
         frmMain.width := formwidth;
-        frmMain.invalidate;
+        frmMain.invalidate;}
+        for i := 1 to 5 do pgSettings.Page[i].tabvisible := true;
         end
   else
         begin
         mitShowOptions.Checked:=false;
-        pnlAdditionalOptions.Visible :=false;
+{        pnlAdditionalOptions.Visible :=false;
         frmMain.height := formheight;
         frmMain.width := formwidth;
-        frmMain.invalidate;
+        frmMain.invalidate;}
+        for i := 1 to 5 do pgSettings.Page[i].tabvisible := false;
+
         end;
 
 
@@ -871,7 +867,9 @@ end;
 procedure TfrmMain.filelistClick(Sender: TObject);
 var i,j : integer;
 begin
-  if filelist.SelCount = 1 then
+// Held over for next release.  Enhanced Queues
+{
+if filelist.SelCount = 1 then
    begin
      for j := 0 to filelist.Count -1 do
        begin
@@ -883,6 +881,7 @@ begin
      DestFolder.Text:= DestinationList.Strings[i];
      Application.ProcessMessages;
    end;
+}
 end;
 
 procedure TfrmMain.filelistContextPopup(Sender: TObject; MousePos: TPoint;
@@ -893,7 +892,9 @@ end;
 procedure TfrmMain.filelistDrawItem(Control: TWinControl; Index: Integer;
   ARect: TRect; State: TOwnerDrawState);
 begin
-  with (control as tlistbox).Canvas do
+// This function draws the an enhanced row list
+// Not suitable for 1.4
+{  with (control as tlistbox).Canvas do
   begin
     FillRect(ARect) ;
     Font.Color := clBlack;
@@ -902,7 +903,8 @@ begin
     Font.Size  := 8;
     Font.Style := [fsItalic];
     TextOut(ARect.Left + 15, ARect.Top + 14, destinationlist.Strings[index] + ' - Convert to ' + Presetlist.Strings[index]);
-  end;
+  end;}
+
 end;
 
 procedure TfrmMain.btnApplyDestinationClick(Sender: TObject);
@@ -1194,11 +1196,6 @@ begin
    SetLength(Result, lStrLen(PChar(Result)));
 end;
 
-procedure TfrmMain.nbkSettingsChangeBounds(Sender: TObject);
-begin
-
-end;
-
 {$endif}
 {$ifdef unix}
 begin
@@ -1348,7 +1345,7 @@ begin
 
             s := dlgOpenFile.files[i];
             u := s;
-            t := GetFileInfo(u);
+            t := '';//1.5 GetFileInfo(u);
             filelist.items.Add(s);
             JobList.add(t);
             FileInfoList.add(u);
@@ -1437,15 +1434,17 @@ end;
 procedure TfrmMain.filelistMeasureItem(Control: TWinControl; Index: Integer;
   var AHeight: Integer);
 begin
-    AHeight := (Index+1)*28;
+  //  AHeight := (Index+1)*28;
+  //  Removed for 1.4 // Not using Enhanced Job Queue
 end;
 
 procedure TfrmMain.filelistMouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 var lstIndex : Integer ;
 begin
+(* // Not for version 1.4 - works on Windows & QT, buggy on GTK.
+   //  Enhanced job queue not in this release.
  {$ifdef win32}
-
    with filelist do
    begin
     lstIndex:=SendMessage(Handle, LB_ITEMFROMPOINT, 0, MakeLParam(x,y)) ;
@@ -1461,6 +1460,7 @@ begin
       Hint := ''
     end;
  {$endif}
+ *)
 end;
 
 procedure TfrmMain.filelistShowHint(Sender: TObject; HintInfo: PHintInfo);
@@ -1644,15 +1644,15 @@ procedure TfrmMain.mitShowOptionsClick(Sender: TObject);
       mitShowOptions.Checked:=true;
  end else
  begin
-   pgSettings.Pages[1].TabVisible:=False;
-   sleep(50); application.processmessages;
-   pgSettings.Pages[2].TabVisible:=False;
-   sleep(50); application.processmessages;
-   pgSettings.Pages[3].TabVisible:=False;
+   pgSettings.Pages[5].TabVisible:=False;
    sleep(50); application.processmessages;
    pgSettings.Pages[4].TabVisible:=False;
    sleep(50); application.processmessages;
-   pgSettings.Pages[5].TabVisible:=False;
+   pgSettings.Pages[3].TabVisible:=False;
+   sleep(50); application.processmessages;
+   pgSettings.Pages[2].TabVisible:=False;
+   sleep(50); application.processmessages;
+   pgSettings.Pages[1].TabVisible:=False;
    sleep(50); application.processmessages;
    mitShowOptions.Checked:=False;
  end;
@@ -1822,9 +1822,11 @@ begin                                     // get setup
 // Because we can have different conversions per Job Item
 // We need to recreate the params of the ffmpeg command lines for each job in the queue.
 // I am moving a huge chunk of code inside the loop
-       presetbox.text := presetlist.strings[i];
-       categorybox.text := CategoryList.strings[i];
-       DestFolder.Text:=DestinationList.strings[i];
+
+
+//1.5       presetbox.text := presetlist.strings[i];
+//1.5       categorybox.text := CategoryList.strings[i];
+//1.5       DestFolder.Text:=DestinationList.strings[i];
 
        pn:=getcurrentpresetname(presetbox.Text);
        params:=getpresetparams(pn);
@@ -2286,7 +2288,6 @@ begin
  end; //for j = 1 to childnodes-1
 
 writexmlfile(presetsfile, presetspath + 'presets.xml');  // save the imported preset
-
 populatepresetbox('');
 end;
 

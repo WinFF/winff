@@ -29,7 +29,8 @@ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "確定"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "關於 WinFF"
 
@@ -38,7 +39,9 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF 1.3.2"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+#, fuzzy
+#| msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr "http://ffmpeg.arrozcru.org/"
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -91,7 +94,9 @@ msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg 的 Windows 版編譯是由"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+#, fuzzy
+#| msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr "Ramiro Polla"
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -187,6 +192,32 @@ msgstr "儲存"
 msgid "pnlTop"
 msgstr "頂端"
 
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "聲訊同步，數值為整數"
+#~ msgid "(All Categories)"
+#~ msgstr "所有類別"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
+#~ msgid "Audio Settings"
+#~ msgstr "聲訊設定"
+#~ msgid "Continue"
+#~ msgstr "繼續"
+#~ msgid "Convert To ..."
+#~ msgstr "匯出類別"
+#~ msgid "Device Preset"
+#~ msgstr "編碼格式"
+#~ msgid ""
+#~ "Make sure that the start time + time to record is less than total length "
+#~ "of job"
+#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFPlay.exe 所在目錄"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe 所在目錄"
+#~ msgid "Video Settings"
+#~ msgstr "視訊設定"
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
@@ -244,32 +275,6 @@ msgstr "清除"
 msgid "Remove all files from the list"
 msgstr "移除清單中的所有檔案"
 
-#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
-#~ msgstr "聲訊同步，數值為整數"
-#~ msgid "(All Categories)"
-#~ msgstr "所有類別"
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
-#~ msgid "Audio Settings"
-#~ msgstr "聲訊設定"
-#~ msgid "Continue"
-#~ msgstr "繼續"
-#~ msgid "Convert To ..."
-#~ msgstr "匯出類別"
-#~ msgid "Device Preset"
-#~ msgstr "編碼格式"
-#~ msgid ""
-#~ "Make sure that the start time + time to record is less than total length "
-#~ "of job"
-#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "FFPlay.exe 所在目錄"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "FFmpeg.exe 所在目錄"
-#~ msgid "Video Settings"
-#~ msgstr "視訊設定"
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
 msgstr "轉換"
@@ -416,16 +421,6 @@ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "額外選項"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION"
-msgid "Output Details"
-msgstr "輸出詳情"
-
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
 msgstr "轉換為："
@@ -442,10 +437,6 @@ msgstr "輸出資料夾："
 #: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
 msgstr "編碼方案："
-
-#: TFRMMAIN.LABEL2.CAPTION
-msgid "NOTE: Currently any additional options chosen"
-msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -470,10 +461,6 @@ msgstr "小時 / 分鐘 / 秒"
 #: TFRMMAIN.LABEL3.CAPTION
 msgid "Additional Command Line Parameters"
 msgstr "額外指令行參數"
-
-#: TFRMMAIN.LABEL4.CAPTION
-msgid "will be applied to all jobs when the conversion starts"
-msgstr ""
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
