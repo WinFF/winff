@@ -173,8 +173,6 @@ type
     procedure edtCropTopChange(Sender: TObject);
     procedure edtSeekMMChange(Sender: TObject);
     procedure filelistClick(Sender: TObject);
-    procedure filelistContextPopup(Sender: TObject; MousePos: TPoint;
-      var Handled: Boolean);
     procedure filelistDrawItem(Control: TWinControl; Index: Integer;
       ARect: TRect; State: TOwnerDrawState);
     procedure filelistKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
@@ -182,8 +180,8 @@ type
       var AHeight: Integer);
     procedure filelistMouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
-    procedure filelistShowHint(Sender: TObject; HintInfo: PHintInfo);
     procedure FormDestroy(Sender: TObject);
+    procedure FormResize(Sender: TObject);
     procedure grpOutputSettingsClick(Sender: TObject);
     procedure Label11Click(Sender: TObject);
     procedure LaunchBrowser(URL:string);
@@ -508,11 +506,11 @@ begin
   if sformheight = '' then formheight:=400
   else formheight := strtoint(sformheight);
 
-  if sformwidth = '' then formwidth:=400
+  if sformwidth = '' then formwidth:=600
   else formwidth := strtoint(sformwidth);
 
   if formheight<400 then formheight:=400;
-  if formwidth<400 then formheight:=400;
+  if formwidth<600 then formheight:=600;
   if showopts='' then showopts:='false';
   if showopts='true' then
         begin
@@ -884,10 +882,6 @@ if filelist.SelCount = 1 then
 }
 end;
 
-procedure TfrmMain.filelistContextPopup(Sender: TObject; MousePos: TPoint;
-  var Handled: Boolean);
-begin
-end;
 
 procedure TfrmMain.filelistDrawItem(Control: TWinControl; Index: Integer;
   ARect: TRect; State: TOwnerDrawState);
@@ -1463,9 +1457,7 @@ begin
  *)
 end;
 
-procedure TfrmMain.filelistShowHint(Sender: TObject; HintInfo: PHintInfo);
-begin
-end;
+
 
 procedure TfrmMain.FormDestroy(Sender: TObject);
 begin
@@ -1474,6 +1466,10 @@ begin
    PresetList.Free;
    DestinationList.Free;
    FileInfoList.Free;
+end;
+
+procedure TfrmMain.FormResize(Sender: TObject);
+begin
 end;
 
 procedure TfrmMain.grpOutputSettingsClick(Sender: TObject);
@@ -1657,9 +1653,9 @@ procedure TfrmMain.mitShowOptionsClick(Sender: TObject);
    mitShowOptions.Checked:=False;
  end;
 
- Application.ProcessMessages; // Should repaint the form like invalidate
+ //Application.ProcessMessages; // Should repaint the form like invalidate
   //Invalidate; //Why not use Invalidate itself?
-  AdjustSize;
+  //AdjustSize;
 // end;
 end;
 
