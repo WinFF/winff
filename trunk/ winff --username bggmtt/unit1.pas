@@ -1707,7 +1707,7 @@ procedure TfrmMain.btnConvertClick(Sender: TObject);
 var
 i,j : integer;
 cb,ct,cl,cr:integer;
-pn, extension, params, commandline, command, filename,batfile, passlogfile, basename:string;
+pn, extension, params, commandline, precommand, command, filename,batfile, passlogfile, basename:string;
 qterm, ffmpegfilename,ffplayfilename, usethreads, numthreads, deinterlace, nullfile, titlestring, priority:string;
 script: tstringlist;
 thetime: tdatetime;
@@ -1815,6 +1815,7 @@ begin                                     // get setup
 
                                           // replace preset params if mnuOptions specified
        commandline := params;
+       precommand := '';
        if vidbitrate.Text <> '' then
                commandline:=replaceparam(commandline,'-b','-b ' + vidbitrate.text+'k');
        if vidframerate.Text <> '' then
@@ -1906,7 +1907,8 @@ begin                                     // get setup
          if (edtSeekMM.Value < 10) and (length(edtSeekMM.Text)<2) then edtSeekMM.Text := '0' + edtSeekMM.Text;
          if (edtSeekSS.Value < 10) and (length(edtSeekSS.Text)<2) then edtSeekSS.Text := '0' + edtSeekSS.Text;
 
-         commandline:=replaceparam(commandline,'-ss','-ss ' + edtSeekHH.Text + ':' + edtSeekMM.Text + ':' + edtSeekSS.Text);
+	 commandline:=replaceparam(commandline,'-ss','');
+         precommand+=' -ss ' + edtSeekHH.Text + ':' + edtSeekMM.Text + ':' + edtSeekSS.Text;
        end;
 
        if edtTTRHH.Value + edtTTRMM.Value + edtTTRSS.Value > 0 then
@@ -1915,7 +1917,8 @@ begin                                     // get setup
          if (edtTTRMM.Value < 10) and (length(edtTTRMM.Text)<2)  then edtTTRMM.Text := '0' + edtTTRMM.Text;
          if (edtTTRSS.Value < 10) and (length(edtTTRSS.Text)<2)  then edtTTRSS.Text := '0' + edtTTRSS.Text;
 
-         commandline:=replaceparam(commandline,'-t','-t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text);
+         commandline:=replaceparam(commandline,'-t','');
+         precommand+=' -t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text;
        end;
 
 
@@ -1926,7 +1929,7 @@ begin                                     // get setup
        // if -ss and -t are already set, ignore the following parameter.
        if (preview = true) and (ignorepreview = false) then
        begin
-         commandline += ' -ss 00:01:00 -t 00:00:30';
+	  precommand += ' -ss 00:01:00 -t 00:00:30';
        end;
 
 // inserted block ends here
@@ -1986,17 +1989,17 @@ begin                                     // get setup
 
        if cbx2Pass.Checked = false then
           begin
-           command := ffmpegfilename + usethreads + ' -y -i "' + filename + '" ' + deinterlace + commandline + ' "' +
+           command := ffmpegfilename + usethreads + precommand + ' -y -i "' + filename + '" ' + deinterlace + commandline + ' "' +
                 destfolder.Text + DirectorySeparator + basename +'.' + extension+ '"';
 
            script.Add(command);
           end
        else if cbx2Pass.Checked = true then
           begin
-           command := ffmpegfilename + usethreads + ' -i "' + filename + '" ' + deinterlace + commandline + ' -an'
+           command := ffmpegfilename + usethreads + precommand + ' -i "' + filename + '" ' + deinterlace + commandline + ' -an'
                  + ' -passlogfile "' + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
            script.Add(command);
-           command := ffmpegfilename + usethreads + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
+           command := ffmpegfilename + usethreads + precommand + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
                  + passlogfile + '"' + ' -pass 2 ' + ' "' + destfolder.Text + DirectorySeparator + basename +'.'
                  + extension+ '"';
            script.add(command);
