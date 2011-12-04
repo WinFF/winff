@@ -51,7 +51,7 @@ object frmAbout: TfrmAbout
   }
   OnCreate = FormCreate
   Position = poMainFormCenter
-  LCLVersion = '0.9.28.2'
+  LCLVersion = '0.9.30'
   object Notebook1: TNotebook
     Left = 0
     Height = 265
