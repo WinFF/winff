@@ -2,8 +2,9 @@
 *.o
 *.or
 *.ppu
-*.res
 *.lrs
+*.lps
+*.res
 *.rst
 *~
 winff
