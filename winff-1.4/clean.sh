@@ -1,7 +1,10 @@
 rm *~
 rm *.o
 rm *.ppu
+rm *.res
 rm *.rst
+rm *.lrs
+rm *.lps
 rm *.bak
 rm winff.exe
 rm winff

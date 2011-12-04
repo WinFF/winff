@@ -1,878 +1,909 @@
-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
+# Czech translation for winff
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
 # This file is distributed under the same license as the winff package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, <YEAR>.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.3.2\n"
+"Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-02 21:39+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en\n"
+"PO-Revision-Date: 2011-11-04 08:27+0000\n"
+"Last-Translator: Martin Keder <Unknown>\n"
+"Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-11-04 20:00+0000\n"
+"X-Generator: Launchpad (build 14231)\n"
 
 msgid " will be applied to all jobs when the conversion starts"
-msgstr ""
+msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
 
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "Budiž"
 
 #: TFRMABOUT.CAPTION
 msgid "About WinFF"
-msgstr ""
+msgstr "O WinFF"
 
 #: TFRMABOUT.LABEL1.CAPTION
 msgid "WinFF 1.3.2"
-msgstr ""
+msgstr "WinFF 1.3.2"
 
 #: TFRMABOUT.LABEL10.CAPTION
 msgid "http://ffmpeg.arrozcru.org/"
-msgstr ""
+msgstr "http://ffmpeg.arrozcru.org/"
 
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr ""
+msgstr "Balíčky pro Debian/Ubuntu: Paul Gevers"
 
 #: TFRMABOUT.LABEL13.CAPTION
 msgid "Gmaq"
-msgstr ""
+msgstr "Gmaq"
 
 #: TFRMABOUT.LABEL14.CAPTION
 msgid "High Quality Presets From"
-msgstr ""
+msgstr "Přednastavení pro HQ:"
 
 #: TFRMABOUT.LABEL15.CAPTION
 msgid "Icons and Logo by Alex Klepatsch"
-msgstr ""
+msgstr "Ikony a logo: Alex Klepatsch"
 
 #: TFRMABOUT.LABEL16.CAPTION
 msgid "JNavas"
-msgstr ""
+msgstr "JNavas"
 
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
-msgstr ""
+msgstr "Copyright 2006-2009 GPL V3"
 
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-msgstr ""
+msgstr "Matthew Weatherford, Ian Stoffberg a Alexey Osipov"
 
 #: TFRMABOUT.LABEL4.CAPTION
 msgid "http://www.winff.org"
-msgstr ""
+msgstr "http://www.winff.org"
 
 #: TFRMABOUT.LABEL5.CAPTION
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
-msgstr ""
+msgstr "FFmpeg"
 
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
-msgstr ""
+msgstr "Trademark: Fabrice Belllard"
 
 #: TFRMABOUT.LABEL7.CAPTION
 msgid "http://ffmpeg.org"
-msgstr ""
+msgstr "http://ffmpeg.org"
 
 #: TFRMABOUT.LABEL8.CAPTION
 msgid "FFmpeg Windows Builds by"
-msgstr ""
+msgstr "FFmpeg pro Windows sestavil"
 
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Ramiro Polla"
-msgstr ""
+msgstr "Ramiro Polla"
 
 #: TFRMABOUT.PAGE1.CAPTION
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
-msgstr ""
+msgstr "WinFF"
 
 #: TFRMABOUT.PAGE2.CAPTION
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
-msgstr ""
+msgstr "FFmpeg"
 
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
-msgstr ""
+msgstr "Poděkování"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
-msgstr ""
+msgstr "Přidat / Upravit"
 
 #: TFRMEDITPRESETS.CANCELBTN.CAPTION
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: TFRMEDITPRESETS.CAPTION
 msgid "Edit Presets"
-msgstr ""
+msgstr "Upravit přednastavení"
 
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
-msgstr ""
+msgstr "Odstranit"
 
 #: TFRMEDITPRESETS.EDIT1.HINT
 msgid "One word, only letters and numbers"
-msgstr ""
+msgstr "Jedno slovo, pouze písmena a čísla"
 
 #: TFRMEDITPRESETS.EDIT2.HINT
 msgid "Enter a more descriptive name for this preset"
-msgstr ""
+msgstr "Zadejte výstižný popis přednastavení"
 
 #: TFRMEDITPRESETS.EDIT3.HINT
 msgid "Please don't use -i or output file parameters"
-msgstr ""
+msgstr "Prosím, nepoužívejte v parametrech -i ani název výstupního souboru"
 
 #: TFRMEDITPRESETS.EDIT4.HINT
 msgid "Do not include a dot"
-msgstr ""
+msgstr "Příponu pište bez tečky"
 
 #: TFRMEDITPRESETS.EDIT5.HINT
 msgid "Choose a category to group this preset under"
-msgstr ""
+msgstr "Vyberte kategorii, do které toto přednastavení patří"
 
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "Exportovat"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
-msgstr ""
+msgstr "Importovat"
 
 #: TFRMEDITPRESETS.LABEL1.CAPTION
 msgid "Category / Preset"
-msgstr ""
+msgstr "Kategorie / přednastavení"
 
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr ""
+msgstr "Název přednastavení (jednoslovný, pouze písmena a čísla)"
 
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
-msgstr ""
+msgstr "Popis přednastavení"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr ""
+msgstr "Parametry pro ffmpeg (bez -i a bez názvu výstupního souboru)"
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 msgid "Output File Extension (do not include the '.' )"
-msgstr ""
+msgstr "Přípona výstupního souboru (bez tečky)"
 
 #: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
-msgstr ""
+msgstr "Skupina"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
-msgstr ""
+msgstr "pnlTop"
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
-msgstr ""
+msgstr "Exportovat přednastavení"
 
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
-msgstr ""
+msgstr "Exportovat"
 
 #: TFRMEXPORT.LABEL1.CAPTION
 msgid "Choose Presets to Export:"
-msgstr ""
+msgstr "Vybrat přednastavení pro export:"
 
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<integer>) výsledná hodnota kilobit/s, kterou bude proud používat"
 
 #: TFRMMAIN.AUDCHANNELS.HINT
 msgid "(<integer>) number of audio channels"
-msgstr ""
+msgstr "(<integer>) počet zvukových kanálů"
 
 #: TFRMMAIN.AUDSAMPLINGRATE.HINT
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr ""
+msgstr "(<integer>) vzorkovací kmitočet v Hz"
 
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
-msgstr ""
+msgstr "Přidat"
 
 #: TFRMMAIN.BTNADD.HINT
 msgid "Add file(s) to the list for conversion"
-msgstr ""
+msgstr "Přidat soubor(y) do seznamu"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
-msgstr ""
+msgstr "Použít výstupní filtr"
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Použít přednastavení"
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
-msgstr ""
+msgstr "Vyčistit"
 
 #: TFRMMAIN.BTNCLEAR.HINT
 msgid "Remove all files from the list"
-msgstr ""
+msgstr "Odstranit ze seznamu všechny soubory"
 
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
-msgstr ""
+msgstr "Zkonvertovat"
 
 #: TFRMMAIN.BTNCONVERT.HINT
 msgid "Start the conversion process"
-msgstr ""
+msgstr "Spustit konverzi"
 
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Možnosti"
 
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
-msgstr ""
+msgstr "Ukázat/skrýt panel podrobných nastavení"
 
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
-msgstr ""
+msgstr "Přehrát"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
 msgstr ""
+"Přehrát vybraný soubor pomocí ffplay (ověříte tak, že půjde zkonvertovat)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
-msgstr ""
+msgstr "Náhled"
 
 #: TFRMMAIN.BTNPREVIEW.HINT
 msgid "Preview using the output settings"
-msgstr ""
+msgstr "Přehrát výsledek konverze"
 
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
-msgstr ""
+msgstr "Odebrat"
 
 #: TFRMMAIN.BTNREMOVE.HINT
 msgid "Remove selected file(s) from the list"
-msgstr ""
+msgstr "Odebrat ze seznamu vybrané soubory"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
-msgstr ""
+msgstr "Zařízení nebo formát, do kterého bude soubor konvertován"
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
-msgstr ""
+msgstr "Použít zdrojovou složku"
 
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
-msgstr ""
+msgstr "Dvouprůchodově"
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
 msgstr ""
+"Dvouprůchodové zpracování umožní získat enkodéru informace pro zlepšení "
+"kvality výstupního souboru"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
-msgstr ""
+msgstr "Odstranit prokládání"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
 msgid "Removes interlacing from the video (if necessary)"
-msgstr ""
+msgstr "Bude odstraněno prokládání řádků (v případě potřeby)"
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid "Target location for the final video (choose a different folder than the source folder)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
 msgstr ""
+"Složka pro uložení konvertovaného souboru (použijte jinou složku než "
+"zdrojovou)"
 
 #: TFRMMAIN.DLGOPENFILE.TITLE
 msgid "Select Video Files..."
-msgstr ""
+msgstr "Vybrat soubory s videem..."
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
 msgstr ""
+"(<integer:integer> nebo <real>) fyzický poměr stran (DAR) cílového zařízení"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
 msgstr ""
+"(<integer>) Od 10 až do vzorkovací frekvence zvuku, jako je 44100, 48000. "
+"Dovolí \"roztáhnout\" nebo \"stlačit\" objem dat ve zvukovém kanálu."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPLEFT.TEXT
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPRIGHT.TEXT
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPTOP.TEXT
 msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<hh:mm:ss> - Začít konverzi z tohoto místa"
 
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<hh:mm:ss> - Začít konverzi z tohoto místa"
 
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<hh:mm:ss> - Začít konverzi z tohoto místa"
 
 #: TFRMMAIN.EDTTTRHH.HINT
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<hh:mm:ss> - Maximální délka zkonvertovaného videa"
 
 #: TFRMMAIN.EDTTTRMM.HINT
 msgctxt "TFRMMAIN.EDTTTRMM.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<hh:mm:ss> - Maximální délka zkonvertovaného videa"
 
 #: TFRMMAIN.EDTTTRSS.HINT
 msgctxt "TFRMMAIN.EDTTTRSS.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<hh:mm:ss> - Maximální délka zkonvertovaného videa"
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
+"(<integer>) 256 = původní hlasitost, 128 = poloviční hlasitost, 512 = "
+"dvojnásobná hlasitost"
 
 #: TFRMMAIN.FRMMAIN.CAPTION
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
-msgstr ""
+msgstr "WinFF"
 
 #: TFRMMAIN.GBXSETTINGS.CAPTION
 msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "Podrobná nastavení"
 
 #: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
 msgid "Output Details"
-msgstr ""
+msgstr "Nastavení konverze"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
-msgstr ""
+msgstr "Zkonvertovat na:"
 
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
-msgstr ""
+msgstr "Zvukové kanály"
 
 #: TFRMMAIN.LABEL11.CAPTION
 msgid "Output Folder:"
-msgstr ""
+msgstr "Uložit do:"
 
 #: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
-msgstr ""
+msgstr "Přednastavení:"
 
 #: TFRMMAIN.LABEL2.CAPTION
 msgid "NOTE: Currently any additional options chosen"
-msgstr ""
+msgstr "POZNÁMKA: Nejsou zadána žádná podrobná nastavení"
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
-msgstr ""
+msgstr "Hlasitost"
 
 #: TFRMMAIN.LABEL21.CAPTION
 msgid "Sync"
-msgstr ""
+msgstr "Synchronizace"
 
 #: TFRMMAIN.LABEL22.CAPTION
 msgid "Seek to"
-msgstr ""
+msgstr "Přesunout se na"
 
 #: TFRMMAIN.LABEL23.CAPTION
 msgid "Time to Record"
-msgstr ""
+msgstr "Délka nahrávky"
 
 #: TFRMMAIN.LABEL24.CAPTION
 msgid "Hours / Minutes / Seconds"
-msgstr ""
+msgstr "hodiny / minuty / sekundy"
 
 #: TFRMMAIN.LABEL3.CAPTION
 msgid "Additional Command Line Parameters"
-msgstr ""
+msgstr "Další parametry pro spuštění FFmpeg"
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
-msgstr ""
+msgstr "Audio Bitrate"
 
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
-msgstr ""
+msgstr "Vzorkovací kmitočet"
 
 #: TFRMMAIN.LABEL9.CAPTION
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
-msgstr ""
+msgstr "Poměr stran"
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
-msgstr ""
+msgstr "Zdola"
 
 #: TFRMMAIN.LBLCROPLEFT.CAPTION
 msgid "Left"
-msgstr ""
+msgstr "Zleva"
 
 #: TFRMMAIN.LBLCROPRIGHT.CAPTION
 msgid "Right"
-msgstr ""
+msgstr "Zprava"
 
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
-msgstr ""
+msgstr "Shora"
 
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
-msgstr ""
+msgstr "Frame Rate"
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
-msgstr ""
+msgstr "Video Bitrate"
 
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
-msgstr ""
+msgstr "Rozměr videa"
 
 #: TFRMMAIN.MENUITEM1.CAPTION
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Použít přednastavení"
 
 #: TFRMMAIN.MENUITEM2.CAPTION
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
-msgstr ""
+msgstr "Nastavit adresář pro ukládání"
 
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: TFRMMAIN.MITABOUT.CAPTION
 msgid "About"
-msgstr ""
+msgstr "O aplikaci"
 
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
 msgid "Display Cmd Line"
-msgstr ""
+msgstr "Ukázat příkazy shellu"
 
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentace"
 
 #: TFRMMAIN.MITEXIT.CAPTION
 msgid "Exit"
-msgstr ""
+msgstr "Ukončit"
 
 #: TFRMMAIN.MITFORUMS.CAPTION
 msgid "Forums"
-msgstr ""
+msgstr "Diskuzní fóra"
 
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
-msgstr ""
+msgstr "Importovat přednastavení"
 
 #: TFRMMAIN.MITPAUSEONFINISH.CAPTION
 msgid "Pause on Finish"
-msgstr ""
+msgstr "Po dokončení konverze zastavit"
 
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
-msgstr ""
+msgstr "Po dokončení konverze zahrát zvuk"
 
 #: TFRMMAIN.MITPREFERENCES.CAPTION
 msgid "Preferences"
-msgstr ""
+msgstr "Nastavení programu"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
 msgid "Presets"
-msgstr ""
+msgstr "Přednastavení konverze"
 
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr ""
+msgstr "Podrobná nastavení"
 
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
-msgstr ""
+msgstr "Po dokončení konverze zavřít WinFF"
 
 #: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
-msgstr ""
+msgstr "Podrobný přehled"
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
-msgstr ""
+msgstr "Webové stránky WinFF"
 
 #: TFRMMAIN.MNUEDIT.CAPTION
 msgid "Edit"
-msgstr ""
+msgstr "Úpravy"
 
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
-msgstr ""
+msgstr "Soubor"
 
 #: TFRMMAIN.MNUHELP.CAPTION
 msgid "Help"
-msgstr ""
+msgstr "Nápověda"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Možnosti"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
-msgstr ""
+msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
-msgstr ""
+msgstr "Nastavení typická pro vybrané výstupní zařízení nebo formát souboru"
 
 #: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
 msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 msgid "FFmpeg"
-msgstr ""
+msgstr "FFmpeg"
 
 #: TFRMMAIN.TABPAGECROP.CAPTION
 msgid "Crop"
-msgstr ""
+msgstr "Oříznutí"
 
 #: TFRMMAIN.TABPAGETIME.CAPTION
 msgid "Time"
-msgstr ""
+msgstr "Čas"
 
 #: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<integer>) výsledná hodnota kilobit/s, kterou bude proud používat"
 
 #: TFRMMAIN.VIDFRAMERATE.HINT
 msgid "(<real> or <integer>) number of frames per second"
-msgstr ""
+msgstr "(<real> or <integer>) počet snímků za sekundu"
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
+"(<integer> X <integer>) Počet obrazových bodů ve snímku. Pro kodeky, které "
+"nepodporují pixel aspect ratio (PAR) je toto i rozměr snímku."
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
+"(<integer> X <integer>) Počet obrazových bodů ve snímku. Pro kodeky, které "
+"nepodporují pixel aspect ratio (PAR) je toto i rozměr snímku."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "Budiž"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON4.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON5.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON6.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON7.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON8.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
-msgstr ""
+msgstr "Nastavení WinFF"
 
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 msgid "Remember Last Used Directory"
-msgstr ""
+msgstr "Pamatovat si poslední použitou složku"
 
 #: TFRMPREFERENCES.CHECKBOX2.CAPTION
 msgid "Use CHCP for international characters"
-msgstr ""
+msgstr "Použít CHCP pro mezinárodní znaky"
 
 #: TFRMPREFERENCES.CHECKBOX3.CAPTION
 msgid "Use Several Encoding Threads:"
-msgstr ""
+msgstr "Pracovat ve více vláknech"
 
 #: TFRMPREFERENCES.EDIT7.HINT
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr ""
+msgstr "'-e' pro xterm, '-x' pro gnome-terminal"
 
 #: TFRMPREFERENCES.LABEL1.CAPTION
 msgid "Default Destination Directory:"
-msgstr ""
+msgstr "Výchozí adresář pro ukládání"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "Cesta pro spuštění FFmpeg"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "Cesta pro spuštění FFplay"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr ""
+msgstr "Cesta pro spuštění FFmpeg"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr ""
+msgstr "Cesta pro spuštění FFplay"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
 msgid "Terminal to run FFmpeg in:"
-msgstr ""
+msgstr "Terminál pro spuštění FFmpeg:"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
 msgid "Terminal Options:"
-msgstr ""
+msgstr "Parametry terminálu:"
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
 msgid "Priority:"
-msgstr ""
+msgstr "Priorita:"
 
 #: TFRMPREFERENCES.PAGE1.CAPTION
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
 #: TFRMPREFERENCES.PAGE2.CAPTION
 msgid "MS Windows"
-msgstr ""
+msgstr "MS Windows"
 
 #: TFRMPREFERENCES.PAGE3.CAPTION
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: TFRMSCRIPT.BTNCLIP.CAPTION
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Zkopírovat do schránky"
 
 #: TFRMSCRIPT.BTNCLOSE.CAPTION
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: TFRMSCRIPT.BTNRUN.CAPTION
 msgid "Run!"
-msgstr ""
+msgstr "Spustit"
 
 #: TFRMSCRIPT.BTNSAVE.CAPTION
 msgid "Save As..."
-msgstr ""
+msgstr "Uložit jako..."
 
 #: TFRMSCRIPT.CAPTION
 msgid "FFmpeg Command Line"
-msgstr ""
+msgstr "Příkazy shellu"
 
 #: unit1.rsanalysing
 msgid "Analysing"
-msgstr ""
+msgstr "Probíhá analýza"
 
 #: unit1.rsconverting
 msgid "Converting"
-msgstr ""
+msgstr "Provádí se konverze"
 
 #: unit1.rscouldnotfindffmpeg
 msgid "Could not find FFmpeg."
-msgstr ""
+msgstr "Nelze najít FFmpeg."
 
 #: unit1.rscouldnotfindffplay
 msgid "Could not find FFPlay."
-msgstr ""
+msgstr "Nelze najít FFPlay."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
-msgstr ""
+msgstr "Nelze nalézt soubor"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr ""
+msgstr "Nelze najít soubor přednastavení"
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr ""
+msgstr "Přípona nesmí obsahovat tečku"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
-msgstr ""
+msgstr "soubor neexistuje"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr ""
+msgstr "Soubor přednastavení je nečitelný"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr ""
+msgstr "Název musí bát alfanumerický (a-z,A-Z,0-9)"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr ""
+msgstr "Prosím, přidejte alespoň jeden soubor, který chcete konvertovat"
 
 #: unit1.rspleaseselectapreset
 msgid "Please select a preset"
-msgstr ""
+msgstr "Prosím, vyberte přednastavení"
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
-msgstr ""
+msgstr "Přednastavení: %s%s%s již existuje"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr ""
+msgstr "Importované přednastavení nemá zadanou příponu souboru"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr ""
+msgstr "Importované přednastavení nemá zadaný výstižný popis"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr ""
+msgstr "Prosím, vyberte přednastavení pro export"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr ""
+msgstr "Přednastavení s popisem: %s%s%s již existuje"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr ""
+msgstr "Pro pokračování stisněte Enter"
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
-msgstr ""
+msgstr "Vybrat složku"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr ""
+msgstr "Vyberte soubor přednastavení"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
-msgstr ""
+msgstr "Vybrat video soubory"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr ""
+msgstr "Přednastavení obsahuje nepovolené znaky"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr ""
+msgstr "Vytvořit přednastavení"
 
 #: unit2.rsimportpresets
 msgid "Import Presets"
-msgstr ""
+msgstr "Importovat přednastavení"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr ""
+msgstr "Popis musí být unikátní"
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr ""
+msgstr "Odstranit přednastavení"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr ""
+msgstr "Aktualizovat přednastavení"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr ""
+msgstr "Musíte zadat příponu"
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr ""
+msgstr "Musíte zadat výstižný popis"
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr ""
+msgstr "Musíte zadat název"
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr ""
+msgstr "Vysoká"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr ""
+msgstr "Nízká"
 
 #: unit4.rsprioritynormal
 msgid "Normal"
-msgstr ""
-
+msgstr "Normální"
