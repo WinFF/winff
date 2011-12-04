@@ -14,9 +14,7 @@ configure-stamp:
 	if [ -f presets.xml ] ; then mv presets.xml presets-orig.xml; fi 
 
 	cd languages ;\
-		if [ -f winff.pb.po ] ; then mv winff.pb.po winff.pt_BR.po; fi ;\
 		if [ -f winff.po ] ; then mv winff.po winff.en.po; fi ;\
-		if [ -f winff.zh.po ] ; then mv winff.zh.po winff.zh_TW.po; fi
 
 	touch configure-stamp
 
@@ -39,9 +37,7 @@ clean:
 
 	if [ -f presets-orig.xml ] ; then mv presets-orig.xml presets.xml; fi 
 	cd languages ;\
-		if [ -f winff.pt_BR.po ] ; then mv winff.pt_BR.po winff.pb.po; fi ;\
 		if [ -f winff.en.po ] ; then mv winff.en.po winff.po; fi ;\
-		if [ -f winff.zh_TW.po ] ; then mv winff.zh_TW.po winff.zh.po; fi
 
 	dh_clean 
 

@@ -4,18 +4,11 @@ Source: http://winff.googlecode.com/files/
 Upstream-Contact: Matthew Weatherford <matt@biggmatt.com>
 
 Files: *
-Copyright: © 2006-2010 Matthew Weatherford <matt@biggmatt.com>
-License: GPL-3
-  WinFF is published under the GNU Public License v3 without any
-  warranty implied or otherwise, with no suitability for any purpose.
-  Use this software at your own risk.
-  .
-  On Debian systems, the complete text of the GNU General Public
-  License, version 3, can be found in 
-  /usr/share/common-licenses/GPL-3.
+Copyright: © 2006-2011 Matthew Weatherford <matt@biggmatt.com>
+License: GPL-3+
 
 Files: *.pas
-Copyright: © 2006-2010 Matthew Weatherford <matt@biggmatt.com>
+Copyright: © 2006-2011 Matthew Weatherford <matt@biggmatt.com>
   	   © 2011 Alexey Osipov <lion-simba@pridelands.ru>
 License: GPL-3+
 
@@ -42,10 +35,6 @@ License: GPL-2+
   .
   On Debian systems, the complete text of the GNU General Public License,
   version 2, can be found in /usr/share/common-licenses/GPL-2.
-
-Files: winff.lpr languages/*.po
-Copyright: © 2006-2010 Matthew Weatherford <matt@biggmatt.com>
-License: GPL-3+
 
 Files: winff.1
 Copyright: © 2008 Paul Gevers <paul@climbing.nl>
@@ -91,22 +80,12 @@ Files:
   winff.ico
   winff-icons/*
 Copyright: © 2009 Alex Klepatsch
-License: GPL-3
-  The are licensed under the GNU Public License v3
-  You should have received a copy of the License with these Icons.
-  If not please see http://www.gnu.org
-  .
-  On Debian systems, the complete text of the GNU General Public
-  License, version 3, can be found in 
-  /usr/share/common-licenses/GPL-3.
+License: GPL-3+
 
 Files:
   debian/presets*.xml
-Copyright: © 2006-2009 Matthew Weatherford <matt@biggmatt.com>
-License: GPL-3
-  WinFF is published under the GNU Public License v3 without any
-  warranty implied or otherwise, with no suitability for any purpose.
-  Use this software at your own risk.
+Copyright: © 2006-2011 Matthew Weatherford <matt@biggmatt.com>
+License: GPL-3+
 
 Files: languages/winff.pl.po
 Copyright: © 2008-2009 Marcin Trybus <mtrybus@o2.pl>
@@ -115,14 +94,12 @@ License: GPL-3+
 Files: languages/winff.pt.po
 Copyright: © 2008 Luís Torrao <luistorrao@gmail.com>
 License: GPL-3
-  Licensed under the GPL v3
-  .
-  On Debian systems, the complete text of the GNU General Public Licence,
-  version 3, can be found in /usr/share/common-licenses/GPL-3.
 
 Files: languages/winff.ru.po
 Copyright: © 2009 Joe Black <vladimir-irina@mail.ru>
   	   © 2011 Alexey Osipov <lion-simba@pridelands.ru>
+License: GPL-3
+
 License: GPL-3
   Licensed under the GPL v3
   .
