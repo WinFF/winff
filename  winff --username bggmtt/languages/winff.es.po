@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.1.1\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-02 21:39+0000\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2011-09-16 19:27+0000\n"
 "Last-Translator: Carlos <Unknown>\n"
 "Language-Team: \n"
@@ -33,7 +33,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-11-02 19:20+0000\n"
 "X-Generator: Launchpad (build 14214)\n"
 
-msgid " will be applied to all jobs when the conversion starts"
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
 msgstr ""
 
 #: TFRMABOUT.BUTTON1.CAPTION
@@ -41,7 +42,10 @@ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "Aceptar"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+#, fuzzy
+#| msgid "About WinFF"
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Acerca de WinFF"
 
@@ -50,7 +54,9 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF 1.3.2"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+#, fuzzy
+#| msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr "http://ffmpeg.arrozcru.org/"
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -103,8 +109,8 @@ msgid "FFmpeg Windows Builds by"
 msgstr ""
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
-msgstr "Ramiro Polla"
+msgid "Kyle Schwarz"
+msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
@@ -298,6 +304,14 @@ msgstr "Quitar"
 msgid "Remove selected file(s) from the list"
 msgstr "Remover el/los archivo(s) seleccionado(s)"
 
+#: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "Winff"
+
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -331,12 +345,6 @@ msgstr ""
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr ""
-
-#: TFRMMAIN.DLGOPENFILE.TITLE
-#, fuzzy
-#| msgid "Select Video Files"
-msgid "Select Video Files..."
-msgstr "Elegir archivos de vídeo"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -400,23 +408,6 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.FRMMAIN.CAPTION
-#, fuzzy
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "Winff"
-
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr ""
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "Resultado"
-
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
 msgstr ""
@@ -425,19 +416,14 @@ msgstr ""
 msgid "Audio Channels"
 msgstr "Canales"
 
-#: TFRMMAIN.LABEL11.CAPTION
+#: TFRMMAIN.LABEL12.CAPTION
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr ""
 
 #: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
 msgstr ""
-
-#: TFRMMAIN.LABEL2.CAPTION
-#, fuzzy
-#| msgid "Open/close the additional options window"
-msgid "NOTE: Currently any additional options chosen"
-msgstr "Abrir/cerrar la ventana de opciones adicionales"
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -605,26 +591,42 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
+#, fuzzy
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Tamaño(HxV)"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr ""
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr ""
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr ""
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr ""
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
-msgid "Video"
-msgstr ""
+#: TFRMMAIN.TABSHEET5.CAPTION
+#, fuzzy
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+#, fuzzy
+#| msgid "Output Details"
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Resultado"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -905,3 +907,23 @@ msgstr "Mínima"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normal"
+
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+
+#, fuzzy
+#~| msgid "Select Video Files"
+#~ msgid "Select Video Files..."
+#~ msgstr "Elegir archivos de vídeo"
+
+#, fuzzy
+#~| msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "Winff"
+
+#, fuzzy
+#~| msgid "Open/close the additional options window"
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "Abrir/cerrar la ventana de opciones adicionales"

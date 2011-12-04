@@ -13,14 +13,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.0.4\n"
-"POT-Creation-Date: \n"
+"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2010-12-03 22:47+0100\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -32,12 +29,19 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "Aceptar"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+#, fuzzy
+#| msgid "About WinFF"
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Acerca de WinFF"
 
@@ -48,10 +52,9 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
-#| msgctxt "REMOVED3"
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
 msgstr ""
@@ -91,7 +94,6 @@ msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
 msgstr ""
@@ -107,7 +109,7 @@ msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg compilado por"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -128,7 +130,6 @@ msgstr "FFmpeg"
 msgid "Thanks"
 msgstr "Grazas"
 
-#| msgctxt "REMOVED6"
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
 msgstr "Engadir/actualizar"
@@ -168,7 +169,6 @@ msgstr ""
 msgid "Choose a category to group this preset under"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
@@ -266,9 +266,12 @@ msgid "Add file(s) to the list for conversion"
 msgstr "Engadir ficheiro(s) á lista de conversión"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "Output Folder"
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Destination Folder"
-msgstr ""
+msgid "Apply Output Folder"
+msgstr "Gardar en..."
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
@@ -295,7 +298,6 @@ msgstr "Converter"
 msgid "Start the conversion process"
 msgstr "Iniciar o proceso de conversión"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
@@ -336,6 +338,13 @@ msgstr "Quitar"
 #| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
 msgstr "Sacar o(s) ficheiro(s) seleccionado(s) da lista"
+
+#: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
 #, fuzzy
@@ -378,10 +387,6 @@ msgstr ""
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Localización do destino para o vídeo final (elixir un cartafol distinto do cartafol de orixe)"
-
-#: TFRMMAIN.DLGOPENFILE.TITLE
-msgid "Select Video Files..."
-msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #, fuzzy
@@ -455,22 +460,6 @@ msgstr "<hh:mm:ss> - Cantidade de tempo para gravar"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<integer>) Volume actual = 256, 128 = volume medio, 512 = volume dobre"
 
-#: TFRMMAIN.FRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Opcións adicionais"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "Detalles da saída"
-
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
@@ -481,9 +470,10 @@ msgstr "Converter"
 msgid "Audio Channels"
 msgstr "Canles de son"
 
-#: TFRMMAIN.LABEL11.CAPTION
+#: TFRMMAIN.LABEL12.CAPTION
 #, fuzzy
 #| msgid "Output Folder"
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Gardar en..."
 
@@ -523,51 +513,6 @@ msgstr "Parámetros adicionais en liña de ordes (avanzado)"
 msgid "Audio Bitrate"
 msgstr "Bits/s. son"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Todas as categorias)"
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "<hh:mm:ss> - Comezar a gravar en tempo de inicio"
-#~ msgid "Make sure that the start time + time to record is less than total length of job"
-#~ msgstr "Asegurar que o tempo de inicio + tempo de gravación é máis pequeno que o da lonxitude total de traballo"
-#~ msgid "Convert To ..."
-#~ msgstr "Converter en..."
-#~ msgid "Device Preset"
-#~ msgstr "Dispositivo preconfigurado"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Gardar en..."
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Acerca de"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opcións"
-#~ msgid "Video Settings"
-#~ msgstr "Axustes de vídeo"
-#~ msgid "Audio Settings"
-#~ msgstr "Axustes de son"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Preconfiguración"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multifío para procesadores con 2 núcleos"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Ruta a FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Ruta a FFPlay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "Aceptar"
-#~ msgid "Continue"
-#~ msgstr "Continuar"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Gardar"
-#~ msgid "Replace Preset"
-#~ msgstr "Substituir preconfiguración"
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
 msgstr "Taxa de mostraxe"
@@ -706,18 +651,6 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opcións"
 
-#: TFRMMAIN.PANEL15.CAPTION
-msgid "Panel15"
-msgstr ""
-
-#: TFRMMAIN.PANEL17.CAPTION
-msgid "Panel17"
-msgstr ""
-
-#: TFRMMAIN.PANEL18.CAPTION
-msgid "Panel18"
-msgstr ""
-
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
@@ -728,32 +661,45 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Configuración especifica que usar co dispositivo ou tipo de ficheiro elixido"
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
+#, fuzzy
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Tamaño(HxV)"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
 #, fuzzy
 #| msgid "Audio Sync"
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Sincronización de son"
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
-#| msgid "FFmpeg"
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#| msgid "Crop"
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "Recortar"
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr ""
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgid "Video Size"
-msgid "Video"
-msgstr "Tamaño(HxV)"
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+#, fuzzy
+#| msgid "Output Details"
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Detalles da saída"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 #, fuzzy
@@ -1067,3 +1013,78 @@ msgstr "Inactiva"
 msgid "Normal"
 msgstr "Normal"
 
+#, fuzzy
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Opcións adicionais"
+
+#~ msgid "(All Categories)"
+#~ msgstr "(Todas as categorias)"
+
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "<hh:mm:ss> - Comezar a gravar en tempo de inicio"
+
+#~ msgid "Make sure that the start time + time to record is less than total length of job"
+#~ msgstr "Asegurar que o tempo de inicio + tempo de gravación é máis pequeno que o da lonxitude total de traballo"
+
+#~ msgid "Convert To ..."
+#~ msgstr "Converter en..."
+
+#~ msgid "Device Preset"
+#~ msgstr "Dispositivo preconfigurado"
+
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Acerca de"
+
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opcións"
+
+#~ msgid "Video Settings"
+#~ msgstr "Axustes de vídeo"
+
+#~ msgid "Audio Settings"
+#~ msgstr "Axustes de son"
+
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
+
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Preconfiguración"
+
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multifío para procesadores con 2 núcleos"
+
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Ruta a FFmpeg.exe"
+
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Ruta a FFPlay.exe"
+
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Aceptar"
+
+#~ msgid "Continue"
+#~ msgstr "Continuar"
+
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Gardar"
+
+#~ msgid "Replace Preset"
+#~ msgstr "Substituir preconfiguración"
+
+#, fuzzy
+#~| msgid "FFmpeg"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"

@@ -7,25 +7,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-02 21:39+0000\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2011-11-04 08:27+0000\n"
 "Last-Translator: Martin Keder <Unknown>\n"
 "Language-Team: Czech <cs@li.org>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2011-11-04 20:00+0000\n"
 "X-Generator: Launchpad (build 14231)\n"
 
-msgid " will be applied to all jobs when the conversion starts"
-msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
 
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "Budiž"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+#, fuzzy
+#| msgid "About WinFF"
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "O WinFF"
 
@@ -34,7 +39,9 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF 1.3.2"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+#, fuzzy
+#| msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr "http://ffmpeg.arrozcru.org/"
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -87,8 +94,8 @@ msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg pro Windows sestavil"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
-msgstr "Ramiro Polla"
+msgid "Kyle Schwarz"
+msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
@@ -261,11 +268,8 @@ msgid "Play"
 msgstr "Přehrát"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
-msgstr ""
-"Přehrát vybraný soubor pomocí ffplay (ověříte tak, že půjde zkonvertovat)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "Přehrát vybraný soubor pomocí ffplay (ověříte tak, že půjde zkonvertovat)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
@@ -283,6 +287,14 @@ msgstr "Odebrat"
 msgid "Remove selected file(s) from the list"
 msgstr "Odebrat ze seznamu vybrané soubory"
 
+#: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "Zařízení nebo formát, do kterého bude soubor konvertován"
@@ -297,12 +309,8 @@ msgid "2 pass"
 msgstr "Dvouprůchodově"
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
-msgstr ""
-"Dvouprůchodové zpracování umožní získat enkodéru informace pro zlepšení "
-"kvality výstupního souboru"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "Dvouprůchodové zpracování umožní získat enkodéru informace pro zlepšení kvality výstupního souboru"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
@@ -318,31 +326,16 @@ msgid "..."
 msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
-msgstr ""
-"Složka pro uložení konvertovaného souboru (použijte jinou složku než "
-"zdrojovou)"
-
-#: TFRMMAIN.DLGOPENFILE.TITLE
-msgid "Select Video Files..."
-msgstr "Vybrat soubory s videem..."
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr "Složka pro uložení konvertovaného souboru (použijte jinou složku než zdrojovou)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
-msgstr ""
-"(<integer:integer> nebo <real>) fyzický poměr stran (DAR) cílového zařízení"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "(<integer:integer> nebo <real>) fyzický poměr stran (DAR) cílového zařízení"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-"(<integer>) Od 10 až do vzorkovací frekvence zvuku, jako je 44100, 48000. "
-"Dovolí \"roztáhnout\" nebo \"stlačit\" objem dat ve zvukovém kanálu."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "(<integer>) Od 10 až do vzorkovací frekvence zvuku, jako je 44100, 48000. Dovolí \"roztáhnout\" nebo \"stlačit\" objem dat ve zvukovém kanálu."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -395,25 +388,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Maximální délka zkonvertovaného videa"
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
-"(<integer>) 256 = původní hlasitost, 128 = poloviční hlasitost, 512 = "
-"dvojnásobná hlasitost"
-
-#: TFRMMAIN.FRMMAIN.CAPTION
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Podrobná nastavení"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "Nastavení konverze"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "(<integer>) 256 = původní hlasitost, 128 = poloviční hlasitost, 512 = dvojnásobná hlasitost"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -423,17 +399,16 @@ msgstr "Zkonvertovat na:"
 msgid "Audio Channels"
 msgstr "Zvukové kanály"
 
-#: TFRMMAIN.LABEL11.CAPTION
+#: TFRMMAIN.LABEL12.CAPTION
+#, fuzzy
+#| msgid "Output Folder:"
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Uložit do:"
 
 #: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
 msgstr "Přednastavení:"
-
-#: TFRMMAIN.LABEL2.CAPTION
-msgid "NOTE: Currently any additional options chosen"
-msgstr "POZNÁMKA: Nejsou zadána žádná podrobná nastavení"
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -599,26 +574,48 @@ msgstr "pnlMain"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Nastavení typická pro vybrané výstupní zařízení nebo formát souboru"
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
+#, fuzzy
+#| msgid "Video"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Video"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
+#, fuzzy
+#| msgid "Audio"
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Audio"
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+#, fuzzy
+#| msgid "Crop"
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "Oříznutí"
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+#, fuzzy
+#| msgid "Time"
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr "Čas"
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
-msgid "Video"
-msgstr "Video"
+#: TFRMMAIN.TABSHEET5.CAPTION
+#, fuzzy
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+#, fuzzy
+#| msgid "Output Details"
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Nastavení konverze"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -631,21 +628,13 @@ msgstr "(<real> or <integer>) počet snímků za sekundu"
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<integer> X <integer>) Počet obrazových bodů ve snímku. Pro kodeky, které "
-"nepodporují pixel aspect ratio (PAR) je toto i rozměr snímku."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<integer> X <integer>) Počet obrazových bodů ve snímku. Pro kodeky, které nepodporují pixel aspect ratio (PAR) je toto i rozměr snímku."
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<integer> X <integer>) Počet obrazových bodů ve snímku. Pro kodeky, které "
-"nepodporují pixel aspect ratio (PAR) je toto i rozměr snímku."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<integer> X <integer>) Počet obrazových bodů ve snímku. Pro kodeky, které nepodporují pixel aspect ratio (PAR) je toto i rozměr snímku."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
@@ -907,3 +896,27 @@ msgstr "Nízká"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normální"
+
+#~ msgid " will be applied to all jobs when the conversion starts"
+#~ msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
+
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+
+#~ msgid "Select Video Files..."
+#~ msgstr "Vybrat soubory s videem..."
+
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Podrobná nastavení"
+
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "POZNÁMKA: Nejsou zadána žádná podrobná nastavení"
+
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
