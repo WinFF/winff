@@ -1,7 +1,10 @@
 del *~
 del *.o
 del *.ppu
+del *.res
 del *.rst
+del *.lrs
+del *.lps
 del *.bak
 del winff.exe
 del winff
