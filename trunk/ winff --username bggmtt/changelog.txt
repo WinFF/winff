@@ -1,6 +1,16 @@
 WinFF Copyright 2006 - 2011 Matthew Weatherford
 http://www.winff.org
 
+v1.4.0
+------
+Fix for time selection in preview and "time" tab for newer ffmpeg
+Fixes for Ubuntu screen layout - still bug with screen widths, hardcoded constraint 1600x1200 for now
+Removed tnotebook and replaced with tpagecontrol
+Fixed several preset issues
+Prepare for new functionality
+Lots of additional translations
+When reviewing the destination filename is randomly generated so that in the case of accidentaly choosing the destination directory equal to the source directory, the source file is not deleted.
+
 v1.3.2
 ------
 Fix changing last option in preset via additional options (issue 63)
