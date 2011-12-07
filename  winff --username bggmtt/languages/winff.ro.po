@@ -129,8 +129,7 @@ msgstr "O lume, numai litere și numere"
 
 #: TFRMEDITPRESETS.EDIT2.HINT
 msgid "Enter a more descriptive name for this preset"
-msgstr ""
-"Introduceți mai multe nume descriptive pentru această regulă de conversie"
+msgstr "Introduceți mai multe nume descriptive pentru această regulă de conversie"
 
 #: TFRMEDITPRESETS.EDIT3.HINT
 msgid "Please don't use -i or output file parameters"
@@ -167,9 +166,7 @@ msgstr "Etichetă regulă de conversie"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr ""
-"Parametrii liniei de comandă ai regulei de conversie (fără -i sau fișier de "
-"iesire)"
+msgstr "Parametrii liniei de comandă ai regulei de conversie (fără -i sau fișier de iesire)"
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 msgid "Output File Extension (do not include the '.' )"
@@ -208,8 +205,7 @@ msgstr "Alegeți regulile de conversie pentru exportare"
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
-"(<integer>) tintă kiloocteți/secundă pe care fluxul ar trebui să o folosească"
+msgstr "(<integer>) tintă kiloocteți/secundă pe care fluxul ar trebui să o folosească"
 
 #: TFRMMAIN.AUDCHANNELS.HINT
 msgid "(<integer>) number of audio channels"
@@ -267,12 +263,8 @@ msgid "Play"
 msgstr "Redare"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
-msgstr ""
-"Previzualizare fișier cu ffplay (test bun pentru a vedea dacă conversia este "
-"posibila)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "Previzualizare fișier cu ffplay (test bun pentru a vedea dacă conversia este posibila)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
@@ -290,11 +282,6 @@ msgstr "Eliminare"
 msgid "Remove selected file(s) from the list"
 msgstr "Îndepartare fișier(ele) selectat(e) din listă"
 
-#: TFRMMAIN.CAPTION
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr ""
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "Dispozitivul sau tipul de fișier la care videoul ar trebui convertit"
@@ -304,17 +291,18 @@ msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
 msgstr "Utilizare director sursă"
 
+#: TFRMMAIN.CBOUTPUTPATH1.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
+msgid "Use Source Folder"
+msgstr "Utilizare director sursă"
+
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
 msgstr "2 treceri"
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
-msgstr ""
-"Două treceri se permit codorului să adune informații in prima trecere pentru "
-"a consolida calitatea"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "Două treceri se permit codorului să adune informații in prima trecere pentru a consolida calitatea"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
@@ -330,26 +318,20 @@ msgid "..."
 msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr "Locația țintă pentru videoul final(alegeți un dosar diferit de dosarul sursă)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
-"Locația țintă pentru videoul final(alegeți un dosar diferit de dosarul sursă)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
-msgstr ""
-"(<integer:integer> or <real>) rația de aspect fizică (DAR) a ecranului țintă"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "(<integer:integer> or <real>) rația de aspect fizică (DAR) a ecranului țintă"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-"(<integer>)De la 10 la rate audio ca 44100, 48000. Permite "
-"\"întinderea\"/\"strânderea\" fluxului audio."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "(<integer>)De la 10 la rate audio ca 44100, 48000. Permite \"întinderea\"/\"strânderea\" fluxului audio."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -402,10 +384,13 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Se oprește la atingerea acestei lungimi"
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
-"(<integer>) 256 = Volum curent, 128 = Volum la jumătate, 512 = Volum dublu"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "(<integer>) 256 = Volum curent, 128 = Volum la jumătate, 512 = Volum dublu"
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -611,7 +596,7 @@ msgstr ""
 #: TFRMMAIN.TABSHEET5.CAPTION
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
-msgstr ""
+msgstr "FFmpeg"
 
 #: TFRMMAIN.TABSHEET6.CAPTION
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
@@ -621,8 +606,7 @@ msgstr ""
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
-"(<integer>) țintă kiloocteți/secundă pe care fluxul ar trebui să o folosească"
+msgstr "(<integer>) țintă kiloocteți/secundă pe care fluxul ar trebui să o folosească"
 
 #: TFRMMAIN.VIDFRAMERATE.HINT
 msgid "(<real> or <integer>) number of frames per second"
@@ -630,21 +614,13 @@ msgstr "(<real> or <integer>) numărul de cadre pe secundă"
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<integer> X <integer>) pixeli in fiecare cadru. Pentru codorurile care nu "
-"suportă rata de aspect (PAR), aceasta este mărimea finală a cadrului."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<integer> X <integer>) pixeli in fiecare cadru. Pentru codorurile care nu suportă rata de aspect (PAR), aceasta este mărimea finală a cadrului."
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<integer> X <integer>) pixeli in fiecare cadru. Pentru codorurile care nu "
-"suportă rata de aspect (PAR), aceasta este mărimea finală a cadrului."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<integer> X <integer>) pixeli in fiecare cadru. Pentru codorurile care nu suportă rata de aspect (PAR), aceasta este mărimea finală a cadrului."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
@@ -883,6 +859,39 @@ msgstr "Stergere regulă de conversie:"
 msgid "Update Preset:"
 msgstr "Actualizare regula de conversie:"
 
+#~ msgid " will be applied to all jobs when the conversion starts"
+#~ msgstr " va fi aplicat tuturor sarcinilor când va începe conversia"
+#~ msgid "http://ffmpeg.arrozcru.org/"
+#~ msgstr "http://ffmpeg.arrozcru.org/"
+#~ msgid "About WinFF"
+#~ msgstr "Despre WinFF"
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgid "Output Details"
+#~ msgstr "Detalii ieșire"
+#~ msgid "Output Folder:"
+#~ msgstr "Director ieșire"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Opțiuni suplimentare"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+#~ msgid "Crop"
+#~ msgstr "Decupare"
+#~ msgid "Audio"
+#~ msgstr "Sunet"
+#~ msgid "Video"
+#~ msgstr "Video"
+#~ msgid "Time"
+#~ msgstr "Timp"
+#~ msgid "Select Video Files..."
+#~ msgstr "Selectați fișiere video..."
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "NOTĂ: În prezent, orice opţiuni suplimentare alese"
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Trebuie să introduceți o extensie."
@@ -907,50 +916,3 @@ msgstr "Inactiv"
 msgid "Normal"
 msgstr "Normal"
 
-#~ msgid " will be applied to all jobs when the conversion starts"
-#~ msgstr " va fi aplicat tuturor sarcinilor când va începe conversia"
-
-#~ msgid "http://ffmpeg.arrozcru.org/"
-#~ msgstr "http://ffmpeg.arrozcru.org/"
-
-#~ msgid "About WinFF"
-#~ msgstr "Despre WinFF"
-
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgid "Output Details"
-#~ msgstr "Detalii ieșire"
-
-#~ msgid "Output Folder:"
-#~ msgstr "Director ieșire"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Opțiuni suplimentare"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
-
-#~ msgid "Crop"
-#~ msgstr "Decupare"
-
-#~ msgid "Audio"
-#~ msgstr "Sunet"
-
-#~ msgid "Video"
-#~ msgstr "Video"
-
-#~ msgid "Time"
-#~ msgstr "Timp"
-
-#~ msgid "Select Video Files..."
-#~ msgstr "Selectați fișiere video..."
-
-#~ msgid "NOTE: Currently any additional options chosen"
-#~ msgstr "NOTĂ: În prezent, orice opţiuni suplimentare alese"

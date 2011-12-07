@@ -245,6 +245,7 @@ msgstr "Изнасяне"
 msgid "Choose Presets to Export:"
 msgstr "Изберете настройки за изнасяне"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -268,7 +269,6 @@ msgstr ""
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #| msgid "Output Folder"
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
@@ -329,19 +329,17 @@ msgstr "Премахване"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr ""
+
+#: TFRMMAIN.CBOUTPUTPATH1.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
 msgid "Use Source Folder"
 msgstr ""
 
@@ -368,6 +366,10 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -431,6 +433,13 @@ msgstr ""
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
@@ -949,6 +958,59 @@ msgstr "Премахване на настройка:"
 msgid "Update Preset:"
 msgstr "Обновяване на настройка:"
 
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Допълнителни опции"
+#~ msgid "(All Categories)"
+#~ msgstr "(Вс. Категории)"
+#~ msgid "Convert To ..."
+#~ msgstr "Конвертиране към ..."
+#~ msgid "Device Preset"
+#~ msgstr "Настройки на устройство"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Относно"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Опции"
+#~ msgid "Video Settings"
+#~ msgstr "Видео настройки"
+#~ msgid "Audio Settings"
+#~ msgstr "Аудио настройки"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Отказ"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Готови настройки"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading за двуядрени процесори"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Път до FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Път до FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Конвертиране"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Запис"
+#~ msgid "Replace Preset"
+#~ msgstr "Замяна на настройка:"
+#~ msgid "AC'"
+#~ msgstr "AC"
+#~| msgid "FFmpeg"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Трябва да въведете разширение."
@@ -974,78 +1036,3 @@ msgstr "Нисък"
 msgid "Normal"
 msgstr "Нормален"
 
-#, fuzzy
-#~| msgid "WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#, fuzzy
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Допълнителни опции"
-
-#~ msgid "(All Categories)"
-#~ msgstr "(Вс. Категории)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Конвертиране към ..."
-
-#~ msgid "Device Preset"
-#~ msgstr "Настройки на устройство"
-
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Относно"
-
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Опции"
-
-#~ msgid "Video Settings"
-#~ msgstr "Видео настройки"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Аудио настройки"
-
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Отказ"
-
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Готови настройки"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading за двуядрени процесори"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Път до FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Път до FFPlay.exe"
-
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Конвертиране"
-
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Запис"
-
-#~ msgid "Replace Preset"
-#~ msgstr "Замяна на настройка:"
-
-#~ msgid "AC'"
-#~ msgstr "AC"
-
-#, fuzzy
-#~| msgid "FFmpeg"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

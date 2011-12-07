@@ -307,20 +307,17 @@ msgstr "移除"
 msgid "Remove selected file(s) from the list"
 msgstr "從清單中移除所選取的檔案"
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "要轉換到哪個裝置或檔案型態"
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr ""
+
+#: TFRMMAIN.CBOUTPUTPATH1.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
 msgid "Use Source Folder"
 msgstr ""
 
@@ -348,6 +345,10 @@ msgstr "..."
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "最終視訊的目標位置（不可與來源檔在同一路徑）"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -410,6 +411,11 @@ msgstr "轉換多久的影像後停止，格式為<時:分:秒>"
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "音量大小，數值為整數，目前音量：256，一半音量：128，雙倍音量：512"
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -590,6 +596,7 @@ msgstr "選項"
 msgid "pnlMain"
 msgstr ""
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "指定選取的裝置或檔案型態要使用的設定"
@@ -624,7 +631,6 @@ msgstr "時間"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -893,6 +899,41 @@ msgstr "移除編碼設定："
 msgid "Update Preset:"
 msgstr "更新編碼設定："
 
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "額外選項"
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "聲訊同步，數值為整數"
+#~ msgid "(All Categories)"
+#~ msgstr "所有類別"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
+#~ msgid "Audio Settings"
+#~ msgstr "聲訊設定"
+#~ msgid "Continue"
+#~ msgstr "繼續"
+#~ msgid "Convert To ..."
+#~ msgstr "匯出類別"
+#~ msgid "Device Preset"
+#~ msgstr "編碼格式"
+#~ msgid "Make sure that the start time + time to record is less than total length of job"
+#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFPlay.exe 所在目錄"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe 所在目錄"
+#~ msgid "Video Settings"
+#~ msgstr "視訊設定"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "您必須輸入副檔名。"
@@ -917,53 +958,3 @@ msgstr "閒置"
 msgid "Normal"
 msgstr "普通"
 
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "額外選項"
-
-#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
-#~ msgstr "聲訊同步，數值為整數"
-
-#~ msgid "(All Categories)"
-#~ msgstr "所有類別"
-
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
-
-#~ msgid "Audio Settings"
-#~ msgstr "聲訊設定"
-
-#~ msgid "Continue"
-#~ msgstr "繼續"
-
-#~ msgid "Convert To ..."
-#~ msgstr "匯出類別"
-
-#~ msgid "Device Preset"
-#~ msgstr "編碼格式"
-
-#~ msgid "Make sure that the start time + time to record is less than total length of job"
-#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "FFPlay.exe 所在目錄"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "FFmpeg.exe 所在目錄"
-
-#~ msgid "Video Settings"
-#~ msgstr "視訊設定"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
