@@ -246,6 +246,7 @@ msgstr "Eksport"
 msgid "Choose Presets to Export:"
 msgstr "Wybierz szablony do eksportu"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 #, fuzzy
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
@@ -273,7 +274,6 @@ msgstr "dodaj pliki do listy do konwersji"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #| msgid "Output Folder"
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
@@ -345,13 +345,6 @@ msgstr "Usuń"
 msgid "Remove selected file(s) from the list"
 msgstr "usuwa zaznaczne pliki z listy"
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #, fuzzy
 #| msgid "name of the device or file type the video should be converted to"
@@ -360,6 +353,11 @@ msgstr "nazwa docelowego urządzenia lub typ docelowego pliku wideo"
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr ""
+
+#: TFRMMAIN.CBOUTPUTPATH1.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
 msgid "Use Source Folder"
 msgstr ""
 
@@ -393,6 +391,10 @@ msgstr ""
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "miejsce docelowe skonwertowanego pliku (wybierz inny katalog niż źródłowy)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #, fuzzy
@@ -457,6 +459,13 @@ msgstr ""
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
@@ -989,6 +998,59 @@ msgstr "Usuń szablon:"
 msgid "Update Preset:"
 msgstr "Zmień szablon:"
 
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Dodatkowe opcje"
+#~ msgid "(All Categories)"
+#~ msgstr "(Wszystkie kategorie)"
+#~ msgid "Convert To ..."
+#~ msgstr "Konwertuj do..."
+#~ msgid "Device Preset"
+#~ msgstr "Szablon urządzenia"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "O programie"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opcje"
+#~ msgid "Video Settings"
+#~ msgstr "Ustawienia obrazu"
+#~ msgid "Audio Settings"
+#~ msgstr "Ustawienia dźwięku"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Anuluj"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Szablony"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Wielowątkowość dla procesora dwurdzeniowego"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Ścieżka do FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Ścieżka do FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "OK"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Konwertowanie"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Zapisz"
+#~ msgid "Replace Preset"
+#~ msgstr "Zmień szablony"
+#~ msgid "AC'"
+#~ msgstr "Kanały audio"
+#~| msgid "FFmpeg"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Podaj rozszerzenie pliku"
@@ -1014,77 +1076,3 @@ msgstr "Niski"
 msgid "Normal"
 msgstr "Normalny"
 
-#, fuzzy
-#~| msgid "WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Dodatkowe opcje"
-
-#~ msgid "(All Categories)"
-#~ msgstr "(Wszystkie kategorie)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Konwertuj do..."
-
-#~ msgid "Device Preset"
-#~ msgstr "Szablon urządzenia"
-
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "O programie"
-
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opcje"
-
-#~ msgid "Video Settings"
-#~ msgstr "Ustawienia obrazu"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Ustawienia dźwięku"
-
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Anuluj"
-
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Szablony"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Wielowątkowość dla procesora dwurdzeniowego"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Ścieżka do FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Ścieżka do FFPlay.exe"
-
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Konwertowanie"
-
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Zapisz"
-
-#~ msgid "Replace Preset"
-#~ msgstr "Zmień szablony"
-
-#~ msgid "AC'"
-#~ msgstr "Kanały audio"
-
-#, fuzzy
-#~| msgid "FFmpeg"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

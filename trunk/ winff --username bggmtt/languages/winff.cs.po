@@ -287,20 +287,17 @@ msgstr "Odebrat"
 msgid "Remove selected file(s) from the list"
 msgstr "Odebrat ze seznamu vybrané soubory"
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "Zařízení nebo formát, do kterého bude soubor konvertován"
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr "Použít zdrojovou složku"
+
+#: TFRMMAIN.CBOUTPUTPATH1.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
 msgid "Use Source Folder"
 msgstr "Použít zdrojovou složku"
 
@@ -328,6 +325,10 @@ msgstr "..."
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Složka pro uložení konvertovaného souboru (použijte jinou složku než zdrojovou)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -390,6 +391,11 @@ msgstr "<hh:mm:ss> - Maximální délka zkonvertovaného videa"
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<integer>) 256 = původní hlasitost, 128 = poloviční hlasitost, 512 = dvojnásobná hlasitost"
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -570,6 +576,7 @@ msgstr "Možnosti"
 msgid "pnlMain"
 msgstr "pnlMain"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Nastavení typická pro vybrané výstupní zařízení nebo formát souboru"
@@ -604,7 +611,6 @@ msgstr "Čas"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -873,6 +879,23 @@ msgstr "Odstranit přednastavení"
 msgid "Update Preset:"
 msgstr "Aktualizovat přednastavení"
 
+#~ msgid " will be applied to all jobs when the conversion starts"
+#~ msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgid "Select Video Files..."
+#~ msgstr "Vybrat soubory s videem..."
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Podrobná nastavení"
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "POZNÁMKA: Nejsou zadána žádná podrobná nastavení"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Musíte zadat příponu"
@@ -897,26 +920,3 @@ msgstr "Nízká"
 msgid "Normal"
 msgstr "Normální"
 
-#~ msgid " will be applied to all jobs when the conversion starts"
-#~ msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
-
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#~ msgid "Select Video Files..."
-#~ msgstr "Vybrat soubory s videem..."
-
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Podrobná nastavení"
-
-#~ msgid "NOTE: Currently any additional options chosen"
-#~ msgstr "POZNÁMKA: Nejsou zadána žádná podrobná nastavení"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

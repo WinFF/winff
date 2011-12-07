@@ -47,6 +47,7 @@ type
     btnClear: TBitBtn;
     categorybox: TComboBox;
     cbOutputPath: TCheckBox;
+    cbOutputPath1: TCheckBox;
     cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
     ChooseFolderBtn: TButton;
@@ -1304,7 +1305,7 @@ s,t,u : string;
 begin
 numfiles := high(Filenames);
 for i:= 0 to numfiles do
-   s :=filelist.items[i];
+   s :=FileNames[i]; // fix for 1.4 (was using filenames from filelistbox)
    u := s;
    t := GetFileInfo(u);
    filelist.items.Add(s);
@@ -2005,7 +2006,7 @@ begin                                     // get setup
          destfolder.text := extractfilepath(filename);
        end else
        begin
-         destfolder.text := DestinationList.Strings[i];
+         //1.5 destfolder.text := DestinationList.Strings[i];
        end;
        if RightStr(destfolder.text,1) = DirectorySeparator then // trim extra \'s
         begin

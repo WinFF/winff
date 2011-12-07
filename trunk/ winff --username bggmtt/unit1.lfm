@@ -1,13 +1,13 @@
 object frmMain: TfrmMain
-  Left = 446
+  Left = 562
   Height = 480
-  Top = 154
+  Top = 237
   Width = 640
   ActiveControl = pnlTop
   AllowDropFiles = True
   AutoSize = True
   Caption = 'WinFF'
-  ClientHeight = 456
+  ClientHeight = 460
   ClientWidth = 640
   Constraints.MaxHeight = 1200
   Constraints.MaxWidth = 1600
@@ -327,11 +327,11 @@ object frmMain: TfrmMain
   OnDropFiles = FormDropFiles
   OnResize = FormResize
   Position = poScreenCenter
-  LCLVersion = '0.9.28.2'
+  LCLVersion = '0.9.30'
   object pnlMain: TPanel
     Left = 0
     Height = 182
-    Top = 58
+    Top = 55
     Width = 640
     Align = alClient
     AutoSize = True
@@ -359,24 +359,23 @@ object frmMain: TfrmMain
       ParentShowHint = False
       ShowHint = True
       TabOrder = 0
-      TopIndex = -1
     end
   end
   object pnlTop: TPanel
     Left = 0
-    Height = 58
+    Height = 55
     Top = 0
     Width = 640
     Align = alTop
     AutoSize = True
-    ClientHeight = 58
+    ClientHeight = 55
     ClientWidth = 640
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
     object btnAdd: TBitBtn
       Left = 1
-      Height = 56
+      Height = 53
       Hint = 'Add file(s) to the list for conversion'
       Top = 1
       Width = 60
@@ -467,10 +466,10 @@ object frmMain: TfrmMain
     end
     object btnRemove: TBitBtn
       Left = 61
-      Height = 56
+      Height = 53
       Hint = 'Remove selected file(s) from the list'
       Top = 1
-      Width = 63
+      Width = 72
       Align = alLeft
       AutoSize = True
       Caption = 'Remove'
@@ -557,8 +556,8 @@ object frmMain: TfrmMain
       TabOrder = 1
     end
     object btnClear: TBitBtn
-      Left = 124
-      Height = 56
+      Left = 133
+      Height = 53
       Hint = 'Remove all files from the list'
       Top = 1
       Width = 60
@@ -648,8 +647,8 @@ object frmMain: TfrmMain
       TabOrder = 2
     end
     object btnPlay: TBitBtn
-      Left = 184
-      Height = 56
+      Left = 193
+      Height = 53
       Hint = 'Preview the selected source file with ffplay (good test to see if conversion is possible)'
       Top = 1
       Width = 60
@@ -739,11 +738,11 @@ object frmMain: TfrmMain
       TabOrder = 3
     end
     object btnConvert: TBitBtn
-      Left = 304
-      Height = 56
+      Left = 323
+      Height = 53
       Hint = 'Start the conversion process'
       Top = 1
-      Width = 62
+      Width = 69
       Align = alLeft
       AutoSize = True
       Caption = 'Convert'
@@ -830,11 +829,11 @@ object frmMain: TfrmMain
       TabOrder = 4
     end
     object btnPreview: TBitBtn
-      Left = 244
-      Height = 56
+      Left = 253
+      Height = 53
       Hint = 'Preview using the output settings'
       Top = 1
-      Width = 60
+      Width = 70
       Align = alLeft
       AutoSize = True
       Caption = 'Preview'
@@ -921,11 +920,11 @@ object frmMain: TfrmMain
       TabOrder = 5
     end
     object btnOptions: TBitBtn
-      Left = 578
-      Height = 56
+      Left = 568
+      Height = 53
       Hint = 'Open/close the additional options window'
       Top = 1
-      Width = 61
+      Width = 71
       Align = alRight
       AutoSize = True
       Caption = 'Options'
@@ -1014,12 +1013,12 @@ object frmMain: TfrmMain
   end
   object pnlAdditionalOptions: TPanel
     Left = 0
-    Height = 196
-    Top = 240
+    Height = 200
+    Top = 237
     Width = 640
     Align = alBottom
     BevelOuter = bvNone
-    ClientHeight = 196
+    ClientHeight = 200
     ClientWidth = 640
     ParentColor = False
     ParentShowHint = False
@@ -1027,7 +1026,7 @@ object frmMain: TfrmMain
     TabOrder = 2
     object pgSettings: TPageControl
       Left = 0
-      Height = 196
+      Height = 200
       Top = 0
       Width = 640
       ActivePage = TabSheet6
@@ -1036,48 +1035,48 @@ object frmMain: TfrmMain
       TabOrder = 0
       object TabSheet6: TTabSheet
         Caption = 'Output Details'
-        ClientHeight = 166
-        ClientWidth = 636
+        ClientHeight = 171
+        ClientWidth = 632
         object pnlbottom: TPanel
           Left = 0
-          Height = 166
+          Height = 171
           Top = 0
-          Width = 636
+          Width = 632
           Align = alClient
           AutoSize = True
           BevelOuter = bvNone
-          ClientHeight = 166
-          ClientWidth = 636
+          ClientHeight = 171
+          ClientWidth = 632
           ParentColor = False
           ParentShowHint = False
           ShowHint = True
           TabOrder = 0
           object Panel19: TPanel
-            Left = 493
-            Height = 166
+            Left = 490
+            Height = 171
             Top = 0
-            Width = 143
+            Width = 142
             Align = alRight
             AutoSize = True
             BevelOuter = bvNone
-            ClientHeight = 166
-            ClientWidth = 143
+            ClientHeight = 171
+            ClientWidth = 142
             TabOrder = 0
             Visible = False
             object cbOutputPath: TCheckBox
               Left = 0
-              Height = 24
+              Height = 20
               Top = 0
-              Width = 143
+              Width = 128
               Caption = 'Use Source Folder'
               OnChange = cbOutputPathChange
               TabOrder = 0
             end
             object btnApplyDestination: TButton
               Left = 0
-              Height = 29
+              Height = 26
               Top = 66
-              Width = 138
+              Width = 142
               AutoSize = True
               Caption = 'Apply Output Folder'
               OnClick = btnApplyDestinationClick
@@ -1085,9 +1084,9 @@ object frmMain: TfrmMain
             end
             object btnApplyPreset: TButton
               Left = 0
-              Height = 29
+              Height = 26
               Top = 22
-              Width = 92
+              Width = 101
               AutoSize = True
               Caption = 'Apply Preset'
               OnClick = btnApplyPresetClick
@@ -1096,31 +1095,31 @@ object frmMain: TfrmMain
           end
           object Panel17: TPanel
             Left = 0
-            Height = 166
+            Height = 171
             Top = 0
-            Width = 493
+            Width = 490
             Align = alClient
             AutoSize = True
             BevelOuter = bvNone
-            ClientHeight = 166
-            ClientWidth = 493
+            ClientHeight = 171
+            ClientWidth = 490
             TabOrder = 1
             object Panel18: TPanel
               Left = 0
-              Height = 166
+              Height = 171
               Top = 0
-              Width = 493
+              Width = 490
               Align = alClient
               AutoSize = True
               BevelOuter = bvNone
-              ClientHeight = 166
-              ClientWidth = 493
+              ClientHeight = 171
+              ClientWidth = 490
               TabOrder = 0
               object Label1: TLabel
                 Left = 13
-                Height = 18
+                Height = 17
                 Top = 5
-                Width = 467
+                Width = 464
                 Align = alTop
                 BorderSpacing.Left = 13
                 BorderSpacing.Top = 5
@@ -1130,9 +1129,9 @@ object frmMain: TfrmMain
               end
               object Label19: TLabel
                 Left = 13
-                Height = 18
-                Top = 56
-                Width = 467
+                Height = 17
+                Top = 49
+                Width = 464
                 Align = alTop
                 BorderSpacing.Left = 13
                 BorderSpacing.Top = 3
@@ -1142,13 +1141,13 @@ object frmMain: TfrmMain
               end
               object categorybox: TComboBox
                 Left = 13
-                Height = 30
+                Height = 24
                 Hint = 'Device or file type the video should be converted to'
-                Top = 23
-                Width = 480
+                Top = 22
+                Width = 477
                 Align = alTop
                 BorderSpacing.Left = 13
-                ItemHeight = 0
+                ItemHeight = 16
                 MaxLength = 65535
                 OnChange = categoryboxChange
                 Sorted = True
@@ -1157,13 +1156,13 @@ object frmMain: TfrmMain
               end
               object PresetBox: TComboBox
                 Left = 13
-                Height = 30
+                Height = 24
                 Hint = 'Specific settings to use for the chosen device or file type'
-                Top = 74
-                Width = 480
+                Top = 66
+                Width = 477
                 Align = alTop
                 BorderSpacing.Left = 13
-                ItemHeight = 0
+                ItemHeight = 16
                 MaxLength = 65535
                 OnChange = PresetBoxChange
                 Style = csDropDownList
@@ -1171,20 +1170,20 @@ object frmMain: TfrmMain
               end
               object Panel20: TPanel
                 Left = 0
-                Height = 58
-                Top = 104
-                Width = 493
+                Height = 54
+                Top = 90
+                Width = 490
                 Align = alTop
                 AutoSize = True
                 BevelOuter = bvNone
-                ClientHeight = 58
-                ClientWidth = 493
+                ClientHeight = 54
+                ClientWidth = 490
                 TabOrder = 2
                 object Label12: TLabel
                   Left = 13
-                  Height = 18
+                  Height = 17
                   Top = 3
-                  Width = 467
+                  Width = 464
                   Align = alTop
                   BorderSpacing.Left = 13
                   BorderSpacing.Top = 3
@@ -1195,10 +1194,10 @@ object frmMain: TfrmMain
                 end
                 object DestFolder: TEdit
                   Left = 13
-                  Height = 37
+                  Height = 34
                   Hint = 'Target location for the final video (choose a different folder than the source folder)'
-                  Top = 21
-                  Width = 443
+                  Top = 20
+                  Width = 426
                   Align = alClient
                   BorderSpacing.Left = 13
                   BorderSpacing.Right = 5
@@ -1206,10 +1205,10 @@ object frmMain: TfrmMain
                 end
                 object ChooseFolderBtn: TButton
                   AnchorSideLeft.Side = asrBottom
-                  Left = 461
-                  Height = 37
-                  Top = 21
-                  Width = 32
+                  Left = 444
+                  Height = 34
+                  Top = 20
+                  Width = 46
                   Align = alRight
                   AutoSize = True
                   BorderSpacing.InnerBorder = 4
@@ -1223,6 +1222,17 @@ object frmMain: TfrmMain
                   ParentFont = False
                   TabOrder = 1
                 end
+              end
+              object cbOutputPath1: TCheckBox
+                Left = 13
+                Height = 20
+                Top = 151
+                Width = 477
+                Align = alBottom
+                BorderSpacing.Left = 13
+                Caption = 'Use Source Folder'
+                OnChange = cbOutputPathChange
+                TabOrder = 3
               end
             end
           end
@@ -2108,8 +2118,8 @@ object frmMain: TfrmMain
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 20
-    Top = 436
+    Height = 23
+    Top = 437
     Width = 640
     AutoHint = True
     Panels = <>
@@ -2118,6 +2128,7 @@ object frmMain: TfrmMain
   end
   object dlgOpenFile: TOpenDialog
     Title = 'Select Video Files...'
+    Filter = 'All Files|*.*|Audio Video Interleave|*.avi|MPEG|*.mpg|MOV|*.mov|Matroska|*.mkv|DVD Vob|*.vob|MP3|*.mp3|OGG Theora|*.ogg|WEBM|*.webm'
     FilterIndex = 0
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
     left = 520
@@ -2126,8 +2137,8 @@ object frmMain: TfrmMain
   object SelectDirectoryDialog1: TSelectDirectoryDialog
     FilterIndex = 0
     OnFolderChange = SelectDirectoryDialog1FolderChange
-    left = 488
-    top = 8
+    left = 504
+    top = 168
   end
   object MainMenu1: TMainMenu
     left = 520
@@ -2204,8 +2215,8 @@ object frmMain: TfrmMain
   object dlgOpenPreset: TOpenDialog
     DefaultExt = '.wff'
     Filter = '.wff'
-    left = 448
-    top = 8
+    left = 416
+    top = 104
   end
   object PopupMenu1: TPopupMenu
     OnPopup = PopupMenu1Popup

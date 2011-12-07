@@ -177,6 +177,7 @@ msgstr "Importer"
 msgid "Category / Preset"
 msgstr "Kategori / forhåndsinnstilling"
 
+#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Navnet til forhåndsinnstillingen (ett ord, bare bokstaver og tall)"
@@ -199,11 +200,11 @@ msgid "Category"
 msgstr "Kategori"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
-#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #| msgid "Save"
 msgid "Save"
 msgstr "Lagre"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr "pnlTop"
@@ -228,7 +229,6 @@ msgid "Choose Presets to Export:"
 msgstr "Velg forhåndsinnstillinger å eksportere:"
 
 #: TFRMMAIN.AUDBITRATE.HINT
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -316,11 +316,6 @@ msgstr "Fjern"
 msgid "Remove selected file(s) from the list"
 msgstr "Fjern den velgte filen(e) fra lista"
 
-#: TFRMMAIN.CAPTION
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "Winff"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 #| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
@@ -328,6 +323,11 @@ msgstr "Navnet til enheten eller filtypen som videoen skal konverteres til"
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr "Bruk kildemappe"
+
+#: TFRMMAIN.CBOUTPUTPATH1.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
 msgid "Use Source Folder"
 msgstr "Bruk kildemappe"
 
@@ -358,6 +358,10 @@ msgstr "..."
 #| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Målet til endelig video (velg en annen mappe enn kildemappe)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 #| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
@@ -425,6 +429,11 @@ msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 #| msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<heltall>) 256 = gjeldende lydstyrke, 128 = halvt lydstyrke, 512 = doppelt lydstyrke"
+
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMMAIN.LABEL1.CAPTION
 #| msgid "Convert"
@@ -505,6 +514,7 @@ msgstr "Øvre side"
 msgid "Frame Rate"
 msgstr "Rutefrekvensen"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
 msgstr "Videobitfrekvensen"
@@ -528,7 +538,6 @@ msgid "-"
 msgstr "-"
 
 #: TFRMMAIN.MITABOUT.CAPTION
-#| msgctxt "REMOVED3"
 #| msgid "About"
 msgid "About"
 msgstr "Om WinFF"
@@ -546,6 +555,7 @@ msgstr "Dokumentasjon"
 msgid "Exit"
 msgstr "Avslutt"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITFORUMS.CAPTION
 #| msgid "WinFF Forums"
 msgid "Forums"
@@ -568,7 +578,6 @@ msgid "Preferences"
 msgstr "Brukervalg"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Presets"
 msgstr "Forhåndsinnstillinger"
@@ -582,6 +591,7 @@ msgstr "Ekstra alternativer"
 msgid "Shutdown on Finish"
 msgstr "Slutt av hvis ferdig"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
 msgstr "Detaljert visning"
@@ -603,7 +613,6 @@ msgid "Help"
 msgstr "Hjelp"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
-#| msgctxt "REMOVED6"
 #| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
@@ -622,6 +631,7 @@ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
 msgid "Video"
 msgstr "Video"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABSHEET2.CAPTION
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
@@ -648,7 +658,6 @@ msgid "Output Details"
 msgstr "Utdata detaljer"
 
 #: TFRMMAIN.VIDBITRATE.HINT
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -738,6 +747,7 @@ msgstr "\"-e\" til xterm, \"-x\" til gnome terminal"
 msgid "Default Destination Directory:"
 msgstr "Standard målmappe:"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL2.CAPTION
 #| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
@@ -768,7 +778,6 @@ msgid "Terminal to run FFmpeg in:"
 msgstr "Terminal til å kjøre FFmpeg:"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #| msgid "Additional Options"
 msgid "Terminal Options:"
 msgstr "Terminal alternativer:"
@@ -921,6 +930,17 @@ msgstr "Fjern forhåndsinnstilling:"
 msgid "Update Preset:"
 msgstr "Oppdater forhåndsinnstilling:"
 
+#~ msgid "About WinFF"
+#~ msgstr "Om WinFF"
+#~ msgid "http://ffmpeg.arrozcru.org/"
+#~ msgstr "http://ffmpeg.arrozcru.org/"
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Ekstra alternativer"
+#~ msgid "Output Details"
+#~ msgstr "Utdata detaljer"
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Du må oppgi etternavnet."
@@ -945,18 +965,3 @@ msgstr "Tomgang"
 msgid "Normal"
 msgstr "Vanlig"
 
-#~ msgid "About WinFF"
-#~ msgstr "Om WinFF"
-
-#~ msgid "http://ffmpeg.arrozcru.org/"
-#~ msgstr "http://ffmpeg.arrozcru.org/"
-
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-
-#~ msgid "Additional Options"
-#~ msgstr "Ekstra alternativer"
-
-#~ msgid "Output Details"
-#~ msgstr "Utdata detaljer"
