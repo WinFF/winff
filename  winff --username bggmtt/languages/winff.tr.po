@@ -238,13 +238,13 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Dışarı aktar"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "Dışarı aktarılacak ayarları seçin"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 #, fuzzy
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
@@ -992,10 +992,6 @@ msgstr "Etiket eşsiz olmalı."
 msgid "Remove Preset:"
 msgstr "Ayar sil:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Ayarı güncelle:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1049,6 +1045,10 @@ msgstr "Ayarı güncelle:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Ayarı güncelle:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Bir uzantı girmelisiniz"

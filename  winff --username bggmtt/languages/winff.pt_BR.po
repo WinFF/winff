@@ -588,11 +588,11 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opções"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
@@ -885,10 +885,6 @@ msgstr "O rótulo deve ser único"
 msgid "Remove Preset:"
 msgstr "Remover Pré-definição:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Atualizar Pré-definição:"
-
 #~| msgid "Select Video Files"
 #~ msgid "Select Video Files..."
 #~ msgstr "Selecionar Arquivos de Vídeo"
@@ -903,6 +899,10 @@ msgstr "Atualizar Pré-definição:"
 #~| msgid "Open/close the additional options window"
 #~ msgid "NOTE: Currently any additional options chosen"
 #~ msgstr "Abrir/fechar janela de opções adicionais"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Atualizar Pré-definição:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Você deve introduzir uma extensão"

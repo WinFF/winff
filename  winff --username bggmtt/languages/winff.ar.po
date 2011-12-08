@@ -240,13 +240,13 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "تصدير"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "اختار النسب التي تود تصديرها"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 #, fuzzy
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
@@ -994,10 +994,6 @@ msgstr "الوسم لابد أن يكون فريدا"
 msgid "Remove Preset:"
 msgstr "إزالة نسبة"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "تحديث النسبة"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1047,6 +1043,10 @@ msgstr "تحديث النسبة"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "تحديث النسبة"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "لابد من إدخال لاحقة"

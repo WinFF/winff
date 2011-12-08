@@ -855,10 +855,6 @@ msgstr "Etiketak bakarra izan behar du."
 msgid "Remove Preset:"
 msgstr "Kendu aurrezarpena:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Eguneratu aurrezarpena:"
-
 #~ msgid "http://ffmpeg.arrozcru.org/"
 #~ msgstr "http://ffmpeg.arrozcru.org/"
 #~ msgid "About WinFF"
@@ -892,6 +888,10 @@ msgstr "Eguneratu aurrezarpena:"
 #~ msgstr "Denbora"
 #~ msgid "Crop"
 #~ msgstr "Ebaki"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Eguneratu aurrezarpena:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Luzapena sartu behar duzu."

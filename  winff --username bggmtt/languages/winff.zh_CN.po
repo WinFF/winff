@@ -586,11 +586,11 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "选项(&O)"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr "面板主体"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "指定所选设备或文件类型要使用的设置"
@@ -889,10 +889,6 @@ msgstr "标签必须唯一。"
 msgid "Remove Preset:"
 msgstr "移除预设:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "更新预设:"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -904,6 +900,10 @@ msgstr "更新预设:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "更新预设:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "您必须输入扩展名。"

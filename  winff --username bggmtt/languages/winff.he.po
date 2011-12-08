@@ -244,13 +244,13 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "ייצא"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "בחר presets לייצוא"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -973,10 +973,6 @@ msgstr "התווית חייבת להיות ייחודית."
 msgid "Remove Preset:"
 msgstr "הסר preset:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "עדכן preset:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1033,6 +1029,10 @@ msgstr "עדכן preset:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "עדכן preset:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "חובה לציין את סיומת הקובץ."

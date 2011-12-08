@@ -572,11 +572,11 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Možnosti"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr "pnlMain"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Nastavení typická pro vybrané výstupní zařízení nebo formát souboru"
@@ -875,10 +875,6 @@ msgstr "Popis musí být unikátní"
 msgid "Remove Preset:"
 msgstr "Odstranit přednastavení"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Aktualizovat přednastavení"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
 #~ msgid "Ramiro Polla"
@@ -896,6 +892,10 @@ msgstr "Aktualizovat přednastavení"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Aktualizovat přednastavení"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Musíte zadat příponu"

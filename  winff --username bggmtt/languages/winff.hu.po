@@ -243,13 +243,13 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Exportálás"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "Válaszd ki a beállításokat az exportáláshoz"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -973,10 +973,6 @@ msgstr "A cimkének egyedülállónak kell lenni"
 msgid "Remove Preset:"
 msgstr "Beállítás eltávolítása:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Beállítás frissítése:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1035,6 +1031,10 @@ msgstr "Beállítás frissítése:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Beállítás frissítése:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Válaszd ki a kiterjesztést."
