@@ -235,13 +235,13 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Exporta"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "Si us plau, trieu la configuració a exportar"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 #, fuzzy
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
@@ -989,10 +989,6 @@ msgstr "L'etiqueta ha de ser única."
 msgid "Remove Preset:"
 msgstr "Esbora la configuració:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Actualitza la configuració:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1046,6 +1042,10 @@ msgstr "Actualitza la configuració:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Actualitza la configuració:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Heu d'inserir una extensió."

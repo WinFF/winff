@@ -240,12 +240,12 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Изнасяне"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 msgid "Choose Presets to Export:"
 msgstr "Изберете настройки за изнасяне"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -954,10 +954,6 @@ msgstr "Етикетът трябва да е уникален"
 msgid "Remove Preset:"
 msgstr "Премахване на настройка:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Обновяване на настройка:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1011,6 +1007,10 @@ msgstr "Обновяване на настройка:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Обновяване на настройка:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Трябва да въведете разширение."

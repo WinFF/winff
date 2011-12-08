@@ -241,12 +241,12 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Eksportuj"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 msgid "Choose Presets to Export:"
 msgstr "Molimo, selektujte preset za eksport"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -967,10 +967,6 @@ msgstr "Oznaka mora biti unikatna."
 msgid "Remove Preset:"
 msgstr "Obriši preset:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Ažuriraj preset:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1029,6 +1025,10 @@ msgstr "Ažuriraj preset:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Ažuriraj preset:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Morate uneti ekstenziju."

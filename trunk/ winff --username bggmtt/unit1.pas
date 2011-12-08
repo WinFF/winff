@@ -1069,7 +1069,7 @@ begin                                     // get setup
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
        //destfolder.text := extractfilepath(filename);
-        command := ffmpegfilename +  '  -i "' + filename + '" 2>' + presetspath + 'output.txt';
+        command := ffmpegfilename +  '  -i "' + filename + '" 2>"' + presetspath + '"output.txt'; // Francois Collard - added " around presetspath
 
         script.Add(command);
 
@@ -1307,7 +1307,7 @@ numfiles := high(Filenames);
 for i:= 0 to numfiles do
    s :=FileNames[i]; // fix for 1.4 (was using filenames from filelistbox)
    u := s;
-   t := GetFileInfo(u);
+   //t := GetFileInfo(u); // 1.4 not needed now
    filelist.items.Add(s);
    DestinationList.Add(DestFolder.text);
    CategoryList.add(categorybox.Text);

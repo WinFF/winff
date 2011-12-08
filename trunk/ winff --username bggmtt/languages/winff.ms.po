@@ -574,11 +574,11 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Pilihan"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr "pnlMain"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Nyatakan tetapan untuk digunakan bagi peranti pilihan atau jenis fail"
@@ -877,10 +877,6 @@ msgstr "Label mesti unik."
 msgid "Remove Preset:"
 msgstr "Buang Praset:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Kemaskini Praset:"
-
 #~ msgid "http://ffmpeg.arrozcru.org/"
 #~ msgstr "http://ffmpeg.arrozcru.org/"
 #~ msgid "About WinFF"
@@ -914,6 +910,10 @@ msgstr "Kemaskini Praset:"
 #~ msgstr "Pilih Fail Video..."
 #~ msgid "NOTE: Currently any additional options chosen"
 #~ msgstr "PERHATIAN: Buat masa ini sebarang pilihan tambahan dipilih"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Kemaskini Praset:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Anda mesti masuk sambungan."

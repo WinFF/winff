@@ -215,11 +215,11 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Exporteer"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 msgid "Choose Presets to Export:"
 msgstr "Selecteer voorinstelling om te exporteren:"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -585,11 +585,11 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opties"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr "pnlMain"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Specifieke instelling die gebruikt wordt voor het gekozen apparaat of bestandstype"
@@ -882,10 +882,6 @@ msgstr "Label moet uniek zijn."
 msgid "Remove Preset:"
 msgstr "Verwijder voorinstelling:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Update voorinstelling:"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr "toegepast op alle video's op het moment dat de convertie begint."
 #~ msgid "Ramiro Polla"
@@ -940,6 +936,10 @@ msgstr "Update voorinstelling:"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Update voorinstelling:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Voer een achtervoegsel in."

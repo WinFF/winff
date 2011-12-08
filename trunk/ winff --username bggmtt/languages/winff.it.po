@@ -592,11 +592,11 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opzioni"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr "pnlMain"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Settaggi specifici da usare per il dispositivo od il tipo di file scelto"
@@ -895,10 +895,6 @@ msgstr "La descrizione deve essere unica."
 msgid "Remove Preset:"
 msgstr "Elimina profilo:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Aggiorna profilo:"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~| msgid "Select Video Files"
@@ -918,6 +914,10 @@ msgstr "Aggiorna profilo:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Aggiorna profilo:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Inserire l'estensione."

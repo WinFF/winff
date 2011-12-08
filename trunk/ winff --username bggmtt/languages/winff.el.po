@@ -244,13 +244,13 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Εξαγωγή"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "Επιλογή Presets για εξαγωγή"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -974,10 +974,6 @@ msgstr "Η ετικέτα πρέπει να είναι μοναδική"
 msgid "Remove Preset:"
 msgstr "Αφαίρεση Preset"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Αναβάθμιση Preset"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1036,6 +1032,10 @@ msgstr "Αναβάθμιση Preset"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Αναβάθμιση Preset"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Πρέπει να προσθέσετε την κατάληξη"

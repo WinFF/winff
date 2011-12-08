@@ -592,11 +592,11 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "選項"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "指定選取的裝置或檔案型態要使用的設定"
@@ -895,10 +895,6 @@ msgstr "已有同名標籤。"
 msgid "Remove Preset:"
 msgstr "移除編碼設定："
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "更新編碼設定："
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -934,6 +930,10 @@ msgstr "更新編碼設定："
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "更新編碼設定："
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "您必須輸入副檔名。"

@@ -173,11 +173,11 @@ msgstr "Eksporter"
 msgid "Import"
 msgstr "Importer"
 
+#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.LABEL1.CAPTION
 msgid "Category / Preset"
 msgstr "Kategori / forhåndsinnstilling"
 
-#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Navnet til forhåndsinnstillingen (ett ord, bare bokstaver og tall)"
@@ -199,12 +199,12 @@ msgstr "Etternavn til utdatafil (ingen \".\")"
 msgid "Category"
 msgstr "Kategori"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.OKBTN.CAPTION
 #| msgid "Save"
 msgid "Save"
 msgstr "Lagre"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr "pnlTop"
@@ -510,11 +510,11 @@ msgstr "Høyre"
 msgid "Top"
 msgstr "Øvre side"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
 msgstr "Rutefrekvensen"
 
-#| msgctxt "REMOVED3"
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
 msgstr "Videobitfrekvensen"
@@ -551,11 +551,11 @@ msgstr "Vis kommandolinje"
 msgid "Documentation"
 msgstr "Dokumentasjon"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITEXIT.CAPTION
 msgid "Exit"
 msgstr "Avslutt"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITFORUMS.CAPTION
 #| msgid "WinFF Forums"
 msgid "Forums"
@@ -587,11 +587,11 @@ msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
 msgstr "Ekstra alternativer"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
 msgstr "Slutt av hvis ferdig"
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
 msgstr "Detaljert visning"
@@ -626,12 +626,12 @@ msgstr "pnlMain"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Bestemte innstillinger å bruke med den valgte enheten eller filtypen"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABSHEET1.CAPTION
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
 msgid "Video"
 msgstr "Video"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABSHEET2.CAPTION
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
@@ -742,12 +742,12 @@ msgstr "Bruk forskjellige koderingstråder:"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "\"-e\" til xterm, \"-x\" til gnome terminal"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL1.CAPTION
 #| msgid "Default Destination Directory"
 msgid "Default Destination Directory:"
 msgstr "Standard målmappe:"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL2.CAPTION
 #| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
@@ -926,10 +926,6 @@ msgstr "Merkelappet må være entydig."
 msgid "Remove Preset:"
 msgstr "Fjern forhåndsinnstilling:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Oppdater forhåndsinnstilling:"
-
 #~ msgid "About WinFF"
 #~ msgstr "Om WinFF"
 #~ msgid "http://ffmpeg.arrozcru.org/"
@@ -941,6 +937,10 @@ msgstr "Oppdater forhåndsinnstilling:"
 #~ msgstr "Ekstra alternativer"
 #~ msgid "Output Details"
 #~ msgstr "Utdata detaljer"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Oppdater forhåndsinnstilling:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Du må oppgi etternavnet."

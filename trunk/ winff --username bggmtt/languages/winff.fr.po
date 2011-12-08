@@ -591,11 +591,11 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Options"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr "pnlMain"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Paramètres spécifiques à utiliser pour le périphérique choisi ou le type de fichier"
@@ -894,10 +894,6 @@ msgstr "Le label doit être unique."
 msgid "Remove Preset:"
 msgstr "Supprimer préréglage :"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Actualiser le préréglage :"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~| msgid "Select Video Files"
@@ -917,6 +913,10 @@ msgstr "Actualiser le préréglage :"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Actualiser le préréglage :"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Vous devez spécifier l'extension."

@@ -613,11 +613,11 @@ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Možnosti"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
 msgstr ""
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
@@ -920,10 +920,6 @@ msgstr "Oznaka mora biti enkratna."
 msgid "Remove Preset:"
 msgstr "Odstrani prednastavitev:"
 
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Posodobi prednastavitev:"
-
 #~| msgid "Select Video Files"
 #~ msgid "Select Video Files..."
 #~ msgstr "Izberite video datoteke"
@@ -938,6 +934,10 @@ msgstr "Posodobi prednastavitev:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Posodobi prednastavitev:"
+
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
 msgstr "Vnesti morate končnico."
