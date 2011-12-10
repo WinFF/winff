@@ -69,7 +69,7 @@ object frmAbout: TfrmAbout
         Height = 16
         Top = 10
         Width = 61
-        Caption = 'WinFF 1.3.2'
+        Caption = 'WinFF %s'
         ParentColor = False
         OnClick = Label1Click
       end
@@ -163,7 +163,7 @@ object frmAbout: TfrmAbout
         Height = 16
         Top = 64
         Width = 150
-        Caption = 'Copyright 2006-2009 GPL V3'
+        Caption = 'Copyright %s ; Licence: GPL V3+'
         ParentColor = False
       end
       object Label3: TLabel
@@ -195,7 +195,9 @@ object frmAbout: TfrmAbout
         Top = 114
         Width = 221
         Caption = 'Debian/Ubuntu Packaging by Paul Gevers'
+        Font.Color = clBlue
         ParentColor = False
+        OnClick = Label11Click
       end
       object Label13: TLabel
         Left = 4
@@ -262,7 +264,6 @@ object frmAbout: TfrmAbout
         Width = 103
         Caption = 'http://ffmpeg.org'
         Font.Color = clBlue
-        Font.Height = -13
         ParentColor = False
         ParentFont = False
         OnClick = Label7Click
@@ -289,7 +290,7 @@ object frmAbout: TfrmAbout
         Height = 16
         Top = 114
         Width = 154
-        Caption = 'http://hawkeye.arrozcru.org/'
+        Caption = 'http://ffmpeg.zeranoe.com'
         Font.Color = clBlue
         ParentColor = False
         ParentFont = False

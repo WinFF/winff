@@ -59,6 +59,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Label10Click(Sender: TObject);
+    procedure Label11Click(Sender: TObject);
     procedure Label12Click(Sender: TObject);
     procedure Label13Click(Sender: TObject);
     procedure Label1Click(Sender: TObject);
@@ -118,14 +119,20 @@ begin
     listbox1.items.add('大宝(DaBao)');
     listbox1.items.add('Alexey Osipov');
 
-
+    frmAbout.Label1.Caption := StringReplace(frmAbout.Label1.Caption, '%s', '1.4.0',[]);
+    frmAbout.Label2.Caption := StringReplace(frmAbout.Label2.Caption, '%s', '2006-2011',[]);
 
 end;
 
 
 procedure TfrmAbout.Label10Click(Sender: TObject);
 begin
-  frmMain.LaunchBrowser('http://ffmpeg.arrozcru.org/');
+  frmMain.LaunchBrowser('http://ffmpeg.zeranoe.com/');
+end;
+
+procedure TfrmAbout.Label11Click(Sender: TObject);
+begin
+  frmMain.LaunchBrowser('https://launchpad.net/~paul-climbing/+archive/ppa/');
 end;
 
 procedure TfrmAbout.Label12Click(Sender: TObject);
