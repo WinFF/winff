@@ -47,6 +47,7 @@ type
     btnClear: TBitBtn;
     categorybox: TComboBox;
     cbOutputPath: TCheckBox;
+    cbOutputPath1: TCheckBox;
     cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
     ChooseFolderBtn: TButton;
@@ -1068,7 +1069,7 @@ begin                                     // get setup
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
        //destfolder.text := extractfilepath(filename);
-        command := ffmpegfilename +  '  -i "' + filename + '" 2>' + presetspath + 'output.txt';
+        command := ffmpegfilename +  '  -i "' + filename + '" 2>"' + presetspath + '"output.txt'; // Francois Collard - added " around presetspath
 
         script.Add(command);
 
@@ -1304,9 +1305,9 @@ s,t,u : string;
 begin
 numfiles := high(Filenames);
 for i:= 0 to numfiles do
-   s :=filelist.items[i];
+   s :=FileNames[i]; // fix for 1.4 (was using filenames from filelistbox)
    u := s;
-   t := GetFileInfo(u);
+   //t := GetFileInfo(u); // 1.4 not needed now
    filelist.items.Add(s);
    DestinationList.Add(DestFolder.text);
    CategoryList.add(categorybox.Text);
@@ -2005,7 +2006,7 @@ begin                                     // get setup
          destfolder.text := extractfilepath(filename);
        end else
        begin
-         destfolder.text := DestinationList.Strings[i];
+         //1.5 destfolder.text := DestinationList.Strings[i];
        end;
        if RightStr(destfolder.text,1) = DirectorySeparator then // trim extra \'s
         begin

@@ -1224,6 +1224,17 @@ object frmMain: TfrmMain
                   TabOrder = 1
                 end
               end
+              object cbOutputPath1: TCheckBox
+                Left = 13
+                Height = 20
+                Top = 151
+                Width = 477
+                Align = alBottom
+                BorderSpacing.Left = 13
+                Caption = 'Use Source Folder'
+                OnChange = cbOutputPathChange
+                TabOrder = 3
+              end
             end
           end
         end
@@ -2118,6 +2129,7 @@ object frmMain: TfrmMain
   end
   object dlgOpenFile: TOpenDialog
     Title = 'Select Video Files...'
+    Filter = 'All Files|*.*|Audio Video Interleave|*.avi|MPEG|*.mpg|MOV|*.mov|Matroska|*.mkv|DVD Vob|*.vob|MP3|*.mp3|OGG Theora|*.ogg|WEBM|*.webm'
     FilterIndex = 0
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
     left = 520
