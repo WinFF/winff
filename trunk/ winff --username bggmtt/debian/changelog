@@ -1,3 +1,14 @@
+winff (1.4.0-2) unstable; urgency=low
+
+  * Add patch to prevent Lazarus from updating translation files on
+    local use for ease of debugging 
+  * Add patches and improved upstream commits 584 and 585
+    - Fix drag and drop bug (Upstream: #139, 142)
+    - Selection menu adds video extensions (Upstream: #140)
+    - Updated about window
+
+ -- Paul Gevers <paul@climbing.nl>  Sun, 11 Dec 2011 17:01:17 +0100
+
 winff (1.4.0-1) unstable; urgency=low
 
   * Imported Upstream version 1.4.0
