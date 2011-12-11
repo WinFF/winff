@@ -1,0 +1,89 @@
+Description: The about window was not updated in the last
+ winff version.
+Origin: upstream, http://code.google.com/p/winff/source/detail?r=585
+Author: Paul Gevers <paul@climbing.nl>
+
+Index: winff-git/unit3.lfm
+===================================================================
+--- winff-git.orig/unit3.lfm	2011-12-10 20:38:19.753632678 +0100
++++ winff-git/unit3.lfm	2011-12-10 20:41:14.594499732 +0100
+@@ -69,7 +69,7 @@
+         Height = 16
+         Top = 10
+         Width = 61
+-        Caption = 'WinFF 1.3.2'
++        Caption = 'WinFF %s'
+         ParentColor = False
+         OnClick = Label1Click
+       end
+@@ -163,7 +163,7 @@
+         Height = 16
+         Top = 64
+         Width = 150
+-        Caption = 'Copyright 2006-2009 GPL V3'
++        Caption = 'Copyright %s ; Licence: GPL V3+'
+         ParentColor = False
+       end
+       object Label3: TLabel
+@@ -195,7 +195,9 @@
+         Top = 114
+         Width = 221
+         Caption = 'Debian/Ubuntu Packaging by Paul Gevers'
++        Font.Color = clBlue
+         ParentColor = False
++        OnClick = Label11Click
+       end
+       object Label13: TLabel
+         Left = 4
+@@ -262,7 +264,6 @@
+         Width = 103
+         Caption = 'http://ffmpeg.org'
+         Font.Color = clBlue
+-        Font.Height = -13
+         ParentColor = False
+         ParentFont = False
+         OnClick = Label7Click
+@@ -289,7 +290,7 @@
+         Height = 16
+         Top = 114
+         Width = 154
+-        Caption = 'http://hawkeye.arrozcru.org/'
++        Caption = 'http://ffmpeg.zeranoe.com'
+         Font.Color = clBlue
+         ParentColor = False
+         ParentFont = False
+Index: winff-git/unit3.pas
+===================================================================
+--- winff-git.orig/unit3.pas	2011-12-10 20:38:19.753632678 +0100
++++ winff-git/unit3.pas	2011-12-10 20:41:14.598499750 +0100
+@@ -59,6 +59,7 @@
+     procedure Button1Click(Sender: TObject);
+     procedure FormCreate(Sender: TObject);
+     procedure Label10Click(Sender: TObject);
++    procedure Label11Click(Sender: TObject);
+     procedure Label12Click(Sender: TObject);
+     procedure Label13Click(Sender: TObject);
+     procedure Label1Click(Sender: TObject);
+@@ -118,14 +119,20 @@
+     listbox1.items.add('大宝(DaBao)');
+     listbox1.items.add('Alexey Osipov');
+ 
+-
++    frmAbout.Label1.Caption := StringReplace(frmAbout.Label1.Caption, '%s', '1.4.0',[]);
++    frmAbout.Label2.Caption := StringReplace(frmAbout.Label2.Caption, '%s', '2006-2011',[]);
+ 
+ end;
+ 
+ 
+ procedure TfrmAbout.Label10Click(Sender: TObject);
+ begin
+-  frmMain.LaunchBrowser('http://ffmpeg.arrozcru.org/');
++  frmMain.LaunchBrowser('http://ffmpeg.zeranoe.com/');
++end;
++
++procedure TfrmAbout.Label11Click(Sender: TObject);
++begin
++  frmMain.LaunchBrowser('https://launchpad.net/~paul-climbing/+archive/ppa/');
+ end;
+ 
+ procedure TfrmAbout.Label12Click(Sender: TObject);
