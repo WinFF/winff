@@ -1,0 +1,17 @@
+Description: Prevent update of translations when using Lazarus in local
+ directory. This eases debugging locally.
+Author: Paul Gevers <paul@climbing.nl>
+
+diff --git a/winff.lpi b/winff.lpi
+index 1d3c012..d3c29e7 100644
+--- a/winff.lpi
++++ b/winff.lpi
+@@ -13,7 +13,7 @@
+       <UseXPManifest Value="True"/>
+     </General>
+     <i18n>
+-      <EnableI18N Value="True"/>
++      <EnableI18N Value="True" LFM="False"/>
+       <OutDir Value="languages"/>
+     </i18n>
+     <VersionInfo>
