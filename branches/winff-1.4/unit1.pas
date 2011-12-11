@@ -47,7 +47,6 @@ type
     btnClear: TBitBtn;
     categorybox: TComboBox;
     cbOutputPath: TCheckBox;
-    cbOutputPath1: TCheckBox;
     cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
     ChooseFolderBtn: TButton;
