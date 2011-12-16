@@ -255,6 +255,7 @@ msgstr "(<integer>) número de canles de son"
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<integer>) frecuencia de mostraxe do son en Hertz"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "Engadir"
@@ -267,7 +268,6 @@ msgstr "Engadir ficheiro(s) á lista de conversión"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #| msgid "Output Folder"
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
@@ -1001,6 +1001,59 @@ msgstr "Debe introducir unha etiqueta"
 msgid "You must enter a name."
 msgstr "Debe introducir un nome"
 
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Opcións adicionais"
+#~ msgid "(All Categories)"
+#~ msgstr "(Todas as categorias)"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "<hh:mm:ss> - Comezar a gravar en tempo de inicio"
+#~ msgid "Make sure that the start time + time to record is less than total length of job"
+#~ msgstr "Asegurar que o tempo de inicio + tempo de gravación é máis pequeno que o da lonxitude total de traballo"
+#~ msgid "Convert To ..."
+#~ msgstr "Converter en..."
+#~ msgid "Device Preset"
+#~ msgstr "Dispositivo preconfigurado"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Acerca de"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Opcións"
+#~ msgid "Video Settings"
+#~ msgstr "Axustes de vídeo"
+#~ msgid "Audio Settings"
+#~ msgstr "Axustes de son"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Preconfiguración"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multifío para procesadores con 2 núcleos"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Ruta a FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Ruta a FFPlay.exe"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Aceptar"
+#~ msgid "Continue"
+#~ msgstr "Continuar"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Gardar"
+#~ msgid "Replace Preset"
+#~ msgstr "Substituir preconfiguración"
+#~| msgid "FFmpeg"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"
@@ -1010,81 +1063,7 @@ msgid "Idle"
 msgstr "Inactiva"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Normal"
 
-#, fuzzy
-#~| msgid "WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Opcións adicionais"
-
-#~ msgid "(All Categories)"
-#~ msgstr "(Todas as categorias)"
-
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "<hh:mm:ss> - Comezar a gravar en tempo de inicio"
-
-#~ msgid "Make sure that the start time + time to record is less than total length of job"
-#~ msgstr "Asegurar que o tempo de inicio + tempo de gravación é máis pequeno que o da lonxitude total de traballo"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Converter en..."
-
-#~ msgid "Device Preset"
-#~ msgstr "Dispositivo preconfigurado"
-
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Acerca de"
-
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opcións"
-
-#~ msgid "Video Settings"
-#~ msgstr "Axustes de vídeo"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Axustes de son"
-
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Preconfiguración"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multifío para procesadores con 2 núcleos"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Ruta a FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Ruta a FFPlay.exe"
-
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "Aceptar"
-
-#~ msgid "Continue"
-#~ msgstr "Continuar"
-
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Gardar"
-
-#~ msgid "Replace Preset"
-#~ msgstr "Substituir preconfiguración"
-
-#, fuzzy
-#~| msgid "FFmpeg"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

@@ -270,12 +270,8 @@ msgid "Play"
 msgstr "Main"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
-msgstr ""
-"Pratonton fail sumber pilihan dengan ffplay (uji untuk lihat jika penukaran "
-"boleh dilakukan)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "Pratonton fail sumber pilihan dengan ffplay (uji untuk lihat jika penukaran boleh dilakukan)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
@@ -312,12 +308,8 @@ msgid "2 pass"
 msgstr "2 laluan"
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
-msgstr ""
-"Menggunakan dua laluan untuk membenarkan pengekod mengumpul maklumat dalam  "
-"jalanan pertama untuk tingkatkan kualiti"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "Menggunakan dua laluan untuk membenarkan pengekod mengumpul maklumat dalam  jalanan pertama untuk tingkatkan kualiti"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
@@ -333,28 +325,16 @@ msgid "..."
 msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
-msgstr ""
-"Lokasi sasaran untuk video akhir (pilih folder berbeza berbanding folder "
-"sumber)"
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr "Lokasi sasaran untuk video akhir (pilih folder berbeza berbanding folder sumber)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
-msgstr ""
-"(<integer:integer> atau <real>) nisbah bidang fizikal (DAR) bagi paparan "
-"sasaran"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "(<integer:integer> atau <real>) nisbah bidang fizikal (DAR) bagi paparan sasaran"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-"(<integer>) Dari 10 sehingga kadar persampelan audio seperti 44100, 48000. "
-"Benarkan strim audio \"stretch\"/\"squeeze\"."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "(<integer>) Dari 10 sehingga kadar persampelan audio seperti 44100, 48000. Benarkan strim audio \"stretch\"/\"squeeze\"."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -407,10 +387,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Henti selep-as video ini ditukarkan"
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
-"(<integer>) 256 = Volum Semasa, 128 = Separa Volum, 512 = Volum Berganda"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "(<integer>) 256 = Volum Semasa, 128 = Separa Volum, 512 = Volum Berganda"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -593,8 +571,7 @@ msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
-msgstr ""
-"Nyatakan tetapan untuk digunakan bagi peranti pilihan atau jenis fail"
+msgstr "Nyatakan tetapan untuk digunakan bagi peranti pilihan atau jenis fail"
 
 #: TFRMMAIN.TABSHEET1.CAPTION
 #, fuzzy
@@ -610,6 +587,7 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Audio"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
 #| msgid "Crop"
@@ -626,7 +604,6 @@ msgstr "Masa"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -650,23 +627,13 @@ msgstr "(<real> atau <integer>) bilangan bingkai sesaat"
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<integer> X <integer>) Bilangan piksel setiap bingkai. Untuk kodeks yang "
-"tidak menyokong nisbah bidang piksel (PAR) ini merupakan saiz bingkai "
-"terakhir."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<integer> X <integer>) Bilangan piksel setiap bingkai. Untuk kodeks yang tidak menyokong nisbah bidang piksel (PAR) ini merupakan saiz bingkai terakhir."
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<integer> X <integer>) Bilangan piksel setiap bingkai. untuk kodeks yang "
-"tidak menyokong nisbah bidang piksel (PAR) ini merupakan saiz bingkai "
-"terakhir."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<integer> X <integer>) Bilangan piksel setiap bingkai. untuk kodeks yang tidak menyokong nisbah bidang piksel (PAR) ini merupakan saiz bingkai terakhir."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
@@ -917,6 +884,39 @@ msgstr "Anda mesti masukkan label."
 msgid "You must enter a name."
 msgstr "Anda mesti masukkan nama."
 
+#~ msgid "http://ffmpeg.arrozcru.org/"
+#~ msgstr "http://ffmpeg.arrozcru.org/"
+#~ msgid "About WinFF"
+#~ msgstr "Perihal WinFF"
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgid "Output Details"
+#~ msgstr "Perincian Output"
+#~ msgid "Output Folder:"
+#~ msgstr "Folder Output:"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Pilihan Tambahan"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+#~ msgid "Audio"
+#~ msgstr "Audio"
+#~ msgid "Video"
+#~ msgstr "Video"
+#~ msgid "Time"
+#~ msgstr "Masa"
+#~ msgid "Crop"
+#~ msgstr "Potong"
+#~ msgid " will be applied to all jobs when the conversion starts"
+#~ msgstr " akan dilaksanakan kepada semua kerja bila penukaran bermula"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgid "Select Video Files..."
+#~ msgstr "Pilih Fail Video..."
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "PERHATIAN: Buat masa ini sebarang pilihan tambahan dipilih"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Tinggi"
@@ -929,50 +929,3 @@ msgstr "Melahu"
 msgid "Normal"
 msgstr "Biasa"
 
-#~ msgid "http://ffmpeg.arrozcru.org/"
-#~ msgstr "http://ffmpeg.arrozcru.org/"
-
-#~ msgid "About WinFF"
-#~ msgstr "Perihal WinFF"
-
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#~ msgid "Output Details"
-#~ msgstr "Perincian Output"
-
-#~ msgid "Output Folder:"
-#~ msgstr "Folder Output:"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Pilihan Tambahan"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
-
-#~ msgid "Audio"
-#~ msgstr "Audio"
-
-#~ msgid "Video"
-#~ msgstr "Video"
-
-#~ msgid "Time"
-#~ msgstr "Masa"
-
-#~ msgid "Crop"
-#~ msgstr "Potong"
-
-#~ msgid " will be applied to all jobs when the conversion starts"
-#~ msgstr " akan dilaksanakan kepada semua kerja bila penukaran bermula"
-
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgid "Select Video Files..."
-#~ msgstr "Pilih Fail Video..."
-
-#~ msgid "NOTE: Currently any additional options chosen"
-#~ msgstr "PERHATIAN: Buat masa ini sebarang pilihan tambahan dipilih"

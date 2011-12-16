@@ -279,6 +279,7 @@ msgstr "Náhled"
 msgid "Preview using the output settings"
 msgstr "Přehrát výsledek konverze"
 
+#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "Odebrat"
@@ -289,7 +290,6 @@ msgstr "Odebrat ze seznamu vybrané soubory"
 
 #: TFRMMAIN.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
@@ -588,6 +588,7 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Audio"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
 #| msgid "Crop"
@@ -604,7 +605,6 @@ msgstr "Čas"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -885,6 +885,23 @@ msgstr "Musíte zadat výstižný popis"
 msgid "You must enter a name."
 msgstr "Musíte zadat název"
 
+#~ msgid " will be applied to all jobs when the conversion starts"
+#~ msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgid "Select Video Files..."
+#~ msgstr "Vybrat soubory s videem..."
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Podrobná nastavení"
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "POZNÁMKA: Nejsou zadána žádná podrobná nastavení"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Vysoká"
@@ -897,26 +914,3 @@ msgstr "Nízká"
 msgid "Normal"
 msgstr "Normální"
 
-#~ msgid " will be applied to all jobs when the conversion starts"
-#~ msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
-
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#~ msgid "Select Video Files..."
-#~ msgstr "Vybrat soubory s videem..."
-
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Podrobná nastavení"
-
-#~ msgid "NOTE: Currently any additional options chosen"
-#~ msgstr "POZNÁMKA: Nejsou zadána žádná podrobná nastavení"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

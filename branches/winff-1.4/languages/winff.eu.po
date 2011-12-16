@@ -166,8 +166,7 @@ msgstr "Aurrezarpenaren etiketa"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr ""
-"Aurrezarpenaren komando lerroko parametroak (ez -i edo irteera-fitxategia)"
+msgstr "Aurrezarpenaren komando lerroko parametroak (ez -i edo irteera-fitxategia)"
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 msgid "Output File Extension (do not include the '.' )"
@@ -206,8 +205,7 @@ msgstr "Aukeratu aurrezarpenak esportatzeko:"
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
-"(<zenbaki osoa>) korronteak erabili behar lituzkeen kilobit/segundoak"
+msgstr "(<zenbaki osoa>) korronteak erabili behar lituzkeen kilobit/segundoak"
 
 #: TFRMMAIN.AUDCHANNELS.HINT
 msgid "(<integer>) number of audio channels"
@@ -265,12 +263,8 @@ msgid "Play"
 msgstr "Erreproduzitu"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
-msgstr ""
-"Aurreikusi hautatutako iturburu fitxategia ffplay-rekin (bihurketa posible "
-"den ikusteko test egokia da)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "Aurreikusi hautatutako iturburu fitxategia ffplay-rekin (bihurketa posible den ikusteko test egokia da)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
@@ -291,7 +285,7 @@ msgstr "Kendu hautatutako fitxategia(k) zerrendatik"
 #: TFRMMAIN.CAPTION
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
-msgstr ""
+msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
@@ -307,12 +301,8 @@ msgid "2 pass"
 msgstr "2 pasaldi"
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
-msgstr ""
-"Bi pasaldi erabiltzen direnean kalitatea hobetzen da, kodetzaileak lehen "
-"pasaldian informazioa biltzeko aukera duelako"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "Bi pasaldi erabiltzen direnean kalitatea hobetzen da, kodetzaileak lehen pasaldian informazioa biltzeko aukera duelako"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
@@ -328,28 +318,16 @@ msgid "..."
 msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
-msgstr ""
-"Bukaerako bideoarentzako helburuko kokalekua (aukeratu iturburuko karpeta ez "
-"den bat)"
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr "Bukaerako bideoarentzako helburuko kokalekua (aukeratu iturburuko karpeta ez den bat)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
-msgstr ""
-"(<zenbaki osoa:zenbaki osoa> edo <zenbaki erreala>) helburuko pantailaren "
-"zabalera/altuera erlazioa (DAR)"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "(<zenbaki osoa:zenbaki osoa> edo <zenbaki erreala>) helburuko pantailaren zabalera/altuera erlazioa (DAR)"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-"(<zenbaki osoa>) 10etik hasi eta 44100 edo 48000 bezalako audio lagintze-"
-"maiztasunetarainokoa. Audio-korronteak \"luzatzea\"/\"estutzea\" onartzen du."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "(<zenbaki osoa>) 10etik hasi eta 44100 edo 48000 bezalako audio lagintze-maiztasunetarainokoa. Audio-korronteak \"luzatzea\"/\"estutzea\" onartzen du."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -402,10 +380,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Gelditu bideo kopuru hau bihurtu denean"
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
-"(<integer>) 256 = Uneko bolumena, 128 = Bolumen erdia, 512 = Bolumen bikoitza"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "(<integer>) 256 = Uneko bolumena, 128 = Bolumen erdia, 512 = Bolumen bikoitza"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -586,9 +562,7 @@ msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
-msgstr ""
-"Aukeratutako gailu edo fitxategi motarentzat erabili beharreko ezarpen "
-"zehatzak"
+msgstr "Aukeratutako gailu edo fitxategi motarentzat erabili beharreko ezarpen zehatzak"
 
 #: TFRMMAIN.TABSHEET1.CAPTION
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
@@ -613,7 +587,7 @@ msgstr ""
 #: TFRMMAIN.TABSHEET5.CAPTION
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
-msgstr ""
+msgstr "FFmpeg"
 
 #: TFRMMAIN.TABSHEET6.CAPTION
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
@@ -623,8 +597,7 @@ msgstr ""
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
-"(<zenbaki osoa>) korronteak erabili behar lituzkeen kilobit/segundoak"
+msgstr "(<zenbaki osoa>) korronteak erabili behar lituzkeen kilobit/segundoak"
 
 #: TFRMMAIN.VIDFRAMERATE.HINT
 msgid "(<real> or <integer>) number of frames per second"
@@ -632,23 +605,13 @@ msgstr "(<zenbaki erreala> edo <zenbaki osoa>) fotogramak segundoko"
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. "
-"Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten "
-"kodetzaile/deskodetzaileen kasuan hau da amaierako fotograma tamaina."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten kodetzaile/deskodetzaileen kasuan hau da amaierako fotograma tamaina."
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. "
-"Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten "
-"kodetzaile/deskodetzaileen kasuan hau da amaierako fotograma tamaina."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten kodetzaile/deskodetzaileen kasuan hau da amaierako fotograma tamaina."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
@@ -899,6 +862,39 @@ msgstr "Etiketa bat sartu behar duzu."
 msgid "You must enter a name."
 msgstr "Izen bat sartu behar duzu."
 
+#~ msgid "http://ffmpeg.arrozcru.org/"
+#~ msgstr "http://ffmpeg.arrozcru.org/"
+#~ msgid "About WinFF"
+#~ msgstr "WinFF-ri buruz"
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgid "Select Video Files..."
+#~ msgstr "Hautatu bideo fitxategiak..."
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Aukera gehigarriak"
+#~ msgid "Output Details"
+#~ msgstr "Irteeraren xehetasunak"
+#~ msgid "Output Folder:"
+#~ msgstr "Irteerako karpeta:"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+#~ msgid "Audio"
+#~ msgstr "Audioa"
+#~ msgid "Video"
+#~ msgstr "Bideoa"
+#~ msgid " will be applied to all jobs when the conversion starts"
+#~ msgstr " bihurketa hasten denean lan guztiei aplikatuko zaie"
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "OHARRA: Une honetan ez dago aukera gehigarririk hautatuta"
+#~ msgid "Time"
+#~ msgstr "Denbora"
+#~ msgid "Crop"
+#~ msgstr "Ebaki"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Altua"
@@ -911,50 +907,3 @@ msgstr "Inaktiboa"
 msgid "Normal"
 msgstr "Normala"
 
-#~ msgid "http://ffmpeg.arrozcru.org/"
-#~ msgstr "http://ffmpeg.arrozcru.org/"
-
-#~ msgid "About WinFF"
-#~ msgstr "WinFF-ri buruz"
-
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#~ msgid "Select Video Files..."
-#~ msgstr "Hautatu bideo fitxategiak..."
-
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Aukera gehigarriak"
-
-#~ msgid "Output Details"
-#~ msgstr "Irteeraren xehetasunak"
-
-#~ msgid "Output Folder:"
-#~ msgstr "Irteerako karpeta:"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
-
-#~ msgid "Audio"
-#~ msgstr "Audioa"
-
-#~ msgid "Video"
-#~ msgstr "Bideoa"
-
-#~ msgid " will be applied to all jobs when the conversion starts"
-#~ msgstr " bihurketa hasten denean lan guztiei aplikatuko zaie"
-
-#~ msgid "NOTE: Currently any additional options chosen"
-#~ msgstr "OHARRA: Une honetan ez dago aukera gehigarririk hautatuta"
-
-#~ msgid "Time"
-#~ msgstr "Denbora"
-
-#~ msgid "Crop"
-#~ msgstr "Ebaki"
