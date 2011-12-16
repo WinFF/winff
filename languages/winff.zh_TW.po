@@ -299,6 +299,7 @@ msgstr "預覽"
 msgid "Preview using the output settings"
 msgstr "使用輸出設定來預覽"
 
+#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "移除"
@@ -309,7 +310,6 @@ msgstr "從清單中移除所選取的檔案"
 
 #: TFRMMAIN.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
@@ -608,6 +608,7 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "音效"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
 #| msgid "Crop"
@@ -624,7 +625,6 @@ msgstr "時間"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -905,6 +905,41 @@ msgstr "您必須輸入標籤。"
 msgid "You must enter a name."
 msgstr "您必須輸入名稱。"
 
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "額外選項"
+#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
+#~ msgstr "聲訊同步，數值為整數"
+#~ msgid "(All Categories)"
+#~ msgstr "所有類別"
+#~ msgid "<hh:mm:ss> - Begin recording at start time"
+#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
+#~ msgid "Audio Settings"
+#~ msgstr "聲訊設定"
+#~ msgid "Continue"
+#~ msgstr "繼續"
+#~ msgid "Convert To ..."
+#~ msgstr "匯出類別"
+#~ msgid "Device Preset"
+#~ msgstr "編碼格式"
+#~ msgid "Make sure that the start time + time to record is less than total length of job"
+#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFPlay.exe 所在目錄"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe 所在目錄"
+#~ msgid "Video Settings"
+#~ msgstr "視訊設定"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "高"
@@ -917,53 +952,3 @@ msgstr "閒置"
 msgid "Normal"
 msgstr "普通"
 
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "額外選項"
-
-#~ msgid "(<integer>) Audio Sync = DON\"T KNOW THE HINT TEXT!"
-#~ msgstr "聲訊同步，數值為整數"
-
-#~ msgid "(All Categories)"
-#~ msgstr "所有類別"
-
-#~ msgid "<hh:mm:ss> - Begin recording at start time"
-#~ msgstr "區段轉換的開始時間，格式為：小時 : 分鐘 : 秒"
-
-#~ msgid "Audio Settings"
-#~ msgstr "聲訊設定"
-
-#~ msgid "Continue"
-#~ msgstr "繼續"
-
-#~ msgid "Convert To ..."
-#~ msgstr "匯出類別"
-
-#~ msgid "Device Preset"
-#~ msgstr "編碼格式"
-
-#~ msgid "Make sure that the start time + time to record is less than total length of job"
-#~ msgstr "請確保 區段轉換起始時間 + 區段轉換時長 不超過媒體檔案的總時長"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "啟用多重執行緒（僅適用於多核 CPU）"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "FFPlay.exe 所在目錄"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "FFmpeg.exe 所在目錄"
-
-#~ msgid "Video Settings"
-#~ msgstr "視訊設定"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

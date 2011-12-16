@@ -604,6 +604,7 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Audio"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
 #| msgid "Crop"
@@ -620,7 +621,6 @@ msgstr "Temps"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -901,6 +901,25 @@ msgstr "Vous devez spécifier un label."
 msgid "You must enter a name."
 msgstr "Vous devez spécifier un nom."
 
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~| msgid "Select Video Files"
+#~ msgid "Select Video Files..."
+#~ msgstr "Sélectionner des fichiers vidéos"
+#~| msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Paramètres supplémentaires"
+#~| msgid "Open/close the additional options window"
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "Ouvrir/fermer la fenêtre d'options supplémentaires"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Haute"
@@ -910,33 +929,7 @@ msgid "Idle"
 msgstr "Faible"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Normale"
 
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#, fuzzy
-#~| msgid "Select Video Files"
-#~ msgid "Select Video Files..."
-#~ msgstr "Sélectionner des fichiers vidéos"
-
-#, fuzzy
-#~| msgctxt "TFRMABOUT.PAGE1.CAPTION"
-#~| msgid "WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Paramètres supplémentaires"
-
-#, fuzzy
-#~| msgid "Open/close the additional options window"
-#~ msgid "NOTE: Currently any additional options chosen"
-#~ msgstr "Ouvrir/fermer la fenêtre d'options supplémentaires"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

@@ -275,6 +275,7 @@ msgstr "Предпросмотр"
 msgid "Preview using the output settings"
 msgstr "Предварительный просмотр результата"
 
+#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "Удалить"
@@ -285,7 +286,6 @@ msgstr "Удалить выбранные файлы из списка"
 
 #: TFRMMAIN.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
@@ -587,6 +587,7 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Аудио"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
 #| msgid "Crop"
@@ -603,7 +604,6 @@ msgstr "Время"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -888,6 +888,15 @@ msgstr "Необходимо ввести описание."
 msgid "You must enter a name."
 msgstr "Необходимо ввести имя."
 
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Дополнительные параметры"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Высокий"
@@ -900,14 +909,3 @@ msgstr "Низкий"
 msgid "Normal"
 msgstr "Нормальный"
 
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Дополнительные параметры"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

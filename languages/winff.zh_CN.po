@@ -293,6 +293,7 @@ msgstr "预览"
 msgid "Preview using the output settings"
 msgstr "使用输出设置预览"
 
+#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "移除"
@@ -303,7 +304,6 @@ msgstr "从列表中移除所选文件"
 
 #: TFRMMAIN.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
@@ -602,6 +602,7 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "音频"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
 #| msgid "Crop"
@@ -618,7 +619,6 @@ msgstr "时间"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -899,6 +899,17 @@ msgstr "您必须输入标签。"
 msgid "You must enter a name."
 msgstr "您必须输入名称。"
 
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "其他选项"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "高"
@@ -911,17 +922,3 @@ msgstr "空闲"
 msgid "Normal"
 msgstr "普通"
 
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "其他选项"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

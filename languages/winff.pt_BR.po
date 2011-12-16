@@ -577,7 +577,7 @@ msgstr "Ajuda"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Opções"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -599,6 +599,7 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr ""
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
@@ -611,7 +612,6 @@ msgstr ""
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -646,42 +646,42 @@ msgstr ""
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON4.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON5.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON6.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON7.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON8.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
@@ -758,7 +758,7 @@ msgstr ""
 #: TFRMSCRIPT.BTNCLOSE.CAPTION
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
-msgstr ""
+msgstr "Fechar"
 
 #: TFRMSCRIPT.BTNRUN.CAPTION
 msgid "Run!"
@@ -892,6 +892,20 @@ msgstr "Você deve introduzir um rótulo"
 msgid "You must enter a name."
 msgstr "Você deve introduzir um nome"
 
+#~| msgid "Select Video Files"
+#~ msgid "Select Video Files..."
+#~ msgstr "Selecionar Arquivos de Vídeo"
+#~| msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Opções adicionais"
+#~| msgid "Open/close the additional options window"
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "Abrir/fechar janela de opções adicionais"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"
@@ -901,26 +915,7 @@ msgid "Idle"
 msgstr "Baixa"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Normal"
 
-#, fuzzy
-#~| msgid "Select Video Files"
-#~ msgid "Select Video Files..."
-#~ msgstr "Selecionar Arquivos de Vídeo"
-
-#, fuzzy
-#~| msgctxt "TFRMABOUT.PAGE1.CAPTION"
-#~| msgid "WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Opções adicionais"
-
-#, fuzzy
-#~| msgid "Open/close the additional options window"
-#~ msgid "NOTE: Currently any additional options chosen"
-#~ msgstr "Abrir/fechar janela de opções adicionais"

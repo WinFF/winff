@@ -605,6 +605,7 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Audio"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
 #| msgid "Crop"
@@ -621,7 +622,6 @@ msgstr "Tempo"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -902,6 +902,25 @@ msgstr "Inserire la descrizione."
 msgid "You must enter a name."
 msgstr "Inserire il nome."
 
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~| msgid "Select Video Files"
+#~ msgid "Select Video Files..."
+#~ msgstr "Selezionare file video"
+#~| msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Opzioni avanzate"
+#~| msgid "Open/close the additional options window"
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "Apri/chiudi la finestra con le opzioni aggiuntive"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"
@@ -911,33 +930,7 @@ msgid "Idle"
 msgstr "In attesa"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Normale"
 
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-
-#, fuzzy
-#~| msgid "Select Video Files"
-#~ msgid "Select Video Files..."
-#~ msgstr "Selezionare file video"
-
-#, fuzzy
-#~| msgctxt "TFRMABOUT.PAGE1.CAPTION"
-#~| msgid "WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Opzioni avanzate"
-
-#, fuzzy
-#~| msgid "Open/close the additional options window"
-#~ msgid "NOTE: Currently any additional options chosen"
-#~ msgstr "Apri/chiudi la finestra con le opzioni aggiuntive"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"

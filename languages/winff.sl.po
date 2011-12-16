@@ -306,6 +306,7 @@ msgstr ""
 msgid "Preview using the output settings"
 msgstr ""
 
+#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "Odstrani"
@@ -316,7 +317,6 @@ msgstr ""
 
 #: TFRMMAIN.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
@@ -627,6 +627,7 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr ""
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
@@ -639,7 +640,6 @@ msgstr ""
 
 #: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -674,7 +674,7 @@ msgstr ""
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "V redu"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
@@ -930,6 +930,20 @@ msgstr "Vnesti morate oznako."
 msgid "You must enter a name."
 msgstr "Vnesti morate ime."
 
+#~| msgid "Select Video Files"
+#~ msgid "Select Video Files..."
+#~ msgstr "Izberite video datoteke"
+#~| msgid "About WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "O programu WinFF"
+#~| msgid "Additional Options"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Dodatne možnosti"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "visoka"
@@ -939,26 +953,7 @@ msgid "Idle"
 msgstr "nedejavno"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "običajna"
 
-#, fuzzy
-#~| msgid "Select Video Files"
-#~ msgid "Select Video Files..."
-#~ msgstr "Izberite video datoteke"
-
-#, fuzzy
-#~| msgid "About WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "O programu WinFF"
-
-#, fuzzy
-#~| msgid "Additional Options"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Dodatne možnosti"
-
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
