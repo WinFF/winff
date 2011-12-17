@@ -1305,6 +1305,7 @@ s,t,u : string;
 begin
 numfiles := high(Filenames);
 for i:= 0 to numfiles do
+begin
    s :=FileNames[i]; // fix for 1.4 (was using filenames from filelistbox)
    u := s;
    //t := GetFileInfo(u); // 1.4 not needed now
@@ -1314,6 +1315,7 @@ for i:= 0 to numfiles do
    PresetList.add(PresetBox.Text);
    JobList.add(t);
    FileInfoList.add(u);
+end;
 end;
 
 // add files to the list
