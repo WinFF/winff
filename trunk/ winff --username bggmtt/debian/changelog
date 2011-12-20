@@ -1,3 +1,9 @@
+winff (1.4.0-3) unstable; urgency=low
+
+  * Add upstream patch to allow multiple files to be drag-n-dropped
+
+ -- Paul Gevers <paul@climbing.nl>  Sat, 17 Dec 2011 14:10:49 +0100
+
 winff (1.4.0-2) unstable; urgency=low
 
   * Add patch to prevent Lazarus from updating translation files on
