@@ -3,13 +3,13 @@
 
 = Introduction =
 
-Debian testing has the latest version of Winff. For stable this won't happen until squeeze. So until then (and after that for faster updates) Debian packages build for Ubuntu are available at [http://winff.org winff.org] and at my [https://launchpad.net/~paul-climbing/+archive Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
+Winff is included in Debian. Just search for it in your favorite package manager and install from there. ONLY if you want faster update or newer versions, you can install any of the packages available at [http://winff.org/] and at my [https://launchpad.net/~paul-climbing/+archive/ppa Personal Package Archive (PPA)] provided by [http://launchpad.net Launchpad].
 
 Also a fuller featured ffmpeg is available via [http://www.debian-multimedia.org/].
 
 = Details Winff =
 
-If you are running the stable version of Debian you can easily install WinFF by using our Ubuntu repositories. The repositories come in two flavors. We provide our repository at [http://winff.org] or you can use the repository at [https://launchpad.net/~paul-climbing/+archive Launchpad].
+If you are running the stable version of Debian you can easily install WinFF by using our Ubuntu repositories. The repositories come in two flavors. We provide our repository at [http://winff.org] or you can use the repository at [https://launchpad.net/~paul-climbing/+archive Launchpad]. We prefer the later.
 
 If you use the winff repository you need to accept the key [http://winff.org/ubuntu/AAFE086A.gpg AAFE086A]. To get that installed you can run:
 
@@ -19,7 +19,7 @@ wget --quiet --output-document=- "http://winff.org/ubuntu/AAFE086A.gpg" | sudo a
 
 After that you need to add the repository to apt. You can do that by entering the line (1) in /etc/apt/sources.list.d/winff.list. You will have to create that file, which can be done with the following command:
 {{{
-echo "deb http://winff.org/ubuntu hardy universe" | sudo tee /etc/apt/sources.list.d/winff.list
+echo "deb http://winff.org/ubuntu lucid universe" | sudo tee /etc/apt/sources.list.d/winff.list
 }}}
 You can also just add the line to /etc/apt/sources.list .
 
@@ -45,9 +45,9 @@ sudo apt-get update && sudo apt-get install winff
 }}}
 ----
 
-(1) `deb http://winff.org/ubuntu hardy universe`
-_(or if you prefer the PPA:)_ 
-`deb http://ppa.launchpad.net/paul-climbing/ubuntu hardy main`
+(1) `deb http://winff.org/ubuntu lucid universe`
+_(or if you use the PPA:)_ 
+`deb http://ppa.launchpad.net/paul-climbing/ubuntu lucid main`
 
 (2) for instance `sudo apt-get update` or while in synaptic pressing "Reload"
 
@@ -64,14 +64,6 @@ Because of legal and copyright issues not all codec are standard available in ff
 
   * Then add the debian-multimedia repository to your sources, either in /etc/apt/sources.list or /etc/apt/sources.list.d/debian-multimedia:
   {{{
-  deb http://www.debian-multimedia.org etch main
-  }}}
-  or
-  {{{
-  deb ftp://ftp.debian-multimedia.org etch main
-  }}}
-  or
-  {{{
   deb http://www.debian-multimedia.org stable main
   }}}
   or
@@ -81,4 +73,4 @@ Because of legal and copyright issues not all codec are standard available in ff
 
 Now you are ready to install the debian-multimedia version of ffmpeg.
 
-Beware, because the debian-multimedia version of ffmpeg is usually newer, the presets that come with winff might not always work. Please take a look at the [http://www.biggmatt.com/forums/index.php?board=3.0 forum].
+Beware, because the debian-multimedia version of ffmpeg is usually newer, the presets that come with winff might not always work.
