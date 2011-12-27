@@ -4,14 +4,14 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.3.2
+AppVerName=WinFF 1.4.0
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.3.2
+VersionInfoVersion=1.4.0
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
@@ -106,6 +106,16 @@ Source: "languages\winff.sv.po"; DestDir: "{app}\languages"; Flags: ignoreversio
 Source: "languages\winff.zh_CN.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.ar.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.gl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.cs.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.eu.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.kn.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.ms.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.pt_BR.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.ro.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.sv.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.zh_TW.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.zh.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
