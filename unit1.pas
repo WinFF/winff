@@ -230,6 +230,7 @@ type
     procedure importpresetfromfile(presetfilename: string);
     function GetappdataPath() : string ;
     function replaceparam(commandline:string;param:string;replacement:string):string;
+    function replaceVfParam(commandline:string;param:string;replacement:string):string;
     procedure VidbitrateChange(Sender: TObject);
     function GetFileInfo(var filedetails : string) : string;
     {$IFDEF WIN32}function GetWin32System(): Integer;{$endif}
@@ -808,54 +809,42 @@ end;
 
 // cropbootom change
 procedure TfrmMain.edtCropBottomChange(Sender: TObject);
-var
-i:integer;
 begin
  try
- i:=strtoint(edtcropbottom.text);
+   edtcropbottom.text := IntToStr(StrToInt(edtcropbottom.text));
  except
- edtcropbottom.text:='0';
+   edtcropbottom.text:='0';
  end;
- i:=i;
 end;
 
 // cropleft change
 procedure TfrmMain.edtCropLeftChange(Sender: TObject);
-var
-i:integer;
 begin
  try
- i:=strtoint(edtcropleft.text);
+   edtcropleft.text := IntToStr(StrToInt(edtcropleft.text));
  except
- edtcropleft.text:='0';
+   edtcropleft.text:='0';
  end;
- i:=i;
 end;
 
 // cropright change
 procedure TfrmMain.edtCropRightChange(Sender: TObject);
-var
-i:integer;
 begin
  try
- i:=strtoint(edtcropright.text);
+   edtcropright.text := IntToStr(StrToInt(edtcropright.text));
  except
- edtcropright.text:='0';
+   edtcropright.text:='0';
  end;
- i:=i;
 end;
 
 // croptop change
 procedure TfrmMain.edtCropTopChange(Sender: TObject);
-var
-i:integer;
 begin
  try
- i:=strtoint(edtcroptop.text);
+   edtcroptop.text := IntToStr(StrToInt(edtcroptop.Text));
  except
- edtcroptop.text:='0';
+   edtcroptop.text:='0';
  end;
- i:=i;
 end;
 
 procedure TfrmMain.edtSeekMMChange(Sender: TObject);
@@ -1740,7 +1729,7 @@ procedure TfrmMain.btnConvertClick(Sender: TObject);
 var
 i,j : integer;
 cb,ct,cl,cr:integer;
-pn, extension, params, commandline, precommand, command, filename,batfile, passlogfile, basename:string;
+pn, extension, params, commandline, cropline, precommand, command, filename,batfile, passlogfile, basename:string;
 qterm, ffmpegfilename,ffplayfilename, usethreads, numthreads, deinterlace, nullfile, titlestring, priority:string;
 script: tstringlist;
 thetime: tdatetime;
@@ -1900,22 +1889,24 @@ begin                                     // get setup
        // Paul
        if (edtCropTop.Text <> '0') OR (edtCropBottom.Text <> '0') OR (edtCropLeft.Text <> '0') OR (edtCropRight.Text <> '0') then
          begin
-              commandline += ' -vf crop=' ;
-              commandline += 'iw-' + edtCropLeft.Text + '-' + edtCropRight.Text + ':' ;
-              commandline += 'ih-' + edtCropTop.Text + '-' + edtCropBottom.Text + ':' ;
-              commandline += edtCropLeft.Text + ':' ;
-              commandline += edtCropTop.Text ;
+              cropline := 'crop=' ;
+              cropline += 'iw-' + edtCropLeft.Text + '-' + edtCropRight.Text + ':' ;
+              cropline += 'ih-' + edtCropTop.Text + '-' + edtCropBottom.Text + ':' ;
+              cropline += edtCropLeft.Text + ':' ;
+              cropline += edtCropTop.Text ;
+              commandline := replaceVfParam(commandline, 'crop', cropline);
          end;
 
 
 
        if (VidsizeX.Text <>'') AND (VidsizeY.Text <>'') then
        begin
-            // 1.2
-            //commandline:=replaceparam(commandline,'-s','-s ' + VidsizeX.Text + 'x' + VidsizeY.Text);
-            //1.3
+            //1.2 Inline replacement
+            //1.3 Moved to the end of the line to allow cropping to happen on the input stream. Issue 77
+            //1.4 As per libavcodec soname 53 in order to do the cropping before the scaling, we need to scale
+            //    in the video flags. Issue 146.
             commandline:=replaceparam(commandline,'-s','');
-            commandline += ' -s ' + VidsizeX.Text + 'x' + VidsizeY.Text + ' ';
+            commandline := replaceVfParam(commandline, 'scale', 'scale=' + VidsizeX.Text + ':' + VidsizeY.Text);
 
        end;
 
@@ -2151,6 +2142,35 @@ begin
      commandline+= ' ' + replacement;
      result:=commandline;
 end;
+
+   // replace a parameter in the video filter list of the commandline
+function TfrmMain.replaceVfParam(commandline:string; param:string; replacement:string):string;
+var
+startPos, endPos, startSub, endSub, strlen: integer ;
+paramString: string ;
+
+  begin
+   startpos := Pos(' -vf ', commandline) + 5;
+   if startpos <> 5 then
+     begin
+       strlen := Length(commandline) ;
+       endpos := startpos + Pos(' -', Copy(commandline, startpos, strlen)) - 2 ; // strlen as count is exaggerated, but works
+       if endpos = startpos - 2 then endpos :=  strlen ;
+       paramString := Copy(commandline, startpos, endpos - startpos + 1) ;
+       startSub := Pos(param + '=', paramString) ;
+       if startSub <> 0 then
+         begin
+           endSub := startSub + Pos(',', Copy(paramString, startSub, strlen)) - 2 ; // strlen as count is exaggerated, but works
+           if endSub = startSub - 2 then endSub :=  Length(paramString) ;
+           commandline := Copy(commandline, 1, startpos - 1 + startSub - 1) + replacement + Copy(commandline, startpos + endSub, strlen) ;
+         end
+       else
+         commandline := Copy(commandline, 1, endpos) + ',' + replacement + Copy(commandline, endpos + 1, strlen) ;
+     end
+   else
+       commandline += ' -vf ' + replacement;
+   result := commandline;
+  end;
 
 procedure TfrmMain.VidbitrateChange(Sender: TObject);
 begin
