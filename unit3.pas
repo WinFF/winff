@@ -119,7 +119,7 @@ begin
     listbox1.items.add('大宝(DaBao)');
     listbox1.items.add('Alexey Osipov');
 
-    frmAbout.Label1.Caption := StringReplace(frmAbout.Label1.Caption, '%s', '1.4.0',[]);
+    frmAbout.Label1.Caption := StringReplace(frmAbout.Label1.Caption, '%s', '1.4.1',[]);
     frmAbout.Label2.Caption := StringReplace(frmAbout.Label2.Caption, '%s', '2006-2011',[]);
 
 end;

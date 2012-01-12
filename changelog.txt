@@ -1,6 +1,14 @@
 WinFF Copyright 2006 - 2011 Matthew Weatherford
 http://www.winff.org
 
+v1.4.1
+------
+Fixed several preset issues
+Fix issue 146 where cropping was performed on the output stream size instead of the input stream size
+Updated several translations
+Drag and drop multiple files only showed the first file. Thanks Francois Collard
+Improve file selection by possibly filtering specific extensions
+
 v1.4.0
 ------
 Fix for time selection in preview and "time" tab for newer ffmpeg
