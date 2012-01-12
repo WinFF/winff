@@ -1,3 +1,17 @@
+winff (1.4.1-1) unstable; urgency=low
+
+  * Import upstream version 1.4.1
+  * Remove all patches, now applied upsteam
+  * Update d/presets.xml and d/presets-libavcodec53.xml with upstream
+    changes
+  * Update d/control to depend on libav-tools as (near future)
+    replacement for ffmpeg
+  * Add patch to remove win32 as target OS to allow building
+  * Add patch to prevent unnecessary linking against libraries
+  * Add patch to allow the debugging symbols to be generated
+
+ -- Paul Gevers <paul@climbing.nl>  Thu, 12 Jan 2012 21:42:51 +0100
+
 winff (1.4.0-3) unstable; urgency=low
 
   * Add upstream patch to allow multiple files to be drag-n-dropped

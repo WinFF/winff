@@ -14,7 +14,7 @@ Vcs-Svn: http://winff.googlecode.com/svn/trunk/%20winff%20--username%20bggmtt/de
 
 Package: winff
 Architecture: any
-Depends: ffmpeg,
+Depends: libav-tools | ffmpeg,
 	 xterm | x-terminal-emulator,
 	 ${shlibs:Depends},
 	 ${misc:Depends},
