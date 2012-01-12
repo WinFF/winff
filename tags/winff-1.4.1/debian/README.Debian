@@ -1,0 +1,17 @@
+Not all the original presets that come with WinFF work with the Debian
+or Ubuntu version of ffmpeg. Therefore, a filtered version is provided
+by default. The original presets are still provided in 
+/usr/share/winff/presets-orig.xml and can be loaded into the program.
+
+For Ubuntu users, in order to use all the formats in the current
+presets, you need to have libavcodec-extra-## installed.
+
+If you use an unofficial version of ffmpeg you might want the extended
+set of presets. For you convenience other versions of the presets are
+provided in /usr/share/winff/ and should replace or be merged with your
+~/.winff/presets.xml (and /usr/share/winff/presets.xml for system wide
+update). Unfortunately the API of ffmpeg changes once in a while, so
+you will have to check which version of libavcodec you have. The other
+presets files are named after the supported libavcodec.
+
+ -- Paul Gevers <paul@climbing.nl>, Wed,  3 Nov 2010 20:39:24 +0100
