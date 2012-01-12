@@ -1,0 +1,18 @@
+Description: Default building of winff pulls unnecessary dependencies in on
+ libcairo.so.2; libgmodule-2.0.so.0; libatk-1.0.so.0
+ This patch prevents the linker from doing that by setting the as-needed flag.
+Author: Paul Gevers <paul@climbing.nl>
+
+Index: winff-git/winff.lpi
+===================================================================
+--- winff-git.orig/winff.lpi	2012-01-12 20:54:42.414297003 +0100
++++ winff-git/winff.lpi	2012-01-12 20:56:52.674942935 +0100
+@@ -117,6 +117,8 @@
+       </Debugging>
+       <LinkSmart Value="True"/>
+       <Options>
++        <PassLinkerOptions Value="True"/>
++        <LinkerOptions Value="--as-needed"/>
+         <Win32>
+           <GraphicApplication Value="True"/>
+         </Win32>

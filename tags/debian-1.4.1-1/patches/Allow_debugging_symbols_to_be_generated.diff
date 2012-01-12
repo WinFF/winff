@@ -1,0 +1,16 @@
+Description: Current upstream winff.lpi prevents the debugging symbols to
+ be generated.
+Author: Paul Gevers <paul@climbing.nl>
+
+Index: winff-git/winff.lpi
+===================================================================
+--- winff-git.orig/winff.lpi	2012-01-12 21:39:47.175709201 +0100
++++ winff-git/winff.lpi	2012-01-12 21:40:17.131857734 +0100
+@@ -113,6 +113,7 @@
+     </Parsing>
+     <Linking>
+       <Debugging>
++        <GenerateDebugInfo Value="True"/>
+         <UseLineInfoUnit Value="False"/>
+       </Debugging>
+       <LinkSmart Value="True"/>
