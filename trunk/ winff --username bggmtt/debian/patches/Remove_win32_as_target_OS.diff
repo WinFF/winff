@@ -1,0 +1,19 @@
+Description: Upstream added win32 as target OS which causes the build to
+ fail on other OS's
+Author: Paul Gevers <paul@climbing.nl>
+
+Index: winff-git/winff.lpi
+===================================================================
+--- winff-git.orig/winff.lpi	2012-01-12 20:50:35.981075017 +0100
++++ winff-git/winff.lpi	2012-01-12 20:51:05.993223838 +0100
+@@ -111,10 +111,6 @@
+         <UseAnsiStrings Value="False"/>
+       </SyntaxOptions>
+     </Parsing>
+-    <CodeGeneration>
+-      <TargetCPU Value="i386"/>
+-      <TargetOS Value="win32"/>
+-    </CodeGeneration>
+     <Linking>
+       <Debugging>
+         <UseLineInfoUnit Value="False"/>

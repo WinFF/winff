@@ -4,3 +4,6 @@
 
 # abort if you have upstream changes not managed by an existing patch in debian/patches
 abort-on-upstream-changes
+
+# Make sure that debian tree stays in sync with the upstream tree by not applying patches in git
+unapply-patches
