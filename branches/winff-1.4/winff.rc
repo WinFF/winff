@@ -1,6 +1,6 @@
 1 VERSIONINFO
-FILEVERSION 1,4,0,0
-PRODUCTVERSION 1,4,0,0
+FILEVERSION 1,4,1,0
+PRODUCTVERSION 1,4,1,0
 {
  BLOCK "StringFileInfo"
  {
@@ -9,13 +9,13 @@ PRODUCTVERSION 1,4,0,0
    VALUE "Comments", "WinFF Video Converter\000"
    VALUE "CompanyName", "WinFF.org\000"
    VALUE "FileDescription", "WinFF Video Converter\000"
-   VALUE "FileVersion", "1.4.0.0\000"
+   VALUE "FileVersion", "1.4.1.0\000"
    VALUE "InternalName", "winff\000"
    VALUE "LegalCopyright", "Copyright 2011, GPL v3 by Matthew Weatherford\000"
    VALUE "LegalTrademarks", "\000"
    VALUE "OriginalFilename", "winff.exe\000"
    VALUE "ProductName", "WinFF\000"
-   VALUE "ProductVersion", "1.4.0.0\000"
+   VALUE "ProductVersion", "1.4.1.0\000"
   }
  }
  BLOCK "VarFileInfo"

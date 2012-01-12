@@ -4,7 +4,7 @@
 # upload to the download section of googlecode.
 
 # Created by Paul Gevers <paul@climbing.nl> (30 Aug 2009)
-# Updated 14 Feb 2011
+# Updated 11 Jan 2012
 # Copyright 2011 by Matthew Weatherford <matt@biggmatt.com>
 
 VERSION=`grep FILEVERSION winff.rc | sed "{ s/FILEVERSION // ; s/,/./g }"`
@@ -12,7 +12,7 @@ VERSION=${VERSION%.0*}
 
 SVN="/usr/bin/svn"
 TAR="/bin/tar"
-REPOSITORY="http://winff.googlecode.com/svn/trunk/%20winff%20--username%20bggmtt"
+REPOSITORY="http://winff.googlecode.com/svn/branches/winff-1.4"
 TMPDIR=`/bin/mktemp -d -t winff.XXXXXX` || exit 1
 
 cd $TMPDIR
