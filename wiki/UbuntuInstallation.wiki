@@ -36,7 +36,7 @@ sudo apt-get install winff
 
 Step 4 (optional): Install the unstripped version of ffmpeg:
 {{{
-sudo apt-get install libavcodec-extra-52 
+sudo apt-get install libavcodec-extra-53
 }}}
 
 = Warning non standard ffmpeg =
@@ -50,4 +50,4 @@ In order to use an other presets file than supplied with the package you might n
 
 For a fuller ffmpeg than the standard on in your flavor of Ubuntu I refer to the excellent guide in the Ubuntu-forums: http://ubuntuforums.org/showthread.php?t=1117283 If you want to compile your own ffmpeg (it is not so hard) you can follow the instructions here: http://ubuntuforums.org/showthread.php?t=786095
 
-Ubuntu contains a pretty complete ffmpeg already, but you probably want to have the 'unstripped' versions of several libraries. You can install them directly: libavcodec-extra-52, libavutil-extra-49 and libavformat-extra-52 from the multiverse repository. For AAC support you should install the [http://www.medibuntu.org/ Medibuntu] version of ffmpeg, (see the [https://help.ubuntu.com/community/Medibuntu Medibuntu wiki]). The full explanation is available at [https://help.ubuntu.com/community/Medibuntu].
+Ubuntu contains a pretty complete ffmpeg already, but you probably want to have the 'unstripped' versions of several libraries. You can install them directly: libavcodec-extra-53, libavutil-extra-51 and libavformat-extra-53 from the multiverse repository. For AAC support you should install the [http://www.medibuntu.org/ Medibuntu] version of ffmpeg, (see the [https://help.ubuntu.com/community/Medibuntu Medibuntu wiki]). The full explanation is available at [https://help.ubuntu.com/community/Medibuntu].
