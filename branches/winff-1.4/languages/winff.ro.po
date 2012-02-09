@@ -842,26 +842,6 @@ msgstr "Importare reguli de conversie"
 msgid "Label must be unique."
 msgstr "Eticheta trebuie să fie unică."
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Stergere regulă de conversie:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Actualizare regula de conversie:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Trebuie să introduceți o extensie."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Trebuie să introduceți o etichetă."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Trebuie să introduceți un nume."
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr " va fi aplicat tuturor sarcinilor când va începe conversia"
 #~ msgid "http://ffmpeg.arrozcru.org/"
@@ -895,6 +875,26 @@ msgstr "Trebuie să introduceți un nume."
 #~ msgstr "Selectați fișiere video..."
 #~ msgid "NOTE: Currently any additional options chosen"
 #~ msgstr "NOTĂ: În prezent, orice opţiuni suplimentare alese"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Stergere regulă de conversie:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Actualizare regula de conversie:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Trebuie să introduceți o extensie."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Trebuie să introduceți o etichetă."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Trebuie să introduceți un nume."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Maximă"

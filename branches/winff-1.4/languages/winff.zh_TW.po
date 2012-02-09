@@ -279,6 +279,7 @@ msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "選項"
 
+#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
 msgstr "開啟或關閉額外選項視窗"
@@ -299,7 +300,6 @@ msgstr "預覽"
 msgid "Preview using the output settings"
 msgstr "使用輸出設定來預覽"
 
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "移除"
@@ -581,6 +581,7 @@ msgstr "檔案"
 msgid "Help"
 msgstr "輔助說明"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
@@ -608,7 +609,6 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "音效"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
 #| msgid "Crop"
@@ -885,26 +885,6 @@ msgstr "匯入編碼設定"
 msgid "Label must be unique."
 msgstr "已有同名標籤。"
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "移除編碼設定："
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "更新編碼設定："
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "您必須輸入副檔名。"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "您必須輸入標籤。"
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "您必須輸入名稱。"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -940,6 +920,26 @@ msgstr "您必須輸入名稱。"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "移除編碼設定："
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "更新編碼設定："
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "您必須輸入副檔名。"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "您必須輸入標籤。"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "您必須輸入名稱。"
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "高"

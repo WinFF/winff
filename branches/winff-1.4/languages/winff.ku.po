@@ -236,6 +236,7 @@ msgstr "Betal"
 msgid "Export Presets"
 msgstr "Pêşmîheng derxe"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 #| msgid "Export"
@@ -262,7 +263,6 @@ msgstr ""
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "Têxe"
@@ -960,26 +960,6 @@ msgstr "Pêşmîheng têxe"
 msgid "Label must be unique."
 msgstr "Divê label yekta be."
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Pêşmîheng rake:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Pêşmîheng rojaneke:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Divê tu cureyeke pelê binivîsî."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Divê label binivîsî"
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Divê tu navek binivîsî"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1038,6 +1018,26 @@ msgstr "Divê tu navek binivîsî"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Pêşmîheng rake:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Pêşmîheng rojaneke:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Divê tu cureyeke pelê binivîsî."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Divê label binivîsî"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Divê tu navek binivîsî"
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Bilind"

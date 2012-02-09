@@ -237,6 +237,7 @@ msgstr "ביטול"
 msgid "Export Presets"
 msgstr "ייצא Presets"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 #| msgid "Export"
@@ -263,7 +264,6 @@ msgstr ""
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "הוסף"
@@ -960,26 +960,6 @@ msgstr "ייבוא Presets"
 msgid "Label must be unique."
 msgstr "התווית חייבת להיות ייחודית."
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "הסר preset:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "עדכן preset:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "חובה לציין את סיומת הקובץ."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "חובה לציין תווית."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "חובה לציין שם."
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1036,6 +1016,26 @@ msgstr "חובה לציין שם."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "הסר preset:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "עדכן preset:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "חובה לציין את סיומת הקובץ."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "חובה לציין תווית."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "חובה לציין שם."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "גבוהה"

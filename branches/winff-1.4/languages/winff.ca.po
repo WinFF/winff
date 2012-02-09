@@ -230,6 +230,7 @@ msgstr "Cancel·la"
 msgid "Export Presets"
 msgstr "Exporta la configuració"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -256,7 +257,6 @@ msgstr "(<íntegre>) nombre de canals d'audio"
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<íntegre>) La freqüència de mostreig de l'audio en hertz"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "Afegeix"
@@ -976,26 +976,6 @@ msgstr "Importa una configuració"
 msgid "Label must be unique."
 msgstr "L'etiqueta ha de ser única."
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Esbora la configuració:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Actualitza la configuració:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Heu d'inserir una extensió."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Heu d'inserir una etiqueta."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Heu d'inserir un nom."
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1049,6 +1029,26 @@ msgstr "Heu d'inserir un nom."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Esbora la configuració:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Actualitza la configuració:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Heu d'inserir una extensió."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Heu d'inserir una etiqueta."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Heu d'inserir un nom."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"

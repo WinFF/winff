@@ -24,7 +24,7 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, Buttons,
-  ExtCtrls, StdCtrls, gettext, translations;
+  ExtCtrls, StdCtrls, gettext, translations, ComCtrls;
 
 type
 
@@ -50,22 +50,19 @@ type
     Edit6: TEdit;
     Edit7: TEdit;
     edtThreads: TEdit;
-    Label7: TLabel;
-    Label8: TLabel;
-    Panel1: TPanel;
-    Panel2: TPanel;
-    Panel3: TPanel;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
-    Notebook1: TNotebook;
+    Label7: TLabel;
+    Label8: TLabel;
+    PageControl1: TPageControl;
     OpenDialog1: TOpenDialog;
-    Page1: TPage;
-    Page2: TPage;
-    Page3: TPage;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
     Panel4: TPanel;
     Panel5: TPanel;
     Panel6: TPanel;
@@ -74,6 +71,9 @@ type
     pnlBottom: TPanel;
     prioritybox: TComboBox;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);

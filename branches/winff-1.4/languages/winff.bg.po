@@ -234,6 +234,7 @@ msgstr "Отказ"
 msgid "Export Presets"
 msgstr "Изнасяне на настройки"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
@@ -258,7 +259,6 @@ msgstr ""
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "Добавяне"
@@ -941,26 +941,6 @@ msgstr "Внасяне на настройки"
 msgid "Label must be unique."
 msgstr "Етикетът трябва да е уникален"
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Премахване на настройка:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Обновяване на настройка:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Трябва да въведете разширение."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Трябва да въведете етикет."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Трябва да въведете име."
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1014,6 +994,26 @@ msgstr "Трябва да въведете име."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Премахване на настройка:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Обновяване на настройка:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Трябва да въведете разширение."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Трябва да въведете етикет."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Трябва да въведете име."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Висок"

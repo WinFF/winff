@@ -182,8 +182,7 @@ msgstr "Etiqueta de Preset"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr ""
-"Parámetros de linea de comandos del preset (sin -i o archivo de salida)"
+msgstr "Parámetros de linea de comandos del preset (sin -i o archivo de salida)"
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 msgid "Output File Extension (do not include the '.' )"
@@ -281,9 +280,7 @@ msgstr "Reproducir"
 
 #: TFRMMAIN.BTNPLAY.HINT
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr ""
-"Previsualizar el archivo fuente seleccionado con ffplay (buena manera de "
-"comprobar si es posible la conversión)"
+msgstr "Previsualizar el archivo fuente seleccionado con ffplay (buena manera de comprobar si es posible la conversión)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
@@ -321,9 +318,7 @@ msgstr "2º paso"
 
 #: TFRMMAIN.CBX2PASS.HINT
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr ""
-"Usando dos pasos permitirá al codificador obtener información del primer "
-"paso para aumentar la calidad"
+msgstr "Usando dos pasos permitirá al codificador obtener información del primer paso para aumentar la calidad"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
@@ -340,21 +335,15 @@ msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr ""
-"Ubicación de destino del video final (escoger una carpeta diferente que el "
-"de la fuente)"
+msgstr "Ubicación de destino del video final (escoger una carpeta diferente que el de la fuente)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr ""
-"(<entero:entero> o <real>) la relación de aspecto físico (DAR) de la "
-"visualización de destino"
+msgstr "(<entero:entero> o <real>) la relación de aspecto físico (DAR) de la visualización de destino"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-"(<entero>) Desde 10 hasta las frecuencias de muestreo como 44100, 48000. "
-"Permite \"estirar\" / \"exprimir\" el flujo de audio."
+msgstr "(<entero>) Desde 10 hasta las frecuencias de muestreo como 44100, 48000. Permite \"estirar\" / \"exprimir\" el flujo de audio."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -408,8 +397,7 @@ msgstr "<hh:mm:ss> - Detener despúes de este tiempo de video comvertido"
 
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
-"(<entero>) 256 = Volumen actual, 128 = Mitad del volumen, 512 = Doble volumen"
+msgstr "(<entero>) 256 = Volumen actual, 128 = Mitad del volumen, 512 = Doble volumen"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -590,9 +578,7 @@ msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
-msgstr ""
-"Configuración específica para usar en el dispositivo o tipo de archivo "
-"escogido"
+msgstr "Configuración específica para usar en el dispositivo o tipo de archivo escogido"
 
 #: TFRMMAIN.TABSHEET1.CAPTION
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
@@ -636,16 +622,12 @@ msgstr "(<real> or <entero>) número de cuadros por segundo"
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<entero> X <entero>) Cantidad de pixeles en este cuadro. Para codecs que no "
-"soportan relación de aspecto (PAR) este es el tamaño final."
+msgstr "(<entero> X <entero>) Cantidad de pixeles en este cuadro. Para codecs que no soportan relación de aspecto (PAR) este es el tamaño final."
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<entero> X <entero>) Cantidad de pixeles en este cuadro. Para codecs que no "
-"soportan relación de aspecto (PAR) este es el tamaño final."
+msgstr "(<entero> X <entero>) Cantidad de pixeles en este cuadro. Para codecs que no soportan relación de aspecto (PAR) este es el tamaño final."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
@@ -907,3 +889,4 @@ msgstr "Mínima"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normal"
+

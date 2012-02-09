@@ -192,6 +192,7 @@ msgstr "Achtervoegsel doelbestand (geen '.')"
 msgid "Category"
 msgstr "Categorie"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEDITPRESETS.OKBTN.CAPTION
 msgid "Save"
 msgstr "Opslaan"
@@ -214,7 +215,6 @@ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Exporteer"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.LABEL1.CAPTION
 msgid "Choose Presets to Export:"
 msgstr "Selecteer voorinstelling om te exporteren:"
@@ -299,17 +299,17 @@ msgstr "Verwijderen"
 msgid "Remove selected file(s) from the list"
 msgstr "Verwijder geselecteerde bestand(en) uit de lijst"
 
+#: TFRMMAIN.CAPTION
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "Naam van het apparaat of bestandstype waar de video naar geconverteerd moet worden"
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
-msgid "Use Source Folder"
-msgstr "Bronmap gebruiken"
-
-#: TFRMMAIN.CBOUTPUTPATH1.CAPTION
-msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
 msgid "Use Source Folder"
 msgstr "Bronmap gebruiken"
 
@@ -337,10 +337,6 @@ msgstr "..."
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "De doelmap voor het eindresultaat (kies een andere map dan waar het origineel staat)"
-
-#: TFRMMAIN.DLGOPENFILE.TITLE
-msgid "Select Video Files..."
-msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -403,11 +399,6 @@ msgstr "<hh:mm:ss> - Tijdsduur van te converteren fragment"
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<geheel getal>) 256 = huidige volume, 128 = half volume, 512 = dubbel volume"
-
-#: TFRMMAIN.FRMMAIN.CAPTION
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -852,26 +843,6 @@ msgstr "Selecteer voorinstellingbestand"
 msgid "Select Video Files"
 msgstr "Selecteer videobestanden"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Voorinstelling bevat illegale karakters"
-
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Creëer voorinstelling:"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Importeer voorinstellingen"
-
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Label moet uniek zijn."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Verwijder voorinstelling:"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr "toegepast op alle video's op het moment dat de convertie begint."
 #~ msgid "Ramiro Polla"
@@ -926,6 +897,26 @@ msgstr "Verwijder voorinstelling:"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Voorinstelling bevat illegale karakters"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Creëer voorinstelling:"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importeer voorinstellingen"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Label moet uniek zijn."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Verwijder voorinstelling:"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Update voorinstelling:"

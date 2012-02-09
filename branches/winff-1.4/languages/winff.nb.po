@@ -169,6 +169,7 @@ msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Eksporter"
 
+#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
 msgstr "Importer"
@@ -189,12 +190,12 @@ msgstr "Merkelappen til forhåndsinnstillingen"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Kommandolinje for forhåndsinnstillingen (ingen -i eller utdatafil)"
 
-#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.LABEL5.CAPTION
 #| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
 msgstr "Etternavn til utdatafil (ingen \".\")"
 
+#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
 msgstr "Kategori"
@@ -217,7 +218,6 @@ msgstr "Avbryt"
 msgid "Export Presets"
 msgstr "Eksporter forhåndsinnstillinger"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -497,6 +497,7 @@ msgstr "Venstre"
 msgid "Right"
 msgstr "Høyre"
 
+#| msgctxt "REMOVED3"
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr "Øvre side"
@@ -518,7 +519,6 @@ msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
 msgstr "Bruk forhåndsinstillingen"
 
-#| msgctxt "REMOVED3"
 #: TFRMMAIN.MENUITEM2.CAPTION
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
@@ -538,6 +538,7 @@ msgstr "Om WinFF"
 msgid "Display Cmd Line"
 msgstr "Vis kommandolinje"
 
+#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
 msgstr "Dokumentasjon"
@@ -559,7 +560,6 @@ msgstr "Importer forhåndsinnstilling"
 msgid "Pause on Finish"
 msgstr "Pause hvis ferdig"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
 msgstr "Spill lyd hvis ferdig"
@@ -573,6 +573,7 @@ msgstr "Brukervalg"
 msgid "Presets"
 msgstr "Forhåndsinnstillinger"
 
+#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
@@ -594,7 +595,6 @@ msgstr "WinFF nettstedet"
 msgid "Edit"
 msgstr "Rediger"
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Fil"
@@ -613,6 +613,7 @@ msgstr "Alternativer"
 msgid "pnlMain"
 msgstr "pnlMain"
 
+#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Bestemte innstillinger å bruke med den valgte enheten eller filtypen"
@@ -637,7 +638,6 @@ msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr "Tid"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.TABSHEET5.CAPTION
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
@@ -728,6 +728,7 @@ msgstr "Bruk CHCP for internasjonale karakter"
 msgid "Use Several Encoding Threads:"
 msgstr "Bruk forskjellige koderingstråder:"
 
+#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.EDIT7.HINT
 #| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
@@ -756,7 +757,6 @@ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Sti til FFmpeg programfila:"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
@@ -913,6 +913,17 @@ msgstr "Importer forhåndsinnstillinger"
 msgid "Label must be unique."
 msgstr "Merkelappet må være entydig."
 
+#~ msgid "About WinFF"
+#~ msgstr "Om WinFF"
+#~ msgid "http://ffmpeg.arrozcru.org/"
+#~ msgstr "http://ffmpeg.arrozcru.org/"
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Ekstra alternativer"
+#~ msgid "Output Details"
+#~ msgstr "Utdata detaljer"
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Fjern forhåndsinnstilling:"
@@ -933,17 +944,6 @@ msgstr "Du må oppgi et merkelapp."
 msgid "You must enter a name."
 msgstr "Du må oppgi et navn."
 
-#~ msgid "About WinFF"
-#~ msgstr "Om WinFF"
-#~ msgid "http://ffmpeg.arrozcru.org/"
-#~ msgstr "http://ffmpeg.arrozcru.org/"
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Ekstra alternativer"
-#~ msgid "Output Details"
-#~ msgstr "Utdata detaljer"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Høy"

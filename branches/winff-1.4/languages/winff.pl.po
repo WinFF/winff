@@ -235,6 +235,7 @@ msgstr "Anuluj"
 msgid "Export Presets"
 msgstr "Eksportuj szablony"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -261,7 +262,6 @@ msgstr "ilość kanałów dźwięku (liczba całkowita)"
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "częstotliwość próbkowania dźwięku w Hertzach (liczba całkowita)"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "Dodaj"
@@ -981,26 +981,6 @@ msgstr "Importuj szablony"
 msgid "Label must be unique."
 msgstr "Opis musi byc unikalny."
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Usuń szablon:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Zmień szablon:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Podaj rozszerzenie pliku"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Podaj opis szablonu"
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Podaj nazwę szablonu"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1054,6 +1034,26 @@ msgstr "Podaj nazwę szablonu"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Usuń szablon:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Zmień szablon:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Podaj rozszerzenie pliku"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Podaj opis szablonu"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Podaj nazwę szablonu"
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Wysoki"

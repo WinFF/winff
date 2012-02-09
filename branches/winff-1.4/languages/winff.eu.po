@@ -842,26 +842,6 @@ msgstr "Inportatu aurrezarpenak"
 msgid "Label must be unique."
 msgstr "Etiketak bakarra izan behar du."
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Kendu aurrezarpena:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Eguneratu aurrezarpena:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Luzapena sartu behar duzu."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Etiketa bat sartu behar duzu."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Izen bat sartu behar duzu."
-
 #~ msgid "http://ffmpeg.arrozcru.org/"
 #~ msgstr "http://ffmpeg.arrozcru.org/"
 #~ msgid "About WinFF"
@@ -895,6 +875,26 @@ msgstr "Izen bat sartu behar duzu."
 #~ msgstr "Denbora"
 #~ msgid "Crop"
 #~ msgstr "Ebaki"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Kendu aurrezarpena:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Eguneratu aurrezarpena:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Luzapena sartu behar duzu."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Etiketa bat sartu behar duzu."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Izen bat sartu behar duzu."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Altua"
