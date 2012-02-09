@@ -1,14 +1,13 @@
 object frmAbout: TfrmAbout
-  Left = 400
-  Height = 299
-  Top = 257
-  Width = 373
-  ActiveControl = Notebook1
+  Left = 618
+  Height = 308
+  Top = 256
+  Width = 384
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = 'About WinFF'
-  ClientHeight = 299
-  ClientWidth = 373
+  ClientHeight = 308
+  ClientWidth = 384
   Color = clForm
   Icon.Data = {
     7E04000000000100010010100000010020006804000016000000280000001000
@@ -52,23 +51,49 @@ object frmAbout: TfrmAbout
   OnCreate = FormCreate
   Position = poMainFormCenter
   LCLVersion = '0.9.30'
-  object Notebook1: TNotebook
+  object Panel1: TPanel
     Left = 0
-    Height = 265
-    Top = 0
-    Width = 373
-    Align = alClient
-    PageIndex = 0
+    Height = 34
+    Top = 274
+    Width = 384
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 34
+    ClientWidth = 384
     TabOrder = 0
-    object Page1: TPage
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      Left = 155
+      Height = 25
+      Top = 5
+      Width = 75
+      BorderSpacing.InnerBorder = 4
+      Caption = 'OK'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 274
+    Top = 0
+    Width = 384
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
       Caption = 'WinFF'
-      ClientWidth = 365
-      ClientHeight = 237
+      ClientHeight = 246
+      ClientWidth = 376
       object Label1: TLabel
         Left = 60
         Height = 16
         Top = 10
-        Width = 61
+        Width = 52
         Caption = 'WinFF %s'
         ParentColor = False
         OnClick = Label1Click
@@ -162,7 +187,7 @@ object frmAbout: TfrmAbout
         Left = 4
         Height = 16
         Top = 64
-        Width = 150
+        Width = 172
         Caption = 'Copyright %s ; Licence: GPL V3+'
         ParentColor = False
       end
@@ -197,6 +222,7 @@ object frmAbout: TfrmAbout
         Caption = 'Debian/Ubuntu Packaging by Paul Gevers'
         Font.Color = clBlue
         ParentColor = False
+        ParentFont = False
         OnClick = Label11Click
       end
       object Label13: TLabel
@@ -235,10 +261,10 @@ object frmAbout: TfrmAbout
         ParentColor = False
       end
     end
-    object Page2: TPage
+    object TabSheet2: TTabSheet
       Caption = 'FFmpeg'
-      ClientWidth = 365
-      ClientHeight = 237
+      ClientHeight = 246
+      ClientWidth = 376
       object Label5: TLabel
         Left = 4
         Height = 16
@@ -259,9 +285,9 @@ object frmAbout: TfrmAbout
       object Label7: TLabel
         Cursor = crHandPoint
         Left = 6
-        Height = 18
+        Height = 16
         Top = 50
-        Width = 103
+        Width = 96
         Caption = 'http://ffmpeg.org'
         Font.Color = clBlue
         ParentColor = False
@@ -289,7 +315,7 @@ object frmAbout: TfrmAbout
         Left = 4
         Height = 16
         Top = 114
-        Width = 154
+        Width = 146
         Caption = 'http://ffmpeg.zeranoe.com'
         Font.Color = clBlue
         ParentColor = False
@@ -297,45 +323,20 @@ object frmAbout: TfrmAbout
         OnClick = Label10Click
       end
     end
-    object Page3: TPage
+    object TabSheet3: TTabSheet
       Caption = 'Thanks'
-      ClientWidth = 365
-      ClientHeight = 237
+      ClientHeight = 246
+      ClientWidth = 376
       object ListBox1: TListBox
         Left = 0
-        Height = 237
+        Height = 246
         Top = 0
-        Width = 365
+        Width = 376
         Align = alClient
         ClickOnSelChange = False
         ItemHeight = 0
         TabOrder = 0
       end
-    end
-  end
-  object Panel1: TPanel
-    Left = 0
-    Height = 34
-    Top = 265
-    Width = 373
-    Align = alBottom
-    BevelOuter = bvNone
-    ClientHeight = 34
-    ClientWidth = 373
-    TabOrder = 1
-    object Button1: TButton
-      AnchorSideLeft.Control = Panel1
-      AnchorSideLeft.Side = asrCenter
-      AnchorSideTop.Control = Panel1
-      AnchorSideTop.Side = asrCenter
-      Left = 149
-      Height = 25
-      Top = 5
-      Width = 75
-      BorderSpacing.InnerBorder = 4
-      Caption = 'OK'
-      OnClick = Button1Click
-      TabOrder = 0
     end
   end
 end

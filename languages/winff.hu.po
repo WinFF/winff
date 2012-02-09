@@ -236,6 +236,7 @@ msgstr "Mégse"
 msgid "Export Presets"
 msgstr "Beállítások exportálása"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 #| msgid "Export"
@@ -262,7 +263,6 @@ msgstr ""
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "Hozzáadás"
@@ -960,26 +960,6 @@ msgstr "Beállítások importálása"
 msgid "Label must be unique."
 msgstr "A cimkének egyedülállónak kell lenni"
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Beállítás eltávolítása:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Beállítás frissítése:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Válaszd ki a kiterjesztést."
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Lépj be egy címkébe."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Írd be a neved."
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1038,6 +1018,26 @@ msgstr "Írd be a neved."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Beállítás eltávolítása:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Beállítás frissítése:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Válaszd ki a kiterjesztést."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Lépj be egy címkébe."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Írd be a neved."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Magas"

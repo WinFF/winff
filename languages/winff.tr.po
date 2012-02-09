@@ -233,6 +233,7 @@ msgstr "İptal"
 msgid "Export Presets"
 msgstr "Ayarları dışarı aktar"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -259,7 +260,6 @@ msgstr "(<integer>) ses kanalı sayısı"
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<integer>) Hertz cinsinden ses frekansı"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "Ekle"
@@ -979,26 +979,6 @@ msgstr "Ayarları yükle"
 msgid "Label must be unique."
 msgstr "Etiket eşsiz olmalı."
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Ayar sil:"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Ayarı güncelle:"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Bir uzantı girmelisiniz"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Bir etiket girmelisiniz."
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Bir isim girmelisiniz."
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1052,6 +1032,26 @@ msgstr "Bir isim girmelisiniz."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Ayar sil:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Ayarı güncelle:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Bir uzantı girmelisiniz"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Bir etiket girmelisiniz."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Bir isim girmelisiniz."
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Yüksek"

@@ -273,6 +273,7 @@ msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "选项"
 
+#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
 msgstr "打开/关闭其他选项窗口"
@@ -293,7 +294,6 @@ msgstr "预览"
 msgid "Preview using the output settings"
 msgstr "使用输出设置预览"
 
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "移除"
@@ -575,6 +575,7 @@ msgstr "文件(&F)"
 msgid "Help"
 msgstr "帮助(&H)"
 
+#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
@@ -602,7 +603,6 @@ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "音频"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.TABSHEET3.CAPTION
 #, fuzzy
 #| msgid "Crop"
@@ -879,6 +879,17 @@ msgstr "导入预设"
 msgid "Label must be unique."
 msgstr "标签必须唯一。"
 
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "其他选项"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "移除预设:"
@@ -899,17 +910,6 @@ msgstr "您必须输入标签。"
 msgid "You must enter a name."
 msgstr "您必须输入名称。"
 
-#~ msgid "Ramiro Polla"
-#~ msgstr "Ramiro Polla"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "其他选项"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "高"

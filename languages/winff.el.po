@@ -237,6 +237,7 @@ msgstr "Άκυρο"
 msgid "Export Presets"
 msgstr "Εξαγωγή Presets"
 
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 #| msgid "Export"
@@ -263,7 +264,6 @@ msgstr ""
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr ""
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "Προσθήκη"
@@ -961,26 +961,6 @@ msgstr "Εισαγωγή Presets"
 msgid "Label must be unique."
 msgstr "Η ετικέτα πρέπει να είναι μοναδική"
 
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Αφαίρεση Preset"
-
-#: unit2.rsupdatepreset
-msgid "Update Preset:"
-msgstr "Αναβάθμιση Preset"
-
-#: unit2.rsyoumustenterextension
-msgid "You must enter the extension."
-msgstr "Πρέπει να προσθέσετε την κατάληξη"
-
-#: unit2.rsyoumustenterlabel
-msgid "You must enter a label."
-msgstr "Πρέπει να προσθέσετε ετικέτα"
-
-#: unit2.rsyoumustenternmae
-msgid "You must enter a name."
-msgstr "Πρέπει να προσθέσετε όνομα"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1039,6 +1019,26 @@ msgstr "Πρέπει να προσθέσετε όνομα"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Αφαίρεση Preset"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Αναβάθμιση Preset"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Πρέπει να προσθέσετε την κατάληξη"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Πρέπει να προσθέσετε ετικέτα"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Πρέπει να προσθέσετε όνομα"
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Υψηλή"

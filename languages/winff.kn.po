@@ -205,8 +205,7 @@ msgstr "ರಪ್ತುಮದುವುದಕ್ಕೆ ಮೊದಲೇ ಹೊಂ�
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
-"(<ಪೂರ್ಣಾಂಕ>) ಉದ್ದೇಶಿತ ಕಿಲೋಬಿಟ್ಗಳು/ಸೆಕೆಂಡ ಸ್ಟ್ರೀಮ್ದಿಂದಾಗಿ ಉಪಯೋಗಿಸಲು"
+msgstr "(<ಪೂರ್ಣಾಂಕ>) ಉದ್ದೇಶಿತ ಕಿಲೋಬಿಟ್ಗಳು/ಸೆಕೆಂಡ ಸ್ಟ್ರೀಮ್ದಿಂದಾಗಿ ಉಪಯೋಗಿಸಲು"
 
 #: TFRMMAIN.AUDCHANNELS.HINT
 msgid "(<integer>) number of audio channels"
@@ -264,9 +263,7 @@ msgid "Play"
 msgstr "ಚಾಲನೆಗೊಳಿಸು"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgstr ""
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
@@ -304,9 +301,7 @@ msgid "2 pass"
 msgstr ""
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr ""
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
@@ -323,21 +318,15 @@ msgid "..."
 msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
+msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr ""
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
 msgstr ""
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
@@ -391,8 +380,7 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: TFRMMAIN.LABEL1.CAPTION
@@ -599,7 +587,7 @@ msgstr ""
 #: TFRMMAIN.TABSHEET5.CAPTION
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
-msgstr ""
+msgstr "ಎಫ಼್.ಎಫ಼್.ಎಮ್.ಪಿ.ಇ.ಜಿ"
 
 #: TFRMMAIN.TABSHEET6.CAPTION
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
@@ -609,8 +597,7 @@ msgstr ""
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
-"(<ಪೂರ್ಣಾಂಕ>) ಉದ್ದೇಶಿತ ಕಿಲೋಬಿಟ್ಗಳು/ಸೆಕೆಂಡ ಸ್ಟ್ರೀಮ್ದಿಂದಾಗಿ ಉಪಯೋಗಿಸಲು"
+msgstr "(<ಪೂರ್ಣಾಂಕ>) ಉದ್ದೇಶಿತ ಕಿಲೋಬಿಟ್ಗಳು/ಸೆಕೆಂಡ ಸ್ಟ್ರೀಮ್ದಿಂದಾಗಿ ಉಪಯೋಗಿಸಲು"
 
 #: TFRMMAIN.VIDFRAMERATE.HINT
 msgid "(<real> or <integer>) number of frames per second"
@@ -618,16 +605,12 @@ msgstr ""
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
@@ -890,3 +873,4 @@ msgstr ""
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr ""
+
