@@ -233,7 +233,6 @@ msgstr "İptal"
 msgid "Export Presets"
 msgstr "Ayarları dışarı aktar"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -975,10 +974,6 @@ msgstr "Ayar yarat:"
 msgid "Import Presets"
 msgstr "Ayarları yükle"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Etiket eşsiz olmalı."
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1032,6 +1027,10 @@ msgstr "Etiket eşsiz olmalı."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Etiket eşsiz olmalı."
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Ayar sil:"

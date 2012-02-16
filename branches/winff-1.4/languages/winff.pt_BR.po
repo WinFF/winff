@@ -574,7 +574,6 @@ msgstr "Arquivo"
 msgid "Help"
 msgstr "Ajuda"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
@@ -868,10 +867,6 @@ msgstr "Criar Pré-definição:"
 msgid "Import Presets"
 msgstr ""
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "O rótulo deve ser único"
-
 #~| msgid "Select Video Files"
 #~ msgid "Select Video Files..."
 #~ msgstr "Selecionar Arquivos de Vídeo"
@@ -886,6 +881,10 @@ msgstr "O rótulo deve ser único"
 #~| msgid "Open/close the additional options window"
 #~ msgid "NOTE: Currently any additional options chosen"
 #~ msgstr "Abrir/fechar janela de opções adicionais"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "O rótulo deve ser único"
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Remover Pré-definição:"

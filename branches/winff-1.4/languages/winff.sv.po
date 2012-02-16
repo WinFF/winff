@@ -232,7 +232,6 @@ msgstr "Avbryt"
 msgid "Export Presets"
 msgstr "Exportera förinställningar"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -974,10 +973,6 @@ msgstr "Skapa förinställning"
 msgid "Import Presets"
 msgstr "Importera förinställningar"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Etiketten måste vara unik"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1029,6 +1024,10 @@ msgstr "Etiketten måste vara unik"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Etiketten måste vara unik"
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Ta bort förinställning:"

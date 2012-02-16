@@ -235,7 +235,6 @@ msgstr "إلغاء"
 msgid "Export Presets"
 msgstr "تصدير النسب"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -977,10 +976,6 @@ msgstr "إنشاء نسبة"
 msgid "Import Presets"
 msgstr "استيراد نسبة"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "الوسم لابد أن يكون فريدا"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1030,6 +1025,10 @@ msgstr "الوسم لابد أن يكون فريدا"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "الوسم لابد أن يكون فريدا"
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "إزالة نسبة"

@@ -273,7 +273,6 @@ msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "选项"
 
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
 msgstr "打开/关闭其他选项窗口"
@@ -575,7 +574,6 @@ msgstr "文件(&F)"
 msgid "Help"
 msgstr "帮助(&H)"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
@@ -875,10 +873,6 @@ msgstr "创建预设:"
 msgid "Import Presets"
 msgstr "导入预设"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "标签必须唯一。"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -890,6 +884,10 @@ msgstr "标签必须唯一。"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "标签必须唯一。"
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "移除预设:"

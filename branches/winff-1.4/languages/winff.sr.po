@@ -234,7 +234,6 @@ msgstr "Odustani"
 msgid "Export Presets"
 msgstr "Importuj preset"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 #| msgid "Export"
@@ -950,10 +949,6 @@ msgstr "Kreiraj preset:"
 msgid "Import Presets"
 msgstr "Importuj preset"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Oznaka mora biti unikatna."
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1012,6 +1007,10 @@ msgstr "Oznaka mora biti unikatna."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Oznaka mora biti unikatna."
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Obriši preset:"

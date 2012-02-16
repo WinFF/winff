@@ -169,7 +169,6 @@ msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Eksporter"
 
-#| msgctxt "TFRMEDITPRESETS.OKBTN.CAPTION"
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
 msgstr "Importer"
@@ -195,7 +194,6 @@ msgstr "Kommandolinje for forhåndsinnstillingen (ingen -i eller utdatafil)"
 msgid "Output File Extension (do not include the '.' )"
 msgstr "Etternavn til utdatafil (ingen \".\")"
 
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
 msgstr "Kategori"
@@ -497,7 +495,6 @@ msgstr "Venstre"
 msgid "Right"
 msgstr "Høyre"
 
-#| msgctxt "REMOVED3"
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr "Øvre side"
@@ -538,7 +535,6 @@ msgstr "Om WinFF"
 msgid "Display Cmd Line"
 msgstr "Vis kommandolinje"
 
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
 msgstr "Dokumentasjon"
@@ -573,7 +569,6 @@ msgstr "Brukervalg"
 msgid "Presets"
 msgstr "Forhåndsinnstillinger"
 
-#| msgctxt "REMOVED6"
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
@@ -613,7 +608,6 @@ msgstr "Alternativer"
 msgid "pnlMain"
 msgstr "pnlMain"
 
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Bestemte innstillinger å bruke med den valgte enheten eller filtypen"
@@ -728,7 +722,6 @@ msgstr "Bruk CHCP for internasjonale karakter"
 msgid "Use Several Encoding Threads:"
 msgstr "Bruk forskjellige koderingstråder:"
 
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #: TFRMPREFERENCES.EDIT7.HINT
 #| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
@@ -909,10 +902,6 @@ msgstr "Lag forhåndsinnstilling:"
 msgid "Import Presets"
 msgstr "Importer forhåndsinnstillinger"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Merkelappet må være entydig."
-
 #~ msgid "About WinFF"
 #~ msgstr "Om WinFF"
 #~ msgid "http://ffmpeg.arrozcru.org/"
@@ -924,6 +913,10 @@ msgstr "Merkelappet må være entydig."
 #~ msgstr "Ekstra alternativer"
 #~ msgid "Output Details"
 #~ msgstr "Utdata detaljer"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Merkelappet må være entydig."
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Fjern forhåndsinnstilling:"

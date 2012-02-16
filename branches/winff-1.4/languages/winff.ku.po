@@ -236,7 +236,6 @@ msgstr "Betal"
 msgid "Export Presets"
 msgstr "Pêşmîheng derxe"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 #| msgid "Export"
@@ -956,10 +955,6 @@ msgstr "Pêşmîheng biafirîne:"
 msgid "Import Presets"
 msgstr "Pêşmîheng têxe"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Divê label yekta be."
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1018,6 +1013,10 @@ msgstr "Divê label yekta be."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Divê label yekta be."
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Pêşmîheng rake:"

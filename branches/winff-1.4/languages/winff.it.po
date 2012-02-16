@@ -578,7 +578,6 @@ msgstr "File"
 msgid "Help"
 msgstr "?"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
@@ -878,10 +877,6 @@ msgstr "Crea profilo:"
 msgid "Import Presets"
 msgstr "Importa profilo"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "La descrizione deve essere unica."
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~| msgid "Select Video Files"
@@ -901,6 +896,10 @@ msgstr "La descrizione deve essere unica."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "La descrizione deve essere unica."
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Elimina profilo:"

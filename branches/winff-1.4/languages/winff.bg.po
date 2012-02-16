@@ -234,7 +234,6 @@ msgstr "Отказ"
 msgid "Export Presets"
 msgstr "Изнасяне на настройки"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
@@ -937,10 +936,6 @@ msgstr "Създаване на настройка:"
 msgid "Import Presets"
 msgstr "Внасяне на настройки"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Етикетът трябва да е уникален"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -994,6 +989,10 @@ msgstr "Етикетът трябва да е уникален"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Етикетът трябва да е уникален"
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Премахване на настройка:"
