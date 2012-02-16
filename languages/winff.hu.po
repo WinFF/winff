@@ -236,7 +236,6 @@ msgstr "Mégse"
 msgid "Export Presets"
 msgstr "Beállítások exportálása"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 #| msgid "Export"
@@ -956,10 +955,6 @@ msgstr "Beállítás készítése:"
 msgid "Import Presets"
 msgstr "Beállítások importálása"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "A cimkének egyedülállónak kell lenni"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1018,6 +1013,10 @@ msgstr "A cimkének egyedülállónak kell lenni"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "A cimkének egyedülállónak kell lenni"
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Beállítás eltávolítása:"

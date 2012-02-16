@@ -838,10 +838,6 @@ msgstr "Sortu aurrezarpena"
 msgid "Import Presets"
 msgstr "Inportatu aurrezarpenak"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Etiketak bakarra izan behar du."
-
 #~ msgid "http://ffmpeg.arrozcru.org/"
 #~ msgstr "http://ffmpeg.arrozcru.org/"
 #~ msgid "About WinFF"
@@ -875,6 +871,10 @@ msgstr "Etiketak bakarra izan behar du."
 #~ msgstr "Denbora"
 #~ msgid "Crop"
 #~ msgstr "Ebaki"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Etiketak bakarra izan behar du."
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Kendu aurrezarpena:"

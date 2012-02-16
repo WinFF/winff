@@ -259,7 +259,6 @@ msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Možnosti"
 
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
 msgstr "Ukázat/skrýt panel podrobných nastavení"
@@ -561,7 +560,6 @@ msgstr "Soubor"
 msgid "Help"
 msgstr "Nápověda"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
@@ -861,10 +859,6 @@ msgstr "Vytvořit přednastavení"
 msgid "Import Presets"
 msgstr "Importovat přednastavení"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Popis musí být unikátní"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
 #~ msgid "Ramiro Polla"
@@ -882,6 +876,10 @@ msgstr "Popis musí být unikátní"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Popis musí být unikátní"
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Odstranit přednastavení"

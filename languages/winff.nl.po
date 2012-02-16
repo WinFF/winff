@@ -192,7 +192,6 @@ msgstr "Achtervoegsel doelbestand (geen '.')"
 msgid "Category"
 msgstr "Categorie"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEDITPRESETS.OKBTN.CAPTION
 msgid "Save"
 msgstr "Opslaan"
@@ -839,10 +838,6 @@ msgstr "Selecteer doelmap"
 msgid "Select Preset File"
 msgstr "Selecteer voorinstellingbestand"
 
-#: unit1.rsselectvideofiles
-msgid "Select Video Files"
-msgstr "Selecteer videobestanden"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr "toegepast op alle video's op het moment dat de convertie begint."
 #~ msgid "Ramiro Polla"
@@ -897,6 +892,10 @@ msgstr "Selecteer videobestanden"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Selecteer videobestanden"
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Voorinstelling bevat illegale karakters"

@@ -286,7 +286,6 @@ msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Možnosti"
 
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
 msgstr ""
@@ -600,7 +599,6 @@ msgstr "Datoteka"
 msgid "Help"
 msgstr "Pomoč"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 #, fuzzy
 #| msgid "Options"
@@ -906,10 +904,6 @@ msgstr "Ustvari prednastavitev:"
 msgid "Import Presets"
 msgstr "Uvozi prednastavitve"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Oznaka mora biti enkratna."
-
 #~| msgid "Select Video Files"
 #~ msgid "Select Video Files..."
 #~ msgstr "Izberite video datoteke"
@@ -924,6 +918,10 @@ msgstr "Oznaka mora biti enkratna."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Oznaka mora biti enkratna."
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Odstrani prednastavitev:"

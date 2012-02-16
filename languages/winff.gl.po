@@ -229,7 +229,6 @@ msgstr "Cancelar"
 msgid "Export Presets"
 msgstr "Exportar preconfiguracións"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
@@ -977,10 +976,6 @@ msgstr "Crear preconfiguración:"
 msgid "Import Presets"
 msgstr "Importar preconfiguracións"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "A etiqueta ten que ser única"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1034,6 +1029,10 @@ msgstr "A etiqueta ten que ser única"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "A etiqueta ten que ser única"
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Eliminar preconfiguración:"

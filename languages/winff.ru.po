@@ -255,7 +255,6 @@ msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Параметры"
 
-#| msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
 msgstr "Открыть/закрыть окно дополнительных параметров"
@@ -560,7 +559,6 @@ msgstr "Файл"
 msgid "Help"
 msgstr "Помощь"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
@@ -864,10 +862,6 @@ msgstr "Сохранить параметры?"
 msgid "Import Presets"
 msgstr "Импортировать параметры"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Описание должно быть уникальным."
-
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
 #~ msgstr "WinFF"
@@ -877,6 +871,10 @@ msgstr "Описание должно быть уникальным."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Описание должно быть уникальным."
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "Удалить настройки?"

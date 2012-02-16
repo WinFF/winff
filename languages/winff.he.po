@@ -237,7 +237,6 @@ msgstr "ביטול"
 msgid "Export Presets"
 msgstr "ייצא Presets"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 #, fuzzy
 #| msgid "Export"
@@ -956,10 +955,6 @@ msgstr "צור preset:"
 msgid "Import Presets"
 msgstr "ייבוא Presets"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "התווית חייבת להיות ייחודית."
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1016,6 +1011,10 @@ msgstr "התווית חייבת להיות ייחודית."
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "התווית חייבת להיות ייחודית."
+
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
 msgstr "הסר preset:"
