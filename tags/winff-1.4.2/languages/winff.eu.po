@@ -1,0 +1,909 @@
+# Basque translation for winff
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the winff package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: winff\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
+"PO-Revision-Date: 2011-11-17 01:19+0000\n"
+"Last-Translator: Asier Iturralde Sarasola <Unknown>\n"
+"Language-Team: Basque <eu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-12-04 12:48+0000\n"
+"X-Generator: Launchpad (build 14418)\n"
+
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
+#: TFRMABOUT.BUTTON1.CAPTION
+msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+msgid "OK"
+msgstr "Ados"
+
+#: TFRMABOUT.FRMABOUT.CAPTION
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
+msgid "About WinFF"
+msgstr ""
+
+#: TFRMABOUT.LABEL1.CAPTION
+msgid "WinFF 1.3.2"
+msgstr "WinFF 1.3.2"
+
+#: TFRMABOUT.LABEL10.CAPTION
+msgid "http://hawkeye.arrozcru.org/"
+msgstr ""
+
+#: TFRMABOUT.LABEL11.CAPTION
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr "Debian/Ubuntu paketatzea: Paul Gevers"
+
+#: TFRMABOUT.LABEL13.CAPTION
+msgid "Gmaq"
+msgstr "Gmaq"
+
+#: TFRMABOUT.LABEL14.CAPTION
+msgid "High Quality Presets From"
+msgstr "Kalitate handiko aurrezarpenak:"
+
+#: TFRMABOUT.LABEL15.CAPTION
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr "Ikonoak eta logoa: Alex Klepatsch"
+
+#: TFRMABOUT.LABEL16.CAPTION
+msgid "JNavas"
+msgstr "JNavas"
+
+#: TFRMABOUT.LABEL2.CAPTION
+msgid "Copyright 2006-2009 GPL V3"
+msgstr "Copyright-a 2006-2009 GPL V3"
+
+#: TFRMABOUT.LABEL3.CAPTION
+msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+msgstr "Matthew Weatherford,  Ian Stoffberg eta Alexey Osipov"
+
+#: TFRMABOUT.LABEL4.CAPTION
+msgid "http://www.winff.org"
+msgstr "http://www.winff.org"
+
+#: TFRMABOUT.LABEL5.CAPTION
+msgctxt "TFRMABOUT.LABEL5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.LABEL6.CAPTION
+msgid "Trademark Fabrice Belllard"
+msgstr "Marka erregistratua: Fabrice Bellard"
+
+#: TFRMABOUT.LABEL7.CAPTION
+msgid "http://ffmpeg.org"
+msgstr "http://ffmpeg.org"
+
+#: TFRMABOUT.LABEL8.CAPTION
+msgid "FFmpeg Windows Builds by"
+msgstr "FFmpeg-ren Windows-erako eraikitzeak:"
+
+#: TFRMABOUT.LABEL9.CAPTION
+msgid "Kyle Schwarz"
+msgstr ""
+
+#: TFRMABOUT.PAGE1.CAPTION
+msgctxt "TFRMABOUT.PAGE1.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMABOUT.PAGE2.CAPTION
+msgctxt "TFRMABOUT.PAGE2.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.PAGE3.CAPTION
+msgid "Thanks"
+msgstr "Eskerrak"
+
+#: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
+msgid "Add / Update"
+msgstr "Gehitu / Eguneratu"
+
+#: TFRMEDITPRESETS.CANCELBTN.CAPTION
+msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+msgid "Close"
+msgstr "Itxi"
+
+#: TFRMEDITPRESETS.CAPTION
+msgid "Edit Presets"
+msgstr "Editatu aurrezarpenak"
+
+#: TFRMEDITPRESETS.DELETEBTN.CAPTION
+msgid "Delete"
+msgstr "Ezabatu"
+
+#: TFRMEDITPRESETS.EDIT1.HINT
+msgid "One word, only letters and numbers"
+msgstr "Hitz bakarra, soilik letra eta zenbakiak"
+
+#: TFRMEDITPRESETS.EDIT2.HINT
+msgid "Enter a more descriptive name for this preset"
+msgstr "Sartu izen deskribatzaileago bat aurrezarpen honentzat"
+
+#: TFRMEDITPRESETS.EDIT3.HINT
+msgid "Please don't use -i or output file parameters"
+msgstr "Mesedez, ez erabili -i edo irteerako fitxategien parametrorik"
+
+#: TFRMEDITPRESETS.EDIT4.HINT
+msgid "Do not include a dot"
+msgstr "Ez gehitu punturik"
+
+#: TFRMEDITPRESETS.EDIT5.HINT
+msgid "Choose a category to group this preset under"
+msgstr "Aukeratu kategoria bat aurrezarpen hau sailkatzeko"
+
+#: TFRMEDITPRESETS.EXPORT.CAPTION
+msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+msgid "Export"
+msgstr "Esportatu"
+
+#: TFRMEDITPRESETS.IMPORT.CAPTION
+msgid "Import"
+msgstr "Inportatu"
+
+#: TFRMEDITPRESETS.LABEL1.CAPTION
+msgid "Category / Preset"
+msgstr "Kategoria / Aurrezarpena"
+
+#: TFRMEDITPRESETS.LABEL2.CAPTION
+msgid "Preset Name (one word, only letters and numbers)"
+msgstr "Aurrezarpen izena (hitz bat, letrak eta zenbakiak soilik)"
+
+#: TFRMEDITPRESETS.LABEL3.CAPTION
+msgid "Preset Label"
+msgstr "Aurrezarpenaren etiketa"
+
+#: TFRMEDITPRESETS.LABEL4.CAPTION
+msgid "Preset Command Line Parameters (no -i or output file)"
+msgstr "Aurrezarpenaren komando lerroko parametroak (ez -i edo irteera-fitxategia)"
+
+#: TFRMEDITPRESETS.LABEL5.CAPTION
+msgid "Output File Extension (do not include the '.' )"
+msgstr "Irteerako fitxategiaren luzapena ('.' gabe)"
+
+#: TFRMEDITPRESETS.LABEL6.CAPTION
+msgid "Category"
+msgstr "Kategoria"
+
+#: TFRMEDITPRESETS.OKBTN.CAPTION
+msgid "Save"
+msgstr "Gorde"
+
+#: TFRMEDITPRESETS.PNLTOP.CAPTION
+msgid "pnlTop"
+msgstr "pnlTop"
+
+#: TFRMEXPORT.CANCELBTN.CAPTION
+msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+msgid "Cancel"
+msgstr "Utzi"
+
+#: TFRMEXPORT.CAPTION
+msgid "Export Presets"
+msgstr "Esportatu aurrezarpenak"
+
+#: TFRMEXPORT.EXPORTBTN.CAPTION
+msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+msgid "Export"
+msgstr "Esportatu"
+
+#: TFRMEXPORT.LABEL1.CAPTION
+msgid "Choose Presets to Export:"
+msgstr "Aukeratu aurrezarpenak esportatzeko:"
+
+#: TFRMMAIN.AUDBITRATE.HINT
+msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "(<zenbaki osoa>) korronteak erabili behar lituzkeen kilobit/segundoak"
+
+#: TFRMMAIN.AUDCHANNELS.HINT
+msgid "(<integer>) number of audio channels"
+msgstr "(<zenbaki osoa>) audio kanal kopurua"
+
+#: TFRMMAIN.AUDSAMPLINGRATE.HINT
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr "(<zenbaki osoa>) audioaren lagintze-maiztasuna, Hertz-etan"
+
+#: TFRMMAIN.BTNADD.CAPTION
+msgid "Add"
+msgstr "Gehitu"
+
+#: TFRMMAIN.BTNADD.HINT
+msgid "Add file(s) to the list for conversion"
+msgstr "Gehitu fitxategia(k) zerrendara bihurketarako"
+
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Output Folder"
+msgstr "Aplikatu irteera karpeta"
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr "Aplikatu aurrezarpena"
+
+#: TFRMMAIN.BTNCLEAR.CAPTION
+msgid "Clear"
+msgstr "Garbitu"
+
+#: TFRMMAIN.BTNCLEAR.HINT
+msgid "Remove all files from the list"
+msgstr "Kendu zerrendako fitxategi guztiak"
+
+#: TFRMMAIN.BTNCONVERT.CAPTION
+msgid "Convert"
+msgstr "Bihurtu"
+
+#: TFRMMAIN.BTNCONVERT.HINT
+msgid "Start the conversion process"
+msgstr "Abiatu bihurketa prozesua"
+
+#: TFRMMAIN.BTNOPTIONS.CAPTION
+msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+msgid "Options"
+msgstr "Aukerak"
+
+#: TFRMMAIN.BTNOPTIONS.HINT
+msgid "Open/close the additional options window"
+msgstr "Ireki/itxi aukera gehigarrien leihoa"
+
+#: TFRMMAIN.BTNPLAY.CAPTION
+msgid "Play"
+msgstr "Erreproduzitu"
+
+#: TFRMMAIN.BTNPLAY.HINT
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "Aurreikusi hautatutako iturburu fitxategia ffplay-rekin (bihurketa posible den ikusteko test egokia da)"
+
+#: TFRMMAIN.BTNPREVIEW.CAPTION
+msgid "Preview"
+msgstr "Aurreikusi"
+
+#: TFRMMAIN.BTNPREVIEW.HINT
+msgid "Preview using the output settings"
+msgstr "Aurreikusi irteerako ezarpenak erabiliz"
+
+#: TFRMMAIN.BTNREMOVE.CAPTION
+msgid "Remove"
+msgstr "Kendu"
+
+#: TFRMMAIN.BTNREMOVE.HINT
+msgid "Remove selected file(s) from the list"
+msgstr "Kendu hautatutako fitxategia(k) zerrendatik"
+
+#: TFRMMAIN.CAPTION
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMMAIN.CATEGORYBOX.HINT
+msgid "Device or file type the video should be converted to"
+msgstr "Bideoaren bihurketaren helburu den gailu edo fitxategi mota"
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr "Erabili iturburu karpeta"
+
+#: TFRMMAIN.CBX2PASS.CAPTION
+msgid "2 pass"
+msgstr "2 pasaldi"
+
+#: TFRMMAIN.CBX2PASS.HINT
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "Bi pasaldi erabiltzen direnean kalitatea hobetzen da, kodetzaileak lehen pasaldian informazioa biltzeko aukera duelako"
+
+#: TFRMMAIN.CBXDEINTERLACE.CAPTION
+msgid "Deinterlace"
+msgstr "Desgurutzelarkatu"
+
+#: TFRMMAIN.CBXDEINTERLACE.HINT
+msgid "Removes interlacing from the video (if necessary)"
+msgstr "Gurutzelarkatzea kentzen du bideotik (beharrezko izanez gero)"
+
+#: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMMAIN.DESTFOLDER.HINT
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr "Bukaerako bideoarentzako helburuko kokalekua (aukeratu iturburuko karpeta ez den bat)"
+
+#: TFRMMAIN.EDTASPECTRATIO.HINT
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "(<zenbaki osoa:zenbaki osoa> edo <zenbaki erreala>) helburuko pantailaren zabalera/altuera erlazioa (DAR)"
+
+#: TFRMMAIN.EDTAUDIOSYNC.HINT
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "(<zenbaki osoa>) 10etik hasi eta 44100 edo 48000 bezalako audio lagintze-maiztasunetarainokoa. Audio-korronteak \"luzatzea\"/\"estutzea\" onartzen du."
+
+#: TFRMMAIN.EDTCROPBOTTOM.TEXT
+msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPLEFT.TEXT
+msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPRIGHT.TEXT
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPTOP.TEXT
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTSEEKHH.HINT
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - Aurkitu posizio hau bihurtzen hasi aurretik"
+
+#: TFRMMAIN.EDTSEEKMM.HINT
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - Aurkitu posizio hau bihurtzen hasi aurretik"
+
+#: TFRMMAIN.EDTSEEKSS.HINT
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - Aurkitu posizio hau bihurtzen hasi aurretik"
+
+#: TFRMMAIN.EDTTTRHH.HINT
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - Gelditu bideo kopuru hau bihurtu denean"
+
+#: TFRMMAIN.EDTTTRMM.HINT
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - Gelditu bideo kopuru hau bihurtu denean"
+
+#: TFRMMAIN.EDTTTRSS.HINT
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - Gelditu bideo kopuru hau bihurtu denean"
+
+#: TFRMMAIN.EDTVOLUME.HINT
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "(<integer>) 256 = Uneko bolumena, 128 = Bolumen erdia, 512 = Bolumen bikoitza"
+
+#: TFRMMAIN.LABEL1.CAPTION
+msgid "Convert to:"
+msgstr "Bihurtu hona:"
+
+#: TFRMMAIN.LABEL10.CAPTION
+msgid "Audio Channels"
+msgstr "Audio kanalak"
+
+#: TFRMMAIN.LABEL12.CAPTION
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
+msgid "Output Folder:"
+msgstr ""
+
+#: TFRMMAIN.LABEL19.CAPTION
+msgid "Preset:"
+msgstr "Aurrezarpena:"
+
+#: TFRMMAIN.LABEL20.CAPTION
+msgid "Volume"
+msgstr "Bolumena"
+
+#: TFRMMAIN.LABEL21.CAPTION
+msgid "Sync"
+msgstr "Sinkronizatu"
+
+#: TFRMMAIN.LABEL22.CAPTION
+msgid "Seek to"
+msgstr "Aurkitu hau"
+
+#: TFRMMAIN.LABEL23.CAPTION
+msgid "Time to Record"
+msgstr "Grabatzeko denbora"
+
+#: TFRMMAIN.LABEL24.CAPTION
+msgid "Hours / Minutes / Seconds"
+msgstr "Ordu / Minutu / Segundu"
+
+#: TFRMMAIN.LABEL3.CAPTION
+msgid "Additional Command Line Parameters"
+msgstr "Komando-lerroko parametro gehigarriak"
+
+#: TFRMMAIN.LABEL7.CAPTION
+msgid "Audio Bitrate"
+msgstr "Audio bit-emaria"
+
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Lagintze-maiztasuna"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr "X"
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Zabalera/altuera erlazioa"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr "Behea"
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr "Ezkerra"
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+msgid "Right"
+msgstr "Eskuina"
+
+#: TFRMMAIN.LBLCROPTOP.CAPTION
+msgid "Top"
+msgstr "Goia"
+
+#: TFRMMAIN.LBLFRAMERATE.CAPTION
+msgid "Frame Rate"
+msgstr "Fotograma-emaria"
+
+#: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
+msgid "Video Bitrate"
+msgstr "Bideo bit-emaria"
+
+#: TFRMMAIN.LBLVIDEOSIZE.CAPTION
+msgid "Video Size"
+msgstr "Bideo-tamaina"
+
+#: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr "Aplikatu aurrezarpena"
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr "Aplikatu helburuko karpeta"
+
+#: TFRMMAIN.MENUITEM9.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFRMMAIN.MITABOUT.CAPTION
+msgid "About"
+msgstr "Honi buruz"
+
+#: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+msgid "Display Cmd Line"
+msgstr "Bistaratu komando-lerroa"
+
+#: TFRMMAIN.MITDOCS.CAPTION
+msgid "Documentation"
+msgstr "Dokumentazioa"
+
+#: TFRMMAIN.MITEXIT.CAPTION
+msgid "Exit"
+msgstr "Irten"
+
+#: TFRMMAIN.MITFORUMS.CAPTION
+msgid "Forums"
+msgstr "Eztabaidagunea"
+
+#: TFRMMAIN.MITIMPORTPRESET.CAPTION
+msgid "Import Preset"
+msgstr "Inportatu aurrezarpenak"
+
+#: TFRMMAIN.MITPAUSEONFINISH.CAPTION
+msgid "Pause on Finish"
+msgstr "Pausatu bukatzean"
+
+#: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+msgid "Play Sound on Finish"
+msgstr "Erreproduzitu soinua bukatzean"
+
+#: TFRMMAIN.MITPREFERENCES.CAPTION
+msgid "Preferences"
+msgstr "Hobespenak"
+
+#: TFRMMAIN.MITPRESETS.CAPTION
+msgid "Presets"
+msgstr "Aurrezarpenak"
+
+#: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+msgid "Additional Options"
+msgstr "Aukera gehigarriak"
+
+#: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+msgid "Shutdown on Finish"
+msgstr "Itzali bukatzean"
+
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr "Ikuspegi zehatza"
+
+#: TFRMMAIN.MITWINFF.CAPTION
+msgid "WinFF Website"
+msgstr "WinFF webgunea"
+
+#: TFRMMAIN.MNUEDIT.CAPTION
+msgid "Edit"
+msgstr "Editatu"
+
+#: TFRMMAIN.MNUFILE.CAPTION
+msgid "File"
+msgstr "Fitxategia"
+
+#: TFRMMAIN.MNUHELP.CAPTION
+msgid "Help"
+msgstr "Laguntza"
+
+#: TFRMMAIN.MNUOPTIONS.CAPTION
+msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+msgid "Options"
+msgstr "Aukerak"
+
+#: TFRMMAIN.PNLMAIN.CAPTION
+msgid "pnlMain"
+msgstr "pnlMain"
+
+#: TFRMMAIN.PRESETBOX.HINT
+msgid "Specific settings to use for the chosen device or file type"
+msgstr "Aukeratutako gailu edo fitxategi motarentzat erabili beharreko ezarpen zehatzak"
+
+#: TFRMMAIN.TABSHEET1.CAPTION
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr ""
+
+#: TFRMMAIN.TABSHEET2.CAPTION
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+msgid "Audio"
+msgstr ""
+
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+msgid "Crop"
+msgstr ""
+
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
+msgid "Time"
+msgstr ""
+
+#: TFRMMAIN.TABSHEET5.CAPTION
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr ""
+
+#: TFRMMAIN.VIDBITRATE.HINT
+msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "(<zenbaki osoa>) korronteak erabili behar lituzkeen kilobit/segundoak"
+
+#: TFRMMAIN.VIDFRAMERATE.HINT
+msgid "(<real> or <integer>) number of frames per second"
+msgstr "(<zenbaki erreala> edo <zenbaki osoa>) fotogramak segundoko"
+
+#: TFRMMAIN.VIDSIZEX.HINT
+msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten kodetzaile/deskodetzaileen kasuan hau da amaierako fotograma tamaina."
+
+#: TFRMMAIN.VIDSIZEY.HINT
+msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten kodetzaile/deskodetzaileen kasuan hau da amaierako fotograma tamaina."
+
+#: TFRMPREFERENCES.BUTTON1.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+msgid "OK"
+msgstr "Ados"
+
+#: TFRMPREFERENCES.BUTTON2.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+msgid "Cancel"
+msgstr "Utzi"
+
+#: TFRMPREFERENCES.BUTTON3.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON4.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON5.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON6.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON7.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON8.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.CAPTION
+msgid "WinFF Preferences"
+msgstr "WinFF hobespenak"
+
+#: TFRMPREFERENCES.CHECKBOX1.CAPTION
+msgid "Remember Last Used Directory"
+msgstr "Gogoratu erabilitako azken direktorioa"
+
+#: TFRMPREFERENCES.CHECKBOX2.CAPTION
+msgid "Use CHCP for international characters"
+msgstr "Erabili CHCP nazioarteko karaktereekin"
+
+#: TFRMPREFERENCES.CHECKBOX3.CAPTION
+msgid "Use Several Encoding Threads:"
+msgstr "Erabili hainbat kodeketa hari:"
+
+#: TFRMPREFERENCES.EDIT7.HINT
+msgid "'-e' for xterm, '-x' for gnome-terminal"
+msgstr "'-e' xterm-entzat, '-x' gnome-terminal-entzat"
+
+#: TFRMPREFERENCES.LABEL1.CAPTION
+msgid "Default Destination Directory:"
+msgstr "Helburuko direktorio lehenetsia:"
+
+#: TFRMPREFERENCES.LABEL2.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr "FFmpeg exekutagarriaren bidea:"
+
+#: TFRMPREFERENCES.LABEL3.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr "FFplay exekutagarriaren bidea:"
+
+#: TFRMPREFERENCES.LABEL4.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr "FFmpeg exekutagarriaren bidea:"
+
+#: TFRMPREFERENCES.LABEL5.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr "FFplay exekutagarriaren bidea:"
+
+#: TFRMPREFERENCES.LABEL6.CAPTION
+msgid "Terminal to run FFmpeg in:"
+msgstr "FFmpeg exekutatuko den terminala:"
+
+#: TFRMPREFERENCES.LABEL7.CAPTION
+msgid "Terminal Options:"
+msgstr "Terminalaren aukerak:"
+
+#: TFRMPREFERENCES.LABEL8.CAPTION
+msgid "Priority:"
+msgstr "Lehentasuna:"
+
+#: TFRMPREFERENCES.PAGE1.CAPTION
+msgid "General"
+msgstr "Orokorra"
+
+#: TFRMPREFERENCES.PAGE2.CAPTION
+msgid "MS Windows"
+msgstr "MS Windows"
+
+#: TFRMPREFERENCES.PAGE3.CAPTION
+msgid "Linux"
+msgstr "Linux"
+
+#: TFRMSCRIPT.BTNCLIP.CAPTION
+msgid "Copy to Clipboard"
+msgstr "Kopiatu arbelera"
+
+#: TFRMSCRIPT.BTNCLOSE.CAPTION
+msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+msgid "Close"
+msgstr "Itxi"
+
+#: TFRMSCRIPT.BTNRUN.CAPTION
+msgid "Run!"
+msgstr "Exekutatu!"
+
+#: TFRMSCRIPT.BTNSAVE.CAPTION
+msgid "Save As..."
+msgstr "Gorde honela..."
+
+#: TFRMSCRIPT.CAPTION
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg komando-lerroa"
+
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr "Analizatzen"
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "Bihurtzen"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "Ezin izan da FFmpeg aurkitu"
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "Ezin izan da FFplay aurkitu"
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Ezin izan da fitxategia aurkitu"
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Ezin izan da aurrezarpen-fitxategia aurkitu."
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Luzapenak ezin du punturik eduki"
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "fitxategia ez da existitzen"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Aurrezarpen-fitxategi baliogabea"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "Izenak alfazenbakizkoa (a-z,A-Z,0-9) izan behar du"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Mesedez, gehitu gutxienez bihurtzeko fitxategi bat"
+
+#: unit1.rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "Mesedez, hautatu aurrezarpen bat"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "%s%s%s aurrezarpena dagoeneko existitzen da"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Inportatu beharreko aurrezarpenak ez dauka luzapenik"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Inportatu beharreko aurrezarpenak ez dauka etiketarik"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Mesedez, hautatu aurrezarpen bat esportatzeko"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "%s%s%s etiketadun aurrezarpena dagoeneko existitzen da"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Sakatu enter jarraitzeko"
+
+#: unit1.rsselectdirectory
+msgid "Select Directory"
+msgstr "Hautatu direktorioa"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Hautatu aurrezarpen-fitxategia"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Hautatu bideo-fitxategiak"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Aurrezarpenak karaktere baliogabeak dauzka"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Sortu aurrezarpena"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Inportatu aurrezarpenak"
+
+#~ msgid "http://ffmpeg.arrozcru.org/"
+#~ msgstr "http://ffmpeg.arrozcru.org/"
+#~ msgid "About WinFF"
+#~ msgstr "WinFF-ri buruz"
+#~ msgid "Ramiro Polla"
+#~ msgstr "Ramiro Polla"
+#~ msgid "Select Video Files..."
+#~ msgstr "Hautatu bideo fitxategiak..."
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Aukera gehigarriak"
+#~ msgid "Output Details"
+#~ msgstr "Irteeraren xehetasunak"
+#~ msgid "Output Folder:"
+#~ msgstr "Irteerako karpeta:"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+#~ msgid "Audio"
+#~ msgstr "Audioa"
+#~ msgid "Video"
+#~ msgstr "Bideoa"
+#~ msgid " will be applied to all jobs when the conversion starts"
+#~ msgstr " bihurketa hasten denean lan guztiei aplikatuko zaie"
+#~ msgid "NOTE: Currently any additional options chosen"
+#~ msgstr "OHARRA: Une honetan ez dago aukera gehigarririk hautatuta"
+#~ msgid "Time"
+#~ msgstr "Denbora"
+#~ msgid "Crop"
+#~ msgstr "Ebaki"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Etiketak bakarra izan behar du."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Kendu aurrezarpena:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Eguneratu aurrezarpena:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Luzapena sartu behar duzu."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Etiketa bat sartu behar duzu."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Izen bat sartu behar duzu."
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Altua"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Inaktiboa"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normala"
+

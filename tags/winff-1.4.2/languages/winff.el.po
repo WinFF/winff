@@ -1,0 +1,1053 @@
+# translation of winff.po to Greek
+# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Γεώργιος Γεωργάς <apopatos@myrealbox.com>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: WinFF 1.0.1\n"
+"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
+"PO-Revision-Date: 2009-05-01\n"
+"Last-Translator: Γεώργιος Γεωργάς <apopatos@myrealbox.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: Hellas\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
+#: TFRMABOUT.BUTTON1.CAPTION
+msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+msgid "OK"
+msgstr "Εντάξει"
+
+#: TFRMABOUT.FRMABOUT.CAPTION
+#, fuzzy
+#| msgid "About WinFF"
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
+msgid "About WinFF"
+msgstr "Περί του WinFF"
+
+#: TFRMABOUT.LABEL1.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgid "WinFF 1.3.2"
+msgstr "WinFF"
+
+#: TFRMABOUT.LABEL10.CAPTION
+msgid "http://hawkeye.arrozcru.org/"
+msgstr ""
+
+#: TFRMABOUT.LABEL11.CAPTION
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr ""
+
+#: TFRMABOUT.LABEL13.CAPTION
+msgid "Gmaq"
+msgstr ""
+
+#: TFRMABOUT.LABEL14.CAPTION
+msgid "High Quality Presets From"
+msgstr ""
+
+#: TFRMABOUT.LABEL15.CAPTION
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr ""
+
+#: TFRMABOUT.LABEL16.CAPTION
+msgid "JNavas"
+msgstr ""
+
+#: TFRMABOUT.LABEL2.CAPTION
+msgid "Copyright 2006-2009 GPL V3"
+msgstr ""
+
+#: TFRMABOUT.LABEL3.CAPTION
+msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+msgstr ""
+
+#: TFRMABOUT.LABEL4.CAPTION
+msgid "http://www.winff.org"
+msgstr ""
+
+#: TFRMABOUT.LABEL5.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
+msgctxt "TFRMABOUT.LABEL5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.LABEL6.CAPTION
+msgid "Trademark Fabrice Belllard"
+msgstr ""
+
+#: TFRMABOUT.LABEL7.CAPTION
+msgid "http://ffmpeg.org"
+msgstr ""
+
+#: TFRMABOUT.LABEL8.CAPTION
+#, fuzzy
+#| msgid "FFmpeg builds by"
+msgid "FFmpeg Windows Builds by"
+msgstr "FFmpeg από"
+
+#: TFRMABOUT.LABEL9.CAPTION
+msgid "Kyle Schwarz"
+msgstr ""
+
+#: TFRMABOUT.PAGE1.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMABOUT.PAGE1.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMABOUT.PAGE2.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
+msgctxt "TFRMABOUT.PAGE2.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.PAGE3.CAPTION
+msgid "Thanks"
+msgstr "Ευχαριστίες"
+
+#: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
+msgid "Add / Update"
+msgstr "Προσθήκη / Αναβάθμιση"
+
+#: TFRMEDITPRESETS.CANCELBTN.CAPTION
+#, fuzzy
+#| msgid "Close"
+msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: TFRMEDITPRESETS.CAPTION
+msgid "Edit Presets"
+msgstr "Επεξεργασία Presets"
+
+#: TFRMEDITPRESETS.DELETEBTN.CAPTION
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: TFRMEDITPRESETS.EDIT1.HINT
+msgid "One word, only letters and numbers"
+msgstr ""
+
+#: TFRMEDITPRESETS.EDIT2.HINT
+msgid "Enter a more descriptive name for this preset"
+msgstr ""
+
+#: TFRMEDITPRESETS.EDIT3.HINT
+#, fuzzy
+#| msgid "Preset Command Line (no -i or output file)"
+msgid "Please don't use -i or output file parameters"
+msgstr "Γραμμή εντολών Preset (όχι -i ή τελικό αρχείο)"
+
+#: TFRMEDITPRESETS.EDIT4.HINT
+msgid "Do not include a dot"
+msgstr ""
+
+#: TFRMEDITPRESETS.EDIT5.HINT
+msgid "Choose a category to group this preset under"
+msgstr ""
+
+#: TFRMEDITPRESETS.EXPORT.CAPTION
+#, fuzzy
+#| msgid "Export"
+msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+msgid "Export"
+msgstr "Εξαγωγή"
+
+#: TFRMEDITPRESETS.IMPORT.CAPTION
+msgid "Import"
+msgstr "Εισαγωγή"
+
+#: TFRMEDITPRESETS.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Create Preset:"
+msgid "Category / Preset"
+msgstr "Δημιμουργία Preset"
+
+#: TFRMEDITPRESETS.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Preset Name (One word , Only A-z 0-9)"
+msgid "Preset Name (one word, only letters and numbers)"
+msgstr "Όνομα Preset (Μία λέξη, Μόνο A-z 0-9"
+
+#: TFRMEDITPRESETS.LABEL3.CAPTION
+msgid "Preset Label"
+msgstr "Τίτλος Preset"
+
+#: TFRMEDITPRESETS.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Preset Command Line (no -i or output file)"
+msgid "Preset Command Line Parameters (no -i or output file)"
+msgstr "Γραμμή εντολών Preset (όχι -i ή τελικό αρχείο)"
+
+#: TFRMEDITPRESETS.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Output File Extension (no \".\")"
+msgid "Output File Extension (do not include the '.' )"
+msgstr "Κατάληξη Τελικού Αρχείου (όχι \".\")"
+
+#: TFRMEDITPRESETS.LABEL6.CAPTION
+msgid "Category"
+msgstr "Κατηγορία"
+
+#: TFRMEDITPRESETS.OKBTN.CAPTION
+#, fuzzy
+#| msgid "Save"
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: TFRMEDITPRESETS.PNLTOP.CAPTION
+msgid "pnlTop"
+msgstr ""
+
+#: TFRMEXPORT.CANCELBTN.CAPTION
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: TFRMEXPORT.CAPTION
+msgid "Export Presets"
+msgstr "Εξαγωγή Presets"
+
+#: TFRMEXPORT.EXPORTBTN.CAPTION
+#, fuzzy
+#| msgid "Export"
+msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+msgid "Export"
+msgstr "Εξαγωγή"
+
+#: TFRMEXPORT.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Choose presets to export"
+msgid "Choose Presets to Export:"
+msgstr "Επιλογή Presets για εξαγωγή"
+
+#: TFRMMAIN.AUDBITRATE.HINT
+msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr ""
+
+#: TFRMMAIN.AUDCHANNELS.HINT
+msgid "(<integer>) number of audio channels"
+msgstr ""
+
+#: TFRMMAIN.AUDSAMPLINGRATE.HINT
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr ""
+
+#: TFRMMAIN.BTNADD.CAPTION
+msgid "Add"
+msgstr "Προσθήκη"
+
+#: TFRMMAIN.BTNADD.HINT
+msgid "Add file(s) to the list for conversion"
+msgstr ""
+
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Output Folder"
+msgstr "Φάκελος Προορισμού"
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
+#: TFRMMAIN.BTNCLEAR.CAPTION
+msgid "Clear"
+msgstr "Καθαρισμός"
+
+#: TFRMMAIN.BTNCLEAR.HINT
+msgid "Remove all files from the list"
+msgstr ""
+
+#: TFRMMAIN.BTNCONVERT.CAPTION
+msgid "Convert"
+msgstr "Μετατροπή"
+
+#: TFRMMAIN.BTNCONVERT.HINT
+msgid "Start the conversion process"
+msgstr ""
+
+#: TFRMMAIN.BTNOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Options"
+msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+msgid "Options"
+msgstr "Επιλογές"
+
+#: TFRMMAIN.BTNOPTIONS.HINT
+msgid "Open/close the additional options window"
+msgstr ""
+
+#: TFRMMAIN.BTNPLAY.CAPTION
+msgid "Play"
+msgstr "Αναπαραγωγή"
+
+#: TFRMMAIN.BTNPLAY.HINT
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr ""
+
+#: TFRMMAIN.BTNPREVIEW.CAPTION
+msgid "Preview"
+msgstr ""
+
+#: TFRMMAIN.BTNPREVIEW.HINT
+msgid "Preview using the output settings"
+msgstr ""
+
+#: TFRMMAIN.BTNREMOVE.CAPTION
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#: TFRMMAIN.BTNREMOVE.HINT
+msgid "Remove selected file(s) from the list"
+msgstr ""
+
+#: TFRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMMAIN.CATEGORYBOX.HINT
+msgid "Device or file type the video should be converted to"
+msgstr ""
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr ""
+
+#: TFRMMAIN.CBX2PASS.CAPTION
+msgid "2 pass"
+msgstr "2 περάσματα"
+
+#: TFRMMAIN.CBX2PASS.HINT
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr ""
+
+#: TFRMMAIN.CBXDEINTERLACE.CAPTION
+msgid "Deinterlace"
+msgstr "Απόπλεξη"
+
+#: TFRMMAIN.CBXDEINTERLACE.HINT
+msgid "Removes interlacing from the video (if necessary)"
+msgstr ""
+
+#: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMMAIN.DESTFOLDER.HINT
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.EDTASPECTRATIO.HINT
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr ""
+
+#: TFRMMAIN.EDTAUDIOSYNC.HINT
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+
+#: TFRMMAIN.EDTCROPBOTTOM.TEXT
+msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTCROPLEFT.TEXT
+msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTCROPRIGHT.TEXT
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTCROPTOP.TEXT
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKHH.HINT
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKMM.HINT
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTSEEKSS.HINT
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRHH.HINT
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRMM.HINT
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTTTRSS.HINT
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr ""
+
+#: TFRMMAIN.EDTVOLUME.HINT
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+
+#: TFRMMAIN.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Convert"
+msgid "Convert to:"
+msgstr "Μετατροπή"
+
+#: TFRMMAIN.LABEL10.CAPTION
+msgid "Audio Channels"
+msgstr "Κανάλια Ήχου"
+
+#: TFRMMAIN.LABEL12.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
+msgid "Output Folder:"
+msgstr "Φάκελος Προορισμού"
+
+#: TFRMMAIN.LABEL19.CAPTION
+#, fuzzy
+#| msgid "Presets"
+msgid "Preset:"
+msgstr "Presets"
+
+#: TFRMMAIN.LABEL20.CAPTION
+msgid "Volume"
+msgstr ""
+
+#: TFRMMAIN.LABEL21.CAPTION
+msgid "Sync"
+msgstr ""
+
+#: TFRMMAIN.LABEL22.CAPTION
+msgid "Seek to"
+msgstr ""
+
+#: TFRMMAIN.LABEL23.CAPTION
+msgid "Time to Record"
+msgstr ""
+
+#: TFRMMAIN.LABEL24.CAPTION
+msgid "Hours / Minutes / Seconds"
+msgstr ""
+
+#: TFRMMAIN.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Additional Command Line Parameters (Advanced)"
+msgid "Additional Command Line Parameters"
+msgstr "Επιπλέον Παράμετροι Γραμμής Εντολών (Για Προχωρημένους)"
+
+#: TFRMMAIN.LABEL7.CAPTION
+msgid "Audio Bitrate"
+msgstr "Ρυθμός Δεδομένων Ήχου"
+
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Ρυθμός Δειγματοληψίας"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr ""
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Αναλογία"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr ""
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#, fuzzy
+#| msgid "High"
+msgid "Right"
+msgstr "Υψηλή"
+
+#: TFRMMAIN.LBLCROPTOP.CAPTION
+msgid "Top"
+msgstr ""
+
+#: TFRMMAIN.LBLFRAMERATE.CAPTION
+msgid "Frame Rate"
+msgstr "Ρυθμός Καρέ"
+
+#: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
+msgid "Video Bitrate"
+msgstr "Ρυθμός Δεδομένων Βίντεο"
+
+#: TFRMMAIN.LBLVIDEOSIZE.CAPTION
+msgid "Video Size"
+msgstr "Μέγεθος Βίντεο"
+
+#: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM9.CAPTION
+msgid "-"
+msgstr ""
+
+#: TFRMMAIN.MITABOUT.CAPTION
+#, fuzzy
+#| msgid "About"
+msgid "About"
+msgstr "Περί"
+
+#: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+#, fuzzy
+#| msgid "Display CMD Line"
+msgid "Display Cmd Line"
+msgstr "Προβολή Γραμμής Εντολών"
+
+#: TFRMMAIN.MITDOCS.CAPTION
+msgid "Documentation"
+msgstr "Τεκμηρίωση"
+
+#: TFRMMAIN.MITEXIT.CAPTION
+msgid "Exit"
+msgstr "Έξοδος"
+
+#: TFRMMAIN.MITFORUMS.CAPTION
+#, fuzzy
+#| msgid "WinFF Forums"
+msgid "Forums"
+msgstr "Φόρουμ WinFF"
+
+#: TFRMMAIN.MITIMPORTPRESET.CAPTION
+msgid "Import Preset"
+msgstr "Εισαγωγή Preset"
+
+#: TFRMMAIN.MITPAUSEONFINISH.CAPTION
+msgid "Pause on Finish"
+msgstr "Πάγωμα μετά το Πέρας"
+
+#: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+#, fuzzy
+#| msgid "Pause on Finish"
+msgid "Play Sound on Finish"
+msgstr "Πάγωμα μετά το Πέρας"
+
+#: TFRMMAIN.MITPREFERENCES.CAPTION
+msgid "Preferences"
+msgstr "Προτιμήσεις"
+
+#: TFRMMAIN.MITPRESETS.CAPTION
+#, fuzzy
+#| msgid "Presets"
+msgid "Presets"
+msgstr "Presets"
+
+#: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Additional Options"
+msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+msgid "Additional Options"
+msgstr "Επιπλέον Επιλογές"
+
+#: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+msgid "Shutdown on Finish"
+msgstr "Κλείσιμο μετά το Πέρας "
+
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr ""
+
+#: TFRMMAIN.MITWINFF.CAPTION
+msgid "WinFF Website"
+msgstr "Ιστοσελίδα WinFF"
+
+#: TFRMMAIN.MNUEDIT.CAPTION
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: TFRMMAIN.MNUFILE.CAPTION
+msgid "File"
+msgstr "Αρχείο"
+
+#: TFRMMAIN.MNUHELP.CAPTION
+msgid "Help"
+msgstr "Βοήθεια"
+
+#: TFRMMAIN.MNUOPTIONS.CAPTION
+#, fuzzy
+#| msgid "Options"
+msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+msgid "Options"
+msgstr "Επιλογές"
+
+#: TFRMMAIN.PNLMAIN.CAPTION
+msgid "pnlMain"
+msgstr ""
+
+#: TFRMMAIN.PRESETBOX.HINT
+msgid "Specific settings to use for the chosen device or file type"
+msgstr ""
+
+#: TFRMMAIN.TABSHEET1.CAPTION
+#, fuzzy
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Μέγεθος Βίντεο"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
+#, fuzzy
+#| msgid "Audio Settings"
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+msgid "Audio"
+msgstr "Ρυθμίσεις Ήχου"
+
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+msgid "Crop"
+msgstr ""
+
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
+msgid "Time"
+msgstr ""
+
+#: TFRMMAIN.TABSHEET5.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+#, fuzzy
+#| msgid "Output Details"
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Λεπτομέρειες Παραγωγής"
+
+#: TFRMMAIN.VIDBITRATE.HINT
+msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr ""
+
+#: TFRMMAIN.VIDFRAMERATE.HINT
+msgid "(<real> or <integer>) number of frames per second"
+msgstr ""
+
+#: TFRMMAIN.VIDSIZEX.HINT
+msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+
+#: TFRMMAIN.VIDSIZEY.HINT
+msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON1.CAPTION
+#, fuzzy
+#| msgid "OK"
+msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+msgid "OK"
+msgstr "Εντάξει"
+
+#: TFRMPREFERENCES.BUTTON2.CAPTION
+#, fuzzy
+#| msgid "Cancel"
+msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: TFRMPREFERENCES.BUTTON3.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON4.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON5.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON6.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON7.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.BUTTON8.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+msgid "..."
+msgstr ""
+
+#: TFRMPREFERENCES.CAPTION
+msgid "WinFF Preferences"
+msgstr "Προτιμήσεις WinFF"
+
+#: TFRMPREFERENCES.CHECKBOX1.CAPTION
+#, fuzzy
+#| msgid "Remember Last Directory Used"
+msgid "Remember Last Used Directory"
+msgstr "Απομνημόνευση Τελευταίου Καταλόγου"
+
+#: TFRMPREFERENCES.CHECKBOX2.CAPTION
+msgid "Use CHCP for international characters"
+msgstr "Χρησιμοποίηση CHCP για διεθνείς χαρακτήρες"
+
+#: TFRMPREFERENCES.CHECKBOX3.CAPTION
+msgid "Use Several Encoding Threads:"
+msgstr ""
+
+#: TFRMPREFERENCES.EDIT7.HINT
+#, fuzzy
+#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+msgid "'-e' for xterm, '-x' for gnome-terminal"
+msgstr "Επιλογές Τερματικού (-e για Xterm, -x για Τερματικό Gnome"
+
+#: TFRMPREFERENCES.LABEL1.CAPTION
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Default Destination Directory:"
+msgstr "Προεπιλεγμένος Φάκελος Προορισμού"
+
+#: TFRMPREFERENCES.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable"
+msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr "Διαδρομή Εκτελέσιμου FFmpeg"
+
+#: TFRMPREFERENCES.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Path to FFPlay Executable"
+msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr "Διαδρομή Εκτελέσιμου FFPlay"
+
+#: TFRMPREFERENCES.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable"
+msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr "Διαδρομή Εκτελέσιμου FFmpeg"
+
+#: TFRMPREFERENCES.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Path to FFPlay Executable"
+msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr "Διαδρομή Εκτελέσιμου FFPlay"
+
+#: TFRMPREFERENCES.LABEL6.CAPTION
+#, fuzzy
+#| msgid "Terminal to run FFmpeg"
+msgid "Terminal to run FFmpeg in:"
+msgstr "Τερματικό Εκτέλεσης FFmpeg"
+
+#: TFRMPREFERENCES.LABEL7.CAPTION
+#, fuzzy
+#| msgid "Additional Options"
+msgid "Terminal Options:"
+msgstr "Επιπλέον Επιλογές"
+
+#: TFRMPREFERENCES.LABEL8.CAPTION
+#, fuzzy
+#| msgid "Priority"
+msgid "Priority:"
+msgstr "Προτεραιότητα"
+
+#: TFRMPREFERENCES.PAGE1.CAPTION
+msgid "General"
+msgstr "Γενικά"
+
+#: TFRMPREFERENCES.PAGE2.CAPTION
+#, fuzzy
+#| msgid "Ms Windows"
+msgid "MS Windows"
+msgstr "Ms Windows"
+
+#: TFRMPREFERENCES.PAGE3.CAPTION
+msgid "Linux"
+msgstr "Linux"
+
+#: TFRMSCRIPT.BTNCLIP.CAPTION
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: TFRMSCRIPT.BTNCLOSE.CAPTION
+#, fuzzy
+#| msgid "Close"
+msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: TFRMSCRIPT.BTNRUN.CAPTION
+msgid "Run!"
+msgstr ""
+
+#: TFRMSCRIPT.BTNSAVE.CAPTION
+msgid "Save As..."
+msgstr ""
+
+#: TFRMSCRIPT.CAPTION
+msgid "FFmpeg Command Line"
+msgstr "Γραμμή Εντολών FFmpeg"
+
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr ""
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "Μετατροπή"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "Δεv βρέθηκε το FFmpeg"
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "Δεν βρέθηκε το FFplay"
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Δεν βρέθηκε το αρχείο"
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Δεν βρέθηκε το αρχείο Presets"
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Η κατάληξη δεν μπορεί να περιέχει τελεία"
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "το αρχείο δεν υπάρχει"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Ακατάλληλο Αρχείο Preset"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "Το όνομα Πρέπει να είναι αλφαρηθμιτικό(a-z,A-Z,0-9) "
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Παρακαλώ προσθέστε ένα τουλάχιστον αρχείο για μετατροπή"
+
+#: unit1.rspleaseselectapreset
+#, fuzzy
+#| msgid "Please select a preset to export"
+msgid "Please select a preset"
+msgstr "Παρακαλώ επιλέξετε ένα Preset για εξαγωγή"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "Το Preset: %s%s%s υπάρχει ήδη"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Το Preset που προσπαθείτε να εισάγεται δεν έχει κατάληξη"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Το Preset που προσπαθείτε να εισάγεται δεν έχει ετικέτα"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Παρακαλώ επιλέξετε ένα Preset για εξαγωγή"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "Το Preset με ετικέτα: %s%s%s υπάρχει ήδη"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Πατήστε Emter για να συνεχίσετε"
+
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "Προεπιλεγμένος Φάκελος Προορισμού"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Επιλογή Αρχείου Preset"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Επιλογή Αρχείων Βίντεο"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Το Preset εμπεριέχει άκυρους χαρακτήρες"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Δημιμουργία Preset"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Εισαγωγή Presets"
+
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~| msgid "Additional Options"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Επιπλέον Επιλογές"
+#~ msgid "(All Categories)"
+#~ msgstr "(Όλες οι Κατηγορίες)"
+#~ msgid "Convert To ..."
+#~ msgstr "Μετατροπή Σε..."
+#~ msgid "Device Preset"
+#~ msgstr "Preset Συσκευής"
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Περί"
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Επιλογές"
+#~ msgid "Video Settings"
+#~ msgstr "Ρυθμίσεις Βίντεο"
+#~ msgid "Audio Settings"
+#~ msgstr "Ρυθμίσεις Ήχου"
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Άκυρο"
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Presets"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Πολυεπεξεργασία για Διπλοπύρηνους Επεξεργαστές"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "διαδρομή για το FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Διαδρομή για το FFPlay.exe"
+#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~| msgid "OK"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Εντάξει"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Μετατροπή"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Αποθήκευση"
+#~ msgid "Replace Preset"
+#~ msgstr "Αντικατάσταση Preset"
+#~| msgid "FFmpeg"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Η ετικέτα πρέπει να είναι μοναδική"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Αφαίρεση Preset"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Αναβάθμιση Preset"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Πρέπει να προσθέσετε την κατάληξη"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Πρέπει να προσθέσετε ετικέτα"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Πρέπει να προσθέσετε όνομα"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Υψηλή"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Αδρανές"
+
+#: unit4.rsprioritynormal
+#, fuzzy
+msgid "Normal"
+msgstr "Κανονική"
+

@@ -1,0 +1,397 @@
+object frmEditPresets: TfrmEditPresets
+  Left = 341
+  Height = 474
+  Top = 148
+  Width = 417
+  ActiveControl = pnlTop
+  Caption = 'Edit Presets'
+  ClientHeight = 474
+  ClientWidth = 417
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 400
+  Icon.Data = {
+    7E04000000000100010010100000010020006804000016000000280000001000
+    0000200000000100200000000000000400006400000064000000000000000000
+    0000666666AF666666FF666666FF666666FF979797FFB3B3B3FFB3B3B3FFB3B3
+    B3FFB3B3B3FFB3B3B3FFB3B3B3FFB3B3B3FFB3B3B3FFB3B3B3FFB3B3B3FF7A7A
+    7AB7666666FFC4C4C4FFCBCBCBFF666666FFFBFBFBFFFFFFFFFFFFFFFFFFEEED
+    EBFFFFFFFFFFFFFFFFFFE7E9ECFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC9C9
+    C9FF666666FFF6F6F6FFFFFFFFFF666666FFFBFBFBFFFFFFFFFFFFFFFFFFB09E
+    87FFD1C6B4FFFFFFFFFF496EBEFFDBE2EBFFFFFFFFFFFFFFFFFFFFFFFFFFC3C3
+    C3FF666666FFAEAEAEFFB3B3B3FF666666FFF6F6F6FFFFFFFFFFFFFFFFFFB5A1
+    87FFAA7D34FFD8CDB7FF3669D6FF2E7BDAFFE0E7EDFFFFFFFFFFFFFFFFFFB3B3
+    B3FF666666FF666666FF666666FF666666FFF6F6F6FFFFFFFFFFFFFFFFFFB5A1
+    87FFAD7D2DFFB6872DFFB7B7B6FF1D75E1FF3192D8FFE4ECEFFFFFFFFFFFB3B3
+    B3FF666666FFE8E8E8FFF1F1F1FF666666FFCECECEFF70675CFF816B4DFF976F
+    39FFAD7D2DFFBC8824FFC59327FFB8BCB9FF198CDFFF36AAD7FFE7F0F0FFB3B3
+    B3FF666666FFF6F6F6FFFFFFFFFF666666FFCCCCCCFF73685AFF896D47FF9F72
+    35FFAE7D2DFFBC8824FFD7AC4FFFD2AD55FF94B3C9FF5BC8F2FF62BECDFFB3B3
+    B3FF666666FF8A8A8AFF8C8C8CFF666666FFD6D6D6FF8B847BFF988770FF9D7A
+    4CFFAE7D2CFFCEA85FFFF1E6CEFFAFB5B5FF91C7EDFFADDBEEFFE7F1F2FFB3B3
+    B3FF666666FF818181FF838383FF666666FFF6F6F6FFFFFFFFFFFFFFFFFFB5A1
+    87FFAF7F2FFFE3D2B3FFA7ACB8FF438AE3FFA4CDEBFFE9F0F3FFFFFFFFFFB3B3
+    B3FF666666FFF6F6F6FFFFFFFFFF666666FFF6F6F6FFFFFFFFFFFFFFFFFFB5A1
+    87FFA87E3BFFDCD4C4FF2E60D3FF3D80D4FFEBF0F3FFFFFFFFFFFFFFFFFFB3B3
+    B3FF666666FFF1F1F1FFFBFBFBFF666666FFF6F6F6FFFFFFFFFFFFFFFFFFAD9F
+    8CFFDBD4C9FFFFFFFFFF5B77B8FFEDF0F4FFFFFFFFFFFFFFFFFFFFFFFFFFB3B3
+    B3FF666666FF666666FF666666FF666666FFEDEDEDFFF4F4F4FFF4F4F4FFF3F3
+    F3FFF4F4F4FFF4F4F4FFF0F0F0FFF4F4F4FFF4F4F4FFF4F4F4FFF4F4F4FFB7B5
+    B0FF666666FFA5A5A5FFA9A9A9FF666666FF938F8AFF9E9385FFA7957DFFB197
+    76FFB99A6FFFBF9F6CFFC5A468FFCBA864FFD1AD61FFD8B15DFFDDB65AFFAF96
+    59FF666666FFF6F6F6FFFFFFFFFF666666FF6C6760FF7A6A54FF886D48FF9670
+    3DFFA87D41FFC19D64FFC1974BFFC89C46FFD3A74BFFDFB860FFE5BB58FFA586
+    39FF666666FFC9C9C9FFD0D0D0FF666666FF6C6760FF7A6A54FF886D48FF9670
+    3DFFA27433FFAC7B2EFFBE9142FFD0AA61FFD3A649FFDDB255FFE3B74DFFA486
+    3AFF666666AF666666FF666666FF666666FF686664FF70685DFF776A57FF7E6B
+    51FF846D4CFF89714AFF8E7447FF927844FF977B41FF9C7F3FFFA0833CFF7970
+    58B8000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000
+  }
+  OnShow = FormShow
+  Position = poMainFormCenter
+  ShowHint = True
+  LCLVersion = '0.9.28.2'
+  object pnlBottom: TPanel
+    Left = 0
+    Height = 64
+    Top = 410
+    Width = 417
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 64
+    ClientWidth = 417
+    TabOrder = 0
+    object pnlLeft: TPanel
+      Left = 3
+      Height = 56
+      Top = 3
+      Width = 105
+      Align = alLeft
+      AutoSize = True
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 3
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      ClientHeight = 56
+      ClientWidth = 105
+      Constraints.MinWidth = 80
+      TabOrder = 0
+      object addpresetbtn: TButton
+        Left = 3
+        Height = 25
+        Top = 3
+        Width = 102
+        Align = alTop
+        BorderSpacing.Left = 3
+        BorderSpacing.Top = 3
+        BorderSpacing.InnerBorder = 4
+        Caption = 'Add / Update'
+        OnClick = addpresetbtnClick
+        TabOrder = 0
+      end
+      object DeleteBtn: TButton
+        Left = 3
+        Height = 25
+        Top = 31
+        Width = 102
+        Align = alTop
+        BorderSpacing.Left = 3
+        BorderSpacing.Top = 3
+        BorderSpacing.InnerBorder = 4
+        Caption = 'Delete'
+        OnClick = DeleteBtnClick
+        TabOrder = 1
+      end
+    end
+    object pnlRight1: TPanel
+      Left = 334
+      Height = 56
+      Top = 3
+      Width = 80
+      Align = alRight
+      AutoSize = True
+      BorderSpacing.Top = 3
+      BorderSpacing.Right = 3
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      ClientHeight = 56
+      ClientWidth = 80
+      Constraints.MinWidth = 80
+      TabOrder = 1
+      object export: TButton
+        Left = 0
+        Height = 25
+        Top = 3
+        Width = 77
+        Align = alTop
+        BorderSpacing.Top = 3
+        BorderSpacing.Right = 3
+        BorderSpacing.InnerBorder = 4
+        Caption = 'Export'
+        OnClick = exportClick
+        TabOrder = 0
+      end
+      object CancelBtn: TButton
+        Left = 0
+        Height = 25
+        Top = 31
+        Width = 77
+        Align = alTop
+        BorderSpacing.Top = 3
+        BorderSpacing.Right = 3
+        BorderSpacing.InnerBorder = 4
+        Caption = 'Close'
+        OnClick = CancelBtnClick
+        TabOrder = 1
+      end
+    end
+    object pnlRight2: TPanel
+      Left = 251
+      Height = 56
+      Top = 3
+      Width = 80
+      Align = alRight
+      AutoSize = True
+      BorderSpacing.Top = 3
+      BorderSpacing.Right = 3
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      ClientHeight = 56
+      ClientWidth = 80
+      Constraints.MinWidth = 80
+      TabOrder = 2
+      object import: TButton
+        Left = 0
+        Height = 25
+        Top = 3
+        Width = 77
+        Align = alTop
+        BorderSpacing.Top = 3
+        BorderSpacing.Right = 3
+        BorderSpacing.InnerBorder = 4
+        Caption = 'Import'
+        OnClick = importClick
+        TabOrder = 0
+      end
+      object OKbtn: TButton
+        Left = 0
+        Height = 25
+        Top = 31
+        Width = 77
+        Align = alTop
+        BorderSpacing.Top = 3
+        BorderSpacing.Right = 3
+        BorderSpacing.InnerBorder = 4
+        Caption = 'Save'
+        OnClick = OKbtnClick
+        TabOrder = 1
+      end
+    end
+  end
+  object pnlSettings: TPanel
+    Left = 0
+    Height = 263
+    Top = 147
+    Width = 417
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 263
+    ClientWidth = 417
+    TabOrder = 1
+    object Label2: TLabel
+      Left = 3
+      Height = 18
+      Top = 10
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 10
+      BorderSpacing.Right = 3
+      Caption = 'Preset Name (one word, only letters and numbers)'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 3
+      Height = 18
+      Top = 62
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 7
+      BorderSpacing.Right = 3
+      Caption = 'Preset Label'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 3
+      Height = 18
+      Top = 114
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 7
+      BorderSpacing.Right = 3
+      Caption = 'Preset Command Line Parameters (no -i or output file)'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 3
+      Height = 18
+      Top = 166
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 7
+      BorderSpacing.Right = 3
+      Caption = 'Output File Extension (do not include the ''.'' )'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 3
+      Height = 18
+      Top = 218
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 7
+      BorderSpacing.Right = 3
+      Caption = 'Category'
+      ParentColor = False
+    end
+    object Edit1: TEdit
+      Left = 3
+      Height = 27
+      Hint = 'One word, only letters and numbers'
+      Top = 28
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Right = 3
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 3
+      Height = 27
+      Hint = 'Enter a more descriptive name for this preset'
+      Top = 80
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Right = 3
+      TabOrder = 1
+    end
+    object Edit3: TEdit
+      Left = 3
+      Height = 27
+      Hint = 'Please don''t use -i or output file parameters'
+      Top = 132
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Right = 3
+      TabOrder = 2
+    end
+    object Edit4: TEdit
+      Left = 3
+      Height = 27
+      Hint = 'Do not include a dot'
+      Top = 184
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Right = 3
+      MaxLength = 20
+      TabOrder = 3
+    end
+    object Edit5: TEdit
+      Left = 3
+      Height = 27
+      Hint = 'Choose a category to group this preset under'
+      Top = 236
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Right = 3
+      TabOrder = 4
+    end
+  end
+  object pnlTop: TPanel
+    Left = 0
+    Height = 147
+    Top = 0
+    Width = 417
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'pnlTop'
+    ClientHeight = 147
+    ClientWidth = 417
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 3
+      Height = 18
+      Top = 3
+      Width = 411
+      Align = alTop
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 3
+      BorderSpacing.Right = 3
+      Caption = 'Category / Preset'
+      Font.CharSet = 17
+      ParentColor = False
+      ParentFont = False
+    end
+    object ListBox1: TListBox
+      Left = 171
+      Height = 126
+      Top = 21
+      Width = 243
+      Align = alClient
+      Anchors = [akTop, akRight, akBottom]
+      BorderSpacing.Right = 3
+      ItemHeight = 0
+      OnClick = ListBox1Click
+      TabOrder = 0
+      TopIndex = -1
+    end
+    object lbCategory: TListBox
+      Left = 3
+      Height = 126
+      Top = 21
+      Width = 163
+      Align = alLeft
+      BorderSpacing.Left = 3
+      ItemHeight = 0
+      OnClick = lbCategoryClick
+      TabOrder = 1
+      TopIndex = -1
+    end
+    object Splitter1: TSplitter
+      Left = 166
+      Height = 126
+      Top = 21
+      Width = 5
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Title = 'Import a Preset'
+    DefaultExt = '.wff'
+    Filter = 'WinFF Presets|*.wff'
+    FilterIndex = 0
+    left = 320
+  end
+  object SaveDialog1: TSaveDialog
+    Title = 'Export a Preset'
+    FilterIndex = 0
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    left = 248
+  end
+  object XMLConfig1: TXMLConfig
+    StartEmpty = False
+    RootName = 'CONFIG'
+    left = 290
+    top = 169
+  end
+end
