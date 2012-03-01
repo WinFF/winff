@@ -887,14 +887,6 @@ msgstr "Crea profilo:"
 msgid "Import Presets"
 msgstr "Importa profilo"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "La descrizione deve essere unica."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Elimina profilo:"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~| msgid "Select Video Files"
@@ -914,6 +906,14 @@ msgstr "Elimina profilo:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "La descrizione deve essere unica."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Elimina profilo:"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Aggiorna profilo:"

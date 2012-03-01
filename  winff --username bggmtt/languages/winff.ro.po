@@ -847,14 +847,6 @@ msgstr "Creare regula de conversie:"
 msgid "Import Presets"
 msgstr "Importare reguli de conversie"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Eticheta trebuie să fie unică."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Stergere regulă de conversie:"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr " va fi aplicat tuturor sarcinilor când va începe conversia"
 #~ msgid "http://ffmpeg.arrozcru.org/"
@@ -888,6 +880,14 @@ msgstr "Stergere regulă de conversie:"
 #~ msgstr "Selectați fișiere video..."
 #~ msgid "NOTE: Currently any additional options chosen"
 #~ msgstr "NOTĂ: În prezent, orice opţiuni suplimentare alese"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Eticheta trebuie să fie unică."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Stergere regulă de conversie:"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Actualizare regula de conversie:"

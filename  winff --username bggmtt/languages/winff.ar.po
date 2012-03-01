@@ -986,14 +986,6 @@ msgstr "إنشاء نسبة"
 msgid "Import Presets"
 msgstr "استيراد نسبة"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "الوسم لابد أن يكون فريدا"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "إزالة نسبة"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1043,6 +1035,14 @@ msgstr "إزالة نسبة"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "الوسم لابد أن يكون فريدا"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "إزالة نسبة"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "تحديث النسبة"

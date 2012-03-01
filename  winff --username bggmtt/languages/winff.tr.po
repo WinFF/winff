@@ -984,14 +984,6 @@ msgstr "Ayar yarat:"
 msgid "Import Presets"
 msgstr "Ayarları yükle"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Etiket eşsiz olmalı."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Ayar sil:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1045,6 +1037,14 @@ msgstr "Ayar sil:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Etiket eşsiz olmalı."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Ayar sil:"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Ayarı güncelle:"

@@ -966,14 +966,6 @@ msgstr "Δημιμουργία Preset"
 msgid "Import Presets"
 msgstr "Εισαγωγή Presets"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Η ετικέτα πρέπει να είναι μοναδική"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Αφαίρεση Preset"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1032,6 +1024,14 @@ msgstr "Αφαίρεση Preset"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Η ετικέτα πρέπει να είναι μοναδική"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Αφαίρεση Preset"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Αναβάθμιση Preset"

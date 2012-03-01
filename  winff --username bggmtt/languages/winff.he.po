@@ -965,14 +965,6 @@ msgstr "צור preset:"
 msgid "Import Presets"
 msgstr "ייבוא Presets"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "התווית חייבת להיות ייחודית."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "הסר preset:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1029,6 +1021,14 @@ msgstr "הסר preset:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "התווית חייבת להיות ייחודית."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "הסר preset:"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "עדכן preset:"

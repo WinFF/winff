@@ -965,14 +965,6 @@ msgstr "Beállítás készítése:"
 msgid "Import Presets"
 msgstr "Beállítások importálása"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "A cimkének egyedülállónak kell lenni"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Beállítás eltávolítása:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1031,6 +1023,14 @@ msgstr "Beállítás eltávolítása:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "A cimkének egyedülállónak kell lenni"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Beállítás eltávolítása:"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Beállítás frissítése:"

@@ -986,14 +986,6 @@ msgstr "Stwórz szablon:"
 msgid "Import Presets"
 msgstr "Importuj szablony"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Opis musi byc unikalny."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Usuń szablon:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1047,6 +1039,14 @@ msgstr "Usuń szablon:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Opis musi byc unikalny."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Usuń szablon:"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Zmień szablon:"
