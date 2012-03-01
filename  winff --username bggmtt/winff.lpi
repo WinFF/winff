@@ -113,10 +113,13 @@
     </Parsing>
     <Linking>
       <Debugging>
+        <GenerateDebugInfo Value="True"/>
         <UseLineInfoUnit Value="False"/>
       </Debugging>
       <LinkSmart Value="True"/>
       <Options>
+        <PassLinkerOptions Value="True"/>
+        <LinkerOptions Value="--as-needed"/>
         <Win32>
           <GraphicApplication Value="True"/>
         </Win32>
