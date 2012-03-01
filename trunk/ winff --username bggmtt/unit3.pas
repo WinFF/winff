@@ -118,9 +118,10 @@ begin
     listbox1.items.add('Göran Hannel');
     listbox1.items.add('大宝(DaBao)');
     listbox1.items.add('Alexey Osipov');
+    listbox1.items.add('Launchpad contributors');
 
-    frmAbout.Label1.Caption := StringReplace(frmAbout.Label1.Caption, '%s', '1.4.0',[]);
-    frmAbout.Label2.Caption := StringReplace(frmAbout.Label2.Caption, '%s', '2006-2011',[]);
+    frmAbout.Label1.Caption := StringReplace(frmAbout.Label1.Caption, '%s', '1.5.0',[]);
+    frmAbout.Label2.Caption := StringReplace(frmAbout.Label2.Caption, '%s', '2006-2012',[]);
 
 end;
 
