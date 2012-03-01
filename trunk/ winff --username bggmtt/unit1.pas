@@ -464,7 +464,6 @@ begin
      frmMain.close;
      end;
 
-  presetsfile.Create;                         // load the presets file
   try
    ReadXMLFile(presetsfile, presetspath+'presets.xml');
    presets:=presetsfile.DocumentElement;
@@ -2196,11 +2195,6 @@ begin
       showmessage(rsCouldNotFindFile);
       exit;
     end;
-
- try
-  importfile := TXMLdocument.Create;
- except
- end;
 
  try
    ReadXMLFile(importfile, presetFileName);
