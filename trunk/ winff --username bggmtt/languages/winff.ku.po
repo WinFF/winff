@@ -965,14 +965,6 @@ msgstr "Pêşmîheng biafirîne:"
 msgid "Import Presets"
 msgstr "Pêşmîheng têxe"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Divê label yekta be."
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Pêşmîheng rake:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1031,6 +1023,14 @@ msgstr "Pêşmîheng rake:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Divê label yekta be."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Pêşmîheng rake:"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Pêşmîheng rojaneke:"

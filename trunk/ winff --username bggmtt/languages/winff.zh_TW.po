@@ -887,14 +887,6 @@ msgstr "建立編碼設定："
 msgid "Import Presets"
 msgstr "匯入編碼設定"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "已有同名標籤。"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "移除編碼設定："
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -930,6 +922,14 @@ msgstr "移除編碼設定："
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "已有同名標籤。"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "移除編碼設定："
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "更新編碼設定："

@@ -986,14 +986,6 @@ msgstr "Crear preconfiguración:"
 msgid "Import Presets"
 msgstr "Importar preconfiguracións"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "A etiqueta ten que ser única"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Eliminar preconfiguración:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1047,6 +1039,14 @@ msgstr "Eliminar preconfiguración:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "A etiqueta ten que ser única"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Eliminar preconfiguración:"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Actualizar preconfiguración:"

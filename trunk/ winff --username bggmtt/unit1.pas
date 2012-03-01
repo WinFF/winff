@@ -2009,9 +2009,9 @@ begin                                     // get setup
 
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
 
-       if lowercase((ExtractFileName(filename))) =  lowercase(basename + '.' + extension) then
+       if filename  =  destfolder.Text + DirectorySeparator + basename +'.' + extension then
        begin
-               basename :=  'o_' + basename;
+         basename :=  'o_' + basename;
        end;
 
        if cbx2Pass.Checked = false then

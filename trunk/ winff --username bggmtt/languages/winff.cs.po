@@ -867,14 +867,6 @@ msgstr "Vytvořit přednastavení"
 msgid "Import Presets"
 msgstr "Importovat přednastavení"
 
-#: unit2.rslabelmustbeunique
-msgid "Label must be unique."
-msgstr "Popis musí být unikátní"
-
-#: unit2.rsremovepreset
-msgid "Remove Preset:"
-msgstr "Odstranit přednastavení"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
 #~ msgid "Ramiro Polla"
@@ -892,6 +884,14 @@ msgstr "Odstranit přednastavení"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Popis musí být unikátní"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Odstranit přednastavení"
+
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Aktualizovat přednastavení"

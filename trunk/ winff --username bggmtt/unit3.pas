@@ -26,7 +26,7 @@ interface
 uses
 
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Buttons, ExtCtrls, gettext,translations;
+  Buttons, ExtCtrls, gettext,translations, ComCtrls;
 
 type
 
@@ -51,11 +51,11 @@ type
     Label8: TLabel;
     Label9: TLabel;
     ListBox1: TListBox;
-    Notebook1: TNotebook;
-    Page1: TPage;
-    Page2: TPage;
-    Page3: TPage;
+    PageControl1: TPageControl;
     Panel1: TPanel;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Label10Click(Sender: TObject);
