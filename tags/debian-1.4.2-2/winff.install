@@ -1,0 +1,10 @@
+winff usr/bin/
+presets-orig.xml usr/share/winff/
+languages/* usr/share/winff/languages/
+debian/winff.desktop usr/share/applications/
+debian/presets* usr/share/winff/
+debian/winff.xpm usr/share/pixmaps/
+winff-icons/16x16/winff.png usr/share/icons/hicolor/16x16/apps/
+winff-icons/24x24/winff.png usr/share/icons/hicolor/24x24/apps/
+winff-icons/32x32/winff.png usr/share/icons/hicolor/32x32/apps/
+winff-icons/48x48/winff.png usr/share/icons/hicolor/48x48/apps/
