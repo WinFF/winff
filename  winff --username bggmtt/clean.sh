@@ -1,16 +1,15 @@
-rm *~
-rm *.o
-rm *.ppu
-rm *.res
-rm *.rst
-rm *.lrs
-rm *.lps
-rm *.bak
-rm winff.exe
-rm winff
-rm *.or
-rm *.compiled
-rm backup/*
+rm -f *~
+rm -f *.o
+rm -f *.ppu
+rm -f *.res
+rm -f *.rst
+rm -f *.lrs
+rm -f *.lps
+rm -f *.bak
+rm -f winff.exe
+rm -f winff
+rm -f *.or
+rm -f *.compiled
+rm -f backup/*
 rmdir backup
-rm magnifier
-
+rm -f magnifier
