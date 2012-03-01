@@ -1,5 +1,22 @@
-WinFF Copyright 2006 - 2011 Matthew Weatherford
+WinFF Copyright 2006 - 2012 Matthew Weatherford
 http://www.winff.org
+
+v1.4.2
+------
+Update presets to avoid using ffmpeg presets (problem with Windows ffmpeg)
+Update several translations
+Fix issue 150 where o_ was appended to all output files with the same extension i.s.o. only when source directory and target directory are the same
+By default, create debugging symbols (might be unwanted for Windows build)
+Remove win32 as default TargetOS
+Prevent unnecessary linking
+
+v1.4.1
+------
+Fixed several preset issues
+Fix issue 146 where cropping was performed on the output stream size instead of the input stream size
+Updated several translations
+Drag and drop multiple files only showed the first file. Thanks Francois Collard
+Improve file selection by possibly filtering specific extensions
 
 v1.4.0
 ------
