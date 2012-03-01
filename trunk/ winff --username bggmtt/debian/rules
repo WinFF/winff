@@ -6,6 +6,7 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
+DEBUGGING=1
 
 configure: configure-stamp
 configure-stamp:
@@ -25,6 +26,17 @@ build-indep: build-stamp
 
 build-stamp: configure-stamp 
 	dh_testdir
+
+	if [ ${DEBUGGING} = 1 ] ; then \
+		echo ; echo ; echo ;\
+		echo "Some debugging info to solve FTBFS on armel" ;\
+		update-alternatives --display lazarus ;\
+		echo ; echo ; echo ;\
+		cat /etc/lazarus/environmentoptions.xml ;\
+		echo ; echo ; echo ;\
+		ls -ald /etc/lazarus* ;\
+		echo ; echo ; echo ;\
+	fi
 
 	lazbuild --widgetset=gtk2 -B winff.lpr
 

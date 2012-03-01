@@ -1,3 +1,0 @@
-Remove_win32_as_target_OS.diff
-Prevent_unnecessary_linking_by_using_asneeded.diff
-Allow_debugging_symbols_to_be_generated.diff
