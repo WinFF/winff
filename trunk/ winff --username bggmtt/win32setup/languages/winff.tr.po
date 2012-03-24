@@ -18,7 +18,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF\n"
-"POT-Creation-Date: 2010-01-06\n"
+"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2010-01-17 13:19+0200\n"
 "Last-Translator: İzzet Emre Erkan <kara@karalamalar.net>\n"
 "Language-Team: karalamalar.net <kara@karalamalar.net>\n"
@@ -30,12 +31,19 @@ msgstr ""
 "X-Poedit-Country: TURKEY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "Tamam"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+#, fuzzy
+#| msgid "About WinFF"
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "WinFF hakkında"
 
@@ -46,7 +54,7 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -103,7 +111,7 @@ msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg yaratıcısı"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -238,7 +246,6 @@ msgstr "Dışarı aktarılacak ayarları seçin"
 
 #: TFRMMAIN.AUDBITRATE.HINT
 #, fuzzy
-#| msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -261,6 +268,18 @@ msgstr "Ekle"
 #| msgid "add file(s) to the list for conversion"
 msgid "Add file(s) to the list for conversion"
 msgstr "Dönüşüm için listeye dosya(lar) ekleyin"
+
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Output Folder"
+msgstr "Çıktı klasörü"
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr ""
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
@@ -335,6 +354,11 @@ msgstr "WinFF"
 #| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
 msgstr "dönüştürülecek video için cihaz ismi ya da dosya tipi"
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr ""
 
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
@@ -431,15 +455,6 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "İlave seçenekler"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "Çıktı detayları"
-
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
@@ -450,16 +465,15 @@ msgstr "Dönüştür"
 msgid "Audio Channels"
 msgstr "Ses Kanalları"
 
-#: TFRMMAIN.LABEL11.CAPTION
+#: TFRMMAIN.LABEL12.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.LABEL11.CAPTION"
 #| msgid "Output Folder"
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Çıktı klasörü"
 
 #: TFRMMAIN.LABEL19.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Preset:"
 msgstr "Ayarlar"
@@ -534,13 +548,22 @@ msgstr "Video bit oranı"
 msgid "Video Size"
 msgstr "Video boyutu"
 
+#: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr ""
+
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
 msgstr ""
 
 #: TFRMMAIN.MITABOUT.CAPTION
 #, fuzzy
-#| msgctxt "REMOVED3"
 #| msgid "About"
 msgid "About"
 msgstr "Hakkında"
@@ -583,7 +606,6 @@ msgstr "Tercihler"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.MITPRESETS.CAPTION"
 #| msgid "Presets"
 msgid "Presets"
 msgstr "Ayarlar"
@@ -596,6 +618,10 @@ msgstr "İlave seçenekler"
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
 msgstr "Bittiğinde kapat"
+
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr ""
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
@@ -615,7 +641,6 @@ msgstr "Yardım"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 #, fuzzy
-#| msgctxt "REMOVED6"
 #| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
@@ -631,36 +656,48 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "seçilen cihaz ya da dosya tipi için özel ayarlar"
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
-#, fuzzy
-#| msgid "Audio Settings"
-msgid "Audio"
-msgstr "Ses ayarları"
-
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
-msgid "Crop"
-msgstr "Kes"
-
-#: TFRMMAIN.TABPAGETIME.CAPTION
-msgid "Time"
-msgstr ""
-
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
 #, fuzzy
 #| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
 msgid "Video"
 msgstr "Video boyutu"
 
+#: TFRMMAIN.TABSHEET2.CAPTION
+#, fuzzy
+#| msgid "Audio Settings"
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+msgid "Audio"
+msgstr "Ses ayarları"
+
+#: TFRMMAIN.TABSHEET3.CAPTION
+#, fuzzy
+#| msgid "Crop"
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+msgid "Crop"
+msgstr "Kes"
+
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
+msgid "Time"
+msgstr ""
+
+#: TFRMMAIN.TABSHEET5.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+#, fuzzy
+#| msgid "Output Details"
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Çıktı detayları"
+
 #: TFRMMAIN.VIDBITRATE.HINT
 #, fuzzy
-#| msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 #| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -792,14 +829,12 @@ msgstr "FFmpeg çalıştırmak için istemci"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
 #, fuzzy
-#| msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
 #| msgid "Additional Options"
 msgid "Terminal Options:"
 msgstr "İlave seçenekler"
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
 #, fuzzy
-#| msgctxt "TFRMPREFERENCES.LABEL8.CAPTION"
 #| msgid "Priority"
 msgid "Priority:"
 msgstr "Öncelik"
@@ -840,6 +875,10 @@ msgstr ""
 #: TFRMSCRIPT.CAPTION
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg komut satırı"
+
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr ""
 
 #: unit1.rsconverting
 msgid "Converting"
@@ -927,6 +966,59 @@ msgstr "Video dosyalarını seç"
 msgid "The preset contains illegal characters"
 msgstr "Ayar dosyası geçersiz karakterler içeriyor"
 
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "İlave seçenekler"
+#~ msgid "(All Categories)"
+#~ msgstr "(Tüm kategoriler)"
+#~ msgid "Convert To ..."
+#~ msgstr "Dönüştür ..."
+#~ msgid "Device Preset"
+#~ msgstr "Cihaz ayarı"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Hakkında"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Ayarlar"
+#~ msgid "Video Settings"
+#~ msgstr "Video ayarları"
+#~ msgid "Audio Settings"
+#~ msgstr "Ses ayarları"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "İptal"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Ayarlar"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Çift çekirdekli işlemciler için çoklu işlem"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "FFmpeg.exe için yol"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "FFPlay.exe için yol"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Tamam"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Dönüştürülüyor"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Kaydet"
+#~ msgid "Replace Preset"
+#~ msgstr "Ayarı değiştir"
+#~ msgid "AC'"
+#~ msgstr "AC'"
+#~| msgid "FFmpeg"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Ayar yarat:"
@@ -968,70 +1060,7 @@ msgid "Idle"
 msgstr "Önemsiz"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Normal"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Tüm kategoriler)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Dönüştür ..."
-
-#~ msgid "Device Preset"
-#~ msgstr "Cihaz ayarı"
-
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Çıktı klasörü"
-
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Hakkında"
-
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Ayarlar"
-
-#~ msgid "Video Settings"
-#~ msgstr "Video ayarları"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Ses ayarları"
-
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "İptal"
-
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Ayarlar"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Çift çekirdekli işlemciler için çoklu işlem"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "FFmpeg.exe için yol"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "FFPlay.exe için yol"
-
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "Tamam"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Dönüştürülüyor"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Kaydet"
-
-#~ msgid "Replace Preset"
-#~ msgstr "Ayarı değiştir"
-
-#~ msgid "AC'"
-#~ msgstr "AC'"

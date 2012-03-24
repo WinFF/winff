@@ -20,7 +20,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.1.1 \n"
-"POT-Creation-Date: 2010-01-06\n"
+"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2009-09-06\n"
 "Last-Translator: Pablo Ramírez <prar78@gmail.com>\n"
 "Language-Team: Spanish\n"
@@ -29,13 +30,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
 #: TFRMABOUT.BUTTON1.CAPTION
 #, fuzzy
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "Aceptar"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+#, fuzzy
+#| msgid "About WinFF"
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Sobre WinFF"
 
@@ -46,7 +54,7 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -103,7 +111,7 @@ msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg compilado por"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -262,6 +270,18 @@ msgstr "Añadir"
 msgid "Add file(s) to the list for conversion"
 msgstr ""
 
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Output Folder"
+msgstr "Guardar en:"
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "Nuevo"
@@ -322,6 +342,11 @@ msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
+msgstr ""
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
 msgstr ""
 
 #: TFRMMAIN.CBX2PASS.CAPTION
@@ -411,17 +436,6 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-#, fuzzy
-#| msgid "Additional Options"
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Parámetros"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "Salida"
-
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
@@ -432,9 +446,10 @@ msgstr "Iniciar"
 msgid "Audio Channels"
 msgstr "Canales"
 
-#: TFRMMAIN.LABEL11.CAPTION
+#: TFRMMAIN.LABEL12.CAPTION
 #, fuzzy
 #| msgid "Output Folder"
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Guardar en:"
 
@@ -516,6 +531,16 @@ msgstr "Bits/s video"
 msgid "Video Size"
 msgstr "Resolución"
 
+#: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr ""
+
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
 msgstr ""
@@ -581,6 +606,10 @@ msgstr "Parámetros"
 msgid "Shutdown on Finish"
 msgstr "Apagar al finalizar"
 
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr ""
+
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
 msgstr "Sitio WinFF (inglés)"
@@ -612,32 +641,43 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
+#, fuzzy
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Resolución"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
 #, fuzzy
 #| msgid "Audio Settings"
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Audio"
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr ""
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr ""
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgid "Video Size"
-msgid "Video"
-msgstr "Resolución"
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+#, fuzzy
+#| msgid "Output Details"
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Salida"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -813,6 +853,10 @@ msgstr ""
 msgid "FFmpeg Command Line"
 msgstr "Línea de comando de FFmpeg"
 
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr ""
+
 #: unit1.rsconverting
 msgid "Converting"
 msgstr "Convirtiendo"
@@ -899,6 +943,64 @@ msgstr "Elegir archivos"
 msgid "The preset contains illegal characters"
 msgstr "Predeterminado con caracteres inválidos"
 
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~| msgid "Additional Options"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Parámetros"
+#~ msgid "(All Categories)"
+#~ msgstr "(Categorías)"
+#~ msgid "Convert To ..."
+#~ msgstr "Categoría:"
+#~ msgid "Device Preset"
+#~ msgstr "Formato:"
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Créditos"
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Ajustes"
+#~ msgid "Video Settings"
+#~ msgstr "Video"
+#~ msgid "Audio Settings"
+#~ msgstr "Audio"
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Predeterminados"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multilinea para Procesadores x64 "
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Ubicación FFmpeg"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Ubicación FFplay"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Aceptar"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Convirtiendo"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Aceptar"
+#~ msgid "Replace Preset"
+#~ msgstr "Modificar Predeterminado:"
+#~ msgid "AC'"
+#~ msgstr "Canales de audio"
+#~| msgid "FFmpeg"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Crear Predeterminado:"
@@ -941,84 +1043,7 @@ msgid "Idle"
 msgstr "Prioridad Baja"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Prioridad Media"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Categorías)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Categoría:"
-
-#, fuzzy
-#~ msgid "Device Preset"
-#~ msgstr "Formato:"
-
-#, fuzzy
-#~| msgid "Output Folder"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Guardar en:"
-
-#, fuzzy
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Créditos"
-
-#, fuzzy
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Ajustes"
-
-#, fuzzy
-#~ msgid "Video Settings"
-#~ msgstr "Video"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Audio"
-
-#, fuzzy
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#, fuzzy
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Predeterminados"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multilinea para Procesadores x64 "
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Ubicación FFmpeg"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Ubicación FFplay"
-
-#, fuzzy
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "Aceptar"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Convirtiendo"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Aceptar"
-
-#, fuzzy
-#~ msgid "Replace Preset"
-#~ msgstr "Modificar Predeterminado:"
-
-#~ msgid "AC'"
-#~ msgstr "Canales de audio"

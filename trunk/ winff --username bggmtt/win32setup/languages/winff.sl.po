@@ -1,4 +1,4 @@
-# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2009-2011 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,39 +14,49 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Martin Srebotnjak <milrs@filmsi.net>, 2009
+# Launchpad contributors see:
+# https://translations.launchpad.net/winff/trunk/+pots/winff/fr/+details
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.45.1\n"
-"POT-Creation-Date: 2010-01-06\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Martin Srebotnjak  <milrs@filmsi.net>\n"
+"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
+"PO-Revision-Date: 2011-08-07 19:37+0000\n"
+"Last-Translator: Andrej Znidarsic <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Slovenian\n"
+"X-Launchpad-Export-Date: 2011-11-02 19:20+0000\n"
+"X-Generator: Launchpad (build 14214)\n"
 "X-Poedit-Country: Slovenia\n"
+"X-Poedit-Language: Slovenian\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
 
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "V redu"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+#, fuzzy
+#| msgid "About WinFF"
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "O programu WinFF"
 
 #: TFRMABOUT.LABEL1.CAPTION
-#, fuzzy
-#| msgid "WinFF"
 msgid "WinFF 1.3.2"
-msgstr "WinFF"
+msgstr "Winff"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -82,8 +92,6 @@ msgid "http://www.winff.org"
 msgstr ""
 
 #: TFRMABOUT.LABEL5.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -103,19 +111,15 @@ msgid "FFmpeg Windows Builds by"
 msgstr "Gradnje FFmpeg zagotavlja"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: TFRMABOUT.PAGE2.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -129,8 +133,6 @@ msgid "Add / Update"
 msgstr "Dodaj / posodobi"
 
 #: TFRMEDITPRESETS.CANCELBTN.CAPTION
-#, fuzzy
-#| msgid "Close"
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Zapri"
@@ -166,8 +168,6 @@ msgid "Choose a category to group this preset under"
 msgstr ""
 
 #: TFRMEDITPRESETS.EXPORT.CAPTION
-#, fuzzy
-#| msgid "Export"
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Izvozi"
@@ -177,10 +177,8 @@ msgid "Import"
 msgstr "Uvozi"
 
 #: TFRMEDITPRESETS.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Create Preset:"
 msgid "Category / Preset"
-msgstr "Ustvari prednastavitev:"
+msgstr ""
 
 #: TFRMEDITPRESETS.LABEL2.CAPTION
 #, fuzzy
@@ -209,8 +207,6 @@ msgid "Category"
 msgstr "Kategorija"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
-#, fuzzy
-#| msgid "Save"
 msgid "Save"
 msgstr "Shrani"
 
@@ -219,8 +215,6 @@ msgid "pnlTop"
 msgstr ""
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "Prekliči"
@@ -230,15 +224,11 @@ msgid "Export Presets"
 msgstr "Izvozi prednastavitve"
 
 #: TFRMEXPORT.EXPORTBTN.CAPTION
-#, fuzzy
-#| msgid "Export"
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Izvozi"
 
 #: TFRMEXPORT.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "Izberite prednastavitve za izvoz"
 
@@ -263,6 +253,18 @@ msgstr "Dodaj"
 msgid "Add file(s) to the list for conversion"
 msgstr ""
 
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Output Folder"
+msgstr ""
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+#, fuzzy
+#| msgid "Import Preset"
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr "Uvozi prednastavitev"
+
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "Počisti"
@@ -280,8 +282,6 @@ msgid "Start the conversion process"
 msgstr ""
 
 #: TFRMMAIN.BTNOPTIONS.CAPTION
-#, fuzzy
-#| msgid "Options"
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Možnosti"
@@ -323,6 +323,11 @@ msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
+msgstr ""
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
 msgstr ""
 
 #: TFRMMAIN.CBX2PASS.CAPTION
@@ -412,38 +417,24 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-#, fuzzy
-#| msgid "Additional Options"
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Dodatne možnosti"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "Podrobnosti izhoda"
-
 #: TFRMMAIN.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Convert"
 msgid "Convert to:"
-msgstr "Pretvori"
+msgstr ""
 
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "Zvočni kanali"
 
-#: TFRMMAIN.LABEL11.CAPTION
+#: TFRMMAIN.LABEL12.CAPTION
 #, fuzzy
 #| msgid "Output Folder"
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Izhodna mapa"
 
 #: TFRMMAIN.LABEL19.CAPTION
-#, fuzzy
-#| msgid "Presets"
 msgid "Preset:"
-msgstr "Prednastavitve"
+msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -473,11 +464,11 @@ msgstr "Dodatni parametri ukazne vrstice (napredno)"
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
-msgstr "Mera vzorčenja zvoka"
+msgstr "Hit. vz. zvoka"
 
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
-msgstr "Mera vzorčenja"
+msgstr "Hitrost vzorčenja"
 
 #: TFRMMAIN.LABEL9.CAPTION
 msgid "X"
@@ -496,10 +487,8 @@ msgid "Left"
 msgstr ""
 
 #: TFRMMAIN.LBLCROPRIGHT.CAPTION
-#, fuzzy
-#| msgid "High"
 msgid "Right"
-msgstr "visoka"
+msgstr ""
 
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
@@ -507,15 +496,27 @@ msgstr ""
 
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
-msgstr "Sličic na sekundo"
+msgstr "Sličic/s"
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
-msgstr "Mera vzorčenja videa"
+msgstr "Hit. vz. videa"
 
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
-msgstr "Velikost sličice"
+msgstr "Vel. sličic"
+
+#: TFRMMAIN.MENUITEM1.CAPTION
+#, fuzzy
+#| msgid "Import Preset"
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr "Uvozi prednastavitev"
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr ""
 
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
@@ -542,10 +543,8 @@ msgid "Exit"
 msgstr "Izhod"
 
 #: TFRMMAIN.MITFORUMS.CAPTION
-#, fuzzy
-#| msgid "WinFF Forums"
 msgid "Forums"
-msgstr "Forumi WinFF"
+msgstr "Forumi"
 
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
@@ -556,10 +555,8 @@ msgid "Pause on Finish"
 msgstr "Počakaj ob zaključku"
 
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
-#, fuzzy
-#| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
-msgstr "Počakaj ob zaključku"
+msgstr ""
 
 #: TFRMMAIN.MITPREFERENCES.CAPTION
 msgid "Preferences"
@@ -581,6 +578,10 @@ msgstr "Dodatne možnosti"
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
 msgstr "Izklopi po koncu"
+
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr ""
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
@@ -613,32 +614,41 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
 #, fuzzy
-#| msgid "Audio Settings"
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Vel. sličic"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
-msgstr "Zvočne nastavitve"
+msgstr ""
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr ""
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr ""
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgid "Video Size"
-msgid "Video"
-msgstr "Velikost sličice"
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+#, fuzzy
+#| msgid "Output Details"
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Podrobnosti izhoda"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -660,16 +670,11 @@ msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that d
 msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
-#, fuzzy
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#| msgid "OK"
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "V redu"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
 msgstr "Prekliči"
@@ -723,41 +728,29 @@ msgid "Use Several Encoding Threads:"
 msgstr ""
 
 #: TFRMPREFERENCES.EDIT7.HINT
-#, fuzzy
-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr "Možnosti terminala (-e za Xterm , -x za Gnome Terminal)"
+msgstr "-e za Xterm , -x za Gnome Terminal"
 
 #: TFRMPREFERENCES.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Default Destination Directory:"
 msgstr "Privzeta ciljna mapa"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
-#, fuzzy
-#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Pot do programa FFmpeg"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
-#, fuzzy
-#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Pot do programa FFPlay"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
-#, fuzzy
-#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Pot do programa FFmpeg"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
-#, fuzzy
-#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Pot do programa FFPlay"
@@ -769,10 +762,8 @@ msgid "Terminal to run FFmpeg in:"
 msgstr "Terminal, ki bo pognal FFmpeg"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
-#, fuzzy
-#| msgid "Additional Options"
 msgid "Terminal Options:"
-msgstr "Dodatne možnosti"
+msgstr ""
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
 #, fuzzy
@@ -817,6 +808,10 @@ msgstr ""
 msgid "FFmpeg Command Line"
 msgstr "Ukazna vrstica FFmpeg"
 
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr ""
+
 #: unit1.rsconverting
 msgid "Converting"
 msgstr "Pretvorba je v teku"
@@ -858,10 +853,8 @@ msgid "Please add at least 1 file to convert"
 msgstr "Dodajte najmanj eno datoteko za pretvorbo"
 
 #: unit1.rspleaseselectapreset
-#, fuzzy
-#| msgid "Please select a preset to export"
 msgid "Please select a preset"
-msgstr "Izberite prednastavitev, ki jo želite izvoziti"
+msgstr ""
 
 #: unit1.rspresetalreadyexist
 msgid "Preset: %s%s%s already exists"
@@ -888,10 +881,8 @@ msgid "Press Enter to Continue"
 msgstr "Pritisnite Enter za nadaljevanje"
 
 #: unit1.rsselectdirectory
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
-msgstr "Privzeta ciljna mapa"
+msgstr ""
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -905,6 +896,20 @@ msgstr "Izberite video datoteke"
 msgid "The preset contains illegal characters"
 msgstr "Prednastavitev vsebuje nedovoljene znake"
 
+#~| msgid "Select Video Files"
+#~ msgid "Select Video Files..."
+#~ msgstr "Izberite video datoteke"
+#~| msgid "About WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "O programu WinFF"
+#~| msgid "Additional Options"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Dodatne možnosti"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Ustvari prednastavitev:"
@@ -946,80 +951,7 @@ msgid "Idle"
 msgstr "nedejavno"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "običajna"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(vse kategorije)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Pretvori v ..."
-
-#~ msgid "Device Preset"
-#~ msgstr "Prednastavitev naprave"
-
-#, fuzzy
-#~| msgid "Output Folder"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Izhodna mapa"
-
-#, fuzzy
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "O programu"
-
-#, fuzzy
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Možnosti"
-
-#~ msgid "Video Settings"
-#~ msgstr "Nastavitve za video"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Zvočne nastavitve"
-
-#, fuzzy
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Prekliči"
-
-#, fuzzy
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Prednastavitve"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Večnitnost za procesorje z dvojnim jedrom"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Pot do FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Pot do FFPlay.exe"
-
-#, fuzzy
-#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~| msgid "OK"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "V redu"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Pretvorba je v teku"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Shrani"
-
-#~ msgid "Replace Preset"
-#~ msgstr "Zamenjaj prednastavitev"

@@ -17,7 +17,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.45.1\n"
-"POT-Creation-Date: 2010-01-06\n"
+"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: English <matt@biggmatt.com>\n"
@@ -29,12 +30,19 @@ msgstr ""
 "X-Poedit-Country: United States\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr ""
+
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "Çêbû"
 
-#: TFRMABOUT.CAPTION
+#: TFRMABOUT.FRMABOUT.CAPTION
+#, fuzzy
+#| msgid "About WinFF"
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Derbarê Winff de"
 
@@ -45,7 +53,7 @@ msgid "WinFF 1.3.2"
 msgstr "WinFF"
 
 #: TFRMABOUT.LABEL10.CAPTION
-msgid "http://ffmpeg.arrozcru.org/"
+msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
 #: TFRMABOUT.LABEL11.CAPTION
@@ -102,7 +110,7 @@ msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg hat avakirin ji aliyê"
 
 #: TFRMABOUT.LABEL9.CAPTION
-msgid "Ramiro Polla"
+msgid "Kyle Schwarz"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
@@ -262,6 +270,18 @@ msgstr "Têxe"
 msgid "Add file(s) to the list for conversion"
 msgstr ""
 
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+#, fuzzy
+#| msgid "Output Folder"
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Output Folder"
+msgstr "Peldanka tomarkirinê"
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "Paqijke"
@@ -322,6 +342,11 @@ msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
+msgstr ""
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
 msgstr ""
 
 #: TFRMMAIN.CBX2PASS.CAPTION
@@ -411,17 +436,6 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.GBXSETTINGS.CAPTION
-#, fuzzy
-#| msgid "Additional Options"
-msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-msgid "Additional Options"
-msgstr "Vebijêrkên Zêdetir"
-
-#: TFRMMAIN.GRPOUTPUTSETTINGS.CAPTION
-msgid "Output Details"
-msgstr "Berfirahiya derxistiyê"
-
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
@@ -432,9 +446,10 @@ msgstr "Veguhere"
 msgid "Audio Channels"
 msgstr "Qenalên dengê"
 
-#: TFRMMAIN.LABEL11.CAPTION
+#: TFRMMAIN.LABEL12.CAPTION
 #, fuzzy
 #| msgid "Output Folder"
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Peldanka tomarkirinê"
 
@@ -516,6 +531,16 @@ msgstr "Bitrate a vîdyoyê"
 msgid "Video Size"
 msgstr "Mezinahî"
 
+#: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr ""
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr ""
+
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
 msgstr ""
@@ -581,6 +606,10 @@ msgstr "Vebijêrkên Zêdetir"
 msgid "Shutdown on Finish"
 msgstr "Dema qediya komputerê bigire"
 
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr ""
+
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
 msgstr "Malpera Winff"
@@ -612,32 +641,43 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
 
-#: TFRMMAIN.TABAUDIOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET1.CAPTION
+#, fuzzy
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Mezinahî"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
 #, fuzzy
 #| msgid "Audio Settings"
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Mîhengên Dengê"
 
-#: TFRMMAIN.TABCMDLINESETTINGS.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
-msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMMAIN.TABPAGECROP.CAPTION
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr ""
 
-#: TFRMMAIN.TABPAGETIME.CAPTION
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr ""
 
-#: TFRMMAIN.TABVIDEOSETTINGS.CAPTION
+#: TFRMMAIN.TABSHEET5.CAPTION
 #, fuzzy
-#| msgid "Video Size"
-msgid "Video"
-msgstr "Mezinahî"
+#| msgid "FFmpeg"
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+#, fuzzy
+#| msgid "Output Details"
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Berfirahiya derxistiyê"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -660,7 +700,6 @@ msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 #, fuzzy
-#| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 #| msgid "OK"
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
@@ -816,6 +855,10 @@ msgstr ""
 msgid "FFmpeg Command Line"
 msgstr "FFmpeg rêzika fermanan"
 
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr ""
+
 #: unit1.rsconverting
 msgid "Converting"
 msgstr "Vediguherîne"
@@ -904,6 +947,64 @@ msgstr "Pela vîdyoyê hilbijêre"
 msgid "The preset contains illegal characters"
 msgstr "Di Pêşmîheng de karakterên qedexe heye"
 
+#~| msgid "WinFF"
+#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+#~| msgid "Additional Options"
+#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+#~ msgid "Additional Options"
+#~ msgstr "Vebijêrkên Zêdetir"
+#~ msgid "(All Categories)"
+#~ msgstr "(Hemû Kategorî)"
+#~ msgid "Convert To ..."
+#~ msgstr "Veguherîne li"
+#~ msgid "Device Preset"
+#~ msgstr "Pêşmîheng"
+#~| msgid "About"
+#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+#~ msgid "About"
+#~ msgstr "Derbarê Winff de"
+#~| msgid "Options"
+#~ msgctxt "REMOVED4"
+#~ msgid "Options"
+#~ msgstr "Vebijêrk"
+#~ msgid "Video Settings"
+#~ msgstr "Mîhengên Vîdyoyê"
+#~ msgid "Audio Settings"
+#~ msgstr "Mîhengên Dengê"
+#~| msgid "Cancel"
+#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Betal"
+#~| msgid "Presets"
+#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+#~ msgid "Presets"
+#~ msgstr "Pêşmîheng"
+#~ msgid "Multithreading for Dual Core Processors"
+#~ msgstr "Multithreading ji bo komputerên Dual Core"
+#~ msgid "Path to FFmpeg.exe"
+#~ msgstr "Pelrêça FFmpeg.exe"
+#~ msgid "Path to FFPlay.exe"
+#~ msgstr "Pelrêça FFPlay.exe"
+#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~| msgid "OK"
+#~ msgctxt "REMOVED8"
+#~ msgid "OK"
+#~ msgstr "Çêbû"
+#~| msgid "Converting"
+#~ msgid "Continue"
+#~ msgstr "Vediguherîne"
+#~| msgid "Save"
+#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+#~ msgid "Save"
+#~ msgstr "Tomarke"
+#~ msgid "Replace Preset"
+#~ msgstr "Pêşmîheng biguhere:"
+#~| msgid "FFmpeg"
+#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Pêşmîheng biafirîne:"
@@ -945,80 +1046,7 @@ msgid "Idle"
 msgstr "Beredayî"
 
 #: unit4.rsprioritynormal
+#, fuzzy
 msgid "Normal"
 msgstr "Asayî"
 
-#~ msgid "(All Categories)"
-#~ msgstr "(Hemû Kategorî)"
-
-#~ msgid "Convert To ..."
-#~ msgstr "Veguherîne li"
-
-#~ msgid "Device Preset"
-#~ msgstr "Pêşmîheng"
-
-#, fuzzy
-#~| msgid "Output Folder"
-#~ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#~ msgid "Output Folder"
-#~ msgstr "Peldanka tomarkirinê"
-
-#, fuzzy
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Derbarê Winff de"
-
-#, fuzzy
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Vebijêrk"
-
-#~ msgid "Video Settings"
-#~ msgstr "Mîhengên Vîdyoyê"
-
-#~ msgid "Audio Settings"
-#~ msgstr "Mîhengên Dengê"
-
-#, fuzzy
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Betal"
-
-#, fuzzy
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Pêşmîheng"
-
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading ji bo komputerên Dual Core"
-
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Pelrêça FFmpeg.exe"
-
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Pelrêça FFPlay.exe"
-
-#, fuzzy
-#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~| msgid "OK"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "Çêbû"
-
-#, fuzzy
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Vediguherîne"
-
-#, fuzzy
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "Tomarke"
-
-#~ msgid "Replace Preset"
-#~ msgstr "Pêşmîheng biguhere:"
