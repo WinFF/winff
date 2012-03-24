@@ -4,14 +4,14 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.4.0
+AppVerName=WinFF 1.4.2
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.4.0
+VersionInfoVersion=1.4.2
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
@@ -41,7 +41,8 @@ Name: "spanish"; MessagesFile: "compiler:languages\Spanish.isl"
 Name: "portuguese"; MessagesFile: "compiler:languages\Portuguese.isl"
 Name: "dutch"; MessagesFile: "compiler:languages\Dutch.isl"
 Name: "chinesetrad"; MessagesFile: "compiler:languages\chinesetrad.isl"
-Name: "serbian"; MessagesFile: "compiler:languages\serbian.isl"
+Name: "serbiancyrillic"; MessagesFile: "compiler:languages\SerbianCyrillic.isl"
+Name: "serbianlatin"; MessagesFile: "compiler:languages\SerbianLatin.isl"
 Name: "norwegian"; MessagesFile: "compiler:languages\Norwegian.isl"
 Name: "hebrew"; MessagesFile: "compiler:languages\hebrew.isl"
 Name: "greek"; MessagesFile: "compiler:languages\greek.isl"
