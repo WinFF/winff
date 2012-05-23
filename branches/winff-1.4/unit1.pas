@@ -310,7 +310,8 @@ var
   rsPressEnter = 'Press Enter to Continue';
   rsCouldNotFindFile = 'Could Not Find File';
   rsInvalidPreset = 'Invalid Preset File';
-  rsPresetAlreadyExist = 'Preset: %s%s%s already exists';
+  rsReplacePreset = 'Replace Preset?';
+  rsPresetAlreadyExist = 'Preset: %s%s%s already exists. Do you want to replace the current preset?';
   rsPresetHasNoLabel = 'The preset to import does not have a label';
   rsThePresetHasIllegalChars = 'The preset contains illegal characters';
   rsPresetWithLabelExists = 'Preset with label: %s%s%s already exists';
@@ -2219,12 +2220,12 @@ begin
 
    if nodeexists then
      begin
-       if replaceall=false then reply :=  MessageDlg ('Replace Preset', Format(rsPresetAlreadyExist, ['"', nodename, '"']),
-                                            mtConfirmation, [mbYes, mbNo, mbAll, mbCancel],0);
+       if replaceall=false then reply :=  MessageDlg (rsReplacePreset, Format(rsPresetAlreadyExist, ['"', nodename, '"']),
+                                            mtConfirmation, [mbYes, mbNo, mbYesToAll, mbCancel],0);
        if reply=mrCancel then exit;
        if reply=mrNo then continue;
-       if reply=mrAll then replaceall := true;
-       if (reply=mrYes) or (reply = mrAll) or (replaceall = true) then removepreset:=true;
+       if reply=mrYesToAll then replaceall := true;
+       if (reply=mrYes) or (reply = mrYesToAll) or (replaceall = true) then removepreset:=true;
        if removepreset then presets.RemoveChild(presets.FindNode(nodename));
      end;
 
@@ -2232,7 +2233,7 @@ begin
      nodelabel := node.FindNode('label').FindNode('#text').NodeValue;
    except
      begin
-       showmessage(rsPresethasnolabel);
+       showmessage(rsPresetHasNoLabel);
        exit;
      end;
    end;
@@ -2281,7 +2282,6 @@ begin
 
    textl:=presetsfile.CreateTextNode(nodelabel);
    labelnode.AppendChild(textl);
-
 
    try
      textp:=presetsfile.CreateTextNode(node.FindNode('params').FindNode('#text').NodeValue);
