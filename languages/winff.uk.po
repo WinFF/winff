@@ -7,7 +7,7 @@
 # https://translations.launchpad.net/winff/trunk/+pots/winff/uk/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: winff\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2012-01-23 11:00+0000\n"
@@ -265,12 +265,8 @@ msgid "Play"
 msgstr "Відтворити"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
-msgstr ""
-"Відтворити обраний файл за допомогою ffplay (гарний спосіб перевірити "
-"можливість його перетворення)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "Відтворити обраний файл за допомогою ffplay (гарний спосіб перевірити можливість його перетворення)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
@@ -307,9 +303,7 @@ msgid "2 pass"
 msgstr "2 проходи"
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr "Обробка у два проходи дозволяє покращити якість"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
@@ -326,25 +320,16 @@ msgid "..."
 msgstr "…"
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
+msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Тека для обробленого відео (повинна відрізнятись від теки з сирцями)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
-msgstr ""
-"(<ціле: ціле> або <дійсне>) фізичне співвідношення сторін дисплея (DAR)"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "(<ціле: ціле> або <дійсне>) фізичне співвідношення сторін дисплея (DAR)"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-"(<ціле>) Від 10 до частоти дискретизації (44100, 48000). Дозволяє "
-"\"розтягти\" або \"стиснути\" аудіо доріжку."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "(<ціле>) Від 10 до частоти дискретизації (44100, 48000). Дозволяє \"розтягти\" або \"стиснути\" аудіо доріжку."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -397,11 +382,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<гг:мм:сс> - зупинитись на цій позиції для закінчення перетворення"
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
-"(<ціле>) 256 = Поточна гучність, 128 = Половина гучності, 512 = Подвійна "
-"гучність"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "(<ціле>) 256 = Поточна гучність, 128 = Половина гучності, 512 = Подвійна гучність"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -625,21 +607,13 @@ msgstr "(<дійсне> або <ціле>) кількість кадрів в с
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не "
-"підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не "
-"підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
@@ -819,7 +793,9 @@ msgid "Please select a preset"
 msgstr "Будь ласка оберіть заготовку"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Заготовка: %s%s%s вже існує"
 
 #: unit1.rspresethasnoext
@@ -841,6 +817,10 @@ msgstr "Заготовка з міткою: %s%s%s вже існує"
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
 msgstr "Натисніть Ввід для продовження"
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -901,3 +881,4 @@ msgstr "Неактивний"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Звичайний"
+

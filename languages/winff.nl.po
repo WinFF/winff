@@ -1,5 +1,5 @@
 # translation of winff.po to Dutch
-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,14 +15,16 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Roger Gabriels, 2008
-# Paul Gevers <paul@climbing.nl>, 2009-2011.
+# Paul Gevers <paul@climbing.nl>, 2009-2012
+# Launchpad contributors see:
+# https://translations.launchpad.net/winff/trunk/+pots/winff/nl/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: winff\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2011-12-18 19:09+0000\n"
-"Last-Translator: Niels Verploegen <Unknown>\n"
+"PO-Revision-Date: 2012-05-27 11:56+0200\n"
+"Last-Translator: Paul Gevers <paul@climbing.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -807,8 +809,8 @@ msgid "Please select a preset"
 msgstr "Selecteer een voorinstellingbestand"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
-msgstr "Voorinstelling: %s%s%s bestaat reeds"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgstr "Voorinstelling: %s%s%s bestaat reeds. Wilt u deze vervangen?"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
@@ -830,13 +832,13 @@ msgstr "Voorinstelling met label: %s%s%s bestaat reeds"
 msgid "Press Enter to Continue"
 msgstr "Druk 'enter' om verder te gaan"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr "Selecteer doelmap"
-
-#: unit1.rsselectpresetfile
-msgid "Select Preset File"
-msgstr "Selecteer voorinstellingbestand"
 
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr "toegepast op alle video's op het moment dat de convertie begint."
@@ -892,6 +894,10 @@ msgstr "Selecteer voorinstellingbestand"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Selecteer voorinstellingbestand"
+
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
 msgstr "Selecteer videobestanden"

@@ -1,4 +1,4 @@
-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
 # https://translations.launchpad.net/winff/trunk/+pots/winff/fr/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 0.45.1\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2011-12-07 22:57+0000\n"
@@ -805,7 +805,9 @@ msgid "Please select a preset"
 msgstr "Veuillez choisir un modèle"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Le préréglage %s%s%s existe déjà"
 
 #: unit1.rspresethasnoext
@@ -827,6 +829,10 @@ msgstr "Un préréglage avec le titre \"%s%s%s\" existe déjà"
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
 msgstr "Appuyez sur Entrée pour continuer"
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"

@@ -19,7 +19,7 @@
 # https://translations.launchpad.net/winff/trunk/+pots/winff/it/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 0.45.1\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2012-02-16 15:29+0000\n"
@@ -278,12 +278,8 @@ msgid "Play"
 msgstr "Riproduci"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
-msgstr ""
-"Mostra l'anteprima del file sorgente selezionato con ffplay (un buon test "
-"per sapere se la conversione è possibile)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "Mostra l'anteprima del file sorgente selezionato con ffplay (un buon test per sapere se la conversione è possibile)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
@@ -320,12 +316,8 @@ msgid "2 pass"
 msgstr "2 passaggi"
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
-msgstr ""
-"Usare due passaggi permette al codificatore di raccogliere informazioni al "
-"primo passaggio per una qualità maggiore"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "Usare due passaggi permette al codificatore di raccogliere informazioni al primo passaggio per una qualità maggiore"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
@@ -341,28 +333,16 @@ msgid "..."
 msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
-msgstr ""
-"Posizione del video finale (scegli una cartella differente da quella della "
-"fonte)"
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr "Posizione del video finale (scegli una cartella differente da quella della fonte)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
-msgstr ""
-"(<integer:integer> or <real>) il rapporto d'aspetto fisico (DAR) del display "
-"obiettivo"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "(<integer:integer> or <real>) il rapporto d'aspetto fisico (DAR) del display obiettivo"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-"(<integer>) Da 10 fino a frequenze di campionamento come 44100, 48000. "
-"Permette  un flusso audio con \"stretch\"/\"squeeze\"."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "(<integer>) Da 10 fino a frequenze di campionamento come 44100, 48000. Permette  un flusso audio con \"stretch\"/\"squeeze\"."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -387,20 +367,17 @@ msgstr "0"
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-"<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
+msgstr "<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
 
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-"<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
+msgstr "<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
 
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-"<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
+msgstr "<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
 
 #: TFRMMAIN.EDTTTRHH.HINT
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
@@ -418,11 +395,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Finisci dopo aver convertito questa lunghezza di video"
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
-"<integer>) 256 = Volume Attuale, 128 = Dimezza il Volume, 512 = Raddoppia il "
-"Volume"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "<integer>) 256 = Volume Attuale, 128 = Dimezza il Volume, 512 = Raddoppia il Volume"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -603,8 +577,7 @@ msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
-msgstr ""
-"Settaggi specifici da usare per il dispositivo od il tipo di file scelto"
+msgstr "Settaggi specifici da usare per il dispositivo od il tipo di file scelto"
 
 #: TFRMMAIN.TABSHEET1.CAPTION
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
@@ -647,23 +620,13 @@ msgstr "(<real> or <integer>) numero di frames al secondo"
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<integer> X <integer>) Numero di pixel in ogni frame. Per i codecs che non "
-"supportano il rapporto pixel/aspetto (PAR) questa è la dimensione finale del "
-"frame."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<integer> X <integer>) Numero di pixel in ogni frame. Per i codecs che non supportano il rapporto pixel/aspetto (PAR) questa è la dimensione finale del frame."
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<integer> X <integer>) Numero di pixel in ogni frame. Per i codecs che non "
-"supportano il rapporto pixel/aspetto (PAR) questa è la dimensione finale del "
-"frame."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<integer> X <integer>) Numero di pixel in ogni frame. Per i codecs che non supportano il rapporto pixel/aspetto (PAR) questa è la dimensione finale del frame."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
@@ -843,7 +806,9 @@ msgid "Please select a preset"
 msgstr "Selezionare il profilo"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Profilo: %s%s%s già  esistente"
 
 #: unit1.rspresethasnoext
@@ -865,6 +830,10 @@ msgstr "Profilo con descrizione: %s%s%s già  esistente"
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
 msgstr "Premere INVIO per continuare"
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -925,3 +894,4 @@ msgstr "In attesa"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normale"
+

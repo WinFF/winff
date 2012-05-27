@@ -1,4 +1,4 @@
-# Copyright (C) 2009-2011 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
 # https://translations.launchpad.net/winff/trunk/+pots/winff/fr/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 0.45.1\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2011-08-07 19:37+0000\n"
@@ -857,7 +857,9 @@ msgid "Please select a preset"
 msgstr ""
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Prednastavitev: %s%s%s že obstaja"
 
 #: unit1.rspresethasnoext
@@ -880,6 +882,10 @@ msgstr "Prednastavitev z oznako: %s%s%s že obstaja"
 msgid "Press Enter to Continue"
 msgstr "Pritisnite Enter za nadaljevanje"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr ""
@@ -900,10 +906,6 @@ msgstr "Prednastavitev vsebuje nedovoljene znake"
 msgid "Create Preset:"
 msgstr "Ustvari prednastavitev:"
 
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Uvozi prednastavitve"
-
 #~| msgid "Select Video Files"
 #~ msgid "Select Video Files..."
 #~ msgstr "Izberite video datoteke"
@@ -918,6 +920,10 @@ msgstr "Uvozi prednastavitve"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Uvozi prednastavitve"
+
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
 msgstr "Oznaka mora biti enkratna."

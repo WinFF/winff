@@ -1,5 +1,5 @@
 # translation of winff.po to Simplified Chinese
-# Copyright (C) 2011 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
 # Dean Lee <xslidian@gmail.com>, 2011
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: \n"
@@ -826,7 +826,9 @@ msgid "Please select a preset"
 msgstr "请选择预设"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "预设: %s%s%s 已存在"
 
 #: unit1.rspresethasnoext
@@ -849,6 +851,10 @@ msgstr "标签为 %s%s%s 的预设已存在"
 msgid "Press Enter to Continue"
 msgstr "按回车键继续"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr "选择目录"
@@ -869,10 +875,6 @@ msgstr "预设含非法字符"
 msgid "Create Preset:"
 msgstr "创建预设:"
 
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "导入预设"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -884,6 +886,10 @@ msgstr "导入预设"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "导入预设"
+
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
 msgstr "标签必须唯一。"

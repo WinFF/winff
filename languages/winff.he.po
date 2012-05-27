@@ -1,5 +1,5 @@
 # translation of winff.po to Hebrew
-# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,20 +15,24 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Ofir Klinger <klinger.ofir@gmail.com>, 2009
+# Launchpad contributors see:
+# https://translations.launchpad.net/winff/trunk/+pots/winff/he/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 0.45.1\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2009-04-13 12:31+0200\n"
-"Last-Translator: Ofir Klinger <klinger.ofir@gmail.com>\n"
+"PO-Revision-Date: 2012-03-14 10:02+0000\n"
+"Last-Translator: Yaron <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <matt@biggmatt.com>\n"
-"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Hebrew\n"
+"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
+"X-Generator: Launchpad (build 15282)\n"
 "X-Poedit-Country: Israel\n"
+"Language: he\n"
+"X-Poedit-Language: Hebrew\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: TFORM1.FORM1.CAPTION
@@ -41,17 +45,13 @@ msgid "OK"
 msgstr "בסדר"
 
 #: TFRMABOUT.FRMABOUT.CAPTION
-#, fuzzy
-#| msgid "About WinFF"
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
-msgstr "אודות WinFF"
+msgstr ""
 
 #: TFRMABOUT.LABEL1.CAPTION
-#, fuzzy
-#| msgid "WinFF"
 msgid "WinFF 1.3.2"
-msgstr "WinFF"
+msgstr ""
 
 #: TFRMABOUT.LABEL10.CAPTION
 msgid "http://hawkeye.arrozcru.org/"
@@ -90,11 +90,9 @@ msgid "http://www.winff.org"
 msgstr ""
 
 #: TFRMABOUT.LABEL5.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
-msgstr "FFmpeg"
+msgstr ""
 
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
@@ -105,28 +103,22 @@ msgid "http://ffmpeg.org"
 msgstr ""
 
 #: TFRMABOUT.LABEL8.CAPTION
-#, fuzzy
-#| msgid "FFmpeg builds by"
 msgid "FFmpeg Windows Builds by"
-msgstr "FFmpeg builds by"
+msgstr ""
 
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Kyle Schwarz"
 msgstr ""
 
 #: TFRMABOUT.PAGE1.CAPTION
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
-msgstr "WinFF"
+msgstr ""
 
 #: TFRMABOUT.PAGE2.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
-msgstr "FFmpeg"
+msgstr ""
 
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
@@ -137,11 +129,9 @@ msgid "Add / Update"
 msgstr "הוסף / עדכן"
 
 #: TFRMEDITPRESETS.CANCELBTN.CAPTION
-#, fuzzy
-#| msgid "Close"
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
-msgstr "סגור"
+msgstr ""
 
 #: TFRMEDITPRESETS.CAPTION
 msgid "Edit Presets"
@@ -160,10 +150,8 @@ msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
 #: TFRMEDITPRESETS.EDIT3.HINT
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
-msgstr "שורת הפקודה של ה-preset (ללא -i או קובץ פלט)"
+msgstr ""
 
 #: TFRMEDITPRESETS.EDIT4.HINT
 msgid "Do not include a dot"
@@ -174,81 +162,63 @@ msgid "Choose a category to group this preset under"
 msgstr ""
 
 #: TFRMEDITPRESETS.EXPORT.CAPTION
-#, fuzzy
-#| msgid "Export"
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
-msgstr "ייצא"
+msgstr ""
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
 msgstr "ייבוא"
 
 #: TFRMEDITPRESETS.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Create Preset:"
 msgid "Category / Preset"
-msgstr "צור preset:"
+msgstr ""
 
 #: TFRMEDITPRESETS.LABEL2.CAPTION
-#, fuzzy
-#| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr "שם ה-preset (מילה אחת, רק A-z 0-9)"
+msgstr ""
 
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
 msgstr "תווית ה-preset"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr "שורת הפקודה של ה-preset (ללא -i או קובץ פלט)"
+msgstr ""
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
-#, fuzzy
-#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
-msgstr "סיומת קובץ הפלט (ללא \".\")"
+msgstr ""
 
 #: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
 msgstr "קטגוריה"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
-#, fuzzy
-#| msgid "Save"
 msgid "Save"
-msgstr "שמור"
+msgstr ""
 
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr ""
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
-msgstr "ביטול"
+msgstr ""
 
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
 msgstr "ייצא Presets"
 
 #: TFRMEXPORT.EXPORTBTN.CAPTION
-#, fuzzy
-#| msgid "Export"
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
-msgstr "ייצא"
+msgstr ""
 
 #: TFRMEXPORT.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
-msgstr "בחר presets לייצוא"
+msgstr ""
 
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
@@ -272,11 +242,9 @@ msgid "Add file(s) to the list for conversion"
 msgstr ""
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
-#, fuzzy
-#| msgid "Output Folder"
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
-msgstr "תיקיית יעד"
+msgstr ""
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
@@ -300,11 +268,9 @@ msgid "Start the conversion process"
 msgstr ""
 
 #: TFRMMAIN.BTNOPTIONS.CAPTION
-#, fuzzy
-#| msgid "Options"
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr "אפשרויות"
+msgstr ""
 
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
@@ -335,11 +301,9 @@ msgid "Remove selected file(s) from the list"
 msgstr ""
 
 #: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
-msgstr "WinFF"
+msgstr ""
 
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
@@ -438,27 +402,21 @@ msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: TFRMMAIN.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Convert"
 msgid "Convert to:"
-msgstr "המר"
+msgstr ""
 
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
 msgstr "ערוצי אודיו"
 
 #: TFRMMAIN.LABEL12.CAPTION
-#, fuzzy
-#| msgid "Output Folder"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
-msgstr "תיקיית יעד"
+msgstr ""
 
 #: TFRMMAIN.LABEL19.CAPTION
-#, fuzzy
-#| msgid "Presets"
 msgid "Preset:"
-msgstr "Presets"
+msgstr ""
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
@@ -481,10 +439,8 @@ msgid "Hours / Minutes / Seconds"
 msgstr ""
 
 #: TFRMMAIN.LABEL3.CAPTION
-#, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
-msgstr "פרמטרי שורת פקודה נוספים (מתקדם)"
+msgstr ""
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
@@ -511,10 +467,8 @@ msgid "Left"
 msgstr ""
 
 #: TFRMMAIN.LBLCROPRIGHT.CAPTION
-#, fuzzy
-#| msgid "High"
 msgid "Right"
-msgstr "גבוהה"
+msgstr ""
 
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
@@ -547,15 +501,12 @@ msgid "-"
 msgstr ""
 
 #: TFRMMAIN.MITABOUT.CAPTION
-#, fuzzy
-#| msgid "About"
 msgid "About"
-msgstr "אודות"
+msgstr ""
 
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
-#, fuzzy
 msgid "Display Cmd Line"
-msgstr "הצג את שורת הפקודה"
+msgstr ""
 
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
@@ -566,10 +517,8 @@ msgid "Exit"
 msgstr "סגור"
 
 #: TFRMMAIN.MITFORUMS.CAPTION
-#, fuzzy
-#| msgid "WinFF Forums"
 msgid "Forums"
-msgstr "הפורומים של WinFF"
+msgstr ""
 
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
@@ -580,35 +529,29 @@ msgid "Pause on Finish"
 msgstr "השהה בסיום"
 
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
-#, fuzzy
-#| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
-msgstr "השהה בסיום"
+msgstr ""
 
 #: TFRMMAIN.MITPREFERENCES.CAPTION
 msgid "Preferences"
-msgstr "מאפיינים"
+msgstr "העדפות"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
-#, fuzzy
-#| msgid "Presets"
 msgid "Presets"
-msgstr "Presets"
+msgstr "ערכות תצורה"
 
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
-#, fuzzy
-#| msgid "Additional Options"
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
 msgstr "אפשרויות נוספות"
 
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
-msgstr "כבה מחשב בסיום"
+msgstr "כיבוי המחשב בסיום"
 
 #: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
-msgstr ""
+msgstr "תצוגה מפורטת"
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
@@ -616,7 +559,7 @@ msgstr "האתר של WinFF"
 
 #: TFRMMAIN.MNUEDIT.CAPTION
 msgid "Edit"
-msgstr "ערוך"
+msgstr "עריכה"
 
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
@@ -627,8 +570,6 @@ msgid "Help"
 msgstr "עזרה"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
-#, fuzzy
-#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "אפשרויות"
@@ -639,45 +580,37 @@ msgstr ""
 
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
-msgstr ""
+msgstr "הגדרות ייעודיות לשימוש עבור ההתקן או סוג הקובץ שנבחרו"
 
 #: TFRMMAIN.TABSHEET1.CAPTION
-#, fuzzy
-#| msgid "Video Size"
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
 msgid "Video"
-msgstr "גודל הוידאו"
+msgstr "וידאו"
 
 #: TFRMMAIN.TABSHEET2.CAPTION
-#, fuzzy
-#| msgid "Audio Settings"
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
-msgstr "הגדרות אודיו"
+msgstr "שמע"
 
 #: TFRMMAIN.TABSHEET3.CAPTION
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
-msgstr ""
+msgstr "חיתוך"
 
 #: TFRMMAIN.TABSHEET4.CAPTION
 msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
-msgstr ""
+msgstr "זמן"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMMAIN.TABSHEET6.CAPTION
-#, fuzzy
-#| msgid "Output Details"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
-msgstr "פרטי פלט"
+msgstr "פרטי הפלט"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -699,18 +632,14 @@ msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that d
 msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
-#, fuzzy
-#| msgid "OK"
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "בסדר"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
-#, fuzzy
-#| msgid "Cancel"
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
-msgstr "ביטול"
+msgstr ""
 
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
@@ -747,10 +676,8 @@ msgid "WinFF Preferences"
 msgstr "אפשרויות WinFF"
 
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
-#, fuzzy
-#| msgid "Remember Last Directory Used"
 msgid "Remember Last Used Directory"
-msgstr "זכור את התיקייה האחרונה שהייתה בשימוש"
+msgstr ""
 
 #: TFRMPREFERENCES.CHECKBOX2.CAPTION
 msgid "Use CHCP for international characters"
@@ -761,72 +688,52 @@ msgid "Use Several Encoding Threads:"
 msgstr ""
 
 #: TFRMPREFERENCES.EDIT7.HINT
-#, fuzzy
-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr "אפשרויות מסוף (-e עבור Xterm , -x עבור המסוף של גנום"
+msgstr ""
 
 #: TFRMPREFERENCES.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Default Destination Directory:"
-msgstr "תיקיית יעד ברירת מחדל"
+msgstr ""
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
-#, fuzzy
-#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr "נתיב ל-Executable של FFmpeg"
+msgstr ""
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
-#, fuzzy
-#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr "נתיב ל-Executable של FFPlay"
+msgstr ""
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
-#, fuzzy
-#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr "נתיב ל-Executable של FFmpeg"
+msgstr ""
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
-#, fuzzy
-#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr "נתיב ל-Executable של FFPlay"
+msgstr ""
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
-#, fuzzy
-#| msgid "Terminal to run FFmpeg"
 msgid "Terminal to run FFmpeg in:"
-msgstr "מסוף להרצת FFmpeg"
+msgstr ""
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
-#, fuzzy
-#| msgid "Additional Options"
 msgid "Terminal Options:"
-msgstr "אפשרויות נוספות"
+msgstr ""
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
-#, fuzzy
-#| msgid "Priority"
 msgid "Priority:"
-msgstr "חשיבות"
+msgstr ""
 
 #: TFRMPREFERENCES.PAGE1.CAPTION
 msgid "General"
 msgstr "כללי"
 
 #: TFRMPREFERENCES.PAGE2.CAPTION
-#, fuzzy
-#| msgid "Ms Windows"
 msgid "MS Windows"
-msgstr "מיקרוסופט וינדוס"
+msgstr ""
 
 #: TFRMPREFERENCES.PAGE3.CAPTION
 msgid "Linux"
@@ -837,11 +744,9 @@ msgid "Copy to Clipboard"
 msgstr ""
 
 #: TFRMSCRIPT.BTNCLOSE.CAPTION
-#, fuzzy
-#| msgid "Close"
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
-msgstr "סגור"
+msgstr ""
 
 #: TFRMSCRIPT.BTNRUN.CAPTION
 msgid "Run!"
@@ -900,13 +805,13 @@ msgid "Please add at least 1 file to convert"
 msgstr "אנא הוסף לפחות עוד קובץ אחד להמרה"
 
 #: unit1.rspleaseselectapreset
-#, fuzzy
-#| msgid "Please select a preset to export"
 msgid "Please select a preset"
-msgstr "אנא בחר ב-preset לייצוא"
+msgstr ""
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Preset: %s%s%s קיים כבר"
 
 #: unit1.rspresethasnoext
@@ -929,11 +834,13 @@ msgstr "ה-preset עם התווית: %s%s%s קיים כבר"
 msgid "Press Enter to Continue"
 msgstr "לחץ Enter על מנת להמשיך"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
-msgstr "תיקיית יעד ברירת מחדל"
+msgstr ""
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -955,62 +862,6 @@ msgstr "צור preset:"
 msgid "Import Presets"
 msgstr "ייבוא Presets"
 
-#~| msgid "WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-#~| msgid "Additional Options"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "אפשרויות נוספות"
-#~ msgid "(All Categories)"
-#~ msgstr "(כל הקטגוריות)"
-#~ msgid "Convert To ..."
-#~ msgstr "המר ל..."
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "אודות"
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "אפשרויות"
-#~ msgid "Video Settings"
-#~ msgstr "הגדרות וידאו"
-#~ msgid "Audio Settings"
-#~ msgstr "הגדרות אודיו"
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "ביטול"
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Presets"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading למעבדי כפולי ליבה"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "נתיב ל-FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "נתיב ל-FFPlay.exe"
-#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~| msgid "OK"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "בסדר"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "ממיר"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "שמור"
-#~ msgid "Replace Preset"
-#~ msgstr "החלף preset"
-#~| msgid "FFmpeg"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
 msgstr "התווית חייבת להיות ייחודית."
@@ -1044,7 +895,6 @@ msgid "Idle"
 msgstr "לא פעיל"
 
 #: unit4.rsprioritynormal
-#, fuzzy
 msgid "Normal"
 msgstr "רגילה"
 

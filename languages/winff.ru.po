@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.0.2\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: \n"
@@ -815,7 +815,9 @@ msgid "Please select a preset"
 msgstr "Выберите настройки преобразования"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Предустановка %s%s%s уже существует"
 
 #: unit1.rspresethasnoext
@@ -838,6 +840,10 @@ msgstr "Настройки с описанием %s%s%s уже существу�
 msgid "Press Enter to Continue"
 msgstr "Нажмите Ввод для продолжения"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr "Выберите каталог"
@@ -858,10 +864,6 @@ msgstr "Имя настроек содержит недопустимые сим
 msgid "Create Preset:"
 msgstr "Сохранить параметры?"
 
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Импортировать параметры"
-
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
 #~ msgstr "WinFF"
@@ -871,6 +873,10 @@ msgstr "Импортировать параметры"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Импортировать параметры"
+
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
 msgstr "Описание должно быть уникальным."
