@@ -1,5 +1,5 @@
 # translation of winff.po to Spanish
-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,17 +20,17 @@
 # https://translations.launchpad.net/winff/trunk/+pots/winff/es/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.1.1\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2012-01-04 03:49+0000\n"
-"Last-Translator: winninglero <Unknown>\n"
+"PO-Revision-Date: 2012-04-04 08:24+0000\n"
+"Last-Translator: Fitoschido <fitoschido@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-01-10 20:36+0000\n"
-"X-Generator: Launchpad (build 14640)\n"
+"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
+"X-Generator: Launchpad (build 15282)\n"
 "Language: \n"
 
 #: TFORM1.FORM1.CAPTION
@@ -508,7 +508,7 @@ msgstr "Mostrar Linea Cmd"
 
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
-msgstr "Documentación (inglés)"
+msgstr "Documentación"
 
 #: TFRMMAIN.MITEXIT.CAPTION
 msgid "Exit"
@@ -807,7 +807,9 @@ msgid "Please select a preset"
 msgstr "Por favor, elegir un valor predeterminado"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "predeterminado: %s%s%s ya existe"
 
 #: unit1.rspresethasnoext
@@ -829,6 +831,10 @@ msgstr "El predeterminado con etiqueta: %s%s%s ya existe."
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
 msgstr "Pulse Entrar para continuar."
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"

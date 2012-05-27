@@ -1,4 +1,4 @@
-# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 # Göran Hanell <hannell@algonet.se>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.1.1\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: \n"
@@ -924,7 +924,9 @@ msgid "Please select a preset"
 msgstr "Välj en förinställning att exportera"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Förinställning: %s%s%s finns redan"
 
 #: unit1.rspresethasnoext
@@ -947,6 +949,10 @@ msgstr "En förinställning med etiketten: %s%s%s finns redan"
 msgid "Press Enter to Continue"
 msgstr "Tryck Enter för att fortsätta"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 #, fuzzy
 #| msgid "Default Destination Directory"
@@ -968,10 +974,6 @@ msgstr "Förinställningen innehåller ogiltiga tecken"
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Skapa förinställning"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Importera förinställningar"
 
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -1024,6 +1026,10 @@ msgstr "Importera förinställningar"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importera förinställningar"
+
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
 msgstr "Etiketten måste vara unik"

@@ -1,4 +1,4 @@
-# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 # simurg56 <simurg56@gmail.com>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 0.45.1\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: \n"
@@ -906,7 +906,9 @@ msgid "Please select a preset"
 msgstr "Pêşmîheng ku were derxistin hilbijêre"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Pêşmîheng: %s%s%s jixwe heye"
 
 #: unit1.rspresethasnoext
@@ -929,6 +931,10 @@ msgstr "Pêşmîheng a bi label : %s%s%s jixwe heye"
 msgid "Press Enter to Continue"
 msgstr "Pêl enter bike ku berdewam bikî"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 #, fuzzy
 #| msgid "Default Destination Directory"
@@ -950,10 +956,6 @@ msgstr "Di Pêşmîheng de karakterên qedexe heye"
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Pêşmîheng biafirîne:"
-
-#: unit2.rsimportpresets
-msgid "Import Presets"
-msgstr "Pêşmîheng têxe"
 
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -1013,6 +1015,10 @@ msgstr "Pêşmîheng têxe"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Pêşmîheng têxe"
+
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
 msgstr "Divê label yekta be."

@@ -1,1069 +1,887 @@
-# translation of winff.po to Catalan
-# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+# Kazakh translation for winff
+# Copyright (c) WinFF authors.
+# This file is distributed under the same license as the winff package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2012.
 #
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-# Benny Beat <bennybeat@gmail.com>, 2009
+# Launchpad contributors see:
+# https://translations.launchpad.net/winff/trunk/+pots/winff/kk/+details
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2010-01-18 21:38+0100\n"
-"Last-Translator: Benny Beat <bennybeat@gmail.com>\n"
-"Language-Team: \n"
-"Language: \n"
+"PO-Revision-Date: 2012-05-03 11:45+0000\n"
+"Last-Translator: Baurzhan Muftakhidinov <Unknown>\n"
+"Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
+"X-Generator: Launchpad (build 15282)\n"
+"X-Poedit-Country: KAZAKHSTAN\n"
+"Language: kk\n"
+"X-Poedit-Language: Kazakh\n"
 
 #: TFORM1.FORM1.CAPTION
 msgid "Form1"
-msgstr ""
+msgstr "Form1"
 
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
-msgstr "D'acord"
+msgstr "ОК"
 
 #: TFRMABOUT.FRMABOUT.CAPTION
-#, fuzzy
-#| msgid "About WinFF"
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
-msgstr "Quant a WinFF"
+msgstr "WinFF туралы"
 
 #: TFRMABOUT.LABEL1.CAPTION
-#, fuzzy
-#| msgid "WinFF"
 msgid "WinFF 1.3.2"
-msgstr "WinFF"
+msgstr "WinFF 1.3.2"
 
 #: TFRMABOUT.LABEL10.CAPTION
 msgid "http://hawkeye.arrozcru.org/"
-msgstr ""
+msgstr "http://hawkeye.arrozcru.org/"
 
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr ""
+msgstr "Debian/Ubuntu дестелері: Paul Gevers"
 
 #: TFRMABOUT.LABEL13.CAPTION
 msgid "Gmaq"
-msgstr ""
+msgstr "Gmaq"
 
 #: TFRMABOUT.LABEL14.CAPTION
 msgid "High Quality Presets From"
-msgstr ""
+msgstr "Жоғары сапалы кодтау параметрлерін ұсынған"
 
 #: TFRMABOUT.LABEL15.CAPTION
 msgid "Icons and Logo by Alex Klepatsch"
-msgstr ""
+msgstr "Таңбаша мен лого: Alex Klepatsch"
 
 #: TFRMABOUT.LABEL16.CAPTION
 msgid "JNavas"
-msgstr ""
+msgstr "JNavas"
 
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
-msgstr ""
+msgstr "Copyright 2006-2009 GPL V3"
 
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-msgstr ""
+msgstr "Matthew Weatherford,  Ian Stoffberg және Alexey Osipov"
 
 #: TFRMABOUT.LABEL4.CAPTION
 msgid "http://www.winff.org"
-msgstr ""
+msgstr "http://www.winff.org"
 
 #: TFRMABOUT.LABEL5.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
-msgstr ""
+msgstr "Fabrice Belllard сауда белгісі"
 
 #: TFRMABOUT.LABEL7.CAPTION
 msgid "http://ffmpeg.org"
-msgstr ""
+msgstr "http://ffmpeg.org"
 
 #: TFRMABOUT.LABEL8.CAPTION
-#, fuzzy
-#| msgid "FFmpeg builds by"
 msgid "FFmpeg Windows Builds by"
-msgstr "FFmpeg compilat per"
+msgstr "FFmpeg Windows нұсқалары:"
 
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Kyle Schwarz"
-msgstr ""
+msgstr "Kyle Schwarz"
 
 #: TFRMABOUT.PAGE1.CAPTION
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: TFRMABOUT.PAGE2.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
-msgstr "Gràcies"
+msgstr "Рахмет"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
-msgstr "Afegeix/Modifica"
+msgstr "Қосу / Жаңарту"
 
 #: TFRMEDITPRESETS.CANCELBTN.CAPTION
-#, fuzzy
-#| msgid "Close"
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
-msgstr "Tanca"
+msgstr "Жабу"
 
 #: TFRMEDITPRESETS.CAPTION
 msgid "Edit Presets"
-msgstr "Edita les configuracions"
+msgstr "Параметрлерді түзету"
 
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
-msgstr "Esborra"
+msgstr "Өшіру"
 
 #: TFRMEDITPRESETS.EDIT1.HINT
 msgid "One word, only letters and numbers"
-msgstr ""
+msgstr "Бір сөз, тек әріптер мен сандар"
 
 #: TFRMEDITPRESETS.EDIT2.HINT
 msgid "Enter a more descriptive name for this preset"
-msgstr ""
+msgstr "Бұл параметрді сипаттайтын атауды көрсетіңіз"
 
 #: TFRMEDITPRESETS.EDIT3.HINT
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
-msgstr "Paràmetres de la línia d'ordres (sense -i ni l'arxiu de sortida)"
+msgstr "-i немесе шығыс файл баптауларын қолданбаңыз"
 
 #: TFRMEDITPRESETS.EDIT4.HINT
 msgid "Do not include a dot"
-msgstr ""
+msgstr "Нүктені көрсетпеңіз"
 
 #: TFRMEDITPRESETS.EDIT5.HINT
 msgid "Choose a category to group this preset under"
-msgstr ""
+msgstr "Бұл параметрді топтау үшін санатты көрсетіңіз"
 
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
-msgstr "Exporta"
+msgstr "Экспорт"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
-msgstr "Importa"
+msgstr "Импорт"
 
 #: TFRMEDITPRESETS.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Create Preset:"
 msgid "Category / Preset"
-msgstr "Crea una nova configuració:"
+msgstr "Санат / Параметр"
 
 #: TFRMEDITPRESETS.LABEL2.CAPTION
-#, fuzzy
-#| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr "Nom de la configuració (només un mot alfanumèric en text pla, A-z 0-9)"
+msgstr "Параметр аты (бір сөз, тек әріптер мен сандар)"
 
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
-msgstr "Etiqueta de la configuració"
+msgstr "Параметр белгісі"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr "Paràmetres de la línia d'ordres (sense -i ni l'arxiu de sortida)"
+msgstr "Параметрдің командалық жол опциялары (-i не шығыс файлы керек емес)"
 
 #: TFRMEDITPRESETS.LABEL5.CAPTION
-#, fuzzy
-#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
-msgstr "Extensió de l'arxiu de sortida (sense \".\")"
+msgstr "Шығыс файлының кеңейтуі ('.' қоспаңыз)"
 
 #: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
-msgstr "Categoria"
+msgstr "Санат"
 
 #: TFRMEDITPRESETS.OKBTN.CAPTION
-#, fuzzy
-#| msgid "Save"
 msgid "Save"
-msgstr "desa"
+msgstr "Сақтау"
 
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
-msgstr ""
+msgstr "pnlTop"
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
-msgstr "Cancel·la"
+msgstr "Бас тарту"
 
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
-msgstr "Exporta la configuració"
+msgstr "Параметрлерді экспорттау"
 
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
-msgstr "Exporta"
+msgstr "Экспорт"
 
 #: TFRMEXPORT.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
-msgstr "Si us plau, trieu la configuració a exportar"
+msgstr "Экспорттау үшін параметрлерді таңдаңыз:"
 
 #: TFRMMAIN.AUDBITRATE.HINT
-#, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<íntegre>kb) els kilobits/segon que la transmissió necessita"
+msgstr "(<integer>) ағым қолданатын килобит/сек параметрі"
 
 #: TFRMMAIN.AUDCHANNELS.HINT
 msgid "(<integer>) number of audio channels"
-msgstr "(<íntegre>) nombre de canals d'audio"
+msgstr "(<integer>) аудио арналарының саны"
 
 #: TFRMMAIN.AUDSAMPLINGRATE.HINT
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr "(<íntegre>) La freqüència de mostreig de l'audio en hertz"
+msgstr "(<integer>) аудионы дискреттеу жиілігі, Гц"
 
 #: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
-msgstr "Afegeix"
+msgstr "Қосу"
 
 #: TFRMMAIN.BTNADD.HINT
-#, fuzzy
-#| msgid "add file(s) to the list for conversion"
 msgid "Add file(s) to the list for conversion"
-msgstr "Afegeix arxius a la llista de conversió"
+msgstr "Түрлендіру тізіміне файл(дар)ды қосу"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
-#, fuzzy
-#| msgid "Output Folder"
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
-msgstr "Carpeta de sortida:"
+msgstr "Шығыс бумасын іске асыру"
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Параметрді іске асыру"
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
-msgstr "Neteja"
+msgstr "Тазарту"
 
 #: TFRMMAIN.BTNCLEAR.HINT
-#, fuzzy
-#| msgid "remove all files from the list"
 msgid "Remove all files from the list"
-msgstr "Esborra tots els arxius de la llista"
+msgstr "Тізімнен барлық файлдарды өшіру"
 
 #: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
-msgstr "Converteix"
+msgstr "Түрлендіру"
 
 #: TFRMMAIN.BTNCONVERT.HINT
-#, fuzzy
-#| msgid "start the conversion process"
 msgid "Start the conversion process"
-msgstr "Inicia el procés de conversió"
+msgstr "Түрлендіру үрдісін бастау"
 
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr "Opcions"
+msgstr "Опциялар"
 
 #: TFRMMAIN.BTNOPTIONS.HINT
-#, fuzzy
-#| msgid "open or close the additional option window"
 msgid "Open/close the additional options window"
-msgstr "Obre o tanca la finestra d'opcions addicionals"
+msgstr "Қосымша опциялар терезесін ашу не жабу"
 
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
-msgstr "Reprodueix"
+msgstr "Ойнату"
 
 #: TFRMMAIN.BTNPLAY.HINT
-#, fuzzy
-#| msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Vista prèvia amb ffplay de l'arxiu font (per a esbrinar si la conversió és possible)"
+msgstr "Таңдалған қайнар көзді ffplay көмегімен алдын-ала қарау (түрлендіру мүмкін бе, соны тексеруге болады)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
-msgstr "Vista prèvia"
+msgstr "Алдын-ала қарау"
 
 #: TFRMMAIN.BTNPREVIEW.HINT
-#, fuzzy
-#| msgid "preview using the output settings"
 msgid "Preview using the output settings"
-msgstr "Vista prèvia amb la configuració de sortida"
+msgstr "Шығыс баптауларын қолданып, алдын-ала қарау"
 
 #: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
-msgstr "Esborra"
+msgstr "Өшіру"
 
 #: TFRMMAIN.BTNREMOVE.HINT
-#, fuzzy
-#| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
-msgstr "esborra de la llista els arxius seleccionats"
+msgstr "Тізімнен таңдалған файл(дар)ды өшіру"
 
 #: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: TFRMMAIN.CATEGORYBOX.HINT
-#, fuzzy
-#| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
-msgstr "El nom del dispositiu o el tipus d'arxiu de vídeo hauria de ser convertir a"
+msgstr "Видеоны түрлендіру үшін құрылғы не файл түрі"
 
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
-msgstr ""
+msgstr "Қайнар көз бумасын қолдану"
 
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
-msgstr "2 passes"
+msgstr "2 рет"
 
 #: TFRMMAIN.CBX2PASS.HINT
-#, fuzzy
-#| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Emprant 2 passes, el còdec podrà recopilar informació amb la primera passada per així oferir-vos la millor qualitat."
+msgstr "Екі рет өту кодтаушыға сапаны арттыру үшін бірінші рет өткенде ақпаратты жинауға мүмкіндік береді"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
-msgstr "Desenllaça"
+msgstr "Деинтерлейсинг"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
-#, fuzzy
-#| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
-msgstr "Treu l'entrellaçat del vídeo (si escau)"
+msgstr "Видеодан интерлейсингті өшіру (керек болса)"
 
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-#, fuzzy
-#| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "Carpeta de destinació per al vídeo final (ha de ser diferent de l'arxiu font)"
+msgstr "Нәтиже видеосы үшін орналасу бумасы (қайнар көз орналасқан бумасынан басқасын таңдаңыз)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-#, fuzzy
-#| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<íntegre:íntegre> o <real>) ràtio físic (DAR) de visualització de la destinació."
+msgstr "(<integer:integer> не <real>) мақсат экранының физикалық жақтар ара қатынасы (DAR)"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr ""
+msgstr "(<integer>)10-нан бастап, 44100 не 48000 сияқты аудио дискреттеу жиілігіне дейін. Аудио ағымын \"созу\"/\"сығуға\" мүмкін қылады."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPLEFT.TEXT
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPRIGHT.TEXT
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPTOP.TEXT
 msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<сс:мм:сс> - Түрлендіруді осы жерден (уақыттан) бастау"
 
 #: TFRMMAIN.EDTSEEKMM.HINT
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<сс:мм:сс> - Түрлендіруді осы жерден (уақыттан) бастау"
 
 #: TFRMMAIN.EDTSEEKSS.HINT
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<сс:мм:сс> - Түрлендіруді осы жерден (уақыттан) бастау"
 
 #: TFRMMAIN.EDTTTRHH.HINT
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<сс:мм:сс> -Видеоның осыншама уақыты түрлендірілгеннен кейін тоқтау"
 
 #: TFRMMAIN.EDTTTRMM.HINT
 msgctxt "TFRMMAIN.EDTTTRMM.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<сс:мм:сс> -Видеоның осыншама уақыты түрлендірілгеннен кейін тоқтау"
 
 #: TFRMMAIN.EDTTTRSS.HINT
 msgctxt "TFRMMAIN.EDTTTRSS.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
+msgstr "<сс:мм:сс> -Видеоның осыншама уақыты түрлендірілгеннен кейін тоқтау"
 
 #: TFRMMAIN.EDTVOLUME.HINT
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
+msgstr "(<integer>) 256 = Ағымдағы дыбысы, 128 = Жарты дыбысы, 512 = Екі еселенген дыбысы"
 
 #: TFRMMAIN.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Convert"
 msgid "Convert to:"
-msgstr "Converteix"
+msgstr "Неге түрлендіру:"
 
 #: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
-msgstr "Canals d'àudio"
+msgstr "Аудио арналары"
 
 #: TFRMMAIN.LABEL12.CAPTION
-#, fuzzy
-#| msgid "Output Folder"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
-msgstr "Carpeta de sortida:"
+msgstr "Шығыс бумасы:"
 
 #: TFRMMAIN.LABEL19.CAPTION
-#, fuzzy
-#| msgid "Presets"
 msgid "Preset:"
-msgstr "Configuracions"
+msgstr "Параметр:"
 
 #: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
-msgstr ""
+msgstr "Дыбысы"
 
 #: TFRMMAIN.LABEL21.CAPTION
 msgid "Sync"
-msgstr ""
+msgstr "Синхронизация"
 
 #: TFRMMAIN.LABEL22.CAPTION
 msgid "Seek to"
-msgstr ""
+msgstr "Қайда өту"
 
 #: TFRMMAIN.LABEL23.CAPTION
 msgid "Time to Record"
-msgstr ""
+msgstr "Жазу уақыты"
 
 #: TFRMMAIN.LABEL24.CAPTION
 msgid "Hours / Minutes / Seconds"
-msgstr ""
+msgstr "Сағат / Минут / Секунд"
 
 #: TFRMMAIN.LABEL3.CAPTION
-#, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
-msgstr "Configuració sota la línia d'ordres (avançat)"
+msgstr "Қосымша командалық жол опциялары"
 
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
-msgstr "Ràtio de l'àudio"
+msgstr "Аудио битрейті"
 
 #: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
-msgstr "Freqüència del mostreig"
+msgstr "Дискреттеу жиілігі"
 
 #: TFRMMAIN.LABEL9.CAPTION
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
-msgstr "Relació d'aspecte"
+msgstr "Жақтар ара қатынасы"
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
-msgstr "Avall"
+msgstr "Төмен"
 
 #: TFRMMAIN.LBLCROPLEFT.CAPTION
 msgid "Left"
-msgstr "Esquerra"
+msgstr "Сол жақ"
 
 #: TFRMMAIN.LBLCROPRIGHT.CAPTION
 msgid "Right"
-msgstr "Dreta"
+msgstr "Оң жақ"
 
 #: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
-msgstr "Amunt"
+msgstr "Жоғары"
 
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
-msgstr "Fotogrames"
+msgstr "Кадр/сек"
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
-msgstr "Ràtio del vídeo"
+msgstr "Видео битрейті"
 
 #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
-msgstr "Mida del vídeo"
+msgstr "Видео өлшемі"
 
 #: TFRMMAIN.MENUITEM1.CAPTION
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Параметрді іске асыру"
 
 #: TFRMMAIN.MENUITEM2.CAPTION
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
-msgstr ""
+msgstr "Мақсат бумасын іске асыру"
 
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: TFRMMAIN.MITABOUT.CAPTION
-#, fuzzy
-#| msgid "About"
 msgid "About"
-msgstr "Quant a"
+msgstr "Осы туралы"
 
 #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
-#, fuzzy
-#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
-msgstr "Mostra la línia d'ordres"
+msgstr "Командалық жол көрсету"
 
 #: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
-msgstr "Documentació"
+msgstr "Құжаттама"
 
 #: TFRMMAIN.MITEXIT.CAPTION
 msgid "Exit"
-msgstr "Surt"
+msgstr "Шығу"
 
 #: TFRMMAIN.MITFORUMS.CAPTION
-#, fuzzy
-#| msgid "WinFF Forums"
 msgid "Forums"
-msgstr "Fòrums de WinFF"
+msgstr "Форумдар"
 
 #: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
-msgstr "Importa una configuració"
+msgstr "Параметрді импорттау"
 
 #: TFRMMAIN.MITPAUSEONFINISH.CAPTION
 msgid "Pause on Finish"
-msgstr "Pausa en finalitzar"
+msgstr "Аяқтағанда аялдату"
 
 #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
-msgstr "Reprodueix un só en finalitzar"
+msgstr "Аяқтағанда, дыбыс беру"
 
 #: TFRMMAIN.MITPREFERENCES.CAPTION
 msgid "Preferences"
-msgstr "Preferències"
+msgstr "Баптаулар"
 
 #: TFRMMAIN.MITPRESETS.CAPTION
-#, fuzzy
-#| msgid "Presets"
 msgid "Presets"
-msgstr "Configuracions"
+msgstr "Параметрлер"
 
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr "Opcions addicionals"
+msgstr "Қосымша опциялар"
 
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
-msgstr "Tanca l'ordinador en acabar"
+msgstr "Аяқтағанда, сөндіру"
 
 #: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
-msgstr ""
+msgstr "Толығырақ көрініс"
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
-msgstr "Web de WinFF"
+msgstr "WinFF вебсайты"
 
 #: TFRMMAIN.MNUEDIT.CAPTION
 msgid "Edit"
-msgstr "Edita"
+msgstr "Түзету"
 
 #: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
-msgstr "Arxiu"
+msgstr "Файл"
 
 #: TFRMMAIN.MNUHELP.CAPTION
 msgid "Help"
-msgstr "Ajuda"
+msgstr "Көмек"
 
 #: TFRMMAIN.MNUOPTIONS.CAPTION
-#, fuzzy
-#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr "Opcions"
+msgstr "Опциялар"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
-msgstr ""
+msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
-#, fuzzy
-#| msgid "specific setting to use for the chosen device or file type"
 msgid "Specific settings to use for the chosen device or file type"
-msgstr "Configuració específica per al tipus de dispositiu o arxiu triat"
+msgstr "Таңдалған құрылғы не файл түрі үшін арнайы баптаулар"
 
 #: TFRMMAIN.TABSHEET1.CAPTION
-#, fuzzy
-#| msgid "Video Size"
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
 msgid "Video"
-msgstr "Mida del vídeo"
+msgstr "Видео"
 
 #: TFRMMAIN.TABSHEET2.CAPTION
-#, fuzzy
-#| msgid "Audio Settings"
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
-msgstr "Opcions d'àudio"
+msgstr "Аудио"
 
 #: TFRMMAIN.TABSHEET3.CAPTION
-#, fuzzy
-#| msgid "Crop"
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
-msgstr "Retalla"
+msgstr "Кесу"
 
 #: TFRMMAIN.TABSHEET4.CAPTION
 msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
-msgstr ""
+msgstr "Уақыт"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMMAIN.TABSHEET6.CAPTION
-#, fuzzy
-#| msgid "Output Details"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
-msgstr "detalls de la sortida"
+msgstr "Шығыс қасиеттері"
 
 #: TFRMMAIN.VIDBITRATE.HINT
-#, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<íntegre>kb) els kilobits/segon que la transmissió necessita"
+msgstr "(<integer>) ағым қолданатын килобит/сек параметрі"
 
 #: TFRMMAIN.VIDFRAMERATE.HINT
-#, fuzzy
-#| msgid "(<real> or <integer>) the number of frames per second"
 msgid "(<real> or <integer>) number of frames per second"
-msgstr "(<real> o <íntegre>) nombre de fotogrames per segon"
+msgstr "(<real> не <integer>) бір секунд ішіндегі кадрлар саны"
 
 #: TFRMMAIN.VIDSIZEX.HINT
-#, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<íntegre> X <integre>) Quantitat d'informació dels píxels. Per a còdecs que no suporten el aspecte de ràtio de píxels (PAR) aquesta serà la mida en visualitzar-se."
+msgstr "(<integer> X <integer>) Әр кадр ішіндегі пиксельдер саны. Пиксельді ара қатынасын (PAR) қолдамайтын кодектер үшін бұл - нәтиже кадр өлшемі."
 
 #: TFRMMAIN.VIDSIZEY.HINT
-#, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<íntegre> X <integre>) Quantitat d'informació dels píxels. Per a còdecs que no suporten el aspecte de ràtio de píxels (PAR) aquesta serà la mida en visualitzar-se."
+msgstr "(<integer> X <integer>) Әр кадр ішіндегі пиксельдер саны. Пиксельді ара қатынасын (PAR) қолдамайтын кодектер үшін бұл - нәтиже кадр өлшемі."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr "D'acord"
+msgstr "ОК"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
-msgstr "Cancel·la"
+msgstr "Бас тарту"
 
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON4.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON5.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON6.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON7.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON8.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
-msgstr "Preferències de WinFF"
+msgstr "WinFF баптаулары"
 
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
-#, fuzzy
-#| msgid "Remember Last Directory Used"
 msgid "Remember Last Used Directory"
-msgstr "Recorda la darrera carpeta emprada"
+msgstr "Соңғы қолданылған буманы есте сақтау"
 
 #: TFRMPREFERENCES.CHECKBOX2.CAPTION
 msgid "Use CHCP for international characters"
-msgstr "Empra CHCP per a caràcters internacionals"
+msgstr "Халықаралық таңбалар үшін CHCP қолданыңыз"
 
 #: TFRMPREFERENCES.CHECKBOX3.CAPTION
 msgid "Use Several Encoding Threads:"
-msgstr ""
+msgstr "Бірнеше кодтау үрдістерін қолдану:"
 
 #: TFRMPREFERENCES.EDIT7.HINT
-#, fuzzy
-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr "Opcions de consola (-e per a Xterm, -x per a un terminal Gnome)"
+msgstr "'-e' xterm, ал '-x' gnome-terminal үшін"
 
 #: TFRMPREFERENCES.LABEL1.CAPTION
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Default Destination Directory:"
-msgstr "Directori per defecte"
+msgstr "Үнсіз келісім бойынша мақсат бумасы:"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
-#, fuzzy
-#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr "Ruta fins a FFmpeg"
+msgstr "FFmpeg орындалатын файл жолы:"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
-#, fuzzy
-#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr "Ruta fins a FFplay"
+msgstr "FFplay орындалатын файл жолы:"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
-#, fuzzy
-#| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr "Ruta fins a FFmpeg"
+msgstr "FFmpeg орындалатын файл жолы:"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
-#, fuzzy
-#| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr "Ruta fins a FFplay"
+msgstr "FFplay орындалатын файл жолы:"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
-#, fuzzy
-#| msgid "Terminal to run FFmpeg"
 msgid "Terminal to run FFmpeg in:"
-msgstr "Terminal per a executar FFmpeg"
+msgstr "FFmpeg-ті жөнелту үшін терминал:"
 
 #: TFRMPREFERENCES.LABEL7.CAPTION
-#, fuzzy
-#| msgid "Additional Options"
 msgid "Terminal Options:"
-msgstr "Opcions addicionals"
+msgstr "Терминал баптаулары:"
 
 #: TFRMPREFERENCES.LABEL8.CAPTION
-#, fuzzy
-#| msgid "Priority"
 msgid "Priority:"
-msgstr "Prioritat"
+msgstr "Приоритет:"
 
 #: TFRMPREFERENCES.PAGE1.CAPTION
 msgid "General"
-msgstr "General"
+msgstr "Жалпы"
 
 #: TFRMPREFERENCES.PAGE2.CAPTION
-#, fuzzy
-#| msgid "Ms Windows"
 msgid "MS Windows"
 msgstr "MS Windows"
 
 #: TFRMPREFERENCES.PAGE3.CAPTION
 msgid "Linux"
-msgstr "Linux/Unix"
+msgstr "Linux"
 
 #: TFRMSCRIPT.BTNCLIP.CAPTION
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Алмасу буферіне көшіру"
 
 #: TFRMSCRIPT.BTNCLOSE.CAPTION
-#, fuzzy
-#| msgid "Close"
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
-msgstr "Tanca"
+msgstr "Жабу"
 
 #: TFRMSCRIPT.BTNRUN.CAPTION
 msgid "Run!"
-msgstr ""
+msgstr "Жөнелту!"
 
 #: TFRMSCRIPT.BTNSAVE.CAPTION
 msgid "Save As..."
-msgstr ""
+msgstr "Қалайша сақтау..."
 
 #: TFRMSCRIPT.CAPTION
 msgid "FFmpeg Command Line"
-msgstr "Línia d'ordres d'FFmpeg"
+msgstr "FFmpeg командалық жолы"
 
 #: unit1.rsanalysing
 msgid "Analysing"
-msgstr ""
+msgstr "Зерттеу"
 
 #: unit1.rsconverting
 msgid "Converting"
-msgstr "Convertint"
+msgstr "Түрлендіру"
 
 #: unit1.rscouldnotfindffmpeg
 msgid "Could not find FFmpeg."
-msgstr "No s'ha trobat l'FFmpeg."
+msgstr "FFmpeg табылмады."
 
 #: unit1.rscouldnotfindffplay
 msgid "Could not find FFPlay."
-msgstr "No s'ha trobat l'FFplay."
+msgstr "FFPlay табылмады."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
-msgstr "No s'ha trobat l'arxiu"
+msgstr "Файл табылмады"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "No s'ha trobat l'arxiu de configuració."
+msgstr "Параметрлер файлын табу мүмкін емес."
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "L'extensió no pot contenir un punt"
+msgstr "Кеңейту ішінде нүкте болмауы тиіс"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
-msgstr "L'arxiu no existeix"
+msgstr "файл жоқ болып тұр"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Arxiu de configuracions no vàlid"
+msgstr "Параметрлер файлы қате"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "El nom ha de ser alfanumèric (a-z,A-Z,0-9), i sense cap accentuació"
+msgstr "Аты сандар мен әріптерден тұруы керек (a-z,A-Z,0-9)"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "Si us plau, afegiu com a mínim un arxiu per a convertir"
+msgstr "Түрлендіру үшін кем дегенде 1 файлды қосыңыз"
 
 #: unit1.rspleaseselectapreset
 msgid "Please select a preset"
-msgstr "Por favor, elegir un valor preestablecido"
+msgstr "Параметрді таңдаңыз"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
 #| msgid "Preset: %s%s%s already exists"
 msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
-msgstr "La configuració: %s%s%s ja existeix"
+msgstr "Параметр: %s%s%s бар болып тұр"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "L'arxiu de configuració a importar ha de tenir una extensió"
+msgstr "Импортталатын параметрдің кеңейтуі жоқ"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "L'arxiu de configuració a importar ha de tenir una etiqueta"
+msgstr "Импортталатын параметрдің белгісі жоқ"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "Si us plau, trieu la configuració a exportar"
+msgstr "Экспорттау үшін параметрді таңдаңыз"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "La configuració amb l'etiqueta: %s%s%s ja existeix"
+msgstr "Белгі: %s%s%s бар параметр бар болып тұр"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr "Premeu Intro per a continuar"
+msgstr "Жалғастыру үшін Enter басыңыз"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
 msgstr ""
 
 #: unit1.rsselectdirectory
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
-msgstr "Directori per defecte"
+msgstr "Буманы таңдаңыз"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "Trieu l'arxiu de configuracions"
+msgstr "Параметр файлын таңдаңыз"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
-msgstr "Trieu els arxius de vídeo"
+msgstr "Видео файлдарын таңдаңыз"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "L'arxiu de configuració conté caràcters invàlids!"
+msgstr "Параметр құрамында рұқсат етілмеген таңбалар бар"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Crea una nova configuració:"
+msgstr "Параметрді жасау"
 
-#~| msgid "WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Opcions addicionals"
-#~ msgid "(All Categories)"
-#~ msgstr "(Totes les categories)"
-#~ msgid "Convert To ..."
-#~ msgstr "Converteix a..."
-#~ msgid "Device Preset"
-#~ msgstr "Tipus de format:"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "Quant a"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "Opcions"
-#~ msgid "Video Settings"
-#~ msgstr "Opcions de vídeo"
-#~ msgid "Audio Settings"
-#~ msgstr "Opcions d'àudio"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Configuracions"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Empra la multitasca per a processadors amb més d'un nucli"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "Ruta fins a FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "Ruta fins a FFplay.exe"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "D'acord"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "Convertint"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "desa"
-#~ msgid "Replace Preset"
-#~ msgstr "Reemplaça la configuració"
-#~ msgid "AC'"
-#~ msgstr "Canales de audio"
-#~| msgid "FFmpeg"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
 #: unit2.rsimportpresets
 msgid "Import Presets"
-msgstr "Importa una configuració"
+msgstr "Параметрлерді импорттау"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "L'etiqueta ha de ser única."
+msgstr "Белгі қайталанбауы тиіс."
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "Esbora la configuració:"
+msgstr "Параметрді өшіру:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "Actualitza la configuració:"
+msgstr "Параметрді жаңарту:"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr "Heu d'inserir una extensió."
+msgstr "Кеңейтуді көрсету керек."
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "Heu d'inserir una etiqueta."
+msgstr "Белгіні көрсету керек."
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr "Heu d'inserir un nom."
+msgstr "Атын көрсету керек."
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr "Alta"
+msgstr "Жоғары"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr "Baixa"
+msgstr "Іссіз"
 
 #: unit4.rsprioritynormal
-#, fuzzy
 msgid "Normal"
-msgstr "Normal"
+msgstr "Қалыпты"
 
