@@ -6,7 +6,7 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
-DEBUGGING=1
+#DEBUGGING=1
 
 configure: configure-stamp
 configure-stamp:
