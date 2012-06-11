@@ -1,3 +1,18 @@
+winff (1.4.2-3) unstable; urgency=low
+
+  * Use latest upstream changes
+    - Update translations
+    - Use YesToAll button i.s.o. All button (which does not show on
+      Linux)
+    - Use updated bitrate format settings
+  * Update d/control for new svn location
+  * Update d/presets.xml to use libvo_aacenc i.s.o. libfaac, so that the
+    missing presets can now also be used under Debian/Ubuntu.
+    - Update README.Debian to mention this fact.
+  * Disable debugging as the FTBFS is gone.
+
+ -- Paul Gevers <paul@climbing.nl>  Thu, 31 May 2012 22:06:12 +0200
+
 winff (1.4.2-2) unstable; urgency=low
 
   * Add some debugging info to the build log to investigate a FTBFS
