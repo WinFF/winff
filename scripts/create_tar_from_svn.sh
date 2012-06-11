@@ -20,6 +20,10 @@ pwd
 $SVN export $REPOSITORY winff
 cd winff
 rm -rf debian win32setup scripts
+# winff.po file is not used by the package, but is up-to-date. Create winff.pot file out of it.
+cd languages
+cp winff.po winff.pot
+mv winff.po winff.en.po
 cd $TMPDIR
 $TAR -czf winff-${VERSION}-source.tar.gz winff
 echo "Source file can be found at ${TMPDIR}/winff-${VERSION}-source.tar.gz"
