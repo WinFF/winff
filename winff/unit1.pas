@@ -45,6 +45,7 @@ type
     btnOptions: TBitBtn;
     btnPreview: TBitBtn;
     btnClear: TBitBtn;
+    Button1: TButton;
     categorybox: TComboBox;
     cbOutputPath: TCheckBox;
     cbOutputPath1: TCheckBox;
@@ -145,7 +146,7 @@ type
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     btnConvert: TBitBtn;
     StatusBar1: TStatusBar;
-    TabSheet1: TTabSheet;
+    tabVideo: TTabSheet;
     TabSheet2: TTabSheet;
     TabSheet3: TTabSheet;
     TabSheet4: TTabSheet;
@@ -166,6 +167,7 @@ type
     procedure btnApplyPresetClick(Sender: TObject);
     procedure btnPreviewClick(Sender: TObject);
     procedure btnApplyDestinationClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
     procedure cbOutputPathChange(Sender: TObject);
     procedure edtCropBottomChange(Sender: TObject);
@@ -232,9 +234,11 @@ type
     function GetappdataPath() : string ;
     function replaceparam(commandline:string;param:string;replacement:string):string;
     function replaceVfParam(commandline:string;param:string;replacement:string):string;
-    procedure VidbitrateChange(Sender: TObject);
+    procedure TabControlChange(Sender: TObject);
     function GetFileInfo(var filedetails : string) : string;
     {$IFDEF WIN32}function GetWin32System(): Integer;{$endif}
+    procedure SetSCR(vIndex : integer);
+    procedure GetSCR(vIndex : integer);
 
   private
     { private declarations }
@@ -263,10 +267,34 @@ const
   cOsXP:      Integer =  6;
 {$ENDIF}
 
+type
+  // New in 1.5 //
+  // Every new control added to options panel will need a matching entry here
+  // During the add job queue or changing the individual items, these will need
+  // to be referenced and kept up to date.  This will allow different options
+  // per queue item.
+  // the contents of this objects will be referenced when the script
+  // and generated
+  TQItem = Record
+    FileName : String;
+    VideoBR  : String;
+    VideoFR  : String;
+    VSizeX   : String;
+    VSizeY   : String;
+    VAspect  : String;
+    V2Pass    : Boolean;
+    VDeinterlace : Boolean;
+  end;
+
 
 
 var
   JobList,PresetList,CategoryList,DestinationList,FileInfoList :TstringList;
+
+  // New in 1.5 //
+  // This array holds entries for each item in the filelist
+  scr : array of tqitem;
+
   fOldIndex: integer = -1; // used for dynamic hint on the filelist.
 
   frmMain: TfrmMain;
@@ -336,6 +364,8 @@ sformheight,sformwidth,sformtop,sformleft:string;
 currentpreset, destdir: string;
 
 begin
+   setLength(scr,100); // 1.5 By default limit jobs to 100;
+
    JobList := tstringlist.create;
    CategoryList := tstringlist.Create;
    PresetList := tstringlist.Create;
@@ -572,7 +602,7 @@ begin
                                         // check for multithreading
   multithreading:=getconfigvalue('general/multithreading');
 
-
+  Show;
 end;
 
 
@@ -854,8 +884,6 @@ end;
 procedure TfrmMain.filelistClick(Sender: TObject);
 var i,j : integer;
 begin
-// Held over for next release.  Enhanced Queues
-{
   if filelist.SelCount = 1 then
    begin
      for j := 0 to filelist.Count -1 do
@@ -866,9 +894,9 @@ begin
      categoryboxChange(self);
      PresetBox.Text:= PresetList.Strings[i];
      DestFolder.Text:= DestinationList.Strings[i];
+     GetSCR(i);
      Application.ProcessMessages;
    end;
-}
 end;
 
 
@@ -901,6 +929,35 @@ begin
            end;
        end;
      Application.ProcessMessages;
+end;
+
+procedure TfrmMain.Button1Click(Sender: TObject);
+
+function SetControls(ctrl : tcontrol) : bool;
+   var i,j,k : integer;
+     s,t,u : string;
+   begin
+      for i := 0 to (twincontrol(ctrl).ControlCount) -1 do
+       begin
+            ShowMessage(twincontrol(ctrl).Controls[i].Name);
+            if twincontrol(ctrl).Controls[i] is tpanel then
+              begin
+                   SetControls(twincontrol(ctrl).Controls[i]);
+              end;
+            if twincontrol(ctrl).Controls[i] is tedit then
+              begin
+//                   SetControls(twincontrol(ctrl).Controls[i]);
+              end;
+            if twincontrol(ctrl).Controls[i] is tcheckbox then
+              begin
+//                   SetControls(twincontrol(ctrl).Controls[i]);
+              end;
+
+       end;
+
+   end;
+begin
+     SetControls(TabVideo);
 end;
 
 // preview button clicked
@@ -1334,19 +1391,55 @@ begin
             filelist.items.Add(s);
             JobList.add(t);
             FileInfoList.add(u);
+            SetSCR(FileList.Count -1 );;
           end;
           //filelist.items.AddStrings(dlgOpenFile.Files);
       end;
    sleep(1000);
 end;
 
+procedure tFrmMain.SetSCR(vIndex : integer);
+begin
+(*
+  for 1.5
+  initialise array values
+*)
+  With Scr[vIndex] do
+  begin
+    VideoBR  := '';
+    VideoFR  := '';
+    VSizeX   := '';
+    VSizeY   := '';
+    VAspect  := '';
+    V2Pass   := False;
+    VDeinterlace := False;
+  end;
+end;
+
+procedure tFrmMain.GetSCR(vIndex : integer);
+begin
+(*
+  for 1.5
+  get array values per queue item
+*)
+  With Scr[vIndex] do
+  begin
+    VidBitRate.Text := VideoBR;
+    VidFrameRate.Text := VideoFR;
+    VidSizeX.Text := VSizeX;
+    VidSizeY.Text := VSizeY;
+    edtAspectRatio.Text := VAspect;
+    cbx2Pass.Checked := V2Pass;
+    cbxDeinterlace.Checked := VDeinterlace;
+  end;
+end;
+
+
 // remove a file from the list
 procedure TfrmMain.btnRemoveClick(Sender: TObject);
 var
-i: integer;
+i,j: integer;
 begin
-
-
 i:=0;
   while i< filelist.Items.Count do
     if filelist.Selected[i] then
@@ -1357,10 +1450,13 @@ i:=0;
         presetlist.Delete(i);
         destinationlist.Delete(i);
         fileinfolist.Delete(i);
+        for j := i to high(scr)-1 do
+          begin
+            scr[j] := scr[j+1];
+          end;
       end
     else
        i+=1;
-
 end;
 
 // clear the file list
@@ -1822,11 +1918,24 @@ begin                                     // get setup
 
                                              // trim everything up
        commandlineparams.text := trim(commandlineparams.Text);
-       vidbitrate.Text := trim(vidbitrate.Text);
+//1.4
+{       vidbitrate.Text := trim(vidbitrate.Text);
        vidframerate.text := trim(vidframerate.Text);
        VidsizeX.text := trim(VidsizeX.Text);
        VidsizeY.text := trim(VidsizeY.Text);
        edtAspectRatio.Text := trim(edtAspectRatio.text);
+}
+//1.5
+       vidbitrate.Text := trim(scr[i].VideoBR);
+       vidframerate.text := trim(scr[i].VideoFR);
+       VidsizeX.text := trim(scr[i].VSizeX);
+       VidsizeY.text := trim(scr[i].VSizeY);
+       edtAspectRatio.Text := trim(scr[i].VAspect);
+       cbx2Pass.checked := scr[i].V2Pass;
+       cbxDeinterlace.Checked := scr[i].VDeinterlace;
+
+
+
        audbitrate.Text := trim(audbitrate.Text);
        audsamplingrate.Text := trim(audsamplingrate.Text);
        audchannels.Text:=trim(audchannels.Text);
@@ -1896,8 +2005,6 @@ begin                                     // get setup
               cropline += edtCropTop.Text ;
               commandline := replaceVfParam(commandline, 'crop', cropline);
          end;
-
-
 
        if (VidsizeX.Text <>'') AND (VidsizeY.Text <>'') then
        begin
@@ -2172,9 +2279,23 @@ paramString: string ;
    result := commandline;
   end;
 
-procedure TfrmMain.VidbitrateChange(Sender: TObject);
+procedure TfrmMain.TabControlChange(Sender: TObject);
 begin
-
+{   1.5
+    So for maintainability.  We have 2 choices, we either have one of these
+    methods for each control or we have this method which does some
+    unnecessary work instead, but is easier to maintain?
+}
+    if pgSettings.ActivePage = TabVideo then
+     begin;
+       scr[filelist.ItemIndex].VideoBR:= Vidbitrate.text;
+       scr[filelist.ItemIndex].VideoFR:= Vidframerate.text;
+       scr[filelist.ItemIndex].VSizeX:= VidSizeX.text;
+       scr[filelist.ItemIndex].VSizeY:= VidSizeY.text;
+       scr[filelist.ItemIndex].VAspect:= edtAspectRatio.text;
+       scr[filelist.ItemIndex].V2Pass:= cbx2Pass.Checked;
+       scr[filelist.ItemIndex].VDeinterlace:= cbxDeinterlace.Checked;
+     end;
 end;
 
 // import a preset from a file

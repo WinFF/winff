@@ -9,6 +9,7 @@
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
       <Title Value="WinFF"/>
+      <UseAppBundle Value="False"/>
       <UseXPManifest Value="True"/>
     </General>
     <i18n>
@@ -104,6 +105,7 @@
     <SearchPaths>
       <OtherUnitFiles Value="$(LazarusDir)/components/codetools/units/$(TargetCPU)-$(TargetOS)"/>
       <SrcPath Value="$(LazarusDir)/lcl;$(LazarusDir)/lcl/interfaces/$(LCLWidgetType)"/>
+      <LCLWidgetType Value="win32"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
@@ -114,9 +116,7 @@
     <Linking>
       <Debugging>
         <GenerateDebugInfo Value="True"/>
-        <UseLineInfoUnit Value="False"/>
       </Debugging>
-      <LinkSmart Value="True"/>
       <Options>
         <PassLinkerOptions Value="True"/>
         <LinkerOptions Value="--as-needed"/>
