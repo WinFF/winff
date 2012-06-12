@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
-  Left = 562
+  Left = 446
   Height = 480
-  Top = 237
+  Top = 348
   Width = 640
   ActiveControl = pnlTop
   AllowDropFiles = True
@@ -1010,6 +1010,17 @@ object frmMain: TfrmMain
       OnClick = mitShowOptionsClick
       TabOrder = 6
     end
+    object Button1: TButton
+      Left = 392
+      Height = 25
+      Top = 1
+      Width = 75
+      Align = alCustom
+      Anchors = []
+      Caption = 'TestRead'
+      OnClick = Button1Click
+      TabOrder = 7
+    end
   end
   object pnlAdditionalOptions: TPanel
     Left = 0
@@ -1029,9 +1040,9 @@ object frmMain: TfrmMain
       Height = 200
       Top = 0
       Width = 640
-      ActivePage = TabSheet6
+      ActivePage = tabVideo
       Align = alClient
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       object TabSheet6: TTabSheet
         Caption = 'Output Details'
@@ -1238,20 +1249,20 @@ object frmMain: TfrmMain
           end
         end
       end
-      object TabSheet1: TTabSheet
+      object tabVideo: TTabSheet
         Caption = 'Video'
-        ClientHeight = 166
-        ClientWidth = 596
+        ClientHeight = 171
+        ClientWidth = 632
         object Panel2: TPanel
           Left = 5
-          Height = 166
+          Height = 171
           Top = 0
           Width = 100
           Align = alLeft
           AutoSize = True
           BorderSpacing.Left = 5
           BevelOuter = bvNone
-          ClientHeight = 166
+          ClientHeight = 171
           ClientWidth = 100
           Constraints.MinWidth = 100
           TabOrder = 0
@@ -1270,6 +1281,7 @@ object frmMain: TfrmMain
             ParentColor = False
           end
           object Vidbitrate: TEdit
+            Tag = 1
             AnchorSideLeft.Control = Panel2
             AnchorSideTop.Control = lblVideoBitRate
             AnchorSideTop.Side = asrBottom
@@ -1282,10 +1294,11 @@ object frmMain: TfrmMain
             Width = 100
             Anchors = [akTop, akLeft, akRight]
             BorderSpacing.Top = 3
-            OnChange = VidbitrateChange
+            OnMouseLeave = TabControlChange
             TabOrder = 0
           end
           object cbx2Pass: TCheckBox
+            Tag = 6
             AnchorSideLeft.Control = Panel2
             AnchorSideTop.Control = Vidbitrate
             AnchorSideTop.Side = asrBottom
@@ -1300,20 +1313,21 @@ object frmMain: TfrmMain
             BorderSpacing.Top = 5
             Caption = '2 pass'
             Color = clForm
+            OnMouseLeave = TabControlChange
             ParentColor = False
             TabOrder = 1
           end
         end
         object Panel5: TPanel
           Left = 115
-          Height = 166
+          Height = 171
           Top = 0
           Width = 100
           Align = alLeft
           AutoSize = True
           BorderSpacing.Left = 10
           BevelOuter = bvNone
-          ClientHeight = 166
+          ClientHeight = 171
           ClientWidth = 100
           Constraints.MinWidth = 100
           TabOrder = 1
@@ -1332,6 +1346,7 @@ object frmMain: TfrmMain
             ParentColor = False
           end
           object Vidframerate: TEdit
+            Tag = 2
             AnchorSideLeft.Control = Panel5
             AnchorSideTop.Control = lblFrameRate
             AnchorSideTop.Side = asrBottom
@@ -1344,9 +1359,11 @@ object frmMain: TfrmMain
             Width = 100
             Anchors = [akTop, akLeft, akRight]
             BorderSpacing.Top = 3
+            OnMouseLeave = TabControlChange
             TabOrder = 0
           end
           object cbxDeinterlace: TCheckBox
+            Tag = 7
             AnchorSideLeft.Control = Panel5
             AnchorSideTop.Control = Vidframerate
             AnchorSideTop.Side = asrBottom
@@ -1361,20 +1378,21 @@ object frmMain: TfrmMain
             BorderSpacing.Top = 5
             Caption = 'Deinterlace'
             Color = clForm
+            OnMouseLeave = TabControlChange
             ParentColor = False
             TabOrder = 1
           end
         end
         object Panel6: TPanel
           Left = 225
-          Height = 166
+          Height = 171
           Top = 0
           Width = 100
           Align = alLeft
           AutoSize = True
           BorderSpacing.Left = 10
           BevelOuter = bvNone
-          ClientHeight = 166
+          ClientHeight = 171
           ClientWidth = 100
           Constraints.MinWidth = 100
           TabOrder = 2
@@ -1413,6 +1431,7 @@ object frmMain: TfrmMain
             ParentFont = False
           end
           object VidsizeX: TEdit
+            Tag = 3
             AnchorSideLeft.Control = Panel6
             AnchorSideTop.Control = lblVideoSize
             AnchorSideTop.Side = asrBottom
@@ -1422,9 +1441,11 @@ object frmMain: TfrmMain
             Top = 23
             Width = 40
             BorderSpacing.Top = 3
+            OnMouseLeave = TabControlChange
             TabOrder = 0
           end
           object VidsizeY: TEdit
+            Tag = 4
             AnchorSideTop.Control = lblVideoSize
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Control = Panel6
@@ -1436,19 +1457,20 @@ object frmMain: TfrmMain
             Width = 40
             Anchors = [akTop, akRight]
             BorderSpacing.Top = 3
+            OnMouseLeave = TabControlChange
             TabOrder = 1
           end
         end
         object Panel7: TPanel
           Left = 335
-          Height = 166
+          Height = 171
           Top = 0
           Width = 100
           Align = alLeft
           AutoSize = True
           BorderSpacing.Left = 10
           BevelOuter = bvNone
-          ClientHeight = 166
+          ClientHeight = 171
           ClientWidth = 100
           Constraints.MinWidth = 100
           TabOrder = 3
@@ -1467,6 +1489,7 @@ object frmMain: TfrmMain
             ParentColor = False
           end
           object edtAspectRatio: TEdit
+            Tag = 5
             AnchorSideLeft.Control = Panel7
             AnchorSideTop.Control = lblAspectRatio
             AnchorSideTop.Side = asrBottom
@@ -1479,6 +1502,7 @@ object frmMain: TfrmMain
             Width = 100
             Anchors = [akTop, akLeft, akRight]
             BorderSpacing.Top = 3
+            OnMouseLeave = TabControlChange
             TabOrder = 0
           end
         end
