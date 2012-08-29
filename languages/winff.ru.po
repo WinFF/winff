@@ -1,22 +1,25 @@
+# Alexey Osipov <lion-simba@pridelands.ru>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Alexey Osipov <lion-simba@pridelands.ru>\n"
+"PO-Revision-Date: 2012-06-14 12:33+0000\n"
+"Last-Translator: Eugene Marshal <Unknown>\n"
 "Language-Team: Russian\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Russian\n"
+"X-Launchpad-Export-Date: 2012-08-29 20:00+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
 "X-Poedit-Country: Crymea <Sevastopol>\n"
+"X-Poedit-Language: Russian\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: TFORM1.FORM1.CAPTION
 msgid "Form1"
-msgstr ""
+msgstr "Form1"
 
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
@@ -24,19 +27,17 @@ msgid "OK"
 msgstr "ОК"
 
 #: TFRMABOUT.FRMABOUT.CAPTION
-#, fuzzy
-#| msgid "About WinFF"
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
-msgstr "О программе WinFF"
+msgstr "Сведения о WinFF"
 
 #: TFRMABOUT.LABEL1.CAPTION
 msgid "WinFF 1.3.2"
-msgstr ""
+msgstr "WinFF 1.3.2"
 
 #: TFRMABOUT.LABEL10.CAPTION
 msgid "http://hawkeye.arrozcru.org/"
-msgstr ""
+msgstr "http://hawkeye.arrozcru.org/"
 
 #: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
@@ -44,7 +45,7 @@ msgstr "Пакеты для Debian/Ubuntu подготовил Paul Gevers"
 
 #: TFRMABOUT.LABEL13.CAPTION
 msgid "Gmaq"
-msgstr ""
+msgstr "Gmaq"
 
 #: TFRMABOUT.LABEL14.CAPTION
 msgid "High Quality Presets From"
@@ -56,11 +57,11 @@ msgstr "Иконки и логотип от Alex Klepatsch"
 
 #: TFRMABOUT.LABEL16.CAPTION
 msgid "JNavas"
-msgstr ""
+msgstr "JNavas"
 
 #: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
-msgstr ""
+msgstr "Copyright 2006-2009 GPL V3"
 
 #: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
@@ -68,7 +69,7 @@ msgstr "Matthew Weatherford, Ian Stoffberg и Alexey Osipov"
 
 #: TFRMABOUT.LABEL4.CAPTION
 msgid "http://www.winff.org"
-msgstr ""
+msgstr "http://www.winff.org"
 
 #: TFRMABOUT.LABEL5.CAPTION
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
@@ -81,7 +82,7 @@ msgstr "Fabrice Belllard"
 
 #: TFRMABOUT.LABEL7.CAPTION
 msgid "http://ffmpeg.org"
-msgstr ""
+msgstr "http://ffmpeg.org"
 
 #: TFRMABOUT.LABEL8.CAPTION
 msgid "FFmpeg Windows Builds by"
@@ -89,7 +90,7 @@ msgstr "Сборка FFmpeg для Windows от"
 
 #: TFRMABOUT.LABEL9.CAPTION
 msgid "Kyle Schwarz"
-msgstr ""
+msgstr "Kyle Schwarz"
 
 #: TFRMABOUT.PAGE1.CAPTION
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
@@ -181,7 +182,7 @@ msgstr "Сохранить"
 
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
-msgstr ""
+msgstr "pnlTop"
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
@@ -223,16 +224,14 @@ msgid "Add file(s) to the list for conversion"
 msgstr "Добавить файл(ы) в список преобразования"
 
 #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
-#, fuzzy
-#| msgid "Output Directory:"
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
-msgstr "Сохранить в каталог:"
+msgstr "Применить папку вывода"
 
 #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Применить профиль"
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
@@ -284,8 +283,6 @@ msgid "Remove selected file(s) from the list"
 msgstr "Удалить выбранные файлы из списка"
 
 #: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
@@ -297,7 +294,7 @@ msgstr "Устройство или тип файла, в который нуж�
 #: TFRMMAIN.CBOUTPUTPATH.CAPTION
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
-msgstr ""
+msgstr "Использовать исходную папку"
 
 #: TFRMMAIN.CBX2PASS.CAPTION
 msgid "2 pass"
@@ -318,7 +315,7 @@ msgstr "Убирает чересстрочную развертку (если �
 #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
@@ -335,22 +332,22 @@ msgstr "(<целое>) От 10 до частоты дискретизации (4
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPLEFT.TEXT
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPRIGHT.TEXT
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPTOP.TEXT
 msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
@@ -398,11 +395,9 @@ msgid "Audio Channels"
 msgstr "Аудио-каналы"
 
 #: TFRMMAIN.LABEL12.CAPTION
-#, fuzzy
-#| msgid "Output Directory:"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
-msgstr "Сохранить в каталог:"
+msgstr "Папка вывода:"
 
 #: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
@@ -442,7 +437,7 @@ msgstr "Частота дискретизации"
 
 #: TFRMMAIN.LABEL9.CAPTION
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
@@ -479,16 +474,16 @@ msgstr "Размер видео"
 #: TFRMMAIN.MENUITEM1.CAPTION
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Применить профиль"
 
 #: TFRMMAIN.MENUITEM2.CAPTION
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
-msgstr ""
+msgstr "Применить папку назначения"
 
 #: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: TFRMMAIN.MITABOUT.CAPTION
 msgid "About"
@@ -541,7 +536,7 @@ msgstr "Выключить компьютер после завершения"
 
 #: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
-msgstr ""
+msgstr "Сводка"
 
 #: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
@@ -566,53 +561,41 @@ msgstr "Настройки"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
-msgstr ""
+msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Конкретные параметры для выбранного устройства или типа файла"
 
 #: TFRMMAIN.TABSHEET1.CAPTION
-#, fuzzy
-#| msgid "Video"
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
 msgid "Video"
 msgstr "Видео"
 
 #: TFRMMAIN.TABSHEET2.CAPTION
-#, fuzzy
-#| msgid "Audio"
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
-msgstr "Аудио"
+msgstr "Звук"
 
 #: TFRMMAIN.TABSHEET3.CAPTION
-#, fuzzy
-#| msgid "Crop"
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
-msgstr "Обрезка"
+msgstr "Кадрировать"
 
 #: TFRMMAIN.TABSHEET4.CAPTION
-#, fuzzy
-#| msgid "Time"
 msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr "Время"
 
 #: TFRMMAIN.TABSHEET5.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: TFRMMAIN.TABSHEET6.CAPTION
-#, fuzzy
-#| msgid "Output Settings"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
-msgstr "Настройки преобразования"
+msgstr "Сведения вывода"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -648,32 +631,32 @@ msgstr "Отмена"
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON4.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON5.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON6.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON7.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON8.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
@@ -738,11 +721,11 @@ msgstr "Общие"
 
 #: TFRMPREFERENCES.PAGE2.CAPTION
 msgid "MS Windows"
-msgstr ""
+msgstr "MS Windows"
 
 #: TFRMPREFERENCES.PAGE3.CAPTION
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: TFRMSCRIPT.BTNCLIP.CAPTION
 msgid "Copy to Clipboard"
@@ -762,13 +745,12 @@ msgid "Save As..."
 msgstr "Сохранить как..."
 
 #: TFRMSCRIPT.CAPTION
-#, fuzzy
 msgid "FFmpeg Command Line"
-msgstr "Сценарий FFmpeg"
+msgstr "Командная строка FFmpeg"
 
 #: unit1.rsanalysing
 msgid "Analysing"
-msgstr ""
+msgstr "Анализирование"
 
 #: unit1.rsconverting
 msgid "Converting"
@@ -840,10 +822,6 @@ msgstr "Настройки с описанием %s%s%s уже существу�
 msgid "Press Enter to Continue"
 msgstr "Нажмите Ввод для продолжения"
 
-#: unit1.rsreplacepreset
-msgid "Replace Preset?"
-msgstr ""
-
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr "Выберите каталог"
@@ -864,15 +842,6 @@ msgstr "Имя настроек содержит недопустимые сим
 msgid "Create Preset:"
 msgstr "Сохранить параметры?"
 
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Дополнительные параметры"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
 #: unit2.rsimportpresets
 msgid "Import Presets"
 msgstr "Импортировать параметры"
@@ -912,4 +881,3 @@ msgstr "Низкий"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Нормальный"
-
