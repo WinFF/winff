@@ -41,14 +41,11 @@ type
     audsamplingrate: TEdit;
     btnAdd: TBitBtn;
     btnApplyDestination: TButton;
-    btnApplyPreset: TButton;
     btnOptions: TBitBtn;
     btnPreview: TBitBtn;
     btnClear: TBitBtn;
-    Button1: TButton;
     categorybox: TComboBox;
     cbOutputPath: TCheckBox;
-    cbOutputPath1: TCheckBox;
     cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
     ChooseFolderBtn: TButton;
@@ -284,6 +281,21 @@ type
     VAspect  : String;
     V2Pass    : Boolean;
     VDeinterlace : Boolean;
+    ABitrate : String;
+    ASampleRate : String;
+    AChannels : String;
+    AVolume : String;
+    ASync : String;
+    CropTop : String;
+    CropBottom : String;
+    CropLeft : String;
+    CropRight : String;
+    SeekHour : Integer;
+    SeekMinute : Integer;
+    SeekSecond : Integer;
+    RecordHour : Integer;
+    RecordMinute : Integer;
+    RecordSecond : Integer;
   end;
 
 
@@ -904,35 +916,73 @@ procedure TfrmMain.filelistDrawItem(Control: TWinControl; Index: Integer;
   ARect: TRect; State: TOwnerDrawState);
 begin
 // This function draws the an enhanced row list
-// Not suitable for 1.4
-{  with (control as tlistbox).Canvas do
+// 1.5
+
+  with (control as tlistbox).Canvas do
   begin
+    color := clDefault;
     FillRect(ARect) ;
-    Font.Color := clBlack;
+    Font.Size  := frmMain.Font.Size-1;
+    if filelist.Selected[index] = true then
+    begin
+        Font.Color := clHighlightText;
+    end;
     TextOut(ARect.Left, ARect.Top, filelist.items[Index] + ' (' + joblist.Strings[index] + ' )');
-    Font.Color := clBlue;
-    Font.Size  := 8;
+    Font.Size  := frmMain.Font.Size-2;
     Font.Style := [fsItalic];
     TextOut(ARect.Left + 15, ARect.Top + 14, destinationlist.Strings[index] + ' - Convert to ' + Presetlist.Strings[index]);
-  end;}
+  end;
 
 end;
 
 procedure TfrmMain.btnApplyDestinationClick(Sender: TObject);
 var i : integer;
 begin
-     for i := 0 to filelist.Count -1 do
+ // Apply Changes;
+ for i := 0 to filelist.Count -1 do
        begin
          if filelist.Selected[i] = true then
            begin
                 DestinationList.Strings[i] := DestFolder.Text;
+                CategoryList.Strings[i] := categorybox.Text;
+                PresetList.Strings[i] := PresetBox.Text;
+               (*
+                  for 1.5
+                  set array values per queue item
+                *)
+                  With Scr[i] do
+                  begin
+                    VideoBR := VidBitRate.Text;
+                    VideoFR := VidFrameRate.Text;
+                    VSizeX := VidSizeX.Text;
+                    VSizeY := VidSizeY.Text;
+                    VAspect := edtAspectRatio.Text;
+                    V2Pass := cbx2Pass.Checked;
+                    VDeinterlace := cbxDeinterlace.Checked;
+                    ABitrate := audBitRate.text;
+                    ASampleRate := audsamplingrate.text;
+                    AChannels  := audchannels.text;
+                    AVolume  := edtVolume.text;
+                    ASync  := edtAudioSync.text;
+                    CropTop  := edtCropTop.Text;
+                    CropBottom  := edtCropBottom.Text;
+                    CropLeft  := edtCropLeft.Text;
+                    CropRight  := edtCropRight.Text;
+                    SeekHour := EdtSeekHH.Value;
+                    SeekMinute  := EdtSeekMM.Value;
+                    SeekSecond  := edtSeekSS.Value;
+                    RecordHour := EdtTTRHH.Value;
+                    RecordMinute  := EdtTTRMM.Value;
+                    RecordSecond  := edtTTRSS.Value;
+                  end;
+
            end;
        end;
      Application.ProcessMessages;
 end;
 
 procedure TfrmMain.Button1Click(Sender: TObject);
-
+{
 function SetControls(ctrl : tcontrol) : bool;
    var i,j,k : integer;
      s,t,u : string;
@@ -955,9 +1005,9 @@ function SetControls(ctrl : tcontrol) : bool;
 
        end;
 
-   end;
+   end;}
 begin
-     SetControls(TabVideo);
+     //SetControls(TabVideo);
 end;
 
 // preview button clicked
@@ -1395,7 +1445,6 @@ begin
           end;
           //filelist.items.AddStrings(dlgOpenFile.Files);
       end;
-   sleep(1000);
 end;
 
 procedure tFrmMain.SetSCR(vIndex : integer);
@@ -1413,6 +1462,21 @@ begin
     VAspect  := '';
     V2Pass   := False;
     VDeinterlace := False;
+    ABitrate := '';
+    ASampleRate := '';
+    AChannels := '';
+    AVolume := '';
+    ASync := '';
+    CropTop := '';
+    CropBottom := '';
+    CropLeft := '';
+    CropRight := '';
+    SeekHour := 0;
+    SeekMinute := 0;
+    SeekSecond := 0;
+    RecordHour := 0;
+    RecordMinute := 0;
+    RecordSecond := 0;
   end;
 end;
 
@@ -1431,6 +1495,21 @@ begin
     edtAspectRatio.Text := VAspect;
     cbx2Pass.Checked := V2Pass;
     cbxDeinterlace.Checked := VDeinterlace;
+    audBitRate.text := ABitrate;
+    audsamplingrate.text := ASampleRate;
+    audchannels.text := AChannels ;
+    edtVolume.text := AVolume ;
+    edtAudioSync.text := ASync ;
+    edtCropTop.Text := CropTop ;
+    edtCropBottom.Text := CropBottom ;
+    edtCropLeft.Text := CropLeft ;
+    edtCropRight.Text := CropRight ;
+    EdtSeekHH.Value := SeekHour;
+    EdtSeekMM.Value := SeekMinute ;
+    edtSeekSS.Value := SeekSecond ;
+    EdtTTRHH.Value := RecordHour;
+    EdtTTRMM.Value := RecordMinute ;
+    edtTTRSS.Value := RecordSecond ;
   end;
 end;
 
@@ -1483,7 +1562,6 @@ end;
 
 procedure TfrmMain.MenuItem1Click(Sender: TObject);
 begin
-     btnApplyPreset.Click;
 end;
 
 // filelist on key up
@@ -1515,7 +1593,7 @@ end;
 procedure TfrmMain.filelistMeasureItem(Control: TWinControl; Index: Integer;
   var AHeight: Integer);
 begin
-  //  AHeight := (Index+1)*28;
+     AHeight := (frmMain.Font.Size * 3);
   //  Removed for 1.4 // Not using Enhanced Job Queue
 end;
 
@@ -1523,9 +1601,9 @@ procedure TfrmMain.filelistMouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 var lstIndex : Integer ;
 begin
-(* // Not for version 1.4 - works on Windows & QT, buggy on GTK.
+ // Not for version 1.4 - works on Windows & QT, buggy on GTK.
    //  Enhanced job queue not in this release.
- {$ifdef win32}
+ {$ifdef windows}
    with filelist do
    begin
     lstIndex:=SendMessage(Handle, LB_ITEMFROMPOINT, 0, MakeLParam(x,y)) ;
@@ -1541,7 +1619,7 @@ begin
       Hint := ''
     end;
  {$endif}
- *)
+
 end;
 
 
@@ -1626,11 +1704,12 @@ procedure TfrmMain.mitViewModeClick(Sender: TObject);
 begin
   if mitViewMode.Checked = True then
    begin
-     filelist.style := lbOwnerDrawFixed;;
+     filelist.style := lbOwnerDrawVariable;;
    end else
    begin
      filelist.style := lbStandard;
    end;
+   mitViewMode.Checked := not (mitViewMode.Checked)
 end;
 
 //menu: Help Forums
@@ -1936,6 +2015,8 @@ begin                                     // get setup
 
 
 
+ {
+ // 1.4
        audbitrate.Text := trim(audbitrate.Text);
        audsamplingrate.Text := trim(audsamplingrate.Text);
        audchannels.Text:=trim(audchannels.Text);
@@ -1945,8 +2026,19 @@ begin                                     // get setup
        edtCropright.Text:=trim(edtCropright.text);
        edtVolume.Text:=trim(edtVolume.Text);
        edtAudioSync.Text:=trim(edtAudioSync.Text);
+}
+// 1.5
+        audbitrate.Text := trim(scr[i].ABitRate);
+        audsamplingrate.Text := trim(scr[i].ASampleRate);
+        audchannels.Text:=trim(scr[i].AChannels);
+        edtVolume.Text:=trim(scr[i].AVolume);
+        edtAudioSync.Text:=trim(scr[i].ASync);
+        edtCropBottom.Text:=trim(scr[i].CropBottom);
+        edtCropTop.Text:=trim(scr[i].CropTop);
+        edtCropleft.Text:=trim(scr[i].CropLeft);
+        edtCropright.Text:=trim(scr[i].CropRight);
 
-                                          // replace preset params if mnuOptions specified
+       // replace preset params if mnuOptions specified
        commandline := params;
        precommand := '';
        if vidbitrate.Text <> '' then
@@ -2093,11 +2185,15 @@ begin                                     // get setup
          end;
 
        command := '';
+
+
+
        {$ifdef win32}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
+
        // coded by Ian Stoffberg - Issue 125
        // begin change
        if cbOutputPath.checked = true then
@@ -2105,7 +2201,7 @@ begin                                     // get setup
          destfolder.text := extractfilepath(filename);
        end else
        begin
-         //1.5 destfolder.text := DestinationList.Strings[i];
+         destfolder.text := DestinationList.Strings[i];
        end;
        if RightStr(destfolder.text,1) = DirectorySeparator then //{ trim extra \'s }
         begin
@@ -2464,6 +2560,7 @@ end;
 
 initialization
   {$I unit1.lrs}
+
   {$ifdef win32}PODirectory := extraspath + '\languages\'{$endif};
   {$ifdef unix}PODirectory := '/usr/share/winff/languages/'{$endif};
   GetLanguageIDs(Lang, FallbackLang); // in unit gettext

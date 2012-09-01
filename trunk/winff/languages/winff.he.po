@@ -1,20 +1,3 @@
-# translation of winff.po to Hebrew
-# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-# Ofir Klinger <klinger.ofir@gmail.com>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 0.45.1\n"
@@ -31,837 +14,836 @@ msgstr ""
 "X-Poedit-Country: Israel\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: TFORM1.FORM1.CAPTION
+#: tform1.form1.caption
 msgid "Form1"
 msgstr ""
 
-#: TFRMABOUT.BUTTON1.CAPTION
+#: tfrmabout.button1.caption
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "בסדר"
 
-#: TFRMABOUT.FRMABOUT.CAPTION
+#: tfrmabout.frmabout.caption
 #, fuzzy
 #| msgid "About WinFF"
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "אודות WinFF"
 
-#: TFRMABOUT.LABEL1.CAPTION
+#: tfrmabout.label1.caption
 #, fuzzy
 #| msgid "WinFF"
 msgid "WinFF 1.3.2"
 msgstr "WinFF"
 
-#: TFRMABOUT.LABEL10.CAPTION
+#: tfrmabout.label10.caption
 msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
-#: TFRMABOUT.LABEL11.CAPTION
+#: tfrmabout.label11.caption
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
 msgstr ""
 
-#: TFRMABOUT.LABEL13.CAPTION
+#: tfrmabout.label13.caption
 msgid "Gmaq"
 msgstr ""
 
-#: TFRMABOUT.LABEL14.CAPTION
+#: tfrmabout.label14.caption
 msgid "High Quality Presets From"
 msgstr ""
 
-#: TFRMABOUT.LABEL15.CAPTION
+#: tfrmabout.label15.caption
 msgid "Icons and Logo by Alex Klepatsch"
 msgstr ""
 
-#: TFRMABOUT.LABEL16.CAPTION
+#: tfrmabout.label16.caption
 msgid "JNavas"
 msgstr ""
 
-#: TFRMABOUT.LABEL2.CAPTION
+#: tfrmabout.label2.caption
 msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
-#: TFRMABOUT.LABEL3.CAPTION
+#: tfrmabout.label3.caption
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr ""
 
-#: TFRMABOUT.LABEL4.CAPTION
+#: tfrmabout.label4.caption
 msgid "http://www.winff.org"
 msgstr ""
 
-#: TFRMABOUT.LABEL5.CAPTION
+#: tfrmabout.label5.caption
 #, fuzzy
 #| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: TFRMABOUT.LABEL6.CAPTION
+#: tfrmabout.label6.caption
 msgid "Trademark Fabrice Belllard"
 msgstr ""
 
-#: TFRMABOUT.LABEL7.CAPTION
+#: tfrmabout.label7.caption
 msgid "http://ffmpeg.org"
 msgstr ""
 
-#: TFRMABOUT.LABEL8.CAPTION
+#: tfrmabout.label8.caption
 #, fuzzy
 #| msgid "FFmpeg builds by"
 msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg builds by"
 
-#: TFRMABOUT.LABEL9.CAPTION
+#: tfrmabout.label9.caption
 msgid "Kyle Schwarz"
 msgstr ""
 
-#: TFRMABOUT.PAGE1.CAPTION
+#: tfrmabout.page1.caption
 #, fuzzy
 #| msgid "WinFF"
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: TFRMABOUT.PAGE2.CAPTION
+#: tfrmabout.page2.caption
 #, fuzzy
 #| msgid "FFmpeg"
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: TFRMABOUT.PAGE3.CAPTION
+#: tfrmabout.page3.caption
 msgid "Thanks"
 msgstr "תודות"
 
-#: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
+#: tfrmeditpresets.addpresetbtn.caption
 msgid "Add / Update"
 msgstr "הוסף / עדכן"
 
-#: TFRMEDITPRESETS.CANCELBTN.CAPTION
+#: tfrmeditpresets.cancelbtn.caption
 #, fuzzy
 #| msgid "Close"
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "סגור"
 
-#: TFRMEDITPRESETS.CAPTION
+#: tfrmeditpresets.caption
 msgid "Edit Presets"
 msgstr "ערוך Presets"
 
-#: TFRMEDITPRESETS.DELETEBTN.CAPTION
+#: tfrmeditpresets.deletebtn.caption
 msgid "Delete"
 msgstr "מחק"
 
-#: TFRMEDITPRESETS.EDIT1.HINT
+#: tfrmeditpresets.edit1.hint
 msgid "One word, only letters and numbers"
 msgstr ""
 
-#: TFRMEDITPRESETS.EDIT2.HINT
+#: tfrmeditpresets.edit2.hint
 msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
-#: TFRMEDITPRESETS.EDIT3.HINT
+#: tfrmeditpresets.edit3.hint
 #, fuzzy
 #| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
 msgstr "שורת הפקודה של ה-preset (ללא -i או קובץ פלט)"
 
-#: TFRMEDITPRESETS.EDIT4.HINT
+#: tfrmeditpresets.edit4.hint
 msgid "Do not include a dot"
 msgstr ""
 
-#: TFRMEDITPRESETS.EDIT5.HINT
+#: tfrmeditpresets.edit5.hint
 msgid "Choose a category to group this preset under"
 msgstr ""
 
-#: TFRMEDITPRESETS.EXPORT.CAPTION
+#: tfrmeditpresets.export.caption
 #, fuzzy
 #| msgid "Export"
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "ייצא"
 
-#: TFRMEDITPRESETS.IMPORT.CAPTION
+#: tfrmeditpresets.import.caption
 msgid "Import"
 msgstr "ייבוא"
 
-#: TFRMEDITPRESETS.LABEL1.CAPTION
+#: tfrmeditpresets.label1.caption
 #, fuzzy
 #| msgid "Create Preset:"
 msgid "Category / Preset"
 msgstr "צור preset:"
 
-#: TFRMEDITPRESETS.LABEL2.CAPTION
+#: tfrmeditpresets.label2.caption
 #, fuzzy
 #| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "שם ה-preset (מילה אחת, רק A-z 0-9)"
 
-#: TFRMEDITPRESETS.LABEL3.CAPTION
+#: tfrmeditpresets.label3.caption
 msgid "Preset Label"
 msgstr "תווית ה-preset"
 
-#: TFRMEDITPRESETS.LABEL4.CAPTION
+#: tfrmeditpresets.label4.caption
 #, fuzzy
 #| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "שורת הפקודה של ה-preset (ללא -i או קובץ פלט)"
 
-#: TFRMEDITPRESETS.LABEL5.CAPTION
+#: tfrmeditpresets.label5.caption
 #, fuzzy
 #| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
 msgstr "סיומת קובץ הפלט (ללא \".\")"
 
-#: TFRMEDITPRESETS.LABEL6.CAPTION
+#: tfrmeditpresets.label6.caption
 msgid "Category"
 msgstr "קטגוריה"
 
-#: TFRMEDITPRESETS.OKBTN.CAPTION
+#: tfrmeditpresets.okbtn.caption
 #, fuzzy
 #| msgid "Save"
 msgid "Save"
 msgstr "שמור"
 
-#: TFRMEDITPRESETS.PNLTOP.CAPTION
+#: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
 msgstr ""
 
-#: TFRMEXPORT.CANCELBTN.CAPTION
+#: tfrmexport.cancelbtn.caption
 #, fuzzy
 #| msgid "Cancel"
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "ביטול"
 
-#: TFRMEXPORT.CAPTION
+#: tfrmexport.caption
 msgid "Export Presets"
 msgstr "ייצא Presets"
 
-#: TFRMEXPORT.EXPORTBTN.CAPTION
+#: tfrmexport.exportbtn.caption
 #, fuzzy
 #| msgid "Export"
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "ייצא"
 
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#: TFRMEXPORT.LABEL1.CAPTION
+#: tfrmexport.label1.caption
 #, fuzzy
 #| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "בחר presets לייצוא"
 
-#: TFRMMAIN.AUDBITRATE.HINT
+#: tfrmmain.audbitrate.hint
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr ""
 
-#: TFRMMAIN.AUDCHANNELS.HINT
+#: tfrmmain.audchannels.hint
 msgid "(<integer>) number of audio channels"
 msgstr ""
 
-#: TFRMMAIN.AUDSAMPLINGRATE.HINT
+#: tfrmmain.audsamplingrate.hint
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr ""
 
-#: TFRMMAIN.BTNADD.CAPTION
+#: tfrmmain.btnadd.caption
 msgid "Add"
 msgstr "הוסף"
 
-#: TFRMMAIN.BTNADD.HINT
+#: tfrmmain.btnadd.hint
 msgid "Add file(s) to the list for conversion"
 msgstr ""
 
-#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+#: tfrmmain.btnapplydestination.caption
 #, fuzzy
 #| msgid "Output Folder"
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
 msgstr "תיקיית יעד"
 
-#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+#: tfrmmain.btnapplypreset.caption
 msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
 msgid "Apply Preset"
 msgstr ""
 
-#: TFRMMAIN.BTNCLEAR.CAPTION
+#: tfrmmain.btnclear.caption
 msgid "Clear"
 msgstr "נקה"
 
-#: TFRMMAIN.BTNCLEAR.HINT
+#: tfrmmain.btnclear.hint
 msgid "Remove all files from the list"
 msgstr ""
 
-#: TFRMMAIN.BTNCONVERT.CAPTION
+#: tfrmmain.btnconvert.caption
 msgid "Convert"
 msgstr "המר"
 
-#: TFRMMAIN.BTNCONVERT.HINT
+#: tfrmmain.btnconvert.hint
 msgid "Start the conversion process"
 msgstr ""
 
-#: TFRMMAIN.BTNOPTIONS.CAPTION
+#: tfrmmain.btnoptions.caption
 #, fuzzy
 #| msgid "Options"
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "אפשרויות"
 
-#: TFRMMAIN.BTNOPTIONS.HINT
+#: tfrmmain.btnoptions.hint
 msgid "Open/close the additional options window"
 msgstr ""
 
-#: TFRMMAIN.BTNPLAY.CAPTION
+#: tfrmmain.btnplay.caption
 msgid "Play"
 msgstr "נגן"
 
-#: TFRMMAIN.BTNPLAY.HINT
+#: tfrmmain.btnplay.hint
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgstr ""
 
-#: TFRMMAIN.BTNPREVIEW.CAPTION
+#: tfrmmain.btnpreview.caption
 msgid "Preview"
 msgstr ""
 
-#: TFRMMAIN.BTNPREVIEW.HINT
+#: tfrmmain.btnpreview.hint
 msgid "Preview using the output settings"
 msgstr ""
 
-#: TFRMMAIN.BTNREMOVE.CAPTION
+#: tfrmmain.btnremove.caption
 msgid "Remove"
 msgstr "הסר"
 
-#: TFRMMAIN.BTNREMOVE.HINT
+#: tfrmmain.btnremove.hint
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CATEGORYBOX.HINT
+#: tfrmmain.categorybox.hint
 msgid "Device or file type the video should be converted to"
 msgstr ""
 
-#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+#: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
 msgstr ""
 
-#: TFRMMAIN.CBOUTPUTPATH1.CAPTION
+#: tfrmmain.cboutputpath1.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
 msgid "Use Source Folder"
 msgstr ""
 
-#: TFRMMAIN.CBX2PASS.CAPTION
+#: tfrmmain.cbx2pass.caption
 msgid "2 pass"
 msgstr "2 מעברים"
 
-#: TFRMMAIN.CBX2PASS.HINT
+#: tfrmmain.cbx2pass.hint
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr ""
 
-#: TFRMMAIN.CBXDEINTERLACE.CAPTION
+#: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
 msgstr "Deinterlace"
 
-#: TFRMMAIN.CBXDEINTERLACE.HINT
+#: tfrmmain.cbxdeinterlace.hint
 msgid "Removes interlacing from the video (if necessary)"
 msgstr ""
 
-#: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+#: tfrmmain.choosefolderbtn.caption
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMMAIN.DESTFOLDER.HINT
+#: tfrmmain.destfolder.hint
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr ""
 
-#: TFRMMAIN.DLGOPENFILE.TITLE
+#: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
-#: TFRMMAIN.EDTASPECTRATIO.HINT
+#: tfrmmain.edtaspectratio.hint
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr ""
 
-#: TFRMMAIN.EDTAUDIOSYNC.HINT
+#: tfrmmain.edtaudiosync.hint
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
 msgstr ""
 
-#: TFRMMAIN.EDTCROPBOTTOM.TEXT
+#: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
 msgid "0"
 msgstr ""
 
-#: TFRMMAIN.EDTCROPLEFT.TEXT
+#: tfrmmain.edtcropleft.text
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
 msgstr ""
 
-#: TFRMMAIN.EDTCROPRIGHT.TEXT
+#: tfrmmain.edtcropright.text
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
 msgstr ""
 
-#: TFRMMAIN.EDTCROPTOP.TEXT
+#: tfrmmain.edtcroptop.text
 msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
 msgstr ""
 
-#: TFRMMAIN.EDTSEEKHH.HINT
+#: tfrmmain.edtseekhh.hint
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#: TFRMMAIN.EDTSEEKMM.HINT
+#: tfrmmain.edtseekmm.hint
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#: TFRMMAIN.EDTSEEKSS.HINT
+#: tfrmmain.edtseekss.hint
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr ""
 
-#: TFRMMAIN.EDTTTRHH.HINT
+#: tfrmmain.edtttrhh.hint
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
-#: TFRMMAIN.EDTTTRMM.HINT
+#: tfrmmain.edtttrmm.hint
 msgctxt "TFRMMAIN.EDTTTRMM.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
-#: TFRMMAIN.EDTTTRSS.HINT
+#: tfrmmain.edtttrss.hint
 msgctxt "TFRMMAIN.EDTTTRSS.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
-#: TFRMMAIN.EDTVOLUME.HINT
+#: tfrmmain.edtvolume.hint
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
-#: TFRMMAIN.FRMMAIN.CAPTION
+#: tfrmmain.frmmain.caption
 #, fuzzy
 #| msgid "WinFF"
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: TFRMMAIN.LABEL1.CAPTION
+#: tfrmmain.label1.caption
 #, fuzzy
 #| msgid "Convert"
 msgid "Convert to:"
 msgstr "המר"
 
-#: TFRMMAIN.LABEL10.CAPTION
+#: tfrmmain.label10.caption
 msgid "Audio Channels"
 msgstr "ערוצי אודיו"
 
-#: TFRMMAIN.LABEL12.CAPTION
+#: tfrmmain.label12.caption
 #, fuzzy
 #| msgid "Output Folder"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "תיקיית יעד"
 
-#: TFRMMAIN.LABEL19.CAPTION
+#: tfrmmain.label19.caption
 #, fuzzy
 #| msgid "Presets"
 msgid "Preset:"
 msgstr "Presets"
 
-#: TFRMMAIN.LABEL20.CAPTION
+#: tfrmmain.label20.caption
 msgid "Volume"
 msgstr ""
 
-#: TFRMMAIN.LABEL21.CAPTION
+#: tfrmmain.label21.caption
 msgid "Sync"
 msgstr ""
 
-#: TFRMMAIN.LABEL22.CAPTION
+#: tfrmmain.label22.caption
 msgid "Seek to"
 msgstr ""
 
-#: TFRMMAIN.LABEL23.CAPTION
+#: tfrmmain.label23.caption
 msgid "Time to Record"
 msgstr ""
 
-#: TFRMMAIN.LABEL24.CAPTION
+#: tfrmmain.label24.caption
 msgid "Hours / Minutes / Seconds"
 msgstr ""
 
-#: TFRMMAIN.LABEL3.CAPTION
+#: tfrmmain.label3.caption
 #, fuzzy
 #| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
 msgstr "פרמטרי שורת פקודה נוספים (מתקדם)"
 
-#: TFRMMAIN.LABEL7.CAPTION
+#: tfrmmain.label7.caption
 msgid "Audio Bitrate"
 msgstr "אודיו Bitrate"
 
-#: TFRMMAIN.LABEL8.CAPTION
+#: tfrmmain.label8.caption
 msgid "Sample Rate"
 msgstr "קצב דגימה"
 
-#: TFRMMAIN.LABEL9.CAPTION
+#: tfrmmain.label9.caption
 msgid "X"
 msgstr ""
 
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+#: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "יחס רוחב-גובה"
 
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+#: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
 msgstr ""
 
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
+#: tfrmmain.lblcropleft.caption
 msgid "Left"
 msgstr ""
 
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#: tfrmmain.lblcropright.caption
 #, fuzzy
 #| msgid "High"
 msgid "Right"
 msgstr "גבוהה"
 
-#: TFRMMAIN.LBLCROPTOP.CAPTION
+#: tfrmmain.lblcroptop.caption
 msgid "Top"
 msgstr ""
 
-#: TFRMMAIN.LBLFRAMERATE.CAPTION
+#: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "קצב פריימים"
 
-#: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
+#: tfrmmain.lblvideobitrate.caption
 msgid "Video Bitrate"
 msgstr "וידאו Bitrate"
 
-#: TFRMMAIN.LBLVIDEOSIZE.CAPTION
+#: tfrmmain.lblvideosize.caption
 msgid "Video Size"
 msgstr "גודל הוידאו"
 
-#: TFRMMAIN.MENUITEM1.CAPTION
+#: tfrmmain.menuitem1.caption
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
 msgstr ""
 
-#: TFRMMAIN.MENUITEM2.CAPTION
+#: tfrmmain.menuitem2.caption
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
 msgstr ""
 
-#: TFRMMAIN.MENUITEM9.CAPTION
+#: tfrmmain.menuitem9.caption
 msgid "-"
 msgstr ""
 
-#: TFRMMAIN.MITABOUT.CAPTION
+#: tfrmmain.mitabout.caption
 #, fuzzy
 #| msgid "About"
 msgid "About"
 msgstr "אודות"
 
-#: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+#: tfrmmain.mitdisplaycmdline.caption
 #, fuzzy
 msgid "Display Cmd Line"
 msgstr "הצג את שורת הפקודה"
 
-#: TFRMMAIN.MITDOCS.CAPTION
+#: tfrmmain.mitdocs.caption
 msgid "Documentation"
 msgstr "תיעוד"
 
-#: TFRMMAIN.MITEXIT.CAPTION
+#: tfrmmain.mitexit.caption
 msgid "Exit"
 msgstr "סגור"
 
-#: TFRMMAIN.MITFORUMS.CAPTION
+#: tfrmmain.mitforums.caption
 #, fuzzy
 #| msgid "WinFF Forums"
 msgid "Forums"
 msgstr "הפורומים של WinFF"
 
-#: TFRMMAIN.MITIMPORTPRESET.CAPTION
+#: tfrmmain.mitimportpreset.caption
 msgid "Import Preset"
 msgstr "ייבא Presets"
 
-#: TFRMMAIN.MITPAUSEONFINISH.CAPTION
+#: tfrmmain.mitpauseonfinish.caption
 msgid "Pause on Finish"
 msgstr "השהה בסיום"
 
-#: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+#: tfrmmain.mitplaysoundonfinish.caption
 #, fuzzy
 #| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
 msgstr "השהה בסיום"
 
-#: TFRMMAIN.MITPREFERENCES.CAPTION
+#: tfrmmain.mitpreferences.caption
 msgid "Preferences"
 msgstr "מאפיינים"
 
-#: TFRMMAIN.MITPRESETS.CAPTION
+#: tfrmmain.mitpresets.caption
 #, fuzzy
 #| msgid "Presets"
 msgid "Presets"
 msgstr "Presets"
 
-#: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+#: tfrmmain.mitshowoptions.caption
 #, fuzzy
 #| msgid "Additional Options"
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
 msgstr "אפשרויות נוספות"
 
-#: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+#: tfrmmain.mitshutdownonfinish.caption
 msgid "Shutdown on Finish"
 msgstr "כבה מחשב בסיום"
 
-#: TFRMMAIN.MITVIEWMODE.CAPTION
+#: tfrmmain.mitviewmode.caption
 msgid "Detailed View"
 msgstr ""
 
-#: TFRMMAIN.MITWINFF.CAPTION
+#: tfrmmain.mitwinff.caption
 msgid "WinFF Website"
 msgstr "האתר של WinFF"
 
-#: TFRMMAIN.MNUEDIT.CAPTION
+#: tfrmmain.mnuedit.caption
 msgid "Edit"
 msgstr "ערוך"
 
-#: TFRMMAIN.MNUFILE.CAPTION
+#: tfrmmain.mnufile.caption
 msgid "File"
 msgstr "קובץ"
 
-#: TFRMMAIN.MNUHELP.CAPTION
+#: tfrmmain.mnuhelp.caption
 msgid "Help"
 msgstr "עזרה"
 
-#: TFRMMAIN.MNUOPTIONS.CAPTION
+#: tfrmmain.mnuoptions.caption
 #, fuzzy
 #| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "אפשרויות"
 
-#: TFRMMAIN.PNLMAIN.CAPTION
+#: tfrmmain.pnlmain.caption
 msgid "pnlMain"
 msgstr ""
 
-#: TFRMMAIN.PRESETBOX.HINT
+#: tfrmmain.presetbox.hint
 msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
 
-#: TFRMMAIN.TABSHEET1.CAPTION
+#: tfrmmain.tabsheet1.caption
 #, fuzzy
 #| msgid "Video Size"
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
 msgid "Video"
 msgstr "גודל הוידאו"
 
-#: TFRMMAIN.TABSHEET2.CAPTION
+#: tfrmmain.tabsheet2.caption
 #, fuzzy
 #| msgid "Audio Settings"
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "הגדרות אודיו"
 
-#: TFRMMAIN.TABSHEET3.CAPTION
+#: tfrmmain.tabsheet3.caption
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr ""
 
-#: TFRMMAIN.TABSHEET4.CAPTION
+#: tfrmmain.tabsheet4.caption
 msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr ""
 
-#: TFRMMAIN.TABSHEET5.CAPTION
+#: tfrmmain.tabsheet5.caption
 #, fuzzy
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: TFRMMAIN.TABSHEET6.CAPTION
+#: tfrmmain.tabsheet6.caption
 #, fuzzy
 #| msgid "Output Details"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "פרטי פלט"
 
-#: TFRMMAIN.VIDBITRATE.HINT
+#: tfrmmain.vidbitrate.hint
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr ""
 
-#: TFRMMAIN.VIDFRAMERATE.HINT
+#: tfrmmain.vidframerate.hint
 msgid "(<real> or <integer>) number of frames per second"
 msgstr ""
 
-#: TFRMMAIN.VIDSIZEX.HINT
+#: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
 
-#: TFRMMAIN.VIDSIZEY.HINT
+#: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON1.CAPTION
+#: tfrmpreferences.button1.caption
 #, fuzzy
 #| msgid "OK"
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "בסדר"
 
-#: TFRMPREFERENCES.BUTTON2.CAPTION
+#: tfrmpreferences.button2.caption
 #, fuzzy
 #| msgid "Cancel"
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
 msgstr "ביטול"
 
-#: TFRMPREFERENCES.BUTTON3.CAPTION
+#: tfrmpreferences.button3.caption
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON4.CAPTION
+#: tfrmpreferences.button4.caption
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON5.CAPTION
+#: tfrmpreferences.button5.caption
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON6.CAPTION
+#: tfrmpreferences.button6.caption
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON7.CAPTION
+#: tfrmpreferences.button7.caption
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON8.CAPTION
+#: tfrmpreferences.button8.caption
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.CAPTION
+#: tfrmpreferences.caption
 msgid "WinFF Preferences"
 msgstr "אפשרויות WinFF"
 
-#: TFRMPREFERENCES.CHECKBOX1.CAPTION
+#: tfrmpreferences.checkbox1.caption
 #, fuzzy
 #| msgid "Remember Last Directory Used"
 msgid "Remember Last Used Directory"
 msgstr "זכור את התיקייה האחרונה שהייתה בשימוש"
 
-#: TFRMPREFERENCES.CHECKBOX2.CAPTION
+#: tfrmpreferences.checkbox2.caption
 msgid "Use CHCP for international characters"
 msgstr "השתמש ב-CHCP לתווים עולמיים"
 
-#: TFRMPREFERENCES.CHECKBOX3.CAPTION
+#: tfrmpreferences.checkbox3.caption
 msgid "Use Several Encoding Threads:"
 msgstr ""
 
-#: TFRMPREFERENCES.EDIT7.HINT
+#: tfrmpreferences.edit7.hint
 #, fuzzy
 #| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "אפשרויות מסוף (-e עבור Xterm , -x עבור המסוף של גנום"
 
-#: TFRMPREFERENCES.LABEL1.CAPTION
+#: tfrmpreferences.label1.caption
 #, fuzzy
 #| msgid "Default Destination Directory"
 msgid "Default Destination Directory:"
 msgstr "תיקיית יעד ברירת מחדל"
 
-#: TFRMPREFERENCES.LABEL2.CAPTION
+#: tfrmpreferences.label2.caption
 #, fuzzy
 #| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "נתיב ל-Executable של FFmpeg"
 
-#: TFRMPREFERENCES.LABEL3.CAPTION
+#: tfrmpreferences.label3.caption
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "נתיב ל-Executable של FFPlay"
 
-#: TFRMPREFERENCES.LABEL4.CAPTION
+#: tfrmpreferences.label4.caption
 #, fuzzy
 #| msgid "Path to FFmpeg Executable"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "נתיב ל-Executable של FFmpeg"
 
-#: TFRMPREFERENCES.LABEL5.CAPTION
+#: tfrmpreferences.label5.caption
 #, fuzzy
 #| msgid "Path to FFPlay Executable"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "נתיב ל-Executable של FFPlay"
 
-#: TFRMPREFERENCES.LABEL6.CAPTION
+#: tfrmpreferences.label6.caption
 #, fuzzy
 #| msgid "Terminal to run FFmpeg"
 msgid "Terminal to run FFmpeg in:"
 msgstr "מסוף להרצת FFmpeg"
 
-#: TFRMPREFERENCES.LABEL7.CAPTION
+#: tfrmpreferences.label7.caption
 #, fuzzy
 #| msgid "Additional Options"
 msgid "Terminal Options:"
 msgstr "אפשרויות נוספות"
 
-#: TFRMPREFERENCES.LABEL8.CAPTION
+#: tfrmpreferences.label8.caption
 #, fuzzy
 #| msgid "Priority"
 msgid "Priority:"
 msgstr "חשיבות"
 
-#: TFRMPREFERENCES.PAGE1.CAPTION
+#: tfrmpreferences.page1.caption
 msgid "General"
 msgstr "כללי"
 
-#: TFRMPREFERENCES.PAGE2.CAPTION
+#: tfrmpreferences.page2.caption
 #, fuzzy
 #| msgid "Ms Windows"
 msgid "MS Windows"
 msgstr "מיקרוסופט וינדוס"
 
-#: TFRMPREFERENCES.PAGE3.CAPTION
+#: tfrmpreferences.page3.caption
 msgid "Linux"
 msgstr "לינוקס"
 
-#: TFRMSCRIPT.BTNCLIP.CAPTION
+#: tfrmscript.btnclip.caption
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: TFRMSCRIPT.BTNCLOSE.CAPTION
+#: tfrmscript.btnclose.caption
 #, fuzzy
 #| msgid "Close"
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
 msgstr "סגור"
 
-#: TFRMSCRIPT.BTNRUN.CAPTION
+#: tfrmscript.btnrun.caption
 msgid "Run!"
 msgstr ""
 
-#: TFRMSCRIPT.BTNSAVE.CAPTION
+#: tfrmscript.btnsave.caption
 msgid "Save As..."
 msgstr ""
 
-#: TFRMSCRIPT.CAPTION
+#: tfrmscript.caption
 msgid "FFmpeg Command Line"
 msgstr "שורת פקודה של FFmpeg"
 
@@ -965,62 +947,6 @@ msgstr "צור preset:"
 msgid "Import Presets"
 msgstr "ייבוא Presets"
 
-#~| msgid "WinFF"
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-#~| msgid "Additional Options"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "אפשרויות נוספות"
-#~ msgid "(All Categories)"
-#~ msgstr "(כל הקטגוריות)"
-#~ msgid "Convert To ..."
-#~ msgstr "המר ל..."
-#~| msgid "About"
-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
-#~ msgid "About"
-#~ msgstr "אודות"
-#~| msgid "Options"
-#~ msgctxt "REMOVED4"
-#~ msgid "Options"
-#~ msgstr "אפשרויות"
-#~ msgid "Video Settings"
-#~ msgstr "הגדרות וידאו"
-#~ msgid "Audio Settings"
-#~ msgstr "הגדרות אודיו"
-#~| msgid "Cancel"
-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "ביטול"
-#~| msgid "Presets"
-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
-#~ msgid "Presets"
-#~ msgstr "Presets"
-#~ msgid "Multithreading for Dual Core Processors"
-#~ msgstr "Multithreading למעבדי כפולי ליבה"
-#~ msgid "Path to FFmpeg.exe"
-#~ msgstr "נתיב ל-FFmpeg.exe"
-#~ msgid "Path to FFPlay.exe"
-#~ msgstr "נתיב ל-FFPlay.exe"
-#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~| msgid "OK"
-#~ msgctxt "REMOVED8"
-#~ msgid "OK"
-#~ msgstr "בסדר"
-#~| msgid "Converting"
-#~ msgid "Continue"
-#~ msgstr "ממיר"
-#~| msgid "Save"
-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
-#~ msgid "Save"
-#~ msgstr "שמור"
-#~ msgid "Replace Preset"
-#~ msgstr "החלף preset"
-#~| msgid "FFmpeg"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
 msgstr "התווית חייבת להיות ייחודית."

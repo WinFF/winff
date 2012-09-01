@@ -14,762 +14,761 @@ msgstr ""
 "X-Poedit-Country: Crymea <Sevastopol>\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: TFORM1.FORM1.CAPTION
+#: tform1.form1.caption
 msgid "Form1"
 msgstr ""
 
-#: TFRMABOUT.BUTTON1.CAPTION
+#: tfrmabout.button1.caption
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "ОК"
 
-#: TFRMABOUT.FRMABOUT.CAPTION
+#: tfrmabout.frmabout.caption
 #, fuzzy
 #| msgid "About WinFF"
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "О программе WinFF"
 
-#: TFRMABOUT.LABEL1.CAPTION
+#: tfrmabout.label1.caption
 msgid "WinFF 1.3.2"
 msgstr ""
 
-#: TFRMABOUT.LABEL10.CAPTION
+#: tfrmabout.label10.caption
 msgid "http://hawkeye.arrozcru.org/"
 msgstr ""
 
-#: TFRMABOUT.LABEL11.CAPTION
+#: tfrmabout.label11.caption
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
 msgstr "Пакеты для Debian/Ubuntu подготовил Paul Gevers"
 
-#: TFRMABOUT.LABEL13.CAPTION
+#: tfrmabout.label13.caption
 msgid "Gmaq"
 msgstr ""
 
-#: TFRMABOUT.LABEL14.CAPTION
+#: tfrmabout.label14.caption
 msgid "High Quality Presets From"
 msgstr "Высококачественные параметры от"
 
-#: TFRMABOUT.LABEL15.CAPTION
+#: tfrmabout.label15.caption
 msgid "Icons and Logo by Alex Klepatsch"
 msgstr "Иконки и логотип от Alex Klepatsch"
 
-#: TFRMABOUT.LABEL16.CAPTION
+#: tfrmabout.label16.caption
 msgid "JNavas"
 msgstr ""
 
-#: TFRMABOUT.LABEL2.CAPTION
+#: tfrmabout.label2.caption
 msgid "Copyright 2006-2009 GPL V3"
 msgstr ""
 
-#: TFRMABOUT.LABEL3.CAPTION
+#: tfrmabout.label3.caption
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
 msgstr "Matthew Weatherford, Ian Stoffberg и Alexey Osipov"
 
-#: TFRMABOUT.LABEL4.CAPTION
+#: tfrmabout.label4.caption
 msgid "http://www.winff.org"
 msgstr ""
 
-#: TFRMABOUT.LABEL5.CAPTION
+#: tfrmabout.label5.caption
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: TFRMABOUT.LABEL6.CAPTION
+#: tfrmabout.label6.caption
 msgid "Trademark Fabrice Belllard"
 msgstr "Fabrice Belllard"
 
-#: TFRMABOUT.LABEL7.CAPTION
+#: tfrmabout.label7.caption
 msgid "http://ffmpeg.org"
 msgstr ""
 
-#: TFRMABOUT.LABEL8.CAPTION
+#: tfrmabout.label8.caption
 msgid "FFmpeg Windows Builds by"
 msgstr "Сборка FFmpeg для Windows от"
 
-#: TFRMABOUT.LABEL9.CAPTION
+#: tfrmabout.label9.caption
 msgid "Kyle Schwarz"
 msgstr ""
 
-#: TFRMABOUT.PAGE1.CAPTION
+#: tfrmabout.page1.caption
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: TFRMABOUT.PAGE2.CAPTION
+#: tfrmabout.page2.caption
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: TFRMABOUT.PAGE3.CAPTION
+#: tfrmabout.page3.caption
 msgid "Thanks"
 msgstr "Спасибо"
 
-#: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
+#: tfrmeditpresets.addpresetbtn.caption
 msgid "Add / Update"
 msgstr "Добавить / Заменить"
 
-#: TFRMEDITPRESETS.CANCELBTN.CAPTION
+#: tfrmeditpresets.cancelbtn.caption
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Закрыть"
 
-#: TFRMEDITPRESETS.CAPTION
+#: tfrmeditpresets.caption
 msgid "Edit Presets"
 msgstr "Редактировать параметры"
 
-#: TFRMEDITPRESETS.DELETEBTN.CAPTION
+#: tfrmeditpresets.deletebtn.caption
 msgid "Delete"
 msgstr "Удалить"
 
-#: TFRMEDITPRESETS.EDIT1.HINT
+#: tfrmeditpresets.edit1.hint
 msgid "One word, only letters and numbers"
 msgstr "Одно слово, только буквы и цифры"
 
-#: TFRMEDITPRESETS.EDIT2.HINT
+#: tfrmeditpresets.edit2.hint
 msgid "Enter a more descriptive name for this preset"
 msgstr "Введите понятное описание для этих параметров"
 
-#: TFRMEDITPRESETS.EDIT3.HINT
+#: tfrmeditpresets.edit3.hint
 msgid "Please don't use -i or output file parameters"
 msgstr "Пожалуйста, не используйте параметр -i и имя выходного файла"
 
-#: TFRMEDITPRESETS.EDIT4.HINT
+#: tfrmeditpresets.edit4.hint
 msgid "Do not include a dot"
 msgstr "Без точки"
 
-#: TFRMEDITPRESETS.EDIT5.HINT
+#: tfrmeditpresets.edit5.hint
 msgid "Choose a category to group this preset under"
 msgstr "Выберите категорию, в которую нужно поместить эти параметры"
 
-#: TFRMEDITPRESETS.EXPORT.CAPTION
+#: tfrmeditpresets.export.caption
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Экспорт..."
 
-#: TFRMEDITPRESETS.IMPORT.CAPTION
+#: tfrmeditpresets.import.caption
 msgid "Import"
 msgstr "Импорт..."
 
-#: TFRMEDITPRESETS.LABEL1.CAPTION
+#: tfrmeditpresets.label1.caption
 msgid "Category / Preset"
 msgstr "Категория / Параметры"
 
-#: TFRMEDITPRESETS.LABEL2.CAPTION
+#: tfrmeditpresets.label2.caption
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Имя (одно слово, только буквы и цифры)"
 
-#: TFRMEDITPRESETS.LABEL3.CAPTION
+#: tfrmeditpresets.label3.caption
 msgid "Preset Label"
 msgstr "Описание"
 
-#: TFRMEDITPRESETS.LABEL4.CAPTION
+#: tfrmeditpresets.label4.caption
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Командная строка (без -i и выходного файла)"
 
-#: TFRMEDITPRESETS.LABEL5.CAPTION
+#: tfrmeditpresets.label5.caption
 msgid "Output File Extension (do not include the '.' )"
 msgstr "Расширение выходного файла (без \".\")"
 
-#: TFRMEDITPRESETS.LABEL6.CAPTION
+#: tfrmeditpresets.label6.caption
 msgid "Category"
 msgstr "Категория"
 
-#: TFRMEDITPRESETS.OKBTN.CAPTION
+#: tfrmeditpresets.okbtn.caption
 msgid "Save"
 msgstr "Сохранить"
 
-#: TFRMEDITPRESETS.PNLTOP.CAPTION
+#: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
 msgstr ""
 
-#: TFRMEXPORT.CANCELBTN.CAPTION
+#: tfrmexport.cancelbtn.caption
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "Отмена"
 
-#: TFRMEXPORT.CAPTION
+#: tfrmexport.caption
 msgid "Export Presets"
 msgstr "Экспорт параметров"
 
-#: TFRMEXPORT.EXPORTBTN.CAPTION
+#: tfrmexport.exportbtn.caption
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Экспорт"
 
-#: TFRMEXPORT.LABEL1.CAPTION
+#: tfrmexport.label1.caption
 msgid "Choose Presets to Export:"
 msgstr "Выберите параметры для экспорта"
 
-#: TFRMMAIN.AUDBITRATE.HINT
+#: tfrmmain.audbitrate.hint
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr "(<целое>) скорость данных для потока в килобитах в секунду"
 
-#: TFRMMAIN.AUDCHANNELS.HINT
+#: tfrmmain.audchannels.hint
 msgid "(<integer>) number of audio channels"
 msgstr "(<целое>) количество аудио-каналов"
 
-#: TFRMMAIN.AUDSAMPLINGRATE.HINT
+#: tfrmmain.audsamplingrate.hint
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
 msgstr "(<целое>) частота дискретизации аудио в Герцах"
 
-#: TFRMMAIN.BTNADD.CAPTION
+#: tfrmmain.btnadd.caption
 msgid "Add"
 msgstr "Добавить"
 
-#: TFRMMAIN.BTNADD.HINT
+#: tfrmmain.btnadd.hint
 msgid "Add file(s) to the list for conversion"
 msgstr "Добавить файл(ы) в список преобразования"
 
-#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+#: tfrmmain.btnapplydestination.caption
 #, fuzzy
 #| msgid "Output Directory:"
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
 msgstr "Сохранить в каталог:"
 
-#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+#: tfrmmain.btnapplypreset.caption
 msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
 msgid "Apply Preset"
 msgstr ""
 
-#: TFRMMAIN.BTNCLEAR.CAPTION
+#: tfrmmain.btnclear.caption
 msgid "Clear"
 msgstr "Очистить"
 
-#: TFRMMAIN.BTNCLEAR.HINT
+#: tfrmmain.btnclear.hint
 msgid "Remove all files from the list"
 msgstr "Удалить все файлы из списка"
 
-#: TFRMMAIN.BTNCONVERT.CAPTION
+#: tfrmmain.btnconvert.caption
 msgid "Convert"
 msgstr "Преобразовать"
 
-#: TFRMMAIN.BTNCONVERT.HINT
+#: tfrmmain.btnconvert.hint
 msgid "Start the conversion process"
 msgstr "Начать процесс преобразования"
 
-#: TFRMMAIN.BTNOPTIONS.CAPTION
+#: tfrmmain.btnoptions.caption
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Параметры"
 
-#: TFRMMAIN.BTNOPTIONS.HINT
+#: tfrmmain.btnoptions.hint
 msgid "Open/close the additional options window"
 msgstr "Открыть/закрыть окно дополнительных параметров"
 
-#: TFRMMAIN.BTNPLAY.CAPTION
+#: tfrmmain.btnplay.caption
 msgid "Play"
 msgstr "Воспроизвести"
 
-#: TFRMMAIN.BTNPLAY.HINT
+#: tfrmmain.btnplay.hint
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgstr "Воспроизвести выбранный файл с помощью ffplay (хороший способ проверить, возможно ли его преобразование)"
 
-#: TFRMMAIN.BTNPREVIEW.CAPTION
+#: tfrmmain.btnpreview.caption
 msgid "Preview"
 msgstr "Предпросмотр"
 
-#: TFRMMAIN.BTNPREVIEW.HINT
+#: tfrmmain.btnpreview.hint
 msgid "Preview using the output settings"
 msgstr "Предварительный просмотр результата"
 
-#: TFRMMAIN.BTNREMOVE.CAPTION
+#: tfrmmain.btnremove.caption
 msgid "Remove"
 msgstr "Удалить"
 
-#: TFRMMAIN.BTNREMOVE.HINT
+#: tfrmmain.btnremove.hint
 msgid "Remove selected file(s) from the list"
 msgstr "Удалить выбранные файлы из списка"
 
-#: TFRMMAIN.CATEGORYBOX.HINT
+#: tfrmmain.categorybox.hint
 msgid "Device or file type the video should be converted to"
 msgstr "Устройство или тип файла, в который нужно преобразовать видео"
 
-#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+#: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
 msgstr ""
 
-#: TFRMMAIN.CBOUTPUTPATH1.CAPTION
+#: tfrmmain.cboutputpath1.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
 msgid "Use Source Folder"
 msgstr ""
 
-#: TFRMMAIN.CBX2PASS.CAPTION
+#: tfrmmain.cbx2pass.caption
 msgid "2 pass"
 msgstr "2 прохода"
 
-#: TFRMMAIN.CBX2PASS.HINT
+#: tfrmmain.cbx2pass.hint
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr "Двухпроходное кодирование позволяет улучшить качество"
 
-#: TFRMMAIN.CBXDEINTERLACE.CAPTION
+#: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
 msgstr "Деинтерлейсинг"
 
-#: TFRMMAIN.CBXDEINTERLACE.HINT
+#: tfrmmain.cbxdeinterlace.hint
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "Убирает чересстрочную развертку (если это необходимо)"
 
-#: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+#: tfrmmain.choosefolderbtn.caption
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMMAIN.DESTFOLDER.HINT
+#: tfrmmain.destfolder.hint
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Каталог для готового видео (должен отличаться от исходного)"
 
-#: TFRMMAIN.DLGOPENFILE.TITLE
+#: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
-#: TFRMMAIN.EDTASPECTRATIO.HINT
+#: tfrmmain.edtaspectratio.hint
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr "(<целое:целое> или <вещественное>) физическое соотношение сторон дисплея (DAR)"
 
-#: TFRMMAIN.EDTAUDIOSYNC.HINT
+#: tfrmmain.edtaudiosync.hint
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
 msgstr "(<целое>) От 10 до частоты дискретизации (44100, 48000). Позволяет \"растянуть\" или \"сжать\" аудио дорожку."
 
-#: TFRMMAIN.EDTCROPBOTTOM.TEXT
+#: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
 msgid "0"
 msgstr ""
 
-#: TFRMMAIN.EDTCROPLEFT.TEXT
+#: tfrmmain.edtcropleft.text
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
 msgstr ""
 
-#: TFRMMAIN.EDTCROPRIGHT.TEXT
+#: tfrmmain.edtcropright.text
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
 msgstr ""
 
-#: TFRMMAIN.EDTCROPTOP.TEXT
+#: tfrmmain.edtcroptop.text
 msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
 msgstr ""
 
-#: TFRMMAIN.EDTSEEKHH.HINT
+#: tfrmmain.edtseekhh.hint
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr "<чч:мм:сс> - перемотать к этой позиции перед началом преобразования"
 
-#: TFRMMAIN.EDTSEEKMM.HINT
+#: tfrmmain.edtseekmm.hint
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr "<чч:мм:сс> - перемотать к этой позиции перед началом преобразования"
 
-#: TFRMMAIN.EDTSEEKSS.HINT
+#: tfrmmain.edtseekss.hint
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr "<чч:мм:сс> - перемотать к этой позиции перед началом преобразования"
 
-#: TFRMMAIN.EDTTTRHH.HINT
+#: tfrmmain.edtttrhh.hint
 #, fuzzy
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<чч:мм:сс> - Остановиться после преобразования такого временного отрезка"
 
-#: TFRMMAIN.EDTTTRMM.HINT
+#: tfrmmain.edtttrmm.hint
 #, fuzzy
 msgctxt "TFRMMAIN.EDTTTRMM.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<чч:мм:сс> - Остановиться после преобразования такого временного отрезка"
 
-#: TFRMMAIN.EDTTTRSS.HINT
+#: tfrmmain.edtttrss.hint
 #, fuzzy
 msgctxt "TFRMMAIN.EDTTTRSS.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<чч:мм:сс> - Остановиться после преобразования такого временного отрезка"
 
-#: TFRMMAIN.EDTVOLUME.HINT
+#: tfrmmain.edtvolume.hint
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<целое>) 256 = Текущая громкость, 128 = Половина громкости, 512 = Двойная громкость"
 
-#: TFRMMAIN.FRMMAIN.CAPTION
+#: tfrmmain.frmmain.caption
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: TFRMMAIN.LABEL1.CAPTION
+#: tfrmmain.label1.caption
 msgid "Convert to:"
 msgstr "Преобразовать в:"
 
-#: TFRMMAIN.LABEL10.CAPTION
+#: tfrmmain.label10.caption
 msgid "Audio Channels"
 msgstr "Аудио-каналы"
 
-#: TFRMMAIN.LABEL12.CAPTION
+#: tfrmmain.label12.caption
 #, fuzzy
 #| msgid "Output Directory:"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Сохранить в каталог:"
 
-#: TFRMMAIN.LABEL19.CAPTION
+#: tfrmmain.label19.caption
 msgid "Preset:"
 msgstr "Параметры:"
 
-#: TFRMMAIN.LABEL20.CAPTION
+#: tfrmmain.label20.caption
 msgid "Volume"
 msgstr "Громкость"
 
-#: TFRMMAIN.LABEL21.CAPTION
+#: tfrmmain.label21.caption
 msgid "Sync"
 msgstr "Синхронизация"
 
-#: TFRMMAIN.LABEL22.CAPTION
+#: tfrmmain.label22.caption
 msgid "Seek to"
 msgstr "Перемотать к"
 
-#: TFRMMAIN.LABEL23.CAPTION
+#: tfrmmain.label23.caption
 msgid "Time to Record"
 msgstr "Время записи"
 
-#: TFRMMAIN.LABEL24.CAPTION
+#: tfrmmain.label24.caption
 msgid "Hours / Minutes / Seconds"
 msgstr "Часы / Минуты / Секунды"
 
-#: TFRMMAIN.LABEL3.CAPTION
+#: tfrmmain.label3.caption
 msgid "Additional Command Line Parameters"
 msgstr "Дополнительные параметры командной строки"
 
-#: TFRMMAIN.LABEL7.CAPTION
+#: tfrmmain.label7.caption
 msgid "Audio Bitrate"
 msgstr "Аудио битрейт"
 
-#: TFRMMAIN.LABEL8.CAPTION
+#: tfrmmain.label8.caption
 msgid "Sample Rate"
 msgstr "Частота дискретизации"
 
-#: TFRMMAIN.LABEL9.CAPTION
+#: tfrmmain.label9.caption
 msgid "X"
 msgstr ""
 
-#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+#: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "Соотношение сторон"
 
-#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+#: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
 msgstr "Снизу"
 
-#: TFRMMAIN.LBLCROPLEFT.CAPTION
+#: tfrmmain.lblcropleft.caption
 msgid "Left"
 msgstr "Слева"
 
-#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+#: tfrmmain.lblcropright.caption
 msgid "Right"
 msgstr "Справа"
 
-#: TFRMMAIN.LBLCROPTOP.CAPTION
+#: tfrmmain.lblcroptop.caption
 msgid "Top"
 msgstr "Сверху"
 
-#: TFRMMAIN.LBLFRAMERATE.CAPTION
+#: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "Частота кадров"
 
-#: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
+#: tfrmmain.lblvideobitrate.caption
 msgid "Video Bitrate"
 msgstr "Видео битрейт"
 
-#: TFRMMAIN.LBLVIDEOSIZE.CAPTION
+#: tfrmmain.lblvideosize.caption
 msgid "Video Size"
 msgstr "Размер видео"
 
-#: TFRMMAIN.MENUITEM1.CAPTION
+#: tfrmmain.menuitem1.caption
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
 msgstr ""
 
-#: TFRMMAIN.MENUITEM2.CAPTION
+#: tfrmmain.menuitem2.caption
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
 msgstr ""
 
-#: TFRMMAIN.MENUITEM9.CAPTION
+#: tfrmmain.menuitem9.caption
 msgid "-"
 msgstr ""
 
-#: TFRMMAIN.MITABOUT.CAPTION
+#: tfrmmain.mitabout.caption
 msgid "About"
 msgstr "О программе..."
 
-#: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+#: tfrmmain.mitdisplaycmdline.caption
 msgid "Display Cmd Line"
 msgstr "Показывать сценарий перед запуском"
 
-#: TFRMMAIN.MITDOCS.CAPTION
+#: tfrmmain.mitdocs.caption
 msgid "Documentation"
 msgstr "Документация"
 
-#: TFRMMAIN.MITEXIT.CAPTION
+#: tfrmmain.mitexit.caption
 msgid "Exit"
 msgstr "Выход"
 
-#: TFRMMAIN.MITFORUMS.CAPTION
+#: tfrmmain.mitforums.caption
 msgid "Forums"
 msgstr "Форум WinFF"
 
-#: TFRMMAIN.MITIMPORTPRESET.CAPTION
+#: tfrmmain.mitimportpreset.caption
 msgid "Import Preset"
 msgstr "Импортировать параметры..."
 
-#: TFRMMAIN.MITPAUSEONFINISH.CAPTION
+#: tfrmmain.mitpauseonfinish.caption
 msgid "Pause on Finish"
 msgstr "Пауза после завершения"
 
-#: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+#: tfrmmain.mitplaysoundonfinish.caption
 msgid "Play Sound on Finish"
 msgstr "Звуковой сигнал после завершения"
 
-#: TFRMMAIN.MITPREFERENCES.CAPTION
+#: tfrmmain.mitpreferences.caption
 msgid "Preferences"
 msgstr "Настройки..."
 
-#: TFRMMAIN.MITPRESETS.CAPTION
+#: tfrmmain.mitpresets.caption
 msgid "Presets"
 msgstr "Параметры..."
 
-#: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+#: tfrmmain.mitshowoptions.caption
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
 msgstr "Дополнительные параметры"
 
-#: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+#: tfrmmain.mitshutdownonfinish.caption
 msgid "Shutdown on Finish"
 msgstr "Выключить компьютер после завершения"
 
-#: TFRMMAIN.MITVIEWMODE.CAPTION
+#: tfrmmain.mitviewmode.caption
 msgid "Detailed View"
 msgstr ""
 
-#: TFRMMAIN.MITWINFF.CAPTION
+#: tfrmmain.mitwinff.caption
 msgid "WinFF Website"
 msgstr "Вебсайт WinFF"
 
-#: TFRMMAIN.MNUEDIT.CAPTION
+#: tfrmmain.mnuedit.caption
 msgid "Edit"
 msgstr "Правка"
 
-#: TFRMMAIN.MNUFILE.CAPTION
+#: tfrmmain.mnufile.caption
 msgid "File"
 msgstr "Файл"
 
-#: TFRMMAIN.MNUHELP.CAPTION
+#: tfrmmain.mnuhelp.caption
 msgid "Help"
 msgstr "Помощь"
 
-#: TFRMMAIN.MNUOPTIONS.CAPTION
+#: tfrmmain.mnuoptions.caption
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Настройки"
 
-#| msgctxt "TFRMABOUT.LABEL5.CAPTION"
-#: TFRMMAIN.PNLMAIN.CAPTION
+#: tfrmmain.pnlmain.caption
 msgid "pnlMain"
 msgstr ""
 
-#: TFRMMAIN.PRESETBOX.HINT
+#: tfrmmain.presetbox.hint
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Конкретные параметры для выбранного устройства или типа файла"
 
-#: TFRMMAIN.TABSHEET1.CAPTION
+#: tfrmmain.tabsheet1.caption
 #, fuzzy
 #| msgid "Video"
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
 msgid "Video"
 msgstr "Видео"
 
-#: TFRMMAIN.TABSHEET2.CAPTION
+#: tfrmmain.tabsheet2.caption
 #, fuzzy
 #| msgid "Audio"
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Аудио"
 
-#: TFRMMAIN.TABSHEET3.CAPTION
+#: tfrmmain.tabsheet3.caption
 #, fuzzy
 #| msgid "Crop"
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "Обрезка"
 
-#: TFRMMAIN.TABSHEET4.CAPTION
+#: tfrmmain.tabsheet4.caption
 #, fuzzy
 #| msgid "Time"
 msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr "Время"
 
-#: TFRMMAIN.TABSHEET5.CAPTION
+#: tfrmmain.tabsheet5.caption
 #, fuzzy
 #| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: TFRMMAIN.TABSHEET6.CAPTION
+#: tfrmmain.tabsheet6.caption
 #, fuzzy
 #| msgid "Output Settings"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "Настройки преобразования"
 
-#: TFRMMAIN.VIDBITRATE.HINT
+#: tfrmmain.vidbitrate.hint
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr "(<целое>) скорость данных для потока в килобитах в секунду"
 
-#: TFRMMAIN.VIDFRAMERATE.HINT
+#: tfrmmain.vidframerate.hint
 msgid "(<real> or <integer>) number of frames per second"
 msgstr "(<вещественное> или <целое>) количество кадров в секунду"
 
-#: TFRMMAIN.VIDSIZEX.HINT
+#: tfrmmain.vidsizex.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<целое> X <целое>) размер изображения в пикселях"
 
-#: TFRMMAIN.VIDSIZEY.HINT
+#: tfrmmain.vidsizey.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<целое> X <целое>) размер изображения в пикселях"
 
-#: TFRMPREFERENCES.BUTTON1.CAPTION
+#: tfrmpreferences.button1.caption
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
 msgstr "ОК"
 
-#: TFRMPREFERENCES.BUTTON2.CAPTION
+#: tfrmpreferences.button2.caption
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
 msgstr "Отмена"
 
-#: TFRMPREFERENCES.BUTTON3.CAPTION
+#: tfrmpreferences.button3.caption
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON4.CAPTION
+#: tfrmpreferences.button4.caption
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON5.CAPTION
+#: tfrmpreferences.button5.caption
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON6.CAPTION
+#: tfrmpreferences.button6.caption
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON7.CAPTION
+#: tfrmpreferences.button7.caption
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.BUTTON8.CAPTION
+#: tfrmpreferences.button8.caption
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.CAPTION
+#: tfrmpreferences.caption
 msgid "WinFF Preferences"
 msgstr "Настройки WinFF"
 
-#: TFRMPREFERENCES.CHECKBOX1.CAPTION
+#: tfrmpreferences.checkbox1.caption
 msgid "Remember Last Used Directory"
 msgstr "Запоминать последний использованный"
 
-#: TFRMPREFERENCES.CHECKBOX2.CAPTION
+#: tfrmpreferences.checkbox2.caption
 #, fuzzy
 msgid "Use CHCP for international characters"
 msgstr "Использовать CHCP в терминале"
 
-#: TFRMPREFERENCES.CHECKBOX3.CAPTION
+#: tfrmpreferences.checkbox3.caption
 msgid "Use Several Encoding Threads:"
 msgstr "Несколько потоков:"
 
-#: TFRMPREFERENCES.EDIT7.HINT
+#: tfrmpreferences.edit7.hint
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "'-e' для xterm, '-x' для gnome-terminal"
 
-#: TFRMPREFERENCES.LABEL1.CAPTION
+#: tfrmpreferences.label1.caption
 msgid "Default Destination Directory:"
 msgstr "Каталог для сохранения:"
 
-#: TFRMPREFERENCES.LABEL2.CAPTION
+#: tfrmpreferences.label2.caption
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Путь к FFmpeg:"
 
-#: TFRMPREFERENCES.LABEL3.CAPTION
+#: tfrmpreferences.label3.caption
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Путь к FFPlay:"
 
-#: TFRMPREFERENCES.LABEL4.CAPTION
+#: tfrmpreferences.label4.caption
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
 msgstr "Путь к FFmpeg:"
 
-#: TFRMPREFERENCES.LABEL5.CAPTION
+#: tfrmpreferences.label5.caption
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
 msgstr "Путь к FFPlay:"
 
-#: TFRMPREFERENCES.LABEL6.CAPTION
+#: tfrmpreferences.label6.caption
 msgid "Terminal to run FFmpeg in:"
 msgstr "Терминал для запуска FFmpeg:"
 
-#: TFRMPREFERENCES.LABEL7.CAPTION
+#: tfrmpreferences.label7.caption
 msgid "Terminal Options:"
 msgstr "Параметры терминала:"
 
-#: TFRMPREFERENCES.LABEL8.CAPTION
+#: tfrmpreferences.label8.caption
 msgid "Priority:"
 msgstr "Приоритет:"
 
-#: TFRMPREFERENCES.PAGE1.CAPTION
+#: tfrmpreferences.page1.caption
 msgid "General"
 msgstr "Общие"
 
-#: TFRMPREFERENCES.PAGE2.CAPTION
+#: tfrmpreferences.page2.caption
 msgid "MS Windows"
 msgstr ""
 
-#: TFRMPREFERENCES.PAGE3.CAPTION
+#: tfrmpreferences.page3.caption
 msgid "Linux"
 msgstr ""
 
-#: TFRMSCRIPT.BTNCLIP.CAPTION
+#: tfrmscript.btnclip.caption
 msgid "Copy to Clipboard"
 msgstr "Скопировать в буфер"
 
-#: TFRMSCRIPT.BTNCLOSE.CAPTION
+#: tfrmscript.btnclose.caption
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
 msgstr "Закрыть"
 
-#: TFRMSCRIPT.BTNRUN.CAPTION
+#: tfrmscript.btnrun.caption
 msgid "Run!"
 msgstr "Начать!"
 
-#: TFRMSCRIPT.BTNSAVE.CAPTION
+#: tfrmscript.btnsave.caption
 msgid "Save As..."
 msgstr "Сохранить как..."
 
-#: TFRMSCRIPT.CAPTION
+#: tfrmscript.caption
 #, fuzzy
 msgid "FFmpeg Command Line"
 msgstr "Сценарий FFmpeg"
@@ -870,15 +869,6 @@ msgstr "Сохранить параметры?"
 msgid "Import Presets"
 msgstr "Импортировать параметры"
 
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Дополнительные параметры"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
 msgstr "Описание должно быть уникальным."
@@ -887,15 +877,6 @@ msgstr "Описание должно быть уникальным."
 msgid "Remove Preset:"
 msgstr "Удалить настройки?"
 
-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
-#~ msgid "Additional Options"
-#~ msgstr "Дополнительные параметры"
-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
 msgstr "Заменить настройки?"
