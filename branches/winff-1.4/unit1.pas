@@ -299,8 +299,8 @@ var
 
   //messages
   rsCouldNotFindPresetFile = 'Could not find presets file.';
-  rsCouldNotFindFFmpeg = 'Could not find FFmpeg.';
-  rsCouldNotFindFFplay = 'Could not find FFPlay.';
+  rsCouldNotFindFFmpeg = 'Could not find either ffmpeg or avconv.';
+  rsCouldNotFindFFplay = 'Could not find either ffplay or avplay.';
   rsSelectVideoFiles = 'Select Video Files';
   rsSelectPresetFile = 'Select Preset File';
   rsPleaseSelectAPreset = 'Please select a preset';
@@ -401,24 +401,24 @@ begin
   ffmpeg := getconfigvalue('unix/ffmpeg');
   if ffmpeg = '' then
      begin
-       ffmpeg := '/usr/bin/ffmpeg';
-       if not fileexists(ffmpeg) then
-         if fileexists('/usr/local/bin/ffmpeg') then
-            ffmpeg := '/usr/local/bin/ffmpeg'
-         else
-            showmessage(rsCouldNotFindFFmpeg);
+       // loop through possibilities ending with the most favorable
+       if fileexists('/usr/bin/ffmpeg') then ffmpeg:='/usr/bin/ffmpeg';
+       if fileexists('/usr/bin/avconv') then ffmpeg:='/usr/bin/avconv';
+       if fileexists('/usr/local/bin/ffmpeg') then ffmpeg:='/usr/local/bin/ffmpeg';
+       if fileexists('/usr/local/bin/avconv') then ffmpeg:='/usr/local/bin/avconv';
+       if ffmpeg = '' then showmessage(rsCouldNotFindFFmpeg);
        setconfigvalue('unix/ffmpeg',ffmpeg)
      end;
      
   ffplay := getconfigvalue('unix/ffplay');
   if ffplay = '' then
      begin
-       ffplay := '/usr/bin/ffplay';
-       if not fileexists(ffplay) then
-         if fileexists('/usr/local/bin/ffplay') then
-            ffplay := '/usr/local/bin/ffplay'
-         else
-            showmessage(rsCouldNotFindFFPlay);
+       // loop through possibilities ending with the most favorable
+       if fileexists('/usr/bin/ffplay') then ffplay:='/usr/bin/ffplay';
+       if fileexists('/usr/bin/avplay') then ffplay:='/usr/bin/avplay';
+       if fileexists('/usr/local/bin/ffplay') then ffplay:='/usr/local/bin/ffplay';
+       if fileexists('/usr/local/bin/avplay') then ffplay:='/usr/local/bin/avplay';
+       if ffplay = '' then showmessage(rsCouldNotFindFFPlay);
        setconfigvalue('unix/ffplay',ffplay);
      end;
      
@@ -1014,7 +1014,7 @@ begin                                     // get setup
 
    if not fileexists(ffmpeg) then
       begin
-       showmessage(rsCouldnotFindFFplay);
+       showmessage(rsCouldnotFindFFmpeg);
        exit;
       end;
 
@@ -1773,7 +1773,7 @@ begin                                     // get setup
    
    if not fileexists(ffmpeg) then
       begin
-       showmessage(rsCouldnotFindFFplay);
+       showmessage(rsCouldnotFindFFmpeg);
        exit;
       end;
 
