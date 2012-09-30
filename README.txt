@@ -1,5 +1,5 @@
-Winff -  graphical video and audio batch converter using ffmpeg
-Copyright  © 2006-2011 Matthew Weatherford <matt@biggmatt.com>
+Winff -  graphical video and audio batch converter using ffmpeg or avconv
+Copyright  © 2006-2012 Matthew Weatherford <matt@biggmatt.com>
 http://www.winff.org
 
 This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>. 
 
 
-WinFF is a GUI for the command line video converter FFmpeg.
+WinFF is a GUI for the command line video converter FFmpeg or avconv.
 
 Get the latest ffmpeg builds and source from http://ffmpeg.mplayerhq.hu/
 
