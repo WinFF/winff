@@ -270,7 +270,7 @@ object frmPreferences: TfrmPreferences
         BorderSpacing.Left = 3
         BorderSpacing.Top = 10
         BorderSpacing.Right = 3
-        Caption = 'Path to FFmpeg Executable:'
+        Caption = 'Path to FFmpeg or avconv Executable:'
         ParentColor = False
       end
       object Label3: TLabel
@@ -282,7 +282,7 @@ object frmPreferences: TfrmPreferences
         BorderSpacing.Left = 3
         BorderSpacing.Top = 5
         BorderSpacing.Right = 3
-        Caption = 'Path to FFplay Executable:'
+        Caption = 'Path to FFplay or avplay Executable:'
         ParentColor = False
       end
       object CheckBox2: TCheckBox
@@ -393,7 +393,7 @@ object frmPreferences: TfrmPreferences
         BorderSpacing.Left = 3
         BorderSpacing.Top = 10
         BorderSpacing.Right = 3
-        Caption = 'Path to FFmpeg Executable:'
+        Caption = 'Path to FFmpeg or avconv Executable:'
         ParentColor = False
       end
       object Label5: TLabel
@@ -405,7 +405,7 @@ object frmPreferences: TfrmPreferences
         BorderSpacing.Left = 3
         BorderSpacing.Top = 5
         BorderSpacing.Right = 3
-        Caption = 'Path to FFplay Executable:'
+        Caption = 'Path to FFplay or avplay Executable:'
         ParentColor = False
       end
       object Label6: TLabel
