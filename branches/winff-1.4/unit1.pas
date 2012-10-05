@@ -1057,7 +1057,7 @@ begin                                     // get setup
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
        //destfolder.text := extractfilepath(filename);
-        command := ffmpegfilename +  '  -i "' + filename + '" 2>"' + presetspath + '"output.txt'; // Francois Collard - added " around presetspath
+        command := ffmpegfilename +  '  -i "' + filename + '" 2>"' + presetspath + '"output.txt'; // Francois Collard - added "" around presetspath
 
         script.Add(command);
 
@@ -1145,7 +1145,7 @@ begin
  cfg.free;
 end;
 
-// get the user's desktop path
+// get the user`s desktop path
 function TfrmMain.GetDeskTopPath() : string ;
 {$ifdef win32}
 var
@@ -1204,7 +1204,7 @@ end;
 
 
 
-// get the user's application data path
+// get the user`s application data path
 function TfrmMain.GetappdataPath() : string ;
 {$ifdef win32}
 var
@@ -2012,7 +2012,7 @@ begin                                     // get setup
        begin
          //1.5 destfolder.text := DestinationList.Strings[i];
        end;
-       if RightStr(destfolder.text,1) = DirectorySeparator then // trim extra \'s
+       if RightStr(destfolder.text,1) = DirectorySeparator then // trim extra \`s
         begin
           destfolder.text := copy(DestFolder.text,1,length(DestFolder.text) -1);
         end;

@@ -115,7 +115,7 @@ end;
 
 
 
-// Get the selected preset's information
+// Get the selected preset`s information
 procedure TfrmEditPresets.ListBox1Click(Sender: TObject);
 var
 i:integer;
