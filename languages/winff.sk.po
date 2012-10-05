@@ -263,11 +263,8 @@ msgid "Play"
 msgstr "Prehrať"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
-msgstr ""
-"Prehrať vybraný súbor pomocou ffplay (overíte tak, či pôjde skonvertovať)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "Prehrať vybraný súbor pomocou ffplay (overíte tak, či pôjde skonvertovať)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
@@ -304,9 +301,7 @@ msgid "2 pass"
 msgstr ""
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr ""
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
@@ -323,21 +318,15 @@ msgid "..."
 msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
+msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr ""
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
 msgstr ""
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
@@ -391,8 +380,7 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: TFRMMAIN.LABEL1.CAPTION
@@ -566,7 +554,7 @@ msgstr ""
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr ""
+msgstr "Možnosti"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -599,7 +587,7 @@ msgstr ""
 #: TFRMMAIN.TABSHEET5.CAPTION
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
-msgstr ""
+msgstr "FFmpeg"
 
 #: TFRMMAIN.TABSHEET6.CAPTION
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
@@ -609,7 +597,7 @@ msgstr ""
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
+msgstr "(<integer>) výsledná hodnota kilobit/s, ktorú bude prúd používať"
 
 #: TFRMMAIN.VIDFRAMERATE.HINT
 msgid "(<real> or <integer>) number of frames per second"
@@ -617,57 +605,53 @@ msgstr ""
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: TFRMPREFERENCES.BUTTON2.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušiť"
 
 #: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON4.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON5.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON6.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON7.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON8.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
@@ -744,7 +728,7 @@ msgstr ""
 #: TFRMSCRIPT.BTNCLOSE.CAPTION
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
-msgstr ""
+msgstr "Zavrieť"
 
 #: TFRMSCRIPT.BTNRUN.CAPTION
 msgid "Run!"
@@ -767,11 +751,11 @@ msgid "Converting"
 msgstr ""
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr ""
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr ""
 
 #: unit1.rscouldnotfindfile
@@ -807,7 +791,7 @@ msgid "Please select a preset"
 msgstr ""
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr ""
 
 #: unit1.rspresethasnoext
@@ -828,6 +812,10 @@ msgstr ""
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
+msgstr ""
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
 msgstr ""
 
 #: unit1.rsselectdirectory
@@ -889,3 +877,4 @@ msgstr ""
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr ""
+

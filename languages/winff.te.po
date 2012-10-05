@@ -264,9 +264,7 @@ msgid "Play"
 msgstr "ఆడించు"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgstr ""
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
@@ -304,9 +302,7 @@ msgid "2 pass"
 msgstr ""
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr ""
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
@@ -323,21 +319,15 @@ msgid "..."
 msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
+msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr ""
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
 msgstr ""
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
@@ -348,17 +338,17 @@ msgstr "0"
 #: TFRMMAIN.EDTCROPLEFT.TEXT
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPRIGHT.TEXT
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTCROPTOP.TEXT
 msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: TFRMMAIN.EDTSEEKHH.HINT
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
@@ -391,8 +381,7 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: TFRMMAIN.LABEL1.CAPTION
@@ -617,16 +606,12 @@ msgstr ""
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
@@ -647,22 +632,22 @@ msgstr "..."
 #: TFRMPREFERENCES.BUTTON4.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON5.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON6.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON7.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: TFRMPREFERENCES.BUTTON8.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
@@ -767,11 +752,11 @@ msgid "Converting"
 msgstr "పరివర్తిస్తున్నాము"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr ""
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr ""
 
 #: unit1.rscouldnotfindfile
@@ -807,7 +792,7 @@ msgid "Please select a preset"
 msgstr ""
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr ""
 
 #: unit1.rspresethasnoext
@@ -829,6 +814,10 @@ msgstr ""
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
 msgstr "కొనసాగుటకు ఎంటర్ నొక్కండి"
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -889,3 +878,4 @@ msgstr ""
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "సాధారణ"
+

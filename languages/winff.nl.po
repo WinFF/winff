@@ -769,11 +769,15 @@ msgid "Converting"
 msgstr "Bezig met converteren"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "FFmpeg kan niet gevonden worden."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "FFplay kan niet gevonden worden."
 
 #: unit1.rscouldnotfindfile
@@ -836,10 +840,6 @@ msgstr "Druk 'enter' om verder te gaan"
 msgid "Replace Preset?"
 msgstr ""
 
-#: unit1.rsselectdirectory
-msgid "Select Directory"
-msgstr "Selecteer doelmap"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr "toegepast op alle video's op het moment dat de convertie begint."
 #~ msgid "Ramiro Polla"
@@ -894,6 +894,10 @@ msgstr "Selecteer doelmap"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: unit1.rsselectdirectory
+msgid "Select Directory"
+msgstr "Selecteer doelmap"
+
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
 msgstr "Selecteer voorinstellingbestand"

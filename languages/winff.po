@@ -748,11 +748,11 @@ msgid "Converting"
 msgstr ""
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr ""
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr ""
 
 #: unit1.rscouldnotfindfile

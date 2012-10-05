@@ -757,11 +757,15 @@ msgid "Converting"
 msgstr "Преобразование"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "Не найден FFmpeg."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "Не найден FFPlay."
 
 #: unit1.rscouldnotfindfile
@@ -822,6 +826,10 @@ msgstr "Настройки с описанием %s%s%s уже существу�
 msgid "Press Enter to Continue"
 msgstr "Нажмите Ввод для продолжения"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr "Выберите каталог"
@@ -881,3 +889,4 @@ msgstr "Низкий"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Нормальный"
+

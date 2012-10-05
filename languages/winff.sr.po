@@ -859,11 +859,15 @@ msgid "Converting"
 msgstr "Konverzija u toku"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "Nije moguće pronaći FFmpeg."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "Nije moguće pronaći FFPlay."
 
 #: unit1.rscouldnotfindfile
@@ -946,10 +950,6 @@ msgstr "Selektuj video fajlove"
 msgid "The preset contains illegal characters"
 msgstr "Preset sadrži karaktere koji nisu dozvoljeni"
 
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Kreiraj preset:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1008,6 +1008,10 @@ msgstr "Kreiraj preset:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Kreiraj preset:"
+
 #: unit2.rsimportpresets
 #, fuzzy
 msgid "Import Presets"

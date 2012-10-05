@@ -889,11 +889,15 @@ msgid "Converting"
 msgstr "Convertendo"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "Non se pode atopar FFmpeg."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "Non se pode atopar FFPlay."
 
 #: unit1.rscouldnotfindfile
@@ -974,10 +978,6 @@ msgstr "Elixir ficheiros de vídeo"
 msgid "The preset contains illegal characters"
 msgstr "A preconfiguración conten caracteres incorrectos"
 
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Crear preconfiguración:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1031,6 +1031,10 @@ msgstr "Crear preconfiguración:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Crear preconfiguración:"
+
 #: unit2.rsimportpresets
 msgid "Import Presets"
 msgstr "Importar preconfiguracións"
