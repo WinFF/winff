@@ -862,11 +862,15 @@ msgid "Converting"
 msgstr "Convirtiendo"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "Requiere de FFmpeg"
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "Requiere de FFplay"
 
 #: unit1.rscouldnotfindfile
@@ -949,10 +953,6 @@ msgstr "Elegir archivos"
 msgid "The preset contains illegal characters"
 msgstr "Predeterminado con caracteres inválidos"
 
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Crear Predeterminado:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1011,6 +1011,10 @@ msgstr "Crear Predeterminado:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Crear Predeterminado:"
+
 #: unit2.rsimportpresets
 #, fuzzy
 msgid "Import Presets"

@@ -817,11 +817,15 @@ msgid "Converting"
 msgstr "Pretvorba je v teku"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "FFmpeg ni mogoče najti."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "FFPlay ni mogoče najti."
 
 #: unit1.rscouldnotfindfile
@@ -902,10 +906,6 @@ msgstr "Izberite video datoteke"
 msgid "The preset contains illegal characters"
 msgstr "Prednastavitev vsebuje nedovoljene znake"
 
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Ustvari prednastavitev:"
-
 #~| msgid "Select Video Files"
 #~ msgid "Select Video Files..."
 #~ msgstr "Izberite video datoteke"
@@ -920,6 +920,10 @@ msgstr "Ustvari prednastavitev:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Ustvari prednastavitev:"
+
 #: unit2.rsimportpresets
 msgid "Import Presets"
 msgstr "Uvozi prednastavitve"

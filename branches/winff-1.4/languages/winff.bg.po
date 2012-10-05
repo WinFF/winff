@@ -846,11 +846,15 @@ msgid "Converting"
 msgstr "Конвертиране"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "FFmpeg не е намерен"
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "FFPlay не е намерен"
 
 #: unit1.rscouldnotfindfile
@@ -933,10 +937,6 @@ msgstr "Изберете видео файлове"
 msgid "The preset contains illegal characters"
 msgstr "Настройката съдържа непозволени символи"
 
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Създаване на настройка:"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -990,6 +990,10 @@ msgstr "Създаване на настройка:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Създаване на настройка:"
+
 #: unit2.rsimportpresets
 #, fuzzy
 msgid "Import Presets"

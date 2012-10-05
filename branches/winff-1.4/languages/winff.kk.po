@@ -756,11 +756,15 @@ msgid "Converting"
 msgstr "Түрлендіру"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "FFmpeg табылмады."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "FFPlay табылмады."
 
 #: unit1.rscouldnotfindfile
@@ -796,7 +800,9 @@ msgid "Please select a preset"
 msgstr "Параметрді таңдаңыз"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Параметр: %s%s%s бар болып тұр"
 
 #: unit1.rspresethasnoext
@@ -882,3 +888,4 @@ msgstr "Іссіз"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Қалыпты"
+

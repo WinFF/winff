@@ -773,11 +773,15 @@ msgid "Converting"
 msgstr "Μετατροπή"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "Δεv βρέθηκε το FFmpeg"
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "Δεν βρέθηκε το FFplay"
 
 #: unit1.rscouldnotfindfile

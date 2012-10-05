@@ -753,11 +753,15 @@ msgid "Converting"
 msgstr "Se convertește"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "FFmpeg nu s-a găsit"
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "FFPlay nu s-a găsit"
 
 #: unit1.rscouldnotfindfile
@@ -838,10 +842,6 @@ msgstr "Selectați fișiere video"
 msgid "The preset contains illegal characters"
 msgstr "Regula de conversie conține caractere ilegale"
 
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Creare regula de conversie:"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr " va fi aplicat tuturor sarcinilor când va începe conversia"
 #~ msgid "http://ffmpeg.arrozcru.org/"
@@ -875,6 +875,10 @@ msgstr "Creare regula de conversie:"
 #~ msgstr "Selectați fișiere video..."
 #~ msgid "NOTE: Currently any additional options chosen"
 #~ msgstr "NOTĂ: În prezent, orice opţiuni suplimentare alese"
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Creare regula de conversie:"
+
 #: unit2.rsimportpresets
 msgid "Import Presets"
 msgstr "Importare reguli de conversie"

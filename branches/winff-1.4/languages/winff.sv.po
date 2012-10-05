@@ -884,11 +884,15 @@ msgid "Converting"
 msgstr "Konverterar"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "Kunde inte hitta FFmpeg."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "Kunde inte hitta FFPlay."
 
 #: unit1.rscouldnotfindfile
@@ -971,10 +975,6 @@ msgstr "Välj videofiler"
 msgid "The preset contains illegal characters"
 msgstr "Förinställningen innehåller ogiltiga tecken"
 
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Skapa förinställning"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1026,6 +1026,10 @@ msgstr "Skapa förinställning"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Skapa förinställning"
+
 #: unit2.rsimportpresets
 msgid "Import Presets"
 msgstr "Importera förinställningar"

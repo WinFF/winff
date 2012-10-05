@@ -754,11 +754,15 @@ msgid "Converting"
 msgstr "Provádí se konverze"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "Nelze najít FFmpeg."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "Nelze najít FFPlay."
 
 #: unit1.rscouldnotfindfile
@@ -818,6 +822,10 @@ msgstr "Přednastavení s popisem: %s%s%s již existuje"
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
 msgstr "Pro pokračování stisněte Enter"
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"

@@ -770,11 +770,15 @@ msgid "Converting"
 msgstr "轉換中"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "找不到 FFmpeg。"
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "找不到 FFPlay。"
 
 #: unit1.rscouldnotfindfile
@@ -835,6 +839,10 @@ msgstr "標籤: %s%s%s 已經存在"
 msgid "Press Enter to Continue"
 msgstr "按 Enter 鍵繼續"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr "選取目錄"
@@ -894,3 +902,4 @@ msgstr "閒置"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "普通"
+

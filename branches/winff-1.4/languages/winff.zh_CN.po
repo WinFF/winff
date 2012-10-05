@@ -786,11 +786,15 @@ msgid "Converting"
 msgstr "正在转换"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "无法找到 FFmpeg。"
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "无法找到 FFPlay。"
 
 #: unit1.rscouldnotfindfile
@@ -871,10 +875,6 @@ msgstr "选择视频文件"
 msgid "The preset contains illegal characters"
 msgstr "预设含非法字符"
 
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "创建预设:"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -886,6 +886,10 @@ msgstr "创建预设:"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "创建预设:"
+
 #: unit2.rsimportpresets
 msgid "Import Presets"
 msgstr "导入预设"

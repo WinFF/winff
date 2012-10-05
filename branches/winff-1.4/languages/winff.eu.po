@@ -753,11 +753,15 @@ msgid "Converting"
 msgstr "Bihurtzen"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "Ezin izan da FFmpeg aurkitu"
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "Ezin izan da FFplay aurkitu"
 
 #: unit1.rscouldnotfindfile
@@ -838,10 +842,6 @@ msgstr "Hautatu bideo-fitxategiak"
 msgid "The preset contains illegal characters"
 msgstr "Aurrezarpenak karaktere baliogabeak dauzka"
 
-#: unit2.rscreatepreset
-msgid "Create Preset:"
-msgstr "Sortu aurrezarpena"
-
 #~ msgid "http://ffmpeg.arrozcru.org/"
 #~ msgstr "http://ffmpeg.arrozcru.org/"
 #~ msgid "About WinFF"
@@ -875,6 +875,10 @@ msgstr "Sortu aurrezarpena"
 #~ msgstr "Denbora"
 #~ msgid "Crop"
 #~ msgstr "Ebaki"
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Sortu aurrezarpena"
+
 #: unit2.rsimportpresets
 msgid "Import Presets"
 msgstr "Inportatu aurrezarpenak"
