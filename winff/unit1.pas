@@ -2043,9 +2043,15 @@ begin                                     // get setup
        commandline := params;
        precommand := '';
        if vidbitrate.Text <> '' then
-               commandline:=replaceparam(commandline,'-b','-b ' + vidbitrate.text+'k');
+         begin
+               commandline:=replaceparam(commandline,'-b','-b:v ' + vidbitrate.text+'k');   // Old style
+               commandline:=replaceparam(commandline,'-b:v','-b:v ' + vidbitrate.text+'k'); // New style
+         end;
        if vidframerate.Text <> '' then
-               commandline:=replaceparam(commandline,'-r','-r ' + vidframerate.Text);
+         begin
+           commandline:=replaceparam(commandline,'-r','-r:v ' + vidframerate.Text); // Old style
+           commandline:=replaceparam(commandline,'-r:v','-r:v ' + vidframerate.Text); // New style
+         end;
 
     // Inserting Crop Routine here as per Issue 77 on code.google.com
     // Changed by Ian V1.3
@@ -2113,9 +2119,15 @@ begin                                     // get setup
        if edtAspectRatio.Text <> '' then
                commandline:=replaceparam(commandline,'-aspect','-aspect ' + edtAspectRatio.Text);
        if audbitrate.Text <> '' then
-               commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'k');
+              begin
+               commandline:=replaceparam(commandline,'-ab','-b:a ' + audbitrate.Text+'k'); // Old style
+               commandline:=replaceparam(commandline,'-b:a','-b:a ' + audbitrate.Text+'k'); // New style
+              end;
        if audsamplingrate.Text <> '' then
-               commandline:=replaceparam(commandline,'-ar','-ar ' + audsamplingrate.Text);
+         begin
+               commandline:=replaceparam(commandline,'-ar','-r:a ' + audsamplingrate.Text);
+               commandline:=replaceparam(commandline,'-r:a','-r:a ' + audsamplingrate.Text);
+         end;
        if audchannels.Text <> '' then
                commandline:=replaceparam(commandline,'-ac','-ac ' + audchannels.Text);
 
