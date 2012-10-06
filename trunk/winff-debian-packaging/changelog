@@ -1,3 +1,13 @@
+winff (1.4.3-1) experimental; urgency=low
+
+  * New upstream release
+    - Drop all patches as they are now in the release
+    - Remove shuffling of winff.po file in rules as it is now solved upstream
+  * debian/control
+    - Bump Standards-Version to 3.9.4 (no changes).
+
+ -- Paul Gevers <elbrus@debian.org>  Sat, 06 Oct 2012 20:30:04 +0200
+
 winff (1.4.2-4) experimental; urgency=low
 
   * Update d/control and d/copyright with my debian.org address

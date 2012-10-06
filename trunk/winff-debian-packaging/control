@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 7.0.50~),
  lcl-gtk2,
  lcl-qt4 (>= 0.9.30.4-2),
  fpc (>= 2.2.2-3),
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://www.winff.org/
 Vcs-Browser: http://code.google.com/p/winff/source/browse/#svn/trunk/winff-debian-packaging
 Vcs-Svn: http://winff.googlecode.com/svn/trunk/winff-debian-packaging
