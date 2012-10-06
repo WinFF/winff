@@ -1,0 +1,9 @@
+#! /bin/sh
+
+set -e
+
+# Remove alternatives
+update-alternatives --remove winff /usr/bin/winff-qt
+
+# Debhelper code
+#DEBHELPER#
