@@ -8,5 +8,7 @@
 *.rst
 *~
 winff
+winff-qt
+winff-gtk2
 winff.compiled
 winff.exe

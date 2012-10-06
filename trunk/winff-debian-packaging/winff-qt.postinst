@@ -1,0 +1,10 @@
+#! /bin/sh
+
+set -e
+
+# Add alternatives
+update-alternatives \
+	--install /usr/bin/winff winff /usr/bin/winff-qt 1
+
+# Debhelper code
+#DEBHELPER#
