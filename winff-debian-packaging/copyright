@@ -47,7 +47,7 @@ License: GFDL-1.3+
 Files: docs/License-Documents.txt
 Copyright: Copyright (C) 2000, 2001, 2002, 2007, 2008 Free Software
   Foundation, Inc. <http://fsf.org/>
-License: 
+License:
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
@@ -65,17 +65,17 @@ License: GFDL-1.3+
   any later version published by the Free Software Foundation;  with no
   Invariant Sections, no Front-Cover Texts, and no Back-Cover  Texts.
   A copy of the license should be found with this document. If you did
-  not obtain the license, it can be found at 
+  not obtain the license, it can be found at
   http://www.gnu.org/licenses/fdl.html.
   .
   On Debian systems, the complete text of the GNU Free Document License,
   version 1.3 can be found in /usr/share/common-licenses/GFDL-1.3.
 
 Files: debian/*
-Copyright: © 2008-2011 Paul Gevers <paul@climbing.nl>
+Copyright: © 2008-2012 Paul Gevers <elbrus@debian.org>
 License: GPL-3+
 
-Files: 
+Files:
   debian/winff.xpm
   winff.ico
   winff-icons/*

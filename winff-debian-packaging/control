@@ -1,26 +1,21 @@
 Source: winff
 Section: video
 Priority: extra
-Maintainer: Paul Gevers <paul@climbing.nl>
-DM-Upload-Allowed: yes
-Build-Depends: debhelper (>= 7.0~),
-	       lcl,
-	       lcl-gtk2,
-	       fpc (>= 2.2.2-3),
+Maintainer: Paul Gevers <elbrus@debian.org>
+Build-Depends: debhelper (>= 7.0.50~),
+ lcl,
+ lcl-gtk2,
+ lcl-qt4 (>= 0.9.30.4-2),
+ fpc (>= 2.2.2-3),
 Standards-Version: 3.9.3
 Homepage: http://www.winff.org/
 Vcs-Browser: http://code.google.com/p/winff/source/browse/#svn/trunk/winff-debian-packaging
 Vcs-Svn: http://winff.googlecode.com/svn/trunk/winff-debian-packaging
 
 Package: winff
-Architecture: any
-Depends: libav-tools | ffmpeg,
-	 xterm | x-terminal-emulator,
-	 ${shlibs:Depends},
-	 ${misc:Depends},
-Recommends: winff-doc,
-Suggests: www-browser,
-          libavcodec-extra-53 | libavcodec-extra-52,
+Architecture: all
+Depends: winff-gtk2 | winff-qt,
+ ${misc:Depends},
 Breaks: shared-mime-info (<< 0.40),
 Description: graphical video and audio batch converter using ffmpeg
  WinFF is a graphical user interface for FFmpeg. It will convert
@@ -39,11 +34,59 @@ Description: graphical video and audio batch converter using ffmpeg
  libavcodec-extra-## as suggested by this package. It might be necessary
  to enable additional repositories to find that package.
 
+Package: winff-gtk2
+Architecture: any
+Depends: libav-tools | ffmpeg,
+ xterm | x-terminal-emulator,
+ ${shlibs:Depends},
+ ${misc:Depends},
+Breaks: winff (<< 1.4.2-3),
+Replaces: winff (<< 1.4.2-3),
+Recommends: winff,
+Suggests: www-browser,
+ winff-doc,
+ libavcodec-extra-53,
+Description: GTK variant of winff
+ WinFF is a graphical user interface for FFmpeg. It will convert
+ almost any video file that FFmpeg will convert. WinFF does multiple
+ files in multiple formats at one time. You can, for example, convert
+ mpeg's, flv's, and mov's into avi's (or DVD/VCD format or MPEG or 3gp
+ etc.) all at once.
+ .
+ Users usually want to install the winff package and let their package
+ manager deside which winff variant to use. If you want to override the
+ packager's choice, you can additionally select the required variant.
+ This package provides the GTK variant of winff.
+
+Package: winff-qt
+Architecture: any
+Depends: libav-tools | ffmpeg,
+ xterm | x-terminal-emulator,
+ ${shlibs:Depends},
+ ${misc:Depends},
+Breaks: winff (<< 1.4.2-3),
+Replaces: winff (<< 1.4.2-3),
+Recommends: winff,
+Suggests: www-browser,
+ winff-doc,
+ libavcodec-extra-53,
+Description: Qt variant of winff
+ WinFF is a graphical user interface for FFmpeg. It will convert
+ almost any video file that FFmpeg will convert. WinFF does multiple
+ files in multiple formats at one time. You can, for example, convert
+ mpeg's, flv's, and mov's into avi's (or DVD/VCD format or MPEG or 3gp
+ etc.) all at once.
+ .
+ Users usually want to install the winff package and let their package
+ manager deside which winff variant to use. If you want to override the
+ packager's choice, you can additionally select the required variant.
+ This package provides the Qt variant of winff.
+
 Package: winff-dbg
 Architecture: any
 Section: debug
-Depends: winff (= ${binary:Version}),
-	 ${misc:Depends},
+Depends: winff-gtk2 (= ${binary:Version}) | winff-qt (= ${binary:Version}),
+ ${misc:Depends},
 Description: winff debugging symbols
  WinFF is a graphical user interface for FFmpeg. It will convert
  almost any video file that FFmpeg will convert. WinFF does multiple

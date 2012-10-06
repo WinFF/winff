@@ -1,3 +1,21 @@
+winff (1.4.2-4) experimental; urgency=low
+
+  * Update d/control and d/copyright with my debian.org address
+  * Build both a Qt and a GTK2 variant of winff now bug #627345 is closed.
+    - d/control: add winff-qt and winff-gtk2 and let winff depend on either
+    - Versioned Build-Depends on lcl-qt4 (instead of lcl-qt which doesn't exist)
+    - d/rules: build twice with different widget set
+    - d/winff-gtk2.* and d/winff-qt.*: add control files
+    - use alternatives to choose between variants in postinst and prerm
+    - symlink winff-gtk2 and winff-qt manpage to winff manpage
+  * Rewrite d/rules to uses short style dh
+    - Raise Build-Depends on debhelper to 7.0.50~
+    - Remove find line as all permissions are now correct by default after
+      dh_fixperms
+  * Remove debugging code in d/rules
+
+ -- Paul Gevers <elbrus@debian.org>  Sat, 28 Jul 2012 12:15:29 +0200
+
 winff (1.4.2-3) unstable; urgency=low
 
   * Use latest upstream changes
