@@ -1,0 +1,14 @@
+*.bak
+*.o
+*.or
+*.ppu
+*.lrs
+*.lps
+*.res
+*.rst
+*~
+winff
+winff-qt
+winff-gtk2
+winff.compiled
+winff.exe

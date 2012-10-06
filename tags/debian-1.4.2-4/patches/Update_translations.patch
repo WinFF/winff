@@ -1,0 +1,6291 @@
+Description: Update the language files with the latest from upstream
+Author: Paul Gevers <paul@climbing.nl>
+Forwarded: not-needed
+Origin: http://code.google.com/p/winff/source/detail?r=640
+
+Index: winff-git/languages/winff.nb.po
+===================================================================
+--- winff-git.orig/languages/winff.nb.po	2012-05-27 14:13:43.453973116 +0200
++++ winff-git/languages/winff.nb.po	2012-05-27 14:13:58.126045880 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Norwegian Bokmål
+-# Copyright (C) 2006-2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -14,13 +14,15 @@
+ # You should have received a copy of the GNU General Public License
+ # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ #
+-# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2011
++# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2012
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/nb/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: Winff 1.0\n"
+-"Report-Msgid-Bugs-To: \n"
++"Project-Id-Version: WinFF 1.4.2\n"
++"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+-"PO-Revision-Date: 2011-12-04 14:20+0100\n"
++"PO-Revision-Date: 2012-05-27 11:54+0200\n"
+ "Last-Translator: Paul Gevers <paul@climbing.nl>\n"
+ "Language-Team: \n"
+ "MIME-Version: 1.0\n"
+@@ -855,8 +857,8 @@
+ msgstr "Velg en forhåndsinnstilling"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
+-msgstr "Forhåndsinnstilling: %s%s%s finnes fra før"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
++msgstr "Forhåndsinnstilling: %s%s%s finnes fra før. Vil du erstatte denne forhåndsinnstilling?"
+ 
+ #: unit1.rspresethasnoext
+ msgid "The preset to import does not have an extension"
+@@ -878,6 +880,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Trykk Enter å fortsette"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr "Erstatt forhåndsinnstilling"
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Velg målmappe"
+@@ -898,10 +904,6 @@
+ msgid "Create Preset:"
+ msgstr "Lag forhåndsinnstilling:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Importer forhåndsinnstillinger"
+-
+ #~ msgid "About WinFF"
+ #~ msgstr "Om WinFF"
+ #~ msgid "http://ffmpeg.arrozcru.org/"
+@@ -913,6 +915,10 @@
+ #~ msgstr "Ekstra alternativer"
+ #~ msgid "Output Details"
+ #~ msgstr "Utdata detaljer"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Importer forhåndsinnstillinger"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Merkelappet må være entydig."
+Index: winff-git/languages/winff.el.po
+===================================================================
+--- winff-git.orig/languages/winff.el.po	2012-05-27 14:13:43.073971235 +0200
++++ winff-git/languages/winff.el.po	2012-05-27 14:13:58.130045891 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Greek
+-# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -15,20 +15,24 @@
+ # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ #
+ # Γεώργιος Γεωργάς <apopatos@myrealbox.com>, 2009
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/el/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.0.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+-"PO-Revision-Date: 2009-05-01\n"
+-"Last-Translator: Γεώργιος Γεωργάς <apopatos@myrealbox.com>\n"
++"PO-Revision-Date: 2012-03-26 22:56+0000\n"
++"Last-Translator: Dimitrios Ntoulas <Unknown>\n"
+ "Language-Team: \n"
+-"Language: \n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"X-Poedit-Language: Greek\n"
++"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
++"X-Generator: Launchpad (build 15282)\n"
+ "X-Poedit-Country: Hellas\n"
++"Language: \n"
++"X-Poedit-Language: Greek\n"
+ "X-Poedit-SourceCharset: utf-8\n"
+ 
+ #: TFORM1.FORM1.CAPTION
+@@ -41,17 +45,13 @@
+ msgstr "Εντάξει"
+ 
+ #: TFRMABOUT.FRMABOUT.CAPTION
+-#, fuzzy
+-#| msgid "About WinFF"
+ msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
+ msgid "About WinFF"
+ msgstr "Περί του WinFF"
+ 
+ #: TFRMABOUT.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "WinFF"
+ msgid "WinFF 1.3.2"
+-msgstr "WinFF"
++msgstr ""
+ 
+ #: TFRMABOUT.LABEL10.CAPTION
+ msgid "http://hawkeye.arrozcru.org/"
+@@ -59,7 +59,7 @@
+ 
+ #: TFRMABOUT.LABEL11.CAPTION
+ msgid "Debian/Ubuntu Packaging by Paul Gevers"
+-msgstr ""
++msgstr "Debian/Ubuntu πακέτο από τον Paul Gevers"
+ 
+ #: TFRMABOUT.LABEL13.CAPTION
+ msgid "Gmaq"
+@@ -71,7 +71,7 @@
+ 
+ #: TFRMABOUT.LABEL15.CAPTION
+ msgid "Icons and Logo by Alex Klepatsch"
+-msgstr ""
++msgstr "Εικονίδιο και λογότυπο από τον Alex Klepatsch"
+ 
+ #: TFRMABOUT.LABEL16.CAPTION
+ msgid "JNavas"
+@@ -90,11 +90,9 @@
+ msgstr ""
+ 
+ #: TFRMABOUT.LABEL5.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMABOUT.LABEL5.CAPTION"
+ msgid "FFmpeg"
+-msgstr "FFmpeg"
++msgstr ""
+ 
+ #: TFRMABOUT.LABEL6.CAPTION
+ msgid "Trademark Fabrice Belllard"
+@@ -105,28 +103,22 @@
+ msgstr ""
+ 
+ #: TFRMABOUT.LABEL8.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg builds by"
+ msgid "FFmpeg Windows Builds by"
+-msgstr "FFmpeg από"
++msgstr ""
+ 
+ #: TFRMABOUT.LABEL9.CAPTION
+ msgid "Kyle Schwarz"
+ msgstr ""
+ 
+ #: TFRMABOUT.PAGE1.CAPTION
+-#, fuzzy
+-#| msgid "WinFF"
+ msgctxt "TFRMABOUT.PAGE1.CAPTION"
+ msgid "WinFF"
+-msgstr "WinFF"
++msgstr ""
+ 
+ #: TFRMABOUT.PAGE2.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+ msgid "FFmpeg"
+-msgstr "FFmpeg"
++msgstr ""
+ 
+ #: TFRMABOUT.PAGE3.CAPTION
+ msgid "Thanks"
+@@ -137,8 +129,6 @@
+ msgstr "Προσθήκη / Αναβάθμιση"
+ 
+ #: TFRMEDITPRESETS.CANCELBTN.CAPTION
+-#, fuzzy
+-#| msgid "Close"
+ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+ msgid "Close"
+ msgstr "Κλείσιμο"
+@@ -160,10 +150,8 @@
+ msgstr ""
+ 
+ #: TFRMEDITPRESETS.EDIT3.HINT
+-#, fuzzy
+-#| msgid "Preset Command Line (no -i or output file)"
+ msgid "Please don't use -i or output file parameters"
+-msgstr "Γραμμή εντολών Preset (όχι -i ή τελικό αρχείο)"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.EDIT4.HINT
+ msgid "Do not include a dot"
+@@ -174,8 +162,6 @@
+ msgstr ""
+ 
+ #: TFRMEDITPRESETS.EXPORT.CAPTION
+-#, fuzzy
+-#| msgid "Export"
+ msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+ msgid "Export"
+ msgstr "Εξαγωγή"
+@@ -185,14 +171,10 @@
+ msgstr "Εισαγωγή"
+ 
+ #: TFRMEDITPRESETS.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Create Preset:"
+ msgid "Category / Preset"
+-msgstr "Δημιμουργία Preset"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.LABEL2.CAPTION
+-#, fuzzy
+-#| msgid "Preset Name (One word , Only A-z 0-9)"
+ msgid "Preset Name (one word, only letters and numbers)"
+ msgstr "Όνομα Preset (Μία λέξη, Μόνο A-z 0-9"
+ 
+@@ -217,8 +199,6 @@
+ msgstr "Κατηγορία"
+ 
+ #: TFRMEDITPRESETS.OKBTN.CAPTION
+-#, fuzzy
+-#| msgid "Save"
+ msgid "Save"
+ msgstr "Αποθήκευση"
+ 
+@@ -227,8 +207,6 @@
+ msgstr ""
+ 
+ #: TFRMEXPORT.CANCELBTN.CAPTION
+-#, fuzzy
+-#| msgid "Cancel"
+ msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+ msgid "Cancel"
+ msgstr "Άκυρο"
+@@ -238,15 +216,11 @@
+ msgstr "Εξαγωγή Presets"
+ 
+ #: TFRMEXPORT.EXPORTBTN.CAPTION
+-#, fuzzy
+-#| msgid "Export"
+ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+ msgid "Export"
+ msgstr "Εξαγωγή"
+ 
+ #: TFRMEXPORT.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Choose presets to export"
+ msgid "Choose Presets to Export:"
+ msgstr "Επιλογή Presets για εξαγωγή"
+ 
+@@ -272,11 +246,9 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+-#, fuzzy
+-#| msgid "Output Folder"
+ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+ msgid "Apply Output Folder"
+-msgstr "Φάκελος Προορισμού"
++msgstr ""
+ 
+ #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+@@ -300,8 +272,6 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.BTNOPTIONS.CAPTION
+-#, fuzzy
+-#| msgid "Options"
+ msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+ msgid "Options"
+ msgstr "Επιλογές"
+@@ -335,11 +305,9 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.CAPTION
+-#, fuzzy
+-#| msgid "WinFF"
+ msgctxt "TFRMMAIN.CAPTION"
+ msgid "WinFF"
+-msgstr "WinFF"
++msgstr ""
+ 
+ #: TFRMMAIN.CATEGORYBOX.HINT
+ msgid "Device or file type the video should be converted to"
+@@ -438,27 +406,21 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Convert"
+ msgid "Convert to:"
+-msgstr "Μετατροπή"
++msgstr ""
+ 
+ #: TFRMMAIN.LABEL10.CAPTION
+ msgid "Audio Channels"
+ msgstr "Κανάλια Ήχου"
+ 
+ #: TFRMMAIN.LABEL12.CAPTION
+-#, fuzzy
+-#| msgid "Output Folder"
+ msgctxt "TFRMMAIN.LABEL12.CAPTION"
+ msgid "Output Folder:"
+ msgstr "Φάκελος Προορισμού"
+ 
+ #: TFRMMAIN.LABEL19.CAPTION
+-#, fuzzy
+-#| msgid "Presets"
+ msgid "Preset:"
+-msgstr "Presets"
++msgstr ""
+ 
+ #: TFRMMAIN.LABEL20.CAPTION
+ msgid "Volume"
+@@ -481,10 +443,8 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.LABEL3.CAPTION
+-#, fuzzy
+-#| msgid "Additional Command Line Parameters (Advanced)"
+ msgid "Additional Command Line Parameters"
+-msgstr "Επιπλέον Παράμετροι Γραμμής Εντολών (Για Προχωρημένους)"
++msgstr "Επιπλέον Παράμετροι Γραμμής Εντολών"
+ 
+ #: TFRMMAIN.LABEL7.CAPTION
+ msgid "Audio Bitrate"
+@@ -511,10 +471,8 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.LBLCROPRIGHT.CAPTION
+-#, fuzzy
+-#| msgid "High"
+ msgid "Right"
+-msgstr "Υψηλή"
++msgstr ""
+ 
+ #: TFRMMAIN.LBLCROPTOP.CAPTION
+ msgid "Top"
+@@ -547,16 +505,12 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.MITABOUT.CAPTION
+-#, fuzzy
+-#| msgid "About"
+ msgid "About"
+-msgstr "Περί"
++msgstr ""
+ 
+ #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+-#, fuzzy
+-#| msgid "Display CMD Line"
+ msgid "Display Cmd Line"
+-msgstr "Προβολή Γραμμής Εντολών"
++msgstr ""
+ 
+ #: TFRMMAIN.MITDOCS.CAPTION
+ msgid "Documentation"
+@@ -567,10 +521,8 @@
+ msgstr "Έξοδος"
+ 
+ #: TFRMMAIN.MITFORUMS.CAPTION
+-#, fuzzy
+-#| msgid "WinFF Forums"
+ msgid "Forums"
+-msgstr "Φόρουμ WinFF"
++msgstr "Φόρουμ"
+ 
+ #: TFRMMAIN.MITIMPORTPRESET.CAPTION
+ msgid "Import Preset"
+@@ -581,24 +533,18 @@
+ msgstr "Πάγωμα μετά το Πέρας"
+ 
+ #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+-#, fuzzy
+-#| msgid "Pause on Finish"
+ msgid "Play Sound on Finish"
+-msgstr "Πάγωμα μετά το Πέρας"
++msgstr ""
+ 
+ #: TFRMMAIN.MITPREFERENCES.CAPTION
+ msgid "Preferences"
+ msgstr "Προτιμήσεις"
+ 
+ #: TFRMMAIN.MITPRESETS.CAPTION
+-#, fuzzy
+-#| msgid "Presets"
+ msgid "Presets"
+-msgstr "Presets"
++msgstr ""
+ 
+ #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+-#, fuzzy
+-#| msgid "Additional Options"
+ msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+ msgid "Additional Options"
+ msgstr "Επιπλέον Επιλογές"
+@@ -628,8 +574,6 @@
+ msgstr "Βοήθεια"
+ 
+ #: TFRMMAIN.MNUOPTIONS.CAPTION
+-#, fuzzy
+-#| msgid "Options"
+ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+ msgid "Options"
+ msgstr "Επιλογές"
+@@ -643,18 +587,14 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.TABSHEET1.CAPTION
+-#, fuzzy
+-#| msgid "Video Size"
+ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+ msgid "Video"
+-msgstr "Μέγεθος Βίντεο"
++msgstr ""
+ 
+ #: TFRMMAIN.TABSHEET2.CAPTION
+-#, fuzzy
+-#| msgid "Audio Settings"
+ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+ msgid "Audio"
+-msgstr "Ρυθμίσεις Ήχου"
++msgstr ""
+ 
+ #: TFRMMAIN.TABSHEET3.CAPTION
+ msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+@@ -667,15 +607,11 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.TABSHEET5.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+ msgid "FFmpeg"
+-msgstr "FFmpeg"
++msgstr ""
+ 
+ #: TFRMMAIN.TABSHEET6.CAPTION
+-#, fuzzy
+-#| msgid "Output Details"
+ msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+ msgid "Output Details"
+ msgstr "Λεπτομέρειες Παραγωγής"
+@@ -700,15 +636,11 @@
+ msgstr ""
+ 
+ #: TFRMPREFERENCES.BUTTON1.CAPTION
+-#, fuzzy
+-#| msgid "OK"
+ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+ msgid "OK"
+ msgstr "Εντάξει"
+ 
+ #: TFRMPREFERENCES.BUTTON2.CAPTION
+-#, fuzzy
+-#| msgid "Cancel"
+ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+ msgid "Cancel"
+ msgstr "Άκυρο"
+@@ -748,8 +680,6 @@
+ msgstr "Προτιμήσεις WinFF"
+ 
+ #: TFRMPREFERENCES.CHECKBOX1.CAPTION
+-#, fuzzy
+-#| msgid "Remember Last Directory Used"
+ msgid "Remember Last Used Directory"
+ msgstr "Απομνημόνευση Τελευταίου Καταλόγου"
+ 
+@@ -762,60 +692,42 @@
+ msgstr ""
+ 
+ #: TFRMPREFERENCES.EDIT7.HINT
+-#, fuzzy
+-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+ msgid "'-e' for xterm, '-x' for gnome-terminal"
+-msgstr "Επιλογές Τερματικού (-e για Xterm, -x για Τερματικό Gnome"
++msgstr "-e για Xterm, -x για Τερματικό Gnome"
+ 
+ #: TFRMPREFERENCES.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Default Destination Directory"
+ msgid "Default Destination Directory:"
+ msgstr "Προεπιλεγμένος Φάκελος Προορισμού"
+ 
+ #: TFRMPREFERENCES.LABEL2.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFmpeg Executable"
+ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+ msgid "Path to FFmpeg Executable:"
+ msgstr "Διαδρομή Εκτελέσιμου FFmpeg"
+ 
+ #: TFRMPREFERENCES.LABEL3.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFPlay Executable"
+ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+ msgid "Path to FFplay Executable:"
+ msgstr "Διαδρομή Εκτελέσιμου FFPlay"
+ 
+ #: TFRMPREFERENCES.LABEL4.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFmpeg Executable"
+ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+ msgid "Path to FFmpeg Executable:"
+ msgstr "Διαδρομή Εκτελέσιμου FFmpeg"
+ 
+ #: TFRMPREFERENCES.LABEL5.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFPlay Executable"
+ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+ msgid "Path to FFplay Executable:"
+ msgstr "Διαδρομή Εκτελέσιμου FFPlay"
+ 
+ #: TFRMPREFERENCES.LABEL6.CAPTION
+-#, fuzzy
+-#| msgid "Terminal to run FFmpeg"
+ msgid "Terminal to run FFmpeg in:"
+ msgstr "Τερματικό Εκτέλεσης FFmpeg"
+ 
+ #: TFRMPREFERENCES.LABEL7.CAPTION
+-#, fuzzy
+-#| msgid "Additional Options"
+ msgid "Terminal Options:"
+-msgstr "Επιπλέον Επιλογές"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.LABEL8.CAPTION
+-#, fuzzy
+-#| msgid "Priority"
+ msgid "Priority:"
+ msgstr "Προτεραιότητα"
+ 
+@@ -824,10 +736,8 @@
+ msgstr "Γενικά"
+ 
+ #: TFRMPREFERENCES.PAGE2.CAPTION
+-#, fuzzy
+-#| msgid "Ms Windows"
+ msgid "MS Windows"
+-msgstr "Ms Windows"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.PAGE3.CAPTION
+ msgid "Linux"
+@@ -838,8 +748,6 @@
+ msgstr ""
+ 
+ #: TFRMSCRIPT.BTNCLOSE.CAPTION
+-#, fuzzy
+-#| msgid "Close"
+ msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+ msgid "Close"
+ msgstr "Κλείσιμο"
+@@ -901,13 +809,13 @@
+ msgstr "Παρακαλώ προσθέστε ένα τουλάχιστον αρχείο για μετατροπή"
+ 
+ #: unit1.rspleaseselectapreset
+-#, fuzzy
+-#| msgid "Please select a preset to export"
+ msgid "Please select a preset"
+-msgstr "Παρακαλώ επιλέξετε ένα Preset για εξαγωγή"
++msgstr ""
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Το Preset: %s%s%s υπάρχει ήδη"
+ 
+ #: unit1.rspresethasnoext
+@@ -928,13 +836,15 @@
+ 
+ #: unit1.rspressenter
+ msgid "Press Enter to Continue"
+-msgstr "Πατήστε Emter για να συνεχίσετε"
++msgstr "Πατήστε Enter για να συνεχίσετε"
++
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
+ 
+ #: unit1.rsselectdirectory
+-#, fuzzy
+-#| msgid "Default Destination Directory"
+ msgid "Select Directory"
+-msgstr "Προεπιλεγμένος Φάκελος Προορισμού"
++msgstr ""
+ 
+ #: unit1.rsselectpresetfile
+ msgid "Select Preset File"
+@@ -956,64 +866,6 @@
+ msgid "Import Presets"
+ msgstr "Εισαγωγή Presets"
+ 
+-#~| msgid "WinFF"
+-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+-#~ msgid "WinFF"
+-#~ msgstr "WinFF"
+-#~| msgid "Additional Options"
+-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+-#~ msgid "Additional Options"
+-#~ msgstr "Επιπλέον Επιλογές"
+-#~ msgid "(All Categories)"
+-#~ msgstr "(Όλες οι Κατηγορίες)"
+-#~ msgid "Convert To ..."
+-#~ msgstr "Μετατροπή Σε..."
+-#~ msgid "Device Preset"
+-#~ msgstr "Preset Συσκευής"
+-#~| msgid "About"
+-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+-#~ msgid "About"
+-#~ msgstr "Περί"
+-#~| msgid "Options"
+-#~ msgctxt "REMOVED4"
+-#~ msgid "Options"
+-#~ msgstr "Επιλογές"
+-#~ msgid "Video Settings"
+-#~ msgstr "Ρυθμίσεις Βίντεο"
+-#~ msgid "Audio Settings"
+-#~ msgstr "Ρυθμίσεις Ήχου"
+-#~| msgid "Cancel"
+-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+-#~ msgid "Cancel"
+-#~ msgstr "Άκυρο"
+-#~| msgid "Presets"
+-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+-#~ msgid "Presets"
+-#~ msgstr "Presets"
+-#~ msgid "Multithreading for Dual Core Processors"
+-#~ msgstr "Πολυεπεξεργασία για Διπλοπύρηνους Επεξεργαστές"
+-#~ msgid "Path to FFmpeg.exe"
+-#~ msgstr "διαδρομή για το FFmpeg.exe"
+-#~ msgid "Path to FFPlay.exe"
+-#~ msgstr "Διαδρομή για το FFPlay.exe"
+-#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+-#~| msgid "OK"
+-#~ msgctxt "REMOVED8"
+-#~ msgid "OK"
+-#~ msgstr "Εντάξει"
+-#~| msgid "Converting"
+-#~ msgid "Continue"
+-#~ msgstr "Μετατροπή"
+-#~| msgid "Save"
+-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+-#~ msgid "Save"
+-#~ msgstr "Αποθήκευση"
+-#~ msgid "Replace Preset"
+-#~ msgstr "Αντικατάσταση Preset"
+-#~| msgid "FFmpeg"
+-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+-#~ msgid "FFmpeg"
+-#~ msgstr "FFmpeg"
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Η ετικέτα πρέπει να είναι μοναδική"
+@@ -1047,7 +899,6 @@
+ msgstr "Αδρανές"
+ 
+ #: unit4.rsprioritynormal
+-#, fuzzy
+ msgid "Normal"
+ msgstr "Κανονική"
+ 
+Index: winff-git/languages/winff.po
+===================================================================
+--- winff-git.orig/languages/winff.po	2012-05-27 14:13:43.877975228 +0200
++++ winff-git/languages/winff.po	2012-05-27 14:13:58.142045954 +0200
+@@ -1,9 +1,9 @@
+-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ # This file is distributed under the same license as the winff package.
+ # FIRST AUTHOR <EMAIL@ADDRESS>, <YEAR>.
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.3.2\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: \n"
+@@ -788,7 +788,7 @@
+ msgstr ""
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr ""
+ 
+ #: unit1.rspresethasnoext
+@@ -811,6 +811,10 @@
+ msgid "Press Enter to Continue"
+ msgstr ""
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr ""
+Index: winff-git/languages/winff.gl.po
+===================================================================
+--- winff-git.orig/languages/winff.gl.po	2012-05-27 14:13:43.169971711 +0200
++++ winff-git/languages/winff.gl.po	2012-05-27 14:13:58.142045954 +0200
+@@ -1,4 +1,4 @@
+-# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -15,7 +15,7 @@
+ #
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.0.4\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2010-12-03 22:47+0100\n"
+@@ -929,7 +929,9 @@
+ msgstr "Por favor, elixa un valor preestablecido"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "A preconfiguración: %s%s%s xa existe"
+ 
+ #: unit1.rspresethasnoext
+@@ -952,6 +954,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Prema Intro para continuar"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Seleccionar cartafol"
+@@ -972,10 +978,6 @@
+ msgid "Create Preset:"
+ msgstr "Crear preconfiguración:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Importar preconfiguracións"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1029,6 +1031,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Importar preconfiguracións"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "A etiqueta ten que ser única"
+Index: winff-git/languages/winff.ar.po
+===================================================================
+--- winff-git.orig/languages/winff.ar.po	2012-05-27 14:13:43.493973318 +0200
++++ winff-git/languages/winff.ar.po	2012-05-27 14:13:58.142045954 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Arabic
+-# Copyright (C) 2009-2010 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -17,7 +17,7 @@
+ # MrTux <ashrafkhalaf@gmail.com>, 2010
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: Winff\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2010-04-05 01:17+0200\n"
+@@ -927,7 +927,9 @@
+ msgstr "رجاء حدد ملفا"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "الملف %s%s%s موجود بالفعل"
+ 
+ #: unit1.rspresethasnoext
+@@ -950,6 +952,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "اضغط زر \"Enter \"للاستمرار"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -972,10 +978,6 @@
+ msgid "Create Preset:"
+ msgstr "إنشاء نسبة"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "استيراد نسبة"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1025,6 +1027,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "استيراد نسبة"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "الوسم لابد أن يكون فريدا"
+Index: winff-git/languages/winff.fr.po
+===================================================================
+--- winff-git.orig/languages/winff.fr.po	2012-05-27 14:13:42.833970045 +0200
++++ winff-git/languages/winff.fr.po	2012-05-27 14:13:58.146045973 +0200
+@@ -1,4 +1,4 @@
+-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -18,7 +18,7 @@
+ # https://translations.launchpad.net/winff/trunk/+pots/winff/fr/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 0.45.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2011-12-07 22:57+0000\n"
+@@ -805,7 +805,9 @@
+ msgstr "Veuillez choisir un modèle"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Le préréglage %s%s%s existe déjà"
+ 
+ #: unit1.rspresethasnoext
+@@ -828,6 +830,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Appuyez sur Entrée pour continuer"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Sélectionner un répertoire"
+Index: winff-git/languages/winff.kn.po
+===================================================================
+--- winff-git.orig/languages/winff.kn.po	2012-05-27 14:13:43.773974704 +0200
++++ winff-git/languages/winff.kn.po	2012-05-27 14:13:58.150045998 +0200
+@@ -3,9 +3,11 @@
+ # This file is distributed under the same license as the winff package.
+ # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+ #
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/kn/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: winff\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2011-12-09 13:28+0000\n"
+@@ -791,7 +793,7 @@
+ msgstr ""
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr ""
+ 
+ #: unit1.rspresethasnoext
+@@ -814,6 +816,10 @@
+ msgid "Press Enter to Continue"
+ msgstr ""
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr ""
+Index: winff-git/languages/winff.nl.po
+===================================================================
+--- winff-git.orig/languages/winff.nl.po	2012-05-27 14:13:43.109971410 +0200
++++ winff-git/languages/winff.nl.po	2012-05-27 14:13:58.150045998 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Dutch
+-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -15,14 +15,16 @@
+ # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ #
+ # Roger Gabriels, 2008
+-# Paul Gevers <paul@climbing.nl>, 2009-2011.
++# Paul Gevers <paul@climbing.nl>, 2009-2012
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/nl/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: winff\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+-"PO-Revision-Date: 2011-12-18 19:09+0000\n"
+-"Last-Translator: Niels Verploegen <Unknown>\n"
++"PO-Revision-Date: 2012-05-27 11:56+0200\n"
++"Last-Translator: Paul Gevers <paul@climbing.nl>\n"
+ "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+@@ -807,8 +809,8 @@
+ msgstr "Selecteer een voorinstellingbestand"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
+-msgstr "Voorinstelling: %s%s%s bestaat reeds"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
++msgstr "Voorinstelling: %s%s%s bestaat reeds. Wilt u deze vervangen?"
+ 
+ #: unit1.rspresethasnoext
+ msgid "The preset to import does not have an extension"
+@@ -830,14 +832,14 @@
+ msgid "Press Enter to Continue"
+ msgstr "Druk 'enter' om verder te gaan"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Selecteer doelmap"
+ 
+-#: unit1.rsselectpresetfile
+-msgid "Select Preset File"
+-msgstr "Selecteer voorinstellingbestand"
+-
+ #~ msgid " will be applied to all jobs when the conversion starts"
+ #~ msgstr "toegepast op alle video's op het moment dat de convertie begint."
+ #~ msgid "Ramiro Polla"
+@@ -892,6 +894,10 @@
+ #~ msgctxt "REMOVED8"
+ #~ msgid "OK"
+ #~ msgstr "Accepteren"
++#: unit1.rsselectpresetfile
++msgid "Select Preset File"
++msgstr "Selecteer voorinstellingbestand"
++
+ #: unit1.rsselectvideofiles
+ msgid "Select Video Files"
+ msgstr "Selecteer videobestanden"
+Index: winff-git/languages/winff.pl.po
+===================================================================
+--- winff-git.orig/languages/winff.pl.po	2012-05-27 14:13:43.805974864 +0200
++++ winff-git/languages/winff.pl.po	2012-05-27 14:13:58.154046009 +0200
+@@ -18,7 +18,7 @@
+ # Kamil Garbala <elkanguro@orange.pl>, 2010
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: \n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2010-02-22 12:34+0100\n"
+@@ -927,7 +927,9 @@
+ msgstr "Wybierz szablon"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Szablon: %s%s%s już istnieje"
+ 
+ #: unit1.rspresethasnoext
+@@ -950,6 +952,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Naciśnij Enter by kontynuować"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -972,10 +978,6 @@
+ msgid "Create Preset:"
+ msgstr "Stwórz szablon:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Importuj szablony"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1029,6 +1031,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Importuj szablony"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Opis musi byc unikalny."
+Index: winff-git/languages/winff.it.po
+===================================================================
+--- winff-git.orig/languages/winff.it.po	2012-05-27 14:13:42.761969694 +0200
++++ winff-git/languages/winff.it.po	2012-05-27 14:13:58.158046030 +0200
+@@ -19,7 +19,7 @@
+ # https://translations.launchpad.net/winff/trunk/+pots/winff/it/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 0.45.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2012-02-16 15:29+0000\n"
+@@ -278,12 +278,8 @@
+ msgstr "Riproduci"
+ 
+ #: TFRMMAIN.BTNPLAY.HINT
+-msgid ""
+-"Preview the selected source file with ffplay (good test to see if conversion "
+-"is possible)"
+-msgstr ""
+-"Mostra l'anteprima del file sorgente selezionato con ffplay (un buon test "
+-"per sapere se la conversione è possibile)"
++msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
++msgstr "Mostra l'anteprima del file sorgente selezionato con ffplay (un buon test per sapere se la conversione è possibile)"
+ 
+ #: TFRMMAIN.BTNPREVIEW.CAPTION
+ msgid "Preview"
+@@ -320,12 +316,8 @@
+ msgstr "2 passaggi"
+ 
+ #: TFRMMAIN.CBX2PASS.HINT
+-msgid ""
+-"Using two passes allows the encoder to gather information in the first run "
+-"for enhanced quality"
+-msgstr ""
+-"Usare due passaggi permette al codificatore di raccogliere informazioni al "
+-"primo passaggio per una qualità maggiore"
++msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
++msgstr "Usare due passaggi permette al codificatore di raccogliere informazioni al primo passaggio per una qualità maggiore"
+ 
+ #: TFRMMAIN.CBXDEINTERLACE.CAPTION
+ msgid "Deinterlace"
+@@ -341,28 +333,16 @@
+ msgstr "..."
+ 
+ #: TFRMMAIN.DESTFOLDER.HINT
+-msgid ""
+-"Target location for the final video (choose a different folder than the "
+-"source folder)"
+-msgstr ""
+-"Posizione del video finale (scegli una cartella differente da quella della "
+-"fonte)"
++msgid "Target location for the final video (choose a different folder than the source folder)"
++msgstr "Posizione del video finale (scegli una cartella differente da quella della fonte)"
+ 
+ #: TFRMMAIN.EDTASPECTRATIO.HINT
+-msgid ""
+-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+-"display"
+-msgstr ""
+-"(<integer:integer> or <real>) il rapporto d'aspetto fisico (DAR) del display "
+-"obiettivo"
++msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
++msgstr "(<integer:integer> or <real>) il rapporto d'aspetto fisico (DAR) del display obiettivo"
+ 
+ #: TFRMMAIN.EDTAUDIOSYNC.HINT
+-msgid ""
+-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+-"\"stretch\"/\"squeeze\" audio stream."
+-msgstr ""
+-"(<integer>) Da 10 fino a frequenze di campionamento come 44100, 48000. "
+-"Permette  un flusso audio con \"stretch\"/\"squeeze\"."
++msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
++msgstr "(<integer>) Da 10 fino a frequenze di campionamento come 44100, 48000. Permette  un flusso audio con \"stretch\"/\"squeeze\"."
+ 
+ #: TFRMMAIN.EDTCROPBOTTOM.TEXT
+ msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+@@ -387,20 +367,17 @@
+ #: TFRMMAIN.EDTSEEKHH.HINT
+ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+ msgid "<hh:mm:ss> - Seek to this position before start converting"
+-msgstr ""
+-"<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
++msgstr "<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
+ 
+ #: TFRMMAIN.EDTSEEKMM.HINT
+ msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+ msgid "<hh:mm:ss> - Seek to this position before start converting"
+-msgstr ""
+-"<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
++msgstr "<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
+ 
+ #: TFRMMAIN.EDTSEEKSS.HINT
+ msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+ msgid "<hh:mm:ss> - Seek to this position before start converting"
+-msgstr ""
+-"<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
++msgstr "<hh:mm:ss> - Cerca in questa posizione prima di iniziare la conversione"
+ 
+ #: TFRMMAIN.EDTTTRHH.HINT
+ msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+@@ -418,11 +395,8 @@
+ msgstr "<hh:mm:ss> - Finisci dopo aver convertito questa lunghezza di video"
+ 
+ #: TFRMMAIN.EDTVOLUME.HINT
+-msgid ""
+-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+-msgstr ""
+-"<integer>) 256 = Volume Attuale, 128 = Dimezza il Volume, 512 = Raddoppia il "
+-"Volume"
++msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
++msgstr "<integer>) 256 = Volume Attuale, 128 = Dimezza il Volume, 512 = Raddoppia il Volume"
+ 
+ #: TFRMMAIN.LABEL1.CAPTION
+ msgid "Convert to:"
+@@ -603,8 +577,7 @@
+ 
+ #: TFRMMAIN.PRESETBOX.HINT
+ msgid "Specific settings to use for the chosen device or file type"
+-msgstr ""
+-"Settaggi specifici da usare per il dispositivo od il tipo di file scelto"
++msgstr "Settaggi specifici da usare per il dispositivo od il tipo di file scelto"
+ 
+ #: TFRMMAIN.TABSHEET1.CAPTION
+ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+@@ -647,23 +620,13 @@
+ 
+ #: TFRMMAIN.VIDSIZEX.HINT
+ msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+-msgid ""
+-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+-msgstr ""
+-"(<integer> X <integer>) Numero di pixel in ogni frame. Per i codecs che non "
+-"supportano il rapporto pixel/aspetto (PAR) questa è la dimensione finale del "
+-"frame."
++msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
++msgstr "(<integer> X <integer>) Numero di pixel in ogni frame. Per i codecs che non supportano il rapporto pixel/aspetto (PAR) questa è la dimensione finale del frame."
+ 
+ #: TFRMMAIN.VIDSIZEY.HINT
+ msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+-msgid ""
+-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+-msgstr ""
+-"(<integer> X <integer>) Numero di pixel in ogni frame. Per i codecs che non "
+-"supportano il rapporto pixel/aspetto (PAR) questa è la dimensione finale del "
+-"frame."
++msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
++msgstr "(<integer> X <integer>) Numero di pixel in ogni frame. Per i codecs che non supportano il rapporto pixel/aspetto (PAR) questa è la dimensione finale del frame."
+ 
+ #: TFRMPREFERENCES.BUTTON1.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+@@ -843,7 +806,9 @@
+ msgstr "Selezionare il profilo"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Profilo: %s%s%s già  esistente"
+ 
+ #: unit1.rspresethasnoext
+@@ -866,6 +831,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Premere INVIO per continuare"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Seleziona Cartella"
+@@ -925,3 +894,4 @@
+ #: unit4.rsprioritynormal
+ msgid "Normal"
+ msgstr "Normale"
++
+Index: winff-git/languages/winff.sl.po
+===================================================================
+--- winff-git.orig/languages/winff.sl.po	2012-05-27 14:13:43.737974527 +0200
++++ winff-git/languages/winff.sl.po	2012-05-27 14:13:58.158046030 +0200
+@@ -1,4 +1,4 @@
+-# Copyright (C) 2009-2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -18,7 +18,7 @@
+ # https://translations.launchpad.net/winff/trunk/+pots/winff/fr/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 0.45.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2011-08-07 19:37+0000\n"
+@@ -857,7 +857,9 @@
+ msgstr ""
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Prednastavitev: %s%s%s že obstaja"
+ 
+ #: unit1.rspresethasnoext
+@@ -880,6 +882,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Pritisnite Enter za nadaljevanje"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr ""
+@@ -900,10 +906,6 @@
+ msgid "Create Preset:"
+ msgstr "Ustvari prednastavitev:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Uvozi prednastavitve"
+-
+ #~| msgid "Select Video Files"
+ #~ msgid "Select Video Files..."
+ #~ msgstr "Izberite video datoteke"
+@@ -918,6 +920,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Uvozi prednastavitve"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Oznaka mora biti enkratna."
+Index: winff-git/languages/winff.ca.po
+===================================================================
+--- winff-git.orig/languages/winff.ca.po	2012-05-27 14:13:43.529973503 +0200
++++ winff-git/languages/winff.ca.po	2012-05-27 14:13:58.418047344 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Catalan
+-# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -17,7 +17,7 @@
+ # Benny Beat <bennybeat@gmail.com>, 2009
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 0.45.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2010-01-18 21:38+0100\n"
+@@ -922,7 +922,9 @@
+ msgstr "Por favor, elegir un valor preestablecido"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "La configuració: %s%s%s ja existeix"
+ 
+ #: unit1.rspresethasnoext
+@@ -945,6 +947,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Premeu Intro per a continuar"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -967,10 +973,6 @@
+ msgid "Create Preset:"
+ msgstr "Crea una nova configuració:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Importa una configuració"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1024,6 +1026,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Importa una configuració"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "L'etiqueta ha de ser única."
+Index: winff-git/languages/winff.pt.po
+===================================================================
+--- winff-git.orig/languages/winff.pt.po	2012-05-27 14:13:43.665974171 +0200
++++ winff-git/languages/winff.pt.po	2012-05-27 14:13:58.422047337 +0200
+@@ -1,5 +1,5 @@
+ # Translation of winff messages to Portuguese
+-# Copyright (C) 2008-2010 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -16,114 +16,106 @@
+ #
+ # Luís Torrao <luistorrao@gmail.com>, 2008.
+ # Américo Monteiro <a_monteiro@netcabo.pt>, 2010.
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/pt/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: winff 1.2.0\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+-"PO-Revision-Date: 2010-02-07 02:12+0000\n"
+-"Last-Translator: Américo Monteiro <a_monteiro@netcabo.pt>\n"
++"PO-Revision-Date: 2012-02-29 12:04+0000\n"
++"Last-Translator: Sérgio Marques <Unknown>\n"
+ "Language-Team: Portuguese <traduz@debianpt.org>\n"
+-"Language: pt\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "X-Generator: Lokalize 1.0\n"
+ "Plural-Forms: nplurals=2; plural=(n != 1);\n"
++"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
++"X-Generator: Launchpad (build 15282)\n"
++"Language: pt\n"
+ 
+ #: TFORM1.FORM1.CAPTION
+ msgid "Form1"
+-msgstr ""
++msgstr "Form1"
+ 
+ #: TFRMABOUT.BUTTON1.CAPTION
+ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+ msgid "OK"
+-msgstr "OK"
++msgstr "Aceitar"
+ 
+ #: TFRMABOUT.FRMABOUT.CAPTION
+-#, fuzzy
+-#| msgid "About WinFF"
+ msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
+ msgid "About WinFF"
+-msgstr "Acerca do WinFF"
++msgstr "Sobre WinFF"
+ 
+ #: TFRMABOUT.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "WinFF"
+ msgid "WinFF 1.3.2"
+ msgstr "WinFF"
+ 
+ #: TFRMABOUT.LABEL10.CAPTION
+ msgid "http://hawkeye.arrozcru.org/"
+-msgstr ""
++msgstr "http://hawkeye.arrozcru.org/"
+ 
+ #: TFRMABOUT.LABEL11.CAPTION
+ msgid "Debian/Ubuntu Packaging by Paul Gevers"
+-msgstr ""
++msgstr "Pacotes  Debian/Ubuntu por by Paul Gevers"
+ 
+ #: TFRMABOUT.LABEL13.CAPTION
+ msgid "Gmaq"
+-msgstr ""
++msgstr "Gmaq"
+ 
+ #: TFRMABOUT.LABEL14.CAPTION
+ msgid "High Quality Presets From"
+-msgstr ""
++msgstr "Pré-ajustes de alta qualidade"
+ 
+ #: TFRMABOUT.LABEL15.CAPTION
+ msgid "Icons and Logo by Alex Klepatsch"
+-msgstr ""
++msgstr "Ícones e logo por Alex Klepatsch"
+ 
+ #: TFRMABOUT.LABEL16.CAPTION
+ msgid "JNavas"
+-msgstr ""
++msgstr "JNavas"
+ 
+ #: TFRMABOUT.LABEL2.CAPTION
+ msgid "Copyright 2006-2009 GPL V3"
+-msgstr ""
++msgstr "Direitos de autor 2006-2012 GPL V3"
+ 
+ #: TFRMABOUT.LABEL3.CAPTION
+ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+-msgstr ""
++msgstr "Matthew Weatherford,  Ian Stoffberg e Alexey Osipov"
+ 
+ #: TFRMABOUT.LABEL4.CAPTION
+ msgid "http://www.winff.org"
+-msgstr ""
++msgstr "http://www.winff.org"
+ 
+ #: TFRMABOUT.LABEL5.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMABOUT.LABEL5.CAPTION"
+ msgid "FFmpeg"
+ msgstr "FFmpeg"
+ 
+ #: TFRMABOUT.LABEL6.CAPTION
+ msgid "Trademark Fabrice Belllard"
+-msgstr ""
++msgstr "Marca registada por Fabrice Belllard"
+ 
+ #: TFRMABOUT.LABEL7.CAPTION
+ msgid "http://ffmpeg.org"
+-msgstr ""
++msgstr "http://ffmpeg.org"
+ 
+ #: TFRMABOUT.LABEL8.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg builds by"
+ msgid "FFmpeg Windows Builds by"
+-msgstr "FFmpeg builds por"
++msgstr "Versões FFmpeg para Windows por"
+ 
+ #: TFRMABOUT.LABEL9.CAPTION
+ msgid "Kyle Schwarz"
+-msgstr ""
++msgstr "Kyle Schwarz"
+ 
+ #: TFRMABOUT.PAGE1.CAPTION
+-#, fuzzy
+-#| msgid "WinFF"
+ msgctxt "TFRMABOUT.PAGE1.CAPTION"
+ msgid "WinFF"
+ msgstr "WinFF"
+ 
+ #: TFRMABOUT.PAGE2.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+ msgid "FFmpeg"
+ msgstr "FFmpeg"
+@@ -134,44 +126,40 @@
+ 
+ #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
+ msgid "Add / Update"
+-msgstr "Adi./Actualizar"
++msgstr "Adi./Atualizar"
+ 
+ #: TFRMEDITPRESETS.CANCELBTN.CAPTION
+-#, fuzzy
+-#| msgid "Close"
+ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+ msgid "Close"
+ msgstr "Fechar"
+ 
+ #: TFRMEDITPRESETS.CAPTION
+ msgid "Edit Presets"
+-msgstr "Editar Presets"
++msgstr "Editar pré-ajustes"
+ 
+ #: TFRMEDITPRESETS.DELETEBTN.CAPTION
+ msgid "Delete"
+-msgstr "Apagar"
++msgstr "Eliminar"
+ 
+ #: TFRMEDITPRESETS.EDIT1.HINT
+ msgid "One word, only letters and numbers"
+-msgstr ""
++msgstr "Uma palavra, só letras e números"
+ 
+ #: TFRMEDITPRESETS.EDIT2.HINT
+ msgid "Enter a more descriptive name for this preset"
+-msgstr ""
++msgstr "Indique um nome descritivo deste pré-ajuste"
+ 
+ #: TFRMEDITPRESETS.EDIT3.HINT
+-#, fuzzy
+-#| msgid "Preset Command Line (no -i or output file)"
+ msgid "Please don't use -i or output file parameters"
+-msgstr "Linha de Comandos do Preset (não -i ou ficheiro de saída)"
++msgstr "Não utilize -i ou parâmetros do ficheiro destino"
+ 
+ #: TFRMEDITPRESETS.EDIT4.HINT
+ msgid "Do not include a dot"
+-msgstr ""
++msgstr "Não incluir o ponto"
+ 
+ #: TFRMEDITPRESETS.EDIT5.HINT
+ msgid "Choose a category to group this preset under"
+-msgstr ""
++msgstr "Escolha a categoria para colocar este pré-ajuste"
+ 
+ #: TFRMEDITPRESETS.EXPORT.CAPTION
+ msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+@@ -183,46 +171,36 @@
+ msgstr "Importar"
+ 
+ #: TFRMEDITPRESETS.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Create Preset:"
+ msgid "Category / Preset"
+-msgstr "Criar Preset:"
++msgstr "Categoria/Pré-ajuste"
+ 
+ #: TFRMEDITPRESETS.LABEL2.CAPTION
+-#, fuzzy
+-#| msgid "Preset Name (One word , Only A-z 0-9)"
+ msgid "Preset Name (one word, only letters and numbers)"
+-msgstr "Nome do Preset (Uma palavra, Apenas A-z 0-9)"
++msgstr "Nome do pré-ajuste (uma palavra, só letras e números)"
+ 
+ #: TFRMEDITPRESETS.LABEL3.CAPTION
+ msgid "Preset Label"
+-msgstr "Etiqueta do Preset"
++msgstr "Texto do pré-ajuste"
+ 
+ #: TFRMEDITPRESETS.LABEL4.CAPTION
+-#, fuzzy
+-#| msgid "Preset Command Line (no -i or output file)"
+ msgid "Preset Command Line Parameters (no -i or output file)"
+-msgstr "Linha de Comandos do Preset (não -i ou ficheiro de saída)"
++msgstr "Parâmetros da linha de comandos do pré-ajuste (sem -i ou ficheiro destino)"
+ 
+ #: TFRMEDITPRESETS.LABEL5.CAPTION
+-#, fuzzy
+-#| msgid "Output File Extension (no \".\")"
+ msgid "Output File Extension (do not include the '.' )"
+-msgstr "Extensão do Ficheiro de Saída (não \".\")"
++msgstr "Extensão do ficheiro de destino (não incluir o ponto)"
+ 
+ #: TFRMEDITPRESETS.LABEL6.CAPTION
+ msgid "Category"
+ msgstr "Categoria"
+ 
+ #: TFRMEDITPRESETS.OKBTN.CAPTION
+-#, fuzzy
+-#| msgid "Save"
+ msgid "Save"
+ msgstr "Gravar"
+ 
+ #: TFRMEDITPRESETS.PNLTOP.CAPTION
+ msgid "pnlTop"
+-msgstr ""
++msgstr "pnlTop"
+ 
+ #: TFRMEXPORT.CANCELBTN.CAPTION
+ msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+@@ -231,7 +209,7 @@
+ 
+ #: TFRMEXPORT.CAPTION
+ msgid "Export Presets"
+-msgstr "Exportar Presets"
++msgstr "Exportar pré-ajustes"
+ 
+ #: TFRMEXPORT.EXPORTBTN.CAPTION
+ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+@@ -239,67 +217,55 @@
+ msgstr "Exportar"
+ 
+ #: TFRMEXPORT.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Choose presets to export"
+ msgid "Choose Presets to Export:"
+-msgstr "Escolher os presets para exportar"
++msgstr "Escolha o pré-ajuste a exportar:"
+ 
+ #: TFRMMAIN.AUDBITRATE.HINT
+-#, fuzzy
+-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
+ msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+ msgid "(<integer>) the target kilobits/second that the stream should use"
+-msgstr "(<inteiro>kb) os kilobits/segundo de destino que o fluxo deve usar"
++msgstr "(<integer>) os kbs por segundo a utilizar pela emissão"
+ 
+ #: TFRMMAIN.AUDCHANNELS.HINT
+ msgid "(<integer>) number of audio channels"
+-msgstr "(<inteiro>) número de canais de áudio"
++msgstr "(<integer>) número de canais de áudio"
+ 
+ #: TFRMMAIN.AUDSAMPLINGRATE.HINT
+ msgid "(<integer>) the sampling frequency of the audio in Hertz"
+-msgstr "(<inteiro>) a frequência de amostragem para o áudio em Hertz"
++msgstr "(<integer>) a frequência do áudio em Hertz"
+ 
+ #: TFRMMAIN.BTNADD.CAPTION
+ msgid "Add"
+ msgstr "Adicionar"
+ 
+ #: TFRMMAIN.BTNADD.HINT
+-#, fuzzy
+-#| msgid "add file(s) to the list for conversion"
+ msgid "Add file(s) to the list for conversion"
+-msgstr "adicionar ficheiro(s) à lista para conversão"
++msgstr "Adicionar ficheiros à lista de conversão"
+ 
+ #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+-#, fuzzy
+-#| msgid "Output Folder"
+ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+ msgid "Apply Output Folder"
+-msgstr "Directório de Saída"
++msgstr "Aplicar pasta de destino"
+ 
+ #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+ msgid "Apply Preset"
+-msgstr ""
++msgstr "Aplicar pré-ajuste"
+ 
+ #: TFRMMAIN.BTNCLEAR.CAPTION
+ msgid "Clear"
+ msgstr "Limpar"
+ 
+ #: TFRMMAIN.BTNCLEAR.HINT
+-#, fuzzy
+-#| msgid "remove all files from the list"
+ msgid "Remove all files from the list"
+-msgstr "remove todos os ficheiros da lista"
++msgstr "Remover todos os ficheiros da lista"
+ 
+ #: TFRMMAIN.BTNCONVERT.CAPTION
+ msgid "Convert"
+ msgstr "Converter"
+ 
+ #: TFRMMAIN.BTNCONVERT.HINT
+-#, fuzzy
+-#| msgid "start the conversion process"
+ msgid "Start the conversion process"
+-msgstr "iniciar o processo de conversão"
++msgstr "Iniciar processo de conversão"
+ 
+ #: TFRMMAIN.BTNOPTIONS.CAPTION
+ msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+@@ -307,226 +273,198 @@
+ msgstr "Opções"
+ 
+ #: TFRMMAIN.BTNOPTIONS.HINT
+-#, fuzzy
+-#| msgid "open or close the additional option window"
+ msgid "Open/close the additional options window"
+-msgstr "abre o fecha a janela de opções adicionais"
++msgstr "Abrir/fechar a janela de opções extra"
+ 
+ #: TFRMMAIN.BTNPLAY.CAPTION
+ msgid "Play"
+ msgstr "Reproduzir"
+ 
+ #: TFRMMAIN.BTNPLAY.HINT
+-#, fuzzy
+-#| msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
+ msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+-msgstr "pre-visualizar o ficheiro original seleccionado com o ffplay (bom teste para ver se a conversão é possível)"
++msgstr "Visualizar o ficheiro original com ffplay (serve pare testar a possibilidade da conversão)"
+ 
+ #: TFRMMAIN.BTNPREVIEW.CAPTION
+ msgid "Preview"
+-msgstr "Pré-visualização"
++msgstr "Visualizar"
+ 
+ #: TFRMMAIN.BTNPREVIEW.HINT
+-#, fuzzy
+-#| msgid "preview using the output settings"
+ msgid "Preview using the output settings"
+-msgstr "pré-visualização usando as definições de saída"
++msgstr "Visualizar utilizando as definições de saída"
+ 
+ #: TFRMMAIN.BTNREMOVE.CAPTION
+ msgid "Remove"
+ msgstr "Remover"
+ 
+ #: TFRMMAIN.BTNREMOVE.HINT
+-#, fuzzy
+-#| msgid "remove the selected file(s) from the list"
+ msgid "Remove selected file(s) from the list"
+-msgstr "remover os ficheiro(s) seleccionados da lista"
++msgstr "Remover ficheiros selecionados da lista"
+ 
+ #: TFRMMAIN.CAPTION
+-#, fuzzy
+-#| msgid "WinFF"
+ msgctxt "TFRMMAIN.CAPTION"
+ msgid "WinFF"
+ msgstr "WinFF"
+ 
+ #: TFRMMAIN.CATEGORYBOX.HINT
+-#, fuzzy
+-#| msgid "name of the device or file type the video should be converted to"
+ msgid "Device or file type the video should be converted to"
+-msgstr "nome do dispositivo ou tipo de ficheiro para o qual o vídeo deve ser convertido"
++msgstr "O dispositivo ou tipo de ficheiro para o ficheiro convertido"
+ 
+ #: TFRMMAIN.CBOUTPUTPATH.CAPTION
+ msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+ msgid "Use Source Folder"
+-msgstr ""
++msgstr "Utilizar a pasta de origem"
+ 
+ #: TFRMMAIN.CBX2PASS.CAPTION
+ msgid "2 pass"
+-msgstr "2º passo"
++msgstr "2 passagens"
+ 
+ #: TFRMMAIN.CBX2PASS.HINT
+-#, fuzzy
+-#| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
+ msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+-msgstr "Usar dois passos permite ao codificador recolher informação no primeiro passo para melhorar a qualidade."
++msgstr "Se utilizar 2 passagens, permite que o codificador obtenha mais informações para melhorar a qualidade"
+ 
+ #: TFRMMAIN.CBXDEINTERLACE.CAPTION
+ msgid "Deinterlace"
+ msgstr "Desentrelaçar"
+ 
+ #: TFRMMAIN.CBXDEINTERLACE.HINT
+-#, fuzzy
+-#| msgid "removes interlacing from the video (if necessary)"
+ msgid "Removes interlacing from the video (if necessary)"
+-msgstr "remove entrelaçamento do vídeo (se necessário)"
++msgstr "Remove o entrelaçamento do vídeo (se necessário)"
+ 
+ #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+ msgid "..."
+-msgstr ""
++msgstr "..."
+ 
+ #: TFRMMAIN.DESTFOLDER.HINT
+-#, fuzzy
+-#| msgid "the target location for the final video (choose a different folder than the source folder)"
+ msgid "Target location for the final video (choose a different folder than the source folder)"
+-msgstr "a localização de destino para o vídeo final (escolha uma pasta diferente da pasta de origem)"
++msgstr "Local de destino do ficheiro convertido (escolha uma pasta diferente da pasta de origem)"
+ 
+ #: TFRMMAIN.EDTASPECTRATIO.HINT
+-#, fuzzy
+-#| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
+ msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+-msgstr "(<inteiro:inteiro> ou <real>) o rácio de aspecto físico (DAR) da imagem de destino."
++msgstr "(<integer:integer> ou <real>) as proporções do ecrã de exibição"
+ 
+ #: TFRMMAIN.EDTAUDIOSYNC.HINT
+ msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+-msgstr ""
++msgstr "(<integer>) De 10 até à frequência de áudio, como por exemplo 44100, 48000. Permite comprimir/expandir as emissões áudio."
+ 
+ #: TFRMMAIN.EDTCROPBOTTOM.TEXT
+ msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+ msgid "0"
+-msgstr ""
++msgstr "0"
+ 
+ #: TFRMMAIN.EDTCROPLEFT.TEXT
+ msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
+ msgid "0"
+-msgstr ""
++msgstr "0"
+ 
+ #: TFRMMAIN.EDTCROPRIGHT.TEXT
+ msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+ msgid "0"
+-msgstr ""
++msgstr "0"
+ 
+ #: TFRMMAIN.EDTCROPTOP.TEXT
+ msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+ msgid "0"
+-msgstr ""
++msgstr "0"
+ 
+ #: TFRMMAIN.EDTSEEKHH.HINT
+ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+ msgid "<hh:mm:ss> - Seek to this position before start converting"
+-msgstr ""
++msgstr "<hh:mm:ss> - Procurar esta posição antes de iniciar a conversão"
+ 
+ #: TFRMMAIN.EDTSEEKMM.HINT
+ msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+ msgid "<hh:mm:ss> - Seek to this position before start converting"
+-msgstr ""
++msgstr "<hh:mm:ss> - Procurar esta posição antes de iniciar a conversão"
+ 
+ #: TFRMMAIN.EDTSEEKSS.HINT
+ msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+ msgid "<hh:mm:ss> - Seek to this position before start converting"
+-msgstr ""
++msgstr "<hh:mm:ss> - Procurar esta posição antes de iniciar a conversão"
+ 
+ #: TFRMMAIN.EDTTTRHH.HINT
+ msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+ msgid "<hh:mm:ss> - Stop after this much of video converted"
+-msgstr ""
++msgstr "<hh:mm:ss> - Parar após este nível de conversão"
+ 
+ #: TFRMMAIN.EDTTTRMM.HINT
+ msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+ msgid "<hh:mm:ss> - Stop after this much of video converted"
+-msgstr ""
++msgstr "<hh:mm:ss> - Parar após este nível de conversão"
+ 
+ #: TFRMMAIN.EDTTTRSS.HINT
+ msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+ msgid "<hh:mm:ss> - Stop after this much of video converted"
+-msgstr ""
++msgstr "<hh:mm:ss> - Parar após este nível de conversão"
+ 
+ #: TFRMMAIN.EDTVOLUME.HINT
+ msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+-msgstr ""
++msgstr "(<integer>) 256 = Volume atual, 128 = Reduzir a metade, 512 = Duplicar volume"
+ 
+ #: TFRMMAIN.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Convert"
+ msgid "Convert to:"
+-msgstr "Converter"
++msgstr "Converter para:"
+ 
+ #: TFRMMAIN.LABEL10.CAPTION
+ msgid "Audio Channels"
+-msgstr "Canais de Áudio"
++msgstr "Canais de áudio"
+ 
+ #: TFRMMAIN.LABEL12.CAPTION
+-#, fuzzy
+-#| msgid "Output Folder"
+ msgctxt "TFRMMAIN.LABEL12.CAPTION"
+ msgid "Output Folder:"
+-msgstr "Directório de Saída"
++msgstr "Pasta de destino:"
+ 
+ #: TFRMMAIN.LABEL19.CAPTION
+-#, fuzzy
+-#| msgid "Presets"
+ msgid "Preset:"
+-msgstr "Presets"
++msgstr "Pré-ajuste:"
+ 
+ #: TFRMMAIN.LABEL20.CAPTION
+ msgid "Volume"
+-msgstr ""
++msgstr "Volume"
+ 
+ #: TFRMMAIN.LABEL21.CAPTION
+ msgid "Sync"
+-msgstr ""
++msgstr "Sincronizar"
+ 
+ #: TFRMMAIN.LABEL22.CAPTION
+ msgid "Seek to"
+-msgstr ""
++msgstr "Procurar para"
+ 
+ #: TFRMMAIN.LABEL23.CAPTION
+ msgid "Time to Record"
+-msgstr ""
++msgstr "Duração a gravar"
+ 
+ #: TFRMMAIN.LABEL24.CAPTION
+ msgid "Hours / Minutes / Seconds"
+-msgstr ""
++msgstr "Horas/Minutos/Segundos"
+ 
+ #: TFRMMAIN.LABEL3.CAPTION
+-#, fuzzy
+-#| msgid "Additional Command Line Parameters (Advanced)"
+ msgid "Additional Command Line Parameters"
+-msgstr "Parâmetros de Linha de Comandos Adicionais (Avançado)"
++msgstr "Parâmetros extra da linha de comandos"
+ 
+ #: TFRMMAIN.LABEL7.CAPTION
+ msgid "Audio Bitrate"
+-msgstr "Taxa de bits"
++msgstr "Taxa de dados"
+ 
+ #: TFRMMAIN.LABEL8.CAPTION
+ msgid "Sample Rate"
+-msgstr "Taxa de Amostragem"
++msgstr "Taxa de amostragem"
+ 
+ #: TFRMMAIN.LABEL9.CAPTION
+ msgid "X"
+-msgstr ""
++msgstr "X"
+ 
+ #: TFRMMAIN.LBLASPECTRATIO.CAPTION
+ msgid "Aspect Ratio"
+-msgstr "Rácio de Aparência"
++msgstr "Proporções"
+ 
+ #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+ msgid "Bottom"
+-msgstr "Fundo"
++msgstr "Base"
+ 
+ #: TFRMMAIN.LBLCROPLEFT.CAPTION
+ msgid "Left"
+-msgstr "Esq."
++msgstr "Esquerda"
+ 
+ #: TFRMMAIN.LBLCROPRIGHT.CAPTION
+ msgid "Right"
+@@ -538,41 +476,37 @@
+ 
+ #: TFRMMAIN.LBLFRAMERATE.CAPTION
+ msgid "Frame Rate"
+-msgstr "Taxa de Imagens"
++msgstr "Taxa de imagens"
+ 
+ #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
+ msgid "Video Bitrate"
+-msgstr "Taxa de bits"
++msgstr "Taxa de dados vídeo"
+ 
+ #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
+ msgid "Video Size"
+-msgstr "   Tamanho"
++msgstr "Tamanho do vídeo"
+ 
+ #: TFRMMAIN.MENUITEM1.CAPTION
+ msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+ msgid "Apply Preset"
+-msgstr ""
++msgstr "Aplicar pré-ajuste"
+ 
+ #: TFRMMAIN.MENUITEM2.CAPTION
+ msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+ msgid "Apply Destination Folder"
+-msgstr ""
++msgstr "Aplicar pasta de destino"
+ 
+ #: TFRMMAIN.MENUITEM9.CAPTION
+ msgid "-"
+-msgstr ""
++msgstr "-"
+ 
+ #: TFRMMAIN.MITABOUT.CAPTION
+-#, fuzzy
+-#| msgid "About"
+ msgid "About"
+-msgstr "Acerca de"
++msgstr "Sobre"
+ 
+ #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+-#, fuzzy
+-#| msgid "Display CMD Line"
+ msgid "Display Cmd Line"
+-msgstr "Mostrar Linha CMD"
++msgstr "Mostrar linha de comandos"
+ 
+ #: TFRMMAIN.MITDOCS.CAPTION
+ msgid "Documentation"
+@@ -583,49 +517,45 @@
+ msgstr "Sair"
+ 
+ #: TFRMMAIN.MITFORUMS.CAPTION
+-#, fuzzy
+-#| msgid "WinFF Forums"
+ msgid "Forums"
+-msgstr "Forums do WinFF"
++msgstr "Fóruns"
+ 
+ #: TFRMMAIN.MITIMPORTPRESET.CAPTION
+ msgid "Import Preset"
+-msgstr "Importar Preset"
++msgstr "Importar pré-ajuste"
+ 
+ #: TFRMMAIN.MITPAUSEONFINISH.CAPTION
+ msgid "Pause on Finish"
+-msgstr "Pausar ao Terminar"
++msgstr "Pausa ao terminar"
+ 
+ #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+ msgid "Play Sound on Finish"
+-msgstr "Tocar Som ao Terminar"
++msgstr "Tocar som ao terminar"
+ 
+ #: TFRMMAIN.MITPREFERENCES.CAPTION
+ msgid "Preferences"
+ msgstr "Preferências"
+ 
+ #: TFRMMAIN.MITPRESETS.CAPTION
+-#, fuzzy
+-#| msgid "Presets"
+ msgid "Presets"
+-msgstr "Presets"
++msgstr "Pré-ajustes"
+ 
+ #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+ msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+ msgid "Additional Options"
+-msgstr "Opções Adicionais"
++msgstr "Opções extra"
+ 
+ #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+ msgid "Shutdown on Finish"
+-msgstr "Desligar Computador ao Terminar"
++msgstr "Desligar computador ao terminar"
+ 
+ #: TFRMMAIN.MITVIEWMODE.CAPTION
+ msgid "Detailed View"
+-msgstr ""
++msgstr "Vista detalhada"
+ 
+ #: TFRMMAIN.MITWINFF.CAPTION
+ msgid "WinFF Website"
+-msgstr "Website do WinFF"
++msgstr "Sítio web do WinFF"
+ 
+ #: TFRMMAIN.MNUEDIT.CAPTION
+ msgid "Edit"
+@@ -640,39 +570,29 @@
+ msgstr "Ajuda"
+ 
+ #: TFRMMAIN.MNUOPTIONS.CAPTION
+-#, fuzzy
+-#| msgid "Options"
+ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+ msgid "Options"
+ msgstr "Opções"
+ 
+ #: TFRMMAIN.PNLMAIN.CAPTION
+ msgid "pnlMain"
+-msgstr ""
++msgstr "Principal"
+ 
+ #: TFRMMAIN.PRESETBOX.HINT
+-#, fuzzy
+-#| msgid "specific setting to use for the chosen device or file type"
+ msgid "Specific settings to use for the chosen device or file type"
+-msgstr "definição específica para usar para o dispositivo escolhido ou tipo de ficheiro"
++msgstr "Definições especificas para um determinado dispositivo ou ficheiro"
+ 
+ #: TFRMMAIN.TABSHEET1.CAPTION
+-#, fuzzy
+-#| msgid "Video Size"
+ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+ msgid "Video"
+-msgstr "   Tamanho"
++msgstr "Vídeo"
+ 
+ #: TFRMMAIN.TABSHEET2.CAPTION
+-#, fuzzy
+-#| msgid "Audio Settings"
+ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+ msgid "Audio"
+-msgstr "Definições de Áudio"
++msgstr "Áudio"
+ 
+ #: TFRMMAIN.TABSHEET3.CAPTION
+-#, fuzzy
+-#| msgid "Crop"
+ msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+ msgid "Crop"
+ msgstr "Recortar"
+@@ -680,53 +600,41 @@
+ #: TFRMMAIN.TABSHEET4.CAPTION
+ msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
+ msgid "Time"
+-msgstr ""
++msgstr "Hora"
+ 
+ #: TFRMMAIN.TABSHEET5.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+ msgid "FFmpeg"
+ msgstr "FFmpeg"
+ 
+ #: TFRMMAIN.TABSHEET6.CAPTION
+-#, fuzzy
+-#| msgid "Output Details"
+ msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+ msgid "Output Details"
+-msgstr "Detalhes de Saída"
++msgstr "Detalhes de saída"
+ 
+ #: TFRMMAIN.VIDBITRATE.HINT
+-#, fuzzy
+-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
+ msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+ msgid "(<integer>) the target kilobits/second that the stream should use"
+-msgstr "(<inteiro>kb) os kilobits/segundo de destino que o fluxo deve usar"
++msgstr "(<integer>) os kbs por segundo a utilizar pela emissão"
+ 
+ #: TFRMMAIN.VIDFRAMERATE.HINT
+-#, fuzzy
+-#| msgid "(<real> or <integer>) the number of frames per second"
+ msgid "(<real> or <integer>) number of frames per second"
+-msgstr "(<real> ou <inteiro>) o número de imagens por segundo"
++msgstr "(<real> ou <integer>) o número de imagens por segundo"
+ 
+ #: TFRMMAIN.VIDSIZEX.HINT
+-#, fuzzy
+-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+ msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+ msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+-msgstr "(<inteiro> X <inteiro>) a quantidade de pixeis de informação. Para codecs que não suportam rácio de aspecto de pixeis (PAR) isto é o tamanho do vídeo quando visualizado."
++msgstr "(<integer> X <integer>) Quantidade de pixeis por imagem. Os codificadores sem suporte às relações de pixel, este será o tamanho final do vídeo."
+ 
+ #: TFRMMAIN.VIDSIZEY.HINT
+-#, fuzzy
+-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+ msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+ msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+-msgstr "(<inteiro> X <inteiro>) a quantidade de pixeis de informação. Para codecs que não suportam rácio de aspecto de pixeis (PAR) isto é o tamanho do vídeo quando visualizado."
++msgstr "(<integer> X <integer>) Quantidade de pixeis por imagem. Os codificadores sem suporte às relações de pixel, este será o tamanho final do vídeo."
+ 
+ #: TFRMPREFERENCES.BUTTON1.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+ msgid "OK"
+-msgstr "OK"
++msgstr "Aceitar"
+ 
+ #: TFRMPREFERENCES.BUTTON2.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+@@ -736,42 +644,40 @@
+ #: TFRMPREFERENCES.BUTTON3.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+ msgid "..."
+-msgstr ""
++msgstr "..."
+ 
+ #: TFRMPREFERENCES.BUTTON4.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+ msgid "..."
+-msgstr ""
++msgstr "..."
+ 
+ #: TFRMPREFERENCES.BUTTON5.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+ msgid "..."
+-msgstr ""
++msgstr "..."
+ 
+ #: TFRMPREFERENCES.BUTTON6.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+ msgid "..."
+-msgstr ""
++msgstr "..."
+ 
+ #: TFRMPREFERENCES.BUTTON7.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+ msgid "..."
+-msgstr ""
++msgstr "..."
+ 
+ #: TFRMPREFERENCES.BUTTON8.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+ msgid "..."
+-msgstr ""
++msgstr "..."
+ 
+ #: TFRMPREFERENCES.CAPTION
+ msgid "WinFF Preferences"
+-msgstr "Preferências de WinFF"
++msgstr "Preferências do WinFF"
+ 
+ #: TFRMPREFERENCES.CHECKBOX1.CAPTION
+-#, fuzzy
+-#| msgid "Remember Last Directory Used"
+ msgid "Remember Last Used Directory"
+-msgstr "Lembrar o Último Directório Usado"
++msgstr "Lembrar último diretório utilizado"
+ 
+ #: TFRMPREFERENCES.CHECKBOX2.CAPTION
+ msgid "Use CHCP for international characters"
+@@ -779,75 +685,55 @@
+ 
+ #: TFRMPREFERENCES.CHECKBOX3.CAPTION
+ msgid "Use Several Encoding Threads:"
+-msgstr ""
++msgstr "Utilizar vários processos de codificação:"
+ 
+ #: TFRMPREFERENCES.EDIT7.HINT
+-#, fuzzy
+-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+ msgid "'-e' for xterm, '-x' for gnome-terminal"
+-msgstr "Opções de Terminal (-e para Xterm, -x para Terminal do Gnome)"
++msgstr "-e para xterm e -x para o terminal gnome"
+ 
+ #: TFRMPREFERENCES.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Default Destination Directory"
+ msgid "Default Destination Directory:"
+-msgstr "Directório Predefinido de Destino"
++msgstr "Diretório de destino padrão:"
+ 
+ #: TFRMPREFERENCES.LABEL2.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFmpeg Executable"
+ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+ msgid "Path to FFmpeg Executable:"
+-msgstr "Caminho para o Executável FFmpeg"
++msgstr "Caminho do executável FFmpeg:"
+ 
+ #: TFRMPREFERENCES.LABEL3.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFPlay Executable"
+ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+ msgid "Path to FFplay Executable:"
+-msgstr "Caminho para o Executável FFPlay"
++msgstr "Caminho do executável FFplay:"
+ 
+ #: TFRMPREFERENCES.LABEL4.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFmpeg Executable"
+ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+ msgid "Path to FFmpeg Executable:"
+-msgstr "Caminho para o Executável FFmpeg"
++msgstr "Caminho do executável FFmpeg:"
+ 
+ #: TFRMPREFERENCES.LABEL5.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFPlay Executable"
+ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+ msgid "Path to FFplay Executable:"
+-msgstr "Caminho para o Executável FFPlay"
++msgstr "Caminho do executável FFplay:"
+ 
+ #: TFRMPREFERENCES.LABEL6.CAPTION
+-#, fuzzy
+-#| msgid "Terminal to run FFmpeg"
+ msgid "Terminal to run FFmpeg in:"
+-msgstr "Terminal para correr FFmpeg"
++msgstr "Terminal para executar o FFmpeg:"
+ 
+ #: TFRMPREFERENCES.LABEL7.CAPTION
+-#, fuzzy
+-#| msgid "Additional Options"
+ msgid "Terminal Options:"
+-msgstr "Opções Adicionais"
++msgstr "Opções de terminal:"
+ 
+ #: TFRMPREFERENCES.LABEL8.CAPTION
+-#, fuzzy
+-#| msgid "Priority"
+ msgid "Priority:"
+-msgstr "Prioridade"
++msgstr "Prioridade:"
+ 
+ #: TFRMPREFERENCES.PAGE1.CAPTION
+ msgid "General"
+ msgstr "Geral"
+ 
+ #: TFRMPREFERENCES.PAGE2.CAPTION
+-#, fuzzy
+-#| msgid "Ms Windows"
+ msgid "MS Windows"
+-msgstr "Ms Windows"
++msgstr "MS Windows"
+ 
+ #: TFRMPREFERENCES.PAGE3.CAPTION
+ msgid "Linux"
+@@ -855,30 +741,28 @@
+ 
+ #: TFRMSCRIPT.BTNCLIP.CAPTION
+ msgid "Copy to Clipboard"
+-msgstr ""
++msgstr "Copiar para a área de transferência"
+ 
+ #: TFRMSCRIPT.BTNCLOSE.CAPTION
+-#, fuzzy
+-#| msgid "Close"
+ msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+ msgid "Close"
+ msgstr "Fechar"
+ 
+ #: TFRMSCRIPT.BTNRUN.CAPTION
+ msgid "Run!"
+-msgstr ""
++msgstr "Executar"
+ 
+ #: TFRMSCRIPT.BTNSAVE.CAPTION
+ msgid "Save As..."
+-msgstr ""
++msgstr "Gravar como..."
+ 
+ #: TFRMSCRIPT.CAPTION
+ msgid "FFmpeg Command Line"
+-msgstr "Linha de Comandos do FFmpeg"
++msgstr "Linha de comandos do FFmpeg"
+ 
+ #: unit1.rsanalysing
+ msgid "Analysing"
+-msgstr ""
++msgstr "A analisar"
+ 
+ #: unit1.rsconverting
+ msgid "Converting"
+@@ -894,150 +778,101 @@
+ 
+ #: unit1.rscouldnotfindfile
+ msgid "Could Not Find File"
+-msgstr "Incapaz de Encontrar o Ficheiro"
++msgstr "Incapaz de encontrar o ficheiro"
+ 
+ #: unit1.rscouldnotfindpresetfile
+ msgid "Could not find presets file."
+-msgstr "Incapaz de encontrar o ficheiro de presets."
++msgstr "Incapaz de encontrar o ficheiro de pré-ajustes."
+ 
+ #: unit1.rsextensionnoperiod
+ msgid "Extension can not contain a period"
+-msgstr "A Extensão não pode conter um ponto"
++msgstr "A extensão não pode conter um ponto"
+ 
+ #: unit1.rsfiledoesnotexist
+ msgid "file does not exist"
+-msgstr "ficheiro não existe"
++msgstr "o ficheiro não existe"
+ 
+ #: unit1.rsinvalidpreset
+ msgid "Invalid Preset File"
+-msgstr "Ficheiro de Preset Inválido"
++msgstr "O ficheiro de pré-ajuste é inválido"
+ 
+ #: unit1.rsnamemustbeallpha
+ msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+-msgstr "O nome Tem de ser alfanumérico (a-z,A-Z,0-9)"
++msgstr "O nome tem de ser alfanumérico (a-z,A-Z,0-9)"
+ 
+ #: unit1.rspleaseadd1file
+ msgid "Please add at least 1 file to convert"
+-msgstr "Por favor adicione pelo menos 1 ficheiro para converter"
++msgstr "Adicione, pelo menos, 1 ficheiro para converter"
+ 
+ #: unit1.rspleaseselectapreset
+ msgid "Please select a preset"
+-msgstr "Por Favor seleccione um preset"
++msgstr "Por favor, escolha o pré-ajuste"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
+-msgstr "Preset: %s%s%s já existe"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
++msgstr "O pré-ajuste %s%s%s já existe"
+ 
+ #: unit1.rspresethasnoext
+ msgid "The preset to import does not have an extension"
+-msgstr "O preset a importar não tem uma extensão"
++msgstr "O pré-ajuste a importar não tem uma extensão"
+ 
+ #: unit1.rspresethasnolabel
+ msgid "The preset to import does not have a label"
+-msgstr "O preset a importar não tem uma etiqueta"
++msgstr "O pré-ajuste a importar não tem uma etiqueta"
+ 
+ #: unit1.rspresettoexport
+ msgid "Please select a preset to export"
+-msgstr "Por favor seleccione um preset para exportar"
++msgstr "Por favor, escolha o pré-ajuste a exportar"
+ 
+ #: unit1.rspresetwithlabelexists
+ msgid "Preset with label: %s%s%s already exists"
+-msgstr "Preset com etiqueta: %s%s%s já existe"
++msgstr "O pré-ajuste com a etiqueta %s%s%s já existe"
+ 
+ #: unit1.rspressenter
+ msgid "Press Enter to Continue"
+-msgstr "Pressione Enter para Continuar"
++msgstr "Prima Enter para continuar"
++
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
+ 
+ #: unit1.rsselectdirectory
+-#, fuzzy
+-#| msgid "Default Destination Directory"
+ msgid "Select Directory"
+-msgstr "Directório Predefinido de Destino"
++msgstr "Selecione o diretório"
+ 
+ #: unit1.rsselectpresetfile
+ msgid "Select Preset File"
+-msgstr "Seleccionar Ficheiro Preset"
++msgstr "Selecione o ficheiro do pré-ajuste"
+ 
+ #: unit1.rsselectvideofiles
+ msgid "Select Video Files"
+-msgstr "Seleccionar Ficheiros de Vídeo"
++msgstr "Selecione o ficheiro do vídeo"
+ 
+ #: unit1.rsthepresethasillegalchars
+ msgid "The preset contains illegal characters"
+-msgstr "O preset contém caracteres ilegais"
++msgstr "O pré-ajuste contém caracteres ilegais"
+ 
+ #: unit2.rscreatepreset
+ msgid "Create Preset:"
+-msgstr "Criar Preset:"
++msgstr "Criar pré-ajuste:"
+ 
+ #: unit2.rsimportpresets
+ msgid "Import Presets"
+-msgstr "Importar Presets"
++msgstr "Importar pré-ajuste"
+ 
+-#~| msgid "WinFF"
+-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+-#~ msgid "WinFF"
+-#~ msgstr "WinFF"
+-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+-#~ msgid "Additional Options"
+-#~ msgstr "Opções Adicionais"
+-#~ msgid "(All Categories)"
+-#~ msgstr "(Todas as Categorias)"
+-#~ msgid "Convert To ..."
+-#~ msgstr "Converter Para..."
+-#~ msgid "Device Preset"
+-#~ msgstr "Preset de Dispositivo"
+-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+-#~ msgid "About"
+-#~ msgstr "Acerca de"
+-#~ msgctxt "REMOVED4"
+-#~ msgid "Options"
+-#~ msgstr "Opções"
+-#~ msgid "Video Settings"
+-#~ msgstr "Definições de Vídeo"
+-#~ msgid "Audio Settings"
+-#~ msgstr "Definições de Áudio"
+-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+-#~ msgid "Cancel"
+-#~ msgstr "Cancelar"
+-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+-#~ msgid "Presets"
+-#~ msgstr "Presets"
+-#~ msgid "Multithreading for Dual Core Processors"
+-#~ msgstr "Multi-processamento para Dual Core"
+-#~ msgid "Path to FFmpeg.exe"
+-#~ msgstr "Caminho para o FFmpeg.exe"
+-#~ msgid "Path to FFPlay.exe"
+-#~ msgstr "Caminho para o FFPlay.exe"
+-#~ msgctxt "REMOVED8"
+-#~ msgid "OK"
+-#~ msgstr "OK"
+-#~| msgid "Converting"
+-#~ msgid "Continue"
+-#~ msgstr "A converter"
+-#~| msgid "Save"
+-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+-#~ msgid "Save"
+-#~ msgstr "Gravar"
+-#~ msgid "Replace Preset"
+-#~ msgstr "Substituir Preset"
+-#~ msgid "AC'"
+-#~ msgstr "Canal Audio"
+-#~| msgid "FFmpeg"
+-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+-#~ msgid "FFmpeg"
+-#~ msgstr "FFmpeg"
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "A etiqueta tem de ser única."
+ 
+ #: unit2.rsremovepreset
+ msgid "Remove Preset:"
+-msgstr "Remover Preset:"
++msgstr "Remover pré-ajuste:"
+ 
+ #: unit2.rsupdatepreset
+ msgid "Update Preset:"
+-msgstr "Actualizar Preset:"
++msgstr "Atualizar pré-ajuste:"
+ 
+ #: unit2.rsyoumustenterextension
+ msgid "You must enter the extension."
+@@ -1057,10 +892,9 @@
+ 
+ #: unit4.rspriorityidle
+ msgid "Idle"
+-msgstr "Desocupado"
++msgstr "Inativo"
+ 
+ #: unit4.rsprioritynormal
+-#, fuzzy
+ msgid "Normal"
+ msgstr "Normal"
+ 
+Index: winff-git/languages/winff.sr.po
+===================================================================
+--- winff-git.orig/languages/winff.sr.po	2012-05-27 14:13:43.381972766 +0200
++++ winff-git/languages/winff.sr.po	2012-05-27 14:13:58.422047337 +0200
+@@ -1,4 +1,4 @@
+-# Copyright (C) 2008 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -15,7 +15,7 @@
+ #
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 0.4\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2008-12-09\n"
+@@ -899,7 +899,9 @@
+ msgstr "Molimo, selektujte preset"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Preset: %s%s%s već postoji"
+ 
+ #: unit1.rspresethasnoext
+@@ -922,6 +924,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Pritisnite Enter za nastavak"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -944,11 +950,6 @@
+ msgid "Create Preset:"
+ msgstr "Kreiraj preset:"
+ 
+-#: unit2.rsimportpresets
+-#, fuzzy
+-msgid "Import Presets"
+-msgstr "Importuj preset"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1007,6 +1008,11 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++#, fuzzy
++msgid "Import Presets"
++msgstr "Importuj preset"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Oznaka mora biti unikatna."
+Index: winff-git/languages/winff.tr.po
+===================================================================
+--- winff-git.orig/languages/winff.tr.po	2012-05-27 14:13:43.565973672 +0200
++++ winff-git/languages/winff.tr.po	2012-05-27 14:13:58.426047344 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Turkish
+-# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -17,7 +17,7 @@
+ # İzzet Emre Erkan <kara@karalamalar.net>, 2008-2009
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2010-01-17 13:19+0200\n"
+@@ -925,7 +925,9 @@
+ msgstr "Lütfen bir ayar seçin"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Ayar dosyası zaten var: %s%s%s"
+ 
+ #: unit1.rspresethasnoext
+@@ -948,6 +950,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Devam etmek için Enter tuşuna basın"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -970,10 +976,6 @@
+ msgid "Create Preset:"
+ msgstr "Ayar yarat:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Ayarları yükle"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1027,6 +1029,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Ayarları yükle"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Etiket eşsiz olmalı."
+Index: winff-git/languages/winff.de.po
+===================================================================
+--- winff-git.orig/languages/winff.de.po	2012-05-27 14:13:43.241972068 +0200
++++ winff-git/languages/winff.de.po	2012-05-27 14:13:58.426047344 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to German
+-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -15,19 +15,21 @@
+ # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ #
+ # Kai Evers <kevers@s.netic.de>, 2008-2011
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/de/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.3.2\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+-"PO-Revision-Date: 2011-12-12 17:01+0100\n"
+-"Last-Translator: \n"
++"PO-Revision-Date: 2012-03-31 00:20+0000\n"
++"Last-Translator: Dennis Baudys <Unknown>\n"
+ "Language-Team: \n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"X-Launchpad-Export-Date: 2011-12-20 18:32+0000\n"
+-"X-Generator: Launchpad (build 14538)\n"
++"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
++"X-Generator: Launchpad (build 15282)\n"
+ "Language: \n"
+ "License: GPL version 3\n"
+ 
+@@ -750,35 +752,35 @@
+ 
+ #: TFRMSCRIPT.BTNSAVE.CAPTION
+ msgid "Save As..."
+-msgstr "Speichern unter..."
++msgstr "Speichern unter …"
+ 
+ #: TFRMSCRIPT.CAPTION
+ msgid "FFmpeg Command Line"
+-msgstr "FFmpeg-Kommandozeile"
++msgstr "FFmpeg-Befehlszeile"
+ 
+ #: unit1.rsanalysing
+ msgid "Analysing"
+-msgstr "Analysieren"
++msgstr "Analyse läuft"
+ 
+ #: unit1.rsconverting
+ msgid "Converting"
+-msgstr "Konvertieren"
++msgstr "Konvertierung läuft"
+ 
+ #: unit1.rscouldnotfindffmpeg
+ msgid "Could not find FFmpeg."
+-msgstr "FFmpeg kann nicht gefunden werden."
++msgstr "FFmpeg konnte nicht gefunden werden."
+ 
+ #: unit1.rscouldnotfindffplay
+ msgid "Could not find FFPlay."
+-msgstr "FFPlay kann nicht gefunden werden."
++msgstr "FFplay konnte nicht gefunden werden."
+ 
+ #: unit1.rscouldnotfindfile
+ msgid "Could Not Find File"
+-msgstr "Datei kann nicht gefunden werden"
++msgstr "Die Datei wurde nicht gefunden"
+ 
+ #: unit1.rscouldnotfindpresetfile
+ msgid "Could not find presets file."
+-msgstr "Profil kann nicht gefunden werden."
++msgstr "Profil konnte nicht gefunden werden."
+ 
+ #: unit1.rsextensionnoperiod
+ msgid "Extension can not contain a period"
+@@ -805,7 +807,9 @@
+ msgstr "Bitte ein Profil auswählen"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Profil: %s%s%s existiert bereits"
+ 
+ #: unit1.rspresethasnoext
+@@ -828,6 +832,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Eingabetaste drücken, um fortzufahren"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Verzeichnis auswählen"
+Index: winff-git/languages/winff.sv.po
+===================================================================
+--- winff-git.orig/languages/winff.sv.po	2012-05-27 14:13:43.345972589 +0200
++++ winff-git/languages/winff.sv.po	2012-05-27 14:13:58.430047370 +0200
+@@ -1,4 +1,4 @@
+-# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -16,7 +16,7 @@
+ # Göran Hanell <hannell@algonet.se>, 2009
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.1.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: \n"
+@@ -924,7 +924,9 @@
+ msgstr "Välj en förinställning att exportera"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Förinställning: %s%s%s finns redan"
+ 
+ #: unit1.rspresethasnoext
+@@ -947,6 +949,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Tryck Enter för att fortsätta"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -969,10 +975,6 @@
+ msgid "Create Preset:"
+ msgstr "Skapa förinställning"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Importera förinställningar"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1024,6 +1026,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Importera förinställningar"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Etiketten måste vara unik"
+Index: winff-git/languages/winff.bg.po
+===================================================================
+--- winff-git.orig/languages/winff.bg.po	2012-05-27 14:13:42.865970209 +0200
++++ winff-git/languages/winff.bg.po	2012-05-27 14:13:58.430047370 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Bulgarian
+-# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -17,7 +17,7 @@
+ # Simeon Uzunov <uzunof@gmail.com>, 2009
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 0.45.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2009-02-18\n"
+@@ -886,7 +886,9 @@
+ msgstr "Моля, изберете настройка"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Настройката: %s%s%s  вече съществува"
+ 
+ #: unit1.rspresethasnoext
+@@ -909,6 +911,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Натиснете Enter за да продължите"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -931,11 +937,6 @@
+ msgid "Create Preset:"
+ msgstr "Създаване на настройка:"
+ 
+-#: unit2.rsimportpresets
+-#, fuzzy
+-msgid "Import Presets"
+-msgstr "Внасяне на настройки"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -989,6 +990,11 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++#, fuzzy
++msgid "Import Presets"
++msgstr "Внасяне на настройки"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Етикетът трябва да е уникален"
+Index: winff-git/languages/winff.zh_TW.po
+===================================================================
+--- winff-git.orig/languages/winff.zh_TW.po	2012-05-27 14:13:43.841975043 +0200
++++ winff-git/languages/winff.zh_TW.po	2012-05-27 14:13:58.430047370 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Taiwanese Chinese
+-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -19,7 +19,7 @@
+ # kentxchang <kentxchang@gmail.com>, 2011
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: Winff 1.3.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: \n"
+@@ -832,7 +832,9 @@
+ msgstr "請至少選取一種編碼格式"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "編碼設定檔案：%s%s%s 已經存在"
+ 
+ #: unit1.rspresethasnoext
+@@ -855,6 +857,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "按 Enter 鍵繼續"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "選取目錄"
+@@ -875,10 +881,6 @@
+ msgid "Create Preset:"
+ msgstr "建立編碼設定："
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "匯入編碼設定"
+-
+ #~ msgid "Ramiro Polla"
+ #~ msgstr "Ramiro Polla"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+@@ -914,6 +916,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "匯入編碼設定"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "已有同名標籤。"
+Index: winff-git/languages/winff.he.po
+===================================================================
+--- winff-git.orig/languages/winff.he.po	2012-05-27 14:13:43.041971074 +0200
++++ winff-git/languages/winff.he.po	2012-05-27 14:13:58.434047408 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Hebrew
+-# Copyright (C) 2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -15,20 +15,24 @@
+ # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ #
+ # Ofir Klinger <klinger.ofir@gmail.com>, 2009
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/he/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 0.45.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+-"PO-Revision-Date: 2009-04-13 12:31+0200\n"
+-"Last-Translator: Ofir Klinger <klinger.ofir@gmail.com>\n"
++"PO-Revision-Date: 2012-03-14 10:02+0000\n"
++"Last-Translator: Yaron <sh.yaron@gmail.com>\n"
+ "Language-Team: Hebrew <matt@biggmatt.com>\n"
+-"Language: he\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"X-Poedit-Language: Hebrew\n"
++"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
++"X-Generator: Launchpad (build 15282)\n"
+ "X-Poedit-Country: Israel\n"
++"Language: he\n"
++"X-Poedit-Language: Hebrew\n"
+ "X-Poedit-SourceCharset: utf-8\n"
+ 
+ #: TFORM1.FORM1.CAPTION
+@@ -41,17 +45,13 @@
+ msgstr "בסדר"
+ 
+ #: TFRMABOUT.FRMABOUT.CAPTION
+-#, fuzzy
+-#| msgid "About WinFF"
+ msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
+ msgid "About WinFF"
+-msgstr "אודות WinFF"
++msgstr ""
+ 
+ #: TFRMABOUT.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "WinFF"
+ msgid "WinFF 1.3.2"
+-msgstr "WinFF"
++msgstr ""
+ 
+ #: TFRMABOUT.LABEL10.CAPTION
+ msgid "http://hawkeye.arrozcru.org/"
+@@ -90,11 +90,9 @@
+ msgstr ""
+ 
+ #: TFRMABOUT.LABEL5.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMABOUT.LABEL5.CAPTION"
+ msgid "FFmpeg"
+-msgstr "FFmpeg"
++msgstr ""
+ 
+ #: TFRMABOUT.LABEL6.CAPTION
+ msgid "Trademark Fabrice Belllard"
+@@ -105,28 +103,22 @@
+ msgstr ""
+ 
+ #: TFRMABOUT.LABEL8.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg builds by"
+ msgid "FFmpeg Windows Builds by"
+-msgstr "FFmpeg builds by"
++msgstr ""
+ 
+ #: TFRMABOUT.LABEL9.CAPTION
+ msgid "Kyle Schwarz"
+ msgstr ""
+ 
+ #: TFRMABOUT.PAGE1.CAPTION
+-#, fuzzy
+-#| msgid "WinFF"
+ msgctxt "TFRMABOUT.PAGE1.CAPTION"
+ msgid "WinFF"
+-msgstr "WinFF"
++msgstr ""
+ 
+ #: TFRMABOUT.PAGE2.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+ msgid "FFmpeg"
+-msgstr "FFmpeg"
++msgstr ""
+ 
+ #: TFRMABOUT.PAGE3.CAPTION
+ msgid "Thanks"
+@@ -137,11 +129,9 @@
+ msgstr "הוסף / עדכן"
+ 
+ #: TFRMEDITPRESETS.CANCELBTN.CAPTION
+-#, fuzzy
+-#| msgid "Close"
+ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+ msgid "Close"
+-msgstr "סגור"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.CAPTION
+ msgid "Edit Presets"
+@@ -160,10 +150,8 @@
+ msgstr ""
+ 
+ #: TFRMEDITPRESETS.EDIT3.HINT
+-#, fuzzy
+-#| msgid "Preset Command Line (no -i or output file)"
+ msgid "Please don't use -i or output file parameters"
+-msgstr "שורת הפקודה של ה-preset (ללא -i או קובץ פלט)"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.EDIT4.HINT
+ msgid "Do not include a dot"
+@@ -174,81 +162,63 @@
+ msgstr ""
+ 
+ #: TFRMEDITPRESETS.EXPORT.CAPTION
+-#, fuzzy
+-#| msgid "Export"
+ msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+ msgid "Export"
+-msgstr "ייצא"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.IMPORT.CAPTION
+ msgid "Import"
+ msgstr "ייבוא"
+ 
+ #: TFRMEDITPRESETS.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Create Preset:"
+ msgid "Category / Preset"
+-msgstr "צור preset:"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.LABEL2.CAPTION
+-#, fuzzy
+-#| msgid "Preset Name (One word , Only A-z 0-9)"
+ msgid "Preset Name (one word, only letters and numbers)"
+-msgstr "שם ה-preset (מילה אחת, רק A-z 0-9)"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.LABEL3.CAPTION
+ msgid "Preset Label"
+ msgstr "תווית ה-preset"
+ 
+ #: TFRMEDITPRESETS.LABEL4.CAPTION
+-#, fuzzy
+-#| msgid "Preset Command Line (no -i or output file)"
+ msgid "Preset Command Line Parameters (no -i or output file)"
+-msgstr "שורת הפקודה של ה-preset (ללא -i או קובץ פלט)"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.LABEL5.CAPTION
+-#, fuzzy
+-#| msgid "Output File Extension (no \".\")"
+ msgid "Output File Extension (do not include the '.' )"
+-msgstr "סיומת קובץ הפלט (ללא \".\")"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.LABEL6.CAPTION
+ msgid "Category"
+ msgstr "קטגוריה"
+ 
+ #: TFRMEDITPRESETS.OKBTN.CAPTION
+-#, fuzzy
+-#| msgid "Save"
+ msgid "Save"
+-msgstr "שמור"
++msgstr ""
+ 
+ #: TFRMEDITPRESETS.PNLTOP.CAPTION
+ msgid "pnlTop"
+ msgstr ""
+ 
+ #: TFRMEXPORT.CANCELBTN.CAPTION
+-#, fuzzy
+-#| msgid "Cancel"
+ msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+ msgid "Cancel"
+-msgstr "ביטול"
++msgstr ""
+ 
+ #: TFRMEXPORT.CAPTION
+ msgid "Export Presets"
+ msgstr "ייצא Presets"
+ 
+ #: TFRMEXPORT.EXPORTBTN.CAPTION
+-#, fuzzy
+-#| msgid "Export"
+ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+ msgid "Export"
+-msgstr "ייצא"
++msgstr ""
+ 
+ #: TFRMEXPORT.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Choose presets to export"
+ msgid "Choose Presets to Export:"
+-msgstr "בחר presets לייצוא"
++msgstr ""
+ 
+ #: TFRMMAIN.AUDBITRATE.HINT
+ msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+@@ -272,11 +242,9 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+-#, fuzzy
+-#| msgid "Output Folder"
+ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+ msgid "Apply Output Folder"
+-msgstr "תיקיית יעד"
++msgstr ""
+ 
+ #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+@@ -300,11 +268,9 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.BTNOPTIONS.CAPTION
+-#, fuzzy
+-#| msgid "Options"
+ msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+ msgid "Options"
+-msgstr "אפשרויות"
++msgstr ""
+ 
+ #: TFRMMAIN.BTNOPTIONS.HINT
+ msgid "Open/close the additional options window"
+@@ -335,11 +301,9 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.CAPTION
+-#, fuzzy
+-#| msgid "WinFF"
+ msgctxt "TFRMMAIN.CAPTION"
+ msgid "WinFF"
+-msgstr "WinFF"
++msgstr ""
+ 
+ #: TFRMMAIN.CATEGORYBOX.HINT
+ msgid "Device or file type the video should be converted to"
+@@ -438,27 +402,21 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Convert"
+ msgid "Convert to:"
+-msgstr "המר"
++msgstr ""
+ 
+ #: TFRMMAIN.LABEL10.CAPTION
+ msgid "Audio Channels"
+ msgstr "ערוצי אודיו"
+ 
+ #: TFRMMAIN.LABEL12.CAPTION
+-#, fuzzy
+-#| msgid "Output Folder"
+ msgctxt "TFRMMAIN.LABEL12.CAPTION"
+ msgid "Output Folder:"
+-msgstr "תיקיית יעד"
++msgstr ""
+ 
+ #: TFRMMAIN.LABEL19.CAPTION
+-#, fuzzy
+-#| msgid "Presets"
+ msgid "Preset:"
+-msgstr "Presets"
++msgstr ""
+ 
+ #: TFRMMAIN.LABEL20.CAPTION
+ msgid "Volume"
+@@ -481,10 +439,8 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.LABEL3.CAPTION
+-#, fuzzy
+-#| msgid "Additional Command Line Parameters (Advanced)"
+ msgid "Additional Command Line Parameters"
+-msgstr "פרמטרי שורת פקודה נוספים (מתקדם)"
++msgstr ""
+ 
+ #: TFRMMAIN.LABEL7.CAPTION
+ msgid "Audio Bitrate"
+@@ -511,10 +467,8 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.LBLCROPRIGHT.CAPTION
+-#, fuzzy
+-#| msgid "High"
+ msgid "Right"
+-msgstr "גבוהה"
++msgstr ""
+ 
+ #: TFRMMAIN.LBLCROPTOP.CAPTION
+ msgid "Top"
+@@ -547,15 +501,12 @@
+ msgstr ""
+ 
+ #: TFRMMAIN.MITABOUT.CAPTION
+-#, fuzzy
+-#| msgid "About"
+ msgid "About"
+-msgstr "אודות"
++msgstr ""
+ 
+ #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+-#, fuzzy
+ msgid "Display Cmd Line"
+-msgstr "הצג את שורת הפקודה"
++msgstr ""
+ 
+ #: TFRMMAIN.MITDOCS.CAPTION
+ msgid "Documentation"
+@@ -566,10 +517,8 @@
+ msgstr "סגור"
+ 
+ #: TFRMMAIN.MITFORUMS.CAPTION
+-#, fuzzy
+-#| msgid "WinFF Forums"
+ msgid "Forums"
+-msgstr "הפורומים של WinFF"
++msgstr ""
+ 
+ #: TFRMMAIN.MITIMPORTPRESET.CAPTION
+ msgid "Import Preset"
+@@ -580,35 +529,29 @@
+ msgstr "השהה בסיום"
+ 
+ #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+-#, fuzzy
+-#| msgid "Pause on Finish"
+ msgid "Play Sound on Finish"
+-msgstr "השהה בסיום"
++msgstr ""
+ 
+ #: TFRMMAIN.MITPREFERENCES.CAPTION
+ msgid "Preferences"
+-msgstr "מאפיינים"
++msgstr "העדפות"
+ 
+ #: TFRMMAIN.MITPRESETS.CAPTION
+-#, fuzzy
+-#| msgid "Presets"
+ msgid "Presets"
+-msgstr "Presets"
++msgstr "ערכות תצורה"
+ 
+ #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+-#, fuzzy
+-#| msgid "Additional Options"
+ msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+ msgid "Additional Options"
+ msgstr "אפשרויות נוספות"
+ 
+ #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+ msgid "Shutdown on Finish"
+-msgstr "כבה מחשב בסיום"
++msgstr "כיבוי המחשב בסיום"
+ 
+ #: TFRMMAIN.MITVIEWMODE.CAPTION
+ msgid "Detailed View"
+-msgstr ""
++msgstr "תצוגה מפורטת"
+ 
+ #: TFRMMAIN.MITWINFF.CAPTION
+ msgid "WinFF Website"
+@@ -616,7 +559,7 @@
+ 
+ #: TFRMMAIN.MNUEDIT.CAPTION
+ msgid "Edit"
+-msgstr "ערוך"
++msgstr "עריכה"
+ 
+ #: TFRMMAIN.MNUFILE.CAPTION
+ msgid "File"
+@@ -627,8 +570,6 @@
+ msgstr "עזרה"
+ 
+ #: TFRMMAIN.MNUOPTIONS.CAPTION
+-#, fuzzy
+-#| msgid "Options"
+ msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+ msgid "Options"
+ msgstr "אפשרויות"
+@@ -639,45 +580,37 @@
+ 
+ #: TFRMMAIN.PRESETBOX.HINT
+ msgid "Specific settings to use for the chosen device or file type"
+-msgstr ""
++msgstr "הגדרות ייעודיות לשימוש עבור ההתקן או סוג הקובץ שנבחרו"
+ 
+ #: TFRMMAIN.TABSHEET1.CAPTION
+-#, fuzzy
+-#| msgid "Video Size"
+ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+ msgid "Video"
+-msgstr "גודל הוידאו"
++msgstr "וידאו"
+ 
+ #: TFRMMAIN.TABSHEET2.CAPTION
+-#, fuzzy
+-#| msgid "Audio Settings"
+ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+ msgid "Audio"
+-msgstr "הגדרות אודיו"
++msgstr "שמע"
+ 
+ #: TFRMMAIN.TABSHEET3.CAPTION
+ msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+ msgid "Crop"
+-msgstr ""
++msgstr "חיתוך"
+ 
+ #: TFRMMAIN.TABSHEET4.CAPTION
+ msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
+ msgid "Time"
+-msgstr ""
++msgstr "זמן"
+ 
+ #: TFRMMAIN.TABSHEET5.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+ msgid "FFmpeg"
+ msgstr "FFmpeg"
+ 
+ #: TFRMMAIN.TABSHEET6.CAPTION
+-#, fuzzy
+-#| msgid "Output Details"
+ msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+ msgid "Output Details"
+-msgstr "פרטי פלט"
++msgstr "פרטי הפלט"
+ 
+ #: TFRMMAIN.VIDBITRATE.HINT
+ msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+@@ -699,18 +632,14 @@
+ msgstr ""
+ 
+ #: TFRMPREFERENCES.BUTTON1.CAPTION
+-#, fuzzy
+-#| msgid "OK"
+ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+ msgid "OK"
+ msgstr "בסדר"
+ 
+ #: TFRMPREFERENCES.BUTTON2.CAPTION
+-#, fuzzy
+-#| msgid "Cancel"
+ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+ msgid "Cancel"
+-msgstr "ביטול"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.BUTTON3.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+@@ -747,10 +676,8 @@
+ msgstr "אפשרויות WinFF"
+ 
+ #: TFRMPREFERENCES.CHECKBOX1.CAPTION
+-#, fuzzy
+-#| msgid "Remember Last Directory Used"
+ msgid "Remember Last Used Directory"
+-msgstr "זכור את התיקייה האחרונה שהייתה בשימוש"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.CHECKBOX2.CAPTION
+ msgid "Use CHCP for international characters"
+@@ -761,72 +688,52 @@
+ msgstr ""
+ 
+ #: TFRMPREFERENCES.EDIT7.HINT
+-#, fuzzy
+-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+ msgid "'-e' for xterm, '-x' for gnome-terminal"
+-msgstr "אפשרויות מסוף (-e עבור Xterm , -x עבור המסוף של גנום"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.LABEL1.CAPTION
+-#, fuzzy
+-#| msgid "Default Destination Directory"
+ msgid "Default Destination Directory:"
+-msgstr "תיקיית יעד ברירת מחדל"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.LABEL2.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFmpeg Executable"
+ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+ msgid "Path to FFmpeg Executable:"
+-msgstr "נתיב ל-Executable של FFmpeg"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.LABEL3.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFPlay Executable"
+ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+ msgid "Path to FFplay Executable:"
+-msgstr "נתיב ל-Executable של FFPlay"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.LABEL4.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFmpeg Executable"
+ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+ msgid "Path to FFmpeg Executable:"
+-msgstr "נתיב ל-Executable של FFmpeg"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.LABEL5.CAPTION
+-#, fuzzy
+-#| msgid "Path to FFPlay Executable"
+ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+ msgid "Path to FFplay Executable:"
+-msgstr "נתיב ל-Executable של FFPlay"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.LABEL6.CAPTION
+-#, fuzzy
+-#| msgid "Terminal to run FFmpeg"
+ msgid "Terminal to run FFmpeg in:"
+-msgstr "מסוף להרצת FFmpeg"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.LABEL7.CAPTION
+-#, fuzzy
+-#| msgid "Additional Options"
+ msgid "Terminal Options:"
+-msgstr "אפשרויות נוספות"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.LABEL8.CAPTION
+-#, fuzzy
+-#| msgid "Priority"
+ msgid "Priority:"
+-msgstr "חשיבות"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.PAGE1.CAPTION
+ msgid "General"
+ msgstr "כללי"
+ 
+ #: TFRMPREFERENCES.PAGE2.CAPTION
+-#, fuzzy
+-#| msgid "Ms Windows"
+ msgid "MS Windows"
+-msgstr "מיקרוסופט וינדוס"
++msgstr ""
+ 
+ #: TFRMPREFERENCES.PAGE3.CAPTION
+ msgid "Linux"
+@@ -837,11 +744,9 @@
+ msgstr ""
+ 
+ #: TFRMSCRIPT.BTNCLOSE.CAPTION
+-#, fuzzy
+-#| msgid "Close"
+ msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+ msgid "Close"
+-msgstr "סגור"
++msgstr ""
+ 
+ #: TFRMSCRIPT.BTNRUN.CAPTION
+ msgid "Run!"
+@@ -900,13 +805,13 @@
+ msgstr "אנא הוסף לפחות עוד קובץ אחד להמרה"
+ 
+ #: unit1.rspleaseselectapreset
+-#, fuzzy
+-#| msgid "Please select a preset to export"
+ msgid "Please select a preset"
+-msgstr "אנא בחר ב-preset לייצוא"
++msgstr ""
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Preset: %s%s%s קיים כבר"
+ 
+ #: unit1.rspresethasnoext
+@@ -929,11 +834,13 @@
+ msgid "Press Enter to Continue"
+ msgstr "לחץ Enter על מנת להמשיך"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+-#, fuzzy
+-#| msgid "Default Destination Directory"
+ msgid "Select Directory"
+-msgstr "תיקיית יעד ברירת מחדל"
++msgstr ""
+ 
+ #: unit1.rsselectpresetfile
+ msgid "Select Preset File"
+@@ -955,62 +862,6 @@
+ msgid "Import Presets"
+ msgstr "ייבוא Presets"
+ 
+-#~| msgid "WinFF"
+-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+-#~ msgid "WinFF"
+-#~ msgstr "WinFF"
+-#~| msgid "Additional Options"
+-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+-#~ msgid "Additional Options"
+-#~ msgstr "אפשרויות נוספות"
+-#~ msgid "(All Categories)"
+-#~ msgstr "(כל הקטגוריות)"
+-#~ msgid "Convert To ..."
+-#~ msgstr "המר ל..."
+-#~| msgid "About"
+-#~ msgctxt "TFRMMAIN.MITABOUT.CAPTION"
+-#~ msgid "About"
+-#~ msgstr "אודות"
+-#~| msgid "Options"
+-#~ msgctxt "REMOVED4"
+-#~ msgid "Options"
+-#~ msgstr "אפשרויות"
+-#~ msgid "Video Settings"
+-#~ msgstr "הגדרות וידאו"
+-#~ msgid "Audio Settings"
+-#~ msgstr "הגדרות אודיו"
+-#~| msgid "Cancel"
+-#~ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+-#~ msgid "Cancel"
+-#~ msgstr "ביטול"
+-#~| msgid "Presets"
+-#~ msgctxt "TFRMEDITPRESETS.LABEL1.CAPTION"
+-#~ msgid "Presets"
+-#~ msgstr "Presets"
+-#~ msgid "Multithreading for Dual Core Processors"
+-#~ msgstr "Multithreading למעבדי כפולי ליבה"
+-#~ msgid "Path to FFmpeg.exe"
+-#~ msgstr "נתיב ל-FFmpeg.exe"
+-#~ msgid "Path to FFPlay.exe"
+-#~ msgstr "נתיב ל-FFPlay.exe"
+-#~| msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+-#~| msgid "OK"
+-#~ msgctxt "REMOVED8"
+-#~ msgid "OK"
+-#~ msgstr "בסדר"
+-#~| msgid "Converting"
+-#~ msgid "Continue"
+-#~ msgstr "ממיר"
+-#~| msgid "Save"
+-#~ msgctxt "TFRMSCRIPT.BTNSAVE.CAPTION"
+-#~ msgid "Save"
+-#~ msgstr "שמור"
+-#~ msgid "Replace Preset"
+-#~ msgstr "החלף preset"
+-#~| msgid "FFmpeg"
+-#~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+-#~ msgid "FFmpeg"
+-#~ msgstr "FFmpeg"
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "התווית חייבת להיות ייחודית."
+@@ -1044,7 +895,6 @@
+ msgstr "לא פעיל"
+ 
+ #: unit4.rsprioritynormal
+-#, fuzzy
+ msgid "Normal"
+ msgstr "רגילה"
+ 
+Index: winff-git/languages/winff.zh_CN.po
+===================================================================
+--- winff-git.orig/languages/winff.zh_CN.po	2012-05-27 14:13:42.797969863 +0200
++++ winff-git/languages/winff.zh_CN.po	2012-05-27 14:13:58.438047425 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Simplified Chinese
+-# Copyright (C) 2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -18,7 +18,7 @@
+ # Dean Lee <xslidian@gmail.com>, 2011
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: \n"
+@@ -826,7 +826,9 @@
+ msgstr "请选择预设"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "预设: %s%s%s 已存在"
+ 
+ #: unit1.rspresethasnoext
+@@ -849,6 +851,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "按回车键继续"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "选择目录"
+@@ -869,10 +875,6 @@
+ msgid "Create Preset:"
+ msgstr "创建预设:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "导入预设"
+-
+ #~ msgid "Ramiro Polla"
+ #~ msgstr "Ramiro Polla"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+@@ -884,6 +886,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "导入预设"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "标签必须唯一。"
+Index: winff-git/languages/winff.cs.po
+===================================================================
+--- winff-git.orig/languages/winff.cs.po	2012-05-27 14:13:43.205971886 +0200
++++ winff-git/languages/winff.cs.po	2012-05-27 14:13:58.438047425 +0200
+@@ -3,9 +3,11 @@
+ # This file is distributed under the same license as the winff package.
+ # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+ #
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/cs/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: winff\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2011-11-04 08:27+0000\n"
+@@ -812,7 +814,9 @@
+ msgstr "Prosím, vyberte přednastavení"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Přednastavení: %s%s%s již existuje"
+ 
+ #: unit1.rspresethasnoext
+@@ -835,6 +839,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Pro pokračování stisněte Enter"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Vybrat složku"
+@@ -855,10 +863,6 @@
+ msgid "Create Preset:"
+ msgstr "Vytvořit přednastavení"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Importovat přednastavení"
+-
+ #~ msgid " will be applied to all jobs when the conversion starts"
+ #~ msgstr " se použije na všechny úlohy poté, co bude spuštěna konverze"
+ #~ msgid "Ramiro Polla"
+@@ -876,6 +880,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Importovat přednastavení"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Popis musí být unikátní"
+Index: winff-git/languages/winff.kk.po
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ winff-git/languages/winff.kk.po	2012-05-27 14:13:58.442047442 +0200
+@@ -0,0 +1,887 @@
++# Kazakh translation for winff
++# Copyright (c) WinFF authors.
++# This file is distributed under the same license as the winff package.
++# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2012.
++#
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/kk/+details
++msgid ""
++msgstr ""
++"Project-Id-Version: WinFF 1.4.2\n"
++"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
++"POT-Creation-Date: 2011-11-22 23:33+0000\n"
++"PO-Revision-Date: 2012-05-03 11:45+0000\n"
++"Last-Translator: Baurzhan Muftakhidinov <Unknown>\n"
++"Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
++"X-Generator: Launchpad (build 15282)\n"
++"X-Poedit-Country: KAZAKHSTAN\n"
++"Language: kk\n"
++"X-Poedit-Language: Kazakh\n"
++
++#: TFORM1.FORM1.CAPTION
++msgid "Form1"
++msgstr "Form1"
++
++#: TFRMABOUT.BUTTON1.CAPTION
++msgctxt "TFRMABOUT.BUTTON1.CAPTION"
++msgid "OK"
++msgstr "ОК"
++
++#: TFRMABOUT.FRMABOUT.CAPTION
++msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
++msgid "About WinFF"
++msgstr "WinFF туралы"
++
++#: TFRMABOUT.LABEL1.CAPTION
++msgid "WinFF 1.3.2"
++msgstr "WinFF 1.3.2"
++
++#: TFRMABOUT.LABEL10.CAPTION
++msgid "http://hawkeye.arrozcru.org/"
++msgstr "http://hawkeye.arrozcru.org/"
++
++#: TFRMABOUT.LABEL11.CAPTION
++msgid "Debian/Ubuntu Packaging by Paul Gevers"
++msgstr "Debian/Ubuntu дестелері: Paul Gevers"
++
++#: TFRMABOUT.LABEL13.CAPTION
++msgid "Gmaq"
++msgstr "Gmaq"
++
++#: TFRMABOUT.LABEL14.CAPTION
++msgid "High Quality Presets From"
++msgstr "Жоғары сапалы кодтау параметрлерін ұсынған"
++
++#: TFRMABOUT.LABEL15.CAPTION
++msgid "Icons and Logo by Alex Klepatsch"
++msgstr "Таңбаша мен лого: Alex Klepatsch"
++
++#: TFRMABOUT.LABEL16.CAPTION
++msgid "JNavas"
++msgstr "JNavas"
++
++#: TFRMABOUT.LABEL2.CAPTION
++msgid "Copyright 2006-2009 GPL V3"
++msgstr "Copyright 2006-2009 GPL V3"
++
++#: TFRMABOUT.LABEL3.CAPTION
++msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
++msgstr "Matthew Weatherford,  Ian Stoffberg және Alexey Osipov"
++
++#: TFRMABOUT.LABEL4.CAPTION
++msgid "http://www.winff.org"
++msgstr "http://www.winff.org"
++
++#: TFRMABOUT.LABEL5.CAPTION
++msgctxt "TFRMABOUT.LABEL5.CAPTION"
++msgid "FFmpeg"
++msgstr "FFmpeg"
++
++#: TFRMABOUT.LABEL6.CAPTION
++msgid "Trademark Fabrice Belllard"
++msgstr "Fabrice Belllard сауда белгісі"
++
++#: TFRMABOUT.LABEL7.CAPTION
++msgid "http://ffmpeg.org"
++msgstr "http://ffmpeg.org"
++
++#: TFRMABOUT.LABEL8.CAPTION
++msgid "FFmpeg Windows Builds by"
++msgstr "FFmpeg Windows нұсқалары:"
++
++#: TFRMABOUT.LABEL9.CAPTION
++msgid "Kyle Schwarz"
++msgstr "Kyle Schwarz"
++
++#: TFRMABOUT.PAGE1.CAPTION
++msgctxt "TFRMABOUT.PAGE1.CAPTION"
++msgid "WinFF"
++msgstr "WinFF"
++
++#: TFRMABOUT.PAGE2.CAPTION
++msgctxt "TFRMABOUT.PAGE2.CAPTION"
++msgid "FFmpeg"
++msgstr "FFmpeg"
++
++#: TFRMABOUT.PAGE3.CAPTION
++msgid "Thanks"
++msgstr "Рахмет"
++
++#: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
++msgid "Add / Update"
++msgstr "Қосу / Жаңарту"
++
++#: TFRMEDITPRESETS.CANCELBTN.CAPTION
++msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
++msgid "Close"
++msgstr "Жабу"
++
++#: TFRMEDITPRESETS.CAPTION
++msgid "Edit Presets"
++msgstr "Параметрлерді түзету"
++
++#: TFRMEDITPRESETS.DELETEBTN.CAPTION
++msgid "Delete"
++msgstr "Өшіру"
++
++#: TFRMEDITPRESETS.EDIT1.HINT
++msgid "One word, only letters and numbers"
++msgstr "Бір сөз, тек әріптер мен сандар"
++
++#: TFRMEDITPRESETS.EDIT2.HINT
++msgid "Enter a more descriptive name for this preset"
++msgstr "Бұл параметрді сипаттайтын атауды көрсетіңіз"
++
++#: TFRMEDITPRESETS.EDIT3.HINT
++msgid "Please don't use -i or output file parameters"
++msgstr "-i немесе шығыс файл баптауларын қолданбаңыз"
++
++#: TFRMEDITPRESETS.EDIT4.HINT
++msgid "Do not include a dot"
++msgstr "Нүктені көрсетпеңіз"
++
++#: TFRMEDITPRESETS.EDIT5.HINT
++msgid "Choose a category to group this preset under"
++msgstr "Бұл параметрді топтау үшін санатты көрсетіңіз"
++
++#: TFRMEDITPRESETS.EXPORT.CAPTION
++msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
++msgid "Export"
++msgstr "Экспорт"
++
++#: TFRMEDITPRESETS.IMPORT.CAPTION
++msgid "Import"
++msgstr "Импорт"
++
++#: TFRMEDITPRESETS.LABEL1.CAPTION
++msgid "Category / Preset"
++msgstr "Санат / Параметр"
++
++#: TFRMEDITPRESETS.LABEL2.CAPTION
++msgid "Preset Name (one word, only letters and numbers)"
++msgstr "Параметр аты (бір сөз, тек әріптер мен сандар)"
++
++#: TFRMEDITPRESETS.LABEL3.CAPTION
++msgid "Preset Label"
++msgstr "Параметр белгісі"
++
++#: TFRMEDITPRESETS.LABEL4.CAPTION
++msgid "Preset Command Line Parameters (no -i or output file)"
++msgstr "Параметрдің командалық жол опциялары (-i не шығыс файлы керек емес)"
++
++#: TFRMEDITPRESETS.LABEL5.CAPTION
++msgid "Output File Extension (do not include the '.' )"
++msgstr "Шығыс файлының кеңейтуі ('.' қоспаңыз)"
++
++#: TFRMEDITPRESETS.LABEL6.CAPTION
++msgid "Category"
++msgstr "Санат"
++
++#: TFRMEDITPRESETS.OKBTN.CAPTION
++msgid "Save"
++msgstr "Сақтау"
++
++#: TFRMEDITPRESETS.PNLTOP.CAPTION
++msgid "pnlTop"
++msgstr "pnlTop"
++
++#: TFRMEXPORT.CANCELBTN.CAPTION
++msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
++msgid "Cancel"
++msgstr "Бас тарту"
++
++#: TFRMEXPORT.CAPTION
++msgid "Export Presets"
++msgstr "Параметрлерді экспорттау"
++
++#: TFRMEXPORT.EXPORTBTN.CAPTION
++msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
++msgid "Export"
++msgstr "Экспорт"
++
++#: TFRMEXPORT.LABEL1.CAPTION
++msgid "Choose Presets to Export:"
++msgstr "Экспорттау үшін параметрлерді таңдаңыз:"
++
++#: TFRMMAIN.AUDBITRATE.HINT
++msgctxt "TFRMMAIN.AUDBITRATE.HINT"
++msgid "(<integer>) the target kilobits/second that the stream should use"
++msgstr "(<integer>) ағым қолданатын килобит/сек параметрі"
++
++#: TFRMMAIN.AUDCHANNELS.HINT
++msgid "(<integer>) number of audio channels"
++msgstr "(<integer>) аудио арналарының саны"
++
++#: TFRMMAIN.AUDSAMPLINGRATE.HINT
++msgid "(<integer>) the sampling frequency of the audio in Hertz"
++msgstr "(<integer>) аудионы дискреттеу жиілігі, Гц"
++
++#: TFRMMAIN.BTNADD.CAPTION
++msgid "Add"
++msgstr "Қосу"
++
++#: TFRMMAIN.BTNADD.HINT
++msgid "Add file(s) to the list for conversion"
++msgstr "Түрлендіру тізіміне файл(дар)ды қосу"
++
++#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
++msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
++msgid "Apply Output Folder"
++msgstr "Шығыс бумасын іске асыру"
++
++#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
++msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
++msgid "Apply Preset"
++msgstr "Параметрді іске асыру"
++
++#: TFRMMAIN.BTNCLEAR.CAPTION
++msgid "Clear"
++msgstr "Тазарту"
++
++#: TFRMMAIN.BTNCLEAR.HINT
++msgid "Remove all files from the list"
++msgstr "Тізімнен барлық файлдарды өшіру"
++
++#: TFRMMAIN.BTNCONVERT.CAPTION
++msgid "Convert"
++msgstr "Түрлендіру"
++
++#: TFRMMAIN.BTNCONVERT.HINT
++msgid "Start the conversion process"
++msgstr "Түрлендіру үрдісін бастау"
++
++#: TFRMMAIN.BTNOPTIONS.CAPTION
++msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
++msgid "Options"
++msgstr "Опциялар"
++
++#: TFRMMAIN.BTNOPTIONS.HINT
++msgid "Open/close the additional options window"
++msgstr "Қосымша опциялар терезесін ашу не жабу"
++
++#: TFRMMAIN.BTNPLAY.CAPTION
++msgid "Play"
++msgstr "Ойнату"
++
++#: TFRMMAIN.BTNPLAY.HINT
++msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
++msgstr "Таңдалған қайнар көзді ffplay көмегімен алдын-ала қарау (түрлендіру мүмкін бе, соны тексеруге болады)"
++
++#: TFRMMAIN.BTNPREVIEW.CAPTION
++msgid "Preview"
++msgstr "Алдын-ала қарау"
++
++#: TFRMMAIN.BTNPREVIEW.HINT
++msgid "Preview using the output settings"
++msgstr "Шығыс баптауларын қолданып, алдын-ала қарау"
++
++#: TFRMMAIN.BTNREMOVE.CAPTION
++msgid "Remove"
++msgstr "Өшіру"
++
++#: TFRMMAIN.BTNREMOVE.HINT
++msgid "Remove selected file(s) from the list"
++msgstr "Тізімнен таңдалған файл(дар)ды өшіру"
++
++#: TFRMMAIN.CAPTION
++msgctxt "TFRMMAIN.CAPTION"
++msgid "WinFF"
++msgstr "WinFF"
++
++#: TFRMMAIN.CATEGORYBOX.HINT
++msgid "Device or file type the video should be converted to"
++msgstr "Видеоны түрлендіру үшін құрылғы не файл түрі"
++
++#: TFRMMAIN.CBOUTPUTPATH.CAPTION
++msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
++msgid "Use Source Folder"
++msgstr "Қайнар көз бумасын қолдану"
++
++#: TFRMMAIN.CBX2PASS.CAPTION
++msgid "2 pass"
++msgstr "2 рет"
++
++#: TFRMMAIN.CBX2PASS.HINT
++msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
++msgstr "Екі рет өту кодтаушыға сапаны арттыру үшін бірінші рет өткенде ақпаратты жинауға мүмкіндік береді"
++
++#: TFRMMAIN.CBXDEINTERLACE.CAPTION
++msgid "Deinterlace"
++msgstr "Деинтерлейсинг"
++
++#: TFRMMAIN.CBXDEINTERLACE.HINT
++msgid "Removes interlacing from the video (if necessary)"
++msgstr "Видеодан интерлейсингті өшіру (керек болса)"
++
++#: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
++msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
++msgid "..."
++msgstr "..."
++
++#: TFRMMAIN.DESTFOLDER.HINT
++msgid "Target location for the final video (choose a different folder than the source folder)"
++msgstr "Нәтиже видеосы үшін орналасу бумасы (қайнар көз орналасқан бумасынан басқасын таңдаңыз)"
++
++#: TFRMMAIN.EDTASPECTRATIO.HINT
++msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
++msgstr "(<integer:integer> не <real>) мақсат экранының физикалық жақтар ара қатынасы (DAR)"
++
++#: TFRMMAIN.EDTAUDIOSYNC.HINT
++msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
++msgstr "(<integer>)10-нан бастап, 44100 не 48000 сияқты аудио дискреттеу жиілігіне дейін. Аудио ағымын \"созу\"/\"сығуға\" мүмкін қылады."
++
++#: TFRMMAIN.EDTCROPBOTTOM.TEXT
++msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
++msgid "0"
++msgstr "0"
++
++#: TFRMMAIN.EDTCROPLEFT.TEXT
++msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
++msgid "0"
++msgstr "0"
++
++#: TFRMMAIN.EDTCROPRIGHT.TEXT
++msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
++msgid "0"
++msgstr "0"
++
++#: TFRMMAIN.EDTCROPTOP.TEXT
++msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
++msgid "0"
++msgstr "0"
++
++#: TFRMMAIN.EDTSEEKHH.HINT
++msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
++msgid "<hh:mm:ss> - Seek to this position before start converting"
++msgstr "<сс:мм:сс> - Түрлендіруді осы жерден (уақыттан) бастау"
++
++#: TFRMMAIN.EDTSEEKMM.HINT
++msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
++msgid "<hh:mm:ss> - Seek to this position before start converting"
++msgstr "<сс:мм:сс> - Түрлендіруді осы жерден (уақыттан) бастау"
++
++#: TFRMMAIN.EDTSEEKSS.HINT
++msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
++msgid "<hh:mm:ss> - Seek to this position before start converting"
++msgstr "<сс:мм:сс> - Түрлендіруді осы жерден (уақыттан) бастау"
++
++#: TFRMMAIN.EDTTTRHH.HINT
++msgctxt "TFRMMAIN.EDTTTRHH.HINT"
++msgid "<hh:mm:ss> - Stop after this much of video converted"
++msgstr "<сс:мм:сс> -Видеоның осыншама уақыты түрлендірілгеннен кейін тоқтау"
++
++#: TFRMMAIN.EDTTTRMM.HINT
++msgctxt "TFRMMAIN.EDTTTRMM.HINT"
++msgid "<hh:mm:ss> - Stop after this much of video converted"
++msgstr "<сс:мм:сс> -Видеоның осыншама уақыты түрлендірілгеннен кейін тоқтау"
++
++#: TFRMMAIN.EDTTTRSS.HINT
++msgctxt "TFRMMAIN.EDTTTRSS.HINT"
++msgid "<hh:mm:ss> - Stop after this much of video converted"
++msgstr "<сс:мм:сс> -Видеоның осыншама уақыты түрлендірілгеннен кейін тоқтау"
++
++#: TFRMMAIN.EDTVOLUME.HINT
++msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
++msgstr "(<integer>) 256 = Ағымдағы дыбысы, 128 = Жарты дыбысы, 512 = Екі еселенген дыбысы"
++
++#: TFRMMAIN.LABEL1.CAPTION
++msgid "Convert to:"
++msgstr "Неге түрлендіру:"
++
++#: TFRMMAIN.LABEL10.CAPTION
++msgid "Audio Channels"
++msgstr "Аудио арналары"
++
++#: TFRMMAIN.LABEL12.CAPTION
++msgctxt "TFRMMAIN.LABEL12.CAPTION"
++msgid "Output Folder:"
++msgstr "Шығыс бумасы:"
++
++#: TFRMMAIN.LABEL19.CAPTION
++msgid "Preset:"
++msgstr "Параметр:"
++
++#: TFRMMAIN.LABEL20.CAPTION
++msgid "Volume"
++msgstr "Дыбысы"
++
++#: TFRMMAIN.LABEL21.CAPTION
++msgid "Sync"
++msgstr "Синхронизация"
++
++#: TFRMMAIN.LABEL22.CAPTION
++msgid "Seek to"
++msgstr "Қайда өту"
++
++#: TFRMMAIN.LABEL23.CAPTION
++msgid "Time to Record"
++msgstr "Жазу уақыты"
++
++#: TFRMMAIN.LABEL24.CAPTION
++msgid "Hours / Minutes / Seconds"
++msgstr "Сағат / Минут / Секунд"
++
++#: TFRMMAIN.LABEL3.CAPTION
++msgid "Additional Command Line Parameters"
++msgstr "Қосымша командалық жол опциялары"
++
++#: TFRMMAIN.LABEL7.CAPTION
++msgid "Audio Bitrate"
++msgstr "Аудио битрейті"
++
++#: TFRMMAIN.LABEL8.CAPTION
++msgid "Sample Rate"
++msgstr "Дискреттеу жиілігі"
++
++#: TFRMMAIN.LABEL9.CAPTION
++msgid "X"
++msgstr "X"
++
++#: TFRMMAIN.LBLASPECTRATIO.CAPTION
++msgid "Aspect Ratio"
++msgstr "Жақтар ара қатынасы"
++
++#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
++msgid "Bottom"
++msgstr "Төмен"
++
++#: TFRMMAIN.LBLCROPLEFT.CAPTION
++msgid "Left"
++msgstr "Сол жақ"
++
++#: TFRMMAIN.LBLCROPRIGHT.CAPTION
++msgid "Right"
++msgstr "Оң жақ"
++
++#: TFRMMAIN.LBLCROPTOP.CAPTION
++msgid "Top"
++msgstr "Жоғары"
++
++#: TFRMMAIN.LBLFRAMERATE.CAPTION
++msgid "Frame Rate"
++msgstr "Кадр/сек"
++
++#: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
++msgid "Video Bitrate"
++msgstr "Видео битрейті"
++
++#: TFRMMAIN.LBLVIDEOSIZE.CAPTION
++msgid "Video Size"
++msgstr "Видео өлшемі"
++
++#: TFRMMAIN.MENUITEM1.CAPTION
++msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
++msgid "Apply Preset"
++msgstr "Параметрді іске асыру"
++
++#: TFRMMAIN.MENUITEM2.CAPTION
++msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
++msgid "Apply Destination Folder"
++msgstr "Мақсат бумасын іске асыру"
++
++#: TFRMMAIN.MENUITEM9.CAPTION
++msgid "-"
++msgstr "-"
++
++#: TFRMMAIN.MITABOUT.CAPTION
++msgid "About"
++msgstr "Осы туралы"
++
++#: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
++msgid "Display Cmd Line"
++msgstr "Командалық жол көрсету"
++
++#: TFRMMAIN.MITDOCS.CAPTION
++msgid "Documentation"
++msgstr "Құжаттама"
++
++#: TFRMMAIN.MITEXIT.CAPTION
++msgid "Exit"
++msgstr "Шығу"
++
++#: TFRMMAIN.MITFORUMS.CAPTION
++msgid "Forums"
++msgstr "Форумдар"
++
++#: TFRMMAIN.MITIMPORTPRESET.CAPTION
++msgid "Import Preset"
++msgstr "Параметрді импорттау"
++
++#: TFRMMAIN.MITPAUSEONFINISH.CAPTION
++msgid "Pause on Finish"
++msgstr "Аяқтағанда аялдату"
++
++#: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
++msgid "Play Sound on Finish"
++msgstr "Аяқтағанда, дыбыс беру"
++
++#: TFRMMAIN.MITPREFERENCES.CAPTION
++msgid "Preferences"
++msgstr "Баптаулар"
++
++#: TFRMMAIN.MITPRESETS.CAPTION
++msgid "Presets"
++msgstr "Параметрлер"
++
++#: TFRMMAIN.MITSHOWOPTIONS.CAPTION
++msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
++msgid "Additional Options"
++msgstr "Қосымша опциялар"
++
++#: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
++msgid "Shutdown on Finish"
++msgstr "Аяқтағанда, сөндіру"
++
++#: TFRMMAIN.MITVIEWMODE.CAPTION
++msgid "Detailed View"
++msgstr "Толығырақ көрініс"
++
++#: TFRMMAIN.MITWINFF.CAPTION
++msgid "WinFF Website"
++msgstr "WinFF вебсайты"
++
++#: TFRMMAIN.MNUEDIT.CAPTION
++msgid "Edit"
++msgstr "Түзету"
++
++#: TFRMMAIN.MNUFILE.CAPTION
++msgid "File"
++msgstr "Файл"
++
++#: TFRMMAIN.MNUHELP.CAPTION
++msgid "Help"
++msgstr "Көмек"
++
++#: TFRMMAIN.MNUOPTIONS.CAPTION
++msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
++msgid "Options"
++msgstr "Опциялар"
++
++#: TFRMMAIN.PNLMAIN.CAPTION
++msgid "pnlMain"
++msgstr "pnlMain"
++
++#: TFRMMAIN.PRESETBOX.HINT
++msgid "Specific settings to use for the chosen device or file type"
++msgstr "Таңдалған құрылғы не файл түрі үшін арнайы баптаулар"
++
++#: TFRMMAIN.TABSHEET1.CAPTION
++msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
++msgid "Video"
++msgstr "Видео"
++
++#: TFRMMAIN.TABSHEET2.CAPTION
++msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
++msgid "Audio"
++msgstr "Аудио"
++
++#: TFRMMAIN.TABSHEET3.CAPTION
++msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
++msgid "Crop"
++msgstr "Кесу"
++
++#: TFRMMAIN.TABSHEET4.CAPTION
++msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
++msgid "Time"
++msgstr "Уақыт"
++
++#: TFRMMAIN.TABSHEET5.CAPTION
++msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
++msgid "FFmpeg"
++msgstr "FFmpeg"
++
++#: TFRMMAIN.TABSHEET6.CAPTION
++msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
++msgid "Output Details"
++msgstr "Шығыс қасиеттері"
++
++#: TFRMMAIN.VIDBITRATE.HINT
++msgctxt "TFRMMAIN.VIDBITRATE.HINT"
++msgid "(<integer>) the target kilobits/second that the stream should use"
++msgstr "(<integer>) ағым қолданатын килобит/сек параметрі"
++
++#: TFRMMAIN.VIDFRAMERATE.HINT
++msgid "(<real> or <integer>) number of frames per second"
++msgstr "(<real> не <integer>) бір секунд ішіндегі кадрлар саны"
++
++#: TFRMMAIN.VIDSIZEX.HINT
++msgctxt "TFRMMAIN.VIDSIZEX.HINT"
++msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
++msgstr "(<integer> X <integer>) Әр кадр ішіндегі пиксельдер саны. Пиксельді ара қатынасын (PAR) қолдамайтын кодектер үшін бұл - нәтиже кадр өлшемі."
++
++#: TFRMMAIN.VIDSIZEY.HINT
++msgctxt "TFRMMAIN.VIDSIZEY.HINT"
++msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
++msgstr "(<integer> X <integer>) Әр кадр ішіндегі пиксельдер саны. Пиксельді ара қатынасын (PAR) қолдамайтын кодектер үшін бұл - нәтиже кадр өлшемі."
++
++#: TFRMPREFERENCES.BUTTON1.CAPTION
++msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
++msgid "OK"
++msgstr "ОК"
++
++#: TFRMPREFERENCES.BUTTON2.CAPTION
++msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
++msgid "Cancel"
++msgstr "Бас тарту"
++
++#: TFRMPREFERENCES.BUTTON3.CAPTION
++msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
++msgid "..."
++msgstr "..."
++
++#: TFRMPREFERENCES.BUTTON4.CAPTION
++msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
++msgid "..."
++msgstr "..."
++
++#: TFRMPREFERENCES.BUTTON5.CAPTION
++msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
++msgid "..."
++msgstr "..."
++
++#: TFRMPREFERENCES.BUTTON6.CAPTION
++msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
++msgid "..."
++msgstr "..."
++
++#: TFRMPREFERENCES.BUTTON7.CAPTION
++msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
++msgid "..."
++msgstr "..."
++
++#: TFRMPREFERENCES.BUTTON8.CAPTION
++msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
++msgid "..."
++msgstr "..."
++
++#: TFRMPREFERENCES.CAPTION
++msgid "WinFF Preferences"
++msgstr "WinFF баптаулары"
++
++#: TFRMPREFERENCES.CHECKBOX1.CAPTION
++msgid "Remember Last Used Directory"
++msgstr "Соңғы қолданылған буманы есте сақтау"
++
++#: TFRMPREFERENCES.CHECKBOX2.CAPTION
++msgid "Use CHCP for international characters"
++msgstr "Халықаралық таңбалар үшін CHCP қолданыңыз"
++
++#: TFRMPREFERENCES.CHECKBOX3.CAPTION
++msgid "Use Several Encoding Threads:"
++msgstr "Бірнеше кодтау үрдістерін қолдану:"
++
++#: TFRMPREFERENCES.EDIT7.HINT
++msgid "'-e' for xterm, '-x' for gnome-terminal"
++msgstr "'-e' xterm, ал '-x' gnome-terminal үшін"
++
++#: TFRMPREFERENCES.LABEL1.CAPTION
++msgid "Default Destination Directory:"
++msgstr "Үнсіз келісім бойынша мақсат бумасы:"
++
++#: TFRMPREFERENCES.LABEL2.CAPTION
++msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
++msgid "Path to FFmpeg Executable:"
++msgstr "FFmpeg орындалатын файл жолы:"
++
++#: TFRMPREFERENCES.LABEL3.CAPTION
++msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
++msgid "Path to FFplay Executable:"
++msgstr "FFplay орындалатын файл жолы:"
++
++#: TFRMPREFERENCES.LABEL4.CAPTION
++msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
++msgid "Path to FFmpeg Executable:"
++msgstr "FFmpeg орындалатын файл жолы:"
++
++#: TFRMPREFERENCES.LABEL5.CAPTION
++msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
++msgid "Path to FFplay Executable:"
++msgstr "FFplay орындалатын файл жолы:"
++
++#: TFRMPREFERENCES.LABEL6.CAPTION
++msgid "Terminal to run FFmpeg in:"
++msgstr "FFmpeg-ті жөнелту үшін терминал:"
++
++#: TFRMPREFERENCES.LABEL7.CAPTION
++msgid "Terminal Options:"
++msgstr "Терминал баптаулары:"
++
++#: TFRMPREFERENCES.LABEL8.CAPTION
++msgid "Priority:"
++msgstr "Приоритет:"
++
++#: TFRMPREFERENCES.PAGE1.CAPTION
++msgid "General"
++msgstr "Жалпы"
++
++#: TFRMPREFERENCES.PAGE2.CAPTION
++msgid "MS Windows"
++msgstr "MS Windows"
++
++#: TFRMPREFERENCES.PAGE3.CAPTION
++msgid "Linux"
++msgstr "Linux"
++
++#: TFRMSCRIPT.BTNCLIP.CAPTION
++msgid "Copy to Clipboard"
++msgstr "Алмасу буферіне көшіру"
++
++#: TFRMSCRIPT.BTNCLOSE.CAPTION
++msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
++msgid "Close"
++msgstr "Жабу"
++
++#: TFRMSCRIPT.BTNRUN.CAPTION
++msgid "Run!"
++msgstr "Жөнелту!"
++
++#: TFRMSCRIPT.BTNSAVE.CAPTION
++msgid "Save As..."
++msgstr "Қалайша сақтау..."
++
++#: TFRMSCRIPT.CAPTION
++msgid "FFmpeg Command Line"
++msgstr "FFmpeg командалық жолы"
++
++#: unit1.rsanalysing
++msgid "Analysing"
++msgstr "Зерттеу"
++
++#: unit1.rsconverting
++msgid "Converting"
++msgstr "Түрлендіру"
++
++#: unit1.rscouldnotfindffmpeg
++msgid "Could not find FFmpeg."
++msgstr "FFmpeg табылмады."
++
++#: unit1.rscouldnotfindffplay
++msgid "Could not find FFPlay."
++msgstr "FFPlay табылмады."
++
++#: unit1.rscouldnotfindfile
++msgid "Could Not Find File"
++msgstr "Файл табылмады"
++
++#: unit1.rscouldnotfindpresetfile
++msgid "Could not find presets file."
++msgstr "Параметрлер файлын табу мүмкін емес."
++
++#: unit1.rsextensionnoperiod
++msgid "Extension can not contain a period"
++msgstr "Кеңейту ішінде нүкте болмауы тиіс"
++
++#: unit1.rsfiledoesnotexist
++msgid "file does not exist"
++msgstr "файл жоқ болып тұр"
++
++#: unit1.rsinvalidpreset
++msgid "Invalid Preset File"
++msgstr "Параметрлер файлы қате"
++
++#: unit1.rsnamemustbeallpha
++msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
++msgstr "Аты сандар мен әріптерден тұруы керек (a-z,A-Z,0-9)"
++
++#: unit1.rspleaseadd1file
++msgid "Please add at least 1 file to convert"
++msgstr "Түрлендіру үшін кем дегенде 1 файлды қосыңыз"
++
++#: unit1.rspleaseselectapreset
++msgid "Please select a preset"
++msgstr "Параметрді таңдаңыз"
++
++#: unit1.rspresetalreadyexist
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
++msgstr "Параметр: %s%s%s бар болып тұр"
++
++#: unit1.rspresethasnoext
++msgid "The preset to import does not have an extension"
++msgstr "Импортталатын параметрдің кеңейтуі жоқ"
++
++#: unit1.rspresethasnolabel
++msgid "The preset to import does not have a label"
++msgstr "Импортталатын параметрдің белгісі жоқ"
++
++#: unit1.rspresettoexport
++msgid "Please select a preset to export"
++msgstr "Экспорттау үшін параметрді таңдаңыз"
++
++#: unit1.rspresetwithlabelexists
++msgid "Preset with label: %s%s%s already exists"
++msgstr "Белгі: %s%s%s бар параметр бар болып тұр"
++
++#: unit1.rspressenter
++msgid "Press Enter to Continue"
++msgstr "Жалғастыру үшін Enter басыңыз"
++
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
++#: unit1.rsselectdirectory
++msgid "Select Directory"
++msgstr "Буманы таңдаңыз"
++
++#: unit1.rsselectpresetfile
++msgid "Select Preset File"
++msgstr "Параметр файлын таңдаңыз"
++
++#: unit1.rsselectvideofiles
++msgid "Select Video Files"
++msgstr "Видео файлдарын таңдаңыз"
++
++#: unit1.rsthepresethasillegalchars
++msgid "The preset contains illegal characters"
++msgstr "Параметр құрамында рұқсат етілмеген таңбалар бар"
++
++#: unit2.rscreatepreset
++msgid "Create Preset:"
++msgstr "Параметрді жасау"
++
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Параметрлерді импорттау"
++
++#: unit2.rslabelmustbeunique
++msgid "Label must be unique."
++msgstr "Белгі қайталанбауы тиіс."
++
++#: unit2.rsremovepreset
++msgid "Remove Preset:"
++msgstr "Параметрді өшіру:"
++
++#: unit2.rsupdatepreset
++msgid "Update Preset:"
++msgstr "Параметрді жаңарту:"
++
++#: unit2.rsyoumustenterextension
++msgid "You must enter the extension."
++msgstr "Кеңейтуді көрсету керек."
++
++#: unit2.rsyoumustenterlabel
++msgid "You must enter a label."
++msgstr "Белгіні көрсету керек."
++
++#: unit2.rsyoumustenternmae
++msgid "You must enter a name."
++msgstr "Атын көрсету керек."
++
++#: unit4.rspriorityhigh
++msgid "High"
++msgstr "Жоғары"
++
++#: unit4.rspriorityidle
++msgid "Idle"
++msgstr "Іссіз"
++
++#: unit4.rsprioritynormal
++msgid "Normal"
++msgstr "Қалыпты"
++
+Index: winff-git/languages/winff.pt_BR.po
+===================================================================
+--- winff-git.orig/languages/winff.pt_BR.po	2012-05-27 14:13:43.705974369 +0200
++++ winff-git/languages/winff.pt_BR.po	2012-05-27 14:13:58.446047461 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.pt.po to Português Brasileiro
+-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -19,22 +19,22 @@
+ # https://translations.launchpad.net/winff/trunk/+pots/winff/pt_BR/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.0\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+-"PO-Revision-Date: 2011-10-24 19:44+0000\n"
+-"Last-Translator: Tiago Vinícius de Oliveira Brachini <Unknown>\n"
++"PO-Revision-Date: 2012-03-21 13:06+0000\n"
++"Last-Translator: Hriostat <Unknown>\n"
+ "Language-Team: \n"
+-"Language: \n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"X-Launchpad-Export-Date: 2011-11-02 19:20+0000\n"
+-"X-Generator: Launchpad (build 14214)\n"
++"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
++"X-Generator: Launchpad (build 15282)\n"
++"Language: \n"
+ 
+ #: TFORM1.FORM1.CAPTION
+ msgid "Form1"
+-msgstr ""
++msgstr "Form1"
+ 
+ #: TFRMABOUT.BUTTON1.CAPTION
+ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+@@ -42,25 +42,21 @@
+ msgstr "OK"
+ 
+ #: TFRMABOUT.FRMABOUT.CAPTION
+-#, fuzzy
+-#| msgid "About WinFF"
+ msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
+ msgid "About WinFF"
+-msgstr "Sobre o WinFF"
++msgstr "Sobre o Winff"
+ 
+ #: TFRMABOUT.LABEL1.CAPTION
+ msgid "WinFF 1.3.2"
+ msgstr "WinFF 1.3.2"
+ 
+ #: TFRMABOUT.LABEL10.CAPTION
+-#, fuzzy
+-#| msgid "http://ffmpeg.arrozcru.org/"
+ msgid "http://hawkeye.arrozcru.org/"
+-msgstr "http://ffmpeg.arrozcru.org/"
++msgstr "http://ffmpeg.zeranoe.com/"
+ 
+ #: TFRMABOUT.LABEL11.CAPTION
+ msgid "Debian/Ubuntu Packaging by Paul Gevers"
+-msgstr ""
++msgstr "Empacotamento para Debian/Ubuntu feito por Paul Gevers"
+ 
+ #: TFRMABOUT.LABEL13.CAPTION
+ msgid "Gmaq"
+@@ -72,7 +68,7 @@
+ 
+ #: TFRMABOUT.LABEL15.CAPTION
+ msgid "Icons and Logo by Alex Klepatsch"
+-msgstr "Ícones e Logos por Alex Klepatsch"
++msgstr "Ícones and logotipo feitos por Alex Klepatsch"
+ 
+ #: TFRMABOUT.LABEL16.CAPTION
+ msgid "JNavas"
+@@ -80,11 +76,11 @@
+ 
+ #: TFRMABOUT.LABEL2.CAPTION
+ msgid "Copyright 2006-2009 GPL V3"
+-msgstr "Licença 2006-2009 GPL V3"
++msgstr "Copyright 2006-2009 GPL V3"
+ 
+ #: TFRMABOUT.LABEL3.CAPTION
+ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+-msgstr "Matthew Weatherford, Ian Stoffberg, e Alexey Osipov"
++msgstr "Matthew Weatherford,  Ian Stoffberg e Alexey Osipov"
+ 
+ #: TFRMABOUT.LABEL4.CAPTION
+ msgid "http://www.winff.org"
+@@ -97,7 +93,7 @@
+ 
+ #: TFRMABOUT.LABEL6.CAPTION
+ msgid "Trademark Fabrice Belllard"
+-msgstr ""
++msgstr "Marca registrada para Fabrice Belllard"
+ 
+ #: TFRMABOUT.LABEL7.CAPTION
+ msgid "http://ffmpeg.org"
+@@ -105,11 +101,11 @@
+ 
+ #: TFRMABOUT.LABEL8.CAPTION
+ msgid "FFmpeg Windows Builds by"
+-msgstr ""
++msgstr "Compilação do FFmpeg para Windows feita por"
+ 
+ #: TFRMABOUT.LABEL9.CAPTION
+ msgid "Kyle Schwarz"
+-msgstr ""
++msgstr "Kyle Schwarz"
+ 
+ #: TFRMABOUT.PAGE1.CAPTION
+ msgctxt "TFRMABOUT.PAGE1.CAPTION"
+@@ -123,7 +119,7 @@
+ 
+ #: TFRMABOUT.PAGE3.CAPTION
+ msgid "Thanks"
+-msgstr "Obrigad@"
++msgstr "Agradecimentos"
+ 
+ #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
+ msgid "Add / Update"
+@@ -136,11 +132,11 @@
+ 
+ #: TFRMEDITPRESETS.CAPTION
+ msgid "Edit Presets"
+-msgstr "Editar Pré-definições"
++msgstr "Editar predefinições"
+ 
+ #: TFRMEDITPRESETS.DELETEBTN.CAPTION
+ msgid "Delete"
+-msgstr "Apagar"
++msgstr "Excluir"
+ 
+ #: TFRMEDITPRESETS.EDIT1.HINT
+ msgid "One word, only letters and numbers"
+@@ -148,7 +144,7 @@
+ 
+ #: TFRMEDITPRESETS.EDIT2.HINT
+ msgid "Enter a more descriptive name for this preset"
+-msgstr ""
++msgstr "Informe um nome mais descritivo para essa predefinição"
+ 
+ #: TFRMEDITPRESETS.EDIT3.HINT
+ msgid "Please don't use -i or output file parameters"
+@@ -160,7 +156,7 @@
+ 
+ #: TFRMEDITPRESETS.EDIT5.HINT
+ msgid "Choose a category to group this preset under"
+-msgstr ""
++msgstr "Escolha uma categoria na qual a predefinição será incluída"
+ 
+ #: TFRMEDITPRESETS.EXPORT.CAPTION
+ msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+@@ -173,23 +169,23 @@
+ 
+ #: TFRMEDITPRESETS.LABEL1.CAPTION
+ msgid "Category / Preset"
+-msgstr ""
++msgstr "Categoria / Predefinição"
+ 
+ #: TFRMEDITPRESETS.LABEL2.CAPTION
+ msgid "Preset Name (one word, only letters and numbers)"
+-msgstr ""
++msgstr "Nome da predefinição (uma palavra, somente letras e números)"
+ 
+ #: TFRMEDITPRESETS.LABEL3.CAPTION
+ msgid "Preset Label"
+-msgstr "Rótulo de Pré-definição"
++msgstr "Rótulo da predefinição"
+ 
+ #: TFRMEDITPRESETS.LABEL4.CAPTION
+ msgid "Preset Command Line Parameters (no -i or output file)"
+-msgstr ""
++msgstr "Parâmetros de linha de comando da predefinição (não use -i ou arquivo de saída)"
+ 
+ #: TFRMEDITPRESETS.LABEL5.CAPTION
+ msgid "Output File Extension (do not include the '.' )"
+-msgstr ""
++msgstr "Extensão do arquivo de saída (não inclua o ponto)"
+ 
+ #: TFRMEDITPRESETS.LABEL6.CAPTION
+ msgid "Category"
+@@ -201,7 +197,7 @@
+ 
+ #: TFRMEDITPRESETS.PNLTOP.CAPTION
+ msgid "pnlTop"
+-msgstr ""
++msgstr "pnlTop"
+ 
+ #: TFRMEXPORT.CANCELBTN.CAPTION
+ msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+@@ -210,7 +206,7 @@
+ 
+ #: TFRMEXPORT.CAPTION
+ msgid "Export Presets"
+-msgstr "Importar Pré-defeinições"
++msgstr "Exportar predefinições"
+ 
+ #: TFRMEXPORT.EXPORTBTN.CAPTION
+ msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+@@ -219,12 +215,12 @@
+ 
+ #: TFRMEXPORT.LABEL1.CAPTION
+ msgid "Choose Presets to Export:"
+-msgstr ""
++msgstr "Escolher quais predefinições exportar:"
+ 
+ #: TFRMMAIN.AUDBITRATE.HINT
+ msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+ msgid "(<integer>) the target kilobits/second that the stream should use"
+-msgstr ""
++msgstr "(<integer>) a taxa em Kb/s a qual o stream deve utilizar"
+ 
+ #: TFRMMAIN.AUDCHANNELS.HINT
+ msgid "(<integer>) number of audio channels"
+@@ -240,19 +236,17 @@
+ 
+ #: TFRMMAIN.BTNADD.HINT
+ msgid "Add file(s) to the list for conversion"
+-msgstr "Adicionar arquivo(s) para a lista de conversão"
++msgstr "Adicionar arquivos à lista de conversão"
+ 
+ #: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+ msgid "Apply Output Folder"
+-msgstr ""
++msgstr "Aplicar pasta de saída"
+ 
+ #: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+-#, fuzzy
+-#| msgid "Import Preset"
+ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+ msgid "Apply Preset"
+-msgstr "Importar Predef"
++msgstr "Aplicar predefinição"
+ 
+ #: TFRMMAIN.BTNCLEAR.CAPTION
+ msgid "Clear"
+@@ -285,15 +279,15 @@
+ 
+ #: TFRMMAIN.BTNPLAY.HINT
+ msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+-msgstr "Pré-visualizar o arquivo fonte selecionado com o ffplay (bom teste para ver se é possível converter)"
++msgstr "Visualizar o arquivo fonte selecionado com o ffplay (bom teste para ver se é possível converter)"
+ 
+ #: TFRMMAIN.BTNPREVIEW.CAPTION
+ msgid "Preview"
+-msgstr "Pré-visualização"
++msgstr "Visualização"
+ 
+ #: TFRMMAIN.BTNPREVIEW.HINT
+ msgid "Preview using the output settings"
+-msgstr "Pré-visualizar usando as configurações de saída"
++msgstr "Visualizar usando as configurações de saída"
+ 
+ #: TFRMMAIN.BTNREMOVE.CAPTION
+ msgid "Remove"
+@@ -310,20 +304,20 @@
+ 
+ #: TFRMMAIN.CATEGORYBOX.HINT
+ msgid "Device or file type the video should be converted to"
+-msgstr "O dispositivo ou tipo arquivo de vídeo deve ser convertido para"
++msgstr "O dispositivo ou tipo de arquivo de vídeo deve ser convertido para"
+ 
+ #: TFRMMAIN.CBOUTPUTPATH.CAPTION
+ msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+ msgid "Use Source Folder"
+-msgstr ""
++msgstr "Usar pasta de origem"
+ 
+ #: TFRMMAIN.CBX2PASS.CAPTION
+ msgid "2 pass"
+-msgstr "2 passagens"
++msgstr "Em duas etapas"
+ 
+ #: TFRMMAIN.CBX2PASS.HINT
+ msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+-msgstr ""
++msgstr "O uso de duas etapas permite que o codificador obtenha informações na primeira etapa para o aumento da qualidade"
+ 
+ #: TFRMMAIN.CBXDEINTERLACE.CAPTION
+ msgid "Deinterlace"
+@@ -331,7 +325,7 @@
+ 
+ #: TFRMMAIN.CBXDEINTERLACE.HINT
+ msgid "Removes interlacing from the video (if necessary)"
+-msgstr ""
++msgstr "Remove o entrelaçamento do vídeo (se necessário)"
+ 
+ #: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+ msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+@@ -340,15 +334,15 @@
+ 
+ #: TFRMMAIN.DESTFOLDER.HINT
+ msgid "Target location for the final video (choose a different folder than the source folder)"
+-msgstr ""
++msgstr "Destino para o arquivo de vídeo final (escolha uma pasta diferente da origem)"
+ 
+ #: TFRMMAIN.EDTASPECTRATIO.HINT
+ msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+-msgstr ""
++msgstr "a taxa de aspecto físico para exibição"
+ 
+ #: TFRMMAIN.EDTAUDIOSYNC.HINT
+ msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+-msgstr ""
++msgstr "A partir de 10 até uma taxa de amostragem tal como 44100, 48000. Permite \"esticar\" ou \"espremer\" o stream de áudio."
+ 
+ #: TFRMMAIN.EDTCROPBOTTOM.TEXT
+ msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+@@ -373,36 +367,36 @@
+ #: TFRMMAIN.EDTSEEKHH.HINT
+ msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+ msgid "<hh:mm:ss> - Seek to this position before start converting"
+-msgstr ""
++msgstr "<hh:mm:ss> - Ir para essa posição antes de iniciar a conversão"
+ 
+ #: TFRMMAIN.EDTSEEKMM.HINT
+ msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+ msgid "<hh:mm:ss> - Seek to this position before start converting"
+-msgstr ""
++msgstr "<hh:mm:ss> - Ir para essa posição antes de iniciar a conversão"
+ 
+ #: TFRMMAIN.EDTSEEKSS.HINT
+ msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+ msgid "<hh:mm:ss> - Seek to this position before start converting"
+-msgstr ""
++msgstr "<hh:mm:ss> - Ir para essa posição antes de iniciar a conversão"
+ 
+ #: TFRMMAIN.EDTTTRHH.HINT
+ msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+ msgid "<hh:mm:ss> - Stop after this much of video converted"
+-msgstr ""
++msgstr "<hh:mm:ss> - Parar após este tempo de vídeo convertido"
+ 
+ #: TFRMMAIN.EDTTTRMM.HINT
+ msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+ msgid "<hh:mm:ss> - Stop after this much of video converted"
+-msgstr ""
++msgstr "<hh:mm:ss> - Parar após este tempo de vídeo convertido"
+ 
+ #: TFRMMAIN.EDTTTRSS.HINT
+ msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+ msgid "<hh:mm:ss> - Stop after this much of video converted"
+-msgstr ""
++msgstr "<hh:mm:ss> - Parar após este tempo de vídeo convertido"
+ 
+ #: TFRMMAIN.EDTVOLUME.HINT
+ msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+-msgstr ""
++msgstr "256 = Volume atual, 128 = Volume médio, 512 = Volume duplo"
+ 
+ #: TFRMMAIN.LABEL1.CAPTION
+ msgid "Convert to:"
+@@ -410,16 +404,16 @@
+ 
+ #: TFRMMAIN.LABEL10.CAPTION
+ msgid "Audio Channels"
+-msgstr "Canais de Áudio"
++msgstr "Canais de áudio"
+ 
+ #: TFRMMAIN.LABEL12.CAPTION
+ msgctxt "TFRMMAIN.LABEL12.CAPTION"
+ msgid "Output Folder:"
+-msgstr ""
++msgstr "Pasta de destino:"
+ 
+ #: TFRMMAIN.LABEL19.CAPTION
+ msgid "Preset:"
+-msgstr ""
++msgstr "Predefinição:"
+ 
+ #: TFRMMAIN.LABEL20.CAPTION
+ msgid "Volume"
+@@ -427,91 +421,89 @@
+ 
+ #: TFRMMAIN.LABEL21.CAPTION
+ msgid "Sync"
+-msgstr ""
++msgstr "Sincronizar"
+ 
+ #: TFRMMAIN.LABEL22.CAPTION
+ msgid "Seek to"
+-msgstr ""
++msgstr "Ir para"
+ 
+ #: TFRMMAIN.LABEL23.CAPTION
+ msgid "Time to Record"
+-msgstr ""
++msgstr "Tempo para gravar"
+ 
+ #: TFRMMAIN.LABEL24.CAPTION
+ msgid "Hours / Minutes / Seconds"
+-msgstr ""
++msgstr "Horas / minutos / segundos"
+ 
+ #: TFRMMAIN.LABEL3.CAPTION
+ msgid "Additional Command Line Parameters"
+-msgstr ""
++msgstr "Parâmetros de linha de comando adicionais"
+ 
+ #: TFRMMAIN.LABEL7.CAPTION
+ msgid "Audio Bitrate"
+-msgstr "Bitrate de Áudio"
++msgstr "Taxa de áudio"
+ 
+ #: TFRMMAIN.LABEL8.CAPTION
+ msgid "Sample Rate"
+-msgstr "Taxa de Amostragem"
++msgstr "Taxa de amostragem"
+ 
+ #: TFRMMAIN.LABEL9.CAPTION
+ msgid "X"
+-msgstr ""
++msgstr "X"
+ 
+ #: TFRMMAIN.LBLASPECTRATIO.CAPTION
+ msgid "Aspect Ratio"
+-msgstr "Proporção de Aspecto"
++msgstr "Taxa de proporção"
+ 
+ #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+ msgid "Bottom"
+-msgstr ""
++msgstr "Embaixo"
+ 
+ #: TFRMMAIN.LBLCROPLEFT.CAPTION
+ msgid "Left"
+-msgstr ""
++msgstr "Esquerda"
+ 
+ #: TFRMMAIN.LBLCROPRIGHT.CAPTION
+ msgid "Right"
+-msgstr ""
++msgstr "Direita"
+ 
+ #: TFRMMAIN.LBLCROPTOP.CAPTION
+ msgid "Top"
+-msgstr ""
++msgstr "Topo"
+ 
+ #: TFRMMAIN.LBLFRAMERATE.CAPTION
+ msgid "Frame Rate"
+-msgstr "Taxa de Quadros"
++msgstr "Taxa de quadros"
+ 
+ #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
+ msgid "Video Bitrate"
+-msgstr "Bitrate do Vídeo"
++msgstr "Taxa bits do vídeo"
+ 
+ #: TFRMMAIN.LBLVIDEOSIZE.CAPTION
+ msgid "Video Size"
+-msgstr "Tamanho do Vídeo"
++msgstr "Tamanho do vídeo"
+ 
+ #: TFRMMAIN.MENUITEM1.CAPTION
+-#, fuzzy
+-#| msgid "Import Preset"
+ msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+ msgid "Apply Preset"
+-msgstr "Importar Predef"
++msgstr "Aplicar predefinição"
+ 
+ #: TFRMMAIN.MENUITEM2.CAPTION
+ msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+ msgid "Apply Destination Folder"
+-msgstr ""
++msgstr "Aplicar pasta de destino"
+ 
+ #: TFRMMAIN.MENUITEM9.CAPTION
+ msgid "-"
+-msgstr ""
++msgstr "-"
+ 
+ #: TFRMMAIN.MITABOUT.CAPTION
+ msgid "About"
+-msgstr ""
++msgstr "Sobre"
+ 
+ #: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+ msgid "Display Cmd Line"
+-msgstr ""
++msgstr "Exibir linha de comando"
+ 
+ #: TFRMMAIN.MITDOCS.CAPTION
+ msgid "Documentation"
+@@ -523,19 +515,19 @@
+ 
+ #: TFRMMAIN.MITFORUMS.CAPTION
+ msgid "Forums"
+-msgstr ""
++msgstr "Fóruns"
+ 
+ #: TFRMMAIN.MITIMPORTPRESET.CAPTION
+ msgid "Import Preset"
+-msgstr "Importar Predef"
++msgstr "Importar predefinição"
+ 
+ #: TFRMMAIN.MITPAUSEONFINISH.CAPTION
+ msgid "Pause on Finish"
+-msgstr "Pausar ao Terminar"
++msgstr "Pausar ao terminar"
+ 
+ #: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+ msgid "Play Sound on Finish"
+-msgstr ""
++msgstr "Tocar um som ao terminar"
+ 
+ #: TFRMMAIN.MITPREFERENCES.CAPTION
+ msgid "Preferences"
+@@ -543,20 +535,20 @@
+ 
+ #: TFRMMAIN.MITPRESETS.CAPTION
+ msgid "Presets"
+-msgstr ""
++msgstr "Predefinições"
+ 
+ #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+ msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+ msgid "Additional Options"
+-msgstr ""
++msgstr "Opções adicionais"
+ 
+ #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+ msgid "Shutdown on Finish"
+-msgstr "Desligar ao Terminar"
++msgstr "Desligar ao terminar"
+ 
+ #: TFRMMAIN.MITVIEWMODE.CAPTION
+ msgid "Detailed View"
+-msgstr ""
++msgstr "Visualização detalhada"
+ 
+ #: TFRMMAIN.MITWINFF.CAPTION
+ msgid "WinFF Website"
+@@ -581,66 +573,60 @@
+ 
+ #: TFRMMAIN.PNLMAIN.CAPTION
+ msgid "pnlMain"
+-msgstr ""
++msgstr "pnlMain"
+ 
+ #: TFRMMAIN.PRESETBOX.HINT
+ msgid "Specific settings to use for the chosen device or file type"
+-msgstr ""
++msgstr "Configurações específicas para uso no dispositivo ou tipo de arquivo escolhido"
+ 
+ #: TFRMMAIN.TABSHEET1.CAPTION
+-#, fuzzy
+-#| msgid "Video Size"
+ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+ msgid "Video"
+-msgstr "Tamanho do Vídeo"
++msgstr "Vídeo"
+ 
+ #: TFRMMAIN.TABSHEET2.CAPTION
+ msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+ msgid "Audio"
+-msgstr ""
++msgstr "Áudio"
+ 
+ #: TFRMMAIN.TABSHEET3.CAPTION
+ msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+ msgid "Crop"
+-msgstr ""
++msgstr "Cortar"
+ 
+ #: TFRMMAIN.TABSHEET4.CAPTION
+ msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
+ msgid "Time"
+-msgstr ""
++msgstr "Tempo"
+ 
+ #: TFRMMAIN.TABSHEET5.CAPTION
+-#, fuzzy
+-#| msgid "FFmpeg"
+ msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+ msgid "FFmpeg"
+ msgstr "FFmpeg"
+ 
+ #: TFRMMAIN.TABSHEET6.CAPTION
+-#, fuzzy
+-#| msgid "Output Details"
+ msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+ msgid "Output Details"
+-msgstr "Detalhes de Saída"
++msgstr "Detalhes da saída"
+ 
+ #: TFRMMAIN.VIDBITRATE.HINT
+ msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+ msgid "(<integer>) the target kilobits/second that the stream should use"
+-msgstr ""
++msgstr "taxa em Kb/s a qual o stream deve utilizar"
+ 
+ #: TFRMMAIN.VIDFRAMERATE.HINT
+ msgid "(<real> or <integer>) number of frames per second"
+-msgstr ""
++msgstr "número de quadros por segundo"
+ 
+ #: TFRMMAIN.VIDSIZEX.HINT
+ msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+ msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+-msgstr ""
++msgstr "Quantidade de pixels em cada quadro. Para codecs que não suportam a taxa de aspecto de pixel (PAR), isso é o tamanho final do quadro."
+ 
+ #: TFRMMAIN.VIDSIZEY.HINT
+ msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+ msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+-msgstr ""
++msgstr "Quantidade de pixels em cada quadro. Para codecs que não suportam a taxa de aspecto de pixel (PAR), isso é o tamanho final do quadro."
+ 
+ #: TFRMPREFERENCES.BUTTON1.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+@@ -688,55 +674,55 @@
+ 
+ #: TFRMPREFERENCES.CHECKBOX1.CAPTION
+ msgid "Remember Last Used Directory"
+-msgstr ""
++msgstr "Lembrar o último diretório utilizado"
+ 
+ #: TFRMPREFERENCES.CHECKBOX2.CAPTION
+ msgid "Use CHCP for international characters"
+-msgstr "Usar CHCP para caracteres internacionais"
++msgstr "Utilizar CHCP para caracteres internacionais"
+ 
+ #: TFRMPREFERENCES.CHECKBOX3.CAPTION
+ msgid "Use Several Encoding Threads:"
+-msgstr ""
++msgstr "Utilizar várias threads de codificação:"
+ 
+ #: TFRMPREFERENCES.EDIT7.HINT
+ msgid "'-e' for xterm, '-x' for gnome-terminal"
+-msgstr ""
++msgstr "'-e' para usar o xterm, '-x' para usar o gnome-terminal"
+ 
+ #: TFRMPREFERENCES.LABEL1.CAPTION
+ msgid "Default Destination Directory:"
+-msgstr ""
++msgstr "Diretório de destino padrão:"
+ 
+ #: TFRMPREFERENCES.LABEL2.CAPTION
+ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+ msgid "Path to FFmpeg Executable:"
+-msgstr ""
++msgstr "Caminho para o executável FFmpeg:"
+ 
+ #: TFRMPREFERENCES.LABEL3.CAPTION
+ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+ msgid "Path to FFplay Executable:"
+-msgstr ""
++msgstr "Caminho para o executável FFplay:"
+ 
+ #: TFRMPREFERENCES.LABEL4.CAPTION
+ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+ msgid "Path to FFmpeg Executable:"
+-msgstr ""
++msgstr "Caminho para o executável FFmpeg:"
+ 
+ #: TFRMPREFERENCES.LABEL5.CAPTION
+ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+ msgid "Path to FFplay Executable:"
+-msgstr ""
++msgstr "Caminho para o executável FFplay:"
+ 
+ #: TFRMPREFERENCES.LABEL6.CAPTION
+ msgid "Terminal to run FFmpeg in:"
+-msgstr ""
++msgstr "Executar o FFmpeg no terminal:"
+ 
+ #: TFRMPREFERENCES.LABEL7.CAPTION
+ msgid "Terminal Options:"
+-msgstr ""
++msgstr "Opções de terminal:"
+ 
+ #: TFRMPREFERENCES.LABEL8.CAPTION
+ msgid "Priority:"
+-msgstr ""
++msgstr "Prioridade:"
+ 
+ #: TFRMPREFERENCES.PAGE1.CAPTION
+ msgid "General"
+@@ -744,7 +730,7 @@
+ 
+ #: TFRMPREFERENCES.PAGE2.CAPTION
+ msgid "MS Windows"
+-msgstr ""
++msgstr "Microsoft Windows"
+ 
+ #: TFRMPREFERENCES.PAGE3.CAPTION
+ msgid "Linux"
+@@ -752,7 +738,7 @@
+ 
+ #: TFRMSCRIPT.BTNCLIP.CAPTION
+ msgid "Copy to Clipboard"
+-msgstr ""
++msgstr "Copiar para a área de transferência"
+ 
+ #: TFRMSCRIPT.BTNCLOSE.CAPTION
+ msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+@@ -761,19 +747,19 @@
+ 
+ #: TFRMSCRIPT.BTNRUN.CAPTION
+ msgid "Run!"
+-msgstr ""
++msgstr "Executar!"
+ 
+ #: TFRMSCRIPT.BTNSAVE.CAPTION
+ msgid "Save As..."
+-msgstr ""
++msgstr "Salvar como..."
+ 
+ #: TFRMSCRIPT.CAPTION
+ msgid "FFmpeg Command Line"
+-msgstr "Linha de Comando FFmpeg"
++msgstr "Linha de comando do FFmpeg"
+ 
+ #: unit1.rsanalysing
+ msgid "Analysing"
+-msgstr ""
++msgstr "Analisando"
+ 
+ #: unit1.rsconverting
+ msgid "Converting"
+@@ -785,7 +771,7 @@
+ 
+ #: unit1.rscouldnotfindffplay
+ msgid "Could not find FFPlay."
+-msgstr "Não foi possiel encontrar o FFPlay."
++msgstr "Não foi possível encontrar o FFPlay."
+ 
+ #: unit1.rscouldnotfindfile
+ msgid "Could Not Find File"
+@@ -793,7 +779,7 @@
+ 
+ #: unit1.rscouldnotfindpresetfile
+ msgid "Could not find presets file."
+-msgstr "Não foi possível encontrar o arquivo de pré-definições"
++msgstr "Não foi possível encontrar o arquivo de predefinições."
+ 
+ #: unit1.rsextensionnoperiod
+ msgid "Extension can not contain a period"
+@@ -805,7 +791,7 @@
+ 
+ #: unit1.rsinvalidpreset
+ msgid "Invalid Preset File"
+-msgstr "Arquivo de Pré-definições Inválido"
++msgstr "O arquivo de predefinições é inválido"
+ 
+ #: unit1.rsnamemustbeallpha
+ msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+@@ -813,97 +799,89 @@
+ 
+ #: unit1.rspleaseadd1file
+ msgid "Please add at least 1 file to convert"
+-msgstr "Por favor adicione pelo menos 1 arquivo para conversão"
++msgstr "Por favor, adicione pelo menos um arquivo para conversão"
+ 
+ #: unit1.rspleaseselectapreset
+ msgid "Please select a preset"
+-msgstr "Por favor selecione uma pré-definição"
++msgstr "Por favor, selecione uma predefinição"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
+-msgstr "Pré-definição: %s%s%s já existe"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
++msgstr "A predefinição: %s%s%s já existe"
+ 
+ #: unit1.rspresethasnoext
+ msgid "The preset to import does not have an extension"
+-msgstr "A pré-definição à ser importada não tem extensão"
++msgstr "A predefinição a ser importada não tem extensão"
+ 
+ #: unit1.rspresethasnolabel
+ msgid "The preset to import does not have a label"
+-msgstr "A pré-definição à ser importada nãoo tem rótulo"
++msgstr "A predefinição a ser importada não tem rótulo"
+ 
+ #: unit1.rspresettoexport
+ msgid "Please select a preset to export"
+-msgstr "Por favor selecione uma pré-definição para exportar"
++msgstr "Por favor, selecione uma predefinição a ser exportada"
+ 
+ #: unit1.rspresetwithlabelexists
+ msgid "Preset with label: %s%s%s already exists"
+-msgstr "Pré-definição com rótulo: %s%s%s já existe"
++msgstr "A predefinição com o rótulo: %s%s%s já existe"
+ 
+ #: unit1.rspressenter
+ msgid "Press Enter to Continue"
+-msgstr "Pressione Enter para Continuar"
++msgstr "Pressione enter para continuar"
++
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
+ 
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+-msgstr ""
++msgstr "Selecionar um diretório"
+ 
+ #: unit1.rsselectpresetfile
+ msgid "Select Preset File"
+-msgstr "Selecionar Arquivo de Pré-definição"
++msgstr "Selecionar um arquivo de predefinição"
+ 
+ #: unit1.rsselectvideofiles
+ msgid "Select Video Files"
+-msgstr "Selecionar Arquivos de Vídeo"
++msgstr "Selecionar arquivos de vídeo"
+ 
+ #: unit1.rsthepresethasillegalchars
+ msgid "The preset contains illegal characters"
+-msgstr "A pré-definição contém caracteres ilegais"
++msgstr "A predefinição contém caracteres não permitidos"
+ 
+ #: unit2.rscreatepreset
+ msgid "Create Preset:"
+-msgstr "Criar Pré-definição:"
++msgstr "Criar predefinição:"
+ 
+ #: unit2.rsimportpresets
+ msgid "Import Presets"
+-msgstr ""
++msgstr "Importar predefinições"
+ 
+-#~| msgid "Select Video Files"
+-#~ msgid "Select Video Files..."
+-#~ msgstr "Selecionar Arquivos de Vídeo"
+-#~| msgctxt "TFRMABOUT.PAGE1.CAPTION"
+-#~| msgid "WinFF"
+-#~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+-#~ msgid "WinFF"
+-#~ msgstr "WinFF"
+-#~ msgctxt "TFRMMAIN.GBXSETTINGS.CAPTION"
+-#~ msgid "Additional Options"
+-#~ msgstr "Opções adicionais"
+-#~| msgid "Open/close the additional options window"
+-#~ msgid "NOTE: Currently any additional options chosen"
+-#~ msgstr "Abrir/fechar janela de opções adicionais"
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "O rótulo deve ser único"
+ 
+ #: unit2.rsremovepreset
+ msgid "Remove Preset:"
+-msgstr "Remover Pré-definição:"
++msgstr "Remover predefinição:"
+ 
+ #: unit2.rsupdatepreset
+ msgid "Update Preset:"
+-msgstr "Atualizar Pré-definição:"
++msgstr "Atualizar predefinição:"
+ 
+ #: unit2.rsyoumustenterextension
+ msgid "You must enter the extension."
+-msgstr "Você deve introduzir uma extensão"
++msgstr "Você deve informar uma extensão."
+ 
+ #: unit2.rsyoumustenterlabel
+ msgid "You must enter a label."
+-msgstr "Você deve introduzir um rótulo"
++msgstr "Você deve informar um rótulo."
+ 
+ #: unit2.rsyoumustenternmae
+ msgid "You must enter a name."
+-msgstr "Você deve introduzir um nome"
++msgstr "Você deve informar um nome."
+ 
+ #: unit4.rspriorityhigh
+ msgid "High"
+@@ -911,10 +889,9 @@
+ 
+ #: unit4.rspriorityidle
+ msgid "Idle"
+-msgstr "Baixa"
++msgstr "Ideal"
+ 
+ #: unit4.rsprioritynormal
+-#, fuzzy
+ msgid "Normal"
+ msgstr "Normal"
+ 
+Index: winff-git/languages/winff.es.po
+===================================================================
+--- winff-git.orig/languages/winff.es.po	2012-05-27 14:13:43.005970897 +0200
++++ winff-git/languages/winff.es.po	2012-05-27 14:13:58.446047461 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Spanish
+-# Copyright (C) 2008-2011 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -20,17 +20,17 @@
+ # https://translations.launchpad.net/winff/trunk/+pots/winff/es/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.1.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+-"PO-Revision-Date: 2012-01-04 03:49+0000\n"
+-"Last-Translator: winninglero <Unknown>\n"
++"PO-Revision-Date: 2012-04-04 08:24+0000\n"
++"Last-Translator: Fitoschido <fitoschido@gmail.com>\n"
+ "Language-Team: \n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"X-Launchpad-Export-Date: 2012-01-10 20:36+0000\n"
+-"X-Generator: Launchpad (build 14640)\n"
++"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
++"X-Generator: Launchpad (build 15282)\n"
+ "Language: \n"
+ 
+ #: TFORM1.FORM1.CAPTION
+@@ -508,7 +508,7 @@
+ 
+ #: TFRMMAIN.MITDOCS.CAPTION
+ msgid "Documentation"
+-msgstr "Documentación (inglés)"
++msgstr "Documentación"
+ 
+ #: TFRMMAIN.MITEXIT.CAPTION
+ msgid "Exit"
+@@ -807,7 +807,9 @@
+ msgstr "Por favor, elegir un valor predeterminado"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "predeterminado: %s%s%s ya existe"
+ 
+ #: unit1.rspresethasnoext
+@@ -830,6 +832,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Pulse Entrar para continuar."
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Seleccionar carpeta"
+Index: winff-git/languages/winff.eu.po
+===================================================================
+--- winff-git.orig/languages/winff.eu.po	2012-05-27 14:13:42.901970387 +0200
++++ winff-git/languages/winff.eu.po	2012-05-27 14:13:58.450047486 +0200
+@@ -2,11 +2,13 @@
+ # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+ # This file is distributed under the same license as the winff package.
+ # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/eu/+details
+ #
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: winff\n"
+-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
++"Project-Id-Version: WinFF 1.4.2\n"
++"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2011-11-17 01:19+0000\n"
+ "Last-Translator: Asier Iturralde Sarasola <Unknown>\n"
+@@ -791,7 +793,9 @@
+ msgstr "Mesedez, hautatu aurrezarpen bat"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "%s%s%s aurrezarpena dagoeneko existitzen da"
+ 
+ #: unit1.rspresethasnoext
+@@ -814,6 +818,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Sakatu enter jarraitzeko"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Hautatu direktorioa"
+@@ -834,10 +842,6 @@
+ msgid "Create Preset:"
+ msgstr "Sortu aurrezarpena"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Inportatu aurrezarpenak"
+-
+ #~ msgid "http://ffmpeg.arrozcru.org/"
+ #~ msgstr "http://ffmpeg.arrozcru.org/"
+ #~ msgid "About WinFF"
+@@ -871,6 +875,10 @@
+ #~ msgstr "Denbora"
+ #~ msgid "Crop"
+ #~ msgstr "Ebaki"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Inportatu aurrezarpenak"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Etiketak bakarra izan behar du."
+Index: winff-git/languages/winff.hu.po
+===================================================================
+--- winff-git.orig/languages/winff.hu.po	2012-05-27 14:13:43.597973830 +0200
++++ winff-git/languages/winff.hu.po	2012-05-27 14:13:58.450047486 +0200
+@@ -1,4 +1,4 @@
+-# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -16,7 +16,7 @@
+ # Sponga Tamas <d7d7d7@freemail.hu>, 2009
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 0.45.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2009-12-05 23:00+0100\n"
+@@ -906,7 +906,9 @@
+ msgstr "Válassz ki egy beállítást az exportáláshoz"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "A beállítás %s%s%s néven már létezik"
+ 
+ #: unit1.rspresethasnoext
+@@ -929,6 +931,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Nyomj Entert a folytatáshoz"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -951,10 +957,6 @@
+ msgid "Create Preset:"
+ msgstr "Beállítás készítése:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Beállítások importálása"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1013,6 +1015,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Beállítások importálása"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "A cimkének egyedülállónak kell lenni"
+Index: winff-git/languages/winff.ku.po
+===================================================================
+--- winff-git.orig/languages/winff.ku.po	2012-05-27 14:13:42.973970744 +0200
++++ winff-git/languages/winff.ku.po	2012-05-27 14:13:58.454047497 +0200
+@@ -1,4 +1,4 @@
+-# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -16,7 +16,7 @@
+ # simurg56 <simurg56@gmail.com>, 2009
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 0.45.1\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: \n"
+@@ -906,7 +906,9 @@
+ msgstr "Pêşmîheng ku were derxistin hilbijêre"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Pêşmîheng: %s%s%s jixwe heye"
+ 
+ #: unit1.rspresethasnoext
+@@ -929,6 +931,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Pêl enter bike ku berdewam bikî"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -951,10 +957,6 @@
+ msgid "Create Preset:"
+ msgstr "Pêşmîheng biafirîne:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Pêşmîheng têxe"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1013,6 +1015,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Pêşmîheng têxe"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Divê label yekta be."
+Index: winff-git/languages/winff.uk.po
+===================================================================
+--- winff-git.orig/languages/winff.uk.po	2012-05-27 14:13:43.277972243 +0200
++++ winff-git/languages/winff.uk.po	2012-05-27 14:13:58.454047497 +0200
+@@ -7,7 +7,7 @@
+ # https://translations.launchpad.net/winff/trunk/+pots/winff/uk/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: winff\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2012-01-23 11:00+0000\n"
+@@ -265,12 +265,8 @@
+ msgstr "Відтворити"
+ 
+ #: TFRMMAIN.BTNPLAY.HINT
+-msgid ""
+-"Preview the selected source file with ffplay (good test to see if conversion "
+-"is possible)"
+-msgstr ""
+-"Відтворити обраний файл за допомогою ffplay (гарний спосіб перевірити "
+-"можливість його перетворення)"
++msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
++msgstr "Відтворити обраний файл за допомогою ffplay (гарний спосіб перевірити можливість його перетворення)"
+ 
+ #: TFRMMAIN.BTNPREVIEW.CAPTION
+ msgid "Preview"
+@@ -307,9 +303,7 @@
+ msgstr "2 проходи"
+ 
+ #: TFRMMAIN.CBX2PASS.HINT
+-msgid ""
+-"Using two passes allows the encoder to gather information in the first run "
+-"for enhanced quality"
++msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+ msgstr "Обробка у два проходи дозволяє покращити якість"
+ 
+ #: TFRMMAIN.CBXDEINTERLACE.CAPTION
+@@ -326,25 +320,16 @@
+ msgstr "…"
+ 
+ #: TFRMMAIN.DESTFOLDER.HINT
+-msgid ""
+-"Target location for the final video (choose a different folder than the "
+-"source folder)"
++msgid "Target location for the final video (choose a different folder than the source folder)"
+ msgstr "Тека для обробленого відео (повинна відрізнятись від теки з сирцями)"
+ 
+ #: TFRMMAIN.EDTASPECTRATIO.HINT
+-msgid ""
+-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+-"display"
+-msgstr ""
+-"(<ціле: ціле> або <дійсне>) фізичне співвідношення сторін дисплея (DAR)"
++msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
++msgstr "(<ціле: ціле> або <дійсне>) фізичне співвідношення сторін дисплея (DAR)"
+ 
+ #: TFRMMAIN.EDTAUDIOSYNC.HINT
+-msgid ""
+-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+-"\"stretch\"/\"squeeze\" audio stream."
+-msgstr ""
+-"(<ціле>) Від 10 до частоти дискретизації (44100, 48000). Дозволяє "
+-"\"розтягти\" або \"стиснути\" аудіо доріжку."
++msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
++msgstr "(<ціле>) Від 10 до частоти дискретизації (44100, 48000). Дозволяє \"розтягти\" або \"стиснути\" аудіо доріжку."
+ 
+ #: TFRMMAIN.EDTCROPBOTTOM.TEXT
+ msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+@@ -397,11 +382,8 @@
+ msgstr "<гг:мм:сс> - зупинитись на цій позиції для закінчення перетворення"
+ 
+ #: TFRMMAIN.EDTVOLUME.HINT
+-msgid ""
+-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+-msgstr ""
+-"(<ціле>) 256 = Поточна гучність, 128 = Половина гучності, 512 = Подвійна "
+-"гучність"
++msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
++msgstr "(<ціле>) 256 = Поточна гучність, 128 = Половина гучності, 512 = Подвійна гучність"
+ 
+ #: TFRMMAIN.LABEL1.CAPTION
+ msgid "Convert to:"
+@@ -625,21 +607,13 @@
+ 
+ #: TFRMMAIN.VIDSIZEX.HINT
+ msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+-msgid ""
+-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+-msgstr ""
+-"(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не "
+-"підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
++msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
++msgstr "(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
+ 
+ #: TFRMMAIN.VIDSIZEY.HINT
+ msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+-msgid ""
+-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+-"don''t support pixel aspect ratio (PAR) this is the final frame size."
+-msgstr ""
+-"(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не "
+-"підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
++msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
++msgstr "(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
+ 
+ #: TFRMPREFERENCES.BUTTON1.CAPTION
+ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+@@ -819,7 +793,9 @@
+ msgstr "Будь ласка оберіть заготовку"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Заготовка: %s%s%s вже існує"
+ 
+ #: unit1.rspresethasnoext
+@@ -842,6 +818,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Натисніть Ввід для продовження"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Вибір каталогу"
+@@ -901,3 +881,4 @@
+ #: unit4.rsprioritynormal
+ msgid "Normal"
+ msgstr "Звичайний"
++
+Index: winff-git/languages/winff.ms.po
+===================================================================
+--- winff-git.orig/languages/winff.ms.po	2012-05-27 14:13:43.421972958 +0200
++++ winff-git/languages/winff.ms.po	2012-05-27 14:13:58.458047518 +0200
+@@ -7,17 +7,17 @@
+ # https://translations.launchpad.net/winff/trunk/+pots/winff/ms/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: winff\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+-"PO-Revision-Date: 2011-12-06 23:57+0000\n"
++"PO-Revision-Date: 2012-04-17 16:50+0000\n"
+ "Last-Translator: abuyop <Unknown>\n"
+ "Language-Team: Malay <ms@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"X-Launchpad-Export-Date: 2011-12-20 18:32+0000\n"
+-"X-Generator: Launchpad (build 14538)\n"
++"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
++"X-Generator: Launchpad (build 15282)\n"
+ 
+ #: TFORM1.FORM1.CAPTION
+ msgid "Form1"
+@@ -35,7 +35,7 @@
+ 
+ #: TFRMABOUT.LABEL1.CAPTION
+ msgid "WinFF 1.3.2"
+-msgstr "WinFF 1.3.2"
++msgstr "WinFF 1.3.2."
+ 
+ #: TFRMABOUT.LABEL10.CAPTION
+ msgid "http://hawkeye.arrozcru.org/"
+@@ -793,7 +793,9 @@
+ msgstr "Sila pilih praset"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Praset: %s%s%s sudah wujud"
+ 
+ #: unit1.rspresethasnoext
+@@ -816,6 +818,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "SIla Masuk untuk Teruskan"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Pilih Direktori"
+Index: winff-git/languages/winff.ro.po
+===================================================================
+--- winff-git.orig/languages/winff.ro.po	2012-05-27 14:13:43.633974012 +0200
++++ winff-git/languages/winff.ro.po	2012-05-27 14:13:58.458047518 +0200
+@@ -3,10 +3,12 @@
+ # This file is distributed under the same license as the winff package.
+ # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+ #
++# Launchpad contributors see:
++# https://translations.launchpad.net/winff/trunk/+pots/winff/ro/+details
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: winff\n"
+-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
++"Project-Id-Version: WinFF 1.4.2\n"
++"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2011-11-13 15:40+0000\n"
+ "Last-Translator: Tuhut Vladut Emanuel <Unknown>\n"
+@@ -791,7 +793,9 @@
+ msgstr "Vă rog să selectați o regulă de conversie"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Regula de conversie:%s%s%s deja există"
+ 
+ #: unit1.rspresethasnoext
+@@ -814,6 +818,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Apasați Enter pentru a continua"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Selectați un dosar"
+@@ -834,10 +842,6 @@
+ msgid "Create Preset:"
+ msgstr "Creare regula de conversie:"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Importare reguli de conversie"
+-
+ #~ msgid " will be applied to all jobs when the conversion starts"
+ #~ msgstr " va fi aplicat tuturor sarcinilor când va începe conversia"
+ #~ msgid "http://ffmpeg.arrozcru.org/"
+@@ -871,6 +875,10 @@
+ #~ msgstr "Selectați fișiere video..."
+ #~ msgid "NOTE: Currently any additional options chosen"
+ #~ msgstr "NOTĂ: În prezent, orice opţiuni suplimentare alese"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Importare reguli de conversie"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Eticheta trebuie să fie unică."
+Index: winff-git/languages/winff.es_UY.po
+===================================================================
+--- winff-git.orig/languages/winff.es_UY.po	2012-05-27 14:13:43.917975425 +0200
++++ winff-git/languages/winff.es_UY.po	2012-05-27 14:13:58.458047518 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Uruguay Spanish
+-# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -19,7 +19,7 @@
+ # Pablo Ramírez <prar78@gmail.com>, 2009
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.1.1 \n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2009-09-06\n"
+@@ -902,7 +902,9 @@
+ msgstr "Elige un valor predeterminado"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Predeterminado: %s%s%s ya existe"
+ 
+ #: unit1.rspresethasnoext
+@@ -925,6 +927,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Pulse Entrar para continuar"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -947,11 +953,6 @@
+ msgid "Create Preset:"
+ msgstr "Crear Predeterminado:"
+ 
+-#: unit2.rsimportpresets
+-#, fuzzy
+-msgid "Import Presets"
+-msgstr "Importar Predeterminado"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1010,6 +1011,11 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++#, fuzzy
++msgid "Import Presets"
++msgstr "Importar Predeterminado"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "El formato debe ser único"
+Index: winff-git/languages/winff.ru.po
+===================================================================
+--- winff-git.orig/languages/winff.ru.po	2012-05-27 14:13:43.309972410 +0200
++++ winff-git/languages/winff.ru.po	2012-05-27 14:13:58.462047545 +0200
+@@ -1,6 +1,6 @@
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.0.2\n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: \n"
+@@ -815,7 +815,9 @@
+ msgstr "Выберите настройки преобразования"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Предустановка %s%s%s уже существует"
+ 
+ #: unit1.rspresethasnoext
+@@ -838,6 +840,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Нажмите Ввод для продолжения"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ msgid "Select Directory"
+ msgstr "Выберите каталог"
+@@ -858,10 +864,6 @@
+ msgid "Create Preset:"
+ msgstr "Сохранить параметры?"
+ 
+-#: unit2.rsimportpresets
+-msgid "Import Presets"
+-msgstr "Импортировать параметры"
+-
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+ #~ msgstr "WinFF"
+@@ -871,6 +873,10 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++msgid "Import Presets"
++msgstr "Импортировать параметры"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "Описание должно быть уникальным."
+Index: winff-git/languages/winff.es_AR.po
+===================================================================
+--- winff-git.orig/languages/winff.es_AR.po	2012-05-27 14:13:42.937970566 +0200
++++ winff-git/languages/winff.es_AR.po	2012-05-27 14:13:58.462047545 +0200
+@@ -1,5 +1,5 @@
+ # translation of winff.po to Argentinian Spanish
+-# Copyright (C) 2008-2009 Matthew Weatherford <matt@biggmatt.com>
++# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -19,7 +19,7 @@
+ # Pablo Ramírez <prar78@gmail.com>, 2009
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: WinFF 1.1.1 \n"
++"Project-Id-Version: WinFF 1.4.2\n"
+ "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+ "POT-Creation-Date: 2011-11-22 23:33+0000\n"
+ "PO-Revision-Date: 2009-09-06\n"
+@@ -902,7 +902,9 @@
+ msgstr "Elige un valor predeterminado"
+ 
+ #: unit1.rspresetalreadyexist
+-msgid "Preset: %s%s%s already exists"
++#, fuzzy
++#| msgid "Preset: %s%s%s already exists"
++msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+ msgstr "Predeterminado: %s%s%s ya existe"
+ 
+ #: unit1.rspresethasnoext
+@@ -925,6 +927,10 @@
+ msgid "Press Enter to Continue"
+ msgstr "Pulse Entrar para continuar"
+ 
++#: unit1.rsreplacepreset
++msgid "Replace Preset?"
++msgstr ""
++
+ #: unit1.rsselectdirectory
+ #, fuzzy
+ #| msgid "Default Destination Directory"
+@@ -947,11 +953,6 @@
+ msgid "Create Preset:"
+ msgstr "Crear Predeterminado:"
+ 
+-#: unit2.rsimportpresets
+-#, fuzzy
+-msgid "Import Presets"
+-msgstr "Importar Predeterminado"
+-
+ #~| msgid "WinFF"
+ #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+ #~ msgid "WinFF"
+@@ -1010,6 +1011,11 @@
+ #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
+ #~ msgid "FFmpeg"
+ #~ msgstr "FFmpeg"
++#: unit2.rsimportpresets
++#, fuzzy
++msgid "Import Presets"
++msgstr "Importar Predeterminado"
++
+ #: unit2.rslabelmustbeunique
+ msgid "Label must be unique."
+ msgstr "El formato debe ser único"

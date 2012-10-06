@@ -1,0 +1,53 @@
+Description: Update the language files with the latest from upstream
+Author: Paul Gevers <paul@climbing.nl>
+Forwarded: not-needed
+Origin: http://code.google.com/p/winff/source/detail?r=641
+
+Index: winff-git/unit1.pas
+===================================================================
+--- winff-git.orig/unit1.pas	2012-05-27 14:13:47.401992699 +0200
++++ winff-git/unit1.pas	2012-05-27 14:13:54.766029218 +0200
+@@ -1,6 +1,6 @@
+ unit Unit1;
+ 
+-// WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
++// WInFF 1.0 Copyright 2006-2012 Matthew Weatherford
+ // WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
+ // http://winff.org
+ // Licensed under the GPL v3 or any later version
+@@ -1841,9 +1841,15 @@
+        commandline := params;
+        precommand := '';
+        if vidbitrate.Text <> '' then
+-               commandline:=replaceparam(commandline,'-b','-b ' + vidbitrate.text+'k');
++         begin
++               commandline:=replaceparam(commandline,'-b','-b:v ' + vidbitrate.text+'k');   // Old style
++               commandline:=replaceparam(commandline,'-b:v','-b:v ' + vidbitrate.text+'k'); // New style
++         end;
+        if vidframerate.Text <> '' then
+-               commandline:=replaceparam(commandline,'-r','-r ' + vidframerate.Text);
++         begin
++           commandline:=replaceparam(commandline,'-r','-r:v ' + vidframerate.Text); // Old style
++           commandline:=replaceparam(commandline,'-r:v','-r:v ' + vidframerate.Text); // New style
++         end;
+ 
+     // Inserting Crop Routine here as per Issue 77 on code.google.com
+     // Changed by Ian V1.3
+@@ -1913,9 +1919,15 @@
+        if edtAspectRatio.Text <> '' then
+                commandline:=replaceparam(commandline,'-aspect','-aspect ' + edtAspectRatio.Text);
+        if audbitrate.Text <> '' then
+-               commandline:=replaceparam(commandline,'-ab','-ab ' + audbitrate.Text+'k');
++              begin
++               commandline:=replaceparam(commandline,'-ab','-b:a ' + audbitrate.Text+'k'); // Old style
++               commandline:=replaceparam(commandline,'-b:a','-b:a ' + audbitrate.Text+'k'); // New style
++              end;
+        if audsamplingrate.Text <> '' then
+-               commandline:=replaceparam(commandline,'-ar','-ar ' + audsamplingrate.Text);
++         begin
++               commandline:=replaceparam(commandline,'-ar','-r:a ' + audsamplingrate.Text);
++               commandline:=replaceparam(commandline,'-r:a','-r:a ' + audsamplingrate.Text);
++         end;
+        if audchannels.Text <> '' then
+                commandline:=replaceparam(commandline,'-ac','-ac ' + audchannels.Text);
+ 
