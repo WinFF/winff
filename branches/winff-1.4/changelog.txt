@@ -1,6 +1,15 @@
 WinFF Copyright 2006 - 2012 Matthew Weatherford
 http://www.winff.org
 
+v1.4.3
+------
+New languages: Kazakh, Latvian
+Update languages: Arabic, Bokmål, Czech, Dutch, Russian, Traditional Chinese
+Fixed segfault in function calling ReadXMLFile
+Use YesToAll button instead of "All" to allow Linux systems to show the button
+Improved handling of new style a/v arguments
+Improved Linux check on the executables, i.e. now also check avconv/avplay
+
 v1.4.2
 ------
 Update presets to avoid using ffmpeg presets (problem with Windows ffmpeg)
