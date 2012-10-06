@@ -9,8 +9,6 @@
 
 override_dh_auto_configure:
 	if [ -f presets.xml ] ; then mv presets.xml presets-orig.xml; fi 
-	cd languages ;\
-		if [ -f winff.po ] ; then mv winff.po winff.en.po; fi ;
 
 override_dh_auto_build:
 	lazbuild --widgetset=gtk2 -B winff.lpr
@@ -20,8 +18,6 @@ override_dh_auto_build:
 
 override_dh_clean:
 	if [ -f presets-orig.xml ] ; then mv presets-orig.xml presets.xml; fi 
-	cd languages ;\
-		if [ -f winff.en.po ] ; then mv winff.en.po winff.po; fi ;
 	dh_clean
 
 override_dh_compress:
