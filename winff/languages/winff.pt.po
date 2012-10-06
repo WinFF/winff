@@ -1,969 +1,870 @@
+# Translation of winff messages to Portuguese
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Luís Torrao <luistorrao@gmail.com>, 2008.
+# Américo Monteiro <a_monteiro@netcabo.pt>, 2010.
+# Launchpad contributors see:
+# https://translations.launchpad.net/winff/trunk/+pots/winff/pt/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: winff 1.2.0\n"
+"Project-Id-Version: WinFF 1.4.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2010-02-07 02:12+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@netcabo.pt>\n"
+"PO-Revision-Date: 2012-02-29 12:04+0000\n"
+"Last-Translator: Sérgio Marques <Unknown>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
-"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
+"X-Generator: Launchpad (build 15282)\n"
+"Language: pt\n"
 
-#: tform1.form1.caption
+#: TFORM1.FORM1.CAPTION
 msgid "Form1"
-msgstr ""
+msgstr "Form1"
 
-#: tfrmabout.button1.caption
+#: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
-msgstr "OK"
+msgstr "Aceitar"
 
-#: tfrmabout.frmabout.caption
-#, fuzzy
-#| msgid "About WinFF"
+#: TFRMABOUT.FRMABOUT.CAPTION
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
-msgstr "Acerca do WinFF"
+msgstr "Sobre WinFF"
 
-#: tfrmabout.label1.caption
-#, fuzzy
-#| msgid "WinFF"
+#: TFRMABOUT.LABEL1.CAPTION
 msgid "WinFF 1.3.2"
 msgstr "WinFF"
 
-#: tfrmabout.label10.caption
+#: TFRMABOUT.LABEL10.CAPTION
 msgid "http://hawkeye.arrozcru.org/"
-msgstr ""
+msgstr "http://hawkeye.arrozcru.org/"
 
-#: tfrmabout.label11.caption
+#: TFRMABOUT.LABEL11.CAPTION
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr ""
+msgstr "Pacotes  Debian/Ubuntu por by Paul Gevers"
 
-#: tfrmabout.label13.caption
+#: TFRMABOUT.LABEL13.CAPTION
 msgid "Gmaq"
-msgstr ""
+msgstr "Gmaq"
 
-#: tfrmabout.label14.caption
+#: TFRMABOUT.LABEL14.CAPTION
 msgid "High Quality Presets From"
-msgstr ""
+msgstr "Pré-ajustes de alta qualidade"
 
-#: tfrmabout.label15.caption
+#: TFRMABOUT.LABEL15.CAPTION
 msgid "Icons and Logo by Alex Klepatsch"
-msgstr ""
+msgstr "Ícones e logo por Alex Klepatsch"
 
-#: tfrmabout.label16.caption
+#: TFRMABOUT.LABEL16.CAPTION
 msgid "JNavas"
-msgstr ""
+msgstr "JNavas"
 
-#: tfrmabout.label2.caption
+#: TFRMABOUT.LABEL2.CAPTION
 msgid "Copyright 2006-2009 GPL V3"
-msgstr ""
+msgstr "Direitos de autor 2006-2012 GPL V3"
 
-#: tfrmabout.label3.caption
+#: TFRMABOUT.LABEL3.CAPTION
 msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-msgstr ""
+msgstr "Matthew Weatherford,  Ian Stoffberg e Alexey Osipov"
 
-#: tfrmabout.label4.caption
+#: TFRMABOUT.LABEL4.CAPTION
 msgid "http://www.winff.org"
-msgstr ""
+msgstr "http://www.winff.org"
 
-#: tfrmabout.label5.caption
-#, fuzzy
-#| msgid "FFmpeg"
+#: TFRMABOUT.LABEL5.CAPTION
 msgctxt "TFRMABOUT.LABEL5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: tfrmabout.label6.caption
+#: TFRMABOUT.LABEL6.CAPTION
 msgid "Trademark Fabrice Belllard"
-msgstr ""
+msgstr "Marca registada por Fabrice Belllard"
 
-#: tfrmabout.label7.caption
+#: TFRMABOUT.LABEL7.CAPTION
 msgid "http://ffmpeg.org"
-msgstr ""
+msgstr "http://ffmpeg.org"
 
-#: tfrmabout.label8.caption
-#, fuzzy
-#| msgid "FFmpeg builds by"
+#: TFRMABOUT.LABEL8.CAPTION
 msgid "FFmpeg Windows Builds by"
-msgstr "FFmpeg builds por"
+msgstr "Versões FFmpeg para Windows por"
 
-#: tfrmabout.label9.caption
+#: TFRMABOUT.LABEL9.CAPTION
 msgid "Kyle Schwarz"
-msgstr ""
+msgstr "Kyle Schwarz"
 
-#: tfrmabout.page1.caption
-#, fuzzy
-#| msgid "WinFF"
+#: TFRMABOUT.PAGE1.CAPTION
 msgctxt "TFRMABOUT.PAGE1.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: tfrmabout.page2.caption
-#, fuzzy
-#| msgid "FFmpeg"
+#: TFRMABOUT.PAGE2.CAPTION
 msgctxt "TFRMABOUT.PAGE2.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: tfrmabout.page3.caption
+#: TFRMABOUT.PAGE3.CAPTION
 msgid "Thanks"
 msgstr "Obrigado"
 
-#: tfrmeditpresets.addpresetbtn.caption
+#: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
-msgstr "Adi./Actualizar"
+msgstr "Adi./Atualizar"
 
-#: tfrmeditpresets.cancelbtn.caption
-#, fuzzy
-#| msgid "Close"
+#: TFRMEDITPRESETS.CANCELBTN.CAPTION
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Fechar"
 
-#: tfrmeditpresets.caption
+#: TFRMEDITPRESETS.CAPTION
 msgid "Edit Presets"
-msgstr "Editar Presets"
+msgstr "Editar pré-ajustes"
 
-#: tfrmeditpresets.deletebtn.caption
+#: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
-msgstr "Apagar"
+msgstr "Eliminar"
 
-#: tfrmeditpresets.edit1.hint
+#: TFRMEDITPRESETS.EDIT1.HINT
 msgid "One word, only letters and numbers"
-msgstr ""
+msgstr "Uma palavra, só letras e números"
 
-#: tfrmeditpresets.edit2.hint
+#: TFRMEDITPRESETS.EDIT2.HINT
 msgid "Enter a more descriptive name for this preset"
-msgstr ""
+msgstr "Indique um nome descritivo deste pré-ajuste"
 
-#: tfrmeditpresets.edit3.hint
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
+#: TFRMEDITPRESETS.EDIT3.HINT
 msgid "Please don't use -i or output file parameters"
-msgstr "Linha de Comandos do Preset (não -i ou ficheiro de saída)"
+msgstr "Não utilize -i ou parâmetros do ficheiro destino"
 
-#: tfrmeditpresets.edit4.hint
+#: TFRMEDITPRESETS.EDIT4.HINT
 msgid "Do not include a dot"
-msgstr ""
+msgstr "Não incluir o ponto"
 
-#: tfrmeditpresets.edit5.hint
+#: TFRMEDITPRESETS.EDIT5.HINT
 msgid "Choose a category to group this preset under"
-msgstr ""
+msgstr "Escolha a categoria para colocar este pré-ajuste"
 
-#: tfrmeditpresets.export.caption
+#: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Exportar"
 
-#: tfrmeditpresets.import.caption
+#: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
 msgstr "Importar"
 
-#: tfrmeditpresets.label1.caption
-#, fuzzy
-#| msgid "Create Preset:"
+#: TFRMEDITPRESETS.LABEL1.CAPTION
 msgid "Category / Preset"
-msgstr "Criar Preset:"
+msgstr "Categoria/Pré-ajuste"
 
-#: tfrmeditpresets.label2.caption
-#, fuzzy
-#| msgid "Preset Name (One word , Only A-z 0-9)"
+#: TFRMEDITPRESETS.LABEL2.CAPTION
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr "Nome do Preset (Uma palavra, Apenas A-z 0-9)"
+msgstr "Nome do pré-ajuste (uma palavra, só letras e números)"
 
-#: tfrmeditpresets.label3.caption
+#: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
-msgstr "Etiqueta do Preset"
+msgstr "Texto do pré-ajuste"
 
-#: tfrmeditpresets.label4.caption
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
+#: TFRMEDITPRESETS.LABEL4.CAPTION
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr "Linha de Comandos do Preset (não -i ou ficheiro de saída)"
+msgstr "Parâmetros da linha de comandos do pré-ajuste (sem -i ou ficheiro destino)"
 
-#: tfrmeditpresets.label5.caption
-#, fuzzy
-#| msgid "Output File Extension (no \".\")"
+#: TFRMEDITPRESETS.LABEL5.CAPTION
 msgid "Output File Extension (do not include the '.' )"
-msgstr "Extensão do Ficheiro de Saída (não \".\")"
+msgstr "Extensão do ficheiro de destino (não incluir o ponto)"
 
-#: tfrmeditpresets.label6.caption
+#: TFRMEDITPRESETS.LABEL6.CAPTION
 msgid "Category"
 msgstr "Categoria"
 
-#: tfrmeditpresets.okbtn.caption
-#, fuzzy
-#| msgid "Save"
+#: TFRMEDITPRESETS.OKBTN.CAPTION
 msgid "Save"
 msgstr "Gravar"
 
-#: tfrmeditpresets.pnltop.caption
+#: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
-msgstr ""
+msgstr "pnlTop"
 
-#: tfrmexport.cancelbtn.caption
+#: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: tfrmexport.caption
+#: TFRMEXPORT.CAPTION
 msgid "Export Presets"
-msgstr "Exportar Presets"
+msgstr "Exportar pré-ajustes"
 
-#: tfrmexport.exportbtn.caption
+#: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Exportar"
 
-#: tfrmexport.label1.caption
-#, fuzzy
-#| msgid "Choose presets to export"
+#: TFRMEXPORT.LABEL1.CAPTION
 msgid "Choose Presets to Export:"
-msgstr "Escolher os presets para exportar"
+msgstr "Escolha o pré-ajuste a exportar:"
 
-#: tfrmmain.audbitrate.hint
-#, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
+#: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<inteiro>kb) os kilobits/segundo de destino que o fluxo deve usar"
+msgstr "(<integer>) os kbs por segundo a utilizar pela emissão"
 
-#: tfrmmain.audchannels.hint
+#: TFRMMAIN.AUDCHANNELS.HINT
 msgid "(<integer>) number of audio channels"
-msgstr "(<inteiro>) número de canais de áudio"
+msgstr "(<integer>) número de canais de áudio"
 
-#: tfrmmain.audsamplingrate.hint
+#: TFRMMAIN.AUDSAMPLINGRATE.HINT
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr "(<inteiro>) a frequência de amostragem para o áudio em Hertz"
+msgstr "(<integer>) a frequência do áudio em Hertz"
 
-#: tfrmmain.btnadd.caption
+#: TFRMMAIN.BTNADD.CAPTION
 msgid "Add"
 msgstr "Adicionar"
 
-#: tfrmmain.btnadd.hint
-#, fuzzy
-#| msgid "add file(s) to the list for conversion"
+#: TFRMMAIN.BTNADD.HINT
 msgid "Add file(s) to the list for conversion"
-msgstr "adicionar ficheiro(s) à lista para conversão"
+msgstr "Adicionar ficheiros à lista de conversão"
 
-#: tfrmmain.btnapplydestination.caption
-#, fuzzy
-#| msgid "Output Folder"
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
 msgid "Apply Output Folder"
-msgstr "Directório de Saída"
+msgstr "Aplicar pasta de destino"
 
-#: tfrmmain.btnapplypreset.caption
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
 msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Aplicar pré-ajuste"
 
-#: tfrmmain.btnclear.caption
+#: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "Limpar"
 
-#: tfrmmain.btnclear.hint
-#, fuzzy
-#| msgid "remove all files from the list"
+#: TFRMMAIN.BTNCLEAR.HINT
 msgid "Remove all files from the list"
-msgstr "remove todos os ficheiros da lista"
+msgstr "Remover todos os ficheiros da lista"
 
-#: tfrmmain.btnconvert.caption
+#: TFRMMAIN.BTNCONVERT.CAPTION
 msgid "Convert"
 msgstr "Converter"
 
-#: tfrmmain.btnconvert.hint
-#, fuzzy
-#| msgid "start the conversion process"
+#: TFRMMAIN.BTNCONVERT.HINT
 msgid "Start the conversion process"
-msgstr "iniciar o processo de conversão"
+msgstr "Iniciar processo de conversão"
 
-#: tfrmmain.btnoptions.caption
+#: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opções"
 
-#: tfrmmain.btnoptions.hint
-#, fuzzy
-#| msgid "open or close the additional option window"
+#: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
-msgstr "abre o fecha a janela de opções adicionais"
+msgstr "Abrir/fechar a janela de opções extra"
 
-#: tfrmmain.btnplay.caption
+#: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
 msgstr "Reproduzir"
 
-#: tfrmmain.btnplay.hint
-#, fuzzy
-#| msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
+#: TFRMMAIN.BTNPLAY.HINT
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "pre-visualizar o ficheiro original seleccionado com o ffplay (bom teste para ver se a conversão é possível)"
+msgstr "Visualizar o ficheiro original com ffplay (serve pare testar a possibilidade da conversão)"
 
-#: tfrmmain.btnpreview.caption
+#: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
-msgstr "Pré-visualização"
+msgstr "Visualizar"
 
-#: tfrmmain.btnpreview.hint
-#, fuzzy
-#| msgid "preview using the output settings"
+#: TFRMMAIN.BTNPREVIEW.HINT
 msgid "Preview using the output settings"
-msgstr "pré-visualização usando as definições de saída"
+msgstr "Visualizar utilizando as definições de saída"
 
-#: tfrmmain.btnremove.caption
+#: TFRMMAIN.BTNREMOVE.CAPTION
 msgid "Remove"
 msgstr "Remover"
 
-#: tfrmmain.btnremove.hint
-#, fuzzy
-#| msgid "remove the selected file(s) from the list"
+#: TFRMMAIN.BTNREMOVE.HINT
 msgid "Remove selected file(s) from the list"
-msgstr "remover os ficheiro(s) seleccionados da lista"
+msgstr "Remover ficheiros selecionados da lista"
 
-#: tfrmmain.categorybox.hint
-#, fuzzy
-#| msgid "name of the device or file type the video should be converted to"
-msgid "Device or file type the video should be converted to"
-msgstr "nome do dispositivo ou tipo de ficheiro para o qual o vídeo deve ser convertido"
-
-#: tfrmmain.cboutputpath.caption
-msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
-msgid "Use Source Folder"
-msgstr ""
-
-#: tfrmmain.cboutputpath1.caption
-msgctxt "TFRMMAIN.CBOUTPUTPATH1.CAPTION"
-msgid "Use Source Folder"
-msgstr ""
-
-#: tfrmmain.cbx2pass.caption
-msgid "2 pass"
-msgstr "2º passo"
-
-#: tfrmmain.cbx2pass.hint
-#, fuzzy
-#| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Usar dois passos permite ao codificador recolher informação no primeiro passo para melhorar a qualidade."
-
-#: tfrmmain.cbxdeinterlace.caption
-msgid "Deinterlace"
-msgstr "Desentrelaçar"
-
-#: tfrmmain.cbxdeinterlace.hint
-#, fuzzy
-#| msgid "removes interlacing from the video (if necessary)"
-msgid "Removes interlacing from the video (if necessary)"
-msgstr "remove entrelaçamento do vídeo (se necessário)"
-
-#: tfrmmain.choosefolderbtn.caption
-msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-msgid "..."
-msgstr ""
-
-#: tfrmmain.destfolder.hint
-#, fuzzy
-#| msgid "the target location for the final video (choose a different folder than the source folder)"
-msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "a localização de destino para o vídeo final (escolha uma pasta diferente da pasta de origem)"
-
-#: tfrmmain.dlgopenfile.title
-msgid "Select Video Files..."
-msgstr ""
-
-#: tfrmmain.edtaspectratio.hint
-#, fuzzy
-#| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<inteiro:inteiro> ou <real>) o rácio de aspecto físico (DAR) da imagem de destino."
-
-#: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-
-#: tfrmmain.edtcropbottom.text
-msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
-msgid "0"
-msgstr ""
-
-#: tfrmmain.edtcropleft.text
-msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
-msgid "0"
-msgstr ""
-
-#: tfrmmain.edtcropright.text
-msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
-msgid "0"
-msgstr ""
-
-#: tfrmmain.edtcroptop.text
-msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
-msgid "0"
-msgstr ""
-
-#: tfrmmain.edtseekhh.hint
-msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
-msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-
-#: tfrmmain.edtseekmm.hint
-msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
-msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-
-#: tfrmmain.edtseekss.hint
-msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
-msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
-
-#: tfrmmain.edtttrhh.hint
-msgctxt "TFRMMAIN.EDTTTRHH.HINT"
-msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
-
-#: tfrmmain.edtttrmm.hint
-msgctxt "TFRMMAIN.EDTTTRMM.HINT"
-msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
-
-#: tfrmmain.edtttrss.hint
-msgctxt "TFRMMAIN.EDTTTRSS.HINT"
-msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr ""
-
-#: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
-
-#: tfrmmain.frmmain.caption
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+#: TFRMMAIN.CAPTION
+msgctxt "TFRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
-#: tfrmmain.label1.caption
-#, fuzzy
-#| msgid "Convert"
+#: TFRMMAIN.CATEGORYBOX.HINT
+msgid "Device or file type the video should be converted to"
+msgstr "O dispositivo ou tipo de ficheiro para o ficheiro convertido"
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr "Utilizar a pasta de origem"
+
+#: TFRMMAIN.CBX2PASS.CAPTION
+msgid "2 pass"
+msgstr "2 passagens"
+
+#: TFRMMAIN.CBX2PASS.HINT
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "Se utilizar 2 passagens, permite que o codificador obtenha mais informações para melhorar a qualidade"
+
+#: TFRMMAIN.CBXDEINTERLACE.CAPTION
+msgid "Deinterlace"
+msgstr "Desentrelaçar"
+
+#: TFRMMAIN.CBXDEINTERLACE.HINT
+msgid "Removes interlacing from the video (if necessary)"
+msgstr "Remove o entrelaçamento do vídeo (se necessário)"
+
+#: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMMAIN.DESTFOLDER.HINT
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr "Local de destino do ficheiro convertido (escolha uma pasta diferente da pasta de origem)"
+
+#: TFRMMAIN.EDTASPECTRATIO.HINT
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "(<integer:integer> ou <real>) as proporções do ecrã de exibição"
+
+#: TFRMMAIN.EDTAUDIOSYNC.HINT
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "(<integer>) De 10 até à frequência de áudio, como por exemplo 44100, 48000. Permite comprimir/expandir as emissões áudio."
+
+#: TFRMMAIN.EDTCROPBOTTOM.TEXT
+msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPLEFT.TEXT
+msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPRIGHT.TEXT
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPTOP.TEXT
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTSEEKHH.HINT
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - Procurar esta posição antes de iniciar a conversão"
+
+#: TFRMMAIN.EDTSEEKMM.HINT
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - Procurar esta posição antes de iniciar a conversão"
+
+#: TFRMMAIN.EDTSEEKSS.HINT
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - Procurar esta posição antes de iniciar a conversão"
+
+#: TFRMMAIN.EDTTTRHH.HINT
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - Parar após este nível de conversão"
+
+#: TFRMMAIN.EDTTTRMM.HINT
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - Parar após este nível de conversão"
+
+#: TFRMMAIN.EDTTTRSS.HINT
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - Parar após este nível de conversão"
+
+#: TFRMMAIN.EDTVOLUME.HINT
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "(<integer>) 256 = Volume atual, 128 = Reduzir a metade, 512 = Duplicar volume"
+
+#: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
-msgstr "Converter"
+msgstr "Converter para:"
 
-#: tfrmmain.label10.caption
+#: TFRMMAIN.LABEL10.CAPTION
 msgid "Audio Channels"
-msgstr "Canais de Áudio"
+msgstr "Canais de áudio"
 
-#: tfrmmain.label12.caption
-#, fuzzy
-#| msgid "Output Folder"
+#: TFRMMAIN.LABEL12.CAPTION
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
-msgstr "Directório de Saída"
+msgstr "Pasta de destino:"
 
-#: tfrmmain.label19.caption
-#, fuzzy
-#| msgid "Presets"
+#: TFRMMAIN.LABEL19.CAPTION
 msgid "Preset:"
-msgstr "Presets"
+msgstr "Pré-ajuste:"
 
-#: tfrmmain.label20.caption
+#: TFRMMAIN.LABEL20.CAPTION
 msgid "Volume"
-msgstr ""
+msgstr "Volume"
 
-#: tfrmmain.label21.caption
+#: TFRMMAIN.LABEL21.CAPTION
 msgid "Sync"
-msgstr ""
+msgstr "Sincronizar"
 
-#: tfrmmain.label22.caption
+#: TFRMMAIN.LABEL22.CAPTION
 msgid "Seek to"
-msgstr ""
+msgstr "Procurar para"
 
-#: tfrmmain.label23.caption
+#: TFRMMAIN.LABEL23.CAPTION
 msgid "Time to Record"
-msgstr ""
+msgstr "Duração a gravar"
 
-#: tfrmmain.label24.caption
+#: TFRMMAIN.LABEL24.CAPTION
 msgid "Hours / Minutes / Seconds"
-msgstr ""
+msgstr "Horas/Minutos/Segundos"
 
-#: tfrmmain.label3.caption
-#, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
+#: TFRMMAIN.LABEL3.CAPTION
 msgid "Additional Command Line Parameters"
-msgstr "Parâmetros de Linha de Comandos Adicionais (Avançado)"
+msgstr "Parâmetros extra da linha de comandos"
 
-#: tfrmmain.label7.caption
+#: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
-msgstr "Taxa de bits"
+msgstr "Taxa de dados"
 
-#: tfrmmain.label8.caption
+#: TFRMMAIN.LABEL8.CAPTION
 msgid "Sample Rate"
-msgstr "Taxa de Amostragem"
+msgstr "Taxa de amostragem"
 
-#: tfrmmain.label9.caption
+#: TFRMMAIN.LABEL9.CAPTION
 msgid "X"
-msgstr ""
+msgstr "X"
 
-#: tfrmmain.lblaspectratio.caption
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
-msgstr "Rácio de Aparência"
+msgstr "Proporções"
 
-#: tfrmmain.lblcropbottom.caption
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
-msgstr "Fundo"
+msgstr "Base"
 
-#: tfrmmain.lblcropleft.caption
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
 msgid "Left"
-msgstr "Esq."
+msgstr "Esquerda"
 
-#: tfrmmain.lblcropright.caption
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
 msgid "Right"
 msgstr "Direita"
 
-#: tfrmmain.lblcroptop.caption
+#: TFRMMAIN.LBLCROPTOP.CAPTION
 msgid "Top"
 msgstr "Topo"
 
-#: tfrmmain.lblframerate.caption
+#: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
-msgstr "Taxa de Imagens"
+msgstr "Taxa de imagens"
 
-#: tfrmmain.lblvideobitrate.caption
+#: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
-msgstr "Taxa de bits"
+msgstr "Taxa de dados vídeo"
 
-#: tfrmmain.lblvideosize.caption
+#: TFRMMAIN.LBLVIDEOSIZE.CAPTION
 msgid "Video Size"
-msgstr "   Tamanho"
+msgstr "Tamanho do vídeo"
 
-#: tfrmmain.menuitem1.caption
+#: TFRMMAIN.MENUITEM1.CAPTION
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Aplicar pré-ajuste"
 
-#: tfrmmain.menuitem2.caption
+#: TFRMMAIN.MENUITEM2.CAPTION
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
-msgstr ""
+msgstr "Aplicar pasta de destino"
 
-#: tfrmmain.menuitem9.caption
+#: TFRMMAIN.MENUITEM9.CAPTION
 msgid "-"
-msgstr ""
+msgstr "-"
 
-#: tfrmmain.mitabout.caption
-#, fuzzy
-#| msgid "About"
+#: TFRMMAIN.MITABOUT.CAPTION
 msgid "About"
-msgstr "Acerca de"
+msgstr "Sobre"
 
-#: tfrmmain.mitdisplaycmdline.caption
-#, fuzzy
-#| msgid "Display CMD Line"
+#: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
 msgid "Display Cmd Line"
-msgstr "Mostrar Linha CMD"
+msgstr "Mostrar linha de comandos"
 
-#: tfrmmain.mitdocs.caption
+#: TFRMMAIN.MITDOCS.CAPTION
 msgid "Documentation"
 msgstr "Documentação"
 
-#: tfrmmain.mitexit.caption
+#: TFRMMAIN.MITEXIT.CAPTION
 msgid "Exit"
 msgstr "Sair"
 
-#: tfrmmain.mitforums.caption
-#, fuzzy
-#| msgid "WinFF Forums"
+#: TFRMMAIN.MITFORUMS.CAPTION
 msgid "Forums"
-msgstr "Forums do WinFF"
+msgstr "Fóruns"
 
-#: tfrmmain.mitimportpreset.caption
+#: TFRMMAIN.MITIMPORTPRESET.CAPTION
 msgid "Import Preset"
-msgstr "Importar Preset"
+msgstr "Importar pré-ajuste"
 
-#: tfrmmain.mitpauseonfinish.caption
+#: TFRMMAIN.MITPAUSEONFINISH.CAPTION
 msgid "Pause on Finish"
-msgstr "Pausar ao Terminar"
+msgstr "Pausa ao terminar"
 
-#: tfrmmain.mitplaysoundonfinish.caption
+#: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
 msgid "Play Sound on Finish"
-msgstr "Tocar Som ao Terminar"
+msgstr "Tocar som ao terminar"
 
-#: tfrmmain.mitpreferences.caption
+#: TFRMMAIN.MITPREFERENCES.CAPTION
 msgid "Preferences"
 msgstr "Preferências"
 
-#: tfrmmain.mitpresets.caption
-#, fuzzy
-#| msgid "Presets"
+#: TFRMMAIN.MITPRESETS.CAPTION
 msgid "Presets"
-msgstr "Presets"
+msgstr "Pré-ajustes"
 
-#: tfrmmain.mitshowoptions.caption
+#: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr "Opções Adicionais"
+msgstr "Opções extra"
 
-#: tfrmmain.mitshutdownonfinish.caption
+#: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
-msgstr "Desligar Computador ao Terminar"
+msgstr "Desligar computador ao terminar"
 
-#: tfrmmain.mitviewmode.caption
+#: TFRMMAIN.MITVIEWMODE.CAPTION
 msgid "Detailed View"
-msgstr ""
+msgstr "Vista detalhada"
 
-#: tfrmmain.mitwinff.caption
+#: TFRMMAIN.MITWINFF.CAPTION
 msgid "WinFF Website"
-msgstr "Website do WinFF"
+msgstr "Sítio web do WinFF"
 
-#: tfrmmain.mnuedit.caption
+#: TFRMMAIN.MNUEDIT.CAPTION
 msgid "Edit"
 msgstr "Editar"
 
-#: tfrmmain.mnufile.caption
+#: TFRMMAIN.MNUFILE.CAPTION
 msgid "File"
 msgstr "Ficheiro"
 
-#: tfrmmain.mnuhelp.caption
+#: TFRMMAIN.MNUHELP.CAPTION
 msgid "Help"
 msgstr "Ajuda"
 
-#: tfrmmain.mnuoptions.caption
-#, fuzzy
-#| msgid "Options"
+#: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opções"
 
-#: tfrmmain.pnlmain.caption
+#: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
-msgstr ""
+msgstr "Principal"
 
-#: tfrmmain.presetbox.hint
-#, fuzzy
-#| msgid "specific setting to use for the chosen device or file type"
+#: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
-msgstr "definição específica para usar para o dispositivo escolhido ou tipo de ficheiro"
+msgstr "Definições especificas para um determinado dispositivo ou ficheiro"
 
-#: tfrmmain.tabsheet1.caption
-#, fuzzy
-#| msgid "Video Size"
+#: TFRMMAIN.TABSHEET1.CAPTION
 msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
 msgid "Video"
-msgstr "   Tamanho"
+msgstr "Vídeo"
 
-#: tfrmmain.tabsheet2.caption
-#, fuzzy
-#| msgid "Audio Settings"
+#: TFRMMAIN.TABSHEET2.CAPTION
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
-msgstr "Definições de Áudio"
+msgstr "Áudio"
 
-#: tfrmmain.tabsheet3.caption
-#, fuzzy
-#| msgid "Crop"
+#: TFRMMAIN.TABSHEET3.CAPTION
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "Recortar"
 
-#: tfrmmain.tabsheet4.caption
+#: TFRMMAIN.TABSHEET4.CAPTION
 msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
-msgstr ""
+msgstr "Hora"
 
-#: tfrmmain.tabsheet5.caption
-#, fuzzy
-#| msgid "FFmpeg"
+#: TFRMMAIN.TABSHEET5.CAPTION
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: tfrmmain.tabsheet6.caption
-#, fuzzy
-#| msgid "Output Details"
+#: TFRMMAIN.TABSHEET6.CAPTION
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
-msgstr "Detalhes de Saída"
+msgstr "Detalhes de saída"
 
-#: tfrmmain.vidbitrate.hint
-#, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
+#: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<inteiro>kb) os kilobits/segundo de destino que o fluxo deve usar"
+msgstr "(<integer>) os kbs por segundo a utilizar pela emissão"
 
-#: tfrmmain.vidframerate.hint
-#, fuzzy
-#| msgid "(<real> or <integer>) the number of frames per second"
+#: TFRMMAIN.VIDFRAMERATE.HINT
 msgid "(<real> or <integer>) number of frames per second"
-msgstr "(<real> ou <inteiro>) o número de imagens por segundo"
+msgstr "(<real> ou <integer>) o número de imagens por segundo"
 
-#: tfrmmain.vidsizex.hint
-#, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+#: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<inteiro> X <inteiro>) a quantidade de pixeis de informação. Para codecs que não suportam rácio de aspecto de pixeis (PAR) isto é o tamanho do vídeo quando visualizado."
+msgstr "(<integer> X <integer>) Quantidade de pixeis por imagem. Os codificadores sem suporte às relações de pixel, este será o tamanho final do vídeo."
 
-#: tfrmmain.vidsizey.hint
-#, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
+#: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<inteiro> X <inteiro>) a quantidade de pixeis de informação. Para codecs que não suportam rácio de aspecto de pixeis (PAR) isto é o tamanho do vídeo quando visualizado."
+msgstr "(<integer> X <integer>) Quantidade de pixeis por imagem. Os codificadores sem suporte às relações de pixel, este será o tamanho final do vídeo."
 
-#: tfrmpreferences.button1.caption
+#: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
 msgid "OK"
-msgstr "OK"
+msgstr "Aceitar"
 
-#: tfrmpreferences.button2.caption
+#: TFRMPREFERENCES.BUTTON2.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: tfrmpreferences.button3.caption
+#: TFRMPREFERENCES.BUTTON3.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
-#: tfrmpreferences.button4.caption
+#: TFRMPREFERENCES.BUTTON4.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
-#: tfrmpreferences.button5.caption
+#: TFRMPREFERENCES.BUTTON5.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
-#: tfrmpreferences.button6.caption
+#: TFRMPREFERENCES.BUTTON6.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
-#: tfrmpreferences.button7.caption
+#: TFRMPREFERENCES.BUTTON7.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
-#: tfrmpreferences.button8.caption
+#: TFRMPREFERENCES.BUTTON8.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
-#: tfrmpreferences.caption
+#: TFRMPREFERENCES.CAPTION
 msgid "WinFF Preferences"
-msgstr "Preferências de WinFF"
+msgstr "Preferências do WinFF"
 
-#: tfrmpreferences.checkbox1.caption
-#, fuzzy
-#| msgid "Remember Last Directory Used"
+#: TFRMPREFERENCES.CHECKBOX1.CAPTION
 msgid "Remember Last Used Directory"
-msgstr "Lembrar o Último Directório Usado"
+msgstr "Lembrar último diretório utilizado"
 
-#: tfrmpreferences.checkbox2.caption
+#: TFRMPREFERENCES.CHECKBOX2.CAPTION
 msgid "Use CHCP for international characters"
 msgstr "Usar CHCP para caracteres internacionais"
 
-#: tfrmpreferences.checkbox3.caption
+#: TFRMPREFERENCES.CHECKBOX3.CAPTION
 msgid "Use Several Encoding Threads:"
-msgstr ""
+msgstr "Utilizar vários processos de codificação:"
 
-#: tfrmpreferences.edit7.hint
-#, fuzzy
-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
+#: TFRMPREFERENCES.EDIT7.HINT
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr "Opções de Terminal (-e para Xterm, -x para Terminal do Gnome)"
+msgstr "-e para xterm e -x para o terminal gnome"
 
-#: tfrmpreferences.label1.caption
-#, fuzzy
-#| msgid "Default Destination Directory"
+#: TFRMPREFERENCES.LABEL1.CAPTION
 msgid "Default Destination Directory:"
-msgstr "Directório Predefinido de Destino"
+msgstr "Diretório de destino padrão:"
 
-#: tfrmpreferences.label2.caption
-#, fuzzy
-#| msgid "Path to FFmpeg Executable"
+#: TFRMPREFERENCES.LABEL2.CAPTION
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr "Caminho para o Executável FFmpeg"
+msgstr "Caminho do executável FFmpeg:"
 
-#: tfrmpreferences.label3.caption
-#, fuzzy
-#| msgid "Path to FFPlay Executable"
+#: TFRMPREFERENCES.LABEL3.CAPTION
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr "Caminho para o Executável FFPlay"
+msgstr "Caminho do executável FFplay:"
 
-#: tfrmpreferences.label4.caption
-#, fuzzy
-#| msgid "Path to FFmpeg Executable"
+#: TFRMPREFERENCES.LABEL4.CAPTION
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
 msgid "Path to FFmpeg Executable:"
-msgstr "Caminho para o Executável FFmpeg"
+msgstr "Caminho do executável FFmpeg:"
 
-#: tfrmpreferences.label5.caption
-#, fuzzy
-#| msgid "Path to FFPlay Executable"
+#: TFRMPREFERENCES.LABEL5.CAPTION
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 msgid "Path to FFplay Executable:"
-msgstr "Caminho para o Executável FFPlay"
+msgstr "Caminho do executável FFplay:"
 
-#: tfrmpreferences.label6.caption
-#, fuzzy
-#| msgid "Terminal to run FFmpeg"
+#: TFRMPREFERENCES.LABEL6.CAPTION
 msgid "Terminal to run FFmpeg in:"
-msgstr "Terminal para correr FFmpeg"
+msgstr "Terminal para executar o FFmpeg:"
 
-#: tfrmpreferences.label7.caption
-#, fuzzy
-#| msgid "Additional Options"
+#: TFRMPREFERENCES.LABEL7.CAPTION
 msgid "Terminal Options:"
-msgstr "Opções Adicionais"
+msgstr "Opções de terminal:"
 
-#: tfrmpreferences.label8.caption
-#, fuzzy
-#| msgid "Priority"
+#: TFRMPREFERENCES.LABEL8.CAPTION
 msgid "Priority:"
-msgstr "Prioridade"
+msgstr "Prioridade:"
 
-#: tfrmpreferences.page1.caption
+#: TFRMPREFERENCES.PAGE1.CAPTION
 msgid "General"
 msgstr "Geral"
 
-#: tfrmpreferences.page2.caption
-#, fuzzy
-#| msgid "Ms Windows"
+#: TFRMPREFERENCES.PAGE2.CAPTION
 msgid "MS Windows"
-msgstr "Ms Windows"
+msgstr "MS Windows"
 
-#: tfrmpreferences.page3.caption
+#: TFRMPREFERENCES.PAGE3.CAPTION
 msgid "Linux"
 msgstr "Linux"
 
-#: tfrmscript.btnclip.caption
+#: TFRMSCRIPT.BTNCLIP.CAPTION
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Copiar para a área de transferência"
 
-#: tfrmscript.btnclose.caption
-#, fuzzy
-#| msgid "Close"
+#: TFRMSCRIPT.BTNCLOSE.CAPTION
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
 msgstr "Fechar"
 
-#: tfrmscript.btnrun.caption
+#: TFRMSCRIPT.BTNRUN.CAPTION
 msgid "Run!"
-msgstr ""
+msgstr "Executar"
 
-#: tfrmscript.btnsave.caption
+#: TFRMSCRIPT.BTNSAVE.CAPTION
 msgid "Save As..."
-msgstr ""
+msgstr "Gravar como..."
 
-#: tfrmscript.caption
+#: TFRMSCRIPT.CAPTION
 msgid "FFmpeg Command Line"
-msgstr "Linha de Comandos do FFmpeg"
+msgstr "Linha de comandos do FFmpeg"
 
 #: unit1.rsanalysing
 msgid "Analysing"
-msgstr ""
+msgstr "A analisar"
 
 #: unit1.rsconverting
 msgid "Converting"
 msgstr "A converter"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "Incapaz de encontrar o FFmpeg."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "Incapaz de encontrar o FFPlay."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
-msgstr "Incapaz de Encontrar o Ficheiro"
+msgstr "Incapaz de encontrar o ficheiro"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "Incapaz de encontrar o ficheiro de presets."
+msgstr "Incapaz de encontrar o ficheiro de pré-ajustes."
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "A Extensão não pode conter um ponto"
+msgstr "A extensão não pode conter um ponto"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
-msgstr "ficheiro não existe"
+msgstr "o ficheiro não existe"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Ficheiro de Preset Inválido"
+msgstr "O ficheiro de pré-ajuste é inválido"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "O nome Tem de ser alfanumérico (a-z,A-Z,0-9)"
+msgstr "O nome tem de ser alfanumérico (a-z,A-Z,0-9)"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "Por favor adicione pelo menos 1 ficheiro para converter"
+msgstr "Adicione, pelo menos, 1 ficheiro para converter"
 
 #: unit1.rspleaseselectapreset
 msgid "Please select a preset"
-msgstr "Por Favor seleccione um preset"
+msgstr "Por favor, escolha o pré-ajuste"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
-msgstr "Preset: %s%s%s já existe"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgstr "O pré-ajuste %s%s%s já existe"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "O preset a importar não tem uma extensão"
+msgstr "O pré-ajuste a importar não tem uma extensão"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "O preset a importar não tem uma etiqueta"
+msgstr "O pré-ajuste a importar não tem uma etiqueta"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "Por favor seleccione um preset para exportar"
+msgstr "Por favor, escolha o pré-ajuste a exportar"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "Preset com etiqueta: %s%s%s já existe"
+msgstr "O pré-ajuste com a etiqueta %s%s%s já existe"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr "Pressione Enter para Continuar"
+msgstr "Prima Enter para continuar"
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
 
 #: unit1.rsselectdirectory
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
-msgstr "Directório Predefinido de Destino"
+msgstr "Selecione o diretório"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "Seleccionar Ficheiro Preset"
+msgstr "Selecione o ficheiro do pré-ajuste"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
-msgstr "Seleccionar Ficheiros de Vídeo"
+msgstr "Selecione o ficheiro do vídeo"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "O preset contém caracteres ilegais"
+msgstr "O pré-ajuste contém caracteres ilegais"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Criar Preset:"
+msgstr "Criar pré-ajuste:"
 
 #: unit2.rsimportpresets
 msgid "Import Presets"
-msgstr "Importar Presets"
+msgstr "Importar pré-ajuste"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
@@ -971,11 +872,11 @@ msgstr "A etiqueta tem de ser única."
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "Remover Preset:"
+msgstr "Remover pré-ajuste:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "Actualizar Preset:"
+msgstr "Atualizar pré-ajuste:"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
@@ -995,10 +896,9 @@ msgstr "Alta"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr "Desocupado"
+msgstr "Inativo"
 
 #: unit4.rsprioritynormal
-#, fuzzy
 msgid "Normal"
 msgstr "Normal"
 
