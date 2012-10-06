@@ -1,0 +1,904 @@
+# Latvian translation for winff
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the winff package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: winff\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-11-22 23:33+0000\n"
+"PO-Revision-Date: 2012-10-05 16:16+0000\n"
+"Last-Translator: tuxmaniack <Unknown>\n"
+"Language-Team: Latvian <lv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-10-05 19:56+0000\n"
+"X-Generator: Launchpad (build 16061)\n"
+
+#: TFORM1.FORM1.CAPTION
+msgid "Form1"
+msgstr "Forma1"
+
+#: TFRMABOUT.BUTTON1.CAPTION
+msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+msgid "OK"
+msgstr "Labi"
+
+#: TFRMABOUT.FRMABOUT.CAPTION
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
+msgid "About WinFF"
+msgstr "Par WinFF"
+
+#: TFRMABOUT.LABEL1.CAPTION
+msgid "WinFF 1.3.2"
+msgstr "WinFF 1.3.2"
+
+#: TFRMABOUT.LABEL10.CAPTION
+msgid "http://hawkeye.arrozcru.org/"
+msgstr "http://hawkeye.arrozcru.org/"
+
+#: TFRMABOUT.LABEL11.CAPTION
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr "Debian/Ubuntu pakotnes no Paul Gevers"
+
+#: TFRMABOUT.LABEL13.CAPTION
+msgid "Gmaq"
+msgstr "Gmaq"
+
+#: TFRMABOUT.LABEL14.CAPTION
+msgid "High Quality Presets From"
+msgstr "Augstas kvalitātes regulējumi no"
+
+#: TFRMABOUT.LABEL15.CAPTION
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr "Ikonas un logo no Alex Klepatsch"
+
+#: TFRMABOUT.LABEL16.CAPTION
+msgid "JNavas"
+msgstr "JNavas"
+
+#: TFRMABOUT.LABEL2.CAPTION
+msgid "Copyright 2006-2009 GPL V3"
+msgstr "Autortiesības 2006-2009 GPL V3"
+
+#: TFRMABOUT.LABEL3.CAPTION
+msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+msgstr "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+
+#: TFRMABOUT.LABEL4.CAPTION
+msgid "http://www.winff.org"
+msgstr "http://www.winff.org"
+
+#: TFRMABOUT.LABEL5.CAPTION
+msgctxt "TFRMABOUT.LABEL5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.LABEL6.CAPTION
+msgid "Trademark Fabrice Belllard"
+msgstr "Preču zīme Fabrice Belllard"
+
+#: TFRMABOUT.LABEL7.CAPTION
+msgid "http://ffmpeg.org"
+msgstr "http://ffmpeg.org"
+
+#: TFRMABOUT.LABEL8.CAPTION
+msgid "FFmpeg Windows Builds by"
+msgstr "FFmpeg Windows pakotnes no"
+
+#: TFRMABOUT.LABEL9.CAPTION
+msgid "Kyle Schwarz"
+msgstr "Kyle Schwarz"
+
+#: TFRMABOUT.PAGE1.CAPTION
+msgctxt "TFRMABOUT.PAGE1.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMABOUT.PAGE2.CAPTION
+msgctxt "TFRMABOUT.PAGE2.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.PAGE3.CAPTION
+msgid "Thanks"
+msgstr "Paldies"
+
+#: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
+msgid "Add / Update"
+msgstr "Pievienot / Atjaunot"
+
+#: TFRMEDITPRESETS.CANCELBTN.CAPTION
+msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+msgid "Close"
+msgstr "Aizvērt"
+
+#: TFRMEDITPRESETS.CAPTION
+msgid "Edit Presets"
+msgstr "Labot regulējumus"
+
+#: TFRMEDITPRESETS.DELETEBTN.CAPTION
+msgid "Delete"
+msgstr "Dzēst"
+
+#: TFRMEDITPRESETS.EDIT1.HINT
+msgid "One word, only letters and numbers"
+msgstr "Viens vārds, tikai burti un cipari"
+
+#: TFRMEDITPRESETS.EDIT2.HINT
+msgid "Enter a more descriptive name for this preset"
+msgstr "Ievadiet labāk raksturojošu nosaukumu šim regulējumam"
+
+#: TFRMEDITPRESETS.EDIT3.HINT
+msgid "Please don't use -i or output file parameters"
+msgstr "Lūdzu, neizmantojiet -i vai izvades faila parametrus"
+
+#: TFRMEDITPRESETS.EDIT4.HINT
+msgid "Do not include a dot"
+msgstr "Neietveriet punktu"
+
+#: TFRMEDITPRESETS.EDIT5.HINT
+msgid "Choose a category to group this preset under"
+msgstr "Izvēlieties kategoriju priekš šī regulējuma"
+
+#: TFRMEDITPRESETS.EXPORT.CAPTION
+msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+msgid "Export"
+msgstr "Eksportēt"
+
+#: TFRMEDITPRESETS.IMPORT.CAPTION
+msgid "Import"
+msgstr "Importēt"
+
+#: TFRMEDITPRESETS.LABEL1.CAPTION
+msgid "Category / Preset"
+msgstr "Kategorija / Regulējums"
+
+#: TFRMEDITPRESETS.LABEL2.CAPTION
+msgid "Preset Name (one word, only letters and numbers)"
+msgstr "Regulējuma vārds (viens vārds, tikai burti un cipari)"
+
+#: TFRMEDITPRESETS.LABEL3.CAPTION
+msgid "Preset Label"
+msgstr "Regulējuma nosaukums"
+
+#: TFRMEDITPRESETS.LABEL4.CAPTION
+msgid "Preset Command Line Parameters (no -i or output file)"
+msgstr "Regulējuma komandrindas parametri (bez -i vai izvades faila)"
+
+#: TFRMEDITPRESETS.LABEL5.CAPTION
+msgid "Output File Extension (do not include the '.' )"
+msgstr "Izvades faila paplašinājums (bez '.')"
+
+#: TFRMEDITPRESETS.LABEL6.CAPTION
+msgid "Category"
+msgstr "Kategorija"
+
+#: TFRMEDITPRESETS.OKBTN.CAPTION
+msgid "Save"
+msgstr "Saglabāt"
+
+#: TFRMEDITPRESETS.PNLTOP.CAPTION
+msgid "pnlTop"
+msgstr "pnlTop"
+
+#: TFRMEXPORT.CANCELBTN.CAPTION
+msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+msgid "Cancel"
+msgstr "Atcelt"
+
+#: TFRMEXPORT.CAPTION
+msgid "Export Presets"
+msgstr "Eksportēt regulējumu"
+
+#: TFRMEXPORT.EXPORTBTN.CAPTION
+msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+msgid "Export"
+msgstr "Eksportēt"
+
+#: TFRMEXPORT.LABEL1.CAPTION
+msgid "Choose Presets to Export:"
+msgstr "Izvēlieties regulējumus, kurus eksportēt:"
+
+#: TFRMMAIN.AUDBITRATE.HINT
+msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "(<vesels skaitlis>) mērķa kilobiti/sekundē, kurus izmantos straume"
+
+#: TFRMMAIN.AUDCHANNELS.HINT
+msgid "(<integer>) number of audio channels"
+msgstr "(<vesels skaitlis>) audio kanālu skaits"
+
+#: TFRMMAIN.AUDSAMPLINGRATE.HINT
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr "(<vesels skaitlis>) audio iztveršanas frekvence hercos"
+
+#: TFRMMAIN.BTNADD.CAPTION
+msgid "Add"
+msgstr "Pievienot"
+
+#: TFRMMAIN.BTNADD.HINT
+msgid "Add file(s) to the list for conversion"
+msgstr "Pievienot failu(s) pārveidošanas sarakstam"
+
+#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+msgid "Apply Output Folder"
+msgstr "Pielietot mērķa mapi"
+
+#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
+msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+msgid "Apply Preset"
+msgstr "Pielietot regulējumu"
+
+#: TFRMMAIN.BTNCLEAR.CAPTION
+msgid "Clear"
+msgstr "Notīrīt"
+
+#: TFRMMAIN.BTNCLEAR.HINT
+msgid "Remove all files from the list"
+msgstr "Izņemt visus failus no saraksta"
+
+#: TFRMMAIN.BTNCONVERT.CAPTION
+msgid "Convert"
+msgstr "Pārveidot"
+
+#: TFRMMAIN.BTNCONVERT.HINT
+msgid "Start the conversion process"
+msgstr "Sākt pārveidošanas procesu"
+
+#: TFRMMAIN.BTNOPTIONS.CAPTION
+msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+msgid "Options"
+msgstr "Iespējas"
+
+#: TFRMMAIN.BTNOPTIONS.HINT
+msgid "Open/close the additional options window"
+msgstr "Rādīt/slēpt papildu iespēju cilnes"
+
+#: TFRMMAIN.BTNPLAY.CAPTION
+msgid "Play"
+msgstr "Atskaņot"
+
+#: TFRMMAIN.BTNPLAY.HINT
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Atskaņot izvēlēto avota failu ar ffplay (noderīgs, lai redzētu vai "
+"pārveidošana ir iespējama)"
+
+#: TFRMMAIN.BTNPREVIEW.CAPTION
+msgid "Preview"
+msgstr "Priekšskatīt"
+
+#: TFRMMAIN.BTNPREVIEW.HINT
+msgid "Preview using the output settings"
+msgstr "Priekšskatīt izmantojot izvades iestatījumus"
+
+#: TFRMMAIN.BTNREMOVE.CAPTION
+msgid "Remove"
+msgstr "Izņemt"
+
+#: TFRMMAIN.BTNREMOVE.HINT
+msgid "Remove selected file(s) from the list"
+msgstr "Izņemt izvēlēto(s) failu(s) no saraksta"
+
+#: TFRMMAIN.CAPTION
+msgctxt "TFRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: TFRMMAIN.CATEGORYBOX.HINT
+msgid "Device or file type the video should be converted to"
+msgstr "Ierīce vai faila tips uz kuru video tiks pārveidots"
+
+#: TFRMMAIN.CBOUTPUTPATH.CAPTION
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr "Izmantot avota mapi"
+
+#: TFRMMAIN.CBX2PASS.CAPTION
+msgid "2 pass"
+msgstr "2 reizes"
+
+#: TFRMMAIN.CBX2PASS.HINT
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"Izmantojot 2 reizes, kodētājs saņems informāciju no pirmās reizes, lai "
+"uzlabotu kvalitāti"
+
+#: TFRMMAIN.CBXDEINTERLACE.CAPTION
+msgid "Deinterlace"
+msgstr "Deinterlace"
+
+#: TFRMMAIN.CBXDEINTERLACE.HINT
+msgid "Removes interlacing from the video (if necessary)"
+msgstr "Novērš rindpārlēci (interlacing), ja nepieciešams"
+
+#: TFRMMAIN.CHOOSEFOLDERBTN.CAPTION
+msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMMAIN.DESTFOLDER.HINT
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr "Pārveidotā faila atrašanās vieta (izvēlieties citu mapi, ne avota)"
+
+#: TFRMMAIN.EDTASPECTRATIO.HINT
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<vesels skaitlis:vesels skaitlis> vai <reāls skaitlis>) fizikāla malu "
+"attiecība (DAR) mērķa ekrānam"
+
+#: TFRMMAIN.EDTAUDIOSYNC.HINT
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"(<vesels skaitlis>) No 10 līdz audio izvērses ātrumam, kā 44100, 48000. Ļauj "
+"\"izstiept\"/\"saspiest\" skaņas plūsmu."
+
+#: TFRMMAIN.EDTCROPBOTTOM.TEXT
+msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPLEFT.TEXT
+msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPRIGHT.TEXT
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTCROPTOP.TEXT
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr "0"
+
+#: TFRMMAIN.EDTSEEKHH.HINT
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - Patīt uz šo pozīciju, pirms sākt pārveidošanu"
+
+#: TFRMMAIN.EDTSEEKMM.HINT
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - Patīt uz šo pozīciju, pirms sākt pārveidošanu"
+
+#: TFRMMAIN.EDTSEEKSS.HINT
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - Patīt uz šo pozīciju, pirms sākt pārveidošanu"
+
+#: TFRMMAIN.EDTTTRHH.HINT
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - Apturēt tad, kad tik daudz no video ir pārveidots"
+
+#: TFRMMAIN.EDTTTRMM.HINT
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - Apturēt tad, kad tik daudz no video ir pārveidots"
+
+#: TFRMMAIN.EDTTTRSS.HINT
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - Apturēt tad, kad tik daudz no video ir pārveidots"
+
+#: TFRMMAIN.EDTVOLUME.HINT
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+"(<vesels skaitlis>) 256 = pašreizējais skaļums, 128 = puse no skaļuma, 512 = "
+"divkāršots skaļums"
+
+#: TFRMMAIN.LABEL1.CAPTION
+msgid "Convert to:"
+msgstr "Pārveidot uz:"
+
+#: TFRMMAIN.LABEL10.CAPTION
+msgid "Audio Channels"
+msgstr "Audio kanāli"
+
+#: TFRMMAIN.LABEL12.CAPTION
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
+msgid "Output Folder:"
+msgstr "Izvades mape:"
+
+#: TFRMMAIN.LABEL19.CAPTION
+msgid "Preset:"
+msgstr "Regulējumi:"
+
+#: TFRMMAIN.LABEL20.CAPTION
+msgid "Volume"
+msgstr "Skaļums"
+
+#: TFRMMAIN.LABEL21.CAPTION
+msgid "Sync"
+msgstr "Sinhronizācija"
+
+#: TFRMMAIN.LABEL22.CAPTION
+msgid "Seek to"
+msgstr "Sākt no"
+
+#: TFRMMAIN.LABEL23.CAPTION
+msgid "Time to Record"
+msgstr "Pārveides garums"
+
+#: TFRMMAIN.LABEL24.CAPTION
+msgid "Hours / Minutes / Seconds"
+msgstr "Stundas / Minūtes / Sekundes"
+
+#: TFRMMAIN.LABEL3.CAPTION
+msgid "Additional Command Line Parameters"
+msgstr "Papildu komandrindas parametri"
+
+#: TFRMMAIN.LABEL7.CAPTION
+msgid "Audio Bitrate"
+msgstr "Audio bitātrums"
+
+#: TFRMMAIN.LABEL8.CAPTION
+msgid "Sample Rate"
+msgstr "Frekvence"
+
+#: TFRMMAIN.LABEL9.CAPTION
+msgid "X"
+msgstr "X"
+
+#: TFRMMAIN.LBLASPECTRATIO.CAPTION
+msgid "Aspect Ratio"
+msgstr "Malu attiecība"
+
+#: TFRMMAIN.LBLCROPBOTTOM.CAPTION
+msgid "Bottom"
+msgstr "Apakša"
+
+#: TFRMMAIN.LBLCROPLEFT.CAPTION
+msgid "Left"
+msgstr "Kreisā"
+
+#: TFRMMAIN.LBLCROPRIGHT.CAPTION
+msgid "Right"
+msgstr "Labā"
+
+#: TFRMMAIN.LBLCROPTOP.CAPTION
+msgid "Top"
+msgstr "Augša"
+
+#: TFRMMAIN.LBLFRAMERATE.CAPTION
+msgid "Frame Rate"
+msgstr "Kadru ātrums"
+
+#: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
+msgid "Video Bitrate"
+msgstr "Bitu ātrums"
+
+#: TFRMMAIN.LBLVIDEOSIZE.CAPTION
+msgid "Video Size"
+msgstr "Video izmērs"
+
+#: TFRMMAIN.MENUITEM1.CAPTION
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr "Pielietot regulējumu"
+
+#: TFRMMAIN.MENUITEM2.CAPTION
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr "Pielietot mērķa mapi"
+
+#: TFRMMAIN.MENUITEM9.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFRMMAIN.MITABOUT.CAPTION
+msgid "About"
+msgstr "Par"
+
+#: TFRMMAIN.MITDISPLAYCMDLINE.CAPTION
+msgid "Display Cmd Line"
+msgstr "Rādīt komandrindu"
+
+#: TFRMMAIN.MITDOCS.CAPTION
+msgid "Documentation"
+msgstr "Dokumentācija"
+
+#: TFRMMAIN.MITEXIT.CAPTION
+msgid "Exit"
+msgstr "Iziet"
+
+#: TFRMMAIN.MITFORUMS.CAPTION
+msgid "Forums"
+msgstr "Forumi"
+
+#: TFRMMAIN.MITIMPORTPRESET.CAPTION
+msgid "Import Preset"
+msgstr "Importēt regulējumus"
+
+#: TFRMMAIN.MITPAUSEONFINISH.CAPTION
+msgid "Pause on Finish"
+msgstr "Pauzēt pabeidzot"
+
+#: TFRMMAIN.MITPLAYSOUNDONFINISH.CAPTION
+msgid "Play Sound on Finish"
+msgstr "Atskaņot skaņas signālu, kad pabeigts"
+
+#: TFRMMAIN.MITPREFERENCES.CAPTION
+msgid "Preferences"
+msgstr "Iestatījumi"
+
+#: TFRMMAIN.MITPRESETS.CAPTION
+msgid "Presets"
+msgstr "Regulējumi"
+
+#: TFRMMAIN.MITSHOWOPTIONS.CAPTION
+msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+msgid "Additional Options"
+msgstr "Papildu iespējas"
+
+#: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
+msgid "Shutdown on Finish"
+msgstr "Izslēgt datoru pabeidzot"
+
+#: TFRMMAIN.MITVIEWMODE.CAPTION
+msgid "Detailed View"
+msgstr "Detalizēts skatījums"
+
+#: TFRMMAIN.MITWINFF.CAPTION
+msgid "WinFF Website"
+msgstr "WinFF tīmekļa vietne"
+
+#: TFRMMAIN.MNUEDIT.CAPTION
+msgid "Edit"
+msgstr "Rediģēt"
+
+#: TFRMMAIN.MNUFILE.CAPTION
+msgid "File"
+msgstr "Fails"
+
+#: TFRMMAIN.MNUHELP.CAPTION
+msgid "Help"
+msgstr "Palīdzība"
+
+#: TFRMMAIN.MNUOPTIONS.CAPTION
+msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+msgid "Options"
+msgstr "Iespējas"
+
+#: TFRMMAIN.PNLMAIN.CAPTION
+msgid "pnlMain"
+msgstr "pnlMain"
+
+#: TFRMMAIN.PRESETBOX.HINT
+msgid "Specific settings to use for the chosen device or file type"
+msgstr "Specifiski iestatījumi priekš izvēlētās ierīces vai faila tipa"
+
+#: TFRMMAIN.TABSHEET1.CAPTION
+msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+msgid "Video"
+msgstr "Video"
+
+#: TFRMMAIN.TABSHEET2.CAPTION
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+msgid "Audio"
+msgstr "Audio"
+
+#: TFRMMAIN.TABSHEET3.CAPTION
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+msgid "Crop"
+msgstr "Apcirst"
+
+#: TFRMMAIN.TABSHEET4.CAPTION
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
+msgid "Time"
+msgstr "Laiks"
+
+#: TFRMMAIN.TABSHEET5.CAPTION
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMMAIN.TABSHEET6.CAPTION
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "Izvades informācija"
+
+#: TFRMMAIN.VIDBITRATE.HINT
+msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "(<vesels skaitlis>) mērķa kilobiti/sekundē, kurus izmantos straume"
+
+#: TFRMMAIN.VIDFRAMERATE.HINT
+msgid "(<real> or <integer>) number of frames per second"
+msgstr "(<reāls skaitlis> vai <vesels skaitlis>) kadru skaits sekundē"
+
+#: TFRMMAIN.VIDSIZEX.HINT
+msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, "
+"kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
+
+#: TFRMMAIN.VIDSIZEY.HINT
+msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, "
+"kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
+
+#: TFRMPREFERENCES.BUTTON1.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+msgid "OK"
+msgstr "Labi"
+
+#: TFRMPREFERENCES.BUTTON2.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+msgid "Cancel"
+msgstr "Atcelt"
+
+#: TFRMPREFERENCES.BUTTON3.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON4.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON5.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON6.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON7.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.BUTTON8.CAPTION
+msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: TFRMPREFERENCES.CAPTION
+msgid "WinFF Preferences"
+msgstr "WinFF iestatījumi"
+
+#: TFRMPREFERENCES.CHECKBOX1.CAPTION
+msgid "Remember Last Used Directory"
+msgstr "Atcerēties pēdējo izmantoto mapi"
+
+#: TFRMPREFERENCES.CHECKBOX2.CAPTION
+msgid "Use CHCP for international characters"
+msgstr "Izmantot CHCP priekš starptautiskām rakstzīmēm"
+
+#: TFRMPREFERENCES.CHECKBOX3.CAPTION
+msgid "Use Several Encoding Threads:"
+msgstr "Izmantot vairākdzīslošanu (threads):"
+
+#: TFRMPREFERENCES.EDIT7.HINT
+msgid "'-e' for xterm, '-x' for gnome-terminal"
+msgstr "'-e' priekš xterm, '-x' priekš gnome-terminal"
+
+#: TFRMPREFERENCES.LABEL1.CAPTION
+msgid "Default Destination Directory:"
+msgstr "Noklusētā mērķa mape:"
+
+#: TFRMPREFERENCES.LABEL2.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr "Ceļš uz FFmpeg izpildāmo failu:"
+
+#: TFRMPREFERENCES.LABEL3.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr "Ceļš uz FFplay izpildāmo failu:"
+
+#: TFRMPREFERENCES.LABEL4.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+msgid "Path to FFmpeg Executable:"
+msgstr "Ceļš uz FFmpeg izpildāmo failu:"
+
+#: TFRMPREFERENCES.LABEL5.CAPTION
+msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+msgid "Path to FFplay Executable:"
+msgstr "Ceļš uz FFplay izpildāmo failu:"
+
+#: TFRMPREFERENCES.LABEL6.CAPTION
+msgid "Terminal to run FFmpeg in:"
+msgstr "Terminālis, kurā palaist FFmpeg:"
+
+#: TFRMPREFERENCES.LABEL7.CAPTION
+msgid "Terminal Options:"
+msgstr "Termināļa parametri:"
+
+#: TFRMPREFERENCES.LABEL8.CAPTION
+msgid "Priority:"
+msgstr "Prioritāte:"
+
+#: TFRMPREFERENCES.PAGE1.CAPTION
+msgid "General"
+msgstr "Vispārīgi"
+
+#: TFRMPREFERENCES.PAGE2.CAPTION
+msgid "MS Windows"
+msgstr "MS Windows"
+
+#: TFRMPREFERENCES.PAGE3.CAPTION
+msgid "Linux"
+msgstr "Linux"
+
+#: TFRMSCRIPT.BTNCLIP.CAPTION
+msgid "Copy to Clipboard"
+msgstr "Kopēt uz starpliktuvi"
+
+#: TFRMSCRIPT.BTNCLOSE.CAPTION
+msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+msgid "Close"
+msgstr "Aizvērt"
+
+#: TFRMSCRIPT.BTNRUN.CAPTION
+msgid "Run!"
+msgstr "Palaist!"
+
+#: TFRMSCRIPT.BTNSAVE.CAPTION
+msgid "Save As..."
+msgstr "Saglabāt kā..."
+
+#: TFRMSCRIPT.CAPTION
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg komandrinda"
+
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr "Analizē"
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "Pārveido"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find FFmpeg."
+msgstr "FFmpeg nav atrasts."
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find FFPlay."
+msgstr "FFPlay nav atrasts."
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "Fails nav atrasts"
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "Neizdevās atrast regulējumu failu."
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "Paplašinājums nedrīkst saturēt atstarpi"
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "fails neeksistē"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "Nederīgs regulējuma fails"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "Vārdam jābūt burtciparu (a-z,A-Z,0-9)"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "Lūdzu, pievienojiet vismaz 1 failu, kuru pārveidot"
+
+#: unit1.rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "Lūdzu, izvēlieties regulējumu"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists"
+msgstr "Regulējums: %s%s%s jau eksistē"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "Importējamajam regulējumam nav paplašinājuma"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "Importējamajam regulējumam nav nosaukuma"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "Lūdzu, pievienojiet regulējumu, kuru eksportēt"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "Regulējums ar nosaukumu: %s%s%s jau eksistē"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Nospiediet 'Enter', lai turpinātu"
+
+#: unit1.rsselectdirectory
+msgid "Select Directory"
+msgstr "Izvēlieties mapi"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Izvēlieties regulējumu failu"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Izvēlieties video failus"
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Regulējums satur neatļautas rakstzīmes"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "Izveidot regulējumu:"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "Importēt regulējumus"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "Nosaukumam jābūt unikālam."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "Izņemt regulējumu:"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "Atjaunot regulējumu:"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "Jums ir jāievada paplašinājums."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "Jums ir jāievada nosaukums."
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "Jums ir jāievada regulējuma vārds."
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "Augsta"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "Dīkstāve"
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "Normāla"
