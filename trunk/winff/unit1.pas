@@ -108,7 +108,7 @@ type
     Panel13: TPanel;
     Panel17: TPanel;
     Panel18: TPanel;
-    Panel19: TPanel;
+    pnlAllow: TPanel;
     Panel2: TPanel;
     Panel20: TPanel;
     Panel3: TPanel;
@@ -167,6 +167,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
     procedure cbOutputPathChange(Sender: TObject);
+    procedure AllowChanges(Sender: TObject);
     procedure edtCropBottomChange(Sender: TObject);
     procedure edtCropLeftChange(Sender: TObject);
     procedure edtCropRightChange(Sender: TObject);
@@ -850,6 +851,11 @@ begin
   // end Changed
 end;
 
+procedure TfrmMain.AllowChanges(Sender: TObject);
+begin
+  pnlAllow.Visible := True;
+end;
+
 // cropbootom change
 procedure TfrmMain.edtCropBottomChange(Sender: TObject);
 begin
@@ -979,6 +985,7 @@ begin
 
            end;
        end;
+     pnlAllow.Visible:= False;
      Application.ProcessMessages;
 end;
 
@@ -1446,6 +1453,7 @@ begin
           end;
           //filelist.items.AddStrings(dlgOpenFile.Files);
       end;
+   pnlAllow.Visible := False;
 end;
 
 procedure tFrmMain.SetSCR(vIndex : integer);
@@ -1487,6 +1495,7 @@ begin
   for 1.5
   get array values per queue item
 *)
+
   With Scr[vIndex] do
   begin
     VidBitRate.Text := VideoBR;
@@ -1512,6 +1521,7 @@ begin
     EdtTTRMM.Value := RecordMinute ;
     edtTTRSS.Value := RecordSecond ;
   end;
+  pnlAllow.visible := false;
 end;
 
 
