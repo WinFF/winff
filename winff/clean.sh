@@ -1,3 +1,4 @@
+#!/bin/sh
 rm -f *~
 rm -f *.o
 rm -f *.ppu
@@ -11,5 +12,5 @@ rm -f winff
 rm -f *.or
 rm -f *.compiled
 rm -f backup/*
-rmdir backup
+if [ -d backup ] ; then rmdir backup ; fi
 rm -f magnifier
