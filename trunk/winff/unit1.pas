@@ -28,7 +28,7 @@ uses
   {$IFDEF unix} baseunix, unix, {$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
-  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, MaskEdit, Spin,
+  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, Spin,
   PoTranslator, types,FileUtil;
 
 type
@@ -375,7 +375,7 @@ ch: char;
 i:integer;
 formheight,formwidth,formtop,formleft:integer;
 sformheight,sformwidth,sformtop,sformleft:string;
-currentpreset, destdir: string;
+currentpreset: string;
 
 begin
    setLength(scr,100); // 1.5 By default limit jobs to 100;
@@ -1041,16 +1041,9 @@ end;
 
 // change preset
 procedure TfrmMain.PresetBoxChange(Sender: TObject);
-var
-destdir: string;
-currentpreset:string;
 begin
-currentpreset := getcurrentpresetname(presetbox.Text);
-   destdir := '' ;
-//  destdir:= getpresetdestdir(currentpreset);     // get dest folder from preset
-if destdir <> '' then destfolder.text:= destdir;
-if destfolder.Text='' then destfolder.text := getconfigvalue('general/destfolder');
-if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
+  destfolder.text := getconfigvalue('general/destfolder');
+  if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
 end;
 
 procedure TfrmMain.SelectDirectoryDialog1FolderChange(Sender: TObject);
@@ -1079,7 +1072,8 @@ begin
      end;
 
   launcher := tprocess.Create(nil);
-  launcher.CommandLine:= s + ' ' + URL;
+  launcher.Executable := s ;
+  launcher.Parameters.Add(URL) ;
   launcher.Execute;
   launcher.free;
   {$endif}
@@ -1093,15 +1087,12 @@ end;
 procedure TfrmMain.launchffmpeginfo(vfilename:string);
 var
 i,j : integer;
-cb,ct,cl,cr:integer;
-pn, extension, params, commandline, command, filename,batfile, passlogfile, basename:string;
-qterm, ffmpegfilename,ffplayfilename, usethreads, numthreads, deinterlace, nullfile, titlestring, priority:string;
+command, filename,batfile, basename:string;
+ffmpegfilename, titlestring, priority:string;
 script: tstringlist;
 thetime: tdatetime;
 scriptprocess:tprocess;
 scriptpriority:tprocesspriority;
-ignorepreview:boolean;
-resmod : integer;
 begin                                     // get setup
    scriptprocess:= TProcess.Create(nil);
 
@@ -1120,12 +1111,6 @@ begin                                     // get setup
 
    {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
    {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
-   {$ifdef win32}ffplayfilename:='"' + ffplay + '"';{$endif}
-   {$ifdef unix}ffplayfilename:=ffplay;{$endif}
-   {$ifdef win32}nullfile:='"NUL.avi"';{$endif}
-   {$ifdef unix}nullfile:='/dev/null';{$endif}
-
-
 
    if not fileexists(ffmpeg) then
       begin
@@ -1135,13 +1120,7 @@ begin                                     // get setup
 
    frmScript.memo1.lines.Clear;
 
-                                         // trim everything up
-
-
-                                      // replace preset params if mnuOptions specified
-   commandline := '';
-
-                                           // build batch file
+                                      // build batch file
    thetime :=now;
    batfile := 'ff' + FormatDateTime('yymmddhhnnss',thetime) +
            {$ifdef win32}'.bat'{$endif}
@@ -1158,7 +1137,7 @@ begin                                     // get setup
 
        for j:= length(basename) downto 1  do
          begin
-           if basename[j] = #46 then
+           if basename[j] = #46 then  // #46=='.'
               begin
                 basename := leftstr(basename,j-1);
                 break;
@@ -1172,7 +1151,7 @@ begin                                     // get setup
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
        //destfolder.text := extractfilepath(filename);
-        command := ffmpegfilename +  '  -i "' + filename + '" 2>"' + presetspath + '"output.txt'; // Francois Collard - added " around presetspath
+        command := ffmpegfilename +  '  -i "' + filename + '" 2>"' + presetspath + '"output.txt'; // Francois Collard - added "" around presetspath
 
         script.Add(command);
 
@@ -1186,16 +1165,15 @@ begin                                     // get setup
      fpchmod(presetspath + batfile,&777);
      {$endif}
 
-     {$ifdef win32}
-     qterm := '"' + terminal + '"';
-     {$endif}
-
-     {$ifdef unix}qterm := terminal;{$endif}
-     scriptprocess.ShowWindow := swoNone;
+    scriptprocess.ShowWindow := swoNone;
                                                         // do it
-     {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
-     {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
-     scriptprocess.execute;
+    scriptprocess.Executable := terminal ;
+    scriptprocess.Parameters.Add(termoptions) ;
+    scriptprocess.Parameters.Add(presetspath + batfile) ;
+    {$ifdef unix}
+      scriptprocess.Parameters.Add('&') ;
+    {$endif}
+    scriptprocess.execute;
     script.Free;
     sleep(1000) ; // need to wait for this to finish before continuing;
     {$ifdef win32}
@@ -1230,7 +1208,8 @@ begin
      end;
 
   launcher := tprocess.Create(nil);
-  launcher.CommandLine:= s + ' ' + pdffile;
+  launcher.Executable := s ;
+  launcher.Parameters.Add(pdffile) ;
   launcher.Execute;
   launcher.free;
   {$endif}
@@ -1416,7 +1395,7 @@ begin
    DestinationList.Add(DestFolder.text);
    CategoryList.add(categorybox.Text);
    PresetList.add(PresetBox.Text);
-   JobList.add(t);
+   JobList.add(t);  // what is t supposed to be here now?
    FileInfoList.add(u);
 end;
 end;
@@ -1424,7 +1403,6 @@ end;
 // add files to the list
 procedure TfrmMain.btnAddClick(Sender: TObject);
 var
-  vFileInfo : string;
   i : integer;
   s,t,u : string;
 begin
@@ -1551,7 +1529,6 @@ end;
 
 // clear the file list
 procedure TfrmMain.btnClearClick(Sender: TObject);
-var i : integer;
 begin
   filelist.Clear;
   destinationlist.clear;
@@ -1903,7 +1880,8 @@ begin
 
  if filenametoplay <>'' then
     begin
-    PlayProcess.CommandLine:=ffplay + ' "' + filenametoplay+'"' ;
+    PlayProcess.Executable := ffplay ;
+    PlayProcess.Parameters.Add(filenametoplay) ;
     playProcess.Execute;
     end;
 
@@ -1916,7 +1894,7 @@ var
 i,j : integer;
 cb,ct,cl,cr:integer;
 pn, extension, params, commandline, cropline, precommand, command, filename,batfile, passlogfile, basename:string;
-qterm, ffmpegfilename,ffplayfilename, usethreads, numthreads, deinterlace, nullfile, titlestring, priority:string;
+ffmpegfilename,ffplayfilename, usethreads, numthreads, deinterlace, nullfile, titlestring, priority:string;
 script: tstringlist;
 thetime: tdatetime;
 scriptprocess:tprocess;
@@ -2298,14 +2276,13 @@ begin                                     // get setup
      fpchmod(presetspath + batfile,&777);
      {$endif}
 
-     {$ifdef win32}
-     qterm := '"' + terminal + '"';
-     {$endif}
-
-     {$ifdef unix}qterm := terminal;{$endif}
                                                         // do it
-     {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
-     {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
+     scriptprocess.Executable:= terminal ;
+     scriptprocess.Parameters.Add(termoptions) ;
+     scriptprocess.Parameters.Add(presetspath + batfile) ;
+     {$ifdef unix}
+       scriptprocess.Parameters.Add('&') ;
+     {$endif}
 
      scriptprocess.execute;
     end
@@ -2323,14 +2300,13 @@ begin                                     // get setup
        fpchmod(presetspath + batfile,&777);
        {$endif}
 
-       {$ifdef win32}
-       qterm := '"' + terminal + '"';
-       {$endif}
-
-       {$ifdef unix}qterm := terminal;{$endif}
                                                         // do it
-       {$ifdef win32}scriptprocess.commandline:= qterm + ' ' + termoptions + ' "' + presetspath + batfile + '"';{$endif}
-       {$ifdef unix}scriptprocess.commandline:= qterm + ' ' +  termoptions + ' ' + presetspath + batfile + ' &'; {$endif}
+       scriptprocess.Executable := terminal ;
+       scriptprocess.Parameters.Add(termoptions) ;
+       scriptprocess.Parameters.Add(presetspath + batfile) ;
+       {$ifdef unix}
+         scriptprocess.Parameters.Add('&') ;
+       {$endif}
 
        scriptprocess.execute;
 
@@ -2339,10 +2315,6 @@ begin                                     // get setup
    end;
 
     script.Free;
-    // try                            // to set dest directory in preset
-    //   setpresetdestdir(pn,destfolder.text);
-    // finally
-    // end;
 end;
 
    // replace a paramter from a commandline
@@ -2548,8 +2520,8 @@ end;
 
 function TfrmMain.GetFileInfo(var fileDetails : string) : string;
 var ts : tmemo;
-    i,j,k : integer;
-    s,t,u : string;
+    i : integer;
+    s,t : string;
 begin
 //
 
