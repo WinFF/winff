@@ -89,6 +89,7 @@ type
     lblVideoSize: TLabel;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
+    mitSelectAll: TMenuItem;
     mitViewMode: TMenuItem;
 //    mitPlaySoundonFinish: TMenuItem;
     mitDisplayCmdline: TMenuItem;
@@ -207,6 +208,7 @@ type
     procedure mitPreferencesClick(Sender: TObject);
     procedure mitDocsClick(Sender: TObject);
     procedure mitForumsClick(Sender: TObject);
+    procedure mitSelectAllClick(Sender: TObject);
     procedure mitViewModeClick(Sender: TObject);
     procedure mitWinffClick(Sender: TObject);
     procedure mitPauseOnFinishClick(Sender: TObject);
@@ -1558,6 +1560,11 @@ procedure TfrmMain.filelistKeyUp(Sender: TObject; var Key: Word;
 var
 i:integer;
 begin
+
+  // Ctrl-A Select All
+  if (key = 65 ) and (ssCtrl in Shift) then
+    filelist.SelectAll;
+
   // delete
   if (key = 46) then
    begin
@@ -1686,6 +1693,11 @@ procedure TfrmMain.mitForumsClick(Sender: TObject);
 
 begin
   launchbrowser('http://www.winff.org/forums/');
+end;
+
+procedure TfrmMain.mitSelectAllClick(Sender: TObject);
+begin
+  filelist.SelectAll;
 end;
 
 procedure TfrmMain.mitViewModeClick(Sender: TObject);

@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
-  Left = 553
+  Left = 294
   Height = 497
-  Top = 270
+  Top = 134
   Width = 640
   ActiveControl = pnlTop
   AllowDropFiles = True
@@ -2243,6 +2243,10 @@ object frmMain: TfrmMain
       GlyphShowMode = gsmAlways
       ShowAlwaysCheckable = True
       OnClick = mitViewModeClick
+    end
+    object mitSelectAll: TMenuItem
+      Caption = 'Select All'
+      OnClick = mitSelectAllClick
     end
   end
 end
