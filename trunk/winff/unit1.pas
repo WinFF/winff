@@ -2317,7 +2317,7 @@ end;
 function TfrmMain.GetFileInfo(var fileDetails : string) : string;
 {var ts : tmemo;
     i : integer;
-    s,t : string;
+    s,t : string;}
 begin
 // This function is used to read the codec & resolution info from the source file
 // Its very ugly.  Basically we run ffmpeg against the file and save the output to a text file
