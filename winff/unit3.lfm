@@ -1,13 +1,13 @@
 object frmAbout: TfrmAbout
   Left = 618
-  Height = 308
+  Height = 299
   Top = 256
-  Width = 384
+  Width = 341
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = 'About WinFF'
-  ClientHeight = 308
-  ClientWidth = 384
+  ClientHeight = 299
+  ClientWidth = 341
   Color = clForm
   Icon.Data = {
     7E04000000000100010010100000010020006804000016000000280000001000
@@ -50,23 +50,23 @@ object frmAbout: TfrmAbout
   }
   OnCreate = FormCreate
   Position = poMainFormCenter
-  LCLVersion = '0.9.30'
+  LCLVersion = '1.0.1.3'
   object Panel1: TPanel
     Left = 0
     Height = 34
-    Top = 274
-    Width = 384
+    Top = 265
+    Width = 341
     Align = alBottom
     BevelOuter = bvNone
     ClientHeight = 34
-    ClientWidth = 384
+    ClientWidth = 341
     TabOrder = 0
     object Button1: TButton
       AnchorSideLeft.Control = Panel1
       AnchorSideLeft.Side = asrCenter
       AnchorSideTop.Control = Panel1
       AnchorSideTop.Side = asrCenter
-      Left = 155
+      Left = 133
       Height = 25
       Top = 5
       Width = 75
@@ -78,17 +78,17 @@ object frmAbout: TfrmAbout
   end
   object PageControl1: TPageControl
     Left = 0
-    Height = 274
+    Height = 265
     Top = 0
-    Width = 384
+    Width = 341
     ActivePage = TabSheet1
     Align = alClient
     TabIndex = 0
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = 'WinFF'
-      ClientHeight = 246
-      ClientWidth = 376
+      ClientHeight = 237
+      ClientWidth = 333
       object Label1: TLabel
         Left = 60
         Height = 16
@@ -247,7 +247,7 @@ object frmAbout: TfrmAbout
       object Label15: TLabel
         Left = 4
         Height = 16
-        Top = 205
+        Top = 203
         Width = 177
         Caption = 'Icons and Logo by Alex Klepatsch'
         ParentColor = False

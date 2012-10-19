@@ -25,7 +25,7 @@ interface
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
   StdCtrls, Buttons, dom, xmlwrite, xmlread, gettext, translations, ExtCtrls,
-  ComCtrls, XMLConf;
+  XMLConf;
 
 type
 
