@@ -2375,6 +2375,30 @@ begin
        category := getpresetcategory(pn);
        params:=getpresetparams(pn);
 
+
+       filename := filelist.items[vindex];
+       basename := extractfilename(filename);
+
+       if preview = true then
+       begin
+         basename := 'tmp_' + inttostr(random(10000000)) ;
+       end;
+
+       // resolve issues with embedded quote marks in filename to be converted.  issue 38
+       {$ifdef unix}
+       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
+       basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
+       {$endif}
+
+       for j:= length(basename) downto 1  do
+         begin
+           if basename[j] = #46 then
+              begin
+                basename := leftstr(basename,j-1);
+                break;
+              end;
+         end;
+
        if cbOutputPath.checked = true then
        begin
          destfolder.text := extractfilepath(filename);
@@ -2595,32 +2619,6 @@ begin
        end;
 
 // inserted block ends here
-
-
-
-       filename := filelist.items[vindex];
-       basename := extractfilename(filename);
-
-       if preview = true then
-       begin
-         basename := 'tmp_' + inttostr(random(10000000)) ;
-       end;
-
-       // resolve issues with embedded quote marks in filename to be converted.  issue 38
-       {$ifdef unix}
-       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
-       basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
-       {$endif}
-
-       for j:= length(basename) downto 1  do
-         begin
-           if basename[j] = #46 then
-              begin
-                basename := leftstr(basename,j-1);
-                break;
-              end;
-         end;
-
        command := '';
 
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
