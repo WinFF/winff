@@ -1,6 +1,6 @@
 unit Unit3; 
 
-// WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
+// WInFF 1.0 Copyright 2006-2012 Matthew Weatherford
 // WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
 // http://winff.org
 // Licensed under the GPL v3 or any later version
@@ -33,40 +33,42 @@ type
   { TfrmAbout }
 
   TfrmAbout = class(TForm)
-    Button1: TButton;
-    Image1: TImage;
-    Label1: TLabel;
-    Label10: TLabel;
-    Label11: TLabel;
-    Label13: TLabel;
-    Label14: TLabel;
-    Label15: TLabel;
-    Label16: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    Label4: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
-    ListBox1: TListBox;
+    btnOk: TBitBtn;
+    imgLogo: TImage;
+    lblStoffberg: TLabel;
+    lblOsipov: TLabel;
+    lblWinff: TLabel;
+    lblURLzeranoe: TLabel;
+    lblGevers: TLabel;
+    lblGmaq: TLabel;
+    lblHQPresets: TLabel;
+    lblKlepatsch: TLabel;
+    lblNavas: TLabel;
+    lblCopyright: TLabel;
+    lblWeatherford: TLabel;
+    lblURLWinffOrg: TLabel;
+    lblFFmeg: TLabel;
+    lblBellard: TLabel;
+    lblURLffmpeg: TLabel;
+    lblWinBuild: TLabel;
+    lblSchwarz: TLabel;
+    lbThanks: TListBox;
     PageControl1: TPageControl;
-    Panel1: TPanel;
-    TabSheet1: TTabSheet;
-    TabSheet2: TTabSheet;
-    TabSheet3: TTabSheet;
-    procedure Button1Click(Sender: TObject);
+    pnlBottom: TPanel;
+    pnlLogo: TPanel;
+    pnlPresets: TPanel;
+    tabWinff: TTabSheet;
+    tabFFmpeg: TTabSheet;
+    tabThanks: TTabSheet;
+    procedure btnOkClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure Label10Click(Sender: TObject);
-    procedure Label11Click(Sender: TObject);
-    procedure Label12Click(Sender: TObject);
-    procedure Label13Click(Sender: TObject);
-    procedure Label1Click(Sender: TObject);
-    procedure Label3Click(Sender: TObject);
-    procedure Label4Click(Sender: TObject);
-    procedure Label5Click(Sender: TObject);
-    procedure Label7Click(Sender: TObject);
+    procedure lblURLzeranoeClick(Sender: TObject);
+    procedure lblGeversClick(Sender: TObject);
+    procedure lblStoffbergClick(Sender: TObject);
+    procedure lblGmaqClick(Sender: TObject);
+    procedure lblWeatherfordClick(Sender: TObject);
+    procedure lblURLWinffOrgClick(Sender: TObject);
+    procedure lblURLffmpegClick(Sender: TObject);
 
   private
     { private declarations }
@@ -76,6 +78,10 @@ type
 
 var
   frmAbout: TfrmAbout;
+
+Resourcestring
+  rsTranslators =      'Translators:' ;
+  rsLaunchpadContrib = 'Launchpad contributors' ;
 
 implementation
 
@@ -89,89 +95,78 @@ begin
     
     // fill thank you memo
 
-    listbox1.items.Add('Translators:');
-    listbox1.items.Add('Nighto');
-    listbox1.items.Add('Simeon Uzunov');
-    listbox1.items.Add('Paul Gevers');
-    listbox1.items.Add('Choplair');
-    listbox1.items.Add('Kai Evers');
-    listbox1.items.Add('Roberto Boriotti');
-    listbox1.items.Add('Marcin Trybus');
-    listbox1.items.Add('Louis Torrao');
-    listbox1.items.Add('Predrag Tomasevic');
-    listbox1.items.Add('Víctor Paesa');
-    listbox1.items.Add('Chung Yu');
-    listbox1.items.Add('İzzet Emre Erkan');
-    listbox1.items.Add('Ellen Rohaan');
-    listbox1.items.Add('Ofir Klinger');
-    listbox1.items.Add('Martin Srebotnjak');
-    listbox1.items.Add('Γεώργιος Γεωργάς');
-    listbox1.items.add('Benny Beat');
-    listbox1.items.add('Göran Hanell');
-    listbox1.items.add('Muhammad Negm');
-    listbox1.items.add('Pablo Ramírez');
-    listbox1.items.add('Miguel Anxo Bouzada');
-    listbox1.items.add('Sponga Tamas');
-    listbox1.items.add('Arlindo Pereira');
-    listbox1.items.add('Américo Monteiro');
-    listbox1.items.add('Joe Black');
-    listbox1.items.add('Göran Hannel');
-    listbox1.items.add('大宝(DaBao)');
-    listbox1.items.add('Alexey Osipov');
-    listbox1.items.add('Launchpad contributors');
+    lbThanks.items.Add(rsTranslators);
+    lbThanks.items.Add('Nighto');
+    lbThanks.items.Add('Simeon Uzunov');
+    lbThanks.items.Add('Paul Gevers');
+    lbThanks.items.Add('Choplair');
+    lbThanks.items.Add('Kai Evers');
+    lbThanks.items.Add('Roberto Boriotti');
+    lbThanks.items.Add('Marcin Trybus');
+    lbThanks.items.Add('Louis Torrao');
+    lbThanks.items.Add('Predrag Tomasevic');
+    lbThanks.items.Add('Víctor Paesa');
+    lbThanks.items.Add('Chung Yu');
+    lbThanks.items.Add('İzzet Emre Erkan');
+    lbThanks.items.Add('Ellen Rohaan');
+    lbThanks.items.Add('Ofir Klinger');
+    lbThanks.items.Add('Martin Srebotnjak');
+    lbThanks.items.Add('Γεώργιος Γεωργάς');
+    lbThanks.items.add('Benny Beat');
+    lbThanks.items.add('Göran Hanell');
+    lbThanks.items.add('Muhammad Negm');
+    lbThanks.items.add('Pablo Ramírez');
+    lbThanks.items.add('Miguel Anxo Bouzada');
+    lbThanks.items.add('Sponga Tamas');
+    lbThanks.items.add('Arlindo Pereira');
+    lbThanks.items.add('Américo Monteiro');
+    lbThanks.items.add('Joe Black');
+    lbThanks.items.add('Göran Hannel');
+    lbThanks.items.add('大宝(DaBao)');
+    lbThanks.items.add('Alexey Osipov');
+    lbThanks.items.add(rsLaunchpadContrib);
 
-    frmAbout.Label1.Caption := StringReplace(frmAbout.Label1.Caption, '%s', '1.5.0',[]);
-    frmAbout.Label2.Caption := StringReplace(frmAbout.Label2.Caption, '%s', '2006-2012',[]);
-
+    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.5.0',[]);
+    frmAbout.lblCopyright.Caption   := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2012',[]);
 end;
 
 
-procedure TfrmAbout.Label10Click(Sender: TObject);
+procedure TfrmAbout.lblURLzeranoeClick(Sender: TObject);
 begin
   frmMain.LaunchBrowser('http://ffmpeg.zeranoe.com/');
 end;
 
-procedure TfrmAbout.Label11Click(Sender: TObject);
+procedure TfrmAbout.lblGeversClick(Sender: TObject);
 begin
   frmMain.LaunchBrowser('https://launchpad.net/~paul-climbing/+archive/ppa/');
 end;
 
-procedure TfrmAbout.Label12Click(Sender: TObject);
+procedure TfrmAbout.lblStoffbergClick(Sender: TObject);
 begin
 frmMain.LaunchBrowser('http://istoff.blogspot.com');
 end;
 
-procedure TfrmAbout.Label13Click(Sender: TObject);
+procedure TfrmAbout.lblGmaqClick(Sender: TObject);
 begin
   frmMain.LaunchBrowser('http://www.bandshed.net/');
 end;
 
-
-procedure TfrmAbout.Button1Click(Sender: TObject);
+procedure TfrmAbout.btnOkClick(Sender: TObject);
 begin
   frmAbout.close;
 end;
 
-procedure TfrmAbout.Label1Click(Sender: TObject);
-begin
-
-end;
-
-procedure TfrmAbout.Label3Click(Sender: TObject);
+procedure TfrmAbout.lblWeatherfordClick(Sender: TObject);
 begin
    frmMain.LaunchBrowser('http://www.biggmatt.com');
 end;
 
-procedure TfrmAbout.Label4Click(Sender: TObject);
+procedure TfrmAbout.lblURLWinffOrgClick(Sender: TObject);
 begin
   frmMain.LaunchBrowser('http://www.winff.org');
 end;
 
-procedure TfrmAbout.Label5Click(Sender: TObject);
-begin
-end;
-
-procedure TfrmAbout.Label7Click(Sender: TObject);
+procedure TfrmAbout.lblURLffmpegClick(Sender: TObject);
 begin
   frmMain.LaunchBrowser('http://ffmpeg.org/');
 end;
