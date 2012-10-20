@@ -256,16 +256,6 @@ msgstr "Toevoegen"
 msgid "Add file(s) to the list for conversion"
 msgstr "Voeg bestand(en) to aan de conversielijst"
 
-#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
-msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Output Folder"
-msgstr "Doelmap toepassen"
-
-#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
-msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
-msgid "Apply Preset"
-msgstr "Voorinstelling toepassen"
-
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "Wissen"
@@ -315,11 +305,6 @@ msgstr "Verwijderen"
 msgid "Remove selected file(s) from the list"
 msgstr "Verwijder geselecteerde bestand(en) uit de lijst"
 
-#: TFRMMAIN.CAPTION
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "Naam van het apparaat of bestandstype waar de video naar geconverteerd moet worden"
@@ -353,6 +338,10 @@ msgstr "..."
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "De doelmap voor het eindresultaat (kies een andere map dan waar het origineel staat)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -416,6 +405,11 @@ msgstr "<hh:mm:ss> - Tijdsduur van te converteren fragment"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<geheel getal>) 256 = huidige volume, 128 = half volume, 512 = dubbel volume"
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
 msgstr "Converteer naar:"
@@ -457,6 +451,14 @@ msgstr "Uren / minuten / seconden"
 msgid "Additional Command Line Parameters"
 msgstr "Extra parameters voor de commandoregel"
 
+#: TFRMMAIN.LABEL5.CAPTION
+msgid "1st Pass"
+msgstr ""
+
+#: TFRMMAIN.LABEL6.CAPTION
+msgid "2nd Pass"
+msgstr ""
+
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
 msgstr "Audio bitsnelheid"
@@ -472,6 +474,10 @@ msgstr "X"
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
 msgstr "Aspectratio"
+
+#: TFRMMAIN.LBLCANCELCHANGES.CAPTION
+msgid "Cancel Changes"
+msgstr ""
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
@@ -492,6 +498,14 @@ msgstr "Boven"
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
 msgstr "Video frequentie"
+
+#: TFRMMAIN.LBLSAVECHANGES.CAPTION
+msgid "Apply Changes"
+msgstr ""
+
+#: TFRMMAIN.LBLSAVECHANGES.HINT
+msgid "Click here to apply settings changes to the file conversion above"
+msgstr ""
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
@@ -555,6 +569,10 @@ msgstr "Voorkeuren"
 msgid "Presets"
 msgstr "Voorinstellingen"
 
+#: TFRMMAIN.MITSELECTALL.CAPTION
+msgid "Select All"
+msgstr ""
+
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
@@ -597,11 +615,6 @@ msgstr "pnlMain"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Specifieke instelling die gebruikt wordt voor het gekozen apparaat of bestandstype"
 
-#: TFRMMAIN.TABSHEET1.CAPTION
-msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
-msgid "Video"
-msgstr "Beeld"
-
 #: TFRMMAIN.TABSHEET2.CAPTION
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
@@ -626,6 +639,11 @@ msgstr "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "Uitvoer details"
+
+#: TFRMMAIN.TABVIDEO.CAPTION
+msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
+msgid "Video"
+msgstr "Beeld"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -827,14 +845,6 @@ msgstr "Selecteer een voorinstellingbestand"
 msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Voorinstelling: %s%s%s bestaat reeds. Wilt u deze vervangen?"
 
-#: unit1.rspresethasnoext
-msgid "The preset to import does not have an extension"
-msgstr "De voorinstelling die geïmporteerd moet worden, heeft geen achtervoegsel."
-
-#: unit1.rspresethasnolabel
-msgid "The preset to import does not have a label"
-msgstr "De voorinstelling die geïmporteerd moet worden, heeft geen label."
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr "toegepast op alle video's op het moment dat de convertie begint."
 #~ msgid "Ramiro Polla"
@@ -889,6 +899,14 @@ msgstr "De voorinstelling die geïmporteerd moet worden, heeft geen label."
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "De voorinstelling die geïmporteerd moet worden, heeft geen achtervoegsel."
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "De voorinstelling die geïmporteerd moet worden, heeft geen label."
+
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
 msgstr "Selecteer een voorinstelling om te exporteren"
