@@ -969,10 +969,6 @@ msgstr "Trieu l'arxiu de configuracions"
 msgid "Select Video Files"
 msgstr "Trieu els arxius de vídeo"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "L'arxiu de configuració conté caràcters invàlids!"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1026,6 +1022,10 @@ msgstr "L'arxiu de configuració conté caràcters invàlids!"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "L'arxiu de configuració conté caràcters invàlids!"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Crea una nova configuració:"
@@ -1057,6 +1057,14 @@ msgstr "Heu d'inserir una etiqueta."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Heu d'inserir un nom."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

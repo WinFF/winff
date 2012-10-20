@@ -949,10 +949,6 @@ msgstr "Elegir Predeterminado"
 msgid "Select Video Files"
 msgstr "Elegir archivos"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Predeterminado con caracteres inválidos"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1011,6 +1007,10 @@ msgstr "Predeterminado con caracteres inválidos"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Predeterminado con caracteres inválidos"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Crear Predeterminado:"
@@ -1043,6 +1043,14 @@ msgstr "Introduce un Formato"
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Introduce un nombre"
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

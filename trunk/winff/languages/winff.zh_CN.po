@@ -871,10 +871,6 @@ msgstr "选择预设文件"
 msgid "Select Video Files"
 msgstr "选择视频文件"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "预设含非法字符"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -886,6 +882,10 @@ msgstr "预设含非法字符"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "预设含非法字符"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "创建预设:"
@@ -917,6 +917,14 @@ msgstr "您必须输入标签。"
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "您必须输入名称。"
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

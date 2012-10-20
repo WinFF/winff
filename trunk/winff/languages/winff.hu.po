@@ -953,10 +953,6 @@ msgstr "A beállítás fájl kiválasztása"
 msgid "Select Video Files"
 msgstr "Videó fájl kiválasztása"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "A beállításokban nem megengedett karakter van"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1015,6 +1011,10 @@ msgstr "A beállításokban nem megengedett karakter van"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "A beállításokban nem megengedett karakter van"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Beállítás készítése:"
@@ -1046,6 +1046,14 @@ msgstr "Lépj be egy címkébe."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Írd be a neved."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

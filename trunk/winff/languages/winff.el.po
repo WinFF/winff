@@ -894,6 +894,14 @@ msgstr "Πρέπει να προσθέσετε ετικέτα"
 msgid "You must enter a name."
 msgstr "Πρέπει να προσθέσετε όνομα"
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Υψηλή"

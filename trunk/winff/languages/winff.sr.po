@@ -946,10 +946,6 @@ msgstr "Selektuj preset fajl"
 msgid "Select Video Files"
 msgstr "Selektuj video fajlove"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Preset sadrži karaktere koji nisu dozvoljeni"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1008,6 +1004,10 @@ msgstr "Preset sadrži karaktere koji nisu dozvoljeni"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Preset sadrži karaktere koji nisu dozvoljeni"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Kreiraj preset:"
@@ -1040,6 +1040,14 @@ msgstr "Morate uneti oznaku."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Morate uneti ime."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

@@ -886,6 +886,14 @@ msgstr "Vous devez spécifier un label."
 msgid "You must enter a name."
 msgstr "Vous devez spécifier un nom."
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Haute"

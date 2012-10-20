@@ -838,10 +838,6 @@ msgstr "Hautatu aurrezarpen-fitxategia"
 msgid "Select Video Files"
 msgstr "Hautatu bideo-fitxategiak"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Aurrezarpenak karaktere baliogabeak dauzka"
-
 #~ msgid "http://ffmpeg.arrozcru.org/"
 #~ msgstr "http://ffmpeg.arrozcru.org/"
 #~ msgid "About WinFF"
@@ -875,6 +871,10 @@ msgstr "Aurrezarpenak karaktere baliogabeak dauzka"
 #~ msgstr "Denbora"
 #~ msgid "Crop"
 #~ msgstr "Ebaki"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Aurrezarpenak karaktere baliogabeak dauzka"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Sortu aurrezarpena"
@@ -906,6 +906,14 @@ msgstr "Etiketa bat sartu behar duzu."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Izen bat sartu behar duzu."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

@@ -263,12 +263,8 @@ msgid "Play"
 msgstr "Atskaņot"
 
 #: TFRMMAIN.BTNPLAY.HINT
-msgid ""
-"Preview the selected source file with ffplay (good test to see if conversion "
-"is possible)"
-msgstr ""
-"Atskaņot izvēlēto avota failu ar ffplay (noderīgs, lai redzētu vai "
-"pārveidošana ir iespējama)"
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "Atskaņot izvēlēto avota failu ar ffplay (noderīgs, lai redzētu vai pārveidošana ir iespējama)"
 
 #: TFRMMAIN.BTNPREVIEW.CAPTION
 msgid "Preview"
@@ -305,12 +301,8 @@ msgid "2 pass"
 msgstr "2 reizes"
 
 #: TFRMMAIN.CBX2PASS.HINT
-msgid ""
-"Using two passes allows the encoder to gather information in the first run "
-"for enhanced quality"
-msgstr ""
-"Izmantojot 2 reizes, kodētājs saņems informāciju no pirmās reizes, lai "
-"uzlabotu kvalitāti"
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "Izmantojot 2 reizes, kodētājs saņems informāciju no pirmās reizes, lai uzlabotu kvalitāti"
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
@@ -326,26 +318,16 @@ msgid "..."
 msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
-msgid ""
-"Target location for the final video (choose a different folder than the "
-"source folder)"
+msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Pārveidotā faila atrašanās vieta (izvēlieties citu mapi, ne avota)"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
-msgid ""
-"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
-"display"
-msgstr ""
-"(<vesels skaitlis:vesels skaitlis> vai <reāls skaitlis>) fizikāla malu "
-"attiecība (DAR) mērķa ekrānam"
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "(<vesels skaitlis:vesels skaitlis> vai <reāls skaitlis>) fizikāla malu attiecība (DAR) mērķa ekrānam"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
-msgid ""
-"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
-"\"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-"(<vesels skaitlis>) No 10 līdz audio izvērses ātrumam, kā 44100, 48000. Ļauj "
-"\"izstiept\"/\"saspiest\" skaņas plūsmu."
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "(<vesels skaitlis>) No 10 līdz audio izvērses ātrumam, kā 44100, 48000. Ļauj \"izstiept\"/\"saspiest\" skaņas plūsmu."
 
 #: TFRMMAIN.EDTCROPBOTTOM.TEXT
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -398,11 +380,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Apturēt tad, kad tik daudz no video ir pārveidots"
 
 #: TFRMMAIN.EDTVOLUME.HINT
-msgid ""
-"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr ""
-"(<vesels skaitlis>) 256 = pašreizējais skaļums, 128 = puse no skaļuma, 512 = "
-"divkāršots skaļums"
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "(<vesels skaitlis>) 256 = pašreizējais skaļums, 128 = puse no skaļuma, 512 = divkāršots skaļums"
 
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
@@ -626,21 +605,13 @@ msgstr "(<reāls skaitlis> vai <vesels skaitlis>) kadru skaits sekundē"
 
 #: TFRMMAIN.VIDSIZEX.HINT
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, "
-"kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
 
 #: TFRMMAIN.VIDSIZEY.HINT
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid ""
-"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
-"don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, "
-"kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
 
 #: TFRMPREFERENCES.BUTTON1.CAPTION
 msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
@@ -780,11 +751,15 @@ msgid "Converting"
 msgstr "Pārveido"
 
 #: unit1.rscouldnotfindffmpeg
-msgid "Could not find FFmpeg."
+#, fuzzy
+#| msgid "Could not find FFmpeg."
+msgid "Could not find either ffmpeg or avconv."
 msgstr "FFmpeg nav atrasts."
 
 #: unit1.rscouldnotfindffplay
-msgid "Could not find FFPlay."
+#, fuzzy
+#| msgid "Could not find FFPlay."
+msgid "Could not find either ffplay or avplay."
 msgstr "FFPlay nav atrasts."
 
 #: unit1.rscouldnotfindfile
@@ -820,7 +795,9 @@ msgid "Please select a preset"
 msgstr "Lūdzu, izvēlieties regulējumu"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists"
+#, fuzzy
+#| msgid "Preset: %s%s%s already exists"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Regulējums: %s%s%s jau eksistē"
 
 #: unit1.rspresethasnoext
@@ -842,6 +819,10 @@ msgstr "Regulējums ar nosaukumu: %s%s%s jau eksistē"
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
 msgstr "Nospiediet 'Enter', lai turpinātu"
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -891,6 +872,14 @@ msgstr "Jums ir jāievada nosaukums."
 msgid "You must enter a name."
 msgstr "Jums ir jāievada regulējuma vārds."
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Augsta"
@@ -902,3 +891,4 @@ msgstr "Dīkstāve"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normāla"
+

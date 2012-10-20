@@ -933,10 +933,6 @@ msgstr "Изберете файл с настройки"
 msgid "Select Video Files"
 msgstr "Изберете видео файлове"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Настройката съдържа непозволени символи"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -990,6 +986,10 @@ msgstr "Настройката съдържа непозволени симво�
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Настройката съдържа непозволени символи"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Създаване на настройка:"
@@ -1022,6 +1022,14 @@ msgstr "Трябва да въведете етикет."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Трябва да въведете име."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

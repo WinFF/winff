@@ -832,10 +832,6 @@ msgstr "Voorinstelling met label: %s%s%s bestaat reeds"
 msgid "Press Enter to Continue"
 msgstr "Druk 'enter' om verder te gaan"
 
-#: unit1.rsreplacepreset
-msgid "Replace Preset?"
-msgstr ""
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr "toegepast op alle video's op het moment dat de convertie begint."
 #~ msgid "Ramiro Polla"
@@ -890,6 +886,10 @@ msgstr ""
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr "Selecteer doelmap"
@@ -937,6 +937,14 @@ msgstr "Voer een label in."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Voer een naam in."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

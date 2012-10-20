@@ -891,6 +891,14 @@ msgstr "您必須輸入標籤。"
 msgid "You must enter a name."
 msgstr "您必須輸入名稱。"
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "高"
