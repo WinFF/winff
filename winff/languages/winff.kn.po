@@ -19,10 +19,6 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-12-20 18:32+0000\n"
 "X-Generator: Launchpad (build 14538)\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr "ರೂಪ ೧"
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"

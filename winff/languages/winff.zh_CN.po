@@ -30,10 +30,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Chinese\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr ""
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -867,10 +863,6 @@ msgstr "选择目录"
 msgid "Select Preset File"
 msgstr "选择预设文件"
 
-#: unit1.rsselectvideofiles
-msgid "Select Video Files"
-msgstr "选择视频文件"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -882,6 +874,10 @@ msgstr "选择视频文件"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "选择视频文件"
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "预设含非法字符"

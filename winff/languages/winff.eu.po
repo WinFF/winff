@@ -19,10 +19,6 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-12-04 12:48+0000\n"
 "X-Generator: Launchpad (build 14418)\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr ""
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -834,10 +830,6 @@ msgstr "Hautatu direktorioa"
 msgid "Select Preset File"
 msgstr "Hautatu aurrezarpen-fitxategia"
 
-#: unit1.rsselectvideofiles
-msgid "Select Video Files"
-msgstr "Hautatu bideo-fitxategiak"
-
 #~ msgid "http://ffmpeg.arrozcru.org/"
 #~ msgstr "http://ffmpeg.arrozcru.org/"
 #~ msgid "About WinFF"
@@ -871,6 +863,10 @@ msgstr "Hautatu bideo-fitxategiak"
 #~ msgstr "Denbora"
 #~ msgid "Crop"
 #~ msgstr "Ebaki"
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Hautatu bideo-fitxategiak"
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Aurrezarpenak karaktere baliogabeak dauzka"

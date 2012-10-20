@@ -29,10 +29,6 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr ""
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -970,10 +966,6 @@ msgstr "Seleccionar cartafol"
 msgid "Select Preset File"
 msgstr "Elixir ficheiro de preconfiguración"
 
-#: unit1.rsselectvideofiles
-msgid "Select Video Files"
-msgstr "Elixir ficheiros de vídeo"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1027,6 +1019,10 @@ msgstr "Elixir ficheiros de vídeo"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Elixir ficheiros de vídeo"
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "A preconfiguración conten caracteres incorrectos"
