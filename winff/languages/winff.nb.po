@@ -900,10 +900,6 @@ msgstr "Velg filen med forhåndsinnstilling"
 msgid "Select Video Files"
 msgstr "Velg videofiler"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Forhåndsinnstillingen inneholder ulovlig tegn."
-
 #~ msgid "About WinFF"
 #~ msgstr "Om WinFF"
 #~ msgid "http://ffmpeg.arrozcru.org/"
@@ -915,6 +911,10 @@ msgstr "Forhåndsinnstillingen inneholder ulovlig tegn."
 #~ msgstr "Ekstra alternativer"
 #~ msgid "Output Details"
 #~ msgstr "Utdata detaljer"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Forhåndsinnstillingen inneholder ulovlig tegn."
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Lag forhåndsinnstilling:"
@@ -946,6 +946,14 @@ msgstr "Du må oppgi et merkelapp."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Du må oppgi et navn."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

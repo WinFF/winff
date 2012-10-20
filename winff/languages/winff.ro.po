@@ -838,10 +838,6 @@ msgstr "Selectați fișier cu reguli de conversie"
 msgid "Select Video Files"
 msgstr "Selectați fișiere video"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Regula de conversie conține caractere ilegale"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr " va fi aplicat tuturor sarcinilor când va începe conversia"
 #~ msgid "http://ffmpeg.arrozcru.org/"
@@ -875,6 +871,10 @@ msgstr "Regula de conversie conține caractere ilegale"
 #~ msgstr "Selectați fișiere video..."
 #~ msgid "NOTE: Currently any additional options chosen"
 #~ msgstr "NOTĂ: În prezent, orice opţiuni suplimentare alese"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Regula de conversie conține caractere ilegale"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Creare regula de conversie:"
@@ -906,6 +906,14 @@ msgstr "Trebuie să introduceți o etichetă."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Trebuie să introduceți un nume."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

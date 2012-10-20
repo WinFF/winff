@@ -890,6 +890,14 @@ msgstr "Tem de introduzir uma etiqueta."
 msgid "You must enter a name."
 msgstr "Tem de introduzir um nome."
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Alta"

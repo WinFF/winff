@@ -867,6 +867,14 @@ msgstr ""
 msgid "You must enter a name."
 msgstr "మీరు పేరును తప్పకుండా ఇవ్వాలి."
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "ఎక్కువ"

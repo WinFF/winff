@@ -972,10 +972,6 @@ msgstr "Ayar dosyası seç"
 msgid "Select Video Files"
 msgstr "Video dosyalarını seç"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Ayar dosyası geçersiz karakterler içeriyor"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1029,6 +1025,10 @@ msgstr "Ayar dosyası geçersiz karakterler içeriyor"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Ayar dosyası geçersiz karakterler içeriyor"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Ayar yarat:"
@@ -1060,6 +1060,14 @@ msgstr "Bir etiket girmelisiniz."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Bir isim girmelisiniz."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

@@ -874,6 +874,14 @@ msgstr "Потрібно ввести мітку."
 msgid "You must enter a name."
 msgstr "Потрібно ввести назву."
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Високий"

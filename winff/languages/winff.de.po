@@ -888,6 +888,14 @@ msgstr "Bitte Bezeichnung eingeben."
 msgid "You must enter a name."
 msgstr "Bitte Name eingeben."
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Hoch"

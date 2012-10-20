@@ -953,10 +953,6 @@ msgstr "Pela Pêşmîheng hilbijêre"
 msgid "Select Video Files"
 msgstr "Pela vîdyoyê hilbijêre"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Di Pêşmîheng de karakterên qedexe heye"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1015,6 +1011,10 @@ msgstr "Di Pêşmîheng de karakterên qedexe heye"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Di Pêşmîheng de karakterên qedexe heye"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Pêşmîheng biafirîne:"
@@ -1046,6 +1046,14 @@ msgstr "Divê label binivîsî"
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Divê tu navek binivîsî"
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"

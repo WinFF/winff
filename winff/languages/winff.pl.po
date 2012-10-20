@@ -884,6 +884,10 @@ msgstr "Szablon o opisie: %s%s%s już istnieje"
 msgid "Press Enter to Continue"
 msgstr "Naciśnij Enter by kontynuować"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr "Wybierz katalog"
@@ -932,6 +936,14 @@ msgstr "Podaj opis szablonu"
 msgid "You must enter a name."
 msgstr "Podaj nazwę szablonu"
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Wysoki"
@@ -943,3 +955,4 @@ msgstr "Niski"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normalny"
+

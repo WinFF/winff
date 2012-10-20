@@ -871,6 +871,10 @@ msgstr "الضبط المسبق ذو الوسم : %s%s%s موجود بالفعل
 msgid "Press Enter to Continue"
 msgstr "اضغط زر \"Enter \"للاستمرار"
 
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 #, fuzzy
 #| msgid "Default Destination Directory"
@@ -921,6 +925,14 @@ msgstr "لابد من إدخال وسم"
 msgid "You must enter a name."
 msgstr "لا بد من إدخال اسم."
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "مرتفعة"
@@ -932,3 +944,4 @@ msgstr "خامل"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "عادي"
+

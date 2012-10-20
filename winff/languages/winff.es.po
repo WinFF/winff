@@ -888,6 +888,14 @@ msgstr "Tienes que teclear una etiqueta."
 msgid "You must enter a name."
 msgstr "Tienes que teclear un nombre."
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "Maxima"

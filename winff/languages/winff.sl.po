@@ -902,10 +902,6 @@ msgstr "Izberite datoteko prednastavitev"
 msgid "Select Video Files"
 msgstr "Izberite video datoteke"
 
-#: unit1.rsthepresethasillegalchars
-msgid "The preset contains illegal characters"
-msgstr "Prednastavitev vsebuje nedovoljene znake"
-
 #~| msgid "Select Video Files"
 #~ msgid "Select Video Files..."
 #~ msgstr "Izberite video datoteke"
@@ -920,6 +916,10 @@ msgstr "Prednastavitev vsebuje nedovoljene znake"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "Prednastavitev vsebuje nedovoljene znake"
+
 #: unit2.rscreatepreset
 msgid "Create Preset:"
 msgstr "Ustvari prednastavitev:"
@@ -951,6 +951,14 @@ msgstr "Vnesti morate oznako."
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
 msgstr "Vnesti morate ime."
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"
