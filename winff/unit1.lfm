@@ -2179,7 +2179,7 @@ object frmMain: TfrmMain
         Left = 548
         Height = 18
         Hint = 'Click here to apply settings changes to the file conversion above'
-        Top = -2
+        Top = 0
         Width = 88
         Anchors = [akTop, akRight]
         Caption = 'Apply Changes'
