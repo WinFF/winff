@@ -2374,10 +2374,33 @@ begin
        pn:=getcurrentpresetname(presetbox.Text);
        category := getpresetcategory(pn);
        params:=getpresetparams(pn);
-       // 1.5 Utility thinggy
+
+       if cbOutputPath.checked = true then
+       begin
+         destfolder.text := extractfilepath(filename);
+       end else
+       begin
+         destfolder.text := DestinationList.Strings[vIndex];
+       end;
+       if RightStr(destfolder.text,1) = DirectorySeparator then //{ trim extra \'s }
+        begin
+          destfolder.text := copy(DestFolder.text,1,length(DestFolder.text) -1);
+        end;
+
+       // 1.5 Utility feature
+       // Simple feature to allow for one off utility commands
+       // Example Preset Definition
+
+       //
+
        if category = 'Utilities' then
           begin
-               params := replaceparam (params,'input_filename',scr[vIndex].FileName);
+               params := StringReplace (params,'winff_input_filename', filelist.items[vIndex],[rfReplaceAll, rfIgnoreCase]);
+               params := StringReplace (params,'winff_output_path', destFolder.text + DirectorySeparator,[rfReplaceAll, rfIgnoreCase]);
+               {$ifdef windows}
+                  //Windows bat files don't like a single % symbol as they are used for command line parameters.  legacy DOS issue
+                  params := StringReplace (params,'%', '%%',[rfReplaceAll, rfIgnoreCase]);
+               {$endif}
                scr[vIndex].FirstPass := params;
                scr[vIndex].SecondPass := '';
                exit
@@ -2599,21 +2622,6 @@ begin
          end;
 
        command := '';
-
-
-
-
-       if cbOutputPath.checked = true then
-       begin
-         destfolder.text := extractfilepath(filename);
-       end else
-       begin
-         destfolder.text := DestinationList.Strings[vIndex];
-       end;
-       if RightStr(destfolder.text,1) = DirectorySeparator then //{ trim extra \'s }
-        begin
-          destfolder.text := copy(DestFolder.text,1,length(DestFolder.text) -1);
-        end;
 
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
 
