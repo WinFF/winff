@@ -31,57 +31,58 @@ type
   { TfrmPreferences }
 
   TfrmPreferences = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    Button4: TButton;
-    Button5: TButton;
-    Button6: TButton;
-    Button7: TButton;
-    Button8: TButton;
-    CheckBox1: TCheckBox;
-    CheckBox2: TCheckBox;
-    CheckBox3: TCheckBox;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit4: TEdit;
-    Edit5: TEdit;
-    Edit6: TEdit;
-    Edit7: TEdit;
+    btnCancel: TBitBtn;
+    btnOK: TBitBtn;
+    btnDefaultDir: TButton;
+    btnWinFFmpegPath: TButton;
+    btnWinFFplayPath: TButton;
+    btnLinFFmpegPath: TButton;
+    btnLinFFplayPath: TButton;
+    btnLinTerminalExe: TButton;
+    cbRememberLastDir: TCheckBox;
+    cbCHCPchar: TCheckBox;
+    cbThreads: TCheckBox;
+    edtDefaultDir: TEdit;
+    edtWinFFmpegPath: TEdit;
+    edtWinFFplayPath: TEdit;
+    edtLinFFmpegPath: TEdit;
+    edtLinFFplayPath: TEdit;
+    edtLinTerminalExe: TEdit;
+    edtLinTerminalOptions: TEdit;
     edtThreads: TEdit;
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    Label4: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
+    lblDefaultDir: TLabel;
+    lblLinTerminalExe: TLabel;
+    lblLinTerminalOptions: TLabel;
+    lblWinFFmpegPath: TLabel;
+    lblWinFFplay: TLabel;
+    lblLinFFmpegPath: TLabel;
+    lblLinFFplayPath: TLabel;
+    lblPriority: TLabel;
     PageControl1: TPageControl;
     OpenDialog1: TOpenDialog;
-    Panel1: TPanel;
-    Panel2: TPanel;
-    Panel3: TPanel;
-    Panel4: TPanel;
-    Panel5: TPanel;
-    Panel6: TPanel;
-    Panel7: TPanel;
-    Panel8: TPanel;
+    pnlLinTerminalOptions: TPanel;
+    pnlDefaultDir: TPanel;
+    pnlThreads: TPanel;
+    pnlPriority: TPanel;
+    pnlWinFFmpegPath: TPanel;
+    pnlWinFFplayPath: TPanel;
+    pnlLinFFmpegPath: TPanel;
+    pnlLinFFplayPath: TPanel;
+    pnlLinTerminalExe: TPanel;
     pnlBottom: TPanel;
     prioritybox: TComboBox;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
-    TabSheet1: TTabSheet;
-    TabSheet2: TTabSheet;
-    TabSheet3: TTabSheet;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
-    procedure Button6Click(Sender: TObject);
-    procedure Button7Click(Sender: TObject);
-    procedure Button8Click(Sender: TObject);
+    tabGeneral: TTabSheet;
+    tabWindows: TTabSheet;
+    tabLinux: TTabSheet;
+    procedure btnOKClick(Sender: TObject);
+    procedure btnCancelClick(Sender: TObject);
+    procedure btnDefaultDirClick(Sender: TObject);
+    procedure btnWinFFmpegPathClick(Sender: TObject);
+    procedure btnWinFFplayPathClick(Sender: TObject);
+    procedure btnLinFFmpegPathClick(Sender: TObject);
+    procedure btnLinFFplayPathClick(Sender: TObject);
+    procedure btnLinTerminalExeClick(Sender: TObject);
     procedure edtThreadsChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
 
@@ -109,50 +110,51 @@ procedure TfrmPreferences.FormCreate(Sender: TObject);
 
 begin
     TranslateUnitResourceStrings('unit4', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
+    prioritybox.Clear ;
     prioritybox.Items.Add(rspriorityhigh);
     prioritybox.Items.Add(rsprioritynormal);
     prioritybox.Items.Add(rspriorityidle);
   {$ifdef win32}
-   edit2.Text:= frmMain.getconfigvalue('win32/ffmpeg');
-   edit3.Text:= frmMain.getconfigvalue('win32/ffplay');
+   edtWinFFmpegPath.Text:= frmMain.getconfigvalue('win32/ffmpeg');
+   edtWinFFplayPath.Text:= frmMain.getconfigvalue('win32/ffplay');
    if frmMain.getconfigvalue('win32/chcp') = 'true' then
-     checkbox2.Checked := true
+     cbCHCPchar.Checked := true
   else
-     checkbox2.Checked := false;
+     cbCHCPchar.Checked := false;
   {$endif}
   {$ifdef unix}
 
-   edit4.Text:= frmMain.getconfigvalue('unix/ffmpeg');
-   edit5.Text:= frmMain.getconfigvalue('unix/ffplay');
-   edit6.Text:= frmMain.getconfigvalue('unix/terminal');
-   edit7.Text:= frmMain.getconfigvalue('unix/termoptions');
+   edtLinFFmpegPath.Text:= frmMain.getconfigvalue('unix/ffmpeg');
+   edtLinFFplayPath.Text:= frmMain.getconfigvalue('unix/ffplay');
+   edtLinTerminalExe.Text:= frmMain.getconfigvalue('unix/terminal');
+   edtLinTerminalOptions.Text:= frmMain.getconfigvalue('unix/termoptions');
   {$endif}
 
-  edit1.Text:= frmMain.getconfigvalue('general/destfolder');
+  edtDefaultDir.Text:= frmMain.getconfigvalue('general/destfolder');
 
 
   if frmMain.getconfigvalue('general/rememberlast') = 'true' then
-     checkbox1.Checked := true
+     cbRememberLastDir.Checked := true
   else
-     checkbox1.Checked := false;
+     cbRememberLastDir.Checked := false;
 
   if frmMain.getconfigvalue('general/multithreading') = 'true' then
-     checkbox3.Checked := true
+     cbThreads.Checked := true
   else
-     checkbox3.Checked := false;
+     cbThreads.Checked := false;
   edtthreads.Text:= frmMain.getconfigvalue('general/numberofthreads');
 
   prioritybox.Text := frmMain.getconfigvalue('general/priority');
 end;
 
 // save preference
-procedure TfrmPreferences.Button1Click(Sender: TObject);
+procedure TfrmPreferences.btnOKClick(Sender: TObject);
 
 begin
-  frmMain.setconfigvalue('general/destfolder',edit1.text);
-  frmMain.DestFolder.Text := edit1.text;
+  frmMain.setconfigvalue('general/destfolder',edtDefaultDir.text);
+  frmMain.DestFolder.Text := edtDefaultDir.text;
   
-  if checkbox1.Checked then
+  if cbRememberLastDir.Checked then
    begin
     frmMain.setconfigvalue('general/rememberlast','true');
     unit1.rememberlast:='true';
@@ -163,7 +165,7 @@ begin
     unit1.rememberlast:='false';
    end;
 
-  if checkbox3.Checked then
+  if cbThreads.Checked then
    begin
     frmMain.setconfigvalue('general/multithreading','true');
     unit1.multithreading:='true';
@@ -178,26 +180,26 @@ begin
 
   frmMain.setconfigvalue('general/priority', prioritybox.Text);
 
-  edit1.Text := trim(edit1.Text);
-  edit2.Text := trim(edit2.Text);
-  edit3.Text := trim(edit3.Text);
-  edit4.Text := trim(edit4.Text);
-  edit5.Text := trim(edit5.Text);
-  edit6.Text := trim(edit6.Text);
-  edit7.Text := trim(edit7.Text);
+  edtDefaultDir.Text := trim(edtDefaultDir.Text);
+  edtWinFFmpegPath.Text := trim(edtWinFFmpegPath.Text);
+  edtWinFFplayPath.Text := trim(edtWinFFplayPath.Text);
+  edtLinFFmpegPath.Text := trim(edtLinFFmpegPath.Text);
+  edtLinFFplayPath.Text := trim(edtLinFFplayPath.Text);
+  edtLinTerminalExe.Text := trim(edtLinTerminalExe.Text);
+  edtLinTerminalOptions.Text := trim(edtLinTerminalOptions.Text);
 
   {$ifdef win32}
-  if edit2.Text ='' then
-   edit2.Text := unit1.extrasPath + 'ffmpeg.exe';
-  if edit3.Text ='' then
-   edit3.Text := unit1.extrasPath + 'ffplay.exe';
+  if edtWinFFmpegPath.Text ='' then
+   edtWinFFmpegPath.Text := unit1.extrasPath + 'ffmpeg.exe';
+  if edtWinFFplayPath.Text ='' then
+   edtWinFFplayPath.Text := unit1.extrasPath + 'ffplay.exe';
 
-  unit1.ffmpeg := edit2.text;
-  unit1.ffplay := edit3.text;
-  frmMain.setconfigvalue('win32/ffmpeg',edit2.text);
-  frmMain.setconfigvalue('win32/ffplay',edit3.text);
+  unit1.ffmpeg := edtWinFFmpegPath.text;
+  unit1.ffplay := edtWinFFplayPath.text;
+  frmMain.setconfigvalue('win32/ffmpeg',edtWinFFmpegPath.text);
+  frmMain.setconfigvalue('win32/ffplay',edtWinFFplayPath.text);
   
-  if checkbox2.Checked then
+  if cbCHCPchar.Checked then
    begin
     frmMain.setconfigvalue('win32/chcp','true');
     unit1.usechcp:='true';
@@ -210,21 +212,21 @@ begin
   {$endif}
 
   {$ifdef unix}
-  if edit4.Text ='' then
-   edit4.Text := '/usr/bin/ffmpeg';
-  if edit5.Text ='' then
-   edit5.Text := '/usr/bin/ffplay';
-  if edit6.Text ='' then
-   edit6.Text := '/usr/bin/xterm';
+  if edtLinFFmpegPath.Text ='' then
+   edtLinFFmpegPath.Text := '/usr/bin/ffmpeg';
+  if edtLinFFplayPath.Text ='' then
+   edtLinFFplayPath.Text := '/usr/bin/ffplay';
+  if edtLinTerminalExe.Text ='' then
+   edtLinTerminalExe.Text := '/usr/bin/xterm';
 
-  unit1.ffmpeg := edit4.text;
-  unit1.ffplay := edit5.text;
-  unit1.terminal :=edit6.text;
-  unit1.termoptions := edit7.text;
-  frmMain.setconfigvalue('unix/ffmpeg',edit4.text);
-  frmMain.setconfigvalue('unix/ffplay',edit5.text);
-  frmMain.setconfigvalue('unix/terminal',edit6.text);
-  frmMain.setconfigvalue('unix/termoptions',edit7.text);
+  unit1.ffmpeg := edtLinFFmpegPath.text;
+  unit1.ffplay := edtLinFFplayPath.text;
+  unit1.terminal :=edtLinTerminalExe.text;
+  unit1.termoptions := edtLinTerminalOptions.text;
+  frmMain.setconfigvalue('unix/ffmpeg',edtLinFFmpegPath.text);
+  frmMain.setconfigvalue('unix/ffplay',edtLinFFplayPath.text);
+  frmMain.setconfigvalue('unix/terminal',edtLinTerminalExe.text);
+  frmMain.setconfigvalue('unix/termoptions',edtLinTerminalOptions.text);
   {$endif}
   
 
@@ -232,45 +234,45 @@ begin
 
 end;
 
-procedure TfrmPreferences.Button3Click(Sender: TObject);
+procedure TfrmPreferences.btnDefaultDirClick(Sender: TObject);
 begin
  if selectdirectorydialog1.Execute then
-    edit1.Text := selectdirectorydialog1.FileName;
+    edtDefaultDir.Text := selectdirectorydialog1.FileName;
 end;
 
-procedure TfrmPreferences.Button2Click(Sender: TObject);
+procedure TfrmPreferences.btnCancelClick(Sender: TObject);
 begin
   frmPreferences.close;
 end;
 
-procedure TfrmPreferences.Button4Click(Sender: TObject);
+procedure TfrmPreferences.btnWinFFmpegPathClick(Sender: TObject);
 begin
   if opendialog1.Execute then
-    edit2.Text := opendialog1.FileName;
+    edtWinFFmpegPath.Text := opendialog1.FileName;
 end;
 
-procedure TfrmPreferences.Button5Click(Sender: TObject);
+procedure TfrmPreferences.btnWinFFplayPathClick(Sender: TObject);
 begin
    if opendialog1.Execute then
-    edit3.Text := opendialog1.FileName;
+    edtWinFFplayPath.Text := opendialog1.FileName;
 end;
 
-procedure TfrmPreferences.Button6Click(Sender: TObject);
+procedure TfrmPreferences.btnLinFFmpegPathClick(Sender: TObject);
 begin
   if opendialog1.Execute then
-    edit4.Text := opendialog1.FileName;
+    edtLinFFmpegPath.Text := opendialog1.FileName;
 end;
 
-procedure TfrmPreferences.Button7Click(Sender: TObject);
+procedure TfrmPreferences.btnLinFFplayPathClick(Sender: TObject);
 begin
   if opendialog1.Execute then
-    edit5.Text := opendialog1.FileName;
+    edtLinFFplayPath.Text := opendialog1.FileName;
 end;
 
-procedure TfrmPreferences.Button8Click(Sender: TObject);
+procedure TfrmPreferences.btnLinTerminalExeClick(Sender: TObject);
 begin
    if opendialog1.Execute then
-    edit6.Text := opendialog1.FileName;
+    edtLinTerminalExe.Text := opendialog1.FileName;
 end;
 
 procedure TfrmPreferences.edtThreadsChange(Sender: TObject);
