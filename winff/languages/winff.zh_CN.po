@@ -30,8 +30,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Chinese\n"
 
-#: TFRMABOUT.BUTTON1.CAPTION
-msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#: TFRMABOUT.BTNOK.CAPTION
+msgctxt "TFRMABOUT.BTNOK.CAPTION"
 msgid "OK"
 msgstr "确定"
 
@@ -42,82 +42,99 @@ msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "关于 WinFF"
 
-#: TFRMABOUT.LABEL1.CAPTION
-msgid "WinFF 1.3.2"
-msgstr "WinFF 1.3.2"
-
-#: TFRMABOUT.LABEL10.CAPTION
-#, fuzzy
-#| msgid "http://ffmpeg.arrozcru.org/"
-msgid "http://hawkeye.arrozcru.org/"
-msgstr "http://ffmpeg.arrozcru.org/"
-
-#: TFRMABOUT.LABEL11.CAPTION
-msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr "Debian/Ubuntu 软件包由 Paul Gevers 制作"
-
-#: TFRMABOUT.LABEL13.CAPTION
-msgid "Gmaq"
-msgstr "Gmaq"
-
-#: TFRMABOUT.LABEL14.CAPTION
-msgid "High Quality Presets From"
-msgstr "高质量预设出自"
-
-#: TFRMABOUT.LABEL15.CAPTION
-msgid "Icons and Logo by Alex Klepatsch"
-msgstr "图标与 logo 由 Alex Klepatsch 设计"
-
-#: TFRMABOUT.LABEL16.CAPTION
-msgid "JNavas"
-msgstr "JNavas"
-
-#: TFRMABOUT.LABEL2.CAPTION
-msgid "Copyright 2006-2009 GPL V3"
-msgstr "版权所有 2006-2009 GPL V3"
-
-#: TFRMABOUT.LABEL3.CAPTION
-msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-msgstr "Matthew Weatherford、Ian Stoffberg 及 Alexey Osipov"
-
-#: TFRMABOUT.LABEL4.CAPTION
-msgid "http://www.winff.org"
-msgstr "http://www.winff.org"
-
-#: TFRMABOUT.LABEL5.CAPTION
-msgctxt "TFRMABOUT.LABEL5.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMABOUT.LABEL6.CAPTION
+#: TFRMABOUT.LBLBELLARD.CAPTION
+msgctxt "TFRMABOUT.LBLBELLARD.CAPTION"
 msgid "Trademark Fabrice Belllard"
 msgstr "商标属于 Fabrice Bellard"
 
-#: TFRMABOUT.LABEL7.CAPTION
-msgid "http://ffmpeg.org"
-msgstr "http://ffmpeg.org"
-
-#: TFRMABOUT.LABEL8.CAPTION
-msgid "FFmpeg Windows Builds by"
-msgstr "FFmpeg Windows 版编译者"
-
-#: TFRMABOUT.LABEL9.CAPTION
-msgid "Kyle Schwarz"
+#: TFRMABOUT.LBLCOPYRIGHT.CAPTION
+msgid "Copyright %s ; Licence: GPL V3+"
 msgstr ""
 
-#: TFRMABOUT.PAGE1.CAPTION
-msgctxt "TFRMABOUT.PAGE1.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
-#: TFRMABOUT.PAGE2.CAPTION
-msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#: TFRMABOUT.LBLFFMEG.CAPTION
+msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: TFRMABOUT.PAGE3.CAPTION
+#: TFRMABOUT.LBLGEVERS.CAPTION
+msgctxt "TFRMABOUT.LBLGEVERS.CAPTION"
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr "Debian/Ubuntu 软件包由 Paul Gevers 制作"
+
+#: TFRMABOUT.LBLGMAQ.CAPTION
+msgctxt "TFRMABOUT.LBLGMAQ.CAPTION"
+msgid "Gmaq"
+msgstr "Gmaq"
+
+#: TFRMABOUT.LBLHQPRESETS.CAPTION
+msgctxt "TFRMABOUT.LBLHQPRESETS.CAPTION"
+msgid "High Quality Presets From"
+msgstr "高质量预设出自"
+
+#: TFRMABOUT.LBLKLEPATSCH.CAPTION
+msgctxt "TFRMABOUT.LBLKLEPATSCH.CAPTION"
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr "图标与 logo 由 Alex Klepatsch 设计"
+
+#: TFRMABOUT.LBLNAVAS.CAPTION
+msgctxt "TFRMABOUT.LBLNAVAS.CAPTION"
+msgid "JNavas"
+msgstr "JNavas"
+
+#: TFRMABOUT.LBLOSIPOV.CAPTION
+msgid "Alexey Osipov"
+msgstr ""
+
+#: TFRMABOUT.LBLSCHWARZ.CAPTION
+msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
+msgid "Kyle Schwarz"
+msgstr ""
+
+#: TFRMABOUT.LBLSTOFFBERG.CAPTION
+msgid "Ian Stoffberg"
+msgstr ""
+
+#: TFRMABOUT.LBLURLFFMPEG.CAPTION
+msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
+msgid "http://ffmpeg.org"
+msgstr "http://ffmpeg.org"
+
+#: TFRMABOUT.LBLURLWINFFORG.CAPTION
+msgctxt "TFRMABOUT.LBLURLWINFFORG.CAPTION"
+msgid "http://www.winff.org"
+msgstr "http://www.winff.org"
+
+#: TFRMABOUT.LBLURLZERANOE.CAPTION
+msgid "http://ffmpeg.zeranoe.com"
+msgstr ""
+
+#: TFRMABOUT.LBLWEATHERFORD.CAPTION
+msgid "Matthew Weatherford"
+msgstr ""
+
+#: TFRMABOUT.LBLWINBUILD.CAPTION
+msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
+msgid "FFmpeg Windows Builds by"
+msgstr "FFmpeg Windows 版编译者"
+
+#: TFRMABOUT.LBLWINFF.CAPTION
+msgid "WinFF %s"
+msgstr ""
+
+#: TFRMABOUT.TABFFMPEG.CAPTION
+msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.TABTHANKS.CAPTION
+msgctxt "TFRMABOUT.TABTHANKS.CAPTION"
 msgid "Thanks"
 msgstr "鸣谢"
+
+#: TFRMABOUT.TABWINFF.CAPTION
+msgctxt "TFRMABOUT.TABWINFF.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
@@ -855,14 +872,6 @@ msgstr "按回车键继续"
 msgid "Replace Preset?"
 msgstr ""
 
-#: unit1.rsselectdirectory
-msgid "Select Directory"
-msgstr "选择目录"
-
-#: unit1.rsselectpresetfile
-msgid "Select Preset File"
-msgstr "选择预设文件"
-
 #~ msgid "Ramiro Polla"
 #~ msgstr "Ramiro Polla"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -874,6 +883,14 @@ msgstr "选择预设文件"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsselectdirectory
+msgid "Select Directory"
+msgstr "选择目录"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "选择预设文件"
+
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
 msgstr "选择视频文件"
