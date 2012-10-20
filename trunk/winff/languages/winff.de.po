@@ -254,16 +254,6 @@ msgstr "Hinzu"
 msgid "Add file(s) to the list for conversion"
 msgstr "Zu konvertierende Datei(en) hinzufügen"
 
-#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
-msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Output Folder"
-msgstr "Ausgabeverzeichnis"
-
-#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
-msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
-msgid "Apply Preset"
-msgstr "Profil anwenden"
-
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "Löschen"
@@ -313,11 +303,6 @@ msgstr "Entfernen"
 msgid "Remove selected file(s) from the list"
 msgstr "Ausgewählte Datei(en) aus der Liste entfernen"
 
-#: TFRMMAIN.CAPTION
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "Gerät oder Dateityp für die Konvertierung auswählen"
@@ -351,6 +336,10 @@ msgstr "..."
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Zielverzeichnis für das fertige Video (anderen Ordner wie Qualldatei auswählen)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -414,6 +403,11 @@ msgstr "<hh:mm:ss> - Ender der Konvertierung"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<Ganzzahl>) 256 = Lautstärke, 128 = Halb so laut, 512 = Doppelt so laut"
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
 msgstr "Konvertieren:"
@@ -455,6 +449,14 @@ msgstr "Stunden / Minuten / Sekunden"
 msgid "Additional Command Line Parameters"
 msgstr "Zusätzliche Kommandozeilen-Parameter"
 
+#: TFRMMAIN.LABEL5.CAPTION
+msgid "1st Pass"
+msgstr ""
+
+#: TFRMMAIN.LABEL6.CAPTION
+msgid "2nd Pass"
+msgstr ""
+
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
 msgstr "Audio-Bitrate"
@@ -470,6 +472,10 @@ msgstr "X"
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
 msgstr "Seitenverhältnis"
+
+#: TFRMMAIN.LBLCANCELCHANGES.CAPTION
+msgid "Cancel Changes"
+msgstr ""
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
@@ -490,6 +496,14 @@ msgstr "Oben"
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
 msgstr "Frame-Rate"
+
+#: TFRMMAIN.LBLSAVECHANGES.CAPTION
+msgid "Apply Changes"
+msgstr ""
+
+#: TFRMMAIN.LBLSAVECHANGES.HINT
+msgid "Click here to apply settings changes to the file conversion above"
+msgstr ""
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
@@ -553,6 +567,10 @@ msgstr "Einstellungen"
 msgid "Presets"
 msgstr "Profile"
 
+#: TFRMMAIN.MITSELECTALL.CAPTION
+msgid "Select All"
+msgstr ""
+
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
@@ -595,11 +613,6 @@ msgstr "pnlMain"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Spezielle Einstellungen für das Gerät oder den Dateityp"
 
-#: TFRMMAIN.TABSHEET1.CAPTION
-msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
-msgid "Video"
-msgstr "Video"
-
 #: TFRMMAIN.TABSHEET2.CAPTION
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
@@ -624,6 +637,11 @@ msgstr "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "Ausgabe-Details"
+
+#: TFRMMAIN.TABVIDEO.CAPTION
+msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
+msgid "Video"
+msgstr "Video"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"

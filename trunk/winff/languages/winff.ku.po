@@ -285,18 +285,6 @@ msgstr "Têxe"
 msgid "Add file(s) to the list for conversion"
 msgstr ""
 
-#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
-#, fuzzy
-#| msgid "Output Folder"
-msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Output Folder"
-msgstr "Peldanka tomarkirinê"
-
-#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
-msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
-msgid "Apply Preset"
-msgstr ""
-
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "Paqijke"
@@ -348,13 +336,6 @@ msgstr "Rake"
 msgid "Remove selected file(s) from the list"
 msgstr ""
 
-#: TFRMMAIN.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr ""
@@ -387,6 +368,10 @@ msgstr ""
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr ""
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
 msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
@@ -451,6 +436,13 @@ msgstr ""
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Convert"
@@ -500,6 +492,14 @@ msgstr ""
 msgid "Additional Command Line Parameters"
 msgstr "Zêdetir parametreyên rêzika fermanê (Pêşketî)"
 
+#: TFRMMAIN.LABEL5.CAPTION
+msgid "1st Pass"
+msgstr ""
+
+#: TFRMMAIN.LABEL6.CAPTION
+msgid "2nd Pass"
+msgstr ""
+
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
 msgstr "Bitrate a dengê"
@@ -515,6 +515,10 @@ msgstr ""
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
 msgstr "Aspect Ratio"
+
+#: TFRMMAIN.LBLCANCELCHANGES.CAPTION
+msgid "Cancel Changes"
+msgstr ""
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
@@ -537,6 +541,14 @@ msgstr ""
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
 msgstr "Frame Rate"
+
+#: TFRMMAIN.LBLSAVECHANGES.CAPTION
+msgid "Apply Changes"
+msgstr ""
+
+#: TFRMMAIN.LBLSAVECHANGES.HINT
+msgid "Click here to apply settings changes to the file conversion above"
+msgstr ""
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
@@ -610,6 +622,10 @@ msgstr "Mîheng"
 msgid "Presets"
 msgstr "Pêşmîheng"
 
+#: TFRMMAIN.MITSELECTALL.CAPTION
+msgid "Select All"
+msgstr ""
+
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 #, fuzzy
 #| msgid "Additional Options"
@@ -656,13 +672,6 @@ msgstr ""
 msgid "Specific settings to use for the chosen device or file type"
 msgstr ""
 
-#: TFRMMAIN.TABSHEET1.CAPTION
-#, fuzzy
-#| msgid "Video Size"
-msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
-msgid "Video"
-msgstr "Mezinahî"
-
 #: TFRMMAIN.TABSHEET2.CAPTION
 #, fuzzy
 #| msgid "Audio Settings"
@@ -693,6 +702,13 @@ msgstr "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "Berfirahiya derxistiyê"
+
+#: TFRMMAIN.TABVIDEO.CAPTION
+#, fuzzy
+#| msgid "Video Size"
+msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
+msgid "Video"
+msgstr "Mezinahî"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
@@ -946,14 +962,6 @@ msgstr "Pêşmîheng ku were derxistin hilbijêre"
 msgid "Preset with label: %s%s%s already exists"
 msgstr "Pêşmîheng a bi label : %s%s%s jixwe heye"
 
-#: unit1.rspressenter
-msgid "Press Enter to Continue"
-msgstr "Pêl enter bike ku berdewam bikî"
-
-#: unit1.rsreplacepreset
-msgid "Replace Preset?"
-msgstr ""
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1012,6 +1020,14 @@ msgstr ""
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Pêl enter bike ku berdewam bikî"
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr ""
+
 #: unit1.rsselectdirectory
 #, fuzzy
 #| msgid "Default Destination Directory"

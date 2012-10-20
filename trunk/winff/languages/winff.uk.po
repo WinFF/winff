@@ -240,16 +240,6 @@ msgstr "Додати"
 msgid "Add file(s) to the list for conversion"
 msgstr "Додати файл(и) до списку перетворення"
 
-#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
-msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Output Folder"
-msgstr "Використовувати вихідну теку"
-
-#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
-msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
-msgid "Apply Preset"
-msgstr "Застосувати заготовку"
-
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
 msgstr "Очистити"
@@ -299,11 +289,6 @@ msgstr "Вилучити"
 msgid "Remove selected file(s) from the list"
 msgstr "Вилучити виділені файли зі списку"
 
-#: TFRMMAIN.CAPTION
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "Пристрій або тип відео у який потрібно здійснити перетворення"
@@ -337,6 +322,10 @@ msgstr "…"
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Тека для обробленого відео (повинна відрізнятись від теки з сирцями)"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+msgid "Select Video Files..."
+msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -400,6 +389,11 @@ msgstr "<гг:мм:сс> - зупинитись на цій позиції дл�
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<ціле>) 256 = Поточна гучність, 128 = Половина гучності, 512 = Подвійна гучність"
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
 msgstr "Перетворити на:"
@@ -441,6 +435,14 @@ msgstr "Години / Хвилини / Секунди"
 msgid "Additional Command Line Parameters"
 msgstr "Додаткові параметри командного рядка"
 
+#: TFRMMAIN.LABEL5.CAPTION
+msgid "1st Pass"
+msgstr ""
+
+#: TFRMMAIN.LABEL6.CAPTION
+msgid "2nd Pass"
+msgstr ""
+
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
 msgstr "Аудіо бітрейт"
@@ -456,6 +458,10 @@ msgstr "X"
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
 msgstr "Співвідношення сторін"
+
+#: TFRMMAIN.LBLCANCELCHANGES.CAPTION
+msgid "Cancel Changes"
+msgstr ""
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
@@ -476,6 +482,14 @@ msgstr "Згори"
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
 msgstr "Частота кадрів"
+
+#: TFRMMAIN.LBLSAVECHANGES.CAPTION
+msgid "Apply Changes"
+msgstr ""
+
+#: TFRMMAIN.LBLSAVECHANGES.HINT
+msgid "Click here to apply settings changes to the file conversion above"
+msgstr ""
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
@@ -539,6 +553,10 @@ msgstr "Налаштування"
 msgid "Presets"
 msgstr "Заготовки"
 
+#: TFRMMAIN.MITSELECTALL.CAPTION
+msgid "Select All"
+msgstr ""
+
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
@@ -581,11 +599,6 @@ msgstr "Основна панель"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Конкретні параметри для обраного пристрою або типу файлу"
 
-#: TFRMMAIN.TABSHEET1.CAPTION
-msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
-msgid "Video"
-msgstr "Відео"
-
 #: TFRMMAIN.TABSHEET2.CAPTION
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
@@ -610,6 +623,11 @@ msgstr "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "Виводити подробиці"
+
+#: TFRMMAIN.TABVIDEO.CAPTION
+msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
+msgid "Video"
+msgstr "Відео"
 
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
