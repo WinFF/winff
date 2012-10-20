@@ -671,59 +671,63 @@ msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<Ganzzahl> X <Ganzzahl>) Anzahl der Pixel je Einzelbild. Für Codecs, die das Pixel-Seitenverhältnis (PAR) nicht unterstützen, ist das die finale Breite x Höhe."
 
-#: TFRMPREFERENCES.BUTTON1.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
-msgid "OK"
-msgstr "OK"
-
-#: TFRMPREFERENCES.BUTTON2.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+#: TFRMPREFERENCES.BTNCANCEL.CAPTION
+msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: TFRMPREFERENCES.BUTTON3.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+#: TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION
+msgctxt "TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON4.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+#: TFRMPREFERENCES.BTNLINFFMPEGPATH.CAPTION
+msgctxt "TFRMPREFERENCES.BTNLINFFMPEGPATH.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON5.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+#: TFRMPREFERENCES.BTNLINFFPLAYPATH.CAPTION
+msgctxt "TFRMPREFERENCES.BTNLINFFPLAYPATH.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON6.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+#: TFRMPREFERENCES.BTNLINTERMINALEXE.CAPTION
+msgctxt "TFRMPREFERENCES.BTNLINTERMINALEXE.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON7.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#: TFRMPREFERENCES.BTNOK.CAPTION
+msgctxt "TFRMPREFERENCES.BTNOK.CAPTION"
+msgid "OK"
+msgstr "OK"
+
+#: TFRMPREFERENCES.BTNWINFFMPEGPATH.CAPTION
+msgctxt "TFRMPREFERENCES.BTNWINFFMPEGPATH.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON8.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+#: TFRMPREFERENCES.BTNWINFFPLAYPATH.CAPTION
+msgctxt "TFRMPREFERENCES.BTNWINFFPLAYPATH.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.CHECKBOX1.CAPTION
-msgid "Remember Last Used Directory"
-msgstr "Zuletzt benutztes Verzeichnis merken"
-
-#: TFRMPREFERENCES.CHECKBOX2.CAPTION
+#: TFRMPREFERENCES.CBCHCPCHAR.CAPTION
+msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr "CHCP für internationale Zeichen verwenden"
 
-#: TFRMPREFERENCES.CHECKBOX3.CAPTION
+#: TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION
+msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
+msgid "Remember Last Used Directory"
+msgstr "Zuletzt benutztes Verzeichnis merken"
+
+#: TFRMPREFERENCES.CBTHREADS.CAPTION
+msgctxt "TFRMPREFERENCES.CBTHREADS.CAPTION"
 msgid "Use Several Encoding Threads:"
 msgstr "Mehrere Threads verwenden:"
 
-#: TFRMPREFERENCES.EDIT7.HINT
+#: TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT
+msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "Terminal-Einstellungen (-e für Xterm , -x für Gnome Terminal)"
 
@@ -732,64 +736,68 @@ msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
 msgstr "WinFF Einstellungen"
 
-#: TFRMPREFERENCES.LABEL1.CAPTION
+#: TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION
+msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
 msgid "Default Destination Directory:"
 msgstr "Standard-Ausgabeverzeichnis"
 
-#: TFRMPREFERENCES.LABEL2.CAPTION
+#: TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION
 #, fuzzy
 #| msgid "Path to FFmpeg Executable:"
-msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Pfad zu FFmpeg"
 
-#: TFRMPREFERENCES.LABEL3.CAPTION
+#: TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION
 #, fuzzy
 #| msgid "Path to FFplay Executable:"
-msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "Pfad zu FFPlay"
 
-#: TFRMPREFERENCES.LABEL4.CAPTION
-#, fuzzy
-#| msgid "Path to FFmpeg Executable:"
-msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
-msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Pfad zu FFmpeg"
-
-#: TFRMPREFERENCES.LABEL5.CAPTION
-#, fuzzy
-#| msgid "Path to FFplay Executable:"
-msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
-msgid "Path to FFplay or avplay Executable:"
-msgstr "Pfad zu FFPlay"
-
-#: TFRMPREFERENCES.LABEL6.CAPTION
+#: TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION
+msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
 msgid "Terminal to run FFmpeg in:"
 msgstr "Terminal, in dem FFmpeg ausgeführt werden soll"
 
-#: TFRMPREFERENCES.LABEL7.CAPTION
+#: TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION
+msgctxt "TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION"
 msgid "Terminal Options:"
 msgstr "Terminal-Einstellungen"
 
-#: TFRMPREFERENCES.LABEL8.CAPTION
+#: TFRMPREFERENCES.LBLPRIORITY.CAPTION
+msgctxt "TFRMPREFERENCES.LBLPRIORITY.CAPTION"
 msgid "Priority:"
 msgstr "Priorität"
 
-#: TFRMPREFERENCES.TABSHEET1.CAPTION
-msgctxt "TFRMPREFERENCES.TABSHEET1.CAPTION"
+#: TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable:"
+msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
+msgid "Path to FFmpeg or avconv Executable:"
+msgstr "Pfad zu FFmpeg"
+
+#: TFRMPREFERENCES.LBLWINFFPLAY.CAPTION
+#, fuzzy
+#| msgid "Path to FFplay Executable:"
+msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
+msgid "Path to FFplay or avplay Executable:"
+msgstr "Pfad zu FFPlay"
+
+#: TFRMPREFERENCES.TABGENERAL.CAPTION
+msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
 msgid "General"
 msgstr "Allgemein"
 
-#: TFRMPREFERENCES.TABSHEET2.CAPTION
-msgctxt "TFRMPREFERENCES.TABSHEET2.CAPTION"
-msgid "MS Windows"
-msgstr "Windows"
-
-#: TFRMPREFERENCES.TABSHEET3.CAPTION
-msgctxt "TFRMPREFERENCES.TABSHEET3.CAPTION"
+#: TFRMPREFERENCES.TABLINUX.CAPTION
+msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
 msgstr "Linux"
+
+#: TFRMPREFERENCES.TABWINDOWS.CAPTION
+msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
+msgid "MS Windows"
+msgstr "Windows"
 
 #: TFRMSCRIPT.BTNCLIP.CAPTION
 msgid "Copy to Clipboard"
