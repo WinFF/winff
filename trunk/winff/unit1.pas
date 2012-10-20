@@ -1453,6 +1453,7 @@ begin
             SetSCR(FileList.Count -1 ); // first time to save the parameters to the array (SCR)
             GenerateCommandLines(FileList.Count -1);
             SaveChangedOptions; // second time to save the command lines to the array (SCR)
+            filelist.itemindex := FileList.Count -1
           end;
           //filelist.items.AddStrings(dlgOpenFile.Files);
       end;
@@ -2663,15 +2664,15 @@ begin
        begin
          if filelist.Selected[i] = true then
            begin
-                DestinationList.Strings[i] := DestFolder.Text;
-                CategoryList.Strings[i] := categorybox.Text;
-                PresetList.Strings[i] := PresetBox.Text;
-               (*
-                  for 1.5
-                  set array values per queue item
-                *)
+                   DestinationList.Strings[i] := DestFolder.Text;
+                   CategoryList.Strings[i] := categorybox.Text;
+                   PresetList.Strings[i] := PresetBox.Text;
+                   GenerateCommandLines(i);
+                   Application.ProcessMessages;
                   With Scr[i] do
                   begin
+                    memFirstPass.Text := FirstPass;
+                    MemSecondPass.Text := SecondPass;
                     VideoBR := VidBitRate.Text;
                     VideoFR := VidFrameRate.Text;
                     VSizeX := VidSizeX.Text;
@@ -2697,11 +2698,12 @@ begin
                     FirstPass:= memFirstPass.Text;
                     SecondPass := memSecondPass.Text;
                   end;
-
            end;
        end;
      pnlAllow.Visible:= False;
      Application.ProcessMessages;
+     if filelist.ItemIndex < 0 then filelist.itemindex := 0;
+     GetScr(filelist.ItemIndex)
 end;
 
 
