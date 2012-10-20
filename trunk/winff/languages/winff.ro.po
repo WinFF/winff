@@ -19,10 +19,6 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-12-04 12:48+0000\n"
 "X-Generator: Launchpad (build 14418)\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr ""
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -834,10 +830,6 @@ msgstr "Selectați un dosar"
 msgid "Select Preset File"
 msgstr "Selectați fișier cu reguli de conversie"
 
-#: unit1.rsselectvideofiles
-msgid "Select Video Files"
-msgstr "Selectați fișiere video"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr " va fi aplicat tuturor sarcinilor când va începe conversia"
 #~ msgid "http://ffmpeg.arrozcru.org/"
@@ -871,6 +863,10 @@ msgstr "Selectați fișiere video"
 #~ msgstr "Selectați fișiere video..."
 #~ msgid "NOTE: Currently any additional options chosen"
 #~ msgstr "NOTĂ: În prezent, orice opţiuni suplimentare alese"
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Selectați fișiere video"
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Regula de conversie conține caractere ilegale"

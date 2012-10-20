@@ -35,10 +35,6 @@ msgstr ""
 "X-Poedit-SearchPath-0: c:\\po\\winff\n"
 "X-Poedit-Basepath: c:\\po\\winff\\\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr "Formularz1"
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"

@@ -36,10 +36,6 @@ msgstr ""
 "X-Poedit-Basepath: /usr/share/locale/zh/LC_MESSAGES/\n"
 "X-Poedit-SearchPath-0: /usr/share/locale/zh_TW/LC_MESSAGES\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr "Form1"
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"

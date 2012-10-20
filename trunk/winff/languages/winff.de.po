@@ -33,10 +33,6 @@ msgstr ""
 "Language: \n"
 "License: GPL version 3\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr "Form1"
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"

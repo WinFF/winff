@@ -29,10 +29,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "License: GPL version 3\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr ""
-
 #: TFRMABOUT.BUTTON1.CAPTION
 #, fuzzy
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
@@ -929,10 +925,6 @@ msgstr "Изходна папка по подразбиране"
 msgid "Select Preset File"
 msgstr "Изберете файл с настройки"
 
-#: unit1.rsselectvideofiles
-msgid "Select Video Files"
-msgstr "Изберете видео файлове"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -986,6 +978,10 @@ msgstr "Изберете видео файлове"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "Изберете видео файлове"
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Настройката съдържа непозволени символи"

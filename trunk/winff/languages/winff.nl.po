@@ -35,10 +35,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Dutch\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr "Formulier1"
-
 #: TFRMABOUT.BUTTON1.CAPTION
 msgctxt "TFRMABOUT.BUTTON1.CAPTION"
 msgid "OK"
@@ -828,10 +824,6 @@ msgstr "Selecteer een voorinstelling om te exporteren"
 msgid "Preset with label: %s%s%s already exists"
 msgstr "Voorinstelling met label: %s%s%s bestaat reeds"
 
-#: unit1.rspressenter
-msgid "Press Enter to Continue"
-msgstr "Druk 'enter' om verder te gaan"
-
 #~ msgid " will be applied to all jobs when the conversion starts"
 #~ msgstr "toegepast op alle video's op het moment dat de convertie begint."
 #~ msgid "Ramiro Polla"
@@ -886,6 +878,10 @@ msgstr "Druk 'enter' om verder te gaan"
 #~ msgctxt "REMOVED8"
 #~ msgid "OK"
 #~ msgstr "Accepteren"
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Druk 'enter' om verder te gaan"
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
 msgstr ""
