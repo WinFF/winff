@@ -1,10 +1,11 @@
 #!/bin/sh
 rm -f *~
-rm -f *.o
-rm -f *.ppu
+rm -f *.o   # Build object files
+rm -f *.ppu # Compiled unit file
 rm -f *.res
 rm -f *.rst
-rm -f *.lrs
+rm -f *.lrs # binary layout files; created from *.lfm
+rm -f *.lrt # language build files: input for *.po generation
 rm -f *.lps
 rm -f *.bak
 rm -f winff.exe
