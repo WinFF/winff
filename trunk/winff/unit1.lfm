@@ -347,7 +347,6 @@ object frmMain: TfrmMain
       Top = 0
       Width = 640
       Align = alClient
-      Font.Height = -13
       ItemHeight = 0
       MultiSelect = True
       OnClick = filelistClick
@@ -357,7 +356,6 @@ object frmMain: TfrmMain
       OnMeasureItem = filelistMeasureItem
       OnMouseMove = filelistMouseMove
       ParentShowHint = False
-      ParentFont = False
       PopupMenu = PopupMenu1
       ShowHint = True
       TabOrder = 0
@@ -372,8 +370,6 @@ object frmMain: TfrmMain
     AutoSize = True
     ClientHeight = 56
     ClientWidth = 640
-    Font.Height = -13
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
@@ -1024,9 +1020,7 @@ object frmMain: TfrmMain
     BevelOuter = bvNone
     ClientHeight = 226
     ClientWidth = 640
-    Font.Height = -13
     ParentColor = False
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 2
@@ -2122,8 +2116,6 @@ object frmMain: TfrmMain
             Width = 627
             Anchors = [akTop, akLeft, akRight]
             BorderSpacing.Top = 3
-            Font.Height = -13
-            ParentFont = False
             TabOrder = 2
           end
           object Label5: TLabel
