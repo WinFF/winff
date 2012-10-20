@@ -145,10 +145,6 @@ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "关闭"
 
-#: TFRMEDITPRESETS.CAPTION
-msgid "Edit Presets"
-msgstr "编辑预设"
-
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
 msgstr "删除"
@@ -177,6 +173,11 @@ msgstr "选择此预设所属的分类进行归类"
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "导出"
+
+#: TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION
+msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
+msgid "Edit Presets"
+msgstr "编辑预设"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
@@ -210,9 +211,17 @@ msgstr "分类"
 msgid "Save"
 msgstr "保存"
 
+#: TFRMEDITPRESETS.OPENDIALOG1.TITLE
+msgid "Import a Preset"
+msgstr ""
+
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr "面板顶部"
+
+#: TFRMEDITPRESETS.SAVEDIALOG1.TITLE
+msgid "Export a Preset"
+msgstr ""
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
@@ -717,10 +726,6 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.CAPTION
-msgid "WinFF Preferences"
-msgstr "WinFF 偏好设置"
-
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 msgid "Remember Last Used Directory"
 msgstr "记住上次所用的目录"
@@ -737,28 +742,41 @@ msgstr "使用多线程编码:"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "'-e' 使用 xterm，'-x' 使用 gnome-terminal"
 
+#: TFRMPREFERENCES.FRMPREFERENCES.CAPTION
+msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
+msgid "WinFF Preferences"
+msgstr "WinFF 偏好设置"
+
 #: TFRMPREFERENCES.LABEL1.CAPTION
 msgid "Default Destination Directory:"
 msgstr "默认目标目录:"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "FFmpeg 可执行程序路径:"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "FFplay 可执行程序路径:"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "FFmpeg 可执行程序路径:"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "FFplay 可执行程序路径:"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
@@ -773,15 +791,18 @@ msgstr "终端选项:"
 msgid "Priority:"
 msgstr "优先级:"
 
-#: TFRMPREFERENCES.PAGE1.CAPTION
+#: TFRMPREFERENCES.TABSHEET1.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET1.CAPTION"
 msgid "General"
 msgstr "常规"
 
-#: TFRMPREFERENCES.PAGE2.CAPTION
+#: TFRMPREFERENCES.TABSHEET2.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET2.CAPTION"
 msgid "MS Windows"
 msgstr "MS Windows"
 
-#: TFRMPREFERENCES.PAGE3.CAPTION
+#: TFRMPREFERENCES.TABSHEET3.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET3.CAPTION"
 msgid "Linux"
 msgstr "Linux"
 

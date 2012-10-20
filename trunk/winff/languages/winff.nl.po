@@ -148,10 +148,6 @@ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Sluiten"
 
-#: TFRMEDITPRESETS.CAPTION
-msgid "Edit Presets"
-msgstr "Bewerk voorinstellingen"
-
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
 msgstr "Verwijderen"
@@ -180,6 +176,11 @@ msgstr "Kies een categorie om deze voorinstelling te groeperen"
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Exporteer"
+
+#: TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION
+msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
+msgid "Edit Presets"
+msgstr "Bewerk voorinstellingen"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
@@ -213,9 +214,17 @@ msgstr "Categorie"
 msgid "Save"
 msgstr "Opslaan"
 
+#: TFRMEDITPRESETS.OPENDIALOG1.TITLE
+msgid "Import a Preset"
+msgstr ""
+
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr "pnlTop"
+
+#: TFRMEDITPRESETS.SAVEDIALOG1.TITLE
+msgid "Export a Preset"
+msgstr ""
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
@@ -704,10 +713,6 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.CAPTION
-msgid "WinFF Preferences"
-msgstr "WinFF voorkeuren"
-
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 msgid "Remember Last Used Directory"
 msgstr "Onthoudt de laatst gebruikte map"
@@ -724,28 +729,41 @@ msgstr "Maak gebruik van meerdere threads:"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "'-e' voor Xterm , '-x' voor Gnome Terminal"
 
+#: TFRMPREFERENCES.FRMPREFERENCES.CAPTION
+msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
+msgid "WinFF Preferences"
+msgstr "WinFF voorkeuren"
+
 #: TFRMPREFERENCES.LABEL1.CAPTION
 msgid "Default Destination Directory:"
 msgstr "Standaard doelmap:"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Pad naar uitvoerbaar FFmpeg bestand:"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "Pad naar uitvoerbaar FFPlay bestand:"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Pad naar uitvoerbaar FFmpeg bestand:"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "Pad naar uitvoerbaar FFPlay bestand:"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
@@ -760,15 +778,18 @@ msgstr "Terminal opties:"
 msgid "Priority:"
 msgstr "Prioriteit:"
 
-#: TFRMPREFERENCES.PAGE1.CAPTION
+#: TFRMPREFERENCES.TABSHEET1.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET1.CAPTION"
 msgid "General"
 msgstr "Algemeen"
 
-#: TFRMPREFERENCES.PAGE2.CAPTION
+#: TFRMPREFERENCES.TABSHEET2.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET2.CAPTION"
 msgid "MS Windows"
 msgstr "MS Windows"
 
-#: TFRMPREFERENCES.PAGE3.CAPTION
+#: TFRMPREFERENCES.TABSHEET3.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET3.CAPTION"
 msgid "Linux"
 msgstr "Linux"
 

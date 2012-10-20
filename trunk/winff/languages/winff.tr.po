@@ -156,10 +156,6 @@ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Kapat"
 
-#: TFRMEDITPRESETS.CAPTION
-msgid "Edit Presets"
-msgstr "Ayarları düzenle"
-
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
 msgstr "Sil"
@@ -190,6 +186,11 @@ msgstr ""
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Dışarı aktar"
+
+#: TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION
+msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
+msgid "Edit Presets"
+msgstr "Ayarları düzenle"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
@@ -233,8 +234,16 @@ msgstr "Kategori"
 msgid "Save"
 msgstr "Kaydet"
 
+#: TFRMEDITPRESETS.OPENDIALOG1.TITLE
+msgid "Import a Preset"
+msgstr ""
+
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
+msgstr ""
+
+#: TFRMEDITPRESETS.SAVEDIALOG1.TITLE
+msgid "Export a Preset"
 msgstr ""
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
@@ -792,10 +801,6 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.CAPTION
-msgid "WinFF Preferences"
-msgstr "WinFF Tercihleri"
-
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -816,6 +821,11 @@ msgstr ""
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "İstemci seçenekleri (Xterm için -e, Gnome istemcisi için -x)"
 
+#: TFRMPREFERENCES.FRMPREFERENCES.CAPTION
+msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
+msgid "WinFF Preferences"
+msgstr "WinFF Tercihleri"
+
 #: TFRMPREFERENCES.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Default Destination Directory"
@@ -824,30 +834,30 @@ msgstr "Varsayılan hedef klasörü"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
 #, fuzzy
-#| msgid "Path to FFmpeg Executable"
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "FFmpeg uygulaması için yol"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
 #, fuzzy
-#| msgid "Path to FFPlay Executable"
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "FFPlay uygulaması için yol"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
 #, fuzzy
-#| msgid "Path to FFmpeg Executable"
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "FFmpeg uygulaması için yol"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
-#| msgid "Path to FFPlay Executable"
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "FFPlay uygulaması için yol"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
@@ -868,17 +878,20 @@ msgstr "İlave seçenekler"
 msgid "Priority:"
 msgstr "Öncelik"
 
-#: TFRMPREFERENCES.PAGE1.CAPTION
+#: TFRMPREFERENCES.TABSHEET1.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET1.CAPTION"
 msgid "General"
 msgstr "Genel"
 
-#: TFRMPREFERENCES.PAGE2.CAPTION
+#: TFRMPREFERENCES.TABSHEET2.CAPTION
 #, fuzzy
 #| msgid "Ms Windows"
+msgctxt "TFRMPREFERENCES.TABSHEET2.CAPTION"
 msgid "MS Windows"
 msgstr "MS Windows"
 
-#: TFRMPREFERENCES.PAGE3.CAPTION
+#: TFRMPREFERENCES.TABSHEET3.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET3.CAPTION"
 msgid "Linux"
 msgstr "Linux"
 

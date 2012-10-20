@@ -148,10 +148,6 @@ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Κλείσιμο"
 
-#: TFRMEDITPRESETS.CAPTION
-msgid "Edit Presets"
-msgstr "Επεξεργασία Presets"
-
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
 msgstr "Διαγραφή"
@@ -180,6 +176,11 @@ msgstr ""
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Εξαγωγή"
+
+#: TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION
+msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
+msgid "Edit Presets"
+msgstr "Επεξεργασία Presets"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
@@ -217,8 +218,16 @@ msgstr "Κατηγορία"
 msgid "Save"
 msgstr "Αποθήκευση"
 
+#: TFRMEDITPRESETS.OPENDIALOG1.TITLE
+msgid "Import a Preset"
+msgstr ""
+
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
+msgstr ""
+
+#: TFRMEDITPRESETS.SAVEDIALOG1.TITLE
+msgid "Export a Preset"
 msgstr ""
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
@@ -708,10 +717,6 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.CAPTION
-msgid "WinFF Preferences"
-msgstr "Προτιμήσεις WinFF"
-
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 msgid "Remember Last Used Directory"
 msgstr "Απομνημόνευση Τελευταίου Καταλόγου"
@@ -728,28 +733,41 @@ msgstr ""
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "-e για Xterm, -x για Τερματικό Gnome"
 
+#: TFRMPREFERENCES.FRMPREFERENCES.CAPTION
+msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
+msgid "WinFF Preferences"
+msgstr "Προτιμήσεις WinFF"
+
 #: TFRMPREFERENCES.LABEL1.CAPTION
 msgid "Default Destination Directory:"
 msgstr "Προεπιλεγμένος Φάκελος Προορισμού"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Διαδρομή Εκτελέσιμου FFmpeg"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
+#, fuzzy
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "Διαδρομή Εκτελέσιμου FFPlay"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
+#, fuzzy
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Διαδρομή Εκτελέσιμου FFmpeg"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
+#, fuzzy
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "Διαδρομή Εκτελέσιμου FFPlay"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
@@ -764,15 +782,18 @@ msgstr ""
 msgid "Priority:"
 msgstr "Προτεραιότητα"
 
-#: TFRMPREFERENCES.PAGE1.CAPTION
+#: TFRMPREFERENCES.TABSHEET1.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET1.CAPTION"
 msgid "General"
 msgstr "Γενικά"
 
-#: TFRMPREFERENCES.PAGE2.CAPTION
+#: TFRMPREFERENCES.TABSHEET2.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET2.CAPTION"
 msgid "MS Windows"
 msgstr ""
 
-#: TFRMPREFERENCES.PAGE3.CAPTION
+#: TFRMPREFERENCES.TABSHEET3.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET3.CAPTION"
 msgid "Linux"
 msgstr "Linux"
 

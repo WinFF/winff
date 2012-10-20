@@ -153,10 +153,6 @@ msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Tanca"
 
-#: TFRMEDITPRESETS.CAPTION
-msgid "Edit Presets"
-msgstr "Edita les configuracions"
-
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
 msgstr "Esborra"
@@ -187,6 +183,11 @@ msgstr ""
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Exporta"
+
+#: TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION
+msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
+msgid "Edit Presets"
+msgstr "Edita les configuracions"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
@@ -230,8 +231,16 @@ msgstr "Categoria"
 msgid "Save"
 msgstr "desa"
 
+#: TFRMEDITPRESETS.OPENDIALOG1.TITLE
+msgid "Import a Preset"
+msgstr ""
+
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
+msgstr ""
+
+#: TFRMEDITPRESETS.SAVEDIALOG1.TITLE
+msgid "Export a Preset"
 msgstr ""
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
@@ -789,10 +798,6 @@ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFRMPREFERENCES.CAPTION
-msgid "WinFF Preferences"
-msgstr "Preferències de WinFF"
-
 #: TFRMPREFERENCES.CHECKBOX1.CAPTION
 #, fuzzy
 #| msgid "Remember Last Directory Used"
@@ -813,6 +818,11 @@ msgstr ""
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "Opcions de consola (-e per a Xterm, -x per a un terminal Gnome)"
 
+#: TFRMPREFERENCES.FRMPREFERENCES.CAPTION
+msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
+msgid "WinFF Preferences"
+msgstr "Preferències de WinFF"
+
 #: TFRMPREFERENCES.LABEL1.CAPTION
 #, fuzzy
 #| msgid "Default Destination Directory"
@@ -821,30 +831,30 @@ msgstr "Directori per defecte"
 
 #: TFRMPREFERENCES.LABEL2.CAPTION
 #, fuzzy
-#| msgid "Path to FFmpeg Executable"
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Ruta fins a FFmpeg"
 
 #: TFRMPREFERENCES.LABEL3.CAPTION
 #, fuzzy
-#| msgid "Path to FFPlay Executable"
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "Ruta fins a FFplay"
 
 #: TFRMPREFERENCES.LABEL4.CAPTION
 #, fuzzy
-#| msgid "Path to FFmpeg Executable"
+#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
-msgid "Path to FFmpeg Executable:"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Ruta fins a FFmpeg"
 
 #: TFRMPREFERENCES.LABEL5.CAPTION
 #, fuzzy
-#| msgid "Path to FFPlay Executable"
+#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
-msgid "Path to FFplay Executable:"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "Ruta fins a FFplay"
 
 #: TFRMPREFERENCES.LABEL6.CAPTION
@@ -865,17 +875,20 @@ msgstr "Opcions addicionals"
 msgid "Priority:"
 msgstr "Prioritat"
 
-#: TFRMPREFERENCES.PAGE1.CAPTION
+#: TFRMPREFERENCES.TABSHEET1.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET1.CAPTION"
 msgid "General"
 msgstr "General"
 
-#: TFRMPREFERENCES.PAGE2.CAPTION
+#: TFRMPREFERENCES.TABSHEET2.CAPTION
 #, fuzzy
 #| msgid "Ms Windows"
+msgctxt "TFRMPREFERENCES.TABSHEET2.CAPTION"
 msgid "MS Windows"
 msgstr "MS Windows"
 
-#: TFRMPREFERENCES.PAGE3.CAPTION
+#: TFRMPREFERENCES.TABSHEET3.CAPTION
+msgctxt "TFRMPREFERENCES.TABSHEET3.CAPTION"
 msgid "Linux"
 msgstr "Linux/Unix"
 
