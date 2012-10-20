@@ -52,14 +52,12 @@ type
     commandlineparams1: TEdit;
     commandlineparams2: TEdit;
     DestFolder: TEdit;
-    edtFirstPass: TEdit;
     edtAspectRatio: TEdit;
     edtAudioSync: TEdit;
     edtCropBottom: TEdit;
     edtCropLeft: TEdit;
     edtCropRight: TEdit;
     edtCropTop: TEdit;
-    edtSecondPass: TEdit;
     edtSeekHH: TSpinEdit;
     edtSeekMM: TSpinEdit;
     edtSeekSS: TSpinEdit;
@@ -71,6 +69,7 @@ type
     Label10: TLabel;
     Label12: TLabel;
     Label19: TLabel;
+    Label6: TLabel;
     lblSaveChanges: TLabel;
     Label20: TLabel;
     Label21: TLabel;
@@ -93,6 +92,8 @@ type
     lblFrameRate: TLabel;
     lblVideoBitRate: TLabel;
     lblVideoSize: TLabel;
+    memFirstPass: TMemo;
+    MemSecondPass: TMemo;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
     mitSelectAll: TMenuItem;
@@ -288,6 +289,7 @@ type
   // and generated
   TQItem = Record
     FileName : String;
+    OutputFileName: String;
     VideoBR  : String;
     VideoFR  : String;
     VSizeX   : String;
@@ -1005,8 +1007,8 @@ begin
                     RecordHour := EdtTTRHH.Value;
                     RecordMinute  := EdtTTRMM.Value;
                     RecordSecond  := edtTTRSS.Value;
-                    FirstPass := edtFirstPass.text;
-                    SecondPass := edtSecondPass.text;
+                    FirstPass := memFirstPass.text;
+                    SecondPass := memSecondPass.text;
                   end;
 
            end;
@@ -1060,6 +1062,7 @@ procedure TfrmMain.PresetBoxChange(Sender: TObject);
 begin
   destfolder.text := getconfigvalue('general/destfolder');
   if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
+  pnlAllow.Visible:=True;
 end;
 
 procedure TfrmMain.SelectDirectoryDialog1FolderChange(Sender: TObject);
@@ -1447,9 +1450,9 @@ begin
             //t := GetFileInfo(u); Todo -> if I ever get a nice way to read file resolution & codec
             filelist.items.Add(s);
             FileInfoList.add(u);
-            SetSCR(FileList.Count -1 );
+            SetSCR(FileList.Count -1 ); // first time to save the parameters to the array (SCR)
             GenerateCommandLines(FileList.Count -1);
-            SaveChangedOptions;
+            SaveChangedOptions; // second time to save the command lines to the array (SCR)
           end;
           //filelist.items.AddStrings(dlgOpenFile.Files);
       end;
@@ -1464,6 +1467,7 @@ begin
 *)
   With Scr[vIndex] do
   begin
+    OutPutFileName := '';
     VideoBR  := '';
     VideoFR  := '';
     VSizeX   := '';
@@ -1522,8 +1526,8 @@ begin
     EdtTTRHH.Value := RecordHour;
     EdtTTRMM.Value := RecordMinute ;
     edtTTRSS.Value := RecordSecond ;
-    edtFirstPass.text := FirstPass;
-    edtSecondPass.text := SecondPass;
+    memFirstPass.text := FirstPass;
+    memSecondPass.text := SecondPass;
   end;
   pnlAllow.visible := false;
 end;
@@ -2352,12 +2356,12 @@ begin
 end;
 
 function tfrmMain.GenerateCommandLines(vIndex : integer) : string;
-var j : integer;
+var i,j : integer;
 cb,ct,cl,cr:integer;
-pn, params, cropline, precommand, command, passlogfile:string;
+category, pn, params, cropline, precommand, command, passlogfile:string;
 ignorepreview:boolean;
-ffmpegfilename, extension, basename,filename,commandline : string;
-script, deinterlace, numthreads, nullfile, usethreads : string;
+outputfilename, ffmpegfilename, extension, basename,filename,commandline : string;
+deinterlace, numthreads, nullfile, usethreads : string;
 begin
 
    {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
@@ -2366,9 +2370,17 @@ begin
 //   {$ifdef unix}ffplayfilename:=ffplay;{$endif}
    {$ifdef win32}nullfile:='"NUL.avi"';{$endif}
    {$ifdef unix}nullfile:='/dev/null';{$endif}
-
        pn:=getcurrentpresetname(presetbox.Text);
+       category := getpresetcategory(pn);
        params:=getpresetparams(pn);
+       // 1.5 Utility thinggy
+       if category = 'Utilities' then
+          begin
+               params := replaceparam (params,'input_filename',scr[vIndex].FileName);
+               scr[vIndex].FirstPass := params;
+               scr[vIndex].SecondPass := '';
+               exit
+          end;
        extension:=getpresetextension(pn);
 //     1.5 alpha (delete this later)
 
@@ -2590,8 +2602,6 @@ begin
 
 
 
-       // coded by Ian Stoffberg - Issue 125
-       // begin change
        if cbOutputPath.checked = true then
        begin
          destfolder.text := extractfilepath(filename);
@@ -2603,7 +2613,6 @@ begin
         begin
           destfolder.text := copy(DestFolder.text,1,length(DestFolder.text) -1);
         end;
-       // End Change
 
        passlogfile := destfolder.Text + DirectorySeparator + basename + '.log';
 
@@ -2612,13 +2621,24 @@ begin
          basename :=  'o_' + basename;
        end;
 
-       script:='';
+       // this next bit removes any duplicate filenames from the queue and makes them unique
+       outputfilename := destfolder.Text + DirectorySeparator + basename +'.' + extension;
+       i :=1;
+       for j := 0 to vIndex DO
+       begin
+         if outputfilename = scr[j].OutputFileName then
+         begin
+            i := i + 1;
+            outputfilename := destfolder.Text + DirectorySeparator + basename + '_' + inttostr(i) + '.' + extension;
+         end;
+       end;
+
+
        if cbx2Pass.Checked = false then
           begin
            command := ffmpegfilename + usethreads + precommand + ' -y -i "' + filename + '" ' + deinterlace + commandline + ' "' +
-                destfolder.Text + DirectorySeparator + basename +'.' + extension+ '"';
+                outputfilename + '"';
 
-           //script.Add(command);
            scr[vIndex].FirstPass := command;
            scr[vIndex].SecondPass := '';
           end
@@ -2628,11 +2648,11 @@ begin
                  + ' -passlogfile "' + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
            scr[vIndex].FirstPass := command;
            command := ffmpegfilename + usethreads + precommand + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
-                 + passlogfile + '"' + ' -pass 2 ' + ' "' + destfolder.Text + DirectorySeparator + basename +'.'
-                 + extension+ '"';
+                 + passlogfile + '"' + ' -pass 2 ' + ' "' + outputfilename + '"';
            scr[vIndex].SecondPass := command;
           end;
-       result := script;
+          scr[vIndex].outputfilename := outputfilename;
+       result := '';
 end;
 
 procedure TfrmMain.SaveChangedOptions;
@@ -2674,8 +2694,8 @@ begin
                     RecordHour := EdtTTRHH.Value;
                     RecordMinute  := EdtTTRMM.Value;
                     RecordSecond  := edtTTRSS.Value;
-                    FirstPass:= edtFirstPass.Text;
-                    SecondPass := edtSecondPass.Text;
+                    FirstPass:= memFirstPass.Text;
+                    SecondPass := memSecondPass.Text;
                   end;
 
            end;
