@@ -30,8 +30,10 @@ msgstr ""
 "X-Poedit-Country: United States\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: TFRMABOUT.BUTTON1.CAPTION
-msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#: TFRMABOUT.BTNOK.CAPTION
+#, fuzzy
+#| msgid "OK"
+msgctxt "TFRMABOUT.BTNOK.CAPTION"
 msgid "OK"
 msgstr "Çêbû"
 
@@ -42,90 +44,107 @@ msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Derbarê Winff de"
 
-#: TFRMABOUT.LABEL1.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgid "WinFF 1.3.2"
-msgstr "WinFF"
-
-#: TFRMABOUT.LABEL10.CAPTION
-msgid "http://hawkeye.arrozcru.org/"
-msgstr ""
-
-#: TFRMABOUT.LABEL11.CAPTION
-msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr ""
-
-#: TFRMABOUT.LABEL13.CAPTION
-msgid "Gmaq"
-msgstr ""
-
-#: TFRMABOUT.LABEL14.CAPTION
-msgid "High Quality Presets From"
-msgstr ""
-
-#: TFRMABOUT.LABEL15.CAPTION
-msgid "Icons and Logo by Alex Klepatsch"
-msgstr ""
-
-#: TFRMABOUT.LABEL16.CAPTION
-msgid "JNavas"
-msgstr ""
-
-#: TFRMABOUT.LABEL2.CAPTION
-msgid "Copyright 2006-2009 GPL V3"
-msgstr ""
-
-#: TFRMABOUT.LABEL3.CAPTION
-msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-msgstr ""
-
-#: TFRMABOUT.LABEL4.CAPTION
-msgid "http://www.winff.org"
-msgstr ""
-
-#: TFRMABOUT.LABEL5.CAPTION
-#, fuzzy
-#| msgid "FFmpeg"
-msgctxt "TFRMABOUT.LABEL5.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMABOUT.LABEL6.CAPTION
+#: TFRMABOUT.LBLBELLARD.CAPTION
+msgctxt "TFRMABOUT.LBLBELLARD.CAPTION"
 msgid "Trademark Fabrice Belllard"
 msgstr ""
 
-#: TFRMABOUT.LABEL7.CAPTION
-msgid "http://ffmpeg.org"
+#: TFRMABOUT.LBLCOPYRIGHT.CAPTION
+msgid "Copyright %s ; Licence: GPL V3+"
 msgstr ""
 
-#: TFRMABOUT.LABEL8.CAPTION
-#, fuzzy
-#| msgid "FFmpeg builds by"
-msgid "FFmpeg Windows Builds by"
-msgstr "FFmpeg hat avakirin ji aliyê"
-
-#: TFRMABOUT.LABEL9.CAPTION
-msgid "Kyle Schwarz"
-msgstr ""
-
-#: TFRMABOUT.PAGE1.CAPTION
-#, fuzzy
-#| msgid "WinFF"
-msgctxt "TFRMABOUT.PAGE1.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
-#: TFRMABOUT.PAGE2.CAPTION
+#: TFRMABOUT.LBLFFMEG.CAPTION
 #, fuzzy
 #| msgid "FFmpeg"
-msgctxt "TFRMABOUT.PAGE2.CAPTION"
+msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: TFRMABOUT.PAGE3.CAPTION
+#: TFRMABOUT.LBLGEVERS.CAPTION
+msgctxt "TFRMABOUT.LBLGEVERS.CAPTION"
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr ""
+
+#: TFRMABOUT.LBLGMAQ.CAPTION
+msgctxt "TFRMABOUT.LBLGMAQ.CAPTION"
+msgid "Gmaq"
+msgstr ""
+
+#: TFRMABOUT.LBLHQPRESETS.CAPTION
+msgctxt "TFRMABOUT.LBLHQPRESETS.CAPTION"
+msgid "High Quality Presets From"
+msgstr ""
+
+#: TFRMABOUT.LBLKLEPATSCH.CAPTION
+msgctxt "TFRMABOUT.LBLKLEPATSCH.CAPTION"
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr ""
+
+#: TFRMABOUT.LBLNAVAS.CAPTION
+msgctxt "TFRMABOUT.LBLNAVAS.CAPTION"
+msgid "JNavas"
+msgstr ""
+
+#: TFRMABOUT.LBLOSIPOV.CAPTION
+msgid "Alexey Osipov"
+msgstr ""
+
+#: TFRMABOUT.LBLSCHWARZ.CAPTION
+msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
+msgid "Kyle Schwarz"
+msgstr ""
+
+#: TFRMABOUT.LBLSTOFFBERG.CAPTION
+msgid "Ian Stoffberg"
+msgstr ""
+
+#: TFRMABOUT.LBLURLFFMPEG.CAPTION
+msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
+msgid "http://ffmpeg.org"
+msgstr ""
+
+#: TFRMABOUT.LBLURLWINFFORG.CAPTION
+msgctxt "TFRMABOUT.LBLURLWINFFORG.CAPTION"
+msgid "http://www.winff.org"
+msgstr ""
+
+#: TFRMABOUT.LBLURLZERANOE.CAPTION
+msgid "http://ffmpeg.zeranoe.com"
+msgstr ""
+
+#: TFRMABOUT.LBLWEATHERFORD.CAPTION
+msgid "Matthew Weatherford"
+msgstr ""
+
+#: TFRMABOUT.LBLWINBUILD.CAPTION
+#, fuzzy
+#| msgid "FFmpeg builds by"
+msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
+msgid "FFmpeg Windows Builds by"
+msgstr "FFmpeg hat avakirin ji aliyê"
+
+#: TFRMABOUT.LBLWINFF.CAPTION
+msgid "WinFF %s"
+msgstr ""
+
+#: TFRMABOUT.TABFFMPEG.CAPTION
+#, fuzzy
+#| msgid "FFmpeg"
+msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.TABTHANKS.CAPTION
+msgctxt "TFRMABOUT.TABTHANKS.CAPTION"
 msgid "Thanks"
 msgstr "Spas"
+
+#: TFRMABOUT.TABWINFF.CAPTION
+#, fuzzy
+#| msgid "WinFF"
+msgctxt "TFRMABOUT.TABWINFF.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
@@ -935,16 +954,6 @@ msgstr "Pêl enter bike ku berdewam bikî"
 msgid "Replace Preset?"
 msgstr ""
 
-#: unit1.rsselectdirectory
-#, fuzzy
-#| msgid "Default Destination Directory"
-msgid "Select Directory"
-msgstr "Peldanka armanc a bixweber"
-
-#: unit1.rsselectpresetfile
-msgid "Select Preset File"
-msgstr "Pela Pêşmîheng hilbijêre"
-
 #~| msgid "WinFF"
 #~ msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 #~ msgid "WinFF"
@@ -1003,6 +1012,16 @@ msgstr "Pela Pêşmîheng hilbijêre"
 #~ msgctxt "TFRMMAIN.TABCMDLINESETTINGS.CAPTION"
 #~ msgid "FFmpeg"
 #~ msgstr "FFmpeg"
+#: unit1.rsselectdirectory
+#, fuzzy
+#| msgid "Default Destination Directory"
+msgid "Select Directory"
+msgstr "Peldanka armanc a bixweber"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "Pela Pêşmîheng hilbijêre"
+
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
 msgstr "Pela vîdyoyê hilbijêre"

@@ -17,8 +17,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2012-10-05 19:56+0000\n"
 "X-Generator: Launchpad (build 16061)\n"
 
-#: TFRMABOUT.BUTTON1.CAPTION
-msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#: TFRMABOUT.BTNOK.CAPTION
+msgctxt "TFRMABOUT.BTNOK.CAPTION"
 msgid "OK"
 msgstr "Labi"
 
@@ -27,80 +27,99 @@ msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Par WinFF"
 
-#: TFRMABOUT.LABEL1.CAPTION
-msgid "WinFF 1.3.2"
-msgstr "WinFF 1.3.2"
-
-#: TFRMABOUT.LABEL10.CAPTION
-msgid "http://hawkeye.arrozcru.org/"
-msgstr "http://hawkeye.arrozcru.org/"
-
-#: TFRMABOUT.LABEL11.CAPTION
-msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr "Debian/Ubuntu pakotnes no Paul Gevers"
-
-#: TFRMABOUT.LABEL13.CAPTION
-msgid "Gmaq"
-msgstr "Gmaq"
-
-#: TFRMABOUT.LABEL14.CAPTION
-msgid "High Quality Presets From"
-msgstr "Augstas kvalitātes regulējumi no"
-
-#: TFRMABOUT.LABEL15.CAPTION
-msgid "Icons and Logo by Alex Klepatsch"
-msgstr "Ikonas un logo no Alex Klepatsch"
-
-#: TFRMABOUT.LABEL16.CAPTION
-msgid "JNavas"
-msgstr "JNavas"
-
-#: TFRMABOUT.LABEL2.CAPTION
-msgid "Copyright 2006-2009 GPL V3"
-msgstr "Autortiesības 2006-2009 GPL V3"
-
-#: TFRMABOUT.LABEL3.CAPTION
-msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-msgstr "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-
-#: TFRMABOUT.LABEL4.CAPTION
-msgid "http://www.winff.org"
-msgstr "http://www.winff.org"
-
-#: TFRMABOUT.LABEL5.CAPTION
-msgctxt "TFRMABOUT.LABEL5.CAPTION"
-msgid "FFmpeg"
-msgstr "FFmpeg"
-
-#: TFRMABOUT.LABEL6.CAPTION
+#: TFRMABOUT.LBLBELLARD.CAPTION
+msgctxt "TFRMABOUT.LBLBELLARD.CAPTION"
 msgid "Trademark Fabrice Belllard"
 msgstr "Preču zīme Fabrice Belllard"
 
-#: TFRMABOUT.LABEL7.CAPTION
-msgid "http://ffmpeg.org"
-msgstr "http://ffmpeg.org"
+#: TFRMABOUT.LBLCOPYRIGHT.CAPTION
+msgid "Copyright %s ; Licence: GPL V3+"
+msgstr ""
 
-#: TFRMABOUT.LABEL8.CAPTION
-msgid "FFmpeg Windows Builds by"
-msgstr "FFmpeg Windows pakotnes no"
-
-#: TFRMABOUT.LABEL9.CAPTION
-msgid "Kyle Schwarz"
-msgstr "Kyle Schwarz"
-
-#: TFRMABOUT.PAGE1.CAPTION
-msgctxt "TFRMABOUT.PAGE1.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
-#: TFRMABOUT.PAGE2.CAPTION
-msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#: TFRMABOUT.LBLFFMEG.CAPTION
+msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: TFRMABOUT.PAGE3.CAPTION
+#: TFRMABOUT.LBLGEVERS.CAPTION
+msgctxt "TFRMABOUT.LBLGEVERS.CAPTION"
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr "Debian/Ubuntu pakotnes no Paul Gevers"
+
+#: TFRMABOUT.LBLGMAQ.CAPTION
+msgctxt "TFRMABOUT.LBLGMAQ.CAPTION"
+msgid "Gmaq"
+msgstr "Gmaq"
+
+#: TFRMABOUT.LBLHQPRESETS.CAPTION
+msgctxt "TFRMABOUT.LBLHQPRESETS.CAPTION"
+msgid "High Quality Presets From"
+msgstr "Augstas kvalitātes regulējumi no"
+
+#: TFRMABOUT.LBLKLEPATSCH.CAPTION
+msgctxt "TFRMABOUT.LBLKLEPATSCH.CAPTION"
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr "Ikonas un logo no Alex Klepatsch"
+
+#: TFRMABOUT.LBLNAVAS.CAPTION
+msgctxt "TFRMABOUT.LBLNAVAS.CAPTION"
+msgid "JNavas"
+msgstr "JNavas"
+
+#: TFRMABOUT.LBLOSIPOV.CAPTION
+msgid "Alexey Osipov"
+msgstr ""
+
+#: TFRMABOUT.LBLSCHWARZ.CAPTION
+msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
+msgid "Kyle Schwarz"
+msgstr "Kyle Schwarz"
+
+#: TFRMABOUT.LBLSTOFFBERG.CAPTION
+msgid "Ian Stoffberg"
+msgstr ""
+
+#: TFRMABOUT.LBLURLFFMPEG.CAPTION
+msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
+msgid "http://ffmpeg.org"
+msgstr "http://ffmpeg.org"
+
+#: TFRMABOUT.LBLURLWINFFORG.CAPTION
+msgctxt "TFRMABOUT.LBLURLWINFFORG.CAPTION"
+msgid "http://www.winff.org"
+msgstr "http://www.winff.org"
+
+#: TFRMABOUT.LBLURLZERANOE.CAPTION
+msgid "http://ffmpeg.zeranoe.com"
+msgstr ""
+
+#: TFRMABOUT.LBLWEATHERFORD.CAPTION
+msgid "Matthew Weatherford"
+msgstr ""
+
+#: TFRMABOUT.LBLWINBUILD.CAPTION
+msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
+msgid "FFmpeg Windows Builds by"
+msgstr "FFmpeg Windows pakotnes no"
+
+#: TFRMABOUT.LBLWINFF.CAPTION
+msgid "WinFF %s"
+msgstr ""
+
+#: TFRMABOUT.TABFFMPEG.CAPTION
+msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: TFRMABOUT.TABTHANKS.CAPTION
+msgctxt "TFRMABOUT.TABTHANKS.CAPTION"
 msgid "Thanks"
 msgstr "Paldies"
+
+#: TFRMABOUT.TABWINFF.CAPTION
+msgctxt "TFRMABOUT.TABWINFF.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
