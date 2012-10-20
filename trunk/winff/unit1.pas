@@ -1696,7 +1696,8 @@ end;
 // menu: edit preferences
 procedure TfrmMain.mitPreferencesClick(Sender: TObject);
 begin
-frmPreferences.show;
+  frmPreferences.FormCreate(Sender) ;
+  frmPreferences.show;
 end;
 
 //menu: help documentation
