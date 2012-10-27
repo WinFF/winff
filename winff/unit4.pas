@@ -71,6 +71,9 @@ type
     pnlLinTerminalExe: TPanel;
     pnlBottom: TPanel;
     prioritybox: TComboBox;
+    sbGeneral: TScrollBox;
+    sbWindows: TScrollBox;
+    sbLinux: TScrollBox;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     tabGeneral: TTabSheet;
     tabWindows: TTabSheet;
