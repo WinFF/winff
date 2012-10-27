@@ -59,6 +59,7 @@ type
     pnlTop: TPanel;
     pnlBottom: TPanel;
     SaveDialog1: TSaveDialog;
+    sbPresets: TScrollBox;
     Splitter1: TSplitter;
     XMLConfig1: TXMLConfig;
     procedure addpresetbtnClick(Sender: TObject);
