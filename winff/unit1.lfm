@@ -1453,6 +1453,34 @@ object frmMain: TfrmMain
             TabOrder = 0
           end
         end
+        object rgRotate: TRadioGroup
+          Left = 435
+          Height = 182
+          Top = 0
+          Width = 171
+          Align = alLeft
+          AutoFill = False
+          AutoSize = True
+          Caption = 'Rotation'
+          ChildSizing.LeftRightSpacing = 6
+          ChildSizing.TopBottomSpacing = 6
+          ChildSizing.ShrinkHorizontal = crsScaleChilds
+          ChildSizing.ShrinkVertical = crsScaleChilds
+          ChildSizing.Layout = cclLeftToRightThenTopToBottom
+          ChildSizing.ControlsPerLine = 1
+          ClientHeight = 164
+          ClientWidth = 167
+          ItemIndex = 0
+          Items.Strings = (
+            'None'
+            '90 deg right'
+            '90 deg left'
+            '90 deg right + vertical flip'
+            '90 deg left + vertical flip'
+          )
+          OnSelectionChanged = AllowChanges
+          TabOrder = 4
+        end
       end
       object TabSheet2: TTabSheet
         Caption = 'Audio'

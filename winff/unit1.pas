@@ -145,6 +145,7 @@ type
     mnuFile: TMenuItem;
     MainMenu1: TMainMenu;
     PresetBox: TComboBox;
+    rgRotate: TRadioGroup;
     //dlgOpenFile: TOpenDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     btnConvert: TBitBtn;
@@ -312,6 +313,7 @@ type
     FirstPass : String;
     SecondPass : String;
     CMDLineParams : String;
+    Rotation : Integer;
   end;
 
 
@@ -1004,6 +1006,7 @@ begin
                     FirstPass := memFirstPass.text;
                     SecondPass := memSecondPass.text;
                     CMDLineParams := commandlineparams.text;
+                    Rotation := rgRotate.ItemIndex;
                   end;
 
            end;
@@ -1497,6 +1500,7 @@ begin
     RecordHour := 0;
     RecordMinute := 0;
     RecordSecond := 0;
+    Rotation := 0;
     //FirstPass := ''
     //SecondPass := ''
   end;
@@ -1536,6 +1540,8 @@ begin
     memFirstPass.text := FirstPass;
     memSecondPass.text := SecondPass;
     commandlineparams.text := CMDLineParams;
+    rgRotate.itemindex := Rotation;
+    filelist.itemindex := vIndex;
   end;
   pnlAllow.visible := false;
 end;
@@ -2442,22 +2448,6 @@ begin
 
                                              // trim everything up
        commandlineparams.text := trim(commandlineparams.Text);
-//1.4
-{      vidbitrate.Text := trim(vidbitrate.Text);
-       vidframerate.text := trim(vidframerate.Text);
-       VidsizeX.text := trim(VidsizeX.Text);
-       VidsizeY.text := trim(VidsizeY.Text);
-       edtAspectRatio.Text := trim(edtAspectRatio.text);
-}
-//1.5 TODO - very careful about this - must ensure these values are always available
- {      vidbitrate.Text := trim(scr[vindex].VideoBR);
-       vidframerate.text := trim(scr[vindex].VideoFR);
-       VidsizeX.text := trim(scr[vindex].VSizeX);
-       VidsizeY.text := trim(scr[vindex].VSizeY);
-       edtAspectRatio.Text := trim(scr[vindex].VAspect);
-       cbx2Pass.checked := scr[vindex].V2Pass;
-       cbxDeinterlace.Checked := scr[vindex].VDeinterlace;
-}
        if multithreading='true' then
        begin
          numthreads := trim(getconfigvalue('general/numberofthreads'));
@@ -2471,30 +2461,6 @@ begin
 
 
 
- {
- // 1.4
-       audbitrate.Text := trim(audbitrate.Text);
-       audsamplingrate.Text := trim(audsamplingrate.Text);
-       audchannels.Text:=trim(audchannels.Text);
-       edtCropBottom.Text:=trim(edtCropbottom.text);
-       edtCropTop.Text:=trim(edtCropTop.text);
-       edtCropleft.Text:=trim(edtCropleft.text);
-       edtCropright.Text:=trim(edtCropright.text);
-       edtVolume.Text:=trim(edtVolume.Text);
-       edtAudioSync.Text:=trim(edtAudioSync.Text);
-}
-{
-// 1.5  Same as previous.  very careful todo
-        audbitrate.Text := trim(scr[vindex].ABitRate);
-        audsamplingrate.Text := trim(scr[vindex].ASampleRate);
-        audchannels.Text:=trim(scr[vindex].AChannels);
-        edtVolume.Text:=trim(scr[vindex].AVolume);
-        edtAudioSync.Text:=trim(scr[vindex].ASync);
-        edtCropBottom.Text:=trim(scr[vindex].CropBottom);
-        edtCropTop.Text:=trim(scr[vindex].CropTop);
-        edtCropleft.Text:=trim(scr[vindex].CropLeft);
-        edtCropright.Text:=trim(scr[vindex].CropRight);
-}
        // replace preset params if mnuOptions specified
        commandline := params;
        precommand := '';
@@ -2614,6 +2580,13 @@ begin
          commandline:=replaceparam(commandline,'-t','');
          precommand+=' -t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text;
        end;
+       // 1.5  Insert Video Rotate
+       case rgRotate.ItemIndex of
+         1: commandline := commandline + ' -vf transpose=1 ';
+         2: commandline := commandline + ' -vf transpose=2 ';
+         3: commandline := commandline + ' -vf transpose=0 ';
+         4: commandline := commandline + ' -vf transpose=3 ';
+       end;
 
 
        if commandlineparams.Text <> '' then
@@ -2713,6 +2686,7 @@ begin
                     RecordSecond  := edtTTRSS.Value;
                     FirstPass:= memFirstPass.Text;
                     SecondPass := memSecondPass.Text;
+                    Rotation := rgRotate.ItemIndex ;
                   end;
            end;
        end;
