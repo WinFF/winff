@@ -49,8 +49,6 @@ type
     cbxDeinterlace: TCheckBox;
     ChooseFolderBtn: TButton;
     commandlineparams: TEdit;
-    commandlineparams1: TEdit;
-    commandlineparams2: TEdit;
     DestFolder: TEdit;
     edtAspectRatio: TEdit;
     edtAudioSync: TEdit;
@@ -176,7 +174,6 @@ type
     procedure categoryboxChange(Sender: TObject);
     procedure cbOutputPathChange(Sender: TObject);
     procedure AllowChanges(Sender: TObject);
-    procedure DestFolderChange(Sender: TObject);
     procedure edtCropBottomChange(Sender: TObject);
     procedure edtCropLeftChange(Sender: TObject);
     procedure edtCropRightChange(Sender: TObject);
@@ -314,6 +311,7 @@ type
     RecordSecond : Integer;
     FirstPass : String;
     SecondPass : String;
+    CMDLineParams : String;
   end;
 
 
@@ -875,10 +873,6 @@ begin
      end;
 end;
 
-procedure TfrmMain.DestFolderChange(Sender: TObject);
-begin
-
-end;
 
 // cropbootom change
 procedure TfrmMain.edtCropBottomChange(Sender: TObject);
@@ -1009,6 +1003,7 @@ begin
                     RecordSecond  := edtTTRSS.Value;
                     FirstPass := memFirstPass.text;
                     SecondPass := memSecondPass.text;
+                    CMDLineParams := commandlineparams.text;
                   end;
 
            end;
@@ -1409,19 +1404,30 @@ var
 numfiles, i:integer;
 s,u : string;
 begin
-numfiles := high(Filenames);
-for i:= 0 to numfiles do
-begin
-   s :=FileNames[i]; // fix for 1.4 (was using filenames from filelistbox)
-   u := s;
-   //t := GetFileInfo(u); // 1.4 not needed now
-   filelist.items.Add(s);
-   DestinationList.Add(DestFolder.text);
-   CategoryList.add(categorybox.Text);
-   PresetList.add(PresetBox.Text);
-   FileInfoList.add(u);
-   GenerateCommandLines(i);
-end;
+  numfiles := high(Filenames);
+  for i:= 0 to numfiles do
+  begin
+     s :=FileNames[i]; // fix for 1.4 (was using filenames from filelistbox)
+     u := s;
+     //t := GetFileInfo(u); // 1.4 not needed now
+     filelist.items.Add(s);
+     DestinationList.Add(DestFolder.text);
+     CategoryList.add(categorybox.Text);
+     PresetList.add(PresetBox.Text);
+     FileInfoList.add(u);
+
+
+     SetSCR(FileList.Count -1 ); // first time to save the parameters to the array (SCR)
+     GenerateCommandLines(FileList.Count -1);
+     SaveChangedOptions; // second time to save the command lines to the array (SCR)
+     filelist.itemindex := FileList.Count -1;
+     GenerateCommandLines(filelist.Count -1);
+  end;
+  if filelist.itemindex > -1 then
+  begin
+     filelist.itemindex := FileList.Count -1 // select most recently added job
+  end;
+  pnlAllow.Visible := False;
 end;
 
 // add files to the list
@@ -1529,6 +1535,7 @@ begin
     edtTTRSS.Value := RecordSecond ;
     memFirstPass.text := FirstPass;
     memSecondPass.text := SecondPass;
+    commandlineparams.text := CMDLineParams;
   end;
   pnlAllow.visible := false;
 end;
@@ -2632,7 +2639,7 @@ begin
        // this next bit removes any duplicate filenames from the queue and makes them unique
        outputfilename := destfolder.Text + DirectorySeparator + basename +'.' + extension;
        i :=1;
-       for j := 0 to vIndex DO
+       for j := 0 to vIndex -1 DO
        begin
          if outputfilename = scr[j].OutputFileName then
          begin
@@ -2661,6 +2668,7 @@ begin
           end;
           scr[vIndex].outputfilename := outputfilename;
        result := '';
+       Application.ProcessMessages;
 end;
 
 procedure TfrmMain.SaveChangedOptions;
@@ -2680,6 +2688,7 @@ begin
                   begin
                     memFirstPass.Text := FirstPass;
                     MemSecondPass.Text := SecondPass;
+                    CommandLineParams.Text := CMDlineparams;
                     VideoBR := VidBitRate.Text;
                     VideoFR := VidFrameRate.Text;
                     VSizeX := VidSizeX.Text;
