@@ -1965,7 +1965,7 @@ var  scriptprocess:tprocess;
      scriptpriority:tprocesspriority;
      script: tstringlist;
      thetime: tdatetime;
-     i,resmod : integer;
+     i,j,resmod : integer;
 
 begin                                     // get setup
    scriptprocess:= TProcess.Create(nil);
@@ -2015,6 +2015,10 @@ begin                                     // get setup
 
    for i:=0 to filelist.Items.Count - 1 do
      begin
+       if preview then
+       begin
+          if i <> filelist.ItemIndex then continue;
+       end;
        filename := filelist.items[i];
        basename := extractfilename(filename);
 
@@ -2049,6 +2053,14 @@ begin                                     // get setup
           end;
        if preview then
          begin
+           for j:= length(basename) downto 1  do
+           begin
+             if basename[j] = #46 then
+                begin
+                  basename := leftstr(basename,j-1);
+                  break;
+                end;
+           end;
          script.add(ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');
          break;
          end;
