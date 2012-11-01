@@ -2594,10 +2594,10 @@ begin
        end;
        // 1.5  Insert Video Rotate
        case rgRotate.ItemIndex of
-         1: commandline := commandline + ' -vf transpose=1 ';
-         2: commandline := commandline + ' -vf transpose=2 ';
-         3: commandline := commandline + ' -vf transpose=0 ';
-         4: commandline := commandline + ' -vf transpose=3 ';
+         1: commandline := replacevfparam(commandline,'transpose','transpose=1');
+         2: commandline := replacevfparam(commandline,'transpose','transpose=2');
+         3: commandline := replacevfparam(commandline,'transpose','transpose=0');
+         4: commandline := replacevfparam(commandline,'transpose','transpose=3');
        end;
 
 
