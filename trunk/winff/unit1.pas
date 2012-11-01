@@ -2172,7 +2172,7 @@ end;
 function TfrmMain.replaceVfParam(commandline:string; param:string; replacement:string):string;
 var
 startPos, endPos, startSub, endSub, strlen: integer ;
-paramString: string ;
+orig,paramString: string ;
 
   begin
    startpos := Pos(' -vf ', commandline) + 5;
@@ -2195,6 +2195,7 @@ paramString: string ;
    else
        commandline += ' -vf ' + replacement;
    result := commandline;
+
   end;
 
 procedure TfrmMain.TabControlChange(Sender: TObject);
@@ -2385,7 +2386,7 @@ end;
 function tfrmMain.GenerateCommandLines(vIndex : integer) : string;
 var i,j : integer;
 cb,ct,cl,cr:integer;
-category, pn, params, cropline, precommand, command, passlogfile:string;
+pn, params, cropline, precommand, command, passlogfile:string;
 ignorepreview:boolean;
 outputfilename, ffmpegfilename, extension, basename,filename,commandline : string;
 deinterlace, numthreads, nullfile, usethreads : string;
@@ -2442,7 +2443,7 @@ begin
        // Example Preset Definition
 
        //
-
+       {
        if category = 'Utilities' then
           begin
                params := StringReplace (params,'winff_input_filename', filelist.items[vIndex],[rfReplaceAll, rfIgnoreCase]);
@@ -2455,6 +2456,7 @@ begin
                scr[vIndex].SecondPass := '';
                exit
           end;
+       }
        extension:=getpresetextension(pn);
 //     1.5 alpha (delete this later)
 
@@ -2592,6 +2594,7 @@ begin
          commandline:=replaceparam(commandline,'-t','');
          precommand+=' -t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text;
        end;
+
        // 1.5  Insert Video Rotate
        case rgRotate.ItemIndex of
          1: commandline := replacevfparam(commandline,'transpose','transpose=1');
