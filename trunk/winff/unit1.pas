@@ -107,14 +107,17 @@ type
     mitForums: TMenuItem;
     MenuItem9: TMenuItem;
     dlgOpenPreset: TOpenDialog;
+    sbAudio: TScrollBox;
     Panel1: TPanel;
     Panel10: TPanel;
+    sbCrop: TScrollBox;
     Panel11: TPanel;
     Panel12: TPanel;
     Panel13: TPanel;
     Panel17: TPanel;
     Panel18: TPanel;
     pnlAllow: TPanel;
+    sbVideo: TScrollBox;
     Panel2: TPanel;
     Panel20: TPanel;
     Panel3: TPanel;
@@ -122,10 +125,12 @@ type
     Panel5: TPanel;
     Panel6: TPanel;
     Panel7: TPanel;
+    sbCommand: TScrollBox;
     Panel8: TPanel;
+    sbTime: TScrollBox;
     Panel9: TPanel;
     pgSettings: TPageControl;
-    pnlbottom: TPanel;
+    sbBottom: TScrollBox;
     PopupMenu1: TPopupMenu;
     pnlTop: TPanel;
     btnPlay: TBitBtn;
@@ -2399,7 +2404,7 @@ begin
    {$ifdef win32}nullfile:='"NUL.avi"';{$endif}
    {$ifdef unix}nullfile:='/dev/null';{$endif}
        pn:=getcurrentpresetname(presetbox.Text);
-       category := getpresetcategory(pn);
+//     category := getpresetcategory(pn);
        params:=getpresetparams(pn);
 
 

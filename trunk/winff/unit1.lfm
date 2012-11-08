@@ -1037,14 +1037,14 @@ object frmMain: TfrmMain
         Caption = 'Output Details'
         ClientHeight = 182
         ClientWidth = 632
-        object pnlbottom: TPanel
+        object sbBottom: TScrollBox
           Left = 0
           Height = 182
           Top = 0
           Width = 632
           Align = alClient
           AutoSize = True
-          BevelOuter = bvNone
+          BorderStyle = bsNone
           ClientHeight = 182
           ClientWidth = 632
           ParentColor = False
@@ -1195,6 +1195,10 @@ object frmMain: TfrmMain
         Caption = 'Video'
         ClientHeight = 182
         ClientWidth = 632
+	object sbVideo: TScrollBox
+          AutoSize = True
+          Align = alClient
+          BorderStyle = bsNone
         object Panel2: TPanel
           Left = 5
           Height = 182
@@ -1478,14 +1482,18 @@ object frmMain: TfrmMain
             '90 deg right + vertical flip'
             '90 deg left + vertical flip'
           )
-          OnSelectionChanged = AllowChanges
           TabOrder = 4
+        end
         end
       end
       object TabSheet2: TTabSheet
         Caption = 'Audio'
         ClientHeight = 178
         ClientWidth = 710
+        object sbAudio: TScrollBox
+          Align = alClient
+          AutoSize = True
+          BorderStyle = bsNone
         object Panel1: TPanel
           Left = 5
           Height = 178
@@ -1679,11 +1687,16 @@ object frmMain: TfrmMain
             TabOrder = 0
           end
         end
+        end
       end
       object TabSheet3: TTabSheet
         Caption = 'Crop'
         ClientHeight = 182
         ClientWidth = 632
+        object sbCrop: TScrollBox
+          Align = alClient
+          AutoSize = True
+          BorderStyle = bsNone
         object Panel11: TPanel
           Left = 0
           Height = 182
@@ -1912,11 +1925,16 @@ object frmMain: TfrmMain
             Wrap = False
           end
         end
+	end
       end
       object TabSheet4: TTabSheet
         Caption = 'Time'
         ClientHeight = 182
         ClientWidth = 632
+        object sbTime: TScrollBox
+          Align = alClient
+          AutoSize = True
+          BorderStyle = bsNone
         object Panel9: TPanel
           Left = 0
           Height = 182
@@ -2078,11 +2096,16 @@ object frmMain: TfrmMain
             TabOrder = 5
           end
         end
+        end
       end
       object TabSheet5: TTabSheet
         Caption = 'FFmpeg'
         ClientHeight = 182
         ClientWidth = 632
+        object sbCommand: TScrollBox
+          Align = alClient
+          AutoSize = True
+          BorderStyle = bsNone
         object Panel8: TPanel
           Left = 5
           Height = 182
@@ -2158,6 +2181,7 @@ object frmMain: TfrmMain
             ParentColor = False
           end
         end
+      end
       end
     end
     object pnlAllow: TPanel
