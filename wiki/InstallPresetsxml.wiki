@@ -7,7 +7,7 @@ Be aware that the procedure described here removes customization of our presets,
 
 = Individual users =
 
-To install the new presets for the current user, unzip/untar the downloaded file, (if necessary) rename it have the extension ".wff" and import it into winff by:
+To install the new presets for the current user, unzip/untar the downloaded file, (if necessary) rename it have the extension ".wff" and import it into winff by *one* of the following procedures:
   * File -> "Import preset" and select the file in the pop-up window.
   * Selecting the file in a file browser.
   * Edit -> "Edit presets", press "Import" in the pop up window, and select the file in the next pop-up window.
