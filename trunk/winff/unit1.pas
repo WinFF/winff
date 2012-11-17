@@ -47,6 +47,10 @@ type
     cbOutputPath: TCheckBox;
     cbx2Pass: TCheckBox;
     cbxDeinterlace: TCheckBox;
+    cbLeft: TCheckBox;
+    cbRight: TCheckBox;
+    cbRightFlip: TCheckBox;
+    cbLeftFlip: TCheckBox;
     ChooseFolderBtn: TButton;
     commandlineparams: TEdit;
     DestFolder: TEdit;
@@ -68,6 +72,7 @@ type
     Label12: TLabel;
     Label19: TLabel;
     Label6: TLabel;
+    lblRotate: TLabel;
     lblSaveChanges: TLabel;
     Label20: TLabel;
     Label21: TLabel;
@@ -107,6 +112,7 @@ type
     mitForums: TMenuItem;
     MenuItem9: TMenuItem;
     dlgOpenPreset: TOpenDialog;
+    Panel14: TPanel;
     sbAudio: TScrollBox;
     Panel1: TPanel;
     Panel10: TPanel;
@@ -150,7 +156,6 @@ type
     mnuFile: TMenuItem;
     MainMenu1: TMainMenu;
     PresetBox: TComboBox;
-    rgRotate: TRadioGroup;
     //dlgOpenFile: TOpenDialog;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     btnConvert: TBitBtn;
@@ -178,8 +183,12 @@ type
     procedure btnApplyDestinationClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure categoryboxChange(Sender: TObject);
+    procedure cbLeftChange(Sender: TObject);
+    procedure cbLeftFlipChange(Sender: TObject);
     procedure cbOutputPathChange(Sender: TObject);
     procedure AllowChanges(Sender: TObject);
+    procedure cbRightChange(Sender: TObject);
+    procedure cbRightFlipChange(Sender: TObject);
     procedure edtCropBottomChange(Sender: TObject);
     procedure edtCropLeftChange(Sender: TObject);
     procedure edtCropRightChange(Sender: TObject);
@@ -232,6 +241,7 @@ type
     procedure Panel14Click(Sender: TObject);
     procedure PopupMenu1Popup(Sender: TObject);
     procedure PresetBoxChange(Sender: TObject);
+    procedure rgRotateClick(Sender: TObject);
     procedure SelectDirectoryDialog1FolderChange(Sender: TObject);
     procedure setconfigvalue(key:string;value:string);
     function getconfigvalue(key:string):string;
@@ -250,7 +260,7 @@ type
     procedure TabControlChange(Sender: TObject);
     function GetFileInfo(var filedetails : string) : string;
     function GenerateCommandLines(vIndex : integer) : string;
-    procedure SaveChangedOptions;
+    procedure SaveChangedOptions(vOption : integer);
     {$IFDEF WIN32}function GetWin32System(): Integer;{$endif}
     procedure SetSCR(vIndex : integer);
     procedure GetSCR(vIndex : integer);
@@ -862,6 +872,28 @@ begin
   presetbox.sorted:=false;
 end;
 
+procedure TfrmMain.cbLeftChange(Sender: TObject);
+begin
+  if cbLeft.Checked = true then
+  begin
+       cbRight.Checked:=False;
+       cbLeftFlip.Checked :=False;
+       cbRightFlip.checked := false;
+  end;
+  pnlAllow.visible := true;
+end;
+
+procedure TfrmMain.cbLeftFlipChange(Sender: TObject);
+begin
+    if cbLeftFlip.Checked = true then
+  begin
+       cbRight.Checked:=False;
+       cbLeft.Checked :=False;
+       cbRightFlip.checked := false;
+  end;
+  pnlAllow.visible := true;
+end;
+
 procedure TfrmMain.cbOutputPathChange(Sender: TObject);
 begin
   // coded by Ian Stoffberg - Issue 125
@@ -878,6 +910,28 @@ begin
      begin
        pnlAllow.Visible := True;
      end;
+end;
+
+procedure TfrmMain.cbRightChange(Sender: TObject);
+begin
+  if cbRight.Checked = true then
+  begin
+       cbLeftFlip.Checked:=False;
+       cbLeft.Checked :=False;
+       cbRightFlip.checked := false;
+  end;
+  pnlAllow.visible := true;
+end;
+
+procedure TfrmMain.cbRightFlipChange(Sender: TObject);
+begin
+  if cbRightFlip.Checked = true then
+  begin
+       cbRight.Checked:=False;
+       cbLeft.Checked :=False;
+       cbLeftFlip.checked := false;
+  end;
+  pnlAllow.visible := true;
 end;
 
 
@@ -1011,7 +1065,12 @@ begin
                     FirstPass := memFirstPass.text;
                     SecondPass := memSecondPass.text;
                     CMDLineParams := commandlineparams.text;
-                    Rotation := rgRotate.ItemIndex;
+                    rotation := 0;
+                    if cbleft.Checked then rotation := 1;
+                    if cbright.Checked then rotation := 2;
+                    if cbleftflip.Checked then rotation := 3;
+                    if cbrightflip.Checked then rotation := 4;
+                    //'Rotation := rgRotate.ItemIndex;
                   end;
 
            end;
@@ -1066,6 +1125,11 @@ begin
   destfolder.text := getconfigvalue('general/destfolder');
   if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
   pnlAllow.Visible:=True;
+end;
+
+procedure TfrmMain.rgRotateClick(Sender: TObject);
+begin
+
 end;
 
 procedure TfrmMain.SelectDirectoryDialog1FolderChange(Sender: TObject);
@@ -1427,7 +1491,7 @@ begin
 
      SetSCR(FileList.Count -1 ); // first time to save the parameters to the array (SCR)
      GenerateCommandLines(FileList.Count -1);
-     SaveChangedOptions; // second time to save the command lines to the array (SCR)
+     SaveChangedOptions(0); // second time to save the command lines to the array (SCR)
      filelist.itemindex := FileList.Count -1;
      GenerateCommandLines(filelist.Count -1);
   end;
@@ -1466,7 +1530,7 @@ begin
             FileInfoList.add(u);
             SetSCR(FileList.Count -1 ); // first time to save the parameters to the array (SCR)
             GenerateCommandLines(FileList.Count -1);
-            SaveChangedOptions; // second time to save the command lines to the array (SCR)
+            SaveChangedOptions(0); // second time to save the command lines to the array (SCR)
             filelist.itemindex := FileList.Count -1
           end;
           //filelist.items.AddStrings(dlgOpenFile.Files);
@@ -1545,7 +1609,13 @@ begin
     memFirstPass.text := FirstPass;
     memSecondPass.text := SecondPass;
     commandlineparams.text := CMDLineParams;
-    rgRotate.itemindex := Rotation;
+    //'rgRotate.itemindex := Rotation;
+    case rotation of
+      1 : cbLeft.checked := true;
+      2 : cbRight.checked := true;
+      3 : cbLeftFlip.checked := true;
+      4 : cbRightFlip.checked := true;
+    end;
     filelist.itemindex := vIndex;
   end;
   pnlAllow.visible := false;
@@ -1694,7 +1764,14 @@ end;
 
 procedure TfrmMain.lblSaveChangesClick(Sender: TObject);
 begin
-     SaveChangedOptions;
+     if  pgSettings.ActivePageIndex = 5 then
+      begin
+            SaveChangedOptions(1);
+      end
+     else
+     begin
+            SaveChangedOptions(0);
+     end;
 end;
 
 procedure TfrmMain.lblCancelChangesClick(Sender: TObject);
@@ -2210,7 +2287,8 @@ begin
     methods for each control or we have this method which does some
     unnecessary work instead, but is easier to maintain?
 }
-    if pgSettings.ActivePage = TabVideo then
+//  replaced by ApplyChanges.
+{    if pgSettings.ActivePage = TabVideo then
      begin;
        scr[filelist.ItemIndex].VideoBR:= Vidbitrate.text;
        scr[filelist.ItemIndex].VideoFR:= Vidframerate.text;
@@ -2219,7 +2297,7 @@ begin
        scr[filelist.ItemIndex].VAspect:= edtAspectRatio.text;
        scr[filelist.ItemIndex].V2Pass:= cbx2Pass.Checked;
        scr[filelist.ItemIndex].VDeinterlace:= cbxDeinterlace.Checked;
-     end;
+     end;}
 end;
 
 // import a preset from a file
@@ -2601,13 +2679,10 @@ begin
        end;
 
        // 1.5  Insert Video Rotate
-       case rgRotate.ItemIndex of
-         1: commandline := replacevfparam(commandline,'transpose','transpose=1');
-         2: commandline := replacevfparam(commandline,'transpose','transpose=2');
-         3: commandline := replacevfparam(commandline,'transpose','transpose=0');
-         4: commandline := replacevfparam(commandline,'transpose','transpose=3');
-       end;
-
+        if cbleft.Checked then commandline := replacevfparam(commandline,'transpose','transpose=1');
+        if cbright.Checked then commandline := replacevfparam(commandline,'transpose','transpose=2');
+        if cbleftflip.Checked then commandline := replacevfparam(commandline,'transpose','transpose=0');
+        if cbrightflip.Checked then commandline := replacevfparam(commandline,'transpose','transpose=3');
 
        if commandlineparams.Text <> '' then
                commandline += ' ' + commandlineparams.text;
@@ -2664,14 +2739,27 @@ begin
        Application.ProcessMessages;
 end;
 
-procedure TfrmMain.SaveChangedOptions;
+procedure TfrmMain.SaveChangedOptions(vOption : integer);
 var i : integer;
 begin
 // Apply Changes;
+// if the advanced options page is active when we hit ApplyChanges
+// we only save the settings without recalculating the CommandLine
+
  for i := 0 to filelist.Count -1 do
        begin
          if filelist.Selected[i] = true then
            begin
+             if vOption = 1 then
+               begin
+               With Scr[i] do
+               begin
+                 FirstPass:= memFirstPass.Text;
+                 SecondPass := memSecondPass.Text;
+                 CMDlineparams := CommandLineParams.Text;
+               end; // with Scr
+               end else
+               begin
                    DestinationList.Strings[i] := DestFolder.Text;
                    CategoryList.Strings[i] := categorybox.Text;
                    PresetList.Strings[i] := PresetBox.Text;
@@ -2681,7 +2769,7 @@ begin
                   begin
                     memFirstPass.Text := FirstPass;
                     MemSecondPass.Text := SecondPass;
-                    CommandLineParams.Text := CMDlineparams;
+                    //'CommandLineParams.Text := CMDlineparams;
                     VideoBR := VidBitRate.Text;
                     VideoFR := VidFrameRate.Text;
                     VSizeX := VidSizeX.Text;
@@ -2706,8 +2794,15 @@ begin
                     RecordSecond  := edtTTRSS.Value;
                     FirstPass:= memFirstPass.Text;
                     SecondPass := memSecondPass.Text;
-                    Rotation := rgRotate.ItemIndex ;
-                  end;
+                    CMDlineparams := CommandLineParams.Text;
+                    //'Rotation := rgRotate.ItemIndex ;
+                    rotation := 0;
+                    if cbleft.Checked then rotation := 1;
+                    if cbright.Checked then rotation := 2;
+                    if cbleftflip.Checked then rotation := 3;
+                    if cbrightflip.Checked then rotation := 4;
+                  end; // with Scr
+               end; // if vOption = 5
            end;
        end;
      pnlAllow.Visible:= False;
