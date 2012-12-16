@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2012-10-05 16:16+0000\n"
+"POT-Creation-Date: 2012-10-05 21:26+0200\n"
+"PO-Revision-Date: 2012-12-11 18:05+0000\n"
 "Last-Translator: tuxmaniack <Unknown>\n"
 "Language-Team: Latvian <lv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-10-05 19:56+0000\n"
-"X-Generator: Launchpad (build 16061)\n"
+"X-Launchpad-Export-Date: 2012-12-16 08:53+0000\n"
+"X-Generator: Launchpad (build 16372)\n"
 
 #: TFRMABOUT.BTNOK.CAPTION
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -152,7 +152,7 @@ msgstr "Neietveriet punktu"
 
 #: TFRMEDITPRESETS.EDIT5.HINT
 msgid "Choose a category to group this preset under"
-msgstr "Izvēlieties kategoriju priekš šī regulējuma"
+msgstr "Izvēlieties kategoriju, kurā būs šis regulējums"
 
 #: TFRMEDITPRESETS.EXPORT.CAPTION
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
@@ -162,7 +162,7 @@ msgstr "Eksportēt"
 #: TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION
 msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
 msgid "Edit Presets"
-msgstr "Labot regulējumus"
+msgstr "Rediģēt regulējumus"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
@@ -178,7 +178,7 @@ msgstr "Regulējuma vārds (viens vārds, tikai burti un cipari)"
 
 #: TFRMEDITPRESETS.LABEL3.CAPTION
 msgid "Preset Label"
-msgstr "Regulējuma nosaukums"
+msgstr "Regulējuma etiķete"
 
 #: TFRMEDITPRESETS.LABEL4.CAPTION
 msgid "Preset Command Line Parameters (no -i or output file)"
@@ -266,11 +266,11 @@ msgstr "Sākt pārveidošanas procesu"
 #: TFRMMAIN.BTNOPTIONS.CAPTION
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr "Iespējas"
+msgstr "Opcijas"
 
 #: TFRMMAIN.BTNOPTIONS.HINT
 msgid "Open/close the additional options window"
-msgstr "Rādīt/slēpt papildu iespēju cilnes"
+msgstr "Rādīt/slēpt papildu opciju cilnes"
 
 #: TFRMMAIN.BTNPLAY.CAPTION
 msgid "Play"
@@ -315,7 +315,7 @@ msgstr "Izmantojot 2 reizes, kodētājs saņems informāciju no pirmās reizes, 
 
 #: TFRMMAIN.CBXDEINTERLACE.CAPTION
 msgid "Deinterlace"
-msgstr "Deinterlace"
+msgstr "Novērst rindpārleci"
 
 #: TFRMMAIN.CBXDEINTERLACE.HINT
 msgid "Removes interlacing from the video (if necessary)"
@@ -328,7 +328,7 @@ msgstr "..."
 
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "Pārveidotā faila atrašanās vieta (izvēlieties citu mapi, ne avota)"
+msgstr "Pārveidotā faila atrašanās vieta (izvēlieties citu, ne avota mapi)"
 
 #: TFRMMAIN.DLGOPENFILE.TITLE
 msgid "Select Video Files..."
@@ -336,7 +336,7 @@ msgstr ""
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<vesels skaitlis:vesels skaitlis> vai <reāls skaitlis>) fizikāla malu attiecība (DAR) mērķa ekrānam"
+msgstr "(<vesels skaitlis:vesels skaitlis> vai <reāls skaitlis>) fizikāla izmēru attiecība (DAR) mērķa ekrānam"
 
 #: TFRMMAIN.EDTAUDIOSYNC.HINT
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
@@ -464,7 +464,7 @@ msgstr "X"
 
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
-msgstr "Malu attiecība"
+msgstr "Izmēru attiecība"
 
 #: TFRMMAIN.LBLCANCELCHANGES.CAPTION
 msgid "Cancel Changes"
@@ -567,7 +567,7 @@ msgstr ""
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr "Papildu iespējas"
+msgstr "Papildu opcijas"
 
 #: TFRMMAIN.MITSHUTDOWNONFINISH.CAPTION
 msgid "Shutdown on Finish"
@@ -596,7 +596,7 @@ msgstr "Palīdzība"
 #: TFRMMAIN.MNUOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr "Iespējas"
+msgstr "Opcijas"
 
 #: TFRMMAIN.PNLMAIN.CAPTION
 msgid "pnlMain"
@@ -604,7 +604,7 @@ msgstr "pnlMain"
 
 #: TFRMMAIN.PRESETBOX.HINT
 msgid "Specific settings to use for the chosen device or file type"
-msgstr "Specifiski iestatījumi priekš izvēlētās ierīces vai faila tipa"
+msgstr "Specifiski iestatījumi izvēlētajai ierīcei vai faila tipam"
 
 #: TFRMMAIN.TABSHEET2.CAPTION
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
@@ -698,7 +698,7 @@ msgstr "..."
 #: TFRMPREFERENCES.CBCHCPCHAR.CAPTION
 msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
-msgstr "Izmantot CHCP priekš starptautiskām rakstzīmēm"
+msgstr "Starptautiskām rakstzīmēm izmantot CHCP"
 
 #: TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
@@ -813,16 +813,12 @@ msgid "Converting"
 msgstr "Pārveido"
 
 #: unit1.rscouldnotfindffmpeg
-#, fuzzy
-#| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
-msgstr "FFmpeg nav atrasts."
+msgstr "Neizdevās atrast ffmpeg vai avconv."
 
 #: unit1.rscouldnotfindffplay
-#, fuzzy
-#| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
-msgstr "FFPlay nav atrasts."
+msgstr "Neizdevās atrast ffplay vai avplay."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
@@ -857,10 +853,8 @@ msgid "Please select a preset"
 msgstr "Lūdzu, izvēlieties regulējumu"
 
 #: unit1.rspresetalreadyexist
-#, fuzzy
-#| msgid "Preset: %s%s%s already exists"
 msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
-msgstr "Regulējums: %s%s%s jau eksistē"
+msgstr "Regulējums: %s%s%s jau pastāv. Vai vēlaties aizstāt pašreizējo regulējumu?"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
@@ -868,7 +862,7 @@ msgstr "Importējamajam regulējumam nav paplašinājuma"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "Importējamajam regulējumam nav nosaukuma"
+msgstr "Importējamajam regulējumam nav etiķetes"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
@@ -876,7 +870,7 @@ msgstr "Lūdzu, pievienojiet regulējumu, kuru eksportēt"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "Regulējums ar nosaukumu: %s%s%s jau eksistē"
+msgstr "Regulējums ar etiķeti: %s%s%s jau eksistē"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
@@ -884,7 +878,7 @@ msgstr "Nospiediet 'Enter', lai turpinātu"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
-msgstr ""
+msgstr "Aizvietot regulējumu?"
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -912,7 +906,7 @@ msgstr "Importēt regulējumus"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "Nosaukumam jābūt unikālam."
+msgstr "Etiķetei jābūt unikālai."
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
@@ -928,7 +922,7 @@ msgstr "Jums ir jāievada paplašinājums."
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "Jums ir jāievada nosaukums."
+msgstr "Jums ir jāievada etiķete."
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."

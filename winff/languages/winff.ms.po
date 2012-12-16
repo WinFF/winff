@@ -1,7 +1,7 @@
 # Malay translation for winff
-# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the winff package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 # Launchpad contributors see:
 # https://translations.launchpad.net/winff/trunk/+pots/winff/ms/+details
@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2012-04-17 16:50+0000\n"
+"POT-Creation-Date: 2012-10-05 21:26+0200\n"
+"PO-Revision-Date: 2012-11-29 11:30+0000\n"
 "Last-Translator: abuyop <Unknown>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
-"X-Generator: Launchpad (build 15282)\n"
+"X-Launchpad-Export-Date: 2012-12-16 08:53+0000\n"
+"X-Generator: Launchpad (build 16372)\n"
 
 #: TFRMABOUT.BTNOK.CAPTION
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -815,16 +815,12 @@ msgid "Converting"
 msgstr "Menukarkan"
 
 #: unit1.rscouldnotfindffmpeg
-#, fuzzy
-#| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
-msgstr "Tidak dapat cari FFmpeg."
+msgstr "Tidak dapat cari sama ada ffmpeg atau avconv."
 
 #: unit1.rscouldnotfindffplay
-#, fuzzy
-#| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
-msgstr "Tidak dapat cari FFPlay."
+msgstr "Tidak dapat cari sama ada ffplay atay avplay."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
@@ -859,10 +855,9 @@ msgid "Please select a preset"
 msgstr "Sila pilih praset"
 
 #: unit1.rspresetalreadyexist
-#, fuzzy
-#| msgid "Preset: %s%s%s already exists"
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
-msgstr "Praset: %s%s%s sudah wujud"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgstr "Praset: %s%s%s sudah wujud. Anda hendak ganti praset semasa?"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
@@ -886,7 +881,7 @@ msgstr "SIla Masuk untuk Teruskan"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
-msgstr ""
+msgstr "Ganti Praset?"
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -955,4 +950,3 @@ msgstr "Melahu"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Biasa"
-

@@ -1,5 +1,6 @@
 # translation of winff.po to German
 # Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,17 +22,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2012-03-31 00:20+0000\n"
+"POT-Creation-Date: 2012-10-05 21:26+0200\n"
+"PO-Revision-Date: 2012-10-11 21:35+0000\n"
 "Last-Translator: Dennis Baudys <Unknown>\n"
-"Language-Team: \n"
+"Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
-"X-Generator: Launchpad (build 15282)\n"
-"Language: \n"
-"License: GPL version 3\n"
+"X-Launchpad-Export-Date: 2012-12-16 08:53+0000\n"
+"X-Generator: Launchpad (build 16372)\n"
 
 #: TFRMABOUT.BTNOK.CAPTION
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -70,7 +69,7 @@ msgstr "Gmaq"
 #: TFRMABOUT.LBLHQPRESETS.CAPTION
 msgctxt "TFRMABOUT.LBLHQPRESETS.CAPTION"
 msgid "High Quality Presets From"
-msgstr "High Quality Presets von"
+msgstr "Hochqualitative Profile von"
 
 #: TFRMABOUT.LBLKLEPATSCH.CAPTION
 msgctxt "TFRMABOUT.LBLKLEPATSCH.CAPTION"
@@ -156,7 +155,7 @@ msgstr "Ein Wort, nur Buchstaben und Zahlen"
 
 #: TFRMEDITPRESETS.EDIT2.HINT
 msgid "Enter a more descriptive name for this preset"
-msgstr "Beschreibung für das Profil"
+msgstr "Aussagekräftige Bezeichnung für dieses Profil eingeben"
 
 #: TFRMEDITPRESETS.EDIT3.HINT
 msgid "Please don't use -i or output file parameters"
@@ -231,7 +230,7 @@ msgstr "Abbrechen"
 
 #: TFRMEXPORT.CAPTION
 msgid "Export Presets"
-msgstr "Profil exportieren"
+msgstr "Profile exportieren"
 
 #: TFRMEXPORT.EXPORTBTN.CAPTION
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
@@ -240,7 +239,7 @@ msgstr "Exportieren"
 
 #: TFRMEXPORT.LABEL1.CAPTION
 msgid "Choose Presets to Export:"
-msgstr "Bitte zu exportierendes Profil wählen"
+msgstr "Bitte zu exportierende Profile wählen:"
 
 #: TFRMMAIN.AUDBITRATE.HINT
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
@@ -829,16 +828,12 @@ msgid "Converting"
 msgstr "Konvertierung läuft"
 
 #: unit1.rscouldnotfindffmpeg
-#, fuzzy
-#| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
-msgstr "FFmpeg konnte nicht gefunden werden."
+msgstr "Weder ffmpeg noch avconv konnten gefunden werden."
 
 #: unit1.rscouldnotfindffplay
-#, fuzzy
-#| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
-msgstr "FFplay konnte nicht gefunden werden."
+msgstr "Weder ffplay noch avplay konnten gefunden werden."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
@@ -873,10 +868,10 @@ msgid "Please select a preset"
 msgstr "Bitte ein Profil auswählen"
 
 #: unit1.rspresetalreadyexist
-#, fuzzy
-#| msgid "Preset: %s%s%s already exists"
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
-msgstr "Profil: %s%s%s existiert bereits"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgstr ""
+"Profil: %s%s%s existiert bereits. Möchten Sie das aktuelle Profil ersetzen?"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
@@ -900,7 +895,7 @@ msgstr "Eingabetaste drücken, um fortzufahren"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
-msgstr ""
+msgstr "Profil ersetzen?"
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -908,7 +903,7 @@ msgstr "Verzeichnis auswählen"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "Auswahl Profil"
+msgstr "Profildatei auswählen"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
@@ -969,4 +964,3 @@ msgstr "Leerlauf"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normal"
-
