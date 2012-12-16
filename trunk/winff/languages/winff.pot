@@ -3,7 +3,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, <YEAR>.
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.4.2\n"
+"Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2012-10-05 21:26+0200\n"
 "PO-Revision-Date: \n"
