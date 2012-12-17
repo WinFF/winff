@@ -1,3 +1,10 @@
+# Romanian translation for winff
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the winff package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+# Launchpad contributors see:
+# https://translations.launchpad.net/winff/trunk/+pots/winff/ro/+details
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"

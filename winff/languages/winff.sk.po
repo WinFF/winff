@@ -1,3 +1,8 @@
+# Slovak translation for winff
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the winff package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"

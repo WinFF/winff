@@ -1,3 +1,6 @@
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+# This file is distributed under the same license as the winff package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, <YEAR>.
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
