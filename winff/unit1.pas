@@ -700,16 +700,22 @@ var
 paramnode : tdomnode;
 param:string;
 begin
-   try
-    if presets.FindNode(presetname).FindNode('params').HasChildNodes then
-    begin
-      paramnode:=presets.FindNode(presetname).FindNode('params').FindNode('#text');
-      param:=paramnode.NodeValue;
-    end
-   except
-    param:='';
+   if trim(presetname) <> '' then
+   begin
+     try
+      if presets.FindNode(presetname).FindNode('params').HasChildNodes then
+      begin
+        paramnode:=presets.FindNode(presetname).FindNode('params').FindNode('#text');
+        param:=paramnode.NodeValue;
+      end
+     except
+      param:='';
+     end;
+     result:=param;
+   end else
+   begin
+      result:= '';
    end;
-   result:=param;
 end;
 
 // get the category from the preset
@@ -737,7 +743,13 @@ end;
 // get the extension of the preset
 function TfrmMain.getpresetextension(presetname:string):string;
 begin
+ if trim(presetname) <> '' then
+ begin
    result:=presets.FindNode(presetname).FindNode('extension').FindNode('#text').NodeValue;
+ end else
+ begin
+   result := '';
+ end;
 end;
 
 
@@ -2624,17 +2636,6 @@ begin
               commandline := replaceVfParam(commandline, 'crop', cropline);
          end;
 
-       if (VidsizeX.Text <>'') AND (VidsizeY.Text <>'') then
-       begin
-            //1.2 Inline replacement
-            //1.3 Moved to the end of the line to allow cropping to happen on the input stream. Issue 77
-            //1.4 As per libavcodec soname 53 in order to do the cropping before the scaling, we need to scale
-            //    in the video flags. Issue 146.
-            commandline:=replaceparam(commandline,'-s','');
-            commandline := replaceVfParam(commandline, 'scale', 'scale=' + VidsizeX.Text + ':' + VidsizeY.Text);
-
-       end;
-
        if edtAspectRatio.Text <> '' then
                commandline:=replaceparam(commandline,'-aspect','-aspect ' + edtAspectRatio.Text);
        if audbitrate.Text <> '' then
@@ -2683,6 +2684,18 @@ begin
         if cbright.Checked then commandline := replacevfparam(commandline,'transpose','transpose=2');
         if cbleftflip.Checked then commandline := replacevfparam(commandline,'transpose','transpose=0');
         if cbrightflip.Checked then commandline := replacevfparam(commandline,'transpose','transpose=3');
+
+        if (VidsizeX.Text <>'') AND (VidsizeY.Text <>'') then
+        begin
+             //1.2 Inline replacement
+             //1.3 Moved to the end of the line to allow cropping to happen on the input stream. Issue 77
+             //1.4 As per libavcodec soname 53 in order to do the cropping before the scaling, we need to scale
+             //    in the video flags. Issue 146.
+             commandline:=replaceparam(commandline,'-s','');
+             commandline := replaceVfParam(commandline, 'scale', 'scale=' + VidsizeX.Text + ':' + VidsizeY.Text);
+
+        end;
+
 
        if commandlineparams.Text <> '' then
                commandline += ' ' + commandlineparams.text;
