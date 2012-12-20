@@ -1,4 +1,4 @@
-unit Unit3; 
+unit Unit3;
 
 // WInFF 1.0 Copyright 2006-2012 Matthew Weatherford
 // WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
@@ -58,6 +58,7 @@ type
     pnlLogo: TPanel;
     pnlPresets: TPanel;
     tabWinff: TTabSheet;
+    sbWinTab: TScrollBox;
     tabFFmpeg: TTabSheet;
     tabThanks: TTabSheet;
     procedure btnOkClick(Sender: TObject);
