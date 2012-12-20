@@ -1,6 +1,38 @@
 WinFF Copyright 2006 - 2012 Matthew Weatherford
 http://www.winff.org
 
+v1.5.0
+----
+Usability:  A lot of work has gone into making the application more friendly to users with visual impairments.  Ability to accommodate larger fonts, resizing the application, screen layouts have had much tweaking.  It’s clearly not perfect, but we are hoping that it results in a better experience for some of our users.  Special mention to Paul Gevers for striving to make this feature work and work well in Linux and Windows.
+
+Rotation: Video can be rotated using the ffmpeg Rotate Feature.  90 degree left and right rotation as well as vertical flip is included.
+MultiFormat output: A massive change is that every file in the queue can have a different output codecs.  You can add the same file multiple times to encode to different formats.  More info to follow on the website.
+
+Advanced Options per file: Every file can have different output options.  Now, when you make changes to advanced options, it gets saved per file in the queue.
+
+Advanced Options: Extra Tab showing command lines to be used per file.  You can tweak them before executing.
+
+Previews:  Only previews the highlighted file in the queue.
+Added ctrl-A to the filelist and "select all" popup menu.
+
+Much code clean-ups.  Removed dead code.
+Windows version built with Lazarus 1.0
+
+Fixes:
+Fix issue 158: two bitrate settings in MP4 *screen
+Fix issue 136 (preferences stores content) by calling createForm function on entry
+also check for avconv when checking executables
+Fixed: use source folders
+
+Usability Changes
+Add scrollBox to Presets form to allow all items to always stay reachable
+Add scrollBoxes to Preferences form to allow all items to always stay reachable
+Update language files for rework of Preferences
+Rework preferences form - Renamed most items to give it names you can find back - Make sure that it behaves better when you start using different fonts - Fix for issue 136 needs prioritybox.Clear
+Make all buttons honor the font size of the system
+
+Updated Translations
+
 v1.4.2
 ------
 Update presets to avoid using ffmpeg presets (problem with Windows ffmpeg)
