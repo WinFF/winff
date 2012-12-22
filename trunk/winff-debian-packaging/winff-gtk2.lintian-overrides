@@ -1,0 +1,14 @@
+# As the desktop and menu file for winff-qt and winff-gtk are the same
+# they are provided in the winff package, which depends on either.
+# To prevent a circular dependancy the can not themselves depend on
+# winff, but rather, they recommend winff. In this case, I think that
+# is a strong enough dependency chain.
+#
+# See also bts #683060 and #683059 for discussion
+winff-gtk2 binary: package-contains-broken-symlink usr/share/man/man1/winff-gtk2.1.gz winff.1.gz
+
+# winff is compiled by the FPC and Lazaurs. These compilers don't have
+# hardening flags yet, so ignoring these lintian warnings for now
+# Paul Gevers <elbrus@debian.org>, 09 Nov 2012
+winff-gtk2: hardening-no-relro usr/bin/winff-gtk2
+winff-gtk2: hardening-no-fortify-functions usr/bin/winff-gtk2
