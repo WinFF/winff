@@ -1,0 +1,80 @@
+Description: About form was visible at startup and winff-qt failed to start
+Author: Paul Gevers <elbrus@debian.org>
+
+--- a/unit3.lfm
++++ b/unit3.lfm
+@@ -54,7 +54,6 @@
+   ParentFont = True
+   Position = poMainFormCenter
+   LCLVersion = '0.9.30.4'
+-  Visible = True
+   object pnlBottom: TPanel
+     Left = 0
+     Height = 28
+@@ -96,6 +95,25 @@
+       Caption = 'WinFF'
+       ClientHeight = 240
+       ClientWidth = 380
++      object sbWintab: TScrollBox
++        AnchorSideLeft.Control = tabWinff
++        AnchorSideTop.Control = tabWinff
++        AnchorSideRight.Control = tabWinff
++        AnchorSideRight.Side = asrBottom
++        AnchorSideBottom.Control = tabWinff
++        AnchorSideBottom.Side = asrBottom
++        Left = 0
++        Height = 260
++        Top = 0
++        Width = 380
++        Align = alTop
++        Anchors = [akTop, akLeft, akRight, akBottom]
++        AutoSize = True
++        BorderSpacing.Bottom = 4
++        BorderStyle = bsNone
++        ClientHeight = 260
++        ClientWidth = 362
++        TabOrder = 0
+       object lblCopyright: TLabel
+         Left = 4
+         Height = 19
+@@ -143,6 +161,7 @@
+         Width = 376
+         Align = alTop
+         BorderSpacing.Left = 4
++        BorderSpacing.Bottom = 4
+         Caption = 'Icons and Logo by Alex Klepatsch'
+         ParentColor = False
+       end
+@@ -328,7 +347,6 @@
+         end
+       end
+       object lblStoffberg: TLabel
+-        AnchorSideTop.Control = lblWeatherford
+         Cursor = crHandPoint
+         Left = 4
+         Height = 19
+@@ -353,6 +371,7 @@
+         ParentColor = False
+         ParentFont = False
+       end
++      end
+     end
+     object tabFFmpeg: TTabSheet
+       Caption = 'FFmpeg'
+@@ -456,4 +475,4 @@
+       end
+     end
+   end
+-end
+\ No newline at end of file
++end
+--- a/unit3.pas
++++ b/unit3.pas
+@@ -58,6 +58,7 @@
+     pnlLogo: TPanel;
+     pnlPresets: TPanel;
+     tabWinff: TTabSheet;
++    sbWinTab: TScrollBox;
+     tabFFmpeg: TTabSheet;
+     tabThanks: TTabSheet;
+     procedure btnOkClick(Sender: TObject);

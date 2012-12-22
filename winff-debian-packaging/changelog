@@ -1,3 +1,20 @@
+winff (1.5.0~beta-1) experimental; urgency=low
+
+  * New upstream release
+  * Fix upstream issue 136, two mp4 presets with two bitrates by using
+    presets for libavcodec54 (experimental libav-tools)
+  * Update description in d/control to include avconv (closes: #692596)
+  * Add lintian overrides for:
+    - desktop-command-not-in-package (wishlist: #683060)
+    - menu-command-not-in-package (wishlist: #683060)
+    - package-contains-broken-symlink (wishlist: #683059)
+    - hardening-no-relro (currently not possible in fpc)
+    - hardening-no-fortify-functions (currently not possible in fpc)
+  * Add patch Fix_qt_crash_InvalidatePreferredSize.patch to prevent run
+    failure in qt build and prevent About box to be open on startup.
+
+ -- Paul Gevers <elbrus@debian.org>  Thu, 20 Dec 2012 22:38:27 +0100
+
 winff (1.4.3-1) experimental; urgency=low
 
   * New upstream release
