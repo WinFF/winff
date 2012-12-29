@@ -1,7 +1,7 @@
 object frmAbout: TfrmAbout
-  Left = 489
+  Left = 400
   Height = 300
-  Top = 0
+  Top = 217
   Width = 384
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
@@ -53,26 +53,26 @@ object frmAbout: TfrmAbout
   OnCreate = FormCreate
   ParentFont = True
   Position = poMainFormCenter
-  LCLVersion = '0.9.30.4'
+  LCLVersion = '1.0.1.3'
   object pnlBottom: TPanel
     Left = 0
-    Height = 28
-    Top = 272
+    Height = 26
+    Top = 274
     Width = 384
     Align = alBottom
     AutoSize = True
     BevelOuter = bvNone
-    ClientHeight = 28
+    ClientHeight = 26
     ClientWidth = 384
     TabOrder = 0
     object btnOk: TBitBtn
       AnchorSideLeft.Control = pnlBottom
       AnchorSideLeft.Side = asrCenter
       AnchorSideTop.Control = pnlBottom
-      Left = 165
-      Height = 28
+      Left = 162
+      Height = 26
       Top = 0
-      Width = 55
+      Width = 61
       AutoSize = True
       Caption = 'OK'
       Default = True
@@ -84,7 +84,7 @@ object frmAbout: TfrmAbout
   end
   object PageControl1: TPageControl
     Left = 0
-    Height = 272
+    Height = 274
     Top = 0
     Width = 384
     ActivePage = tabWinff
@@ -93,8 +93,8 @@ object frmAbout: TfrmAbout
     TabOrder = 1
     object tabWinff: TTabSheet
       Caption = 'WinFF'
-      ClientHeight = 240
-      ClientWidth = 380
+      ClientHeight = 246
+      ClientWidth = 376
       object sbWintab: TScrollBox
         AnchorSideLeft.Control = tabWinff
         AnchorSideTop.Control = tabWinff
@@ -102,22 +102,24 @@ object frmAbout: TfrmAbout
         AnchorSideBottom.Control = tabWinff
         AnchorSideBottom.Side = asrBottom
         Left = 0
-        Height = 236
+        Height = 242
         Top = 0
-        Width = 380
+        Width = 376
+        HorzScrollBar.Page = 376
+        VertScrollBar.Page = 242
         Align = alTop
         Anchors = [akTop, akLeft, akRight, akBottom]
         AutoSize = True
         BorderSpacing.Bottom = 4
         BorderStyle = bsNone
-        ClientHeight = 236
-        ClientWidth = 362
+        ClientHeight = 242
+        ClientWidth = 376
         TabOrder = 0
         object lblCopyright: TLabel
           Left = 4
-          Height = 19
+          Height = 16
           Top = 61
-          Width = 358
+          Width = 372
           Align = alTop
           BorderSpacing.Left = 4
           BorderSpacing.Top = 5
@@ -128,9 +130,9 @@ object frmAbout: TfrmAbout
         object lblWeatherford: TLabel
           Cursor = crHandPoint
           Left = 4
-          Height = 19
-          Top = 95
-          Width = 358
+          Height = 16
+          Top = 92
+          Width = 372
           Align = alTop
           BorderSpacing.Left = 4
           Caption = 'Matthew Weatherford'
@@ -142,9 +144,9 @@ object frmAbout: TfrmAbout
         object lblGevers: TLabel
           Cursor = crHandPoint
           Left = 4
-          Height = 19
-          Top = 152
-          Width = 358
+          Height = 16
+          Top = 124
+          Width = 372
           Align = alTop
           BorderSpacing.Left = 4
           Caption = 'Debian/Ubuntu Packaging by Paul Gevers'
@@ -153,37 +155,26 @@ object frmAbout: TfrmAbout
           ParentFont = False
           OnClick = lblGeversClick
         end
-        object lblKlepatsch: TLabel
-          Left = 4
-          Height = 19
-          Top = 239
-          Width = 358
-          Align = alTop
-          BorderSpacing.Left = 4
-          BorderSpacing.Bottom = 4
-          Caption = 'Icons and Logo by Alex Klepatsch'
-          ParentColor = False
-        end
         object pnlLogo: TPanel
           Left = 0
           Height = 56
           Top = 0
-          Width = 362
+          Width = 376
           Align = alTop
           Alignment = taLeftJustify
           AutoSize = True
           BevelOuter = bvNone
           ClientHeight = 56
-          ClientWidth = 362
+          ClientWidth = 376
           TabOrder = 0
           object lblWinff: TLabel
             AnchorSideLeft.Control = imgLogo
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = pnlLogo
             Left = 56
-            Height = 19
+            Height = 16
             Top = 4
-            Width = 73
+            Width = 52
             BorderSpacing.Left = 4
             BorderSpacing.Top = 4
             BorderSpacing.Bottom = 4
@@ -197,9 +188,9 @@ object frmAbout: TfrmAbout
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
             Left = 57
-            Height = 19
-            Top = 28
-            Width = 153
+            Height = 16
+            Top = 25
+            Width = 114
             BorderSpacing.Around = 5
             Caption = 'http://www.winff.org'
             Font.Color = clBlue
@@ -298,59 +289,23 @@ object frmAbout: TfrmAbout
         end
         object pnlPresets: TPanel
           Left = 0
-          Height = 38
-          Top = 186
-          Width = 362
+          Height = 0
+          Top = 155
+          Width = 376
           Align = alTop
           Alignment = taLeftJustify
           AutoSize = True
           BorderSpacing.Top = 15
           BorderSpacing.Bottom = 15
           BevelOuter = bvNone
-          ClientHeight = 38
-          ClientWidth = 362
           TabOrder = 1
-          object lblNavas: TLabel
-            Left = 60
-            Height = 19
-            Top = 19
-            Width = 49
-            Align = alLeft
-            BorderSpacing.Left = 10
-            Caption = 'JNavas'
-            ParentColor = False
-          end
-          object lblHQPresets: TLabel
-            Left = 4
-            Height = 19
-            Top = 0
-            Width = 358
-            Align = alTop
-            BorderSpacing.Left = 4
-            Caption = 'High Quality Presets From'
-            ParentColor = False
-          end
-          object lblGmaq: TLabel
-            Cursor = crHandPoint
-            Left = 4
-            Height = 19
-            Top = 19
-            Width = 46
-            Align = alLeft
-            BorderSpacing.Left = 4
-            Caption = 'Gmaq'
-            Font.Color = clBlue
-            ParentColor = False
-            ParentFont = False
-            OnClick = lblGmaqClick
-          end
         end
         object lblStoffberg: TLabel
           Cursor = crHandPoint
           Left = 4
-          Height = 19
-          Top = 114
-          Width = 358
+          Height = 16
+          Top = 108
+          Width = 372
           Align = alTop
           BorderSpacing.Left = 4
           Caption = 'Ian Stoffberg'
@@ -359,28 +314,17 @@ object frmAbout: TfrmAbout
           ParentFont = False
           OnClick = lblStoffbergClick
         end
-        object lblOsipov: TLabel
-          Left = 4
-          Height = 19
-          Top = 133
-          Width = 358
-          Align = alTop
-          BorderSpacing.Left = 4
-          Caption = 'Alexey Osipov'
-          ParentColor = False
-          ParentFont = False
-        end
       end
     end
     object tabFFmpeg: TTabSheet
       Caption = 'FFmpeg'
-      ClientHeight = 240
-      ClientWidth = 380
+      ClientHeight = 246
+      ClientWidth = 376
       object lblFFmeg: TLabel
         Left = 5
-        Height = 19
+        Height = 16
         Top = 0
-        Width = 375
+        Width = 371
         Align = alTop
         BorderSpacing.Left = 5
         Caption = 'FFmpeg'
@@ -389,9 +333,9 @@ object frmAbout: TfrmAbout
       end
       object lblBellard: TLabel
         Left = 5
-        Height = 19
-        Top = 21
-        Width = 375
+        Height = 16
+        Top = 18
+        Width = 371
         Align = alTop
         BorderSpacing.Left = 5
         BorderSpacing.Top = 2
@@ -402,9 +346,9 @@ object frmAbout: TfrmAbout
       object lblURLffmpeg: TLabel
         Cursor = crHandPoint
         Left = 5
-        Height = 19
-        Top = 42
-        Width = 375
+        Height = 16
+        Top = 36
+        Width = 371
         Align = alTop
         BorderSpacing.Left = 5
         BorderSpacing.Top = 2
@@ -415,63 +359,22 @@ object frmAbout: TfrmAbout
         ParentFont = False
         OnClick = lblURLffmpegClick
       end
-      object lblWinBuild: TLabel
-        Left = 5
-        Height = 19
-        Top = 71
-        Width = 375
-        Align = alTop
-        BorderSpacing.Left = 5
-        BorderSpacing.Top = 10
-        BorderSpacing.Bottom = 2
-        Caption = 'FFmpeg Windows Builds by'
-        ParentColor = False
-      end
-      object lblSchwarz: TLabel
-        Left = 5
-        Height = 19
-        Top = 92
-        Width = 375
-        Align = alTop
-        BorderSpacing.Left = 5
-        BorderSpacing.Top = 2
-        BorderSpacing.Bottom = 2
-        Caption = 'Kyle Schwarz'
-        ParentColor = False
-      end
-      object lblURLzeranoe: TLabel
-        Cursor = crHandPoint
-        Left = 4
-        Height = 19
-        Top = 113
-        Width = 376
-        Align = alTop
-        BorderSpacing.Left = 4
-        BorderSpacing.Top = 2
-        BorderSpacing.Bottom = 2
-        Caption = 'http://ffmpeg.zeranoe.com'
-        Font.Color = clBlue
-        ParentColor = False
-        ParentFont = False
-        OnClick = lblURLzeranoeClick
-      end
     end
     object tabThanks: TTabSheet
       Caption = 'Thanks'
-      ClientHeight = 240
-      ClientWidth = 380
+      ClientHeight = 246
+      ClientWidth = 376
       object lbThanks: TListBox
         Left = 0
-        Height = 238
+        Height = 246
         Top = 0
-        Width = 380
+        Width = 376
         Align = alClient
         ClickOnSelChange = False
         ItemHeight = 0
         ScrollWidth = 376
         TabOrder = 0
-        TopIndex = -1
       end
     end
   end
-end
+end
