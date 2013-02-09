@@ -1487,9 +1487,16 @@ procedure TfrmMain.FormDropFiles(Sender: TObject; const FileNames: array of Stri
   );
 var
 numfiles, i:integer;
-s,u : string;
+s,u,pn : string;
 begin
-  numfiles := high(Filenames);
+ pn:=getcurrentpresetname(presetbox.Text);
+     if pn='' then
+       begin
+       showmessage(rsPleaseSelectAPreset);
+       exit;
+       end;
+
+ numfiles := high(Filenames);
   for i:= 0 to numfiles do
   begin
      s :=FileNames[i]; // fix for 1.4 (was using filenames from filelistbox)
@@ -1519,8 +1526,15 @@ end;
 procedure TfrmMain.btnAddClick(Sender: TObject);
 var
    i : integer;
-  s,u : string;
+  s,u, pn: string;
 begin
+   pn:=getcurrentpresetname(presetbox.Text);
+     if pn='' then
+       begin
+       showmessage(rsPleaseSelectAPreset);
+       exit;
+       end;
+
    dlgOpenFile.Title:=rsSelectVideoFiles;
    dlgOpenFile.InitialDir := getconfigvalue('general/addfilesfolder');
    if dlgOpenFile.Execute then
@@ -1776,7 +1790,16 @@ begin
 end;
 
 procedure TfrmMain.lblSaveChangesClick(Sender: TObject);
+var
+pn : string;
 begin
+     pn:=getcurrentpresetname(presetbox.Text);
+     if pn='' then
+       begin
+       showmessage(rsPleaseSelectAPreset);
+       exit;
+       end;
+
      if  pgSettings.ActivePageIndex = 5 then
       begin
             SaveChangedOptions(1);
