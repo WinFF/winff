@@ -4,7 +4,7 @@
 [Setup]
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.5beta (Codename EMMA)
+AppVerName=WinFF 1.5 (Codename EMMA)
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
@@ -116,6 +116,15 @@ Source: "languages\winff.ro.po"; DestDir: "{app}\languages"; Flags: ignoreversio
 Source: "languages\winff.sv.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.zh_TW.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.zh.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.uk.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.te.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.sk.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.se.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.lv.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.kk.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.ja.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.eu.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\winff.ar.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
