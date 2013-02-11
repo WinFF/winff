@@ -1,0 +1,16 @@
+del *~
+del *.o
+del *.ppu
+del *.res
+del *.rst
+del *.lrs
+del *.lrt
+del *.lps
+del *.bak
+del winff.exe
+del winff
+del *.or
+del *.compiled
+del backup/*.*
+rm backup
+rm magnifier

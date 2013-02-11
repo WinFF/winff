@@ -1,0 +1,615 @@
+object frmPreferences: TfrmPreferences
+  Left = 440
+  Height = 279
+  Top = 283
+  Width = 352
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'WinFF Preferences'
+  ClientHeight = 279
+  ClientWidth = 352
+  Constraints.MinHeight = 250
+  Constraints.MinWidth = 300
+  Icon.Data = {
+    7E04000000000100010010100000010020006804000016000000280000001000
+    0000200000000100200000000000000400006400000064000000000000000000
+    0000666666AF666666FF666666FF666666FF979797FFB3B3B3FFB3B3B3FFB3B3
+    B3FFB3B3B3FFB3B3B3FFB3B3B3FFB3B3B3FFB3B3B3FFB3B3B3FFB3B3B3FF7A7A
+    7AB7666666FFC4C4C4FFCBCBCBFF666666FFFBFBFBFFFFFFFFFFFFFFFFFFEEED
+    EBFFFFFFFFFFFFFFFFFFE7E9ECFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC9C9
+    C9FF666666FFF6F6F6FFFFFFFFFF666666FFFBFBFBFFFFFFFFFFFFFFFFFFB09E
+    87FFD1C6B4FFFFFFFFFF496EBEFFDBE2EBFFFFFFFFFFFFFFFFFFFFFFFFFFC3C3
+    C3FF666666FFAEAEAEFFB3B3B3FF666666FFF6F6F6FFFFFFFFFFFFFFFFFFB5A1
+    87FFAA7D34FFD8CDB7FF3669D6FF2E7BDAFFE0E7EDFFFFFFFFFFFFFFFFFFB3B3
+    B3FF666666FF666666FF666666FF666666FFF6F6F6FFFFFFFFFFFFFFFFFFB5A1
+    87FFAD7D2DFFB6872DFFB7B7B6FF1D75E1FF3192D8FFE4ECEFFFFFFFFFFFB3B3
+    B3FF666666FFE8E8E8FFF1F1F1FF666666FFCECECEFF70675CFF816B4DFF976F
+    39FFAD7D2DFFBC8824FFC59327FFB8BCB9FF198CDFFF36AAD7FFE7F0F0FFB3B3
+    B3FF666666FFF6F6F6FFFFFFFFFF666666FFCCCCCCFF73685AFF896D47FF9F72
+    35FFAE7D2DFFBC8824FFD7AC4FFFD2AD55FF94B3C9FF5BC8F2FF62BECDFFB3B3
+    B3FF666666FF8A8A8AFF8C8C8CFF666666FFD6D6D6FF8B847BFF988770FF9D7A
+    4CFFAE7D2CFFCEA85FFFF1E6CEFFAFB5B5FF91C7EDFFADDBEEFFE7F1F2FFB3B3
+    B3FF666666FF818181FF838383FF666666FFF6F6F6FFFFFFFFFFFFFFFFFFB5A1
+    87FFAF7F2FFFE3D2B3FFA7ACB8FF438AE3FFA4CDEBFFE9F0F3FFFFFFFFFFB3B3
+    B3FF666666FFF6F6F6FFFFFFFFFF666666FFF6F6F6FFFFFFFFFFFFFFFFFFB5A1
+    87FFA87E3BFFDCD4C4FF2E60D3FF3D80D4FFEBF0F3FFFFFFFFFFFFFFFFFFB3B3
+    B3FF666666FFF1F1F1FFFBFBFBFF666666FFF6F6F6FFFFFFFFFFFFFFFFFFAD9F
+    8CFFDBD4C9FFFFFFFFFF5B77B8FFEDF0F4FFFFFFFFFFFFFFFFFFFFFFFFFFB3B3
+    B3FF666666FF666666FF666666FF666666FFEDEDEDFFF4F4F4FFF4F4F4FFF3F3
+    F3FFF4F4F4FFF4F4F4FFF0F0F0FFF4F4F4FFF4F4F4FFF4F4F4FFF4F4F4FFB7B5
+    B0FF666666FFA5A5A5FFA9A9A9FF666666FF938F8AFF9E9385FFA7957DFFB197
+    76FFB99A6FFFBF9F6CFFC5A468FFCBA864FFD1AD61FFD8B15DFFDDB65AFFAF96
+    59FF666666FFF6F6F6FFFFFFFFFF666666FF6C6760FF7A6A54FF886D48FF9670
+    3DFFA87D41FFC19D64FFC1974BFFC89C46FFD3A74BFFDFB860FFE5BB58FFA586
+    39FF666666FFC9C9C9FFD0D0D0FF666666FF6C6760FF7A6A54FF886D48FF9670
+    3DFFA27433FFAC7B2EFFBE9142FFD0AA61FFD3A649FFDDB255FFE3B74DFFA486
+    3AFF666666AF666666FF666666FF666666FF686664FF70685DFF776A57FF7E6B
+    51FF846D4CFF89714AFF8E7447FF927844FF977B41FF9C7F3FFFA0833CFF7970
+    58B8000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000
+  }
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '0.9.30.4'
+  object pnlBottom: TPanel
+    Left = 0
+    Height = 28
+    Top = 251
+    Width = 352
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 28
+    ClientWidth = 352
+    Constraints.MinHeight = 20
+    TabOrder = 0
+    object btnOK: TBitBtn
+      Left = 186
+      Height = 28
+      Top = 0
+      Width = 80
+      Align = alRight
+      AutoSize = True
+      BorderSpacing.Right = 5
+      Caption = 'OK'
+      Constraints.MinWidth = 80
+      Default = True
+      Kind = bkOK
+      ModalResult = 1
+      OnClick = btnOKClick
+      TabOrder = 0
+    end
+    object btnCancel: TBitBtn
+      Left = 271
+      Height = 28
+      Top = 0
+      Width = 81
+      Align = alRight
+      AutoSize = True
+      Cancel = True
+      Caption = 'Cancel'
+      Constraints.MinWidth = 80
+      Kind = bkCancel
+      ModalResult = 2
+      OnClick = btnCancelClick
+      TabOrder = 1
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 251
+    Top = 0
+    Width = 352
+    ActivePage = tabGeneral
+    Align = alClient
+    Constraints.MinHeight = 200
+    Constraints.MinWidth = 300
+    TabIndex = 0
+    TabOrder = 1
+    object tabGeneral: TTabSheet
+      Caption = 'General'
+      ClientHeight = 219
+      ClientWidth = 348
+      object sbGeneral: TScrollBox
+        Left = 0
+        Height = 219
+        Top = 0
+        Width = 348
+        Align = alClient
+        ClientHeight = 215
+        ClientWidth = 344
+        TabOrder = 0
+        object pnlDefaultDir: TPanel
+          Left = 4
+          Height = 47
+          Top = 5
+          Width = 336
+          Align = alTop
+          AutoSize = True
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          BevelOuter = bvNone
+          ClientHeight = 47
+          ClientWidth = 336
+          Constraints.MinHeight = 5
+          Constraints.MinWidth = 5
+          TabOrder = 0
+          object edtDefaultDir: TEdit
+            Left = 0
+            Height = 28
+            Top = 19
+            Width = 298
+            Align = alClient
+            BorderSpacing.Right = 3
+            TabOrder = 0
+          end
+          object btnDefaultDir: TButton
+            Left = 301
+            Height = 28
+            Top = 19
+            Width = 35
+            Align = alRight
+            AutoSize = True
+            Caption = '...'
+            Constraints.MinHeight = 5
+            Constraints.MinWidth = 35
+            OnClick = btnDefaultDirClick
+            TabOrder = 1
+          end
+          object lblDefaultDir: TLabel
+            Left = 0
+            Height = 19
+            Top = 0
+            Width = 336
+            Align = alTop
+            Caption = 'Default Destination Directory:'
+            ParentColor = False
+          end
+        end
+        object pnlThreads: TPanel
+          Left = 4
+          Height = 26
+          Top = 85
+          Width = 336
+          Align = alTop
+          AutoSize = True
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          BevelOuter = bvNone
+          ClientHeight = 26
+          ClientWidth = 336
+          TabOrder = 1
+          object cbThreads: TCheckBox
+            AnchorSideLeft.Control = pnlThreads
+            AnchorSideTop.Control = edtThreads
+            AnchorSideTop.Side = asrCenter
+            Left = 0
+            Height = 23
+            Top = 2
+            Width = 251
+            Caption = 'Use Several Encoding Threads:'
+            TabOrder = 0
+          end
+          object edtThreads: TEdit
+            AnchorSideLeft.Control = cbThreads
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = pnlThreads
+            AnchorSideRight.Control = pnlThreads
+            AnchorSideRight.Side = asrBottom
+            Left = 254
+            Height = 26
+            Top = 0
+            Width = 82
+            Anchors = [akTop, akLeft, akRight]
+            BorderSpacing.Left = 3
+            Constraints.MinWidth = 10
+            OnChange = edtThreadsChange
+            TabOrder = 1
+          end
+        end
+        object pnlPriority: TPanel
+          Left = 4
+          Height = 28
+          Top = 116
+          Width = 336
+          Align = alTop
+          AutoSize = True
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          BevelOuter = bvNone
+          ClientHeight = 28
+          ClientWidth = 336
+          TabOrder = 2
+          object lblPriority: TLabel
+            AnchorSideLeft.Control = pnlPriority
+            AnchorSideTop.Control = pnlPriority
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = prioritybox
+            Left = 0
+            Height = 19
+            Top = 5
+            Width = 55
+            BorderSpacing.Right = 3
+            Caption = 'Priority:'
+            ParentColor = False
+          end
+          object prioritybox: TComboBox
+            AnchorSideLeft.Control = lblPriority
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideRight.Control = pnlPriority
+            AnchorSideRight.Side = asrBottom
+            Left = 58
+            Height = 28
+            Top = 0
+            Width = 278
+            Anchors = [akTop, akLeft, akRight]
+            ItemHeight = 0
+            Style = csDropDownList
+            TabOrder = 0
+          end
+        end
+        object cbRememberLastDir: TCheckBox
+          Left = 4
+          Height = 23
+          Top = 57
+          Width = 336
+          Align = alTop
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          Caption = 'Remember Last Used Directory'
+          TabOrder = 3
+        end
+      end
+    end
+    object tabWindows: TTabSheet
+      Caption = 'MS Windows'
+      ClientHeight = 219
+      ClientWidth = 348
+      object sbWindows: TScrollBox
+        Left = 0
+        Height = 219
+        Top = 0
+        Width = 348
+        Align = alClient
+        ClientHeight = 215
+        ClientWidth = 344
+        TabOrder = 0
+        object pnlWinFFmpegPath: TPanel
+          Left = 4
+          Height = 46
+          Top = 5
+          Width = 336
+          Align = alTop
+          AutoSize = True
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          BevelOuter = bvNone
+          ClientHeight = 46
+          ClientWidth = 336
+          TabOrder = 0
+          object edtWinFFmpegPath: TEdit
+            AnchorSideRight.Control = btnWinFFmpegPath
+            Left = 0
+            Height = 27
+            Top = 19
+            Width = 298
+            Align = alLeft
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            BorderSpacing.Right = 3
+            TabOrder = 0
+          end
+          object btnWinFFmpegPath: TButton
+            AnchorSideTop.Control = edtWinFFmpegPath
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = pnlWinFFmpegPath
+            AnchorSideRight.Side = asrBottom
+            Left = 301
+            Height = 28
+            Top = 18
+            Width = 35
+            Anchors = [akTop, akRight]
+            AutoSize = True
+            Caption = '...'
+            Constraints.MinHeight = 5
+            Constraints.MinWidth = 35
+            OnClick = btnWinFFmpegPathClick
+            TabOrder = 1
+          end
+          object lblWinFFmpegPath: TLabel
+            Left = 0
+            Height = 19
+            Top = 0
+            Width = 336
+            Align = alTop
+            Caption = 'Path to FFmpeg or avconv Executable:'
+            ParentColor = False
+          end
+        end
+        object pnlWinFFplayPath: TPanel
+          Left = 4
+          Height = 46
+          Top = 56
+          Width = 336
+          Align = alTop
+          AutoSize = True
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          BevelOuter = bvNone
+          ClientHeight = 46
+          ClientWidth = 336
+          TabOrder = 1
+          object edtWinFFplayPath: TEdit
+            AnchorSideRight.Control = btnWinFFplayPath
+            Left = 0
+            Height = 27
+            Top = 19
+            Width = 298
+            Align = alLeft
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            BorderSpacing.Right = 3
+            TabOrder = 0
+          end
+          object btnWinFFplayPath: TButton
+            AnchorSideTop.Control = edtWinFFplayPath
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = pnlWinFFplayPath
+            AnchorSideRight.Side = asrBottom
+            Left = 301
+            Height = 28
+            Top = 18
+            Width = 35
+            Anchors = [akTop, akRight]
+            AutoSize = True
+            Caption = '...'
+            Constraints.MinHeight = 5
+            Constraints.MinWidth = 35
+            OnClick = btnWinFFplayPathClick
+            TabOrder = 1
+          end
+          object lblWinFFplay: TLabel
+            Left = 0
+            Height = 19
+            Top = 0
+            Width = 336
+            Align = alTop
+            Caption = 'Path to FFplay or avplay Executable:'
+            ParentColor = False
+          end
+        end
+        object cbCHCPchar: TCheckBox
+          Left = 4
+          Height = 23
+          Top = 107
+          Width = 336
+          Align = alTop
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          Caption = 'Use CHCP for international characters'
+          TabOrder = 2
+        end
+      end
+    end
+    object tabLinux: TTabSheet
+      Caption = 'Linux'
+      ClientHeight = 219
+      ClientWidth = 348
+      object sbLinux: TScrollBox
+        Left = 0
+        Height = 219
+        Top = 0
+        Width = 348
+        Align = alClient
+        ClientHeight = 215
+        ClientWidth = 344
+        TabOrder = 0
+        object pnlLinFFmpegPath: TPanel
+          Left = 4
+          Height = 46
+          Top = 5
+          Width = 336
+          Align = alTop
+          AutoSize = True
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          BevelOuter = bvNone
+          ClientHeight = 46
+          ClientWidth = 336
+          TabOrder = 0
+          object edtLinFFmpegPath: TEdit
+            AnchorSideRight.Control = btnLinFFmpegPath
+            Left = 0
+            Height = 27
+            Top = 19
+            Width = 298
+            Align = alLeft
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            BorderSpacing.Right = 3
+            TabOrder = 0
+          end
+          object btnLinFFmpegPath: TButton
+            AnchorSideTop.Control = edtLinFFmpegPath
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = pnlLinFFmpegPath
+            AnchorSideRight.Side = asrBottom
+            Left = 301
+            Height = 28
+            Top = 18
+            Width = 35
+            Anchors = [akTop, akRight]
+            AutoSize = True
+            Caption = '...'
+            Constraints.MinHeight = 5
+            Constraints.MinWidth = 35
+            OnClick = btnLinFFmpegPathClick
+            TabOrder = 1
+          end
+          object lblLinFFmpegPath: TLabel
+            Left = 0
+            Height = 19
+            Top = 0
+            Width = 336
+            Align = alTop
+            Caption = 'Path to FFmpeg or avconv Executable:'
+            ParentColor = False
+          end
+        end
+        object pnlLinFFplayPath: TPanel
+          Left = 4
+          Height = 46
+          Top = 107
+          Width = 336
+          Align = alTop
+          AutoSize = True
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          BevelOuter = bvNone
+          ClientHeight = 46
+          ClientWidth = 336
+          TabOrder = 1
+          object edtLinFFplayPath: TEdit
+            AnchorSideRight.Control = btnLinFFplayPath
+            Left = 0
+            Height = 27
+            Top = 19
+            Width = 298
+            Align = alLeft
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            BorderSpacing.Right = 3
+            TabOrder = 0
+          end
+          object btnLinFFplayPath: TButton
+            AnchorSideTop.Control = edtLinFFplayPath
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = pnlLinFFplayPath
+            AnchorSideRight.Side = asrBottom
+            Left = 301
+            Height = 28
+            Top = 18
+            Width = 35
+            Anchors = [akTop, akRight]
+            AutoSize = True
+            Caption = '...'
+            Constraints.MinHeight = 5
+            Constraints.MinWidth = 35
+            OnClick = btnLinFFplayPathClick
+            TabOrder = 1
+          end
+          object lblLinFFplayPath: TLabel
+            Left = 0
+            Height = 19
+            Top = 0
+            Width = 336
+            Align = alTop
+            Caption = 'Path to FFplay or avplay Executable:'
+            ParentColor = False
+          end
+        end
+        object pnlLinTerminalExe: TPanel
+          Left = 4
+          Height = 46
+          Top = 56
+          Width = 336
+          Align = alTop
+          AutoSize = True
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          BevelOuter = bvNone
+          ClientHeight = 46
+          ClientWidth = 336
+          TabOrder = 2
+          object edtLinTerminalExe: TEdit
+            AnchorSideRight.Control = btnLinTerminalExe
+            Left = 0
+            Height = 27
+            Top = 19
+            Width = 298
+            Align = alLeft
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            BorderSpacing.Right = 3
+            TabOrder = 0
+          end
+          object btnLinTerminalExe: TButton
+            AnchorSideTop.Control = edtLinTerminalExe
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = pnlLinTerminalExe
+            AnchorSideRight.Side = asrBottom
+            Left = 301
+            Height = 28
+            Top = 18
+            Width = 35
+            Anchors = [akTop, akRight]
+            AutoSize = True
+            Caption = '...'
+            Constraints.MinHeight = 5
+            Constraints.MinWidth = 35
+            OnClick = btnLinTerminalExeClick
+            TabOrder = 1
+          end
+          object lblLinTerminalExe: TLabel
+            Left = 0
+            Height = 19
+            Top = 0
+            Width = 336
+            Align = alTop
+            Caption = 'Terminal to run FFmpeg in:'
+            ParentColor = False
+          end
+        end
+        object pnlLinTerminalOptions: TPanel
+          Left = 4
+          Height = 45
+          Top = 158
+          Width = 336
+          Align = alTop
+          AutoSize = True
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 5
+          BorderSpacing.Right = 4
+          BevelOuter = bvNone
+          ClientHeight = 45
+          ClientWidth = 336
+          TabOrder = 3
+          object edtLinTerminalOptions: TEdit
+            Left = 0
+            Height = 26
+            Hint = '''-e'' for xterm, ''-x'' for gnome-terminal'
+            Top = 19
+            Width = 336
+            Align = alTop
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+          object lblLinTerminalOptions: TLabel
+            Left = 0
+            Height = 19
+            Top = 0
+            Width = 336
+            Align = alTop
+            Caption = 'Terminal Options:'
+            ParentColor = False
+          end
+        end
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    FilterIndex = 0
+    top = 352
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    FilterIndex = 0
+    top = 308
+  end
+end
