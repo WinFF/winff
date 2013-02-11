@@ -3,41 +3,35 @@ msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2010-12-03 22:47+0100\n"
-"Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
-"Language: gl\n"
+"PO-Revision-Date: 2012-01-23 11:00+0000\n"
+"Last-Translator: andygol <Unknown>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Galician\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Launchpad-Export-Date: 2012-02-16 19:24+0000\n"
+"X-Generator: Launchpad (build 14814)\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
 msgid "OK"
-msgstr "Aceptar"
+msgstr "Так"
 
 #: tfrmabout.frmabout.caption
-#, fuzzy
-#| msgid "About WinFF"
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
-msgstr "Acerca de WinFF"
+msgstr "Про WinFF"
 
 #: tfrmabout.lblbellard.caption
 msgctxt "TFRMABOUT.LBLBELLARD.CAPTION"
 msgid "Trademark Fabrice Belllard"
-msgstr ""
+msgstr "Fabrice Belllard™"
 
 #: tfrmabout.lblcopyright.caption
 msgid "Copyright %s ; Licence: GPL V3+"
 msgstr ""
 
 #: tfrmabout.lblffmeg.caption
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -45,27 +39,27 @@ msgstr "FFmpeg"
 #: tfrmabout.lblgevers.caption
 msgctxt "TFRMABOUT.LBLGEVERS.CAPTION"
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr ""
+msgstr "Пакунки для Debian/Ubuntu підготував Paul Gevers"
 
 #: tfrmabout.lblgmaq.caption
 msgctxt "TFRMABOUT.LBLGMAQ.CAPTION"
 msgid "Gmaq"
-msgstr ""
+msgstr "Gmaq"
 
 #: tfrmabout.lblhqpresets.caption
 msgctxt "TFRMABOUT.LBLHQPRESETS.CAPTION"
 msgid "High Quality Presets From"
-msgstr ""
+msgstr "Заготовки HQ від"
 
 #: tfrmabout.lblklepatsch.caption
 msgctxt "TFRMABOUT.LBLKLEPATSCH.CAPTION"
 msgid "Icons and Logo by Alex Klepatsch"
-msgstr ""
+msgstr "Значки та логотип від Alex Klepatsch"
 
 #: tfrmabout.lblnavas.caption
 msgctxt "TFRMABOUT.LBLNAVAS.CAPTION"
 msgid "JNavas"
-msgstr ""
+msgstr "JNavas"
 
 #: tfrmabout.lblosipov.caption
 msgid "Alexey Osipov"
@@ -74,7 +68,7 @@ msgstr ""
 #: tfrmabout.lblschwarz.caption
 msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
 msgid "Kyle Schwarz"
-msgstr ""
+msgstr "Kyle Schwarz"
 
 #: tfrmabout.lblstoffberg.caption
 msgid "Ian Stoffberg"
@@ -83,12 +77,12 @@ msgstr ""
 #: tfrmabout.lblurlffmpeg.caption
 msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
 msgid "http://ffmpeg.org"
-msgstr ""
+msgstr "http://ffmpeg.org"
 
 #: tfrmabout.lblurlwinfforg.caption
 msgctxt "TFRMABOUT.LBLURLWINFFORG.CAPTION"
 msgid "http://www.winff.org"
-msgstr ""
+msgstr "http://www.winff.org"
 
 #: tfrmabout.lblurlzeranoe.caption
 msgid "http://ffmpeg.zeranoe.com"
@@ -99,19 +93,15 @@ msgid "Matthew Weatherford"
 msgstr ""
 
 #: tfrmabout.lblwinbuild.caption
-#, fuzzy
-#| msgid "FFmpeg builds by"
 msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
 msgid "FFmpeg Windows Builds by"
-msgstr "FFmpeg compilado por"
+msgstr "Збірка FFmpeg для Windows"
 
 #: tfrmabout.lblwinff.caption
 msgid "WinFF %s"
 msgstr ""
 
 #: tfrmabout.tabffmpeg.caption
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -119,101 +109,87 @@ msgstr "FFmpeg"
 #: tfrmabout.tabthanks.caption
 msgctxt "TFRMABOUT.TABTHANKS.CAPTION"
 msgid "Thanks"
-msgstr "Grazas"
+msgstr "Подяки"
 
 #: tfrmabout.tabwinff.caption
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMABOUT.TABWINFF.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: tfrmeditpresets.addpresetbtn.caption
 msgid "Add / Update"
-msgstr "Engadir/actualizar"
+msgstr "Додати/Оновити"
 
 #: tfrmeditpresets.cancelbtn.caption
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
-msgstr "Pechar"
+msgstr "Закрити"
 
 #: tfrmeditpresets.deletebtn.caption
 msgid "Delete"
-msgstr "Borrar"
+msgstr "Вилучити"
 
 #: tfrmeditpresets.edit1.hint
 msgid "One word, only letters and numbers"
-msgstr ""
+msgstr "Одне слово, тільки літери та цифри"
 
 #: tfrmeditpresets.edit2.hint
 msgid "Enter a more descriptive name for this preset"
-msgstr ""
+msgstr "Введіть зрозумілий опис для цієї заготовки"
 
 #: tfrmeditpresets.edit3.hint
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
-msgstr "Liña de ordes predefinida (sen -i ou ficheiro de saída)"
+msgstr "Будь ласка, не використовуйте параметр -i або назву вихідного файлу"
 
 #: tfrmeditpresets.edit4.hint
 msgid "Do not include a dot"
-msgstr ""
+msgstr "Без крапки"
 
 #: tfrmeditpresets.edit5.hint
 msgid "Choose a category to group this preset under"
-msgstr ""
+msgstr "Оберіть категорію для цієї заготовки"
 
 #: tfrmeditpresets.export.caption
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
-msgstr "Exportar"
+msgstr "Експорт"
 
 #: tfrmeditpresets.frmeditpresets.caption
 msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
 msgid "Edit Presets"
-msgstr "Editar preconfiguracións"
+msgstr "Редагувати заготовки"
 
 #: tfrmeditpresets.import.caption
 msgid "Import"
-msgstr "Importar"
+msgstr "Імпорт"
 
 #: tfrmeditpresets.label1.caption
-#, fuzzy
-#| msgid "Create Preset:"
 msgid "Category / Preset"
-msgstr "Crear preconfiguración:"
+msgstr "Категорія / Заготовка"
 
 #: tfrmeditpresets.label2.caption
-#, fuzzy
-#| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr "Nome predefinido (unha palabra, só A-z 0-9)"
+msgstr "Назва заготовки (одне слово, тільки літери та цифри)"
 
 #: tfrmeditpresets.label3.caption
 msgid "Preset Label"
-msgstr "Etiqueta predefinida"
+msgstr "Мітка заготовки"
 
 #: tfrmeditpresets.label4.caption
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr "Liña de ordes predefinida (sen -i ou ficheiro de saída)"
+msgstr "Параметри командного рядку заготовки (без -i та вихідного файлу)"
 
 #: tfrmeditpresets.label5.caption
-#, fuzzy
-#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
-msgstr "Extensión do ficheiro de saída (sen «.»)"
+msgstr "Розширення вихідного файлу (без «.»)"
 
 #: tfrmeditpresets.label6.caption
 msgid "Category"
-msgstr "Categoría"
+msgstr "Категорія"
 
 #: tfrmeditpresets.okbtn.caption
-#, fuzzy
-#| msgid "Save"
 msgid "Save"
-msgstr "Gardar"
+msgstr "Зберегти"
 
 #: tfrmeditpresets.opendialog1.title
 msgid "Import a Preset"
@@ -221,7 +197,7 @@ msgstr ""
 
 #: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
-msgstr ""
+msgstr "pnlTop"
 
 #: tfrmeditpresets.savedialog1.title
 msgid "Export a Preset"
@@ -230,282 +206,236 @@ msgstr ""
 #: tfrmexport.cancelbtn.caption
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Скасувати"
 
 #: tfrmexport.caption
 msgid "Export Presets"
-msgstr "Exportar preconfiguracións"
+msgstr "Експорт заготовок"
 
 #: tfrmexport.exportbtn.caption
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
-msgstr "Exportar"
+msgstr "Експорт"
 
 #: tfrmexport.label1.caption
-#, fuzzy
-#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
-msgstr "Elixa preconfiguracións para exportalas"
+msgstr "Оберіть заготовку для експорту:"
 
 #: tfrmmain.audbitrate.hint
-#, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<integer>kb) kilobits/segundo que usar debería usar o fluxo de destino"
+msgstr "(<ціле>) швидкість даних для потоку кілобіт в секунду"
 
 #: tfrmmain.audchannels.hint
 msgid "(<integer>) number of audio channels"
-msgstr "(<integer>) número de canles de son"
+msgstr "(<ціле>) кількість аудіо-каналів"
 
 #: tfrmmain.audsamplingrate.hint
 msgid "(<integer>) the sampling frequency of the audio in Hertz"
-msgstr "(<integer>) frecuencia de mostraxe do son en Hertz"
+msgstr "(<ціле>) частота дискретизації звуку в Герцах"
 
 #: tfrmmain.btnadd.caption
 msgid "Add"
-msgstr "Engadir"
+msgstr "Додати"
 
 #: tfrmmain.btnadd.hint
-#, fuzzy
-#| msgid "add file(s) to the list for conversion"
 msgid "Add file(s) to the list for conversion"
-msgstr "Engadir ficheiro(s) á lista de conversión"
+msgstr "Додати файл(и) до списку перетворення"
 
 #: tfrmmain.btnclear.caption
 msgid "Clear"
-msgstr "Limpar"
+msgstr "Очистити"
 
 #: tfrmmain.btnclear.hint
-#, fuzzy
-#| msgid "remove all files from the list"
 msgid "Remove all files from the list"
-msgstr "Sacar todos os ficheiros da lista"
+msgstr "Вилучити всі файли зі списку"
 
 #: tfrmmain.btnconvert.caption
 msgid "Convert"
-msgstr "Converter"
+msgstr "Перетворити"
 
 #: tfrmmain.btnconvert.hint
-#, fuzzy
-#| msgid "start the conversion process"
 msgid "Start the conversion process"
-msgstr "Iniciar o proceso de conversión"
+msgstr "Розпочати процес перетворення"
 
 #: tfrmmain.btnoptions.caption
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
-msgstr "Opcións"
+msgstr "Параметри"
 
 #: tfrmmain.btnoptions.hint
-#, fuzzy
-#| msgid "open or close the additional option window"
 msgid "Open/close the additional options window"
-msgstr "Abrir ou pechar a xanela opcións adicionais"
+msgstr "Відкрити/закрити вікно додаткових параметрів"
 
 #: tfrmmain.btnplay.caption
 msgid "Play"
-msgstr "Reproducir"
+msgstr "Відтворити"
 
 #: tfrmmain.btnplay.hint
-#, fuzzy
-#| msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Vista previa do ficheiro orixe seleccionado con ffplay (é unha boa proba para ver se a conversión é posíbel)"
+msgstr "Відтворити обраний файл за допомогою ffplay (гарний спосіб перевірити можливість його перетворення)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
-msgstr "Vista previa"
+msgstr "Попередній перегляд"
 
 #: tfrmmain.btnpreview.hint
-#, fuzzy
-#| msgid "preview using the output settings"
 msgid "Preview using the output settings"
-msgstr "Vista previa empregando os axustes de saída"
+msgstr "Попередній перегляд результату"
 
 #: tfrmmain.btnremove.caption
 msgid "Remove"
-msgstr "Quitar"
+msgstr "Вилучити"
 
 #: tfrmmain.btnremove.hint
-#, fuzzy
-#| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
-msgstr "Sacar o(s) ficheiro(s) seleccionado(s) da lista"
+msgstr "Вилучити виділені файли зі списку"
 
 #: tfrmmain.categorybox.hint
-#, fuzzy
-#| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
-msgstr "Nome do dispositivo ou tipo de ficheiro para converter a"
+msgstr "Пристрій або тип відео у який потрібно здійснити перетворення"
 
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
-msgstr ""
+msgstr "Використовувати теку з сирцями"
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
-msgstr "2 pasadas"
+msgstr "2 проходи"
 
 #: tfrmmain.cbx2pass.hint
-#, fuzzy
-#| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Facendo dúas pasadas permite recoller, coa primeira,  a información codificada para mellorar a calidade."
+msgstr "Обробка у два проходи дозволяє покращити якість"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
-msgstr "Desentrelazar"
+msgstr "Деінтерлейсинг"
 
 #: tfrmmain.cbxdeinterlace.hint
-#, fuzzy
-#| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
-msgstr "Sacar o entrelazado do vídeo (de ser necesario)"
+msgstr "Вилучає через-рядкову розгортку з відео ( у разі потреби)"
 
 #: tfrmmain.choosefolderbtn.caption
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: tfrmmain.destfolder.hint
-#, fuzzy
-#| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "Localización do destino para o vídeo final (elixir un cartafol distinto do cartafol de orixe)"
+msgstr "Тека для обробленого відео (повинна відрізнятись від теки з сирцями)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-#, fuzzy
-#| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<integer:integer> uo <real>) relación de aspecto físico (DAR) da pantalla de destino."
+msgstr "(<ціле: ціле> або <дійсне>) фізичне співвідношення сторін дисплея (DAR)"
 
 #: tfrmmain.edtaudiosync.hint
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr ""
+msgstr "(<ціле>) Від 10 до частоти дискретизації (44100, 48000). Дозволяє \"розтягти\" або \"стиснути\" аудіо доріжку."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: tfrmmain.edtcropleft.text
 msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: tfrmmain.edtcropright.text
 msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: tfrmmain.edtcroptop.text
 msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: tfrmmain.edtseekhh.hint
 msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<гг:мм:сс> - перемотати до цієї позиції перед початком перетворення"
 
 #: tfrmmain.edtseekmm.hint
 msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<гг:мм:сс> - перемотати до цієї позиції перед початком перетворення"
 
 #: tfrmmain.edtseekss.hint
 msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
 msgid "<hh:mm:ss> - Seek to this position before start converting"
-msgstr ""
+msgstr "<гг:мм:сс> - перемотати до цієї позиції перед початком перетворення"
 
 #: tfrmmain.edtttrhh.hint
-#, fuzzy
-#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr "<hh:mm:ss> - Cantidade de tempo para gravar"
+msgstr "<гг:мм:сс> - зупинитись на цій позиції для закінчення перетворення"
 
 #: tfrmmain.edtttrmm.hint
-#, fuzzy
-#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRMM.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr "<hh:mm:ss> - Cantidade de tempo para gravar"
+msgstr "<гг:мм:сс> - зупинитись на цій позиції для закінчення перетворення"
 
 #: tfrmmain.edtttrss.hint
-#, fuzzy
-#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRSS.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr "<hh:mm:ss> - Cantidade de tempo para gravar"
+msgstr "<гг:мм:сс> - зупинитись на цій позиції для закінчення перетворення"
 
 #: tfrmmain.edtvolume.hint
-#, fuzzy
-#| msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr "(<integer>) Volume actual = 256, 128 = volume medio, 512 = volume dobre"
+msgstr "(<ціле>) 256 = Поточна гучність, 128 = Половина гучності, 512 = Подвійна гучність"
 
 #: tfrmmain.frmmain.caption
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: tfrmmain.label1.caption
-#, fuzzy
-#| msgid "Convert"
 msgid "Convert to:"
-msgstr "Converter"
+msgstr "Перетворити на:"
 
 #: tfrmmain.label10.caption
 msgid "Audio Channels"
-msgstr "Canles de son"
+msgstr "Аудіо-канали"
 
 #: tfrmmain.label12.caption
-#, fuzzy
-#| msgid "Output Folder"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
-msgstr "Gardar en..."
+msgstr "Вихідні тека:"
 
 #: tfrmmain.label19.caption
-#, fuzzy
-#| msgid "Presets"
 msgid "Preset:"
-msgstr "Preconfiguracións"
+msgstr "Заготовка:"
 
 #: tfrmmain.label20.caption
 msgid "Volume"
-msgstr "Volume"
+msgstr "Гучність"
 
 #: tfrmmain.label21.caption
 msgid "Sync"
-msgstr ""
+msgstr "Синхронізувати"
 
 #: tfrmmain.label22.caption
 msgid "Seek to"
-msgstr "Buscar"
+msgstr "Перемотати до:"
 
 #: tfrmmain.label23.caption
 msgid "Time to Record"
-msgstr "Tempo para gravar"
+msgstr "Час запису"
 
 #: tfrmmain.label24.caption
 msgid "Hours / Minutes / Seconds"
-msgstr "Horas / Minutos / Segundos"
+msgstr "Години / Хвилини / Секунди"
 
 #: tfrmmain.label3.caption
-#, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
-msgstr "Parámetros adicionais en liña de ordes (avanzado)"
+msgstr "Додаткові параметри командного рядка"
 
 #: tfrmmain.label5.caption
 msgid "1st Pass"
@@ -517,19 +447,19 @@ msgstr ""
 
 #: tfrmmain.label7.caption
 msgid "Audio Bitrate"
-msgstr "Bits/s. son"
+msgstr "Аудіо бітрейт"
 
 #: tfrmmain.label8.caption
 msgid "Sample Rate"
-msgstr "Taxa de mostraxe"
+msgstr "Частота дискретизації"
 
 #: tfrmmain.label9.caption
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
-msgstr "Relación de aspecto"
+msgstr "Співвідношення сторін"
 
 #: tfrmmain.lblcancelchanges.caption
 msgid "Cancel Changes"
@@ -537,23 +467,23 @@ msgstr ""
 
 #: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
-msgstr "Abaixo"
+msgstr "Знизу"
 
 #: tfrmmain.lblcropleft.caption
 msgid "Left"
-msgstr "Esquerda"
+msgstr "Ліворуч"
 
 #: tfrmmain.lblcropright.caption
 msgid "Right"
-msgstr "Dereita"
+msgstr "Праворуч"
 
 #: tfrmmain.lblcroptop.caption
 msgid "Top"
-msgstr "Arriba"
+msgstr "Згори"
 
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
-msgstr "Fotogramas/s."
+msgstr "Частота кадрів"
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -565,73 +495,65 @@ msgstr ""
 
 #: tfrmmain.lblvideobitrate.caption
 msgid "Video Bitrate"
-msgstr "Bits/s. vídeo"
+msgstr "Відео бітрейт"
 
 #: tfrmmain.lblvideosize.caption
 msgid "Video Size"
-msgstr "Tamaño(HxV)"
+msgstr "Розмір відео"
 
 #: tfrmmain.menuitem1.caption
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "Застосувати заготовку"
 
 #: tfrmmain.menuitem2.caption
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
-msgstr ""
+msgstr "Використовувати теку призначення"
 
 #: tfrmmain.menuitem9.caption
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: tfrmmain.mitabout.caption
-#, fuzzy
-#| msgid "About"
 msgid "About"
-msgstr "Acerca de"
+msgstr "Про програму"
 
 #: tfrmmain.mitdisplaycmdline.caption
-#, fuzzy
-#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
-msgstr "Mostrar a liña de ordes"
+msgstr "Показати командний рядок"
 
 #: tfrmmain.mitdocs.caption
 msgid "Documentation"
-msgstr "Documentación"
+msgstr "Документація"
 
 #: tfrmmain.mitexit.caption
 msgid "Exit"
-msgstr "Saír"
+msgstr "Вийти"
 
 #: tfrmmain.mitforums.caption
-#, fuzzy
-#| msgid "WinFF Forums"
 msgid "Forums"
-msgstr "Foros de WinFF"
+msgstr "Форуми"
 
 #: tfrmmain.mitimportpreset.caption
 msgid "Import Preset"
-msgstr "Importar preconfiguración"
+msgstr "Імпортувати заготовку"
 
 #: tfrmmain.mitpauseonfinish.caption
 msgid "Pause on Finish"
-msgstr "Pausa ao rematar"
+msgstr "Пауза після завершення"
 
 #: tfrmmain.mitplaysoundonfinish.caption
 msgid "Play Sound on Finish"
-msgstr "Pausa ao rematar"
+msgstr "Звуковий сигнал після завершення"
 
 #: tfrmmain.mitpreferences.caption
 msgid "Preferences"
-msgstr "Preferencias"
+msgstr "Налаштування"
 
 #: tfrmmain.mitpresets.caption
-#, fuzzy
-#| msgid "Presets"
 msgid "Presets"
-msgstr "Preconfiguracións"
+msgstr "Заготовки"
 
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
@@ -640,245 +562,211 @@ msgstr ""
 #: tfrmmain.mitshowoptions.caption
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr "Opcións adicionais"
+msgstr "Додаткові параметри"
 
 #: tfrmmain.mitshutdownonfinish.caption
 msgid "Shutdown on Finish"
-msgstr "Apagar ao rematar"
+msgstr "Вимкнути комп’ютер після завершення"
 
 #: tfrmmain.mitviewmode.caption
 msgid "Detailed View"
-msgstr ""
+msgstr "Детальний перегляд"
 
 #: tfrmmain.mitwinff.caption
 msgid "WinFF Website"
-msgstr "Web de WinFF"
+msgstr "Вебсайт WinFF"
 
 #: tfrmmain.mnuedit.caption
 msgid "Edit"
-msgstr "Editar"
+msgstr "Змінити"
 
 #: tfrmmain.mnufile.caption
 msgid "File"
-msgstr "Ficheiro"
+msgstr "Файл"
 
 #: tfrmmain.mnuhelp.caption
 msgid "Help"
-msgstr "Axuda"
+msgstr "Довідка"
 
 #: tfrmmain.mnuoptions.caption
-#, fuzzy
-#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr "Opcións"
+msgstr "Параметри"
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
-msgstr ""
+msgstr "Основна панель"
 
 #: tfrmmain.presetbox.hint
-#, fuzzy
-#| msgid "specific setting to use for the chosen device or file type"
 msgid "Specific settings to use for the chosen device or file type"
-msgstr "Configuración especifica que usar co dispositivo ou tipo de ficheiro elixido"
+msgstr "Конкретні параметри для обраного пристрою або типу файлу"
 
 #: tfrmmain.tabsheet2.caption
-#, fuzzy
-#| msgid "Audio Sync"
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
-msgstr "Sincronización de son"
+msgstr "Аудіо"
 
 #: tfrmmain.tabsheet3.caption
-#, fuzzy
-#| msgid "Crop"
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
-msgstr "Recortar"
+msgstr "Обрізати"
 
 #: tfrmmain.tabsheet4.caption
 msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
-msgstr ""
+msgstr "Час"
 
 #: tfrmmain.tabsheet5.caption
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: tfrmmain.tabsheet6.caption
-#, fuzzy
-#| msgid "Output Details"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
-msgstr "Detalles da saída"
+msgstr "Виводити подробиці"
 
 #: tfrmmain.tabvideo.caption
-#, fuzzy
-#| msgid "Video Size"
 msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
 msgid "Video"
-msgstr "Tamaño(HxV)"
+msgstr "Відео"
 
 #: tfrmmain.vidbitrate.hint
-#, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<integer>kb) kilobits/segundo para ser usado polo fluxo no destino"
+msgstr "(<ціле>) швидкість даних для потоку кілобіт в секунду"
 
 #: tfrmmain.vidframerate.hint
-#, fuzzy
-#| msgid "(<real> or <integer>) the number of frames per second"
 msgid "(<real> or <integer>) number of frames per second"
-msgstr "(<real> ou <integer>) o número de fotogramas por segundo"
+msgstr "(<дійсне> або <ціле>) кількість кадрів в секунду"
 
 #: tfrmmain.vidsizex.hint
-#, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<integer> X <integer>) cantidade de píxeles de información. Para códecs non compatíbeis coa relación de aspecto de píxeles (PAR), este é o tamaño do vídeo ao seren visto."
+msgstr "(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
 
 #: tfrmmain.vidsizey.hint
-#, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<integer> X <integer>) cantidade de píxeles de información. Para códecs non compatíbeis coa relación de aspecto de píxeles (PAR), este é o tamaño do vídeo ao seren visto."
+msgstr "(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Скасувати"
 
 #: tfrmpreferences.btndefaultdir.caption
 msgctxt "TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: tfrmpreferences.btnlinffmpegpath.caption
 msgctxt "TFRMPREFERENCES.BTNLINFFMPEGPATH.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: tfrmpreferences.btnlinffplaypath.caption
 msgctxt "TFRMPREFERENCES.BTNLINFFPLAYPATH.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: tfrmpreferences.btnlinterminalexe.caption
 msgctxt "TFRMPREFERENCES.BTNLINTERMINALEXE.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: tfrmpreferences.btnok.caption
 msgctxt "TFRMPREFERENCES.BTNOK.CAPTION"
 msgid "OK"
-msgstr "Aceptar"
+msgstr "Так"
 
 #: tfrmpreferences.btnwinffmpegpath.caption
 msgctxt "TFRMPREFERENCES.BTNWINFFMPEGPATH.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: tfrmpreferences.btnwinffplaypath.caption
 msgctxt "TFRMPREFERENCES.BTNWINFFPLAYPATH.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: tfrmpreferences.cbchcpchar.caption
 msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
-msgstr "Usar CHCP para idiomas non ingleses"
+msgstr "Використовувати CHCP для міжнародних символів"
 
 #: tfrmpreferences.cbrememberlastdir.caption
-#, fuzzy
-#| msgid "Remember Last Directory Used"
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
-msgstr "Lembrar o último cartafol usado"
+msgstr "Запам’ятовувати останню використану теку"
 
 #: tfrmpreferences.cbthreads.caption
 msgctxt "TFRMPREFERENCES.CBTHREADS.CAPTION"
 msgid "Use Several Encoding Threads:"
-msgstr ""
+msgstr "Кілька потоків:"
 
 #: tfrmpreferences.edtlinterminaloptions.hint
-#, fuzzy
-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr "Opcións para o terminal (-e para Xterm, -x para Gnome Terminal"
+msgstr "'-e' для xterm, '-x' для gnome-terminal"
 
 #: tfrmpreferences.frmpreferences.caption
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
-msgstr "Preferencias de WinFF"
+msgstr "Налаштування WinFF"
 
 #: tfrmpreferences.lbldefaultdir.caption
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
 msgid "Default Destination Directory:"
-msgstr "Cartafol predeterminado de destino"
+msgstr "Типова тека для збереження:"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
 #, fuzzy
 #| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Ruta ao executable FFmpeg"
+msgstr "Шлях до FFmpeg:"
 
 #: tfrmpreferences.lbllinffplaypath.caption
 #, fuzzy
 #| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Ruta ao executable FFPlay"
+msgstr "Шлях до FFmpeg:"
 
 #: tfrmpreferences.lbllinterminalexe.caption
-#, fuzzy
-#| msgid "Terminal to run FFmpeg"
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
 msgid "Terminal to run FFmpeg in:"
-msgstr "Terminal para executar FFmpeg"
+msgstr "Термінал для запуску FFmpeg:"
 
 #: tfrmpreferences.lbllinterminaloptions.caption
-#, fuzzy
-#| msgid "Additional Options"
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION"
 msgid "Terminal Options:"
-msgstr "Opcións adicionais"
+msgstr "Параметри терміналу:"
 
 #: tfrmpreferences.lblpriority.caption
-#, fuzzy
-#| msgid "Priority"
 msgctxt "TFRMPREFERENCES.LBLPRIORITY.CAPTION"
 msgid "Priority:"
-msgstr "Prioridade"
+msgstr "Пріоритет:"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
 #, fuzzy
 #| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Ruta ao executable FFmpeg"
+msgstr "Шлях до FFmpeg:"
 
 #: tfrmpreferences.lblwinffplay.caption
 #, fuzzy
 #| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Ruta ao executable FFPlay"
+msgstr "Шлях до FFmpeg:"
 
 #: tfrmpreferences.tabgeneral.caption
 msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
 msgid "General"
-msgstr "Xeral"
+msgstr "Загальні"
 
 #: tfrmpreferences.tablinux.caption
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
@@ -886,112 +774,108 @@ msgid "Linux"
 msgstr "Linux"
 
 #: tfrmpreferences.tabwindows.caption
-#, fuzzy
-#| msgid "Ms Windows"
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
 msgid "MS Windows"
-msgstr "Ms Windows"
+msgstr "MS Windows"
 
 #: tfrmscript.btnclip.caption
-#, fuzzy
-#| msgid "Clipboard"
 msgid "Copy to Clipboard"
-msgstr "Portapapeis"
+msgstr "Скопіювати до буфера"
 
 #: tfrmscript.btnclose.caption
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
-msgstr "Pechar"
+msgstr "Закрити"
 
 #: tfrmscript.btnrun.caption
 msgid "Run!"
-msgstr ""
+msgstr "Розпочати!"
 
 #: tfrmscript.btnsave.caption
 msgid "Save As..."
-msgstr ""
+msgstr "Зберегти як…"
 
 #: tfrmscript.caption
 msgid "FFmpeg Command Line"
-msgstr "Liña de ordes de FFmpeg"
+msgstr "Командний рядок FFmpeg"
 
 #: unit1.rsanalysing
 msgid "Analysing"
-msgstr ""
+msgstr "Аналіз"
 
 #: unit1.rsconverting
 msgid "Converting"
-msgstr "Convertendo"
+msgstr "Перетворення"
 
 #: unit1.rscouldnotfindffmpeg
 #, fuzzy
 #| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
-msgstr "Non se pode atopar FFmpeg."
+msgstr "Не знайдено FFmpeg."
 
 #: unit1.rscouldnotfindffplay
 #, fuzzy
 #| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
-msgstr "Non se pode atopar FFPlay."
+msgstr "Не знайдено FFmpeg."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
-msgstr "Non se pode atopar o ficheiro"
+msgstr "Неможливо знайти файл"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "Non se pode atopar o ficheiro de preconfiguracións."
+msgstr "Не знайдено файл заготовок."
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "A extensión non pode conter un punto"
+msgstr "Розширення файлу не повинно містити точку"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
-msgstr "O ficheiro non existe"
+msgstr "файл не існує"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Ficheiro de preconfiguración incorrecto"
+msgstr "Пошкоджений файл заготовок"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
-msgstr "O nome ten que ser alfanumérico (a-z,A-Z,0-9), sen eñes nin tiles"
+msgstr "Ім’я повинно бути літерно-цифровим (a-z,A-Z,0-9)"
 
 #: unit1.rspleaseadd1file
 msgid "Please add at least 1 file to convert"
-msgstr "Engada polo menos un ficheiro para converter"
+msgstr "Додайте хоча б один файл для перетворення"
 
 #: unit1.rspleaseselectapreset
 msgid "Please select a preset"
-msgstr "Por favor, elixa un valor preestablecido"
+msgstr "Будь ласка оберіть заготовку"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
 #| msgid "Preset: %s%s%s already exists"
 msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
-msgstr "A preconfiguración: %s%s%s xa existe"
+msgstr "Заготовка: %s%s%s вже існує"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "A preconfiguración a importar non ten estensión"
+msgstr "Заготовка для імпорту немає розширення"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "A preconfiguración a importar non ten etiqueta"
+msgstr "Заготовка для імпорту немає мітки"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "Elixa unha preconfiguración para exportala"
+msgstr "Будь ласка, оберіть заготовку для експорту"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "A preconfiguración coa etiqueta: %s%s%s xa existe"
+msgstr "Заготовка з міткою: %s%s%s вже існує"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr "Prema Intro para continuar"
+msgstr "Натисніть Ввід для продовження"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
@@ -999,51 +883,51 @@ msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
-msgstr "Seleccionar cartafol"
+msgstr "Вибір каталогу"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "Elixir ficheiro de preconfiguración"
+msgstr "Оберіть файл заготовки"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
-msgstr "Elixir ficheiros de vídeo"
+msgstr "Виберіть відео файл(и)"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "A preconfiguración conten caracteres incorrectos"
+msgstr "Заготовка містить неприпустимі символи"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Crear preconfiguración:"
+msgstr "Створити заготовку:"
 
 #: unit2.rsimportpresets
 msgid "Import Presets"
-msgstr "Importar preconfiguracións"
+msgstr "Імпорт заготовок"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "A etiqueta ten que ser única"
+msgstr "Мітка повинна бути унікальною."
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "Eliminar preconfiguración:"
+msgstr "Вилучити заготовку:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "Actualizar preconfiguración:"
+msgstr "Оновити заготовку:"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
-msgstr "Debe introducir unha extensión"
+msgstr "Потрібно ввести розширення."
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "Debe introducir unha etiqueta"
+msgstr "Потрібно ввести мітку."
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr "Debe introducir un nome"
+msgstr "Потрібно ввести назву."
 
 #: unit3.rslaunchpadcontrib
 msgid "Launchpad contributors"
@@ -1055,14 +939,13 @@ msgstr ""
 
 #: unit4.rspriorityhigh
 msgid "High"
-msgstr "Alta"
+msgstr "Високий"
 
 #: unit4.rspriorityidle
 msgid "Idle"
-msgstr "Inactiva"
+msgstr "Неактивний"
 
 #: unit4.rsprioritynormal
-#, fuzzy
 msgid "Normal"
-msgstr "Normal"
+msgstr "Звичайний"
 

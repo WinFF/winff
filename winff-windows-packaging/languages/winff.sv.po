@@ -1,34 +1,16 @@
- Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
-
- This program is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.
-
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License
- along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
- Göran Hanell <hannell@algonet.se>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.4.2\n"
+"Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Göran Hanell <hannell@algonet.se>\n"
-"Language-Team: English <matt@biggmatt.com>\n"
-"Language: en\n"
+"POT-Creation-Date: 2012-10-05 21:26+0200\n"
+"PO-Revision-Date: 2012-10-17 12:03+0000\n"
+"Last-Translator: Christopher Forster <Unknown>\n"
+"Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: United States\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Launchpad-Export-Date: 2012-12-16 08:53+0000\n"
+"X-Generator: Launchpad (build 16372)\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -36,8 +18,6 @@ msgid "OK"
 msgstr "OK"
 
 #: tfrmabout.frmabout.caption
-#, fuzzy
-#| msgid "About WinFF"
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Om WinFF"
@@ -52,11 +32,9 @@ msgid "Copyright %s ; Licence: GPL V3+"
 msgstr ""
 
 #: tfrmabout.lblffmeg.caption
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
 msgid "FFmpeg"
-msgstr "FFmpeg"
+msgstr ""
 
 #: tfrmabout.lblgevers.caption
 msgctxt "TFRMABOUT.LBLGEVERS.CAPTION"
@@ -115,22 +93,18 @@ msgid "Matthew Weatherford"
 msgstr ""
 
 #: tfrmabout.lblwinbuild.caption
-#, fuzzy
-#| msgid "FFmpeg builds by"
 msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
 msgid "FFmpeg Windows Builds by"
-msgstr "FFmpeg kompileringar från"
+msgstr ""
 
 #: tfrmabout.lblwinff.caption
 msgid "WinFF %s"
 msgstr ""
 
 #: tfrmabout.tabffmpeg.caption
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
 msgid "FFmpeg"
-msgstr "FFmpeg"
+msgstr ""
 
 #: tfrmabout.tabthanks.caption
 msgctxt "TFRMABOUT.TABTHANKS.CAPTION"
@@ -138,19 +112,15 @@ msgid "Thanks"
 msgstr "Tack"
 
 #: tfrmabout.tabwinff.caption
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMABOUT.TABWINFF.CAPTION"
 msgid "WinFF"
-msgstr "WinFF"
+msgstr ""
 
 #: tfrmeditpresets.addpresetbtn.caption
 msgid "Add / Update"
 msgstr "Lägg till / Uppdatera"
 
 #: tfrmeditpresets.cancelbtn.caption
-#, fuzzy
-#| msgid "Close"
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Stäng"
@@ -168,10 +138,8 @@ msgid "Enter a more descriptive name for this preset"
 msgstr ""
 
 #: tfrmeditpresets.edit3.hint
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
-msgstr "Förinställd kommandorad (inget -i eller målfil)"
+msgstr ""
 
 #: tfrmeditpresets.edit4.hint
 msgid "Do not include a dot"
@@ -196,10 +164,8 @@ msgid "Import"
 msgstr "Importera"
 
 #: tfrmeditpresets.label1.caption
-#, fuzzy
-#| msgid "Create Preset:"
 msgid "Category / Preset"
-msgstr "Skapa förinställning"
+msgstr ""
 
 #: tfrmeditpresets.label2.caption
 #, fuzzy
@@ -212,8 +178,6 @@ msgid "Preset Label"
 msgstr "Förinställd etikett"
 
 #: tfrmeditpresets.label4.caption
-#, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Förinställd kommandorad (inget -i eller målfil)"
 
@@ -228,8 +192,6 @@ msgid "Category"
 msgstr "Kategori"
 
 #: tfrmeditpresets.okbtn.caption
-#, fuzzy
-#| msgid "Save"
 msgid "Save"
 msgstr "Spara"
 
@@ -260,17 +222,13 @@ msgid "Export"
 msgstr "Exportera"
 
 #: tfrmexport.label1.caption
-#, fuzzy
-#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "Välj förinställningar att exportera"
 
 #: tfrmmain.audbitrate.hint
-#, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<heltal>kb) hur många kilobit/sekund som strömmen får använda"
+msgstr "(<heltal>) hur många kilobit/sekund som strömmen får använda"
 
 #: tfrmmain.audchannels.hint
 msgid "(<integer>) number of audio channels"
@@ -285,30 +243,24 @@ msgid "Add"
 msgstr "Lägg till"
 
 #: tfrmmain.btnadd.hint
-#, fuzzy
-#| msgid "add file(s) to the list for conversion"
 msgid "Add file(s) to the list for conversion"
-msgstr "lägg till filer i listan för konvertering"
+msgstr "Lägg till filer i listan för konvertering"
 
 #: tfrmmain.btnclear.caption
 msgid "Clear"
 msgstr "Rensa"
 
 #: tfrmmain.btnclear.hint
-#, fuzzy
-#| msgid "remove all files from the list"
 msgid "Remove all files from the list"
-msgstr "ta bort alla filer från listan"
+msgstr "Ta bort alla filer från listan"
 
 #: tfrmmain.btnconvert.caption
 msgid "Convert"
 msgstr "Konvertera"
 
 #: tfrmmain.btnconvert.hint
-#, fuzzy
-#| msgid "start the conversion process"
 msgid "Start the conversion process"
-msgstr "starta konverteringsprocessen"
+msgstr "Starta konverteringsprocessen"
 
 #: tfrmmain.btnoptions.caption
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
@@ -316,8 +268,6 @@ msgid "Options"
 msgstr "Alternativ"
 
 #: tfrmmain.btnoptions.hint
-#, fuzzy
-#| msgid "open or close the additional option window"
 msgid "Open/close the additional options window"
 msgstr "Öppna eller stäng fönstret med fler inställningsalternativ"
 
@@ -326,30 +276,24 @@ msgid "Play"
 msgstr "Spela upp"
 
 #: tfrmmain.btnplay.hint
-#, fuzzy
-#| msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "förhandsvisa den valda filen med ffplay (bra test för att se om konvertering är möjlig)"
+msgstr "Förhandsvisa den valda filen med ffplay (bra test för att se om konvertering är möjlig)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
 msgstr "Förhandsvisning"
 
 #: tfrmmain.btnpreview.hint
-#, fuzzy
-#| msgid "preview using the output settings"
 msgid "Preview using the output settings"
-msgstr "förhandsvisa med valda inställningar för utdata"
+msgstr "Förhandsvisa med valda inställningar för utdata"
 
 #: tfrmmain.btnremove.caption
 msgid "Remove"
 msgstr "Ta bort"
 
 #: tfrmmain.btnremove.hint
-#, fuzzy
-#| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
-msgstr "ta bort de valda filerna från listan"
+msgstr "Ta bort de valda filerna från listan"
 
 #: tfrmmain.categorybox.hint
 #, fuzzy
@@ -367,8 +311,6 @@ msgid "2 pass"
 msgstr "2 pass"
 
 #: tfrmmain.cbx2pass.hint
-#, fuzzy
-#| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr "Genom att använda två steg tillåts videokodaren att samla information under det första steget, vilket ger högre kvalité"
 
@@ -377,10 +319,8 @@ msgid "Deinterlace"
 msgstr "Avfläta"
 
 #: tfrmmain.cbxdeinterlace.hint
-#, fuzzy
-#| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
-msgstr "avflätar videon (om det behövs)"
+msgstr "Avflätar videon (om det behövs)"
 
 #: tfrmmain.choosefolderbtn.caption
 msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
@@ -388,20 +328,16 @@ msgid "..."
 msgstr ""
 
 #: tfrmmain.destfolder.hint
-#, fuzzy
-#| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "målkatalog för den konverterade videofilen (välj en annan katalog än källkatalogen)"
+msgstr "Målkatalog för den konverterade videofilen (välj en annan katalog än källkatalogen)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-#, fuzzy
-#| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<heltal>:<heltal> eller <decimaltal>) det fysiska höjd/bredd-förhållandet på målenhetens display."
+msgstr "(<heltal>:<heltal> eller <decimaltal>) det fysiska höjd/bredd-förhållandet på målenhetens display"
 
 #: tfrmmain.edtaudiosync.hint
 msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
@@ -462,34 +398,26 @@ msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: tfrmmain.frmmain.caption
-#, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
-msgstr "WinFF"
+msgstr ""
 
 #: tfrmmain.label1.caption
-#, fuzzy
-#| msgid "Convert"
 msgid "Convert to:"
-msgstr "Konvertera"
+msgstr ""
 
 #: tfrmmain.label10.caption
 msgid "Audio Channels"
 msgstr "Ljudkanaler"
 
 #: tfrmmain.label12.caption
-#, fuzzy
-#| msgid "Output Folder"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Målkatalog"
 
 #: tfrmmain.label19.caption
-#, fuzzy
-#| msgid "Presets"
 msgid "Preset:"
-msgstr "Förinställningar för konvertering"
+msgstr ""
 
 #: tfrmmain.label20.caption
 msgid "Volume"
@@ -512,10 +440,8 @@ msgid "Hours / Minutes / Seconds"
 msgstr ""
 
 #: tfrmmain.label3.caption
-#, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
-msgstr "Fler kommandoradsparametrar (Avancerad)"
+msgstr "Fler kommandoradsparametrar"
 
 #: tfrmmain.label5.caption
 msgid "1st Pass"
@@ -596,14 +522,10 @@ msgid "-"
 msgstr ""
 
 #: tfrmmain.mitabout.caption
-#, fuzzy
-#| msgid "About"
 msgid "About"
 msgstr "Om"
 
 #: tfrmmain.mitdisplaycmdline.caption
-#, fuzzy
-#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
 msgstr "Visa kommandorad"
 
@@ -616,10 +538,8 @@ msgid "Exit"
 msgstr "Avsluta"
 
 #: tfrmmain.mitforums.caption
-#, fuzzy
-#| msgid "WinFF Forums"
 msgid "Forums"
-msgstr "WinFFs forum"
+msgstr ""
 
 #: tfrmmain.mitimportpreset.caption
 msgid "Import Preset"
@@ -638,8 +558,6 @@ msgid "Preferences"
 msgstr "Programinställningar"
 
 #: tfrmmain.mitpresets.caption
-#, fuzzy
-#| msgid "Presets"
 msgid "Presets"
 msgstr "Förinställningar för konvertering"
 
@@ -677,8 +595,6 @@ msgid "Help"
 msgstr "Hjälp"
 
 #: tfrmmain.mnuoptions.caption
-#, fuzzy
-#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Alternativ"
@@ -688,21 +604,15 @@ msgid "pnlMain"
 msgstr ""
 
 #: tfrmmain.presetbox.hint
-#, fuzzy
-#| msgid "specific setting to use for the chosen device or file type"
 msgid "Specific settings to use for the chosen device or file type"
-msgstr "inställning att använda för den valda enheten eller filtypen"
+msgstr "Inställning att använda för den valda enheten eller filtypen"
 
 #: tfrmmain.tabsheet2.caption
-#, fuzzy
-#| msgid "Audio Settings"
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
-msgstr "Ljudinställningar"
+msgstr ""
 
 #: tfrmmain.tabsheet3.caption
-#, fuzzy
-#| msgid "Crop"
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "Beskär"
@@ -713,36 +623,26 @@ msgid "Time"
 msgstr ""
 
 #: tfrmmain.tabsheet5.caption
-#, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
-msgstr "FFmpeg"
+msgstr ""
 
 #: tfrmmain.tabsheet6.caption
-#, fuzzy
-#| msgid "Output Details"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "Detaljer för utmatning"
 
 #: tfrmmain.tabvideo.caption
-#, fuzzy
-#| msgid "Video Size"
 msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
 msgid "Video"
-msgstr "Storlek på video"
+msgstr ""
 
 #: tfrmmain.vidbitrate.hint
-#, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<heltal>kb) hur många kilobit/sekund som strömmen får använda"
+msgstr "(<heltal>) hur många kilobit/sekund som strömmen får använda"
 
 #: tfrmmain.vidframerate.hint
-#, fuzzy
-#| msgid "(<real> or <integer>) the number of frames per second"
 msgid "(<real> or <integer>) number of frames per second"
 msgstr "(<decimaltal> eller <heltal>) antal bilder per sekund"
 
@@ -806,8 +706,6 @@ msgid "Use CHCP for international characters"
 msgstr "Använd CHCP för internationella tecken"
 
 #: tfrmpreferences.cbrememberlastdir.caption
-#, fuzzy
-#| msgid "Remember Last Directory Used"
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
 msgstr "Kom ihåg senast använda katalog"
@@ -818,11 +716,9 @@ msgid "Use Several Encoding Threads:"
 msgstr ""
 
 #: tfrmpreferences.edtlinterminaloptions.hint
-#, fuzzy
-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr "Terminal-alternativ (-e för Xterm, -x för Gnome Terminal)"
+msgstr "-e för Xterm, -x för Gnome Terminal"
 
 #: tfrmpreferences.frmpreferences.caption
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
@@ -830,8 +726,6 @@ msgid "WinFF Preferences"
 msgstr "WinFF inställningar"
 
 #: tfrmpreferences.lbldefaultdir.caption
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
 msgid "Default Destination Directory:"
 msgstr "Förinställd målkatalog"
@@ -851,22 +745,16 @@ msgid "Path to FFplay or avplay Executable:"
 msgstr "Sökväg till programmet FFPlay"
 
 #: tfrmpreferences.lbllinterminalexe.caption
-#, fuzzy
-#| msgid "Terminal to run FFmpeg"
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
 msgid "Terminal to run FFmpeg in:"
 msgstr "Terminal för att köra FFmpeg"
 
 #: tfrmpreferences.lbllinterminaloptions.caption
-#, fuzzy
-#| msgid "Additional Options"
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION"
 msgid "Terminal Options:"
-msgstr "Fler alternativ"
+msgstr ""
 
 #: tfrmpreferences.lblpriority.caption
-#, fuzzy
-#| msgid "Priority"
 msgctxt "TFRMPREFERENCES.LBLPRIORITY.CAPTION"
 msgid "Priority:"
 msgstr "Prioritet"
@@ -896,8 +784,6 @@ msgid "Linux"
 msgstr "Linux"
 
 #: tfrmpreferences.tabwindows.caption
-#, fuzzy
-#| msgid "Ms Windows"
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
 msgid "MS Windows"
 msgstr "MS Windows"
@@ -907,8 +793,6 @@ msgid "Copy to Clipboard"
 msgstr ""
 
 #: tfrmscript.btnclose.caption
-#, fuzzy
-#| msgid "Close"
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
 msgstr "Stäng"
@@ -934,16 +818,12 @@ msgid "Converting"
 msgstr "Konverterar"
 
 #: unit1.rscouldnotfindffmpeg
-#, fuzzy
-#| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
-msgstr "Kunde inte hitta FFmpeg."
+msgstr ""
 
 #: unit1.rscouldnotfindffplay
-#, fuzzy
-#| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
-msgstr "Kunde inte hitta FFPlay."
+msgstr ""
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
@@ -978,10 +858,8 @@ msgid "Please select a preset"
 msgstr "Välj en förinställning att exportera"
 
 #: unit1.rspresetalreadyexist
-#, fuzzy
-#| msgid "Preset: %s%s%s already exists"
 msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
-msgstr "Förinställning: %s%s%s finns redan"
+msgstr ""
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
@@ -1008,10 +886,8 @@ msgid "Replace Preset?"
 msgstr ""
 
 #: unit1.rsselectdirectory
-#, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
-msgstr "Förinställd målkatalog"
+msgstr ""
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
@@ -1074,7 +950,6 @@ msgid "Idle"
 msgstr "Vila"
 
 #: unit4.rsprioritynormal
-#, fuzzy
 msgid "Normal"
 msgstr "Normal"
 
