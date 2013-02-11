@@ -2,13 +2,13 @@
 <presets>
   <BlackberryCurvefs>
     <label>Blackberry Curve Fullscreen</label>
-    <params>-f mp4 -vcodec mpeg4 -b:v 400k -r 24 -vf scale=320:240 -aspect 4:3 -acodec libfaac -ar 22050 -ac 2 -b:a 48k</params>
+    <params>-f mp4 -vcodec mpeg4 -b:v 400k -r 24 -vf scale=320:240 -aspect 4:3 -acodec libvo_aacenc -ar 22050 -ac 2 -b:a 48k</params>
     <extension>mp4</extension>
     <category>Blackberry</category>
   </BlackberryCurvefs>
   <BlackberryCurvews>
     <label>Blackberry Curve Widescreen</label>
-    <params>-f mp4 -vcodec mpeg4 -b:v 400k -r 24 -vf scale=320:180 -aspect 16:9 -acodec libfaac -ar 22050 -ac 2 -b:a 48k</params>
+    <params>-f mp4 -vcodec mpeg4 -b:v 400k -r 24 -vf scale=320:180 -aspect 16:9 -acodec libvo_aacenc -ar 22050 -ac 2 -b:a 48k</params>
     <extension>mp4</extension>
     <category>Blackberry</category>
   </BlackberryCurvews>
@@ -80,67 +80,67 @@
   </I5GWS>
   <M4a>
     <label>MPEG4 Audio</label>
-    <params>-vn -acodec libfaac -b:a 112k -ac 2 -ar 48000</params>
+    <params>-vn -acodec libvo_aacenc -b:a 112k -ac 2 -ar 48000</params>
     <extension>m4a</extension>
     <category>Audio</category>
   </M4a>
   <MP3GP128x96mono43>
     <label>3GPP H.263 128x96 4:3 AAC mono</label>
-    <params>-r 15 -b:v 64k -ac 1 -vf scale=128:96 -ar 16000 -b:a 32k -acodec libfaac -vcodec h263</params>
+    <params>-r 15 -b:v 64k -ac 1 -vf scale=128:96 -ar 16000 -b:a 32k -acodec libvo_aacenc -vcodec h263</params>
     <extension>3gp</extension>
     <category>Mobile Phones</category>
   </MP3GP128x96mono43>
   <MP3GP176x144mono169C>
     <label>3GPP H.263 176x144 16:9 crop AAC mono</label>
-    <params>-r 15 -b:v 64k -ac 1 -vf scale=256:144,crop=iw-2*40 -ar 16000 -b:a 32k -acodec libfaac -vcodec h263</params>
+    <params>-r 15 -b:v 64k -ac 1 -vf scale=256:144,crop=iw-2*40 -ar 16000 -b:a 32k -acodec libvo_aacenc -vcodec h263</params>
     <extension>3gp</extension>
     <category>Mobile Phones</category>
   </MP3GP176x144mono169C>
   <MP3GP176x144mono169L>
     <label>3GPP H.263 176x144 16:9 letterbox AAC mono</label>
-    <params>-r 15 -b:v 64k -ac 1 -vf scale=176:100,pad=iw:ih+2*22:0:22 -ar 16000 -b:a 32k -acodec libfaac -vcodec h263</params>
+    <params>-r 15 -b:v 64k -ac 1 -vf scale=176:100,pad=iw:ih+2*22:0:22 -ar 16000 -b:a 32k -acodec libvo_aacenc -vcodec h263</params>
     <extension>3gp</extension>
     <category>Mobile Phones</category>
   </MP3GP176x144mono169L>
   <MP3GP176x144mono43>
     <label>3GPP H.263 176x144 4:3 AAC mono</label>
-    <params>-r 15 -b:v 64k -ac 1 -vf scale=176:132,pad=iw:ih+2*6:0:6 -ar 16000 -b:a 32k -acodec libfaac -vcodec h263</params>
+    <params>-r 15 -b:v 64k -ac 1 -vf scale=176:132,pad=iw:ih+2*6:0:6 -ar 16000 -b:a 32k -acodec libvo_aacenc -vcodec h263</params>
     <extension>3gp</extension>
     <category>Mobile Phones</category>
   </MP3GP176x144mono43>
   <MP3GP320x240stereo169C>
     <label>3GPP H.264 320x240 16:9 crop AAC stereo</label>
-    <params>-r 15 -b:v 128k -vf scale=426:240,crop=iw-52-54:ih:52 -ar 22050 -b:a 64k -acodec libfaac -vcodec libx264 -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 3 -direct-pred 1 -trellis 1 -wpredp 2 -threads 0</params>
+    <params>-r 15 -b:v 128k -vf scale=426:240,crop=iw-52-54:ih:52 -ar 22050 -b:a 64k -acodec libvo_aacenc -vcodec libx264 -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 3 -direct-pred 1 -trellis 1 -wpredp 2 -threads 0</params>
     <extension>3gp</extension>
     <category>Mobile Phones</category>
   </MP3GP320x240stereo169C>
   <MP3GP320x240stereo169L>
     <label>3GPP H.264 320x240 16:9 letterbox AAC stereo</label>
-    <params>-r 15 -b:v 128k -vf scale=320:180,pad=iw:ih+2*30:0:30 -ar 22050 -b:a 64k -acodec libfaac -vcodec libx264 -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 3 -direct-pred 1 -trellis 1 -wpredp 2 -threads 0</params>
+    <params>-r 15 -b:v 128k -vf scale=320:180,pad=iw:ih+2*30:0:30 -ar 22050 -b:a 64k -acodec libvo_aacenc -vcodec libx264 -coder 1 -threads 0</params>
     <extension>3gp</extension>
     <category>Mobile Phones</category>
   </MP3GP320x240stereo169L>
   <MP3GP320x240stereo43>
     <label>3GPP H.264 320x240 4:3 AAC stereo</label>
-    <params>-r 15 -b:v 128k -vf scale=320:240 -ar 22050 -b:a 64k -acodec libfaac -vcodec libx264 -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 3 -direct-pred 1 -trellis 1 -wpredp 2 -threads 0</params>
+    <params>-r 15 -b:v 128k -vf scale=320:240 -ar 22050 -b:a 64k -acodec libvo_aacenc -vcodec libx264 -coder 1 -threads 0</params>
     <extension>3gp</extension>
     <category>Mobile Phones</category>
   </MP3GP320x240stereo43>
   <MPEG4VideoHQ>
     <label>MPEG-4 H.264 video (high quality)</label>
-    <params>-crf 35.0 -vcodec libx264 -acodec libfaac -ar 48000 -b:a 128k -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 5 -direct-pred 3 -trellis 1 -wpredp 2 -rc_lookahead 50 -threads 0</params>
+    <params>-crf 35.0 -vcodec libx264 -acodec libvo_aacenc -ar 48000 -b:a 128k -coder 1 -rc_lookahead 50 -threads 0</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </MPEG4VideoHQ>
   <MPEG4VideoSHQ>
     <label>MPEG-4 H.264 video (super high quality)</label>
-    <params>-crf 15.0 -vcodec libx264 -acodec libfaac -ar 48000 -b:a 192k -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 8 -refs 16 -direct-pred 3 -trellis 2 -wpredp 2 -rc_lookahead 60 -threads 0</params>
+    <params>-crf 15.0 -vcodec libx264 -acodec libvo_aacenc -ar 48000 -b:a 192k -coder 1 -rc_lookahead 60 -threads 0</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </MPEG4VideoSHQ>
   <MPEG4VideoVHQ>
     <label>MPEG-4 H.264 video (very high quality)</label>
-    <params>-crf 25.0 -vcodec libx264 -acodec libfaac -ar 48000 -b:a 160k -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 8 -direct-pred 3 -trellis 2 -wpredp 2 -rc_lookahead 60 -threads 0</params>
+    <params>-crf 25.0 -vcodec libx264 -acodec libvo_aacenc -ar 48000 -b:a 160k -coder 1 -rc_lookahead 60 -threads 0</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </MPEG4VideoVHQ>
@@ -164,73 +164,73 @@
   </N810WS2>
   <NeurosOSDTVHQNTSC>
     <label>Neuros HQ NTSC Fullscreen</label>
-    <params>-f mp4 -r 29.97 -vcodec libxvid -vf scale=640:480 -aspect 4:3 -maxrate 2500k -b:v 2000k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libfaac -ar 48000 -b:a 128k -ac 2</params>
+    <params>-f mp4 -r 29.97 -vcodec libxvid -vf scale=640:480 -aspect 4:3 -maxrate 2500k -b:v 2000k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libvo_aacenc -ar 48000 -b:a 128k -ac 2</params>
     <extension>mp4</extension>
     <category>Neuros OSD</category>
   </NeurosOSDTVHQNTSC>
   <NeurosOSDTVHQPAL>
     <label>Neuros HQ PAL Fullscreen</label>
-    <params>-f mp4 -r 25 -vcodec libxvid -vf scale=640:480 -aspect 4:3 -maxrate 2500k -b:v 2000k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libfaac -ar 48000 -b:a 128k -ac 2</params>
+    <params>-f mp4 -r 25 -vcodec libxvid -vf scale=640:480 -aspect 4:3 -maxrate 2500k -b:v 2000k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libvo_aacenc -ar 48000 -b:a 128k -ac 2</params>
     <extension>mp4</extension>
     <category>Neuros OSD</category>
   </NeurosOSDTVHQPAL>
   <NeurosOSDTVSFNTSC>
     <label>Neuros Small File NTSC Fullscreen</label>
-    <params>-f mp4 -b:v 800k -r 29.97 -vf scale=320:240 -aspect 4:3 -vcodec libxvid -ar 48000 -b:a 80k -ac 2 -acodec libfaac</params>
+    <params>-f mp4 -b:v 800k -r 29.97 -vf scale=320:240 -aspect 4:3 -vcodec libxvid -ar 48000 -b:a 80k -ac 2 -acodec libvo_aacenc</params>
     <extension>mp4</extension>
     <category>Neuros OSD</category>
   </NeurosOSDTVSFNTSC>
   <NeurosOSDTVSFPAL>
     <label>Neuros Small File PAL Fullscreen</label>
-    <params>-f mp4 -b:v 800k -r 25 -vf scale=320:240 -aspect 4:3 -vcodec libxvid -ar 48000 -b:a 80k -ac 2 -acodec libfaac</params>
+    <params>-f mp4 -b:v 800k -r 25 -vf scale=320:240 -aspect 4:3 -vcodec libxvid -ar 48000 -b:a 80k -ac 2 -acodec libvo_aacenc</params>
     <extension>mp4</extension>
     <category>Neuros OSD</category>
   </NeurosOSDTVSFPAL>
   <NeurosOSDTVWSHQNTSC>
     <label>Neuros HQ NTSC Widescreen</label>
-    <params>-f mp4 -r 29.97 -vcodec libxvid -vf scale=704:384 -aspect 16:9 -maxrate 3000k -b:v 2500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libfaac -ar 48000 -b:a 128k -ac 2</params>
+    <params>-f mp4 -r 29.97 -vcodec libxvid -vf scale=704:384 -aspect 16:9 -maxrate 3000k -b:v 2500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libvo_aacenc -ar 48000 -b:a 128k -ac 2</params>
     <extension>mp4</extension>
     <category>Neuros OSD</category>
   </NeurosOSDTVWSHQNTSC>
   <NeurosOSDTVWSHQPAL>
     <label>Neuros HQ PAL Widescreen</label>
-    <params>-f mp4 -r 25 -vcodec libxvid -vf scale=704:384 -aspect 16:9 -maxrate 3000k -b:v 2500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libfaac -ar 48000 -b:a 128k -ac 2</params>
+    <params>-f mp4 -r 25 -vcodec libxvid -vf scale=704:384 -aspect 16:9 -maxrate 3000k -b:v 2500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libvo_aacenc -ar 48000 -b:a 128k -ac 2</params>
     <extension>mp4</extension>
     <category>Neuros OSD</category>
   </NeurosOSDTVWSHQPAL>
   <NeurosOSDTVWSSFNTSC>
     <label>Neuros Small File NTSC Widescreen</label>
-    <params>-f mp4 -b:v 800k -r 29.97 -vf scale=352:240 -aspect 16:9 -vcodec libxvid -ar 48000 -b:a 80k -ac 2 -acodec libfaac</params>
+    <params>-f mp4 -b:v 800k -r 29.97 -vf scale=352:240 -aspect 16:9 -vcodec libxvid -ar 48000 -b:a 80k -ac 2 -acodec libvo_aacenc</params>
     <extension>mp4</extension>
     <category>Neuros OSD</category>
   </NeurosOSDTVWSSFNTSC>
   <NeurosOSDTVWSSFPAL>
     <label>Neuros Small File PAL Widescreen</label>
-    <params>-f mp4 -b:v 800k -r 25 -vf scale=352:240 -aspect 16:9 -vcodec libxvid -ar 48000 -b:a 80k -ac 2 -acodec libfaac</params>
+    <params>-f mp4 -b:v 800k -r 25 -vf scale=352:240 -aspect 16:9 -vcodec libxvid -ar 48000 -b:a 80k -ac 2 -acodec libvo_aacenc</params>
     <extension>mp4</extension>
     <category>Neuros OSD</category>
   </NeurosOSDTVWSSFPAL>
   <NokiaN73N81N95FS>
     <label>Nokia Nxx Video FullScreen</label>
-    <params>-f mp4 -r 15 -vcodec mpeg4 -vf scale=320:240 -b:v 320k -aspect 4:3 -acodec libfaac -b:a 96k -ar 44100 -ac 2</params>
+    <params>-f mp4 -r 15 -vcodec mpeg4 -vf scale=320:240 -b:v 320k -aspect 4:3 -acodec libvo_aacenc -b:a 96k -ar 44100 -ac 2</params>
     <extension>mp4</extension>
     <category>Nokia</category>
   </NokiaN73N81N95FS>
   <NokiaN73N81N95WS>
     <label>Nokia Nxx Video WideScreen</label>
-    <params>-f mp4 -r 15 -vcodec mpeg4 -vf scale=320:240 -b:v 320k -aspect 16:9 -acodec libfaac -b:a 96k -ar 44100 -ac 2</params>
+    <params>-f mp4 -r 15 -vcodec mpeg4 -vf scale=320:240 -b:v 320k -aspect 16:9 -acodec libvo_aacenc -b:a 96k -ar 44100 -ac 2</params>
     <extension>mp4</extension>
     <category>Nokia</category>
   </NokiaN73N81N95WS>
   <PalmXviDFS>
     <label>Palm Fullscreen</label>
-    <params>-f mp4 -r 29.97 -vcodec libxvid -vf scale=428:320 -aspect 4:3 -maxrate 550k -b:v 500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libfaac -ar 44100 -b:a 80k -ac 2</params>
+    <params>-f mp4 -r 29.97 -vcodec libxvid -vf scale=428:320 -aspect 4:3 -maxrate 550k -b:v 500k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libvo_aacenc -ar 44100 -b:a 80k -ac 2</params>
     <extension>mp4</extension>
     <category>Palm</category>
   </PalmXviDFS>
   <PalmXviDWS>
     <label>Palm Widescreen</label>
-    <params>-f mp4 -r 29.97 -vcodec libxvid -vf scale=480:320 -aspect 3:2 -maxrate 450k -b:v 430k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libfaac -ar 44100 -b:a 80k -ac 2</params>
+    <params>-f mp4 -r 29.97 -vcodec libxvid -vf scale=480:320 -aspect 3:2 -maxrate 450k -b:v 430k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libvo_aacenc -ar 44100 -b:a 80k -ac 2</params>
     <extension>mp4</extension>
     <category>Palm</category>
   </PalmXviDWS>
@@ -302,31 +302,31 @@
   </ac3dvd384>
   <android1>
     <label>Google Android compatible video</label>
-    <params>-vf scale=480:320 -vcodec mpeg4 -acodec libfaac -ac 1 -ar 16000 -r 13 -b:a 32000 -aspect 3:2</params>
+    <params>-vf scale=480:320 -vcodec mpeg4 -acodec libvo_aacenc -ac 1 -ar 16000 -r 13 -b:a 32000 -aspect 3:2</params>
     <extension>mp4</extension>
     <category>Google Android</category>
   </android1>
   <android2>
     <label>Google Android compatible video. Video bitrate: 480 kb/s</label>
-    <params>-vf scale=480:320 -vcodec mpeg4 -b:v 480k -acodec libfaac -ac 1 -ar 16000 -r 13 -b:a 32000 -aspect 3:2</params>
+    <params>-vf scale=480:320 -vcodec mpeg4 -b:v 480k -acodec libvo_aacenc -ac 1 -ar 16000 -r 13 -b:a 32000 -aspect 3:2</params>
     <extension>mp4</extension>
     <category>Google Android</category>
   </android2>
   <android3>
     <label>Google Android video. VHQ 16:9 widescreen</label>
-    <params>-vf scale=480:272 -vcodec libx264 -coder 1 -flags +loop+cgop -cmp +chroma -partitions +parti8x8+parti4x4+partp8x8+partb8x8 -me_method hex -subq 7 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 3 -direct-pred 1 -trellis 1 -wpredp 2 -b:v 500k -threads 0 -acodec libfaac -b:a 96k</params>
+    <params>-vf scale=480:272 -vcodec libx264 -coder 1 -b:v 500k -threads 0 -acodec libvo_aacenc -b:a 96k</params>
     <extension>mp4</extension>
     <category>Google Android</category>
   </android3>
   <android4>
     <label>Google Android video. VHQ 4:3 fullscreen</label>
-    <params>-vf scale=432:320 -vcodec libx264 -coder 1 -flags +loop+cgop -cmp +chroma -partitions +parti8x8+parti4x4+partp8x8+partb8x8 -me_method hex -subq 7 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 3 -direct-pred 1 -trellis 1 -wpredp 2 -b:v 500k -threads 0 -acodec libfaac -b:a 96k</params>
+    <params>-vf scale=432:320 -vcodec libx264 -coder 1 -b:v 500k -threads 0 -acodec libvo_aacenc -b:a 96k</params>
     <extension>mp4</extension>
     <category>Google Android</category>
   </android4>
   <blackberryfs>
     <label>Blackberry Video Fullscreen</label>
-    <params>-f mp4 -r 24 -vcodec libx264 -coder 1 -flags +loop+cgop -cmp +chroma -partitions +parti8x8+parti4x4+partp8x8+partb8x8 -me_method hex -subq 7 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 3 -direct-pred 1 -trellis 1 -wpredp 2 -vf scale=240:180 -aspect 4:3 -maxrate 800k -bufsize 80k -b:v 400k -acodec libfaac -ar 44100 -b:a 80k -ac 2</params>
+    <params>-f mp4 -r 24 -vcodec libx264 -coder 1  -aspect 4:3 -maxrate 800k -bufsize 80k -b:v 400k -acodec libvo_aacenc -ar 44100 -b:a 80k -ac 2</params>
     <extension>mp4</extension>
     <category>Blackberry</category>
   </blackberryfs>
@@ -338,13 +338,13 @@
   </blackberrymp3>
   <blackberryws>
     <label>Blackberry Video Widescreen</label>
-    <params>-f mp4 -r 24 -vcodec libx264 -coder 1 -flags +loop+cgop -cmp +chroma -partitions +parti8x8+parti4x4+partp8x8+partb8x8 -me_method hex -subq 7 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 3 -direct-pred 1 -trellis 1 -wpredp 2 -vf scale=320:180 -aspect 16:9 -maxrate 800k -bufsize 80k -b:v 400k -acodec libfaac -ar 44100 -b:a 80k -ac 2</params>
+    <params>-f mp4 -r 24 -vcodec libx264 -coder 1 -aspect 16:9 -maxrate 800k -bufsize 80k -b:v 400k -acodec libvo_aacenc -ar 44100 -b:a 80k -ac 2</params>
     <extension>mp4</extension>
     <category>Blackberry</category>
   </blackberryws>
   <cdma3g>
     <label>CDMA Phone Audio (3g2)</label>
-    <params>-f 3g2 -ar 22050 -b:a 128k -acodec libfaac -vf scale=176:144 -r 14.985 -vn</params>
+    <params>-f 3g2 -ar 22050 -b:a 128k -acodec libvo_aacenc -vf scale=176:144 -r 14.985 -vn</params>
     <extension>3g2</extension>
     <category>Mobile Phones</category>
   </cdma3g>
@@ -422,67 +422,67 @@
   </googlewebmws>
   <iPodiTunesIphoneWS>
     <label>iPhone WideScreen</label>
-    <params>-r 29.97 -vcodec libx264 -flags +loop -cmp +chroma -deblock 0:0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 2 -direct-pred 1 -wpredp 2 -rc_lookahead 30 -vf scale=480:320 -aspect 16:9 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-r 29.97 -vcodec libx264 -rc_lookahead 30 -vf scale=480:320 -aspect 16:9 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesIphoneWS>
   <iPodiTunesSmallCRF21FS>
     <label>iPod Small Fullscreen</label>
-    <params>-r 29.97 -vcodec libx264 -flags +loop -cmp +chroma -deblock 0:0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -direct-pred 1 -wpredp 2 -vf scale=320:240 -aspect 4:3 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-r 29.97 -vcodec libx264 -vf scale=320:240 -aspect 4:3 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesSmallCRF21FS>
   <iPodiTunesSmallCRF21WS>
     <label>iPod Small WideScreen</label>
-    <params>-r 29.97 -vcodec libx264 -flags +loop -cmp +chroma -deblock 0:0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 3 -direct-pred 1 -trellis 1 -wpredp 2 -vf scale=320:176 -aspect 16:9 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-r 29.97 -vcodec libx264 -vf scale=320:176 -aspect 16:9 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesSmallCRF21WS>
   <iPodiTunesSmallCRF21WSAna>
     <label>iPod Small WideScreen Anamorphic</label>
-    <params>-r 29.97 -vf crop=iw:ih-2*60,scale=320:144 -vcodec libx264 -flags +loop -cmp +chroma -deblock 0:0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -direct-pred 1 -wpredp 2 -aspect 2.35 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-r 29.97 -vf crop=iw:ih-2*60,scale=320:144 -vcodec libx264 -aspect 2.35 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesSmallCRF21WSAna>
   <iPodiTunesSmallCRF21WSLBFix>
     <label>iPod Small Converted to WideScreen</label>
-    <params>-r 29.97 -vf crop=iw:ih-2*64,scale=320:176 -vcodec libx264 -flags +loop -cmp +chroma -deblock 0:0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -direct-pred 1 -wpredp 2 -aspect 16:9 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-r 29.97 -vf crop=iw:ih-2*64,scale=320:176 -vcodec libx264 -aspect 16:9 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesSmallCRF21WSLBFix>
   <iPodiTunesTVOutCRF21FS>
     <label>iPod TV Out Fullscreen</label>
-    <params>-r 29.97 -vcodec libx264 -flags +loop -cmp +chroma -deblock 0:0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -direct-pred 1 -wpredp 2 -vf scale=512:384 -aspect 4:3 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-r 29.97 -vcodec libx264 -vf scale=512:384 -aspect 4:3 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesTVOutCRF21FS>
   <iPodiTunesTVOutCRF21WS>
     <label>iPod TV Out Widescreen</label>
-    <params>-r 29.97 -vcodec libx264 -flags +loop -cmp +chroma -deblock 0:0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -direct-pred 1 -wpredp 2 -vf scale=624:352 -aspect 16:9 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-r 29.97 -vcodec libx264 -vf scale=624:352 -aspect 16:9 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesTVOutCRF21WS>
   <iPodiTunesTVOutCRF21WSAna>
     <label>iPod TV Out Widescreen Anamorphic</label>
-    <params>-r 29.97 -vf crop=iw:ih-2*60,scale=640:272 -vcodec libx264 -flags +loop -cmp +chroma -deblock 0:0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -direct-pred 1 -wpredp 2 -aspect 2.35 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-r 29.97 -vf crop=iw:ih-2*60,scale=640:272 -vcodec libx264 -aspect 2.35 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesTVOutCRF21WSAna>
   <iPodiTunesTVOutCRF21WSLBFix>
     <label>iPod TV Out Converted to Widescreen</label>
-    <params>-r 29.97 -vf crop=iw:ih-2*64,scale=640:352 -vcodec libx264 -flags +loop -cmp +chroma -deblock 0:0 -crf 21 -bt 256k -refs 1 -coder 0 -me_method full -me_range 16 -subq 5 -partitions +parti4x4+parti8x8+partp8x8 -g 250 -keyint_min 25 -level 30 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -direct-pred 1 -wpredp 2 -aspect 16:9 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-r 29.97 -vf crop=iw:ih-2*64,scale=640:352 -vcodec libx264 -aspect 16:9 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>m4v</extension>
     <category>iPod-iTunes</category>
   </iPodiTunesTVOutCRF21WSLBFix>
   <lgchocolate>
     <label>LG Chocolate</label>
-    <params>-f mp4 -vf scale=240:192 -aspect 240:192 -r 11.988 -b:v 192k -b:a 56k -vcodec libxvid -acodec libfaac -ar 22050</params>
+    <params>-f mp4 -vf scale=240:192 -aspect 240:192 -r 11.988 -b:v 192k -b:a 56k -vcodec libxvid -acodec libvo_aacenc -ar 22050</params>
     <extension>mp4</extension>
     <category>LG</category>
   </lgchocolate>
   <lgdare>
     <label>LG Dare</label>
-    <params>-f mp4 -vf scale=320:240 -aspect 320:240 -r 11.988 -b:v 160k -b:a 56k -vcodec libxvid -acodec libfaac</params>
+    <params>-f mp4 -vf scale=320:240 -aspect 320:240 -r 11.988 -b:v 160k -b:a 56k -vcodec libxvid -acodec libvo_aacenc</params>
     <extension>mp4</extension>
     <category>LG</category>
   </lgdare>
@@ -590,37 +590,37 @@
   </palvcdhq>
   <ps3720p>
     <label>PS3 720p Widescreen</label>
-    <params>-f mp4 -r 23.976 -vcodec libx264 -vf scale=1280:720 -b:v 3000k -aspect 16:9 -flags +loop -cmp +chroma -deblock 0:0 -maxrate 3500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 2 -qdiff 4 -direct-pred 3  -wpredp 2 -rc_lookahead 50 -acodec libfaac -b:a 384k -ar 48000 -ac 2</params>
+    <params>-f mp4 -r 23.976 -vcodec libx264 -vf scale=1280:720 -b:v 3000k -aspect 16:9 -maxrate 3500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 2 -qdiff 4 -direct-pred 3  -wpredp 2 -rc_lookahead 50 -acodec libvo_aacenc -b:a 384k -ar 48000 -ac 2</params>
     <extension>mp4</extension>
     <category>PS3</category>
   </ps3720p>
   <ps3720pfs>
     <label>PS3 720p Fullscreen</label>
-    <params>-f mp4 -r 23.976 -vcodec libx264 -vf scale=1280:720 -b:v 3000k -aspect 4:3 -flags +loop -cmp +chroma -deblock 0:0 -maxrate 3500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 2 -qdiff 4 -direct-pred 3 -trellis 1 -wpredp 2 -rc_lookahead 50 -acodec libfaac -b:a 384k -ar 48000 -ac 2</params>
+    <params>-f mp4 -r 23.976 -vcodec libx264 -vf scale=1280:720 -b:v 3000k -aspect 4:3 -maxrate 3500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 2 -qdiff 4 -direct-pred 3 -trellis 1 -wpredp 2 -rc_lookahead 50 -acodec libvo_aacenc -b:a 384k -ar 48000 -ac 2</params>
     <extension>mp4</extension>
     <category>PS3</category>
   </ps3720pfs>
   <qmov>
     <label>Quicktime MOV</label>
-    <params>-f mov -acodec libfaac -b:v 1250k -r 25 -b:a 128k -vf scale=640:480 -ac 2 -ar 48000</params>
+    <params>-f mov -acodec libvo_aacenc -b:v 1250k -r 25 -b:a 128k -vf scale=640:480 -ac 2 -ar 48000</params>
     <extension>mov</extension>
     <category>QuickTime</category>
   </qmov>
   <qmovhq>
     <label>QuickTime H.264 video (high quality)</label>
-    <params>-crf 35.0 -vcodec libx264 -acodec libfaac -ar 48000 -b:a 128k -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 5 -direct-pred 3 -trellis 1 -wpredp 2 -rc_lookahead 50 -threads 0</params>
+    <params>-crf 35.0 -vcodec libx264 -acodec libvo_aacenc -ar 48000 -b:a 128k -coder 1 -rc_lookahead 50 -threads 0</params>
     <extension>mov</extension>
     <category>QuickTime</category>
   </qmovhq>
   <qmovshq>
     <label>QuickTime H.264 video (super high quality)</label>
-    <params>-crf 15.0 -vcodec libx264 -acodec libfaac -ar 48000 -b:a 192k -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 8 -refs 16 -direct-pred 3 -trellis 2 -wpredp 2 -rc_lookahead 60 -threads 0</params>
+    <params>-crf 15.0 -vcodec libx264 -acodec libvo_aacenc -ar 48000 -b:a 192k -coder 1 -rc_lookahead 60 -threads 0</params>
     <extension>mov</extension>
     <category>QuickTime</category>
   </qmovshq>
   <qmovvhq>
     <label>QuickTime H.264 video (very high quality)</label>
-    <params>-crf 25.0 -vcodec libx264 -acodec libfaac -ar 48000 -b:a 160k -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -qcomp 0.6 -qmin 0 -qmax 69 -qdiff 4 -bf 3 -refs 8 -direct-pred 3 -trellis 2 -wpredp 2 -rc_lookahead 60 -threads 0</params>
+    <params>-crf 25.0 -vcodec libx264 -acodec libvo_aacenc -ar 48000 -b:a 160k -coder 1 -rc_lookahead 60 -threads 0</params>
     <extension>mov</extension>
     <category>QuickTime</category>
   </qmovvhq>
@@ -632,7 +632,7 @@
   </tuna-Vids>
   <walkmanXviDFS>
     <label>Xvid walkman (4:3)</label>
-    <params>-r 29.97 -vcodec libxvid -vf scale=320:240 -aspect 4:3 -maxrate 1500k -b:v 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -cmp 2 -subcmp 2 -g 300 -acodec libfaac -ar 48000 -b:a 80k -ac 2</params>
+    <params>-r 29.97 -vcodec libxvid -vf scale=320:240 -aspect 4:3 -maxrate 1500k -b:v 1250k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -cmp 2 -subcmp 2 -g 300 -acodec libvo_aacenc -ar 48000 -b:a 80k -ac 2</params>
     <extension>mp4</extension>
     <category>walkman</category>
   </walkmanXviDFS>
@@ -674,25 +674,25 @@
   </wmv4powerpoint>
   <x264HQFS>
     <label>MP4 Fullscreen</label>
-    <params>-f mp4 -r 29.97 -vcodec libx264 -vf scale=640:480 -aspect 4:3 -flags +loop -cmp +chroma -deblock 0:0 -b:v 1250k -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 2 -qdiff 4 -direct-pred 3 -wpredp 2 -rc_lookahead 50 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-f mp4 -r 29.97 -vcodec libx264 -vf scale=640:480 -aspect 4:3 -b:v 1250k -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 2 -qdiff 4 -direct-pred 3 -wpredp 2 -rc_lookahead 50 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </x264HQFS>
   <x264HQPSP169robertswain>
     <label>PSP Widescreen</label>
-    <params>-f mp4 -r 29.97 -vcodec libx264 -vf scale=480:272 -aspect 16:9 -b:v 1250k -maxrate 4M -bufsize 4M -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method umh -subq 6 -trellis 1 -refs 2 -bf 1 -coder 1 -me_range 16 -g 300 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -bt 1250k -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -level 21 -b_strategy 2 -direct-pred 3 -wpredp 2 -rc_lookahead 50 -acodec libfaac -b:a 128k -ar 48000 -ac 2</params>
+    <params>-f mp4 -r 29.97 -vcodec libx264 -vf scale=480:272 -aspect 16:9 -b:v 1250k -maxrate 4M -bufsize 4M -rc_lookahead 50 -acodec libvo_aacenc -b:a 128k -ar 48000 -ac 2</params>
     <extension>mp4</extension>
     <category>PSP</category>
   </x264HQPSP169robertswain>
   <x264HQPSP43>
     <label>PSP Fullscreen</label>
-    <params>-f mp4 -r 29.97 -vcodec libx264 -vf scale=640:480 -aspect 4:3 -b:v 1250k -maxrate 4M -bufsize 4M -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method umh -subq 6 -trellis 1 -refs 2 -bf 1 -coder 1 -me_range 16 -g 300 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -bt 1250k -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -b_strategy 2 -direct-pred 3 -wpredp 2 -rc_lookahead 50 -level 21 -acodec libfaac -b:a 128k -ar 48000 -ac 2</params>
+    <params>-f mp4 -r 29.97 -vcodec libx264 -vf scale=640:480 -aspect 4:3 -b:v 1250k -maxrate 4M -bufsize 4M -rc_lookahead 50 -level 21 -acodec libvo_aacenc -b:a 128k -ar 48000 -ac 2</params>
     <extension>mp4</extension>
     <category>PSP</category>
   </x264HQPSP43>
   <x264HQWS>
     <label>MP4 Widescreen</label>
-    <params>-f mp4 -r 29.97 -vcodec libx264 -vf scale=704:384 -b:v 1250k -aspect 16:9 -flags +loop -cmp +chroma -deblock 0:0 -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 2 -qdiff 4 -direct-pred 3 -wpredp 2 -rc_lookahead 50 -acodec libfaac -b:a 112k -ar 48000 -ac 2</params>
+    <params>-f mp4 -r 29.97 -vcodec libx264 -vf scale=704:384 -b:v 1250k -aspect 16:9 -maxrate 1500k -bufsize 4M -bt 256k -refs 1 -bf 3 -coder 1 -me_method umh -me_range 16 -subq 7 -partitions +parti4x4+parti8x8+partp8x8+partb8x8 -g 250 -keyint_min 25 -level 30 -qmin 10 -qmax 51 -qcomp 0.6 -trellis 2 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 2 -qdiff 4 -direct-pred 3 -wpredp 2 -rc_lookahead 50 -acodec libvo_aacenc -b:a 112k -ar 48000 -ac 2</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </x264HQWS>
