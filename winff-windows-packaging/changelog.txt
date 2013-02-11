@@ -1,7 +1,7 @@
-﻿WinFF Copyright 2006 - 2012 Matthew Weatherford
+WinFF Copyright 2006 - 2012 Matthew Weatherford
 http://www.winff.org
 
-v1.5
+v1.5.0
 ----
 Usability:  A lot of work has gone into making the application more friendly to users with visual impairments.  Ability to accommodate larger fonts, resizing the application, screen layouts have had much tweaking.  It’s clearly not perfect, but we are hoping that it results in a better experience for some of our users.  Special mention to Paul Gevers for striving to make this feature work and work well in Linux and Windows.
 
@@ -32,8 +32,6 @@ Rework preferences form - Renamed most items to give it names you can find back 
 Make all buttons honor the font size of the system
 
 Updated Translations
-
-
 
 v1.4.2
 ------
