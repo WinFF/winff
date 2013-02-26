@@ -1792,13 +1792,15 @@ end;
 procedure TfrmMain.lblSaveChangesClick(Sender: TObject);
 var
 pn : string;
-begin
+begin                   // check preset
      pn:=getcurrentpresetname(presetbox.Text);
      if pn='' then
        begin
        showmessage(rsPleaseSelectAPreset);
        exit;
        end;
+                        // check for files to apply to
+     if filelist.Items.Count = 0 then exit;
 
      if  pgSettings.ActivePageIndex = 5 then
       begin
@@ -1813,6 +1815,7 @@ end;
 procedure TfrmMain.lblCancelChangesClick(Sender: TObject);
 begin
   // Undo Changes;
+   if filelist.Items.Count = 0 then exit;
    GetScr(filelist.ItemIndex);
    pnlAllow.Visible:= False;
    Application.ProcessMessages;
