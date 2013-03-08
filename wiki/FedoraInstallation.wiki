@@ -22,3 +22,7 @@ or if you want the testing packages (WinFF 1.5.0 does not currently build for Fe
 {{{
 yum --enablerepo=winff-testing install winff
 }}}
+
+= Download =
+
+If you want to download the rpm's directly (i.e. without getting updates automatically) you can browse our repository [http://winff.org/html_new/rpm_overview.html here.]
