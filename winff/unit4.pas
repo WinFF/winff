@@ -117,7 +117,7 @@ begin
     prioritybox.Items.Add(rspriorityhigh);
     prioritybox.Items.Add(rsprioritynormal);
     prioritybox.Items.Add(rspriorityidle);
-  {$ifdef win32}
+  {$ifdef windows}
    edtWinFFmpegPath.Text:= frmMain.getconfigvalue('win32/ffmpeg');
    edtWinFFplayPath.Text:= frmMain.getconfigvalue('win32/ffplay');
    if frmMain.getconfigvalue('win32/chcp') = 'true' then
@@ -191,7 +191,7 @@ begin
   edtLinTerminalExe.Text := trim(edtLinTerminalExe.Text);
   edtLinTerminalOptions.Text := trim(edtLinTerminalOptions.Text);
 
-  {$ifdef win32}
+  {$ifdef windows}
   if edtWinFFmpegPath.Text ='' then
    edtWinFFmpegPath.Text := unit1.extrasPath + 'ffmpeg.exe';
   if edtWinFFplayPath.Text ='' then
