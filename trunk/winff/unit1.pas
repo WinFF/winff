@@ -24,7 +24,7 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
-  {$IFDEF WIN32} windows, shellapi, dos,{$endif}
+  {$IFDEF WINDOWS} windows, shellapi, dos,{$endif}
   {$IFDEF unix} baseunix, unix, {$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
@@ -261,7 +261,7 @@ type
     function GetFileInfo(var filedetails : string) : string;
     function GenerateCommandLines(vIndex : integer) : string;
     procedure SaveChangedOptions(vOption : integer);
-    {$IFDEF WIN32}function GetWin32System(): Integer;{$endif}
+    {$IFDEF WINDOWS}function GetWin32System(): Integer;{$endif}
     procedure SetSCR(vIndex : integer);
     procedure GetSCR(vIndex : integer);
 
@@ -274,7 +274,7 @@ type
   end; 
 
 
-{$IFDEF WIN32}
+{$IFDEF WINDOWS}
 const
   shfolder = 'ShFolder.dll';
   { win32 custom directory constants }
@@ -343,7 +343,7 @@ var
   fOldIndex: integer = -1; // used for dynamic hint on the filelist.
 
   frmMain: TfrmMain;
-  {$IFDEF WIN32}
+  {$IFDEF WINDOWS}
   PIDL : PItemIDList;
   ansicodepage: longint;
   usechcp: string;
@@ -423,7 +423,7 @@ begin
    TranslateUnitResourceStrings('unit1', PODirectory + 'winff.%s.po', Lang, FallbackLang);
 
                     // start setup
-  {$IFDEF WIN32}
+  {$IFDEF WINDOWS}
   ansicodepage:=getacp();
   presetspath :=GetappdataPath() + '\Winff\';
 
@@ -1177,7 +1177,7 @@ begin
   launcher.free;
   {$endif}
 
-  {$ifdef win32}
+  {$IFDEF WINDOWS}
   ShellExecute(self.Handle,'open',PChar(URL),nil,nil, SW_SHOWNORMAL);
   {$endif}
 end;
@@ -1208,11 +1208,11 @@ begin
 
 
    script:= TStringList.Create;
-   {$ifdef win32}script.Add('@echo off');{$endif}
-   {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
+   {$IFDEF WINDOWS}script.Add('@echo off');{$endif}
+   {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
    {$ifdef unix}script.Add('#!/bin/sh');{$endif}
 
-   {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
+   {$IFDEF WINDOWS}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
    {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
 
    if not fileexists(ffmpeg) then
@@ -1226,7 +1226,7 @@ begin
                                       // build batch file
    thetime :=now;
    batfile := 'ff' + FormatDateTime('yymmddhhnnss',thetime) +
-           {$ifdef win32}'.bat'{$endif}
+           {$IFDEF WINDOWS}'.bat'{$endif}
            {$ifdef unix}'.sh'{$endif} ;
 
    filename := vfilename;
@@ -1248,7 +1248,7 @@ begin
          end;
 
        command := '';
-       {$ifdef win32}titlestring:='title ' + rsAnalysing + ' ' + extractfilename(filename) +
+       {$IFDEF WINDOWS}titlestring:='title ' + rsAnalysing + ' ' + extractfilename(filename) +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsAnalysing +' ' + basename +
             ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
@@ -1259,7 +1259,7 @@ begin
         script.Add(command);
 
         // remove batch file on completion
-//   {$ifdef win32}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
+//   {$IFDEF WINDOWS}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
    {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
 
 
@@ -1279,7 +1279,7 @@ begin
     scriptprocess.execute;
     script.Free;
     sleep(1000) ; // need to wait for this to finish before continuing;
-    {$ifdef win32}
+    {$IFDEF WINDOWS}
     try
       DeleteFileUTF8(presetspath + batfile);
     except;
@@ -1318,7 +1318,7 @@ begin
   launcher.free;
   {$endif}
 
-  {$ifdef win32}
+  {$IFDEF WINDOWS}
   ShellExecute(self.Handle,'open',PChar(pdffile),nil,nil, SW_SHOWNORMAL);
   {$endif}
 end;
@@ -1345,7 +1345,7 @@ end;
 
 //{ get the user's desktop path }
 function TfrmMain.GetDeskTopPath() : string ;
-{$ifdef win32}
+{$IFDEF WINDOWS}
 var
   ppidl: PItemIdList;
 begin
@@ -1365,7 +1365,7 @@ end;
 
 // get the user's document's path
 function TfrmMain.GetMydocumentsPath() : string ;
-{$ifdef win32}
+{$IFDEF WINDOWS}
 var
   ppidl: PItemIdList;
 begin
@@ -1404,7 +1404,7 @@ end;
 
 //{ get the user's application data path }
 function TfrmMain.GetappdataPath() : string ;
-{$ifdef win32}
+{$IFDEF WINDOWS}
 var
   ppidl: PItemIdList;
 begin
@@ -1423,7 +1423,7 @@ end;
 {$endif}
 
 // get windows version
-{$ifdef win32}
+{$IFDEF WINDOWS}
 function TfrmMain.GetWIn32System(): Integer;
 var
   osVerInfo: TOSVersionInfo;
@@ -1858,7 +1858,7 @@ begin
        if fileexists('/usr/share/doc/packages/winff/WinFF.en.pdf') then s:='/usr/share/doc/packages/winff/WinFF.en.pdf';
      end;
   {$endif}
-  {$ifdef win32}
+  {$IFDEF WINDOWS}
   s := extraspath + 'Docs\WinFF.' + language + '.pdf';
   if not (fileexists(s)) then s := extraspath + 'Docs\WinFF.en.pdf';
   {$endif}
@@ -2100,7 +2100,7 @@ begin                                     // get setup
 
 
    script:= TStringList.Create;
-   {$ifdef win32}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
+   {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
    {$ifdef unix}script.Add('#!/bin/sh');{$endif}
 
 
@@ -2126,7 +2126,7 @@ begin                                     // get setup
 
    thetime :=now;
    batfile := 'ff' + FormatDateTime('yymmddhhnnss',thetime) +
-           {$ifdef win32}'.bat'{$endif}
+           {$IFDEF WINDOWS}'.bat'{$endif}
            {$ifdef unix}'.sh'{$endif} ;
 
 
@@ -2143,14 +2143,14 @@ begin                                     // get setup
        filename := filelist.items[i];
        basename := extractfilename(filename);
 
-       {$ifdef win32}ffplayfilename:='"' + ffplay + '"';{$endif}
+       {$IFDEF WINDOWS}ffplayfilename:='"' + ffplay + '"';{$endif}
        {$ifdef unix}ffplayfilename:=ffplay;{$endif}
 
        extension:=getpresetextension(pn);
 
 
        // Set Script Title
-       {$ifdef win32}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
+       {$IFDEF WINDOWS}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
@@ -2193,7 +2193,7 @@ begin                                     // get setup
                                          // pausescript
    if (pausescript='true') and (preview=false) then
        begin
-       {$ifdef win32}
+       {$IFDEF WINDOWS}
        script.Add('pause');
        {$endif}
        {$ifdef unix}
@@ -2202,18 +2202,18 @@ begin                                     // get setup
        end;
                                           //shutdown when finnshed
    if mitShutdownOnFinish.Checked and (pausescript='false') then
-      {$ifdef win32}script.Add('shutdown.exe -s');{$endif}
+      {$IFDEF WINDOWS}script.Add('shutdown.exe -s');{$endif}
       {$ifdef unix}script.Add('shutdown now');{$endif}
 
                                           // remove preview file if exists
    if preview then
       begin
-        {$ifdef win32}script.add('del ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');{$endif}
+        {$IFDEF WINDOWS}script.add('del ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');{$endif}
         {$ifdef unix}script.add('rm ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');{$endif}
         preview:=false;
       end;
                                           // remove batch file on completion
-   {$ifdef win32}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
+   {$IFDEF WINDOWS}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
    {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
 
 
@@ -2514,11 +2514,11 @@ outputfilename, ffmpegfilename, extension, basename,filename,commandline : strin
 deinterlace, numthreads, nullfile, usethreads : string;
 begin
 
-   {$ifdef win32}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
+   {$IFDEF WINDOWS}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
    {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
-//   {$ifdef win32}ffplayfilename:='"' + ffplay + '"';{$endif}
+//   {$IFDEF WINDOWS}ffplayfilename:='"' + ffplay + '"';{$endif}
 //   {$ifdef unix}ffplayfilename:=ffplay;{$endif}
-   {$ifdef win32}nullfile:='"NUL.avi"';{$endif}
+   {$IFDEF WINDOWS}nullfile:='"NUL.avi"';{$endif}
    {$ifdef unix}nullfile:='/dev/null';{$endif}
        pn:=getcurrentpresetname(presetbox.Text);
 //     category := getpresetcategory(pn);
@@ -2855,7 +2855,7 @@ end;
 initialization
   {$I unit1.lrs}
 
-  {$ifdef win32}PODirectory := extraspath + '\languages\'{$endif};
+  {$IFDEF WINDOWS}PODirectory := extraspath + '\languages\'{$endif};
   {$ifdef unix}PODirectory := '/usr/share/winff/languages/'{$endif};
   GetLanguageIDs(Lang, FallbackLang); // in unit gettext
 
