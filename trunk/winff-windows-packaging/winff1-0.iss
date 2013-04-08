@@ -2,6 +2,9 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 [Setup]
+; UNCOMMENT FOR 64bit INSTALL
+; ArchitecturesInstallIn64BitMode=x64
+; ArchitecturesAllowed=x64
 AppID=WinFF
 AppName=WinFF
 AppVerName=WinFF 1.5 (Codename EMMA)
@@ -9,6 +12,7 @@ AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
+AppCopyright=Copyright 2013 WinFF.org
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
 VersionInfoVersion=1.5
