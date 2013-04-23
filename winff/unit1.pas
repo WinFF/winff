@@ -72,6 +72,7 @@ type
     Label12: TLabel;
     Label19: TLabel;
     Label6: TLabel;
+    lblApplytoAll: TLabel;
     lblRotate: TLabel;
     lblSaveChanges: TLabel;
     Label20: TLabel;
@@ -206,6 +207,7 @@ type
     procedure FormResize(Sender: TObject);
     procedure grpOutputSettingsClick(Sender: TObject);
     procedure Label11Click(Sender: TObject);
+    procedure lblApplytoAllClick(Sender: TObject);
     procedure lblSaveChangesClick(Sender: TObject);
     procedure lblCancelChangesClick(Sender: TObject);
     procedure LaunchBrowser(URL:string);
@@ -1787,6 +1789,29 @@ end;
 procedure TfrmMain.Label11Click(Sender: TObject);
 begin
 
+end;
+
+procedure TfrmMain.lblApplytoAllClick(Sender: TObject);
+begin                   // check preset
+     pn:=getcurrentpresetname(presetbox.Text);
+     if pn='' then
+       begin
+       showmessage(rsPleaseSelectAPreset);
+       exit;
+       end;
+                        // check for files to apply to
+     if filelist.Items.Count = 0 then exit;
+
+     filelist.SelectAll;
+
+     if  pgSettings.ActivePageIndex = 5 then
+      begin
+            SaveChangedOptions(1);
+      end
+     else
+     begin
+            SaveChangedOptions(0);
+     end;
 end;
 
 procedure TfrmMain.lblSaveChangesClick(Sender: TObject);

@@ -17,6 +17,9 @@
     </i18n>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <MinorVersionNr Value="5"/>
+      <StringTable Comments="WinFF 1.5 64 bit" CompanyName="WinFF.org" FileDescription="WinFF 1.5 64 bit" InternalName="winff" LegalCopyright="Copyright 2013 WinFF.org" OriginalFilename="winff.exe" ProductVersion="1.5.0"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="default" Default="True"/>
