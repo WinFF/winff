@@ -2281,7 +2281,7 @@ object frmMain: TfrmMain
       TabOrder = 1
       Visible = False
       object lblSaveChanges: TLabel
-        Left = 555
+        Left = 480
         Height = 16
         Hint = 'Click here to apply settings changes to the file conversion above'
         Top = 0
@@ -2294,7 +2294,7 @@ object frmMain: TfrmMain
         OnClick = lblSaveChangesClick
       end
       object lblCancelChanges: TLabel
-        Left = 464
+        Left = 384
         Height = 16
         Top = 0
         Width = 86
@@ -2306,7 +2306,7 @@ object frmMain: TfrmMain
         OnClick = lblCancelChangesClick
       end
       object lblApplytoAll: TLabel
-        Left = 392
+        Left = 568
         Height = 16
         Top = 0
         Width = 63
