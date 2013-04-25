@@ -35,6 +35,8 @@ type
   TfrmAbout = class(TForm)
     btnOk: TBitBtn;
     imgLogo: TImage;
+    lblwinbuilds: TLabel;
+    lblWindowsBuilds: TLabel;
     lblBellard1: TLabel;
     lblStoffberg: TLabel;
     lblURLZerano: TLabel;
@@ -57,6 +59,7 @@ type
     tabThanks: TTabSheet;
     procedure btnOkClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure lblBellardClick(Sender: TObject);
     procedure lblGeversClick(Sender: TObject);
     procedure lblStoffbergClick(Sender: TObject);
     procedure lblGmaqClick(Sender: TObject);
@@ -64,6 +67,8 @@ type
     procedure lblWeatherfordClick(Sender: TObject);
     procedure lblURLWinffOrgClick(Sender: TObject);
     procedure lblURLffmpegClick(Sender: TObject);
+    procedure lblwinbuildsClick(Sender: TObject);
+    procedure lblWindowsBuildsClick(Sender: TObject);
 
   private
     { private declarations }
@@ -125,6 +130,11 @@ begin
     frmAbout.lblCopyright.Caption   := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2012',[]);
 end;
 
+procedure TfrmAbout.lblBellardClick(Sender: TObject);
+begin
+
+end;
+
 procedure TfrmAbout.lblGeversClick(Sender: TObject);
 begin
   frmMain.LaunchBrowser('https://launchpad.net/~paul-climbing/+archive/ppa/');
@@ -163,6 +173,16 @@ end;
 procedure TfrmAbout.lblURLffmpegClick(Sender: TObject);
 begin
   frmMain.LaunchBrowser('http://ffmpeg.org/');
+end;
+
+procedure TfrmAbout.lblwinbuildsClick(Sender: TObject);
+begin
+  frmMain.LaunchBrowser('http://ffmpeg.zeranoe.com/builds/');
+end;
+
+procedure TfrmAbout.lblWindowsBuildsClick(Sender: TObject);
+begin
+
 end;
 
 
