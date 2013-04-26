@@ -2411,8 +2411,8 @@ startPos, endPos, startSub, endSub, strlen: integer ;
 orig,paramString: string ;
 
   begin
-   startpos := Pos(' -vf ', commandline) + 5;
-   if startpos <> 5 then
+   startpos := Pos('-vf ', commandline) + 4;
+   if startpos <> 4 then
      begin
        strlen := Length(commandline) ;
        endpos := startpos + Pos(' -', Copy(commandline, startpos, strlen)) - 2 ; // strlen as count is exaggerated, but works
