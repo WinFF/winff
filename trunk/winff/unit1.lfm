@@ -1,13 +1,13 @@
 object frmMain: TfrmMain
   Left = 300
-  Height = 493
+  Height = 472
   Top = 139
   Width = 640
   ActiveControl = pnlTop
   AllowDropFiles = True
   AutoSize = True
   Caption = 'WinFF'
-  ClientHeight = 473
+  ClientHeight = 452
   ClientWidth = 640
   Constraints.MaxHeight = 1200
   Constraints.MaxWidth = 1600
@@ -329,21 +329,21 @@ object frmMain: TfrmMain
   LCLVersion = '1.0.8.0'
   object pnlMain: TPanel
     Left = 0
-    Height = 170
+    Height = 149
     Top = 54
     Width = 640
     Align = alClient
     AutoSize = True
     BevelOuter = bvNone
     Caption = 'pnlMain'
-    ClientHeight = 170
+    ClientHeight = 149
     ClientWidth = 640
     Color = clSilver
     ParentColor = False
     TabOrder = 0
     object filelist: TListBox
       Left = 0
-      Height = 170
+      Height = 149
       Top = 0
       Width = 640
       Align = alClient
@@ -1014,7 +1014,7 @@ object frmMain: TfrmMain
   object pnlAdditionalOptions: TPanel
     Left = 0
     Height = 226
-    Top = 224
+    Top = 203
     Width = 640
     Align = alBottom
     BevelOuter = bvNone
@@ -2284,7 +2284,7 @@ object frmMain: TfrmMain
         Left = 480
         Height = 16
         Hint = 'Click here to apply settings changes to the file conversion above'
-        Top = 0
+        Top = -2
         Width = 81
         Anchors = [akTop, akRight]
         Caption = 'Apply Changes'
@@ -2296,7 +2296,7 @@ object frmMain: TfrmMain
       object lblCancelChanges: TLabel
         Left = 384
         Height = 16
-        Top = 0
+        Top = -2
         Width = 86
         Anchors = [akTop, akRight]
         Caption = 'Cancel Changes'
@@ -2308,7 +2308,7 @@ object frmMain: TfrmMain
       object lblApplytoAll: TLabel
         Left = 568
         Height = 16
-        Top = 0
+        Top = -2
         Width = 63
         Anchors = [akTop, akRight]
         Caption = 'Apply to All'
@@ -2322,7 +2322,7 @@ object frmMain: TfrmMain
   object StatusBar1: TStatusBar
     Left = 0
     Height = 23
-    Top = 450
+    Top = 429
     Width = 640
     AutoHint = True
     Panels = <>
@@ -2369,6 +2369,7 @@ object frmMain: TfrmMain
     end
     object mnuOptions: TMenuItem
       Caption = 'Options'
+      OnClick = mnuOptionsClick
       object mitShowOptions: TMenuItem
         Caption = 'Additional Options'
         OnClick = mitShowOptionsClick
@@ -2389,6 +2390,10 @@ object frmMain: TfrmMain
       object mitShutdownOnFinish: TMenuItem
         Caption = 'Shutdown on Finish'
         OnClick = mitShutdownOnFinishClick
+      end
+      object mitSaveOptions: TMenuItem
+        Caption = 'Save Options to Preset'
+        OnClick = mitSaveOptionsClick
       end
     end
     object mnuHelp: TMenuItem
