@@ -100,6 +100,7 @@ type
     MemSecondPass: TMemo;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
+    mitSaveOptions: TMenuItem;
     mitSelectAll: TMenuItem;
     mitViewMode: TMenuItem;
 //    mitPlaySoundonFinish: TMenuItem;
@@ -219,6 +220,7 @@ type
     procedure lblCropRight1Click(Sender: TObject);
     procedure edtSeekHHChange(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
     procedure mitDisplayCmdlineClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -232,6 +234,7 @@ type
     procedure mitPreferencesClick(Sender: TObject);
     procedure mitDocsClick(Sender: TObject);
     procedure mitForumsClick(Sender: TObject);
+    procedure mitSaveOptionsClick(Sender: TObject);
     procedure mitSelectAllClick(Sender: TObject);
     procedure mitViewModeClick(Sender: TObject);
     procedure mitWinffClick(Sender: TObject);
@@ -240,6 +243,7 @@ type
     procedure btnRemoveClick(Sender: TObject);
     function GetDeskTopPath() : string;
     function GetMydocumentsPath() : string ;
+    procedure mnuOptionsClick(Sender: TObject);
     procedure Panel14Click(Sender: TObject);
     procedure PopupMenu1Popup(Sender: TObject);
     procedure PresetBoxChange(Sender: TObject);
@@ -250,6 +254,7 @@ type
     procedure populatepresetbox(selectedcategory:string);
     function getcurrentpresetname(currentpreset:string):string;
     function getpresetparams(presetname:string):string;
+    procedure setpresetparams(presetname:string; params:string);
     function getpresetcategory(presetname:string):string;
     function getpresetextension(presetname:string):string;
     procedure mitShowOptionsClick(Sender: TObject);
@@ -717,6 +722,26 @@ begin
    end else
    begin
       result:= '';
+   end;
+end;
+
+// set the preset's params
+procedure TfrmMain.setpresetparams(presetname:string; params:string);
+var
+paramnode : tdomnode;
+begin
+   if trim(presetname) <> '' then
+   begin
+     try
+      if presets.FindNode(presetname).FindNode('params').HasChildNodes then
+       begin
+        paramnode:=presets.FindNode(presetname).FindNode('params').FindNode('#text');
+        paramnode.NodeValue := params;
+       end;
+      writexmlfile(presetsfile, presetspath + 'presets.xml');
+      except
+     end;
+
    end;
 end;
 
@@ -1379,6 +1404,11 @@ begin
    SetLength(Result, lStrLen(PChar(Result)));
 end;
 
+procedure TfrmMain.mnuOptionsClick(Sender: TObject);
+begin
+
+end;
+
 {$endif}
 {$ifdef unix}
 begin
@@ -1698,6 +1728,10 @@ procedure TfrmMain.MenuItem1Click(Sender: TObject);
 begin
 end;
 
+procedure TfrmMain.MenuItem3Click(Sender: TObject);
+begin
+  end;
+
 // filelist on key up
 procedure TfrmMain.filelistKeyUp(Sender: TObject; var Key: Word;
   Shift: TShiftState);
@@ -1895,6 +1929,62 @@ procedure TfrmMain.mitForumsClick(Sender: TObject);
 
 begin
   launchbrowser('http://www.winff.org/forums/');
+end;
+
+procedure TfrmMain.mitSaveOptionsClick(Sender: TObject);
+var
+commandline,pn : string;
+
+begin
+       pn:=getcurrentpresetname(presetbox.Text);
+       commandline:=getpresetparams(pn);
+
+
+        if vidbitrate.Text <> '' then
+         begin
+               commandline:=replaceparam(commandline,'-b','');   // Old style
+               commandline:=replaceparam(commandline,'-b:v','-b:v ' + vidbitrate.text+'k'); // New style
+         end;
+
+        if vidframerate.Text <> '' then
+         begin
+           commandline:=replaceparam(commandline,'-r',''); // Old style
+           commandline:=replaceparam(commandline,'-r:v','-r:v ' + vidframerate.Text); // New style
+         end;
+
+        if edtAspectRatio.Text <> '' then
+               commandline:=replaceparam(commandline,'-aspect','-aspect ' + edtAspectRatio.Text);
+
+        if audbitrate.Text <> '' then
+              begin
+               commandline:=replaceparam(commandline,'-ab',''); // Old style
+               commandline:=replaceparam(commandline,'-b:a','-b:a ' + audbitrate.Text+'k'); // New style
+              end;
+
+        if audsamplingrate.Text <> '' then
+         begin
+               commandline:=replaceparam(commandline,'-ar','');
+               commandline:=replaceparam(commandline,'-r:a','-r:a ' + audsamplingrate.Text);
+         end;
+
+        if audchannels.Text <> '' then
+               commandline:=replaceparam(commandline,'-ac','-ac ' + audchannels.Text);
+
+        // changes for winff 1.3
+       //
+       if edtVolume.Text <> '' then
+               commandline:=replaceparam(commandline,'-vol','-vol ' + edtVolume.Text);
+
+       if edtAudioSync.Text <> '' then
+               commandline:=replaceparam(commandline,'-async','-async ' + edtAudioSync.Text);
+
+       if (VidsizeX.Text <>'') AND (VidsizeY.Text <>'') then
+        begin
+             commandline:=replaceparam(commandline,'-s','');
+             commandline := replaceVfParam(commandline, 'scale', 'scale=' + VidsizeX.Text + ':' + VidsizeY.Text);
+        end;
+       showmessage('Options have been saved to preset ' + pn);
+       setpresetparams(pn,commandline);
 end;
 
 procedure TfrmMain.mitSelectAllClick(Sender: TObject);
@@ -2803,6 +2893,7 @@ begin
        result := '';
        Application.ProcessMessages;
 end;
+
 
 procedure TfrmMain.SaveChangedOptions(vOption : integer);
 var i : integer;
