@@ -1158,7 +1158,7 @@ object frmMain: TfrmMain
                   Height = 33
                   Hint = 'Target location for the final video (choose a different folder than the source folder)'
                   Top = 19
-                  Width = 571
+                  Width = 508
                   Align = alClient
                   BorderSpacing.Left = 13
                   BorderSpacing.Right = 5
@@ -1167,7 +1167,7 @@ object frmMain: TfrmMain
                 end
                 object ChooseFolderBtn: TButton
                   AnchorSideLeft.Side = asrBottom
-                  Left = 589
+                  Left = 526
                   Height = 33
                   Top = 19
                   Width = 43
@@ -1177,6 +1177,19 @@ object frmMain: TfrmMain
                   Caption = '...'
                   OnClick = ChooseFolderBtnClick
                   TabOrder = 1
+                end
+                object OpenFolderBtn: TButton
+                  AnchorSideLeft.Side = asrBottom
+                  Left = 569
+                  Height = 33
+                  Top = 19
+                  Width = 63
+                  Align = alRight
+                  AutoSize = True
+                  BorderSpacing.InnerBorder = 4
+                  Caption = 'Open'
+                  OnClick = OpenFolderBtnClick
+                  TabOrder = 2
                 end
               end
               object cbOutputPath: TCheckBox
