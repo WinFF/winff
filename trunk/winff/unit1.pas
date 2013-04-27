@@ -23,7 +23,7 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
+  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, LCLintf,
   {$IFDEF WINDOWS} windows, shellapi, dos,{$endif}
   {$IFDEF unix} baseunix, unix, {$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
@@ -52,6 +52,7 @@ type
     cbRightFlip: TCheckBox;
     cbLeftFlip: TCheckBox;
     ChooseFolderBtn: TButton;
+    OpenFolderBtn: TButton;
     commandlineparams: TEdit;
     DestFolder: TEdit;
     edtAspectRatio: TEdit;
@@ -244,6 +245,7 @@ type
     function GetDeskTopPath() : string;
     function GetMydocumentsPath() : string ;
     procedure mnuOptionsClick(Sender: TObject);
+    procedure OpenFolderBtnClick(Sender: TObject);
     procedure Panel14Click(Sender: TObject);
     procedure PopupMenu1Popup(Sender: TObject);
     procedure PresetBoxChange(Sender: TObject);
@@ -1403,18 +1405,23 @@ begin
         raise exception.create('SHGetPathFromIDList failed : invalid pidl');
    SetLength(Result, lStrLen(PChar(Result)));
 end;
-
-procedure TfrmMain.mnuOptionsClick(Sender: TObject);
-begin
-
-end;
-
 {$endif}
 {$ifdef unix}
 begin
  result := GetEnvironmentVariable('HOME') ;
 end;
 {$endif}
+
+procedure TfrmMain.mnuOptionsClick(Sender: TObject);
+begin
+
+end;
+
+procedure TfrmMain.OpenFolderBtnClick(Sender: TObject);
+begin
+ OpenDocument(destfolder.Text);
+end;
+
 
 procedure TfrmMain.Panel14Click(Sender: TObject);
 begin
