@@ -1983,7 +1983,7 @@ begin
              commandline:=replaceparam(commandline,'-s','');
              commandline := replaceVfParam(commandline, 'scale', 'scale=' + VidsizeX.Text + ':' + VidsizeY.Text);
         end;
-       showmessage('Options have been saved to preset ' + pn);
+       showmessage('Options have been saved to preset ' + presetbox.Text);
        setpresetparams(pn,commandline);
 end;
 
