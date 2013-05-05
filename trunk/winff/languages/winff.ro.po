@@ -3,21 +3,20 @@
 # This file is distributed under the same license as the winff package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 #
-# Launchpad contributors see:
-# https://translations.launchpad.net/winff/trunk/+pots/winff/ro/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.5.0\n"
+"Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2011-11-13 15:40+0000\n"
-"Last-Translator: Tuhut Vladut Emanuel <Unknown>\n"
+"Last-Translator: Ithreexas <Unknown>\n"
 "Language-Team: Romanian <ro@li.org>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-12-04 12:48+0000\n"
-"X-Generator: Launchpad (build 14418)\n"
+"X-Launchpad-Export-Date: 2013-05-04 09:00+0000\n"
+"X-Generator: Launchpad (build 16598)\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -955,4 +954,3 @@ msgstr "Inactiv"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normal"
-

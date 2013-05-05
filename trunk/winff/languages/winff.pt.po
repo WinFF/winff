@@ -1,5 +1,5 @@
 # Translation of winff messages to Portuguese
-# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2013 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,24 +16,20 @@
 #
 # Luís Torrao <luistorrao@gmail.com>, 2008.
 # Américo Monteiro <a_monteiro@netcabo.pt>, 2010.
-# Launchpad contributors see:
-# https://translations.launchpad.net/winff/trunk/+pots/winff/pt/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.5.0\n"
+"Project-Id-Version: winff 1.2.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2012-02-29 12:04+0000\n"
 "Last-Translator: Sérgio Marques <Unknown>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
-"X-Generator: Launchpad (build 15282)\n"
-"Language: pt\n"
+"X-Launchpad-Export-Date: 2013-05-04 09:01+0000\n"
+"X-Generator: Launchpad (build 16598)\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -971,4 +967,3 @@ msgstr "Inativo"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normal"
-

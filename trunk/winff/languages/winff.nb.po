@@ -1,5 +1,5 @@
 # translation of winff.po to Norwegian Bokmål
-# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2013 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,24 +14,22 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2012
-# Launchpad contributors see:
-# https://translations.launchpad.net/winff/trunk/+pots/winff/nb/+details
+# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2011
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.5.0\n"
+"Project-Id-Version: Winff 1.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
-"PO-Revision-Date: 2012-05-27 11:54+0200\n"
-"Last-Translator: Paul Gevers <paul@climbing.nl>\n"
+"PO-Revision-Date: 2011-12-04 15:42+0000\n"
+"Last-Translator: Paul Gevers <Unknown>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-12-04 12:48+0000\n"
-"X-Generator: Launchpad (build 14418)\n"
+"X-Launchpad-Export-Date: 2013-05-04 09:01+0000\n"
+"X-Generator: Launchpad (build 16598)\n"
 "X-Poedit-Country: NORWAY\n"
-"Language: \n"
 "X-Poedit-Language: Norwegian Bokmål\n"
 
 #: tfrmabout.btnok.caption
@@ -160,7 +158,6 @@ msgid "Enter a more descriptive name for this preset"
 msgstr "Gi et navn som beskriver denne forhåndsinnstillingen"
 
 #: tfrmeditpresets.edit3.hint
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
 msgstr "Ikke bruk -i eller utdata fil"
 
@@ -203,7 +200,6 @@ msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Kommandolinje for forhåndsinnstillingen (ingen -i eller utdatafil)"
 
 #: tfrmeditpresets.label5.caption
-#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
 msgstr "Etternavn til utdatafil (ingen \".\")"
 
@@ -212,7 +208,6 @@ msgid "Category"
 msgstr "Kategori"
 
 #: tfrmeditpresets.okbtn.caption
-#| msgid "Save"
 msgid "Save"
 msgstr "Lagre"
 
@@ -243,12 +238,10 @@ msgid "Export"
 msgstr "Eksporter"
 
 #: tfrmexport.label1.caption
-#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "Velg forhåndsinnstillinger å eksportere:"
 
 #: tfrmmain.audbitrate.hint
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr "(<heltall>) kbits/sekund-målet som strømmen skal brukes"
@@ -266,7 +259,6 @@ msgid "Add"
 msgstr "Legg til"
 
 #: tfrmmain.btnadd.hint
-#| msgid "add file(s) to the list for conversion"
 msgid "Add file(s) to the list for conversion"
 msgstr "Tilsett fil(er) til konverteringslista"
 
@@ -275,7 +267,6 @@ msgid "Clear"
 msgstr "Tøm"
 
 #: tfrmmain.btnclear.hint
-#| msgid "remove all files from the list"
 msgid "Remove all files from the list"
 msgstr "Fjern alle filer fra lista"
 
@@ -284,7 +275,6 @@ msgid "Convert"
 msgstr "Konverter"
 
 #: tfrmmain.btnconvert.hint
-#| msgid "start the conversion process"
 msgid "Start the conversion process"
 msgstr "Start konverteringsprosessen"
 
@@ -294,7 +284,6 @@ msgid "Options"
 msgstr "Alternativer"
 
 #: tfrmmain.btnoptions.hint
-#| msgid "open or close the additional option window"
 msgid "Open/close the additional options window"
 msgstr "Åpen/lukk vinduet med ekstra alternativer"
 
@@ -303,7 +292,6 @@ msgid "Play"
 msgstr "Spill"
 
 #: tfrmmain.btnplay.hint
-#| msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgstr "Forhåndsvisning av den velgte kildefilen med ffplay (god test å sjekke om konvertering er mulig)"
 
@@ -312,7 +300,6 @@ msgid "Preview"
 msgstr "Forhåndsvisning"
 
 #: tfrmmain.btnpreview.hint
-#| msgid "preview using the output settings"
 msgid "Preview using the output settings"
 msgstr "Forhåndsvisning med utdata instillinger"
 
@@ -321,12 +308,10 @@ msgid "Remove"
 msgstr "Fjern"
 
 #: tfrmmain.btnremove.hint
-#| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
 msgstr "Fjern den velgte filen(e) fra lista"
 
 #: tfrmmain.categorybox.hint
-#| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
 msgstr "Navnet til enheten eller filtypen som videoen skal konverteres til"
 
@@ -340,7 +325,6 @@ msgid "2 pass"
 msgstr "To gjennomganger"
 
 #: tfrmmain.cbx2pass.hint
-#| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr "Ved bruk av to gjennomganger samle koder informasjon ved første gjennomgang for høyere kvalitet"
 
@@ -349,7 +333,6 @@ msgid "Deinterlace"
 msgstr "Flett av"
 
 #: tfrmmain.cbxdeinterlace.hint
-#| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "Fjerns sammenfletting fra videoen (hvis nødvendig)"
 
@@ -359,7 +342,6 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-#| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Målet til endelig video (velg en annen mappe enn kildemappe)"
 
@@ -368,7 +350,6 @@ msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-#| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr "(<heltall:heltall> eller <reelt tall>) det fysiske høyde-/breddeforholdet (DAR) av mål-skjermen"
 
@@ -412,25 +393,21 @@ msgid "<hh:mm:ss> - Seek to this position before start converting"
 msgstr "<hh:mm:ss> - Søke til denne posisjon før konvertering starter"
 
 #: tfrmmain.edtttrhh.hint
-#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 
 #: tfrmmain.edtttrmm.hint
-#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRMM.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 
 #: tfrmmain.edtttrss.hint
-#| msgid "<hh:mm:ss> - Amount of time to record"
 msgctxt "TFRMMAIN.EDTTTRSS.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Tidlengde som skal opptakes"
 
 #: tfrmmain.edtvolume.hint
-#| msgid "(<integer>) Current Volume = 256, 128 = half volume, 512 = double volume"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "(<heltall>) 256 = gjeldende lydstyrke, 128 = halvt lydstyrke, 512 = doppelt lydstyrke"
 
@@ -440,7 +417,6 @@ msgid "WinFF"
 msgstr "Winff"
 
 #: tfrmmain.label1.caption
-#| msgid "Convert"
 msgid "Convert to:"
 msgstr "Konverter til:"
 
@@ -478,7 +454,6 @@ msgid "Hours / Minutes / Seconds"
 msgstr "Timer / Minuter / Sekunder"
 
 #: tfrmmain.label3.caption
-#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
 msgstr "Tilleggsparametrene til kommandolinje"
 
@@ -561,12 +536,10 @@ msgid "-"
 msgstr "-"
 
 #: tfrmmain.mitabout.caption
-#| msgid "About"
 msgid "About"
 msgstr "Om WinFF"
 
 #: tfrmmain.mitdisplaycmdline.caption
-#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
 msgstr "Vis kommandolinje"
 
@@ -579,7 +552,6 @@ msgid "Exit"
 msgstr "Avslutt"
 
 #: tfrmmain.mitforums.caption
-#| msgid "WinFF Forums"
 msgid "Forums"
 msgstr "Forumer"
 
@@ -600,7 +572,6 @@ msgid "Preferences"
 msgstr "Brukervalg"
 
 #: tfrmmain.mitpresets.caption
-#| msgid "Presets"
 msgid "Presets"
 msgstr "Forhåndsinnstillinger"
 
@@ -638,7 +609,6 @@ msgid "Help"
 msgstr "Hjelp"
 
 #: tfrmmain.mnuoptions.caption
-#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Alternativer"
@@ -682,24 +652,20 @@ msgid "Video"
 msgstr "Video"
 
 #: tfrmmain.vidbitrate.hint
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr "(<heltall>) kbits/sekund-målet som strømmen skal brukes"
 
 #: tfrmmain.vidframerate.hint
-#| msgid "(<real> or <integer>) the number of frames per second"
 msgid "(<real> or <integer>) number of frames per second"
 msgstr "(<reelt tall> or <heltall>) antall bilder per sekund"
 
 #: tfrmmain.vidsizex.hint
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<heltall> X <heltall>) antall informasjonspikseler. For videokodeks som ikke støtte piksel (PAR) dette er videostørrelse når vist."
 
 #: tfrmmain.vidsizey.hint
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<heltall> X <heltall>) antall informasjonspikseler. For videokodeks som ikke støtte piksel (PAR) dette er videostørrelse når vist."
@@ -833,7 +799,6 @@ msgid "MS Windows"
 msgstr "MS Windows"
 
 #: tfrmscript.btnclip.caption
-#| msgid "Clipboard"
 msgid "Copy to Clipboard"
 msgstr "Kopier til utklippstavle"
 
@@ -1001,4 +966,3 @@ msgstr "Tomgang"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Vanlig"
-
