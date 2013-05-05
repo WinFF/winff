@@ -899,10 +899,6 @@ msgstr "Naciśnij Enter by kontynuować"
 msgid "Replace Preset?"
 msgstr ""
 
-#: unit1.rsreplacepreset
-msgid "Replace Preset?"
-msgstr ""
-
 #: unit1.rsselectdirectory
 msgid "Select Directory"
 msgstr "Wybierz katalog"
