@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-05 21:26+0200\n"
+"POT-Creation-Date: 2012-10-20 12:28+0200\n"
 "PO-Revision-Date: 2012-12-23 08:12+0000\n"
 "Last-Translator: ub <xenolith0bytetestcomgreen@gmail.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -18,12 +18,9 @@ msgstr ""
 "X-Launchpad-Export-Date: 2013-05-04 09:01+0000\n"
 "X-Generator: Launchpad (build 16598)\n"
 
-#: TFORM1.FORM1.CAPTION
-msgid "Form1"
-msgstr "フォーム1"
-
-#: TFRMABOUT.BUTTON1.CAPTION
-msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#: TFRMABOUT.BTNOK.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.BTNOK.CAPTION"
 msgid "OK"
 msgstr "OK"
 
@@ -32,80 +29,115 @@ msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "WinFFについて"
 
-#: TFRMABOUT.LABEL1.CAPTION
-msgid "WinFF 1.3.2"
-msgstr "WinFF 1.3.2"
-
-#: TFRMABOUT.LABEL10.CAPTION
-msgid "http://hawkeye.arrozcru.org/"
-msgstr "http://hawkeye.arrozcru.org/"
-
-#: TFRMABOUT.LABEL11.CAPTION
-msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr "Debian/Ubuntu Packaging by Paul Gevers"
-
-#: TFRMABOUT.LABEL13.CAPTION
-msgid "Gmaq"
-msgstr "Gmaq"
-
-#: TFRMABOUT.LABEL14.CAPTION
-msgid "High Quality Presets From"
-msgstr "高品質のプリセット"
-
-#: TFRMABOUT.LABEL15.CAPTION
-msgid "Icons and Logo by Alex Klepatsch"
-msgstr "アイコンとロゴ Alex Klepatsch"
-
-#: TFRMABOUT.LABEL16.CAPTION
-msgid "JNavas"
-msgstr "JNavas"
-
-#: TFRMABOUT.LABEL2.CAPTION
-msgid "Copyright 2006-2009 GPL V3"
-msgstr "Copyright 2006-2009 GPL V3"
-
-#: TFRMABOUT.LABEL3.CAPTION
-msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-msgstr "Matthew Weatherford, Ian Stoffberg, and Alexey Osipov"
-
-#: TFRMABOUT.LABEL4.CAPTION
-msgid "http://www.winff.org"
-msgstr "http://www.winff.org"
-
-#: TFRMABOUT.LABEL5.CAPTION
-msgctxt "TFRMABOUT.LABEL5.CAPTION"
-msgid "FFmpeg"
-msgstr "Copy text \t FFmpeg"
-
-#: TFRMABOUT.LABEL6.CAPTION
+#: TFRMABOUT.LBLBELLARD.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLBELLARD.CAPTION"
 msgid "Trademark Fabrice Belllard"
 msgstr "Trademark Fabrice Belllard"
 
-#: TFRMABOUT.LABEL7.CAPTION
-msgid "http://ffmpeg.org"
-msgstr "http://ffmpeg.org"
+#: TFRMABOUT.LBLCOPYRIGHT.CAPTION
+msgid "Copyright %s ; Licence: GPL V3+"
+msgstr ""
 
-#: TFRMABOUT.LABEL8.CAPTION
-msgid "FFmpeg Windows Builds by"
-msgstr "FFmpeg Windows のビルド"
+#: TFRMABOUT.LBLFFMEG.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
+msgid "FFmpeg"
+msgstr "Copy text \t FFmpeg"
 
-#: TFRMABOUT.LABEL9.CAPTION
+#: TFRMABOUT.LBLGEVERS.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLGEVERS.CAPTION"
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr "Debian/Ubuntu Packaging by Paul Gevers"
+
+#: TFRMABOUT.LBLGMAQ.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLGMAQ.CAPTION"
+msgid "Gmaq"
+msgstr "Gmaq"
+
+#: TFRMABOUT.LBLHQPRESETS.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLHQPRESETS.CAPTION"
+msgid "High Quality Presets From"
+msgstr "高品質のプリセット"
+
+#: TFRMABOUT.LBLKLEPATSCH.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLKLEPATSCH.CAPTION"
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr "アイコンとロゴ Alex Klepatsch"
+
+#: TFRMABOUT.LBLNAVAS.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLNAVAS.CAPTION"
+msgid "JNavas"
+msgstr "JNavas"
+
+#: TFRMABOUT.LBLOSIPOV.CAPTION
+msgid "Alexey Osipov"
+msgstr ""
+
+#: TFRMABOUT.LBLSCHWARZ.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
 msgid "Kyle Schwarz"
 msgstr "Kyle Schwarz"
 
-#: TFRMABOUT.PAGE1.CAPTION
-msgctxt "TFRMABOUT.PAGE1.CAPTION"
-msgid "WinFF"
+#: TFRMABOUT.LBLSTOFFBERG.CAPTION
+msgid "Ian Stoffberg"
+msgstr ""
+
+#: TFRMABOUT.LBLURLFFMPEG.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
+msgid "http://ffmpeg.org"
+msgstr "http://ffmpeg.org"
+
+#: TFRMABOUT.LBLURLWINFFORG.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLURLWINFFORG.CAPTION"
+msgid "http://www.winff.org"
+msgstr "http://www.winff.org"
+
+#: TFRMABOUT.LBLURLZERANOE.CAPTION
+#, fuzzy
+msgid "http://ffmpeg.zeranoe.com"
+msgstr "http://ffmpeg.org"
+
+#: TFRMABOUT.LBLWEATHERFORD.CAPTION
+msgid "Matthew Weatherford"
+msgstr ""
+
+#: TFRMABOUT.LBLWINBUILD.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
+msgid "FFmpeg Windows Builds by"
+msgstr "FFmpeg Windows のビルド"
+
+#: TFRMABOUT.LBLWINFF.CAPTION
+#, fuzzy
+msgid "WinFF %s"
 msgstr "WinFF"
 
-#: TFRMABOUT.PAGE2.CAPTION
-msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#: TFRMABOUT.TABFFMPEG.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
 msgid "FFmpeg"
-msgstr "FFmpeg"
+msgstr "Copy text \t FFmpeg"
 
-#: TFRMABOUT.PAGE3.CAPTION
+#: TFRMABOUT.TABTHANKS.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.TABTHANKS.CAPTION"
 msgid "Thanks"
 msgstr "謝辞"
+
+#: TFRMABOUT.TABWINFF.CAPTION
+#, fuzzy
+msgctxt "TFRMABOUT.TABWINFF.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
 
 #: TFRMEDITPRESETS.ADDPRESETBTN.CAPTION
 msgid "Add / Update"
@@ -115,10 +147,6 @@ msgstr "追加/上書き"
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "閉じる"
-
-#: TFRMEDITPRESETS.CAPTION
-msgid "Edit Presets"
-msgstr "プリセットの編集"
 
 #: TFRMEDITPRESETS.DELETEBTN.CAPTION
 msgid "Delete"
@@ -148,6 +176,12 @@ msgstr "プリセットのカテゴリを選択"
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "書き出し"
+
+#: TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION
+#, fuzzy
+msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
+msgid "Edit Presets"
+msgstr "プリセットの編集"
 
 #: TFRMEDITPRESETS.IMPORT.CAPTION
 msgid "Import"
@@ -181,9 +215,19 @@ msgstr "カテゴリ"
 msgid "Save"
 msgstr "保存"
 
+#: TFRMEDITPRESETS.OPENDIALOG1.TITLE
+#, fuzzy
+msgid "Import a Preset"
+msgstr "プリセットの読み込み"
+
 #: TFRMEDITPRESETS.PNLTOP.CAPTION
 msgid "pnlTop"
 msgstr "pnlTop"
+
+#: TFRMEDITPRESETS.SAVEDIALOG1.TITLE
+#, fuzzy
+msgid "Export a Preset"
+msgstr "プリセットを書きだす"
 
 #: TFRMEXPORT.CANCELBTN.CAPTION
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
@@ -223,16 +267,6 @@ msgstr "追加"
 #: TFRMMAIN.BTNADD.HINT
 msgid "Add file(s) to the list for conversion"
 msgstr "変換リストにファイルを追加"
-
-#: TFRMMAIN.BTNAPPLYDESTINATION.CAPTION
-msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-msgid "Apply Output Folder"
-msgstr "出力フォルダを適用"
-
-#: TFRMMAIN.BTNAPPLYPRESET.CAPTION
-msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
-msgid "Apply Preset"
-msgstr "プリセットを適用"
 
 #: TFRMMAIN.BTNCLEAR.CAPTION
 msgid "Clear"
@@ -283,11 +317,6 @@ msgstr "削除"
 msgid "Remove selected file(s) from the list"
 msgstr "変換リストから選んだファイルを削除"
 
-#: TFRMMAIN.CAPTION
-msgctxt "TFRMMAIN.CAPTION"
-msgid "WinFF"
-msgstr "WinFF"
-
 #: TFRMMAIN.CATEGORYBOX.HINT
 msgid "Device or file type the video should be converted to"
 msgstr "変換するデバイスやファイルの種類"
@@ -321,6 +350,11 @@ msgstr "..."
 #: TFRMMAIN.DESTFOLDER.HINT
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "ビデオのターゲット（ソースフォルダと別のフォルダを選ぶ）"
+
+#: TFRMMAIN.DLGOPENFILE.TITLE
+#, fuzzy
+msgid "Select Video Files..."
+msgstr "ビデオを選択"
 
 #: TFRMMAIN.EDTASPECTRATIO.HINT
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -384,6 +418,12 @@ msgstr "<hh:mm:ss> - この時間で変換を止める"
 msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "（整数）259=既定値 128=半分のボリューム 512=倍のボリューム"
 
+#: TFRMMAIN.FRMMAIN.CAPTION
+#, fuzzy
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
 #: TFRMMAIN.LABEL1.CAPTION
 msgid "Convert to:"
 msgstr "変換するターゲット:"
@@ -425,6 +465,14 @@ msgstr "時/分/秒"
 msgid "Additional Command Line Parameters"
 msgstr "コマンドラインの追加オプション"
 
+#: TFRMMAIN.LABEL5.CAPTION
+msgid "1st Pass"
+msgstr ""
+
+#: TFRMMAIN.LABEL6.CAPTION
+msgid "2nd Pass"
+msgstr ""
+
 #: TFRMMAIN.LABEL7.CAPTION
 msgid "Audio Bitrate"
 msgstr "音声ビットレート"
@@ -440,6 +488,10 @@ msgstr "X"
 #: TFRMMAIN.LBLASPECTRATIO.CAPTION
 msgid "Aspect Ratio"
 msgstr "アスペクト比"
+
+#: TFRMMAIN.LBLCANCELCHANGES.CAPTION
+msgid "Cancel Changes"
+msgstr ""
 
 #: TFRMMAIN.LBLCROPBOTTOM.CAPTION
 msgid "Bottom"
@@ -460,6 +512,15 @@ msgstr "上"
 #: TFRMMAIN.LBLFRAMERATE.CAPTION
 msgid "Frame Rate"
 msgstr "フレームレート"
+
+#: TFRMMAIN.LBLSAVECHANGES.CAPTION
+#, fuzzy
+msgid "Apply Changes"
+msgstr "プリセットを適用"
+
+#: TFRMMAIN.LBLSAVECHANGES.HINT
+msgid "Click here to apply settings changes to the file conversion above"
+msgstr ""
 
 #: TFRMMAIN.LBLVIDEOBITRATE.CAPTION
 msgid "Video Bitrate"
@@ -523,6 +584,10 @@ msgstr "設定"
 msgid "Presets"
 msgstr "プリセット"
 
+#: TFRMMAIN.MITSELECTALL.CAPTION
+msgid "Select All"
+msgstr ""
+
 #: TFRMMAIN.MITSHOWOPTIONS.CAPTION
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
@@ -565,11 +630,6 @@ msgstr "pnlMain"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "選択したデバイスやファイルで使う固有の設定"
 
-#: TFRMMAIN.TABSHEET1.CAPTION
-msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
-msgid "Video"
-msgstr "映像"
-
 #: TFRMMAIN.TABSHEET2.CAPTION
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
@@ -595,6 +655,12 @@ msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "出力の設定"
 
+#: TFRMMAIN.TABVIDEO.CAPTION
+#, fuzzy
+msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
+msgid "Video"
+msgstr "映像"
+
 #: TFRMMAIN.VIDBITRATE.HINT
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
@@ -614,113 +680,149 @@ msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "（整数x整数）フレームのピクセル数 ピクセルアスペクト比が無効なコーデックではフレームサイズ"
 
-#: TFRMPREFERENCES.BUTTON1.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
-msgid "OK"
-msgstr "OK"
-
-#: TFRMPREFERENCES.BUTTON2.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+#: TFRMPREFERENCES.BTNCANCEL.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: TFRMPREFERENCES.BUTTON3.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+#: TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON4.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+#: TFRMPREFERENCES.BTNLINFFMPEGPATH.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNLINFFMPEGPATH.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON5.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+#: TFRMPREFERENCES.BTNLINFFPLAYPATH.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNLINFFPLAYPATH.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON6.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+#: TFRMPREFERENCES.BTNLINTERMINALEXE.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNLINTERMINALEXE.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON7.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#: TFRMPREFERENCES.BTNOK.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNOK.CAPTION"
+msgid "OK"
+msgstr "OK"
+
+#: TFRMPREFERENCES.BTNWINFFMPEGPATH.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNWINFFMPEGPATH.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.BUTTON8.CAPTION
-msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+#: TFRMPREFERENCES.BTNWINFFPLAYPATH.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNWINFFPLAYPATH.CAPTION"
 msgid "..."
 msgstr "..."
 
-#: TFRMPREFERENCES.CAPTION
-msgid "WinFF Preferences"
-msgstr "WinFFの設定"
-
-#: TFRMPREFERENCES.CHECKBOX1.CAPTION
-msgid "Remember Last Used Directory"
-msgstr "最後に使用したフォルダを記憶"
-
-#: TFRMPREFERENCES.CHECKBOX2.CAPTION
+#: TFRMPREFERENCES.CBCHCPCHAR.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr "CHCPを使う"
 
-#: TFRMPREFERENCES.CHECKBOX3.CAPTION
+#: TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
+msgid "Remember Last Used Directory"
+msgstr "最後に使用したフォルダを記憶"
+
+#: TFRMPREFERENCES.CBTHREADS.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.CBTHREADS.CAPTION"
 msgid "Use Several Encoding Threads:"
 msgstr "エンコードにマルチスレッドを使う"
 
-#: TFRMPREFERENCES.EDIT7.HINT
+#: TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT
+#, fuzzy
+msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "xtermは -e gnome-terminalは -x"
 
-#: TFRMPREFERENCES.LABEL1.CAPTION
+#: TFRMPREFERENCES.FRMPREFERENCES.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
+msgid "WinFF Preferences"
+msgstr "WinFFの設定"
+
+#: TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
 msgid "Default Destination Directory:"
 msgstr "デフォルトの出力フォルダ"
 
-#: TFRMPREFERENCES.LABEL2.CAPTION
-msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
-msgid "Path to FFmpeg Executable:"
+#: TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
+msgid "Path to FFmpeg or avconv Executable:"
 msgstr "FFmpegのパス"
 
-#: TFRMPREFERENCES.LABEL3.CAPTION
-msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
-msgid "Path to FFplay Executable:"
+#: TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
+msgid "Path to FFplay or avplay Executable:"
 msgstr "FFplayのパス"
 
-#: TFRMPREFERENCES.LABEL4.CAPTION
-msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
-msgid "Path to FFmpeg Executable:"
-msgstr "FFmpegのパス"
-
-#: TFRMPREFERENCES.LABEL5.CAPTION
-msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
-msgid "Path to FFplay Executable:"
-msgstr "FFplayのパス"
-
-#: TFRMPREFERENCES.LABEL6.CAPTION
+#: TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
 msgid "Terminal to run FFmpeg in:"
 msgstr "FFmpegを実行する端末"
 
-#: TFRMPREFERENCES.LABEL7.CAPTION
+#: TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION"
 msgid "Terminal Options:"
 msgstr "端末のオプション"
 
-#: TFRMPREFERENCES.LABEL8.CAPTION
+#: TFRMPREFERENCES.LBLPRIORITY.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLPRIORITY.CAPTION"
 msgid "Priority:"
 msgstr "優先度"
 
-#: TFRMPREFERENCES.PAGE1.CAPTION
+#: TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
+msgid "Path to FFmpeg or avconv Executable:"
+msgstr "FFmpegのパス"
+
+#: TFRMPREFERENCES.LBLWINFFPLAY.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
+msgid "Path to FFplay or avplay Executable:"
+msgstr "FFplayのパス"
+
+#: TFRMPREFERENCES.TABGENERAL.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
 msgid "General"
 msgstr "一般"
 
-#: TFRMPREFERENCES.PAGE2.CAPTION
-msgid "MS Windows"
-msgstr "MS Windows"
-
-#: TFRMPREFERENCES.PAGE3.CAPTION
+#: TFRMPREFERENCES.TABLINUX.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
 msgstr "Linux"
+
+#: TFRMPREFERENCES.TABWINDOWS.CAPTION
+#, fuzzy
+msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
+msgid "MS Windows"
+msgstr "MS Windows"
 
 #: TFRMSCRIPT.BTNCLIP.CAPTION
 msgid "Copy to Clipboard"
@@ -867,6 +969,14 @@ msgstr "ラベルを入力"
 msgid "You must enter a name."
 msgstr "名前を入力"
 
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
 #: unit4.rspriorityhigh
 msgid "High"
 msgstr "高"
@@ -878,3 +988,70 @@ msgstr "低"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "中"
+
+#~ msgid "Form1"
+#~ msgstr "フォーム1"
+
+#~ msgid "WinFF 1.3.2"
+#~ msgstr "WinFF 1.3.2"
+
+#~ msgid "http://hawkeye.arrozcru.org/"
+#~ msgstr "http://hawkeye.arrozcru.org/"
+
+#~ msgid "Copyright 2006-2009 GPL V3"
+#~ msgstr "Copyright 2006-2009 GPL V3"
+
+#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+#~ msgstr "Matthew Weatherford, Ian Stoffberg, and Alexey Osipov"
+
+#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+
+#~ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+#~ msgid "Apply Output Folder"
+#~ msgstr "出力フォルダを適用"
+
+#~ msgctxt "TFRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "キャンセル"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "FFmpegのパス"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+#~ msgid "Path to FFplay Executable:"
+#~ msgstr "FFplayのパス"
