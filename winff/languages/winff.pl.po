@@ -1,6 +1,5 @@
 # translation of winff.po to Polish
 # Copyright (C) 2008-2010 Marcin Trybus <mtrybus@o2.pl>
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,17 +18,22 @@
 # Kamil Garbala <elkanguro@orange.pl>, 2010
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.5.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2012-10-05 21:26+0200\n"
-"PO-Revision-Date: 2012-10-11 12:20+0000\n"
+"PO-Revision-Date: 2012-10-05 08:17+0000\n"
 "Last-Translator: Damian Pacuszka <pacuszka.d@gmail.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
+"Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-12-16 08:53+0000\n"
-"X-Generator: Launchpad (build 16372)\n"
+"X-Launchpad-Export-Date: 2013-05-04 09:01+0000\n"
+"X-Generator: Launchpad (build 16598)\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-SearchPath-0: c:\\po\\winff\n"
+"X-Poedit-Basepath: c:\\po\\winff\\\n"
 
 #: TFRMABOUT.BTNOK.CAPTION
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -871,8 +875,7 @@ msgid "Please select a preset"
 msgstr "Wybierz szablon"
 
 #: unit1.rspresetalreadyexist
-msgid ""
-"Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr ""
 
 #: unit1.rspresethasnoext
@@ -966,4 +969,3 @@ msgstr "Niski"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normalny"
-

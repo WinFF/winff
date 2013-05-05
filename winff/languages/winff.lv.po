@@ -5,17 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.5.0\n"
+"Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2012-10-05 21:26+0200\n"
-"PO-Revision-Date: 2012-12-11 18:05+0000\n"
+"PO-Revision-Date: 2013-01-06 18:47+0000\n"
 "Last-Translator: tuxmaniack <Unknown>\n"
 "Language-Team: Latvian <lv@li.org>\n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-12-16 08:53+0000\n"
-"X-Generator: Launchpad (build 16372)\n"
+"X-Launchpad-Export-Date: 2013-05-04 09:01+0000\n"
+"X-Generator: Launchpad (build 16598)\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -34,7 +35,7 @@ msgstr "Preču zīme Fabrice Belllard"
 
 #: tfrmabout.lblcopyright.caption
 msgid "Copyright %s ; Licence: GPL V3+"
-msgstr ""
+msgstr "Autortiesības %s ; Licence: GPL V3+"
 
 #: tfrmabout.lblffmeg.caption
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
@@ -68,7 +69,7 @@ msgstr "JNavas"
 
 #: tfrmabout.lblosipov.caption
 msgid "Alexey Osipov"
-msgstr ""
+msgstr "Alexey Osipov"
 
 #: tfrmabout.lblschwarz.caption
 msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
@@ -77,7 +78,7 @@ msgstr "Kyle Schwarz"
 
 #: tfrmabout.lblstoffberg.caption
 msgid "Ian Stoffberg"
-msgstr ""
+msgstr "Ian Stoffberg"
 
 #: tfrmabout.lblurlffmpeg.caption
 msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
@@ -91,11 +92,11 @@ msgstr "http://www.winff.org"
 
 #: tfrmabout.lblurlzeranoe.caption
 msgid "http://ffmpeg.zeranoe.com"
-msgstr ""
+msgstr "http://ffmpeg.zeranoe.com"
 
 #: tfrmabout.lblweatherford.caption
 msgid "Matthew Weatherford"
-msgstr ""
+msgstr "Matthew Weatherford"
 
 #: tfrmabout.lblwinbuild.caption
 msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
@@ -104,7 +105,7 @@ msgstr "FFmpeg Windows pakotnes no"
 
 #: tfrmabout.lblwinff.caption
 msgid "WinFF %s"
-msgstr ""
+msgstr "WinFF %s"
 
 #: tfrmabout.tabffmpeg.caption
 msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
@@ -198,7 +199,7 @@ msgstr "Saglabāt"
 
 #: tfrmeditpresets.opendialog1.title
 msgid "Import a Preset"
-msgstr ""
+msgstr "Importēt regulējumu"
 
 #: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
@@ -206,7 +207,7 @@ msgstr "pnlTop"
 
 #: tfrmeditpresets.savedialog1.title
 msgid "Export a Preset"
-msgstr ""
+msgstr "Eksportēt regulējumu"
 
 #: tfrmexport.cancelbtn.caption
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
@@ -332,7 +333,7 @@ msgstr "Pārveidotā faila atrašanās vieta (izvēlieties citu, ne avota mapi)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
-msgstr ""
+msgstr "Izvēlieties video failus..."
 
 #: tfrmmain.edtaspectratio.hint
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
@@ -444,11 +445,11 @@ msgstr "Papildu komandrindas parametri"
 
 #: tfrmmain.label5.caption
 msgid "1st Pass"
-msgstr ""
+msgstr "1 reize"
 
 #: tfrmmain.label6.caption
 msgid "2nd Pass"
-msgstr ""
+msgstr "2 reize"
 
 #: tfrmmain.label7.caption
 msgid "Audio Bitrate"
@@ -468,7 +469,7 @@ msgstr "Izmēru attiecība"
 
 #: tfrmmain.lblcancelchanges.caption
 msgid "Cancel Changes"
-msgstr ""
+msgstr "Atcelt izmaiņas"
 
 #: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
@@ -492,11 +493,11 @@ msgstr "Kadru ātrums"
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
-msgstr ""
+msgstr "Pielietot izmaiņas"
 
 #: tfrmmain.lblsavechanges.hint
 msgid "Click here to apply settings changes to the file conversion above"
-msgstr ""
+msgstr "Klikšķiniet šeit, lai pielietotu izmaiņas faila pārveidei augšā"
 
 #: tfrmmain.lblvideobitrate.caption
 msgid "Video Bitrate"
@@ -562,7 +563,7 @@ msgstr "Regulējumi"
 
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
-msgstr ""
+msgstr "Izvēlēties visu"
 
 #: tfrmmain.mitshowoptions.caption
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
@@ -726,18 +727,14 @@ msgid "Default Destination Directory:"
 msgstr "Noklusētā mērķa mape:"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
-#, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Ceļš uz FFmpeg izpildāmo failu:"
+msgstr "Ceļš uz FFmpeg vai avconv izpildāmo failu:"
 
 #: tfrmpreferences.lbllinffplaypath.caption
-#, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Ceļš uz FFplay izpildāmo failu:"
+msgstr "Ceļš uz FFplay vai avplay izpildāmo failu:"
 
 #: tfrmpreferences.lbllinterminalexe.caption
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
@@ -755,18 +752,14 @@ msgid "Priority:"
 msgstr "Prioritāte:"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
-#, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Ceļš uz FFmpeg izpildāmo failu:"
+msgstr "Ceļš uz FFmpeg vai avconv izpildāmo failu:"
 
 #: tfrmpreferences.lblwinffplay.caption
-#, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Ceļš uz FFplay izpildāmo failu:"
+msgstr "Ceļš uz FFplay vai avplay izpildāmo failu:"
 
 #: tfrmpreferences.tabgeneral.caption
 msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
@@ -930,11 +923,11 @@ msgstr "Jums ir jāievada regulējuma vārds."
 
 #: unit3.rslaunchpadcontrib
 msgid "Launchpad contributors"
-msgstr ""
+msgstr "Launchpad līdzautori"
 
 #: unit3.rstranslators
 msgid "Translators:"
-msgstr ""
+msgstr "Tulkotāji:"
 
 #: unit4.rspriorityhigh
 msgid "High"
@@ -947,4 +940,3 @@ msgstr "Dīkstāve"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normāla"
-

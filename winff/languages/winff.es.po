@@ -1,5 +1,5 @@
 # translation of winff.po to Spanish
-# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+# Copyright (C) 2008-2013 Matthew Weatherford <matt@biggmatt.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,22 +16,20 @@
 #
 # Víctor Paesa <wzrlpy@hotmail.com>, 2008-2009
 # Italo Ramirez I. <gualalux@hotmail.com>, 2009
-# Launchpad contributors see:
-# https://translations.launchpad.net/winff/trunk/+pots/winff/es/+details
 msgid ""
 msgstr ""
-"Project-Id-Version: WinFF 1.5.0\n"
+"Project-Id-Version: WinFF 1.1.1\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2011-11-22 23:33+0000\n"
 "PO-Revision-Date: 2012-04-04 08:24+0000\n"
-"Last-Translator: Fitoschido <fitoschido@gmail.com>\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-05-23 18:52+0000\n"
-"X-Generator: Launchpad (build 15282)\n"
-"Language: \n"
+"X-Launchpad-Export-Date: 2013-05-04 09:01+0000\n"
+"X-Generator: Launchpad (build 16598)\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -969,4 +967,3 @@ msgstr "Mínima"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normal"
-
