@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-22 23:33+0000\n"
+"POT-Creation-Date: 2012-10-20 12:28+0200\n"
 "PO-Revision-Date: 2012-05-24 09:26+0000\n"
 "Last-Translator: abbas <abbasalshaikh@gmail.com>\n"
 "Language-Team: Muhammad Negm <alam.hor@gmail.com>\n"
@@ -160,7 +160,6 @@ msgstr "أدخل اسم يصف أكثر هذا الضبط المسبق"
 
 #: tfrmeditpresets.edit3.hint
 #, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
 msgstr " نسبة لسطر الأوامر (دون الخيار -i أو ملف الناتج)"
 
@@ -200,7 +199,6 @@ msgstr "وسم الضبط المسبق"
 
 #: tfrmeditpresets.label4.caption
 #, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr " نسبة لسطر الأوامر (دون الخيار -i أو ملف الناتج)"
 
@@ -248,7 +246,6 @@ msgstr "اختر ضبط مسبق لتصديره"
 
 #: tfrmmain.audbitrate.hint
 #, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr " (<عدد صحيح> ك.ب) المعدل المستهدف بالكيلو بت /ثانية الذي تود استعماله "
@@ -308,7 +305,6 @@ msgstr "معاينة"
 
 #: tfrmmain.btnpreview.hint
 #, fuzzy
-#| msgid "preview using the output settings"
 msgid "Preview using the output settings"
 msgstr "المعاينة باستخدام أعدادات الخرج"
 
@@ -435,7 +431,6 @@ msgstr "قنوات الصوت"
 
 #: tfrmmain.label12.caption
 #, fuzzy
-#| msgid "Output Folder"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "مجلد الخرج"
@@ -552,7 +547,6 @@ msgstr "حول"
 
 #: tfrmmain.mitdisplaycmdline.caption
 #, fuzzy
-#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
 msgstr "عرض نافذة سطر الأوامر"
 
@@ -632,7 +626,6 @@ msgstr "pnlMain"
 
 #: tfrmmain.presetbox.hint
 #, fuzzy
-#| msgid "specific setting to use for the chosen device or file type"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "استخدام أعدادات معينة لنوع الملف أو المشغل"
 
@@ -658,7 +651,6 @@ msgstr "FFmpeg"
 
 #: tfrmmain.tabsheet6.caption
 #, fuzzy
-#| msgid "Output Details"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "تفاصيل الخرج"
@@ -670,27 +662,23 @@ msgstr "الفيديو"
 
 #: tfrmmain.vidbitrate.hint
 #, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr "(<عدد صحيح>كيلوبت) المعدل المستهدف بالكيلوبت/ثانية الذي تود استعماله"
 
 #: tfrmmain.vidframerate.hint
 #, fuzzy
-#| msgid "(<real> or <integer>) the number of frames per second"
 msgid "(<real> or <integer>) number of frames per second"
 msgstr "(<حقيقي> أو <عدد صحيح>) عدد الإطارات لكل ثانية"
 
 #: tfrmmain.vidsizex.hint
 #, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<عدد صحيح> × <عدد صحيح>) مجموع بكسلات البيانات.صالح للترميزات التي لا تدعم مقياس عدد السطور (PAR) ذلك يحجم الفيديو عند عرضه"
 
 #: tfrmmain.vidsizey.hint
 #, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<عدد صحيح> × <عدد صحيح>) مجموع بكسلات البيانات.صالح للترميزات التي لا تدعم مقياس عدد السطور (PAR) ذلك يحجم الفيديو عند عرضه"
@@ -752,7 +740,6 @@ msgstr ""
 
 #: tfrmpreferences.edtlinterminaloptions.hint
 #, fuzzy
-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "خيارات للطرفية (-e في حالة طرفية اكس أو -x في حالة طرفية گنوم)"
@@ -764,28 +751,24 @@ msgstr "تفضيلات WinFF"
 
 #: tfrmpreferences.lbldefaultdir.caption
 #, fuzzy
-#| msgid "Default Destination Directory"
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
 msgid "Default Destination Directory:"
 msgstr "وجهة المجلد الافتراضي"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "مكان الملف التنفيذي لـFFmpeg:"
 
 #: tfrmpreferences.lbllinffplaypath.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "مكان الملف التنفيذي لـFFplay:"
 
 #: tfrmpreferences.lbllinterminalexe.caption
 #, fuzzy
-#| msgid "Terminal to run FFmpeg"
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
 msgid "Terminal to run FFmpeg in:"
 msgstr "طرفية لتشغيل FFmpeg"
@@ -802,14 +785,12 @@ msgstr "الأولوية:"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "مكان الملف التنفيذي لـFFmpeg:"
 
 #: tfrmpreferences.lblwinffplay.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "مكان الملف التنفيذي لـFFplay:"
@@ -835,7 +816,6 @@ msgstr "نسخ إلى الحافظة"
 
 #: tfrmscript.btnclose.caption
 #, fuzzy
-#| msgid "Close"
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
 msgstr "إغلاق"
@@ -862,13 +842,11 @@ msgstr "جاري التحويل"
 
 #: unit1.rscouldnotfindffmpeg
 #, fuzzy
-#| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
 msgstr "لم يتم العثور على FFmpeg."
 
 #: unit1.rscouldnotfindffplay
 #, fuzzy
-#| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
 msgstr "لم يتم العثور على FFPlay"
 
@@ -906,7 +884,6 @@ msgstr "رجاءً حدد ضبط مسبق"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-#| msgid "Preset: %s%s%s already exists"
 msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "الملف %s%s%s موجود بالفعل"
 
@@ -936,7 +913,6 @@ msgstr ""
 
 #: unit1.rsselectdirectory
 #, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
 msgstr "وجهة المجلد الافتراضي"
 

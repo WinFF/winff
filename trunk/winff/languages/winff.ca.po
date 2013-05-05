@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-22 23:33+0000\n"
+"POT-Creation-Date: 2012-10-20 12:28+0200\n"
 "PO-Revision-Date: 2010-01-18 21:38+0100\n"
 "Last-Translator: Benny Beat <bennybeat@gmail.com>\n"
 "Language-Team: \n"
@@ -35,7 +35,6 @@ msgstr "D'acord"
 
 #: tfrmabout.frmabout.caption
 #, fuzzy
-#| msgid "About WinFF"
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Quant a WinFF"
@@ -51,7 +50,6 @@ msgstr ""
 
 #: tfrmabout.lblffmeg.caption
 #, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -114,7 +112,6 @@ msgstr ""
 
 #: tfrmabout.lblwinbuild.caption
 #, fuzzy
-#| msgid "FFmpeg builds by"
 msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
 msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg compilat per"
@@ -125,7 +122,6 @@ msgstr ""
 
 #: tfrmabout.tabffmpeg.caption
 #, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -137,7 +133,6 @@ msgstr "Gràcies"
 
 #: tfrmabout.tabwinff.caption
 #, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMABOUT.TABWINFF.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
@@ -148,7 +143,6 @@ msgstr "Afegeix/Modifica"
 
 #: tfrmeditpresets.cancelbtn.caption
 #, fuzzy
-#| msgid "Close"
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Tanca"
@@ -167,7 +161,6 @@ msgstr ""
 
 #: tfrmeditpresets.edit3.hint
 #, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
 msgstr "Paràmetres de la línia d'ordres (sense -i ni l'arxiu de sortida)"
 
@@ -195,13 +188,11 @@ msgstr "Importa"
 
 #: tfrmeditpresets.label1.caption
 #, fuzzy
-#| msgid "Create Preset:"
 msgid "Category / Preset"
 msgstr "Crea una nova configuració:"
 
 #: tfrmeditpresets.label2.caption
 #, fuzzy
-#| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Nom de la configuració (només un mot alfanumèric en text pla, A-z 0-9)"
 
@@ -211,13 +202,11 @@ msgstr "Etiqueta de la configuració"
 
 #: tfrmeditpresets.label4.caption
 #, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Paràmetres de la línia d'ordres (sense -i ni l'arxiu de sortida)"
 
 #: tfrmeditpresets.label5.caption
 #, fuzzy
-#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
 msgstr "Extensió de l'arxiu de sortida (sense \".\")"
 
@@ -227,7 +216,6 @@ msgstr "Categoria"
 
 #: tfrmeditpresets.okbtn.caption
 #, fuzzy
-#| msgid "Save"
 msgid "Save"
 msgstr "desa"
 
@@ -259,13 +247,11 @@ msgstr "Exporta"
 
 #: tfrmexport.label1.caption
 #, fuzzy
-#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "Si us plau, trieu la configuració a exportar"
 
 #: tfrmmain.audbitrate.hint
 #, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr "(<íntegre>kb) els kilobits/segon que la transmissió necessita"
@@ -284,7 +270,6 @@ msgstr "Afegeix"
 
 #: tfrmmain.btnadd.hint
 #, fuzzy
-#| msgid "add file(s) to the list for conversion"
 msgid "Add file(s) to the list for conversion"
 msgstr "Afegeix arxius a la llista de conversió"
 
@@ -294,7 +279,6 @@ msgstr "Neteja"
 
 #: tfrmmain.btnclear.hint
 #, fuzzy
-#| msgid "remove all files from the list"
 msgid "Remove all files from the list"
 msgstr "Esborra tots els arxius de la llista"
 
@@ -304,7 +288,6 @@ msgstr "Converteix"
 
 #: tfrmmain.btnconvert.hint
 #, fuzzy
-#| msgid "start the conversion process"
 msgid "Start the conversion process"
 msgstr "Inicia el procés de conversió"
 
@@ -315,7 +298,6 @@ msgstr "Opcions"
 
 #: tfrmmain.btnoptions.hint
 #, fuzzy
-#| msgid "open or close the additional option window"
 msgid "Open/close the additional options window"
 msgstr "Obre o tanca la finestra d'opcions addicionals"
 
@@ -325,7 +307,6 @@ msgstr "Reprodueix"
 
 #: tfrmmain.btnplay.hint
 #, fuzzy
-#| msgid "preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
 msgstr "Vista prèvia amb ffplay de l'arxiu font (per a esbrinar si la conversió és possible)"
 
@@ -335,7 +316,6 @@ msgstr "Vista prèvia"
 
 #: tfrmmain.btnpreview.hint
 #, fuzzy
-#| msgid "preview using the output settings"
 msgid "Preview using the output settings"
 msgstr "Vista prèvia amb la configuració de sortida"
 
@@ -345,13 +325,11 @@ msgstr "Esborra"
 
 #: tfrmmain.btnremove.hint
 #, fuzzy
-#| msgid "remove the selected file(s) from the list"
 msgid "Remove selected file(s) from the list"
 msgstr "esborra de la llista els arxius seleccionats"
 
 #: tfrmmain.categorybox.hint
 #, fuzzy
-#| msgid "name of the device or file type the video should be converted to"
 msgid "Device or file type the video should be converted to"
 msgstr "El nom del dispositiu o el tipus d'arxiu de vídeo hauria de ser convertir a"
 
@@ -366,7 +344,6 @@ msgstr "2 passes"
 
 #: tfrmmain.cbx2pass.hint
 #, fuzzy
-#| msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality."
 msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
 msgstr "Emprant 2 passes, el còdec podrà recopilar informació amb la primera passada per així oferir-vos la millor qualitat."
 
@@ -376,7 +353,6 @@ msgstr "Desenllaça"
 
 #: tfrmmain.cbxdeinterlace.hint
 #, fuzzy
-#| msgid "removes interlacing from the video (if necessary)"
 msgid "Removes interlacing from the video (if necessary)"
 msgstr "Treu l'entrellaçat del vídeo (si escau)"
 
@@ -387,7 +363,6 @@ msgstr ""
 
 #: tfrmmain.destfolder.hint
 #, fuzzy
-#| msgid "the target location for the final video (choose a different folder than the source folder)"
 msgid "Target location for the final video (choose a different folder than the source folder)"
 msgstr "Carpeta de destinació per al vídeo final (ha de ser diferent de l'arxiu font)"
 
@@ -397,7 +372,6 @@ msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
 #, fuzzy
-#| msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display."
 msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
 msgstr "(<íntegre:íntegre> o <real>) ràtio físic (DAR) de visualització de la destinació."
 
@@ -461,14 +435,12 @@ msgstr ""
 
 #: tfrmmain.frmmain.caption
 #, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: tfrmmain.label1.caption
 #, fuzzy
-#| msgid "Convert"
 msgid "Convert to:"
 msgstr "Converteix"
 
@@ -478,14 +450,12 @@ msgstr "Canals d'àudio"
 
 #: tfrmmain.label12.caption
 #, fuzzy
-#| msgid "Output Folder"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Carpeta de sortida:"
 
 #: tfrmmain.label19.caption
 #, fuzzy
-#| msgid "Presets"
 msgid "Preset:"
 msgstr "Configuracions"
 
@@ -511,7 +481,6 @@ msgstr ""
 
 #: tfrmmain.label3.caption
 #, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
 msgstr "Configuració sota la línia d'ordres (avançat)"
 
@@ -595,13 +564,11 @@ msgstr ""
 
 #: tfrmmain.mitabout.caption
 #, fuzzy
-#| msgid "About"
 msgid "About"
 msgstr "Quant a"
 
 #: tfrmmain.mitdisplaycmdline.caption
 #, fuzzy
-#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
 msgstr "Mostra la línia d'ordres"
 
@@ -615,7 +582,6 @@ msgstr "Surt"
 
 #: tfrmmain.mitforums.caption
 #, fuzzy
-#| msgid "WinFF Forums"
 msgid "Forums"
 msgstr "Fòrums de WinFF"
 
@@ -637,7 +603,6 @@ msgstr "Preferències"
 
 #: tfrmmain.mitpresets.caption
 #, fuzzy
-#| msgid "Presets"
 msgid "Presets"
 msgstr "Configuracions"
 
@@ -676,7 +641,6 @@ msgstr "Ajuda"
 
 #: tfrmmain.mnuoptions.caption
 #, fuzzy
-#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opcions"
@@ -687,20 +651,17 @@ msgstr ""
 
 #: tfrmmain.presetbox.hint
 #, fuzzy
-#| msgid "specific setting to use for the chosen device or file type"
 msgid "Specific settings to use for the chosen device or file type"
 msgstr "Configuració específica per al tipus de dispositiu o arxiu triat"
 
 #: tfrmmain.tabsheet2.caption
 #, fuzzy
-#| msgid "Audio Settings"
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Opcions d'àudio"
 
 #: tfrmmain.tabsheet3.caption
 #, fuzzy
-#| msgid "Crop"
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "Retalla"
@@ -712,48 +673,41 @@ msgstr ""
 
 #: tfrmmain.tabsheet5.caption
 #, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: tfrmmain.tabsheet6.caption
 #, fuzzy
-#| msgid "Output Details"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "detalls de la sortida"
 
 #: tfrmmain.tabvideo.caption
 #, fuzzy
-#| msgid "Video Size"
 msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
 msgid "Video"
 msgstr "Mida del vídeo"
 
 #: tfrmmain.vidbitrate.hint
 #, fuzzy
-#| msgid "(<integer>kb) the target kilobits/second that the stream should use"
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
 msgstr "(<íntegre>kb) els kilobits/segon que la transmissió necessita"
 
 #: tfrmmain.vidframerate.hint
 #, fuzzy
-#| msgid "(<real> or <integer>) the number of frames per second"
 msgid "(<real> or <integer>) number of frames per second"
 msgstr "(<real> o <íntegre>) nombre de fotogrames per segon"
 
 #: tfrmmain.vidsizex.hint
 #, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<íntegre> X <integre>) Quantitat d'informació dels píxels. Per a còdecs que no suporten el aspecte de ràtio de píxels (PAR) aquesta serà la mida en visualitzar-se."
 
 #: tfrmmain.vidsizey.hint
 #, fuzzy
-#| msgid "(<integer> X <integer>) the amount of pixels of information. For codecs that don't support pixel aspect ratio (PAR) this is the size of the video when viewed."
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<íntegre> X <integre>) Quantitat d'informació dels píxels. Per a còdecs que no suporten el aspecte de ràtio de píxels (PAR) aquesta serà la mida en visualitzar-se."
@@ -805,7 +759,6 @@ msgstr "Empra CHCP per a caràcters internacionals"
 
 #: tfrmpreferences.cbrememberlastdir.caption
 #, fuzzy
-#| msgid "Remember Last Directory Used"
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
 msgstr "Recorda la darrera carpeta emprada"
@@ -817,7 +770,6 @@ msgstr ""
 
 #: tfrmpreferences.edtlinterminaloptions.hint
 #, fuzzy
-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "Opcions de consola (-e per a Xterm, -x per a un terminal Gnome)"
@@ -829,56 +781,48 @@ msgstr "Preferències de WinFF"
 
 #: tfrmpreferences.lbldefaultdir.caption
 #, fuzzy
-#| msgid "Default Destination Directory"
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
 msgid "Default Destination Directory:"
 msgstr "Directori per defecte"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Ruta fins a FFmpeg"
 
 #: tfrmpreferences.lbllinffplaypath.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "Ruta fins a FFplay"
 
 #: tfrmpreferences.lbllinterminalexe.caption
 #, fuzzy
-#| msgid "Terminal to run FFmpeg"
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
 msgid "Terminal to run FFmpeg in:"
 msgstr "Terminal per a executar FFmpeg"
 
 #: tfrmpreferences.lbllinterminaloptions.caption
 #, fuzzy
-#| msgid "Additional Options"
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION"
 msgid "Terminal Options:"
 msgstr "Opcions addicionals"
 
 #: tfrmpreferences.lblpriority.caption
 #, fuzzy
-#| msgid "Priority"
 msgctxt "TFRMPREFERENCES.LBLPRIORITY.CAPTION"
 msgid "Priority:"
 msgstr "Prioritat"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Ruta fins a FFmpeg"
 
 #: tfrmpreferences.lblwinffplay.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "Ruta fins a FFplay"
@@ -895,7 +839,6 @@ msgstr "Linux/Unix"
 
 #: tfrmpreferences.tabwindows.caption
 #, fuzzy
-#| msgid "Ms Windows"
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
 msgid "MS Windows"
 msgstr "MS Windows"
@@ -906,7 +849,6 @@ msgstr ""
 
 #: tfrmscript.btnclose.caption
 #, fuzzy
-#| msgid "Close"
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
 msgstr "Tanca"
@@ -933,13 +875,11 @@ msgstr "Convertint"
 
 #: unit1.rscouldnotfindffmpeg
 #, fuzzy
-#| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
 msgstr "No s'ha trobat l'FFmpeg."
 
 #: unit1.rscouldnotfindffplay
 #, fuzzy
-#| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
 msgstr "No s'ha trobat l'FFplay."
 
@@ -977,7 +917,6 @@ msgstr "Por favor, elegir un valor preestablecido"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-#| msgid "Preset: %s%s%s already exists"
 msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "La configuració: %s%s%s ja existeix"
 
@@ -1007,7 +946,6 @@ msgstr ""
 
 #: unit1.rsselectdirectory
 #, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
 msgstr "Directori per defecte"
 
@@ -1075,4 +1013,3 @@ msgstr "Baixa"
 #, fuzzy
 msgid "Normal"
 msgstr "Normal"
-
