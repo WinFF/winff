@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Winff 1.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-22 23:33+0000\n"
+"POT-Creation-Date: 2012-10-20 12:28+0200\n"
 "PO-Revision-Date: 2011-12-04 15:42+0000\n"
 "Last-Translator: Paul Gevers <Unknown>\n"
 "Language-Team: \n"
@@ -742,14 +742,12 @@ msgstr "Standard målmappe:"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Sti til FFmpeg programfila:"
 
 #: tfrmpreferences.lbllinffplaypath.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "Sti til FFPlay programfila:"
@@ -771,14 +769,12 @@ msgstr "Prioritet:"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Sti til FFmpeg programfila:"
 
 #: tfrmpreferences.lblwinffplay.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "Sti til FFPlay programfila:"
@@ -829,13 +825,11 @@ msgstr "Konverterer"
 
 #: unit1.rscouldnotfindffmpeg
 #, fuzzy
-#| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
 msgstr "Fant ikke FFmpeg."
 
 #: unit1.rscouldnotfindffplay
 #, fuzzy
-#| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
 msgstr "Fant ikke FFPlay."
 

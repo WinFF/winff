@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-22 23:33+0000\n"
+"POT-Creation-Date: 2012-10-20 12:28+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: English <matt@biggmatt.com>\n"
@@ -32,14 +32,12 @@ msgstr ""
 
 #: tfrmabout.btnok.caption
 #, fuzzy
-#| msgid "OK"
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
 msgid "OK"
 msgstr "Çêbû"
 
 #: tfrmabout.frmabout.caption
 #, fuzzy
-#| msgid "About WinFF"
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "Derbarê Winff de"
@@ -55,7 +53,6 @@ msgstr ""
 
 #: tfrmabout.lblffmeg.caption
 #, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -118,7 +115,6 @@ msgstr ""
 
 #: tfrmabout.lblwinbuild.caption
 #, fuzzy
-#| msgid "FFmpeg builds by"
 msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
 msgid "FFmpeg Windows Builds by"
 msgstr "FFmpeg hat avakirin ji aliyê"
@@ -129,7 +125,6 @@ msgstr ""
 
 #: tfrmabout.tabffmpeg.caption
 #, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
@@ -141,7 +136,6 @@ msgstr "Spas"
 
 #: tfrmabout.tabwinff.caption
 #, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMABOUT.TABWINFF.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
@@ -152,7 +146,6 @@ msgstr "Lê zêdeke / Rojaneke"
 
 #: tfrmeditpresets.cancelbtn.caption
 #, fuzzy
-#| msgid "Close"
 msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
 msgid "Close"
 msgstr "Bigire"
@@ -171,7 +164,6 @@ msgstr ""
 
 #: tfrmeditpresets.edit3.hint
 #, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Please don't use -i or output file parameters"
 msgstr "Pêşmîheng rêzika fermanan (no -i an jî pela derxistinê)"
 
@@ -185,7 +177,6 @@ msgstr ""
 
 #: tfrmeditpresets.export.caption
 #, fuzzy
-#| msgid "Export"
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
 msgid "Export"
 msgstr "Derxe"
@@ -201,13 +192,11 @@ msgstr "Têxe"
 
 #: tfrmeditpresets.label1.caption
 #, fuzzy
-#| msgid "Create Preset:"
 msgid "Category / Preset"
 msgstr "Pêşmîheng biafirîne:"
 
 #: tfrmeditpresets.label2.caption
 #, fuzzy
-#| msgid "Preset Name (One word , Only A-z 0-9)"
 msgid "Preset Name (one word, only letters and numbers)"
 msgstr "Navê Pêşmîheng (peyvek, tenê A-z 0-9)"
 
@@ -217,13 +206,11 @@ msgstr "Labela Pêşmîheng"
 
 #: tfrmeditpresets.label4.caption
 #, fuzzy
-#| msgid "Preset Command Line (no -i or output file)"
 msgid "Preset Command Line Parameters (no -i or output file)"
 msgstr "Pêşmîheng rêzika fermanan (no -i an jî pela derxistinê)"
 
 #: tfrmeditpresets.label5.caption
 #, fuzzy
-#| msgid "Output File Extension (no \".\")"
 msgid "Output File Extension (do not include the '.' )"
 msgstr "Cureya pela derxistinê (no \".\")"
 
@@ -233,7 +220,6 @@ msgstr "Kategorî"
 
 #: tfrmeditpresets.okbtn.caption
 #, fuzzy
-#| msgid "Save"
 msgid "Save"
 msgstr "Tomarke"
 
@@ -251,7 +237,6 @@ msgstr ""
 
 #: tfrmexport.cancelbtn.caption
 #, fuzzy
-#| msgid "Cancel"
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
 msgstr "Betal"
@@ -262,14 +247,12 @@ msgstr "Pêşmîheng derxe"
 
 #: tfrmexport.exportbtn.caption
 #, fuzzy
-#| msgid "Export"
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
 msgstr "Derxe"
 
 #: tfrmexport.label1.caption
 #, fuzzy
-#| msgid "Choose presets to export"
 msgid "Choose Presets to Export:"
 msgstr "Pêşmîheng ku were derxistin"
 
@@ -312,7 +295,6 @@ msgstr ""
 
 #: tfrmmain.btnoptions.caption
 #, fuzzy
-#| msgid "Options"
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Vebijêrk"
@@ -447,14 +429,12 @@ msgstr ""
 
 #: tfrmmain.frmmain.caption
 #, fuzzy
-#| msgid "WinFF"
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
 
 #: tfrmmain.label1.caption
 #, fuzzy
-#| msgid "Convert"
 msgid "Convert to:"
 msgstr "Veguhere"
 
@@ -464,14 +444,12 @@ msgstr "Qenalên dengê"
 
 #: tfrmmain.label12.caption
 #, fuzzy
-#| msgid "Output Folder"
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
 msgstr "Peldanka tomarkirinê"
 
 #: tfrmmain.label19.caption
 #, fuzzy
-#| msgid "Presets"
 msgid "Preset:"
 msgstr "Pêşmîheng"
 
@@ -497,7 +475,6 @@ msgstr ""
 
 #: tfrmmain.label3.caption
 #, fuzzy
-#| msgid "Additional Command Line Parameters (Advanced)"
 msgid "Additional Command Line Parameters"
 msgstr "Zêdetir parametreyên rêzika fermanê (Pêşketî)"
 
@@ -539,7 +516,6 @@ msgstr ""
 
 #: tfrmmain.lblcropright.caption
 #, fuzzy
-#| msgid "High"
 msgid "Right"
 msgstr "Bilind"
 
@@ -583,13 +559,11 @@ msgstr ""
 
 #: tfrmmain.mitabout.caption
 #, fuzzy
-#| msgid "About"
 msgid "About"
 msgstr "Derbarê Winff de"
 
 #: tfrmmain.mitdisplaycmdline.caption
 #, fuzzy
-#| msgid "Display CMD Line"
 msgid "Display Cmd Line"
 msgstr "Rêzika CMD nehat dîtin"
 
@@ -603,7 +577,6 @@ msgstr "Derkeve"
 
 #: tfrmmain.mitforums.caption
 #, fuzzy
-#| msgid "WinFF Forums"
 msgid "Forums"
 msgstr "Forumên Winff"
 
@@ -617,7 +590,6 @@ msgstr "Dema qediya raweste"
 
 #: tfrmmain.mitplaysoundonfinish.caption
 #, fuzzy
-#| msgid "Pause on Finish"
 msgid "Play Sound on Finish"
 msgstr "Dema qediya raweste"
 
@@ -627,7 +599,6 @@ msgstr "Mîheng"
 
 #: tfrmmain.mitpresets.caption
 #, fuzzy
-#| msgid "Presets"
 msgid "Presets"
 msgstr "Pêşmîheng"
 
@@ -637,7 +608,6 @@ msgstr ""
 
 #: tfrmmain.mitshowoptions.caption
 #, fuzzy
-#| msgid "Additional Options"
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
 msgstr "Vebijêrkên Zêdetir"
@@ -668,7 +638,6 @@ msgstr "Alîkarî"
 
 #: tfrmmain.mnuoptions.caption
 #, fuzzy
-#| msgid "Options"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Vebijêrk"
@@ -683,7 +652,6 @@ msgstr ""
 
 #: tfrmmain.tabsheet2.caption
 #, fuzzy
-#| msgid "Audio Settings"
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "Mîhengên Dengê"
@@ -700,21 +668,18 @@ msgstr ""
 
 #: tfrmmain.tabsheet5.caption
 #, fuzzy
-#| msgid "FFmpeg"
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: tfrmmain.tabsheet6.caption
 #, fuzzy
-#| msgid "Output Details"
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
 msgstr "Berfirahiya derxistiyê"
 
 #: tfrmmain.tabvideo.caption
 #, fuzzy
-#| msgid "Video Size"
 msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
 msgid "Video"
 msgstr "Mezinahî"
@@ -740,7 +705,6 @@ msgstr ""
 
 #: tfrmpreferences.btncancel.caption
 #, fuzzy
-#| msgid "Cancel"
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
 msgstr "Betal"
@@ -767,7 +731,6 @@ msgstr ""
 
 #: tfrmpreferences.btnok.caption
 #, fuzzy
-#| msgid "OK"
 msgctxt "TFRMPREFERENCES.BTNOK.CAPTION"
 msgid "OK"
 msgstr "Çêbû"
@@ -789,7 +752,6 @@ msgstr "Ji bo karakterên navnetewî CHCPê bi kar bîne"
 
 #: tfrmpreferences.cbrememberlastdir.caption
 #, fuzzy
-#| msgid "Remember Last Directory Used"
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
 msgstr "Peldanka ku dawîn hatiye bikaranîn bi bîr bîne"
@@ -801,7 +763,6 @@ msgstr ""
 
 #: tfrmpreferences.edtlinterminaloptions.hint
 #, fuzzy
-#| msgid "Terminal Options (-e for Xterm , -x for Gnome Terminal"
 msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
 msgstr "Mîhengên termînalê (-e ji bo Xterm , -x ji bo Gnome Terminal"
@@ -813,56 +774,48 @@ msgstr "Mîhengên Winff"
 
 #: tfrmpreferences.lbldefaultdir.caption
 #, fuzzy
-#| msgid "Default Destination Directory"
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
 msgid "Default Destination Directory:"
 msgstr "Peldanka armanc a bixweber"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Pelrêça FFmpeg Executable"
 
 #: tfrmpreferences.lbllinffplaypath.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "Pelrêça FFPlay Executable"
 
 #: tfrmpreferences.lbllinterminalexe.caption
 #, fuzzy
-#| msgid "Terminal to run FFmpeg"
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
 msgid "Terminal to run FFmpeg in:"
 msgstr "Termînala ku FFmpeg lê were meşandin"
 
 #: tfrmpreferences.lbllinterminaloptions.caption
 #, fuzzy
-#| msgid "Additional Options"
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION"
 msgid "Terminal Options:"
 msgstr "Vebijêrkên Zêdetir"
 
 #: tfrmpreferences.lblpriority.caption
 #, fuzzy
-#| msgid "Priority"
 msgctxt "TFRMPREFERENCES.LBLPRIORITY.CAPTION"
 msgid "Priority:"
 msgstr "Girîngî"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Pelrêça FFmpeg Executable"
 
 #: tfrmpreferences.lblwinffplay.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "Pelrêça FFPlay Executable"
@@ -879,7 +832,6 @@ msgstr "Linux"
 
 #: tfrmpreferences.tabwindows.caption
 #, fuzzy
-#| msgid "Ms Windows"
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
 msgid "MS Windows"
 msgstr "Ms Windows"
@@ -890,7 +842,6 @@ msgstr ""
 
 #: tfrmscript.btnclose.caption
 #, fuzzy
-#| msgid "Close"
 msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
 msgid "Close"
 msgstr "Bigire"
@@ -917,13 +868,11 @@ msgstr "Vediguherîne"
 
 #: unit1.rscouldnotfindffmpeg
 #, fuzzy
-#| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
 msgstr "FFmpeg nehat dîtin."
 
 #: unit1.rscouldnotfindffplay
 #, fuzzy
-#| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
 msgstr "FFPlay nehat dîtin."
 
@@ -957,13 +906,11 @@ msgstr "Herî kêm 1 pel lê zêdeke û were veguhertin"
 
 #: unit1.rspleaseselectapreset
 #, fuzzy
-#| msgid "Please select a preset to export"
 msgid "Please select a preset"
 msgstr "Pêşmîheng ku were derxistin hilbijêre"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-#| msgid "Preset: %s%s%s already exists"
 msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Pêşmîheng: %s%s%s jixwe heye"
 
@@ -993,7 +940,6 @@ msgstr ""
 
 #: unit1.rsselectdirectory
 #, fuzzy
-#| msgid "Default Destination Directory"
 msgid "Select Directory"
 msgstr "Peldanka armanc a bixweber"
 
@@ -1061,4 +1007,3 @@ msgstr "Beredayî"
 #, fuzzy
 msgid "Normal"
 msgstr "Asayî"
-

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.0.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2011-11-22 23:33+0000\n"
+"POT-Creation-Date: 2012-10-20 12:28+0200\n"
 "PO-Revision-Date: 2012-06-14 12:33+0000\n"
 "Last-Translator: Eugene Marshal <Unknown>\n"
 "Language-Team: Russian\n"
@@ -732,14 +732,12 @@ msgstr "Каталог для сохранения:"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Путь к FFmpeg:"
 
 #: tfrmpreferences.lbllinffplaypath.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "Путь к FFPlay:"
@@ -761,14 +759,12 @@ msgstr "Приоритет:"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
 #, fuzzy
-#| msgid "Path to FFmpeg Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
 msgstr "Путь к FFmpeg:"
 
 #: tfrmpreferences.lblwinffplay.caption
 #, fuzzy
-#| msgid "Path to FFplay Executable:"
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
 msgstr "Путь к FFPlay:"
@@ -819,13 +815,11 @@ msgstr "Преобразование"
 
 #: unit1.rscouldnotfindffmpeg
 #, fuzzy
-#| msgid "Could not find FFmpeg."
 msgid "Could not find either ffmpeg or avconv."
 msgstr "Не найден FFmpeg."
 
 #: unit1.rscouldnotfindffplay
 #, fuzzy
-#| msgid "Could not find FFPlay."
 msgid "Could not find either ffplay or avplay."
 msgstr "Не найден FFPlay."
 
@@ -863,7 +857,6 @@ msgstr "Выберите настройки преобразования"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-#| msgid "Preset: %s%s%s already exists"
 msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Предустановка %s%s%s уже существует"
 
