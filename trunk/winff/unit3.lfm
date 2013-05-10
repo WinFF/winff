@@ -340,7 +340,7 @@ object frmAbout: TfrmAbout
         BorderSpacing.Left = 5
         BorderSpacing.Top = 2
         BorderSpacing.Bottom = 2
-        Caption = 'Trademark Fabrice Belllard'
+        Caption = 'Trademark Fabrice Bellard'
         ParentColor = False
         OnClick = lblBellardClick
       end
