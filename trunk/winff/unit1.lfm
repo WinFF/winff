@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
-  Left = 300
+  Left = 326
   Height = 472
-  Top = 139
+  Top = 150
   Width = 640
   ActiveControl = pnlTop
   AllowDropFiles = True
@@ -2378,6 +2378,10 @@ object frmMain: TfrmMain
       object mitPreferences: TMenuItem
         Caption = 'Preferences'
         OnClick = mitPreferencesClick
+      end
+      object mitRestoreDefaults: TMenuItem
+        Caption = 'Restore Defaults'
+        OnClick = mitRestoreDefaultsClick
       end
     end
     object mnuOptions: TMenuItem
