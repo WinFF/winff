@@ -52,6 +52,7 @@ type
     cbRightFlip: TCheckBox;
     cbLeftFlip: TCheckBox;
     ChooseFolderBtn: TButton;
+    mitRestoreDefaults: TMenuItem;
     OpenFolderBtn: TButton;
     commandlineparams: TEdit;
     DestFolder: TEdit;
@@ -235,6 +236,7 @@ type
     procedure mitPreferencesClick(Sender: TObject);
     procedure mitDocsClick(Sender: TObject);
     procedure mitForumsClick(Sender: TObject);
+    procedure mitRestoreDefaultsClick(Sender: TObject);
     procedure mitSaveOptionsClick(Sender: TObject);
     procedure mitSelectAllClick(Sender: TObject);
     procedure mitViewModeClick(Sender: TObject);
@@ -377,6 +379,7 @@ var
   multithreading: string;
   PODirectory, Lang, FallbackLang, POFile: String;
   preview: boolean;
+  CloseAfterRestore: boolean;
 
   Resourcestring
 
@@ -404,6 +407,7 @@ var
   rsFileDoesNotExist	= 'file does not exist';
   rsPresettoExport	= 'Please select a preset to export';
   rsSelectDirectory	= 'Select Directory';
+  rsRestoreDefaults     = 'Restore Presets and Preferences to Defaults?';
 
 implementation
 
@@ -427,6 +431,8 @@ begin
    FileInfoList := tstringlist.Create;
 
    ExtrasPath:= ExtractFilePath(ParamStr(0));
+
+   CloseAfterRestore := False;
 
    // do translations
    TranslateUnitResourceStrings('unit1', PODirectory + 'winff.%s.po', Lang, FallbackLang);
@@ -665,6 +671,9 @@ procedure TfrmMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 var
 s:string;
 begin
+
+  if CloseAfterRestore then exit;
+
   if rememberlast = 'true' then   // save destination folder
      setconfigvalue('general/destfolder',destfolder.text);
 
@@ -1936,6 +1945,25 @@ procedure TfrmMain.mitForumsClick(Sender: TObject);
 
 begin
   launchbrowser('http://www.winff.org/forums/');
+end;
+
+procedure TfrmMain.mitRestoreDefaultsClick(Sender: TObject);
+var
+Result: boolean;
+begin
+
+  if MessageDlg('Restore Defaults', RsRestoreDefaults, mtConfirmation,
+   [mbYes, mbNo],0) = mrNo
+  then Exit;
+
+  Result:=DeleteDirectory(presetspath,True);
+  if Result then
+      begin
+        Result:=RemoveDirUTF8(presetspath);
+      end;
+
+  CloseAfterRestore:=true;
+  frmmain.Close;
 end;
 
 procedure TfrmMain.mitSaveOptionsClick(Sender: TObject);
