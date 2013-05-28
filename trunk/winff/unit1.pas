@@ -407,6 +407,7 @@ var
   rsFileDoesNotExist	= 'file does not exist';
   rsPresettoExport	= 'Please select a preset to export';
   rsSelectDirectory	= 'Select Directory';
+  rsRDdialogtitle       = 'Restore defaults';
   rsRestoreDefaults     = 'Restore Presets and Preferences to Defaults?';
 
 implementation
@@ -1952,7 +1953,7 @@ var
 Result: boolean;
 begin
 
-  if MessageDlg('Restore Defaults', RsRestoreDefaults, mtConfirmation,
+  if MessageDlg(rsRDdialogtitle, RsRestoreDefaults, mtConfirmation,
    [mbYes, mbNo],0) = mrNo
   then Exit;
 
