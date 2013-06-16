@@ -1,6 +1,6 @@
 unit Unit3;
 
-// WInFF 1.0 Copyright 2006-2012 Matthew Weatherford
+// WInFF 1.0 Copyright 2006-2013 Matthew Weatherford
 // WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
 // http://winff.org
 // Licensed under the GPL v3 or any later version
@@ -126,8 +126,8 @@ begin
     lbThanks.items.add('Alexey Osipov');
     lbThanks.items.add(rsLaunchpadContrib);
 
-    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.5.0',[]);
-    frmAbout.lblCopyright.Caption   := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2012',[]);
+    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.5.1',[]);
+    frmAbout.lblCopyright.Caption   := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2013',[]);
 end;
 
 procedure TfrmAbout.lblBellardClick(Sender: TObject);
