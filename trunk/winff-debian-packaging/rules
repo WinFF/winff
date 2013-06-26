@@ -10,18 +10,25 @@
 override_dh_auto_configure:
 	if [ -f presets.xml ] ; then mv presets.xml presets-orig.xml; fi 
 
-override_dh_auto_build:
-	lazbuild --widgetset=gtk2 -B winff.lpr
+override_dh_auto_build-arch:
+# bug 713492: if primary-config-path is not set, lazarus is using $HOME
+# $HOME is not garanteed to be useful so prevent writing setting it
+	lazbuild --widgetset=gtk2 -B --pcp=/etc/lazarus winff.lpr
 	mv winff winff-gtk2
-	lazbuild --widgetset=qt -B winff.lpr
+	lazbuild --widgetset=qt -B --pcp=/etc/lazarus winff.lpr
 	mv winff winff-qt
+
+override_dh_auto_build-indep:
+	soffice --headless --convert-to pdf --outdir docs docs/WinFF.*.od?
+# The language files are searched only for the first two characters of the
+# language code, and we don't have a proper Spanish translation yet.
+	if [ ! -f docs/WinFF.es.pdf ] ; then \
+		mv docs/WinFF.es_AR.pdf docs/WinFF.es.pdf ;\
+	fi
 
 override_dh_clean:
 	if [ -f presets-orig.xml ] ; then mv presets-orig.xml presets.xml; fi 
 	dh_clean
-
-override_dh_compress:
-	dh_compress --exclude=.pdf
 
 override_dh_strip:
 	dh_strip --dbg-package=winff-dbg

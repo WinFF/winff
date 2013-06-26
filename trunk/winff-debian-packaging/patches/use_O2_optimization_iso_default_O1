@@ -1,0 +1,17 @@
+Description: Use the default Debian optimization O2, iso default fpc O1.
+Author: Paul Gevers <elbrus@debian.org>
+
+--- winff-1.5.1.orig/winff.lpi
++++ winff-1.5.1/winff.lpi
+@@ -118,6 +118,11 @@
+         <UseAnsiStrings Value="False"/>
+       </SyntaxOptions>
+     </Parsing>
++    <CodeGeneration>
++      <Optimizations>
++        <OptimizationLevel Value="2"/>
++      </Optimizations>
++    </CodeGeneration>
+     <Linking>
+       <Debugging>
+         <GenerateDebugInfo Value="True"/>

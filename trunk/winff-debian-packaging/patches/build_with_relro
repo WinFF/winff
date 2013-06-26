@@ -1,0 +1,16 @@
+Description: Increase hardening
+ Linking is done with the regular linker, so we should use the hardening
+ options available.
+Author: Paul Gevers <elbrus@debian.org>
+
+--- winff-1.5.1.orig/winff.lpi
++++ winff-1.5.1/winff.lpi
+@@ -126,7 +126,7 @@
+       <LinkSmart Value="True"/>
+       <Options>
+         <PassLinkerOptions Value="True"/>
+-        <LinkerOptions Value="--as-needed"/>
++        <LinkerOptions Value="--as-needed -zrelro"/>
+         <Win32>
+           <GraphicApplication Value="True"/>
+         </Win32>

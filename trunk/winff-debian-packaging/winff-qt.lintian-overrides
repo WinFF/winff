@@ -10,5 +10,8 @@ winff-qt binary: package-contains-broken-symlink usr/share/man/man1/winff-qt.1.g
 # winff is compiled by the FPC and Lazaurs. These compilers don't have
 # hardening flags yet, so ignoring these lintian warnings for now
 # Paul Gevers <elbrus@debian.org>, 09 Nov 2012
-winff-qt: hardening-no-relro usr/bin/winff-qt
 winff-qt: hardening-no-fortify-functions usr/bin/winff-qt
+
+# Lazarus source has somewhere hardcoded in this string, not something
+# we can fix here.
+winff-qt: spelling-error-in-binary usr/bin/winff-qt Childs Children

@@ -1,0 +1,18 @@
+Description: Fix up the symbols
+ Debugging symbols where not properly created on all but amd64 arch
+ Hopefully this is better
+Author: Paul Gevers <elbrus@debian.org>
+Forwarded: no
+
+--- a/winff.lpi
++++ b/winff.lpi
+@@ -120,7 +120,8 @@
+     </Parsing>
+     <Linking>
+       <Debugging>
+-        <DebugInfoType Value="dsStabs"/>
++        <GenerateDebugInfo Value="True"/>
++        <GenerateDwarf Value="True"/>
+       </Debugging>
+       <LinkSmart Value="True"/>
+       <Options>
