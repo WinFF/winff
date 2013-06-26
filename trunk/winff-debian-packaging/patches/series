@@ -1,1 +1,5 @@
-Fix_qt_crash_InvalidatePreferredSize.patch
+#Fix_qt_crash_InvalidatePreferredSize.patch
+Fix-access-violation-with-apply-and-cancel-button.patch
+Added-apply-to-all-button.patch
+Fix-replaceVfParam-fails-at-start-of-cmdline.patch
+Update_languages_with_latest_upstream.patch
