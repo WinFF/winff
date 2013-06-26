@@ -1,3 +1,16 @@
+winff (1.5.0-1) unstable; urgency=low
+
+  * New upstream release
+    - Drop Fix_qt_crash_InvalidatePreferredSize.patch
+  * Pull patches from upstream
+    - Added-apply-to-all-button.patch
+    - Fix-access-violation-with-apply-and-cancel-button.patch
+    - Fix-replaceVfParam-fails-at-start-of-cmdline.patch
+  * Update languages
+  * Update d/copyright with latest contributions from upstream/Launchpad
+
+ -- Paul Gevers <elbrus@debian.org>  Sat, 04 May 2013 07:31:24 +0200
+
 winff (1.5.0~beta-1) experimental; urgency=low
 
   * New upstream release

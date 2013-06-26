@@ -1,0 +1,164 @@
+From aafb69a8edf970c403415f095423ad4697d3c5cb Mon Sep 17 00:00:00 2001
+From: bggmtt <bggmtt@33a7eb43-6648-0410-933e-cf740565ad39>
+Date: Tue, 23 Apr 2013 03:19:14 +0000
+Subject: [PATCH] Added apply to all button. It should cut down on the
+ learning curve for previous version users.
+
+git-svn-id: https://winff.googlecode.com/svn@752 33a7eb43-6648-0410-933e-cf740565ad39
+---
+ trunk/winff/unit1.lfm |   30 +++++++++++++++++++++---------
+ trunk/winff/unit1.pas |   25 +++++++++++++++++++++++++
+ trunk/winff/winff.lpi |    3 +++
+ 3 files changed, 49 insertions(+), 9 deletions(-)
+
+--- a/unit1.lfm
++++ b/unit1.lfm
+@@ -1,13 +1,13 @@
+ object frmMain: TfrmMain
+   Left = 300
+-  Height = 497
++  Height = 493
+   Top = 139
+   Width = 640
+   ActiveControl = pnlTop
+   AllowDropFiles = True
+   AutoSize = True
+   Caption = 'WinFF'
+-  ClientHeight = 477
++  ClientHeight = 473
+   ClientWidth = 640
+   Constraints.MaxHeight = 1200
+   Constraints.MaxWidth = 1600
+@@ -326,24 +326,24 @@
+   OnResize = FormResize
+   ParentFont = True
+   Position = poScreenCenter
+-  LCLVersion = '1.0.1.3'
++  LCLVersion = '1.0.8.0'
+   object pnlMain: TPanel
+     Left = 0
+-    Height = 174
++    Height = 170
+     Top = 54
+     Width = 640
+     Align = alClient
+     AutoSize = True
+     BevelOuter = bvNone
+     Caption = 'pnlMain'
+-    ClientHeight = 174
++    ClientHeight = 170
+     ClientWidth = 640
+     Color = clSilver
+     ParentColor = False
+     TabOrder = 0
+     object filelist: TListBox
+       Left = 0
+-      Height = 174
++      Height = 170
+       Top = 0
+       Width = 640
+       Align = alClient
+@@ -1014,7 +1014,7 @@
+   object pnlAdditionalOptions: TPanel
+     Left = 0
+     Height = 226
+-    Top = 228
++    Top = 224
+     Width = 640
+     Align = alBottom
+     BevelOuter = bvNone
+@@ -2294,7 +2294,7 @@
+         OnClick = lblSaveChangesClick
+       end
+       object lblCancelChanges: TLabel
+-        Left = 438
++        Left = 464
+         Height = 16
+         Top = 0
+         Width = 86
+@@ -2305,12 +2305,24 @@
+         Transparent = False
+         OnClick = lblCancelChangesClick
+       end
++      object lblApplytoAll: TLabel
++        Left = 392
++        Height = 16
++        Top = 0
++        Width = 63
++        Anchors = [akTop, akRight]
++        Caption = 'Apply to All'
++        Color = clBtnFace
++        ParentColor = False
++        Transparent = False
++        OnClick = lblApplytoAllClick
++      end
+     end
+   end
+   object StatusBar1: TStatusBar
+     Left = 0
+     Height = 23
+-    Top = 454
++    Top = 450
+     Width = 640
+     AutoHint = True
+     Panels = <>
+--- a/unit1.pas
++++ b/unit1.pas
+@@ -72,6 +72,7 @@
+     Label12: TLabel;
+     Label19: TLabel;
+     Label6: TLabel;
++    lblApplytoAll: TLabel;
+     lblRotate: TLabel;
+     lblSaveChanges: TLabel;
+     Label20: TLabel;
+@@ -206,6 +207,7 @@
+     procedure FormResize(Sender: TObject);
+     procedure grpOutputSettingsClick(Sender: TObject);
+     procedure Label11Click(Sender: TObject);
++    procedure lblApplytoAllClick(Sender: TObject);
+     procedure lblSaveChangesClick(Sender: TObject);
+     procedure lblCancelChangesClick(Sender: TObject);
+     procedure LaunchBrowser(URL:string);
+@@ -1789,6 +1791,29 @@
+ 
+ end;
+ 
++procedure TfrmMain.lblApplytoAllClick(Sender: TObject);
++begin                   // check preset
++     pn:=getcurrentpresetname(presetbox.Text);
++     if pn='' then
++       begin
++       showmessage(rsPleaseSelectAPreset);
++       exit;
++       end;
++                        // check for files to apply to
++     if filelist.Items.Count = 0 then exit;
++
++     filelist.SelectAll;
++
++     if  pgSettings.ActivePageIndex = 5 then
++      begin
++            SaveChangedOptions(1);
++      end
++     else
++     begin
++            SaveChangedOptions(0);
++     end;
++end;
++
+ procedure TfrmMain.lblSaveChangesClick(Sender: TObject);
+ var
+ pn : string;
+--- a/winff.lpi
++++ b/winff.lpi
+@@ -17,6 +17,9 @@
+     </i18n>
+     <VersionInfo>
+       <UseVersionInfo Value="True"/>
++      <MajorVersionNr Value="1"/>
++      <MinorVersionNr Value="5"/>
++      <StringTable Comments="WinFF 1.5 64 bit" CompanyName="WinFF.org" FileDescription="WinFF 1.5 64 bit" InternalName="winff" LegalCopyright="Copyright 2013 WinFF.org" OriginalFilename="winff.exe" ProductVersion="1.5.0"/>
+     </VersionInfo>
+     <BuildModes Count="1">
+       <Item1 Name="default" Default="True"/>
