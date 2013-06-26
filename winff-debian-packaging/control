@@ -3,10 +3,12 @@ Section: video
 Priority: extra
 Maintainer: Paul Gevers <elbrus@debian.org>
 Build-Depends: debhelper (>= 7.0.50~),
+ fpc,
+ lazarus-src,
  lcl,
  lcl-gtk2,
  lcl-qt4 (>= 0.9.30.4-2),
- fpc (>= 2.2.2-3),
+Build-Depends-Indep: libreoffice
 Standards-Version: 3.9.4
 Homepage: http://www.winff.org/
 Vcs-Browser: http://code.google.com/p/winff/source/browse/#svn/trunk/winff-debian-packaging
@@ -46,7 +48,7 @@ Recommends: winff,
 Suggests: www-browser,
  winff-doc,
  libavcodec-extra-53,
-Description: GTK variant of winff
+Description: GTK+ variant of winff
  WinFF is a graphical user interface for FFmpeg. It will convert
  almost any video file that FFmpeg will convert. WinFF does multiple
  files in multiple formats at one time. You can, for example, convert
@@ -56,7 +58,7 @@ Description: GTK variant of winff
  Users usually want to install the winff package and let their package
  manager deside which winff variant to use. If you want to override the
  packager's choice, you can additionally select the required variant.
- This package provides the GTK variant of winff.
+ This package provides the GTK+ variant of winff.
 
 Package: winff-qt
 Architecture: any

@@ -1,3 +1,26 @@
+winff (1.5.1-1) unstable; urgency=low
+
+  * Imported Upstream version 1.5.1
+  * Remove obsolete patches (were taken from upstream anyways)
+  * Add full path to icon in d/menu (thanks lintian)
+  * Add keywords to desktop file (thanks lintian)
+  * Update lintian overrides
+  * Change GTK in GTK+ in package description (thank lintian)
+  * Temporarily add lazarus-src to build dependencies (work around) and
+    drop versioned part of fpc
+  * Let lazbuild use /etc/lazarus for primary-config-path (Closes: # 713492)
+  * patches:
+    - fix_symbols: Set debugging symbols to DWARF type as dbg packages were not
+      getting good symbols
+    - add_xdg-open_to_pdf_viewers: use default pdf viewer
+    - build_with_relro: make sure we link with relro
+    - use_O2_optimization_iso_default_O1: default Debian optimization
+  * Build documentation from source
+  * Don't prevent zipping of pdfs
+  * Update English documentation from web-site
+
+ -- Paul Gevers <elbrus@debian.org>  Tue, 25 Jun 2013 20:29:06 +0200
+
 winff (1.5.0-1) unstable; urgency=low
 
   * New upstream release

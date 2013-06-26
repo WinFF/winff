@@ -4,6 +4,7 @@
 *.ppu
 *.lrs
 *.lps
+docs/*.pdf
 *.res
 *.rst
 *~
