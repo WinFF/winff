@@ -1,5 +1,21 @@
-WinFF Copyright 2006 - 2012 Matthew Weatherford
+WinFF Copyright 2006 - 2013 Matthew Weatherford
 http://www.winff.org
+
+v1.5.1
+----
+Add Restore Defaults to the edit menu. It deletes the .winff folder in linux or the appdata/winff folder in windows
+Update and addition of several languages
+Open destfolder button
+Changed preset name to preset label on save to preset dialog
+Fixed bug in replaceVfParam that didn't replace a vf param on the very start of the preset's params
+Added menu item, "Save options to preset" in the preset. It save the codec related options, -r:v, -aspect, -b:v, -b:a, -r:a, -ac, 
+Updated about box to include Kyle Schwarz
+swapped order of apply buttons
+Added apply to all button. It should cut down on the learning curve for previous version users.
+Update presets; fixes issue 195: fix ambiguous warnings on -b and -profile and limit wmav2 presets to two audio channels
+Rename License.txt to COPYING
+Preset file for ffmpeg version using the 54 version of libavcodec.
+Fixed an access violation with apply and cancel buttons when the file list is empty
 
 v1.5.0
 ----
