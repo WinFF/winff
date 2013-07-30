@@ -3,11 +3,11 @@
 
 [Setup]
 ; UNCOMMENT FOR 64bit INSTALL
-; ArchitecturesInstallIn64BitMode=x64
-; ArchitecturesAllowed=x64
+ArchitecturesInstallIn64BitMode=x64
+ArchitecturesAllowed=x64
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.5 (Codename EMMA)
+AppVerName=WinFF 1.5.1 (Codename EMMA)
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
@@ -15,7 +15,7 @@ AppUpdatesURL=http://www.winff.org/
 AppCopyright=Copyright 2013 WinFF.org
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.5
+VersionInfoVersion=1.5.1
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
@@ -56,6 +56,7 @@ Name: "Catalan"; MessagesFile: "compiler:languages\Catalan.isl"
 Name: "Swedish"; MessagesFile: "compiler:languages\Swedish.isl"
 Name: "Arabic"; MessagesFile: "compiler:languages\Arabic.isl"
 Name: "Galician"; MessagesFile: "compiler:languages\Galician.isl"
+Name: "Lithuanian"; MessagesFile: "compiler:languages\Lithuanian.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
@@ -91,9 +92,7 @@ Source: "languages\winff.it.po"; DestDir: "{app}\languages"; Flags: ignoreversio
 Source: "languages\winff.tr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.es.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.pt.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.pb.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.nl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.zh.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.fr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.sr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.nb.po"; DestDir: "{app}\languages"; Flags: ignoreversion
@@ -119,7 +118,6 @@ Source: "languages\winff.pt_BR.po"; DestDir: "{app}\languages"; Flags: ignorever
 Source: "languages\winff.ro.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.sv.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.zh_TW.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.zh.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.uk.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.te.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.sk.po"; DestDir: "{app}\languages"; Flags: ignoreversion
@@ -129,7 +127,7 @@ Source: "languages\winff.kk.po"; DestDir: "{app}\languages"; Flags: ignoreversio
 Source: "languages\winff.ja.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.eu.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 Source: "languages\winff.ar.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-
+Source: "languages\winff.lt.po"; DestDir: "{app}\languages"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
