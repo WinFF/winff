@@ -3,8 +3,8 @@
 
 [Setup]
 ; UNCOMMENT FOR 64bit INSTALL
-ArchitecturesInstallIn64BitMode=x64
-ArchitecturesAllowed=x64
+;ArchitecturesInstallIn64BitMode=x64
+;ArchitecturesAllowed=x64
 AppID=WinFF
 AppName=WinFF
 AppVerName=WinFF 1.5.1 (Codename EMMA)
