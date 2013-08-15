@@ -1162,7 +1162,20 @@ end;
 
 // preview button clicked
 procedure TfrmMain.btnPreviewClick(Sender: TObject);
+var
+i:integer;
 begin
+  preview := true;
+  for i := 0 to filelist.count -1 do
+      begin
+        if filelist.Selected[i] then
+          begin
+            SetSCR(i); // first time to save the parameters to the array (SCR)
+            GenerateCommandLines(i);
+            SaveChangedOptions(0);
+            break;
+          end;
+      end;
   preview := true;
   btnConvertClick(Self);
 end;
@@ -2289,7 +2302,7 @@ begin                                     // get setup
      begin
        if preview then
        begin
-          if i <> filelist.ItemIndex then continue;
+         if i <> filelist.ItemIndex then continue;
        end;
        filename := filelist.items[i];
        basename := extractfilename(filename);
@@ -2359,6 +2372,7 @@ begin                                     // get setup
                                           // remove preview file if exists
    if preview then
       begin
+        script.add('del ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');
         {$IFDEF WINDOWS}script.add('del ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');{$endif}
         {$ifdef unix}script.add('rm ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');{$endif}
         preview:=false;
@@ -2679,10 +2693,10 @@ begin
        filename := filelist.items[vindex];
        basename := extractfilename(filename);
 
-       if preview = true then
-       begin
-         basename := 'tmp_' + inttostr(random(10000000)) ;
-       end;
+       //if preview = true then
+       //begin
+       //  basename := 'tmp_' + inttostr(random(10000000)) ;
+       //end;
 
        // resolve issues with embedded quote marks in filename to be converted.  issue 38
        {$ifdef unix}
@@ -2854,7 +2868,7 @@ begin
          if (edtTTRSS.Value < 10) and (length(edtTTRSS.Text)<2)  then edtTTRSS.Text := '0' + edtTTRSS.Text;
 
          commandline:=replaceparam(commandline,'-t','');
-         precommand+=' -t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text;
+         commandline+=' -t ' + edtTTRHH.Text + ':' + edtTTRMM.Text + ':' + edtTTRSS.Text;
        end;
 
        // 1.5  Insert Video Rotate
@@ -2882,7 +2896,8 @@ begin
        // if -ss and -t are already set, ignore the following parameter.
        if (preview = true) and (ignorepreview = false) then
        begin
-	  precommand += ' -ss 00:01:00 -t 00:00:30';
+	  precommand += ' -ss 00:01:00 ';
+          commandline += ' -t 00:00:30 ';
        end;
 
 // inserted block ends here
