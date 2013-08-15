@@ -379,6 +379,7 @@ var
   multithreading: string;
   PODirectory, Lang, FallbackLang, POFile: String;
   preview: boolean;
+  previewbasename: string;
   CloseAfterRestore: boolean;
 
   Resourcestring
@@ -2346,7 +2347,7 @@ begin                                     // get setup
                   break;
                 end;
            end;
-         script.add(ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');
+         script.add(ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + previewbasename +'.'+ extension+ '"');
          break;
          end;
      end;
@@ -2372,9 +2373,8 @@ begin                                     // get setup
                                           // remove preview file if exists
    if preview then
       begin
-        script.add('del ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');
-        {$IFDEF WINDOWS}script.add('del ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');{$endif}
-        {$ifdef unix}script.add('rm ' + '"' + destfolder.Text + DirectorySeparator + basename +'.'+ extension+ '"');{$endif}
+        {$IFDEF WINDOWS}script.add('del ' + '"' + destfolder.Text + DirectorySeparator + previewbasename +'.'+ extension+ '"');{$endif}
+        {$ifdef unix}script.add('rm ' + '"' + destfolder.Text + DirectorySeparator + previewbasename +'.'+ extension+ '"');{$endif}
         preview:=false;
       end;
                                           // remove batch file on completion
@@ -2693,10 +2693,10 @@ begin
        filename := filelist.items[vindex];
        basename := extractfilename(filename);
 
-       //if preview = true then
-       //begin
-       //  basename := 'tmp_' + inttostr(random(10000000)) ;
-       //end;
+       if preview = true then
+       begin
+         previewbasename := 'tmp_' + inttostr(random(10000000)) ;
+       end;
 
        // resolve issues with embedded quote marks in filename to be converted.  issue 38
        {$ifdef unix}
@@ -2712,6 +2712,8 @@ begin
                 break;
               end;
          end;
+
+       if preview then basename := previewbasename;
 
        if cbOutputPath.checked = true then
        begin
