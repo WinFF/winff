@@ -1,6 +1,15 @@
 WinFF Copyright 2006 - 2013 Matthew Weatherford
 http://www.winff.org
 
+v1.5.2
+---
+updated ffmpeg-readme. issue 201
+Ability to execute command before and after script
+Save Displaycmdline state issue 163
+fixed preview button not inserting '-t' and '-s'
+moved '-t' from input to output as per ffmpeg warning
+added ability to revert to 1.4 behavior
+
 v1.5.1
 ----
 Add Restore Defaults to the edit menu. It deletes the .winff folder in linux or the appdata/winff folder in windows
