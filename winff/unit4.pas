@@ -35,30 +35,36 @@ type
     btnOK: TBitBtn;
     btnDefaultDir: TButton;
     btnWinFFmpegPath: TButton;
+    btnBeforeCommand: TButton;
     btnWinFFplayPath: TButton;
     btnLinFFmpegPath: TButton;
     btnLinFFplayPath: TButton;
     btnLinTerminalExe: TButton;
+    btnAfterCommand: TButton;
     cbEnableMulti: TCheckBox;
     cbRememberLastDir: TCheckBox;
     cbCHCPchar: TCheckBox;
     cbThreads: TCheckBox;
     edtDefaultDir: TEdit;
     edtWinFFmpegPath: TEdit;
+    edtBeforeCommand: TEdit;
     edtWinFFplayPath: TEdit;
     edtLinFFmpegPath: TEdit;
     edtLinFFplayPath: TEdit;
     edtLinTerminalExe: TEdit;
     edtLinTerminalOptions: TEdit;
     edtThreads: TEdit;
+    edtAfterCommand: TEdit;
     lblDefaultDir: TLabel;
     lblLinTerminalExe: TLabel;
     lblLinTerminalOptions: TLabel;
     lblWinFFmpegPath: TLabel;
+    lblBeforeCommand: TLabel;
     lblWinFFplay: TLabel;
     lblLinFFmpegPath: TLabel;
     lblLinFFplayPath: TLabel;
     lblPriority: TLabel;
+    lblAfterCommand: TLabel;
     PageControl1: TPageControl;
     OpenDialog1: TOpenDialog;
     pnlLinTerminalOptions: TPanel;
@@ -66,19 +72,24 @@ type
     pnlThreads: TPanel;
     pnlPriority: TPanel;
     pnlWinFFmpegPath: TPanel;
+    pnlBeforeCommand: TPanel;
     pnlWinFFplayPath: TPanel;
     pnlLinFFmpegPath: TPanel;
     pnlLinFFplayPath: TPanel;
     pnlLinTerminalExe: TPanel;
     pnlBottom: TPanel;
+    pnlAfterCommand: TPanel;
     prioritybox: TComboBox;
     sbGeneral: TScrollBox;
     sbWindows: TScrollBox;
     sbLinux: TScrollBox;
+    sbScripting: TScrollBox;
     SelectDirectoryDialog1: TSelectDirectoryDialog;
     tabGeneral: TTabSheet;
+    tabScripting: TTabSheet;
     tabWindows: TTabSheet;
     tabLinux: TTabSheet;
+    procedure btnBeforeCommandClick(Sender: TObject);
     procedure btnOKClick(Sender: TObject);
     procedure btnCancelClick(Sender: TObject);
     procedure btnDefaultDirClick(Sender: TObject);
@@ -155,6 +166,9 @@ begin
   else
      cbEnableMulti.Checked := false;
 
+  edtBeforeCommand.Text:= frmMain.getconfigvalue('general/beforecommand');
+  edtAfterCommand.Text:= frmMain.getconfigvalue('general/aftercommand');
+
 end;
 
 // save preference
@@ -202,12 +216,20 @@ begin
    end;
 
   edtDefaultDir.Text := trim(edtDefaultDir.Text);
+  edtBeforeCommand.Text := trim(edtBeforeCommand.Text);
+  edtAfterCommand.Text := trim(edtAfterCommand.Text);
   edtWinFFmpegPath.Text := trim(edtWinFFmpegPath.Text);
   edtWinFFplayPath.Text := trim(edtWinFFplayPath.Text);
   edtLinFFmpegPath.Text := trim(edtLinFFmpegPath.Text);
   edtLinFFplayPath.Text := trim(edtLinFFplayPath.Text);
   edtLinTerminalExe.Text := trim(edtLinTerminalExe.Text);
   edtLinTerminalOptions.Text := trim(edtLinTerminalOptions.Text);
+
+
+  frmMain.setconfigvalue('general/beforecommand',edtBeforeCommand.text);
+  frmMain.setconfigvalue('general/aftercommand',edtAfterCommand.text);
+  unit1.BeforeCommand := edtBeforeCommand.text;
+  unit1.AfterCommand := edtAfterCommand.text;
 
   {$ifdef windows}
   if edtWinFFmpegPath.Text ='' then
@@ -255,6 +277,12 @@ begin
 
 end;
 
+procedure TfrmPreferences.btnBeforeCommandClick(Sender: TObject);
+begin
+  if opendialog1.Execute then
+    edtBeforeCommand.Text := opendialog1.FileName;
+end;
+
 procedure TfrmPreferences.btnDefaultDirClick(Sender: TObject);
 begin
  if selectdirectorydialog1.Execute then
@@ -275,7 +303,7 @@ end;
 procedure TfrmPreferences.btnWinFFplayPathClick(Sender: TObject);
 begin
    if opendialog1.Execute then
-    edtWinFFplayPath.Text := opendialog1.FileName;
+    edtAfterCommand.Text := opendialog1.FileName;
 end;
 
 procedure TfrmPreferences.btnLinFFmpegPathClick(Sender: TObject);
