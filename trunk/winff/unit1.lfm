@@ -2410,7 +2410,6 @@ object frmMain: TfrmMain
       end
       object mitSaveOptions: TMenuItem
         Caption = 'Save Options to Preset'
-        Visible = False
         OnClick = mitSaveOptionsClick
       end
     end
