@@ -18,6 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 WinFF is a GUI for the command line video converter FFmpeg or avconv.
 
-Get the latest ffmpeg builds and source from http://ffmpeg.mplayerhq.hu/
+Get the latest ffmpeg builds and source from http://ffmpeg.org/
 
  
