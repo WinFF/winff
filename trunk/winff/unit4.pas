@@ -39,6 +39,7 @@ type
     btnLinFFmpegPath: TButton;
     btnLinFFplayPath: TButton;
     btnLinTerminalExe: TButton;
+    cbEnableMulti: TCheckBox;
     cbRememberLastDir: TCheckBox;
     cbCHCPchar: TCheckBox;
     cbThreads: TCheckBox;
@@ -148,6 +149,12 @@ begin
   edtthreads.Text:= frmMain.getconfigvalue('general/numberofthreads');
 
   prioritybox.Text := frmMain.getconfigvalue('general/priority');
+
+  if frmMain.getconfigvalue('general/multipresets') = 'true' then
+     cbEnableMulti.Checked := true
+  else
+     cbEnableMulti.Checked := false;
+
 end;
 
 // save preference
@@ -182,6 +189,17 @@ begin
   frmMain.setconfigvalue('general/numberofthreads', edtthreads.Text);
 
   frmMain.setconfigvalue('general/priority', prioritybox.Text);
+
+  if cbEnableMulti.Checked then
+   begin
+    frmMain.setconfigvalue('general/multipresets','true');
+    unit1.multipresets:=true;
+   end
+  else
+   begin
+    frmMain.setconfigvalue('general/multipresets','false');
+    unit1.multipresets:=false;
+   end;
 
   edtDefaultDir.Text := trim(edtDefaultDir.Text);
   edtWinFFmpegPath.Text := trim(edtWinFFmpegPath.Text);
