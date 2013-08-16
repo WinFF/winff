@@ -365,6 +365,8 @@ var
   presetspath: string;
   configpath: string;
   presets: tdomnode;
+  BeforeCommand: string;
+  AfterCommand: string;
   ffmpeg: string;
   ffplay: string;
   terminal: string;
@@ -660,7 +662,8 @@ begin
   else
      mitplaysoundOnFinish.Checked:=false;
 
-
+  BeforeCommand := getconfigvalue('general/beforecommand');
+  AfterCommand := getconfigvalue('general/aftercommand');
 
                                         // check for multithreading
   multithreading:=getconfigvalue('general/multithreading');
@@ -2272,7 +2275,6 @@ begin                                     // get setup
    {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
    {$ifdef unix}script.Add('#!/bin/sh');{$endif}
 
-
    if not fileexists(ffmpeg) then
       begin
        showmessage(rsCouldnotFindFFmpeg);
@@ -2304,6 +2306,8 @@ begin                                     // get setup
 
    if not multipresets then lblApplytoAllClick(self);
 
+   script.Add(Beforecommand);
+
    for i:=0 to filelist.Items.Count - 1 do
      begin
        if preview then
@@ -2319,12 +2323,14 @@ begin                                     // get setup
        extension:=getpresetextension(pn);
 
 
+
        // Set Script Title
        {$IFDEF WINDOWS}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
        script.Add(titlestring);
+
 
 
        presetbox.text := presetlist.strings[i];
@@ -2360,7 +2366,9 @@ begin                                     // get setup
 
    // finish off command
 
-                                         // pausescript
+   script.Add(AfterCommand);
+
+                                                  // pausescript
    if (pausescript='true') and (preview=false) then
        begin
        {$IFDEF WINDOWS}
