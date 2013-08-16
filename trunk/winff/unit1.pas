@@ -381,6 +381,7 @@ var
   preview: boolean;
   previewbasename: string;
   CloseAfterRestore: boolean;
+  multipresets: boolean;
 
   Resourcestring
 
@@ -1035,18 +1036,21 @@ end;
 procedure TfrmMain.filelistClick(Sender: TObject);
 var i,j : integer;
 begin
-  if filelist.SelCount = 1 then
+  if multipresets then
    begin
-     for j := 0 to filelist.Count -1 do
-       begin
-         if filelist.Selected[j] then i := j;
-       end;
-     categorybox.Text:= CategoryList.Strings[i];
-     categoryboxChange(self);
-     PresetBox.Text:= PresetList.Strings[i];
-     DestFolder.Text:= DestinationList.Strings[i];
-     GetSCR(i);
-     Application.ProcessMessages;
+    if filelist.SelCount = 1 then
+     begin
+       for j := 0 to filelist.Count -1 do
+         begin
+           if filelist.Selected[j] then i := j;
+         end;
+       categorybox.Text:= CategoryList.Strings[i];
+       categoryboxChange(self);
+       PresetBox.Text:= PresetList.Strings[i];
+       DestFolder.Text:= DestinationList.Strings[i];
+       GetSCR(i);
+       Application.ProcessMessages;
+     end;
    end;
 end;
 
@@ -2298,6 +2302,7 @@ begin                                     // get setup
    //1.5 moved from // 1.5 alpha
         frmScript.memo1.lines.Clear;
 
+   if not multipresets then lblApplytoAllClick(self);
 
    for i:=0 to filelist.Items.Count - 1 do
      begin

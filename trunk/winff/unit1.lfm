@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
-  Left = 303
+  Left = 313
   Height = 472
-  Top = 146
+  Top = 125
   Width = 640
   ActiveControl = pnlTop
   AllowDropFiles = True
