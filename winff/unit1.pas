@@ -374,6 +374,7 @@ var
   rememberlast: string;
   insertpoint: string;
   showopts: string;
+  displaycmdline: string;
   rememberpreset: string;
   pass2encoding: string ;
   pausescript: string;
@@ -651,6 +652,17 @@ begin
   else
      mitPauseOnFinish.Checked:=false;
 
+  displaycmdline:=getconfigvalue('general/displaycmdline');
+  if displaycmdline='' then
+    begin
+     displaycmdline:= 'false';
+     setconfigvalue('general/displaycmdline',displaycmdline);
+    end;
+  if displaycmdline='true' then
+     mitdisplaycmdline.Checked:=true
+  else
+     mitdisplaycmdline.Checked:=false;
+
   playscript:=getconfigvalue('general/playsound');
   if playscript='' then
     begin
@@ -696,6 +708,10 @@ begin
   else
      setconfigvalue('general/pause','false');
 
+  if mitDisplayCmdLine.Checked then // save display cmd line
+     setconfigvalue('general/displaycmdline','true')
+  else
+     setconfigvalue('general/displaycmdline','false');
 
   if mitPlaySoundOnFinish.Checked then // save pause on finish
      setconfigvalue('general/playsound','true')
