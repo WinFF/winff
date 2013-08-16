@@ -101,11 +101,11 @@ object frmPreferences: TfrmPreferences
     Height = 253
     Top = 0
     Width = 352
-    ActivePage = tabScripting
+    ActivePage = tabGeneral
     Align = alClient
     Constraints.MinHeight = 200
     Constraints.MinWidth = 300
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 1
     object tabGeneral: TTabSheet
       Caption = 'General'
