@@ -2343,7 +2343,7 @@ object frmMain: TfrmMain
   end
   object dlgOpenFile: TOpenDialog
     Title = 'Select Video Files...'
-    Filter = 'All Files|*|*.*|Audio Video Interleave|*.avi;*.AVI|MPEG|*.mpg;*.MPG;*.mpeg;*.MPEG|MOV|*.mov;*.MOV|Matroska|*.mkv;*.MKV|DVD Vob|*.vob;*.VOB|MP3|*.mp3;*.MP3|OGG Theora|*.ogg;*.OGG|WEBM|*.webm;*.WEBM'
+    Filter = 'All Files|*;*.*|Audio Video Interleave|*.avi;*.AVI|MPEG|*.mpg;*.MPG;*.mpeg;*.MPEG|MOV|*.mov;*.MOV|Matroska|*.mkv;*.MKV|DVD Vob|*.vob;*.VOB|MP3|*.mp3;*.MP3|OGG Theora|*.ogg;*.OGG|WEBM|*.webm;*.WEBM'
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
     left = 520
     top = 8
