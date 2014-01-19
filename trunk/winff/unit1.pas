@@ -28,7 +28,7 @@ uses
   {$IFDEF unix} baseunix, unix, {$endif}
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
-  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, Spin,
+  {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, Spin, UTF8Process,
   PoTranslator, types,FileUtil;
 
 type
@@ -2268,13 +2268,14 @@ end;
 
 // Start Conversions
 procedure TfrmMain.btnConvertClick(Sender: TObject);
-var  scriptprocess:tprocess;
+var  scriptprocess:TProcess;
      extension, filename,batfile,titlestring : string;
      ffplayfilename, basename,priority : string;
      scriptpriority:tprocesspriority;
      script: tstringlist;
      thetime: tdatetime;
      i,j,resmod : integer;
+
 
 begin                                     // get setup
    scriptprocess:= TProcess.Create(nil);
@@ -2288,7 +2289,7 @@ begin                                     // get setup
 
 
    script:= TStringList.Create;
-   {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
+ //  {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
    {$ifdef unix}script.Add('#!/bin/sh');{$endif}
 
    if not fileexists(ffmpeg) then
@@ -2345,7 +2346,7 @@ begin                                     // get setup
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
-       script.Add(titlestring);
+       script.Add(UTF8ToConsole (titlestring));
 
 
 
@@ -2358,11 +2359,11 @@ begin                                     // get setup
 
        if scr[i].firstpass <> '' then
           begin
-               script.add(scr[i].firstpass);
+               script.add(UTF8ToConsole (scr[i].firstpass));
           end;
        if scr[i].SecondPass <> '' then
           begin
-               script.add(scr[i].SecondPass);
+               script.add(UTF8ToConsole (scr[i].SecondPass));
           end;
        if preview then
          begin
@@ -2374,7 +2375,7 @@ begin                                     // get setup
                   break;
                 end;
            end;
-         script.add(ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + previewbasename +'.'+ extension+ '"');
+         script.add(UTF8ToConsole (ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + previewbasename +'.'+ extension+ '"'));
          break;
          end;
      end;
@@ -2425,7 +2426,6 @@ begin                                     // get setup
      {$ifdef unix}
        scriptprocess.Parameters.Add('&') ;
      {$endif}
-
      scriptprocess.execute;
     end
    else
