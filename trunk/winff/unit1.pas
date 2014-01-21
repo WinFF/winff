@@ -973,7 +973,7 @@ begin
   // if Use Source path is checked, the output folder is ignored
   destfolder.Enabled := not(cbOutputPath.Checked);
   application.processmessages;
-  pnlAllow.Visible:= true;
+  //pnlAllow.Visible:= true;
   // end Changed
 end;
 
