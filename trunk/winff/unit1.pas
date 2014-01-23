@@ -427,6 +427,7 @@ i:integer;
 formheight,formwidth,formtop,formleft:integer;
 sformheight,sformwidth,sformtop,sformleft:string;
 currentpreset: string;
+multipreset:string;
 
 begin
    setLength(scr,100); // 1.5 By default limit jobs to 100;
@@ -680,7 +681,13 @@ begin
                                         // check for multithreading
   multithreading:=getconfigvalue('general/multithreading');
 
-  Show;
+  multipreset:=getconfigvalue('general/multipresets');
+  if multipreset='true' then
+     multipresets :=true
+  else
+     multipresets :=false ;
+
+     Show;
 end;
 
 
@@ -952,7 +959,7 @@ begin
        cbLeftFlip.Checked :=False;
        cbRightFlip.checked := false;
   end;
-  pnlAllow.visible := true;
+  if multipresets then pnlAllow.visible := true;
 end;
 
 procedure TfrmMain.cbLeftFlipChange(Sender: TObject);
@@ -963,7 +970,7 @@ begin
        cbLeft.Checked :=False;
        cbRightFlip.checked := false;
   end;
-  pnlAllow.visible := true;
+  if multipresets then pnlAllow.visible := true;
 end;
 
 procedure TfrmMain.cbOutputPathChange(Sender: TObject);
@@ -981,7 +988,7 @@ procedure TfrmMain.AllowChanges(Sender: TObject);
 begin
   if filelist.count > 0 then
      begin
-       pnlAllow.Visible := True;
+       if multipresets then pnlAllow.Visible := True;
      end;
 end;
 
@@ -993,7 +1000,7 @@ begin
        cbLeft.Checked :=False;
        cbRightFlip.checked := false;
   end;
-  pnlAllow.visible := true;
+  if multipresets then pnlAllow.visible := true;
 end;
 
 procedure TfrmMain.cbRightFlipChange(Sender: TObject);
@@ -1004,7 +1011,7 @@ begin
        cbLeft.Checked :=False;
        cbLeftFlip.checked := false;
   end;
-  pnlAllow.visible := true;
+  if multipresets then pnlAllow.visible := true;
 end;
 
 
@@ -1151,7 +1158,7 @@ begin
 
            end;
        end;
-     pnlAllow.Visible:= False;
+     if multipresets then pnlAllow.Visible:= False;
      Application.ProcessMessages;
 end;
 
@@ -1213,7 +1220,7 @@ procedure TfrmMain.PresetBoxChange(Sender: TObject);
 begin
   destfolder.text := getconfigvalue('general/destfolder');
   if destfolder.text='' then DestFolder.Text:= getmydocumentspath();
-  pnlAllow.Visible:=True;
+  if multipresets then pnlAllow.Visible:=True;
 end;
 
 procedure TfrmMain.rgRotateClick(Sender: TObject);
@@ -1605,7 +1612,7 @@ begin
   begin
      filelist.itemindex := FileList.Count -1 // select most recently added job
   end;
-  pnlAllow.Visible := False;
+  if multipresets then pnlAllow.Visible := False;
 end;
 
 // add files to the list
@@ -1648,7 +1655,7 @@ begin
           end;
           //filelist.items.AddStrings(dlgOpenFile.Files);
       end;
-   pnlAllow.Visible := False;
+   if multipresets then pnlAllow.Visible := False;
 end;
 
 procedure tFrmMain.SetSCR(vIndex : integer);
@@ -1731,7 +1738,7 @@ begin
     end;
     filelist.itemindex := vIndex;
   end;
-  pnlAllow.visible := false;
+  if multipresets then pnlAllow.visible := false;
 end;
 
 
@@ -1930,7 +1937,7 @@ begin
   // Undo Changes;
    if filelist.Items.Count = 0 then exit;
    GetScr(filelist.ItemIndex);
-   pnlAllow.Visible:= False;
+   if multipresets then pnlAllow.Visible:= False;
    Application.ProcessMessages;
 end;
 
