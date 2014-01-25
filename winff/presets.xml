@@ -127,23 +127,17 @@
     <category>Mobile Phones</category>
   </MP3GP320x240stereo43>
   <MPEG4VideoHQ>
-    <label>MPEG-4 H.264 video (high quality)</label>
-    <params>-crf 35.0 -vcodec libx264 -preset slow -acodec libvo_aacenc -ar 48000 -b:a 128k -coder 1 -flags +loop -cmp chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <label>MPEG-4 720p</label>
+    <params>-crf 20.0 -vcodec libx264 -vf scale=1280:720 -preset slow -acodec libvo_aacenc -ar 48000 -b:a 128k -coder 1 -flags +loop -cmp chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </MPEG4VideoHQ>
   <MPEG4VideoSHQ>
-    <label>MPEG-4 H.264 video (super high quality)</label>
-    <params>-crf 15.0 -vcodec libx264 -preset veryslow -acodec libvo_aacenc -ar 48000 -b:a 192k -coder 1 -flags +loop -cmp chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
+    <label>MPEG-4 1080p</label>
+    <params>-crf 18.0 -vcodec libx264 -vf scale=1920:1080 -preset veryslow -acodec libvo_aacenc -ar 48000 -b:a 192k -coder 1 -flags +loop -cmp chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
     <extension>mp4</extension>
     <category>MPEG-4</category>
   </MPEG4VideoSHQ>
-  <MPEG4VideoVHQ>
-    <label>MPEG-4 H.264 video (very high quality)</label>
-    <params>-crf 25.0 -vcodec libx264 -preset slower -acodec libvo_aacenc -ar 48000 -b:a 160k -coder 1 -flags +loop -cmp chroma -partitions +parti4x4+partp8x8+partb8x8 -me_method hex -subq 6 -me_range 16 -g 250 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -b_strategy 1 -threads 0</params>
-    <extension>mp4</extension>
-    <category>MPEG-4</category>
-  </MPEG4VideoVHQ>
   <N810FS>
     <label>Nokia N810 mplayer 4:3</label>
     <params>-r 29.97 -vcodec libxvid -vtag XVID -vf scale=400:240 -aspect 4:3 -maxrate 1200k -b:v 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -b:a 160k -ac 2 -async 1</params>
