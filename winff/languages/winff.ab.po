@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.3.2\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-20 12:28+0200\n"
+"POT-Creation-Date: 2014-01-31 13:07+0100\n"
 "PO-Revision-Date: 2011-12-31 13:35+0000\n"
 "Last-Translator: Paul Gevers <Unknown>\n"
 "Language-Team: \n"
@@ -318,10 +318,26 @@ msgstr "Ausgewählte Datei(en) aus der Liste entfernen"
 msgid "Device or file type the video should be converted to"
 msgstr "Gerät oder Dateityp für die Konvertierung auswählen"
 
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
 msgstr "Ordner wie Quelldatei"
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
+msgstr ""
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
@@ -498,6 +514,10 @@ msgstr "Sample-Rate"
 msgid "X"
 msgstr "X"
 
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "Seitenverhältnis"
@@ -525,6 +545,10 @@ msgstr "Oben"
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "Frame-Rate"
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -596,6 +620,14 @@ msgstr "Einstellungen"
 msgid "Presets"
 msgstr "Profile"
 
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
 msgstr ""
@@ -633,6 +665,10 @@ msgstr "Hilfe"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Optionen"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -702,30 +738,46 @@ msgstr ""
 "das Pixel-Seitenverhältnis (PAR) nicht unterstützen, ist das die finale "
 "Breite x Höhe."
 
+#: tfrmpreferences.btnaftercommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnbeforecommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #: tfrmpreferences.btndefaultdir.caption
 msgctxt "TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: tfrmpreferences.btnlinffmpegpath.caption
 msgctxt "TFRMPREFERENCES.BTNLINFFMPEGPATH.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: tfrmpreferences.btnlinffplaypath.caption
 msgctxt "TFRMPREFERENCES.BTNLINFFPLAYPATH.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: tfrmpreferences.btnlinterminalexe.caption
 msgctxt "TFRMPREFERENCES.BTNLINTERMINALEXE.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: tfrmpreferences.btnok.caption
 msgctxt "TFRMPREFERENCES.BTNOK.CAPTION"
@@ -735,16 +787,20 @@ msgstr ""
 #: tfrmpreferences.btnwinffmpegpath.caption
 msgctxt "TFRMPREFERENCES.BTNWINFFMPEGPATH.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: tfrmpreferences.btnwinffplaypath.caption
 msgctxt "TFRMPREFERENCES.BTNWINFFPLAYPATH.CAPTION"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: tfrmpreferences.cbchcpchar.caption
 msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
+msgstr ""
+
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
 msgstr ""
 
 #: tfrmpreferences.cbrememberlastdir.caption
@@ -765,6 +821,14 @@ msgstr ""
 #: tfrmpreferences.frmpreferences.caption
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
+msgstr ""
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
 msgstr ""
 
 #: tfrmpreferences.lbldefaultdir.caption
@@ -815,6 +879,10 @@ msgstr ""
 #: tfrmpreferences.tablinux.caption
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
+msgstr ""
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
 msgstr ""
 
 #: tfrmpreferences.tabwindows.caption
@@ -916,8 +984,16 @@ msgstr "Profil mit der Bezeichnung: %s%s%s existiert bereits"
 msgid "Press Enter to Continue"
 msgstr "Eingabetaste drücken, um fortzufahren"
 
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
+msgstr ""
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
 msgstr ""
 
 #: unit1.rsselectdirectory
@@ -988,144 +1064,25 @@ msgstr "Leerlauf"
 msgid "Normal"
 msgstr "Normal"
 
-#~ msgid "Form1"
-#~ msgstr "Form1"
+#~ msgid "Linux"
+#~ msgstr "Linux"
 
-#~ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~ msgid "OK"
-#~ msgstr "OK"
+#~ msgid "MS Windows"
+#~ msgstr "Windows"
 
-#~ msgid "WinFF 1.3.2"
-#~ msgstr "WinFF 1.4.0"
+#~ msgid "General"
+#~ msgstr "Allgemein"
 
-#~ msgid "http://hawkeye.arrozcru.org/"
-#~ msgstr "http://hawkeye.arrozcru.org/"
+#~ msgid "Priority:"
+#~ msgstr "Priorität"
 
-#~ msgid "Debian/Ubuntu Packaging by Paul Gevers"
-#~ msgstr "Debian/Ubuntu Packaging by Paul Gevers"
+#~ msgid "Terminal Options:"
+#~ msgstr "Terminal-Einstellungen"
 
-#~ msgid "Gmaq"
-#~ msgstr "Gmaq"
+#~ msgid "Terminal to run FFmpeg in:"
+#~ msgstr "Terminal, in dem FFmpeg ausgeführt werden soll"
 
-#~ msgid "High Quality Presets From"
-#~ msgstr "High Quality Presets von"
-
-#~ msgid "Icons and Logo by Alex Klepatsch"
-#~ msgstr "Icons und Logo von Alex Klepatsch"
-
-#~ msgid "JNavas"
-#~ msgstr "JNavas"
-
-#~ msgid "Copyright 2006-2009 GPL V3"
-#~ msgstr "Copyright 2006-2009 GPL V3"
-
-#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-#~ msgstr "Matthew Weatherford,  Ian Stoffberg, und Alexey Osipov"
-
-#~ msgid "http://www.winff.org"
-#~ msgstr "http://www.winff.org"
-
-#~ msgctxt "TFRMABOUT.LABEL5.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
-
-#~ msgid "Trademark Fabrice Belllard"
-#~ msgstr "Trademark Fabrice Belllard"
-
-#~ msgid "http://ffmpeg.org"
-#~ msgstr "http://ffmpeg.org"
-
-#~ msgid "FFmpeg Windows Builds by"
-#~ msgstr "FFmpeg-Builds von"
-
-#~ msgid "Kyle Schwarz"
-#~ msgstr "Kyle Schwarz"
-
-#~ msgctxt "TFRMABOUT.PAGE1.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
-
-#~ msgid "Thanks"
-#~ msgstr "Danke"
-
-#~ msgid "Edit Presets"
-#~ msgstr "Profile bearbeiten"
-
-#~ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-#~ msgid "Apply Output Folder"
-#~ msgstr "Ausgabeverzeichnis"
-
-#~ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
-#~ msgid "Apply Preset"
-#~ msgstr "Profil anwenden"
-
-#~ msgctxt "TFRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
-#~ msgid "Video"
-#~ msgstr "Video"
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Abbrechen"
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "WinFF Preferences"
-#~ msgstr "WinFF Einstellungen"
-
-#~ msgid "Remember Last Used Directory"
-#~ msgstr "Zuletzt benutztes Verzeichnis merken"
-
-#~ msgid "Use CHCP for international characters"
-#~ msgstr "CHCP für internationale Zeichen verwenden"
-
-#~ msgid "Use Several Encoding Threads:"
-#~ msgstr "Mehrere Threads verwenden:"
-
-#~ msgid "'-e' for xterm, '-x' for gnome-terminal"
-#~ msgstr "Terminal-Einstellungen (-e für Xterm , -x für Gnome Terminal)"
-
-#~ msgid "Default Destination Directory:"
-#~ msgstr "Standard-Ausgabeverzeichnis"
-
-#~ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
-#~ msgid "Path to FFmpeg Executable:"
-#~ msgstr "Pfad zu FFmpeg"
-
-#~ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+#~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
 #~ msgid "Path to FFplay Executable:"
 #~ msgstr "Pfad zu FFPlay"
 
@@ -1133,24 +1090,151 @@ msgstr "Normal"
 #~ msgid "Path to FFmpeg Executable:"
 #~ msgstr "Pfad zu FFmpeg"
 
-#~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+#~ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
 #~ msgid "Path to FFplay Executable:"
 #~ msgstr "Pfad zu FFPlay"
 
-#~ msgid "Terminal to run FFmpeg in:"
-#~ msgstr "Terminal, in dem FFmpeg ausgeführt werden soll"
+#~ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "Pfad zu FFmpeg"
 
-#~ msgid "Terminal Options:"
-#~ msgstr "Terminal-Einstellungen"
+#~ msgid "Default Destination Directory:"
+#~ msgstr "Standard-Ausgabeverzeichnis"
 
-#~ msgid "Priority:"
-#~ msgstr "Priorität"
+#~ msgid "'-e' for xterm, '-x' for gnome-terminal"
+#~ msgstr "Terminal-Einstellungen (-e für Xterm , -x für Gnome Terminal)"
 
-#~ msgid "General"
-#~ msgstr "Allgemein"
+#~ msgid "Use Several Encoding Threads:"
+#~ msgstr "Mehrere Threads verwenden:"
 
-#~ msgid "MS Windows"
-#~ msgstr "Windows"
+#~ msgid "Use CHCP for international characters"
+#~ msgstr "CHCP für internationale Zeichen verwenden"
 
-#~ msgid "Linux"
-#~ msgstr "Linux"
+#~ msgid "Remember Last Used Directory"
+#~ msgstr "Zuletzt benutztes Verzeichnis merken"
+
+#~ msgid "WinFF Preferences"
+#~ msgstr "WinFF Einstellungen"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Abbrechen"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgctxt "TFRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+
+#~ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+#~ msgid "Apply Preset"
+#~ msgstr "Profil anwenden"
+
+#~ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+#~ msgid "Apply Output Folder"
+#~ msgstr "Ausgabeverzeichnis"
+
+#~ msgid "Edit Presets"
+#~ msgstr "Profile bearbeiten"
+
+#~ msgid "Thanks"
+#~ msgstr "Danke"
+
+#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+
+#~ msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+
+#~ msgid "Kyle Schwarz"
+#~ msgstr "Kyle Schwarz"
+
+#~ msgid "FFmpeg Windows Builds by"
+#~ msgstr "FFmpeg-Builds von"
+
+#~ msgid "http://ffmpeg.org"
+#~ msgstr "http://ffmpeg.org"
+
+#~ msgid "Trademark Fabrice Belllard"
+#~ msgstr "Trademark Fabrice Belllard"
+
+#~ msgctxt "TFRMABOUT.LABEL5.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+
+#~ msgid "http://www.winff.org"
+#~ msgstr "http://www.winff.org"
+
+#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+#~ msgstr "Matthew Weatherford,  Ian Stoffberg, und Alexey Osipov"
+
+#~ msgid "Copyright 2006-2009 GPL V3"
+#~ msgstr "Copyright 2006-2009 GPL V3"
+
+#~ msgid "JNavas"
+#~ msgstr "JNavas"
+
+#~ msgid "Icons and Logo by Alex Klepatsch"
+#~ msgstr "Icons und Logo von Alex Klepatsch"
+
+#~ msgid "High Quality Presets From"
+#~ msgstr "High Quality Presets von"
+
+#~ msgid "Gmaq"
+#~ msgstr "Gmaq"
+
+#~ msgid "Debian/Ubuntu Packaging by Paul Gevers"
+#~ msgstr "Debian/Ubuntu Packaging by Paul Gevers"
+
+#~ msgid "http://hawkeye.arrozcru.org/"
+#~ msgstr "http://hawkeye.arrozcru.org/"
+
+#~ msgid "WinFF 1.3.2"
+#~ msgstr "WinFF 1.4.0"
+
+#~ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Form1"
+#~ msgstr "Form1"
+
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "..."
+#~ msgstr "..."

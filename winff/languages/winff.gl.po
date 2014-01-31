@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-20 12:28+0200\n"
+"POT-Creation-Date: 2014-01-31 13:07+0100\n"
 "PO-Revision-Date: 2010-12-03 22:47+0100\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -338,9 +338,25 @@ msgstr "Sacar o(s) ficheiro(s) seleccionado(s) da lista"
 msgid "Device or file type the video should be converted to"
 msgstr "Nome do dispositivo ou tipo de ficheiro para converter a"
 
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
+msgstr ""
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
 msgstr ""
 
 #: tfrmmain.cbx2pass.caption
@@ -529,6 +545,10 @@ msgstr "Taxa de mostraxe"
 msgid "X"
 msgstr ""
 
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "Relación de aspecto"
@@ -556,6 +576,10 @@ msgstr "Arriba"
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "Fotogramas/s."
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -631,6 +655,14 @@ msgstr "Preferencias"
 msgid "Presets"
 msgstr "Preconfiguracións"
 
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
 msgstr ""
@@ -669,6 +701,10 @@ msgstr "Axuda"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opcións"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -748,6 +784,16 @@ msgstr ""
 "compatíbeis coa relación de aspecto de píxeles (PAR), este é o tamaño do "
 "vídeo ao seren visto."
 
+#: tfrmpreferences.btnaftercommand.caption
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr ""
+
+#: tfrmpreferences.btnbeforecommand.caption
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr ""
+
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
@@ -793,6 +839,10 @@ msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr "Usar CHCP para idiomas non ingleses"
 
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr ""
+
 #: tfrmpreferences.cbrememberlastdir.caption
 #, fuzzy
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
@@ -814,6 +864,14 @@ msgstr "Opcións para o terminal (-e para Xterm, -x para Gnome Terminal"
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
 msgstr "Preferencias de WinFF"
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
+msgstr ""
 
 #: tfrmpreferences.lbldefaultdir.caption
 #, fuzzy
@@ -872,6 +930,10 @@ msgstr "Xeral"
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
 msgstr "Linux"
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
+msgstr ""
 
 #: tfrmpreferences.tabwindows.caption
 #, fuzzy
@@ -977,8 +1039,16 @@ msgstr "A preconfiguración coa etiqueta: %s%s%s xa existe"
 msgid "Press Enter to Continue"
 msgstr "Prema Intro para continuar"
 
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
+msgstr ""
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
 msgstr ""
 
 #: unit1.rsselectdirectory

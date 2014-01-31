@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-20 12:28+0200\n"
+"POT-Creation-Date: 2014-01-31 13:07+0100\n"
 "PO-Revision-Date: 2012-01-23 11:00+0000\n"
 "Last-Translator: andygol <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -305,10 +305,26 @@ msgstr "Вилучити виділені файли зі списку"
 msgid "Device or file type the video should be converted to"
 msgstr "Пристрій або тип відео у який потрібно здійснити перетворення"
 
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
 msgstr "Використовувати теку з сирцями"
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
+msgstr ""
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
@@ -481,6 +497,10 @@ msgstr "Частота дискретизації"
 msgid "X"
 msgstr "X"
 
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "Співвідношення сторін"
@@ -508,6 +528,10 @@ msgstr "Згори"
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "Частота кадрів"
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -579,6 +603,14 @@ msgstr "Налаштування"
 msgid "Presets"
 msgstr "Заготовки"
 
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
 msgstr ""
@@ -616,6 +648,10 @@ msgstr "Довідка"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Параметри"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -682,6 +718,22 @@ msgstr ""
 "(<ціле>Х<ціле>) Кількість пікселів в кожному кадрі. Для кодеків, які не "
 "підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
 
+#: tfrmpreferences.btnaftercommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr "…"
+
+#: tfrmpreferences.btnbeforecommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr "…"
+
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
@@ -727,6 +779,10 @@ msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr "Використовувати CHCP для міжнародних символів"
 
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr ""
+
 #: tfrmpreferences.cbrememberlastdir.caption
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
@@ -746,6 +802,14 @@ msgstr "'-e' для xterm, '-x' для gnome-terminal"
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
 msgstr "Налаштування WinFF"
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
+msgstr ""
 
 #: tfrmpreferences.lbldefaultdir.caption
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
@@ -800,6 +864,10 @@ msgstr "Загальні"
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
 msgstr "Linux"
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
+msgstr ""
 
 #: tfrmpreferences.tabwindows.caption
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
@@ -903,8 +971,16 @@ msgstr "Заготовка з міткою: %s%s%s вже існує"
 msgid "Press Enter to Continue"
 msgstr "Натисніть Ввід для продовження"
 
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
+msgstr ""
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
 msgstr ""
 
 #: unit1.rsselectdirectory
@@ -974,3 +1050,11 @@ msgstr "Неактивний"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Звичайний"
+
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "..."
+#~ msgstr "…"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-20 12:28+0200\n"
+"POT-Creation-Date: 2014-01-31 13:07+0100\n"
 "PO-Revision-Date: 2013-01-06 18:47+0000\n"
 "Last-Translator: tuxmaniack <Unknown>\n"
 "Language-Team: Latvian <lv@li.org>\n"
@@ -305,10 +305,26 @@ msgstr "Izņemt izvēlēto(s) failu(s) no saraksta"
 msgid "Device or file type the video should be converted to"
 msgstr "Ierīce vai faila tips uz kuru video tiks pārveidots"
 
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
 msgstr "Izmantot avota mapi"
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
+msgstr ""
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
@@ -484,6 +500,10 @@ msgstr "Frekvence"
 msgid "X"
 msgstr "X"
 
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "Izmēru attiecība"
@@ -511,6 +531,10 @@ msgstr "Augša"
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "Kadru ātrums"
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -582,6 +606,14 @@ msgstr "Iestatījumi"
 msgid "Presets"
 msgstr "Regulējumi"
 
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
 msgstr "Izvēlēties visu"
@@ -619,6 +651,10 @@ msgstr "Palīdzība"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opcijas"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -685,6 +721,22 @@ msgstr ""
 "(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, "
 "kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
 
+#: tfrmpreferences.btnaftercommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnbeforecommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
@@ -730,6 +782,10 @@ msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr "Starptautiskām rakstzīmēm izmantot CHCP"
 
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr ""
+
 #: tfrmpreferences.cbrememberlastdir.caption
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
@@ -749,6 +805,14 @@ msgstr "'-e' priekš xterm, '-x' priekš gnome-terminal"
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
 msgstr "WinFF iestatījumi"
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
+msgstr ""
 
 #: tfrmpreferences.lbldefaultdir.caption
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
@@ -799,6 +863,10 @@ msgstr "Vispārīgi"
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
 msgstr "Linux"
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
+msgstr ""
 
 #: tfrmpreferences.tabwindows.caption
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
@@ -900,9 +968,17 @@ msgstr "Regulējums ar etiķeti: %s%s%s jau eksistē"
 msgid "Press Enter to Continue"
 msgstr "Nospiediet 'Enter', lai turpinātu"
 
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
 msgstr "Aizvietot regulējumu?"
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
+msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -971,3 +1047,11 @@ msgstr "Dīkstāve"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normāla"
+
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "..."
+#~ msgstr "..."

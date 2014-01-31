@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-20 12:28+0200\n"
+"POT-Creation-Date: 2014-01-31 13:07+0100\n"
 "PO-Revision-Date: 2012-06-08 13:51+0000\n"
 "Last-Translator: fanox <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -304,9 +304,25 @@ msgstr ""
 msgid "Device or file type the video should be converted to"
 msgstr ""
 
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
+msgstr ""
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
 msgstr ""
 
 #: tfrmmain.cbx2pass.caption
@@ -475,6 +491,10 @@ msgstr ""
 msgid "X"
 msgstr ""
 
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr ""
@@ -501,6 +521,10 @@ msgstr ""
 
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
+msgstr ""
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
 msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
@@ -573,6 +597,14 @@ msgstr ""
 msgid "Presets"
 msgstr ""
 
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
 msgstr ""
@@ -610,6 +642,10 @@ msgstr ""
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Možnosti"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -672,6 +708,22 @@ msgid ""
 "don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
 
+#: tfrmpreferences.btnaftercommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnbeforecommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
@@ -717,6 +769,10 @@ msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr ""
 
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr ""
+
 #: tfrmpreferences.cbrememberlastdir.caption
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
@@ -735,6 +791,14 @@ msgstr ""
 #: tfrmpreferences.frmpreferences.caption
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
+msgstr ""
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
 msgstr ""
 
 #: tfrmpreferences.lbldefaultdir.caption
@@ -785,6 +849,10 @@ msgstr ""
 #: tfrmpreferences.tablinux.caption
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
+msgstr ""
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
 msgstr ""
 
 #: tfrmpreferences.tabwindows.caption
@@ -886,8 +954,16 @@ msgstr ""
 msgid "Press Enter to Continue"
 msgstr ""
 
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
+msgstr ""
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
 msgstr ""
 
 #: unit1.rsselectdirectory
@@ -957,3 +1033,11 @@ msgstr ""
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr ""
+
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "..."
+#~ msgstr "..."

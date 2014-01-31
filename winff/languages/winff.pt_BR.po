@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-20 12:28+0200\n"
+"POT-Creation-Date: 2014-01-31 13:07+0100\n"
 "PO-Revision-Date: 2012-03-21 13:06+0000\n"
 "Last-Translator: Hriostat <Unknown>\n"
 "Language-Team: \n"
@@ -319,10 +319,26 @@ msgstr "Remover arquivo(s) selecionado(s) na lista"
 msgid "Device or file type the video should be converted to"
 msgstr "O dispositivo ou tipo de arquivo de vídeo deve ser convertido para"
 
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
 msgstr "Usar pasta de origem"
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
+msgstr ""
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
@@ -495,6 +511,10 @@ msgstr "Taxa de amostragem"
 msgid "X"
 msgstr "X"
 
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "Taxa de proporção"
@@ -522,6 +542,10 @@ msgstr "Topo"
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "Taxa de quadros"
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -593,6 +617,14 @@ msgstr "Preferências"
 msgid "Presets"
 msgstr "Predefinições"
 
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
 msgstr ""
@@ -630,6 +662,10 @@ msgstr "Ajuda"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opções"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -698,6 +734,22 @@ msgstr ""
 "Quantidade de pixels em cada quadro. Para codecs que não suportam a taxa de "
 "aspecto de pixel (PAR), isso é o tamanho final do quadro."
 
+#: tfrmpreferences.btnaftercommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnbeforecommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
@@ -743,6 +795,10 @@ msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr "Utilizar CHCP para caracteres internacionais"
 
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr ""
+
 #: tfrmpreferences.cbrememberlastdir.caption
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
@@ -762,6 +818,14 @@ msgstr "'-e' para usar o xterm, '-x' para usar o gnome-terminal"
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
 msgstr "Preferências do WinFF"
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
+msgstr ""
 
 #: tfrmpreferences.lbldefaultdir.caption
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
@@ -816,6 +880,10 @@ msgstr "Geral"
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
 msgstr "Linux"
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
+msgstr ""
 
 #: tfrmpreferences.tabwindows.caption
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
@@ -919,8 +987,16 @@ msgstr "A predefinição com o rótulo: %s%s%s já existe"
 msgid "Press Enter to Continue"
 msgstr "Pressione enter para continuar"
 
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
+msgstr ""
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
 msgstr ""
 
 #: unit1.rsselectdirectory
@@ -990,3 +1066,11 @@ msgstr "Ideal"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normal"
+
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "..."
+#~ msgstr "..."

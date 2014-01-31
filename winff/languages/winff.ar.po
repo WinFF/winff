@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-20 12:28+0200\n"
+"POT-Creation-Date: 2014-01-31 13:07+0100\n"
 "PO-Revision-Date: 2012-05-24 09:26+0000\n"
 "Last-Translator: abbas <abbasalshaikh@gmail.com>\n"
 "Language-Team: Muhammad Negm <alam.hor@gmail.com>\n"
@@ -324,10 +324,26 @@ msgstr "إزالة الملفات المختارة من القائمة"
 msgid "Device or file type the video should be converted to"
 msgstr "الجهاز أو نوع الملف الذي يجب تحويل الفيديو إليه"
 
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
 msgstr "استخدم ملف المصدر"
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
+msgstr ""
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
@@ -498,6 +514,10 @@ msgstr "معدل العينات"
 msgid "X"
 msgstr "X"
 
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "نسبة عدد السطور إلى العرض"
@@ -525,6 +545,10 @@ msgstr "أعلى"
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "معدل الإطارات"
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -597,6 +621,14 @@ msgstr "تفضيلات"
 msgid "Presets"
 msgstr "الضبط المسبق"
 
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
 msgstr ""
@@ -634,6 +666,10 @@ msgstr "مساعدة"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "خيارات"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -706,6 +742,22 @@ msgstr ""
 "(<عدد صحيح> × <عدد صحيح>) مجموع بكسلات البيانات.صالح للترميزات التي لا تدعم "
 "مقياس عدد السطور (PAR) ذلك يحجم الفيديو عند عرضه"
 
+#: tfrmpreferences.btnaftercommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnbeforecommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
@@ -751,6 +803,10 @@ msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr "استخدام محارف CHCP العالمية"
 
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr ""
+
 #: tfrmpreferences.cbrememberlastdir.caption
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
@@ -771,6 +827,14 @@ msgstr "خيارات للطرفية (-e في حالة طرفية اكس أو -x 
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
 msgstr "تفضيلات WinFF"
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
+msgstr ""
 
 #: tfrmpreferences.lbldefaultdir.caption
 #, fuzzy
@@ -827,6 +891,10 @@ msgstr "عام"
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
 msgstr "لينكس"
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
+msgstr ""
 
 #: tfrmpreferences.tabwindows.caption
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
@@ -931,8 +999,16 @@ msgstr "الضبط المسبق ذو الوسم : %s%s%s موجود بالفعل
 msgid "Press Enter to Continue"
 msgstr "اضغط زر \"Enter \"للاستمرار"
 
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
+msgstr ""
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
 msgstr ""
 
 #: unit1.rsselectdirectory
@@ -1003,3 +1079,11 @@ msgstr "خامل"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "عادي"
+
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "..."
+#~ msgstr "..."

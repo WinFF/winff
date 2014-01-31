@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-20 12:28+0200\n"
+"POT-Creation-Date: 2014-01-31 13:07+0100\n"
 "PO-Revision-Date: 2010-01-18 21:38+0100\n"
 "Last-Translator: Benny Beat <bennybeat@gmail.com>\n"
 "Language-Team: \n"
@@ -338,9 +338,25 @@ msgid "Device or file type the video should be converted to"
 msgstr ""
 "El nom del dispositiu o el tipus d'arxiu de vídeo hauria de ser convertir a"
 
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
+msgstr ""
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
 msgstr ""
 
 #: tfrmmain.cbx2pass.caption
@@ -523,6 +539,10 @@ msgstr "Freqüència del mostreig"
 msgid "X"
 msgstr ""
 
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "Relació d'aspecte"
@@ -550,6 +570,10 @@ msgstr "Amunt"
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "Fotogrames"
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -625,6 +649,14 @@ msgstr "Preferències"
 msgid "Presets"
 msgstr "Configuracions"
 
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
 msgstr ""
@@ -663,6 +695,10 @@ msgstr "Ajuda"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Opcions"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -741,6 +777,16 @@ msgstr ""
 "no suporten el aspecte de ràtio de píxels (PAR) aquesta serà la mida en "
 "visualitzar-se."
 
+#: tfrmpreferences.btnaftercommand.caption
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr ""
+
+#: tfrmpreferences.btnbeforecommand.caption
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr ""
+
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
@@ -786,6 +832,10 @@ msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr "Empra CHCP per a caràcters internacionals"
 
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr ""
+
 #: tfrmpreferences.cbrememberlastdir.caption
 #, fuzzy
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
@@ -807,6 +857,14 @@ msgstr "Opcions de consola (-e per a Xterm, -x per a un terminal Gnome)"
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
 msgstr "Preferències de WinFF"
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
+msgstr ""
 
 #: tfrmpreferences.lbldefaultdir.caption
 #, fuzzy
@@ -865,6 +923,10 @@ msgstr "General"
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
 msgstr "Linux/Unix"
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
+msgstr ""
 
 #: tfrmpreferences.tabwindows.caption
 #, fuzzy
@@ -970,8 +1032,16 @@ msgstr "La configuració amb l'etiqueta: %s%s%s ja existeix"
 msgid "Press Enter to Continue"
 msgstr "Premeu Intro per a continuar"
 
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
+msgstr ""
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
 msgstr ""
 
 #: unit1.rsselectdirectory
