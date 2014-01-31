@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-20 12:28+0200\n"
+"POT-Creation-Date: 2014-01-31 13:07+0100\n"
 "PO-Revision-Date: 2013-11-05 07:22+0000\n"
 "Last-Translator: Jay A. Fleming <Unknown>\n"
 "Language-Team: \n"
@@ -303,10 +303,26 @@ msgstr "Уклони одабрану датотеку(е) из списка"
 msgid "Device or file type the video should be converted to"
 msgstr "Уређај или врста датотеке у који ће се видео прекодирати"
 
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
 msgstr "Користи изворни директоријум"
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
+msgstr ""
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
@@ -482,6 +498,10 @@ msgstr "Учестаност узорковања:"
 msgid "X"
 msgstr "x"
 
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
 msgstr "Размера"
@@ -509,6 +529,10 @@ msgstr "Изнад"
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
 msgstr "Учестаност кадрова"
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -582,6 +606,14 @@ msgstr "Подешавања"
 msgid "Presets"
 msgstr "Поставке"
 
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
 msgstr "Изабери све"
@@ -619,6 +651,10 @@ msgstr "Помоћ"
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
 msgstr "Опције"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -685,6 +721,22 @@ msgstr ""
 "(<integer> x <integer>) Количина пиксела у сваком кадру. Код кодека који не "
 "подржавају „pixel aspect ratio (PAR)“ ово ће бити циљна величина кадра."
 
+#: tfrmpreferences.btnaftercommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnbeforecommand.caption
+#, fuzzy
+#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
@@ -730,6 +782,10 @@ msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
 msgstr "За мећународне знакове користи „CHCP“"
 
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr ""
+
 #: tfrmpreferences.cbrememberlastdir.caption
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
@@ -749,6 +805,14 @@ msgstr "„-e“ за ИксТерм, „-x“ за Гномов термина�
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
 msgstr "ВинФФ подешавања"
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
+msgstr ""
 
 #: tfrmpreferences.lbldefaultdir.caption
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
@@ -799,6 +863,10 @@ msgstr "Опште"
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
 msgstr "Линукс"
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
+msgstr ""
 
 #: tfrmpreferences.tabwindows.caption
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
@@ -900,9 +968,17 @@ msgstr "Поставка с ознаком: %s%s%s  већ постоји"
 msgid "Press Enter to Continue"
 msgstr "Наставите притиском на дугме ЕНТЕР"
 
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
 msgstr "Желите ли да препишете преко поставке?"
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
+msgstr ""
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -972,20 +1048,28 @@ msgstr "Неактиван"
 msgid "Normal"
 msgstr "Нормално"
 
-#~ msgid "Thanks"
-#~ msgstr "Zahvalnica"
-
-#~ msgid "Edit Presets"
-#~ msgstr "Edituj presete"
-
-#~ msgid "WinFF Preferences"
-#~ msgstr "WinFF opcije"
-
-#~ msgid "Use CHCP for international characters"
-#~ msgstr "Upotrebi CHCP za internacionalne karaktere"
+#~ msgid "Linux"
+#~ msgstr "Linux"
 
 #~ msgid "General"
 #~ msgstr "Generalne"
 
-#~ msgid "Linux"
-#~ msgstr "Linux"
+#~ msgid "Use CHCP for international characters"
+#~ msgstr "Upotrebi CHCP za internacionalne karaktere"
+
+#~ msgid "WinFF Preferences"
+#~ msgstr "WinFF opcije"
+
+#~ msgid "Edit Presets"
+#~ msgstr "Edituj presete"
+
+#~ msgid "Thanks"
+#~ msgstr "Zahvalnica"
+
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
