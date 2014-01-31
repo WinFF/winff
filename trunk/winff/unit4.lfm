@@ -342,7 +342,7 @@ object frmPreferences: TfrmPreferences
             Top = 0
             Width = 332
             Align = alTop
-            Caption = 'Command to execute at begining of script'
+            Caption = 'Command to execute at beginning of script'
             ParentColor = False
           end
         end
