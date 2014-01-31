@@ -1,5 +1,11 @@
-WinFF Copyright 2006 - 2013 Matthew Weatherford
+﻿WinFF Copyright 2006 - 2013 Matthew Weatherford
 http://www.winff.org
+
+v1.5.3
+---
+fixed isuue 10 & 120 with European and Cyrillic Chacters
+Fixed Apply changes Panel showing when not in multipreset mode
+added 720p and 1080p mpeg4 presets (about time;)
 
 v1.5.2
 ---
