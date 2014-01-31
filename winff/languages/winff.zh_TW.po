@@ -297,7 +297,9 @@ msgid "Play"
 msgstr "播放"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
 msgstr "以 ffplay 預覽所選取的來源檔（可以測試是否支援此檔案的編碼轉換）"
 
 #: tfrmmain.btnpreview.caption
@@ -330,7 +332,9 @@ msgid "2 pass"
 msgstr "高畫質輸出（較花時間）"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
 msgstr "使用兩輪編碼，可以在第一輪裡取得資訊以提高編碼品質"
 
 #: tfrmmain.cbxdeinterlace.caption
@@ -347,7 +351,9 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
 msgstr "最終視訊的目標位置（不可與來源檔在同一路徑）"
 
 #: tfrmmain.dlgopenfile.title
@@ -355,12 +361,20 @@ msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "匯出後的實際畫面比例。格式可以是比例式（如：4:3、16:9、2.35:1 等），也可以是比例值（如：1.33、1.77、2.35 等）"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"匯出後的實際畫面比例。格式可以是比例式（如：4:3、16:9、2.35:1 等），也可以是"
+"比例值（如：1.33、1.77、2.35 等）"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr "從 10 到取樣頻率的值（44100，48000 等）。允許 \"stretch\"/\"squeeze\" 音效串流。"
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"從 10 到取樣頻率的值（44100，48000 等）。允許 \"stretch\"/\"squeeze\" 音效串"
+"流。"
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -413,7 +427,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "轉換多久的影像後停止，格式為<時:分:秒>"
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr "音量大小，數值為整數，目前音量：256，一半音量：128，雙倍音量：512"
 
 #: tfrmmain.frmmain.caption
@@ -667,13 +682,21 @@ msgstr "每秒鐘播放的影格數（整數或實數）"
 
 #: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "每個影格的像素數（整數 x 整數）。對那些不支援像素比例（Pixel Aspect Ratio, PAR）的編解碼器，這個數字是最後的影像大小。"
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"每個影格的像素數（整數 x 整數）。對那些不支援像素比例（Pixel Aspect Ratio, "
+"PAR）的編解碼器，這個數字是最後的影像大小。"
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "每個影格的像素數（整數 x 整數）。對那些不支援像素比例（Pixel Aspect Ratio, PAR）的編解碼器，這個數字是最後的影像大小。"
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"每個影格的像素數（整數 x 整數）。對那些不支援像素比例（Pixel Aspect Ratio, "
+"PAR）的編解碼器，這個數字是最後的影像大小。"
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -872,7 +895,8 @@ msgstr "請至少選取一種編碼格式"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "編碼設定檔案：%s%s%s 已經存在"
 
 #: unit1.rspresethasnoext

@@ -295,8 +295,12 @@ msgid "Play"
 msgstr "Odtwórz"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Podgląd pliku źródłowego przy użyciu ffplay (można w ten sposób sprawdzić czy konwersja jest możliwa)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Podgląd pliku źródłowego przy użyciu ffplay (można w ten sposób sprawdzić "
+"czy konwersja jest możliwa)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -328,8 +332,12 @@ msgid "2 pass"
 msgstr "2 przejścia"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Podwójne przejście pozwala koderowi zebrać informacje w pierwszym przejściu co poprawia jakość"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"Podwójne przejście pozwala koderowi zebrać informacje w pierwszym przejściu "
+"co poprawia jakość"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -345,19 +353,28 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "Miejsce docelowe skonwertowanego pliku (wybierz inny katalog niż źródłowy)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr ""
+"Miejsce docelowe skonwertowanego pliku (wybierz inny katalog niż źródłowy)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "proporcje obrazu po konwersji (para liczb całkowitych przedzielonych dwukropkiem LUB liczba rzeczywista)"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"proporcje obrazu po konwersji (para liczb całkowitych przedzielonych "
+"dwukropkiem LUB liczba rzeczywista)"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
 msgstr ""
 
 #: tfrmmain.edtcropbottom.text
@@ -411,7 +428,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: tfrmmain.frmmain.caption
@@ -665,13 +683,21 @@ msgstr "(<real> or <integer>) klatek na sekundę"
 
 #: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "rozdzielczość obrazu (para liczb całkowitych) Dla kodeków bez pixel aspect ratio (PAR) są to proporcje obrazu wideo."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"rozdzielczość obrazu (para liczb całkowitych) Dla kodeków bez pixel aspect "
+"ratio (PAR) są to proporcje obrazu wideo."
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "rozdzielczość obrazu (para liczb całkowitych) Dla kodeków bez pixel aspect ratio (PAR) są to proporcje obrazu wideo."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"rozdzielczość obrazu (para liczb całkowitych) Dla kodeków bez pixel aspect "
+"ratio (PAR) są to proporcje obrazu wideo."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -869,7 +895,8 @@ msgid "Please select a preset"
 msgstr "Wybierz szablon"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr ""
 
 #: unit1.rspresethasnoext

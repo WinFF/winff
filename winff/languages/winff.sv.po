@@ -294,8 +294,12 @@ msgid "Play"
 msgstr "Spela upp"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Förhandsvisa den valda filen med ffplay (bra test för att se om konvertering är möjlig)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Förhandsvisa den valda filen med ffplay (bra test för att se om konvertering "
+"är möjlig)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -328,8 +332,12 @@ msgid "2 pass"
 msgstr "2 pass"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Genom att använda två steg tillåts videokodaren att samla information under det första steget, vilket ger högre kvalité"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"Genom att använda två steg tillåts videokodaren att samla information under "
+"det första steget, vilket ger högre kvalité"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -345,19 +353,29 @@ msgid "..."
 msgstr ""
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "Målkatalog för den konverterade videofilen (välj en annan katalog än källkatalogen)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr ""
+"Målkatalog för den konverterade videofilen (välj en annan katalog än "
+"källkatalogen)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<heltal>:<heltal> eller <decimaltal>) det fysiska höjd/bredd-förhållandet på målenhetens display"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<heltal>:<heltal> eller <decimaltal>) det fysiska höjd/bredd-förhållandet "
+"på målenhetens display"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
 msgstr ""
 
 #: tfrmmain.edtcropbottom.text
@@ -411,7 +429,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: tfrmmain.frmmain.caption
@@ -666,14 +685,24 @@ msgstr "(<decimaltal> eller <heltal>) antal bilder per sekund"
 #: tfrmmain.vidsizex.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<heltal> X <heltal>) antal pixlar med information. För codec:ar som inte stödjer pixel aspect ratio (PAR) är det här storleken på videon när den visas."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<heltal> X <heltal>) antal pixlar med information. För codec:ar som inte "
+"stödjer pixel aspect ratio (PAR) är det här storleken på videon när den "
+"visas."
 
 #: tfrmmain.vidsizey.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<heltal> X <heltal>) antal pixlar med information. För codec:ar som inte stödjer pixel aspect ratio (PAR) är det här storleken på videon när den visas."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<heltal> X <heltal>) antal pixlar med information. För codec:ar som inte "
+"stödjer pixel aspect ratio (PAR) är det här storleken på videon när den "
+"visas."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -869,7 +898,8 @@ msgid "Please select a preset"
 msgstr "Välj en förinställning att exportera"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr ""
 
 #: unit1.rspresethasnoext

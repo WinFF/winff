@@ -183,7 +183,8 @@ msgstr "Aurrezarpenaren etiketa"
 
 #: tfrmeditpresets.label4.caption
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr "Aurrezarpenaren komando lerroko parametroak (ez -i edo irteerako fitxategia)"
+msgstr ""
+"Aurrezarpenaren komando lerroko parametroak (ez -i edo irteerako fitxategia)"
 
 #: tfrmeditpresets.label5.caption
 msgid "Output File Extension (do not include the '.' )"
@@ -278,8 +279,12 @@ msgid "Play"
 msgstr "Erreproduzitu"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Aurreikusi hautatutako iturburu fitxategia ffplay-rekin (bihurketa posible den ikusteko test egokia da)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Aurreikusi hautatutako iturburu fitxategia ffplay-rekin (bihurketa posible "
+"den ikusteko test egokia da)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -311,8 +316,12 @@ msgid "2 pass"
 msgstr "2 pasaldi"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Bi pasaldi erabiltzen direnean kalitatea hobetzen da, kodetzaileak lehen pasaldian informazioa biltzeko aukera duelako"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"Bi pasaldi erabiltzen direnean kalitatea hobetzen da, kodetzaileak lehen "
+"pasaldian informazioa biltzeko aukera duelako"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -328,20 +337,32 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "Bukaerako bideoarentzako helburuko kokalekua (aukeratu iturburuko karpeta ez den bat)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr ""
+"Bukaerako bideoarentzako helburuko kokalekua (aukeratu iturburuko karpeta ez "
+"den bat)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<zenbaki osoa:zenbaki osoa> edo <zenbaki erreala>) helburuko pantailaren zabalera/altuera erlazioa (DAR)"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<zenbaki osoa:zenbaki osoa> edo <zenbaki erreala>) helburuko pantailaren "
+"zabalera/altuera erlazioa (DAR)"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr "(<zenbaki osoa>) 10etik hasi eta 44100 edo 48000 bezalako audio lagintze-maiztasunetarainokoa. Audio-korronteak \"luzatzea\"/\"estutzea\" onartzen du."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"(<zenbaki osoa>) 10etik hasi eta 44100 edo 48000 bezalako audio lagintze-"
+"maiztasunetarainokoa. Audio-korronteak \"luzatzea\"/\"estutzea\" onartzen du."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -394,8 +415,10 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Gelditu bideo kopuru hau bihurtu denean"
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr "(<integer>) 256 = Uneko bolumena, 128 = Bolumen erdia, 512 = Bolumen bikoitza"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+"(<integer>) 256 = Uneko bolumena, 128 = Bolumen erdia, 512 = Bolumen bikoitza"
 
 #: tfrmmain.frmmain.caption
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -605,7 +628,9 @@ msgstr "pnlMain"
 
 #: tfrmmain.presetbox.hint
 msgid "Specific settings to use for the chosen device or file type"
-msgstr "Aukeratutako gailu edo fitxategi motarentzat erabili beharreko ezarpen zehatzak"
+msgstr ""
+"Aukeratutako gailu edo fitxategi motarentzat erabili beharreko ezarpen "
+"zehatzak"
 
 #: tfrmmain.tabsheet2.caption
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
@@ -648,13 +673,23 @@ msgstr "(<zenbaki erreala> edo <zenbaki osoa>) fotogramak segundoko"
 
 #: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten kodetzaile/deskodetzaileen kasuan hau da amaierako fotograma tamaina."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. "
+"Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten kodetzaile/"
+"deskodetzaileen kasuan hau da amaierako fotograma tamaina."
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten kodetzaile/deskodetzaileen kasuan hau da amaierako fotograma tamaina."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<zenbaki osoa> X <zenbaki osoa>) Fotograma bakoitzeko pixel kopurua. "
+"Pixelen zabalera/altuera erlazioa (PAR) onartzen ez duten kodetzaile/"
+"deskodetzaileen kasuan hau da amaierako fotograma tamaina."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -853,7 +888,8 @@ msgstr "Mesedez, hautatu aurrezarpen bat"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "%s%s%s aurrezarpena dagoeneko existitzen da"
 
 #: unit1.rspresethasnoext

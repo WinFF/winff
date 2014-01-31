@@ -141,7 +141,8 @@ msgstr "O lume, numai litere și numere"
 
 #: tfrmeditpresets.edit2.hint
 msgid "Enter a more descriptive name for this preset"
-msgstr "Introduceți mai multe nume descriptive pentru această regulă de conversie"
+msgstr ""
+"Introduceți mai multe nume descriptive pentru această regulă de conversie"
 
 #: tfrmeditpresets.edit3.hint
 msgid "Please don't use -i or output file parameters"
@@ -183,7 +184,9 @@ msgstr "Etichetă regulă de conversie"
 
 #: tfrmeditpresets.label4.caption
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr "Parametrii liniei de comandă ai regulei de conversie (fără -i sau fișier de iesire)"
+msgstr ""
+"Parametrii liniei de comandă ai regulei de conversie (fără -i sau fișier de "
+"iesire)"
 
 #: tfrmeditpresets.label5.caption
 msgid "Output File Extension (do not include the '.' )"
@@ -230,7 +233,8 @@ msgstr "Alegeți regulile de conversie pentru exportare"
 #: tfrmmain.audbitrate.hint
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<integer>) tintă kiloocteți/secundă pe care fluxul ar trebui să o folosească"
+msgstr ""
+"(<integer>) tintă kiloocteți/secundă pe care fluxul ar trebui să o folosească"
 
 #: tfrmmain.audchannels.hint
 msgid "(<integer>) number of audio channels"
@@ -278,8 +282,12 @@ msgid "Play"
 msgstr "Redare"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Previzualizare fișier cu ffplay (test bun pentru a vedea dacă conversia este posibila)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Previzualizare fișier cu ffplay (test bun pentru a vedea dacă conversia este "
+"posibila)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -311,8 +319,12 @@ msgid "2 pass"
 msgstr "2 treceri"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Două treceri se permit codorului să adune informații in prima trecere pentru a consolida calitatea"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"Două treceri se permit codorului să adune informații in prima trecere pentru "
+"a consolida calitatea"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -328,20 +340,30 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "Locația țintă pentru videoul final(alegeți un dosar diferit de dosarul sursă)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr ""
+"Locația țintă pentru videoul final(alegeți un dosar diferit de dosarul sursă)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<integer:integer> or <real>) rația de aspect fizică (DAR) a ecranului țintă"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<integer:integer> or <real>) rația de aspect fizică (DAR) a ecranului țintă"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr "(<integer>)De la 10 la rate audio ca 44100, 48000. Permite \"întinderea\"/\"strânderea\" fluxului audio."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"(<integer>)De la 10 la rate audio ca 44100, 48000. Permite \"întinderea\"/"
+"\"strânderea\" fluxului audio."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -394,8 +416,10 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Se oprește la atingerea acestei lungimi"
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr "(<integer>) 256 = Volum curent, 128 = Volum la jumătate, 512 = Volum dublu"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+"(<integer>) 256 = Volum curent, 128 = Volum la jumătate, 512 = Volum dublu"
 
 #: tfrmmain.frmmain.caption
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -640,7 +664,8 @@ msgstr ""
 #: tfrmmain.vidbitrate.hint
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<integer>) țintă kiloocteți/secundă pe care fluxul ar trebui să o folosească"
+msgstr ""
+"(<integer>) țintă kiloocteți/secundă pe care fluxul ar trebui să o folosească"
 
 #: tfrmmain.vidframerate.hint
 msgid "(<real> or <integer>) number of frames per second"
@@ -648,13 +673,21 @@ msgstr "(<real> or <integer>) numărul de cadre pe secundă"
 
 #: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<integer> X <integer>) pixeli in fiecare cadru. Pentru codorurile care nu suportă rata de aspect (PAR), aceasta este mărimea finală a cadrului."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<integer> X <integer>) pixeli in fiecare cadru. Pentru codorurile care nu "
+"suportă rata de aspect (PAR), aceasta este mărimea finală a cadrului."
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<integer> X <integer>) pixeli in fiecare cadru. Pentru codorurile care nu suportă rata de aspect (PAR), aceasta este mărimea finală a cadrului."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<integer> X <integer>) pixeli in fiecare cadru. Pentru codorurile care nu "
+"suportă rata de aspect (PAR), aceasta este mărimea finală a cadrului."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -853,7 +886,8 @@ msgstr "Vă rog să selectați o regulă de conversie"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Regula de conversie:%s%s%s deja există"
 
 #: unit1.rspresethasnoext

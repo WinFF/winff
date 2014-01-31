@@ -292,8 +292,12 @@ msgid "Play"
 msgstr "Afspelen"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Bekijk de geselecteerde bestanden met ffplay (goede test om te zien of conversie mogelijk is)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Bekijk de geselecteerde bestanden met ffplay (goede test om te zien of "
+"conversie mogelijk is)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -313,7 +317,9 @@ msgstr "Verwijder geselecteerde bestand(en) uit de lijst"
 
 #: tfrmmain.categorybox.hint
 msgid "Device or file type the video should be converted to"
-msgstr "Naam van het apparaat of bestandstype waar de video naar geconverteerd moet worden"
+msgstr ""
+"Naam van het apparaat of bestandstype waar de video naar geconverteerd moet "
+"worden"
 
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
@@ -325,8 +331,12 @@ msgid "2 pass"
 msgstr "2 keer"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Door twee keer de video te verwerken kan de encoder in de eerste ronde informatie verzamelen voor hogere kwaliteit"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"Door twee keer de video te verwerken kan de encoder in de eerste ronde "
+"informatie verzamelen voor hogere kwaliteit"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -342,20 +352,32 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "De doelmap voor het eindresultaat (kies een andere map dan waar het origineel staat)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr ""
+"De doelmap voor het eindresultaat (kies een andere map dan waar het "
+"origineel staat)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<geheel getal:geheel getal> of <reëel getal>) de fysieke aspect ratio (DAR) van de beoogde scherm"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<geheel getal:geheel getal> of <reëel getal>) de fysieke aspect ratio (DAR) "
+"van de beoogde scherm"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr "(<geheel getal>) Van 10 tot maximaal de audio frequentie. B.v. 44100 of 48000. Laat het toe om de audio stroom te uit te rekken of te comprimeren."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"(<geheel getal>) Van 10 tot maximaal de audio frequentie. B.v. 44100 of "
+"48000. Laat het toe om de audio stroom te uit te rekken of te comprimeren."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -408,8 +430,10 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Tijdsduur van te converteren fragment"
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr "(<geheel getal>) 256 = huidige volume, 128 = half volume, 512 = dubbel volume"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+"(<geheel getal>) 256 = huidige volume, 128 = half volume, 512 = dubbel volume"
 
 #: tfrmmain.frmmain.caption
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -619,7 +643,9 @@ msgstr "pnlMain"
 
 #: tfrmmain.presetbox.hint
 msgid "Specific settings to use for the chosen device or file type"
-msgstr "Specifieke instelling die gebruikt wordt voor het gekozen apparaat of bestandstype"
+msgstr ""
+"Specifieke instelling die gebruikt wordt voor het gekozen apparaat of "
+"bestandstype"
 
 #: tfrmmain.tabsheet2.caption
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
@@ -662,13 +688,23 @@ msgstr "(<reëel getal> of <geheel getal>) het aantal beelden per second"
 
 #: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<geheel getal> X <geheel getal>) het aantal pixels met informatie. Voor codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van de video als het bekeken wordt."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<geheel getal> X <geheel getal>) het aantal pixels met informatie. Voor "
+"codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van "
+"de video als het bekeken wordt."
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<geheel getal> X <geheel getal>) het aantal pixels met informatie. Voor codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van de video als het bekeken wordt."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<geheel getal> X <geheel getal>) het aantal pixels met informatie. Voor "
+"codecs die geen pixel aspect ratio (PAR) ondersteunen is dit het formaat van "
+"de video als het bekeken wordt."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -864,12 +900,14 @@ msgid "Please select a preset"
 msgstr "Selecteer een voorinstellingbestand"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Voorinstelling: %s%s%s bestaat reeds. Wilt u deze vervangen?"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "De voorinstelling die geïmporteerd moet worden, heeft geen achtervoegsel."
+msgstr ""
+"De voorinstelling die geïmporteerd moet worden, heeft geen achtervoegsel."
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
