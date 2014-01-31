@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2012-10-05 21:26+0200\n"
+"POT-Creation-Date: 2012-10-20 12:28+0200\n"
 "PO-Revision-Date: 2013-01-06 18:47+0000\n"
 "Last-Translator: tuxmaniack <Unknown>\n"
 "Language-Team: Latvian <lv@li.org>\n"
@@ -278,8 +278,12 @@ msgid "Play"
 msgstr "Atskaņot"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Atskaņot izvēlēto avota failu ar ffplay (noderīgs, lai redzētu vai pārveidošana ir iespējama)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Atskaņot izvēlēto avota failu ar ffplay (noderīgs, lai redzētu vai "
+"pārveidošana ir iespējama)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -311,8 +315,12 @@ msgid "2 pass"
 msgstr "2 reizes"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Izmantojot 2 reizes, kodētājs saņems informāciju no pirmās reizes, lai uzlabotu kvalitāti"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"Izmantojot 2 reizes, kodētājs saņems informāciju no pirmās reizes, lai "
+"uzlabotu kvalitāti"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -328,7 +336,9 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
 msgstr "Pārveidotā faila atrašanās vieta (izvēlieties citu, ne avota mapi)"
 
 #: tfrmmain.dlgopenfile.title
@@ -336,12 +346,20 @@ msgid "Select Video Files..."
 msgstr "Izvēlieties video failus..."
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<vesels skaitlis:vesels skaitlis> vai <reāls skaitlis>) fizikāla izmēru attiecība (DAR) mērķa ekrānam"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<vesels skaitlis:vesels skaitlis> vai <reāls skaitlis>) fizikāla izmēru "
+"attiecība (DAR) mērķa ekrānam"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr "(<vesels skaitlis>) No 10 līdz audio izvērses ātrumam, kā 44100, 48000. Ļauj \"izstiept\"/\"saspiest\" skaņas plūsmu."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"(<vesels skaitlis>) No 10 līdz audio izvērses ātrumam, kā 44100, 48000. Ļauj "
+"\"izstiept\"/\"saspiest\" skaņas plūsmu."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -394,8 +412,11 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Apturēt tad, kad tik daudz no video ir pārveidots"
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr "(<vesels skaitlis>) 256 = pašreizējais skaļums, 128 = puse no skaļuma, 512 = divkāršots skaļums"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+"(<vesels skaitlis>) 256 = pašreizējais skaļums, 128 = puse no skaļuma, 512 = "
+"divkāršots skaļums"
 
 #: tfrmmain.frmmain.caption
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -648,13 +669,21 @@ msgstr "(<reāls skaitlis> vai <vesels skaitlis>) kadru skaits sekundē"
 
 #: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, "
+"kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<vesels skaitlis> X <vesels skaitlis>) Punktu skaits katrā kadrā. Kodekiem, "
+"kuri neatbalsta punkta attiecību (PAR), šis ir gala kadra izmērs."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -846,8 +875,10 @@ msgid "Please select a preset"
 msgstr "Lūdzu, izvēlieties regulējumu"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
-msgstr "Regulējums: %s%s%s jau pastāv. Vai vēlaties aizstāt pašreizējo regulējumu?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgstr ""
+"Regulējums: %s%s%s jau pastāv. Vai vēlaties aizstāt pašreizējo regulējumu?"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"

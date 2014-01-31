@@ -296,8 +296,12 @@ msgid "Play"
 msgstr "تشغيل"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "معاينة الملفات المختارة باستخدام ffplay (اختبار جيد لترى إمكانية التحويل من عدمها)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"معاينة الملفات المختارة باستخدام ffplay (اختبار جيد لترى إمكانية التحويل من "
+"عدمها)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -330,8 +334,11 @@ msgid "2 pass"
 msgstr "التمرير المزدوج"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "استخدام تمرير مزدوج يمكن المحول من استخلاص معلومات تحسن جودة الملف الناتج"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"استخدام تمرير مزدوج يمكن المحول من استخلاص معلومات تحسن جودة الملف الناتج"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -347,7 +354,9 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
 msgstr "مكان ملف الفيديو الناتج (اختر مجلدا مختلفا عن المجلد المصدر)"
 
 #: tfrmmain.dlgopenfile.title
@@ -355,11 +364,16 @@ msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<عدد صحيح:عدد صحيح> أو <عدد حقيقي>) تحديد نسبه عدد السطور إلي عرض الشاشة"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<عدد صحيح:عدد صحيح> أو <عدد حقيقي>) تحديد نسبه عدد السطور إلي عرض الشاشة"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
 msgstr ""
 
 #: tfrmmain.edtcropbottom.text
@@ -413,7 +427,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: tfrmmain.frmmain.caption
@@ -674,14 +689,22 @@ msgstr "(<حقيقي> أو <عدد صحيح>) عدد الإطارات لكل ث�
 #: tfrmmain.vidsizex.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<عدد صحيح> × <عدد صحيح>) مجموع بكسلات البيانات.صالح للترميزات التي لا تدعم مقياس عدد السطور (PAR) ذلك يحجم الفيديو عند عرضه"
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<عدد صحيح> × <عدد صحيح>) مجموع بكسلات البيانات.صالح للترميزات التي لا تدعم "
+"مقياس عدد السطور (PAR) ذلك يحجم الفيديو عند عرضه"
 
 #: tfrmmain.vidsizey.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<عدد صحيح> × <عدد صحيح>) مجموع بكسلات البيانات.صالح للترميزات التي لا تدعم مقياس عدد السطور (PAR) ذلك يحجم الفيديو عند عرضه"
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<عدد صحيح> × <عدد صحيح>) مجموع بكسلات البيانات.صالح للترميزات التي لا تدعم "
+"مقياس عدد السطور (PAR) ذلك يحجم الفيديو عند عرضه"
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -884,7 +907,8 @@ msgstr "رجاءً حدد ضبط مسبق"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "الملف %s%s%s موجود بالفعل"
 
 #: unit1.rspresethasnoext

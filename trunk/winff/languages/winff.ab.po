@@ -291,8 +291,12 @@ msgid "Play"
 msgstr "Abspielen"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Vorschau der gewälten Quelldatei mit ffplay (guter Test, ob Konvertierung möglich ist)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Vorschau der gewälten Quelldatei mit ffplay (guter Test, ob Konvertierung "
+"möglich ist)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -324,8 +328,12 @@ msgid "2 pass"
 msgstr "2-Pass"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "'2-Pass' erlaubt dem Encoder Informationen im ersten Durchgang für den zweiten zu sammeln, um die Qualität zu verbessern"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"'2-Pass' erlaubt dem Encoder Informationen im ersten Durchgang für den "
+"zweiten zu sammeln, um die Qualität zu verbessern"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -341,20 +349,32 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "Zielverzeichnis für das fertige Video (anderen Ordner wie Qualldatei auswählen)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr ""
+"Zielverzeichnis für das fertige Video (anderen Ordner wie Qualldatei "
+"auswählen)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<Ganzzahl : Ganzzahl> oder <Gleitkommazahl>) des physikalischen Seitenverhältnisses (DAR) des Zielgerätes"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<Ganzzahl : Ganzzahl> oder <Gleitkommazahl>) des physikalischen "
+"Seitenverhältnisses (DAR) des Zielgerätes"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr "(<Ganzzahl>) Von 10 bis zu Sample-Rate wie z.B. 44100, 48000. Ermöglicht \"strecken\"/\"quetschen\" der Audioquelle."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"(<Ganzzahl>) Von 10 bis zu Sample-Rate wie z.B. 44100, 48000. Ermöglicht "
+"\"strecken\"/\"quetschen\" der Audioquelle."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -407,8 +427,10 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Ender der Konvertierung"
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr "(<Ganzzahl>) 256 = Lautstärke, 128 = Halb so laut, 512 = Doppelt so laut"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+"(<Ganzzahl>) 256 = Lautstärke, 128 = Halb so laut, 512 = Doppelt so laut"
 
 #: tfrmmain.frmmain.caption
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -657,17 +679,28 @@ msgstr "(<Ganzzahl>) Audio-Bitrate der Zieldatei in kilobit/sec"
 
 #: tfrmmain.vidframerate.hint
 msgid "(<real> or <integer>) number of frames per second"
-msgstr "(<Gleitkommazahl> oder <Ganzzahl>) Frame-Rate in Einzelbilder pro Sekunde"
+msgstr ""
+"(<Gleitkommazahl> oder <Ganzzahl>) Frame-Rate in Einzelbilder pro Sekunde"
 
 #: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<Ganzzahl> X <Ganzzahl>) Anzahl der Pixel je Einzelbild. Für Codecs, die das Pixel-Seitenverhältnis (PAR) nicht unterstützen, ist das die finale Breite x Höhe."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<Ganzzahl> X <Ganzzahl>) Anzahl der Pixel je Einzelbild. Für Codecs, die "
+"das Pixel-Seitenverhältnis (PAR) nicht unterstützen, ist das die finale "
+"Breite x Höhe."
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<Ganzzahl> X <Ganzzahl>) Anzahl der Pixel je Einzelbild. Für Codecs, die das Pixel-Seitenverhältnis (PAR) nicht unterstützen, ist das die finale Breite x Höhe."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<Ganzzahl> X <Ganzzahl>) Anzahl der Pixel je Einzelbild. Für Codecs, die "
+"das Pixel-Seitenverhältnis (PAR) nicht unterstützen, ist das die finale "
+"Breite x Höhe."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -859,7 +892,8 @@ msgid "Please select a preset"
 msgstr "Bitte ein Profil auswählen"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr ""
 
 #: unit1.rspresethasnoext

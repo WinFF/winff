@@ -310,8 +310,12 @@ msgstr "Çal"
 
 #: tfrmmain.btnplay.hint
 #, fuzzy
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "ffplay ile kaynak dosyayı önizle (dönüşüm yapılabilirliği açısından iyi bir test)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"ffplay ile kaynak dosyayı önizle (dönüşüm yapılabilirliği açısından iyi bir "
+"test)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -347,8 +351,12 @@ msgstr "2 tur"
 
 #: tfrmmain.cbx2pass.hint
 #, fuzzy
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "İKi tur kullanmak, dönüştürücünün ilk turda bilgi toplayarak ikinci turda daha kaliteli sonuç üretmesini sağlar."
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"İKi tur kullanmak, dönüştürücünün ilk turda bilgi toplayarak ikinci turda "
+"daha kaliteli sonuç üretmesini sağlar."
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -366,8 +374,12 @@ msgstr ""
 
 #: tfrmmain.destfolder.hint
 #, fuzzy
-msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "videonun son halinin saklanacağı hedef klasör (kaynak klasörden faklı bir klasör seçin)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr ""
+"videonun son halinin saklanacağı hedef klasör (kaynak klasörden faklı bir "
+"klasör seçin)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
@@ -375,11 +387,17 @@ msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
 #, fuzzy
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<integer:integer> ya da <real>) olarak hedef oynatıcı için fiziksel görüntü oranı (DAR)"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<integer:integer> ya da <real>) olarak hedef oynatıcı için fiziksel görüntü "
+"oranı (DAR)"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
 msgstr ""
 
 #: tfrmmain.edtcropbottom.text
@@ -433,7 +451,8 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr ""
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
 
 #: tfrmmain.frmmain.caption
@@ -706,14 +725,24 @@ msgstr "(<real> ya da <integer>) saniyedeki çerçeve sayısı"
 #: tfrmmain.vidsizex.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<integer> X <integer>) bilgi piksellerinin miktarı. Piksel görüntü oranı (PAR) desteklemeyen kodeklerde bu değer video görüntülendiğindeki video boyutudur."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<integer> X <integer>) bilgi piksellerinin miktarı. Piksel görüntü oranı "
+"(PAR) desteklemeyen kodeklerde bu değer video görüntülendiğindeki video "
+"boyutudur."
 
 #: tfrmmain.vidsizey.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<integer> X <integer>) bilgi piksellerinin miktarı. Piksel görüntü oranı (PAR) desteklemeyen kodeklerde bu değer video görüntülendiğindeki video boyutudur."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<integer> X <integer>) bilgi piksellerinin miktarı. Piksel görüntü oranı "
+"(PAR) desteklemeyen kodeklerde bu değer video görüntülendiğindeki video "
+"boyutudur."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -920,7 +949,8 @@ msgstr "Lütfen bir ayar seçin"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Ayar dosyası zaten var: %s%s%s"
 
 #: unit1.rspresethasnoext

@@ -278,8 +278,12 @@ msgid "Play"
 msgstr "Main"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Pratonton fail sumber pilihan dengan ffplay (uji untuk lihat jika penukaran boleh dilakukan)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Pratonton fail sumber pilihan dengan ffplay (uji untuk lihat jika penukaran "
+"boleh dilakukan)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -311,8 +315,12 @@ msgid "2 pass"
 msgstr "2 laluan"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
-msgstr "Menggunakan dua laluan untuk membenarkan pengekod mengumpul maklumat dalam  jalanan pertama untuk tingkatkan kualiti"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr ""
+"Menggunakan dua laluan untuk membenarkan pengekod mengumpul maklumat dalam  "
+"jalanan pertama untuk tingkatkan kualiti"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -328,20 +336,32 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
-msgstr "Lokasi sasaran untuk video akhir (pilih folder berbeza berbanding folder sumber)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr ""
+"Lokasi sasaran untuk video akhir (pilih folder berbeza berbanding folder "
+"sumber)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<integer:integer> atau <real>) nisbah bidang fizikal (DAR) bagi paparan sasaran"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<integer:integer> atau <real>) nisbah bidang fizikal (DAR) bagi paparan "
+"sasaran"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr "(<integer>) Dari 10 sehingga kadar persampelan audio seperti 44100, 48000. Benarkan strim audio \"stretch\"/\"squeeze\"."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"(<integer>) Dari 10 sehingga kadar persampelan audio seperti 44100, 48000. "
+"Benarkan strim audio \"stretch\"/\"squeeze\"."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -394,8 +414,10 @@ msgid "<hh:mm:ss> - Stop after this much of video converted"
 msgstr "<hh:mm:ss> - Henti selep-as video ini ditukarkan"
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr "(<integer>) 256 = Volum Semasa, 128 = Separa Volum, 512 = Volum Berganda"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+"(<integer>) 256 = Volum Semasa, 128 = Separa Volum, 512 = Volum Berganda"
 
 #: tfrmmain.frmmain.caption
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -648,13 +670,23 @@ msgstr "(<real> atau <integer>) bilangan bingkai sesaat"
 
 #: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<integer> X <integer>) Bilangan piksel setiap bingkai. Untuk kodeks yang tidak menyokong nisbah bidang piksel (PAR) ini merupakan saiz bingkai terakhir."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<integer> X <integer>) Bilangan piksel setiap bingkai. Untuk kodeks yang "
+"tidak menyokong nisbah bidang piksel (PAR) ini merupakan saiz bingkai "
+"terakhir."
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr "(<integer> X <integer>) Bilangan piksel setiap bingkai. untuk kodeks yang tidak menyokong nisbah bidang piksel (PAR) ini merupakan saiz bingkai terakhir."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<integer> X <integer>) Bilangan piksel setiap bingkai. untuk kodeks yang "
+"tidak menyokong nisbah bidang piksel (PAR) ini merupakan saiz bingkai "
+"terakhir."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -850,7 +882,8 @@ msgid "Please select a preset"
 msgstr "Sila pilih praset"
 
 #: unit1.rspresetalreadyexist
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Praset: %s%s%s sudah wujud. Anda hendak ganti praset semasa?"
 
 #: unit1.rspresethasnoext

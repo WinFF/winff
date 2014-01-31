@@ -24,12 +24,12 @@ msgstr ""
 "PO-Revision-Date: 2013-11-30 00:22+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-11-04 20:40+0000\n"
 "X-Generator: Lokalize 1.4\n"
-"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: tfrmabout.btnok.caption
@@ -355,8 +355,8 @@ msgid ""
 "Target location for the final video (choose a different folder than the "
 "source folder)"
 msgstr ""
-"Local de destino do ficheiro convertido (escolha uma pasta diferente da pasta "
-"de origem)"
+"Local de destino do ficheiro convertido (escolha uma pasta diferente da "
+"pasta de origem)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
@@ -430,7 +430,8 @@ msgstr "<hh:mm:ss> - Parar após este nível de conversão"
 msgid ""
 "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
-"(<integer>) 256 = Volume actual, 128 = Reduzir a metade, 512 = Duplicar volume"
+"(<integer>) 256 = Volume actual, 128 = Reduzir a metade, 512 = Duplicar "
+"volume"
 
 #: tfrmmain.frmmain.caption
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -689,8 +690,8 @@ msgid ""
 "(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
 "don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
-"(<integer> X <integer>) Quantidade de pixeis por imagem. Os codificadores sem "
-"suporte às relações de pixel, este será o tamanho final do vídeo."
+"(<integer> X <integer>) Quantidade de pixeis por imagem. Os codificadores "
+"sem suporte às relações de pixel, este será o tamanho final do vídeo."
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
@@ -698,8 +699,8 @@ msgid ""
 "(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
 "don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
-"(<integer> X <integer>) Quantidade de pixeis por imagem. Os codificadores sem "
-"suporte às relações de pixel, este será o tamanho final do vídeo."
+"(<integer> X <integer>) Quantidade de pixeis por imagem. Os codificadores "
+"sem suporte às relações de pixel, este será o tamanho final do vídeo."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -987,5 +988,3 @@ msgstr "Inactivo"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Normal"
-
-

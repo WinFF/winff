@@ -276,8 +276,12 @@ msgid "Play"
 msgstr "Воспроизвести"
 
 #: tfrmmain.btnplay.hint
-msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
-msgstr "Воспроизвести выбранный файл с помощью ffplay (хороший способ проверить, возможно ли его преобразование)"
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"Воспроизвести выбранный файл с помощью ffplay (хороший способ проверить, "
+"возможно ли его преобразование)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -309,7 +313,9 @@ msgid "2 pass"
 msgstr "2 прохода"
 
 #: tfrmmain.cbx2pass.hint
-msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
 msgstr "Двухпроходное кодирование позволяет улучшить качество"
 
 #: tfrmmain.cbxdeinterlace.caption
@@ -326,7 +332,9 @@ msgid "..."
 msgstr "..."
 
 #: tfrmmain.destfolder.hint
-msgid "Target location for the final video (choose a different folder than the source folder)"
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
 msgstr "Каталог для готового видео (должен отличаться от исходного)"
 
 #: tfrmmain.dlgopenfile.title
@@ -334,12 +342,20 @@ msgid "Select Video Files..."
 msgstr ""
 
 #: tfrmmain.edtaspectratio.hint
-msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
-msgstr "(<целое:целое> или <вещественное>) физическое соотношение сторон дисплея (DAR)"
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr ""
+"(<целое:целое> или <вещественное>) физическое соотношение сторон дисплея "
+"(DAR)"
 
 #: tfrmmain.edtaudiosync.hint
-msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
-msgstr "(<целое>) От 10 до частоты дискретизации (44100, 48000). Позволяет \"растянуть\" или \"сжать\" аудио дорожку."
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"(<целое>) От 10 до частоты дискретизации (44100, 48000). Позволяет "
+"\"растянуть\" или \"сжать\" аудио дорожку."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -380,23 +396,29 @@ msgstr "<чч:мм:сс> - перемотать к этой позиции пе�
 #, fuzzy
 msgctxt "TFRMMAIN.EDTTTRHH.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr "<чч:мм:сс> - Остановиться после преобразования такого временного отрезка"
+msgstr ""
+"<чч:мм:сс> - Остановиться после преобразования такого временного отрезка"
 
 #: tfrmmain.edtttrmm.hint
 #, fuzzy
 msgctxt "TFRMMAIN.EDTTTRMM.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr "<чч:мм:сс> - Остановиться после преобразования такого временного отрезка"
+msgstr ""
+"<чч:мм:сс> - Остановиться после преобразования такого временного отрезка"
 
 #: tfrmmain.edtttrss.hint
 #, fuzzy
 msgctxt "TFRMMAIN.EDTTTRSS.HINT"
 msgid "<hh:mm:ss> - Stop after this much of video converted"
-msgstr "<чч:мм:сс> - Остановиться после преобразования такого временного отрезка"
+msgstr ""
+"<чч:мм:сс> - Остановиться после преобразования такого временного отрезка"
 
 #: tfrmmain.edtvolume.hint
-msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
-msgstr "(<целое>) 256 = Текущая громкость, 128 = Половина громкости, 512 = Двойная громкость"
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+"(<целое>) 256 = Текущая громкость, 128 = Половина громкости, 512 = Двойная "
+"громкость"
 
 #: tfrmmain.frmmain.caption
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
@@ -650,13 +672,17 @@ msgstr "(<вещественное> или <целое>) количество к
 #: tfrmmain.vidsizex.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<целое> X <целое>) размер изображения в пикселях"
 
 #: tfrmmain.vidsizey.hint
 #, fuzzy
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
-msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr "(<целое> X <целое>) размер изображения в пикселях"
 
 #: tfrmpreferences.btncancel.caption
@@ -857,7 +883,8 @@ msgstr "Выберите настройки преобразования"
 
 #: unit1.rspresetalreadyexist
 #, fuzzy
-msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr "Предустановка %s%s%s уже существует"
 
 #: unit1.rspresethasnoext
