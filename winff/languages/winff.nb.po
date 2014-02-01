@@ -14,14 +14,14 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2011
+# Ellen Rohaan <ellen.rohaan@esac.climbing.nl>, 2009-2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Winff 1.0\n"
+"Project-Id-Version: Winff 1.5.3\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2014-01-31 13:07+0100\n"
-"PO-Revision-Date: 2011-12-04 15:42+0000\n"
-"Last-Translator: Paul Gevers <Unknown>\n"
+"PO-Revision-Date: 2014-02-01 16:18+0100\n"
+"Last-Translator: Ellen Rohaan <ellen.rohaan@esac.climbing.nl>\n"
 "Language-Team: \n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -49,7 +49,7 @@ msgstr "Trademark Fabrice Belllard"
 
 #: tfrmabout.lblcopyright.caption
 msgid "Copyright %s ; Licence: GPL V3+"
-msgstr ""
+msgstr "Copyright %s ; Lisens: GPL versjon 3+"
 
 #: tfrmabout.lblffmeg.caption
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
@@ -83,7 +83,7 @@ msgstr "JNavas"
 
 #: tfrmabout.lblosipov.caption
 msgid "Alexey Osipov"
-msgstr ""
+msgstr "Alexey Osipov"
 
 #: tfrmabout.lblschwarz.caption
 msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
@@ -92,7 +92,7 @@ msgstr "Kyle Schwarz"
 
 #: tfrmabout.lblstoffberg.caption
 msgid "Ian Stoffberg"
-msgstr ""
+msgstr "Ian Stoffberg"
 
 #: tfrmabout.lblurlffmpeg.caption
 msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
@@ -106,11 +106,11 @@ msgstr "http://www.winff.org"
 
 #: tfrmabout.lblurlzeranoe.caption
 msgid "http://ffmpeg.zeranoe.com"
-msgstr ""
+msgstr "http://ffmpeg.zeranoe.com"
 
 #: tfrmabout.lblweatherford.caption
 msgid "Matthew Weatherford"
-msgstr ""
+msgstr "Matthew Weatherford"
 
 #: tfrmabout.lblwinbuild.caption
 msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
@@ -119,7 +119,7 @@ msgstr "FFmpeg Windows er bygget av"
 
 #: tfrmabout.lblwinff.caption
 msgid "WinFF %s"
-msgstr ""
+msgstr "WinFF %s"
 
 #: tfrmabout.tabffmpeg.caption
 msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
@@ -213,7 +213,7 @@ msgstr "Lagre"
 
 #: tfrmeditpresets.opendialog1.title
 msgid "Import a Preset"
-msgstr ""
+msgstr "Importer en forhåndsinnstilling"
 
 #: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
@@ -221,7 +221,7 @@ msgstr "pnlTop"
 
 #: tfrmeditpresets.savedialog1.title
 msgid "Export a Preset"
-msgstr ""
+msgstr "Eksporter en forhåndsinnstilling"
 
 #: tfrmexport.cancelbtn.caption
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
@@ -321,11 +321,11 @@ msgstr "Navnet til enheten eller filtypen som videoen skal konverteres til"
 
 #: tfrmmain.cbleft.caption
 msgid "90 Left"
-msgstr ""
+msgstr "90° venstre"
 
 #: tfrmmain.cbleftflip.caption
 msgid "90 Left + Vertical Flip"
-msgstr ""
+msgstr "90° venstre + opp ned"
 
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
@@ -334,11 +334,11 @@ msgstr "Bruk kildemappe"
 
 #: tfrmmain.cbright.caption
 msgid "90 Right"
-msgstr ""
+msgstr "90° høyre"
 
 #: tfrmmain.cbrightflip.caption
 msgid "90 Right + Vertical Flip"
-msgstr ""
+msgstr "90° høyre + opp ned"
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
@@ -373,7 +373,7 @@ msgstr "Målet til endelig video (velg en annen mappe enn kildemappe)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
-msgstr ""
+msgstr "Selekter video filer"
 
 #: tfrmmain.edtaspectratio.hint
 msgid ""
@@ -496,11 +496,11 @@ msgstr "Tilleggsparametrene til kommandolinje"
 
 #: tfrmmain.label5.caption
 msgid "1st Pass"
-msgstr ""
+msgstr "Første gjennomgang"
 
 #: tfrmmain.label6.caption
 msgid "2nd Pass"
-msgstr ""
+msgstr "Andre gjennomgang"
 
 #: tfrmmain.label7.caption
 msgid "Audio Bitrate"
@@ -516,7 +516,7 @@ msgstr "X"
 
 #: tfrmmain.lblapplytoall.caption
 msgid "Apply to All"
-msgstr ""
+msgstr "Gjelde for alle"
 
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
@@ -524,7 +524,7 @@ msgstr "Høyde-/breddeforhold"
 
 #: tfrmmain.lblcancelchanges.caption
 msgid "Cancel Changes"
-msgstr ""
+msgstr "Avbrutt endringer"
 
 #: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
@@ -548,15 +548,15 @@ msgstr "Rutefrekvensen"
 
 #: tfrmmain.lblrotate.caption
 msgid "Rotation"
-msgstr ""
+msgstr "Rotasjon"
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
-msgstr ""
+msgstr "Gjelde endringer"
 
 #: tfrmmain.lblsavechanges.hint
 msgid "Click here to apply settings changes to the file conversion above"
-msgstr ""
+msgstr "Klikk her til å bruke innstillingsendringer i filkonvertering ovenfor"
 
 #: tfrmmain.lblvideobitrate.caption
 msgid "Video Bitrate"
@@ -622,15 +622,15 @@ msgstr "Forhåndsinnstillinger"
 
 #: tfrmmain.mitrestoredefaults.caption
 msgid "Restore Defaults"
-msgstr ""
+msgstr "Gjennopprette standardinnstillinger"
 
 #: tfrmmain.mitsaveoptions.caption
 msgid "Save Options to Preset"
-msgstr ""
+msgstr "Lagre alternativer"
 
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
-msgstr ""
+msgstr "Selekter alle"
 
 #: tfrmmain.mitshowoptions.caption
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
@@ -668,7 +668,7 @@ msgstr "Alternativer"
 
 #: tfrmmain.openfolderbtn.caption
 msgid "Open"
-msgstr ""
+msgstr "Åpen"
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -736,7 +736,6 @@ msgstr ""
 "ikke støtte piksel (PAR) dette er videostørrelse når vist."
 
 #: tfrmpreferences.btnaftercommand.caption
-#, fuzzy
 #| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
@@ -744,7 +743,6 @@ msgid "..."
 msgstr "..."
 
 #: tfrmpreferences.btnbeforecommand.caption
-#, fuzzy
 #| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
 #| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
@@ -798,7 +796,7 @@ msgstr "Bruk CHCP for internasjonale karakter"
 
 #: tfrmpreferences.cbenablemulti.caption
 msgid "Enable Multiple Presets in File List "
-msgstr ""
+msgstr "Aktiver mangfoldige forhåndsinnstillinger i filliste"
 
 #: tfrmpreferences.cbrememberlastdir.caption
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
@@ -822,11 +820,11 @@ msgstr "WinFF brukervalg"
 
 #: tfrmpreferences.lblaftercommand.caption
 msgid "Command to execute at end of script"
-msgstr ""
+msgstr "Kommando til å utføre i slutten av skriptet"
 
 #: tfrmpreferences.lblbeforecommand.caption
 msgid "Command to execute at beginning of script"
-msgstr ""
+msgstr "Kommando til å utføre i begynnelse av skriptet"
 
 #: tfrmpreferences.lbldefaultdir.caption
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
@@ -834,16 +832,14 @@ msgid "Default Destination Directory:"
 msgstr "Standard målmappe:"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Sti til FFmpeg programfila:"
+msgstr "Bane til ffmpeg eller avconv programfila:"
 
 #: tfrmpreferences.lbllinffplaypath.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Sti til FFPlay programfila:"
+msgstr "Bane til ffplay eller avplay programfila:"
 
 #: tfrmpreferences.lbllinterminalexe.caption
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
@@ -861,16 +857,14 @@ msgid "Priority:"
 msgstr "Prioritet:"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Sti til FFmpeg programfila:"
+msgstr "Bane til ffmpeg eller avconv programfila:"
 
 #: tfrmpreferences.lblwinffplay.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Sti til FFPlay programfila:"
+msgstr "Bane til ffplay eller avplay programfila:"
 
 #: tfrmpreferences.tabgeneral.caption
 msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
@@ -884,7 +878,7 @@ msgstr "Linux"
 
 #: tfrmpreferences.tabscripting.caption
 msgid "Scripting"
-msgstr ""
+msgstr "Skripting"
 
 #: tfrmpreferences.tabwindows.caption
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
@@ -921,14 +915,12 @@ msgid "Converting"
 msgstr "Konverterer"
 
 #: unit1.rscouldnotfindffmpeg
-#, fuzzy
 msgid "Could not find either ffmpeg or avconv."
-msgstr "Fant ikke FFmpeg."
+msgstr "Fant ikke enten ffmpeg eller avconv."
 
 #: unit1.rscouldnotfindffplay
-#, fuzzy
 msgid "Could not find either ffplay or avplay."
-msgstr "Fant ikke FFPlay."
+msgstr "Fant ikke enten ffplay eller avplay."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
@@ -991,7 +983,7 @@ msgstr "Trykk Enter å fortsette"
 
 #: unit1.rsrddialogtitle
 msgid "Restore defaults"
-msgstr ""
+msgstr "Gjennopprett standardinnstillinger"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
@@ -1000,6 +992,7 @@ msgstr "Erstatt forhåndsinnstilling"
 #: unit1.rsrestoredefaults
 msgid "Restore Presets and Preferences to Defaults?"
 msgstr ""
+"Gjennopprett forhåndsinnstillinger og preferanser til standardinnstillinger?"
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -1051,11 +1044,11 @@ msgstr "Du må oppgi et navn."
 
 #: unit3.rslaunchpadcontrib
 msgid "Launchpad contributors"
-msgstr ""
+msgstr "Launchpad bidragsytere"
 
 #: unit3.rstranslators
 msgid "Translators:"
-msgstr ""
+msgstr "Oversettere"
 
 #: unit4.rspriorityhigh
 msgid "High"
@@ -1068,11 +1061,3 @@ msgstr "Tomgang"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Vanlig"
-
-#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
-#~ msgid "..."
-#~ msgstr "..."
