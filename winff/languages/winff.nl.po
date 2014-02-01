@@ -21,21 +21,21 @@ msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2014-01-31 13:07+0100\n"
-"PO-Revision-Date: 2014-01-31 17:40+0100\n"
+"PO-Revision-Date: 2014-02-01 08:27+0000\n"
 "Last-Translator: Paul Gevers <elbrus@debian.org>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-05-04 09:01+0000\n"
-"X-Generator: Launchpad (build 16598)\n"
+"X-Launchpad-Export-Date: 2014-02-01 08:32+0000\n"
+"X-Generator: Launchpad (build 16916)\n"
+"Language: nl\n"
 "X-Poedit-Language: Dutch\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
 msgid "OK"
-msgstr "Accepteren"
+msgstr "Ok"
 
 #: tfrmabout.frmabout.caption
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
@@ -49,7 +49,7 @@ msgstr "Trademark Fabrice Belllard"
 
 #: tfrmabout.lblcopyright.caption
 msgid "Copyright %s ; Licence: GPL V3+"
-msgstr "Copyright %s ; Licentie: GPL V3+"
+msgstr "Copyright %s ; Licentie: GPL  versie 3+"
 
 #: tfrmabout.lblffmeg.caption
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
@@ -124,7 +124,7 @@ msgstr "Winff %s"
 #: tfrmabout.tabffmpeg.caption
 msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
 msgid "FFmpeg"
-msgstr "FFmpeg"
+msgstr "ffmpeg"
 
 #: tfrmabout.tabthanks.caption
 msgctxt "TFRMABOUT.TABTHANKS.CAPTION"
@@ -134,7 +134,7 @@ msgstr "Met dank aan"
 #: tfrmabout.tabwinff.caption
 msgctxt "TFRMABOUT.TABWINFF.CAPTION"
 msgid "WinFF"
-msgstr "WinFF"
+msgstr "Winff"
 
 #: tfrmeditpresets.addpresetbtn.caption
 msgid "Add / Update"
@@ -163,7 +163,7 @@ msgstr "Gebruik geen -i of doelbestandnaam"
 
 #: tfrmeditpresets.edit4.hint
 msgid "Do not include a dot"
-msgstr "Gebruik géén punt"
+msgstr "Géén punt gebruiken"
 
 #: tfrmeditpresets.edit5.hint
 msgid "Choose a category to group this preset under"
@@ -244,7 +244,8 @@ msgstr "Selecteer voorinstelling om te exporteren:"
 #: tfrmmain.audbitrate.hint
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<geheel getal>) de doelsnelheid van de stroom in kilobits per seconde"
+msgstr ""
+"(<geheel getal>) de doelsnelheid van de stroom in kilobits per seconde"
 
 #: tfrmmain.audchannels.hint
 msgid "(<integer>) number of audio channels"
@@ -499,11 +500,11 @@ msgstr "Extra parameters voor de commandoregel"
 
 #: tfrmmain.label5.caption
 msgid "1st Pass"
-msgstr "eerste keer"
+msgstr "Eerste ronde"
 
 #: tfrmmain.label6.caption
 msgid "2nd Pass"
-msgstr "tweede keer"
+msgstr "Tweede ronde"
 
 #: tfrmmain.label7.caption
 msgid "Audio Bitrate"
@@ -527,7 +528,7 @@ msgstr "Aspectratio"
 
 #: tfrmmain.lblcancelchanges.caption
 msgid "Cancel Changes"
-msgstr "Annuleer wijzigingen"
+msgstr "Wijzigingen annuleren"
 
 #: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
@@ -555,12 +556,12 @@ msgstr "Rotatie"
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
-msgstr "Pas wijzigingen toe"
+msgstr "Wijzigingen toepassen"
 
 #: tfrmmain.lblsavechanges.hint
 msgid "Click here to apply settings changes to the file conversion above"
 msgstr ""
-"Voer de instellingswijzigingen door voor de hierboven aangegeven bestanden"
+"Klik hier om de instellingen toe te passen op de geselecteerde bestanden"
 
 #: tfrmmain.lblvideobitrate.caption
 msgid "Video Bitrate"
@@ -717,7 +718,8 @@ msgstr "Beeld"
 #: tfrmmain.vidbitrate.hint
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<geheel getal>) de doelsnelheid van de stroom in kilobits per seconde"
+msgstr ""
+"(<geheel getal>) de doelsnelheid van de stroom in kilobits per seconde"
 
 #: tfrmmain.vidframerate.hint
 msgid "(<real> or <integer>) number of frames per second"
@@ -838,12 +840,12 @@ msgstr "Standaard doelmap:"
 #: tfrmpreferences.lbllinffmpegpath.caption
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Pad naar uitvoerbaar ffmpeg of avconv bestand:"
+msgstr "Pad naar het ffmpeg of avconv programma:"
 
 #: tfrmpreferences.lbllinffplaypath.caption
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Pad naar uitvoerbaar ffplay of avplay bestand:"
+msgstr "Pad naar het ffplay of avplay programma:"
 
 #: tfrmpreferences.lbllinterminalexe.caption
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
@@ -863,12 +865,12 @@ msgstr "Prioriteit:"
 #: tfrmpreferences.lblwinffmpegpath.caption
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Pad naar uitvoerbaar ffmpeg of avconv bestand:"
+msgstr "Pad naar het ffmpeg of avconv programma:"
 
 #: tfrmpreferences.lblwinffplay.caption
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Pad naar uitvoerbaar ffplay of avplay bestand:"
+msgstr "Pad naar het ffplay of avplay programma:"
 
 #: tfrmpreferences.tabgeneral.caption
 msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
@@ -1046,7 +1048,7 @@ msgstr "Voer een naam in."
 
 #: unit3.rslaunchpadcontrib
 msgid "Launchpad contributors"
-msgstr "Launchpad bijdragers"
+msgstr "Launchpad medewerkers"
 
 #: unit3.rstranslators
 msgid "Translators:"
