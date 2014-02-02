@@ -53,26 +53,26 @@ object frmAbout: TfrmAbout
   OnCreate = FormCreate
   ParentFont = True
   Position = poMainFormCenter
-  LCLVersion = '1.0.8.0'
+  LCLVersion = '1.0.14.0'
   object pnlBottom: TPanel
     Left = 0
-    Height = 26
-    Top = 274
+    Height = 30
+    Top = 270
     Width = 384
     Align = alBottom
     AutoSize = True
     BevelOuter = bvNone
-    ClientHeight = 26
+    ClientHeight = 30
     ClientWidth = 384
     TabOrder = 0
     object btnOk: TBitBtn
       AnchorSideLeft.Control = pnlBottom
       AnchorSideLeft.Side = asrCenter
       AnchorSideTop.Control = pnlBottom
-      Left = 162
-      Height = 26
+      Left = 160
+      Height = 30
       Top = 0
-      Width = 61
+      Width = 65
       AutoSize = True
       Caption = 'OK'
       Default = True
@@ -84,7 +84,7 @@ object frmAbout: TfrmAbout
   end
   object PageControl1: TPageControl
     Left = 0
-    Height = 274
+    Height = 270
     Top = 0
     Width = 384
     ActivePage = tabWinff
@@ -93,7 +93,7 @@ object frmAbout: TfrmAbout
     TabOrder = 1
     object tabWinff: TTabSheet
       Caption = 'WinFF'
-      ClientHeight = 246
+      ClientHeight = 237
       ClientWidth = 376
       object sbWintab: TScrollBox
         AnchorSideLeft.Control = tabWinff
@@ -102,36 +102,36 @@ object frmAbout: TfrmAbout
         AnchorSideBottom.Control = tabWinff
         AnchorSideBottom.Side = asrBottom
         Left = 0
-        Height = 242
+        Height = 233
         Top = 0
         Width = 376
         HorzScrollBar.Page = 376
-        VertScrollBar.Page = 242
+        VertScrollBar.Page = 233
         Align = alTop
         Anchors = [akTop, akLeft, akRight, akBottom]
         AutoSize = True
         BorderSpacing.Bottom = 4
         BorderStyle = bsNone
-        ClientHeight = 242
+        ClientHeight = 233
         ClientWidth = 376
         TabOrder = 0
         object lblCopyright: TLabel
           Left = 4
-          Height = 16
+          Height = 21
           Top = 61
           Width = 372
           Align = alTop
           BorderSpacing.Left = 4
           BorderSpacing.Top = 5
           BorderSpacing.Bottom = 15
-          Caption = 'Copyright %s ; Licence: GPL V3+'
+          Caption = 'Copyright 2014 ; Licence: GPL V3+'
           ParentColor = False
         end
         object lblWeatherford: TLabel
           Cursor = crHandPoint
           Left = 4
-          Height = 16
-          Top = 92
+          Height = 21
+          Top = 97
           Width = 372
           Align = alTop
           BorderSpacing.Left = 4
@@ -144,8 +144,8 @@ object frmAbout: TfrmAbout
         object lblGevers: TLabel
           Cursor = crHandPoint
           Left = 4
-          Height = 16
-          Top = 124
+          Height = 21
+          Top = 139
           Width = 372
           Align = alTop
           BorderSpacing.Left = 4
@@ -172,13 +172,13 @@ object frmAbout: TfrmAbout
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = pnlLogo
             Left = 56
-            Height = 16
+            Height = 21
             Top = 4
-            Width = 52
+            Width = 75
             BorderSpacing.Left = 4
             BorderSpacing.Top = 4
             BorderSpacing.Bottom = 4
-            Caption = 'WinFF %s'
+            Caption = 'WinFF 1.5.3'
             ParentColor = False
           end
           object lblURLWinffOrg: TLabel
@@ -188,9 +188,9 @@ object frmAbout: TfrmAbout
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
             Left = 57
-            Height = 16
-            Top = 25
-            Width = 114
+            Height = 21
+            Top = 30
+            Width = 138
             BorderSpacing.Around = 5
             Caption = 'http://www.winff.org'
             Font.Color = clBlue
@@ -290,7 +290,7 @@ object frmAbout: TfrmAbout
         object pnlPresets: TPanel
           Left = 0
           Height = 0
-          Top = 155
+          Top = 175
           Width = 376
           Align = alTop
           Alignment = taLeftJustify
@@ -303,8 +303,8 @@ object frmAbout: TfrmAbout
         object lblStoffberg: TLabel
           Cursor = crHandPoint
           Left = 4
-          Height = 16
-          Top = 108
+          Height = 21
+          Top = 118
           Width = 372
           Align = alTop
           BorderSpacing.Left = 4
