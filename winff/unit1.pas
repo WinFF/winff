@@ -29,7 +29,7 @@ uses
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
   {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, Spin, UTF8Process,
-  PoTranslator, types,FileUtil;
+  PoTranslator, types, FileUtil, regexpr;
 
 type
 
@@ -2491,34 +2491,42 @@ begin
 end;
 
    // replace a parameter in the video filter list of the commandline
-function TfrmMain.replaceVfParam(commandline:string; param:string; replacement:string):string;
+function TfrmMain.replaceVfParam(CommandLine:string; param:string; replacement:string):string;
 var
-startPos, endPos, startSub, endSub, strlen: integer ;
-orig,paramString: string ;
+  RegEx: TRegExpr ;
 
-  begin
-   startpos := Pos('-vf ', commandline) + 4;
-   if startpos <> 4 then
-     begin
-       strlen := Length(commandline) ;
-       endpos := startpos + Pos(' -', Copy(commandline, startpos, strlen)) - 2 ; // strlen as count is exaggerated, but works
-       if endpos = startpos - 2 then endpos :=  strlen ;
-       paramString := Copy(commandline, startpos, endpos - startpos + 1) ;
-       startSub := Pos(param + '=', paramString) ;
-       if startSub <> 0 then
-         begin
-           endSub := startSub + Pos(',', Copy(paramString, startSub, strlen)) - 2 ; // strlen as count is exaggerated, but works
-           if endSub = startSub - 2 then endSub :=  Length(paramString) ;
-           commandline := Copy(commandline, 1, startpos - 1 + startSub - 1) + replacement + Copy(commandline, startpos + endSub, strlen) ;
-         end
-       else
-         commandline := Copy(commandline, 1, endpos) + ',' + replacement + Copy(commandline, endpos + 1, strlen) ;
-     end
-   else
-       commandline += ' -vf ' + replacement;
-   result := commandline;
+begin
+  RegEx := TRegExpr.Create ;
+  RegEx.Expression := '^(.*)-vf(.*)$' ;
+  CommandLine := RegEx.Replace(CommandLine, '$1-filter:v$2', True) ; // Convert short to long style
+  RegEx.Expression := '-filter:v ' ;
+  if RegEx.exec(CommandLine) then // We found an existing filter in CommandLine
+    begin
+      RegEx.Expression := '^(.*-filter:v.*)' + param + '=[^ ^,]+(.*)$' ; // Split before current parameter
+      if RegEx.exec(CommandLine) then // We already have this parameter
+        CommandLine := RegEx.Replace(CommandLine, '$1' + replacement + '$2', True)
+      else
+        begin
+          RegEx.Expression := '^(.*-filter:v[^-]+)( (-|").*)$' ; // Split after last filter parameter
+          CommandLine := RegEx.Replace(CommandLine, '$1,' + replacement + '$2', True) ;
+        end;
+    end
+  else // No existing filter option yet
+    if length(replacement) > 0 then
+      CommandLine += ' -filter:v ' + replacement ;
 
-  end;
+  if length(replacement) = 0 then // make sure we remove any trailing comma or full filter option if this was the last filter
+    begin
+      RegEx.Expression := '^(.*)( -filter:v[^-]+),( -| ")(.*)$' ; // '-' starts a new option, while '"' starts the output file name
+      if RegEx.exec(CommandLine) then
+        CommandLine := RegEx.Replace(CommandLine, '$1$2$3$4', True) ;
+      RegEx.Expression := '^(.*) -filter:v (-|")(.*)$' ; // '-' starts a new option, while '"' starts the output file name
+      if RegEx.exec(CommandLine) then
+        CommandLine := RegEx.Replace(CommandLine, '$1$2$3', True) ;
+    end;
+
+  result := CommandLine;
+end;
 
 procedure TfrmMain.TabControlChange(Sender: TObject);
 begin
