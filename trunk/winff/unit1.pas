@@ -2981,7 +2981,9 @@ begin
           end
        else if cbx2Pass.Checked = true then
           begin
-           command := ffmpegfilename + usethreads + precommand + ' -i "' + filename + '" ' + commandline + ' -an'
+           // See issue 26 for the rational for -f null
+           command := ffmpegfilename + usethreads + precommand + ' -i "' + filename + '" ' +
+             replaceParam(commandline, '-f', '-f null') + ' -an'
                  + ' -passlogfile "' + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
            scr[vIndex].FirstPass := command;
            command := ffmpegfilename + usethreads + precommand + ' -y -i "' + filename + '" ' + commandline +  ' -passlogfile "'
