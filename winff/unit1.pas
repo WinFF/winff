@@ -2720,7 +2720,7 @@ cb,ct,cl,cr:integer;
 pn, params, cropline, precommand, command, passlogfile:string;
 ignorepreview:boolean;
 outputfilename, ffmpegfilename, extension, basename,filename,commandline : string;
-deinterlace, numthreads, nullfile, usethreads : string;
+numthreads, nullfile, usethreads : string;
 begin
 
    {$IFDEF WINDOWS}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
@@ -2803,10 +2803,6 @@ begin
        end
          else usethreads:='';
 
-       if cbxDeinterlace.Checked then deinterlace := ' -deinterlace '
-       else deinterlace:='';
-
-
 
        // replace preset params if mnuOptions specified
        commandline := params;
@@ -2821,6 +2817,12 @@ begin
            commandline:=replaceparam(commandline,'-r','-r:v ' + vidframerate.Text); // Old style
            commandline:=replaceparam(commandline,'-r:v','-r:v ' + vidframerate.Text); // New style
          end;
+
+       if cbxDeinterlace.Checked then
+          CommandLine := replaceVfParam(CommandLine, 'yadif', 'yadif')
+       else
+          CommandLine := replaceVfParam(CommandLine, 'yadif', '') ;
+
 
     // Inserting Crop Routine here as per Issue 77 on code.google.com
     // Changed by Ian V1.3
@@ -2971,7 +2973,7 @@ begin
 
        if cbx2Pass.Checked = false then
           begin
-           command := ffmpegfilename + usethreads + precommand + ' -y -i "' + filename + '" ' + deinterlace + commandline + ' "' +
+           command := ffmpegfilename + usethreads + precommand + ' -y -i "' + filename + '" ' + commandline + ' "' +
                 outputfilename + '"';
 
            scr[vIndex].FirstPass := command;
@@ -2979,10 +2981,10 @@ begin
           end
        else if cbx2Pass.Checked = true then
           begin
-           command := ffmpegfilename + usethreads + precommand + ' -i "' + filename + '" ' + deinterlace + commandline + ' -an'
+           command := ffmpegfilename + usethreads + precommand + ' -i "' + filename + '" ' + commandline + ' -an'
                  + ' -passlogfile "' + passlogfile + '"' + ' -pass 1 ' +  ' -y ' + nullfile ;
            scr[vIndex].FirstPass := command;
-           command := ffmpegfilename + usethreads + precommand + ' -y -i "' + filename + '" ' + deinterlace + commandline +  ' -passlogfile "'
+           command := ffmpegfilename + usethreads + precommand + ' -y -i "' + filename + '" ' + commandline +  ' -passlogfile "'
                  + passlogfile + '"' + ' -pass 2 ' + ' "' + outputfilename + '"';
            scr[vIndex].SecondPass := command;
           end;
