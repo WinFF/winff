@@ -124,7 +124,7 @@ object frmAbout: TfrmAbout
           BorderSpacing.Left = 4
           BorderSpacing.Top = 5
           BorderSpacing.Bottom = 15
-          Caption = 'Copyright 2014 ; Licence: GPL V3+'
+          Caption = 'Copyright %s ; Licence: GPL V3+'
           ParentColor = False
         end
         object lblWeatherford: TLabel
@@ -178,7 +178,7 @@ object frmAbout: TfrmAbout
             BorderSpacing.Left = 4
             BorderSpacing.Top = 4
             BorderSpacing.Bottom = 4
-            Caption = 'WinFF 1.5.3'
+            Caption = 'WinFF %s'
             ParentColor = False
           end
           object lblURLWinffOrg: TLabel
