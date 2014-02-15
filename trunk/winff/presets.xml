@@ -140,19 +140,19 @@
   </MPEG4VideoSHQ>
   <N810FS>
     <label>Nokia N810 mplayer 4:3</label>
-    <params>-r 29.97 -vcodec libxvid -vtag XVID -vf scale=400:240 -aspect 4:3 -maxrate 1200k -b:v 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -b:a 160k -ac 2 -async 1</params>
+    <params>-r 29.97 -vcodec libxvid -vtag XVID -vf scale=400:240 -aspect 4:3 -maxrate 1200k -b:v 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -b:a 160k -ac 2 -filter:a asyncts=first_pts=0</params>
     <extension>avi</extension>
     <category>Nokia</category>
   </N810FS>
   <N810WS>
     <label>Nokia N810 mplayer 16:9</label>
-    <params>-r 29.97 -vcodec libxvid -vtag XVID -vf scale=400:240 -aspect 16:9 -maxrate 1200k -b:v 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -b:a 160k -ac 2 -async 1</params>
+    <params>-r 29.97 -vcodec libxvid -vtag XVID -vf scale=400:240 -aspect 16:9 -maxrate 1200k -b:v 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -b:a 160k -ac 2 -filter:a asyncts=first_pts=0</params>
     <extension>avi</extension>
     <category>Nokia</category>
   </N810WS>
   <N810WS2>
     <label>Nokia N810 mplayer CinemaScope 24:10</label>
-    <params>-r 29.97 -vcodec libxvid -vtag XVID -vf scale=400:240 -aspect 24:10 -maxrate 1200k -b:v 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -b:a 160k -ac 2 -async 1</params>
+    <params>-r 29.97 -vcodec libxvid -vtag XVID -vf scale=400:240 -aspect 24:10 -maxrate 1200k -b:v 1200k -qmin 3 -qmax 5 -bufsize 4096 -mbd 2 -bf 2 -trellis 1 -flags +aic -cmp 2 -subcmp 2 -g 300 -acodec libmp3lame -ar 44100 -b:a 160k -ac 2 -filter:a asyncts=first_pts=0</params>
     <extension>avi</extension>
     <category>Nokia</category>
   </N810WS2>
@@ -308,13 +308,13 @@
   </android2>
   <android3>
     <label>Google Android video. VHQ 16:9 widescreen</label>
-    <params>-vf scale=480:272 -vcodec libx264 -preset medium -b:v 500k -threads 0 -acodec libvo_aacenc -b:a 96k</params>
+    <params>-vf scale=480:272 -vcodec libx264 -preset medium -b:v 500k -threads 0 -acodec libvo_aacenc -ar 44100 -b:a 96k</params>
     <extension>mp4</extension>
     <category>Google Android</category>
   </android3>
   <android4>
     <label>Google Android video. VHQ 4:3 fullscreen</label>
-    <params>-vf scale=432:320 -vcodec libx264 -preset medium -b:v 500k -threads 0 -acodec libvo_aacenc -b:a 96k</params>
+    <params>-vf scale=432:320 -vcodec libx264 -preset medium -b:v 500k -threads 0 -acodec libvo_aacenc -ar 44100 -b:a 96k</params>
     <extension>mp4</extension>
     <category>Google Android</category>
   </android4>
@@ -476,7 +476,7 @@
   </lgchocolate>
   <lgdare>
     <label>LG Dare</label>
-    <params>-f mp4 -vf scale=320:240 -aspect 320:240 -r 11.988 -b:v 160k -b:a 56k -vcodec libxvid -acodec libvo_aacenc</params>
+    <params>-f mp4 -vf scale=320:240 -aspect 320:240 -r 11.988 -b:v 160k -b:a 56k -vcodec libxvid -acodec libvo_aacenc -ar 22050</params>
     <extension>mp4</extension>
     <category>LG</category>
   </lgdare>
