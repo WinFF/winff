@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2014-01-31 13:07+0100\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
 "PO-Revision-Date: 2013-11-05 07:22+0000\n"
 "Last-Translator: Jay A. Fleming <Unknown>\n"
 "Language-Team: \n"
@@ -992,6 +992,14 @@ msgstr "Изаберите датотеку са поставкама"
 msgid "Select Video Files"
 msgstr "Изаберите видео датотеке"
 
+#: unit1.rsterminaltestfailed
+msgid ""
+"It seems that starting the terminal failed. The most likely cause is that "
+"the setting for terminal options in the linux preferences is incorrect. You "
+"can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
+"Try changing \"-e\" to \"-x\" or vice versa."
+msgstr ""
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Поставка садржи недозвољене знакове"
@@ -1048,28 +1056,28 @@ msgstr "Неактиван"
 msgid "Normal"
 msgstr "Нормално"
 
-#~ msgid "Linux"
-#~ msgstr "Linux"
-
-#~ msgid "General"
-#~ msgstr "Generalne"
-
-#~ msgid "Use CHCP for international characters"
-#~ msgstr "Upotrebi CHCP za internacionalne karaktere"
-
-#~ msgid "WinFF Preferences"
-#~ msgstr "WinFF opcije"
-
-#~ msgid "Edit Presets"
-#~ msgstr "Edituj presete"
-
-#~ msgid "Thanks"
-#~ msgstr "Zahvalnica"
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
 
 #~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
 #~ msgid "..."
 #~ msgstr "..."
 
-#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
-#~ msgid "..."
-#~ msgstr "..."
+#~ msgid "Thanks"
+#~ msgstr "Zahvalnica"
+
+#~ msgid "Edit Presets"
+#~ msgstr "Edituj presete"
+
+#~ msgid "WinFF Preferences"
+#~ msgstr "WinFF opcije"
+
+#~ msgid "Use CHCP for international characters"
+#~ msgstr "Upotrebi CHCP za internacionalne karaktere"
+
+#~ msgid "General"
+#~ msgstr "Generalne"
+
+#~ msgid "Linux"
+#~ msgstr "Linux"

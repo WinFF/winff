@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2014-01-31 13:07+0100\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
 "PO-Revision-Date: 2013-10-15 06:39+0000\n"
 "Last-Translator: Petr Šimáček <petr.simacek@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -992,6 +992,14 @@ msgstr "Vyberte soubor přednastavení"
 msgid "Select Video Files"
 msgstr "Vybrat video soubory"
 
+#: unit1.rsterminaltestfailed
+msgid ""
+"It seems that starting the terminal failed. The most likely cause is that "
+"the setting for terminal options in the linux preferences is incorrect. You "
+"can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
+"Try changing \"-e\" to \"-x\" or vice versa."
+msgstr ""
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "Přednastavení obsahuje nepovolené znaky"
@@ -1048,121 +1056,56 @@ msgstr "Nízká"
 msgid "Normal"
 msgstr "Normální"
 
-#~ msgid "Form1"
-#~ msgstr "Form1"
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
 
-#~ msgid "http://hawkeye.arrozcru.org/"
-#~ msgstr "http://hawkeye.arrozcru.org/"
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgid "..."
+#~ msgstr "..."
 
-#~ msgctxt "TFRMMAIN.CAPTION"
+#~ msgid "Thanks"
+#~ msgstr "Poděkování"
+
+#~ msgctxt "TFRMABOUT.PAGE1.CAPTION"
 #~ msgid "WinFF"
 #~ msgstr "WinFF"
 
-#~ msgid "Kyle Schwarz"
-#~ msgstr "Kyle Schwarz"
+#~ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "Budiž"
 
-#~ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
-#~ msgid "Video"
-#~ msgstr "Video"
+#~ msgid "http://ffmpeg.org"
+#~ msgstr "http://ffmpeg.org"
 
-#~ msgid "Default Destination Directory:"
-#~ msgstr "Výchozí adresář pro ukládání"
+#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+#~ msgstr "Matthew Weatherford, Ian Stoffberg a Alexey Osipov"
 
-#~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
-#~ msgid "Path to FFplay Executable:"
-#~ msgstr "Cesta pro spuštění FFplay"
+#~ msgid "http://www.winff.org"
+#~ msgstr "http://www.winff.org"
 
-#~ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
-#~ msgid "Path to FFmpeg Executable:"
-#~ msgstr "Cesta pro spuštění FFmpeg"
+#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 
-#~ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
-#~ msgid "Path to FFplay Executable:"
-#~ msgstr "Cesta pro spuštění FFplay"
+#~ msgctxt "TFRMABOUT.LABEL5.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
 
-#~ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
-#~ msgid "Path to FFmpeg Executable:"
-#~ msgstr "Cesta pro spuštění FFmpeg"
+#~ msgid "WinFF 1.3.2"
+#~ msgstr "WinFF 1.3.2"
 
-#~ msgid "Use CHCP for international characters"
-#~ msgstr "Použít CHCP pro mezinárodní znaky"
+#~ msgid "Gmaq"
+#~ msgstr "Gmaq"
 
-#~ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
-#~ msgid "Apply Preset"
-#~ msgstr "Použít přednastavení"
+#~ msgid "JNavas"
+#~ msgstr "JNavas"
 
-#~ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-#~ msgid "Apply Output Folder"
-#~ msgstr "Použít výstupní filtr"
+#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "Budiž"
 
-#~ msgid "Use Several Encoding Threads:"
-#~ msgstr "Pracovat ve více vláknech"
-
-#~ msgid "High Quality Presets From"
-#~ msgstr "Přednastavení pro HQ:"
-
-#~ msgid "WinFF Preferences"
-#~ msgstr "Nastavení WinFF"
-
-#~ msgid "Edit Presets"
-#~ msgstr "Upravit přednastavení"
-
-#~ msgid "FFmpeg Windows Builds by"
-#~ msgstr "FFmpeg pro Windows sestavil"
-
-#~ msgid "Debian/Ubuntu Packaging by Paul Gevers"
-#~ msgstr "Balíčky pro Debian/Ubuntu: Paul Gevers"
-
-#~ msgid "Terminal Options:"
-#~ msgstr "Parametry terminálu:"
-
-#~ msgid "Terminal to run FFmpeg in:"
-#~ msgstr "Terminál pro spuštění FFmpeg:"
-
-#~ msgid "'-e' for xterm, '-x' for gnome-terminal"
-#~ msgstr "'-e' pro xterm, '-x' pro gnome-terminal"
-
-#~ msgid "Trademark Fabrice Belllard"
-#~ msgstr "Trademark: Fabrice Belllard"
-
-#~ msgid "Copyright 2006-2009 GPL V3"
-#~ msgstr "Copyright 2006-2009 GPL V3"
-
-#~ msgid "Icons and Logo by Alex Klepatsch"
-#~ msgstr "Ikony a logo: Alex Klepatsch"
-
-#~ msgid "Remember Last Used Directory"
-#~ msgstr "Pamatovat si poslední použitou složku"
-
-#~ msgid "General"
-#~ msgstr "Obecné"
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Zrušit"
-
-#~ msgid "Priority:"
-#~ msgstr "Priorita:"
-
-#~ msgid "MS Windows"
-#~ msgstr "MS Windows"
-
-#~ msgid "Linux"
-#~ msgstr "Linux"
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 #~ msgid "..."
 #~ msgstr "..."
 
@@ -1170,55 +1113,120 @@ msgstr "Normální"
 #~ msgid "..."
 #~ msgstr "..."
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 #~ msgid "..."
 #~ msgstr "..."
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
-#~ msgid "OK"
-#~ msgstr "Budiž"
+#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
 
-#~ msgid "JNavas"
-#~ msgstr "JNavas"
+#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
 
-#~ msgid "Gmaq"
-#~ msgstr "Gmaq"
+#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
 
-#~ msgid "WinFF 1.3.2"
-#~ msgstr "WinFF 1.3.2"
+#~ msgid "Linux"
+#~ msgstr "Linux"
 
-#~ msgctxt "TFRMABOUT.LABEL5.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
+#~ msgid "MS Windows"
+#~ msgstr "MS Windows"
 
-#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
+#~ msgid "Priority:"
+#~ msgstr "Priorita:"
 
-#~ msgid "http://www.winff.org"
-#~ msgstr "http://www.winff.org"
+#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Zrušit"
 
-#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-#~ msgstr "Matthew Weatherford, Ian Stoffberg a Alexey Osipov"
+#~ msgid "General"
+#~ msgstr "Obecné"
 
-#~ msgid "http://ffmpeg.org"
-#~ msgstr "http://ffmpeg.org"
+#~ msgid "Remember Last Used Directory"
+#~ msgstr "Pamatovat si poslední použitou složku"
 
-#~ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~ msgid "OK"
-#~ msgstr "Budiž"
+#~ msgid "Icons and Logo by Alex Klepatsch"
+#~ msgstr "Ikony a logo: Alex Klepatsch"
 
-#~ msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#~ msgid "Copyright 2006-2009 GPL V3"
+#~ msgstr "Copyright 2006-2009 GPL V3"
+
+#~ msgid "Trademark Fabrice Belllard"
+#~ msgstr "Trademark: Fabrice Belllard"
+
+#~ msgid "'-e' for xterm, '-x' for gnome-terminal"
+#~ msgstr "'-e' pro xterm, '-x' pro gnome-terminal"
+
+#~ msgid "Terminal to run FFmpeg in:"
+#~ msgstr "Terminál pro spuštění FFmpeg:"
+
+#~ msgid "Terminal Options:"
+#~ msgstr "Parametry terminálu:"
+
+#~ msgid "Debian/Ubuntu Packaging by Paul Gevers"
+#~ msgstr "Balíčky pro Debian/Ubuntu: Paul Gevers"
+
+#~ msgid "FFmpeg Windows Builds by"
+#~ msgstr "FFmpeg pro Windows sestavil"
+
+#~ msgid "Edit Presets"
+#~ msgstr "Upravit přednastavení"
+
+#~ msgid "WinFF Preferences"
+#~ msgstr "Nastavení WinFF"
+
+#~ msgid "High Quality Presets From"
+#~ msgstr "Přednastavení pro HQ:"
+
+#~ msgid "Use Several Encoding Threads:"
+#~ msgstr "Pracovat ve více vláknech"
+
+#~ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+#~ msgid "Apply Output Folder"
+#~ msgstr "Použít výstupní filtr"
+
+#~ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+#~ msgid "Apply Preset"
+#~ msgstr "Použít přednastavení"
+
+#~ msgid "Use CHCP for international characters"
+#~ msgstr "Použít CHCP pro mezinárodní znaky"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "Cesta pro spuštění FFmpeg"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+#~ msgid "Path to FFplay Executable:"
+#~ msgstr "Cesta pro spuštění FFplay"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "Cesta pro spuštění FFmpeg"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+#~ msgid "Path to FFplay Executable:"
+#~ msgstr "Cesta pro spuštění FFplay"
+
+#~ msgid "Default Destination Directory:"
+#~ msgstr "Výchozí adresář pro ukládání"
+
+#~ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Kyle Schwarz"
+#~ msgstr "Kyle Schwarz"
+
+#~ msgctxt "TFRMMAIN.CAPTION"
 #~ msgid "WinFF"
 #~ msgstr "WinFF"
 
-#~ msgid "Thanks"
-#~ msgstr "Poděkování"
+#~ msgid "http://hawkeye.arrozcru.org/"
+#~ msgstr "http://hawkeye.arrozcru.org/"
 
-#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
-#~ msgid "..."
-#~ msgstr "..."
+#~ msgid "Form1"
+#~ msgstr "Form1"

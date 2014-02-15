@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2014-01-31 13:07+0100\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
 "PO-Revision-Date: 2012-10-17 12:04+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Northern Sami <se@li.org>\n"
@@ -1004,6 +1004,14 @@ msgstr ""
 msgid "Select Video Files"
 msgstr ""
 
+#: unit1.rsterminaltestfailed
+msgid ""
+"It seems that starting the terminal failed. The most likely cause is that "
+"the setting for terminal options in the linux preferences is incorrect. You "
+"can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
+"Try changing \"-e\" to \"-x\" or vice versa."
+msgstr ""
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr ""
@@ -1060,19 +1068,48 @@ msgstr "Ealjoheapmi"
 msgid "Normal"
 msgstr "Dábálaš"
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+#, fuzzy
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
 #~ msgid "..."
 #~ msgstr "…"
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#, fuzzy
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
 #~ msgid "..."
 #~ msgstr "…"
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
-#~ msgid "..."
-#~ msgstr "…"
+#~ msgid "Form1"
+#~ msgstr "Form1"
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+#~ msgid "WinFF 1.3.2"
+#~ msgstr "WinFF 1.3.2"
+
+#~ msgid "http://hawkeye.arrozcru.org/"
+#~ msgstr "http://hawkeye.arrozcru.org/"
+
+#~ msgid "Copyright 2006-2009 GPL V3"
+#~ msgstr "Dahkkivuoigatvuohta 2006-2009 GPL V3"
+
+#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+#~ msgstr "Matthew Weatherford, Ian Stoffberg, ja Alexey Osipov"
+
+#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+
+#~ msgctxt "TFRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Gaskkalduhte"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 #~ msgid "..."
 #~ msgstr "…"
 
@@ -1080,47 +1117,18 @@ msgstr "Dábálaš"
 #~ msgid "..."
 #~ msgstr "…"
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 #~ msgid "..."
 #~ msgstr "…"
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Gaskkalduhte"
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgctxt "TFRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "WinFF"
-
-#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
-
-#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-#~ msgstr "Matthew Weatherford, Ian Stoffberg, ja Alexey Osipov"
-
-#~ msgid "Copyright 2006-2009 GPL V3"
-#~ msgstr "Dahkkivuoigatvuohta 2006-2009 GPL V3"
-
-#~ msgid "http://hawkeye.arrozcru.org/"
-#~ msgstr "http://hawkeye.arrozcru.org/"
-
-#~ msgid "WinFF 1.3.2"
-#~ msgstr "WinFF 1.3.2"
-
-#~ msgid "Form1"
-#~ msgstr "Form1"
-
-#, fuzzy
-#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 #~ msgid "..."
 #~ msgstr "…"
 
-#, fuzzy
-#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 #~ msgid "..."
 #~ msgstr "…"
