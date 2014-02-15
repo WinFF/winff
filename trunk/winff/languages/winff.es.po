@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.1.1\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2014-01-31 13:07+0100\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
 "PO-Revision-Date: 2013-06-29 22:16+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: \n"
@@ -1008,6 +1008,14 @@ msgstr "Elegir archivo de valores predeterminados"
 msgid "Select Video Files"
 msgstr "Elegir archivos de vídeo"
 
+#: unit1.rsterminaltestfailed
+msgid ""
+"It seems that starting the terminal failed. The most likely cause is that "
+"the setting for terminal options in the linux preferences is incorrect. You "
+"can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
+"Try changing \"-e\" to \"-x\" or vice versa."
+msgstr ""
+
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
 msgstr "El predeterminado contiene caracteres inválidos."
@@ -1064,59 +1072,118 @@ msgstr "Mínima"
 msgid "Normal"
 msgstr "Normal"
 
-#~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
-#~ msgid "Path to FFplay Executable:"
-#~ msgstr "Ruta al ejecutable FFmpeg:"
-
-#~ msgid "Terminal to run FFmpeg in:"
-#~ msgstr "Terminal para ejecutar FFmpeg:"
-
-#~ msgid "Priority:"
-#~ msgstr "Prioridad:"
-
-#~ msgid "Terminal Options:"
-#~ msgstr "Opciones de terminal"
-
-#~ msgid "MS Windows"
-#~ msgstr "MS Windows"
-
-#~ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
-#~ msgid "Path to FFplay Executable:"
-#~ msgstr "Ruta al ejecutable FFmpeg:"
-
-#~ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
-#~ msgid "Path to FFmpeg Executable:"
-#~ msgstr "Ruta al ejecutable FFmpeg:"
-
-#~ msgid "Default Destination Directory:"
-#~ msgstr "Carpeta de destino predeterminada:"
-
-#~ msgid "Use Several Encoding Threads:"
-#~ msgstr "Usar codificación de varios hilos"
-
-#~ msgid "'-e' for xterm, '-x' for gnome-terminal"
-#~ msgstr "'-e' para xterm, '-x' para gnome-terminal"
-
-#~ msgid "Remember Last Used Directory"
-#~ msgstr "Recordar última carpeta usada"
-
-#~ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
-#~ msgid "Path to FFmpeg Executable:"
-#~ msgstr "Ruta al ejecutable FFmpeg:"
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
 #~ msgid "..."
-#~ msgstr "..."
+#~ msgstr "…"
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
 #~ msgid "..."
-#~ msgstr "..."
+#~ msgstr "…"
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
-#~ msgid "..."
-#~ msgstr "..."
+#~ msgid "Thanks"
+#~ msgstr "Gracias"
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+#~ msgid "Edit Presets"
+#~ msgstr "Editar predeterminados"
+
+#~ msgid "WinFF Preferences"
+#~ msgstr "Preferencias de WinFF"
+
+#~ msgid "Use CHCP for international characters"
+#~ msgstr "Usar CHCP para idiomas no ingleses"
+
+#~ msgid "General"
+#~ msgstr "General"
+
+#~ msgid "Linux"
+#~ msgstr "Linux"
+
+#~ msgid "WinFF 1.3.2"
+#~ msgstr "WinFF 1.3.2"
+
+#~ msgid "Icons and Logo by Alex Klepatsch"
+#~ msgstr "Iconos y logo por Alex Klepatsch"
+
+#~ msgid "Debian/Ubuntu Packaging by Paul Gevers"
+#~ msgstr "Empaquetado Debian/Ubuntu por Paul Gevers"
+
+#~ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "Aceptar"
+
+#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+#~ msgstr "Matthew Weatherford, Ian Stoffberg, y Alexey Osipov"
+
+#~ msgid "JNavas"
+#~ msgstr "JNavas"
+
+#~ msgid "Gmaq"
+#~ msgstr "Gmaq"
+
+#~ msgid "http://www.winff.org"
+#~ msgstr "http://www.winff.org"
+
+#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "ffmpeg"
+
+#~ msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "Winff"
+
+#~ msgid "Copyright 2006-2009 GPL V3"
+#~ msgstr "Copyright 2006-2009 GPL V3"
+
+#~ msgid "http://ffmpeg.org"
+#~ msgstr "http://ffmpeg.org"
+
+#~ msgctxt "TFRMABOUT.LABEL5.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+
+#~ msgid "Form1"
+#~ msgstr "Formulario1"
+
+#~ msgid "High Quality Presets From"
+#~ msgstr "Preset de alta calidad de"
+
+#~ msgid "Kyle Schwarz"
+#~ msgstr "Kyle Schwarz"
+
+#~ msgid "FFmpeg Windows Builds by"
+#~ msgstr "Builds Windows de FFmpeg por"
+
+#~ msgid "Trademark Fabrice Belllard"
+#~ msgstr "Marca Fabrice Belllard"
+
+#~ msgid "http://hawkeye.arrozcru.org/"
+#~ msgstr "http://hawkeye.arrozcru.org/"
+
+#~ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+#~ msgid "Apply Output Folder"
+#~ msgstr "Aplicar carpeta de salida"
+
+#~ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+#~ msgid "Apply Preset"
+#~ msgstr "Aplicar preset"
+
+#~ msgctxt "TFRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "Winff"
+
+#~ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "Aceptar"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 #~ msgid "..."
 #~ msgstr "..."
 
@@ -1124,117 +1191,58 @@ msgstr "Normal"
 #~ msgid "..."
 #~ msgstr "..."
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
 #~ msgid "..."
 #~ msgstr "..."
 
-#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
-#~ msgid "OK"
-#~ msgstr "Aceptar"
-
-#~ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
-#~ msgid "Video"
-#~ msgstr "Video"
-
-#~ msgctxt "TFRMMAIN.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "Winff"
-
-#~ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
-#~ msgid "Apply Preset"
-#~ msgstr "Aplicar preset"
-
-#~ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
-#~ msgid "Apply Output Folder"
-#~ msgstr "Aplicar carpeta de salida"
-
-#~ msgid "http://hawkeye.arrozcru.org/"
-#~ msgstr "http://hawkeye.arrozcru.org/"
-
-#~ msgid "Trademark Fabrice Belllard"
-#~ msgstr "Marca Fabrice Belllard"
-
-#~ msgid "FFmpeg Windows Builds by"
-#~ msgstr "Builds Windows de FFmpeg por"
-
-#~ msgid "Kyle Schwarz"
-#~ msgstr "Kyle Schwarz"
-
-#~ msgid "High Quality Presets From"
-#~ msgstr "Preset de alta calidad de"
-
-#~ msgid "Form1"
-#~ msgstr "Formulario1"
-
-#~ msgctxt "TFRMABOUT.LABEL5.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "FFmpeg"
-
-#~ msgid "http://ffmpeg.org"
-#~ msgstr "http://ffmpeg.org"
-
-#~ msgid "Copyright 2006-2009 GPL V3"
-#~ msgstr "Copyright 2006-2009 GPL V3"
-
-#~ msgctxt "TFRMABOUT.PAGE1.CAPTION"
-#~ msgid "WinFF"
-#~ msgstr "Winff"
-
-#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
-#~ msgid "FFmpeg"
-#~ msgstr "ffmpeg"
-
-#~ msgid "http://www.winff.org"
-#~ msgstr "http://www.winff.org"
-
-#~ msgid "Gmaq"
-#~ msgstr "Gmaq"
-
-#~ msgid "JNavas"
-#~ msgstr "JNavas"
-
-#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
-#~ msgstr "Matthew Weatherford, Ian Stoffberg, y Alexey Osipov"
-
-#~ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
-#~ msgid "OK"
-#~ msgstr "Aceptar"
-
-#~ msgid "Debian/Ubuntu Packaging by Paul Gevers"
-#~ msgstr "Empaquetado Debian/Ubuntu por Paul Gevers"
-
-#~ msgid "Icons and Logo by Alex Klepatsch"
-#~ msgstr "Iconos y logo por Alex Klepatsch"
-
-#~ msgid "WinFF 1.3.2"
-#~ msgstr "WinFF 1.3.2"
-
-#~ msgid "Linux"
-#~ msgstr "Linux"
-
-#~ msgid "General"
-#~ msgstr "General"
-
-#~ msgid "Use CHCP for international characters"
-#~ msgstr "Usar CHCP para idiomas no ingleses"
-
-#~ msgid "WinFF Preferences"
-#~ msgstr "Preferencias de WinFF"
-
-#~ msgid "Edit Presets"
-#~ msgstr "Editar predeterminados"
-
-#~ msgid "Thanks"
-#~ msgstr "Gracias"
-
-#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
 #~ msgid "..."
-#~ msgstr "…"
+#~ msgstr "..."
 
-#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
 #~ msgid "..."
-#~ msgstr "…"
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "Ruta al ejecutable FFmpeg:"
+
+#~ msgid "Remember Last Used Directory"
+#~ msgstr "Recordar última carpeta usada"
+
+#~ msgid "'-e' for xterm, '-x' for gnome-terminal"
+#~ msgstr "'-e' para xterm, '-x' para gnome-terminal"
+
+#~ msgid "Use Several Encoding Threads:"
+#~ msgstr "Usar codificación de varios hilos"
+
+#~ msgid "Default Destination Directory:"
+#~ msgstr "Carpeta de destino predeterminada:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "Ruta al ejecutable FFmpeg:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+#~ msgid "Path to FFplay Executable:"
+#~ msgstr "Ruta al ejecutable FFmpeg:"
+
+#~ msgid "MS Windows"
+#~ msgstr "MS Windows"
+
+#~ msgid "Terminal Options:"
+#~ msgstr "Opciones de terminal"
+
+#~ msgid "Priority:"
+#~ msgstr "Prioridad:"
+
+#~ msgid "Terminal to run FFmpeg in:"
+#~ msgstr "Terminal para ejecutar FFmpeg:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+#~ msgid "Path to FFplay Executable:"
+#~ msgstr "Ruta al ejecutable FFmpeg:"

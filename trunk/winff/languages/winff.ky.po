@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2014-01-31 13:07+0100\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
 "PO-Revision-Date: 2013-04-11 21:17+0000\n"
 "Last-Translator: Chynggyz Jumaliev <translatorky@lavabit.com>\n"
 "Language-Team: Kirghiz <ky@li.org>\n"
@@ -969,6 +969,14 @@ msgstr ""
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
+msgstr ""
+
+#: unit1.rsterminaltestfailed
+msgid ""
+"It seems that starting the terminal failed. The most likely cause is that "
+"the setting for terminal options in the linux preferences is incorrect. You "
+"can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
+"Try changing \"-e\" to \"-x\" or vice versa."
 msgstr ""
 
 #: unit1.rsthepresethasillegalchars

@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.1.1\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2014-01-31 13:07+0100\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
 "PO-Revision-Date: 2011-09-06 19:26+0000\n"
 "Last-Translator: Pablo Ramirez Alem <Unknown>\n"
 "Language-Team: Spanish\n"
@@ -1038,6 +1038,14 @@ msgstr "Elegir Predeterminado"
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
 msgstr "Elegir archivos"
+
+#: unit1.rsterminaltestfailed
+msgid ""
+"It seems that starting the terminal failed. The most likely cause is that "
+"the setting for terminal options in the linux preferences is incorrect. You "
+"can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
+"Try changing \"-e\" to \"-x\" or vice versa."
+msgstr ""
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"

@@ -20,16 +20,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2014-01-31 13:07+0100\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
 "PO-Revision-Date: 2014-02-01 08:27+0000\n"
 "Last-Translator: Paul Gevers <elbrus@debian.org>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-02-01 08:32+0000\n"
 "X-Generator: Launchpad (build 16916)\n"
-"Language: nl\n"
 "X-Poedit-Language: Dutch\n"
 
 #: tfrmabout.btnok.caption
@@ -244,8 +244,7 @@ msgstr "Selecteer voorinstelling om te exporteren:"
 #: tfrmmain.audbitrate.hint
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
-"(<geheel getal>) de doelsnelheid van de stroom in kilobits per seconde"
+msgstr "(<geheel getal>) de doelsnelheid van de stroom in kilobits per seconde"
 
 #: tfrmmain.audchannels.hint
 msgid "(<integer>) number of audio channels"
@@ -718,8 +717,7 @@ msgstr "Beeld"
 #: tfrmmain.vidbitrate.hint
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr ""
-"(<geheel getal>) de doelsnelheid van de stroom in kilobits per seconde"
+msgstr "(<geheel getal>) de doelsnelheid van de stroom in kilobits per seconde"
 
 #: tfrmmain.vidframerate.hint
 msgid "(<real> or <integer>) number of frames per second"
@@ -1009,6 +1007,14 @@ msgstr "Selecteer voorinstellingbestand"
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
 msgstr "Selecteer videobestanden"
+
+#: unit1.rsterminaltestfailed
+msgid ""
+"It seems that starting the terminal failed. The most likely cause is that "
+"the setting for terminal options in the linux preferences is incorrect. You "
+"can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
+"Try changing \"-e\" to \"-x\" or vice versa."
+msgstr ""
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"

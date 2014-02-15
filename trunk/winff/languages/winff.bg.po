@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
-"POT-Creation-Date: 2014-01-31 13:07+0100\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
 "PO-Revision-Date: 2009-02-18\n"
 "Last-Translator: Simeon Uzunov <uzunof@gmail.com>\n"
 "Language-Team: Bulgarian\n"
@@ -1035,6 +1035,14 @@ msgstr "Изберете файл с настройки"
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
 msgstr "Изберете видео файлове"
+
+#: unit1.rsterminaltestfailed
+msgid ""
+"It seems that starting the terminal failed. The most likely cause is that "
+"the setting for terminal options in the linux preferences is incorrect. You "
+"can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
+"Try changing \"-e\" to \"-x\" or vice versa."
+msgstr ""
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
