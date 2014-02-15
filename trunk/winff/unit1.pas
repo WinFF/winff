@@ -414,6 +414,7 @@ var
   rsSelectDirectory	= 'Select Directory';
   rsRDdialogtitle       = 'Restore defaults';
   rsRestoreDefaults     = 'Restore Presets and Preferences to Defaults?';
+  rsTerminalTestFailed  = 'It seems that starting the terminal failed. The most likely cause is that the setting for terminal options in the linux preferences is incorrect. You can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. Try changing "-e" to "-x" or vice versa.';
 
 implementation
 
@@ -2283,7 +2284,6 @@ var  scriptprocess:TProcess;
      thetime: tdatetime;
      i,j,resmod : integer;
 
-
 begin                                     // get setup
    scriptprocess:= TProcess.Create(nil);
 
@@ -2418,32 +2418,22 @@ begin                                     // get setup
    {$IFDEF WINDOWS}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
    {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
 
-
+   resmod := 0 ; // initialize
    if not mitDisplayCmdline.Checked then
     begin
      script.SaveToFile(presetspath+batfile);
-     {$ifdef unix}
-     fpchmod(presetspath + batfile,&777);
-     {$endif}
-
-                                                        // do it
-     scriptprocess.Executable:= terminal ;
-     scriptprocess.Parameters.Add(termoptions) ;
-     scriptprocess.Parameters.Add(presetspath + batfile) ;
-     {$ifdef unix}
-       scriptprocess.Parameters.Add('&') ;
-     {$endif}
-     scriptprocess.execute;
+     resmod := 1 ;
     end
    else
-   begin
+     begin
       // if continue pressed, attempt to execute user modified script;
       frmScript.Memo1.Lines:=script;
       frmScript.scriptfilename:= presetspath + batfile;
       resmod := frmScript.ShowModal;
-      if resmod = 1 then     // Continue Clicked;
-      begin
+     end;
 
+   if resmod = 1 then     // Continue Clicked or not mitDisplayCmdline
+     begin
 
        {$ifdef unix}
        fpchmod(presetspath + batfile,&777);
@@ -2458,12 +2448,16 @@ begin                                     // get setup
        {$endif}
 
        scriptprocess.execute;
+       {$ifdef unix}
+       // Check if the terminal exited with an error and warn about the flags
+       // Fixes issue 102
+       sleep(250) ;
+       if (ScriptProcess.ExitStatus > 0) then
+         showmessage(rsTerminalTestFailed);
+       {$endif}
+     end;
 
-      end;
-
-   end;
-
-    script.Free;
+   script.Free;
 end;
 
    // replace a paramter from a commandline
