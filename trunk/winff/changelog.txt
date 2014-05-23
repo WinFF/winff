@@ -1,6 +1,26 @@
 WinFF Copyright 2006 - 2013 Matthew Weatherford
 http://www.winff.org
 
+V1.54
+Issue 209:
+
+2 Bugs:
+1 on drag drop, numfiles was not initialised.  Could countain random 
+number, not actual files dragged and dropped
+max number of jobs was not being incremented on dragdrop.
+now, if you dragdrop and the file list goes > max number of jobs, we add 
+50 more rows to filelist.
+note: file list is initially limited to 100 jobs because of the memory 
+overhead of maintaining arrays of the filenames, command lines, options 
+settings, etc
+enhancement: added hint for file list showing number of files in queue 
+when cursor not over a filename
+
+Issue 211
+Use of double quotes replaced by single quote.  Cosmetic, done
+
+
+
 v1.5.2
 ---
 updated ffmpeg-readme. issue 201
