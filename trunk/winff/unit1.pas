@@ -346,6 +346,7 @@ type
 
 var
   PresetList,CategoryList,DestinationList,FileInfoList :TstringList;
+  NumberofJobs : Integer;
 
   // New in 1.5 //
   // This array holds entries for each item in the filelist
@@ -431,7 +432,9 @@ currentpreset: string;
 multipreset:string;
 
 begin
-   setLength(scr,100); // 1.5 By default limit jobs to 100;
+   numberofjobs := 100;
+   setLength(scr,numberofjobs); // 1.5 By default limit jobs to 100;
+
 
    CategoryList := tstringlist.Create;
    PresetList := tstringlist.Create;
@@ -1086,7 +1089,7 @@ procedure TfrmMain.filelistDrawItem(Control: TWinControl; Index: Integer;
   ARect: TRect; State: TOwnerDrawState);
 begin
 // This function draws the an enhanced row list
-// 1.5
+// 1.5 (never released feature)
 
 {  with (control as tlistbox).Canvas do
   begin
@@ -1583,14 +1586,13 @@ var
 numfiles, i:integer;
 s,u,pn : string;
 begin
- pn:=getcurrentpresetname(presetbox.Text);
+   pn:=getcurrentpresetname(presetbox.Text);
      if pn='' then
        begin
        showmessage(rsPleaseSelectAPreset);
        exit;
        end;
-
- numfiles := high(Filenames);
+  numfiles := High(FileNames);
   for i:= 0 to numfiles do
   begin
      s :=FileNames[i]; // fix for 1.4 (was using filenames from filelistbox)
@@ -1608,11 +1610,18 @@ begin
      SaveChangedOptions(0); // second time to save the command lines to the array (SCR)
      filelist.itemindex := FileList.Count -1;
      GenerateCommandLines(filelist.Count -1);
+     // Fix for
+     if numberofjobs - filelist.count < 5 then
+     begin
+          numberofjobs := numberofjobs + 50;
+          setLength(scr,numberofjobs);
+     end;
   end;
   if filelist.itemindex > -1 then
   begin
      filelist.itemindex := FileList.Count -1 // select most recently added job
   end;
+  filelist.hint := 'Number of jobs in queue: ' + IntTostr(filelist.count);
   if multipresets then pnlAllow.Visible := False;
 end;
 
@@ -1646,6 +1655,15 @@ begin
 
             s := dlgOpenFile.files[i];
             u := s;
+
+           // Fix for Issue 209
+           if numberofjobs - filelist.count < 5 then
+           begin
+                numberofjobs := numberofjobs + 50;
+                setLength(scr,numberofjobs);
+           end;
+
+
             //t := GetFileInfo(u); Todo -> if I ever get a nice way to read file resolution & codec
             filelist.items.Add(s);
             FileInfoList.add(u);
@@ -1656,6 +1674,7 @@ begin
           end;
           //filelist.items.AddStrings(dlgOpenFile.Files);
       end;
+   filelist.hint := 'Number of jobs in queue: ' + IntTostr(filelist.count);
    if multipresets then pnlAllow.Visible := False;
 end;
 
@@ -1857,7 +1876,7 @@ begin
     if (lstIndex >= 0) and (lstIndex <= Items.Count) then
       Hint := FileInfoList.Strings[lstIndex]
     else
-      Hint := ''
+      Hint := 'Number of Files: ' + IntToStr(filelist.count);
     end;
  {$endif}
 
@@ -3084,8 +3103,5 @@ initialization
   end
   else
     POFile := '';
-
-
-
 end.
 
