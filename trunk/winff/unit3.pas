@@ -95,10 +95,9 @@ begin
     
     // fill thank you memo
 
-    lbThanks.items.Add(rsTranslators);
+    lbThanks.items.Add('Fernando Andrián Gómez');
     lbThanks.items.Add('Nighto');
     lbThanks.items.Add('Simeon Uzunov');
-    lbThanks.items.Add('Paul Gevers');
     lbThanks.items.Add('Choplair');
     lbThanks.items.Add('Kai Evers');
     lbThanks.items.Add('Roberto Boriotti');
@@ -126,7 +125,7 @@ begin
     lbThanks.items.add('Alexey Osipov');
     lbThanks.items.add(rsLaunchpadContrib);
 
-    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.5.3',[]);
+    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.5.4',[]);
     frmAbout.lblCopyright.Caption   := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2014',[]);
 end;
 

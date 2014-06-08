@@ -53,7 +53,7 @@ object frmAbout: TfrmAbout
   OnCreate = FormCreate
   ParentFont = True
   Position = poMainFormCenter
-  LCLVersion = '1.0.14.0'
+  LCLVersion = '1.2.2.0'
   object pnlBottom: TPanel
     Left = 0
     Height = 30
@@ -69,10 +69,10 @@ object frmAbout: TfrmAbout
       AnchorSideLeft.Control = pnlBottom
       AnchorSideLeft.Side = asrCenter
       AnchorSideTop.Control = pnlBottom
-      Left = 160
+      Left = 159
       Height = 30
       Top = 0
-      Width = 65
+      Width = 66
       AutoSize = True
       Caption = 'OK'
       Default = True
@@ -117,7 +117,7 @@ object frmAbout: TfrmAbout
         TabOrder = 0
         object lblCopyright: TLabel
           Left = 4
-          Height = 21
+          Height = 20
           Top = 61
           Width = 372
           Align = alTop
@@ -130,8 +130,8 @@ object frmAbout: TfrmAbout
         object lblWeatherford: TLabel
           Cursor = crHandPoint
           Left = 4
-          Height = 21
-          Top = 97
+          Height = 20
+          Top = 96
           Width = 372
           Align = alTop
           BorderSpacing.Left = 4
@@ -144,8 +144,8 @@ object frmAbout: TfrmAbout
         object lblGevers: TLabel
           Cursor = crHandPoint
           Left = 4
-          Height = 21
-          Top = 139
+          Height = 20
+          Top = 136
           Width = 372
           Align = alTop
           BorderSpacing.Left = 4
@@ -172,9 +172,9 @@ object frmAbout: TfrmAbout
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = pnlLogo
             Left = 56
-            Height = 21
+            Height = 20
             Top = 4
-            Width = 75
+            Width = 62
             BorderSpacing.Left = 4
             BorderSpacing.Top = 4
             BorderSpacing.Bottom = 4
@@ -188,9 +188,9 @@ object frmAbout: TfrmAbout
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
             Left = 57
-            Height = 21
-            Top = 30
-            Width = 138
+            Height = 20
+            Top = 29
+            Width = 137
             BorderSpacing.Around = 5
             Caption = 'http://www.winff.org'
             Font.Color = clBlue
@@ -290,7 +290,7 @@ object frmAbout: TfrmAbout
         object pnlPresets: TPanel
           Left = 0
           Height = 0
-          Top = 175
+          Top = 171
           Width = 376
           Align = alTop
           Alignment = taLeftJustify
@@ -303,8 +303,8 @@ object frmAbout: TfrmAbout
         object lblStoffberg: TLabel
           Cursor = crHandPoint
           Left = 4
-          Height = 21
-          Top = 118
+          Height = 20
+          Top = 116
           Width = 372
           Align = alTop
           BorderSpacing.Left = 4
@@ -318,11 +318,11 @@ object frmAbout: TfrmAbout
     end
     object tabFFmpeg: TTabSheet
       Caption = 'FFmpeg'
-      ClientHeight = 246
+      ClientHeight = 237
       ClientWidth = 376
       object lblFFmeg: TLabel
         Left = 5
-        Height = 16
+        Height = 20
         Top = 0
         Width = 371
         Align = alTop
@@ -333,8 +333,8 @@ object frmAbout: TfrmAbout
       end
       object lblBellard: TLabel
         Left = 5
-        Height = 16
-        Top = 18
+        Height = 20
+        Top = 22
         Width = 371
         Align = alTop
         BorderSpacing.Left = 5
@@ -347,8 +347,8 @@ object frmAbout: TfrmAbout
       object lblURLffmpeg: TLabel
         Cursor = crHandPoint
         Left = 5
-        Height = 16
-        Top = 36
+        Height = 20
+        Top = 44
         Width = 371
         Align = alTop
         BorderSpacing.Left = 5
@@ -362,8 +362,8 @@ object frmAbout: TfrmAbout
       end
       object lblWindowsBuilds: TLabel
         Left = 0
-        Height = 16
-        Top = 57
+        Height = 20
+        Top = 69
         Width = 376
         Align = alTop
         Caption = 'Windows Builds by'
@@ -374,8 +374,8 @@ object frmAbout: TfrmAbout
       object lblwinbuilds: TLabel
         Cursor = crHandPoint
         Left = 0
-        Height = 17
-        Top = 73
+        Height = 16
+        Top = 89
         Width = 376
         Align = alTop
         Caption = 'Kyle Schwarz'
@@ -392,11 +392,11 @@ object frmAbout: TfrmAbout
     end
     object tabThanks: TTabSheet
       Caption = 'Thanks'
-      ClientHeight = 246
+      ClientHeight = 237
       ClientWidth = 376
       object lbThanks: TListBox
         Left = 0
-        Height = 246
+        Height = 237
         Top = 0
         Width = 376
         Align = alClient

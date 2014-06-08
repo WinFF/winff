@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
     <Version Value="9"/>
@@ -19,8 +19,8 @@
       <UseVersionInfo Value="True"/>
       <MajorVersionNr Value="1"/>
       <MinorVersionNr Value="5"/>
-      <RevisionNr Value="2"/>
-      <StringTable Comments="WinFF 1.5 64 bit" CompanyName="WinFF.org" FileDescription="WinFF 1.5 64 bit" InternalName="winff" LegalCopyright="Copyright 2013 WinFF.org" OriginalFilename="winff.exe" ProductVersion="1.5.2"/>
+      <RevisionNr Value="4"/>
+      <StringTable CompanyName="WinFF.org" FileDescription="WinFF Video Converter" InternalName="winff" LegalCopyright="Copyright 2006-2014 Matthew Weatherford" OriginalFilename="winff.exe" ProductVersion=""/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="default" Default="True"/>

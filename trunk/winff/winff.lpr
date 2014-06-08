@@ -35,9 +35,9 @@ uses
 
 //{$IFDEF WINDOWS}{$R winff.rc}{$ENDIF}
 
-{$R *.res}
-
 //{$IFDEF WINDOWS}{$R winff.rc}{$ENDIF}
+
+{$R *.res}
 
 begin
   Application.Title:='WinFF';
