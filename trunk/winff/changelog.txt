@@ -1,4 +1,4 @@
-WinFF Copyright 2006 - 2013 Matthew Weatherford
+WinFF Copyright 2006 - 2014 Matthew Weatherford
 http://www.winff.org
 
 V1.54
