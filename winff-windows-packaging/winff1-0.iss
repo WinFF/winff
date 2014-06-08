@@ -7,15 +7,15 @@
 ;ArchitecturesAllowed=x64
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.5.2 (Codename EMMA)
+AppVerName=WinFF 1.5.4 (Codename EMMA)
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
 AppUpdatesURL=http://www.winff.org/
-AppCopyright=Copyright 2013 WinFF.org
+AppCopyright=Copyright 2014 WinFF.org
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.5.2
+VersionInfoVersion=1.5.4
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
@@ -78,56 +78,10 @@ Source: "ffmpeg-doc.html"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "ffplay-doc.html"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "changelog.txt"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "AUTHORS"; DestDir: "{app}\Docs"; Flags: ignoreversion
-Source: "Docs\WinFF.en.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
-Source: "Docs\WinFF.nl.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
-Source: "Docs\WinFF.fr.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
-Source: "Docs\WinFF.es.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
-Source: "Docs\WinFF.ca.pdf"; DestDir: "{app}\Docs"; Flags: ignoreversion
+Source: "Docs\*"; DestDir: "{app}\Docs"; Flags: ignoreversion
 
 ; language files
-Source: "languages\winff.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.de.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.bg.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.it.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.tr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.es.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.pt.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.nl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.fr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.sr.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.nb.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.el.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.he.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.sl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.ru.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.ca.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.es_AR.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.es_UY.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.hu.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.ku.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.pl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.sv.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.zh_CN.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.ar.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.gl.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.cs.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.eu.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.kn.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.ms.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.pt_BR.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.ro.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.sv.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.zh_TW.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.uk.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.te.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.sk.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.se.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.lv.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.kk.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.ja.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.eu.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.ar.po"; DestDir: "{app}\languages"; Flags: ignoreversion
-Source: "languages\winff.lt.po"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "languages\*"; DestDir: "{app}\languages"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
