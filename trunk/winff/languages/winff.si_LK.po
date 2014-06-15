@@ -1,0 +1,1048 @@
+# Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
+# This file is distributed under the same license as the winff package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, <YEAR>.
+msgid ""
+msgstr ""
+"Project-Id-Version: WinFF 1.5.3\n"
+"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: si_LK\n"
+
+#: tfrmabout.btnok.caption
+msgctxt "TFRMABOUT.BTNOK.CAPTION"
+msgid "OK"
+msgstr "අනුමත කරන්න "
+
+#: tfrmabout.frmabout.caption
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
+msgid "About WinFF"
+msgstr "WinFF පිළිබඳ"
+
+#: tfrmabout.lblbellard.caption
+msgctxt "TFRMABOUT.LBLBELLARD.CAPTION"
+msgid "Trademark Fabrice Belllard"
+msgstr "Fabrice Belllard වෙළඳ ලකුණ"
+
+#: tfrmabout.lblcopyright.caption
+msgid "Copyright %s ; Licence: GPL V3+"
+msgstr "කතු හිමිකම %s ; වරපත : GPL V3+"
+
+#: tfrmabout.lblffmeg.caption
+msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: tfrmabout.lblgevers.caption
+msgctxt "TFRMABOUT.LBLGEVERS.CAPTION"
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr "Debian සහ Ubuntu සඳහා ගොනුකරන ලද්දේ  Paul Gevers විසිනි "
+
+#: tfrmabout.lblgmaq.caption
+msgctxt "TFRMABOUT.LBLGMAQ.CAPTION"
+msgid "Gmaq"
+msgstr "Gmaq"
+
+#: tfrmabout.lblhqpresets.caption
+msgctxt "TFRMABOUT.LBLHQPRESETS.CAPTION"
+msgid "High Quality Presets From"
+msgstr "විශිෂ්ඨ තත්ව සීරුමාරු සකසන ලද්දේ "
+
+#: tfrmabout.lblklepatsch.caption
+msgctxt "TFRMABOUT.LBLKLEPATSCH.CAPTION"
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr "නිරූපක සහ ලාංඡන සකසන ලද්දේ Alex Klepatsch"
+
+#: tfrmabout.lblnavas.caption
+msgctxt "TFRMABOUT.LBLNAVAS.CAPTION"
+msgid "JNavas"
+msgstr "JNavas"
+
+#: tfrmabout.lblosipov.caption
+msgid "Alexey Osipov"
+msgstr "Alexey Osipov"
+
+#: tfrmabout.lblschwarz.caption
+msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
+msgid "Kyle Schwarz"
+msgstr "Kyle Schwarz"
+
+#: tfrmabout.lblstoffberg.caption
+msgid "Ian Stoffberg"
+msgstr "Ian Stoffberg"
+
+#: tfrmabout.lblurlffmpeg.caption
+msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
+msgid "http://ffmpeg.org"
+msgstr "http://ffmpeg.org"
+
+#: tfrmabout.lblurlwinfforg.caption
+msgctxt "TFRMABOUT.LBLURLWINFFORG.CAPTION"
+msgid "http://www.winff.org"
+msgstr "http://www.winff.org"
+
+#: tfrmabout.lblurlzeranoe.caption
+msgid "http://ffmpeg.zeranoe.com"
+msgstr "http://ffmpeg.zeranoe.com"
+
+#: tfrmabout.lblweatherford.caption
+msgid "Matthew Weatherford"
+msgstr "Matthew Weatherford"
+
+#: tfrmabout.lblwinbuild.caption
+msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
+msgid "FFmpeg Windows Builds by"
+msgstr "Windows සඳහා FFmpeg සකසන ලද්දේ "
+
+#: tfrmabout.lblwinff.caption
+msgid "WinFF %s"
+msgstr "WinFF %s"
+
+#: tfrmabout.tabffmpeg.caption
+msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: tfrmabout.tabthanks.caption
+msgctxt "TFRMABOUT.TABTHANKS.CAPTION"
+msgid "Thanks"
+msgstr "ස්තුතිය "
+
+#: tfrmabout.tabwinff.caption
+msgctxt "TFRMABOUT.TABWINFF.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: tfrmeditpresets.addpresetbtn.caption
+msgid "Add / Update"
+msgstr "ඈදන්න / යාවත්කාලීන කරන්න."
+
+#: tfrmeditpresets.cancelbtn.caption
+msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+msgid "Close"
+msgstr "වසන්න "
+
+#: tfrmeditpresets.deletebtn.caption
+msgid "Delete"
+msgstr "මකන්න "
+
+#: tfrmeditpresets.edit1.hint
+msgid "One word, only letters and numbers"
+msgstr "එක් වචනයක් , අකුරු සහ ඉලක්කම් පමණක් යොදන්න "
+
+#: tfrmeditpresets.edit2.hint
+msgid "Enter a more descriptive name for this preset"
+msgstr "සීරුමාරුව සඳහා වඩා විස්තරාත්මක නමක් යොදන්න "
+
+#: tfrmeditpresets.edit3.hint
+msgid "Please don't use -i or output file parameters"
+msgstr "කරුණාකර -i හෝ වෙනත් ප්‍රතිදාන ගොනු පරාමිති යෙදීමෙන් වලකින්න "
+
+#: tfrmeditpresets.edit4.hint
+msgid "Do not include a dot"
+msgstr "තිත භාවිතා නොකරන්න"
+
+#: tfrmeditpresets.edit5.hint
+msgid "Choose a category to group this preset under"
+msgstr "මෙම සීරුමාරුව වර්ග කිරීම සඳහා ප්‍රවර්ගයක් තෝරන්න "
+
+#: tfrmeditpresets.export.caption
+msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+msgid "Export"
+msgstr "නිර්යාත කරන්න "
+
+#: tfrmeditpresets.frmeditpresets.caption
+msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
+msgid "Edit Presets"
+msgstr "සීරුමාරුව සකසන්න "
+
+#: tfrmeditpresets.import.caption
+msgid "Import"
+msgstr "ආයාත කරන්න "
+
+#: tfrmeditpresets.label1.caption
+msgid "Category / Preset"
+msgstr "ප්‍රවර්ගය /සීරුමාරුව "
+
+#: tfrmeditpresets.label2.caption
+msgid "Preset Name (one word, only letters and numbers)"
+msgstr "සීරුමාරු නම (එක් වචනයක් , අකුරු සහ ඉලක්කම් පමණක්)"
+
+#: tfrmeditpresets.label3.caption
+msgid "Preset Label"
+msgstr "සීරුමාරු ලේබලය "
+
+#: tfrmeditpresets.label4.caption
+msgid "Preset Command Line Parameters (no -i or output file)"
+msgstr "සීරුමාරු විධාන පේලි පරාමිති ( -i හෝ  output file නොයොදන්න )"
+
+#: tfrmeditpresets.label5.caption
+msgid "Output File Extension (do not include the '.' )"
+msgstr "ප්‍රතිදාන ගොනු දිගුව ('.' නොයොදන්න )"
+
+#: tfrmeditpresets.label6.caption
+msgid "Category"
+msgstr "ප්‍රවර්ගය "
+
+#: tfrmeditpresets.okbtn.caption
+msgid "Save"
+msgstr "සුරකින්න "
+
+#: tfrmeditpresets.opendialog1.title
+msgid "Import a Preset"
+msgstr "සීරුමාරුව ආයාත කරන්න "
+
+#: tfrmeditpresets.pnltop.caption
+msgid "pnlTop"
+msgstr "pnlTop"
+
+#: tfrmeditpresets.savedialog1.title
+msgid "Export a Preset"
+msgstr "සීරුමාරුව නිර්යාත කරන්න "
+
+#: tfrmexport.cancelbtn.caption
+msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+msgid "Cancel"
+msgstr "අවලංගු කරන්න "
+
+#: tfrmexport.caption
+msgid "Export Presets"
+msgstr "සීරුමාරු නිර්යාත කරන්න "
+
+#: tfrmexport.exportbtn.caption
+msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+msgid "Export"
+msgstr "නිර්යාත කරන්න "
+
+#: tfrmexport.label1.caption
+msgid "Choose Presets to Export:"
+msgstr "නිර්යාත කිරීමට සීරුමාරු තෝරන්න "
+
+#: tfrmmain.audbitrate.hint
+msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "(<නිඛිල>) දහර භාවිතා කිරීමට ඉලක්ක කල යුතු කිලෝ බිටු /තත්පර  "
+
+#: tfrmmain.audchannels.hint
+msgid "(<integer>) number of audio channels"
+msgstr "(<නිඛිල>) ශ්‍රව්‍ය නාලිකා ගණන "
+
+#: tfrmmain.audsamplingrate.hint
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr "(<නිඛිල>) ශ්‍රව්‍ය සාම්පල් කිරීමේ සංඛ්‍යාතය හර්ට්ස් වලින් (Hz)"
+
+#: tfrmmain.btnadd.caption
+msgid "Add"
+msgstr "ඈදන්න "
+
+#: tfrmmain.btnadd.hint
+msgid "Add file(s) to the list for conversion"
+msgstr "පරිවර්තන ලැයිස්තුවට ගොනු(ව) ඈදන්න "
+
+#: tfrmmain.btnclear.caption
+msgid "Clear"
+msgstr "හිස් කරන්න "
+
+#: tfrmmain.btnclear.hint
+msgid "Remove all files from the list"
+msgstr "ලැයිස්තුවෙන් සියලුම ගොනු ඉවත් කරන්න "
+
+#: tfrmmain.btnconvert.caption
+msgid "Convert"
+msgstr "පරිවර්තනය කරන්න "
+
+#: tfrmmain.btnconvert.hint
+msgid "Start the conversion process"
+msgstr "පරිවර්තන ක්‍රියාදාමය ආරම්භ කරන්න "
+
+#: tfrmmain.btnoptions.caption
+msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+msgid "Options"
+msgstr "විකල්ප "
+
+#: tfrmmain.btnoptions.hint
+msgid "Open/close the additional options window"
+msgstr "අමතර විකල්ප කවුළුව විවෘත කරන්න /වසන්න "
+
+#: tfrmmain.btnplay.caption
+msgid "Play"
+msgstr "දර්ශනය කරන්න "
+
+#: tfrmmain.btnplay.hint
+msgid ""
+"Preview the selected source file with ffplay (good test to see if conversion "
+"is possible)"
+msgstr ""
+"ffplay  මගින් තෝරාගත් මූල ගොනුවේ පෙරදසුන පෙන්වන්න (පරිවර්තනය කලහැකියි දැන ගැනීමට හොඳ "
+"පරීක්ෂාවකි )"
+
+#: tfrmmain.btnpreview.caption
+msgid "Preview"
+msgstr "පෙරදසුන "
+
+#: tfrmmain.btnpreview.hint
+msgid "Preview using the output settings"
+msgstr "ප්‍රතිදාන සිටුවම් මගින් පෙරදසුන පෙන්වන්න "
+
+#: tfrmmain.btnremove.caption
+msgid "Remove"
+msgstr "ඉවත් කරන්න "
+
+#: tfrmmain.btnremove.hint
+msgid "Remove selected file(s) from the list"
+msgstr "තෝරාගත් ගොනු ලැයිස්තුවෙන් ඉවත් කරන්න "
+
+#: tfrmmain.categorybox.hint
+msgid "Device or file type the video should be converted to"
+msgstr "වීඩියෝව පරිවර්තනය කලයුතු උපාංගය හෝ ගොනු වර්ගය "
+
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr "90 වම්පසට "
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr "90 වම්පසට + උඩුකුරු කරන්න "
+
+#: tfrmmain.cboutputpath.caption
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr "මූල ෆෝල්ඩරය භාවිතා කරන්න "
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr "90 දකුණු පසට "
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
+msgstr "90 දකුණු පසට + උඩුකුරු කරන්න  "
+
+#: tfrmmain.cbx2pass.caption
+msgid "2 pass"
+msgstr "2 වරක් පරිවර්තනය  යොදන්න "
+
+#: tfrmmain.cbx2pass.hint
+msgid ""
+"Using two passes allows the encoder to gather information in the first run "
+"for enhanced quality"
+msgstr "දෙවරක් පරිවර්තනය යෙදීමෙන් පළමු වර කේතකය තොරතුරු රැස් කරගැනීම නිසා ගුණත්වය වැඩි වේ "
+
+#: tfrmmain.cbxdeinterlace.caption
+msgid "Deinterlace"
+msgstr "රූප රාමු බැඳීම් ඉවත්කිරීම (Deinterlace)"
+
+#: tfrmmain.cbxdeinterlace.hint
+msgid "Removes interlacing from the video (if necessary)"
+msgstr "වීඩියෝවේ රූපරාමු බැඳීම්(interlacing ) ඉවත් කරන්න (අවශ්‍ය නම් )"
+
+#: tfrmmain.choosefolderbtn.caption
+msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmmain.destfolder.hint
+msgid ""
+"Target location for the final video (choose a different folder than the "
+"source folder)"
+msgstr "අවසන් වීඩියෝව සඳහා ඉලක්ක ස්ථානය (මූල ෆෝල්ඩරයට වඩා වෙනස් ෆෝල්ඩරයක් තෝරන්න )"
+
+#: tfrmmain.dlgopenfile.title
+msgid "Select Video Files..."
+msgstr "වීඩියෝ ගොනු තෝරන්න "
+
+#: tfrmmain.edtaspectratio.hint
+msgid ""
+"(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
+"display"
+msgstr "(<නිඛිල:නිඛිල> or <තාත්වික සංඛ්‍යා>)ඉලක්ක තිරයේ දර්ශන අනුපාතය "
+
+#: tfrmmain.edtaudiosync.hint
+msgid ""
+"(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
+"\"stretch\"/\"squeeze\" audio stream."
+msgstr ""
+"(<නිඛිල>) ශ්‍රව්‍ය සාම්පල් ශීග්‍රතාව 10 සිට ඉහලට .උදා - 44100, 48000. ශ්‍රව්‍ය දහරට  "
+"\"stretch\"/\"squeeze\" කිරීමට අවසර ඇත "
+
+#: tfrmmain.edtcropbottom.text
+msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+msgid "0"
+msgstr "0"
+
+#: tfrmmain.edtcropleft.text
+msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: tfrmmain.edtcropright.text
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: tfrmmain.edtcroptop.text
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr "0"
+
+#: tfrmmain.edtseekhh.hint
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<පැය :මිනිත්තු :තත්පර > - පරිවර්තනයට පෙර මෙම ස්ථානයට අන්වේෂණය කරන්න "
+
+#: tfrmmain.edtseekmm.hint
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<පැය :මිනිත්තු :තත්පර > - පරිවර්තනයට පෙර මෙම ස්ථානයට අන්වේෂණය කරන්න "
+
+#: tfrmmain.edtseekss.hint
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<පැය :මිනිත්තු :තත්පර > - පරිවර්තනයට පෙර මෙම ස්ථානයට අන්වේෂණය කරන්න "
+
+#: tfrmmain.edtttrhh.hint
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<පැය :මිනිත්තු :තත්පර > - මෙම ස්ථානයෙන් පරිවර්තනය අත්හිටුවන්න  "
+
+#: tfrmmain.edtttrmm.hint
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<පැය :මිනිත්තු :තත්පර > - මෙම ස්ථානයෙන් පරිවර්තනය අත්හිටුවන්න  "
+
+#: tfrmmain.edtttrss.hint
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<පැය :මිනිත්තු :තත්පර > - මෙම ස්ථානයෙන් පරිවර්තනය අත්හිටුවන්න  "
+
+#: tfrmmain.edtvolume.hint
+msgid ""
+"(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr ""
+"(<නිඛිල>) 256 = පවතින ශබ්ධ ප්‍රමාණය , 128 = ශබ්ධ ප්‍රමාණයෙන් අර්ධය  , 512 = ශබ්ධ ප්‍රමාණය "
+"මෙන් දෙගුණය "
+
+#: tfrmmain.frmmain.caption
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: tfrmmain.label1.caption
+msgid "Convert to:"
+msgstr "පරිවර්තනය කල යුත්තේ :"
+
+#: tfrmmain.label10.caption
+msgid "Audio Channels"
+msgstr "ශ්‍රව්‍ය නාලිකා "
+
+#: tfrmmain.label12.caption
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
+msgid "Output Folder:"
+msgstr "ප්‍රතිදාන ෆෝල්ඩරය:"
+
+#: tfrmmain.label19.caption
+msgid "Preset:"
+msgstr "සීරුමාරුව:"
+
+#: tfrmmain.label20.caption
+msgid "Volume"
+msgstr "ශබ්ද ප්‍රමාණය "
+
+#: tfrmmain.label21.caption
+msgid "Sync"
+msgstr "සමමුහුර්ත කරන්න "
+
+#: tfrmmain.label22.caption
+msgid "Seek to"
+msgstr "අන්වේෂණය කරන්න "
+
+#: tfrmmain.label23.caption
+msgid "Time to Record"
+msgstr "රෙකෝඩ කලයුතු කාලය "
+
+#: tfrmmain.label24.caption
+msgid "Hours / Minutes / Seconds"
+msgstr "පැය / මිනිත්තු / තත්පර "
+
+#: tfrmmain.label3.caption
+msgid "Additional Command Line Parameters"
+msgstr "අමතර විධාන පේලි පරාමිති"
+
+#: tfrmmain.label5.caption
+msgid "1st Pass"
+msgstr "1 වාරය "
+
+#: tfrmmain.label6.caption
+msgid "2nd Pass"
+msgstr "2 වාරය "
+
+#: tfrmmain.label7.caption
+msgid "Audio Bitrate"
+msgstr "ශ්‍රව්‍ය බිටු ශීග්‍රතාව "
+
+#: tfrmmain.label8.caption
+msgid "Sample Rate"
+msgstr "සාම්පල ශීග්‍රතාව"
+
+#: tfrmmain.label9.caption
+msgid "X"
+msgstr "X"
+
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr "සියල්ලටම යොදන්න "
+
+#: tfrmmain.lblaspectratio.caption
+msgid "Aspect Ratio"
+msgstr "දර්ශන අනුපාතය "
+
+#: tfrmmain.lblcancelchanges.caption
+msgid "Cancel Changes"
+msgstr "වෙනස්කම් අවලංගු කරන්න "
+
+#: tfrmmain.lblcropbottom.caption
+msgid "Bottom"
+msgstr "පහල "
+
+#: tfrmmain.lblcropleft.caption
+msgid "Left"
+msgstr "වම්පස "
+
+#: tfrmmain.lblcropright.caption
+msgid "Right"
+msgstr "දකුණුපස "
+
+#: tfrmmain.lblcroptop.caption
+msgid "Top"
+msgstr "ඉහල "
+
+#: tfrmmain.lblframerate.caption
+msgid "Frame Rate"
+msgstr "රාමු ශීග්‍රතාව"
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr "භ්‍රමණය "
+
+#: tfrmmain.lblsavechanges.caption
+msgid "Apply Changes"
+msgstr "වෙනස්කම් යොදන්න "
+
+#: tfrmmain.lblsavechanges.hint
+msgid "Click here to apply settings changes to the file conversion above"
+msgstr "ඉහත ගොනු පරිවර්තනයට සිටුවම් යෙදීමට මෙගි ක්ලික් කරන්න "
+
+#: tfrmmain.lblvideobitrate.caption
+msgid "Video Bitrate"
+msgstr "වීඩියෝ බිටු ශීග්‍රතාව "
+
+#: tfrmmain.lblvideosize.caption
+msgid "Video Size"
+msgstr "වීඩියෝ තරම "
+
+#: tfrmmain.menuitem1.caption
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr "සීරුමාරුව යොදන්න "
+
+#: tfrmmain.menuitem2.caption
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr "ඉලක්ක ෆෝල්ඩරය යොදන්න "
+
+#: tfrmmain.menuitem9.caption
+msgid "-"
+msgstr "-"
+
+#: tfrmmain.mitabout.caption
+msgid "About"
+msgstr "පිලිබඳ"
+
+#: tfrmmain.mitdisplaycmdline.caption
+msgid "Display Cmd Line"
+msgstr "විධාන පේලිය පෙන්වන්න "
+
+#: tfrmmain.mitdocs.caption
+msgid "Documentation"
+msgstr "ප්‍රලේඛනය "
+
+#: tfrmmain.mitexit.caption
+msgid "Exit"
+msgstr "ඉවත් වෙන්න "
+
+#: tfrmmain.mitforums.caption
+msgid "Forums"
+msgstr "සංසඳ "
+
+#: tfrmmain.mitimportpreset.caption
+msgid "Import Preset"
+msgstr "සීරුමාරුව ආයාත කරන්න "
+
+#: tfrmmain.mitpauseonfinish.caption
+msgid "Pause on Finish"
+msgstr "අවසන් වූ පසු විරාමය "
+
+#: tfrmmain.mitplaysoundonfinish.caption
+msgid "Play Sound on Finish"
+msgstr "අවසන් වූ පසු ශබ්ධයක් නිකුත් කරන්න "
+
+#: tfrmmain.mitpreferences.caption
+msgid "Preferences"
+msgstr "අභිරුචිය "
+
+#: tfrmmain.mitpresets.caption
+msgid "Presets"
+msgstr "සීරුමාරු"
+
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr "සම්මතයන්ට ප්‍රතිෂ්ඨාපනය කරන්න "
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr "සීරුමාරුව සඳහා සුරැකුම් විකල්ප "
+
+#: tfrmmain.mitselectall.caption
+msgid "Select All"
+msgstr "සියල්ල තෝරන්න "
+
+#: tfrmmain.mitshowoptions.caption
+msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+msgid "Additional Options"
+msgstr "අමතර විකල්ප"
+
+#: tfrmmain.mitshutdownonfinish.caption
+msgid "Shutdown on Finish"
+msgstr "වසන්න හෝ අවසන්කරන්න "
+
+#: tfrmmain.mitviewmode.caption
+msgid "Detailed View"
+msgstr "සවිස්තාර්ත්මක දක්වනය "
+
+#: tfrmmain.mitwinff.caption
+msgid "WinFF Website"
+msgstr "WinFF වෙබ්පිටුව"
+
+#: tfrmmain.mnuedit.caption
+msgid "Edit"
+msgstr "සංස්කරණය"
+
+#: tfrmmain.mnufile.caption
+msgid "File"
+msgstr "ගොනුව"
+
+#: tfrmmain.mnuhelp.caption
+msgid "Help"
+msgstr "උපකාර"
+
+#: tfrmmain.mnuoptions.caption
+msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+msgid "Options"
+msgstr "විකල්ප"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr "විවෘත කරන්න "
+
+#: tfrmmain.pnlmain.caption
+msgid "pnlMain"
+msgstr "pnlMain"
+
+#: tfrmmain.presetbox.hint
+msgid "Specific settings to use for the chosen device or file type"
+msgstr "උපකරණ හෝ ගොනු දර්ශක තෝරාගැනීමේ විශේෂ සිටුවම්"
+
+#: tfrmmain.tabsheet2.caption
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+msgid "Audio"
+msgstr "ශ්‍රව්‍ය "
+
+#: tfrmmain.tabsheet3.caption
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+msgid "Crop"
+msgstr "කපන්න "
+
+#: tfrmmain.tabsheet4.caption
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
+msgid "Time"
+msgstr "කාලය "
+
+#: tfrmmain.tabsheet5.caption
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: tfrmmain.tabsheet6.caption
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "ප්‍රතිධානයේ විස්තර"
+
+#: tfrmmain.tabvideo.caption
+msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
+msgid "Video"
+msgstr "වීඩියෝ "
+
+#: tfrmmain.vidbitrate.hint
+msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "(<නිඛිල>) ප්‍රවාහය භාවිතා කලයුතු කිලෝබයිට් ප්‍රමාණය තත්පරයක් සඳහා "
+
+#: tfrmmain.vidframerate.hint
+msgid "(<real> or <integer>) number of frames per second"
+msgstr "(<තාත්වික> හෝ <නිඛිල>) තත්පරයකට රාමු "
+
+#: tfrmmain.vidsizex.hint
+msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<නිඛිලය> X <නිඛිලය>) රාමුවක අඩංගු පික්සෙල් ප්‍රමාණය.pixel aspect ratio (PAR) සඳහා සහය "
+"නොදෙන කේත සඳහා මෙය රාමුවක ප්‍රමාණය ලෙස සලකන්න."
+
+#: tfrmmain.vidsizey.hint
+msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+msgid ""
+"(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
+"don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr ""
+"(<නිඛිලය> X <නිඛිලය>) රාමුවක අඩංගු පික්සෙල් ප්‍රමාණය.pixel aspect ratio (PAR) සඳහා  සහය "
+"නොදෙන කේත සඳහා මෙය රාමුවක ප්‍රමාණය ලෙස සලකන්න."
+
+#: tfrmpreferences.btnaftercommand.caption
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnbeforecommand.caption
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btncancel.caption
+msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
+msgid "Cancel"
+msgstr "අවලංගු කරන්න"
+
+#: tfrmpreferences.btndefaultdir.caption
+msgctxt "TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnlinffmpegpath.caption
+msgctxt "TFRMPREFERENCES.BTNLINFFMPEGPATH.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnlinffplaypath.caption
+msgctxt "TFRMPREFERENCES.BTNLINFFPLAYPATH.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnlinterminalexe.caption
+msgctxt "TFRMPREFERENCES.BTNLINTERMINALEXE.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnok.caption
+msgctxt "TFRMPREFERENCES.BTNOK.CAPTION"
+msgid "OK"
+msgstr "අනුමත කරන්න"
+
+#: tfrmpreferences.btnwinffmpegpath.caption
+msgctxt "TFRMPREFERENCES.BTNWINFFMPEGPATH.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnwinffplaypath.caption
+msgctxt "TFRMPREFERENCES.BTNWINFFPLAYPATH.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.cbchcpchar.caption
+msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
+msgid "Use CHCP for international characters"
+msgstr "අන්තර්ජාතික කේත සඳහා CHCP භාවිතා කරන්න "
+
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr "ගොනු ලයිස්තුවේ බහු සීරුමාරු සඳහා අවසර දෙන්න "
+
+#: tfrmpreferences.cbrememberlastdir.caption
+msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
+msgid "Remember Last Used Directory"
+msgstr "අවසානයට භාවිතාකල ඩිරෙක්ටරිය සිහිතබාගන්න "
+
+#: tfrmpreferences.cbthreads.caption
+msgctxt "TFRMPREFERENCES.CBTHREADS.CAPTION"
+msgid "Use Several Encoding Threads:"
+msgstr "විවිද කෙතාන්කනයන් භාවිතා කරන්න:"
+
+#: tfrmpreferences.edtlinterminaloptions.hint
+msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
+msgid "'-e' for xterm, '-x' for gnome-terminal"
+msgstr "xterm සඳහා '-e', ග්නෝම් ටර්මිනලය සඳහා '-x'"
+
+#: tfrmpreferences.frmpreferences.caption
+msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
+msgid "WinFF Preferences"
+msgstr "WinFF වරණිය"
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr "පිටපත් කිරීම අවසානයට විධානය"
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
+msgstr "පිටපත් කිරීම ආරමභයට විධානය "
+
+#: tfrmpreferences.lbldefaultdir.caption
+msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
+msgid "Default Destination Directory:"
+msgstr "පෙරනිමි ඩිරේක්ටරියේ ඉලක්කය:"
+
+#: tfrmpreferences.lbllinffmpegpath.caption
+msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
+msgid "Path to FFmpeg or avconv Executable:"
+msgstr "FFmpeg හෝ avconv ක්‍රියාත්මක කිරීමට මාවත:"
+
+#: tfrmpreferences.lbllinffplaypath.caption
+msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
+msgid "Path to FFplay or avplay Executable:"
+msgstr "FFplay හෝ  avplay ක්‍රියාත්මක කිරීමට මාවත:"
+
+#: tfrmpreferences.lbllinterminalexe.caption
+msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
+msgid "Terminal to run FFmpeg in:"
+msgstr "FFmpeg ආරම්ඹ කිරීමට ආන්තිකය:"
+
+#: tfrmpreferences.lbllinterminaloptions.caption
+msgctxt "TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION"
+msgid "Terminal Options:"
+msgstr "ආන්තික විකල්ප"
+
+#: tfrmpreferences.lblpriority.caption
+msgctxt "TFRMPREFERENCES.LBLPRIORITY.CAPTION"
+msgid "Priority:"
+msgstr "ප්‍රමුකතාව"
+
+#: tfrmpreferences.lblwinffmpegpath.caption
+msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
+msgid "Path to FFmpeg or avconv Executable:"
+msgstr "FFmpeg හෝ avconv ක්‍රියාත්මක කිරීමට මාවත:"
+
+#: tfrmpreferences.lblwinffplay.caption
+msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
+msgid "Path to FFplay or avplay Executable:"
+msgstr "FFplay හෝ  avplay ක්‍රියාත්මක කිරීමට මාවත:"
+
+#: tfrmpreferences.tabgeneral.caption
+msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
+msgid "General"
+msgstr "සාමාන්‍ය"
+
+#: tfrmpreferences.tablinux.caption
+msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
+msgid "Linux"
+msgstr "ලිනක්ස්"
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
+msgstr "පිටපත්කරමින් "
+
+#: tfrmpreferences.tabwindows.caption
+msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
+msgid "MS Windows"
+msgstr "MS Windows"
+
+#: tfrmscript.btnclip.caption
+msgid "Copy to Clipboard"
+msgstr "පැසුරු පුවරුවට පිටපත් කරන්න"
+
+#: tfrmscript.btnclose.caption
+msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+msgid "Close"
+msgstr "වසන්න"
+
+#: tfrmscript.btnrun.caption
+msgid "Run!"
+msgstr "අරඹන්න"
+
+#: tfrmscript.btnsave.caption
+msgid "Save As..."
+msgstr "මේ නමින් සුරකින්න"
+
+#: tfrmscript.caption
+msgid "FFmpeg Command Line"
+msgstr "FFmpeg විධාන පේලිය "
+
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr "විශ්ලේෂණය වෙමින් පවතී"
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "පරිවර්තනය වෙමින් පවතී"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find either ffmpeg or avconv."
+msgstr "ffmpeg හෝ avconv සොයාගත නොහැක."
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find either ffplay or avplay."
+msgstr "ffplay හෝ avplay සොයාගත නොහැක."
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "ගොනුව සොයාගත නොහැක."
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "සීරුමාරු ගොනුව සොයාගත නොහැක "
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "විස්තාරිතයේ කාලාවර්තයක් ඇතුලත් විය නොහැක."
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "ගොනුව නොපවතී"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "සීරුමාරු ගොනුව අවලංගු වී ඇත "
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "නම අක්ෂරාංක වලින් සමන්වියයුතුයි.(අ-ෆ,0-)"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "කරුණාකර එක ගොනුවක් හෝ පරිවර්තනය සඳහා එක කරන්න "
+
+#: unit1.rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "කරුණාකර සීරුමරුවක් තෝරන්න "
+
+#: unit1.rspresetalreadyexist
+msgid ""
+"Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgstr "සීරුමාරුව: %s%s%s පවතී . පවතින සීරුමාරුව ප්‍රතිස්ථාපනය කිරීමට අවශ්‍යද?"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "ආයාත කලයුතු සීරුමාරුවට දිගුවක් නොමැත "
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "ආයාත කලයුතු සීරුමාරුවට ලේබලයක්  නොමැත "
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "කරුණාකර නිර්යාත කිරීමට සීරුමරුවක් තෝරන්න "
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr " %s%s%s ලේබලය සහිත සීරුමරුවක් පවතී "
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "ඉදිරියට යාමට ENTER යතුර ඔබන්න"
+
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr "පෙරනිමිය පිළිනගන්න"
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr "සීරුමාරුව ප්‍රතිස්ථාපනය කරන්නද?"
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
+msgstr "සීරුමාරු සහ අභිමත සම්මතයන්ට ප්‍රතිෂ්ඨාපනය කරන්නද ?"
+
+#: unit1.rsselectdirectory
+msgid "Select Directory"
+msgstr "ඩිරෙක්ටරිය තෝරන්න."
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "සීරුමාරු ගොනුවක් තෝරන්න "
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "වීඩියෝ ගෙනුව තෝරන්න "
+
+#: unit1.rsterminaltestfailed
+msgid ""
+"It seems that starting the terminal failed. The most likely cause is that "
+"the setting for terminal options in the linux preferences is incorrect. You "
+"can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
+"Try changing \"-e\" to \"-x\" or vice versa."
+msgstr ""
+"මින් පෙන්නුම් කරන්නේ ආන්තිකය ස්ථාපනය කිරීමට අසමත්ව ඇති බවයි.ලිනක්ස් වරනියේ ඇති ආන්තිකය සඳහා වන "
+"සැකසුම් නිසි ආකාරයෙන් සිදුනොවීම මීට හේතුව විය හැක.ඔබට මෙය මෙම ලින්කුව හරහා ගොස් සොයාගත හැක."
+"Edit -> Preferences -> Linux -> Terminal Options. Try changing \"-e\" to \"-x"
+"\""
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "සීරුමරුවේ අයුතු අනුලක්‍ෂණ පවතී "
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "සීරුමාරුව සාදන්න "
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "සීරුනරුව ආයාත කරන්න "
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "ලේබකය අනන්‍ය වියයුතුයි."
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "සීරුමාරුව ඉවත්කරන්න "
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "සීරුමාරුව යාවත්කාලීන කරන්න "
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "දිගුව සඳහන් කරන්න."
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "ලේබලය සඳහන් කරන්න"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "නම සඳහන් කරන්න "
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr "Launchpad  දායකයින් "
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr "පරිවර්තකයන්"
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "උසස්"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "අක්‍රීය "
+
+#: unit4.rsprioritynormal
+msgid "Normal"
+msgstr "සාමාන්‍ය"
