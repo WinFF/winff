@@ -579,7 +579,9 @@ begin
    end;
 
                                 // fill combobox with presets
+
   rememberpreset:=getconfigvalue('general/currentpreset');
+  if rememberpreset = '' then rememberpreset := 'MPEG-4 720p';
   currentpreset:=getcurrentpresetname(rememberpreset);
   populatepresetbox(getpresetcategory(currentpreset));
   for i:= 0 to  presetbox.items.Count - 1 do
@@ -2142,7 +2144,7 @@ end;
 procedure TfrmMain.mitImportPresetClick(Sender: TObject);
 begin
   dlgOpenPreset.Title:=rsSelectPresetFile;
-  dlgOpenPreset.InitialDir:=GetMydocumentsPath();
+  dlgOpenPreset.InitialDir:='.';
   if dlgOpenPreset.Execute then
      importpresetfromfile(dlgOpenPreset.FileName);
 
