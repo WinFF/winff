@@ -2144,7 +2144,8 @@ end;
 procedure TfrmMain.mitImportPresetClick(Sender: TObject);
 begin
   dlgOpenPreset.Title:=rsSelectPresetFile;
-  dlgOpenPreset.InitialDir:='.';
+  {$IFDEF UNIX} dlgopenpreset.initialdir:=extraspath;{$endif}
+  {$IFDEF windows} dlgOpenPreset.InitialDir:='.';{$endif}
   if dlgOpenPreset.Execute then
      importpresetfromfile(dlgOpenPreset.FileName);
 
