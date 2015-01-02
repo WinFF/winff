@@ -326,7 +326,7 @@ object frmMain: TfrmMain
   OnResize = FormResize
   ParentFont = True
   Position = poScreenCenter
-  LCLVersion = '1.2.2.0'
+  LCLVersion = '1.2.6.0'
   object pnlMain: TPanel
     Left = 0
     Height = 148
@@ -1036,8 +1036,8 @@ object frmMain: TfrmMain
           Height = 183
           Top = 0
           Width = 632
-          HorzScrollBar.Page = 632
-          VertScrollBar.Page = 183
+          HorzScrollBar.Page = 204
+          VertScrollBar.Page = 135
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
@@ -1210,8 +1210,8 @@ object frmMain: TfrmMain
           Height = 183
           Top = 0
           Width = 632
-          HorzScrollBar.Page = 632
-          VertScrollBar.Page = 183
+          HorzScrollBar.Page = 583
+          VertScrollBar.Page = 94
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
@@ -1551,8 +1551,8 @@ object frmMain: TfrmMain
           Height = 183
           Top = 0
           Width = 632
-          HorzScrollBar.Page = 632
-          VertScrollBar.Page = 183
+          HorzScrollBar.Page = 309
+          VertScrollBar.Page = 88
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
@@ -2010,8 +2010,8 @@ object frmMain: TfrmMain
           Height = 183
           Top = 0
           Width = 632
-          HorzScrollBar.Page = 632
-          VertScrollBar.Page = 183
+          HorzScrollBar.Page = 263
+          VertScrollBar.Page = 92
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
@@ -2190,8 +2190,8 @@ object frmMain: TfrmMain
           Height = 183
           Top = 0
           Width = 632
-          HorzScrollBar.Page = 632
-          VertScrollBar.Page = 183
+          HorzScrollBar.Page = 305
+          VertScrollBar.Page = 129
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
