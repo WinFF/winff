@@ -1,4 +1,0 @@
-fix_symbols
-add_xdg-open_to_pdf_viewers
-build_with_relro
-use_O2_optimization_iso_default_O1

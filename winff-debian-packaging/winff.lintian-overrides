@@ -1,9 +1,0 @@
-# As the desktop and menu file for winff-qt and winff-gtk are the same
-# they are provided in the winff package, which depends on either.
-# To prevent a circular dependancy the can not themselves depend on
-# winff, but rather, they recommend winff. In this case, I think that
-# is a strong enough dependency chain.
-#
-# See also bts #683060 and #683059 for discussion
-winff binary: desktop-command-not-in-package usr/share/applications/winff.desktop winff
-winff binary: menu-command-not-in-package usr/share/menu/winff:3 usr/bin/winff
