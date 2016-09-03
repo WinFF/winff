@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: winff\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2014-02-15 11:14+0100\n"
-"PO-Revision-Date: 2012-01-23 11:00+0000\n"
-"Last-Translator: andygol <Unknown>\n"
+"PO-Revision-Date: 2016-01-19 18:11+0000\n"
+"Last-Translator: Микола Ткач <Stuartlittle1970@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-05-04 09:01+0000\n"
-"X-Generator: Launchpad (build 16598)\n"
+"X-Launchpad-Export-Date: 2016-09-03 08:08+0000\n"
+"X-Generator: Launchpad (build 18179)\n"
+"Language: uk\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -35,7 +35,7 @@ msgstr "Fabrice Belllard™"
 
 #: tfrmabout.lblcopyright.caption
 msgid "Copyright %s ; Licence: GPL V3+"
-msgstr ""
+msgstr "Авторське право %s ; Ліцензія: GPL V3+"
 
 #: tfrmabout.lblffmeg.caption
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
@@ -69,7 +69,7 @@ msgstr "JNavas"
 
 #: tfrmabout.lblosipov.caption
 msgid "Alexey Osipov"
-msgstr ""
+msgstr "Олексій Осипов"
 
 #: tfrmabout.lblschwarz.caption
 msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
@@ -78,7 +78,7 @@ msgstr "Kyle Schwarz"
 
 #: tfrmabout.lblstoffberg.caption
 msgid "Ian Stoffberg"
-msgstr ""
+msgstr "Ян Стофберг"
 
 #: tfrmabout.lblurlffmpeg.caption
 msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
@@ -92,7 +92,7 @@ msgstr "http://www.winff.org"
 
 #: tfrmabout.lblurlzeranoe.caption
 msgid "http://ffmpeg.zeranoe.com"
-msgstr ""
+msgstr "http://ffmpeg.zeranoe.com"
 
 #: tfrmabout.lblweatherford.caption
 msgid "Matthew Weatherford"
@@ -199,7 +199,7 @@ msgstr "Зберегти"
 
 #: tfrmeditpresets.opendialog1.title
 msgid "Import a Preset"
-msgstr ""
+msgstr "Імпорт пресетів"
 
 #: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
@@ -207,7 +207,7 @@ msgstr "pnlTop"
 
 #: tfrmeditpresets.savedialog1.title
 msgid "Export a Preset"
-msgstr ""
+msgstr "Експорт пресетів"
 
 #: tfrmexport.cancelbtn.caption
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
@@ -357,7 +357,7 @@ msgstr "Тека для обробленого відео (повинна від
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
-msgstr ""
+msgstr "Вибрати відео файли..."
 
 #: tfrmmain.edtaspectratio.hint
 msgid ""
@@ -371,8 +371,8 @@ msgid ""
 "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
 "\"stretch\"/\"squeeze\" audio stream."
 msgstr ""
-"(<ціле>) Від 10 до частоти дискретизації (44100, 48000). Дозволяє \"розтягти"
-"\" або \"стиснути\" аудіо доріжку."
+"(<ціле>) Від 10 до частоти дискретизації (44100, 48000). Дозволяє "
+"\"розтягти\" або \"стиснути\" аудіо доріжку."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -499,7 +499,7 @@ msgstr "X"
 
 #: tfrmmain.lblapplytoall.caption
 msgid "Apply to All"
-msgstr ""
+msgstr "Застосувати до усіх"
 
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
@@ -507,7 +507,7 @@ msgstr "Співвідношення сторін"
 
 #: tfrmmain.lblcancelchanges.caption
 msgid "Cancel Changes"
-msgstr ""
+msgstr "Скасувати зміни"
 
 #: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
@@ -535,7 +535,7 @@ msgstr ""
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
-msgstr ""
+msgstr "Застосувати зміни"
 
 #: tfrmmain.lblsavechanges.hint
 msgid "Click here to apply settings changes to the file conversion above"
@@ -605,7 +605,7 @@ msgstr "Заготовки"
 
 #: tfrmmain.mitrestoredefaults.caption
 msgid "Restore Defaults"
-msgstr ""
+msgstr "Відновити типові значення"
 
 #: tfrmmain.mitsaveoptions.caption
 msgid "Save Options to Preset"
@@ -613,7 +613,7 @@ msgstr ""
 
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
-msgstr ""
+msgstr "Вибрати усе"
 
 #: tfrmmain.mitshowoptions.caption
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
@@ -651,7 +651,7 @@ msgstr "Параметри"
 
 #: tfrmmain.openfolderbtn.caption
 msgid "Open"
-msgstr ""
+msgstr "Відкрити"
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -719,20 +719,14 @@ msgstr ""
 "підтримують піксельні пропорції (PAR) це остаточний розмір кадру."
 
 #: tfrmpreferences.btnaftercommand.caption
-#, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
 msgid "..."
-msgstr "…"
+msgstr "..."
 
 #: tfrmpreferences.btnbeforecommand.caption
-#, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
 msgid "..."
-msgstr "…"
+msgstr "..."
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
@@ -817,16 +811,14 @@ msgid "Default Destination Directory:"
 msgstr "Типова тека для збереження:"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Шлях до FFmpeg:"
+msgstr ""
 
 #: tfrmpreferences.lbllinffplaypath.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Шлях до FFmpeg:"
+msgstr ""
 
 #: tfrmpreferences.lbllinterminalexe.caption
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
@@ -844,16 +836,14 @@ msgid "Priority:"
 msgstr "Пріоритет:"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Шлях до FFmpeg:"
+msgstr ""
 
 #: tfrmpreferences.lblwinffplay.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Шлях до FFmpeg:"
+msgstr ""
 
 #: tfrmpreferences.tabgeneral.caption
 msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
@@ -904,14 +894,12 @@ msgid "Converting"
 msgstr "Перетворення"
 
 #: unit1.rscouldnotfindffmpeg
-#, fuzzy
 msgid "Could not find either ffmpeg or avconv."
-msgstr "Не знайдено FFmpeg."
+msgstr ""
 
 #: unit1.rscouldnotfindffplay
-#, fuzzy
 msgid "Could not find either ffplay or avplay."
-msgstr "Не знайдено FFmpeg."
+msgstr ""
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
@@ -946,10 +934,9 @@ msgid "Please select a preset"
 msgstr "Будь ласка оберіть заготовку"
 
 #: unit1.rspresetalreadyexist
-#, fuzzy
 msgid ""
 "Preset: %s%s%s already exists. Do you want to replace the current preset?"
-msgstr "Заготовка: %s%s%s вже існує"
+msgstr ""
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
@@ -973,7 +960,7 @@ msgstr "Натисніть Ввід для продовження"
 
 #: unit1.rsrddialogtitle
 msgid "Restore defaults"
-msgstr ""
+msgstr "Відновити типові"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
@@ -1041,11 +1028,11 @@ msgstr "Потрібно ввести назву."
 
 #: unit3.rslaunchpadcontrib
 msgid "Launchpad contributors"
-msgstr ""
+msgstr "Автори Launchpad"
 
 #: unit3.rstranslators
 msgid "Translators:"
-msgstr ""
+msgstr "Перекладачі:"
 
 #: unit4.rspriorityhigh
 msgid "High"
@@ -1059,10 +1046,169 @@ msgstr "Неактивний"
 msgid "Normal"
 msgstr "Звичайний"
 
-#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgid "Form1"
+#~ msgstr "Форма1"
+
+#~ msgid "Icons and Logo by Alex Klepatsch"
+#~ msgstr "Значки та логотип від Alex Klepatsch"
+
+#~ msgid "JNavas"
+#~ msgstr "JNavas"
+
+#~ msgid "WinFF 1.3.2"
+#~ msgstr "WinFF 1.3.2"
+
+#~ msgid "Debian/Ubuntu Packaging by Paul Gevers"
+#~ msgstr "Пакунки для Debian/Ubuntu підготував Paul Gevers"
+
+#~ msgid "Gmaq"
+#~ msgstr "Gmaq"
+
+#~ msgid "http://hawkeye.arrozcru.org/"
+#~ msgstr "http://hawkeye.arrozcru.org/"
+
+#~ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "Так"
+
+#~ msgid "http://ffmpeg.org"
+#~ msgstr "http://ffmpeg.org"
+
+#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+#~ msgstr "Matthew Weatherford, Ian Stoffberg та Alexey Osipov"
+
+#~ msgid "http://www.winff.org"
+#~ msgstr "http://www.winff.org"
+
+#~ msgid "Copyright 2006-2009 GPL V3"
+#~ msgstr "Copyright 2006-2009 GPL V3"
+
+#~ msgid "Kyle Schwarz"
+#~ msgstr "Kyle Schwarz"
+
+#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+
+#~ msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+
+#~ msgid "FFmpeg Windows Builds by"
+#~ msgstr "Збірка FFmpeg для Windows"
+
+#~ msgid "Trademark Fabrice Belllard"
+#~ msgstr "Fabrice Belllard™"
+
+#~ msgctxt "TFRMABOUT.LABEL5.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+
+#~ msgid "Thanks"
+#~ msgstr "Подяки"
+
+#~ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+#~ msgid "Apply Output Folder"
+#~ msgstr "Використовувати вихідну теку"
+
+#~ msgid "Edit Presets"
+#~ msgstr "Редагувати заготовки"
+
+#~ msgid "High Quality Presets From"
+#~ msgstr "Заготовки HQ від"
+
+#~ msgctxt "TFRMMAIN.BTNAPPLYPRESET.CAPTION"
+#~ msgid "Apply Preset"
+#~ msgstr "Застосувати заготовку"
+
+#~ msgctxt "TFRMMAIN.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+
+#~ msgctxt "TFRMMAIN.TABSHEET1.CAPTION"
+#~ msgid "Video"
+#~ msgstr "Відео"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "Так"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "Скасувати"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 #~ msgid "..."
 #~ msgstr "…"
 
-#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 #~ msgid "..."
 #~ msgstr "…"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgid "Linux"
+#~ msgstr "Linux"
+
+#~ msgid "MS Windows"
+#~ msgstr "MS Windows"
+
+#~ msgid "Priority:"
+#~ msgstr "Пріоритет:"
+
+#~ msgid "WinFF Preferences"
+#~ msgstr "Налаштування WinFF"
+
+#~ msgid "Use CHCP for international characters"
+#~ msgstr "Використовувати CHCP для міжнародних символів"
+
+#~ msgid "Remember Last Used Directory"
+#~ msgstr "Запам’ятовувати останню використану теку"
+
+#~ msgid "General"
+#~ msgstr "Загальні"
+
+#~ msgid "Terminal Options:"
+#~ msgstr "Параметри терміналу:"
+
+#~ msgid "'-e' for xterm, '-x' for gnome-terminal"
+#~ msgstr "'-e' для xterm, '-x' для gnome-terminal"
+
+#~ msgid "Use Several Encoding Threads:"
+#~ msgstr "Кілька потоків:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "Шлях до FFmpeg:"
+
+#~ msgid "Default Destination Directory:"
+#~ msgstr "Типова тека для збереження:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "Шлях до FFmpeg:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+#~ msgid "Path to FFplay Executable:"
+#~ msgstr "Шлях до FFmpeg:"
+
+#~ msgid "Terminal to run FFmpeg in:"
+#~ msgstr "Термінал для запуску FFmpeg:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+#~ msgid "Path to FFplay Executable:"
+#~ msgstr "Шлях до FFmpeg:"

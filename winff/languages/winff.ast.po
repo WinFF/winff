@@ -6,17 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: winff\n"
-"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-02-15 11:14+0100\n"
-"PO-Revision-Date: 2014-01-08 12:36+0000\n"
-"Last-Translator: riel.lu <riel.lu@softastur.org>\n"
+"PO-Revision-Date: 2015-04-03 16:18+0000\n"
+"Last-Translator: ivarela <ivarela@ubuntu.com>\n"
 "Language-Team: Asturian <ast@li.org>\n"
-"Language: ast\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-01-22 21:04+0000\n"
-"X-Generator: Launchpad (build 16901)\n"
+"X-Launchpad-Export-Date: 2016-09-03 08:08+0000\n"
+"X-Generator: Launchpad (build 18179)\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -635,12 +634,12 @@ msgstr "Ficheru"
 
 #: tfrmmain.mnuhelp.caption
 msgid "Help"
-msgstr "Aida"
+msgstr "Ayuda"
 
 #: tfrmmain.mnuoptions.caption
 msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
 msgid "Options"
-msgstr "Opciones"
+msgstr ""
 
 #: tfrmmain.openfolderbtn.caption
 msgid "Open"
@@ -710,25 +709,19 @@ msgid ""
 msgstr ""
 
 #: tfrmpreferences.btnaftercommand.caption
-#, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
 msgid "..."
-msgstr "..."
+msgstr ""
 
 #: tfrmpreferences.btnbeforecommand.caption
-#, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
 msgid "..."
-msgstr "..."
+msgstr ""
 
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
-msgstr "Encaboxar"
+msgstr ""
 
 #: tfrmpreferences.btndefaultdir.caption
 msgctxt "TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION"
@@ -1042,11 +1035,3 @@ msgstr ""
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr ""
-
-#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
-#~ msgid "..."
-#~ msgstr "..."

@@ -21,13 +21,15 @@ msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2014-02-15 11:14+0100\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Dean Lee <xslidian@gmail.com>\n"
+"PO-Revision-Date: 2016-02-20 17:02+0000\n"
+"Last-Translator: 张伟 <zarchwegiant@126.com>\n"
 "Language-Team: Chinese Simp <winff@lidian.info>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-09-03 08:08+0000\n"
+"X-Generator: Launchpad (build 18179)\n"
+"Language: \n"
 "X-Poedit-Language: Chinese\n"
 
 #: tfrmabout.btnok.caption
@@ -36,7 +38,6 @@ msgid "OK"
 msgstr "确定"
 
 #: tfrmabout.frmabout.caption
-#, fuzzy
 msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
 msgid "About WinFF"
 msgstr "关于 WinFF"
@@ -48,7 +49,7 @@ msgstr "商标属于 Fabrice Bellard"
 
 #: tfrmabout.lblcopyright.caption
 msgid "Copyright %s ; Licence: GPL V3+"
-msgstr ""
+msgstr "Copyright %s ; Licence: GPL V3+"
 
 #: tfrmabout.lblffmeg.caption
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
@@ -82,16 +83,16 @@ msgstr "JNavas"
 
 #: tfrmabout.lblosipov.caption
 msgid "Alexey Osipov"
-msgstr ""
+msgstr "Alexey Osipov"
 
 #: tfrmabout.lblschwarz.caption
 msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
 msgid "Kyle Schwarz"
-msgstr ""
+msgstr "Kyle Schwarz"
 
 #: tfrmabout.lblstoffberg.caption
 msgid "Ian Stoffberg"
-msgstr ""
+msgstr "Ian Stoffberg"
 
 #: tfrmabout.lblurlffmpeg.caption
 msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
@@ -105,11 +106,11 @@ msgstr "http://www.winff.org"
 
 #: tfrmabout.lblurlzeranoe.caption
 msgid "http://ffmpeg.zeranoe.com"
-msgstr ""
+msgstr "http://ffmpeg.zeranoe.com"
 
 #: tfrmabout.lblweatherford.caption
 msgid "Matthew Weatherford"
-msgstr ""
+msgstr "Matthew Weatherford"
 
 #: tfrmabout.lblwinbuild.caption
 msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
@@ -118,7 +119,7 @@ msgstr "FFmpeg Windows 版编译者"
 
 #: tfrmabout.lblwinff.caption
 msgid "WinFF %s"
-msgstr ""
+msgstr "WinFF %s"
 
 #: tfrmabout.tabffmpeg.caption
 msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
@@ -212,7 +213,7 @@ msgstr "保存"
 
 #: tfrmeditpresets.opendialog1.title
 msgid "Import a Preset"
-msgstr ""
+msgstr "导入预设"
 
 #: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
@@ -220,7 +221,7 @@ msgstr "面板顶部"
 
 #: tfrmeditpresets.savedialog1.title
 msgid "Export a Preset"
-msgstr ""
+msgstr "导出预设"
 
 #: tfrmexport.cancelbtn.caption
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
@@ -318,24 +319,24 @@ msgstr "视频应转换为的设备或文件类型"
 
 #: tfrmmain.cbleft.caption
 msgid "90 Left"
-msgstr ""
+msgstr "逆时针90度"
 
 #: tfrmmain.cbleftflip.caption
 msgid "90 Left + Vertical Flip"
-msgstr ""
+msgstr "逆时针90度+垂直翻转"
 
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
-msgstr ""
+msgstr "使用源文件夹"
 
 #: tfrmmain.cbright.caption
 msgid "90 Right"
-msgstr ""
+msgstr "顺时针90度"
 
 #: tfrmmain.cbrightflip.caption
 msgid "90 Right + Vertical Flip"
-msgstr ""
+msgstr "顺时针90+垂直翻转"
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
@@ -368,7 +369,7 @@ msgstr "最终文件的目标位置 (选择不同于源文件夹的文件夹)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
-msgstr ""
+msgstr "选择视频文件..."
 
 #: tfrmmain.edtaspectratio.hint
 msgid ""
@@ -380,9 +381,7 @@ msgstr "(<整数:整数> 或 <实数>) 目标画面的实际分辨率 (DAR)"
 msgid ""
 "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows "
 "\"stretch\"/\"squeeze\" audio stream."
-msgstr ""
-"(<整数>) 从 10 到 44100、48000 之类的音频采样率。允许“拉伸（stretch）”或“缩短"
-"（squeeze）”音频流。"
+msgstr "(<整数>) 从 10 到 44100、48000 之类的音频采样率。允许“拉伸（stretch）”或“缩短（squeeze）”音频流。"
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -440,7 +439,6 @@ msgid ""
 msgstr "(<整数>) 256 = 当前音量、128 = 一半音量、512 = 双倍音量"
 
 #: tfrmmain.frmmain.caption
-#, fuzzy
 msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
 msgid "WinFF"
 msgstr "WinFF"
@@ -454,10 +452,9 @@ msgid "Audio Channels"
 msgstr "音频声道数"
 
 #: tfrmmain.label12.caption
-#, fuzzy
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
-msgstr "输出文件夹:"
+msgstr "输出文件夹"
 
 #: tfrmmain.label19.caption
 msgid "Preset:"
@@ -489,11 +486,11 @@ msgstr "其他命令行参数"
 
 #: tfrmmain.label5.caption
 msgid "1st Pass"
-msgstr ""
+msgstr "第1通道"
 
 #: tfrmmain.label6.caption
 msgid "2nd Pass"
-msgstr ""
+msgstr "第2通道"
 
 #: tfrmmain.label7.caption
 msgid "Audio Bitrate"
@@ -509,7 +506,7 @@ msgstr "X"
 
 #: tfrmmain.lblapplytoall.caption
 msgid "Apply to All"
-msgstr ""
+msgstr "应用到所有"
 
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
@@ -517,7 +514,7 @@ msgstr "宽高比"
 
 #: tfrmmain.lblcancelchanges.caption
 msgid "Cancel Changes"
-msgstr ""
+msgstr "取消更改"
 
 #: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
@@ -541,15 +538,15 @@ msgstr "帧率"
 
 #: tfrmmain.lblrotate.caption
 msgid "Rotation"
-msgstr ""
+msgstr "旋转"
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
-msgstr ""
+msgstr "应用变更"
 
 #: tfrmmain.lblsavechanges.hint
 msgid "Click here to apply settings changes to the file conversion above"
-msgstr ""
+msgstr "点击此处应用对以上文件转换变更的设置"
 
 #: tfrmmain.lblvideobitrate.caption
 msgid "Video Bitrate"
@@ -562,12 +559,12 @@ msgstr "视频尺寸"
 #: tfrmmain.menuitem1.caption
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
-msgstr ""
+msgstr "应用预设组合"
 
 #: tfrmmain.menuitem2.caption
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
 msgid "Apply Destination Folder"
-msgstr ""
+msgstr "应用目标文件夹"
 
 #: tfrmmain.menuitem9.caption
 msgid "-"
@@ -615,15 +612,15 @@ msgstr "预设"
 
 #: tfrmmain.mitrestoredefaults.caption
 msgid "Restore Defaults"
-msgstr ""
+msgstr "恢复默认"
 
 #: tfrmmain.mitsaveoptions.caption
 msgid "Save Options to Preset"
-msgstr ""
+msgstr "保存选项为预设组合"
 
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
-msgstr ""
+msgstr "全选"
 
 #: tfrmmain.mitshowoptions.caption
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
@@ -636,7 +633,7 @@ msgstr "完成时关闭"
 
 #: tfrmmain.mitviewmode.caption
 msgid "Detailed View"
-msgstr ""
+msgstr "详细信息"
 
 #: tfrmmain.mitwinff.caption
 msgid "WinFF Website"
@@ -661,7 +658,7 @@ msgstr "选项(&O)"
 
 #: tfrmmain.openfolderbtn.caption
 msgid "Open"
-msgstr ""
+msgstr "打开"
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
@@ -672,37 +669,31 @@ msgid "Specific settings to use for the chosen device or file type"
 msgstr "指定所选设备或文件类型要使用的设置"
 
 #: tfrmmain.tabsheet2.caption
-#, fuzzy
 msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
 msgid "Audio"
 msgstr "音频"
 
 #: tfrmmain.tabsheet3.caption
-#, fuzzy
 msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
 msgid "Crop"
 msgstr "裁剪"
 
 #: tfrmmain.tabsheet4.caption
-#, fuzzy
 msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
 msgid "Time"
 msgstr "时间"
 
 #: tfrmmain.tabsheet5.caption
-#, fuzzy
 msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
 #: tfrmmain.tabsheet6.caption
-#, fuzzy
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
-msgstr "输出详细信息"
+msgstr "输出细节"
 
 #: tfrmmain.tabvideo.caption
-#, fuzzy
 msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
 msgid "Video"
 msgstr "视频"
@@ -721,31 +712,21 @@ msgctxt "TFRMMAIN.VIDSIZEX.HINT"
 msgid ""
 "(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
 "don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<整数> X <整数>) 各帧像素数。对不支持像素宽高比 (PAR) 的编解码器而言，这是最"
-"终生成画面的尺寸。"
+msgstr "(<整数> X <整数>) 各帧像素数。对不支持像素宽高比 (PAR) 的编解码器而言，这是最终生成画面的尺寸。"
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
 msgid ""
 "(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
 "don''t support pixel aspect ratio (PAR) this is the final frame size."
-msgstr ""
-"(<整数> X <整数>) 各帧像素数。对不支持像素宽高比 (PAR) 的编解码器而言，这是最"
-"终生成画面的尺寸。"
+msgstr "(<整数> X <整数>) 各帧像素数。对不支持像素宽高比 (PAR) 的编解码器而言，这是最终生成画面的尺寸。"
 
 #: tfrmpreferences.btnaftercommand.caption
-#, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
 msgid "..."
 msgstr "..."
 
 #: tfrmpreferences.btnbeforecommand.caption
-#, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
 msgid "..."
 msgstr "..."
@@ -797,7 +778,7 @@ msgstr "使用 CHCP 处理国际字符"
 
 #: tfrmpreferences.cbenablemulti.caption
 msgid "Enable Multiple Presets in File List "
-msgstr ""
+msgstr "在文件列表中启用多重预设组合 "
 
 #: tfrmpreferences.cbrememberlastdir.caption
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
@@ -821,11 +802,11 @@ msgstr "WinFF 偏好设置"
 
 #: tfrmpreferences.lblaftercommand.caption
 msgid "Command to execute at end of script"
-msgstr ""
+msgstr "脚本结束时运行的命令"
 
 #: tfrmpreferences.lblbeforecommand.caption
 msgid "Command to execute at beginning of script"
-msgstr ""
+msgstr "脚本开始时运行的命令"
 
 #: tfrmpreferences.lbldefaultdir.caption
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
@@ -833,16 +814,14 @@ msgid "Default Destination Directory:"
 msgstr "默认目标目录:"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "FFmpeg 可执行程序路径:"
+msgstr "FFmpeg或avconv的执行路径"
 
 #: tfrmpreferences.lbllinffplaypath.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "FFplay 可执行程序路径:"
+msgstr "FFplay或avplay的执行路径"
 
 #: tfrmpreferences.lbllinterminalexe.caption
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
@@ -860,16 +839,14 @@ msgid "Priority:"
 msgstr "优先级:"
 
 #: tfrmpreferences.lblwinffmpegpath.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "FFmpeg 可执行程序路径:"
+msgstr "FFmpeg或avconv的执行路径"
 
 #: tfrmpreferences.lblwinffplay.caption
-#, fuzzy
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "FFplay 可执行程序路径:"
+msgstr "FFplay或avplay的执行路径"
 
 #: tfrmpreferences.tabgeneral.caption
 msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
@@ -883,7 +860,7 @@ msgstr "Linux"
 
 #: tfrmpreferences.tabscripting.caption
 msgid "Scripting"
-msgstr ""
+msgstr "执行脚本中"
 
 #: tfrmpreferences.tabwindows.caption
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
@@ -913,21 +890,19 @@ msgstr "FFmpeg 命令行"
 
 #: unit1.rsanalysing
 msgid "Analysing"
-msgstr ""
+msgstr "分析中"
 
 #: unit1.rsconverting
 msgid "Converting"
 msgstr "正在转换"
 
 #: unit1.rscouldnotfindffmpeg
-#, fuzzy
 msgid "Could not find either ffmpeg or avconv."
-msgstr "无法找到 FFmpeg。"
+msgstr "到不找FFmpeg或avconv"
 
 #: unit1.rscouldnotfindffplay
-#, fuzzy
 msgid "Could not find either ffplay or avplay."
-msgstr "无法找到 FFPlay。"
+msgstr "找不到FFplay或avplay"
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
@@ -962,10 +937,9 @@ msgid "Please select a preset"
 msgstr "请选择预设"
 
 #: unit1.rspresetalreadyexist
-#, fuzzy
 msgid ""
 "Preset: %s%s%s already exists. Do you want to replace the current preset?"
-msgstr "预设: %s%s%s 已存在"
+msgstr "预设组合：%s%s%s已存在。要取代当前预设组合吗？"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
@@ -989,15 +963,15 @@ msgstr "按回车键继续"
 
 #: unit1.rsrddialogtitle
 msgid "Restore defaults"
-msgstr ""
+msgstr "恢复默认"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
-msgstr ""
+msgstr "取代预设组织？"
 
 #: unit1.rsrestoredefaults
 msgid "Restore Presets and Preferences to Defaults?"
-msgstr ""
+msgstr "恢复预设组合和首选项的默认值？"
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -1018,6 +992,8 @@ msgid ""
 "can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
 "Try changing \"-e\" to \"-x\" or vice versa."
 msgstr ""
+"开启终端失败。可能系因linux的首选项中终端选项不正确。你可在此处找到：编辑->首选项->linux->终端选项。尝试把\"-e\"改为\"-"
+"x\"或相反。"
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
@@ -1057,11 +1033,11 @@ msgstr "您必须输入名称。"
 
 #: unit3.rslaunchpadcontrib
 msgid "Launchpad contributors"
-msgstr ""
+msgstr "Launchpad贡献者"
 
 #: unit3.rstranslators
 msgid "Translators:"
-msgstr ""
+msgstr "翻译者："
 
 #: unit4.rspriorityhigh
 msgid "High"
@@ -1075,10 +1051,144 @@ msgstr "空闲"
 msgid "Normal"
 msgstr "普通"
 
-#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+#~ msgctxt "TFRMABOUT.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "确定"
+
+#~ msgid "WinFF 1.3.2"
+#~ msgstr "WinFF 1.3.2"
+
+#~ msgid "Debian/Ubuntu Packaging by Paul Gevers"
+#~ msgstr "Debian/Ubuntu 软件包由 Paul Gevers 制作"
+
+#~ msgid "Gmaq"
+#~ msgstr "Gmaq"
+
+#~ msgid "High Quality Presets From"
+#~ msgstr "高质量预设出自"
+
+#~ msgid "Icons and Logo by Alex Klepatsch"
+#~ msgstr "图标与 logo 由 Alex Klepatsch 设计"
+
+#~ msgid "JNavas"
+#~ msgstr "JNavas"
+
+#~ msgid "Copyright 2006-2009 GPL V3"
+#~ msgstr "版权所有 2006-2009 GPL V3"
+
+#~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+#~ msgstr "Matthew Weatherford、Ian Stoffberg 及 Alexey Osipov"
+
+#~ msgid "http://www.winff.org"
+#~ msgstr "http://www.winff.org"
+
+#~ msgctxt "TFRMABOUT.LABEL5.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+
+#~ msgid "Trademark Fabrice Belllard"
+#~ msgstr "商标属于 Fabrice Bellard"
+
+#~ msgid "http://ffmpeg.org"
+#~ msgstr "http://ffmpeg.org"
+
+#~ msgid "FFmpeg Windows Builds by"
+#~ msgstr "FFmpeg Windows 版编译者"
+
+#~ msgctxt "TFRMABOUT.PAGE1.CAPTION"
+#~ msgid "WinFF"
+#~ msgstr "WinFF"
+
+#~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+#~ msgid "FFmpeg"
+#~ msgstr "FFmpeg"
+
+#~ msgid "Thanks"
+#~ msgstr "鸣谢"
+
+#~ msgid "Edit Presets"
+#~ msgstr "编辑预设"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+#~ msgid "OK"
+#~ msgstr "确定"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
 #~ msgid "..."
 #~ msgstr "..."
 
-#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+#~ msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
 #~ msgid "..."
 #~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "WinFF Preferences"
+#~ msgstr "WinFF 偏好设置"
+
+#~ msgid "Remember Last Used Directory"
+#~ msgstr "记住上次所用的目录"
+
+#~ msgid "Use CHCP for international characters"
+#~ msgstr "使用 CHCP 处理国际字符"
+
+#~ msgid "Use Several Encoding Threads:"
+#~ msgstr "使用多线程编码:"
+
+#~ msgid "'-e' for xterm, '-x' for gnome-terminal"
+#~ msgstr "'-e' 使用 xterm，'-x' 使用 gnome-terminal"
+
+#~ msgid "Default Destination Directory:"
+#~ msgstr "默认目标目录:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL2.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "FFmpeg 可执行程序路径:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL3.CAPTION"
+#~ msgid "Path to FFplay Executable:"
+#~ msgstr "FFplay 可执行程序路径:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+#~ msgid "Path to FFmpeg Executable:"
+#~ msgstr "FFmpeg 可执行程序路径:"
+
+#~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+#~ msgid "Path to FFplay Executable:"
+#~ msgstr "FFplay 可执行程序路径:"
+
+#~ msgid "Terminal to run FFmpeg in:"
+#~ msgstr "用于运行 FFmpeg 的终端:"
+
+#~ msgid "Terminal Options:"
+#~ msgstr "终端选项:"
+
+#~ msgid "Priority:"
+#~ msgstr "优先级:"
+
+#~ msgid "General"
+#~ msgstr "常规"
+
+#~ msgid "MS Windows"
+#~ msgstr "MS Windows"
+
+#~ msgid "Linux"
+#~ msgstr "Linux"

@@ -1,20 +1,21 @@
 # Copyright (C) 2008-2012 Matthew Weatherford <matt@biggmatt.com>
 # This file is distributed under the same license as the winff package.
 # Jay A. Fleming <tito.nehru.naser@gmail.com>, 2013.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: WinFF 1.5.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2014-02-15 11:14+0100\n"
-"PO-Revision-Date: 2013-11-05 07:22+0000\n"
-"Last-Translator: Jay A. Fleming <Unknown>\n"
-"Language-Team: \n"
-"Language: sr\n"
+"PO-Revision-Date: 2016-02-14 12:27+0000\n"
+"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-01-22 21:04+0000\n"
-"X-Generator: Launchpad (build 16901)\n"
+"X-Launchpad-Export-Date: 2016-09-03 08:08+0000\n"
+"X-Generator: Launchpad (build 18179)\n"
+"Language: sr\n"
 
 #: tfrmabout.btnok.caption
 msgctxt "TFRMABOUT.BTNOK.CAPTION"
@@ -29,11 +30,11 @@ msgstr "О програму"
 #: tfrmabout.lblbellard.caption
 msgctxt "TFRMABOUT.LBLBELLARD.CAPTION"
 msgid "Trademark Fabrice Belllard"
-msgstr "Заштићен знак „Fabrice Belllard“"
+msgstr "Робна марка Фабриса Беларда"
 
 #: tfrmabout.lblcopyright.caption
 msgid "Copyright %s ; Licence: GPL V3+"
-msgstr "Ауторска права %s ; Лиценца: ГПЛ вер.3+"
+msgstr "Ауторска права %s ; Лиценца: ОЈЛ 3+"
 
 #: tfrmabout.lblffmeg.caption
 msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
@@ -43,22 +44,22 @@ msgstr "ФФмпег"
 #: tfrmabout.lblgevers.caption
 msgctxt "TFRMABOUT.LBLGEVERS.CAPTION"
 msgid "Debian/Ubuntu Packaging by Paul Gevers"
-msgstr "Дебијан/Убунту пакете је приредио Паул Геверс"
+msgstr "Пакете за Дебијан/Убунту је приредио Пол Гевер"
 
 #: tfrmabout.lblgmaq.caption
 msgctxt "TFRMABOUT.LBLGMAQ.CAPTION"
 msgid "Gmaq"
-msgstr "Гмакју"
+msgstr "Гмаку"
 
 #: tfrmabout.lblhqpresets.caption
 msgctxt "TFRMABOUT.LBLHQPRESETS.CAPTION"
 msgid "High Quality Presets From"
-msgstr "Поставка високог квалитета од"
+msgstr "Подешеност високог квалитета"
 
 #: tfrmabout.lblklepatsch.caption
 msgctxt "TFRMABOUT.LBLKLEPATSCH.CAPTION"
 msgid "Icons and Logo by Alex Klepatsch"
-msgstr "Иконе и лого је створио Алекс Клепач"
+msgstr "Иконице и логотип је приредио Алекс Клепач"
 
 #: tfrmabout.lblnavas.caption
 msgctxt "TFRMABOUT.LBLNAVAS.CAPTION"
@@ -94,12 +95,12 @@ msgstr "http://ffmpeg.zeranoe.com"
 
 #: tfrmabout.lblweatherford.caption
 msgid "Matthew Weatherford"
-msgstr "Метју Ветерфорд"
+msgstr "Метју Видерфорд"
 
 #: tfrmabout.lblwinbuild.caption
 msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
 msgid "FFmpeg Windows Builds by"
-msgstr "Програм ФФмпег за виндоуз је приредио"
+msgstr "Програм ФФмпег за Виндоуз је приредио"
 
 #: tfrmabout.lblwinff.caption
 msgid "WinFF %s"
@@ -139,11 +140,11 @@ msgstr "Једна реч, само слова и бројеви"
 
 #: tfrmeditpresets.edit2.hint
 msgid "Enter a more descriptive name for this preset"
-msgstr "Унесите детаљнији опис поставке"
+msgstr "Унесите описнији назив за ову подешеност"
 
 #: tfrmeditpresets.edit3.hint
 msgid "Please don't use -i or output file parameters"
-msgstr "Не користите „-i“ или аргументе излазне датотеке"
+msgstr "Не користите „-i“ или параметре излазне датотеке"
 
 #: tfrmeditpresets.edit4.hint
 msgid "Do not include a dot"
@@ -151,7 +152,7 @@ msgstr "Не укључуј тачку"
 
 #: tfrmeditpresets.edit5.hint
 msgid "Choose a category to group this preset under"
-msgstr "Одаберите категорију под коју желите да сместите поставку"
+msgstr "Изаберите категорију под којом желите да сместите подешеност"
 
 #: tfrmeditpresets.export.caption
 msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
@@ -161,7 +162,7 @@ msgstr "Извоз"
 #: tfrmeditpresets.frmeditpresets.caption
 msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
 msgid "Edit Presets"
-msgstr "Уреди поставке"
+msgstr "Уредите подешености"
 
 #: tfrmeditpresets.import.caption
 msgid "Import"
@@ -169,19 +170,20 @@ msgstr "Увоз"
 
 #: tfrmeditpresets.label1.caption
 msgid "Category / Preset"
-msgstr "Категорија / Поставка"
+msgstr "Категорија / Подешеност"
 
 #: tfrmeditpresets.label2.caption
 msgid "Preset Name (one word, only letters and numbers)"
-msgstr "Назив поставке (једна реч, само слова и бројеви)"
+msgstr "Назив подешености (једна реч, само слова и бројеви)"
 
 #: tfrmeditpresets.label3.caption
 msgid "Preset Label"
-msgstr "Ознака поставке"
+msgstr "Натпис подешености"
 
 #: tfrmeditpresets.label4.caption
 msgid "Preset Command Line Parameters (no -i or output file)"
-msgstr "Аргументи линије наредбе за пресет (без „-i“ или излазне датотеке)"
+msgstr ""
+"Параметри линије наредбе за подешеност (без „-i“ или излазне датотеке)"
 
 #: tfrmeditpresets.label5.caption
 msgid "Output File Extension (do not include the '.' )"
@@ -197,38 +199,38 @@ msgstr "Сачувај"
 
 #: tfrmeditpresets.opendialog1.title
 msgid "Import a Preset"
-msgstr "Увоз поставке"
+msgstr "Увези подешенос"
 
 #: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
-msgstr ""
+msgstr "пнлТоп"
 
 #: tfrmeditpresets.savedialog1.title
 msgid "Export a Preset"
-msgstr "Извоз поставке"
+msgstr "Извези подешеност"
 
 #: tfrmexport.cancelbtn.caption
 msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
 msgid "Cancel"
-msgstr "Поништи"
+msgstr "Откажи"
 
 #: tfrmexport.caption
 msgid "Export Presets"
-msgstr "Извези поставке"
+msgstr "Извези подешености"
 
 #: tfrmexport.exportbtn.caption
 msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
 msgid "Export"
-msgstr "Извоз"
+msgstr "Извези"
 
 #: tfrmexport.label1.caption
 msgid "Choose Presets to Export:"
-msgstr "Одаберите поставку коју ћете да извезете:"
+msgstr "Изабери подешеност за извоз:"
 
 #: tfrmmain.audbitrate.hint
 msgctxt "TFRMMAIN.AUDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<integer>) циљно кбит/секунди за излазни ток"
+msgstr "(<integer>) крајњи к/с за излазни ток"
 
 #: tfrmmain.audchannels.hint
 msgid "(<integer>) number of audio channels"
@@ -244,7 +246,7 @@ msgstr "Додај"
 
 #: tfrmmain.btnadd.hint
 msgid "Add file(s) to the list for conversion"
-msgstr "Додајте датотеку(е) у списак за прекодирање"
+msgstr "Додајте датотеку(е) на списак за прекодирање"
 
 #: tfrmmain.btnclear.caption
 msgid "Clear"
@@ -252,7 +254,7 @@ msgstr "Очисти"
 
 #: tfrmmain.btnclear.hint
 msgid "Remove all files from the list"
-msgstr "Уклони све датотеке из списка"
+msgstr "Уклоните све датотеке са списка"
 
 #: tfrmmain.btnconvert.caption
 msgid "Convert"
@@ -260,7 +262,7 @@ msgstr "Прекодирај"
 
 #: tfrmmain.btnconvert.hint
 msgid "Start the conversion process"
-msgstr "Покрени процес прекодирања"
+msgstr "Покрените процес прекодирања"
 
 #: tfrmmain.btnoptions.caption
 msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
@@ -269,7 +271,7 @@ msgstr "Опције"
 
 #: tfrmmain.btnoptions.hint
 msgid "Open/close the additional options window"
-msgstr "Отвори/Затвори прозорче са опцијама"
+msgstr "Отворите/затворите прозорче са додатним опцијама"
 
 #: tfrmmain.btnplay.caption
 msgid "Play"
@@ -280,8 +282,8 @@ msgid ""
 "Preview the selected source file with ffplay (good test to see if conversion "
 "is possible)"
 msgstr ""
-"Преглед изворне датотеке програмом „“ (добро за проверу могућности "
-"прекодирања)"
+"Прегледајте изворну датотеку програмом „ffplay“ (добро је да видите да ли је "
+"прекодирање могуће)"
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
@@ -289,7 +291,7 @@ msgstr "Преглед"
 
 #: tfrmmain.btnpreview.hint
 msgid "Preview using the output settings"
-msgstr "Прегледај  са излазним подешавањима"
+msgstr "Прегледајте користећи излазна подешавања"
 
 #: tfrmmain.btnremove.caption
 msgid "Remove"
@@ -297,32 +299,32 @@ msgstr "Уклони"
 
 #: tfrmmain.btnremove.hint
 msgid "Remove selected file(s) from the list"
-msgstr "Уклони одабрану датотеку(е) из списка"
+msgstr "Уклоните изабрану датотеку(е) са списка"
 
 #: tfrmmain.categorybox.hint
 msgid "Device or file type the video should be converted to"
-msgstr "Уређај или врста датотеке у који ће се видео прекодирати"
+msgstr "Уређај или врста датотеке за смештај прекодираног снимка"
 
 #: tfrmmain.cbleft.caption
 msgid "90 Left"
-msgstr ""
+msgstr "90 лево"
 
 #: tfrmmain.cbleftflip.caption
 msgid "90 Left + Vertical Flip"
-msgstr ""
+msgstr "90 на лево + усправно извртање"
 
 #: tfrmmain.cboutputpath.caption
 msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
 msgid "Use Source Folder"
-msgstr "Користи изворни директоријум"
+msgstr "Користи изворну фасциклу"
 
 #: tfrmmain.cbright.caption
 msgid "90 Right"
-msgstr ""
+msgstr "90 десно"
 
 #: tfrmmain.cbrightflip.caption
 msgid "90 Right + Vertical Flip"
-msgstr ""
+msgstr "90 на десно + усправно извртање"
 
 #: tfrmmain.cbx2pass.caption
 msgid "2 pass"
@@ -333,8 +335,8 @@ msgid ""
 "Using two passes allows the encoder to gather information in the first run "
 "for enhanced quality"
 msgstr ""
-"Употребом двоструког пролаза кодеру се дају информације из првог пролаза а "
-"ради квалитетнијег прекодирања"
+"Употреба двоструког пролаза омогућава кодеру да прикупи податке из првог "
+"пролаза а ради бољег прекодирања"
 
 #: tfrmmain.cbxdeinterlace.caption
 msgid "Deinterlace"
@@ -354,8 +356,8 @@ msgid ""
 "Target location for the final video (choose a different folder than the "
 "source folder)"
 msgstr ""
-"Одредишни директоријум за излазну видео датотеку (не бирајте директоријум са "
-"изворном датотеком видеа)"
+"Одредишна фасцикла за излазну видео датотеку (немојте изабрати фасциклу "
+"изворне датотеке снимка)"
 
 #: tfrmmain.dlgopenfile.title
 msgid "Select Video Files..."
@@ -365,7 +367,8 @@ msgstr "Изаберите видео датотеке..."
 msgid ""
 "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target "
 "display"
-msgstr "(<integer:integer> или <real>) стварна размера („DAR“) цињног монитора"
+msgstr ""
+"(<integer:integer> или <real>) физички однос размере (DAR) циљног монитора"
 
 #: tfrmmain.edtaudiosync.hint
 msgid ""
@@ -373,7 +376,7 @@ msgid ""
 "\"stretch\"/\"squeeze\" audio stream."
 msgstr ""
 "(<integer>) Од 10 па све до учестаности узорковања звука, нпр. 44100, 48000. "
-"Дозвољава „стреч/скуиз“ звучног тока."
+"Дозвољава „растезање/скупљање“ звучног тока."
 
 #: tfrmmain.edtcropbottom.text
 msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
@@ -429,7 +432,7 @@ msgstr "<hh:mm:ss> — Заустави пошто прекодираш ток �
 msgid ""
 "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
 msgstr ""
-"(<integer>) 256 = Текуђа гласноћа, 128 = Пола гласноће, 512 = Удвостручи "
+"(<integer>) 256 = Текућа гласноћа, 128 = Пола гласноће, 512 = Удвостручи "
 "гласноћу"
 
 #: tfrmmain.frmmain.caption
@@ -448,11 +451,11 @@ msgstr "Звучни канали"
 #: tfrmmain.label12.caption
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
-msgstr "Излазни директоријум:"
+msgstr "Излазна фасцикла:"
 
 #: tfrmmain.label19.caption
 msgid "Preset:"
-msgstr "Поставка:"
+msgstr "Подешеност:"
 
 #: tfrmmain.label20.caption
 msgid "Volume"
@@ -460,7 +463,7 @@ msgstr "Гласноћа"
 
 #: tfrmmain.label21.caption
 msgid "Sync"
-msgstr "Синхро."
+msgstr "Усклади"
 
 #: tfrmmain.label22.caption
 msgid "Seek to"
@@ -476,7 +479,7 @@ msgstr "Сати / Минута / Секунди"
 
 #: tfrmmain.label3.caption
 msgid "Additional Command Line Parameters"
-msgstr "Додатни аргументи линије наредби"
+msgstr "Додатни параметри линије наредби"
 
 #: tfrmmain.label5.caption
 msgid "1st Pass"
@@ -500,19 +503,19 @@ msgstr "x"
 
 #: tfrmmain.lblapplytoall.caption
 msgid "Apply to All"
-msgstr ""
+msgstr "Примени на све"
 
 #: tfrmmain.lblaspectratio.caption
 msgid "Aspect Ratio"
-msgstr "Размера"
+msgstr "Однос размере"
 
 #: tfrmmain.lblcancelchanges.caption
 msgid "Cancel Changes"
-msgstr "Поништи измене"
+msgstr "Откажи измене"
 
 #: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
-msgstr "Дно"
+msgstr "Доле"
 
 #: tfrmmain.lblcropleft.caption
 msgid "Left"
@@ -524,15 +527,15 @@ msgstr "Десно"
 
 #: tfrmmain.lblcroptop.caption
 msgid "Top"
-msgstr "Изнад"
+msgstr "Горе"
 
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
-msgstr "Учестаност кадрова"
+msgstr "Проток кадрова"
 
 #: tfrmmain.lblrotate.caption
 msgid "Rotation"
-msgstr ""
+msgstr "Заокренутост"
 
 #: tfrmmain.lblsavechanges.caption
 msgid "Apply Changes"
@@ -541,8 +544,7 @@ msgstr "Примени измене"
 #: tfrmmain.lblsavechanges.hint
 msgid "Click here to apply settings changes to the file conversion above"
 msgstr ""
-"Притисните овде да би сте укључили измене подешавања на горње прекодирање "
-"датотеке"
+"Притисните овде да примените измене подешавања на прекодирање датотеке горе"
 
 #: tfrmmain.lblvideobitrate.caption
 msgid "Video Bitrate"
@@ -555,7 +557,7 @@ msgstr "Величина видеа"
 #: tfrmmain.menuitem1.caption
 msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
 msgid "Apply Preset"
-msgstr "Примени поставку"
+msgstr "Примени подешеност"
 
 #: tfrmmain.menuitem2.caption
 msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
@@ -588,31 +590,31 @@ msgstr "Форуми"
 
 #: tfrmmain.mitimportpreset.caption
 msgid "Import Preset"
-msgstr "Увоз поставке"
+msgstr "Увези подешеност"
 
 #: tfrmmain.mitpauseonfinish.caption
 msgid "Pause on Finish"
-msgstr "Заустави на завршетку"
+msgstr "Заустави када завршиш"
 
 #: tfrmmain.mitplaysoundonfinish.caption
 msgid "Play Sound on Finish"
-msgstr "Пусти звук на завршетку"
+msgstr "Пусти звук када завршиш"
 
 #: tfrmmain.mitpreferences.caption
 msgid "Preferences"
-msgstr "Подешавања"
+msgstr "Поставке"
 
 #: tfrmmain.mitpresets.caption
 msgid "Presets"
-msgstr "Поставке"
+msgstr "Подешености"
 
 #: tfrmmain.mitrestoredefaults.caption
 msgid "Restore Defaults"
-msgstr ""
+msgstr "Врати основне"
 
 #: tfrmmain.mitsaveoptions.caption
 msgid "Save Options to Preset"
-msgstr ""
+msgstr "Сачувај опције у подешеност"
 
 #: tfrmmain.mitselectall.caption
 msgid "Select All"
@@ -625,11 +627,11 @@ msgstr "Додатне опције"
 
 #: tfrmmain.mitshutdownonfinish.caption
 msgid "Shutdown on Finish"
-msgstr "Угаси рачунар по завршетку"
+msgstr "Угаси рачунар када завршиш"
 
 #: tfrmmain.mitviewmode.caption
 msgid "Detailed View"
-msgstr "Детаљан приказ"
+msgstr "Детаљан преглед"
 
 #: tfrmmain.mitwinff.caption
 msgid "WinFF Website"
@@ -637,7 +639,7 @@ msgstr "Веб страница програма"
 
 #: tfrmmain.mnuedit.caption
 msgid "Edit"
-msgstr "Уреди"
+msgstr "Уређивање"
 
 #: tfrmmain.mnufile.caption
 msgid "File"
@@ -654,11 +656,11 @@ msgstr "Опције"
 
 #: tfrmmain.openfolderbtn.caption
 msgid "Open"
-msgstr ""
+msgstr "Отвори"
 
 #: tfrmmain.pnlmain.caption
 msgid "pnlMain"
-msgstr ""
+msgstr "пнлГлавни"
 
 #: tfrmmain.presetbox.hint
 msgid "Specific settings to use for the chosen device or file type"
@@ -697,11 +699,11 @@ msgstr "Видео"
 #: tfrmmain.vidbitrate.hint
 msgctxt "TFRMMAIN.VIDBITRATE.HINT"
 msgid "(<integer>) the target kilobits/second that the stream should use"
-msgstr "(<integer>) циљно кбит/секунди за излазни ток"
+msgstr "(<integer>) крајњи кб/с за излазни ток"
 
 #: tfrmmain.vidframerate.hint
 msgid "(<real> or <integer>) number of frames per second"
-msgstr "(<real> или <integer>) број кадрова/секунди"
+msgstr "(<real> или <integer>) број кадрова у секунди"
 
 #: tfrmmain.vidsizex.hint
 msgctxt "TFRMMAIN.VIDSIZEX.HINT"
@@ -709,8 +711,8 @@ msgid ""
 "(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
 "don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
-"(<integer> x <integer>) Количина пиксела у сваком кадру. Код кодека који не "
-"подржавају „pixel aspect ratio (PAR)“ ово ће бити циљна величина кадра."
+"(<integer> x <integer>) Количина тачкица у сваком кадру. Код кодека који не "
+"подржавају однос размере тачкица (PAR) ово ће бити крајња величина кадра."
 
 #: tfrmmain.vidsizey.hint
 msgctxt "TFRMMAIN.VIDSIZEY.HINT"
@@ -718,21 +720,15 @@ msgid ""
 "(<integer> X <integer>) Amount of pixels in each frame. For codecs that "
 "don''t support pixel aspect ratio (PAR) this is the final frame size."
 msgstr ""
-"(<integer> x <integer>) Количина пиксела у сваком кадру. Код кодека који не "
-"подржавају „pixel aspect ratio (PAR)“ ово ће бити циљна величина кадра."
+"(<integer> x <integer>) Количина тачкица у сваком кадру. Код кодека који не "
+"подржавају однос размере тачкица (PAR) ово ће бити крајња величина кадра."
 
 #: tfrmpreferences.btnaftercommand.caption
-#, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
 msgid "..."
 msgstr "..."
 
 #: tfrmpreferences.btnbeforecommand.caption
-#, fuzzy
-#| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
-#| msgid "..."
 msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
 msgid "..."
 msgstr "..."
@@ -740,7 +736,7 @@ msgstr "..."
 #: tfrmpreferences.btncancel.caption
 msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
 msgid "Cancel"
-msgstr "Поништи"
+msgstr "Откажи"
 
 #: tfrmpreferences.btndefaultdir.caption
 msgctxt "TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION"
@@ -784,50 +780,50 @@ msgstr "За мећународне знакове користи „CHCP“"
 
 #: tfrmpreferences.cbenablemulti.caption
 msgid "Enable Multiple Presets in File List "
-msgstr ""
+msgstr "Укључи више подешености у списку датотека "
 
 #: tfrmpreferences.cbrememberlastdir.caption
 msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
 msgid "Remember Last Used Directory"
-msgstr "Упамти последњи употребљен директоријум"
+msgstr "Упамти последњи коришћени директоријум"
 
 #: tfrmpreferences.cbthreads.caption
 msgctxt "TFRMPREFERENCES.CBTHREADS.CAPTION"
 msgid "Use Several Encoding Threads:"
-msgstr "Приликом кодирања користи више нити:"
+msgstr "Користи неколико нити кодирања:"
 
 #: tfrmpreferences.edtlinterminaloptions.hint
 msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
 msgid "'-e' for xterm, '-x' for gnome-terminal"
-msgstr "„-e“ за ИксТерм, „-x“ за Гномов терминал"
+msgstr "„-e“ за икстерм, „-x“ за Гномов терминал"
 
 #: tfrmpreferences.frmpreferences.caption
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
-msgstr "ВинФФ подешавања"
+msgstr "Поставке за ВинФФ"
 
 #: tfrmpreferences.lblaftercommand.caption
 msgid "Command to execute at end of script"
-msgstr ""
+msgstr "Наредба за извршавање на крају скрипте"
 
 #: tfrmpreferences.lblbeforecommand.caption
 msgid "Command to execute at beginning of script"
-msgstr ""
+msgstr "Наредба за извршавање на почетку скрипте"
 
 #: tfrmpreferences.lbldefaultdir.caption
 msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
 msgid "Default Destination Directory:"
-msgstr "Подразумевани одредишни директоријум:"
+msgstr "Основни одредишни директоријум:"
 
 #: tfrmpreferences.lbllinffmpegpath.caption
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Путања до ФФмпег или „avconv“ програма:"
+msgstr "Путања до ФФмпег-а или „avconv“ програма:"
 
 #: tfrmpreferences.lbllinffplaypath.caption
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Путања до ФФмпег или „avplay“ програма:"
+msgstr "Путања до ФФмпег-а или „avplay“ програма:"
 
 #: tfrmpreferences.lbllinterminalexe.caption
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
@@ -847,12 +843,12 @@ msgstr "Приоритет:"
 #: tfrmpreferences.lblwinffmpegpath.caption
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Путања до ФФмпег или „avconv“ програма:"
+msgstr "Путања до ФФмпег-а или „avconv“ програма:"
 
 #: tfrmpreferences.lblwinffplay.caption
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Путања до ФФмпег или „avplay“ програма:"
+msgstr "Путања до ФФмпег-а или „avplay“ програма:"
 
 #: tfrmpreferences.tabgeneral.caption
 msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
@@ -866,12 +862,12 @@ msgstr "Линукс"
 
 #: tfrmpreferences.tabscripting.caption
 msgid "Scripting"
-msgstr ""
+msgstr "Скриптирање"
 
 #: tfrmpreferences.tabwindows.caption
 msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
 msgid "MS Windows"
-msgstr "Виндоуз"
+msgstr "МС Виндоуз"
 
 #: tfrmscript.btnclip.caption
 msgid "Copy to Clipboard"
@@ -916,11 +912,11 @@ msgstr "Не могу да нађем датотеку"
 
 #: unit1.rscouldnotfindpresetfile
 msgid "Could not find presets file."
-msgstr "Нисам могао да пронађем датотеку поставке."
+msgstr "Не могу да пронађем датотеку подешености."
 
 #: unit1.rsextensionnoperiod
 msgid "Extension can not contain a period"
-msgstr "Наставак не може садржавати размак"
+msgstr "Наставак не може садржати размак"
 
 #: unit1.rsfiledoesnotexist
 msgid "file does not exist"
@@ -928,7 +924,7 @@ msgstr "датотека не постоји"
 
 #: unit1.rsinvalidpreset
 msgid "Invalid Preset File"
-msgstr "Неважећа датотекa поставке"
+msgstr "Неисправна датотека подешености"
 
 #: unit1.rsnamemustbeallpha
 msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
@@ -940,45 +936,45 @@ msgstr "За прекодирање морате да додате бар јед
 
 #: unit1.rspleaseselectapreset
 msgid "Please select a preset"
-msgstr "Одаберите поставку"
+msgstr "Изаберите подешеност"
 
 #: unit1.rspresetalreadyexist
 msgid ""
 "Preset: %s%s%s already exists. Do you want to replace the current preset?"
 msgstr ""
-"Поставка: %s%s%s већ постоји. Да ли желите да замените текућу поставку?"
+"Подешеност: Већ постоји „%s%s%s“. Да ли желите да замените текућу подешеност?"
 
 #: unit1.rspresethasnoext
 msgid "The preset to import does not have an extension"
-msgstr "Поставка коју желите да увезете нема наставак назива датотеке"
+msgstr "Подешеност коју желите да увезете нема наставак назива датотеке"
 
 #: unit1.rspresethasnolabel
 msgid "The preset to import does not have a label"
-msgstr "Поставка коју желите да увезете нема ознаку"
+msgstr "Подешеност коју желите да увезете нема натпис"
 
 #: unit1.rspresettoexport
 msgid "Please select a preset to export"
-msgstr "Одаберите поставку за извоз"
+msgstr "Изаберите подешеност за извоз"
 
 #: unit1.rspresetwithlabelexists
 msgid "Preset with label: %s%s%s already exists"
-msgstr "Поставка с ознаком: %s%s%s  већ постоји"
+msgstr "Већ постоји подешеност са натписом: %s%s%s"
 
 #: unit1.rspressenter
 msgid "Press Enter to Continue"
-msgstr "Наставите притиском на дугме ЕНТЕР"
+msgstr "Притисните тастер „Унеси“ да наставите"
 
 #: unit1.rsrddialogtitle
 msgid "Restore defaults"
-msgstr ""
+msgstr "Врати основне"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
-msgstr "Желите ли да препишете преко поставке?"
+msgstr "Да заменим подешеност?"
 
 #: unit1.rsrestoredefaults
 msgid "Restore Presets and Preferences to Defaults?"
-msgstr ""
+msgstr "Да вратим подешености и поставке на основне?"
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
@@ -986,7 +982,7 @@ msgstr "Изаберите директоријум"
 
 #: unit1.rsselectpresetfile
 msgid "Select Preset File"
-msgstr "Изаберите датотеку са поставкама"
+msgstr "Изаберите датотеку подешености"
 
 #: unit1.rsselectvideofiles
 msgid "Select Video Files"
@@ -999,30 +995,34 @@ msgid ""
 "can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. "
 "Try changing \"-e\" to \"-x\" or vice versa."
 msgstr ""
+"Изгледа да покретање терминала није успело. Највероватније да је узрок овоме "
+"неисправно подешавање за опције терминала у поставкама линукса. Можете га "
+"наћи путем изборника: Уређивање —> Поставке —> Линукс —> Опције терминала. "
+"Покушајте да измените „-e“ у „-x“ или обрнуто."
 
 #: unit1.rsthepresethasillegalchars
 msgid "The preset contains illegal characters"
-msgstr "Поставка садржи недозвољене знакове"
+msgstr "Подешеност садржи недозвољене знакове"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Створи поставку:"
+msgstr "Створи подешеност:"
 
 #: unit2.rsimportpresets
 msgid "Import Presets"
-msgstr "Увези поставке"
+msgstr "Увези подешености"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "Ознака мора да буде јединствена."
+msgstr "Натпис мора бити јединствен."
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
-msgstr "Уклони поставку:"
+msgstr "Уклони подешеност:"
 
 #: unit2.rsupdatepreset
 msgid "Update Preset:"
-msgstr "Ажурирај поставку:"
+msgstr "Ажурирај подешеност:"
 
 #: unit2.rsyoumustenterextension
 msgid "You must enter the extension."
@@ -1030,11 +1030,11 @@ msgstr "Морате унети наставак назива датотеке."
 
 #: unit2.rsyoumustenterlabel
 msgid "You must enter a label."
-msgstr "Морате унети ознаку."
+msgstr "Морате унети натпис."
 
 #: unit2.rsyoumustenternmae
 msgid "You must enter a name."
-msgstr "Морате навести име."
+msgstr "Морате навести назив."
 
 #: unit3.rslaunchpadcontrib
 msgid "Launchpad contributors"
@@ -1055,14 +1055,6 @@ msgstr "Неактиван"
 #: unit4.rsprioritynormal
 msgid "Normal"
 msgstr "Нормално"
-
-#~ msgctxt "tfrmpreferences.btnaftercommand.caption"
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "Thanks"
 #~ msgstr "Zahvalnica"
