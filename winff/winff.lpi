@@ -19,7 +19,7 @@
       <UseVersionInfo Value="True"/>
       <MajorVersionNr Value="1"/>
       <MinorVersionNr Value="5"/>
-      <RevisionNr Value="4"/>
+      <RevisionNr Value="5"/>
       <StringTable CompanyName="WinFF.org" FileDescription="WinFF Video Converter" InternalName="winff" LegalCopyright="Copyright 2006-2014 Matthew Weatherford" OriginalFilename="winff.exe" ProductVersion=""/>
     </VersionInfo>
     <BuildModes Count="1">
@@ -51,7 +51,6 @@
         <Filename Value="winff.lpr"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
-        <UnitName Value="winff"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit1.pas"/>
@@ -98,7 +97,6 @@
         <ComponentName Value="frmExport"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="unit6"/>
       </Unit6>
       <Unit7>
         <Filename Value="potranslator.pas"/>
@@ -132,12 +130,6 @@
         </Win32>
       </Options>
     </Linking>
-    <Other>
-      <CompilerMessages>
-        <UseMsgFile Value="True"/>
-      </CompilerMessages>
-      <CompilerPath Value="$(CompPath)"/>
-    </Other>
   </CompilerOptions>
   <Debugging>
     <Exceptions Count="1">
