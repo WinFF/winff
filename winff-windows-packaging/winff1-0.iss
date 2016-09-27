@@ -7,7 +7,7 @@
 ;ArchitecturesAllowed=x64
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.5.4 (Codename EMMA)
+AppVerName=WinFF 1.5.5
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
@@ -15,7 +15,7 @@ AppUpdatesURL=http://www.winff.org/
 AppCopyright=Copyright 2014 WinFF.org
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.5.4
+VersionInfoVersion=1.5.5
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output
