@@ -464,7 +464,7 @@ msgstr "Kanały dźwięku"
 #: tfrmmain.label12.caption
 msgctxt "TFRMMAIN.LABEL12.CAPTION"
 msgid "Output Folder:"
-msgstr "Katalog wyjciowy:"
+msgstr "Katalog wyjściowy:"
 
 #: tfrmmain.label19.caption
 msgid "Preset:"
@@ -488,7 +488,7 @@ msgstr ""
 
 #: tfrmmain.label24.caption
 msgid "Hours / Minutes / Seconds"
-msgstr "Godziny / Minuty / Godziny"
+msgstr "Godziny / Minuty / Sekundy"
 
 #: tfrmmain.label3.caption
 msgid "Additional Command Line Parameters"
@@ -1033,7 +1033,7 @@ msgstr "Importuj szablony"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
-msgstr "Opis musi byc unikalny."
+msgstr "Opis musi być unikalny."
 
 #: unit2.rsremovepreset
 msgid "Remove Preset:"
