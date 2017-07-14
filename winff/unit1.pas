@@ -29,7 +29,7 @@ uses
   laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
   unit4, unit5, gettext, translations, process
   {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF}, ExtCtrls, ComCtrls, Spin, UTF8Process,
-  PoTranslator, types, FileUtil, regexpr;
+  PoTranslator, types, FileUtil, regexpr, LazUTF8, LazFileUtils;
 
 type
 
