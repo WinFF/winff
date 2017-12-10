@@ -1,4 +1,4 @@
-unit Unit4; 
+unit Unit4;
 
 // WInFF 1.0 Copyright 2006-2009 Matthew Weatherford
 // WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
@@ -105,7 +105,7 @@ type
     { private declarations }
   public
     { public declarations }
-  end; 
+  end;
 
 var
   frmPreferences: TfrmPreferences;
@@ -177,7 +177,7 @@ procedure TfrmPreferences.btnOKClick(Sender: TObject);
 begin
   frmMain.setconfigvalue('general/destfolder',edtDefaultDir.text);
   frmMain.DestFolder.Text := edtDefaultDir.text;
-  
+
   if cbRememberLastDir.Checked then
    begin
     frmMain.setconfigvalue('general/rememberlast','true');
@@ -241,7 +241,7 @@ begin
   unit1.ffplay := edtWinFFplayPath.text;
   frmMain.setconfigvalue('win32/ffmpeg',edtWinFFmpegPath.text);
   frmMain.setconfigvalue('win32/ffplay',edtWinFFplayPath.text);
-  
+
   if cbCHCPchar.Checked then
    begin
     frmMain.setconfigvalue('win32/chcp','true');
@@ -271,7 +271,7 @@ begin
   frmMain.setconfigvalue('unix/terminal',edtLinTerminalExe.text);
   frmMain.setconfigvalue('unix/termoptions',edtLinTerminalOptions.text);
   {$endif}
-  
+
 
   frmPreferences.close;
 
@@ -303,7 +303,7 @@ end;
 procedure TfrmPreferences.btnWinFFplayPathClick(Sender: TObject);
 begin
    if opendialog1.Execute then
-    edtAfterCommand.Text := opendialog1.FileName;
+    edtWinFFplayPath.Text := opendialog1.FileName;
 end;
 
 procedure TfrmPreferences.btnLinFFmpegPathClick(Sender: TObject);
