@@ -2318,7 +2318,8 @@ begin                                     // get setup
 
 
    script:= TStringList.Create;
- //  {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
+   //codepage 65001 is UTF-8. script.SaveToFile defaults to UTF-8
+   {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp 65001');{$endif}
    {$ifdef unix}script.Add('#!/bin/sh');{$endif}
 
    if not fileexists(ffmpeg) then
@@ -2375,7 +2376,15 @@ begin                                     // get setup
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
        {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
-       script.Add(UTF8ToConsole (titlestring));
+       {$IFDEF WINDOWS}
+       if usechcp = 'true' then
+         script.Add(titlestring)
+       else
+         script.Add(UTF8ToConsole (titlestring));
+       {$endif}
+       {$ifdef unix}
+         script.Add(UTF8ToConsole (titlestring));
+       {$endif}
 
 
 
@@ -2388,11 +2397,27 @@ begin                                     // get setup
 
        if scr[i].firstpass <> '' then
           begin
-               script.add(UTF8ToConsole (scr[i].firstpass));
+          {$IFDEF WINDOWS}
+            if usechcp = 'true' then
+              script.add(scr[i].firstpass)
+            else
+              script.add(UTF8ToConsole (scr[i].firstpass));
+          {$endif}
+          {$ifdef unix}
+              script.add(UTF8ToConsole (scr[i].firstpass));
+          {$endif}
           end;
        if scr[i].SecondPass <> '' then
           begin
-               script.add(UTF8ToConsole (scr[i].SecondPass));
+          {$IFDEF WINDOWS}
+            if usechcp = 'true' then
+              script.add(scr[i].SecondPass)
+            else
+              script.add(UTF8ToConsole (scr[i].SecondPass));
+          {$endif}
+          {$ifdef unix}
+              script.add(UTF8ToConsole (scr[i].SecondPass));
+          {$endif}
           end;
        if preview then
          begin
@@ -2404,7 +2429,15 @@ begin                                     // get setup
                   break;
                 end;
            end;
-         script.add(UTF8ToConsole (ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + previewbasename +'.'+ extension+ '"'));
+           {$IFDEF WINDOWS}
+             if usechcp = 'true' then
+               script.add(ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + previewbasename +'.'+ extension+ '"')
+             else
+               script.add(UTF8ToConsole (ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + previewbasename +'.'+ extension+ '"'));
+           {$endif}
+           {$ifdef unix}
+               script.add(UTF8ToConsole (ffplayfilename + ' "' + destfolder.Text + DirectorySeparator + previewbasename +'.'+ extension+ '"'));
+           {$endif}
          break;
          end;
      end;
