@@ -40,6 +40,7 @@ uses
 {$R *.res}
 
 begin
+  Application.Scaled:=True;
   Application.Title:='WinFF';
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);

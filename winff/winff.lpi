@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="9"/>
+    <Version Value="10"/>
     <General>
       <Flags>
         <LRSInOutputDirectory Value="False"/>
@@ -9,7 +9,12 @@
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
       <Title Value="WinFF"/>
+      <Scaled Value="True"/>
       <UseAppBundle Value="False"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
     </General>
     <i18n>
       <EnableI18N Value="True" LFM="False"/>
@@ -20,7 +25,7 @@
       <MajorVersionNr Value="1"/>
       <MinorVersionNr Value="5"/>
       <RevisionNr Value="5"/>
-      <StringTable CompanyName="WinFF.org" FileDescription="WinFF Video Converter" InternalName="winff" LegalCopyright="Copyright 2006-2016 Matthew Weatherford" OriginalFilename="winff.exe" ProductVersion=""/>
+      <StringTable CompanyName="WinFF.org" FileDescription="WinFF Video Converter" InternalName="winff" LegalCopyright="Copyright 2006-2016 Matthew Weatherford" OriginalFilename="winff.exe"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="default" Default="True"/>
@@ -117,9 +122,16 @@
         <UseAnsiStrings Value="False"/>
       </SyntaxOptions>
     </Parsing>
+    <CodeGeneration>
+      <Optimizations>
+        <OptimizationLevel Value="2"/>
+      </Optimizations>
+    </CodeGeneration>
     <Linking>
       <Debugging>
+        <GenerateDebugInfo Value="False"/>
         <DebugInfoType Value="dsStabs"/>
+        <StripSymbols Value="True"/>
       </Debugging>
       <LinkSmart Value="True"/>
       <Options>
