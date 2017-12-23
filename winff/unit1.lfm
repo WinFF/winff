@@ -5,6 +5,7 @@ object frmMain: TfrmMain
   Width = 640
   ActiveControl = pnlTop
   AllowDropFiles = True
+  AutoSize = True
   Caption = 'WinFF'
   ClientHeight = 452
   ClientWidth = 640
@@ -325,19 +326,18 @@ object frmMain: TfrmMain
   OnResize = FormResize
   ParentFont = True
   Position = poScreenCenter
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.2.6.0'
   object pnlMain: TPanel
-    Left = 1
+    Left = 0
     Height = 148
-    Top = 54
-    Width = 638
+    Top = 55
+    Width = 640
     Align = alClient
     AutoSize = True
-    BorderSpacing.Around = 1
     BevelOuter = bvNone
     Caption = 'pnlMain'
     ClientHeight = 148
-    ClientWidth = 638
+    ClientWidth = 640
     Color = clSilver
     ParentColor = False
     TabOrder = 0
@@ -345,7 +345,7 @@ object frmMain: TfrmMain
       Left = 0
       Height = 148
       Top = 0
-      Width = 638
+      Width = 640
       Align = alClient
       ItemHeight = 0
       MultiSelect = True
@@ -362,22 +362,21 @@ object frmMain: TfrmMain
     end
   end
   object pnlTop: TPanel
-    Left = 1
-    Height = 52
+    Left = 0
+    Height = 55
     Hint = 'TEST'
-    Top = 1
-    Width = 638
+    Top = 0
+    Width = 640
     Align = alTop
     AutoSize = True
-    BorderSpacing.Around = 1
-    ClientHeight = 52
-    ClientWidth = 638
+    ClientHeight = 55
+    ClientWidth = 640
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
     object btnAdd: TBitBtn
       Left = 1
-      Height = 50
+      Height = 53
       Hint = 'Add file(s) to the list for conversion'
       Top = 1
       Width = 60
@@ -467,10 +466,10 @@ object frmMain: TfrmMain
     end
     object btnRemove: TBitBtn
       Left = 61
-      Height = 50
+      Height = 53
       Hint = 'Remove selected file(s) from the list'
       Top = 1
-      Width = 62
+      Width = 69
       Align = alLeft
       AutoSize = True
       Caption = 'Remove'
@@ -556,8 +555,8 @@ object frmMain: TfrmMain
       TabOrder = 1
     end
     object btnClear: TBitBtn
-      Left = 123
-      Height = 50
+      Left = 130
+      Height = 53
       Hint = 'Remove all files from the list'
       Top = 1
       Width = 60
@@ -646,8 +645,8 @@ object frmMain: TfrmMain
       TabOrder = 2
     end
     object btnPlay: TBitBtn
-      Left = 183
-      Height = 50
+      Left = 190
+      Height = 53
       Hint = 'Preview the selected source file with ffplay (good test to see if conversion is possible)'
       Top = 1
       Width = 60
@@ -736,8 +735,8 @@ object frmMain: TfrmMain
       TabOrder = 3
     end
     object btnConvert: TBitBtn
-      Left = 311
-      Height = 50
+      Left = 317
+      Height = 53
       Hint = 'Start the conversion process'
       Top = 1
       Width = 68
@@ -826,11 +825,11 @@ object frmMain: TfrmMain
       TabOrder = 4
     end
     object btnPreview: TBitBtn
-      Left = 243
-      Height = 50
+      Left = 250
+      Height = 53
       Hint = 'Preview using the output settings'
       Top = 1
-      Width = 68
+      Width = 67
       Align = alLeft
       AutoSize = True
       Caption = 'Preview'
@@ -916,8 +915,8 @@ object frmMain: TfrmMain
       TabOrder = 5
     end
     object btnOptions: TBitBtn
-      Left = 569
-      Height = 50
+      Left = 571
+      Height = 53
       Hint = 'Open/close the additional options window'
       Top = 1
       Width = 68
@@ -1007,45 +1006,43 @@ object frmMain: TfrmMain
     end
   end
   object pnlAdditionalOptions: TPanel
-    Left = 1
+    Left = 0
     Height = 226
     Top = 203
-    Width = 638
+    Width = 640
     Align = alBottom
-    BorderSpacing.Around = 1
     BevelOuter = bvNone
     ClientHeight = 226
-    ClientWidth = 638
+    ClientWidth = 640
     ParentColor = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 2
     object pgSettings: TPageControl
-      Left = 1
+      Left = 0
       Height = 211
-      Top = 1
-      Width = 636
+      Top = 0
+      Width = 640
       ActivePage = TabSheet6
       Align = alClient
-      BorderSpacing.Around = 1
       TabIndex = 0
       TabOrder = 0
       object TabSheet6: TTabSheet
         Caption = 'Output Details'
-        ClientHeight = 181
-        ClientWidth = 628
+        ClientHeight = 183
+        ClientWidth = 632
         object sbBottom: TScrollBox
           Left = 0
-          Height = 181
+          Height = 183
           Top = 0
-          Width = 628
-          HorzScrollBar.Page = 207
-          VertScrollBar.Page = 132
+          Width = 632
+          HorzScrollBar.Page = 204
+          VertScrollBar.Page = 135
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
-          ClientHeight = 181
-          ClientWidth = 628
+          ClientHeight = 183
+          ClientWidth = 632
           Color = clDefault
           ParentColor = False
           ParentShowHint = False
@@ -1053,31 +1050,31 @@ object frmMain: TfrmMain
           TabOrder = 0
           object Panel17: TPanel
             Left = 0
-            Height = 181
+            Height = 183
             Top = 0
-            Width = 628
+            Width = 632
             Align = alClient
             AutoSize = True
             BevelOuter = bvNone
-            ClientHeight = 181
-            ClientWidth = 628
+            ClientHeight = 183
+            ClientWidth = 632
             TabOrder = 0
             object Panel18: TPanel
               Left = 0
-              Height = 181
+              Height = 183
               Top = 0
-              Width = 628
+              Width = 632
               Align = alClient
               AutoSize = True
               BevelOuter = bvNone
-              ClientHeight = 181
-              ClientWidth = 628
+              ClientHeight = 183
+              ClientWidth = 632
               TabOrder = 0
               object Label1: TLabel
                 Left = 13
-                Height = 12
+                Height = 15
                 Top = 5
-                Width = 602
+                Width = 606
                 Align = alTop
                 BorderSpacing.Left = 13
                 BorderSpacing.Top = 5
@@ -1087,9 +1084,9 @@ object frmMain: TfrmMain
               end
               object Label19: TLabel
                 Left = 13
-                Height = 12
-                Top = 45
-                Width = 602
+                Height = 15
+                Top = 46
+                Width = 606
                 Align = alTop
                 BorderSpacing.Left = 13
                 BorderSpacing.Top = 3
@@ -1099,13 +1096,13 @@ object frmMain: TfrmMain
               end
               object categorybox: TComboBox
                 Left = 13
-                Height = 25
+                Height = 23
                 Hint = 'Device or file type the video should be converted to'
-                Top = 17
-                Width = 615
+                Top = 20
+                Width = 619
                 Align = alTop
                 BorderSpacing.Left = 13
-                ItemHeight = 17
+                ItemHeight = 15
                 MaxLength = 65535
                 OnChange = categoryboxChange
                 Sorted = True
@@ -1114,13 +1111,13 @@ object frmMain: TfrmMain
               end
               object PresetBox: TComboBox
                 Left = 13
-                Height = 25
+                Height = 23
                 Hint = 'Specific settings to use for the chosen device or file type'
-                Top = 57
-                Width = 615
+                Top = 61
+                Width = 619
                 Align = alTop
                 BorderSpacing.Left = 13
-                ItemHeight = 17
+                ItemHeight = 15
                 MaxLength = 65535
                 OnChange = PresetBoxChange
                 Style = csDropDownList
@@ -1128,20 +1125,20 @@ object frmMain: TfrmMain
               end
               object Panel20: TPanel
                 Left = 0
-                Height = 50
-                Top = 82
-                Width = 628
+                Height = 51
+                Top = 84
+                Width = 632
                 Align = alTop
                 AutoSize = True
                 BevelOuter = bvNone
-                ClientHeight = 50
-                ClientWidth = 628
+                ClientHeight = 51
+                ClientWidth = 632
                 TabOrder = 2
                 object Label12: TLabel
                   Left = 13
-                  Height = 12
+                  Height = 15
                   Top = 3
-                  Width = 602
+                  Width = 606
                   Align = alTop
                   BorderSpacing.Left = 13
                   BorderSpacing.Top = 3
@@ -1152,10 +1149,10 @@ object frmMain: TfrmMain
                 end
                 object DestFolder: TEdit
                   Left = 13
-                  Height = 35
+                  Height = 33
                   Hint = 'Target location for the final video (choose a different folder than the source folder)'
-                  Top = 15
-                  Width = 501
+                  Top = 18
+                  Width = 508
                   Align = alClient
                   BorderSpacing.Left = 13
                   BorderSpacing.Right = 5
@@ -1164,9 +1161,9 @@ object frmMain: TfrmMain
                 end
                 object ChooseFolderBtn: TButton
                   AnchorSideLeft.Side = asrBottom
-                  Left = 519
-                  Height = 35
-                  Top = 15
+                  Left = 526
+                  Height = 33
+                  Top = 18
                   Width = 43
                   Align = alRight
                   AutoSize = True
@@ -1177,10 +1174,10 @@ object frmMain: TfrmMain
                 end
                 object OpenFolderBtn: TButton
                   AnchorSideLeft.Side = asrBottom
-                  Left = 562
-                  Height = 35
-                  Top = 15
-                  Width = 66
+                  Left = 569
+                  Height = 33
+                  Top = 18
+                  Width = 63
                   Align = alRight
                   AutoSize = True
                   BorderSpacing.InnerBorder = 4
@@ -1191,9 +1188,9 @@ object frmMain: TfrmMain
               end
               object cbOutputPath: TCheckBox
                 Left = 13
-                Height = 21
-                Top = 160
-                Width = 615
+                Height = 19
+                Top = 164
+                Width = 619
                 Align = alBottom
                 BorderSpacing.Left = 13
                 Caption = 'Use Source Folder'
@@ -1213,8 +1210,8 @@ object frmMain: TfrmMain
           Height = 183
           Top = 0
           Width = 632
-          HorzScrollBar.Page = 599
-          VertScrollBar.Page = 99
+          HorzScrollBar.Page = 583
+          VertScrollBar.Page = 94
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
@@ -1555,7 +1552,7 @@ object frmMain: TfrmMain
           Top = 0
           Width = 632
           HorzScrollBar.Page = 309
-          VertScrollBar.Page = 90
+          VertScrollBar.Page = 88
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
@@ -1827,9 +1824,9 @@ object frmMain: TfrmMain
               Width = 17
               Anchors = [akLeft]
               Associate = edtCropLeft
-              Increment = 2
-              Max = 9999
               Min = 0
+              Max = 9999
+              Increment = 2
               Position = 0
               TabOrder = 1
               Wrap = False
@@ -1905,9 +1902,9 @@ object frmMain: TfrmMain
               Width = 17
               Anchors = [akTop, akRight]
               Associate = edtCropTop
-              Increment = 2
-              Max = 9999
               Min = 0
+              Max = 9999
+              Increment = 2
               Position = 0
               TabOrder = 1
               Wrap = False
@@ -1937,9 +1934,9 @@ object frmMain: TfrmMain
               Width = 23
               Anchors = [akLeft, akRight, akBottom]
               Associate = edtCropBottom
-              Increment = 2
-              Max = 9999
               Min = 0
+              Max = 9999
+              Increment = 2
               Position = 0
               TabOrder = 3
               Wrap = False
@@ -1994,9 +1991,9 @@ object frmMain: TfrmMain
               Width = 17
               Anchors = [akRight]
               Associate = edtCropRight
-              Increment = 2
-              Max = 9999
               Min = 0
+              Max = 9999
+              Increment = 2
               Position = 0
               TabOrder = 1
               Wrap = False
@@ -2013,8 +2010,8 @@ object frmMain: TfrmMain
           Height = 183
           Top = 0
           Width = 632
-          HorzScrollBar.Page = 274
-          VertScrollBar.Page = 93
+          HorzScrollBar.Page = 263
+          VertScrollBar.Page = 92
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
@@ -2194,7 +2191,7 @@ object frmMain: TfrmMain
           Top = 0
           Width = 632
           HorzScrollBar.Page = 305
-          VertScrollBar.Page = 174
+          VertScrollBar.Page = 129
           Align = alClient
           AutoSize = True
           BorderStyle = bsNone
@@ -2279,24 +2276,23 @@ object frmMain: TfrmMain
       end
     end
     object pnlAllow: TPanel
-      Left = 1
-      Height = 12
-      Top = 213
-      Width = 636
+      Left = 0
+      Height = 15
+      Top = 211
+      Width = 640
       Align = alBottom
       AutoSize = True
-      BorderSpacing.Around = 1
       BevelOuter = bvNone
-      ClientHeight = 12
-      ClientWidth = 636
+      ClientHeight = 15
+      ClientWidth = 640
       TabOrder = 1
       Visible = False
       object lblSaveChanges: TLabel
-        Left = 479
-        Height = 12
+        Left = 481
+        Height = 15
         Hint = 'Click here to apply settings changes to the file conversion above'
-        Top = 0
-        Width = 78
+        Top = -2
+        Width = 80
         Anchors = [akTop, akRight]
         Caption = 'Apply Changes'
         Color = clBtnFace
@@ -2305,10 +2301,10 @@ object frmMain: TfrmMain
         OnClick = lblSaveChangesClick
       end
       object lblCancelChanges: TLabel
-        Left = 382
-        Height = 12
-        Top = 0
-        Width = 84
+        Left = 385
+        Height = 15
+        Top = -2
+        Width = 85
         Anchors = [akTop, akRight]
         Caption = 'Cancel Changes'
         Color = clBtnFace
@@ -2317,10 +2313,10 @@ object frmMain: TfrmMain
         OnClick = lblCancelChangesClick
       end
       object lblApplytoAll: TLabel
-        Left = 555
-        Height = 12
-        Top = 0
-        Width = 72
+        Left = 569
+        Height = 15
+        Top = -2
+        Width = 62
         Anchors = [akTop, akRight]
         Caption = 'Apply to All'
         Color = clBtnFace
@@ -2332,8 +2328,8 @@ object frmMain: TfrmMain
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 22
-    Top = 430
+    Height = 23
+    Top = 429
     Width = 640
     AutoHint = True
     Panels = <>
