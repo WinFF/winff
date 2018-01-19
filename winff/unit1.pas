@@ -2446,7 +2446,8 @@ begin                                     // get setup
    // finish off command
 
    script.Add(AfterCommand);
-
+   //restore to system's default codepage
+   {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
                                                   // pausescript
    if (pausescript='true') and (preview=false) then
        begin
