@@ -1,6 +1,10 @@
 # WinFF
 
-WinFF is a GUI for the command line video converter [FFmpeg](https://ffmpeg.org).
+WinFF is a GUI for the command line video converter [FFmpeg](https://ffmpeg.org) or avconv.
+
+Copyright © 2006-2020 Matthew Weatherford <matt@biggmatt.com>
+
+http://www.winff.org
 
 ![screenshot](media/screenshot.jpg)
 
@@ -12,4 +16,15 @@ On Windows you can use [chocolatey](https://chocolatey.org/packages/winff): `cho
 
 ## License
 
-WinFF is published under the GNU Public License v3 without any warranty implied or otherwise, with no suitability for any purpose. Use this software at your own risk.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
