@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: WinFF 1.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2014-02-15 11:14+0100\n"
-"PO-Revision-Date: 2022-08-26 06:06-0300\n"
+"PO-Revision-Date: 2022-08-26 14:57-0300\n"
 "Last-Translator: marcelocripe <marcelocripe@gmail.com>, 2022\n"
 "Language-Team: pt_BR \n"
 "Language: pt_BR \n"
@@ -1046,7 +1046,7 @@ msgstr "Criar a Predefinição:"
 
 #: unit2.rsimportpresets
 msgid "Import Presets"
-msgstr "Importar uma Predefinições"
+msgstr "Importar as Predefinições"
 
 #: unit2.rslabelmustbeunique
 msgid "Label must be unique."
