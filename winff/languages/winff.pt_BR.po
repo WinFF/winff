@@ -163,7 +163,7 @@ msgstr "Informe um nome mais descritivo para esta predefinição"
 
 #: tfrmeditpresets.edit3.hint
 msgid "Please don't use -i or output file parameters"
-msgstr "Por favor, não utilize -i ou parâmetros de saída de arquivo"
+msgstr "Por favor, não utilize -i ou parâmetros de saída do arquivo"
 
 #: tfrmeditpresets.edit4.hint
 msgid "Do not include a dot"
@@ -222,7 +222,7 @@ msgstr "Importar uma Predefinição"
 
 #: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
-msgstr "pnlTop"
+msgstr "pnlSuperior"
 
 #: tfrmeditpresets.savedialog1.title
 msgid "Export a Preset"
@@ -306,11 +306,11 @@ msgstr ""
 
 #: tfrmmain.btnpreview.caption
 msgid "Preview"
-msgstr "Visualização"
+msgstr "Visualizar"
 
 #: tfrmmain.btnpreview.hint
 msgid "Preview using the output settings"
-msgstr "Visualizar o arquivo selecionado utilizando as configurações de saída"
+msgstr "Visualizar o arquivo selecionado utilizando as configurações do perfil de saída"
 
 #: tfrmmain.btnremove.caption
 msgid "Remove"
@@ -1033,7 +1033,7 @@ msgstr ""
 "Parece que a inicialização do terminal falhou. A causa mais provável é que "
 "as configurações das opções do terminal nas preferências do GNU/Linux não "
 "estão corretas. Você pode encontrá-lo através do menu: Editar -> Preferências "
-"-> Linux -> Opções do Terminal. Tente alterar o \"-e\" para \"-x\" ou "
+"-> GNU/Linux -> Opções do Terminal. Tente alterar o \"-e\" para \"-x\" ou "
 "vice-versa."
 
 #: unit1.rsthepresethasillegalchars
@@ -1042,7 +1042,7 @@ msgstr "A predefinição contém caracteres não permitidos"
 
 #: unit2.rscreatepreset
 msgid "Create Preset:"
-msgstr "Criar a Predefinição:"
+msgstr "Criar uma Predefinição:"
 
 #: unit2.rsimportpresets
 msgid "Import Presets"
