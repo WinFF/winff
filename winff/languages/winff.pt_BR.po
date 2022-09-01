@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: WinFF 1.0\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
 "POT-Creation-Date: 2014-02-15 11:14+0100\n"
-"PO-Revision-Date: 2022-08-27 23:57-0300\n"
+"PO-Revision-Date: 2022-08-31 19:57-0300\n"
 "Last-Translator: marcelocripe <marcelocripe@gmail.com>, 2022\n"
 "Language-Team: pt_BR \n"
 "Language: pt_BR \n"
@@ -181,7 +181,7 @@ msgstr "Exportar"
 #: tfrmeditpresets.frmeditpresets.caption
 msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
 msgid "Edit Presets"
-msgstr "Editar as Predefinições"
+msgstr "Editar as Predefinições do WinFF"
 
 #: tfrmeditpresets.import.caption
 msgid "Import"
@@ -197,7 +197,7 @@ msgstr "Nome da Predefinição (uma palavra com apenas letras e números)"
 
 #: tfrmeditpresets.label3.caption
 msgid "Preset Label"
-msgstr "Rótulo da Predefinição"
+msgstr "Título da Predefinição"
 
 #: tfrmeditpresets.label4.caption
 msgid "Preset Command Line Parameters (no -i or output file)"
@@ -222,7 +222,7 @@ msgstr "Importar uma Predefinição"
 
 #: tfrmeditpresets.pnltop.caption
 msgid "pnlTop"
-msgstr "pnlSuperior"
+msgstr "pnlTop"
 
 #: tfrmeditpresets.savedialog1.title
 msgid "Export a Preset"
@@ -290,7 +290,7 @@ msgstr "Opções"
 
 #: tfrmmain.btnoptions.hint
 msgid "Open/close the additional options window"
-msgstr "Abrir ou fechar a janela de opções adicionais"
+msgstr "Exibir ou ocultar as opções adicionais"
 
 #: tfrmmain.btnplay.caption
 msgid "Play"
@@ -310,7 +310,7 @@ msgstr "Visualização"
 
 #: tfrmmain.btnpreview.hint
 msgid "Preview using the output settings"
-msgstr "Visualizar utilizando as configurações de saída"
+msgstr "Visualizar o arquivo selecionado utilizando as configurações de saída"
 
 #: tfrmmain.btnremove.caption
 msgid "Remove"
@@ -508,7 +508,7 @@ msgstr "2ª Etapa"
 
 #: tfrmmain.label7.caption
 msgid "Audio Bitrate"
-msgstr "Taxa de Áudio"
+msgstr "Taxa de Bits do Áudio"
 
 #: tfrmmain.label8.caption
 msgid "Sample Rate"
@@ -532,7 +532,7 @@ msgstr "Cancelar as Alterações"
 
 #: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
-msgstr "Inferior"
+msgstr "Embaixo"
 
 #: tfrmmain.lblcropleft.caption
 msgid "Left"
@@ -544,7 +544,7 @@ msgstr "Direita"
 
 #: tfrmmain.lblcroptop.caption
 msgid "Top"
-msgstr "Superior"
+msgstr "Em cima"
 
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
@@ -603,11 +603,11 @@ msgstr "Sair"
 
 #: tfrmmain.mitforums.caption
 msgid "Forums"
-msgstr "Fóruns"
+msgstr "Fórum do WinFF"
 
 #: tfrmmain.mitimportpreset.caption
 msgid "Import Preset"
-msgstr "Importar a Predefinição"
+msgstr "Importar uma Predefinição"
 
 #: tfrmmain.mitpauseonfinish.caption
 msgid "Pause on Finish"
@@ -640,7 +640,7 @@ msgstr "Selecionar Tudo"
 #: tfrmmain.mitshowoptions.caption
 msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
 msgid "Additional Options"
-msgstr "Opções Adicionais"
+msgstr "Exibir ou Ocultar as Opções Adicionais"
 
 #: tfrmmain.mitshutdownonfinish.caption
 msgid "Shutdown on Finish"
@@ -708,7 +708,7 @@ msgstr "FFmpeg"
 #: tfrmmain.tabsheet6.caption
 msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
 msgid "Output Details"
-msgstr "Detalhes da Saída"
+msgstr "Perfil de Saída"
 
 #: tfrmmain.tabvideo.caption
 msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
@@ -803,7 +803,7 @@ msgstr "..."
 #: tfrmpreferences.cbchcpchar.caption
 msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
 msgid "Use CHCP for international characters"
-msgstr "Utilizar o CHCP para caracteres internacionais"
+msgstr "Utilizar o CHCP para caracteres especiais"
 
 #: tfrmpreferences.cbenablemulti.caption
 msgid "Enable Multiple Presets in File List "
@@ -828,7 +828,7 @@ msgstr "'-e' para utilizar o emulador de terminal XTerm, '-x' para "
 #: tfrmpreferences.frmpreferences.caption
 msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
 msgid "WinFF Preferences"
-msgstr "Preferências do WinFF"
+msgstr "Editar as Preferências do WinFF"
 
 #: tfrmpreferences.lblaftercommand.caption
 msgid "Command to execute at end of script"
@@ -863,7 +863,7 @@ msgstr "Executar o FFmpeg no Terminal:"
 #: tfrmpreferences.lbllinterminaloptions.caption
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION"
 msgid "Terminal Options:"
-msgstr "Opções do Terminal:"
+msgstr "Parâmetros do Terminal:"
 
 #: tfrmpreferences.lblpriority.caption
 msgctxt "TFRMPREFERENCES.LBLPRIORITY.CAPTION"
@@ -880,7 +880,7 @@ msgstr "Caminho para o Executável do FFmpeg ou do avconv:"
 #, fuzzy
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Caminho para o executável do FFplay ou do avplay :"
+msgstr "Caminho para o executável do FFplay ou do avplay:"
 
 #: tfrmpreferences.tabgeneral.caption
 msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
@@ -890,7 +890,7 @@ msgstr "Geral"
 #: tfrmpreferences.tablinux.caption
 msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
 msgid "Linux"
-msgstr "Linux"
+msgstr "GNU/Linux"
 
 #: tfrmpreferences.tabscripting.caption
 msgid "Scripting"
@@ -1001,7 +1001,7 @@ msgstr "Pressione a tecla Enter para continuar"
 
 #: unit1.rsrddialogtitle
 msgid "Restore defaults"
-msgstr "Restaurar os padrões"
+msgstr "Restaurar os padrões do WinFF"
 
 #: unit1.rsreplacepreset
 msgid "Replace Preset?"
@@ -1009,7 +1009,7 @@ msgstr "Substituir a Predefinição?"
 
 #: unit1.rsrestoredefaults
 msgid "Restore Presets and Preferences to Defaults?"
-msgstr "Restaurar as predefinições e as preferências para os padrões?"
+msgstr "Você quer restaurar as predefinições e as preferências padrões do WinFF?"
 
 #: unit1.rsselectdirectory
 msgid "Select Directory"
