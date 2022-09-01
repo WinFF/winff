@@ -532,7 +532,7 @@ msgstr "Cancelar as Alterações"
 
 #: tfrmmain.lblcropbottom.caption
 msgid "Bottom"
-msgstr "Embaixo"
+msgstr "Inferior"
 
 #: tfrmmain.lblcropleft.caption
 msgid "Left"
@@ -544,7 +544,7 @@ msgstr "Direita"
 
 #: tfrmmain.lblcroptop.caption
 msgid "Top"
-msgstr "Em cima"
+msgstr "Superior"
 
 #: tfrmmain.lblframerate.caption
 msgid "Frame Rate"
@@ -847,13 +847,13 @@ msgstr "Pasta de Destino Padrão:"
 #, fuzzy
 msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Caminho para o Executável do FFmpeg ou do avconv:"
+msgstr "Caminho para o Executável do FFmpeg ou do AVconv:"
 
 #: tfrmpreferences.lbllinffplaypath.caption
 #, fuzzy
 msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Caminho para o Executável do FFplay ou do avplay:"
+msgstr "Caminho para o Executável do FFplay ou do AVplay:"
 
 #: tfrmpreferences.lbllinterminalexe.caption
 msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
@@ -874,13 +874,13 @@ msgstr "Prioridade:"
 #, fuzzy
 msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
 msgid "Path to FFmpeg or avconv Executable:"
-msgstr "Caminho para o Executável do FFmpeg ou do avconv:"
+msgstr "Caminho para o Executável do FFmpeg ou do AVconv:"
 
 #: tfrmpreferences.lblwinffplay.caption
 #, fuzzy
 msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
 msgid "Path to FFplay or avplay Executable:"
-msgstr "Caminho para o executável do FFplay ou do avplay:"
+msgstr "Caminho para o executável do FFplay ou do AVplay:"
 
 #: tfrmpreferences.tabgeneral.caption
 msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
@@ -933,12 +933,12 @@ msgstr "Convertendo"
 #: unit1.rscouldnotfindffmpeg
 #, fuzzy
 msgid "Could not find either ffmpeg or avconv."
-msgstr "Não foi possível encontrar o FFmpeg ou o avconv."
+msgstr "Não foi possível encontrar o FFmpeg ou o AVconv."
 
 #: unit1.rscouldnotfindffplay
 #, fuzzy
 msgid "Could not find either ffplay or avplay."
-msgstr "Não foi possível encontrar o FFPlay ou o avplay."
+msgstr "Não foi possível encontrar o FFPlay ou o AVplay."
 
 #: unit1.rscouldnotfindfile
 msgid "Could Not Find File"
