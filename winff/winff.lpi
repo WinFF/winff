@@ -20,7 +20,7 @@
       <MajorVersionNr Value="1"/>
       <MinorVersionNr Value="5"/>
       <RevisionNr Value="5"/>
-      <StringTable CompanyName="WinFF.org" FileDescription="WinFF Video Converter" InternalName="winff" LegalCopyright="Copyright 2006-2016 Matthew Weatherford" OriginalFilename="winff.exe" ProductVersion=""/>
+      <StringTable CompanyName="WinFF.org" FileDescription="WinFF Video Converter" InternalName="winff" LegalCopyright="Copyright 2006-2023 Matthew Weatherford" OriginalFilename="winff.exe" ProductVersion=""/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="default" Default="True"/>

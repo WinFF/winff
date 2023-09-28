@@ -1,34 +1,49 @@
-WinFF Copyright 2006 - 2014 Matthew Weatherford
+WinFF Copyright 2006 - 2023 Matthew Weatherford
 http://www.winff.org
 
+V1.6.0
+----
+Brazilian Portuguese translation [marcelocripe]
+Correct and complete Swedish translation [eson57]
+Fix typos in Polish translation [jwilk]
+Use aac instead of libvo_aacenc [serpent7776]
+Enable building with lazarus 1.8 [paulgevers]
+Fix browse for ffplay on windows [gardient]
+Readme edits [tesar-tech]
+
+V1.5.5
+----
+Added Sinhala translation
+Clean up presets
+
 V1.54
------
+----
 Issue 209:
 
 2 Bugs:
-1 on drag drop, numfiles was not initialised.  Could countain random 
+1 on drag drop, numfiles was not initialised.  Could countain random
 number, not actual files dragged and dropped
 max number of jobs was not being incremented on dragdrop.
-now, if you dragdrop and the file list goes > max number of jobs, we add 
+now, if you dragdrop and the file list goes > max number of jobs, we add
 50 more rows to filelist.
-note: file list is initially limited to 100 jobs because of the memory 
-overhead of maintaining arrays of the filenames, command lines, options 
+note: file list is initially limited to 100 jobs because of the memory
+overhead of maintaining arrays of the filenames, command lines, options
 settings, etc
-enhancement: added hint for file list showing number of files in queue 
+enhancement: added hint for file list showing number of files in queue
 when cursor not over a filename
 
 Issue 211
 Use of double quotes replaced by single quote.  Cosmetic, done
 
 v1.5.3
----
+----
 fixed isuue 10 & 120 with European and Cyrillic Chacters
 Fixed Apply changes Panel showing when not in multipreset mode
 added 720p and 1080p mpeg4 presets (about time;)
 
 
 v1.5.2
----
+----
 updated ffmpeg-readme. issue 201
 Ability to execute command before and after script
 Save Displaycmdline state issue 163
@@ -43,7 +58,7 @@ Update and addition of several languages
 Open destfolder button
 Changed preset name to preset label on save to preset dialog
 Fixed bug in replaceVfParam that didn't replace a vf param on the very start of the preset's params
-Added menu item, "Save options to preset" in the preset. It save the codec related options, -r:v, -aspect, -b:v, -b:a, -r:a, -ac, 
+Added menu item, "Save options to preset" in the preset. It save the codec related options, -r:v, -aspect, -b:v, -b:a, -r:a, -ac,
 Updated about box to include Kyle Schwarz
 swapped order of apply buttons
 Added apply to all button. It should cut down on the learning curve for previous version users.
@@ -116,7 +131,7 @@ v1.3.2
 Fix changing last option in preset via additional options (issue 63)
 Fixed issue47: Large fonts or long translations can extend
 Code cleanup and renames
-Much better translations, uses Lazarus' new translatiion system 
+Much better translations, uses Lazarus' new translatiion system
 Improved window behavior
 
 v1.3.1
@@ -157,7 +172,7 @@ v1.1
 -----
 New Icons and Logo
 Remember each preset's last destination directory
-fixed importing presets from command line 
+fixed importing presets from command line
 updated chinese
 New preset for Google Andriod, Nokia, Sony Walkman, more
 windows installer updated with ffmpeg r18709
@@ -224,7 +239,7 @@ Preset for ffmpeg revision 13712
 
 v0.42
 -----
-Brazilian Portuguese 
+Brazilian Portuguese
 Portuguese
 Dutch
 fixed options not being inserted into commandline when they don't exist already

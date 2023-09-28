@@ -125,8 +125,8 @@ begin
     lbThanks.items.add('Alexey Osipov');
     lbThanks.items.add(rsLaunchpadContrib);
 
-    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.5.5',[]);
-    frmAbout.lblCopyright.Caption   := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2016',[]);
+    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.6.0',[]);
+    frmAbout.lblCopyright.Caption   := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2023',[]);
 end;
 
 procedure TfrmAbout.lblBellardClick(Sender: TObject);
