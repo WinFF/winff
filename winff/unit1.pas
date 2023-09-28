@@ -282,7 +282,7 @@ type
   public
     { public declarations }
 
-  end; 
+  end;
 
 
 {$IFDEF WINDOWS}
@@ -455,7 +455,7 @@ begin
 
   if not DirectoryExists(presetspath) then
     createdir(presetspath);
-    
+
   ffmpeg := getconfigvalue('win32/ffmpeg');
   if ffmpeg = '' then
      begin
@@ -476,7 +476,7 @@ begin
       else
         terminal:='cmd.exe';
   termoptions := '/c';
-  
+
   usechcp:= getconfigvalue('win32/chcp');
   if usechcp = '' then
      begin
@@ -493,12 +493,12 @@ begin
   extraspath:='/usr/share/winff/';
   if not directoryexists(extraspath) then
      ExtrasPath:= ExtractFilePath(ParamStr(0));
-     
+
   presetspath := GetMydocumentsPath() + '/.winff/';
 
   if not DirectoryExists(presetspath) then
     createdir(presetspath);
-    
+
   ffmpeg := getconfigvalue('unix/ffmpeg');
   if ffmpeg = '' then
      begin
@@ -510,7 +510,7 @@ begin
        if ffmpeg = '' then showmessage(rsCouldNotFindFFmpeg);
        setconfigvalue('unix/ffmpeg',ffmpeg)
      end;
-     
+
   ffplay := getconfigvalue('unix/ffplay');
   if ffplay = '' then
      begin
@@ -522,7 +522,7 @@ begin
        if ffplay = '' then showmessage(rsCouldNotFindFFPlay);
        setconfigvalue('unix/ffplay',ffplay);
      end;
-     
+
   terminal := getconfigvalue('unix/terminal');
   if terminal = '' then
      begin
@@ -646,7 +646,7 @@ begin
   pass2encoding:=getconfigvalue('general/pass2');
   if pass2encoding='' then cbx2Pass.checked:=false;
   if pass2encoding='true' then cbx2Pass.checked:=true;
-  
+
                                       // check pause before finished
   pausescript:=getconfigvalue('general/pause');
   if pausescript='' then
@@ -886,7 +886,7 @@ begin
       category:=''
    else
       category:=trim(categorybox.Text);
-      
+
    for i:= 0 to presets.ChildNodes.Count -1  do
    begin
       try
@@ -2011,7 +2011,7 @@ end;
 procedure TfrmMain.mitForumsClick(Sender: TObject);
 
 begin
-  launchbrowser('http://www.winff.org/forums/');
+  launchbrowser('https://github.com/WinFF/winff');
 end;
 
 procedure TfrmMain.mitRestoreDefaultsClick(Sender: TObject);
@@ -2110,7 +2110,7 @@ end;
 procedure TfrmMain.mitWinffClick(Sender: TObject);
 
 begin
-  launchbrowser('http://www.winff.org/');
+  launchbrowser('https://github.com/WinFF/winff');
 end;
 
 // menu: about
