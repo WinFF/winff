@@ -1390,10 +1390,12 @@ s:string;
 begin
   {$ifdef linux}
   s:='';
+  if fileexists('/usr/bin/okular') then s:='/usr/bin/okular';
   if fileexists('/usr/bin/evince') then s:='/usr/bin/evince';
   if fileexists('/usr/bin/kpdf') then s:='/usr/bin/kpdf';
   if fileexists('/usr/bin/xpdf') then s:='/usr/bin/xpdf';
   if fileexists('/usr/bin/acroread') then s:='/usr/bin/acroread';
+  if fileexists('/usr/bin/xdg-open') then s:='/usr/bin/xdg-open';
   if s='' then
      begin
      Showmessage('More information can be found at ' + pdffile);
