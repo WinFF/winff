@@ -2,7 +2,7 @@
 
 WinFF is a GUI for the command line video converter [FFmpeg](https://ffmpeg.org) or avconv.
 
-Copyright © 2006-2020 Matthew Weatherford <matt@biggmatt.com>
+Copyright © 2006-2023 Matthew Weatherford <matt@biggmatt.com>
 
 http://www.winff.org
 
