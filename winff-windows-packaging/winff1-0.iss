@@ -7,7 +7,7 @@
 ;ArchitecturesAllowed=x64
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.6.0
+AppVerName=WinFF 1.6.1
 AppPublisher=WinFF.org
 AppPublisherURL=http://www.winff.org/
 AppSupportURL=http://www.winff.org/forums
@@ -15,7 +15,7 @@ AppUpdatesURL=http://www.winff.org/
 AppCopyright=Copyright 2006-2023 WinFF.org
 DefaultDirName={pf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.6.0
+VersionInfoVersion=1.6.1
 AllowNoIcons=yes
 LicenseFile=License.txt
 OutputDir=output

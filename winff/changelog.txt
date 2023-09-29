@@ -1,6 +1,12 @@
 WinFF Copyright 2006 - 2023 Matthew Weatherford
 http://www.winff.org
 
+V1.6.1
+----
+Link to forum
+Portuguese pdf
+pdf launcher for linux
+
 V1.6.0
 ----
 Brazilian Portuguese translation [marcelocripe]
