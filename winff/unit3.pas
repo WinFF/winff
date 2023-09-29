@@ -166,7 +166,7 @@ end;
 
 procedure TfrmAbout.lblURLWinffOrgClick(Sender: TObject);
 begin
-  frmMain.LaunchBrowser('http://www.winff.org');
+  frmMain.LaunchBrowser('https://github.com/WinFF/winff');
 end;
 
 procedure TfrmAbout.lblURLffmpegClick(Sender: TObject);

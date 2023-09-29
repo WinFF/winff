@@ -1,5 +1,5 @@
 WinFF Copyright 2006 - 2023 Matthew Weatherford
-http://www.winff.org
+https://www.biggmatt.com/p/winff.html
 
 V1.6.1
 ----

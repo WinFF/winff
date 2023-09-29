@@ -192,7 +192,7 @@ object frmAbout: TfrmAbout
             Top = 29
             Width = 137
             BorderSpacing.Around = 5
-            Caption = 'http://www.winff.org'
+            Caption = 'https://github.com/WinFF/winff'
             Font.Color = clBlue
             ParentColor = False
             ParentFont = False

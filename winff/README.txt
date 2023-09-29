@@ -1,6 +1,6 @@
 Winff -  graphical video and audio batch converter using ffmpeg or avconv
 Copyright  © 2006-2012 Matthew Weatherford <matt@biggmatt.com>
-http://www.winff.org
+https://www.biggmatt.com/p/winff.html
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
