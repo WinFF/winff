@@ -2011,7 +2011,7 @@ end;
 procedure TfrmMain.mitForumsClick(Sender: TObject);
 
 begin
-  launchbrowser('https://github.com/WinFF/winff');
+  launchbrowser('https://groups.google.com/g/winff');
 end;
 
 procedure TfrmMain.mitRestoreDefaultsClick(Sender: TObject);
@@ -2106,7 +2106,7 @@ begin
    mitViewMode.Checked := not (mitViewMode.Checked)
 end;
 
-//menu: Help Forums
+//menu: Website
 procedure TfrmMain.mitWinffClick(Sender: TObject);
 
 begin
