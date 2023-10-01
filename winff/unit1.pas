@@ -3094,6 +3094,8 @@ initialization
   {$ifdef unix}PODirectory := '/usr/share/winff/languages/'{$endif};
   GetLanguageIDs(Lang, FallbackLang); // in unit gettext
 
+  if length (Lang) > 5 then
+	Lang := leftstr(Lang,5); // LCID never more than 5 chars
 
   POFile := PODirectory + 'winff.' + Lang + '.po';
   if not FileExists(POFile) then
