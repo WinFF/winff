@@ -74,7 +74,7 @@ type
     { private declarations }
   public
     { public declarations }
-  end; 
+  end;
 
 var
   frmAbout: TfrmAbout;
@@ -92,7 +92,7 @@ procedure TfrmAbout.FormCreate(Sender: TObject);
 begin
     // do translations
     TranslateUnitResourceStrings('unit3', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
-    
+
     // fill thank you memo
 
     lbThanks.items.Add('Fernando Andrián Gómez');
@@ -124,8 +124,9 @@ begin
     lbThanks.items.add('大宝(DaBao)');
     lbThanks.items.add('Alexey Osipov');
     lbThanks.items.add(rsLaunchpadContrib);
+    lbThanks.items.add('marcelocripe');
 
-    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.6.1',[]);
+    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.6.2',[]);
     frmAbout.lblCopyright.Caption   := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2023',[]);
 end;
 

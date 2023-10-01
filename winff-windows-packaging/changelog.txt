@@ -1,10 +1,18 @@
 WinFF Copyright 2006 - 2023 Matthew Weatherford
 https://www.biggmatt.com/p/winff.html
 
+V1.6.2
+----
+Issue 252:
+Fix loading of .po files with 5char locale codes
+Add desktop file [Robin Antix]
+Issue 235: encoding for Windows CJK
+Update windows iss file
+
 V1.6.1
 ----
-Link to forum
-Portuguese pdf
+Link to support forum
+Portuguese (Brazil) pdf [marcelocripe]
 pdf launcher for linux
 
 V1.6.0
