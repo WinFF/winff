@@ -2,24 +2,22 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 [Setup]
-; UNCOMMENT FOR 64bit INSTALL
-;ArchitecturesInstallIn64BitMode=x64
-;ArchitecturesAllowed=x64
+ArchitecturesInstallIn64BitMode=x64
+ArchitecturesAllowed=x64
 AppID=WinFF
 AppName=WinFF
-AppVerName=WinFF 1.6.1
+AppVerName=WinFF 1.6.2
 AppPublisher=WinFF.org
-AppPublisherURL=http://www.winff.org/
-AppSupportURL=http://www.winff.org/forums
-AppUpdatesURL=http://www.winff.org/
+AppPublisherURL=https://github.com/WinFF/winff
+AppSupportURL=https://groups.google.com/g/winff
+AppUpdatesURL=https://github.com/WinFF/winff/
 AppCopyright=Copyright 2006-2023 WinFF.org
-DefaultDirName={pf}\WinFF
+DefaultDirName={commonpf}\WinFF
 DefaultGroupName=WinFF
-VersionInfoVersion=1.6.1
+VersionInfoVersion=1.6.2
 AllowNoIcons=yes
-LicenseFile=License.txt
 OutputDir=output
-OutputBaseFilename=setup
+OutputBaseFilename=WinFF-setup-1-6-2
 Compression=lzma
 SolidCompression=yes
 SetupIconFile=WinFF.ico
@@ -30,7 +28,6 @@ Root: HKCR; Subkey: ".wff"; ValueType: string; ValueName: ""; ValueData: "WinFF"
 Root: HKCR; Subkey: "WinFF"; ValueType: string; ValueName: ""; ValueData: "WinFF Presets"; Flags: uninsdeletekey
 Root: HKCR; Subkey: "WinFF\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\winff.exe,0"
 Root: HKCR; Subkey: "WinFF\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\WinFF.EXE"" ""%1"""
-
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -43,20 +40,15 @@ Name: "french"; MessagesFile: "compiler:languages\French.isl"
 Name: "brazilianportuguese"; MessagesFile: "compiler:languages\brazilianportuguese.isl"
 Name: "spanish"; MessagesFile: "compiler:languages\Spanish.isl"
 Name: "portuguese"; MessagesFile: "compiler:languages\Portuguese.isl"
+Name: "brazilianportuguese"; MessagesFile: "compiler:languages\BrazilianPortuguese.isl"
 Name: "dutch"; MessagesFile: "compiler:languages\Dutch.isl"
-Name: "chinesetrad"; MessagesFile: "compiler:languages\chinesetrad.isl"
-Name: "serbiancyrillic"; MessagesFile: "compiler:languages\SerbianCyrillic.isl"
-Name: "serbianlatin"; MessagesFile: "compiler:languages\SerbianLatin.isl"
 Name: "norwegian"; MessagesFile: "compiler:languages\Norwegian.isl"
 Name: "hebrew"; MessagesFile: "compiler:languages\hebrew.isl"
-Name: "greek"; MessagesFile: "compiler:languages\greek.isl"
 Name: "slovenian"; MessagesFile: "compiler:languages\Slovenian.isl"
-Name: "Russian"; MessagesFile: "compiler:languages\Russian.isl"
-Name: "Catalan"; MessagesFile: "compiler:languages\Catalan.isl"
-Name: "Swedish"; MessagesFile: "compiler:languages\Swedish.isl"
-Name: "Arabic"; MessagesFile: "compiler:languages\Arabic.isl"
-Name: "Galician"; MessagesFile: "compiler:languages\Galician.isl"
-Name: "Lithuanian"; MessagesFile: "compiler:languages\Lithuanian.isl"
+Name: "slovak"; MessagesFile: "compiler:languages\Slovak.isl"
+Name: "russian"; MessagesFile: "compiler:languages\Russian.isl"
+Name: "catalan"; MessagesFile: "compiler:languages\Catalan.isl"
+Name: "ukrainian"; MessagesFile: "compiler:languages\Ukrainian.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
@@ -81,7 +73,7 @@ Source: "AUTHORS"; DestDir: "{app}\Docs"; Flags: ignoreversion
 Source: "Docs\*"; DestDir: "{app}\Docs"; Flags: ignoreversion
 
 ; language files
-Source: "languages\*"; DestDir: "{app}\languages"; Flags: ignoreversion
+Source: "..\winff\languages\*"; DestDir: "{app}\languages"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
@@ -104,6 +96,6 @@ Name: "{group}\Docs\Docs - Dutch"; Filename: "{app}\Docs\WinFF.nl.pdf";
 Name: "{group}\Docs\Docs - French"; Filename: "{app}\Docs\WinFF.fr.pdf";
 Name: "{group}\Docs\Docs - Spanish"; Filename: "{app}\Docs\WinFF.es.pdf";
 Name: "{group}\Docs\Docs - Catalan"; Filename: "{app}\Docs\WinFF.ca.pdf";
+Name: "{group}\Docs\Docs - Portuguese"; Filename: "{app}\Docs\WinFF.pt.pdf";
 [Run]
 Filename: "{app}\winff.exe"; Description: "{cm:LaunchProgram,WinFF}"; Flags: nowait postinstall skipifsilent
-
