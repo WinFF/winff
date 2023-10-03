@@ -2378,8 +2378,20 @@ begin                                     // get setup
        // Set Script Title
        {$IFDEF WINDOWS}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
-       {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
-       ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
+
+       {$ifdef unix}
+            // resolve issues with embedded quote marks in filename to be converted.  issue 38
+            filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
+            basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
+
+            // resolve issue with arbitrary command execution  issue 242
+            filename := StringReplace(filename,'$','\$',[rfReplaceAll]);
+            basename := StringReplace(basename,'$','\$',[rfReplaceAll]);
+
+            titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
+               ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';
+       {$endif}
+
        {$IFDEF WINDOWS}
        if usechcp = 'true' then
          script.Add(titlestring)
@@ -2800,6 +2812,10 @@ begin
        {$ifdef unix}
        filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
        basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
+
+       // resolve issue with arbitrary command execution  issue 242
+       filename := StringReplace(filename,'$','\$',[rfReplaceAll]);
+       basename := StringReplace(basename,'$','\$',[rfReplaceAll]);
        {$endif}
 
        for j:= length(basename) downto 1  do
