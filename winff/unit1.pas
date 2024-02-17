@@ -409,12 +409,12 @@ var
   rsPresetHasNoLabel = 'The preset to import does not have a label';
   rsThePresetHasIllegalChars = 'The preset contains illegal characters';
   rsPresetWithLabelExists = 'Preset with label: %s%s%s already exists';
-  rsPresethasnoExt	= 'The preset to import does not have an extension';
-  rsNameMustBeAllpha	= 'Name Must be alphanumeric (a-z,A-Z,0-9)';
-  rsExtensionnoperiod	= 'Extension can not contain a period';
-  rsFileDoesNotExist	= 'file does not exist';
-  rsPresettoExport	= 'Please select a preset to export';
-  rsSelectDirectory	= 'Select Directory';
+  rsPresethasnoExt      = 'The preset to import does not have an extension';
+  rsNameMustBeAllpha    = 'Name Must be alphanumeric (a-z,A-Z,0-9)';
+  rsExtensionnoperiod   = 'Extension can not contain a period';
+  rsFileDoesNotExist    = 'file does not exist';
+  rsPresettoExport      = 'Please select a preset to export';
+  rsSelectDirectory     = 'Select Directory';
   rsRDdialogtitle       = 'Restore defaults';
   rsRestoreDefaults     = 'Restore Presets and Preferences to Defaults?';
   rsTerminalTestFailed  = 'It seems that starting the terminal failed. The most likely cause is that the setting for terminal options in the linux preferences is incorrect. You can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. Try changing "-e" to "-x" or vice versa.';
@@ -704,7 +704,6 @@ procedure TfrmMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 var
 s:string;
 begin
-
   if CloseAfterRestore then exit;
 
   if rememberlast = 'true' then   // save destination folder
@@ -746,7 +745,6 @@ begin
   setconfigvalue('window/left',inttostr(frmMain.Left));
 
   presetsfile.Free;           // cleanup
-
 end;
 
 // get the params from the preset
@@ -1356,7 +1354,7 @@ begin
 
      script.SaveToFile(presetspath+batfile);
      {$ifdef unix}
-     fpchmod(presetspath + batfile,&777);
+     fpchmod(presetspath + batfile,&700);
      {$endif}
 
     scriptprocess.ShowWindow := swoNone;
@@ -2039,7 +2037,7 @@ end;
 
 procedure TfrmMain.mitSaveOptionsClick(Sender: TObject);
 var
-commandline,pn : string;
+  commandline,pn : string;
 
 begin
        pn:=getcurrentpresetname(presetbox.Text);
@@ -2508,7 +2506,7 @@ begin                                     // get setup
      begin
 
        {$ifdef unix}
-       fpchmod(presetspath + batfile,&777);
+       fpchmod(presetspath + batfile,&700);
        {$endif}
 
                                                         // do it
@@ -2975,7 +2973,7 @@ begin
          if (edtSeekMM.Value < 10) and (length(edtSeekMM.Text)<2) then edtSeekMM.Text := '0' + edtSeekMM.Text;
          if (edtSeekSS.Value < 10) and (length(edtSeekSS.Text)<2) then edtSeekSS.Text := '0' + edtSeekSS.Text;
 
-	 commandline:=replaceparam(commandline,'-ss','');
+         commandline:=replaceparam(commandline,'-ss','');
          precommand+=' -ss ' + edtSeekHH.Text + ':' + edtSeekMM.Text + ':' + edtSeekSS.Text;
        end;
 
@@ -3014,7 +3012,7 @@ begin
        // if -ss and -t are already set, ignore the following parameter.
        if (preview = true) and (ignorepreview = false) then
        begin
-	  precommand += ' -ss 00:01:00 ';
+          precommand += ' -ss 00:01:00 ';
           commandline += ' -t 00:00:30 ';
        end;
 
@@ -3147,7 +3145,7 @@ initialization
   GetLanguageIDs(Lang, FallbackLang); // in unit gettext
 
   if length (Lang) > 5 then
-	Lang := leftstr(Lang,5); // LCID never more than 5 chars
+    Lang := leftstr(Lang,5); // LCID never more than 5 chars
 
   POFile := PODirectory + 'winff.' + Lang + '.po';
   if not FileExists(POFile) then
