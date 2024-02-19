@@ -10,7 +10,7 @@ https://www.biggmatt.com/p/winff.html
 
 ## Instalation
 
-Download instalation files for multiple platforms [here](https://www.biggmatt.com/p/winff.html).
+Download instalation files for multiple platforms [here](https://repology.org/project/winff/versions).
 
 On Windows you can use [chocolatey](https://chocolatey.org/packages/winff): `choco install winff`
 
