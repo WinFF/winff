@@ -1,5 +1,12 @@
-WinFF Copyright 2006 - 2023 Matthew Weatherford
+WinFF Copyright 2006 - 2024 Matthew Weatherford
 https://www.biggmatt.com/p/winff.html
+
+V1.6.3
+----
+Fix build on Unix/BSD
+Prevent shell injection
+Remove world access to scripts
+Escape backticks in media file names
 
 V1.6.2
 ----
