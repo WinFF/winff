@@ -277,6 +277,7 @@ type
     {$IFDEF WINDOWS}function GetWin32System(): Integer;{$endif}
     procedure SetSCR(vIndex : integer);
     procedure GetSCR(vIndex : integer);
+    procedure ProtectFileName (var FName : string);
 
   private
     { private declarations }
@@ -419,7 +420,7 @@ var
   rsRestoreDefaults     = 'Restore Presets and Preferences to Defaults?';
   rsTerminalTestFailed  = 'It seems that starting the terminal failed. The most likely cause is that the setting for terminal options in the linux preferences is incorrect. You can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. Try changing "-e" to "-x" or vice versa.';
 
-implementation
+implementation uses StrUtils;
 
 
 // Initialize everything
@@ -2298,6 +2299,15 @@ begin
  playprocess.free;
 end;
 
+procedure TfrmMain.ProtectFileName (var FName : String);
+begin
+    // Escape double quotes, dollar and backtick
+    FName := StringReplace(FName,'"','\"',[rfReplaceAll]);
+    FName := StringReplace(FName,'$','\$',[rfReplaceAll]);
+    FName := StringReplace(FName,'`','\`',[rfReplaceAll]);
+end;
+
+
 // Start Conversions
 procedure TfrmMain.btnConvertClick(Sender: TObject);
 var  scriptprocess:TProcess;
@@ -2372,19 +2382,15 @@ begin                                     // get setup
        extension:=getpresetextension(pn);
 
 
-
        // Set Script Title
        {$IFDEF WINDOWS}titlestring:='title ' + rsConverting + ' ' + extractfilename(filename) +
        ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
 
        {$ifdef unix}
             // resolve issues with embedded quote marks in filename to be converted.  issue 38
-            filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
-            basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
-
             // resolve issue with arbitrary command execution  issue 242
-            filename := StringReplace(filename,'$','\$',[rfReplaceAll]);
-            basename := StringReplace(basename,'$','\$',[rfReplaceAll]);
+            ProtectFileName (filename);
+            ProtectFileName (basename);
 
             titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
                ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';
@@ -2401,9 +2407,7 @@ begin                                     // get setup
        {$endif}
 
 
-
        presetbox.text := presetlist.strings[i];
-
 
 
 //1.5       categorybox.text := CategoryList.strings[i];
@@ -2806,14 +2810,11 @@ begin
          previewbasename := 'tmp_' + inttostr(random(10000000)) ;
        end;
 
-       // resolve issues with embedded quote marks in filename to be converted.  issue 38
        {$ifdef unix}
-       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
-       basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
-
-       // resolve issue with arbitrary command execution  issue 242
-       filename := StringReplace(filename,'$','\$',[rfReplaceAll]);
-       basename := StringReplace(basename,'$','\$',[rfReplaceAll]);
+         // resolve issues with embedded quote marks in filename to be converted.  issue 38
+         // resolve issue with arbitrary command execution  issue 242
+         ProtectFileName (filename);
+         ProtectFileName (basename);
        {$endif}
 
        for j:= length(basename) downto 1  do
@@ -3001,7 +3002,6 @@ begin
              //    in the video flags. Issue 146.
              commandline:=replaceparam(commandline,'-s','');
              commandline := replaceVfParam(commandline, 'scale', 'scale=' + VidsizeX.Text + ':' + VidsizeY.Text);
-
         end;
 
 
