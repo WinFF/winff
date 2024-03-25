@@ -125,7 +125,7 @@
       <LinkSmart Value="True"/>
       <Options>
         <PassLinkerOptions Value="True"/>
-        <LinkerOptions Value="--as-needed"/>
+        <LinkerOptions Value="--as-needed -zrelro -znow"/>
         <Win32>
           <GraphicApplication Value="True"/>
         </Win32>
