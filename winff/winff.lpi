@@ -119,7 +119,8 @@
     </Parsing>
     <Linking>
       <Debugging>
-        <DebugInfoType Value="dsStabs"/>
+        <GenerateDebugInfo Value="True"/>
+        <GenerateDwarf Value="True"/>
       </Debugging>
       <LinkSmart Value="True"/>
       <Options>
