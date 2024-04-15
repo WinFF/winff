@@ -275,6 +275,7 @@ type
         procedure SetSCR(vIndex : integer);
         procedure GetSCR(vIndex : integer);
         procedure ProtectFileName (var FName : string);
+        function CheckFileName (const FName : String) : Boolean;
 
     private
         { private declarations }
@@ -481,7 +482,6 @@ begin
             setconfigvalue('win32/chcp','true');
         end;
     {$endif}
-
     {$IFDEF UNIX}
         //presetbox.Height:=30;
         //categorybox.Height:=30;
@@ -536,7 +536,6 @@ begin
             setconfigvalue('unix/termoptions',termoptions);
         end;
     {$ENDIF}
-
 
     // prepare preset
     if (not fileexists(presetspath + 'presets.xml')) and (fileexists(extraspath + directoryseparator +'presets.xml')) then
@@ -1215,7 +1214,6 @@ end;
 
 procedure TfrmMain.rgRotateClick(Sender: TObject);
 begin
-
 end;
 
 procedure TfrmMain.SelectDirectoryDialog1FolderChange(Sender: TObject);
@@ -1365,10 +1363,11 @@ end;
 // launch pdf
 procedure TfrmMain.LaunchPdf(pdffile:string);
 {$IFDEF unix}
-var
-    launcher:tprocess;
-    s:string;
-    {$endif}
+    var
+        launcher:tprocess;
+        s:string;
+{$endif}
+
 begin
     {$ifdef unix}
         s:='';
@@ -1439,28 +1438,26 @@ function TfrmMain.GetDeskTopPath() : string ;
 // get the user's document's path
 function TfrmMain.GetMydocumentsPath() : string ;
 {$IFDEF WINDOWS}
-var
-    ppidl: PItemIdList;
-begin
-    ppidl := nil;
-    SHGetSpecialFolderLocation(frmMain.Handle,CSIDL_PERSONAL , ppidl);
-    SetLength(Result, MAX_PATH);
-    if not SHGetPathFromIDList(ppidl, PChar(Result)) then
-        raise exception.create('SHGetPathFromIDList failed : invalid pidl');
-    SetLength(Result, lStrLen(PChar(Result)));
-end;
+    var
+        ppidl: PItemIdList;
+    begin
+        ppidl := nil;
+        SHGetSpecialFolderLocation(frmMain.Handle,CSIDL_PERSONAL , ppidl);
+        SetLength(Result, MAX_PATH);
+        if not SHGetPathFromIDList(ppidl, PChar(Result)) then
+            raise exception.create('SHGetPathFromIDList failed : invalid pidl');
+        SetLength(Result, lStrLen(PChar(Result)));
+    end;
 {$endif}
 {$ifdef unix}
-begin
-    result := GetEnvironmentVariable('HOME') ;
-end;
+    begin
+        result := GetEnvironmentVariable('HOME') ;
+    end;
 {$endif}
 
 procedure TfrmMain.mnuOptionsClick(Sender: TObject);
 begin
-
 end;
-
 
 procedure TfrmMain.OpenFolderBtnClick(Sender: TObject);
 begin
@@ -1469,7 +1466,6 @@ end;
 
 procedure TfrmMain.Panel14Click(Sender: TObject);
 begin
-
 end;
 
 procedure TfrmMain.PopupMenu1Popup(Sender: TObject);
@@ -1486,21 +1482,21 @@ end;
 //{ get the user's application data path }
 function TfrmMain.GetappdataPath() : string ;
 {$IFDEF WINDOWS}
-var
-    ppidl: PItemIdList;
-begin
-    ppidl := nil;
-    SHGetSpecialFolderLocation(frmMain.Handle,CSIDL_APPDATA , ppidl);
-    SetLength(Result, MAX_PATH);
-    if not SHGetPathFromIDList(ppidl, PChar(Result)) then
-        raise exception.create('SHGetPathFromIDList failed : invalid pidl');
-    SetLength(Result, lStrLen(PChar(Result)));
-end;
+    var
+        ppidl: PItemIdList;
+    begin
+        ppidl := nil;
+        SHGetSpecialFolderLocation(frmMain.Handle,CSIDL_APPDATA , ppidl);
+        SetLength(Result, MAX_PATH);
+        if not SHGetPathFromIDList(ppidl, PChar(Result)) then
+            raise exception.create('SHGetPathFromIDList failed : invalid pidl');
+        SetLength(Result, lStrLen(PChar(Result)));
+    end;
 {$endif}
 {$ifdef unix}
-begin
-    result := GetEnvironmentVariable('HOME') ;
-end;
+    begin
+        result := GetEnvironmentVariable('HOME') ;
+    end;
 {$endif}
 
 // get windows version
@@ -1562,7 +1558,6 @@ begin
         DestFolder.Text := SelectDirectoryDialog1.FileName;
 end;
 
-
 // drop files into list
 procedure TfrmMain.FormDropFiles(Sender: TObject; const FileNames: array of String);
 var
@@ -1588,7 +1583,6 @@ begin
         CategoryList.add(categorybox.Text);
         PresetList.add(PresetBox.Text);
         FileInfoList.add(u);
-
 
         SetSCR(FileList.Count -1 ); // first time to save the parameters to the array (SCR)
         GenerateCommandLines(FileList.Count -1);
@@ -1664,7 +1658,6 @@ begin
     filelist.hint := 'Number of jobs in queue: ' + IntTostr(filelist.count);
     if multipresets then pnlAllow.Visible := False;
 end;
-
 
 procedure tFrmMain.SetSCR(vIndex : integer);
 begin
@@ -1825,7 +1818,7 @@ begin
 end;
 
 procedure TfrmMain.filelistMeasureItem(Control: TWinControl; Index: Integer;
-  var AHeight: Integer);
+var AHeight: Integer);
 begin
 //     AHeight := (frmMain.Font.Size * 3);
 {       if filelist.Count > 0 then
@@ -1844,21 +1837,21 @@ begin
     // Not for version 1.4 - works on Windows & QT, buggy on GTK.
     //  Enhanced job queue not in this release.
     {$ifdef windows}
-    with filelist do
-    begin
-        lstIndex:=SendMessage(Handle, LB_ITEMFROMPOINT, 0, MakeLParam(x,y)) ;
+        with filelist do
+        begin
+            lstIndex:=SendMessage(Handle, LB_ITEMFROMPOINT, 0, MakeLParam(x,y)) ;
 
-        // this should do the trick..
-        if fOldIndex <> lstIndex then
-            Application.CancelHint;
+            // this should do the trick..
+            if fOldIndex <> lstIndex then
+                Application.CancelHint;
 
-        fOldIndex := lstIndex;
+            fOldIndex := lstIndex;
 
-        if (lstIndex >= 0) and (lstIndex <= Items.Count) then
-            Hint := FileInfoList.Strings[lstIndex]
-        else
-            Hint := 'Number of Files: ' + IntToStr(filelist.count);
-    end;
+            if (lstIndex >= 0) and (lstIndex <= Items.Count) then
+                Hint := FileInfoList.Strings[lstIndex]
+            else
+                Hint := 'Number of Files: ' + IntToStr(filelist.count);
+        end;
     {$endif}
 end;
 
@@ -1890,33 +1883,33 @@ begin                   // check preset
         showmessage(rsPleaseSelectAPreset);
         exit;
     end;
-                    // check for files to apply to
-    if filelist.Items.Count = 0 then exit;
+
+    // check for files to apply to
+    if filelist.Items.Count = 0 then
+        exit;
 
     filelist.SelectAll;
 
     if pgSettings.ActivePageIndex = 5 then
-    begin
-        SaveChangedOptions(1);
-    end
+        SaveChangedOptions(1)
     else
-    begin
         SaveChangedOptions(0);
-    end;
 end;
 
 procedure TfrmMain.lblSaveChangesClick(Sender: TObject);
 var
     pn : string;
-begin                   // check preset
-    pn:=getcurrentpresetname(presetbox.Text);
+begin
+    pn:=getcurrentpresetname(presetbox.Text);  // check preset
     if pn='' then
     begin
         showmessage(rsPleaseSelectAPreset);
         exit;
     end;
-                    // check for files to apply to
-    if filelist.Items.Count = 0 then exit;
+
+    // check for files to apply to
+    if filelist.Items.Count = 0 then
+        exit;
 
     if pgSettings.ActivePageIndex = 5 then
     begin
@@ -1991,9 +1984,8 @@ procedure TfrmMain.mitRestoreDefaultsClick(Sender: TObject);
 var
     Result: boolean;
 begin
-    if MessageDlg(rsRDdialogtitle, RsRestoreDefaults, mtConfirmation,
-    [mbYes, mbNo],0) = mrNo
-    then Exit;
+    if MessageDlg(rsRDdialogtitle, RsRestoreDefaults, mtConfirmation, [mbYes, mbNo],0) = mrNo then
+        Exit;
 
     Result:=DeleteDirectory(presetspath,True);
     if Result then
@@ -2076,7 +2068,6 @@ end;
 
 //menu: Website
 procedure TfrmMain.mitWinffClick(Sender: TObject);
-
 begin
     launchbrowser('https://github.com/WinFF/winff');
 end;
@@ -2268,27 +2259,49 @@ begin
     playprocess.free;
 end;
 
-procedure TfrmMain.ProtectFileName (var FName : String);
+
+// Chars that might lead to command execution
+const EscapeSet = ['"', '$', '`', '&', ';'];
+
+function TfrmMain.CheckFileName (const FName : String) : Boolean;
+var N    : Integer;
+    OK   : Boolean;
+    estr : String;
 begin
-    // Escape double quotes, dollar and backtick
-    FName := StringReplace(FName,'"','\"',[rfReplaceAll]);
-    FName := StringReplace(FName,'$','\$',[rfReplaceAll]);
-    FName := StringReplace(FName,'`','\`',[rfReplaceAll]);
+    OK   := true;
+    N    := 1;
+
+    repeat
+        estr := ExtractWord (N, FName, EscapeSet + [' ', chr(9)]); // Include tab
+
+        if estr <> '' then
+            OK := not FileExists ('/usr/bin/' + estr) and not FileExists ('/usr/games/' + estr);
+        N := N+1;
+    until not OK or (estr = '');
+
+    result := OK;
+end;
+
+procedure TfrmMain.ProtectFileName (var FName : String);
+var E : char;
+begin
+    For E in EscapeSet do
+        FName := StringReplace(FName, E, '\'+E, [rfReplaceAll]);
 end;
 
 
 // Start Conversions
 procedure TfrmMain.btnConvertClick(Sender: TObject);
 var  scriptprocess:TProcess;
-     extension, filename,batfile,titlestring : string;
+     extension, filename,batfile,titlestring,
      ffplayfilename, basename,priority : string;
      scriptpriority:tprocesspriority;
      script: tstringlist;
      thetime: tdatetime;
      i,j,resmod : integer;
 
-begin                                     // get setup
-    scriptprocess:= TProcess.Create(nil);
+begin
+    scriptprocess:= TProcess.Create(nil); // get setup
 
     priority := getconfigvalue('general/priority');
     if priority= unit4.rspriorityhigh then
@@ -2303,8 +2316,12 @@ begin                                     // get setup
 
     script:= TStringList.Create;
     //codepage 65001 is UTF-8. script.SaveToFile defaults to UTF-8
-    {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp 65001');{$endif}
-    {$ifdef unix}script.Add('#!/bin/sh');{$endif}
+    {$IFDEF WINDOWS}
+        if usechcp = 'true' then script.Add('chcp 65001');
+    {$endif}
+    {$ifdef unix}
+        script.Add('#!/bin/sh');
+    {$endif}
 
     if not fileexists(ffmpeg) then
     begin
@@ -2330,9 +2347,8 @@ begin                                     // get setup
            {$IFDEF WINDOWS}'.bat'{$endif}
            {$ifdef unix}'.sh'{$endif} ;
 
-
     //1.5 moved from // 1.5 alpha
-        frmScript.memo1.lines.Clear;
+    frmScript.memo1.lines.Clear;
 
     if not multipresets then
         lblApplytoAllClick(self);
@@ -2367,13 +2383,16 @@ begin                                     // get setup
         {$ifdef unix}
             // resolve issues with embedded quote marks in filename to be converted.  issue 38
             // resolve issue with arbitrary command execution  issue 242
-            ProtectFileName (filename);
-            ProtectFileName (basename);
+
+            if not CheckFileName (basename) then
+            begin
+                ProtectFileName (filename);
+                ProtectFileName (basename);
+            end;
 
             titlestring:='echo -n "\033]0; ' + rsConverting +' ' + basename +
                ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';
         {$endif}
-
         {$IFDEF WINDOWS}
             if usechcp = 'true' then
                 script.Add(titlestring)
@@ -2405,10 +2424,10 @@ begin                                     // get setup
         if scr[i].SecondPass <> '' then
         begin
         {$IFDEF WINDOWS}
-        if usechcp = 'true' then
-            script.add(scr[i].SecondPass)
-        else
-            script.add(UTF8ToConsole (scr[i].SecondPass));
+            if usechcp = 'true' then
+                script.add(scr[i].SecondPass)
+            else
+                script.add(UTF8ToConsole (scr[i].SecondPass));
         {$endif}
         {$ifdef unix}
             script.add(UTF8ToConsole (scr[i].SecondPass));
@@ -2553,35 +2572,35 @@ function TfrmMain.replaceVfParam(CommandLine:string; param:string; replacement:s
 var
   RegEx: TRegExpr ;
 
+begin
+    RegEx := TRegExpr.Create ;
+    RegEx.Expression := '^(.*)-vf(.*)$' ;
+    CommandLine := RegEx.Replace(CommandLine, '$1-filter:v$2', True) ; // Convert short to long style
+    RegEx.Expression := '-filter:v ' ;
+    if RegEx.exec(CommandLine) then // We found an existing filter in CommandLine
     begin
-        RegEx := TRegExpr.Create ;
-        RegEx.Expression := '^(.*)-vf(.*)$' ;
-        CommandLine := RegEx.Replace(CommandLine, '$1-filter:v$2', True) ; // Convert short to long style
-        RegEx.Expression := '-filter:v ' ;
-        if RegEx.exec(CommandLine) then // We found an existing filter in CommandLine
+        RegEx.Expression := '^(.*-filter:v.*)' + param + '=[^ ^,]+(.*)$' ; // Split before current parameter
+        if RegEx.exec(CommandLine) then // We already have this parameter
+            CommandLine := RegEx.Replace(CommandLine, '$1' + replacement + '$2', True)
+        else
         begin
-            RegEx.Expression := '^(.*-filter:v.*)' + param + '=[^ ^,]+(.*)$' ; // Split before current parameter
-            if RegEx.exec(CommandLine) then // We already have this parameter
-                CommandLine := RegEx.Replace(CommandLine, '$1' + replacement + '$2', True)
-            else
-            begin
-                RegEx.Expression := '^(.*-filter:v[^-]+)( (-|").*)$' ; // Split after last filter parameter
-                CommandLine := RegEx.Replace(CommandLine, '$1,' + replacement + '$2', True) ;
-            end;
-        end
-        else // No existing filter option yet
-        if length(replacement) > 0 then
-            CommandLine += ' -filter:v ' + replacement ;
+            RegEx.Expression := '^(.*-filter:v[^-]+)( (-|").*)$' ; // Split after last filter parameter
+            CommandLine := RegEx.Replace(CommandLine, '$1,' + replacement + '$2', True) ;
+        end;
+    end
+    else // No existing filter option yet
+    if length(replacement) > 0 then
+        CommandLine += ' -filter:v ' + replacement ;
 
-        if length(replacement) = 0 then // make sure we remove any trailing comma or full filter option if this was the last filter
-        begin
-            RegEx.Expression := '^(.*)( -filter:v[^-]+),( -| ")(.*)$' ; // '-' starts a new option, while '"' starts the output file name
-            if RegEx.exec(CommandLine) then
-                CommandLine := RegEx.Replace(CommandLine, '$1$2$3$4', True) ;
+    if length(replacement) = 0 then // make sure we remove any trailing comma or full filter option if this was the last filter
+    begin
+        RegEx.Expression := '^(.*)( -filter:v[^-]+),( -| ")(.*)$' ; // '-' starts a new option, while '"' starts the output file name
+        if RegEx.exec(CommandLine) then
+            CommandLine := RegEx.Replace(CommandLine, '$1$2$3$4', True) ;
 
-            RegEx.Expression := '^(.*) -filter:v (-|")(.*)$' ; // '-' starts a new option, while '"' starts the output file name
-            if RegEx.exec(CommandLine) then
-                CommandLine := RegEx.Replace(CommandLine, '$1$2$3', True) ;
+        RegEx.Expression := '^(.*) -filter:v (-|")(.*)$' ; // '-' starts a new option, while '"' starts the output file name
+        if RegEx.exec(CommandLine) then
+            CommandLine := RegEx.Replace(CommandLine, '$1$2$3', True) ;
     end;
 
     result := CommandLine;
@@ -2619,6 +2638,7 @@ var
     newnode,labelnode,paramsnode,extensionnode,categorynode,
     textl,textp,texte,textc, node: tdomnode;
     nodename,nodelabel,nodeext,testchars:string;
+
 begin
     if not fileexists(presetfilename) then
     begin
@@ -2818,10 +2838,13 @@ begin
     end;
 
     {$ifdef unix}
-         // resolve issues with embedded quote marks in filename to be converted.  issue 38
-         // resolve issue with arbitrary command execution  issue 242
-         ProtectFileName (filename);
-         ProtectFileName (basename);
+        // resolve issues with embedded quote marks in filename to be converted.  issue 38
+        // resolve issue with arbitrary command execution  issue 242
+        if not CheckFilename (basename) then
+        begin
+            ProtectFileName (filename);
+            ProtectFileName (basename);
+        end;
     {$endif}
 
     for j:= length(basename) downto 1  do
@@ -3103,7 +3126,7 @@ begin
                     FirstPass:= memFirstPass.Text;
                     SecondPass := memSecondPass.Text;
                     CMDlineparams := CommandLineParams.Text;
-                end; // with Scr
+                end;
             end
             else
             begin
