@@ -1,6 +1,17 @@
 WinFF Copyright 2006 - 2024 Matthew Weatherford
 https://www.biggmatt.com/p/winff.html
 
+V1.6.4
+----
+Update download link
+Dwarf instead of Stabs for debug symbols
+Hardening options for linker
+O2 optimisation
+Formatting (all units)
+String type assignment warnings in Unit6.pas
+Prevent shell injection (further fix)
+Remove commented out code in Unit1.pas
+
 V1.6.3
 ----
 Fix build on Unix/BSD

@@ -122,7 +122,7 @@ begin
     lbThanks.items.add(rsLaunchpadContrib);
     lbThanks.items.add('marcelocripe');
 
-    frmAbout.lblWinff.Caption  := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.6.3',[]);
+    frmAbout.lblWinff.Caption  := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.6.4',[]);
     frmAbout.lblCopyright.Caption  := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2024',[]);
 end;
 
