@@ -1,11 +1,11 @@
 object frmEditPresets: TfrmEditPresets
   Left = 341
-  Height = 445
+  Height = 580
   Top = 148
-  Width = 456
+  Width = 480
   Caption = 'Edit Presets'
-  ClientHeight = 445
-  ClientWidth = 456
+  ClientHeight = 580
+  ClientWidth = 480
   Constraints.MinHeight = 400
   Constraints.MinWidth = 400
   Icon.Data = {
