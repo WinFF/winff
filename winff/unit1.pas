@@ -91,7 +91,6 @@ type
         lblCropBottom: TLabel;
         lblCropLeft: TLabel;
         lblCropRight: TLabel;
-        //label22: TLabel;
         lblCropRight2: TLabel;
         lblCropTop: TLabel;
         lblFrameRate: TLabel;
@@ -104,7 +103,6 @@ type
         mitSaveOptions: TMenuItem;
         mitSelectAll: TMenuItem;
         mitViewMode: TMenuItem;
-        //    mitPlaySoundonFinish: TMenuItem;
         mitDisplayCmdline: TMenuItem;
         dlgOpenFile: TOpenDialog;
         filelist: TListBox;
@@ -159,7 +157,6 @@ type
         mnuFile: TMenuItem;
         MainMenu1: TMainMenu;
         PresetBox: TComboBox;
-        //dlgOpenFile: TOpenDialog;
         SelectDirectoryDialog1: TSelectDirectoryDialog;
         btnConvert: TBitBtn;
         StatusBar1: TStatusBar;
@@ -266,7 +263,6 @@ type
         function replaceparam(commandline:string;param:string;replacement:string):string;
         function replaceVfParam(commandline:string;param:string;replacement:string):string;
         procedure TabControlChange(Sender: TObject);
-        function GetFileInfo(var filedetails : string) : string;
         function GenerateCommandLines(vIndex : integer) : string;
         procedure SaveChangedOptions(vOption : integer);
         {$IFDEF WINDOWS}
@@ -388,7 +384,6 @@ var
 
 resourcestring
 
-    //messages
     rsCouldNotFindPresetFile = 'Could not find presets file.';
     rsCouldNotFindFFmpeg = 'Could not find either ffmpeg or avconv.';
     rsCouldNotFindFFplay = 'Could not find either ffplay or avplay.';
@@ -483,9 +478,6 @@ begin
         end;
     {$endif}
     {$IFDEF UNIX}
-        //presetbox.Height:=30;
-        //categorybox.Height:=30;
-
         extraspath:='/usr/share/winff/';
         if not directoryexists(extraspath) then
             ExtrasPath:= ExtractFilePath(ParamStr(0));
@@ -595,38 +587,41 @@ begin
     sformleft:=getconfigvalue('window/left');
 
     formtop := 0;
-    if sformtop <> '' then formtop:=StrToInt(sformtop);
-    if formtop > 0 then frmMain.Top := formtop;
+    if sformtop <> '' then
+        formtop:=StrToInt(sformtop);
+    if formtop > 0 then
+        frmMain.Top := formtop;
 
     formleft := 0;
-    if sformleft <> '' then formleft:=StrToInt(sformleft);
-    if formleft >0 then frmMain.Left := formleft;
+    if sformleft <> '' then
+        formleft:=StrToInt(sformleft);
 
-    if sformheight = '' then formheight:=400
-    else formheight := StrToInt(sformheight);
+    if formleft >0 then
+        frmMain.Left := formleft;
+
+    if sformheight = '' then
+        formheight:=400
+    else
+        formheight := StrToInt(sformheight);
 
     if sformwidth = '' then formwidth:=600
     else formwidth := StrToInt(sformwidth);
 
-    if formheight<400 then formheight:=400;
-    if formwidth<600 then formheight:=600;
-    if showopts='' then showopts:='false';
+    if formheight<400 then
+        formheight:=400;
+    if formwidth<600 then
+        formheight:=600;
+    if showopts='' then
+        showopts:='false';
+
     if showopts='true' then
     begin
         mitShowOptions.Checked:=True;
-{        pnlAdditionalOptions.Visible :=true;
-        frmMain.height := formheight;
-        frmMain.width := formwidth;
-        frmMain.invalidate;}
         for i := 1 to 5 do pgSettings.Page[i].tabvisible := True;
     end
     else
     begin
         mitShowOptions.Checked:=False;
-{        pnlAdditionalOptions.Visible :=false;
-        frmMain.height := formheight;
-        frmMain.width := formwidth;
-        frmMain.invalidate;}
         for i := 1 to 5 do pgSettings.Page[i].tabvisible := False;
     end;
 
@@ -816,7 +811,6 @@ begin
     end;
 end;
 
-
 // get the name of the selected preset
 function TfrmMain.getcurrentpresetname(currentpreset:string):string;
 var
@@ -831,7 +825,6 @@ begin
             Result := node.nodename;
     end;
 end;
-
 
 // clear and load the preset box with current list
 procedure TfrmMain.populatepresetbox(selectedcategory:string);
@@ -1078,22 +1071,6 @@ procedure TfrmMain.filelistDrawItem(Control: TWinControl; Index: Integer;
 begin
     // This function draws the an enhanced row list
     // 1.5 (never released feature)
-
-{  with (control as tlistbox).Canvas do
-  begin
-    color := clDefault;
-    FillRect(ARect) ;
-    Font.Size  := frmMain.Font.Size-1;
-    if filelist.Selected[index] = true then
-    begin
-        Font.Color := clHighlightText;
-    end;
-    TextOut(ARect.Left, ARect.Top, filelist.items[Index] + ' (' + joblist.Strings[index] + ' )');
-    Font.Size  := frmMain.Font.Size-2;
-    Font.Style := [fsItalic];
-    TextOut(ARect.Left + 15, ARect.Top + 14, destinationlist.Strings[index] + ' - Convert to ' + Presetlist.Strings[index]);
-  end;
-}
 end;
 
 procedure TfrmMain.btnApplyDestinationClick(Sender: TObject);
@@ -1143,7 +1120,6 @@ begin
                 if cbright.Checked then rotation := 2;
                 if cbleftflip.Checked then rotation := 3;
                 if cbrightflip.Checked then rotation := 4;
-                //'Rotation := rgRotate.ItemIndex;
             end;
         end;
     end;
@@ -1152,32 +1128,7 @@ begin
 end;
 
 procedure TfrmMain.Button1Click(Sender: TObject);
-{
-function SetControls(ctrl : tcontrol) : bool;
-   var i,j,k : integer;
-     s,t,u : string;
-   begin
-      for i := 0 to (twincontrol(ctrl).ControlCount) -1 do
-       begin
-            ShowMessage(twincontrol(ctrl).Controls[i].Name);
-            if twincontrol(ctrl).Controls[i] is tpanel then
-              begin
-                   SetControls(twincontrol(ctrl).Controls[i]);
-              end;
-            if twincontrol(ctrl).Controls[i] is tedit then
-              begin
-//                   SetControls(twincontrol(ctrl).Controls[i]);
-              end;
-            if twincontrol(ctrl).Controls[i] is tcheckbox then
-              begin
-//                   SetControls(twincontrol(ctrl).Controls[i]);
-              end;
-
-       end;
-
-   end;}
 begin
-    //SetControls(TabVideo);
 end;
 
 // preview button clicked
@@ -1255,109 +1206,9 @@ end;
 
 // launch ffmpeg info
 procedure TfrmMain.launchffmpeginfo(vfilename:string);
-{var
-i,j : integer;
-command, filename,batfile, basename:string;
-ffmpegfilename, titlestring, priority:string;
-script: tstringlist;
-thetime: tdatetime;
-scriptprocess:tprocess;
-scriptpriority:tprocesspriority;
-resmod : integer;)}
 begin
     // This uses a modified version of the scripting engine to launch ffmpeg and parse the output.
     // Should be either deleted or fixed next release
-(*
-   scriptprocess:= TProcess.Create(nil);
-
-   priority := getconfigvalue('general/priority');
-   if priority= unit4.rspriorityhigh then scriptpriority:=pphigh
-     else if priority= unit4.rsprioritynormal then scriptpriority:=ppnormal
-     else if priority= unit4.rspriorityidle then scriptpriority:=ppidle
-     else scriptpriority:=ppnormal;
-   scriptprocess.Priority:= scriptpriority;
-
-
-   script:= TStringList.Create;
-   {$IFDEF WINDOWS}script.Add('@echo off');{$endif}
-   {$IFDEF WINDOWS}if usechcp = 'true' then script.Add('chcp ' + inttostr(ansicodepage));{$endif}
-   {$ifdef unix}script.Add('#!/bin/sh');{$endif}
-
-   {$IFDEF WINDOWS}ffmpegfilename:='"' + ffmpeg + '"';{$endif}
-   {$ifdef unix}ffmpegfilename:=ffmpeg;{$endif}
-
-   if not fileexists(ffmpeg) then
-      begin
-       showmessage(rsCouldnotFindFFmpeg);
-       exit;
-      end;
-
-   frmScript.memo1.lines.Clear;
-
-                                      // build batch file
-   thetime :=now;
-   batfile := 'ff' + FormatDateTime('yymmddhhnnss',thetime) +
-           {$IFDEF WINDOWS}'.bat'{$endif}
-           {$ifdef unix}'.sh'{$endif} ;
-
-   filename := vfilename;
-   basename := extractfilename(filename);
-
-       // resolve issues with embedded quote marks in filename to be converted.  issue 38
-       {$ifdef unix}
-       filename := StringReplace(filename,'"','\"',[rfReplaceAll]);
-       basename := StringReplace(basename,'"','\"',[rfReplaceAll]);
-       {$endif}
-
-       for j:= length(basename) downto 1  do
-         begin
-           if basename[j] = #46 then  // #46=='.'
-              begin
-                basename := leftstr(basename,j-1);
-                break;
-              end;
-         end;
-
-       command := '';
-       {$IFDEF WINDOWS}titlestring:='title ' + rsAnalysing + ' ' + extractfilename(filename) +
-            ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')';{$endif}
-       {$ifdef unix}titlestring:='echo -n "\033]0; ' + rsAnalysing +' ' + basename +
-            ' ('+inttostr(i+1)+'/'+ inttostr(filelist.items.count)+')'+'\007"';{$endif}
-       script.Add(titlestring);
-       //destfolder.text := extractfilepath(filename);
-        command := ffmpegfilename +  '  -i "' + filename + '" 2>"' + presetspath + '"output.txt'; // Francois Collard - added "" around presetspath
-
-        script.Add(command);
-
-        // remove batch file on completion
-//   {$IFDEF WINDOWS}script.Add('del ' + '"' + presetspath + batfile + '"');{$endif}
-   {$ifdef unix}script.Add('rm ' + '"' +  presetspath + batfile+ '"');{$endif}
-
-
-     script.SaveToFile(presetspath+batfile);
-     {$ifdef unix}
-     fpchmod(presetspath + batfile,&700);
-     {$endif}
-
-    scriptprocess.ShowWindow := swoNone;
-                                                        // do it
-    scriptprocess.Executable := terminal ;
-    scriptprocess.Parameters.Add(termoptions) ;
-    scriptprocess.Parameters.Add(presetspath + batfile) ;
-    {$ifdef unix}
-      scriptprocess.Parameters.Add('&') ;
-    {$endif}
-    scriptprocess.execute;
-    script.Free;
-    sleep(1000) ; // need to wait for this to finish before continuing;
-    {$IFDEF WINDOWS}
-    try
-      DeleteFileUTF8(presetspath + batfile);
-    except;
-           // Could Not Delete Generated Batch File
-    end;
-    {$endif}
-*)
 end;
 
 // launch pdf
@@ -1577,7 +1428,6 @@ begin
     begin
         s :=FileNames[i]; // fix for 1.4 (was using filenames from filelistbox)
         u := s;
-        //t := GetFileInfo(u); // 1.4 not needed now
         filelist.items.Add(s);
         DestinationList.Add(DestFolder.text);
         CategoryList.add(categorybox.Text);
@@ -1645,7 +1495,6 @@ begin
                 setLength(scr,numberofjobs);
             end;
 
-            //t := GetFileInfo(u); Todo -> if I ever get a nice way to read file resolution & codec
             filelist.items.Add(s);
             FileInfoList.add(u);
             SetSCR(FileList.Count -1 ); // first time to save the parameters to the array (SCR)
@@ -1820,14 +1669,6 @@ end;
 procedure TfrmMain.filelistMeasureItem(Control: TWinControl; Index: Integer;
 var AHeight: Integer);
 begin
-//     AHeight := (frmMain.Font.Size * 3);
-{       if filelist.Count > 0 then
-        begin;
-         if leftstr(filelist.Items[Index],1) <> '\' then
-          begin
-             AHeight :=   trunc(AHeight * 1.2);
-          end;
-      end;}
   //  Removed for 1.4 // Not using Enhanced Job Queue
 end;
 
@@ -2123,34 +1964,6 @@ end;
 // menu: show / hide additional mnuOptions
 procedure TfrmMain.mitShowOptionsClick(Sender: TObject);
 begin
-{
-    if not mitShowOptions.Checked then
-    begin
-        //frmMain.Height := frmMain.Height + pnlAdditionalOptions.Height;
-        pnlAdditionalOptions.Visible := True;
-        //Constraints.MinHeight := Constraints.MinHeight + pnlAdditionalOptions.Height;
-
-        mitShowOptions.Checked:=true;
-    end
-    else
-    begin
-        //Constraints.MinHeight := Constraints.MinHeight - pnlAdditionalOptions.Height;
-        pnlAdditionalOptions.visible := false;
-        //frmMain.Height := frmMain.Height - pnlAdditionalOptions.Height;
-
-        mitShowOptions.Checked:=false;
-
-        vidbitrate.Clear;
-        vidframerate.clear;
-        edtAspectRatio.Clear;
-        audbitrate.Clear;
-        audsamplingrate.Clear;
-        vidsizex.Clear;
-        vidsizey.clear;
-        mitDisplayCmdline.Checked:=false;
-        commandlineparams.Clear;
-    end;
-}
     if not mitShowOptions.Checked then
     begin
         pgSettings.Pages[1].TabVisible:= True;
@@ -2178,11 +1991,6 @@ begin
         sleep(50); application.processmessages;
         mitShowOptions.Checked:=False;
     end;
-
-    //  Application.ProcessMessages; // Should repaint the form like invalidate
-    //Invalidate; //Why not use Invalidate itself?
-    //AdjustSize;
-// end;
 end;
 
 // menu: shutdown on finish
@@ -2288,7 +2096,6 @@ begin
     For E in EscapeSet do
         FName := StringReplace(FName, E, '\'+E, [rfReplaceAll]);
 end;
-
 
 // Start Conversions
 procedure TfrmMain.btnConvertClick(Sender: TObject);
@@ -2405,8 +2212,8 @@ begin
 
        presetbox.text := presetlist.strings[i];
 
-//1.5       categorybox.text := CategoryList.strings[i];
-//1.5       DestFolder.Text:=DestinationList.strings[i];
+//1.5   categorybox.text := CategoryList.strings[i];
+//1.5   DestFolder.Text:=DestinationList.strings[i];
 
         if scr[i].firstpass <> '' then
         begin
@@ -2614,16 +2421,6 @@ begin
     unnecessary work instead, but is easier to maintain?
 }
 //  replaced by ApplyChanges.
-{    if pgSettings.ActivePage = TabVideo then
-     begin;
-       scr[filelist.ItemIndex].VideoBR:= Vidbitrate.text;
-       scr[filelist.ItemIndex].VideoFR:= Vidframerate.text;
-       scr[filelist.ItemIndex].VSizeX:= VidSizeX.text;
-       scr[filelist.ItemIndex].VSizeY:= VidSizeY.text;
-       scr[filelist.ItemIndex].VAspect:= edtAspectRatio.text;
-       scr[filelist.ItemIndex].V2Pass:= cbx2Pass.Checked;
-       scr[filelist.ItemIndex].VDeinterlace:= cbxDeinterlace.Checked;
-     end;}
 end;
 
 // import a preset from a file
@@ -2763,43 +2560,6 @@ begin
     populatepresetbox('');
 end;
 
-function TfrmMain.GetFileInfo(var fileDetails : string) : string;
-{var ts : tmemo;
-    i : integer;
-    s,t : string;}
-begin
-// This function is used to read the codec & resolution info from the source file
-// Its very ugly.  Basically we run ffmpeg against the file and save the output to a text file
-// which is read in and parsed badly.  I am commenting this out as this is not ready for release
-(*
-  ts := tmemo.Create(self);
-  ts.Lines.Clear;
-  launchffmpeginfo(filedetails);
-  t := presetspath + 'output.txt';
-  ts.lines.LoadFromFile(t);
-  result := '';
-  fileDetails := '';
-  for i := 0 to ts.lines.count -1 do
-    begin
-      s := ts.lines[i];
-      if pos('duration',lowercase(s)) > 0 then
-        begin
-           result := result + s;
-        end;
-       if pos('stream #',lowercase(s)) > 0 then
-        begin
-           fileDetails := fileDetails + '  ' + s;
-        end;
-    end;
-  try
-    DeleteFileUTF8(t);
-  except
-  end;
-  ts.free;
-*)
-  result := '';
-end;
-
 function tfrmMain.GenerateCommandLines(vIndex : integer) : string;
 var i,j : integer;
     cb,ct,cl,cr:integer;
@@ -2816,8 +2576,6 @@ begin
         ffmpegfilename:=ffmpeg;
     {$endif}
 
-//   {$IFDEF WINDOWS}ffplayfilename:='"' + ffplay + '"';{$endif}
-//   {$ifdef unix}ffplayfilename:=ffplay;{$endif}
     {$IFDEF WINDOWS}
         nullfile:='"NUL.avi"';
     {$endif}
@@ -2826,7 +2584,6 @@ begin
     {$endif}
 
     pn:=getcurrentpresetname(presetbox.Text);
-    //     category := getpresetcategory(pn);
     params:=getpresetparams(pn);
 
     filename := filelist.items[vindex];
@@ -2860,41 +2617,15 @@ begin
         basename := previewbasename;
 
     if cbOutputPath.checked = true then
-    begin
-        destfolder.text := extractfilepath(filename);
-    end
+        destfolder.text := extractfilepath(filename)
     else
-    begin
         destfolder.text := DestinationList.Strings[vIndex];
-    end;
+
     if RightStr(destfolder.text,1) = DirectorySeparator then
-    begin
         //{ trim extra \'s }
         destfolder.text := copy(DestFolder.text,1,length(DestFolder.text) -1);
-    end;
 
-       // 1.5 Utility feature
-       // Simple feature to allow for one off utility commands
-       // Example Preset Definition
-
-       //
-       {
-       if category = 'Utilities' then
-          begin
-               params := StringReplace (params,'winff_input_filename', filelist.items[vIndex],[rfReplaceAll, rfIgnoreCase]);
-               params := StringReplace (params,'winff_output_path', destFolder.text + DirectorySeparator,[rfReplaceAll, rfIgnoreCase]);
-               {$ifdef windows}
-                  //Windows bat files don't like a single % symbol as they are used for command line parameters.  legacy DOS issue
-                  params := StringReplace (params,'%', '%%',[rfReplaceAll, rfIgnoreCase]);
-               {$endif}
-               scr[vIndex].FirstPass := params;
-               scr[vIndex].SecondPass := '';
-               exit
-          end;
-       }
-       extension:=getpresetextension(pn);
-//     1.5 alpha (delete this later)
-
+    extension:=getpresetextension(pn);
 
     // trim everything up
     commandlineparams.text := trim(commandlineparams.Text);
@@ -2987,7 +2718,7 @@ begin
            commandline:=replaceparam(commandline,'-aspect','-aspect ' + edtAspectRatio.Text);
     if audbitrate.Text <> '' then
     begin
-        commandline:=replaceparam(commandline,'-ab','-b:a ' + audbitrate.Text+'k'); // Old style
+        commandline:=replaceparam(commandline,'-ab','-b:a ' + audbitrate.Text+'k');  // Old style
         commandline:=replaceparam(commandline,'-b:a','-b:a ' + audbitrate.Text+'k'); // New style
     end;
 
@@ -3140,7 +2871,6 @@ begin
                 begin
                     memFirstPass.Text := FirstPass;
                     MemSecondPass.Text := SecondPass;
-                    //'CommandLineParams.Text := CMDlineparams;
                     VideoBR     := VidBitRate.Text;
                     VideoFR     := VidFrameRate.Text;
                     VSizeX      := VidSizeX.Text;
@@ -3167,7 +2897,6 @@ begin
                     SecondPass  := memSecondPass.Text;
                     CMDlineparams := CommandLineParams.Text;
 
-                    //'Rotation := rgRotate.ItemIndex ;
                     rotation := 0;
                     if cbleft.Checked then
                         rotation := 1;
