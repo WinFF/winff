@@ -29,7 +29,7 @@ uses
     laz_xmlcfg, dom, xmlread, xmlwrite, StdCtrls, Buttons, ActnList, Menus, unit2, unit3,
     unit4, unit5, gettext, translations, process
     {$IFDEF TRANSLATESTRING}, DefaultTranslator{$ENDIF},
-    ExtCtrls, ComCtrls, Spin, UTF8Process, PoTranslator, types, FileUtil, regexpr
+    ExtCtrls, ComCtrls, Spin, PoTranslator, types, FileUtil, regexpr
     {$IFDEF WINDOWS}, LazUTF8, LazFileUtils {$endif}
     {$IFDEF linux},  LazUTF8, LazFileUtils {$endif};
 
@@ -1673,7 +1673,10 @@ begin
 end;
 
 procedure TfrmMain.filelistMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
-var lstIndex : Integer ;
+{$ifdef windows}
+	var lstIndex : Integer ;
+{$endif}
+
 begin
     // Not for version 1.4 - works on Windows & QT, buggy on GTK.
     //  Enhanced job queue not in this release.

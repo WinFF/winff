@@ -127,7 +127,6 @@
         <GenerateDebugInfo Value="True"/>
         <GenerateDwarf Value="True"/>
       </Debugging>
-      <LinkSmart Value="True"/>
       <Options>
         <PassLinkerOptions Value="True"/>
         <LinkerOptions Value="--as-needed -zrelro -znow"/>
@@ -136,6 +135,11 @@
         </Win32>
       </Options>
     </Linking>
+    <Other>
+      <CompilerMessages>
+        <IgnoredMessages idx4104="True" idx4105="True" idx5024="True"/>
+      </CompilerMessages>
+    </Other>
   </CompilerOptions>
   <Debugging>
     <Exceptions Count="1">
