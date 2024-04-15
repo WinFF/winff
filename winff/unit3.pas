@@ -1,22 +1,24 @@
 unit Unit3;
 
+// About form
+
 // WInFF 1.0 Copyright 2006-2013 Matthew Weatherford
 // WinFF 1.3.2 Copyright 2011 Alexey Osipov <lion-simba@pridelands.ru>
 // http://winff.org
 // Licensed under the GPL v3 or any later version
-//
+
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // any later version.
-//
+
 // This program is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-//
-//    You should have received a copy of the GNU General Public License
-//    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 {$mode objfpc}{$H+}
@@ -24,69 +26,64 @@ unit Unit3;
 interface
 
 uses
-
-  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Buttons, ExtCtrls, gettext,translations, ComCtrls;
+    Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
+    Buttons, ExtCtrls, gettext,translations, ComCtrls;
 
 type
+    TfrmAbout = class(TForm)
+        btnOk: TBitBtn;
+        imgLogo: TImage;
+        lblwinbuilds: TLabel;
+        lblWindowsBuilds: TLabel;
+        lblBellard1: TLabel;
+        lblStoffberg: TLabel;
+        lblURLZerano: TLabel;
+        lblWinff: TLabel;
+        lblGevers: TLabel;
+        lblCopyright: TLabel;
+        lblWeatherford: TLabel;
+        lblURLWinffOrg: TLabel;
+        lblFFmeg: TLabel;
+        lblBellard: TLabel;
+        lblURLffmpeg: TLabel;
+        lbThanks: TListBox;
+        PageControl1: TPageControl;
+        pnlBottom: TPanel;
+        pnlLogo: TPanel;
+        pnlPresets: TPanel;
+        tabWinff: TTabSheet;
+        sbWinTab: TScrollBox;
+        tabFFmpeg: TTabSheet;
+        tabThanks: TTabSheet;
+        procedure btnOkClick(Sender: TObject);
+        procedure FormCreate(Sender: TObject);
+        procedure lblBellardClick(Sender: TObject);
+        procedure lblGeversClick(Sender: TObject);
+        procedure lblStoffbergClick(Sender: TObject);
+        procedure lblGmaqClick(Sender: TObject);
+        procedure lblURLZeranoClick(Sender: TObject);
+        procedure lblWeatherfordClick(Sender: TObject);
+        procedure lblURLWinffOrgClick(Sender: TObject);
+        procedure lblURLffmpegClick(Sender: TObject);
+        procedure lblwinbuildsClick(Sender: TObject);
+        procedure lblWindowsBuildsClick(Sender: TObject);
 
-  { TfrmAbout }
-
-  TfrmAbout = class(TForm)
-    btnOk: TBitBtn;
-    imgLogo: TImage;
-    lblwinbuilds: TLabel;
-    lblWindowsBuilds: TLabel;
-    lblBellard1: TLabel;
-    lblStoffberg: TLabel;
-    lblURLZerano: TLabel;
-    lblWinff: TLabel;
-    lblGevers: TLabel;
-    lblCopyright: TLabel;
-    lblWeatherford: TLabel;
-    lblURLWinffOrg: TLabel;
-    lblFFmeg: TLabel;
-    lblBellard: TLabel;
-    lblURLffmpeg: TLabel;
-    lbThanks: TListBox;
-    PageControl1: TPageControl;
-    pnlBottom: TPanel;
-    pnlLogo: TPanel;
-    pnlPresets: TPanel;
-    tabWinff: TTabSheet;
-    sbWinTab: TScrollBox;
-    tabFFmpeg: TTabSheet;
-    tabThanks: TTabSheet;
-    procedure btnOkClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
-    procedure lblBellardClick(Sender: TObject);
-    procedure lblGeversClick(Sender: TObject);
-    procedure lblStoffbergClick(Sender: TObject);
-    procedure lblGmaqClick(Sender: TObject);
-    procedure lblURLZeranoClick(Sender: TObject);
-    procedure lblWeatherfordClick(Sender: TObject);
-    procedure lblURLWinffOrgClick(Sender: TObject);
-    procedure lblURLffmpegClick(Sender: TObject);
-    procedure lblwinbuildsClick(Sender: TObject);
-    procedure lblWindowsBuildsClick(Sender: TObject);
-
-  private
-    { private declarations }
-  public
-    { public declarations }
-  end;
+    private
+        { private declarations }
+    public
+        { public declarations }
+    end;
 
 var
-  frmAbout: TfrmAbout;
+    frmAbout: TfrmAbout;
 
-Resourcestring
-  rsTranslators =      'Translators:' ;
-  rsLaunchpadContrib = 'Launchpad contributors' ;
+resourcestring
+    rsTranslators 	   = 'Translators:' ;
+    rsLaunchpadContrib = 'Launchpad contributors' ;
 
 implementation
 
 uses unit1;
-{ TfrmAbout }
 
 procedure TfrmAbout.FormCreate(Sender: TObject);
 begin
@@ -94,7 +91,6 @@ begin
     TranslateUnitResourceStrings('unit3', PODirectory + 'winff.%s.po', unit1.Lang, unit1.FallbackLang);
 
     // fill thank you memo
-
     lbThanks.items.Add('Fernando Andrián Gómez');
     lbThanks.items.Add('Nighto');
     lbThanks.items.Add('Simeon Uzunov');
@@ -126,8 +122,8 @@ begin
     lbThanks.items.add(rsLaunchpadContrib);
     lbThanks.items.add('marcelocripe');
 
-    frmAbout.lblWinff.Caption       := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.6.3',[]);
-    frmAbout.lblCopyright.Caption   := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2024',[]);
+    frmAbout.lblWinff.Caption  := StringReplace(frmAbout.lblWinff.Caption, '%s', '1.6.3',[]);
+    frmAbout.lblCopyright.Caption  := StringReplace(frmAbout.lblCopyright.Caption, '%s', '2006-2024',[]);
 end;
 
 procedure TfrmAbout.lblBellardClick(Sender: TObject);
@@ -137,47 +133,47 @@ end;
 
 procedure TfrmAbout.lblGeversClick(Sender: TObject);
 begin
-  frmMain.LaunchBrowser('https://launchpad.net/~paul-climbing/+archive/ppa/');
+    frmMain.LaunchBrowser('https://launchpad.net/~paul-climbing/+archive/ppa/');
 end;
 
 procedure TfrmAbout.lblStoffbergClick(Sender: TObject);
 begin
-frmMain.LaunchBrowser('http://istoff.blogspot.com');
+    frmMain.LaunchBrowser('http://istoff.blogspot.com');
 end;
 
 procedure TfrmAbout.lblGmaqClick(Sender: TObject);
 begin
-  frmMain.LaunchBrowser('http://www.bandshed.net/');
+    frmMain.LaunchBrowser('http://www.bandshed.net/');
 end;
 
 procedure TfrmAbout.lblURLZeranoClick(Sender: TObject);
 begin
-  frmMain.LaunchBrowser('http://ffmpeg.zeranoe.com');
+    frmMain.LaunchBrowser('http://ffmpeg.zeranoe.com');
 end;
 
 procedure TfrmAbout.btnOkClick(Sender: TObject);
 begin
-  frmAbout.close;
+    frmAbout.Close;
 end;
 
 procedure TfrmAbout.lblWeatherfordClick(Sender: TObject);
 begin
-   frmMain.LaunchBrowser('http://www.biggmatt.com');
+    frmMain.LaunchBrowser('http://www.biggmatt.com');
 end;
 
 procedure TfrmAbout.lblURLWinffOrgClick(Sender: TObject);
 begin
-  frmMain.LaunchBrowser('https://github.com/WinFF/winff');
+    frmMain.LaunchBrowser('https://github.com/WinFF/winff');
 end;
 
 procedure TfrmAbout.lblURLffmpegClick(Sender: TObject);
 begin
-  frmMain.LaunchBrowser('http://ffmpeg.org/');
+    frmMain.LaunchBrowser('http://ffmpeg.org/');
 end;
 
 procedure TfrmAbout.lblwinbuildsClick(Sender: TObject);
 begin
-  frmMain.LaunchBrowser('http://ffmpeg.zeranoe.com/builds/');
+    frmMain.LaunchBrowser('http://ffmpeg.zeranoe.com/builds/');
 end;
 
 procedure TfrmAbout.lblWindowsBuildsClick(Sender: TObject);
@@ -185,10 +181,7 @@ begin
 
 end;
 
-
-
 initialization
-  {$I unit3.lrs}
+    {$I unit3.lrs}
 
 end.
-

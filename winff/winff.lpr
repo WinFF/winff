@@ -14,39 +14,34 @@ program winff;
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 //
-//    You should have received a copy of the GNU General Public License
-//    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 {$mode objfpc}{$H+}
 
 uses
-  {$IFDEF UseCThreads}
-  cthreads,
-  {$ENDIF}
-  Interfaces, // this includes the LCL widgetset
-  Forms
-  { add your units here }, Unit1, Unit2, Unit3, Unit4, Unit5,defaulttranslator,
-  unit6;
-   {$ifdef windows}
-   {$R resources.rc}
-   {$endif}
+    {$IFDEF UseCThreads}
+        cthreads,
+    {$ENDIF}
 
-
-
-//{$IFDEF WINDOWS}{$R winff.rc}{$ENDIF}
+    Interfaces, // this includes the LCL widgetset
+    Forms, Unit1, Unit2, Unit3, Unit4, Unit5,defaulttranslator, unit6;
+    {$ifdef windows}
+        {$R resources.rc}
+    {$endif}
 
 //{$IFDEF WINDOWS}{$R winff.rc}{$ENDIF}
 
 {$R *.res}
 
 begin
-  Application.Title:='WinFF';
-  Application.Initialize;
-  Application.CreateForm(TfrmMain, frmMain);
-  Application.CreateForm(TfrmEditPresets, frmEditPresets);
-  Application.CreateForm(TfrmAbout, frmAbout);
-  Application.CreateForm(TfrmPreferences, frmPreferences);
-  Application.CreateForm(TfrmScript, frmScript);
-  Application.CreateForm(TfrmExport, frmExport);
-  Application.Run;
+    Application.Title:='WinFF';
+    Application.Initialize;
+    Application.CreateForm(TfrmMain,        frmMain);
+    Application.CreateForm(TfrmEditPresets, frmEditPresets);
+    Application.CreateForm(TfrmAbout,       frmAbout);
+    Application.CreateForm(TfrmPreferences, frmPreferences);
+    Application.CreateForm(TfrmScript,      frmScript);
+    Application.CreateForm(TfrmExport,      frmExport);
+    Application.Run;
 end.
