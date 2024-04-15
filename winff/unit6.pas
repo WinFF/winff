@@ -64,7 +64,7 @@ begin
     begin
         node:= presets.ChildNodes.item[i];
         subnode:= node.FindNode('label');
-        listbox1.items.add(subnode.findnode('#text').NodeValue);
+        listbox1.items.add(AnsiString(subnode.findnode('#text').NodeValue));
     end;
 end;
 
@@ -85,12 +85,13 @@ end;
 
 procedure TfrmExport.exportbtnClick(Sender: TObject);
 var
+    i,j:integer;
     exportfile: txmldocument;
     exportpreset: tdomelement;
     node,subnode,newnode: tdomnode;
-    exlabel,exparams,exext,excat: string;
-    i,j:integer;
-    pn,selectedtext:string;
+    
+    exlabel,exparams,exext,
+    excat, pn,selectedtext : UnicodeString;
     
 begin
     exportfile := txmldocument.Create;
@@ -101,7 +102,7 @@ begin
     begin
         if listbox1.Selected[i] then
         begin
-            selectedtext:= listbox1.Items[i];
+            selectedtext:= UnicodeString (listbox1.Items[i]);
             for j:= 0 to presets.childnodes.Count -1 do  // find the preset name
             begin
                 node := presets.childnodes.item[j];
@@ -144,7 +145,7 @@ begin
         end;
     end;
 
-    savedialog1.FileName:=pn + '.wff';
+    savedialog1.FileName:=AnsiString(pn) + '.wff';
     if not savedialog1.Execute then
         exit;
 
